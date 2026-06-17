@@ -9,18 +9,35 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.5.3",
+    "@hookform/resolvers": "^5.4.0",
+    "@prisma/client": "^7.8.0",
+    "@sentry/nextjs": "^10.58.0",
+    "@upstash/redis": "^1.38.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "katex": "^0.17.0",
+    "lucide-react": "^1.20.0",
     "next": "16.2.9",
+    "posthog-js": "^1.388.1",
+    "prisma": "^7.8.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.79.0",
+    "react-katex": "^3.1.0",
+    "resend": "^6.12.4",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.3.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.3.1",
     "typescript": "^5"
   }
 }
