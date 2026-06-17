@@ -1,36 +1,538 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Hyper Learning V3
 
-## Getting Started
+> An AI-powered academic learning platform designed to transform how students learn, revise, and prepare for examinations through intelligent content generation, syllabus-driven learning, previous year question analysis, and personalized AI assistance.
 
-First, run the development server:
+---
+
+## 🌟 Vision
+
+Hyper Learning aims to become a modern educational ecosystem that bridges the gap between static academic resources and intelligent learning experiences.
+
+Instead of simply providing question papers and notes, Hyper Learning helps students:
+
+* Learn concepts topic-by-topic
+* Explore AI-generated explanations
+* Understand previous year examination trends
+* Ask contextual follow-up questions
+* Track academic progress
+* Access structured learning paths
+
+The long-term goal is to build a scalable learning platform where syllabus, notes, PYQs, revision material, and AI tutoring are deeply connected.
+
+---
+
+# ✨ Features
+
+## 📚 Academic Content Management
+
+* Subject-wise syllabus organization
+* Unit-wise topic breakdown
+* Topic-specific AI-generated notes
+* Version-controlled content updates
+* Related PYQ mapping
+
+---
+
+## 📝 Previous Year Questions (PYQs)
+
+* Semester-wise paper collection
+* Branch-wise categorization
+* Subject-wise filtering
+* Question-to-unit mapping
+* Fast retrieval system
+
+---
+
+## 🤖 AI-Powered Learning
+
+### AI Answer Generation
+
+Generate structured answers for:
+
+* 2 Mark Questions
+* 5 Mark Questions
+* 10 Mark Questions
+* Long Answer Questions
+
+---
+
+### AI Learning Notes
+
+Generate detailed notes for:
+
+* Individual Topics
+* Units
+* Complete Subjects
+
+---
+
+### AI Tutor
+
+Students can:
+
+* Ask contextual follow-up questions
+* Clarify doubts
+* Request examples
+* Simplify difficult concepts
+
+---
+
+## 🔖 Student Productivity
+
+* Bookmarks
+* Learning Progress Tracking
+* Recently Viewed Topics
+* Personalized Dashboard
+* Saved Content
+
+---
+
+## 👨‍💼 Administration System
+
+### Editor
+
+Can:
+
+* Upload Papers
+* Edit Content
+* Generate Notes
+* Manage Academic Resources
+
+### Owner
+
+Can:
+
+* Manage Editors
+* Approve Applications
+* Review Audit Logs
+* Configure Platform Settings
+
+---
+
+## 🔍 Search System
+
+Search across:
+
+* Subjects
+* Units
+* Topics
+* Notes
+* PYQs
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Students
+    │
+    ▼
+Next.js Application
+    │
+ ┌──┼───────────────┐
+ │  │               │
+ ▼  ▼               ▼
+
+PostgreSQL      Redis       Gemini
+(Permanent)    (Cache)       (AI)
+
+ │              │
+ ▼              ▼
+
+Topics      AI Answers
+Notes       Chat Sessions
+PYQs        Rate Limits
+Users       Context Cache
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* Next.js 16
+* TypeScript
+* Tailwind CSS v4
+* ShadCN/UI
+* Lucide Icons
+
+---
+
+## Authentication
+
+* Clerk
+* Role-Based Access Control (RBAC)
+* Multi-Factor Authentication (MFA)
+
+---
+
+## Database
+
+* PostgreSQL
+* Prisma ORM
+
+---
+
+## Caching
+
+* Redis
+* Upstash Redis / Vercel KV
+
+---
+
+## Artificial Intelligence
+
+* Google Gemini
+
+---
+
+## Storage
+
+* Cloudinary
+* Vercel Blob (Optional)
+
+---
+
+## Email Services
+
+* Resend
+
+---
+
+## Monitoring
+
+* Sentry
+
+---
+
+## Analytics
+
+* PostHog
+
+---
+
+## Deployment
+
+* Vercel
+* Neon PostgreSQL
+
+---
+
+# 📂 Project Structure
+
+```text
+hyper-learning/
+
+├── app/
+├── components/
+├── features/
+├── hooks/
+├── lib/
+├── prisma/
+├── public/
+├── types/
+├── constants/
+├── emails/
+├── actions/
+├── middleware.ts
+├── next.config.ts
+└── package.json
+```
+
+---
+
+## Feature-Based Architecture
+
+```text
+features/
+
+├── auth/
+├── papers/
+├── syllabus/
+├── ai/
+├── bookmarks/
+├── progress/
+├── search/
+├── admin/
+└── analytics/
+```
+
+---
+
+# 🤖 AI Workflows
+
+## PYQ Answer Generation
+
+```text
+Question
+   │
+   ▼
+Redis Lookup
+   │
+   ├── Cache Hit
+   │      │
+   │      ▼
+   │   Return Answer
+   │
+   └── Cache Miss
+          │
+          ▼
+      Gemini
+          │
+          ▼
+      Save Cache
+          │
+          ▼
+      Return Answer
+```
+
+---
+
+## Topic Note Generation
+
+```text
+Topic Click
+    │
+    ▼
+PostgreSQL Lookup
+    │
+    ├── Exists
+    │      │
+    │      ▼
+    │   Return Note
+    │
+    └── Missing
+           │
+           ▼
+        Gemini
+           │
+           ▼
+     Save Database
+           │
+           ▼
+      Return Note
+```
+
+---
+
+## AI Tutor
+
+```text
+Student Question
+       │
+       ▼
+Redis Context
+       │
+       ▼
+Gemini
+       │
+       ▼
+Response
+```
+
+---
+
+# 🔐 Security
+
+## Authentication
+
+* Clerk Authentication
+* Secure Sessions
+* MFA Support
+* Protected Routes
+
+---
+
+## Authorization
+
+Roles:
+
+* Student
+* Editor
+* Owner
+
+---
+
+## Administrative Security
+
+* Invitation-only editor accounts
+* Owner approval workflow
+* Audit logging
+* Login notifications
+* Role-based permissions
+
+---
+
+## Infrastructure Security
+
+* Environment Variables
+* Server-Side API Keys
+* Protected AI Endpoints
+* Rate Limiting
+* Request Validation
+
+---
+
+# 🚀 Local Setup
+
+## Clone Repository
+
+```bash
+git clone https://github.com/HyperLearningTech/hyper-learning.git
+```
+
+```bash
+cd hyper-learning
+```
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Setup Environment Variables
+
+Create:
+
+```bash
+.env
+```
+
+---
+
+## Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# ⚙️ Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+DATABASE_URL=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+REDIS_URL=
 
-## Deploy on Vercel
+GEMINI_API_KEY=
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+RESEND_API_KEY=
+
+POSTHOG_KEY=
+
+SENTRY_AUTH_TOKEN=
+
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
+
+---
+
+# 🗺️ Roadmap
+
+## Phase 1
+
+* [ ] Next.js Migration
+* [ ] PostgreSQL Integration
+* [ ] Prisma ORM
+* [ ] Clerk Authentication
+
+---
+
+## Phase 2
+
+* [ ] Topic-Based Learning System
+* [ ] AI Note Generation
+* [ ] Topic Versioning
+* [ ] Search System
+
+---
+
+## Phase 3
+
+* [ ] AI Tutor
+* [ ] Progress Tracking
+* [ ] Bookmarks
+* [ ] Personalized Dashboard
+
+---
+
+## Phase 4
+
+* [ ] Admin Dashboard
+* [ ] Paper Upload Pipeline
+* [ ] OCR Processing
+* [ ] Content Moderation
+
+---
+
+## Phase 5
+
+* [ ] Advanced Analytics
+* [ ] Recommendation Engine
+* [ ] Multi-University Support
+* [ ] Mobile Application
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+You can contribute by:
+
+* Improving UI/UX
+* Fixing bugs
+* Optimizing performance
+* Improving documentation
+* Adding new features
+* Enhancing accessibility
+
+### Contribution Process
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push your branch
+5. Open a Pull Request
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for complete information.
+
+---
+
+# 👨‍💻 Maintainer
+
+**Shiv Raj Singh**
+
+Founder & Developer of Hyper Learning
+
+Building intelligent educational technology that combines modern software engineering, AI, and academic learning into a unified platform.
+
+---
+
+⭐ If you find this project useful, consider starring the repository and contributing to its growth.
