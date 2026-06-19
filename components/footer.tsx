@@ -1,10 +1,10 @@
 import Link from "next/link";
 import {
-  BrainCircuit,
   Mail,
   BookOpen,
   GraduationCap,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,8 +14,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-violet-600">
-                <BrainCircuit className="h-6 w-6 text-white" />
+              <div className="relative h-12 w-12 overflow-hidden rounded-xl">
+                <Image
+                  src="/hl-logo.png"
+                  alt="Hyper Learning Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
 
               <div>
