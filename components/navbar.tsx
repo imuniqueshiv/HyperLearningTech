@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+
 const navLinks = [
   {
     label: "Home",
@@ -32,33 +33,34 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-black/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[#00008B]/20 bg-[#00008B]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-<Link
-  href="/"
-  className="flex items-center gap-3 transition-opacity hover:opacity-90"
->
-  <Image
-    src="/hl-logo.png"
-    alt="Hyper Learning Logo"
-    width={48}
-    height={48}
-    priority
-    className="rounded-xl"
-  />
+          <Link
+            href="/"
+            className="flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
+          >
+            <div className="relative h-12 w-12 flex-shrink-0">
+              <Image
+                src="/hl-logo.png"
+                alt="Hyper Learning Official Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
 
-  <div>
-    <h1 className="text-lg font-bold text-white">
-      Hyper Learning
-    </h1>
+            <div>
+              <h1 className="text-xl font-bold text-[#F4F5F7]">
+                Hyper Learning
+              </h1>
 
-    <p className="text-xs text-slate-500">
-      AI-Powered Learning Platform
-    </p>
-  </div>
-</Link>
+              <p className="text-xs text-[#AFC8FF]">
+                AI-Powered Learning Platform
+              </p>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">
@@ -66,7 +68,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-slate-400 transition-colors hover:text-white"
+                className="text-[15px] font-medium text-[#AFC8FF] transition-all duration-200 hover:text-white"
               >
                 {link.label}
               </Link>
@@ -77,24 +79,24 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 md:flex">
             <Link
               href="/sign-in"
-              className="rounded-xl border border-slate-700 px-4 py-2 text-sm font-medium text-slate-300 transition-colors hover:border-slate-500 hover:text-white"
+              className="rounded-xl border border-white/20 px-4 py-2 text-sm font-medium text-[#F4F5F7] transition-all duration-200 hover:border-white/40 hover:bg-white/10"
             >
               Sign In
             </Link>
 
             <Link
               href="/subjects"
-              className="rounded-xl bg-blue-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-500"
+              className="rounded-xl bg-white px-5 py-2 text-sm font-semibold text-[#00008B] shadow-sm transition-all duration-200 hover:bg-slate-100"
             >
               Start Learning
             </Link>
           </div>
 
-          {/* Mobile Toggle */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="rounded-lg p-2 text-slate-300 transition-colors hover:bg-slate-900 md:hidden"
             aria-label="Toggle Menu"
+            className="rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
           >
             {isOpen ? (
               <X className="h-6 w-6" />
@@ -105,7 +107,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -124,7 +126,7 @@ export default function Navbar() {
             transition={{
               duration: 0.25,
             }}
-            className="overflow-hidden border-t border-slate-800 bg-black md:hidden"
+            className="overflow-hidden border-t border-white/10 bg-[#00008B]/95 backdrop-blur-xl md:hidden"
           >
             <div className="space-y-2 px-6 py-6">
               {navLinks.map((link) => (
@@ -132,7 +134,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block rounded-xl px-4 py-3 text-slate-300 transition-colors hover:bg-slate-900 hover:text-white"
+                  className="block rounded-xl px-4 py-3 text-[#AFC8FF] transition-all duration-200 hover:bg-white/10 hover:text-white"
                 >
                   {link.label}
                 </Link>
@@ -142,7 +144,7 @@ export default function Navbar() {
                 <Link
                   href="/sign-in"
                   onClick={() => setIsOpen(false)}
-                  className="rounded-xl border border-slate-700 px-4 py-3 text-center text-slate-300"
+                  className="rounded-xl border border-white/20 px-4 py-3 text-center text-[#F4F5F7]"
                 >
                   Sign In
                 </Link>
@@ -150,7 +152,7 @@ export default function Navbar() {
                 <Link
                   href="/subjects"
                   onClick={() => setIsOpen(false)}
-                  className="rounded-xl bg-blue-600 px-4 py-3 text-center font-medium text-white"
+                  className="rounded-xl bg-white px-4 py-3 text-center font-semibold text-[#00008B]"
                 >
                   Start Learning
                 </Link>
