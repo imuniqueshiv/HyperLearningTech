@@ -17,7 +17,6 @@ export default function HomePage() {
       <Universities />
       <Testimonials />
       <FAQ />
-      <CTA />
     </>
   );
 }

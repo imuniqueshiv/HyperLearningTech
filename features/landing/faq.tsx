@@ -59,17 +59,17 @@ function FAQItem({
   onClick: () => void;
 }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/60 backdrop-blur-xl">
+    <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
       <button
         onClick={onClick}
-        className="flex w-full items-center justify-between px-6 py-5 text-left transition-colors hover:bg-slate-900"
+        className="flex w-full items-center justify-between px-6 py-5 text-left transition-colors hover:bg-muted/30"
       >
-        <span className="pr-6 text-base font-semibold text-white md:text-lg">
+        <span className="pr-6 text-base font-semibold text-foreground md:text-lg">
           {question}
         </span>
 
         <ChevronDown
-          className={`h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-300 ${
+          className={`h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
         />
@@ -91,8 +91,8 @@ function FAQItem({
               duration: 0.25,
             }}
           >
-            <div className="border-t border-slate-800 px-6 py-5">
-              <p className="leading-8 text-slate-400">{answer}</p>
+            <div className="border-t border-border px-6 py-5">
+              <p className="leading-8 text-muted-foreground">{answer}</p>
             </div>
           </motion.div>
         )}
@@ -105,11 +105,11 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="relative overflow-hidden border-b border-border py-24">
-      {/* Background Glow */}
+    <section className="relative overflow-hidden border-b border-border bg-background py-24">
+      {/* Background Glows - No grid pattern */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute left-0 top-20 h-96 w-96 rounded-full bg-blue-500/5 blur-3xl" />
-        <div className="absolute right-0 bottom-20 h-96 w-96 rounded-full bg-violet-500/5 blur-3xl" />
+        <div className="absolute left-0 top-20 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px]" />
+        <div className="absolute right-0 bottom-20 h-[500px] w-[500px] rounded-full bg-indigo-500/5 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
@@ -124,15 +124,15 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="mx-auto mb-16 text-center"
         >
-          <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
+          <span className="inline-flex rounded-full border border-blue-200/60 bg-blue-50/80 px-4 py-2 text-sm font-semibold text-[#1D4ED8] shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          <h2 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
             Got Questions?
           </h2>
 
-          <p className="mt-6 text-lg text-slate-400">
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             Everything you need to know about Hyper Learning, AI-powered
             learning, syllabus mapping, and exam preparation.
           </p>
@@ -184,18 +184,18 @@ export default function FAQ() {
             delay: 0.1,
           }}
           viewport={{ once: true }}
-          className="mt-16 rounded-3xl border border-slate-800 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8 text-center"
+          className="mt-16 rounded-3xl border border-border bg-background/80 p-8 text-center shadow-lg backdrop-blur-sm"
         >
-          <h3 className="text-2xl font-bold text-white">
+          <h3 className="text-2xl font-bold text-foreground">
             Still Have Questions?
           </h3>
 
-          <p className="mt-4 text-slate-400">
+          <p className="mt-4 text-muted-foreground">
             Reach out through our contact page or use the AI assistant to get
             help with your learning journey.
           </p>
 
-          <div className="mt-6 inline-flex rounded-xl border border-blue-500/20 bg-blue-500/10 px-5 py-3 text-sm font-medium text-blue-400">
+          <div className="mt-6 inline-flex rounded-xl border border-blue-200/60 bg-blue-50/80 px-5 py-3 text-sm font-semibold text-[#1D4ED8] shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
             We're continuously improving Hyper Learning based on student
             feedback.
           </div>

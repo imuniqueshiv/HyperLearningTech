@@ -41,11 +41,11 @@ const universities = [
 
 export default function Universities() {
   return (
-    <section className="relative overflow-hidden border-b border-border py-24">
-      {/* Background */}
+    <section className="relative overflow-hidden border-b border-border bg-background py-24">
+      {/* Background Glows - No grid pattern */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute left-10 top-20 h-80 w-80 rounded-full bg-blue-500/5 blur-3xl" />
-        <div className="absolute right-10 bottom-10 h-80 w-80 rounded-full bg-violet-500/5 blur-3xl" />
+        <div className="absolute left-[-10%] top-20 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px]" />
+        <div className="absolute right-[-10%] bottom-0 h-[500px] w-[500px] rounded-full bg-indigo-500/5 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -57,18 +57,19 @@ export default function Universities() {
           viewport={{ once: true }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
+          <span className="inline-flex items-center gap-2 rounded-full border border-blue-200/60 bg-blue-50/80 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
+            <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
             University Support
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          <h2 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
             Learn Across
-            <span className="block bg-gradient-to-r from-blue-500 via-cyan-400 to-violet-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#1D4ED8] to-indigo-600 bg-clip-text text-transparent">
               Universities
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-slate-400">
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             Hyper Learning is designed to evolve into a multi-university
             learning platform. Start with RGPV and expand to universities across
             India.
@@ -87,24 +88,24 @@ export default function Universities() {
                 delay: index * 0.1,
               }}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-950/60 p-8 backdrop-blur-xl transition-all duration-300 hover:border-blue-500/30 hover:bg-slate-950"
+              className="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
             >
-              {/* Glow */}
+              {/* Hover Glow */}
               <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/10 blur-3xl" />
+                <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
               </div>
 
               {/* Badge */}
               <div className="relative z-10 mb-6 flex items-center justify-between">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-[#1D4ED8] dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
                   <GraduationCap className="h-7 w-7" />
                 </div>
 
                 <span
-                  className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                  className={`rounded-full border px-3 py-1 text-xs font-semibold ${
                     university.status === "Available"
-                      ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                      : "bg-orange-500/10 text-orange-400 border border-orange-500/20"
+                      ? "border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400"
+                      : "border-orange-200 bg-orange-50 text-orange-700 dark:border-orange-500/20 dark:bg-orange-500/10 dark:text-orange-400"
                   }`}
                 >
                   {university.status}
@@ -113,15 +114,15 @@ export default function Universities() {
 
               {/* Content */}
               <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-white">
+                <h3 className="text-3xl font-bold text-foreground">
                   {university.name}
                 </h3>
 
-                <p className="mt-2 text-sm text-slate-500">
+                <p className="mt-2 text-sm text-muted-foreground">
                   {university.fullName}
                 </p>
 
-                <p className="mt-6 leading-7 text-slate-400">
+                <p className="mt-6 leading-7 text-muted-foreground">
                   {university.description}
                 </p>
 
@@ -129,7 +130,7 @@ export default function Universities() {
                   {university.branches.map((branch) => (
                     <span
                       key={branch}
-                      className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-xs text-slate-300"
+                      className="rounded-full border border-border bg-muted/30 px-3 py-1 text-xs font-medium text-muted-foreground"
                     >
                       {branch}
                     </span>
@@ -139,13 +140,13 @@ export default function Universities() {
                 {university.status === "Available" ? (
                   <Link
                     href="/subjects"
-                    className="mt-8 inline-flex items-center gap-2 font-medium text-blue-400 transition-colors hover:text-blue-300"
+                    className="mt-8 inline-flex items-center gap-2 font-semibold text-[#1D4ED8] transition-colors hover:text-[#1E40AF] dark:text-blue-400 dark:hover:text-blue-300"
                   >
                     Explore University
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 ) : (
-                  <div className="mt-8 inline-flex items-center gap-2 text-slate-500">
+                  <div className="mt-8 inline-flex items-center gap-2 text-muted-foreground">
                     <Sparkles className="h-4 w-4" />
                     Planned Expansion
                   </div>
@@ -154,47 +155,6 @@ export default function Universities() {
             </motion.div>
           ))}
         </div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mt-20 rounded-3xl border border-slate-800 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-10"
-        >
-          <div className="grid items-center gap-8 lg:grid-cols-2">
-            <div>
-              <h3 className="text-3xl font-bold text-white">
-                Building The Future Of Academic Learning
-              </h3>
-
-              <p className="mt-4 text-lg text-slate-400">
-                Starting with RGPV and expanding toward a unified AI-powered
-                platform supporting engineering students across multiple
-                universities.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-                <BookOpen className="mb-3 h-6 w-6 text-blue-400" />
-                <h4 className="font-semibold text-white">AI Notes</h4>
-                <p className="mt-1 text-sm text-slate-400">
-                  Topic-wise learning
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-                <GraduationCap className="mb-3 h-6 w-6 text-violet-400" />
-                <h4 className="font-semibold text-white">Universities</h4>
-                <p className="mt-1 text-sm text-slate-400">
-                  Multi-campus support
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -6,11 +6,13 @@ import {
   BrainCircuit,
   FileText,
   GraduationCap,
+  Sparkles,
+  CheckCircle2,
 } from "lucide-react";
 
 const stats = [
   {
-    title: "5000+",
+    title: "500+",
     subtitle: "Previous Year Questions",
     icon: FileText,
   },
@@ -32,109 +34,157 @@ const stats = [
 ];
 
 export default function Stats() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <section className="relative border-b border-border py-24">
+    <section className="relative overflow-hidden border-b border-border bg-background py-24">
+      {/* Background Glows - No grid pattern */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/4 top-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />
-        <div className="absolute right-1/4 bottom-10 h-64 w-64 rounded-full bg-violet-500/5 blur-3xl" />
+        <div className="absolute left-[-10%] top-[-20%] h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px]" />
+        <div className="absolute bottom-[-20%] right-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-500/5 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-16 max-w-3xl text-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
         >
-          <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
-            Platform Statistics
-          </span>
+          {/* Header */}
+          <div className="mx-auto mb-20 max-w-3xl text-center">
+            <motion.div variants={itemVariants}>
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-200/60 bg-blue-50/80 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
+                <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                Platform Statistics
+              </span>
+            </motion.div>
 
-          <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-5xl">
-            Built For Modern Engineering Students
-          </h2>
+            <motion.h2
+              variants={itemVariants}
+              className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl"
+            >
+              Everything You Need
+              <br />
+              <span className="bg-gradient-to-r from-[#1D4ED8] to-indigo-600 bg-clip-text text-transparent">
+                To Learn With Clarity
+              </span>
+            </motion.h2>
 
-          <p className="mt-5 text-lg text-slate-400">
-            Everything students need to learn, revise, practice, and prepare
-            efficiently for RGPV examinations.
-          </p>
-        </motion.div>
-
-        {/* Stats Grid */}
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon;
-
-            return (
-              <motion.div
-                key={stat.title}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                viewport={{ once: true }}
-                className="group relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-950/60 p-8 backdrop-blur-xl transition-all duration-300 hover:border-blue-500/30 hover:bg-slate-950"
-              >
-                {/* Glow */}
-                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-500/10 blur-3xl" />
-                </div>
-
-                {/* Icon */}
-                <div className="relative z-10 mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
-                  <Icon className="h-7 w-7" />
-                </div>
-
-                {/* Number */}
-                <h3 className="relative z-10 text-5xl font-extrabold tracking-tight text-white">
-                  {stat.title}
-                </h3>
-
-                {/* Label */}
-                <p className="relative z-10 mt-3 text-base text-slate-400">
-                  {stat.subtitle}
-                </p>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        {/* Bottom Strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-16 rounded-3xl border border-slate-800 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8"
-        >
-          <div className="grid gap-8 text-center md:grid-cols-3">
-            <div>
-              <h4 className="text-2xl font-bold text-white">AI Tutor</h4>
-              <p className="mt-2 text-slate-400">
-                Interactive learning with topic-based AI explanations and
-                follow-up questions.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-bold text-white">Mapped PYQs</h4>
-              <p className="mt-2 text-slate-400">
-                Previous year questions connected directly with syllabus topics.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-bold text-white">Smart Revision</h4>
-              <p className="mt-2 text-slate-400">
-                Learn faster through structured notes, summaries, and exam
-                focused content.
-              </p>
-            </div>
+            <motion.p
+              variants={itemVariants}
+              className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
+            >
+              Hyper Learning brings together previous year questions,
+              AI-powered explanations, syllabus mapping, and smart revision
+              tools in one focused learning platform.
+            </motion.p>
           </div>
+
+          {/* Stats Cards */}
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {stats.map((stat) => {
+              const Icon = stat.icon;
+
+              return (
+                <motion.div
+                  key={stat.title}
+                  variants={itemVariants}
+                  className="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
+                >
+                  <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
+                  </div>
+
+                  <div className="relative z-10 mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 to-indigo-50 text-[#1D4ED8] dark:border-blue-500/20 dark:from-blue-500/10 dark:to-indigo-500/10 dark:text-blue-400">
+                    <Icon className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+
+                  <h3 className="relative z-10 text-4xl font-black tracking-tight text-foreground md:text-5xl">
+                    {stat.title}
+                  </h3>
+
+                  <p className="relative z-10 mt-3 font-medium text-muted-foreground">
+                    {stat.subtitle}
+                  </p>
+                </motion.div>
+              );
+            })}
+          </div>
+
+          {/* Bottom Feature Strip */}
+          <motion.div
+            variants={itemVariants}
+            className="relative mt-16 overflow-hidden rounded-[2rem] border border-border bg-background/80 p-8 shadow-xl backdrop-blur-sm md:p-12"
+          >
+            <div className="grid gap-10 md:grid-cols-3 md:divide-x md:divide-border md:gap-0">
+              <div className="text-center md:pr-10 md:text-left">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#1D4ED8] dark:bg-blue-500/10 dark:text-blue-400">
+                  <BrainCircuit className="h-5 w-5" />
+                </div>
+
+                <h4 className="text-xl font-bold text-foreground">
+                  AI Tutor
+                </h4>
+
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Interactive learning with topic-based explanations,
+                  follow-up questions, and instant concept clarification.
+                </p>
+              </div>
+
+              <div className="text-center md:px-10 md:text-left">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#1D4ED8] dark:bg-blue-500/10 dark:text-blue-400">
+                  <FileText className="h-5 w-5" />
+                </div>
+
+                <h4 className="text-xl font-bold text-foreground">
+                  Mapped PYQs
+                </h4>
+
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Previous year questions connected directly with syllabus
+                  topics, reducing unnecessary searching and saving time.
+                </p>
+              </div>
+
+              <div className="text-center md:pl-10 md:text-left">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#1D4ED8] dark:bg-blue-500/10 dark:text-blue-400">
+                  <CheckCircle2 className="h-5 w-5" />
+                </div>
+
+                <h4 className="text-xl font-bold text-foreground">
+                  Smart Revision
+                </h4>
+
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Learn faster through structured notes, concise summaries,
+                  and highly targeted exam-focused content.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
