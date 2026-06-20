@@ -2,6 +2,7 @@
 
 > An AI-powered academic learning platform designed to transform how students learn, revise, and prepare for examinations through intelligent content generation, syllabus-driven learning, previous year question analysis, and personalized AI assistance.
 
+![Hyper Learning Hero Section](public/HyperLearningv3Hero.png)
 ---
 
 ## 🌟 Vision
