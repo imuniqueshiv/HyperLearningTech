@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, BookOpen, BrainCircuit, Sparkles, CheckCircle2 } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowRight, BrainCircuit, Sparkles, CheckCircle2 } from "lucide-react";
+import { motion, Variants } from "framer-motion";
 
 export default function Hero() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -16,10 +16,20 @@ export default function Hero() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+};
 
   return (
     <section className="relative overflow-hidden border-b border-border bg-background">
