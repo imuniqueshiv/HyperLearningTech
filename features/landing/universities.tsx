@@ -18,6 +18,7 @@ const universities = [
       "Access syllabus, AI-generated notes, mapped PYQs, and exam preparation resources for engineering programs.",
     branches: ["AIML", "CSE", "CSIT", "CY", "IT"],
     status: "Available",
+    href: "/rgpv",
   },
   {
     id: "coming-soon-1",
@@ -27,6 +28,7 @@ const universities = [
       "Future expansion planned with syllabus mapping, PYQs, and AI-powered learning resources.",
     branches: ["Coming Soon"],
     status: "Coming Soon",
+    href: "#",
   },
   {
     id: "coming-soon-2",
@@ -36,6 +38,7 @@ const universities = [
       "Planned support for engineering students with AI-assisted learning workflows.",
     branches: ["Coming Soon"],
     status: "Coming Soon",
+    href: "#",
   },
 ];
 
@@ -139,7 +142,7 @@ export default function Universities() {
 
                 {university.status === "Available" ? (
                   <Link
-                    href="/subjects"
+                    href={university.href}
                     className="mt-8 inline-flex items-center gap-2 font-semibold text-[#1D4ED8] transition-colors hover:text-[#1E40AF] dark:text-blue-400 dark:hover:text-blue-300"
                   >
                     Explore University
