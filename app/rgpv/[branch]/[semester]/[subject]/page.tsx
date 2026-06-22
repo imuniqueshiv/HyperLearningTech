@@ -1,11 +1,12 @@
 import Link from "next/link";
 import {
+  ArrowRight,
   BookOpen,
   FileText,
-  BrainCircuit,
-  ArrowRight,
-  GraduationCap,
 } from "lucide-react";
+
+import { getSyllabus } from "@/lib/content/syllabus";
+import { getPYQs } from "@/lib/content/pyqs";
 
 interface SubjectPageProps {
   params: Promise<{
@@ -18,9 +19,17 @@ interface SubjectPageProps {
 export default async function SubjectPage({
   params,
 }: SubjectPageProps) {
-  const { branch, semester, subject } = await params;
+  const { branch, semester, subject } =
+    await params;
 
-  const subjectCode = subject.toUpperCase();
+  const syllabus = await getSyllabus(subject);
+  const pyqs = await getPYQs(subject);
+
+  const subjectTitle =
+    syllabus?.subject?.title ||
+    subject.toUpperCase();
+
+  const papers = pyqs?.papers || [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -28,6 +37,7 @@ export default async function SubjectPage({
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 -z-10">
           <div className="absolute left-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
+
           <div className="absolute right-[-10%] bottom-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
         </div>
 
@@ -38,165 +48,88 @@ export default async function SubjectPage({
             </span>
 
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-6xl">
-              {subjectCode}
+              {subjectTitle}
             </h1>
 
             <p className="mt-4 text-lg text-muted-foreground">
-              Branch:{" "}
-              <span className="font-semibold uppercase text-foreground">
-                {branch}
-              </span>
-              {" • "}
-              Semester:{" "}
-              <span className="font-semibold uppercase text-foreground">
-                {semester}
-              </span>
+              {branch.toUpperCase()} •{" "}
+              {semester.toUpperCase()}
             </p>
 
             <p className="mt-6 max-w-2xl text-muted-foreground">
-              Access syllabus, previous year questions, AI notes,
-              topic-wise learning resources, and Hyper AI assistance.
+              Start with syllabus topics and
+              prepare using mapped previous year
+              questions.
             </p>
           </div>
         </div>
       </section>
+{/* Syllabus CTA */}
+<section className="py-8">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="flex justify-center">
+      <Link
+        href={`/rgpv/${branch}/${semester}/${subject}/syllabus`}
+        className="group inline-flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-5 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
+      >
+        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10">
+          <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+        </div>
 
-      {/* Main Actions */}
+        <span className="text-lg font-semibold text-foreground">
+          Subject Syllabus
+        </span>
+
+        <ArrowRight className="h-6 w-6 text-blue-600" />
+      </Link>
+    </div>
+  </div>
+</section>
+
+      {/* PYQs */}
+          {/* PYQ Section */}
       <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-3">
-
-            {/* Syllabus */}
-            <Link
-              href={`/rgpv/${branch}/${semester}/${subject}/syllabus`}
-              className="group rounded-3xl border border-border bg-card p-8 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10">
-                <BookOpen className="h-7 w-7 text-blue-600 dark:text-blue-400" />
-              </div>
-
-              <h3 className="mt-6 text-2xl font-bold text-foreground">
-                Syllabus
-              </h3>
-
-              <p className="mt-3 text-muted-foreground">
-                Browse units, topics, learning resources,
-                AI notes, and structured content.
-              </p>
-
-              <div className="mt-6 flex items-center gap-2 text-blue-600 dark:text-blue-400">
-                Open
-                <ArrowRight className="h-4 w-4" />
-              </div>
-            </Link>
-
-            {/* PYQs */}
-            <Link
-              href={`/rgpv/${branch}/${semester}/${subject}/pyqs`}
-              className="group rounded-3xl border border-border bg-card p-8 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10">
-                <FileText className="h-7 w-7 text-blue-600 dark:text-blue-400" />
-              </div>
-
-              <h3 className="mt-6 text-2xl font-bold text-foreground">
-                Previous Year Questions
-              </h3>
-
-              <p className="mt-3 text-muted-foreground">
-                Access year-wise papers, question analysis,
-                important trends, and solutions.
-              </p>
-
-              <div className="mt-6 flex items-center gap-2 text-blue-600 dark:text-blue-400">
-                Open
-                <ArrowRight className="h-4 w-4" />
-              </div>
-            </Link>
-
-            {/* Hyper AI */}
-            <Link
-              href={`/rgpv/${branch}/${semester}/${subject}/ai`}
-              className="group rounded-3xl border border-border bg-card p-8 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10">
-                <BrainCircuit className="h-7 w-7 text-blue-600 dark:text-blue-400" />
-              </div>
-
-              <h3 className="mt-6 text-2xl font-bold text-foreground">
-                Hyper AI
-              </h3>
-
-              <p className="mt-3 text-muted-foreground">
-                Ask questions, generate notes,
-                simplify concepts, and learn faster.
-              </p>
-
-              <div className="mt-6 flex items-center gap-2 text-blue-600 dark:text-blue-400">
-                Open
-                <ArrowRight className="h-4 w-4" />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Overview */}
-      <section className="border-t border-border py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-10">
-            <h2 className="text-3xl font-bold text-foreground">
-              Quick Overview
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl font-bold text-foreground">
+              Previous Year Question Papers
             </h2>
-
-            <p className="mt-3 text-muted-foreground">
-              Everything you need for this subject.
-            </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-4">
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <BookOpen className="h-8 w-8 text-blue-600" />
-              <h3 className="mt-4 text-xl font-bold text-foreground">
-                5 Units
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Structured Learning
+          {papers.length === 0 ? (
+            <div className="rounded-3xl border border-border bg-card p-10 text-center">
+              <p className="text-muted-foreground">
+                No previous year papers available.
               </p>
             </div>
-
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <FileText className="h-8 w-8 text-blue-600" />
-              <h3 className="mt-4 text-xl font-bold text-foreground">
-                PYQs
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Exam Preparation
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <BrainCircuit className="h-8 w-8 text-blue-600" />
-              <h3 className="mt-4 text-xl font-bold text-foreground">
-                Hyper AI
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Learning Assistant
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <GraduationCap className="h-8 w-8 text-blue-600" />
-              <h3 className="mt-4 text-xl font-bold text-foreground">
-                Notes
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Topic-wise Content
-              </p>
-            </div>
-          </div>
+          ) : (
+           <div className="grid gap-5 md:grid-cols-2">
+  {papers.map((paper, index) => (
+    <Link
+      key={`${paper.exam}-${index}`}
+     href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${paper.month.toLowerCase()}-${paper.year}`}
+      className="group rounded-2xl border border-border bg-card px-6 py-5 transition hover:border-blue-500/30"
+    >
+      <div className="flex items-center gap-4">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10">
+          <FileText className="h-5 w-5 text-blue-600 dark:text-blue-400" />
         </div>
-      </section>
-    </main>
+
+        <div>
+          <h3 className="text-lg font-semibold text-foreground">
+            RGPV {paper.month} - {paper.year}
+          </h3>
+
+          <p className="text-sm text-muted-foreground">
+            {paper.questions?.length || 0} Questions
+          </p>
+        </div>
+      </div>
+    </Link>
+  ))}
+</div>
+          )}
+        </div>
+      </section>    </main>
   );
 }

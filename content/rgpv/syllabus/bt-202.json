@@ -6,9 +6,7 @@
     "title": "BT-202 – Mathematics-II",
     "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
     "scheme": "New Scheme Based On AICTE Flexible Curricula",
-    "credits": 4,
-    "semester": 2,
-    "commonTo": "All Disciplines"
+    "semester": 2
   },
   "modules": [
     {
@@ -16,7 +14,16 @@
       "number": 1,
       "title": "Ordinary Differential Equations I",
       "hours": 6,
-      "description": "Differential Equations of First Order and First Degree (Leibnitz linear, Bernoulli's, Exact), Differential Equations of First Order and Higher Degree, Higher order differential equations with constants coefficients, Homogeneous Linear Differential equations, Simultaneous Differential Equations.",
+      "topics": [
+        "Differential Equations of First Order and First Degree",
+        "Leibnitz linear",
+        "Bernoulli's",
+        "Exact",
+        "Differential Equations of First Order and Higher Degree",
+        "Higher order differential equations with constants coefficients",
+        "Homogeneous Linear Differential equations",
+        "Simultaneous Differential Equations"
+      ],
       "questionIds": [
         "bt202_nov2022_q1",
         "bt202_nov2022_q2",
@@ -50,7 +57,14 @@
       "number": 2,
       "title": "Ordinary Differential Equations II",
       "hours": 8,
-      "description": "Second order linear differential equations with variable coefficients, Method of variation of parameters, Power series solutions; Legendre polynomials, Bessel functions of the first kind and their properties.",
+      "topics": [
+        "Second order linear differential equations with variable coefficients",
+        "Method of variation of parameters",
+        "Power series solutions",
+        "Legendre polynomials",
+        "Bessel functions of the first kind",
+        "Properties of Bessel functions"
+      ],
       "questionIds": [
         "bt202_nov2022_q5",
         "bt202_june2023_q5",
@@ -78,7 +92,11 @@
       "number": 3,
       "title": "Partial Differential Equations",
       "hours": 8,
-      "description": "Formulation of Partial Differential equations, Linear and Non-Linear Partial Differential Equations, Homogeneous Linear Partial Differential Equations with Constants Coefficients.",
+      "topics": [
+        "Formulation of Partial Differential equations",
+        "Linear and Non-Linear Partial Differential Equations",
+        "Homogeneous Linear Partial Differential Equations with Constants Coefficients"
+      ],
       "questionIds": [
         "bt202_nov2022_q6",
         "bt202_nov2022_q7",
@@ -109,7 +127,18 @@
       "number": 4,
       "title": "Functions of Complex Variable",
       "hours": 8,
-      "description": "Functions of Complex Variables: Analytic Functions, Harmonic Conjugate, Cauchy-Riemann Equations (without proof), Line Integral, Cauchy-Goursat theorem (without proof), Cauchy Integral formula (without proof), Singular Points, Poles & Residues, Residue Theorem, Application of Residues theorem for Evaluation of Real Integral (Unit Circle).",
+      "topics": [
+        "Analytic Functions",
+        "Harmonic Conjugate",
+        "Cauchy-Riemann Equations",
+        "Line Integral",
+        "Cauchy-Goursat theorem",
+        "Cauchy Integral formula",
+        "Singular Points",
+        "Poles & Residues",
+        "Residue Theorem",
+        "Application of Residues theorem for Evaluation of Real Integral (Unit Circle)"
+      ],
       "questionIds": [
         "bt202_nov2022_q8",
         "bt202_nov2022_q9",
@@ -147,7 +176,20 @@
       "number": 5,
       "title": "Vector Calculus",
       "hours": 10,
-      "description": "Differentiation of Vectors, Scalar and vector point function, Gradient, Geometrical meaning of gradient, Directional Derivative, Divergence and Curl, Line Integral, Surface Integral and Volume Integral, Gauss Divergence, Stokes and Green theorems.",
+      "topics": [
+        "Differentiation of Vectors",
+        "Scalar and vector point function",
+        "Gradient",
+        "Geometrical meaning of gradient",
+        "Directional Derivative",
+        "Divergence and Curl",
+        "Line Integral",
+        "Surface Integral",
+        "Volume Integral",
+        "Gauss Divergence",
+        "Stokes theorem",
+        "Green theorems"
+      ],
       "questionIds": [
         "bt202_nov2022_q12",
         "bt202_nov2022_q13",
