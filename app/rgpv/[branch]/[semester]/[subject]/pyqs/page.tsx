@@ -8,6 +8,8 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import { getPYQs } from "@/lib/content/pyqs";
+
 interface PYQPageProps {
   params: Promise<{
     branch: string;
@@ -21,36 +23,25 @@ export default async function PYQPage({
 }: PYQPageProps) {
   const { branch, semester, subject } = await params;
 
-  const papers = [
-    {
-      year: "2025",
-      session: "December",
-    },
-    {
-      year: "2025",
-      session: "June",
-    },
-    {
-      year: "2024",
-      session: "December",
-    },
-    {
-      year: "2024",
-      session: "June",
-    },
-    {
-      year: "2023",
-      session: "December",
-    },
-    {
-      year: "2023",
-      session: "June",
-    },
-    {
-      year: "2022",
-      session: "December",
-    },
-  ];
+  const pyqs = await getPYQs(subject);
+
+  if (!pyqs) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-background">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-foreground">
+            PYQs Not Found
+          </h1>
+
+          <p className="mt-4 text-muted-foreground">
+            No previous year question papers are available for this subject.
+          </p>
+        </div>
+      </main>
+    );
+  }
+
+  const papers = pyqs.papers ?? [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -68,7 +59,7 @@ export default async function PYQPage({
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-6xl">
-            {subject.toUpperCase()} PYQs
+            {pyqs.subject?.title || subject.toUpperCase()}
           </h1>
 
           <p className="mt-4 text-lg text-muted-foreground">
@@ -90,6 +81,7 @@ export default async function PYQPage({
               <h3 className="text-3xl font-bold text-foreground">
                 {papers.length}
               </h3>
+
               <p className="mt-2 text-muted-foreground">
                 Papers Available
               </p>
@@ -99,6 +91,7 @@ export default async function PYQPage({
               <h3 className="text-3xl font-bold text-foreground">
                 2022-25
               </h3>
+
               <p className="mt-2 text-muted-foreground">
                 Coverage
               </p>
@@ -108,6 +101,7 @@ export default async function PYQPage({
               <h3 className="text-3xl font-bold text-foreground">
                 AI
               </h3>
+
               <p className="mt-2 text-muted-foreground">
                 Answer Generator
               </p>
@@ -117,6 +111,7 @@ export default async function PYQPage({
               <h3 className="text-3xl font-bold text-foreground">
                 Smart
               </h3>
+
               <p className="mt-2 text-muted-foreground">
                 Analysis
               </p>
@@ -125,7 +120,7 @@ export default async function PYQPage({
         </div>
       </section>
 
-      {/* PYQ Papers */}
+      {/* Papers */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
@@ -139,36 +134,67 @@ export default async function PYQPage({
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {papers.map((paper) => (
-              <div
-                key={`${paper.year}-${paper.session}`}
-                className="rounded-3xl border border-border bg-card p-7"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-500/10">
-                    <Calendar className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            {papers.map((paper: any, index: number) => {
+              // Safely get session and year with fallbacks
+              const session = paper?.month || "Unknown";
+              const year = paper?.year || "N/A";
+              const questionCount = paper?.questions?.length || 0;
+              
+              // Create a safe slug for the URL
+              const slug = `${session.toLowerCase()}-${year}`.replace(/\s+/g, '-');
+
+              return (
+                <div
+                  key={paper?.id || index}
+                  className="rounded-3xl border border-border bg-card p-7"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-500/10">
+                      <Calendar className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold text-foreground">
+                        {session}
+                      </h3>
+
+                      <p className="text-sm text-muted-foreground">
+                        {year}
+                      </p>
+                    </div>
                   </div>
 
-                  <div>
-                    <h3 className="font-bold text-foreground">
-                      {paper.session}
-                    </h3>
-
+                  <div className="mt-6">
                     <p className="text-sm text-muted-foreground">
-                      {paper.year}
+                      {questionCount} Questions
                     </p>
                   </div>
-                </div>
 
-                <div className="mt-8">
-                  <button className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-medium text-foreground">
-                    View Paper
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
+                  <div className="mt-8">
+                    <Link
+                      href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${slug}`}
+                      className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-blue-500/30 hover:bg-blue-500/5"
+                    >
+                      View Paper
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
+
+          {papers.length === 0 && (
+            <div className="rounded-3xl border border-border bg-card p-12 text-center">
+              <FileText className="mx-auto h-12 w-12 text-muted-foreground" />
+              <h3 className="mt-4 text-xl font-semibold text-foreground">
+                No Papers Available
+              </h3>
+              <p className="mt-2 text-muted-foreground">
+                Previous year question papers for this subject will be added soon.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -236,6 +262,7 @@ export default async function PYQPage({
               <div>
                 <div className="flex items-center gap-2">
                   <BrainCircuit className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+
                   <span className="font-semibold text-blue-600 dark:text-blue-400">
                     Hyper AI
                   </span>

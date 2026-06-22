@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
@@ -32,7 +32,12 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#00008B]/20 bg-[#00008B]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80">
@@ -79,18 +84,20 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden items-center gap-3 md:flex">
-          {/* Theme Toggle */}
-<button
-  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-  aria-label="Toggle theme"
-  className="relative flex h-10 w-10 items-center justify-center text-white transition-all duration-200 hover:scale-110 hover:text-[#AFC8FF]"
->
-  {theme === "dark" ? (
-    <Sun className="h-5 w-5" />
-  ) : (
-    <Moon className="h-5 w-5" />
-  )}
-</button>
+            {/* Theme Toggle */}
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              aria-label="Toggle theme"
+              className="relative flex h-10 w-10 items-center justify-center text-white transition-all duration-200 hover:scale-110 hover:text-[#AFC8FF]"
+            >
+              {mounted && (
+                theme === "dark" ? (
+                  <Sun className="h-5 w-5" />
+                ) : (
+                  <Moon className="h-5 w-5" />
+                )
+              )}
+            </button>
 
             <Link
               href="/sign-in"
@@ -156,17 +163,21 @@ export default function Navbar() {
               ))}
 
               <div className="mt-4 flex flex-col gap-3">
-                {/* Mobile Theme Toggle */}
+                {/* Mobile Theme Toggle - Icon Only */}
                 <button
                   onClick={() => {
                     setTheme(theme === "dark" ? "light" : "dark");
                     setIsOpen(false);
                   }}
-                  className="flex items-center justify-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-center text-[#F4F5F7] transition-all duration-200 hover:bg-white/10"
+                  className="flex items-center justify-center rounded-xl border border-white/20 px-4 py-3 text-[#F4F5F7] transition-all duration-200 hover:bg-white/10"
                 >
-                  <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                  <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                  <span>Toggle Theme</span>
+                  {mounted && (
+                    theme === "dark" ? (
+                      <Sun className="h-5 w-5" />
+                    ) : (
+                      <Moon className="h-5 w-5" />
+                    )
+                  )}
                 </button>
 
                 <Link

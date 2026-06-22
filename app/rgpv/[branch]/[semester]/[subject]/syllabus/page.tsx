@@ -5,6 +5,7 @@ import {
   BrainCircuit,
   CheckCircle2,
 } from "lucide-react";
+import { getSyllabus } from "@/lib/content/syllabus";
 
 interface SyllabusPageProps {
   params: Promise<{
@@ -19,43 +20,51 @@ export default async function SyllabusPage({
 }: SyllabusPageProps) {
   const { branch, semester, subject } = await params;
 
-  const units = [
-    {
-      id: 1,
-      title: "Unit 1",
-      topics: 8,
-      description:
-        "Fundamental concepts, definitions, and introductory topics.",
-    },
-    {
-      id: 2,
-      title: "Unit 2",
-      topics: 7,
-      description:
-        "Core concepts and practical applications of the subject.",
-    },
-    {
-      id: 3,
-      title: "Unit 3",
-      topics: 9,
-      description:
-        "Intermediate concepts and problem-solving techniques.",
-    },
-    {
-      id: 4,
-      title: "Unit 4",
-      topics: 6,
-      description:
-        "Advanced concepts, models, and implementation techniques.",
-    },
-    {
-      id: 5,
-      title: "Unit 5",
-      topics: 7,
-      description:
-        "Modern trends, applications, and future developments.",
-    },
-  ];
+  const syllabus = await getSyllabus(subject);
+
+  if (!syllabus) {
+    return (
+      <main className="min-h-screen bg-background">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center">
+          <h1 className="text-4xl font-bold text-foreground">
+            Syllabus Not Found
+          </h1>
+
+          <p className="mt-4 text-muted-foreground">
+            No syllabus available for {subject.toUpperCase()}
+          </p>
+        </div>
+      </main>
+    );
+  }
+
+  interface Module {
+  id: string;
+  number: number;
+  title: string;
+  description: string;
+  hours: number;
+  questionIds?: string[];
+  predictedQuestionIds?: string[];
+}
+
+const modules: Module[] = syllabus.modules || [];
+
+  interface Module {
+  id: string;
+  number: number;
+  title: string;
+  description: string;
+  hours: number;
+  questionIds?: string[];
+  predictedQuestionIds?: string[];
+}
+
+const totalQuestions = (modules as Module[]).reduce(
+  (total, module) =>
+    total + (module.questionIds?.length || 0),
+  0
+);
 
   return (
     <main className="min-h-screen bg-background">
@@ -73,7 +82,7 @@ export default async function SyllabusPage({
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-6xl">
-            {subject.toUpperCase()}
+            {syllabus.subject?.title || subject.toUpperCase()}
           </h1>
 
           <p className="mt-4 text-lg text-muted-foreground">
@@ -81,8 +90,7 @@ export default async function SyllabusPage({
           </p>
 
           <p className="mt-6 max-w-3xl text-muted-foreground">
-            Explore all units and topics. Every topic can later be connected
-            with AI Notes, Hyper AI explanations, PYQs, and revision resources.
+            {syllabus.subject?.university}
           </p>
         </div>
       </section>
@@ -92,79 +100,116 @@ export default async function SyllabusPage({
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-border bg-card p-6">
-              <h3 className="text-3xl font-bold text-foreground">5</h3>
-              <p className="mt-2 text-muted-foreground">
-                Units
-              </p>
-            </div>
+              <h3 className="text-3xl font-bold text-foreground">
+                {modules.length}
+              </h3>
 
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <h3 className="text-3xl font-bold text-foreground">37+</h3>
               <p className="mt-2 text-muted-foreground">
-                Topics
+                Modules
               </p>
             </div>
 
             <div className="rounded-3xl border border-border bg-card p-6">
               <h3 className="text-3xl font-bold text-foreground">
-                Hyper AI
+                {totalQuestions}
               </h3>
+
               <p className="mt-2 text-muted-foreground">
-                Topic Assistance
+                Linked PYQs
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-border bg-card p-6">
+              <h3 className="text-3xl font-bold text-foreground">
+                {syllabus.subject?.credits || "-"}
+              </h3>
+
+              <p className="mt-2 text-muted-foreground">
+                Credits
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Units */}
+      {/* Modules */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-foreground">
-              Course Units
+              Course Modules
             </h2>
 
             <p className="mt-3 text-muted-foreground">
-              Select a unit to start learning.
+              Explore module-wise syllabus topics and question mappings.
             </p>
           </div>
 
           <div className="space-y-6">
-            {units.map((unit) => (
+            {modules.map(
+  (
+    module: {
+      id: string;
+      number: number;
+      title: string;
+      description: string;
+      hours: number;
+      questionIds?: string[];
+      predictedQuestionIds?: string[];
+    }
+  ) => (
               <div
-                key={unit.id}
+                key={module.id}
                 className="rounded-3xl border border-border bg-card p-8"
               >
                 <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-                  <div>
+                  <div className="flex-1">
                     <div className="flex items-center gap-3">
                       <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-500/10">
                         <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                       </div>
 
-                      <h3 className="text-2xl font-bold text-foreground">
-                        {unit.title}
-                      </h3>
+                      <div>
+                        <h3 className="text-2xl font-bold text-foreground">
+                          Module {module.number}
+                        </h3>
+
+                        <p className="text-blue-600 dark:text-blue-400">
+                          {module.title}
+                        </p>
+                      </div>
                     </div>
 
-                    <p className="mt-4 text-muted-foreground">
-                      {unit.description}
+                    <p className="mt-4 text-muted-foreground leading-7">
+                      {module.description}
                     </p>
+
+                    <div className="mt-5 flex flex-wrap gap-3">
+                      <span className="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground">
+                        {module.hours} Hours
+                      </span>
+
+                      <span className="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground">
+                        {module.questionIds?.length || 0} PYQs
+                      </span>
+
+                      <span className="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground">
+                        {module.predictedQuestionIds?.length || 0} Predicted
+                      </span>
+                    </div>
 
                     <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
                       <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                      {unit.topics} Topics Available
+                      Question Mapping Available
                     </div>
                   </div>
-
-                  <Link
-                    href={`/rgpv/${branch}/${semester}/${subject}/ai`}
-                    className="inline-flex items-center gap-2 rounded-xl bg-[#1D4ED8] px-6 py-3 font-medium text-white transition hover:bg-[#1E40AF]"
-                  >
-                    Learn with Hyper AI
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
+<Link
+  href={`/rgpv/${branch}/${semester}/${subject}/syllabus/module-${module.number}`}
+  className="inline-flex items-center gap-2 rounded-xl bg-[#1D4ED8] px-6 py-3 font-medium text-white transition hover:bg-[#1E40AF]"
+>
+  View Module
+  <ArrowRight className="h-4 w-4" />
+</Link>
                 </div>
               </div>
             ))}
@@ -180,6 +225,7 @@ export default async function SyllabusPage({
               <div>
                 <div className="flex items-center gap-2">
                   <BrainCircuit className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+
                   <span className="font-semibold text-blue-600 dark:text-blue-400">
                     Hyper AI
                   </span>
@@ -191,7 +237,7 @@ export default async function SyllabusPage({
 
                 <p className="mt-3 text-muted-foreground">
                   Ask Hyper AI for explanations, summaries,
-                  notes, examples, and exam-focused answers.
+                  notes, examples, derivations, and exam-focused answers.
                 </p>
               </div>
 
