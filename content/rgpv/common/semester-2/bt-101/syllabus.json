@@ -1,0 +1,272 @@
+{
+  "subject": {
+    "id": "bt-101",
+    "code": "BT-101",
+    "name": "Engineering Chemistry",
+    "title": "BT-101 – Engineering Chemistry",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "I/II",
+    "commonTo": "All Disciplines"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Water – Analysis, Treatments and Industrial Applications",
+      "hours": 4,
+      "topics": [
+        "Sources",
+        "Impurities",
+        "Hardness & its units",
+        "Determination of hardness by EDTA method",
+        "Alkalinity & It's determination",
+        "Related numerical problems"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q1a",
+        "bt101_nov2022_q1b",
+        "bt101_nov2022_q2b",
+        "bt101_dec2023_q1b",
+        "bt101_dec2023_q8a",
+        "bt101_june2024_q1a",
+        "bt101_dec2024_q1a",
+        "bt101_dec2024_q8a",
+        "bt101_june2025_q1b"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q1",
+        "bt101_predicted_q2",
+        "bt101_predicted_q3",
+        "bt101_predicted_q4",
+        "bt101_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Boiler problem & softening methods",
+      "hours": 4,
+      "topics": [
+        "Boiler troubles (Sludge & Scale, Priming & Foaming, Boiler Corrosion, Caustic Embrittlement)",
+        "Softening methods (Lime-Soda, Zeolite and Ion Exchange Methods)",
+        "Related numerical problems"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q2a",
+        "bt101_nov2022_q7",
+        "bt101_dec2023_q1a",
+        "bt101_dec2023_q2a",
+        "bt101_dec2023_q2b",
+        "bt101_dec2023_q8b",
+        "bt101_june2023_q1a",
+        "bt101_june2023_q1b",
+        "bt101_june2023_q2a",
+        "bt101_june2023_q2b",
+        "bt101_june2023_q8c",
+        "bt101_dec2024_q1b",
+        "bt101_dec2024_q2a",
+        "bt101_dec2024_q2b",
+        "bt101_june2024_q1b",
+        "bt101_june2024_q2a",
+        "bt101_june2024_q2b",
+        "bt101_june2025_q1a",
+        "bt101_june2025_q2b",
+        "bt101_june2025_q7"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q6",
+        "bt101_predicted_q7",
+        "bt101_predicted_q8",
+        "bt101_predicted_q9",
+        "bt101_predicted_q10"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Lubricants and Lubrication",
+      "hours": 4,
+      "topics": [
+        "Introduction",
+        "Mechanism of lubrication",
+        "Classification of lubricants",
+        "Significance & determination of Viscosity and Viscosity Index",
+        "Flash & Fire Points",
+        "Cloud & Pour Points",
+        "Aniline Point",
+        "Acid Number",
+        "Saponification Number",
+        "Steam Emulsification Number",
+        "Related numerical problems"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q3",
+        "bt101_dec2023_q3",
+        "bt101_june2023_q3a",
+        "bt101_june2023_q3b",
+        "bt101_june2023_q3c",
+        "bt101_june2024_q3a",
+        "bt101_june2024_q3b",
+        "bt101_dec2024_q3a",
+        "bt101_dec2024_q3b",
+        "bt101_dec2024_q8b",
+        "bt101_june2025_q2a",
+        "bt101_june2025_q3",
+        "bt101_june2025_q5b"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q11",
+        "bt101_predicted_q12",
+        "bt101_predicted_q13",
+        "bt101_predicted_q14",
+        "bt101_predicted_q15"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Polymer & polymerization",
+      "hours": 4,
+      "topics": [
+        "Introduction",
+        "Types of polymerisation",
+        "Classification",
+        "Mechanism of polymerisation (Free radical & Ionic polymerization)",
+        "Thermoplastic & Thermosetting polymers",
+        "Elementary idea of Biodegradable polymers",
+        "Preparation, properties & uses of: PVC, PMMA, Teflon, Nylon 6, Nylon 6:6, Polyester, Phenol formaldehyde, Urea-Formaldehyde, Buna N, Buna S",
+        "Vulcanization of Rubber"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q4a",
+        "bt101_nov2022_q4b",
+        "bt101_nov2022_q5b",
+        "bt101_dec2023_q4a",
+        "bt101_dec2023_q4b",
+        "bt101_dec2023_q8d",
+        "bt101_june2023_q4a",
+        "bt101_june2023_q4b",
+        "bt101_june2024_q4a",
+        "bt101_june2024_q4b",
+        "bt101_june2024_q8b",
+        "bt101_dec2024_q4a",
+        "bt101_dec2024_q4b",
+        "bt101_dec2024_q8c",
+        "bt101_june2025_q4a",
+        "bt101_june2025_q4b"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q16",
+        "bt101_predicted_q17",
+        "bt101_predicted_q18",
+        "bt101_predicted_q19",
+        "bt101_predicted_q20"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Phase equilibrium and Corrosion",
+      "hours": 5,
+      "topics": [
+        "Phase diagram of single component system (Water)",
+        "Phase diagram of binary Eutectic System (Cu-Ag)",
+        "Corrosion: Types",
+        "Corrosion: Mechanisms",
+        "Corrosion: Prevention"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q5a",
+        "bt101_nov2022_q8a",
+        "bt101_dec2023_q5a",
+        "bt101_dec2023_q8c",
+        "bt101_june2023_q5a",
+        "bt101_june2023_q5b",
+        "bt101_june2023_q8a",
+        "bt101_june2024_q5a",
+        "bt101_june2024_q5b",
+        "bt101_june2024_q8a",
+        "bt101_dec2024_q5a",
+        "bt101_dec2024_q5b",
+        "bt101_june2025_q5a"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q21",
+        "bt101_predicted_q22",
+        "bt101_predicted_q23",
+        "bt101_predicted_q24",
+        "bt101_predicted_q25"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Spectroscopic techniques and application",
+      "hours": 6,
+      "topics": [
+        "Principle",
+        "Instrumentation & Applications",
+        "Electronics spectroscopy",
+        "Vibrational & Rotational Spectroscopy of diatomic molecules"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q6a",
+        "bt101_nov2022_q6b",
+        "bt101_nov2022_q8b",
+        "bt101_nov2022_q8c",
+        "bt101_dec2023_q6a",
+        "bt101_dec2023_q6b",
+        "bt101_june2023_q6",
+        "bt101_june2023_q7b",
+        "bt101_june2024_q6",
+        "bt101_june2024_q8c",
+        "bt101_dec2024_q6",
+        "bt101_june2025_q6a",
+        "bt101_june2025_q6b"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q26",
+        "bt101_predicted_q27",
+        "bt101_predicted_q28",
+        "bt101_predicted_q29",
+        "bt101_predicted_q30"
+      ]
+    },
+    {
+      "id": "module-7",
+      "number": 7,
+      "title": "Periodic properties",
+      "hours": 4,
+      "topics": [
+        "Effective Nuclear Charge",
+        "Variations: S, P, d & f Orbital energies of atoms in periodic table",
+        "Electronics Configuration",
+        "Atomic & Ionic sizes",
+        "Electron affinity & Electro negativity",
+        "Polarizability & Oxidation States"
+      ],
+      "questionIds": [
+        "bt101_nov2022_q8d",
+        "bt101_dec2023_q5b",
+        "bt101_dec2023_q7",
+        "bt101_june2023_q7a",
+        "bt101_june2023_q8d",
+        "bt101_june2024_q7",
+        "bt101_june2024_q8d",
+        "bt101_dec2024_q7a",
+        "bt101_dec2024_q7b",
+        "bt101_dec2024_q8d",
+        "bt101_june2025_q8a",
+        "bt101_june2025_q8b"
+      ],
+      "predictedQuestionIds": [
+        "bt101_predicted_q31",
+        "bt101_predicted_q32",
+        "bt101_predicted_q33",
+        "bt101_predicted_q34",
+        "bt101_predicted_q35"
+      ]
+    }
+  ]
+}

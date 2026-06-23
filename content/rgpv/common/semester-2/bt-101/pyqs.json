@@ -1,0 +1,1082 @@
+{
+  "subject": {
+    "id": "bt-101",
+    "code": "BT-101",
+    "name": "Engineering Chemistry",
+    "title": "BT-101 (GS) – Engineering Chemistry",
+    "semester": "I & II",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the principle of EDTA method? Explain the estimation of total hardness of water by complexometric method.",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Calculate the total hardness of a water sample which shows following analysis : Ca(HCO3)2 = 4.86 mg/L; Mg(HCO3)2 = 5.84 mg/L; CaSO4 = 6.8 mg/L and MgSO4 = 8.4 mg/L.",
+              "unit": "Unit 1",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is Caustic embrittlement? How do you prevent it?",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How is portable water disinfected by ozonation?",
+              "unit": "Unit 1",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "Write a note on lubricants with special reference to their (i) classification (ii) mode of action with examples and uses.",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the difference between free radical and ionic polymerization?",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a note on preparation, properties and uses of: i) Bakelite ii) NYLON 6,6",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Differentiate the following with suitable examples. a) Galvanic series and Electrochemical series.",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate the following with suitable examples. b) Thermosetting polymers and Thermoplastic polymers.",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Spectroscopy? Describe the principle, instrumentation process of vibrational and rotational spectroscopy.",
+              "unit": "Unit 6",
+              "type": "theory"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain about Lambert and beer's law.",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "Describe about the following: i) Zeolite process ii) ion-exchange process with neat diagram",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write brief note on (Any two): i) Phase diagram of single component systems ii) Electronic transitions iii) Vibrational modes in IR spectroscopy iv) Electro negativity",
+              "unit": "Unit 5, Unit 6, Unit 7",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the formation and composition of scales in boilers. How are they different from sludge's? What are bad affects?",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A water sample contains the following impurities per liter: CaCl2 = 222 mg; Mg(HCO3)2 = 73 mg; CaSO4 = 6.8 mg; NaCl = 58.5 mg; Ca(NO3)2 = 162 mg and MgSO4 = 73 mg. The sample of lime available is 74% pure and soda is 90% pure. 20% excess chemicals have to be added. Calculate the amount lime and soda required for the treatment of 10000 liters of water.",
+              "unit": "Unit 2",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the hot lime-soda process. What are its advantages?",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write a note on ion-exchange process.",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the mechanism of lubrication that is applied to delicate instruments.",
+              "unit": "Unit 3",
+              "type": "theory"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain about aniline point and saponification Number.",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a short note on the following: i) Functionality ii) Free radical chain polymerization iii) Ionic polymerization",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a note on preparation, properties and uses of the following: i) Phenol-formaldehyde resin ii) Buna-S",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "i)",
+              "text": "Describe the following with suitable examples: Chemical corrosion and Electro chemical corrosion",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "ii)",
+              "text": "Describe the following with suitable examples: Phase diagram of one-component water system.",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Discuss principle, instrumentation and applications of vibrational and rotational spectroscopy.",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How do you explain electro negativity, ionic sizes and electron affinity of s, p-block elements?",
+              "unit": "Unit 7",
+              "type": "theory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State and explain Beer-Lambert's Law.",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write brief note on (Any two): i) Eutectic point ii) Flash point & Fire point iii) Caustic Embrittlement iv) Polarizability",
+              "unit": "Unit 5, Unit 3, Unit 2, Unit 7",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the zeolite process for softening of water.",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "100 ml of a water sample required 18 ml of standard EDTA solution. 20 ml of standard CaCO3 (15g/L) solution required 25 ml of EDTA solution. 100 ml of the sample after boiling required 12 ml of EDTA solution. Calculate the temporary and permanent hardness of the sample.",
+              "unit": "Unit 1",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How is water softened by the lime-soda process? What are its advantages?",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Give a detailed account on the following. i) Caustic embrittlement ii) Boiler corrosion",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "What is Lubricant? With the help of neat diagrams, explain the following criteria of lubricants: i) Viscosity index ii) Flash and fire point",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the preparation, properties and uses of Bakelite.",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a short note on synthetic rubber with a suitable example.",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is meant by a phase diagram? Explain two-component system by taking Cu-Ag system as an example.",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How do you explain electro negativity, ionic sizes and electron affinity of s, p - block elements?",
+              "unit": "Unit 7",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "State and explain beer-Lambert's Law.",
+              "unit": "Unit 6",
+              "type": "theory"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define the following terms: i) Bathochromic shift ii) Hypsochromic shift iii) Hyperchromic shift iv) Chomophore",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "What is periodic Table? Write trends of following in a group and in a period giving suitable reason: i) Ionic size ii) Electro negativity iii) Electro affinity",
+              "unit": "Unit 7",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write brief note on (Any two) i) Alkalinity ii) Scales and sludge's iii) Triple point iv) Urea-formaldehyde",
+              "unit": "Unit 1, Unit 2, Unit 5, Unit 4",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Differentiate between hard water and soft water. What is meant by hardness of water? Write various units to express hardness of water giving their relationship.",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the following terms: i) Blow down process ii) Carry over",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are sludge and scale in boilers? How are they formed? Suggest any two methods to prevent their formation.",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How is water softened by Ion exchange method? Explain in details with a neat diagram.",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is Lubrication? Give classification of lubricants.",
+              "unit": "Unit 3",
+              "type": "theory"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss following properties of lubricant. Giving their significance. i) Viscosity index ii) Pour point and cloud point",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Illustrate free radical mechanism of polymer.",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain about Biodegradable polymers with suitable example.",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain water line corrosion and galvanic corrosion.",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is oxidation corrosion and how does it take place? Describe the mechanism of oxidation corrosion.",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "What is Spectroscopy? Describe about IR spectroscopy by giving principle, instrumentation and applications.",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "What is Periodic Table? Write trends of following in a group and in a period giving suitable reason: i) Electro negativity ii) Atomic size iii) Electron affinity",
+              "unit": "Unit 7",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write brief note on (Any two) i) Phase diagram of single component systems ii) Vulcanized rubber iii) Electronic shifts iv) Oxidation states",
+              "unit": "Unit 5, Unit 4, Unit 6, Unit 7",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Temporary and Permanent hardness water, How it is differentiate? Give suitable examples.",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Write a note on scales and sludges.",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain Ion-exchange process of water softening with neat diagram.",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are boiler troubles? How are they caused? Suggest steps for minimizing the boiler troubles.",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Give short note on mechanism thick film of lubrication process.",
+              "unit": "Unit 3",
+              "type": "theory"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain about flash and fire point and their significance.",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are polymers? Give their classification with examples.",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Give preparation, properties and uses of Bakelite.",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is oxidation corrosion and how does it take place? Describe the mechanism of oxidation corrosion.",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain water line corrosion and galvanic corrosion.",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "What is spectroscopy? Discuss about Ultra-violet spectroscopy principle, instrumentation and applications.",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write short notes on Electro negativity variation in groups and periods.",
+              "unit": "Unit 7",
+              "type": "theory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain about polarisability.",
+              "unit": "Unit 7",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write brief note on (Any two): i) Alkalinity ii) Emulsification number iii) Conducting polymers iv) Atomic and Ionic sizes",
+              "unit": "Unit 1, Unit 3, Unit 4, Unit 7",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Write short note on i) Sludge and Scale ii) Caustic Embrittlement iii) Boiler Corrosion",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "100 ml water sample required 20 ml of N/50 H2SO4 for neutralisation to Phenolphthalein end point. After Methyl Orange was added to this and further acid required was 2.5 ml. Calculate the alkalinity type and extent in terms of CaCO3 equivalent.",
+              "unit": "Unit 1",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "An oil sample under test has a Saybolt Universal Viscosity same as that of Standard Gulf oil (low viscosity standard) and Pennsylvanian oil (high viscosity standard) at 210°F. Their Saybolt Universal Viscosities at 100°F are 61, 758 and 420 seconds, respectively. Calculate viscosity index of the sample.",
+              "unit": "Unit 3",
+              "type": "numerical"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe ion exchange process used for softening of water with neat diagram. A zeolite softener was 90% exhausted by removing the hardness completely when 10,000L of hard water sample passed through it. The exhausted zeolite bed required 200L of 3% NaCl solution for its complete regeneration. Calculate the hardness of water sample.",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "Explain the following properties of the following (any two) i) Aniline Point ii) Cloud and Pour Point iii) Flash and Fire Point",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Differentiate chain growth and step growth polymerization. Explain Free radical and Ionic polymerization with the help of suitable example.",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Distinguish between thermoplastic and thermosetting resins. Give preparation and application of Urea-Formaldehyde and PVC.",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define and explain the terms involved in the phase rule. Draw a neat labelled phase diagram of water system and explain the areas and curves in it. What is the significance of the triple point and meta stable curve in this system?",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the important properties that an efficient lubricant should possess? 1.5 gm of a lubricant oil dissolved in alcohol require 2.4 ml of 0.0125 N alcoholic KOH for neutralization. What is neutralization value of the lubricant? If an oil to be used in machinery should not have neutralization value greater than 8.0, is it safe to use the test sample as a lubricant in the machinery?",
+              "unit": "Unit 3",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How can a combination of UV and IR spectroscopy be used to determine the structure of an unknown organic compound? Illustrate with an example.",
+              "unit": "Unit 6",
+              "type": "theory"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is Electronic spectroscopy? An unknown substance absorbs 40% of the light of wavelength 43.5 nm in a cell of 2 cm dimension when has a concentration of 20 gL−1. Under the similar conditions, what percentage of light will be absorbed by a solution containing 40 gL−1 of the same unknown substance?",
+              "unit": "Unit 6",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "What is Lime Soda process? Calculate the amount of lime and soda required for softening of 20,000 liters of water whose analysis is: Ca(HCO3)2 = 40.0 ppm; Mg(HCO3)2 = 36.5 ppm; CaSO4 = 34.0 ppm; MgSO4 = 30.0 ppm; CaCl2 = 27.75 ppm.",
+              "unit": "Unit 2",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write brief note on (Any two) i) Electro negativity ii) Polarizability iii) Oxidation states",
+              "unit": "Unit 7",
+              "type": "theory"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write brief note on (Any two): i) Electron affinity ii) Effective Nuclear Charge iii) Aufbau rule iv) Atomic and Ionic size",
+              "unit": "Unit 7",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Hardness of water. Explain the various units of hardness and their inter-relationship. Why is EDTA method preferred over other methods for hardness determination?",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the principle of EDTA titration. Calculate the total hardness (in ppm) of a water sample containing: Ca(HCO3)2 = 16.2 mg/L, Mg(HCO3)2 = 7.3 mg/L, MgCl2 = 9.5 mg/L and CaSO4 = 13.6 mg/L.",
+              "unit": "Unit 1",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Compare Zeolite and Ion-Exchange processes for water softening. Discuss why Ion-Exchange is superior for high-pressure boilers.",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is Desalination? Describe the Reverse Osmosis (RO) process with a neat labeled diagram. State its industrial applications.",
+              "unit": "Unit 1",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is periodic table? Write trends of following in a group and in a period giving suitable reasons: (i) electronegativity (ii) electron affinity (iii) atomic size",
+              "unit": "Unit 7",
+              "type": "theory"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write brief note on (any two) : (i) Effective nuclear charge (ii) Polarizability (iii) Oxidation states",
+              "unit": "Unit 7",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the mechanism of Addition and Condensation polymerization with one example each. Define Functionality of a monomer.",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write the synthesis, properties and engineering uses of: (i) Bakelite (ii) PMMA (iii) Neoprene",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define Lubrication. Explain the mechanism of Extreme Pressure Lubrication. Which type of lubricants are used for heavy-duty machinery?",
+              "unit": "Unit 3",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the importance of Viscosity Index. How does it affect the performance of an engine oil in varying temperatures?",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "State the selection rules for IR Spectroscopy. Explain why some molecules are IR Active and some are not. Describe the various types of molecular vibrations.",
+              "unit": "Unit 6",
+              "type": "theory"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the principle of Thin Layer Chromatography (TLC). How is the Rf value calculated and what does it indicate?",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the Differential Aeration Theory of corrosion with the help of Pitting Corrosion example. Why do iron nails rust faster in saline water?",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Sacrificial Anodic Protection? How is it used to protect underground pipelines? Compare it with Impressed Current Cathodic Protection.",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the chemical reactions involved in the Lime-Soda process. Why is a small amount of coagulant (like Alum) often added during this process?",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is lime-soda process? Calculate the requirement of Lime (80% pure) and Soda (90% pure) for treatment of 1,00,000 liters of water containing: Ca(HCO3)2 = 40.5 ppm, Mg(HCO3)2 = 36.5 ppm, MgSO4 = 30 ppm and CaCl2 = 22.2 ppm.",
+              "unit": "Unit 2",
+              "type": "numerical"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

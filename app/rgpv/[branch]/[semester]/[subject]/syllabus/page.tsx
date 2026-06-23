@@ -33,7 +33,7 @@ interface MappedQuestion {
 export default async function SyllabusPage({ params }: SyllabusPageProps) {
   const { branch, semester, subject } = await params;
 
-  const syllabus = await getSyllabus(subject);
+  const syllabus = await getSyllabus(branch, semester, subject);
 
   if (!syllabus) {
     return (
@@ -53,7 +53,7 @@ export default async function SyllabusPage({ params }: SyllabusPageProps) {
 
   const modules: Module[] = syllabus.modules || [];
 
-  const pyqs = await getPYQs(subject);
+  const pyqs = await getPYQs(branch, semester, subject);
 
   return (
     <main className="min-h-screen bg-background">

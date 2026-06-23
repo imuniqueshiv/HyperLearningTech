@@ -153,10 +153,10 @@ export default function AIDemo() {
                     </div>
 
                     <p className="text-sm leading-relaxed text-foreground/80">
-                      Big O notation describes how an algorithm&apos;s execution time
-                      grows as input size increases. For example, Linear Search
-                      has O(n) complexity because it may need to check every
-                      element in the list.
+                      Big O notation describes how an algorithm&apos;s execution
+                      time grows as input size increases. For example, Linear
+                      Search has O(n) complexity because it may need to check
+                      every element in the list.
                     </p>
                   </div>
                 </div>

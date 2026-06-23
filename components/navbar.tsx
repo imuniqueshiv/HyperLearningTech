@@ -7,7 +7,6 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 
-
 const navLinks = [
   {
     label: "Home",
@@ -37,11 +36,11 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-  const timer = setTimeout(() => {
-  setMounted(true);
-  }, 0);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
 
-  return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, []);
 
   return (

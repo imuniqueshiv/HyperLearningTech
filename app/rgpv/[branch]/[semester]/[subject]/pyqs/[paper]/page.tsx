@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { FileText, Calendar, Clock } from "lucide-react";
+import {
+  FileText,
+  Calendar,
+  Clock,
+} from "lucide-react";
 import { getPYQs } from "@/lib/content/pyqs";
 
 interface PaperPageProps {
@@ -12,10 +16,37 @@ interface PaperPageProps {
   }>;
 }
 
+function splitQuestionText(text: string): string[] {
+  const romanPattern = "(?:viii|vii|vi|iv|ix|iii|ii|i|v|x)";
+  const regex = new RegExp(`\\s(${romanPattern})\\)\\s`, "g");
+
+  const matchIndices: number[] = [];
+  let match: RegExpExecArray | null;
+  while ((match = regex.exec(text)) !== null) {
+    matchIndices.push(match.index + 1);
+  }
+
+  if (matchIndices.length === 0) {
+    return [text];
+  }
+
+  const lines: string[] = [];
+  const intro = text.slice(0, matchIndices[0]).trim();
+  if (intro) lines.push(intro);
+
+  for (let i = 0; i < matchIndices.length; i++) {
+    const start = matchIndices[i];
+    const end = i + 1 < matchIndices.length ? matchIndices[i + 1] : text.length;
+    lines.push(text.slice(start, end).trim());
+  }
+
+  return lines;
+}
+
 export default async function PaperPage({ params }: PaperPageProps) {
   const { branch, semester, subject, paper } = await params;
 
-  const pyqs = await getPYQs(subject);
+  const pyqs = await getPYQs(branch, semester, subject);
 
   if (!pyqs) {
     return (
@@ -34,7 +65,8 @@ export default async function PaperPage({ params }: PaperPageProps) {
   }
 
   const selectedPaper = pyqs.papers.find(
-    (p: { exam: string }) => p.exam.toLowerCase().replace(/\s+/g, "-") === paper
+    (p: { year: number; month: string }) =>
+      `${p.month.toLowerCase()}-${p.year}` === paper
   );
 
   if (!selectedPaper) {
@@ -44,7 +76,12 @@ export default async function PaperPage({ params }: PaperPageProps) {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="border-b border-border">
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute left-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
+          <div className="absolute right-[-10%] bottom-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
+        </div>
+
         <div className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
           <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400">
             <FileText className="h-5 w-5" />
@@ -108,16 +145,6 @@ export default async function PaperPage({ params }: PaperPageProps) {
       {/* Questions */}
       <section className="py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-foreground">
-              Question Paper
-            </h2>
-
-            <p className="text-sm text-muted-foreground">
-              Total Questions: {selectedPaper.questions.length}
-            </p>
-          </div>
-
           <div className="space-y-4">
             {selectedPaper.questions.map(
               (
@@ -135,36 +162,49 @@ export default async function PaperPage({ params }: PaperPageProps) {
               ) => (
                 <div
                   key={question.id || index}
-                  className="rounded-2xl border border-border bg-card p-6"
+                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
                 >
-                  <h3 className="text-xl font-bold text-foreground">
-                    {question.questionNumber}
-                  </h3>
+                  <div className="px-6 py-5">
+                    <span className="text-lg font-semibold text-foreground md:text-xl">
+                      {question.questionNumber}
+                    </span>
+                  </div>
 
                   {question.subQuestions?.length ? (
-                    <div className="mt-4 space-y-4">
-                      {question.subQuestions.map((subQuestion) => (
-                        <div
+                    <div className="border-t border-border px-6 py-5">
+                      {question.subQuestions.map((subQuestion, subIndex) => (
+                        <details
                           key={subQuestion.id}
-                          className="rounded-xl border border-border bg-background p-5"
+                          className={`group/sub ${subIndex > 0 ? "mt-6 pt-6 border-t border-border" : ""}`}
                         >
-                          <div className="flex flex-wrap items-center gap-2">
-                            {subQuestion.label && (
-                              <span className="font-semibold text-blue-600 dark:text-blue-400">
-                                {subQuestion.label}
+                          <summary className="cursor-pointer list-none">
+                            <div className="flex flex-wrap items-center gap-2">
+                              {subQuestion.label && (
+                                <span className="font-semibold text-blue-600 dark:text-blue-400">
+                                  {subQuestion.label}
+                                </span>
+                              )}
+
+                              <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
+                                {subQuestion.unit}
                               </span>
-                            )}
+                            </div>
 
-                            <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
-                              {subQuestion.unit}
-                            </span>
-                          </div>
+                            <div className="mt-3 space-y-2">
+                              {splitQuestionText(subQuestion.text).map(
+                                (line, lineIndex) => (
+                                  <p
+                                    key={lineIndex}
+                                    className="text-lg leading-8 text-foreground md:text-xl md:leading-9"
+                                  >
+                                    {line}
+                                  </p>
+                                )
+                              )}
+                            </div>
+                          </summary>
 
-                          <p className="mt-3 text-lg leading-8 text-foreground">
-                            {subQuestion.text}
-                          </p>
-
-                          {/* AI Answer Button - Redirects to Hyper AI */}
+                          {/* AI Answer Button - only shows for this sub-question when opened */}
                           <div className="mt-4">
                             <Link
                               href={`/rgpv/${branch}/${semester}/${subject}/ai?question=${encodeURIComponent(
@@ -175,13 +215,15 @@ export default async function PaperPage({ params }: PaperPageProps) {
                               Check Answer {subQuestion.label} with AI
                             </Link>
                           </div>
-                        </div>
+                        </details>
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-4 text-muted-foreground">
-                      No sub-questions available.
-                    </p>
+                    <div className="border-t border-border px-6 py-5">
+                      <p className="text-muted-foreground">
+                        No sub-questions available.
+                      </p>
+                    </div>
                   )}
                 </div>
               )

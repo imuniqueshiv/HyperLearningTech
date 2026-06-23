@@ -1,0 +1,223 @@
+{
+  "subject": {
+    "id": "bt-202",
+    "code": "BT-202",
+    "name": "Mathematics-II",
+    "title": "BT-202 – Mathematics-II",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "I/II",
+    "commonTo": "All Disciplines"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Ordinary Differential Equations I",
+      "hours": 6,
+      "topics": [
+        "Differential Equations of First Order and First Degree",
+        "Leibnitz linear",
+        "Bernoulli's",
+        "Exact",
+        "Differential Equations of First Order and Higher Degree",
+        "Higher order differential equations with constants coefficients",
+        "Homogeneous Linear Differential equations",
+        "Simultaneous Differential Equations"
+      ],
+      "questionIds": [
+        "bt202_nov2022_q1",
+        "bt202_nov2022_q2",
+        "bt202_nov2022_q3",
+        "bt202_nov2022_q4",
+        "bt202_june2023_q1",
+        "bt202_june2023_q2",
+        "bt202_june2023_q3",
+        "bt202_june2023_q4",
+        "bt202_dec2023_q1",
+        "bt202_dec2023_q2",
+        "bt202_dec2023_q3",
+        "bt202_june2024_q1",
+        "bt202_june2024_q2",
+        "bt202_june2024_q3",
+        "bt202_dec2024_q1",
+        "bt202_dec2024_q2",
+        "bt202_june2025_q1a",
+        "bt202_june2025_q1b"
+      ],
+      "predictedQuestionIds": [
+        "bt202_predicted_q1",
+        "bt202_predicted_q2",
+        "bt202_predicted_q3",
+        "bt202_predicted_q4",
+        "bt202_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Ordinary Differential Equations II",
+      "hours": 8,
+      "topics": [
+        "Second order linear differential equations with variable coefficients",
+        "Method of variation of parameters",
+        "Power series solutions",
+        "Legendre polynomials",
+        "Bessel functions of the first kind",
+        "Properties of Bessel functions"
+      ],
+      "questionIds": [
+        "bt202_nov2022_q5",
+        "bt202_june2023_q5",
+        "bt202_june2023_q6",
+        "bt202_dec2023_q4",
+        "bt202_june2024_q4",
+        "bt202_june2024_q5",
+        "bt202_dec2024_q3",
+        "bt202_dec2024_q4",
+        "bt202_dec2024_q5",
+        "bt202_june2025_q2a",
+        "bt202_june2025_q2b",
+        "bt202_june2025_q3"
+      ],
+      "predictedQuestionIds": [
+        "bt202_predicted_q6",
+        "bt202_predicted_q7",
+        "bt202_predicted_q8",
+        "bt202_predicted_q9",
+        "bt202_predicted_q10"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Partial Differential Equations",
+      "hours": 8,
+      "topics": [
+        "Formulation of Partial Differential equations",
+        "Linear and Non-Linear Partial Differential Equations",
+        "Homogeneous Linear Partial Differential Equations with Constants Coefficients"
+      ],
+      "questionIds": [
+        "bt202_nov2022_q6",
+        "bt202_nov2022_q7",
+        "bt202_june2023_q7",
+        "bt202_june2023_q8",
+        "bt202_dec2023_q5",
+        "bt202_dec2023_q6",
+        "bt202_june2024_q6",
+        "bt202_june2024_q7",
+        "bt202_june2024_q8",
+        "bt202_dec2024_q6",
+        "bt202_dec2024_q7",
+        "bt202_dec2024_q8",
+        "bt202_june2025_q4a",
+        "bt202_june2025_q4b",
+        "bt202_june2025_q5a"
+      ],
+      "predictedQuestionIds": [
+        "bt202_predicted_q11",
+        "bt202_predicted_q12",
+        "bt202_predicted_q13",
+        "bt202_predicted_q14",
+        "bt202_predicted_q15"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Functions of Complex Variable",
+      "hours": 8,
+      "topics": [
+        "Analytic Functions",
+        "Harmonic Conjugate",
+        "Cauchy-Riemann Equations",
+        "Line Integral",
+        "Cauchy-Goursat theorem",
+        "Cauchy Integral formula",
+        "Singular Points",
+        "Poles & Residues",
+        "Residue Theorem",
+        "Application of Residues theorem for Evaluation of Real Integral (Unit Circle)"
+      ],
+      "questionIds": [
+        "bt202_nov2022_q8",
+        "bt202_nov2022_q9",
+        "bt202_nov2022_q10",
+        "bt202_nov2022_q11",
+        "bt202_june2023_q9",
+        "bt202_june2023_q10",
+        "bt202_june2023_q11",
+        "bt202_june2023_q12",
+        "bt202_dec2023_q7",
+        "bt202_dec2023_q8",
+        "bt202_dec2023_q9",
+        "bt202_dec2023_q10",
+        "bt202_june2024_q9",
+        "bt202_june2024_q10",
+        "bt202_june2024_q11",
+        "bt202_june2024_q12",
+        "bt202_dec2024_q9",
+        "bt202_dec2024_q10",
+        "bt202_dec2024_q11",
+        "bt202_june2025_q5b",
+        "bt202_june2025_q6a",
+        "bt202_june2025_q6b"
+      ],
+      "predictedQuestionIds": [
+        "bt202_predicted_q16",
+        "bt202_predicted_q17",
+        "bt202_predicted_q18",
+        "bt202_predicted_q19",
+        "bt202_predicted_q20"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Vector Calculus",
+      "hours": 10,
+      "topics": [
+        "Differentiation of Vectors",
+        "Scalar and vector point function",
+        "Gradient",
+        "Geometrical meaning of gradient",
+        "Directional Derivative",
+        "Divergence and Curl",
+        "Line Integral",
+        "Surface Integral",
+        "Volume Integral",
+        "Gauss Divergence",
+        "Stokes theorem",
+        "Green theorems"
+      ],
+      "questionIds": [
+        "bt202_nov2022_q12",
+        "bt202_nov2022_q13",
+        "bt202_nov2022_q14",
+        "bt202_june2023_q13",
+        "bt202_june2023_q14",
+        "bt202_june2023_q15",
+        "bt202_dec2023_q11",
+        "bt202_dec2023_q12",
+        "bt202_dec2023_q13",
+        "bt202_june2024_q13",
+        "bt202_june2024_q14",
+        "bt202_june2024_q15",
+        "bt202_dec2024_q12",
+        "bt202_dec2024_q13",
+        "bt202_dec2024_q14",
+        "bt202_june2025_q7a",
+        "bt202_june2025_q7b",
+        "bt202_june2025_q8"
+      ],
+      "predictedQuestionIds": [
+        "bt202_predicted_q21",
+        "bt202_predicted_q22",
+        "bt202_predicted_q23",
+        "bt202_predicted_q24",
+        "bt202_predicted_q25"
+      ]
+    }
+  ]
+}

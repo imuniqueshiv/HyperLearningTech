@@ -38,6 +38,20 @@ export default function UniversityHero() {
     },
   };
 
+  const flowSteps = [
+    { icon: GraduationCap, label: "RGPV" },
+    { icon: Building2, label: "All Branches" },
+    { icon: BookOpen, label: "Subjects & Syllabus" },
+    { icon: BrainCircuit, label: "Hyper AI Learning" },
+  ];
+
+  const resources = [
+    "Semester-wise Subjects",
+    "Unit-wise Syllabus",
+    "Previous Year Questions",
+    "Hyper AI Assistance",
+  ];
+
   return (
     <section className="relative overflow-hidden border-b border-border bg-background">
       {/* Background */}{" "}
@@ -111,7 +125,7 @@ export default function UniversityHero() {
               className="mt-16 grid max-w-2xl grid-cols-2 gap-8 border-t border-border/60 pt-10 md:grid-cols-4"
             >
               <div>
-                <p className="text-3xl font-black text-foreground">7+</p>
+                <p className="text-3xl font-black text-foreground">13+</p>
                 <p className="mt-1 text-sm text-muted-foreground">Branches</p>
               </div>
 
@@ -148,14 +162,14 @@ export default function UniversityHero() {
               delay: 0.2,
             }}
           >
-            <div className="rounded-[2rem] border border-border/60 bg-background/80 p-6 shadow-2xl backdrop-blur-xl">
-              <div className="mb-6 flex items-center gap-3 border-b border-border pb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
-                  <Building2 className="h-5 w-5 text-[#1D4ED8]" />
+            <div className="rounded-[1.75rem] border border-border/60 bg-background/80 p-5 shadow-2xl backdrop-blur-xl">
+              <div className="mb-5 flex items-center gap-3 border-b border-border pb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
+                  <Building2 className="h-4.5 w-4.5 text-[#1D4ED8]" />
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-foreground">
+                  <h3 className="text-sm font-semibold text-foreground">
                     Academic Navigation
                   </h3>
 
@@ -165,79 +179,42 @@ export default function UniversityHero() {
                 </div>
               </div>
 
-              <div className="space-y-5">
-                <div className="rounded-2xl border border-border bg-card p-5">
-                  <div className="flex items-center gap-3">
-                    <GraduationCap className="h-5 w-5 text-[#1D4ED8]" />
-                    <span className="font-semibold text-foreground">RGPV</span>
-                  </div>
-                </div>
+              {/* Compact step flow */}
+              <div className="grid grid-cols-2 gap-3">
+                {flowSteps.map((step, i) => {
+                  const Icon = step.icon;
+                  return (
+                    <div
+                      key={step.label}
+                      className="relative rounded-xl border border-border bg-card p-3.5"
+                    >
+                      <div className="flex items-center gap-2">
+                        <Icon className="h-4 w-4 flex-shrink-0 text-[#1D4ED8]" />
+                        <span className="text-sm font-semibold leading-snug text-foreground">
+                          {step.label}
+                        </span>
+                      </div>
 
-                <div className="flex justify-center">
-                  <ArrowRight className="h-5 w-5 text-muted-foreground rotate-90" />
-                </div>
-
-                <div className="rounded-2xl border border-border bg-card p-5">
-                  <div className="flex items-center gap-3">
-                    <Building2 className="h-5 w-5 text-[#1D4ED8]" />
-                    <span className="font-semibold text-foreground">
-                      All Branches
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex justify-center">
-                  <ArrowRight className="h-5 w-5 text-muted-foreground rotate-90" />
-                </div>
-
-                <div className="rounded-2xl border border-border bg-card p-5">
-                  <div className="flex items-center gap-3">
-                    <BookOpen className="h-5 w-5 text-[#1D4ED8]" />
-                    <span className="font-semibold text-foreground">
-                      Subjects & Syllabus
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex justify-center">
-                  <ArrowRight className="h-5 w-5 text-muted-foreground rotate-90" />
-                </div>
-
-                <div className="rounded-2xl border border-border bg-card p-5">
-                  <div className="flex items-center gap-3">
-                    <BrainCircuit className="h-5 w-5 text-[#1D4ED8]" />
-                    <span className="font-semibold text-foreground">
-                      Hyper AI Learning
-                    </span>
-                  </div>
-                </div>
-
-                <div className="rounded-2xl border border-border bg-muted/30 p-5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-[#1D4ED8]">
-                    Available Resources
-                  </p>
-
-                  <div className="mt-4 space-y-3 text-sm font-medium text-foreground/80">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                      Semester-wise Subjects
+                      <span className="absolute -top-2 -left-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#1D4ED8] text-[10px] font-bold text-white">
+                        {i + 1}
+                      </span>
                     </div>
+                  );
+                })}
+              </div>
 
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                      Unit-wise Syllabus
-                    </div>
+              <div className="mt-4 rounded-xl border border-border bg-muted/30 p-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-[#1D4ED8]">
+                  Available Resources
+                </p>
 
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                      Previous Year Questions
+                <div className="mt-3 grid grid-cols-2 gap-y-2.5 gap-x-3 text-sm font-medium text-foreground/80">
+                  {resources.map((resource) => (
+                    <div key={resource} className="flex items-center gap-1.5">
+                      <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0 text-emerald-500" />
+                      <span className="leading-tight">{resource}</span>
                     </div>
-
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                      Hyper AI Assistance
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

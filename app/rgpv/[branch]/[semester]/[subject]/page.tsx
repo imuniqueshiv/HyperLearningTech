@@ -15,8 +15,9 @@ interface SubjectPageProps {
 export default async function SubjectPage({ params }: SubjectPageProps) {
   const { branch, semester, subject } = await params;
 
-  const syllabus = await getSyllabus(subject);
-  const pyqs = await getPYQs(subject);
+  const syllabus = await getSyllabus(branch, semester, subject);
+
+  const pyqs = await getPYQs(branch, semester, subject);
 
   const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
 

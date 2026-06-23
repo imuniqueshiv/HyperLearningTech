@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getSubjectsBySemester } from "@/lib/data/subjects";
-import { BookOpen, FileText, BrainCircuit, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface SemesterPageProps {
   params: Promise<{
@@ -44,41 +44,6 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
               Access syllabus, previous year questions, AI notes, and Hyper AI
               assistance for every subject.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="border-b border-border py-12">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <BookOpen className="h-8 w-8 text-blue-600" />
-
-              <h3 className="mt-4 text-3xl font-bold text-foreground">
-                {subjects.length}
-              </h3>
-
-              <p className="text-muted-foreground">Subjects Available</p>
-            </div>
-
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <FileText className="h-8 w-8 text-blue-600" />
-
-              <h3 className="mt-4 text-3xl font-bold text-foreground">PYQs</h3>
-
-              <p className="text-muted-foreground">Previous Year Papers</p>
-            </div>
-
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <BrainCircuit className="h-8 w-8 text-blue-600" />
-
-              <h3 className="mt-4 text-3xl font-bold text-foreground">
-                Hyper AI
-              </h3>
-
-              <p className="text-muted-foreground">AI Learning Assistant</p>
-            </div>
           </div>
         </div>
       </section>

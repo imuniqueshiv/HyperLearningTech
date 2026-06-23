@@ -1,5 +1,4 @@
 import UniversityHero from "@/components/university/university-hero";
-// import UniversityStats from "@/components/university/university-stats";
 import BranchGrid from "@/components/university/branch-grid";
 import QuickAccess from "@/components/university/quick-access";
 

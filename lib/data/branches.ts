@@ -1,76 +1,93 @@
-// lib/data/branches.ts
+export interface Branch {
+  id: string;
+  slug: string;
+  name: string;
+  status: "Available" | "Coming Soon";
+}
 
-export const branches = [
+export const branches: Branch[] = [
   {
     id: "common",
-    universityId: "rgpv",
-    name: "Common First Year",
     slug: "common",
-    fullName: "Common First Year",
-    subjects: 12,
+    name: "Common First Year",
     status: "Available",
   },
   {
     id: "aiml",
-    universityId: "rgpv",
-    name: "Artificial Intelligence & Machine Learning",
     slug: "aiml",
-    fullName: "Artificial Intelligence & Machine Learning",
-    subjects: 42,
+    name: "Artificial Intelligence & Machine Learning",
     status: "Available",
   },
   {
     id: "cse",
-    universityId: "rgpv",
-    name: "Computer Science Engineering",
     slug: "cse",
-    fullName: "Computer Science Engineering",
-    subjects: 40,
+    name: "Computer Science Engineering",
     status: "Available",
   },
   {
     id: "csit",
-    universityId: "rgpv",
-    name: "Computer Science & Information Technology",
     slug: "csit",
-    fullName: "Computer Science & Information Technology",
-    subjects: 40,
+    name: "Computer Science & Information Technology",
     status: "Available",
   },
   {
-    id: "it",
-    universityId: "rgpv",
-    name: "Information Technology",
-    slug: "it",
-    fullName: "Information Technology",
-    subjects: 40,
+    id: "aids",
+    slug: "aids",
+    name: "Artificial Intelligence & Data Science",
     status: "Available",
   },
   {
-    id: "cy",
-    universityId: "rgpv",
-    name: "Cyber Security",
-    slug: "cy",
-    fullName: "Cyber Security",
-    subjects: 40,
+    id: "csbs",
+    slug: "csbs",
+    name: "Computer Science & Business Systems",
+    status: "Available",
+  },
+  {
+    id: "cscy",
+    slug: "cscy",
+    name: "Computer Science & Cyber Security",
+    status: "Available",
+  },
+  {
+    id: "civil",
+    slug: "civil",
+    name: "Civil Engineering",
+    status: "Available",
+  },
+  {
+    id: "me",
+    slug: "me",
+    name: "Mechanical Engineering",
     status: "Available",
   },
   {
     id: "ec",
-    universityId: "rgpv",
-    name: "Electronics & Communication",
     slug: "ec",
-    fullName: "Electronics & Communication",
-    subjects: 0,
+    name: "Electronics & Communication Engineering",
     status: "Coming Soon",
   },
   {
-    id: "me",
-    universityId: "rgpv",
-    name: "Mechanical Engineering",
-    slug: "me",
-    fullName: "Mechanical Engineering",
-    subjects: 0,
+    id: "ee",
+    slug: "ee",
+    name: "Electrical Engineering",
+    status: "Coming Soon",
+  },
+  {
+    id: "eee",
+    slug: "eee",
+    name: "Electrical & Electronics Engineering",
+    status: "Coming Soon",
+  },
+  {
+    id: "ei",
+    slug: "ei",
+    name: "Electronics & Instrumentation Engineering",
+    status: "Coming Soon",
+  },
+  {
+    id: "ex",
+    slug: "ex",
+    name: "Electronics Engineering",
     status: "Coming Soon",
   },
 ];
