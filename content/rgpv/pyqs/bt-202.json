@@ -1,1252 +1,1252 @@
 {
-    "subject": {
-        "id": "bt-202",
-        "code": "BT-202",
-        "name": "Mathematics-II",
-        "title": "BT-202 (GS) – Mathematics-II",
-        "semester": "I & II",
-        "gradingSystem": "Grading System (GS)",
-        "maxMarks": 70,
-        "time": "3 Hours",
-        "commonInstructions": [
-            "Attempt any five questions.",
-            "All questions carry equal marks."
-        ]
-    },
-    "papers": [
-        {
-            "exam": "June 2025",
-            "year": 2025,
-            "month": "June",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "(e^x+1)\\cos x\\ dx + e^x\\sin x\\ dy = 0",
-                            "text": "Solve (e^x+1)cos x dx + e^x sin x dy = 0",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "(D^2-5D+6)y = 4e^x+5",
-                            "text": "Solve (D²-5D+6)y = 4e^x+5",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "x^2\\frac{d^2y}{dx^2} + 5x\\frac{dy}{dx} + 4y = x\\log x",
-                            "text": "Solve x²(d²y/dx²) + 5x(dy/dx) + 4y = x log x",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "(1-x^2)\\frac{d^2y}{dx^2} - 2x\\frac{dy}{dx} + 2y = 0",
-                            "text": "Solve in series Legendre's differential equation (1-x²)(d²y/dx²) - 2x(dy/dx) + 2y = 0",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "",
-                            "latex": "(D^2+a^2)y = \\tan ax",
-                            "text": "Solve (D²+a²)y = tan ax by using method of variation of parameters",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "z = y^2 + 2f(\\frac{1}{x} + \\log y)",
-                            "text": "Eliminate the arbitrary function f from the relation z = y² + 2f(1/x + log y)",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "\\frac{\\partial^2 z}{\\partial x^2} - \\frac{\\partial^2 z}{\\partial y^2} = x^2y",
-                            "text": "Solve the partial differential equation ∂²z/∂x² - ∂²z/∂y² = x²y",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "(y+z)p + (x+z)q = x+y",
-                            "text": "Solve (y+z)p + (x+z)q = x+y",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "f(z) = e^x(\\cos ky + i\\sin ky)",
-                            "text": "Find all values of K such that f(z) = e^x(cos ky + i sin ky) is analytic",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "\\int_{(0,0)}^{(1,1)}(3x^2+4xy+ix^2)dz",
-                            "text": "Evaluate ∫(3x²+4xy+ix²)dz along y=x² from (0,0) to (1,1)",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "f(z) = \\frac{1}{(z-1)(z-2)^2}",
-                            "text": "If f(z) = 1/((z-1)(z-2)²) find residue of all poles",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "r^n\\vec{r}",
-                            "text": "If r is the position vector of any point in space, prove that r^n r is irrotational",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "\\vec{F} = z\\hat{i} + x\\hat{j} + y\\hat{k}",
-                            "text": "Find the workdone by force F = zî + xĵ + yk̂ when it moves a particle along the arc of curve r = cos t î + sin t ĵ - t k̂ from t=0 to t=2π",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "",
-                            "latex": "\\vec{F}=(x^2-y^2)\\hat{i} + 2xy\\hat{j}",
-                            "text": "Verify Stokes theorem for F = (x²-y²)î + 2xyĵ over the box bounded by planes x=0, x=a, y=0, y=b",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "June 2024",
-            "year": 2024,
-            "month": "June",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "x\\frac{dy}{dx} + y = x^3y^6",
-                            "text": "Solve x(dy/dx) + y = x³y⁶ using Bernoulli's",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "(xe^y+2y)\\frac{dy}{dx} + y e^y = 0",
-                            "text": "Solve the differential equation (xeʸ+2y)(dy/dx) + y eʸ = 0 using Exact method",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "(D^2-6D+13)y = 8e^{3x}\\sin 2x",
-                            "text": "Solve (D²-6D+13)y = 8e³ˣ sin 2x",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "\\frac{d}{dx}[x^n J_n(x)] = x^n J_{n-1}(x)",
-                            "text": "Show that d/dx[xⁿ Jₙ(x)] = xⁿ Jₙ₋₁(x)",
-                            "unit": "Unit 2",
-                            "type": "bessel"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "",
-                            "latex": "(D^2+1)y = x \\sin x",
-                            "text": "Solve (D²+1)y = x sin x using variation of parameters",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "Z=(x+y)\\phi(x^2-y^2)",
-                            "text": "Form the partial differential equation by eliminating the arbitrary functions from Z=(x+y)φ(x²-y²)",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "(D^2-DD'-6D'^2)Z = xy",
-                            "text": "Solve (D²-DD'-6D'²)Z = xy",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "yp-xp=z",
-                            "text": "Solve the partial differential equation yp - xp = z",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "u = e^{-x}(x \\sin y - y \\cos y)",
-                            "text": "Show that u = e⁻ˣ(x sin y - y cos y) is Harmonic",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "\\int_{(0,0)}^{(1,1)} (3x^2+4xy+ix^2)dz",
-                            "text": "Evaluate ∫(3x²+4xy+ix²)dz along y=x² from (0,0) to (1,1)",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "f(z) = \\frac{\\sin^2 z}{(z-\\frac{\\pi}{6})^2}",
-                            "text": "Find the Poles and Residues at each pole of f(z) = sin²z/(z-π/6)²",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "",
-                            "latex": "\\oint_C [(x^2-xy^3)dx+(y^2-2xy)dy]",
-                            "text": "Verify Green's theorem in the plane for ∮[(x²-xy³)dx+(y²-2xy)dy] where C is a square with vertices (0,0), (2,0), (2,2), (0,2)",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "f(x,y,z) = xy^2+yz^3",
-                            "text": "Find the directional derivative of f(x,y,z) = xy²+yz³ at point (2, -1, 1) in the direction of vector î+2ĵ+2k̂",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)i",
-                            "latex": "",
-                            "text": "Write short note on: Cauchy's integral formula",
-                            "unit": "Unit 4",
-                            "type": "theory"
-                        },
-                        {
-                            "id": "q8c",
-                            "label": "b)ii",
-                            "latex": "",
-                            "text": "Write short note on: Solenoidal and Irrotational",
-                            "unit": "Unit 5",
-                            "type": "theory"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "June 2023",
-            "year": 2023,
-            "month": "June",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "\\frac{dy}{dx} = \\cos(x+y) + \\sin(x+y)",
-                            "text": "Solve dy/dx = cos(x+y) + sin(x+y)",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "(1+y^2)dx = (\\tan^{-1}y-x)dy",
-                            "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "\\frac{d^2y}{dx^2} + \\frac{dy}{dx} = (1+e^x)^{-1}",
-                            "text": "Solve d²y/dx² + dy/dx = (1+eˣ)⁻¹",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "\\frac{dx}{dt} - y = e^t, \\frac{dy}{dt} + x = \\sin t",
-                            "text": "Solve dx/dt - y = eᵗ, dy/dt + x = sin t with initial conditions x(0)=1, y(0)=0",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "",
-                            "latex": "x(1-x)y'' + 2(1-2x)y' - 2y = 0",
-                            "text": "Solve the differential equation x(1-x)y'' + 2(1-2x)y' - 2y = 0 using Frobenius method",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "J_{\\frac{1}{2}}(x) = \\sqrt{\\frac{2}{\\pi x}}\\sin x",
-                            "text": "Prove that J₁/₂(x) = √(2/πx) sin x",
-                            "unit": "Unit 2",
-                            "type": "bessel"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "(p^2+q^2)y = qz",
-                            "text": "Solve by Charpit's method, the PDE (p²+q²)y = qz",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "(D^2 - 6DD' + 9D'^2)z = 12x^2 + 36xy",
-                            "text": "Solve (D² - 6DD' + 9D'²)z = 12x² + 36xy",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Prove that an analytic function with constant modulus is constant",
-                            "unit": "Unit 4",
-                            "type": "theory"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "\\oint_C \\frac{\\sin \\pi z^2 + \\cos \\pi z^2}{(z-1)(z-2)}dz",
-                            "text": "Use Cauchy Integral formula to solve ∮[sin πz² + cos πz²]/[(z-1)(z-2)] dz where C is circle |z|=3",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "\\int_0^{2\\pi} \\frac{\\cos 4\\theta}{5+4\\cos\\theta}d\\theta",
-                            "text": "Using complex integration method, solve ∫₀²ᵖⁱ cos4θ/(5+4cosθ) dθ",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "\\int_0^{1+i} (x-y+ix^2)dz",
-                            "text": "Solve ∫₀¹⁺ⁱ (x-y+ix²)dz along real axis from z=0 to z=1 and then along line parallel to imaginary axis from z=1 to z=1+i",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "\\nabla^2 f(r) = f''(r) + \\frac{2}{r}f'(r)",
-                            "text": "Prove that ∇²f(r) = f''(r) + (2/r)f'(r)",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "f(x,y,z) = e^{2x} \\cos yz",
-                            "text": "Find the directional derivative of f(x,y,z) = e²ˣ cos yz at (0,0,0) in direction of tangent to curve x=a sin t, y=a cos t, z=at at t=π/4",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Using Green's theorem, find the area of the region in first quadrant bounded by curves y=x, y=1/x, y=x/4",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "December 2024",
-            "year": 2024,
-            "month": "December",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "(1+y^2)dx = (\\tan^{-1}y-x)dy",
-                            "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "(D^2+3D+2)y = \\sin 3x",
-                            "text": "Solve (D²+3D+2)y = sin 3x",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "\\frac{dx}{dt} - 7x + y = 0, \\frac{dy}{dt} - 2x - 5y = 0",
-                            "text": "Solve the simultaneous equations dx/dt - 7x + y = 0 and dy/dt - 2x - 5y = 0",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "(D^2+1)y=x",
-                            "text": "Solve by the method of variation of parameter (D²+1)y = x",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "(1+x)^2 \\frac{d^2y}{dx^2} + (1+x)\\frac{dy}{dx} + y = \\cos \\log(1+x)",
-                            "text": "Solve (1+x)²(d²y/dx²) + (1+x)(dy/dx) + y = cos log(1+x)",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "J_n(-x) = (-1)^n J_n(x)",
-                            "text": "Show that Jₙ(-x) = (-1)ⁿ Jₙ(x) when n is positive or negative integer",
-                            "unit": "Unit 2",
-                            "type": "bessel"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "px+qy=pq",
-                            "text": "Solve by Charpit's method, px + qy = pq",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "(D^3 - 4D^2D' + 4DD'^2)Z = \\cos(2x+y)",
-                            "text": "Solve the Partial differential equation (D³ - 4D²D' + 4DD'²)Z = cos(2x+y)",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "f(x^2+y^2+z^2, z^2-2xy) = 0",
-                            "text": "Construct a partial differential equation from the relation f(x²+y²+z², z²-2xy) = 0",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "u = e^{-x}(x \\sin y - y \\cos y)",
-                            "text": "Show that u = e⁻ˣ(x sin y - y cos y) is Harmonic",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "f(z) = \\frac{1}{2}\\log(x^2+y^2) + i \\tan^{-1}(\\frac{px}{y})",
-                            "text": "Determine P such that f(z) = ½ log(x²+y²) + i tan⁻¹(px/y) be an analytic function",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "\\oint_C \\frac{z^2e^{-z}}{(z-1)^2}dz",
-                            "text": "Evaluate using Cauchy's theorem ∮ z²e⁻ᶻ/(z-1)² dz where C is |z-1| = ½",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "\\frac{e^z}{z^2+1}",
-                            "text": "Find the poles and residues at each pole of eᶻ/(z²+1)",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "\\emptyset = x^2yz + 4xz^2",
-                            "text": "Find the directional derivative of φ = x²yz + 4xz² at (1, -2, -1) in direction of 2î - ĵ - 2k̂",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "",
-                            "latex": "\\oint_C [(xy+y^2)dx + x^2dy]",
-                            "text": "Verify Green's theorem for ∮[(xy+y²)dx + x²dy] where C is the boundary by y=x and y=x²",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "December 2023",
-            "year": 2023,
-            "month": "December",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "(1+y^2)dx = (\\tan^{-1}y - x)dy",
-                            "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy using Leibnitz linear method",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "(e^y+1)\\cos x dx + e^y \\sin x dy = 0",
-                            "text": "Solve (eʸ+1)cos x dx + eʸ sin x dy = 0",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "(D^2 - 4D + 3)y = \\cos 2x",
-                            "text": "Solve (D² - 4D + 3)y = cos 2x",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "J_{\\frac{1}{2}}(x) = \\sqrt{\\frac{2}{\\pi x}}\\sin x",
-                            "text": "Show that J₁/₂(x) = √(2/πx) sin x",
-                            "unit": "Unit 2",
-                            "type": "bessel"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "",
-                            "latex": "(D^2+9)y = \\tan 3x",
-                            "text": "Solve (D²+9)y = tan 3x by using method of variation of parameters",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "(x-y)p + (x+y)q = 2xz",
-                            "text": "Solve the partial differential equation (x-y)p + (x+y)q = 2xz",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "(p^2+q^2)y = qz",
-                            "text": "Solve (p²+q²)y = qz by using Charpit's method",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "(D^2+4DD'-5D'^2)Z = \\sin(2x+3y)",
-                            "text": "Solve (D²+4DD'-5D'²)Z = sin(2x+3y)",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "f(z) = \\frac{1}{2}\\log(x^2+y^2) + i \\tan^{-1}(\\frac{px}{y})",
-                            "text": "Determine p so that f(z) = ½ log(x²+y²) + i tan⁻¹(px/y) is analytic function",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "u(x,y) = e^x \\cos y",
-                            "text": "Show that u(x,y) = eˣ cos y is Harmonic. Determine its Harmonic conjugate",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "\\frac{Ze^z}{(Z-1)^3}",
-                            "text": "Find the residue of Zeᶻ/(Z-1)³ at its pole",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "",
-                            "latex": "\\vec{F} = x^3\\hat{i} + y^3\\hat{j} + z^3\\hat{k}",
-                            "text": "Verify Gauss divergence theorem for F = x³î + y³ĵ + z³k̂ taken over the cube bounded by x=0, x=a, y=0, y=a, z=0, z=a",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "curl(r^n \\vec{r}) = \\vec{0}",
-                            "text": "Prove that curl(rⁿ r) = 0",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)i",
-                            "latex": "",
-                            "text": "Write short note on: Cauchy Riemann equations",
-                            "unit": "Unit 4",
-                            "type": "theory"
-                        },
-                        {
-                            "id": "q8c",
-                            "label": "b)ii",
-                            "latex": "",
-                            "text": "Write short note on: Stokes theorem",
-                            "unit": "Unit 5",
-                            "type": "theory"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "November 2022",
-            "year": 2022,
-            "month": "November",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "\\cos x \\frac{dy}{dx} = y(\\sin x - y)",
-                            "text": "Solve cos x (dy/dx) = y(sin x - y) using Bernoulli's",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "\\sin 2x \\frac{dy}{dx} - y = \\tan x",
-                            "text": "Solve the Linear differential equation sin 2x (dy/dx) - y = tan x",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "(r + \\sin\\theta - \\cos\\theta)dr + r(\\sin\\theta + \\cos\\theta)d\\theta = 0",
-                            "text": "Solve (r + sinθ - cosθ)dr + r(sinθ + cosθ)dθ = 0",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "(D^3 - 7D^2 + 14D - 8)y = e^x \\cos 2x",
-                            "text": "Solve the differential equation (D³ - 7D² + 14D - 8)y = eˣ cos 2x",
-                            "unit": "Unit 1",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "",
-                            "latex": "(D^2 + 4)y = \\tan 2x",
-                            "text": "Solve (D² + 4)y = tan 2x by using method of variation of parameters",
-                            "unit": "Unit 2",
-                            "type": "ordinary"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "\\frac{\\vec{r}}{r^3}",
-                            "text": "Show that r/r³ is solenoidal",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "(x^2 - yz)\\hat{i} + (y^2 - zx)\\hat{j} + (z^2 - xy)\\hat{k}",
-                            "text": "Show that vector (x²-yz)î + (y²-zx)ĵ + (z²-xy)k̂ is irrotational. Find its scalar potential",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "",
-                            "latex": "\\oint_C [(3x^2 - 8y^2) dx + (4y - 6xy) dy]",
-                            "text": "Verify Green's theorem for ∮[(3x²-8y²)dx + (4y-6xy)dy] where C is region bounded by x=0, y=0 and x+y=1",
-                            "unit": "Unit 5",
-                            "type": "vector"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "f(Z) = Z\\bar{Z}",
-                            "text": "Show that f(Z) = Z\\bar{Z} is differentiable but not analytic at origin",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "u(x,y) = e^{-2x} \\sin 2y",
-                            "text": "Show that u(x,y) = e⁻²ˣ sin 2y is harmonic and determine its Harmonic conjugate",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "\\oint_C \\frac{\\tan z}{z^2-1} dz",
-                            "text": "By Residue theorem, Evaluate ∮ tan z/(z²-1) dz, where C:|Z|=2",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "\\oint_C \\frac{e^{2z}}{(z-1)^2(z-3)} dz",
-                            "text": "Using Cauchy integral theorem, evaluate ∮ e²ᶻ/[(z-1)²(z-3)] dz, where C is circle |Z|=2",
-                            "unit": "Unit 4",
-                            "type": "complex"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "x^2p^2 + y^2q^2 = z^2",
-                            "text": "Solve x²p² + y²q² = z²",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "(D^2 - 4DD' + 4D'^2)Z = \\cos(x-2y)",
-                            "text": "Solve (D² - 4DD' + 4D'²)Z = cos(x-2y)",
-                            "unit": "Unit 3",
-                            "type": "partial"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "December 2025",
-            "year": 2025,
-            "month": "December",
-            "isPredicted": true,
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "(1+y^2)dx=(\\tan^{-1}y-x)dy",
-                            "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy",
-                            "unit": "Unit 1",
-                            "type": "ordinary",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "\\frac{d^2x}{dt^2}-4\\frac{dx}{dt}+4x=y \\quad \\text{and} \\quad \\frac{d^2y}{dt^2}+4\\frac{dy}{dt}+4y=25x+16e^t",
-                            "text": "Solve the simultaneous differential equations: d²x/dt² - 4dx/dt + 4x = y and d²y/dt² + 4dy/dt + 4y = 25x + 16eᵗ",
-                            "unit": "Unit 1",
-                            "type": "ordinary",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "xy''+y'+xy=0",
-                            "text": "Find the series solution of xy''+y'+xy=0 about x=0 by the Frobenius method",
-                            "unit": "Unit 2",
-                            "type": "ordinary",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "\\frac{d^2y}{dx^2}+y=\\tan x",
-                            "text": "Apply the method of variation of parameters to solve d²y/dx² + y = tan x",
-                            "unit": "Unit 1",
-                            "type": "ordinary",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "(D^2-2DD'+D'^2)Z=e^{x+2y}+x^2",
-                            "text": "Solve (D²-2DD'+D'²)Z = eˣ⁺²ʸ + x²",
-                            "unit": "Unit 3",
-                            "type": "partial",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "px+qy=pq",
-                            "text": "Find a complete integral of px + qy = pq",
-                            "unit": "Unit 3",
-                            "type": "partial",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "u=e^x(x\\cos y-y\\sin y)",
-                            "text": "Show that u = eˣ(x cos y - y sin y) is a harmonic function. Find the conjugate function v",
-                            "unit": "Unit 4",
-                            "type": "complex",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "\\oint_C \\frac{e^z}{(z-1)(z-4)}dz",
-                            "text": "Evaluate ∮ eᶻ/[(z-1)(z-4)] dz where C is circle |z|=2 by using Cauchy's Integral Formula",
-                            "unit": "Unit 4",
-                            "type": "complex",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "f(x,y,z)=2x^2+3y^2+z^2",
-                            "text": "Find the directional derivative of f(x,y,z) = 2x²+3y²+z² at point P(2,1,3) in direction of vector a = î - 2k̂",
-                            "unit": "Unit 5",
-                            "type": "vector",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "\\vec{F}=x^2\\hat{i}+y^3\\hat{j}",
-                            "text": "Evaluate ∫ F·dr, where F = x²î + y³ĵ and curve C is arc of parabola y=x² in xy plane from (0,0) to (1,1)",
-                            "unit": "Unit 5",
-                            "type": "vector",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "\\oint_C \\frac{4-3z}{(z-1)(z-2)z}dz",
-                            "text": "Evaluate using residue theorem ∮ (4-3z)/[(z-1)(z-2)z] dz where C is circle |z| = 3/2",
-                            "unit": "Unit 4",
-                            "type": "complex",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "\\int_0^{2\\pi} \\frac{d\\theta}{5-3\\cos\\theta}",
-                            "text": "Evaluate ∫₀²ᵖⁱ dθ/(5-3cosθ)",
-                            "unit": "Unit 4",
-                            "type": "complex",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "\\hat{F}=(x^2-y^2)\\hat{i}+2xy\\hat{j}",
-                            "text": "Verify Stokes' theorem for vector field F = (x²-y²)î + 2xyĵ integrated around rectangle z=0 bounded by x=0, y=0, x=a and y=b",
-                            "unit": "Unit 5",
-                            "type": "vector",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Define Gradient, Divergence and Curl",
-                            "unit": "Unit 5",
-                            "type": "theory",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "(D^2-D'^2-3D+3D')Z=e^{x+2y}+xy",
-                            "text": "Solve (D²-D'²-3D+3D')Z = eˣ⁺²ʸ + xy",
-                            "unit": "Unit 3",
-                            "type": "partial",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "(1+x)^2\\frac{d^2y}{dx^2}+(1+x)\\frac{dy}{dx}+y=4\\cos\\{\\log(1+x)\\}",
-                            "text": "By reducing to homogeneous, solve: (1+x)²(d²y/dx²)+(1+x)(dy/dx)+y = 4 cos{log(1+x)}",
-                            "unit": "Unit 1",
-                            "type": "ordinary",
-                            "isPredicted": true
-                        }
-                    ]
-                }
-            ]
-        }
+  "subject": {
+    "id": "bt-202",
+    "code": "BT-202",
+    "name": "Mathematics-II",
+    "title": "BT-202 (GS) – Mathematics-II",
+    "semester": "I & II",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
     ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "(e^x+1)\\cos x\\ dx + e^x\\sin x\\ dy = 0",
+              "text": "Solve (e^x+1)cos x dx + e^x sin x dy = 0",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "(D^2-5D+6)y = 4e^x+5",
+              "text": "Solve (D²-5D+6)y = 4e^x+5",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "x^2\\frac{d^2y}{dx^2} + 5x\\frac{dy}{dx} + 4y = x\\log x",
+              "text": "Solve x²(d²y/dx²) + 5x(dy/dx) + 4y = x log x",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "(1-x^2)\\frac{d^2y}{dx^2} - 2x\\frac{dy}{dx} + 2y = 0",
+              "text": "Solve in series Legendre's differential equation (1-x²)(d²y/dx²) - 2x(dy/dx) + 2y = 0",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "latex": "(D^2+a^2)y = \\tan ax",
+              "text": "Solve (D²+a²)y = tan ax by using method of variation of parameters",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "z = y^2 + 2f(\\frac{1}{x} + \\log y)",
+              "text": "Eliminate the arbitrary function f from the relation z = y² + 2f(1/x + log y)",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "\\frac{\\partial^2 z}{\\partial x^2} - \\frac{\\partial^2 z}{\\partial y^2} = x^2y",
+              "text": "Solve the partial differential equation ∂²z/∂x² - ∂²z/∂y² = x²y",
+              "unit": "Unit 3",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "(y+z)p + (x+z)q = x+y",
+              "text": "Solve (y+z)p + (x+z)q = x+y",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "f(z) = e^x(\\cos ky + i\\sin ky)",
+              "text": "Find all values of K such that f(z) = e^x(cos ky + i sin ky) is analytic",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "\\int_{(0,0)}^{(1,1)}(3x^2+4xy+ix^2)dz",
+              "text": "Evaluate ∫(3x²+4xy+ix²)dz along y=x² from (0,0) to (1,1)",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "f(z) = \\frac{1}{(z-1)(z-2)^2}",
+              "text": "If f(z) = 1/((z-1)(z-2)²) find residue of all poles",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "r^n\\vec{r}",
+              "text": "If r is the position vector of any point in space, prove that r^n r is irrotational",
+              "unit": "Unit 5",
+              "type": "vector"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "\\vec{F} = z\\hat{i} + x\\hat{j} + y\\hat{k}",
+              "text": "Find the workdone by force F = zî + xĵ + yk̂ when it moves a particle along the arc of curve r = cos t î + sin t ĵ - t k̂ from t=0 to t=2π",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "latex": "\\vec{F}=(x^2-y^2)\\hat{i} + 2xy\\hat{j}",
+              "text": "Verify Stokes theorem for F = (x²-y²)î + 2xyĵ over the box bounded by planes x=0, x=a, y=0, y=b",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "x\\frac{dy}{dx} + y = x^3y^6",
+              "text": "Solve x(dy/dx) + y = x³y⁶ using Bernoulli's",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "(xe^y+2y)\\frac{dy}{dx} + y e^y = 0",
+              "text": "Solve the differential equation (xeʸ+2y)(dy/dx) + y eʸ = 0 using Exact method",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "(D^2-6D+13)y = 8e^{3x}\\sin 2x",
+              "text": "Solve (D²-6D+13)y = 8e³ˣ sin 2x",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\frac{d}{dx}[x^n J_n(x)] = x^n J_{n-1}(x)",
+              "text": "Show that d/dx[xⁿ Jₙ(x)] = xⁿ Jₙ₋₁(x)",
+              "unit": "Unit 2",
+              "type": "bessel"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "latex": "(D^2+1)y = x \\sin x",
+              "text": "Solve (D²+1)y = x sin x using variation of parameters",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "Z=(x+y)\\phi(x^2-y^2)",
+              "text": "Form the partial differential equation by eliminating the arbitrary functions from Z=(x+y)φ(x²-y²)",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "(D^2-DD'-6D'^2)Z = xy",
+              "text": "Solve (D²-DD'-6D'²)Z = xy",
+              "unit": "Unit 3",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "yp-xp=z",
+              "text": "Solve the partial differential equation yp - xp = z",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "u = e^{-x}(x \\sin y - y \\cos y)",
+              "text": "Show that u = e⁻ˣ(x sin y - y cos y) is Harmonic",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "\\int_{(0,0)}^{(1,1)} (3x^2+4xy+ix^2)dz",
+              "text": "Evaluate ∫(3x²+4xy+ix²)dz along y=x² from (0,0) to (1,1)",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "f(z) = \\frac{\\sin^2 z}{(z-\\frac{\\pi}{6})^2}",
+              "text": "Find the Poles and Residues at each pole of f(z) = sin²z/(z-π/6)²",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "latex": "\\oint_C [(x^2-xy^3)dx+(y^2-2xy)dy]",
+              "text": "Verify Green's theorem in the plane for ∮[(x²-xy³)dx+(y²-2xy)dy] where C is a square with vertices (0,0), (2,0), (2,2), (0,2)",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "f(x,y,z) = xy^2+yz^3",
+              "text": "Find the directional derivative of f(x,y,z) = xy²+yz³ at point (2, -1, 1) in the direction of vector î+2ĵ+2k̂",
+              "unit": "Unit 5",
+              "type": "vector"
+            },
+            {
+              "id": "q8b",
+              "label": "b)i",
+              "latex": "",
+              "text": "Write short note on: Cauchy's integral formula",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q8c",
+              "label": "b)ii",
+              "latex": "",
+              "text": "Write short note on: Solenoidal and Irrotational",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "\\frac{dy}{dx} = \\cos(x+y) + \\sin(x+y)",
+              "text": "Solve dy/dx = cos(x+y) + sin(x+y)",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "(1+y^2)dx = (\\tan^{-1}y-x)dy",
+              "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "\\frac{d^2y}{dx^2} + \\frac{dy}{dx} = (1+e^x)^{-1}",
+              "text": "Solve d²y/dx² + dy/dx = (1+eˣ)⁻¹",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\frac{dx}{dt} - y = e^t, \\frac{dy}{dt} + x = \\sin t",
+              "text": "Solve dx/dt - y = eᵗ, dy/dt + x = sin t with initial conditions x(0)=1, y(0)=0",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "latex": "x(1-x)y'' + 2(1-2x)y' - 2y = 0",
+              "text": "Solve the differential equation x(1-x)y'' + 2(1-2x)y' - 2y = 0 using Frobenius method",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "J_{\\frac{1}{2}}(x) = \\sqrt{\\frac{2}{\\pi x}}\\sin x",
+              "text": "Prove that J₁/₂(x) = √(2/πx) sin x",
+              "unit": "Unit 2",
+              "type": "bessel"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "(p^2+q^2)y = qz",
+              "text": "Solve by Charpit's method, the PDE (p²+q²)y = qz",
+              "unit": "Unit 3",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "(D^2 - 6DD' + 9D'^2)z = 12x^2 + 36xy",
+              "text": "Solve (D² - 6DD' + 9D'²)z = 12x² + 36xy",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "Prove that an analytic function with constant modulus is constant",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "\\oint_C \\frac{\\sin \\pi z^2 + \\cos \\pi z^2}{(z-1)(z-2)}dz",
+              "text": "Use Cauchy Integral formula to solve ∮[sin πz² + cos πz²]/[(z-1)(z-2)] dz where C is circle |z|=3",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\int_0^{2\\pi} \\frac{\\cos 4\\theta}{5+4\\cos\\theta}d\\theta",
+              "text": "Using complex integration method, solve ∫₀²ᵖⁱ cos4θ/(5+4cosθ) dθ",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "\\int_0^{1+i} (x-y+ix^2)dz",
+              "text": "Solve ∫₀¹⁺ⁱ (x-y+ix²)dz along real axis from z=0 to z=1 and then along line parallel to imaginary axis from z=1 to z=1+i",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "\\nabla^2 f(r) = f''(r) + \\frac{2}{r}f'(r)",
+              "text": "Prove that ∇²f(r) = f''(r) + (2/r)f'(r)",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "f(x,y,z) = e^{2x} \\cos yz",
+              "text": "Find the directional derivative of f(x,y,z) = e²ˣ cos yz at (0,0,0) in direction of tangent to curve x=a sin t, y=a cos t, z=at at t=π/4",
+              "unit": "Unit 5",
+              "type": "vector"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "",
+              "text": "Using Green's theorem, find the area of the region in first quadrant bounded by curves y=x, y=1/x, y=x/4",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "(1+y^2)dx = (\\tan^{-1}y-x)dy",
+              "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "(D^2+3D+2)y = \\sin 3x",
+              "text": "Solve (D²+3D+2)y = sin 3x",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "\\frac{dx}{dt} - 7x + y = 0, \\frac{dy}{dt} - 2x - 5y = 0",
+              "text": "Solve the simultaneous equations dx/dt - 7x + y = 0 and dy/dt - 2x - 5y = 0",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "(D^2+1)y=x",
+              "text": "Solve by the method of variation of parameter (D²+1)y = x",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "(1+x)^2 \\frac{d^2y}{dx^2} + (1+x)\\frac{dy}{dx} + y = \\cos \\log(1+x)",
+              "text": "Solve (1+x)²(d²y/dx²) + (1+x)(dy/dx) + y = cos log(1+x)",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "J_n(-x) = (-1)^n J_n(x)",
+              "text": "Show that Jₙ(-x) = (-1)ⁿ Jₙ(x) when n is positive or negative integer",
+              "unit": "Unit 2",
+              "type": "bessel"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "px+qy=pq",
+              "text": "Solve by Charpit's method, px + qy = pq",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "(D^3 - 4D^2D' + 4DD'^2)Z = \\cos(2x+y)",
+              "text": "Solve the Partial differential equation (D³ - 4D²D' + 4DD'²)Z = cos(2x+y)",
+              "unit": "Unit 3",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "f(x^2+y^2+z^2, z^2-2xy) = 0",
+              "text": "Construct a partial differential equation from the relation f(x²+y²+z², z²-2xy) = 0",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "u = e^{-x}(x \\sin y - y \\cos y)",
+              "text": "Show that u = e⁻ˣ(x sin y - y cos y) is Harmonic",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "f(z) = \\frac{1}{2}\\log(x^2+y^2) + i \\tan^{-1}(\\frac{px}{y})",
+              "text": "Determine P such that f(z) = ½ log(x²+y²) + i tan⁻¹(px/y) be an analytic function",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\oint_C \\frac{z^2e^{-z}}{(z-1)^2}dz",
+              "text": "Evaluate using Cauchy's theorem ∮ z²e⁻ᶻ/(z-1)² dz where C is |z-1| = ½",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "\\frac{e^z}{z^2+1}",
+              "text": "Find the poles and residues at each pole of eᶻ/(z²+1)",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "\\emptyset = x^2yz + 4xz^2",
+              "text": "Find the directional derivative of φ = x²yz + 4xz² at (1, -2, -1) in direction of 2î - ĵ - 2k̂",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "latex": "\\oint_C [(xy+y^2)dx + x^2dy]",
+              "text": "Verify Green's theorem for ∮[(xy+y²)dx + x²dy] where C is the boundary by y=x and y=x²",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "(1+y^2)dx = (\\tan^{-1}y - x)dy",
+              "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy using Leibnitz linear method",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "(e^y+1)\\cos x dx + e^y \\sin x dy = 0",
+              "text": "Solve (eʸ+1)cos x dx + eʸ sin x dy = 0",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "(D^2 - 4D + 3)y = \\cos 2x",
+              "text": "Solve (D² - 4D + 3)y = cos 2x",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "J_{\\frac{1}{2}}(x) = \\sqrt{\\frac{2}{\\pi x}}\\sin x",
+              "text": "Show that J₁/₂(x) = √(2/πx) sin x",
+              "unit": "Unit 2",
+              "type": "bessel"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "latex": "(D^2+9)y = \\tan 3x",
+              "text": "Solve (D²+9)y = tan 3x by using method of variation of parameters",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "(x-y)p + (x+y)q = 2xz",
+              "text": "Solve the partial differential equation (x-y)p + (x+y)q = 2xz",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "(p^2+q^2)y = qz",
+              "text": "Solve (p²+q²)y = qz by using Charpit's method",
+              "unit": "Unit 3",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "(D^2+4DD'-5D'^2)Z = \\sin(2x+3y)",
+              "text": "Solve (D²+4DD'-5D'²)Z = sin(2x+3y)",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "f(z) = \\frac{1}{2}\\log(x^2+y^2) + i \\tan^{-1}(\\frac{px}{y})",
+              "text": "Determine p so that f(z) = ½ log(x²+y²) + i tan⁻¹(px/y) is analytic function",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "u(x,y) = e^x \\cos y",
+              "text": "Show that u(x,y) = eˣ cos y is Harmonic. Determine its Harmonic conjugate",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\frac{Ze^z}{(Z-1)^3}",
+              "text": "Find the residue of Zeᶻ/(Z-1)³ at its pole",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "latex": "\\vec{F} = x^3\\hat{i} + y^3\\hat{j} + z^3\\hat{k}",
+              "text": "Verify Gauss divergence theorem for F = x³î + y³ĵ + z³k̂ taken over the cube bounded by x=0, x=a, y=0, y=a, z=0, z=a",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "curl(r^n \\vec{r}) = \\vec{0}",
+              "text": "Prove that curl(rⁿ r) = 0",
+              "unit": "Unit 5",
+              "type": "vector"
+            },
+            {
+              "id": "q8b",
+              "label": "b)i",
+              "latex": "",
+              "text": "Write short note on: Cauchy Riemann equations",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q8c",
+              "label": "b)ii",
+              "latex": "",
+              "text": "Write short note on: Stokes theorem",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "\\cos x \\frac{dy}{dx} = y(\\sin x - y)",
+              "text": "Solve cos x (dy/dx) = y(sin x - y) using Bernoulli's",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "\\sin 2x \\frac{dy}{dx} - y = \\tan x",
+              "text": "Solve the Linear differential equation sin 2x (dy/dx) - y = tan x",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "(r + \\sin\\theta - \\cos\\theta)dr + r(\\sin\\theta + \\cos\\theta)d\\theta = 0",
+              "text": "Solve (r + sinθ - cosθ)dr + r(sinθ + cosθ)dθ = 0",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "(D^3 - 7D^2 + 14D - 8)y = e^x \\cos 2x",
+              "text": "Solve the differential equation (D³ - 7D² + 14D - 8)y = eˣ cos 2x",
+              "unit": "Unit 1",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "latex": "(D^2 + 4)y = \\tan 2x",
+              "text": "Solve (D² + 4)y = tan 2x by using method of variation of parameters",
+              "unit": "Unit 2",
+              "type": "ordinary"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "\\frac{\\vec{r}}{r^3}",
+              "text": "Show that r/r³ is solenoidal",
+              "unit": "Unit 5",
+              "type": "vector"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "(x^2 - yz)\\hat{i} + (y^2 - zx)\\hat{j} + (z^2 - xy)\\hat{k}",
+              "text": "Show that vector (x²-yz)î + (y²-zx)ĵ + (z²-xy)k̂ is irrotational. Find its scalar potential",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "",
+              "latex": "\\oint_C [(3x^2 - 8y^2) dx + (4y - 6xy) dy]",
+              "text": "Verify Green's theorem for ∮[(3x²-8y²)dx + (4y-6xy)dy] where C is region bounded by x=0, y=0 and x+y=1",
+              "unit": "Unit 5",
+              "type": "vector"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "f(Z) = Z\\bar{Z}",
+              "text": "Show that f(Z) = Z\\bar{Z} is differentiable but not analytic at origin",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "u(x,y) = e^{-2x} \\sin 2y",
+              "text": "Show that u(x,y) = e⁻²ˣ sin 2y is harmonic and determine its Harmonic conjugate",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "\\oint_C \\frac{\\tan z}{z^2-1} dz",
+              "text": "By Residue theorem, Evaluate ∮ tan z/(z²-1) dz, where C:|Z|=2",
+              "unit": "Unit 4",
+              "type": "complex"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "\\oint_C \\frac{e^{2z}}{(z-1)^2(z-3)} dz",
+              "text": "Using Cauchy integral theorem, evaluate ∮ e²ᶻ/[(z-1)²(z-3)] dz, where C is circle |Z|=2",
+              "unit": "Unit 4",
+              "type": "complex"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "x^2p^2 + y^2q^2 = z^2",
+              "text": "Solve x²p² + y²q² = z²",
+              "unit": "Unit 3",
+              "type": "partial"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "(D^2 - 4DD' + 4D'^2)Z = \\cos(x-2y)",
+              "text": "Solve (D² - 4DD' + 4D'²)Z = cos(x-2y)",
+              "unit": "Unit 3",
+              "type": "partial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "(1+y^2)dx=(\\tan^{-1}y-x)dy",
+              "text": "Solve (1+y²)dx = (tan⁻¹y - x)dy",
+              "unit": "Unit 1",
+              "type": "ordinary",
+              "isPredicted": true
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "\\frac{d^2x}{dt^2}-4\\frac{dx}{dt}+4x=y \\quad \\text{and} \\quad \\frac{d^2y}{dt^2}+4\\frac{dy}{dt}+4y=25x+16e^t",
+              "text": "Solve the simultaneous differential equations: d²x/dt² - 4dx/dt + 4x = y and d²y/dt² + 4dy/dt + 4y = 25x + 16eᵗ",
+              "unit": "Unit 1",
+              "type": "ordinary",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "xy''+y'+xy=0",
+              "text": "Find the series solution of xy''+y'+xy=0 about x=0 by the Frobenius method",
+              "unit": "Unit 2",
+              "type": "ordinary",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\frac{d^2y}{dx^2}+y=\\tan x",
+              "text": "Apply the method of variation of parameters to solve d²y/dx² + y = tan x",
+              "unit": "Unit 1",
+              "type": "ordinary",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "(D^2-2DD'+D'^2)Z=e^{x+2y}+x^2",
+              "text": "Solve (D²-2DD'+D'²)Z = eˣ⁺²ʸ + x²",
+              "unit": "Unit 3",
+              "type": "partial",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "px+qy=pq",
+              "text": "Find a complete integral of px + qy = pq",
+              "unit": "Unit 3",
+              "type": "partial",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "u=e^x(x\\cos y-y\\sin y)",
+              "text": "Show that u = eˣ(x cos y - y sin y) is a harmonic function. Find the conjugate function v",
+              "unit": "Unit 4",
+              "type": "complex",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "\\oint_C \\frac{e^z}{(z-1)(z-4)}dz",
+              "text": "Evaluate ∮ eᶻ/[(z-1)(z-4)] dz where C is circle |z|=2 by using Cauchy's Integral Formula",
+              "unit": "Unit 4",
+              "type": "complex",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "f(x,y,z)=2x^2+3y^2+z^2",
+              "text": "Find the directional derivative of f(x,y,z) = 2x²+3y²+z² at point P(2,1,3) in direction of vector a = î - 2k̂",
+              "unit": "Unit 5",
+              "type": "vector",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "\\vec{F}=x^2\\hat{i}+y^3\\hat{j}",
+              "text": "Evaluate ∫ F·dr, where F = x²î + y³ĵ and curve C is arc of parabola y=x² in xy plane from (0,0) to (1,1)",
+              "unit": "Unit 5",
+              "type": "vector",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "\\oint_C \\frac{4-3z}{(z-1)(z-2)z}dz",
+              "text": "Evaluate using residue theorem ∮ (4-3z)/[(z-1)(z-2)z] dz where C is circle |z| = 3/2",
+              "unit": "Unit 4",
+              "type": "complex",
+              "isPredicted": true
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\int_0^{2\\pi} \\frac{d\\theta}{5-3\\cos\\theta}",
+              "text": "Evaluate ∫₀²ᵖⁱ dθ/(5-3cosθ)",
+              "unit": "Unit 4",
+              "type": "complex",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "\\hat{F}=(x^2-y^2)\\hat{i}+2xy\\hat{j}",
+              "text": "Verify Stokes' theorem for vector field F = (x²-y²)î + 2xyĵ integrated around rectangle z=0 bounded by x=0, y=0, x=a and y=b",
+              "unit": "Unit 5",
+              "type": "vector",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "Define Gradient, Divergence and Curl",
+              "unit": "Unit 5",
+              "type": "theory",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "(D^2-D'^2-3D+3D')Z=e^{x+2y}+xy",
+              "text": "Solve (D²-D'²-3D+3D')Z = eˣ⁺²ʸ + xy",
+              "unit": "Unit 3",
+              "type": "partial",
+              "isPredicted": true
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "(1+x)^2\\frac{d^2y}{dx^2}+(1+x)\\frac{dy}{dx}+y=4\\cos\\{\\log(1+x)\\}",
+              "text": "By reducing to homogeneous, solve: (1+x)²(d²y/dx²)+(1+x)(dy/dx)+y = 4 cos{log(1+x)}",
+              "unit": "Unit 1",
+              "type": "ordinary",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

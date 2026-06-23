@@ -1,7 +1,4 @@
-import {
-  BrainCircuit,
-  ArrowRight,
-} from "lucide-react";
+import { BrainCircuit, ArrowRight } from "lucide-react";
 
 interface AIPageProps {
   params: Promise<{
@@ -16,20 +13,12 @@ interface AIPageProps {
   }>;
 }
 
-export default async function AIPage({
-  params,
-  searchParams,
-}: AIPageProps) {
-  const { branch, semester, subject } =
-    await params;
+export default async function AIPage({ params, searchParams }: AIPageProps) {
+  const { branch, semester, subject } = await params;
 
-  const {
-    topic,
-    module,
-  } = await searchParams;
+  const { topic, module } = await searchParams;
 
-  const isTopicMode =
-    Boolean(topic) && Boolean(module);
+  const isTopicMode = Boolean(topic) && Boolean(module);
 
   const prompts = isTopicMode
     ? [
@@ -77,16 +66,13 @@ export default async function AIPage({
                 </p>
 
                 <p className="mt-3 text-muted-foreground">
-                  {subject.toUpperCase()} •{" "}
-                  {branch.toUpperCase()} •{" "}
+                  {subject.toUpperCase()} • {branch.toUpperCase()} •{" "}
                   {semester.toUpperCase()}
                 </p>
 
                 <p className="mt-6 max-w-3xl text-muted-foreground">
-                  Learn this topic with AI-generated
-                  explanations, notes, PYQ analysis,
-                  revision sheets, and exam-focused
-                  answers.
+                  Learn this topic with AI-generated explanations, notes, PYQ
+                  analysis, revision sheets, and exam-focused answers.
                 </p>
               </>
             ) : (
@@ -96,16 +82,14 @@ export default async function AIPage({
                 </h1>
 
                 <p className="mt-4 text-lg text-muted-foreground">
-                  {subject.toUpperCase()} •{" "}
-                  {branch.toUpperCase()} •{" "}
+                  {subject.toUpperCase()} • {branch.toUpperCase()} •{" "}
                   {semester.toUpperCase()}
                 </p>
 
                 <p className="mt-6 max-w-3xl text-muted-foreground">
-                  Ask questions, generate notes,
-                  create exam answers, understand
-                  concepts, and prepare smarter with
-                  AI-powered academic assistance.
+                  Ask questions, generate notes, create exam answers, understand
+                  concepts, and prepare smarter with AI-powered academic
+                  assistance.
                 </p>
               </>
             )}
@@ -125,9 +109,7 @@ export default async function AIPage({
                 </div>
 
                 <div>
-                  <h2 className="font-bold text-foreground">
-                    Hyper AI
-                  </h2>
+                  <h2 className="font-bold text-foreground">Hyper AI</h2>
 
                   <p className="text-sm text-muted-foreground">
                     Online • Ready To Help
@@ -155,15 +137,11 @@ export default async function AIPage({
                         {topic}
                       </h3>
 
-                      <p className="mt-1 text-muted-foreground">
-                        {module}
-                      </p>
+                      <p className="mt-1 text-muted-foreground">{module}</p>
                     </div>
 
                     <div className="rounded-2xl border border-border bg-card p-4">
-                      <p className="text-sm text-muted-foreground">
-                        Subject
-                      </p>
+                      <p className="text-sm text-muted-foreground">Subject</p>
 
                       <p className="font-medium text-foreground">
                         {subject.toUpperCase()}
@@ -171,37 +149,24 @@ export default async function AIPage({
                     </div>
 
                     <div className="space-y-2 text-sm text-muted-foreground">
-                      <p>
-                        • Explain the concept
-                      </p>
+                      <p>• Explain the concept</p>
 
-                      <p>
-                        • Generate notes
-                      </p>
+                      <p>• Generate notes</p>
 
-                      <p>
-                        • Generate PYQs
-                      </p>
+                      <p>• Generate PYQs</p>
 
-                      <p>
-                        • Generate 5 mark answers
-                      </p>
+                      <p>• Generate 5 mark answers</p>
 
-                      <p>
-                        • Generate 10 mark answers
-                      </p>
+                      <p>• Generate 10 mark answers</p>
 
-                      <p>
-                        • Create revision sheet
-                      </p>
+                      <p>• Create revision sheet</p>
                     </div>
                   </div>
                 ) : (
                   <div>
                     <p className="leading-8 text-muted-foreground">
-                      Select a syllabus topic or ask
-                      any academic question to begin
-                      learning with Hyper AI.
+                      Select a syllabus topic or ask any academic question to
+                      begin learning with Hyper AI.
                     </p>
                   </div>
                 )}
@@ -221,9 +186,7 @@ export default async function AIPage({
             {/* Sidebar */}
             <div>
               <div className="rounded-3xl border border-border bg-card p-6">
-                <h3 className="font-bold text-foreground">
-                  Suggested Prompts
-                </h3>
+                <h3 className="font-bold text-foreground">Suggested Prompts</h3>
 
                 <div className="mt-5 space-y-3">
                   {prompts.map((prompt) => (

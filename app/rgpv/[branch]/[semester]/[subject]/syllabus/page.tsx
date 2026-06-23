@@ -3,7 +3,7 @@ import { BookOpen } from "lucide-react";
 import { getSyllabus } from "@/lib/content/syllabus";
 import { getPYQs } from "@/lib/content/pyqs";
 import { getQuestionsForModule } from "@/lib/content/question-mapper";
-import  ModuleCard  from "@/components/syllabus/module-card";
+import ModuleCard from "@/components/syllabus/module-card";
 
 interface Module {
   id: string;
@@ -30,11 +30,8 @@ interface MappedQuestion {
   unit: string;
 }
 
-export default async function SyllabusPage({
-  params,
-}: SyllabusPageProps) {
-  const { branch, semester, subject } =
-    await params;
+export default async function SyllabusPage({ params }: SyllabusPageProps) {
+  const { branch, semester, subject } = await params;
 
   const syllabus = await getSyllabus(subject);
 
@@ -47,16 +44,14 @@ export default async function SyllabusPage({
           </h1>
 
           <p className="mt-4 text-muted-foreground">
-            No syllabus available for{" "}
-            {subject.toUpperCase()}
+            No syllabus available for {subject.toUpperCase()}
           </p>
         </div>
       </main>
     );
   }
 
-  const modules: Module[] =
-    syllabus.modules || [];
+  const modules: Module[] = syllabus.modules || [];
 
   const pyqs = await getPYQs(subject);
 
@@ -77,13 +72,11 @@ export default async function SyllabusPage({
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-6xl">
-            {syllabus.subject?.title ||
-              subject.toUpperCase()}
+            {syllabus.subject?.title || subject.toUpperCase()}
           </h1>
 
           <p className="mt-4 text-lg text-muted-foreground">
-            {branch.toUpperCase()} •{" "}
-            {semester.toUpperCase()}
+            {branch.toUpperCase()} • {semester.toUpperCase()}
           </p>
 
           {syllabus.subject?.university && (
@@ -103,21 +96,16 @@ export default async function SyllabusPage({
             </h2>
 
             <p className="mt-3 text-muted-foreground">
-              Learn topic-wise with Hyper AI
-              and revise using mapped PYQs.
+              Learn topic-wise with Hyper AI and revise using mapped PYQs.
             </p>
           </div>
 
           <div className="space-y-8">
             {modules.map((module) => {
-              const questions =
-                getQuestionsForModule(
-                  module,
-                  pyqs
-                ).slice(
-                  0,
-                  5
-                ) as MappedQuestion[];
+              const questions = getQuestionsForModule(module, pyqs).slice(
+                0,
+                5
+              ) as MappedQuestion[];
 
               return (
                 <ModuleCard

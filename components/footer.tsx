@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  Mail,
-  BookOpen,
-  GraduationCap,
-} from "lucide-react";
+import { Mail, BookOpen, GraduationCap } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -204,7 +200,8 @@ export default function Footer() {
 
           <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3">
             <p className="text-center text-xs leading-5 text-[#AFC8FF]/50">
-              Disclaimer: Some content may contain errors. Please cross-check and share corrections via our feedback section.
+              Disclaimer: Some content may contain errors. Please cross-check
+              and share corrections via our feedback section.
             </p>
           </div>
         </div>

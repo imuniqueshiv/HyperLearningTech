@@ -47,10 +47,7 @@ export default function ModuleCard({
   return (
     <div className="rounded-3xl border border-border bg-card">
       {/* CLICKABLE HEADER */}
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full p-8 text-left"
-      >
+      <button onClick={() => setOpen(!open)} className="w-full p-8 text-left">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-3">
@@ -63,9 +60,7 @@ export default function ModuleCard({
                   Module {module.number}
                 </h3>
 
-                <p className="text-lg text-blue-600">
-                  {module.title}
-                </p>
+                <p className="text-lg text-blue-600">{module.title}</p>
               </div>
             </div>
 
@@ -123,8 +118,8 @@ export default function ModuleCard({
           </h4>
 
           <p className="mt-2 text-base text-muted-foreground">
-            Questions automatically mapped from
-            all available examination papers.
+            Questions automatically mapped from all available examination
+            papers.
           </p>
 
           <div className="mt-6 space-y-5">

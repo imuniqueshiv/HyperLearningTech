@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { FileText, Calendar, BookOpen, Clock } from "lucide-react";
+import { FileText, Calendar, Clock } from "lucide-react";
 import { getPYQs } from "@/lib/content/pyqs";
 
 interface PaperPageProps {
@@ -12,9 +12,7 @@ interface PaperPageProps {
   }>;
 }
 
-export default async function PaperPage({
-  params,
-}: PaperPageProps) {
+export default async function PaperPage({ params }: PaperPageProps) {
   const { branch, semester, subject, paper } = await params;
 
   const pyqs = await getPYQs(subject);
@@ -36,8 +34,7 @@ export default async function PaperPage({
   }
 
   const selectedPaper = pyqs.papers.find(
-    (p: { exam: string }) =>
-      p.exam.toLowerCase().replace(/\s+/g, "-") === paper
+    (p: { exam: string }) => p.exam.toLowerCase().replace(/\s+/g, "-") === paper
   );
 
   if (!selectedPaper) {
@@ -59,7 +56,9 @@ export default async function PaperPage({
           </h1>
 
           <div className="mt-3 flex flex-wrap items-center gap-3 text-muted-foreground">
-            <span className="font-medium text-foreground">{selectedPaper.exam}</span>
+            <span className="font-medium text-foreground">
+              {selectedPaper.exam}
+            </span>
             <span>•</span>
             <span>{branch.toUpperCase()}</span>
             <span>•</span>
@@ -70,31 +69,39 @@ export default async function PaperPage({
           <div className="mt-6 flex flex-wrap items-center gap-6 rounded-2xl border border-border bg-card/50 px-6 py-4">
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-              <span className="text-sm text-foreground">{selectedPaper.exam}</span>
+              <span className="text-sm text-foreground">
+                {selectedPaper.exam}
+              </span>
             </div>
 
             <div className="flex items-center gap-2">
               <FileText className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-              <span className="text-sm text-foreground">Max Marks: {pyqs.subject.maxMarks}</span>
+              <span className="text-sm text-foreground">
+                Max Marks: {pyqs.subject.maxMarks}
+              </span>
             </div>
 
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-              <span className="text-sm text-foreground">Duration: {pyqs.subject.time}</span>
+              <span className="text-sm text-foreground">
+                Duration: {pyqs.subject.time}
+              </span>
             </div>
           </div>
 
-         {/* Instructions */}
-{pyqs.subject.commonInstructions?.length > 0 && (
-  <div className="mt-4 space-y-1 text-sm text-muted-foreground">
-    <span className="font-medium text-foreground">Instructions:</span>
-    {pyqs.subject.commonInstructions.map((instruction: string, index: number) => (
-      <p key={index} className="ml-4">
-        • {instruction.replace(/^[•\s]+/, "")}
-      </p>
-    ))}
-  </div>
-)}
+          {/* Instructions */}
+          {pyqs.subject.commonInstructions?.length > 0 && (
+            <div className="mt-4 space-y-1 text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Instructions:</span>
+              {pyqs.subject.commonInstructions.map(
+                (instruction: string, index: number) => (
+                  <p key={index} className="ml-4">
+                    • {instruction.replace(/^[•\s]+/, "")}
+                  </p>
+                )
+              )}
+            </div>
+          )}
         </div>
       </section>
 

@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  BookOpen,
-  FileText,
-} from "lucide-react";
+import { ArrowRight, BookOpen, FileText } from "lucide-react";
 
 import { getSyllabus } from "@/lib/content/syllabus";
 import { getPYQs } from "@/lib/content/pyqs";
@@ -16,20 +12,20 @@ interface SubjectPageProps {
   }>;
 }
 
-export default async function SubjectPage({
-  params,
-}: SubjectPageProps) {
-  const { branch, semester, subject } =
-    await params;
+export default async function SubjectPage({ params }: SubjectPageProps) {
+  const { branch, semester, subject } = await params;
 
   const syllabus = await getSyllabus(subject);
   const pyqs = await getPYQs(subject);
 
-  const subjectTitle =
-    syllabus?.subject?.title ||
-    subject.toUpperCase();
+  const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
 
-  const papers = pyqs?.papers || [];
+  const papers: {
+    exam: string;
+    month: string;
+    year: number;
+    questions?: unknown[];
+  }[] = pyqs?.papers || [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -52,42 +48,39 @@ export default async function SubjectPage({
             </h1>
 
             <p className="mt-4 text-lg text-muted-foreground">
-              {branch.toUpperCase()} •{" "}
-              {semester.toUpperCase()}
+              {branch.toUpperCase()} • {semester.toUpperCase()}
             </p>
 
             <p className="mt-6 max-w-2xl text-muted-foreground">
-              Start with syllabus topics and
-              prepare using mapped previous year
+              Start with syllabus topics and prepare using mapped previous year
               questions.
             </p>
           </div>
         </div>
       </section>
-{/* Syllabus CTA */}
-<section className="py-8">
-  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-    <div className="flex justify-center">
-      <Link
-        href={`/rgpv/${branch}/${semester}/${subject}/syllabus`}
-        className="group inline-flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-5 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
-      >
-        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10">
-          <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+      {/* Syllabus CTA */}
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex justify-center">
+            <Link
+              href={`/rgpv/${branch}/${semester}/${subject}/syllabus`}
+              className="group inline-flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-5 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10">
+                <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              </div>
+
+              <span className="text-lg font-semibold text-foreground">
+                Subject Syllabus
+              </span>
+
+              <ArrowRight className="h-6 w-6 text-blue-600" />
+            </Link>
+          </div>
         </div>
-
-        <span className="text-lg font-semibold text-foreground">
-          Subject Syllabus
-        </span>
-
-        <ArrowRight className="h-6 w-6 text-blue-600" />
-      </Link>
-    </div>
-  </div>
-</section>
-
+      </section>
       {/* PYQs */}
-          {/* PYQ Section */}
+      {/* PYQ Section */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-12 text-center">
@@ -103,33 +96,34 @@ export default async function SubjectPage({
               </p>
             </div>
           ) : (
-           <div className="grid gap-5 md:grid-cols-2">
-  {papers.map((paper, index) => (
-    <Link
-      key={`${paper.exam}-${index}`}
-     href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${paper.month.toLowerCase()}-${paper.year}`}
-      className="group rounded-2xl border border-border bg-card px-6 py-5 transition hover:border-blue-500/30"
-    >
-      <div className="flex items-center gap-4">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10">
-          <FileText className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-        </div>
+            <div className="grid gap-5 md:grid-cols-2">
+              {papers.map((paper, index) => (
+                <Link
+                  key={`${paper.exam}-${index}`}
+                  href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${paper.month.toLowerCase()}-${paper.year}`}
+                  className="group rounded-2xl border border-border bg-card px-6 py-5 transition hover:border-blue-500/30"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10">
+                      <FileText className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    </div>
 
-        <div>
-          <h3 className="text-lg font-semibold text-foreground">
-            RGPV {paper.month} - {paper.year}
-          </h3>
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        RGPV {paper.month} - {paper.year}
+                      </h3>
 
-          <p className="text-sm text-muted-foreground">
-            {paper.questions?.length || 0} Questions
-          </p>
-        </div>
-      </div>
-    </Link>
-  ))}
-</div>
+                      <p className="text-sm text-muted-foreground">
+                        {paper.questions?.length || 0} Questions
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           )}
         </div>
-      </section>    </main>
+      </section>{" "}
+    </main>
   );
 }

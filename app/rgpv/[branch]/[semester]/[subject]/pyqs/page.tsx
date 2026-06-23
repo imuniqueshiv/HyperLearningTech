@@ -18,9 +18,7 @@ interface PYQPageProps {
   }>;
 }
 
-export default async function PYQPage({
-  params,
-}: PYQPageProps) {
+export default async function PYQPage({ params }: PYQPageProps) {
   const { branch, semester, subject } = await params;
 
   const pyqs = await getPYQs(subject);
@@ -29,9 +27,7 @@ export default async function PYQPage({
     return (
       <main className="flex min-h-screen items-center justify-center bg-background">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-foreground">
-            PYQs Not Found
-          </h1>
+          <h1 className="text-3xl font-bold text-foreground">PYQs Not Found</h1>
 
           <p className="mt-4 text-muted-foreground">
             No previous year question papers are available for this subject.
@@ -41,7 +37,14 @@ export default async function PYQPage({
     );
   }
 
-  const papers = pyqs.papers ?? [];
+  type Paper = {
+    id?: string;
+    month?: string;
+    year?: number | string;
+    questions?: unknown[];
+  };
+
+  const papers: Paper[] = pyqs.papers ?? [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -67,8 +70,8 @@ export default async function PYQPage({
           </p>
 
           <p className="mt-6 max-w-3xl text-muted-foreground">
-            Access previous year papers, discover repeated questions,
-            generate AI answers, and prepare strategically for exams.
+            Access previous year papers, discover repeated questions, generate
+            AI answers, and prepare strategically for exams.
           </p>
         </div>
       </section>
@@ -82,39 +85,25 @@ export default async function PYQPage({
                 {papers.length}
               </h3>
 
-              <p className="mt-2 text-muted-foreground">
-                Papers Available
-              </p>
+              <p className="mt-2 text-muted-foreground">Papers Available</p>
             </div>
 
             <div className="rounded-3xl border border-border bg-card p-6">
-              <h3 className="text-3xl font-bold text-foreground">
-                2022-25
-              </h3>
+              <h3 className="text-3xl font-bold text-foreground">2022-25</h3>
 
-              <p className="mt-2 text-muted-foreground">
-                Coverage
-              </p>
+              <p className="mt-2 text-muted-foreground">Coverage</p>
             </div>
 
             <div className="rounded-3xl border border-border bg-card p-6">
-              <h3 className="text-3xl font-bold text-foreground">
-                AI
-              </h3>
+              <h3 className="text-3xl font-bold text-foreground">AI</h3>
 
-              <p className="mt-2 text-muted-foreground">
-                Answer Generator
-              </p>
+              <p className="mt-2 text-muted-foreground">Answer Generator</p>
             </div>
 
             <div className="rounded-3xl border border-border bg-card p-6">
-              <h3 className="text-3xl font-bold text-foreground">
-                Smart
-              </h3>
+              <h3 className="text-3xl font-bold text-foreground">Smart</h3>
 
-              <p className="mt-2 text-muted-foreground">
-                Analysis
-              </p>
+              <p className="mt-2 text-muted-foreground">Analysis</p>
             </div>
           </div>
         </div>
@@ -134,14 +123,17 @@ export default async function PYQPage({
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {papers.map((paper: any, index: number) => {
+            {papers.map((paper, index) => {
               // Safely get session and year with fallbacks
               const session = paper?.month || "Unknown";
               const year = paper?.year || "N/A";
               const questionCount = paper?.questions?.length || 0;
-              
+
               // Create a safe slug for the URL
-              const slug = `${session.toLowerCase()}-${year}`.replace(/\s+/g, '-');
+              const slug = `${session.toLowerCase()}-${year}`.replace(
+                /\s+/g,
+                "-"
+              );
 
               return (
                 <div
@@ -154,13 +146,9 @@ export default async function PYQPage({
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-foreground">
-                        {session}
-                      </h3>
+                      <h3 className="font-bold text-foreground">{session}</h3>
 
-                      <p className="text-sm text-muted-foreground">
-                        {year}
-                      </p>
+                      <p className="text-sm text-muted-foreground">{year}</p>
                     </div>
                   </div>
 
@@ -191,7 +179,8 @@ export default async function PYQPage({
                 No Papers Available
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Previous year question papers for this subject will be added soon.
+                Previous year question papers for this subject will be added
+                soon.
               </p>
             </div>
           )}
@@ -220,8 +209,8 @@ export default async function PYQPage({
               </h3>
 
               <p className="mt-3 text-muted-foreground">
-                Generate structured 2, 5, and 10-mark answers
-                instantly from previous year questions.
+                Generate structured 2, 5, and 10-mark answers instantly from
+                previous year questions.
               </p>
             </div>
 
@@ -233,8 +222,8 @@ export default async function PYQPage({
               </h3>
 
               <p className="mt-3 text-muted-foreground">
-                Discover frequently repeated questions and
-                important examination patterns.
+                Discover frequently repeated questions and important examination
+                patterns.
               </p>
             </div>
 
@@ -246,8 +235,8 @@ export default async function PYQPage({
               </h3>
 
               <p className="mt-3 text-muted-foreground">
-                Connect previous year questions directly
-                with syllabus topics and units.
+                Connect previous year questions directly with syllabus topics
+                and units.
               </p>
             </div>
           </div>
@@ -273,8 +262,8 @@ export default async function PYQPage({
                 </h3>
 
                 <p className="mt-3 text-muted-foreground">
-                  Upload a question or select any PYQ and let
-                  Hyper AI generate exam-focused answers.
+                  Upload a question or select any PYQ and let Hyper AI generate
+                  exam-focused answers.
                 </p>
               </div>
 

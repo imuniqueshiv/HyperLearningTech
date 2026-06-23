@@ -9,7 +9,6 @@ import {
   Workflow,
   ShieldCheck,
   Sparkles,
-  CheckCircle2,
 } from "lucide-react";
 
 const features = [

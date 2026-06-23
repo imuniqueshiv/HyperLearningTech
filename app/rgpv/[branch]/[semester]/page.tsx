@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { getSubjectsBySemester } from "@/lib/data/subjects";
-import {
-  BookOpen,
-  FileText,
-  BrainCircuit,
-  ArrowRight,
-} from "lucide-react";
+import { BookOpen, FileText, BrainCircuit, ArrowRight } from "lucide-react";
 
 interface SemesterPageProps {
   params: Promise<{
@@ -14,12 +9,10 @@ interface SemesterPageProps {
   }>;
 }
 
-export default async function SemesterPage({
-  params,
-}: SemesterPageProps) {
+export default async function SemesterPage({ params }: SemesterPageProps) {
   const { branch, semester } = await params;
 
-const subjects = getSubjectsBySemester(branch, semester);
+  const subjects = getSubjectsBySemester(branch, semester);
 
   return (
     <main className="min-h-screen bg-background">
@@ -48,8 +41,8 @@ const subjects = getSubjectsBySemester(branch, semester);
             </p>
 
             <p className="mt-6 max-w-2xl text-muted-foreground">
-              Access syllabus, previous year questions, AI notes,
-              and Hyper AI assistance for every subject.
+              Access syllabus, previous year questions, AI notes, and Hyper AI
+              assistance for every subject.
             </p>
           </div>
         </div>
@@ -66,21 +59,15 @@ const subjects = getSubjectsBySemester(branch, semester);
                 {subjects.length}
               </h3>
 
-              <p className="text-muted-foreground">
-                Subjects Available
-              </p>
+              <p className="text-muted-foreground">Subjects Available</p>
             </div>
 
             <div className="rounded-3xl border border-border bg-card p-6">
               <FileText className="h-8 w-8 text-blue-600" />
 
-              <h3 className="mt-4 text-3xl font-bold text-foreground">
-                PYQs
-              </h3>
+              <h3 className="mt-4 text-3xl font-bold text-foreground">PYQs</h3>
 
-              <p className="text-muted-foreground">
-                Previous Year Papers
-              </p>
+              <p className="text-muted-foreground">Previous Year Papers</p>
             </div>
 
             <div className="rounded-3xl border border-border bg-card p-6">
@@ -90,9 +77,7 @@ const subjects = getSubjectsBySemester(branch, semester);
                 Hyper AI
               </h3>
 
-              <p className="text-muted-foreground">
-                AI Learning Assistant
-              </p>
+              <p className="text-muted-foreground">AI Learning Assistant</p>
             </div>
           </div>
         </div>
@@ -102,13 +87,11 @@ const subjects = getSubjectsBySemester(branch, semester);
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-foreground">
-              Subjects
-            </h2>
+            <h2 className="text-3xl font-bold text-foreground">Subjects</h2>
 
             <p className="mt-3 text-muted-foreground">
-              Select a subject to access syllabus,
-              PYQs, AI notes, and learning resources.
+              Select a subject to access syllabus, PYQs, AI notes, and learning
+              resources.
             </p>
           </div>
 

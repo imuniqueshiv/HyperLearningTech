@@ -30,19 +30,13 @@ interface Module {
   number: number;
 }
 
-export function getQuestionsForModule(
-  module: Module,
-  pyqs: PYQData | null
-) {
+export function getQuestionsForModule(module: Module, pyqs: PYQData | null) {
   if (!pyqs?.papers) return [];
 
   return pyqs.papers.flatMap((paper) =>
     paper.questions.flatMap((question) =>
       question.subQuestions
-        .filter(
-          (subQuestion) =>
-            subQuestion.unit === `Unit ${module.number}`
-        )
+        .filter((subQuestion) => subQuestion.unit === `Unit ${module.number}`)
         .map((subQuestion) => ({
           ...subQuestion,
           exam: paper.exam,

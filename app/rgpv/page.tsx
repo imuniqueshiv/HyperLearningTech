@@ -14,7 +14,6 @@ export default function RGPVPage() {
 
       {/* Academic Navigation */}
       <QuickAccess />
-
     </main>
   );
 }

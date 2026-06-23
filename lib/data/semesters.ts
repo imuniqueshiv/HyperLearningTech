@@ -15,7 +15,8 @@ const branchSemesterConfig = {
 
 // Generate semesters programmatically
 export const semesters = branches.flatMap((branch) => {
-  const config = branchSemesterConfig[branch.id as keyof typeof branchSemesterConfig];
+  const config =
+    branchSemesterConfig[branch.id as keyof typeof branchSemesterConfig];
   if (!config) return [];
 
   const { start, end, prefix } = config;

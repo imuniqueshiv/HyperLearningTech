@@ -2,17 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  GraduationCap,
-  ArrowRight,
-  BookOpen,
-} from "lucide-react";
+import { GraduationCap, ArrowRight, BookOpen } from "lucide-react";
 
 const semesters = [
   {
     year: "1st Year",
-    description:
-      "Common curriculum for all engineering branches under RGPV.",
+    description: "Common curriculum for all engineering branches under RGPV.",
     semesters: [
       {
         name: "Semester 1",
@@ -204,9 +199,9 @@ export default function SemesterOverview() {
           </h3>
 
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground">
-            Every semester is connected with subjects, syllabus topics,
-            previous year questions, and Hyper AI resources to create a
-            complete academic learning ecosystem.
+            Every semester is connected with subjects, syllabus topics, previous
+            year questions, and Hyper AI resources to create a complete academic
+            learning ecosystem.
           </p>
         </motion.div>
       </div>

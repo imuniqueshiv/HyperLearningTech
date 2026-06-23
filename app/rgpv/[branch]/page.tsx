@@ -6,9 +6,7 @@ interface BranchPageProps {
   }>;
 }
 
-export default async function BranchPage({
-  params,
-}: BranchPageProps) {
+export default async function BranchPage({ params }: BranchPageProps) {
   const { branch } = await params;
 
   return (

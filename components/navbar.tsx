@@ -7,6 +7,7 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 
+
 const navLinks = [
   {
     label: "Home",
@@ -32,11 +33,15 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+  const timer = setTimeout(() => {
+  setMounted(true);
+  }, 0);
+
+  return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -90,13 +95,12 @@ export default function Navbar() {
               aria-label="Toggle theme"
               className="relative flex h-10 w-10 items-center justify-center text-white transition-all duration-200 hover:scale-110 hover:text-[#AFC8FF]"
             >
-              {mounted && (
-                theme === "dark" ? (
+              {mounted &&
+                (theme === "dark" ? (
                   <Sun className="h-5 w-5" />
                 ) : (
                   <Moon className="h-5 w-5" />
-                )
-              )}
+                ))}
             </button>
 
             <Link
@@ -120,11 +124,7 @@ export default function Navbar() {
             aria-label="Toggle Menu"
             className="rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
           >
-            {isOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
@@ -171,13 +171,12 @@ export default function Navbar() {
                   }}
                   className="flex items-center justify-center rounded-xl border border-white/20 px-4 py-3 text-[#F4F5F7] transition-all duration-200 hover:bg-white/10"
                 >
-                  {mounted && (
-                    theme === "dark" ? (
+                  {mounted &&
+                    (theme === "dark" ? (
                       <Sun className="h-5 w-5" />
                     ) : (
                       <Moon className="h-5 w-5" />
-                    )
-                  )}
+                    ))}
                 </button>
 
                 <Link

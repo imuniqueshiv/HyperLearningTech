@@ -15,9 +15,16 @@ import {
   Wrench,
 } from "lucide-react";
 import { branches } from "@/lib/data/branches";
+import type { LucideIcon } from "lucide-react";
 
 // Map status to icon and other properties
-const branchConfig: Record<string, { icon: any; subjects: string }> = {
+const branchConfig: Record<
+  string,
+  {
+    icon: LucideIcon;
+    subjects: string;
+  }
+> = {
   aiml: { icon: BrainCircuit, subjects: "40+ Subjects" },
   cse: { icon: Code2, subjects: "40+ Subjects" },
   csit: { icon: Database, subjects: "40+ Subjects" },
@@ -130,7 +137,7 @@ export default function BranchGrid() {
                     {branch.id.toUpperCase()}
                   </h3>
 
-                  <p className="mt-3 min-h-[56px] text-muted-foreground">
+                  <p className="mt-3 min-h-14 text-muted-foreground">
                     {branch.name}
                   </p>
 
@@ -160,7 +167,11 @@ export default function BranchGrid() {
 
             if (branch.status === "Available") {
               return (
-                <Link key={branch.id} href={`/rgpv/${branch.slug}`} className="block">
+                <Link
+                  key={branch.id}
+                  href={`/rgpv/${branch.slug}`}
+                  className="block"
+                >
                   {CardContent}
                 </Link>
               );

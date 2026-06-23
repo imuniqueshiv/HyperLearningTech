@@ -47,19 +47,19 @@ export default function Stats() {
   };
 
   const itemVariants: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.25, 0.1, 0.25, 1],
+    hidden: {
+      opacity: 0,
+      y: 20,
     },
-  },
-};
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.25, 0.1, 0.25, 1],
+      },
+    },
+  };
 
   return (
     <section className="relative overflow-hidden border-b border-border bg-background py-24">
@@ -100,9 +100,9 @@ export default function Stats() {
               variants={itemVariants}
               className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
             >
-              Hyper Learning brings together previous year questions,
-              AI-powered explanations, syllabus mapping, and smart revision
-              tools in one focused learning platform.
+              Hyper Learning brings together previous year questions, AI-powered
+              explanations, syllabus mapping, and smart revision tools in one
+              focused learning platform.
             </motion.p>
           </div>
 
@@ -148,13 +148,11 @@ export default function Stats() {
                   <BrainCircuit className="h-5 w-5" />
                 </div>
 
-                <h4 className="text-xl font-bold text-foreground">
-                  AI Tutor
-                </h4>
+                <h4 className="text-xl font-bold text-foreground">AI Tutor</h4>
 
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Interactive learning with topic-based explanations,
-                  follow-up questions, and instant concept clarification.
+                  Interactive learning with topic-based explanations, follow-up
+                  questions, and instant concept clarification.
                 </p>
               </div>
 
@@ -183,8 +181,8 @@ export default function Stats() {
                 </h4>
 
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Learn faster through structured notes, concise summaries,
-                  and highly targeted exam-focused content.
+                  Learn faster through structured notes, concise summaries, and
+                  highly targeted exam-focused content.
                 </p>
               </div>
             </div>

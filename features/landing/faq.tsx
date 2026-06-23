@@ -161,9 +161,7 @@ export default function FAQ() {
                 question={faq.question}
                 answer={faq.answer}
                 isOpen={openIndex === index}
-                onClick={() =>
-                  setOpenIndex(openIndex === index ? null : index)
-                }
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
               />
             </motion.div>
           ))}
@@ -196,7 +194,7 @@ export default function FAQ() {
           </p>
 
           <div className="mt-6 inline-flex rounded-xl border border-blue-200/60 bg-blue-50/80 px-5 py-3 text-sm font-semibold text-[#1D4ED8] shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-            We're continuously improving Hyper Learning based on student
+            We&apos;re continuously improving Hyper Learning based on student
             feedback.
           </div>
         </motion.div>

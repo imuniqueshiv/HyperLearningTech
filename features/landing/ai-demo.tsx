@@ -1,12 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  BrainCircuit,
-  BookOpen,
-  Sparkles,
-  ArrowRight,
-} from "lucide-react";
+import { BrainCircuit, BookOpen, Sparkles, ArrowRight } from "lucide-react";
 
 export default function AIDemo() {
   return (
@@ -32,7 +27,7 @@ export default function AIDemo() {
           </span>
 
           <h2 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            Learn Like You're Talking To A
+            Learn Like You&apos;re Talking To A
             <span className="block bg-gradient-to-r from-[#1D4ED8] to-indigo-600 bg-clip-text text-transparent">
               Personal Tutor
             </span>
@@ -85,7 +80,7 @@ export default function AIDemo() {
 
                     <p className="mt-2 leading-7 text-muted-foreground">
                       Ask follow-up questions and receive personalized answers
-                      based on the topic you're studying.
+                      based on the topic you&apos;re studying.
                     </p>
                   </div>
                 </div>
@@ -154,13 +149,11 @@ export default function AIDemo() {
                   <div className="max-w-md rounded-2xl border border-border bg-muted/30 px-4 py-3">
                     <div className="mb-2 flex items-center gap-2 text-[#1D4ED8]">
                       <BrainCircuit className="h-4 w-4" />
-                      <span className="text-sm font-semibold">
-                        AI Tutor
-                      </span>
+                      <span className="text-sm font-semibold">AI Tutor</span>
                     </div>
 
                     <p className="text-sm leading-relaxed text-foreground/80">
-                      Big O notation describes how an algorithm's execution time
+                      Big O notation describes how an algorithm&apos;s execution time
                       grows as input size increases. For example, Linear Search
                       has O(n) complexity because it may need to check every
                       element in the list.
@@ -180,9 +173,7 @@ export default function AIDemo() {
                   <div className="max-w-md rounded-2xl border border-border bg-muted/30 px-4 py-3">
                     <div className="mb-2 flex items-center gap-2 text-[#1D4ED8]">
                       <BrainCircuit className="h-4 w-4" />
-                      <span className="text-sm font-semibold">
-                        AI Tutor
-                      </span>
+                      <span className="text-sm font-semibold">AI Tutor</span>
                     </div>
 
                     <p className="text-sm leading-relaxed text-foreground/80">
@@ -212,9 +203,7 @@ export default function AIDemo() {
                 Follow-up Questions
               </p>
 
-              <p className="mt-1 text-2xl font-bold text-foreground">
-                3 / 3
-              </p>
+              <p className="mt-1 text-2xl font-bold text-foreground">3 / 3</p>
             </div>
           </motion.div>
         </div>

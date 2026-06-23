@@ -2,8 +2,7 @@
 
 > An AI-powered academic learning platform designed to transform how students learn, revise, and prepare for examinations through intelligent content generation, syllabus-driven learning, previous year question analysis, and personalized AI assistance.
 
-![Hyper Learning Hero Section](public/HyperLearningv3Hero.png)
----
+## ![Hyper Learning Hero Section](public/HyperLearningv3Hero.png)
 
 ## 🌟 Vision
 
@@ -11,12 +10,12 @@ Hyper Learning aims to become a modern educational ecosystem that bridges the ga
 
 Instead of simply providing question papers and notes, Hyper Learning helps students:
 
-* Learn concepts topic-by-topic
-* Explore AI-generated explanations
-* Understand previous year examination trends
-* Ask contextual follow-up questions
-* Track academic progress
-* Access structured learning paths
+- Learn concepts topic-by-topic
+- Explore AI-generated explanations
+- Understand previous year examination trends
+- Ask contextual follow-up questions
+- Track academic progress
+- Access structured learning paths
 
 The long-term goal is to build a scalable learning platform where syllabus, notes, PYQs, revision material, and AI tutoring are deeply connected.
 
@@ -26,21 +25,21 @@ The long-term goal is to build a scalable learning platform where syllabus, note
 
 ## 📚 Academic Content Management
 
-* Subject-wise syllabus organization
-* Unit-wise topic breakdown
-* Topic-specific AI-generated notes
-* Version-controlled content updates
-* Related PYQ mapping
+- Subject-wise syllabus organization
+- Unit-wise topic breakdown
+- Topic-specific AI-generated notes
+- Version-controlled content updates
+- Related PYQ mapping
 
 ---
 
 ## 📝 Previous Year Questions (PYQs)
 
-* Semester-wise paper collection
-* Branch-wise categorization
-* Subject-wise filtering
-* Question-to-unit mapping
-* Fast retrieval system
+- Semester-wise paper collection
+- Branch-wise categorization
+- Subject-wise filtering
+- Question-to-unit mapping
+- Fast retrieval system
 
 ---
 
@@ -50,10 +49,10 @@ The long-term goal is to build a scalable learning platform where syllabus, note
 
 Generate structured answers for:
 
-* 2 Mark Questions
-* 5 Mark Questions
-* 10 Mark Questions
-* Long Answer Questions
+- 2 Mark Questions
+- 5 Mark Questions
+- 10 Mark Questions
+- Long Answer Questions
 
 ---
 
@@ -61,9 +60,9 @@ Generate structured answers for:
 
 Generate detailed notes for:
 
-* Individual Topics
-* Units
-* Complete Subjects
+- Individual Topics
+- Units
+- Complete Subjects
 
 ---
 
@@ -71,20 +70,20 @@ Generate detailed notes for:
 
 Students can:
 
-* Ask contextual follow-up questions
-* Clarify doubts
-* Request examples
-* Simplify difficult concepts
+- Ask contextual follow-up questions
+- Clarify doubts
+- Request examples
+- Simplify difficult concepts
 
 ---
 
 ## 🔖 Student Productivity
 
-* Bookmarks
-* Learning Progress Tracking
-* Recently Viewed Topics
-* Personalized Dashboard
-* Saved Content
+- Bookmarks
+- Learning Progress Tracking
+- Recently Viewed Topics
+- Personalized Dashboard
+- Saved Content
 
 ---
 
@@ -94,19 +93,19 @@ Students can:
 
 Can:
 
-* Upload Papers
-* Edit Content
-* Generate Notes
-* Manage Academic Resources
+- Upload Papers
+- Edit Content
+- Generate Notes
+- Manage Academic Resources
 
 ### Owner
 
 Can:
 
-* Manage Editors
-* Approve Applications
-* Review Audit Logs
-* Configure Platform Settings
+- Manage Editors
+- Approve Applications
+- Review Audit Logs
+- Configure Platform Settings
 
 ---
 
@@ -114,11 +113,11 @@ Can:
 
 Search across:
 
-* Subjects
-* Units
-* Topics
-* Notes
-* PYQs
+- Subjects
+- Units
+- Topics
+- Notes
+- PYQs
 
 ---
 
@@ -152,71 +151,71 @@ Users       Context Cache
 
 ## Frontend
 
-* Next.js 16
-* TypeScript
-* Tailwind CSS v4
-* ShadCN/UI
-* Lucide Icons
+- Next.js 16
+- TypeScript
+- Tailwind CSS v4
+- ShadCN/UI
+- Lucide Icons
 
 ---
 
 ## Authentication
 
-* Clerk
-* Role-Based Access Control (RBAC)
-* Multi-Factor Authentication (MFA)
+- Clerk
+- Role-Based Access Control (RBAC)
+- Multi-Factor Authentication (MFA)
 
 ---
 
 ## Database
 
-* PostgreSQL
-* Prisma ORM
+- PostgreSQL
+- Prisma ORM
 
 ---
 
 ## Caching
 
-* Redis
-* Upstash Redis / Vercel KV
+- Redis
+- Upstash Redis / Vercel KV
 
 ---
 
 ## Artificial Intelligence
 
-* Google Gemini
+- Google Gemini
 
 ---
 
 ## Storage
 
-* Cloudinary
-* Vercel Blob (Optional)
+- Cloudinary
+- Vercel Blob (Optional)
 
 ---
 
 ## Email Services
 
-* Resend
+- Resend
 
 ---
 
 ## Monitoring
 
-* Sentry
+- Sentry
 
 ---
 
 ## Analytics
 
-* PostHog
+- PostHog
 
 ---
 
 ## Deployment
 
-* Vercel
-* Neon PostgreSQL
+- Vercel
+- Neon PostgreSQL
 
 ---
 
@@ -338,10 +337,10 @@ Response
 
 ## Authentication
 
-* Clerk Authentication
-* Secure Sessions
-* MFA Support
-* Protected Routes
+- Clerk Authentication
+- Secure Sessions
+- MFA Support
+- Protected Routes
 
 ---
 
@@ -349,29 +348,29 @@ Response
 
 Roles:
 
-* Student
-* Editor
-* Owner
+- Student
+- Editor
+- Owner
 
 ---
 
 ## Administrative Security
 
-* Invitation-only editor accounts
-* Owner approval workflow
-* Audit logging
-* Login notifications
-* Role-based permissions
+- Invitation-only editor accounts
+- Owner approval workflow
+- Audit logging
+- Login notifications
+- Role-based permissions
 
 ---
 
 ## Infrastructure Security
 
-* Environment Variables
-* Server-Side API Keys
-* Protected AI Endpoints
-* Rate Limiting
-* Request Validation
+- Environment Variables
+- Server-Side API Keys
+- Protected AI Endpoints
+- Rate Limiting
+- Request Validation
 
 ---
 
@@ -452,46 +451,46 @@ CLOUDINARY_API_SECRET=
 
 ## Phase 1
 
-* [ ] Next.js Migration
-* [ ] PostgreSQL Integration
-* [ ] Prisma ORM
-* [ ] Clerk Authentication
+- [ ] Next.js Migration
+- [ ] PostgreSQL Integration
+- [ ] Prisma ORM
+- [ ] Clerk Authentication
 
 ---
 
 ## Phase 2
 
-* [ ] Topic-Based Learning System
-* [ ] AI Note Generation
-* [ ] Topic Versioning
-* [ ] Search System
+- [ ] Topic-Based Learning System
+- [ ] AI Note Generation
+- [ ] Topic Versioning
+- [ ] Search System
 
 ---
 
 ## Phase 3
 
-* [ ] AI Tutor
-* [ ] Progress Tracking
-* [ ] Bookmarks
-* [ ] Personalized Dashboard
+- [ ] AI Tutor
+- [ ] Progress Tracking
+- [ ] Bookmarks
+- [ ] Personalized Dashboard
 
 ---
 
 ## Phase 4
 
-* [ ] Admin Dashboard
-* [ ] Paper Upload Pipeline
-* [ ] OCR Processing
-* [ ] Content Moderation
+- [ ] Admin Dashboard
+- [ ] Paper Upload Pipeline
+- [ ] OCR Processing
+- [ ] Content Moderation
 
 ---
 
 ## Phase 5
 
-* [ ] Advanced Analytics
-* [ ] Recommendation Engine
-* [ ] Multi-University Support
-* [ ] Mobile Application
+- [ ] Advanced Analytics
+- [ ] Recommendation Engine
+- [ ] Multi-University Support
+- [ ] Mobile Application
 
 ---
 
@@ -501,12 +500,12 @@ Contributions are welcome.
 
 You can contribute by:
 
-* Improving UI/UX
-* Fixing bugs
-* Optimizing performance
-* Improving documentation
-* Adding new features
-* Enhancing accessibility
+- Improving UI/UX
+- Fixing bugs
+- Optimizing performance
+- Improving documentation
+- Adding new features
+- Enhancing accessibility
 
 ### Contribution Process
 

@@ -90,8 +90,7 @@ export const subjects = [
 export function getSubjectsBySemester(branchId: string, semesterId: string) {
   return subjects.filter(
     (subject) =>
-      subject.branchId === branchId &&
-      subject.semesterId === semesterId
+      subject.branchId === branchId && subject.semesterId === semesterId
   );
 }
 

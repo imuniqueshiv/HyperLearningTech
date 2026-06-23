@@ -2,12 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  GraduationCap,
-  BookOpen,
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
+import { GraduationCap, ArrowRight, Sparkles } from "lucide-react";
 
 const universities = [
   {
