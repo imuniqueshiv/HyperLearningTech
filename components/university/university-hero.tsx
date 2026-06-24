@@ -51,6 +51,13 @@ export default function UniversityHero() {
     "Previous Year Questions",
     "Hyper AI Assistance",
   ];
+   const handleScrollToBranches = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const section = document.getElementById("branches");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <section className="relative overflow-hidden border-b border-border bg-background">
@@ -104,13 +111,14 @@ export default function UniversityHero() {
               variants={itemVariants}
               className="mt-10 flex flex-col gap-4 sm:flex-row"
             >
-              <Link
-                href="/rgpv/branches"
+              <a
+                href="#branches"
+          onClick={handleScrollToBranches}
                 className="group inline-flex items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-8 py-4 font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:bg-[#1E40AF]"
               >
                 Explore Branches
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
+              </a>
 
               <Link
                 href="/subjects"

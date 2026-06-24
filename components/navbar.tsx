@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
 
 const navLinks = [
   {
@@ -14,7 +15,7 @@ const navLinks = [
   },
   {
     label: "Universities",
-    href: "/universities",
+    href: "/#universities",
   },
   {
     label: "Subjects",
@@ -34,14 +35,35 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setMounted(true);
-    }, 0);
-
-    return () => clearTimeout(timer);
+    setMounted(true);
   }, []);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // If it's a hash link on the same page
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const targetId = href.replace("/#", "");
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        // Close mobile menu if open
+        setIsOpen(false);
+      } else {
+        // If element not found, navigate to home and then scroll
+        router.push("/");
+        setTimeout(() => {
+          const el = document.getElementById(targetId);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 100);
+      }
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#00008B]/20 bg-[#00008B]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80">
@@ -80,6 +102,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-[15px] font-medium text-[#AFC8FF] transition-all duration-200 hover:text-white"
               >
                 {link.label}
@@ -89,7 +112,6 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden items-center gap-3 md:flex">
-            {/* Theme Toggle */}
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               aria-label="Toggle theme"
@@ -133,21 +155,10 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{
-              opacity: 0,
-              height: 0,
-            }}
-            animate={{
-              opacity: 1,
-              height: "auto",
-            }}
-            exit={{
-              opacity: 0,
-              height: 0,
-            }}
-            transition={{
-              duration: 0.25,
-            }}
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25 }}
             className="overflow-hidden border-t border-white/10 bg-[#00008B]/95 backdrop-blur-xl md:hidden"
           >
             <div className="space-y-2 px-6 py-6">
@@ -155,7 +166,10 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    handleNavClick(e, link.href);
+                    setIsOpen(false);
+                  }}
                   className="block rounded-xl px-4 py-3 text-[#AFC8FF] transition-all duration-200 hover:bg-white/10 hover:text-white"
                 >
                   {link.label}
@@ -163,7 +177,6 @@ export default function Navbar() {
               ))}
 
               <div className="mt-4 flex flex-col gap-3">
-                {/* Mobile Theme Toggle - Icon Only */}
                 <button
                   onClick={() => {
                     setTheme(theme === "dark" ? "light" : "dark");

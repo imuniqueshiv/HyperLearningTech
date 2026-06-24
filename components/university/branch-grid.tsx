@@ -47,7 +47,7 @@ export default function BranchGrid() {
   });
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-background py-16 md:py-20 lg:py-24">
+    <section id="branches" className="relative overflow-hidden border-b border-border bg-background py-16 md:py-20 lg:py-24">
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px]" />
