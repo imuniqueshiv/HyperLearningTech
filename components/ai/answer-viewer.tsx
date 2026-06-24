@@ -28,7 +28,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
   return (
     <div
       className="
-        prose prose-invert
+        prose dark:prose-invert
         max-w-none
         px-4 sm:px-0
 
