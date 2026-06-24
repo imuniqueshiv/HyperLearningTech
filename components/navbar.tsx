@@ -56,7 +56,8 @@ export default function Navbar() {
               <Image
                 src="/hl-logo.png"
                 alt="Hyper Learning Official Logo"
-                fill
+                width={48}
+                height={48}
                 className="object-contain"
                 priority
               />

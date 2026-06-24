@@ -14,7 +14,8 @@ export default function Footer() {
                 <Image
                   src="/hl-logo.png"
                   alt="Hyper Learning Logo"
-                  fill
+                  width={48}
+                  height={48}
                   className="object-contain"
                 />
               </div>

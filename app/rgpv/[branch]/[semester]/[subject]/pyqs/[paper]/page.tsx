@@ -1,10 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import {
-  FileText,
-  Calendar,
-  Clock,
-} from "lucide-react";
+import { FileText, Calendar, Clock } from "lucide-react";
 import { getPYQs } from "@/lib/content/pyqs";
 
 interface PaperPageProps {
