@@ -379,11 +379,11 @@ Roles:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/HyperLearningTech/hyper-learning.git
+git clone https://github.com/imuniqueshiv/HyperLearningTech.git
 ```
 
 ```bash
-cd hyper-learning
+cd hyper-learning-tech
 ```
 
 ---
@@ -427,22 +427,14 @@ http://localhost:3000
 ```env
 DATABASE_URL=
 
-REDIS_URL=
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
 
 GEMINI_API_KEY=
 
 CLERK_SECRET_KEY=
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 
-RESEND_API_KEY=
-
-POSTHOG_KEY=
-
-SENTRY_AUTH_TOKEN=
-
-CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
 ```
 
 ---
@@ -525,13 +517,28 @@ See the LICENSE file for complete information.
 
 ---
 
-# 👨‍💻 Maintainer
+# 👨‍💻 Maintainers
 
-**Shiv Raj Singh**
+### Shiv Raj Singh
 
-Founder & Developer of Hyper Learning
+**Founder & Lead Developer**
+Building Hyper Learning and leading product, AI, and platform development.
 
-Building intelligent educational technology that combines modern software engineering, AI, and academic learning into a unified platform.
+🔗 [LinkedIn](https://www.linkedin.com/in/shiv-raj-singh-387973299/) • [GitHub](https://github.com/imuniqueshiv)
+
+### Nitin Pandey
+
+**Frontend Developer**
+Contributing to UI/UX design and frontend development.
+
+🔗 [LinkedIn](https://www.linkedin.com/in/nitin-mohan-9251ab328/) • [GitHub](https://github.com/nitinmohan18)
+
+### Ramoo Kachhee
+
+**Community & Outreach Contributor**
+Promoting Hyper Learning across student communities and social platforms.
+
+🔗 [LinkedIn](https://www.linkedin.com/in/ramoo-kachhee-9b1616405/) • [GitHub](https://github.com/RamuuXfree)
 
 ---
 
