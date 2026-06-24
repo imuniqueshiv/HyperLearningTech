@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { FileText, Calendar, Clock } from "lucide-react";
 import { getPYQs } from "@/lib/content/pyqs";
+import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 
 interface PaperPageProps {
   params: Promise<{
@@ -202,14 +202,11 @@ export default async function PaperPage({ params }: PaperPageProps) {
 
                           {/* AI Answer Button - only shows for this sub-question when opened */}
                           <div className="mt-4">
-                            <Link
-                              href={`/rgpv/${branch}/${semester}/${subject}/ai?question=${encodeURIComponent(
-                                subQuestion.text
-                              )}`}
-                              className="inline-flex items-center rounded-lg border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-600 transition hover:bg-blue-500/20 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-                            >
-                              Check Answer {subQuestion.label} with AI
-                            </Link>
+                            <GenerateAnswerButton
+                              question={subQuestion.text}
+                              subjectCode={subject.toUpperCase()}
+                              label={subQuestion.label}
+                            />
                           </div>
                         </details>
                       ))}
