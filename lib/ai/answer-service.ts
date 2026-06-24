@@ -5,6 +5,8 @@ import { getSubjectInfo } from "@/lib/ai/subject-map";
 import { getPrimaryKey } from "@/lib/ai/key-manager";
 import { getCachedAnswer, saveAnswerToCache } from "@/lib/ai/answer-cache";
 
+import { trackMetric } from "@/lib/ai/metrics";
+
 export interface GenerateAnswerInput {
   question: string;
   subjectCode: string;
@@ -16,6 +18,58 @@ export interface GenerateAnswerResult {
   cached: boolean;
 }
 
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function generateWithRetry(
+  ai: GoogleGenAI,
+  prompt: string,
+  subjectCode: string
+): Promise<string> {
+  const maxAttempts = 3;
+
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const started = Date.now();
+
+      const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash-lite",
+        contents: prompt,
+      });
+
+      const answer = response.text?.trim() || "No answer generated.";
+
+      trackMetric("GENERATION_SUCCESS", {
+        subjectCode,
+        durationMs: Date.now() - started,
+      });
+
+      return answer;
+    } catch (error) {
+      lastError = error;
+
+      trackMetric("GENERATION_RETRY", {
+        subjectCode,
+        message: `Attempt ${attempt} failed`,
+      });
+
+      if (attempt < maxAttempts) {
+        await sleep(1500 * attempt);
+      }
+    }
+  }
+
+  trackMetric("GENERATION_FAILED", {
+    subjectCode,
+    message: String(lastError),
+  });
+
+  throw lastError;
+}
+
 export async function generateAnswer(
   input: GenerateAnswerInput
 ): Promise<GenerateAnswerResult> {
@@ -25,41 +79,44 @@ export async function generateAnswer(
     throw new Error("Question is required");
   }
 
-  // Cache First
+  // CACHE FIRST
   if (!forceRefresh) {
     const cached = await getCachedAnswer(question, subjectCode);
 
     if (cached) {
+      trackMetric("CACHE_HIT", {
+        subjectCode,
+      });
+
       return {
         answer: cached,
         cached: true,
       };
     }
+
+    trackMetric("CACHE_MISS", {
+      subjectCode,
+    });
   }
 
-  // Subject Lookup
+  // SUBJECT LOOKUP
   const subject = getSubjectInfo(subjectCode);
 
-  // Prompt Creation
+  // PROMPT BUILD
   const prompt = buildPrompt({
     question,
     subjectCode,
     subjectType: subject.type,
   });
 
-  // Gemini Client
+  // GEMINI CLIENT
   const ai = new GoogleGenAI({
     apiKey: getPrimaryKey(),
   });
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash-lite",
-    contents: prompt,
-  });
+  const answer = await generateWithRetry(ai, prompt, subjectCode);
 
-  const answer = response.text?.trim() || "No answer generated.";
-
-  // Save Cache
+  // SAVE CACHE
   await saveAnswerToCache(question, subjectCode, answer);
 
   return {
