@@ -30,6 +30,15 @@ export default function Hero() {
       },
     },
   };
+  const scrollToUniversities = () => {
+    const section = document.getElementById("universities");
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <section className="relative overflow-hidden border-b border-border bg-background">
@@ -87,13 +96,14 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-10 flex flex-col gap-4 sm:flex-row"
             >
-              <Link
-                href="/subjects"
+              <a
+                href="#Universities"
+                onClick={scrollToUniversities}
                 className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-[#1D4ED8] px-8 py-4 font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:bg-[#1E40AF] hover:shadow-blue-500/40 hover:-translate-y-0.5"
               >
                 Start Learning
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
+              </a>
 
               <Link
                 href="/about"

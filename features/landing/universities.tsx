@@ -39,7 +39,10 @@ const universities = [
 
 export default function Universities() {
   return (
-    <section className="relative overflow-hidden border-b border-border bg-background py-24">
+    <section
+      id="Universities"
+      className="relative overflow-hidden border-b border-border bg-background py-24"
+    >
       {/* Background Glows - No grid pattern */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-[-10%] top-20 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px]" />
