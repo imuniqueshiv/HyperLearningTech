@@ -13,13 +13,44 @@ interface AnswerViewerProps {
   answer: string;
 }
 
+/**
+ * The model sometimes chains multiple solution steps ("Path 1: ...",
+ * "Step 2: ...", "C1: ...", "1. ...") into a single run-on paragraph
+ * with no line breaks in between. ReactMarkdown can only respect line
+ * breaks that exist in the source text, so this preprocessor forces
+ * those breaks back in before rendering — on top of normalizing LaTeX
+ * delimiters and making sure display math always sits on its own block.
+ */
 function preprocessMath(text: string): string {
-  return text
+  let result = text
+    .replace(/\r\n/g, "\n")
     .replace(/\\\[/g, "$$")
     .replace(/\\\]/g, "$$")
     .replace(/\\\(/g, "$")
-    .replace(/\\\)/g, "$")
-    .replace(/\r\n/g, "\n");
+    .replace(/\\\)/g, "$");
+
+  // Force display math ($$...$$) onto its own block, separated from
+  // surrounding text by blank lines, so it renders as a standalone
+  // equation instead of getting swallowed into a paragraph.
+  result = result.replace(/\$\$([\s\S]*?)\$\$/g, (_match, expr) => {
+    return `\n\n$$${expr.trim()}$$\n\n`;
+  });
+
+  // Insert a paragraph break before common "step/part" labels that the
+  // model tends to chain together mid-sentence instead of starting a
+  // new line (e.g. "Path 1:", "Step 2:", "Case 3:", "C1:", "Q2:").
+  const stepLabelPattern =
+    /([.!?:)])\s+(?=(?:Path\s*\d+|Step\s*\d+|Case\s*\d+|Part\s*\d+|C\d+\s*:|Q\d+\s*:|\d+\.\s))/g;
+  result = result.replace(stepLabelPattern, "$1\n\n");
+
+  // Force numbered list markers onto their own line even when they
+  // appear mid-sentence rather than at the start of a line.
+  result = result.replace(/([^\n])\s+(\d+\.\s)/g, "$1\n\n$2");
+
+  // Collapse any accidental triple+ blank lines down to a single blank line.
+  result = result.replace(/\n{3,}/g, "\n\n");
+
+  return result.trim();
 }
 
 export default function AnswerViewer({ answer }: AnswerViewerProps) {
@@ -46,7 +77,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         prose-h2:text-xl
         sm:prose-h2:text-2xl
         prose-h2:mb-4
-        prose-h2:mt-8
+        prose-h2:mt-10
         prose-h2:text-blue-600
         prose-h2:border-l-4
         prose-h2:border-blue-500
@@ -55,13 +86,13 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         prose-h3:text-lg
         sm:prose-h3:text-xl
         prose-h3:mb-3
-        prose-h3:mt-6
+        prose-h3:mt-8
         prose-h3:text-cyan-600
 
         prose-h4:text-base
         sm:prose-h4:text-lg
         prose-h4:mb-2
-        prose-h4:mt-4
+        prose-h4:mt-6
         prose-h4:text-emerald-600
 
         prose-p:text-base
@@ -75,7 +106,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         sm:prose-li:text-lg
         prose-li:leading-[1.8]
         sm:prose-li:leading-[1.9]
-        prose-li:mb-1.5
+        prose-li:mb-3
 
         prose-strong:text-foreground
         prose-strong:font-semibold
@@ -137,14 +168,24 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         prose-ul:pl-6
         sm:prose-ul:pl-8
         prose-ul:my-5
+        prose-ul:space-y-2
 
         prose-ol:list-decimal
         prose-ol:pl-6
         sm:prose-ol:pl-8
         prose-ol:my-5
+        prose-ol:space-y-2
 
         prose-hr:border-border
         prose-hr:my-8
+
+        [&_.katex-display]:overflow-x-auto
+        [&_.katex-display]:overflow-y-hidden
+        [&_.katex-display]:my-6
+        [&_.katex-display]:py-2
+        [&_.katex-display]:px-1
+        [&_.katex]:text-[1.05em]
+        sm:[&_.katex]:text-[1.1em]
       "
     >
       <ReactMarkdown
@@ -217,7 +258,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
           h2({ children }) {
             return (
-              <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-8 border-l-4 border-blue-500 pl-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4">
                 {children}
               </h2>
             );
@@ -225,7 +266,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
           h3({ children }) {
             return (
-              <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-6">
+              <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8">
                 {children}
               </h3>
             );
@@ -233,7 +274,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
           h4({ children }) {
             return (
-              <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-4">
+              <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6">
                 {children}
               </h4>
             );
@@ -245,7 +286,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
           ul({ children }) {
             return (
-              <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-1.5">
+              <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">
                 {children}
               </ul>
             );
@@ -253,7 +294,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
           ol({ children }) {
             return (
-              <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-1.5">
+              <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">
                 {children}
               </ol>
             );
@@ -261,7 +302,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
           li({ children }) {
             return (
-              <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-1.5 text-foreground">
+              <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground">
                 {children}
               </li>
             );
