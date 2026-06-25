@@ -1,3 +1,5 @@
+import { saveMetric } from "./analytics-storage";
+
 export type MetricEvent =
   | "CACHE_HIT"
   | "CACHE_MISS"
@@ -5,20 +7,32 @@ export type MetricEvent =
   | "GENERATION_FAILED"
   | "GENERATION_RETRY";
 
-interface MetricPayload {
+export interface MetricPayload {
   subjectCode?: string;
   durationMs?: number;
   message?: string;
 }
 
-export function trackMetric(event: MetricEvent, payload?: MetricPayload) {
-  const timestamp = new Date().toISOString();
+export interface MetricRecord extends MetricPayload {
+  event: MetricEvent;
+  timestamp: string;
+}
 
-  console.log(
-    JSON.stringify({
-      timestamp,
-      event,
-      ...payload,
-    })
-  );
+export async function trackMetric(
+  event: MetricEvent,
+  payload: MetricPayload = {}
+): Promise<void> {
+  const metric: MetricRecord = {
+    event,
+    timestamp: new Date().toISOString(),
+    ...payload,
+  };
+
+  console.log("[AI_METRIC]", metric);
+
+  try {
+    await saveMetric(metric);
+  } catch (error) {
+    console.error("[AI_METRIC_STORAGE_FAILED]", error);
+  }
 }
