@@ -1,1 +1,216 @@
-{}
+{
+    "subject": {
+        "id": "bt-102",
+        "code": "BT-102",
+        "name": "Mathematics-I",
+        "title": "BT-102 – Mathematics-I",
+        "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+        "scheme": "New Scheme Based On AICTE Flexible Curricula",
+        "semester": "I",
+        "credits": 4,
+        "lectureTutorialPractical": "3L-1T-0P",
+        "commonTo": "All Disciplines"
+    },
+    "modules": [
+        {
+            "id": "module-1",
+            "number": 1,
+            "title": "Calculus",
+            "hours": 10,
+            "topics": [
+                "Rolle's theorem",
+                "Mean Value theorems",
+                "Expansion of functions by Mc. Laurin's and Taylor's for one variable",
+                "Taylor's theorem for function of two variables",
+                "Partial Differentiation",
+                "Maxima & Minima (two and three variables)",
+                "Method of Lagranges Multipliers"
+            ],
+            "questionIds": [
+                "bt102_m1_nov2022_q1",
+                "bt102_m1_nov2022_q2",
+                "bt102_m1_nov2022_q3",
+                "bt102_m1_june2023_q4",
+                "bt102_m1_june2023_q5",
+                "bt102_m1_june2023_q6",
+                "bt102_m1_june2023_q7",
+                "bt102_m1_june2023_q8",
+                "bt102_m1_june2023_q9",
+                "bt102_m1_dec2023_q10",
+                "bt102_m1_dec2023_q11",
+                "bt102_m1_dec2023_q12",
+                "bt102_m1_dec2023_q13",
+                "bt102_m1_dec2023_q14",
+                "bt102_m1_june2024_q15",
+                "bt102_m1_june2024_q16",
+                "bt102_m1_june2024_q17",
+                "bt102_m1_june2024_q18",
+                "bt102_m1_dec2024_q19",
+                "bt102_m1_dec2024_q20",
+                "bt102_m1_dec2024_q21",
+                "bt102_m1_june2025_q22",
+                "bt102_m1_june2025_q23",
+                "bt102_m1_june2025_q24",
+                "bt102_m1_june2025_q25"
+            ],
+            "predictedQuestionIds": [
+                "bt102_m1_predicted_q1",
+                "bt102_m1_predicted_q2",
+                "bt102_m1_predicted_q3",
+                "bt102_m1_predicted_q4",
+                "bt102_m1_predicted_q5"
+            ]
+        },
+        {
+            "id": "module-2",
+            "number": 2,
+            "title": "Calculus",
+            "hours": 8,
+            "topics": [
+                "Definite Integral as a limit of a sum and Its application in summation of series",
+                "Beta and Gamma functions and their properties",
+                "Applications of definite integrals to evaluate surface areas and volumes of revolutions",
+                "Multiple Integral",
+                "Change the order of the integration",
+                "Applications of multiple integral for calculating area and volumes of the curves"
+            ],
+            "questionIds": [
+                "bt102_m2_nov2022_q1",
+                "bt102_m2_nov2022_q2",
+                "bt102_m2_nov2022_q3",
+                "bt102_m2_june2023_q4",
+                "bt102_m2_june2023_q5",
+                "bt102_m2_june2023_q6",
+                "bt102_m2_dec2023_q7",
+                "bt102_m2_dec2023_q8",
+                "bt102_m2_june2024_q9",
+                "bt102_m2_june2024_q10",
+                "bt102_m2_june2024_q11",
+                "bt102_m2_dec2024_q12",
+                "bt102_m2_dec2024_q13",
+                "bt102_m2_dec2024_q14",
+                "bt102_m2_dec2024_q15",
+                "bt102_m2_june2025_q16",
+                "bt102_m2_june2025_q17"
+            ],
+            "predictedQuestionIds": [
+                "bt102_m2_predicted_q1",
+                "bt102_m2_predicted_q2",
+                "bt102_m2_predicted_q3",
+                "bt102_m2_predicted_q4",
+                "bt102_m2_predicted_q5"
+            ]
+        },
+        {
+            "id": "module-3",
+            "number": 3,
+            "title": "Sequences and series",
+            "hours": 6,
+            "topics": [
+                "Convergence of sequence and series",
+                "tests for convergence",
+                "Power series",
+                "Taylor's series",
+                "series for exponential, trigonometric and logarithm functions",
+                "Fourier series: Half range sine and cosine series",
+                "Parseval's theorem"
+            ],
+            "questionIds": [
+                "bt102_m3_nov2022_q1",
+                "bt102_m3_nov2022_q2",
+                "bt102_m3_june2023_q3",
+                "bt102_m3_june2023_q4",
+                "bt102_m3_june2023_q5",
+                "bt102_m3_june2023_q6",
+                "bt102_m3_dec2023_q3",
+                "bt102_m3_dec2023_q4",
+                "bt102_m3_june2024_q7",
+                "bt102_m3_june2024_q8",
+                "bt102_m3_june2024_q9",
+                "bt102_m3_dec2024_q10",
+                "bt102_m3_dec2024_q11",
+                "bt102_m3_dec2024_q12",
+                "bt102_m3_june2025_q9",
+                "bt102_m3_june2025_q13"
+            ],
+            "predictedQuestionIds": [
+                "bt102_m3_predicted_q1",
+                "bt102_m3_predicted_q2",
+                "bt102_m3_predicted_q3",
+                "bt102_m3_predicted_q4",
+                "bt102_m3_predicted_q5"
+            ]
+        },
+        {
+            "id": "module-4",
+            "number": 4,
+            "title": "Vector Spaces",
+            "hours": 8,
+            "topics": [
+                "Vector Space",
+                "Vector Sub Space",
+                "Linear Combination of Vectors",
+                "Linearly Dependent",
+                "Linearly Independent",
+                "Basis of a Vector Space",
+                "Linear Transformations"
+            ],
+            "questionIds": [
+                "bt102_m4_nov2022_q1",
+                "bt102_m4_nov2022_q2",
+                "bt102_m4_june2024_q3",
+                "bt102_m4_dec2024_q4",
+                "bt102_m4_dec2024_q5",
+                "bt102_m4_june2025_q6",
+                "bt102_m4_june2025_q7"
+            ],
+            "predictedQuestionIds": [
+                "bt102_m4_predicted_q1",
+                "bt102_m4_predicted_q2",
+                "bt102_m4_predicted_q3",
+                "bt102_m4_predicted_q4",
+                "bt102_m4_predicted_q5"
+            ]
+        },
+        {
+            "id": "module-5",
+            "number": 5,
+            "title": "Matrices",
+            "hours": 8,
+            "topics": [
+                "Rank of a Matrix",
+                "Solution of Simultaneous Linear Equations by Elementary Transformation",
+                "Consistency of Equation",
+                "Eigen Values and Eigen Vectors",
+                "Diagonalization of Matrices",
+                "Cayley-Hamilton theorem and its applications to find inverse"
+            ],
+            "questionIds": [
+                "bt102_m5_nov2022_q1",
+                "bt102_m5_nov2022_q2",
+                "bt102_m5_nov2022_q3",
+                "bt102_m5_june2023_q4",
+                "bt102_m5_june2023_q5",
+                "bt102_m5_june2023_q6",
+                "bt102_m5_june2023_q7",
+                "bt102_m5_dec2023_q8",
+                "bt102_m5_dec2023_q9",
+                "bt102_m5_june2024_q10",
+                "bt102_m5_june2024_q11",
+                "bt102_m5_june2024_q12",
+                "bt102_m5_june2024_q13",
+                "bt102_m5_dec2024_q14",
+                "bt102_m5_dec2024_q15",
+                "bt102_m5_june2025_q16",
+                "bt102_m5_june2025_q17"
+            ],
+            "predictedQuestionIds": [
+                "bt102_m5_predicted_q1",
+                "bt102_m5_predicted_q2",
+                "bt102_m5_predicted_q3",
+                "bt102_m5_predicted_q4",
+                "bt102_m5_predicted_q5"
+            ]
+        }
+    ]
+}
