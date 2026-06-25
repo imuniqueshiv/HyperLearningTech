@@ -11,11 +11,11 @@ export const subjects = [
     branchId: "common",
   },
   {
-    id: "bt-202",
+    id: "bt-102",
     semesterId: "semester-1",
-    code: "BT-202",
+    code: "BT-102",
     name: "Mathematics-I",
-    slug: "bt-202",
+    slug: "bt-102",
     branchId: "common",
   },
   {
