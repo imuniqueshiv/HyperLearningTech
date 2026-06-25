@@ -11,15 +11,11 @@ import { useRouter } from "next/navigation";
 const navLinks = [
   {
     label: "Home",
-    href: "/",
+    href: "/#Home",
   },
   {
     label: "Universities",
-    href: "/#universities",
-  },
-  {
-    label: "Subjects",
-    href: "/subjects",
+    href: "/#Universities",
   },
   {
     label: "About",
@@ -38,16 +34,23 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, []);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     // If it's a hash link on the same page
     if (href.startsWith("/#")) {
       e.preventDefault();
       const targetId = href.replace("/#", "");
       const element = document.getElementById(targetId);
-      
+
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
         // Close mobile menu if open

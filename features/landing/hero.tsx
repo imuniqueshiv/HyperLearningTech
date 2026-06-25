@@ -41,7 +41,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-background">
+    <section
+      id="Home"
+      className="relative overflow-hidden border-b border-border bg-background"
+    >
       {/* Background Glows - Removed grid pattern */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-blue-500/10 blur-[100px]" />
