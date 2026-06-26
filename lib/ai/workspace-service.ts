@@ -79,24 +79,14 @@ async function generateWithRetry(
 export async function generateWorkspace(
   input: WorkspaceRequest
 ): Promise<WorkspaceResponse> {
-  const {
-    topic,
-    module,
-    subjectCode,
-    action,
-    forceRefresh = false,
-  } = input;
+  const { topic, module, subjectCode, action, forceRefresh = false } = input;
 
   if (!topic.trim()) {
     throw new Error("Topic is required.");
   }
 
   if (!forceRefresh) {
-    const cached = await getWorkspaceCache(
-      action,
-      topic,
-      subjectCode
-    );
+    const cached = await getWorkspaceCache(action, topic, subjectCode);
 
     if (cached) {
       trackMetric("CACHE_HIT", {
@@ -125,22 +115,13 @@ export async function generateWorkspace(
     subjectType: subject.type,
   });
 
- const ai = new GoogleGenAI({
-  apiKey: getWorkspaceKey(),
-});
+  const ai = new GoogleGenAI({
+    apiKey: getWorkspaceKey(),
+  });
 
-  const answer = await generateWithRetry(
-    ai,
-    prompt,
-    subjectCode
-  );
+  const answer = await generateWithRetry(ai, prompt, subjectCode);
 
-  await saveWorkspaceCache(
-    action,
-    topic,
-    subjectCode,
-    answer
-  );
+  await saveWorkspaceCache(action, topic, subjectCode, answer);
 
   return {
     answer,

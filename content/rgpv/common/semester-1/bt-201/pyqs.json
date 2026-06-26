@@ -1,1412 +1,1412 @@
 {
-    "subject": {
-        "id": "bt-201",
-        "code": "BT-201",
-        "name": "Engineering Physics",
-        "title": "BT-201 (GS) – Engineering Physics",
-        "semester": "I & II",
-        "gradingSystem": "Grading System (GS)",
-        "maxMarks": 70,
-        "time": "3 Hours",
-        "commonInstructions": [
-            "Attempt any five questions.",
-            "All questions carry equal marks."
-        ]
-    },
-    "papers": [
-        {
-            "exam": "December 2022",
-            "year": 2022,
-            "month": "December",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the Heisenberg's uncertainty principle in detail.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Deduce the relation between phase and group velocities.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Obtain the time independent Schrodinger wave equation.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "How the Newton's rings are formed? Deduce the expression for diameter of dark and bright fringes.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Describe the construction and working of Mach-Zehnder interferometer.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain about the diffraction grating. A parallel beam of Sodium light incident on plane transmission grating having 4250 lines per centimeter and a second order spectral line is observed at an angle of 30°. Find the wavelength of Sodium light.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "What is P-N junction diode? Discuss its I-V characteristics.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the construction and working of solar cell with neat diagrams.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Derive an expression for Hall coefficient and Hall voltage.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Derive the relationship between Einstein A and B coefficients.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the construction and working of He-Ne laser.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the numerical aperture of an optical fiber. Calculate the numerical aperture of a fiber with refractive indices of core and cladding are 1.55 and 1.50, respectively.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "State and explain Stoke's and Gauss theorem.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Derive Maxwell equations in vacuum.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8",
-                            "label": "",
-                            "latex": "",
-                            "text": "Write short notes on any two: a) Physical significance of wave function b) Young's double slit experiment c) Bloch's theorem d) Properties of Laser Light",
-                            "unit": "Unit 1/2/3/4",
-                            "type": "mixed"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "June 2023",
-            "year": 2023,
-            "month": "June",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "State and prove (Elementary proof) Heisenberg's uncertainty principle.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Derive time dependent and time independent Schrodinger wave equation.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the working principle of Mach-Zehnder Interferometer with suitable ray diagram.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain Rayleigh's criterion of resolution. Derive an expression for resolving power of a grating.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Draw and explain the V-I characteristic curve of P-N junction diode. Differentiate between Avalanche and Zener breakdown.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain Kronig Penney model for periodic potential. Write down the Schrodinger equation and discuss conclusion of this model.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "What is the working principle of an optical fibre? How light propagates through it? Define terms: Numerical aperture, Population inversion, V-number.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain construction and working of CO₂ laser with suitable energy level diagram.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5",
-                            "label": "",
-                            "latex": "",
-                            "text": "Write short note on any two: a) Zener diode b) Newton's ring c) Intrinsic and Extrinsic semiconductor through Fermi level d) Solar cell",
-                            "unit": "Unit 3/2",
-                            "type": "mixed"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "State and prove equation of continuity. Explain its significance.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Define the electric field intensity. Find out the expression for electric intensity due to infinite line charge.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain Hall effect. Derive expression for Hall coefficient and Hall angle.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Define wave function and state its properties. Derive energy and momentum operator.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "What is interference of light? Describe young's experiment and derive expression of fringe width.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Write down the difference between spontaneous and stimulated emission. Write down the applications of laser.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "December 2023",
-            "year": 2023,
-            "month": "December",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "State and Prove uncertainty principle.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Discuss the energy and momentum operator.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Derive the time dependent Schrodinger wave equation.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Differentiate between division of amplitude and division of wavefront.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "In Newton's Ring method, the diameter of nth and (n+14)th ring are 0.42 cm and 0.70 cm respectively. If the radius of curvature of plano convex lens is 100 cm, calculate the wavelength of light.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Explain Michelson's Interferometer experiment on the basis of labelled diagram and types of fringes.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Write short notes on \"Density of State\".",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the Fermi level shifting in semiconductors.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q3c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "State and prove Bloch Theorem.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain population inversion.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Write the properties of LASER.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q4c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Discuss the working of He-Ne Laser with labelled diagram.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the electrostatic potential for a charge distribution.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Define gradient of a scalar field, divergence of a vector field.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q5c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "State and prove Stoke's Theorem.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain Dual nature of light.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Establish the relation between Vp and Vg.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q6c",
-                            "label": "c)",
-                            "latex": "\\psi_{n}=A~sin\\frac{n\\pi x}{L}",
-                            "text": "Prove that for one dimensional motion of a particle in a box ψₙ = A sin(nπx/L).",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Define superposition of waves.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the Rayleigh's criteria for resolving power.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q7c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Discuss the Young's double slit experiment on the basis of labelled diagram, formula used and significance.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Write down the applications of LASER in engineering and medicine.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Write down the importance of total internal reflection in optical fiber.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        },
-                        {
-                            "id": "q8c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Calculate the numerical aperture and acceptance angle for an optical fiber, given that the refractive indices of the core and the cladding are 1.45 and 1.41, respectively.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "June 2024",
-            "year": 2024,
-            "month": "June",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Define phase velocity and group velocity.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain uncertainty principle.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Derive the time independent Schrödinger wave equation.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Define path difference and phase difference.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "What should be the minimum number of lines in a grating which will just resolve in the second order, the lines whose wavelengths are 5890Å and 5896Å.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Derive the expression for intensity due to diffraction at a single slit.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the Fermi level shifting in semiconductors.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Discuss the free electron theory of motors.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q3c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Draw the V-I characteristics of Zener diode.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the properties of LASER.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Find the intensity of laser beam of 10 mW power and having diameter of 1.3 mW, assuming the intensity to be uniform across the beam.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q4c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Explain the working of Ruby laser with labelled diagram.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Define gradient of a scalar field and divergence of a vector field.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "State and prove continuity equation.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q5c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "State and explain Maxwell's equation in vacuum and non conducting medium.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Discuss the energy and momentum operator.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the Dual nature of matter.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q6c",
-                            "label": "c)",
-                            "latex": "\\psi_{n}=A~sin\\frac{n\\pi x}{L}",
-                            "text": "Prove that for one dimensional motion of a particle in a box ψₙ = A sin(nπx/L).",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Differentiate between division of amplitude and division of wavefront.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "In Newton's ring experiment the diameter of nth and (n+14)th rings are 0.42 cm and 0.70 cm respectively. If the radius of curvature of plano convex lens is 100 cm. Calculate the wavelength of light.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q7c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Explain the Michelson's interferometer experiment on the basis of labelled diagram and types of fringes.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Write down the applications of LASER in Engineering and Medicine.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Write down the importance of total internal reflection in optical fiber.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        },
-                        {
-                            "id": "q8c",
-                            "label": "c)",
-                            "latex": "",
-                            "text": "Calculate the numerical aperture and acceptance angle for an optical fiber, given that the refractive indices of core and cladding are 1.45 and 1.41 respectively.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "December 2024",
-            "year": 2024,
-            "month": "December",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Deduce the energy eigenvalues and wave function of a particle moving in one dimensional box.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain about the Heisenberg's uncertainty principle in detail.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the Fraunhofer diffraction due to single slit with necessary analysis.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "How the Newton's rings are formed? Deduce the expression for diameter of dark and bright fringes.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "What is P-N junction diode, explain its working and discuss its V-I Characteristics.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the variation of Fermi level in N-type semiconductor with concentration and temperature.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the Construction and working of He-Ne Laser.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Deduce the expression for acceptance angle of an optical fiber. Find the acceptance angle of a fiber having core and cladding refractive indices are 1.75 and 1.70 respectively.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Starting from the principle of charge conservation, derive the continuity equation for current densities in a conducting medium. Clearly state all assumptions and intermediate steps in your derivation.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Derive the Electric field and Electrostatic Potential for a charge Distribution.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Discuss about the Free Particle Wave Function and Wave Packets.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "What is LASER? Discuss the Properties of LASER light.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Deduce an expression for Hall Co-efficient and Hall Voltage.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "State and Derive the Divergence of Stoke's theorem and Gauss theorem.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8",
-                            "label": "",
-                            "latex": "",
-                            "text": "Write short notes on any two: a) Poynting vector b) Interference and Young's double slit experiment c) Kronig Penney Model d) V-number",
-                            "unit": "Unit 5/2/3/4",
-                            "type": "mixed"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "June 2025",
-            "year": 2025,
-            "month": "June",
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Derive time dependent and time independent Schrodinger wave equation.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Discuss the physical significance of wave function.",
-                            "unit": "Unit 1",
-                            "type": "quantum"
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Describe the construction and working of Mach-Zelinder interferometer.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "What is superposition of wave and interference of light by amplitude splitting?",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the Numerical aperture and acceptance angle of Optical Fiber.",
-                            "unit": "Unit 4",
-                            "type": "fiber"
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the construction and working of Ruby laser with neat diagram.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain Maxwell's equations in vacuum.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Write a note on different types of polarization in dielectric materials.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Starting from the principle of charge conservation, derive the continuity equation for current densities in a conducting medium.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics"
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "What are the Einstein coefficients? Derive the relationship between Einstein coefficients A and B.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "What is the importance of Rayleigh criteria? Explain Rayleigh criterion for limit of resolution.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain Construction and working of CO₂ LASER with suitable energy level diagram.",
-                            "unit": "Unit 4",
-                            "type": "laser"
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "What is Zener diode? Discuss its V-I Characteristics.",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain in detail the working of Michelson's interferometer.",
-                            "unit": "Unit 2",
-                            "type": "optics"
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8",
-                            "label": "",
-                            "latex": "",
-                            "text": "Write short notes on the following: a) Solar cell b) Hall effect c) Bloch's theorem",
-                            "unit": "Unit 3",
-                            "type": "solids"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "exam": "December 2025",
-            "year": 2025,
-            "month": "December",
-            "isPredicted": true,
-            "questions": [
-                {
-                    "id": "q1",
-                    "questionNumber": "Q.1",
-                    "subQuestions": [
-                        {
-                            "id": "q1a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain the wave nature of particles. Derive the time-independent Schrödinger equation for a particle in one-dimensional potential box and write its wavefunction.",
-                            "unit": "Unit 1",
-                            "type": "quantum",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q1b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "A particle of mass 9.11 × 10⁻³¹ kg is moving in a one-dimensional box of width 10 nm. Calculate the energy of the particle in the first three excited state.",
-                            "unit": "Unit 1",
-                            "type": "quantum",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q2",
-                    "questionNumber": "Q.2",
-                    "subQuestions": [
-                        {
-                            "id": "q2a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Describe how Newton's ring experiment can be used to determine the refractive index of a liquid.",
-                            "unit": "Unit 2",
-                            "type": "optics",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q2b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain briefly the Rayleigh criterion of resolution. Discuss the resolving power of plane transmission grating and find the relation between resolving and dispersive power of the grating.",
-                            "unit": "Unit 2",
-                            "type": "optics",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q3",
-                    "questionNumber": "Q.3",
-                    "subQuestions": [
-                        {
-                            "id": "q3a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain Hall effect and derive expression for Hall voltage. Discuss its application.",
-                            "unit": "Unit 3",
-                            "type": "solids",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q3b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain Fermi level for intrinsic and extrinsic semiconductors. Discuss the density of states and Bloch's theorem.",
-                            "unit": "Unit 3",
-                            "type": "solids",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q4",
-                    "questionNumber": "Q.4",
-                    "subQuestions": [
-                        {
-                            "id": "q4a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Derive the relation between Einstein's coefficients (A & B) and explain the concept of population inversion.",
-                            "unit": "Unit 4",
-                            "type": "laser",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q4b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain the construction and working of He-Ne laser with suitable diagram.",
-                            "unit": "Unit 4",
-                            "type": "laser",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q5",
-                    "questionNumber": "Q.5",
-                    "subQuestions": [
-                        {
-                            "id": "q5a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Prove the Poynting theorem in electrodynamics and explain the physical significance of each of the term appearing in the final expression of the theorem.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q5b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Derive Maxwell's equations in vacuum.",
-                            "unit": "Unit 5",
-                            "type": "electrostatics",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q6",
-                    "questionNumber": "Q.6",
-                    "subQuestions": [
-                        {
-                            "id": "q6a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Discuss the uncertainty principle. Derive the relation between group velocity and phase velocity for a free particle.",
-                            "unit": "Unit 1",
-                            "type": "quantum",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q6b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Calculate the NA, Acceptance angle, Critical angle and acceptance cone, for a fiber have RI of 1.55 and 1.50 respectively for its core & cladding.",
-                            "unit": "Unit 4",
-                            "type": "fiber",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q7",
-                    "questionNumber": "Q.7",
-                    "subQuestions": [
-                        {
-                            "id": "q7a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Explain acceptance angle and acceptance cone of optical fiber. Derive expression for them.",
-                            "unit": "Unit 4",
-                            "type": "fiber",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q7b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Discuss the phenomenon of Fraunhofer diffraction at a single slit. Show that the intensity of first subsidiary maximum is about 4.5% of the principal maximum.",
-                            "unit": "Unit 2",
-                            "type": "optics",
-                            "isPredicted": true
-                        }
-                    ]
-                },
-                {
-                    "id": "q8",
-                    "questionNumber": "Q.8",
-                    "subQuestions": [
-                        {
-                            "id": "q8a",
-                            "label": "a)",
-                            "latex": "",
-                            "text": "Newton's rings are observed normally incident in reflected light of wavelength 6000 Å. The diameter of the 10th dark ring is 0.50 cm, find the radius of curvature of lens and thickness of the film.",
-                            "unit": "Unit 2",
-                            "type": "optics",
-                            "isPredicted": true
-                        },
-                        {
-                            "id": "q8b",
-                            "label": "b)",
-                            "latex": "",
-                            "text": "Explain Michelson interferometer and derive expression for fringe shift due to displacement of mirror.",
-                            "unit": "Unit 2",
-                            "type": "optics",
-                            "isPredicted": true
-                        }
-                    ]
-                }
-            ]
-        }
+  "subject": {
+    "id": "bt-201",
+    "code": "BT-201",
+    "name": "Engineering Physics",
+    "title": "BT-201 (GS) – Engineering Physics",
+    "semester": "I & II",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
     ]
+  },
+  "papers": [
+    {
+      "exam": "December 2022",
+      "year": 2022,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the Heisenberg's uncertainty principle in detail.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "Deduce the relation between phase and group velocities.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Obtain the time independent Schrodinger wave equation.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "How the Newton's rings are formed? Deduce the expression for diameter of dark and bright fringes.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Describe the construction and working of Mach-Zehnder interferometer.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain about the diffraction grating. A parallel beam of Sodium light incident on plane transmission grating having 4250 lines per centimeter and a second order spectral line is observed at an angle of 30°. Find the wavelength of Sodium light.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "What is P-N junction diode? Discuss its I-V characteristics.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the construction and working of solar cell with neat diagrams.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "",
+              "text": "Derive an expression for Hall coefficient and Hall voltage.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "Derive the relationship between Einstein A and B coefficients.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the construction and working of He-Ne laser.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the numerical aperture of an optical fiber. Calculate the numerical aperture of a fiber with refractive indices of core and cladding are 1.55 and 1.50, respectively.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "State and explain Stoke's and Gauss theorem.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "Derive Maxwell equations in vacuum.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "latex": "",
+              "text": "Write short notes on any two: a) Physical significance of wave function b) Young's double slit experiment c) Bloch's theorem d) Properties of Laser Light",
+              "unit": "Unit 1/2/3/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "State and prove (Elementary proof) Heisenberg's uncertainty principle.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "Derive time dependent and time independent Schrodinger wave equation.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the working principle of Mach-Zehnder Interferometer with suitable ray diagram.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain Rayleigh's criterion of resolution. Derive an expression for resolving power of a grating.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Draw and explain the V-I characteristic curve of P-N junction diode. Differentiate between Avalanche and Zener breakdown.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain Kronig Penney model for periodic potential. Write down the Schrodinger equation and discuss conclusion of this model.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "What is the working principle of an optical fibre? How light propagates through it? Define terms: Numerical aperture, Population inversion, V-number.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain construction and working of CO₂ laser with suitable energy level diagram.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "latex": "",
+              "text": "Write short note on any two: a) Zener diode b) Newton's ring c) Intrinsic and Extrinsic semiconductor through Fermi level d) Solar cell",
+              "unit": "Unit 3/2",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "State and prove equation of continuity. Explain its significance.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "Define the electric field intensity. Find out the expression for electric intensity due to infinite line charge.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain Hall effect. Derive expression for Hall coefficient and Hall angle.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "Define wave function and state its properties. Derive energy and momentum operator.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "",
+              "text": "What is interference of light? Describe young's experiment and derive expression of fringe width.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "",
+              "text": "Write down the difference between spontaneous and stimulated emission. Write down the applications of laser.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "State and Prove uncertainty principle.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "Discuss the energy and momentum operator.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1c",
+              "label": "c)",
+              "latex": "",
+              "text": "Derive the time dependent Schrodinger wave equation.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Differentiate between division of amplitude and division of wavefront.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "In Newton's Ring method, the diameter of nth and (n+14)th ring are 0.42 cm and 0.70 cm respectively. If the radius of curvature of plano convex lens is 100 cm, calculate the wavelength of light.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2c",
+              "label": "c)",
+              "latex": "",
+              "text": "Explain Michelson's Interferometer experiment on the basis of labelled diagram and types of fringes.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Write short notes on \"Density of State\".",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the Fermi level shifting in semiconductors.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "latex": "",
+              "text": "State and prove Bloch Theorem.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain population inversion.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Write the properties of LASER.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q4c",
+              "label": "c)",
+              "latex": "",
+              "text": "Discuss the working of He-Ne Laser with labelled diagram.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the electrostatic potential for a charge distribution.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "Define gradient of a scalar field, divergence of a vector field.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q5c",
+              "label": "c)",
+              "latex": "",
+              "text": "State and prove Stoke's Theorem.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain Dual nature of light.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "Establish the relation between Vp and Vg.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q6c",
+              "label": "c)",
+              "latex": "\\psi_{n}=A~sin\\frac{n\\pi x}{L}",
+              "text": "Prove that for one dimensional motion of a particle in a box ψₙ = A sin(nπx/L).",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "Define superposition of waves.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the Rayleigh's criteria for resolving power.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q7c",
+              "label": "c)",
+              "latex": "",
+              "text": "Discuss the Young's double slit experiment on the basis of labelled diagram, formula used and significance.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "",
+              "text": "Write down the applications of LASER in engineering and medicine.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "",
+              "text": "Write down the importance of total internal reflection in optical fiber.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "latex": "",
+              "text": "Calculate the numerical aperture and acceptance angle for an optical fiber, given that the refractive indices of the core and the cladding are 1.45 and 1.41, respectively.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "Define phase velocity and group velocity.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain uncertainty principle.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1c",
+              "label": "c)",
+              "latex": "",
+              "text": "Derive the time independent Schrödinger wave equation.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Define path difference and phase difference.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "What should be the minimum number of lines in a grating which will just resolve in the second order, the lines whose wavelengths are 5890Å and 5896Å.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2c",
+              "label": "c)",
+              "latex": "",
+              "text": "Derive the expression for intensity due to diffraction at a single slit.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the Fermi level shifting in semiconductors.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Discuss the free electron theory of motors.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "latex": "",
+              "text": "Draw the V-I characteristics of Zener diode.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the properties of LASER.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Find the intensity of laser beam of 10 mW power and having diameter of 1.3 mW, assuming the intensity to be uniform across the beam.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q4c",
+              "label": "c)",
+              "latex": "",
+              "text": "Explain the working of Ruby laser with labelled diagram.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "",
+              "text": "Define gradient of a scalar field and divergence of a vector field.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "State and prove continuity equation.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q5c",
+              "label": "c)",
+              "latex": "",
+              "text": "State and explain Maxwell's equation in vacuum and non conducting medium.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "Discuss the energy and momentum operator.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the Dual nature of matter.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q6c",
+              "label": "c)",
+              "latex": "\\psi_{n}=A~sin\\frac{n\\pi x}{L}",
+              "text": "Prove that for one dimensional motion of a particle in a box ψₙ = A sin(nπx/L).",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "Differentiate between division of amplitude and division of wavefront.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "In Newton's ring experiment the diameter of nth and (n+14)th rings are 0.42 cm and 0.70 cm respectively. If the radius of curvature of plano convex lens is 100 cm. Calculate the wavelength of light.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q7c",
+              "label": "c)",
+              "latex": "",
+              "text": "Explain the Michelson's interferometer experiment on the basis of labelled diagram and types of fringes.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "",
+              "text": "Write down the applications of LASER in Engineering and Medicine.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "",
+              "text": "Write down the importance of total internal reflection in optical fiber.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "latex": "",
+              "text": "Calculate the numerical aperture and acceptance angle for an optical fiber, given that the refractive indices of core and cladding are 1.45 and 1.41 respectively.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "Deduce the energy eigenvalues and wave function of a particle moving in one dimensional box.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain about the Heisenberg's uncertainty principle in detail.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the Fraunhofer diffraction due to single slit with necessary analysis.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "How the Newton's rings are formed? Deduce the expression for diameter of dark and bright fringes.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "What is P-N junction diode, explain its working and discuss its V-I Characteristics.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the variation of Fermi level in N-type semiconductor with concentration and temperature.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the Construction and working of He-Ne Laser.",
+              "unit": "Unit 4",
+              "type": "laser"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Deduce the expression for acceptance angle of an optical fiber. Find the acceptance angle of a fiber having core and cladding refractive indices are 1.75 and 1.70 respectively.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "",
+              "text": "Starting from the principle of charge conservation, derive the continuity equation for current densities in a conducting medium. Clearly state all assumptions and intermediate steps in your derivation.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "Derive the Electric field and Electrostatic Potential for a charge Distribution.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "Discuss about the Free Particle Wave Function and Wave Packets.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "What is LASER? Discuss the Properties of LASER light.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "Deduce an expression for Hall Co-efficient and Hall Voltage.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "State and Derive the Divergence of Stoke's theorem and Gauss theorem.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "latex": "",
+              "text": "Write short notes on any two: a) Poynting vector b) Interference and Young's double slit experiment c) Kronig Penney Model d) V-number",
+              "unit": "Unit 5/2/3/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "Derive time dependent and time independent Schrodinger wave equation.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "Discuss the physical significance of wave function.",
+              "unit": "Unit 1",
+              "type": "quantum"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Describe the construction and working of Mach-Zelinder interferometer.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "What is superposition of wave and interference of light by amplitude splitting?",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the Numerical aperture and acceptance angle of Optical Fiber.",
+              "unit": "Unit 4",
+              "type": "fiber"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the construction and working of Ruby laser with neat diagram.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain Maxwell's equations in vacuum.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Write a note on different types of polarization in dielectric materials.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "",
+              "text": "Starting from the principle of charge conservation, derive the continuity equation for current densities in a conducting medium.",
+              "unit": "Unit 5",
+              "type": "electrostatics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "What are the Einstein coefficients? Derive the relationship between Einstein coefficients A and B.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "What is the importance of Rayleigh criteria? Explain Rayleigh criterion for limit of resolution.",
+              "unit": "Unit 2",
+              "type": "optics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain Construction and working of CO₂ LASER with suitable energy level diagram.",
+              "unit": "Unit 4",
+              "type": "laser"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "What is Zener diode? Discuss its V-I Characteristics.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain in detail the working of Michelson's interferometer.",
+              "unit": "Unit 2",
+              "type": "optics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "latex": "",
+              "text": "Write short notes on the following: a) Solar cell b) Hall effect c) Bloch's theorem",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain the wave nature of particles. Derive the time-independent Schrödinger equation for a particle in one-dimensional potential box and write its wavefunction.",
+              "unit": "Unit 1",
+              "type": "quantum",
+              "isPredicted": true
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "",
+              "text": "A particle of mass 9.11 × 10⁻³¹ kg is moving in a one-dimensional box of width 10 nm. Calculate the energy of the particle in the first three excited state.",
+              "unit": "Unit 1",
+              "type": "quantum",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "",
+              "text": "Describe how Newton's ring experiment can be used to determine the refractive index of a liquid.",
+              "unit": "Unit 2",
+              "type": "optics",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain briefly the Rayleigh criterion of resolution. Discuss the resolving power of plane transmission grating and find the relation between resolving and dispersive power of the grating.",
+              "unit": "Unit 2",
+              "type": "optics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain Hall effect and derive expression for Hall voltage. Discuss its application.",
+              "unit": "Unit 3",
+              "type": "solids",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain Fermi level for intrinsic and extrinsic semiconductors. Discuss the density of states and Bloch's theorem.",
+              "unit": "Unit 3",
+              "type": "solids",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "",
+              "text": "Derive the relation between Einstein's coefficients (A & B) and explain the concept of population inversion.",
+              "unit": "Unit 4",
+              "type": "laser",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain the construction and working of He-Ne laser with suitable diagram.",
+              "unit": "Unit 4",
+              "type": "laser",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "",
+              "text": "Prove the Poynting theorem in electrodynamics and explain the physical significance of each of the term appearing in the final expression of the theorem.",
+              "unit": "Unit 5",
+              "type": "electrostatics",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "",
+              "text": "Derive Maxwell's equations in vacuum.",
+              "unit": "Unit 5",
+              "type": "electrostatics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "",
+              "text": "Discuss the uncertainty principle. Derive the relation between group velocity and phase velocity for a free particle.",
+              "unit": "Unit 1",
+              "type": "quantum",
+              "isPredicted": true
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "",
+              "text": "Calculate the NA, Acceptance angle, Critical angle and acceptance cone, for a fiber have RI of 1.55 and 1.50 respectively for its core & cladding.",
+              "unit": "Unit 4",
+              "type": "fiber",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "",
+              "text": "Explain acceptance angle and acceptance cone of optical fiber. Derive expression for them.",
+              "unit": "Unit 4",
+              "type": "fiber",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "",
+              "text": "Discuss the phenomenon of Fraunhofer diffraction at a single slit. Show that the intensity of first subsidiary maximum is about 4.5% of the principal maximum.",
+              "unit": "Unit 2",
+              "type": "optics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "",
+              "text": "Newton's rings are observed normally incident in reflected light of wavelength 6000 Å. The diameter of the 10th dark ring is 0.50 cm, find the radius of curvature of lens and thickness of the film.",
+              "unit": "Unit 2",
+              "type": "optics",
+              "isPredicted": true
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "",
+              "text": "Explain Michelson interferometer and derive expression for fringe shift due to displacement of mirror.",
+              "unit": "Unit 2",
+              "type": "optics",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

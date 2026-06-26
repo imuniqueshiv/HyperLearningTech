@@ -3,35 +3,25 @@
 import { WorkspacePromptContext } from "@/types/ai";
 
 const SUBJECT_INSTRUCTIONS: Record<string, string> = {
-  MATH:
-    "Explain using formulas and step-by-step reasoning when needed.",
+  MATH: "Explain using formulas and step-by-step reasoning when needed.",
 
-  COMPUTER:
-    "Explain using clear concepts and practical examples.",
+  COMPUTER: "Explain using clear concepts and practical examples.",
 
-  CHEMISTRY:
-    "Explain using reactions and practical applications.",
+  CHEMISTRY: "Explain using reactions and practical applications.",
 
-  PHYSICS:
-    "Explain using formulas and intuitive reasoning.",
+  PHYSICS: "Explain using formulas and intuitive reasoning.",
 
-  ENGLISH:
-    "Explain using clear examples and practical usage.",
+  ENGLISH: "Explain using clear examples and practical usage.",
 
-  ELECTRICAL:
-    "Explain using circuits, formulas, and practical intuition.",
+  ELECTRICAL: "Explain using circuits, formulas, and practical intuition.",
 
-  MECHANICAL:
-    "Explain using engineering examples and practical applications.",
+  MECHANICAL: "Explain using engineering examples and practical applications.",
 
-  CIVIL:
-    "Explain using structural reasoning and practical applications.",
+  CIVIL: "Explain using structural reasoning and practical applications.",
 
-  GRAPHICS:
-    "Explain using construction procedures and drawing methodology.",
+  GRAPHICS: "Explain using construction procedures and drawing methodology.",
 
-  GENERAL:
-    "Explain concepts in a simple, student-friendly way.",
+  GENERAL: "Explain concepts in a simple, student-friendly way.",
 };
 
 function getSubjectType(context: WorkspacePromptContext): string {
@@ -65,7 +55,10 @@ Never create more than four sections.
   }
 }
 
-function getFormatInstructions(action: string, context: WorkspacePromptContext): string {
+function getFormatInstructions(
+  action: string,
+  context: WorkspacePromptContext
+): string {
   switch (action) {
     case "EXPLAIN":
       return `
@@ -246,11 +239,10 @@ Provide an example.
   }
 }
 
-export function buildWorkspacePrompt(
-  context: WorkspacePromptContext
-): string {
+export function buildWorkspacePrompt(context: WorkspacePromptContext): string {
   const subjectType = getSubjectType(context);
-  const instruction = SUBJECT_INSTRUCTIONS[subjectType] ?? SUBJECT_INSTRUCTIONS.GENERAL;
+  const instruction =
+    SUBJECT_INSTRUCTIONS[subjectType] ?? SUBJECT_INSTRUCTIONS.GENERAL;
   const lengthInstruction = getLengthInstruction(context.action);
   const formatInstructions = getFormatInstructions(context.action, context);
 

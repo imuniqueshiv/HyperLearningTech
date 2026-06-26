@@ -17,18 +17,12 @@ export interface DashboardAnalytics {
 export async function getDashboardAnalytics(): Promise<DashboardAnalytics> {
   const analytics = await getTodayAnalytics();
 
-  const totalCache =
-    analytics.cacheHit + analytics.cacheMiss;
+  const totalCache = analytics.cacheHit + analytics.cacheMiss;
 
   const cacheHitRate =
     totalCache === 0
       ? 0
-      : Number(
-          (
-            (analytics.cacheHit / totalCache) *
-            100
-          ).toFixed(1)
-        );
+      : Number(((analytics.cacheHit / totalCache) * 100).toFixed(1));
 
   return {
     requests: analytics.requests,
@@ -46,9 +40,7 @@ export async function getDashboardAnalytics(): Promise<DashboardAnalytics> {
 
     averageResponseMs: analytics.averageResponseMs,
 
-    averageResponseSeconds: (
-      analytics.averageResponseMs / 1000
-    ).toFixed(2),
+    averageResponseSeconds: (analytics.averageResponseMs / 1000).toFixed(2),
 
     cacheHitRate,
   };

@@ -18,14 +18,9 @@ export function generateWorkspaceCacheKey(
   topic: string,
   subjectCode: string
 ): string {
-  const normalized = `${subjectCode}:${action}:${topic}`
-    .trim()
-    .toLowerCase();
+  const normalized = `${subjectCode}:${action}:${topic}`.trim().toLowerCase();
 
-  const hash = crypto
-    .createHash("sha256")
-    .update(normalized)
-    .digest("hex");
+  const hash = crypto.createHash("sha256").update(normalized).digest("hex");
 
   return `workspace:${hash}`;
 }
@@ -38,11 +33,7 @@ export async function getWorkspaceCache(
   topic: string,
   subjectCode: string
 ): Promise<string | null> {
-  const key = generateWorkspaceCacheKey(
-    action,
-    topic,
-    subjectCode
-  );
+  const key = generateWorkspaceCacheKey(action, topic, subjectCode);
 
   const cached = await redis.get<string>(key);
 
@@ -58,11 +49,7 @@ export async function saveWorkspaceCache(
   subjectCode: string,
   answer: string
 ): Promise<void> {
-  const key = generateWorkspaceCacheKey(
-    action,
-    topic,
-    subjectCode
-  );
+  const key = generateWorkspaceCacheKey(action, topic, subjectCode);
 
   await redis.set(key, answer, {
     ex: WORKSPACE_CACHE_TTL,
@@ -77,11 +64,7 @@ export async function deleteWorkspaceCache(
   topic: string,
   subjectCode: string
 ): Promise<void> {
-  const key = generateWorkspaceCacheKey(
-    action,
-    topic,
-    subjectCode
-  );
+  const key = generateWorkspaceCacheKey(action, topic, subjectCode);
 
   await redis.del(key);
 }

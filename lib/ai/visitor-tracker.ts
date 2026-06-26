@@ -59,15 +59,12 @@ export async function getTodayVisitorStats(): Promise<VisitorStats> {
   const userKey = `analytics:${day}:users`;
   const anonymousKey = `analytics:${day}:anonymous`;
 
-  const [
-    uniqueDevices,
-    authenticatedUsers,
-    anonymousVisitors,
-  ] = await Promise.all([
-    redis.scard(deviceKey),
-    redis.scard(userKey),
-    redis.scard(anonymousKey),
-  ]);
+  const [uniqueDevices, authenticatedUsers, anonymousVisitors] =
+    await Promise.all([
+      redis.scard(deviceKey),
+      redis.scard(userKey),
+      redis.scard(anonymousKey),
+    ]);
 
   return {
     uniqueDevices: uniqueDevices ?? 0,

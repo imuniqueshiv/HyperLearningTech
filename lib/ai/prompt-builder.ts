@@ -45,7 +45,8 @@ const TYPE_INSTRUCTIONS: Record<string, string> = {
 };
 
 export function buildPrompt({ question, subjectType }: PromptContext): string {
-  const instruction = TYPE_INSTRUCTIONS[subjectType] || TYPE_INSTRUCTIONS.GENERAL;
+  const instruction =
+    TYPE_INSTRUCTIONS[subjectType] || TYPE_INSTRUCTIONS.GENERAL;
   const isMath = subjectType === "MATH";
 
   // Math answers live or die by the numbers, not the word count — so the
