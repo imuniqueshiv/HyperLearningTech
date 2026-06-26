@@ -53,6 +53,144 @@ function preprocessMath(text: string): string {
   return result.trim();
 }
 
+const markdownComponents = {
+  pre({ children }: any) {
+    return (
+      <pre className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm">
+        {children}
+      </pre>
+    );
+  },
+
+  code({ className, children }: any) {
+    const isCodeBlock = className?.includes("language-");
+
+    if (isCodeBlock) {
+      return <code className={className}>{children}</code>;
+    }
+
+    return (
+      <code className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400">
+        {children}
+      </code>
+    );
+  },
+
+  table({ children }: any) {
+    return (
+      <div className="my-6 overflow-x-auto">
+        <table className="w-full border-collapse border border-border text-sm sm:text-base">
+          {children}
+        </table>
+      </div>
+    );
+  },
+
+  th({ children }: any) {
+    return (
+      <th className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground">
+        {children}
+      </th>
+    );
+  },
+
+  td({ children }: any) {
+    return (
+      <td className="border border-border px-3 sm:px-4 py-2 text-foreground">
+        {children}
+      </td>
+    );
+  },
+
+  blockquote({ children }: any) {
+    return (
+      <blockquote className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground">
+        {children}
+      </blockquote>
+    );
+  },
+
+  h1({ children }: any) {
+    return (
+      <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3">
+        {children}
+      </h1>
+    );
+  },
+
+  h2({ children }: any) {
+    return (
+      <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4">
+        {children}
+      </h2>
+    );
+  },
+
+  h3({ children }: any) {
+    return (
+      <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8">
+        {children}
+      </h3>
+    );
+  },
+
+  h4({ children }: any) {
+    return (
+      <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6">
+        {children}
+      </h4>
+    );
+  },
+
+  hr() {
+    return <hr className="my-8 border-border" />;
+  },
+
+  ul({ children }: any) {
+    return (
+      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">
+        {children}
+      </ul>
+    );
+  },
+
+  ol({ children }: any) {
+    return (
+      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">
+        {children}
+      </ol>
+    );
+  },
+
+  li({ children }: any) {
+    return (
+      <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground">
+        {children}
+      </li>
+    );
+  },
+
+  p({ children }: any) {
+    return (
+      <p className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground">
+        {children}
+      </p>
+    );
+  },
+
+  strong({ children }: any) {
+    return (
+      <strong className="font-semibold text-foreground">
+        {children}
+      </strong>
+    );
+  },
+
+  em({ children }: any) {
+    return <em className="italic text-muted-foreground">{children}</em>;
+  },
+} as any;
+
 export default function AnswerViewer({ answer }: AnswerViewerProps) {
   const content = preprocessMath(answer);
 
@@ -191,143 +329,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypeKatex, rehypeHighlight]}
-        components={{
-          pre({ children }) {
-            return (
-              <pre className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm">
-                {children}
-              </pre>
-            );
-          },
-
-          code({ className, children }) {
-            const isCodeBlock = className?.includes("language-");
-
-            if (isCodeBlock) {
-              return <code className={className}>{children}</code>;
-            }
-
-            return (
-              <code className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400">
-                {children}
-              </code>
-            );
-          },
-
-          table({ children }) {
-            return (
-              <div className="my-6 overflow-x-auto">
-                <table className="w-full border-collapse border border-border text-sm sm:text-base">
-                  {children}
-                </table>
-              </div>
-            );
-          },
-
-          th({ children }) {
-            return (
-              <th className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground">
-                {children}
-              </th>
-            );
-          },
-
-          td({ children }) {
-            return (
-              <td className="border border-border px-3 sm:px-4 py-2 text-foreground">
-                {children}
-              </td>
-            );
-          },
-
-          blockquote({ children }) {
-            return (
-              <blockquote className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground">
-                {children}
-              </blockquote>
-            );
-          },
-
-          h1({ children }) {
-            return (
-              <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3">
-                {children}
-              </h1>
-            );
-          },
-
-          h2({ children }) {
-            return (
-              <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4">
-                {children}
-              </h2>
-            );
-          },
-
-          h3({ children }) {
-            return (
-              <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8">
-                {children}
-              </h3>
-            );
-          },
-
-          h4({ children }) {
-            return (
-              <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6">
-                {children}
-              </h4>
-            );
-          },
-
-          hr() {
-            return <hr className="my-8 border-border" />;
-          },
-
-          ul({ children }) {
-            return (
-              <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">
-                {children}
-              </ul>
-            );
-          },
-
-          ol({ children }) {
-            return (
-              <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">
-                {children}
-              </ol>
-            );
-          },
-
-          li({ children }) {
-            return (
-              <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground">
-                {children}
-              </li>
-            );
-          },
-
-          p({ children }) {
-            return (
-              <p className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground">
-                {children}
-              </p>
-            );
-          },
-
-          strong({ children }) {
-            return (
-              <strong className="font-semibold text-foreground">
-                {children}
-              </strong>
-            );
-          },
-
-          em({ children }) {
-            return <em className="italic text-muted-foreground">{children}</em>;
-          },
-        }}
+        components={markdownComponents}
       >
         {content}
       </ReactMarkdown>

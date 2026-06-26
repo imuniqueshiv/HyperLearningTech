@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { GraduationCap, ArrowRight, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
 
 const universities = [
   {
@@ -38,6 +39,18 @@ const universities = [
 ];
 
 export default function Universities() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredUniversities = universities.filter((uni) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      uni.name.toLowerCase().includes(query) ||
+      uni.fullName.toLowerCase().includes(query) ||
+      uni.description.toLowerCase().includes(query) ||
+      uni.branches.some((branch) => branch.toLowerCase().includes(query))
+    );
+  });
+
   return (
     <section
       id="Universities"
@@ -77,20 +90,42 @@ export default function Universities() {
           </p>
         </motion.div>
 
+        {/* Search Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="mx-auto mb-16 max-w-2xl"
+        >
+          <div className="relative group">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <Search className="h-5 w-5 text-muted-foreground group-focus-within:text-[#1D4ED8] transition-colors" />
+            </div>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search universities by name, branch, or location..."
+              className="w-full rounded-2xl border border-border bg-background/50 py-4 pl-12 pr-4 text-sm text-foreground shadow-sm backdrop-blur-md transition-all focus:border-[#1D4ED8] focus:outline-none focus:ring-1 focus:ring-[#1D4ED8]"
+            />
+          </div>
+        </motion.div>
+
         {/* Cards */}
-        <div className="grid gap-8 lg:grid-cols-3">
-          {universities.map((university, index) => (
-            <motion.div
-              key={university.id}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.1,
-              }}
-              viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
-            >
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <AnimatePresence mode="popLayout">
+            {filteredUniversities.length > 0 ? (
+              filteredUniversities.map((university, index) => (
+                <motion.div
+                  layout
+                  key={university.id}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
+                >
               {/* Hover Glow */}
               <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
@@ -154,7 +189,23 @@ export default function Universities() {
                 )}
               </div>
             </motion.div>
-          ))}
+              ))
+            ) : (
+              <motion.div
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="col-span-full py-12 text-center"
+              >
+                <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-muted/50 mb-4">
+                  <Search className="h-8 w-8 text-muted-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">No universities found</h3>
+                <p className="mt-2 text-muted-foreground">Try adjusting your search query.</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>

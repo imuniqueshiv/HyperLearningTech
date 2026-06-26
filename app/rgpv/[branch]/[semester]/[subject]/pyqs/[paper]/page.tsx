@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { FileText, Calendar, Clock } from "lucide-react";
-import { getPYQs } from "@/lib/content/pyqs";
+import { getPYQs } from "@/lib/content";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 
 interface PaperPageProps {

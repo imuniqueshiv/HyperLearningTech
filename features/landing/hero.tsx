@@ -31,7 +31,7 @@ export default function Hero() {
     },
   };
   const scrollToUniversities = () => {
-    const section = document.getElementById("universities");
+    const section = document.getElementById("Universities");
 
     if (section) {
       section.scrollIntoView({

@@ -1,103 +1,32 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Quote, Star } from "lucide-react";
+import { useState, useEffect } from "react";
+import { motion, useAnimation, useReducedMotion } from "framer-motion";
+import { Quote, Star, Pause, Play } from "lucide-react";
 
-const testimonials = [
-  {
-    name: "Aman Verma",
-    role: "B.Tech AIML Student",
-    university: "RGPV",
-    review:
-      "The syllabus mapping and AI-generated explanations saved me countless hours during exam preparation. Everything is structured exactly how a student needs it.",
-  },
-  {
-    name: "Priya Sharma",
-    role: "B.Tech CSE Student",
-    university: "RGPV",
-    review:
-      "Instead of searching multiple websites, I can find PYQs, topic notes, and explanations in one place. The AI tutor is especially useful before exams.",
-  },
-  {
-    name: "Rahul Patel",
-    role: "B.Tech CSIT Student",
-    university: "RGPV",
-    review:
-      "The biggest advantage is the connection between syllabus topics and previous year questions. It helps me focus only on what actually matters.",
-  },
-  {
-    name: "Nitin Pandey",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "Hyper Learning has completely transformed how I prepare for my exams. The AI-powered insights are incredibly accurate and helpful.",
-  },
-  {
-    name: "Ramoo Kachhee",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "The platform is a game-changer for engineering students. I can now access all my study materials in one place without any hassle.",
-  },
-  {
-    name: "Rayush Bisen",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "I love how the AI breaks down complex topics into simple explanations. It makes learning so much easier and more enjoyable.",
-  },
-  {
-    name: "Vivek Patel",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "The previous year questions and syllabus mapping are spot on. I feel much more confident going into my exams now.",
-  },
-  {
-    name: "Shivam Gurjar",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "This is exactly what every engineering student needs. The AI tutor is like having a personal teacher available 24/7.",
-  },
-  {
-    name: "Shalini Ade",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "Hyper Learning has made studying so much more efficient. I can focus on what really matters for my exams.",
-  },
-  {
-    name: "Satyam Mishra",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "The platform is intuitive and the AI-generated notes are top-notch. Highly recommend it to all engineering students.",
-  },
-  {
-    name: "Manas",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "I've never seen such a comprehensive learning tool before. It covers everything from syllabus to PYQs in one place.",
-  },
-  {
-    name: "Prince Dhote",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "The AI explanations are a lifesaver during exam preparation. It helps me understand concepts that I previously struggled with.",
-  },
-  {
-    name: "Saubhagya Chaurasiya",
-    role: "B.Tech Student",
-    university: "RGPV",
-    review:
-      "Hyper Learning is the future of engineering education. The seamless integration of AI with learning is truly impressive.",
-  },
-];
+import { landingTestimonials } from "@/lib/data/landing";
 
 export default function Testimonials() {
+  const [isPaused, setIsPaused] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (shouldReduceMotion) return;
+    if (isPaused) {
+      controls.stop();
+    } else {
+      controls.start({
+        x: ["0%", "-50%"],
+        transition: {
+          duration: 40,
+          repeat: Infinity,
+          ease: "linear",
+        }
+      });
+    }
+  }, [isPaused, shouldReduceMotion, controls]);
+
   return (
     <section className="relative overflow-hidden border-b border-border bg-background py-24">
       {/* Background Glows - No grid pattern */}
@@ -131,18 +60,23 @@ export default function Testimonials() {
 
         {/* Testimonials */}
         <div className="relative overflow-hidden">
+          <div className="absolute right-4 top-0 z-20 mb-4">
+            <button
+              onClick={() => setIsPaused(!isPaused)}
+              className="flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-2 text-sm font-medium text-foreground backdrop-blur-sm transition-colors hover:bg-muted/80"
+              aria-label={isPaused ? "Play testimonials" : "Pause testimonials"}
+            >
+              {isPaused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
+              <span className="sr-only sm:not-sr-only">{isPaused ? "Play" : "Pause"}</span>
+            </button>
+          </div>
           <motion.div
             initial={{ x: 0 }}
-            animate={{ x: "-50%" }}
-            transition={{
-              duration: 40,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-            className="flex gap-6"
+            animate={shouldReduceMotion ? { x: 0 } : controls}
+            className="flex gap-6 pt-12"
             style={{ width: "max-content" }}
           >
-            {[...testimonials, ...testimonials].map((testimonial, index) => (
+            {[...landingTestimonials, ...landingTestimonials].map((testimonial, index) => (
               <div
                 key={`${testimonial.name}-${index}`}
                 className="group relative w-[320px] flex-shrink-0 overflow-hidden rounded-3xl border border-border bg-background/90 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
@@ -154,7 +88,7 @@ export default function Testimonials() {
 
                 {/* Quote */}
                 <div className="relative z-10 mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-[#1D4ED8] dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-                  <Quote className="h-5 w-5" />
+                  <Quote className="h-5 w-5" aria-hidden="true" />
                 </div>
 
                 {/* Rating */}
@@ -163,6 +97,7 @@ export default function Testimonials() {
                     <Star
                       key={idx}
                       className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      aria-hidden="true"
                     />
                   ))}
                 </div>

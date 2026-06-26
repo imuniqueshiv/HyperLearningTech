@@ -1,4 +1,11 @@
 import SemesterOverview from "@/components/university/semester-overview";
+import { branches } from "@/lib/data/branches";
+
+export function generateStaticParams() {
+  return branches.map((branch) => ({
+    branch: branch.id,
+  }));
+}
 
 interface BranchPageProps {
   params: Promise<{

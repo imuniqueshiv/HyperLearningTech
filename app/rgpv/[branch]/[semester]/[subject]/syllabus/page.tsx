@@ -1,7 +1,6 @@
 import { BookOpen } from "lucide-react";
 
-import { getSyllabus } from "@/lib/content/syllabus";
-import { getPYQs } from "@/lib/content/pyqs";
+import { getSyllabus, getPYQs } from "@/lib/content";
 import { getQuestionsForModule } from "@/lib/content/question-mapper";
 import ModuleCard from "@/components/syllabus/module-card";
 

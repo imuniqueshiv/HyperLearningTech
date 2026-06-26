@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 
-import { getSyllabus } from "@/lib/content/syllabus";
-import { getPYQs } from "@/lib/content/pyqs";
+import { getSyllabus, getPYQs } from "@/lib/content";
 
 interface SubjectPageProps {
   params: Promise<{

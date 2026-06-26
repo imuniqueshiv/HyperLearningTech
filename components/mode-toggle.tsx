@@ -10,7 +10,7 @@ export function ModeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="rounded-xl border border-border px-3 py-2 text-foreground/70 transition-all duration-200 hover:border-foreground/40 hover:text-foreground"
+      className="relative flex items-center justify-center rounded-xl border border-border px-3 py-2 text-foreground/70 transition-all duration-200 hover:border-foreground/40 hover:text-foreground"
       aria-label="Toggle theme"
     >
       <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

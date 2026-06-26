@@ -47,20 +47,26 @@ export default function ModuleCard({
   return (
     <div className="rounded-3xl border border-border bg-card">
       {/* CLICKABLE HEADER */}
-      <button onClick={() => setOpen(!open)} className="w-full p-8 text-left">
+      <button 
+        onClick={() => setOpen(!open)} 
+        aria-expanded={open}
+        aria-controls={`module-content-${module.id}`}
+        id={`module-button-${module.id}`}
+        className="w-full p-6 md:p-8 text-left"
+      >
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-500/10">
-                <BookOpen className="h-6 w-6 text-blue-600" />
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 md:h-12 md:w-12 md:rounded-2xl">
+                <BookOpen className="h-5 w-5 text-blue-600 md:h-6 md:w-6" />
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-foreground">
+                <h3 className="text-xl font-bold text-foreground md:text-2xl">
                   Module {module.number}
                 </h3>
 
-                <p className="text-lg text-blue-600">{module.title}</p>
+                <p className="text-base text-blue-600 md:text-lg">{module.title}</p>
               </div>
             </div>
 
@@ -93,7 +99,7 @@ export default function ModuleCard({
       </button>
 
       {/* TOPICS - ALWAYS VISIBLE */}
-      <div className="px-8 pb-6">
+      <div className="px-6 pb-6 md:px-8">
         <div className="flex flex-wrap gap-3">
           {(module.topics || []).map((topic) => (
             <Link
@@ -112,7 +118,12 @@ export default function ModuleCard({
 
       {/* COLLAPSED PYQs */}
       {open && questions.length > 0 && (
-        <div className="border-t border-border px-8 py-6">
+        <div 
+          id={`module-content-${module.id}`}
+          role="region"
+          aria-labelledby={`module-button-${module.id}`}
+          className="border-t border-border px-6 py-6 md:px-8"
+        >
           <h4 className="text-xl font-semibold text-foreground">
             Linked Previous Year Questions
           </h4>

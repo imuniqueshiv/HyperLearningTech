@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Loader2, Sparkles, AlertCircle } from "lucide-react";
 import WorkspaceMessage from "@/components/ai/workspace-message";
+import { API_ENDPOINTS } from "@/lib/api-endpoints";
+import type { WorkspaceResponse } from "@/types/ai";
 
 interface Message {
   id: string;
@@ -32,7 +34,7 @@ export default function WorkspaceChat({
   initialPrompts = [],
   welcomeMessage = "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.",
   inputPlaceholder = "Type your question here...",
-  apiEndpoint = "/api/ai/workspace",
+  apiEndpoint = API_ENDPOINTS.AI_WORKSPACE,
   topic,
   module,
 }: WorkspaceChatProps) {
@@ -44,6 +46,7 @@ export default function WorkspaceChat({
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
 
   // Auto-scroll to bottom
   const scrollToBottom = () => {
@@ -72,10 +75,18 @@ export default function WorkspaceChat({
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
+
+    if (loading && abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
     setLoading(true);
     setError(null);
 
     try {
+      const abortController = new AbortController();
+      abortControllerRef.current = abortController;
+
       const response = await fetch(apiEndpoint, {
         method: "POST",
         headers: {
@@ -91,9 +102,10 @@ export default function WorkspaceChat({
             content: m.content,
           })),
         }),
+        signal: abortController.signal,
       });
 
-      const data = await response.json();
+      const data = (await response.json()) as WorkspaceResponse;
 
       if (!response.ok) {
         throw new Error(data.error || "Failed to get response");
@@ -113,8 +125,26 @@ export default function WorkspaceChat({
       if (data.relatedTopics && data.relatedTopics.length > 0) {
         setRelatedTopics(data.relatedTopics);
       }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong");
+    } catch (err: any) {
+      if (err.name === "AbortError") {
+        console.log("Fetch aborted");
+        return;
+      }
+      const isDemoMode = !process.env.NEXT_PUBLIC_API_URL || err.message.includes("Failed to fetch") || err.message.includes("Failed to get response");
+      
+      if (isDemoMode) {
+        const demoMessage: Message = {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          content: `**Demo Mode Fallback Answer:**\n\nI see you're asking about **${content}**. Since the backend API is currently unavailable (missing environment variables), I am providing a simulated response.\n\nIn a production environment, I would analyze your question against the ${subjectCode.toUpperCase()} syllabus and provide a detailed, accurate explanation with examples.\n\n> Note: Please configure the required environment variables to activate my full capabilities.`,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, demoMessage]);
+        setRelatedTopics(["Syllabus Mapping", "Exam Preparation", "AI Features"]);
+        setError(null);
+      } else {
+        setError(err instanceof Error ? err.message : "Something went wrong");
+      }
     } finally {
       setLoading(false);
       inputRef.current?.focus();
@@ -274,7 +304,9 @@ export default function WorkspaceChat({
       <div className="border-t border-border p-4 md:p-6">
         <form onSubmit={handleSubmit} className="flex gap-2">
           <div className="relative flex-1">
+            <label htmlFor="chat-input" className="sr-only">Type your question here</label>
             <textarea
+              id="chat-input"
               ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -288,8 +320,9 @@ export default function WorkspaceChat({
               type="submit"
               disabled={!input.trim() || loading}
               className="absolute bottom-2 right-2 rounded-lg bg-blue-600 p-2 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+              aria-label="Send message"
             >
-              <Send className="h-4 w-4" />
+              <Send className="h-4 w-4" aria-hidden="true" />
             </button>
           </div>
         </form>

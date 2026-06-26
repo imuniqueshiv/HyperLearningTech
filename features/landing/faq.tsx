@@ -4,48 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-const faqs = [
-  {
-    question: "What is Hyper Learning?",
-    answer:
-      "Hyper Learning is an AI-powered learning platform designed to help engineering students learn smarter through syllabus mapping, previous year questions, AI-generated notes, and interactive learning experiences.",
-  },
-  {
-    question: "Is Hyper Learning only for RGPV students?",
-    answer:
-      "Currently, Hyper Learning focuses on RGPV engineering students. However, the platform is being designed to support multiple universities in the future.",
-  },
-  {
-    question: "How does the AI Tutor work?",
-    answer:
-      "Students can open any syllabus topic and receive AI-generated explanations, examples, summaries, and revision notes. They can also ask follow-up questions for deeper understanding.",
-  },
-  {
-    question: "Are the AI-generated answers exam-oriented?",
-    answer:
-      "Yes. Hyper Learning is optimized for engineering exam preparation. Answers are structured to help students understand concepts and prepare effectively for university examinations.",
-  },
-  {
-    question: "How are Previous Year Questions organized?",
-    answer:
-      "Questions are mapped directly to syllabus units and topics, making it easier to identify important concepts and prepare strategically for exams.",
-  },
-  {
-    question: "Do I need to create an account?",
-    answer:
-      "No. Most content can be accessed without an account. However, creating an account unlocks bookmarks, progress tracking, personalized learning, and future premium features.",
-  },
-  {
-    question: "Is Hyper Learning free to use?",
-    answer:
-      "The core learning features are free. Additional advanced features may be introduced in the future while keeping educational accessibility as a priority.",
-  },
-  {
-    question: "Can I contribute papers or learning resources?",
-    answer:
-      "Yes. Approved contributors and administrators can upload question papers, improve content quality, and help expand educational resources on the platform.",
-  },
-];
+import { landingFaqs } from "@/lib/data/landing";
 
 function FAQItem({
   question,
@@ -62,6 +21,9 @@ function FAQItem({
     <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
       <button
         onClick={onClick}
+        aria-expanded={isOpen}
+        aria-controls={`faq-answer-${question.replace(/\s+/g, "-")}`}
+        id={`faq-button-${question.replace(/\s+/g, "-")}`}
         className="flex w-full items-center justify-between px-6 py-5 text-left transition-colors hover:bg-muted/30"
       >
         <span className="pr-6 text-base font-semibold text-foreground md:text-lg">
@@ -78,6 +40,9 @@ function FAQItem({
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
+            id={`faq-answer-${question.replace(/\s+/g, "-")}`}
+            role="region"
+            aria-labelledby={`faq-button-${question.replace(/\s+/g, "-")}`}
             initial={{ height: 0, opacity: 0 }}
             animate={{
               height: "auto",
@@ -140,7 +105,7 @@ export default function FAQ() {
 
         {/* FAQ List */}
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
+          {landingFaqs.map((faq, index) => (
             <motion.div
               key={faq.question}
               initial={{
