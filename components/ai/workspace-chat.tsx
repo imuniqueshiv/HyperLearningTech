@@ -130,7 +130,11 @@ export default function WorkspaceChat({
         console.log("Fetch aborted");
         return;
       }
-      const isDemoMode = !process.env.NEXT_PUBLIC_API_URL || (err instanceof Error && (err.message.includes("Failed to fetch") || err.message.includes("Failed to get response")));
+      const isDemoMode =
+        !process.env.NEXT_PUBLIC_API_URL ||
+        (err instanceof Error &&
+          (err.message.includes("Failed to fetch") ||
+            err.message.includes("Failed to get response")));
 
       if (isDemoMode) {
         const demoMessage: Message = {
