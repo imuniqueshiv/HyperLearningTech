@@ -1,6 +1,6 @@
 "use client";
 
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -53,90 +53,90 @@ function preprocessMath(text: string): string {
   return result.trim();
 }
 
-const markdownComponents = {
-  pre({ children }: any) {
+const markdownComponents: Components = {
+  pre({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) {
     return (
-      <pre className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm">
+      <pre className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm" {...props}>
         {children}
       </pre>
     );
   },
 
-  code({ className, children }: any) {
+  code({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) {
     const isCodeBlock = className?.includes("language-");
 
     if (isCodeBlock) {
-      return <code className={className}>{children}</code>;
+      return <code className={className} {...props}>{children}</code>;
     }
 
     return (
-      <code className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400">
+      <code className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400" {...props}>
         {children}
       </code>
     );
   },
 
-  table({ children }: any) {
+  table({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) {
     return (
       <div className="my-6 overflow-x-auto">
-        <table className="w-full border-collapse border border-border text-sm sm:text-base">
+        <table className="w-full border-collapse border border-border text-sm sm:text-base" {...props}>
           {children}
         </table>
       </div>
     );
   },
 
-  th({ children }: any) {
+  th({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
     return (
-      <th className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground">
+      <th className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground" {...props}>
         {children}
       </th>
     );
   },
 
-  td({ children }: any) {
+  td({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
     return (
-      <td className="border border-border px-3 sm:px-4 py-2 text-foreground">
+      <td className="border border-border px-3 sm:px-4 py-2 text-foreground" {...props}>
         {children}
       </td>
     );
   },
 
-  blockquote({ children }: any) {
+  blockquote({ children, ...props }: React.HTMLAttributes<HTMLQuoteElement>) {
     return (
-      <blockquote className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground">
+      <blockquote className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground" {...props}>
         {children}
       </blockquote>
     );
   },
 
-  h1({ children }: any) {
+  h1({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
     return (
-      <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3">
+      <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3" {...props}>
         {children}
       </h1>
     );
   },
 
-  h2({ children }: any) {
+  h2({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
     return (
-      <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4">
+      <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4" {...props}>
         {children}
       </h2>
     );
   },
 
-  h3({ children }: any) {
+  h3({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
     return (
-      <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8">
+      <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8" {...props}>
         {children}
       </h3>
     );
   },
 
-  h4({ children }: any) {
+  h4({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
     return (
-      <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6">
+      <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6" {...props}>
         {children}
       </h4>
     );
@@ -146,44 +146,44 @@ const markdownComponents = {
     return <hr className="my-8 border-border" />;
   },
 
-  ul({ children }: any) {
+  ul({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) {
     return (
-      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">{children}</ul>
+      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2" {...props}>{children}</ul>
     );
   },
 
-  ol({ children }: any) {
+  ol({ children, ...props }: React.HTMLAttributes<HTMLOListElement>) {
     return (
-      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">{children}</ol>
+      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2" {...props}>{children}</ol>
     );
   },
 
-  li({ children }: any) {
+  li({ children, ...props }: React.HTMLAttributes<HTMLLIElement>) {
     return (
-      <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground">
+      <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground" {...props}>
         {children}
       </li>
     );
   },
 
-  p({ children }: any) {
+  p({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
     return (
-      <p className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground">
+      <p className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground" {...props}>
         {children}
       </p>
     );
   },
 
-  strong({ children }: any) {
+  strong({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
     return (
-      <strong className="font-semibold text-foreground">{children}</strong>
+      <strong className="font-semibold text-foreground" {...props}>{children}</strong>
     );
   },
 
-  em({ children }: any) {
-    return <em className="italic text-muted-foreground">{children}</em>;
+  em({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
+    return <em className="italic text-muted-foreground" {...props}>{children}</em>;
   },
-} as any;
+};
 
 export default function AnswerViewer({ answer }: AnswerViewerProps) {
   const content = preprocessMath(answer);

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { BrainCircuit, ArrowRight } from "lucide-react";
 
 export default function ChatMockup() {

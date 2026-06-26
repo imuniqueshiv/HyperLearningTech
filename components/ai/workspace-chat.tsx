@@ -125,15 +125,12 @@ export default function WorkspaceChat({
       if (data.relatedTopics && data.relatedTopics.length > 0) {
         setRelatedTopics(data.relatedTopics);
       }
-    } catch (err: any) {
-      if (err.name === "AbortError") {
+    } catch (err: unknown) {
+      if (err instanceof Error && err.name === "AbortError") {
         console.log("Fetch aborted");
         return;
       }
-      const isDemoMode =
-        !process.env.NEXT_PUBLIC_API_URL ||
-        err.message.includes("Failed to fetch") ||
-        err.message.includes("Failed to get response");
+      const isDemoMode = !process.env.NEXT_PUBLIC_API_URL || (err instanceof Error && (err.message.includes("Failed to fetch") || err.message.includes("Failed to get response")));
 
       if (isDemoMode) {
         const demoMessage: Message = {

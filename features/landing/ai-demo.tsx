@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BrainCircuit, BookOpen, Sparkles, ArrowRight } from "lucide-react";
+import { BrainCircuit, BookOpen, Sparkles } from "lucide-react";
 import ChatMockup from "@/components/ai/chat-mockup";
 
 export default function AIDemo() {

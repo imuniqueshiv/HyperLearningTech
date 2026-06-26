@@ -116,7 +116,7 @@ export default function Universities() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filteredUniversities.length > 0 ? (
-              filteredUniversities.map((university, index) => (
+              filteredUniversities.map((university) => (
                 <motion.div
                   layout
                   key={university.id}

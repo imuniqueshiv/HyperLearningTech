@@ -67,8 +67,8 @@ export default function GenerateAnswerButton({
 
       setAnswer(data.answer || "");
       setHidden(false);
-    } catch (err: any) {
-      if (err.name === "AbortError") {
+    } catch (err: unknown) {
+      if (err instanceof Error && err.name === "AbortError") {
         console.log("Fetch aborted");
         return;
       }
@@ -77,8 +77,9 @@ export default function GenerateAnswerButton({
       // Demo fallback for missing environment variables
       const isDemoMode =
         !process.env.NEXT_PUBLIC_API_URL ||
-        err.message.includes("Failed to fetch") ||
-        err.message.includes("generate answer");
+        (err instanceof Error &&
+          (err.message.includes("Failed to fetch") ||
+            err.message.includes("generate answer")));
 
       if (isDemoMode) {
         setAnswer(

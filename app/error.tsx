@@ -21,7 +21,7 @@ export default function ErrorPage({
       </div>
       <h2 className="text-2xl font-bold">Something went wrong!</h2>
       <p className="mt-2 max-w-md text-muted-foreground">
-        We've encountered an unexpected error. Please try again.
+        We&apos;ve encountered an unexpected error. Please try again.
       </p>
       <button
         onClick={() => reset()}
