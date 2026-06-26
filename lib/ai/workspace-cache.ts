@@ -1,6 +1,6 @@
 import crypto from "crypto";
 
-import { redis } from "@/lib/redis";
+import { getRedis } from "@/lib/redis";
 
 const WORKSPACE_CACHE_TTL = 60 * 60 * 24 * 7; // 7 days
 
@@ -33,6 +33,12 @@ export async function getWorkspaceCache(
   topic: string,
   subjectCode: string
 ): Promise<string | null> {
+  const redis = getRedis();
+
+  if (!redis) {
+    return null;
+  }
+
   const key = generateWorkspaceCacheKey(action, topic, subjectCode);
 
   const cached = await redis.get<string>(key);
@@ -49,6 +55,12 @@ export async function saveWorkspaceCache(
   subjectCode: string,
   answer: string
 ): Promise<void> {
+  const redis = getRedis();
+
+  if (!redis) {
+    return;
+  }
+
   const key = generateWorkspaceCacheKey(action, topic, subjectCode);
 
   await redis.set(key, answer, {
@@ -64,6 +76,12 @@ export async function deleteWorkspaceCache(
   topic: string,
   subjectCode: string
 ): Promise<void> {
+  const redis = getRedis();
+
+  if (!redis) {
+    return;
+  }
+
   const key = generateWorkspaceCacheKey(action, topic, subjectCode);
 
   await redis.del(key);

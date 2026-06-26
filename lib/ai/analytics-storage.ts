@@ -1,13 +1,20 @@
-import { redis } from "@/lib/redis";
+import { getRedis } from "@/lib/redis";
+
 import type { MetricRecord } from "./metrics";
 
 function todayKey(date = new Date()): string {
-  return date.toISOString().slice(0, 10); // YYYY-MM-DD
+  return date.toISOString().slice(0, 10);
 }
 
 export async function saveMetric(metric: MetricRecord): Promise<void> {
-  const day = todayKey();
+  const redis = getRedis();
 
+  // Skip analytics if Redis is unavailable
+  if (!redis) {
+    return;
+  }
+
+  const day = todayKey();
   const base = `analytics:${day}`;
 
   const pipeline = redis.pipeline();
@@ -61,6 +68,21 @@ export interface AnalyticsSnapshot {
 }
 
 export async function getTodayAnalytics(): Promise<AnalyticsSnapshot> {
+  const redis = getRedis();
+
+  // Return empty analytics if Redis is unavailable
+  if (!redis) {
+    return {
+      requests: 0,
+      cacheHit: 0,
+      cacheMiss: 0,
+      generationSuccess: 0,
+      generationFailed: 0,
+      generationRetry: 0,
+      averageResponseMs: 0,
+    };
+  }
+
   const day = todayKey();
   const base = `analytics:${day}`;
 

@@ -1,7 +1,6 @@
-// lib/ai/visitor-tracker.ts
-
 import crypto from "crypto";
-import { redis } from "@/lib/redis";
+
+import { getRedis } from "@/lib/redis";
 
 const TTL_SECONDS = 60 * 60 * 24 * 35; // 35 days
 
@@ -26,10 +25,21 @@ export interface VisitorStats {
   anonymousVisitors: number;
 }
 
+/**
+ * Tracks one visitor for analytics.
+ * If Redis is unavailable (e.g. GitHub Actions),
+ * analytics tracking is skipped gracefully.
+ */
 export async function trackVisitor({
   deviceId,
   userId,
 }: VisitorInput): Promise<void> {
+  const redis = getRedis();
+
+  if (!redis) {
+    return;
+  }
+
   const day = today();
 
   const deviceKey = `analytics:${day}:devices`;
@@ -52,7 +62,21 @@ export async function trackVisitor({
   await pipeline.exec();
 }
 
+/**
+ * Returns today's visitor analytics.
+ * If Redis is unavailable, returns empty statistics.
+ */
 export async function getTodayVisitorStats(): Promise<VisitorStats> {
+  const redis = getRedis();
+
+  if (!redis) {
+    return {
+      uniqueDevices: 0,
+      authenticatedUsers: 0,
+      anonymousVisitors: 0,
+    };
+  }
+
   const day = today();
 
   const deviceKey = `analytics:${day}:devices`;
