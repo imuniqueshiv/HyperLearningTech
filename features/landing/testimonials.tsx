@@ -22,7 +22,7 @@ export default function Testimonials() {
           duration: 40,
           repeat: Infinity,
           ease: "linear",
-        }
+        },
       });
     }
   }, [isPaused, shouldReduceMotion, controls]);
@@ -66,8 +66,14 @@ export default function Testimonials() {
               className="flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-2 text-sm font-medium text-foreground backdrop-blur-sm transition-colors hover:bg-muted/80"
               aria-label={isPaused ? "Play testimonials" : "Pause testimonials"}
             >
-              {isPaused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
-              <span className="sr-only sm:not-sr-only">{isPaused ? "Play" : "Pause"}</span>
+              {isPaused ? (
+                <Play className="h-4 w-4" />
+              ) : (
+                <Pause className="h-4 w-4" />
+              )}
+              <span className="sr-only sm:not-sr-only">
+                {isPaused ? "Play" : "Pause"}
+              </span>
             </button>
           </div>
           <motion.div
@@ -76,53 +82,55 @@ export default function Testimonials() {
             className="flex gap-6 pt-12"
             style={{ width: "max-content" }}
           >
-            {[...landingTestimonials, ...landingTestimonials].map((testimonial, index) => (
-              <div
-                key={`${testimonial.name}-${index}`}
-                className="group relative w-[320px] flex-shrink-0 overflow-hidden rounded-3xl border border-border bg-background/90 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
-              >
-                {/* Hover Glow */}
-                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
-                </div>
+            {[...landingTestimonials, ...landingTestimonials].map(
+              (testimonial, index) => (
+                <div
+                  key={`${testimonial.name}-${index}`}
+                  className="group relative w-[320px] flex-shrink-0 overflow-hidden rounded-3xl border border-border bg-background/90 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
+                >
+                  {/* Hover Glow */}
+                  <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
+                  </div>
 
-                {/* Quote */}
-                <div className="relative z-10 mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-[#1D4ED8] dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-                  <Quote className="h-5 w-5" aria-hidden="true" />
-                </div>
+                  {/* Quote */}
+                  <div className="relative z-10 mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-[#1D4ED8] dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
+                    <Quote className="h-5 w-5" aria-hidden="true" />
+                  </div>
 
-                {/* Rating */}
-                <div className="relative z-10 mb-4 flex gap-1">
-                  {[...Array(5)].map((_, idx) => (
-                    <Star
-                      key={idx}
-                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
-                      aria-hidden="true"
-                    />
-                  ))}
-                </div>
+                  {/* Rating */}
+                  <div className="relative z-10 mb-4 flex gap-1">
+                    {[...Array(5)].map((_, idx) => (
+                      <Star
+                        key={idx}
+                        className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                        aria-hidden="true"
+                      />
+                    ))}
+                  </div>
 
-                {/* Review */}
-                <p className="relative z-10 text-sm leading-7 text-muted-foreground">
-                  &apos;{testimonial.review}&apos;
-                </p>
-
-                {/* User */}
-                <div className="relative z-10 mt-5 border-t border-border pt-4">
-                  <h3 className="font-semibold text-foreground">
-                    {testimonial.name}
-                  </h3>
-
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    {testimonial.role}
+                  {/* Review */}
+                  <p className="relative z-10 text-sm leading-7 text-muted-foreground">
+                    &apos;{testimonial.review}&apos;
                   </p>
 
-                  <p className="mt-1 text-sm font-medium text-[#1D4ED8] dark:text-blue-400">
-                    {testimonial.university}
-                  </p>
+                  {/* User */}
+                  <div className="relative z-10 mt-5 border-t border-border pt-4">
+                    <h3 className="font-semibold text-foreground">
+                      {testimonial.name}
+                    </h3>
+
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </p>
+
+                    <p className="mt-1 text-sm font-medium text-[#1D4ED8] dark:text-blue-400">
+                      {testimonial.university}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </motion.div>
         </div>
 

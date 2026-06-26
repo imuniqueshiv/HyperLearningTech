@@ -126,69 +126,69 @@ export default function Universities() {
                   transition={{ duration: 0.3 }}
                   className="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:hover:border-blue-500/30"
                 >
-              {/* Hover Glow */}
-              <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
-              </div>
-
-              {/* Badge */}
-              <div className="relative z-10 mb-6 flex items-center justify-between">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-[#1D4ED8] dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-                  <GraduationCap className="h-7 w-7" />
-                </div>
-
-                <span
-                  className={`rounded-full border px-3 py-1 text-xs font-semibold ${
-                    university.status === "Available"
-                      ? "border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400"
-                      : "border-orange-200 bg-orange-50 text-orange-700 dark:border-orange-500/20 dark:bg-orange-500/10 dark:text-orange-400"
-                  }`}
-                >
-                  {university.status}
-                </span>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-foreground">
-                  {university.name}
-                </h3>
-
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {university.fullName}
-                </p>
-
-                <p className="mt-6 leading-7 text-muted-foreground">
-                  {university.description}
-                </p>
-
-                <div className="mt-8 flex flex-wrap gap-2">
-                  {university.branches.map((branch) => (
-                    <span
-                      key={branch}
-                      className="rounded-full border border-border bg-muted/30 px-3 py-1 text-xs font-medium text-muted-foreground"
-                    >
-                      {branch}
-                    </span>
-                  ))}
-                </div>
-
-                {university.status === "Available" ? (
-                  <Link
-                    href={university.href}
-                    className="mt-8 inline-flex items-center gap-2 font-semibold text-[#1D4ED8] transition-colors hover:text-[#1E40AF] dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    Explore University
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                ) : (
-                  <div className="mt-8 inline-flex items-center gap-2 text-muted-foreground">
-                    <Sparkles className="h-4 w-4" />
-                    Planned Expansion
+                  {/* Hover Glow */}
+                  <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-100 blur-3xl dark:bg-blue-500/20" />
                   </div>
-                )}
-              </div>
-            </motion.div>
+
+                  {/* Badge */}
+                  <div className="relative z-10 mb-6 flex items-center justify-between">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-[#1D4ED8] dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
+                      <GraduationCap className="h-7 w-7" />
+                    </div>
+
+                    <span
+                      className={`rounded-full border px-3 py-1 text-xs font-semibold ${
+                        university.status === "Available"
+                          ? "border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400"
+                          : "border-orange-200 bg-orange-50 text-orange-700 dark:border-orange-500/20 dark:bg-orange-500/10 dark:text-orange-400"
+                      }`}
+                    >
+                      {university.status}
+                    </span>
+                  </div>
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <h3 className="text-3xl font-bold text-foreground">
+                      {university.name}
+                    </h3>
+
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      {university.fullName}
+                    </p>
+
+                    <p className="mt-6 leading-7 text-muted-foreground">
+                      {university.description}
+                    </p>
+
+                    <div className="mt-8 flex flex-wrap gap-2">
+                      {university.branches.map((branch) => (
+                        <span
+                          key={branch}
+                          className="rounded-full border border-border bg-muted/30 px-3 py-1 text-xs font-medium text-muted-foreground"
+                        >
+                          {branch}
+                        </span>
+                      ))}
+                    </div>
+
+                    {university.status === "Available" ? (
+                      <Link
+                        href={university.href}
+                        className="mt-8 inline-flex items-center gap-2 font-semibold text-[#1D4ED8] transition-colors hover:text-[#1E40AF] dark:text-blue-400 dark:hover:text-blue-300"
+                      >
+                        Explore University
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    ) : (
+                      <div className="mt-8 inline-flex items-center gap-2 text-muted-foreground">
+                        <Sparkles className="h-4 w-4" />
+                        Planned Expansion
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
               ))
             ) : (
               <motion.div
@@ -201,8 +201,12 @@ export default function Universities() {
                 <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-muted/50 mb-4">
                   <Search className="h-8 w-8 text-muted-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">No universities found</h3>
-                <p className="mt-2 text-muted-foreground">Try adjusting your search query.</p>
+                <h3 className="text-xl font-semibold text-foreground">
+                  No universities found
+                </h3>
+                <p className="mt-2 text-muted-foreground">
+                  Try adjusting your search query.
+                </p>
               </motion.div>
             )}
           </AnimatePresence>

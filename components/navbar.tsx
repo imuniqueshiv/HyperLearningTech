@@ -79,10 +79,10 @@ export default function Navbar() {
   };
 
   return (
-    <header 
+    <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? "border-b border-[#00008B]/20 bg-[#00008B]/95 shadow-md backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80" 
+        scrolled
+          ? "border-b border-[#00008B]/20 bg-[#00008B]/95 shadow-md backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80"
           : "bg-[#00008B] border-transparent"
       }`}
     >

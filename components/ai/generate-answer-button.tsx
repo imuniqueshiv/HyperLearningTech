@@ -75,8 +75,11 @@ export default function GenerateAnswerButton({
       console.error(err);
 
       // Demo fallback for missing environment variables
-      const isDemoMode = !process.env.NEXT_PUBLIC_API_URL || err.message.includes("Failed to fetch") || err.message.includes("generate answer");
-      
+      const isDemoMode =
+        !process.env.NEXT_PUBLIC_API_URL ||
+        err.message.includes("Failed to fetch") ||
+        err.message.includes("generate answer");
+
       if (isDemoMode) {
         setAnswer(
           `**Demo Mode Fallback Answer:**\n\nThis is a simulated AI response because the backend API is currently unavailable.\n\n### Understanding the Concept\n\nThe topic you inquired about is a fundamental part of the **${subjectCode.toUpperCase()}** curriculum. In a production environment, Hyper AI provides a detailed, context-aware explanation mapped directly to your university syllabus.\n\n* **Key Concept 1:** Highly relevant to your semester studies.\n* **Key Concept 2:** Exam-focused insight and step-by-step breakdown.\n* **Application:** Practical examples to help you understand better.\n\n> Note: This is a demo response. Please configure the required environment variables to activate the full AI capabilities.`
@@ -129,7 +132,9 @@ export default function GenerateAnswerButton({
             <>
               <RefreshCw className="h-4 w-4 animate-spin" aria-hidden="true" />
               Generating Answer...
-              <span className="sr-only" role="status" aria-live="polite">Generating answer, please wait...</span>
+              <span className="sr-only" role="status" aria-live="polite">
+                Generating answer, please wait...
+              </span>
             </>
           ) : (
             `Check Answer ${label ?? ""} with AI`
@@ -138,7 +143,11 @@ export default function GenerateAnswerButton({
       )}
 
       {error && (
-        <div className="mt-4 rounded-xl border border-red-500/20 bg-red-500/10 p-4" role="alert" aria-live="assertive">
+        <div
+          className="mt-4 rounded-xl border border-red-500/20 bg-red-500/10 p-4"
+          role="alert"
+          aria-live="assertive"
+        >
           <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
         </div>
       )}

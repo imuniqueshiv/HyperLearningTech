@@ -11,12 +11,24 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Suspense fallback={<div className="h-40" />}><Stats /></Suspense>
-      <Suspense fallback={<div className="h-96" />}><Features /></Suspense>
-      <Suspense fallback={<div className="h-96" />}><AIDemo /></Suspense>
-      <Suspense fallback={<div className="h-96" />}><Universities /></Suspense>
-      <Suspense fallback={<div className="h-96" />}><Testimonials /></Suspense>
-      <Suspense fallback={<div className="h-96" />}><FAQ /></Suspense>
+      <Suspense fallback={<div className="h-40" />}>
+        <Stats />
+      </Suspense>
+      <Suspense fallback={<div className="h-96" />}>
+        <Features />
+      </Suspense>
+      <Suspense fallback={<div className="h-96" />}>
+        <AIDemo />
+      </Suspense>
+      <Suspense fallback={<div className="h-96" />}>
+        <Universities />
+      </Suspense>
+      <Suspense fallback={<div className="h-96" />}>
+        <Testimonials />
+      </Suspense>
+      <Suspense fallback={<div className="h-96" />}>
+        <FAQ />
+      </Suspense>
     </>
   );
 }

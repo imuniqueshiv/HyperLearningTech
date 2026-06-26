@@ -44,10 +44,10 @@ export default function ChatMockup() {
               </div>
 
               <p className="text-sm leading-relaxed text-foreground/80">
-                Big O notation describes how an algorithm&apos;s execution
-                time grows as input size increases. For example, Linear
-                Search has O(n) complexity because it may need to check
-                every element in the list.
+                Big O notation describes how an algorithm&apos;s execution time
+                grows as input size increases. For example, Linear Search has
+                O(n) complexity because it may need to check every element in
+                the list.
               </p>
             </div>
           </div>
@@ -68,9 +68,9 @@ export default function ChatMockup() {
               </div>
 
               <p className="text-sm leading-relaxed text-foreground/80">
-                O(log n) grows much slower than O(n). Binary Search uses
-                O(log n) because it repeatedly halves the search space,
-                making it significantly faster for large datasets.
+                O(log n) grows much slower than O(n). Binary Search uses O(log
+                n) because it repeatedly halves the search space, making it
+                significantly faster for large datasets.
               </p>
             </div>
           </div>
@@ -90,9 +90,7 @@ export default function ChatMockup() {
 
       {/* Floating Card */}
       <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-background p-4 shadow-xl lg:block">
-        <p className="text-sm text-muted-foreground">
-          Follow-up Questions
-        </p>
+        <p className="text-sm text-muted-foreground">Follow-up Questions</p>
 
         <p className="mt-1 text-2xl font-bold text-foreground">3 / 3</p>
       </div>

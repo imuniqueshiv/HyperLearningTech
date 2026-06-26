@@ -130,8 +130,11 @@ export default function WorkspaceChat({
         console.log("Fetch aborted");
         return;
       }
-      const isDemoMode = !process.env.NEXT_PUBLIC_API_URL || err.message.includes("Failed to fetch") || err.message.includes("Failed to get response");
-      
+      const isDemoMode =
+        !process.env.NEXT_PUBLIC_API_URL ||
+        err.message.includes("Failed to fetch") ||
+        err.message.includes("Failed to get response");
+
       if (isDemoMode) {
         const demoMessage: Message = {
           id: crypto.randomUUID(),
@@ -140,7 +143,11 @@ export default function WorkspaceChat({
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, demoMessage]);
-        setRelatedTopics(["Syllabus Mapping", "Exam Preparation", "AI Features"]);
+        setRelatedTopics([
+          "Syllabus Mapping",
+          "Exam Preparation",
+          "AI Features",
+        ]);
         setError(null);
       } else {
         setError(err instanceof Error ? err.message : "Something went wrong");
@@ -304,7 +311,9 @@ export default function WorkspaceChat({
       <div className="border-t border-border p-4 md:p-6">
         <form onSubmit={handleSubmit} className="flex gap-2">
           <div className="relative flex-1">
-            <label htmlFor="chat-input" className="sr-only">Type your question here</label>
+            <label htmlFor="chat-input" className="sr-only">
+              Type your question here
+            </label>
             <textarea
               id="chat-input"
               ref={inputRef}

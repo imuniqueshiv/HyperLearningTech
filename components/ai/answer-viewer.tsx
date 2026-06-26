@@ -148,17 +148,13 @@ const markdownComponents = {
 
   ul({ children }: any) {
     return (
-      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">
-        {children}
-      </ul>
+      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">{children}</ul>
     );
   },
 
   ol({ children }: any) {
     return (
-      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">
-        {children}
-      </ol>
+      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">{children}</ol>
     );
   },
 
@@ -180,9 +176,7 @@ const markdownComponents = {
 
   strong({ children }: any) {
     return (
-      <strong className="font-semibold text-foreground">
-        {children}
-      </strong>
+      <strong className="font-semibold text-foreground">{children}</strong>
     );
   },
 

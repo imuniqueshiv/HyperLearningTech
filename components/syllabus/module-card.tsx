@@ -47,8 +47,8 @@ export default function ModuleCard({
   return (
     <div className="rounded-3xl border border-border bg-card">
       {/* CLICKABLE HEADER */}
-      <button 
-        onClick={() => setOpen(!open)} 
+      <button
+        onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls={`module-content-${module.id}`}
         id={`module-button-${module.id}`}
@@ -66,7 +66,9 @@ export default function ModuleCard({
                   Module {module.number}
                 </h3>
 
-                <p className="text-base text-blue-600 md:text-lg">{module.title}</p>
+                <p className="text-base text-blue-600 md:text-lg">
+                  {module.title}
+                </p>
               </div>
             </div>
 
@@ -118,7 +120,7 @@ export default function ModuleCard({
 
       {/* COLLAPSED PYQs */}
       {open && questions.length > 0 && (
-        <div 
+        <div
           id={`module-content-${module.id}`}
           role="region"
           aria-labelledby={`module-button-${module.id}`}

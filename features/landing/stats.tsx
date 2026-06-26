@@ -2,12 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 
-import {
-  BrainCircuit,
-  FileText,
-  Sparkles,
-  CheckCircle2,
-} from "lucide-react";
+import { BrainCircuit, FileText, Sparkles, CheckCircle2 } from "lucide-react";
 import { landingStats } from "@/lib/data/landing";
 
 export default function Stats() {
