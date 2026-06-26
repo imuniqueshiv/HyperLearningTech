@@ -1,0 +1,26 @@
+# Global owner
+* @imuniqueshiv
+
+# GitHub configuration
+.github/ @imuniqueshiv
+
+# AI Architecture
+lib/ai/ @imuniqueshiv
+app/api/ai/ @imuniqueshiv
+components/ai/ @imuniqueshiv
+
+# University Content
+content/ @imuniqueshiv
+app/rgpv/ @imuniqueshiv
+
+# UI Components
+components/ @imuniqueshiv
+features/ @imuniqueshiv
+
+# Infrastructure
+package.json @imuniqueshiv
+package-lock.json @imuniqueshiv
+tsconfig.json @imuniqueshiv
+eslint.config.mjs @imuniqueshiv
+next.config.ts @imuniqueshiv
+proxy.ts @imuniqueshiv
