@@ -1,0 +1,57 @@
+name: PR Merged Comment
+
+on:
+  pull_request:
+    types:
+      - closed
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  congratulate:
+    if: >
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.user.type != 'Bot'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Post merge comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+
+            const message = [
+              `## 🎉 Congratulations @${pr.user.login}!`,
+              "",
+              "Thank you for contributing to **HyperLearningTech**.",
+              "",
+              "Your pull request has been successfully merged into **main**.",
+              "",
+              "### 📦 Merge Summary",
+              "",
+              `- **PR:** #${pr.number} - ${pr.title}`,
+              "- **Status:** ✅ Merged",
+              `- **Repository:** ${context.repo.repo}`,
+              "",
+              "### 🚀 Keep Contributing",
+              "",
+              "- Follow the CONTRIBUTING.md guidelines.",
+              "- Keep each Pull Request focused on a single feature or fix.",
+              "- Run formatting, linting, type checking, and a production build before opening a PR.",
+              "",
+              "Thank you for helping make HyperLearningTech better.",
+              "",
+              "Happy Coding! 🚀"
+            ].join("\n");
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              body: message
+            });
