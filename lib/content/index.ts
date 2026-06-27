@@ -7,15 +7,18 @@ export async function getSyllabus(
   subjectCode: string
 ) {
   try {
+    const baseDir = path.join(process.cwd(), "content", "rgpv");
     const filePath = path.join(
-      process.cwd(),
-      "content",
-      "rgpv",
+      baseDir,
       branch.toLowerCase(),
       semester.toLowerCase(),
       subjectCode.toLowerCase(),
       "syllabus.json"
     );
+
+    if (!filePath.startsWith(baseDir)) {
+      throw new Error("Invalid path parameter");
+    }
 
     const file = await fs.readFile(filePath, "utf8");
 
@@ -36,15 +39,18 @@ export async function getPYQs(
   subjectCode: string
 ) {
   try {
+    const baseDir = path.join(process.cwd(), "content", "rgpv");
     const filePath = path.join(
-      process.cwd(),
-      "content",
-      "rgpv",
+      baseDir,
       branch.toLowerCase(),
       semester.toLowerCase(),
       subjectCode.toLowerCase(),
       "pyqs.json"
     );
+
+    if (!filePath.startsWith(baseDir)) {
+      throw new Error("Invalid path parameter");
+    }
 
     const file = await fs.readFile(filePath, "utf8");
 

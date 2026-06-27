@@ -1,5 +1,3 @@
-"use client";
-
 import { BrainCircuit, ArrowRight } from "lucide-react";
 
 export default function ChatMockup() {

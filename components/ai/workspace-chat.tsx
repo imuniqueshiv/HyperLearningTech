@@ -131,10 +131,7 @@ export default function WorkspaceChat({
         return;
       }
       const isDemoMode =
-        !process.env.NEXT_PUBLIC_API_URL ||
-        (err instanceof Error &&
-          (err.message.includes("Failed to fetch") ||
-            err.message.includes("Failed to get response")));
+        err instanceof Error && err.message.includes("Failed to fetch");
 
       if (isDemoMode) {
         const demoMessage: Message = {

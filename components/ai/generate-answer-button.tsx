@@ -76,10 +76,7 @@ export default function GenerateAnswerButton({
 
       // Demo fallback for missing environment variables
       const isDemoMode =
-        !process.env.NEXT_PUBLIC_API_URL ||
-        (err instanceof Error &&
-          (err.message.includes("Failed to fetch") ||
-            err.message.includes("generate answer")));
+        err instanceof Error && err.message.includes("Failed to fetch");
 
       if (isDemoMode) {
         setAnswer(

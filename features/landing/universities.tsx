@@ -42,7 +42,7 @@ export default function Universities() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredUniversities = universities.filter((uni) => {
-    const query = searchQuery.toLowerCase();
+    const query = searchQuery.trim().toLowerCase();
     return (
       uni.name.toLowerCase().includes(query) ||
       uni.fullName.toLowerCase().includes(query) ||
@@ -104,6 +104,7 @@ export default function Universities() {
             </div>
             <input
               type="text"
+              aria-label="Search universities"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search universities by name, branch, or location..."
