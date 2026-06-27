@@ -1,0 +1,1154 @@
+{
+  "subject": {
+    "id": "bt-104",
+    "code": "BT-104",
+    "name": "Basic Electrical & Electronics Engineering",
+    "title": "BT-104 (GS) – Basic Electrical and Electronics Engineering",
+    "semester": "I & II",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Find the voltage Vab in the network shown below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find the current through the 6Ω resistor using Thevenin's theorem.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Draw Phasor diagrams of the following circuits: i) Series R-L-C when XL > XC, ii) Series R-L-C when XL < XC, iii) Series R-L-C when XL = XC.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A 3-φ balanced system supplies 110V to a delta connected load whose phase impedance is equal to (3.54+j3.54)Ω. Determine the line currents and draw the Phasor diagram.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw Phasor diagram of a 3-phase delta connected load and find the relation between phase and line voltages and currents.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A 220 V, 100 Hz, A.C source supplies a series RLC circuit with a capacitor and a coil. If the coil has 50 mH inductance, find at a resonance frequency of 100 Hz, what is the value of capacitor?",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw the typical normal magnetization curve of ferromagnetic material.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain in detail the Applications of DC Machines.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Draw and explain the output characteristic of a NPN transistor operation in CE configuration.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "The no-load ratio required in a single-phase 50 Hz transformer is 6600/600 V. If the maximum value of flux in the core is to be about 0.08 Wb, find the number of turns in each winding.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Enumerate the various losses in a transformer. How these losses can be minimized?",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the construction and working principle of three-phase induction motor with suitable diagram.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the difference between a separately excited and a self-excited generator?",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "An 8-pole DC machine has a wave winding containing 600 conductors. Calculate the generated e.m.f when the flux per pole is 0.08 Wb and speed is 215 rpm. If the flux per pole is made 0.05 Wb. At what speed should the armature be driven to generate 5001V.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) R-S flip-flop b) J-K flip-flop c) De-Morgan's theorem d) Star Delta transformation",
+              "unit": "Unit 5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Using the mesh analysis, find the Io in the circuit as given below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "In the figure below, find the current flowing through R1 using Thevenin's Theorem.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you understand by Source. Discuss about different types of Dependent and Independent Voltage and current Sources with suitable sketch.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define the following: i) Alternating Quantity, ii) R.M.S. Value, iii) Average value, iv) Form factor, v) Peak factor.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A coil having a resistance of 10 ohms and an inductance of 0.2H is connected in series with a 100×10⁻⁶ F capacitor across a 230V, 50Hz supply. Calculate: i) The active and reactive components of the current, ii) The voltage across the coil. Draw the phasor diagram.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A balanced star connected load of 8 + 6j ohm is connected across three phase, 50Hz, 440V supply system. Calculate: i) Line current, ii) Power absorbed, iii) Reactive volt ampere.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State the different types of transformers. Describe the construction and general principle of transformer.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you understand by Self inductance and mutual inductance? Derive the relation between Self inductance and Mutual Inductance.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Open circuit and short circuit test on a single phase transformer gave the following results: V0=200V, I0=0.7A, W0=20 Watt Test from primary side. Vs=10V, Is=10A, Ws=40 Watt test from secondary side. Determine the equivalent circuit parameters referred to primary side.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the construction and working principle of three phase induction motor with suitable diagram.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "A three phase, 6 pole, 50 Hz induction motor has a slip of 1% at no load and 3% at full load. Find: i) Synchronous Speed, ii) No Load Speed, iii) Full Load Speed, iv) Frequency of rotor current at full load.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss about types of losses occurring in electrical machine.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Draw and explain the V-I characteristics of a PN junction (Diode).",
+              "unit": "Unit 5",
+              "type": "electronics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw the circuit and explain the characteristics of CB configuration.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two: i) RS Flip Flop ii) Star Delta Transformation iii) De Morgan's Theorem iv) Torque-Slip Characteristics",
+              "unit": "Unit 5/1/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Use mesh analysis to determine the three mesh current in the circuit of the figure below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Using super position, find the V0 in the circuit shown in figure below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss about the Star Delta transformation using suitable example.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the following terms pertaining to an A.C. wave: i) Time period, ii) RMS value, iii) Average value, iv) Form factor.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A choke coil has resistance of 10 ohm and inductance of 0.05H is connected in series with an condenser of 100 µF. The whole circuit has been connected to 200 V, 50 Hz supply. Calculate: i) Impedance, ii) Current, iii) Power Factor, iv) Real Power.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Derive an expression of impedance, current, power factor, power in watts in RLC series circuit.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss about active, reactive and apparent power in series RLC circuits.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss about magnetization characteristics of ferromagnetic material.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss the laws of Electromagnetic induction.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Open circuit and short circuit test on a single phase transformer gave the following results: V0=200V, I0=0.7A, W0=20 Watt Test from primary side. Vs=10V, Is=10A, Ws=40 Watt test from secondary side. Determine the equivalent circuit parameters referred to primary side.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Draw and explain the complete Torque-slip characteristics of 3 phase induction motor.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "The core loss in a 3 phase induction motor is 100W and equals the mechanical loss, stator copper loss is 150W. When developing 2000W as the shaft power. What is the efficiency of the machine. Assume the slip as 4%.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you understand by Adder circuit? Draw and explain the working principle of full adder circuit.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "In a fixed bias circuit using n-p-n transistor, find the operating point if VCC=24V, RB=220kΩ, RC=4.7kΩ.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any Two: i) J-K Flip Flop ii) Dependent and Independent Sources iii) Open circuit and short circuit test iv) De-Morgan's Theorem",
+              "unit": "Unit 5/1/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss about ideal voltage source and ideal current source with neat diagram. How ideal voltage source can be converted into ideal current source.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "State and explain the superposition theorem with suitable example.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Using the mesh analysis, find the current through 5Ω resistor in the network as shown in figure below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define the following: i) Average value of AC voltage, ii) RMS value of AC voltage, iii) Power factor, iv) Active power, v) Reactive power, vi) Apparent power, vii) Three phase balanced supply.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw Phasor diagram of a 3-phase delta connected load and find the relation between phase and line voltages and currents.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A 220 volt, 50 Hz supply is given to a series R, L, C circuit having a resistance of 50Ω, Inductance of 0.2H and capacitance of 100 µF. Calculate impedance, Current in the circuit and Voltage across R, L, C.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss about magnetization characteristics of ferromagnetic material.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Draw the complete phasor diagram of a single phase transformer for an inductive load. Also write the notations used for all voltages and currents used in the phasor diagram.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What do you understand by self inductance and mutual inductance. Derive the relation between self inductance and mutual inductance.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the construction and working principle of a DC machine with the help of neat diagram.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss about the Torque - slip characteristics of 3-Phase Induction Motor.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "A 6 pole alternator running at 1200 rpm supplies a three phase induction motor wounded for 4 poles. If the rotor induced emf makes 3 alternator per second. Find the actual rotor speed.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you understand by semiconductor. Explain the different types of semiconductors in details.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the need of full adder circuit? Design a Full adder circuit with truth table and logic diagram.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two: a) Star Delta Transformation b) J-K Flip-Flop c) Laws of Electromagnetic Induction d) Power in balanced and Unbalanced Three Phase System",
+              "unit": "Unit 1/5/3/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by dependent and independent sources? Explain with neat sketches. How can we convert a voltage source into a current source? Discuss.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Using Nodal Analysis, find the current through the 10Ω resistor in the figure shown below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Find the value of current in branch AB using the Superposition Theorem. Refer to the circuit below.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define the average value, RMS value, form factor, and peak factor of an AC quantity. How are these parameters calculated for a sinusoidal waveform?",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A coil of resistance 10Ω and inductance 0.1H is connected in series with 150µF capacitor across a 200V, 50Hz supply. Calculate: i) Inductive reactance, ii) Capacitive reactance, iii) Impedance, iv) Current, v) Power factor, vi) Voltage across the coil, vii) Voltage across capacitor.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A 3-Φ balanced system supplies 110V to a delta connected load whose phase impedance is (3.54 + j3.54)Ω. Determine the line current and draw the phasor diagram.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by self inductance and mutual inductance? Derive the relation between them.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the laws of electromagnetic induction.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Open circuit and short circuit tests on a single-phase transformer gave the following results: V0=200V, I0=0.7A, W0=20W (Primary side), Vs=10V, Is=10A, Ws=40W (Secondary side). Determine the equivalent circuit parameters referred to the primary side.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the construction and working principle of a three-phase induction motor. Draw the torque-slip characteristics. Why can't this motor operate at synchronous speed?",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe a D.C. machine with suitable sketches, focusing on its main parts and construction details.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "A three-phase 440V, 50hp, 50Hz induction motor delivers rated output at 1440 rpm. Calculate: i) Number of poles, ii) Synchronous speed, iii) Slip, iv) Slip rpm, v) Rotor speed with respect to stator, vi) Rotor EMF at operating speed.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Solve for x: i) (257)10 = (x)2, ii) (21.625)10 = (x)8, iii) (BC.2)16 = (x)8, iv) (33)10 = (201)x.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "With the help of input and output characteristics, explain the operation of a BJT in common emitter configuration.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Star Delta Transformation b) J-K Flip-Flop c) Magnetization Characteristics of Ferromagnetic Material d) Power in balanced and unbalanced three-phase systems",
+              "unit": "Unit 1/5/3/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "State and explain Kirchhoff's current and voltage law.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "For the circuit shown in Fig (i) find the current in 2Ω resistor.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "State and explain Superposition theorem.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find the current through 5-ohm resistance in Fig (ii) using mesh current analysis.",
+              "unit": "Unit 1",
+              "type": "dc-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define the following with respect to alternating quantity: i) R.M.S. value, ii) Peak value, iii) Average value, iv) Instantaneous value.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A 4 ohm resistor is connected to a 10 mH inductor across a 100 V, 50 Hz voltage source. Find the input current, voltage across resistor and inductor, power factor of the circuit and the real power consumed to the circuit.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Faraday's laws of electromagnetic induction.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the role of resistance, capacitance and inductance in an electric circuit.",
+              "unit": "Unit 2",
+              "type": "ac-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the working principle of a single-phase transformer.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "In a 25 kVA, 2000/200 power transformer the iron and copper losses are 350W and 400W respectively. Calculate the efficiency at full load.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain with schematic diagram different parts of D.C. machines.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the principle of three phase induction motor.",
+              "unit": "Unit 4",
+              "type": "electrical-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Draw and explain the V-I characteristic of diode.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the working principle of common base transistor.",
+              "unit": "Unit 5",
+              "type": "electronics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: i) Logic gates ii) R-S flip flop iii) Compare electric and magnetic circuit iv) B-H curve",
+              "unit": "Unit 5/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "State the steps to solve the Thevenin's Theorem. An Electric iron is rated 1000W, 240V. Find the current drawn & resistance of the heating element.",
+              "unit": "Unit 1",
+              "type": "dc-circuits",
+              "isPredicted": true
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find the current through 3 Ω resistor using superposition theorem in given figure.",
+              "unit": "Unit 1",
+              "type": "dc-circuits",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain about Star and Delta connected three phase balanced circuits.",
+              "unit": "Unit 2",
+              "type": "ac-circuits",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A series RLC circuit containing a resistance of 12Ω, an inductance of 0.15H and a capacitor of 100μF are connected in series across a 100V, 50Hz supply. Calculate the total circuit impedance, the circuits' current, power factor and draw the voltage phasor diagram.",
+              "unit": "Unit 2",
+              "type": "ac-circuits",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Derive expression for the coefficient of: (i) Self-inductance for a solenoid coil (ii) Mutual inductance for a pair of closely wound solenoid coils.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss some of the magnetization characteristics of ferromagnetic materials.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "With a neat circuit diagram and explain the construction and principle of operation of DC Motor.",
+              "unit": "Unit 4",
+              "type": "electrical-machines",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A three phase 50Hz, 2 pole induction motor has a full speed of 2860 rpm. What is the (i) synchronous speed (ii) slip of the induction motor (iii) rotor emf frequency?",
+              "unit": "Unit 4",
+              "type": "electrical-machines",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define α and β with respect to BJT and derive the relationship between them. For a transistor circuit having α = 0.98, ICBO = 5 μA and IB = 100 μA, find IC and IE.",
+              "unit": "Unit 5",
+              "type": "electronics",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "When three balanced impedances are connected in delta across a 3 phase 400 V, 50 Hz supply the line current drawn is 20 A at a lagging p.f. of 0.3. Determine the value of the impedance connected in each phase.",
+              "unit": "Unit 2",
+              "type": "ac-circuits",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Determine the equivalent resistance between terminals A and B in the given figure.",
+              "unit": "Unit 1",
+              "type": "dc-circuits",
+              "isPredicted": true
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw the circuit of an S-R flip flop using NAND gates. Explain it.",
+              "unit": "Unit 5",
+              "type": "electronics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "State and Prove Demorgan's theorem.",
+              "unit": "Unit 5",
+              "type": "electronics",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain about open circuit and short circuit test.",
+              "unit": "Unit 3",
+              "type": "magnetic-circuits",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write technical short note on any two of the following: (i) Voltage and current sources (ii) Applications of DC machine (iii) Half and Full adder circuits",
+              "unit": "Unit 1/4/5",
+              "type": "mixed",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

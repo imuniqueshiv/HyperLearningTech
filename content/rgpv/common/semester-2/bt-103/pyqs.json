@@ -1,0 +1,1162 @@
+{
+  "subject": {
+    "id": "bt-103",
+    "code": "BT-103",
+    "name": "English for Communication",
+    "title": "BT-103 (GS) – English for Communication",
+    "semester": "I & II",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Do as directed: i) Change into Direct Speech ii) Supply a verb in agreement with its subject iii) Use appropriate punctuation marks iv) Use appropriate preposition v) Use correct article vi) Change the voice vii) Identify the error in this sentence and correct them.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a note on significance of communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Mention the difference between verbal and non-verbal communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write the importance of communication for technical students.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain briefly 7 C's of Communication with examples.",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a note on features of a good report.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Give some important points to improve reading comprehension skills.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is writing precisely and mention the various steps to be followed in writing precise?",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the precautions should be taken while writing an e-mail.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Briefly explain the types of essay writing with examples.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Elucidate the difference between laboratory report and progress report.",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write the importance of business letter and explain parts and layout of business letters.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Submit a letter of application along with your resume for the post of software engineer in HCL, Bangalore.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain, what are the barriers to communication and how can we overcome them?",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "How many ways we could do business correspondence? Explain.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Identify the following sentences as Declarative, Interrogative, Exclamatory or Imperative.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Answer the following as per the instructions given in the brackets: (Articles, Indirect speech, Correct verb form, Prepositions, Passive voice).",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Give the Synonyms of the following words: Endure, Horror, Contribute, Notable, Necessary, Vanish, Consolation.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Put the words in brackets in the appropriate form (Use prefixes or suffixes).",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the seven C's of effective Communication?",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the barriers to communications? Describe the methods for overcoming the barriers to communication?",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a short note on Precise writing and précis.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is drafting and editing in writing? What is the importance of drafting and editing your writing?",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a importance of Business Letters with a detail.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is a letter of complaint? What are the characteristics of writing a letter of complaint?",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the features of a new report? What are the elements and structure of news report? Explain.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "List five reason why communication skills are important for you?",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Why is technical definition created? What are the elements of technical definition?",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "You are Sneha. Write an application to the Sub-division officer (telephones) about the complaint of your telephone disorders.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Give the answer (any two): a) Report of trouble b) Features of writing a good Report c) Progress Report d) E-mail and Tender",
+              "unit": "Unit 4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Answer the following as per direction given in brackets: (Change into passive Voice, Change into Indirect speech).",
+              "unit": "Unit 1",
+              "type": "grammar"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Choose the correct form of the verb that agrees with the subject.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Answer the following: i) Write down the Antonyms ii) Write down the Synonyms.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "On the basis of your reading of the passage answer the following questions (Reading Comprehension - Robert Bruce).",
+              "unit": "Unit 2",
+              "type": "comprehension"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the process/cycle of Communication. Give difference between one-way Communication and two-way Communication?",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the advantages and disadvantages of written communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Give difference between laboratory report and progress report.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you mean by planning drafting and editing? What are the stages of planning drafting editing?",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a contents of a good resume in details.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do CC and BCC mean? What are the basics of email? Explain.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Draft a tender notice for construction of a workshop building of a new polytechnic costing Rs. 80 lakhs, assume suitable information if required.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Give the difference between calling quotation and sending quotation in detail.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is technical definition and technical description? What are technical definition terms? Explain.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is report writing? What are the structural features of report writing?",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following (any two): a) Non verbal Communication b) Complaint c) Laboratory Report d) Precise Writing",
+              "unit": "Unit 3/5/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Determine whether each of the following statements is imperative, declarative, interrogative or exclamatory.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Fill in the blanks as instructed (Verb forms, Articles, Prepositions).",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the synonyms and antonyms? Give five examples.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the difference between a prefix and a suffix? Give examples.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the importance of communication to students? Explain.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What obstacles exist in the way of communication? Explain strategies for overcoming them.",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a brief essay about precis and precise writing.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the main purpose of a progress report? Explain.",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a detailed essay about the significance of business letters.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the difference between limited and open tender? Describe.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Which characteristics distinguish a news report? What components and formats make up a news report? Explain.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Provide five reasons why you believe effective communication is essential.",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What motivates the creation of technical definitions? What comprises a technical definition?",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "You wish to do a Spanish learning course from the institute 'Learn a Language'. Write a letter to enquire about course details, fees, duration etc. Sign yourself as Kritika/Kartik.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Provide the response (any two): a) Trouble report b) Guidelines for writing a resume c) Drafting and Editing d) Structure of a formal report",
+              "unit": "Unit 4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Change the below sentences from Passive voice to Active voice.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Select the verb tense that corresponds with the subject correctly.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Add the correct prefix or suffix to the word in parenthesis.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write the antonyms of the following words: Enormous, Exodus, Mortal, Ignorant, Occupied, Abounds, Feasibility.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the benefits and drawbacks of written communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the communication cycle and process. What makes one-way and two-way communication different from each other?",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is planning, drafting and editing? Explain in detail.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the introduction of a lab report? How to write a lab report?",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Give the difference between verbal and non-verbal communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are Tender issues? Why is tender needed? Give answer.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Why is reading comprehension important? How to improve comprehension?",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the most common sentence structure? What are the elements of a sentence?",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How do you write a trouble report? Explain the structure of a report and its purpose.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "You went for a vacation with your family to Dehradun and stayed in hotel Ashoka & Co. However, you are not satisfied with their service. Write a letter describing your stay and providing relevant suggestions. You are Vivan/Priyal Joshi.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Answer the following (any two): a) Precise writing b) Guidelines for writing Resume c) Calling Quotation d) Technical Description",
+              "unit": "Unit 4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Change the following sentences into active voice or into passive voice.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Complete the sentences using the correct form of the word in parentheses.",
+              "unit": "Unit 1",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Fill in the blanks with the right prefix/suffix.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write antonyms of the following words: Before, Poor, Short, Tight, Noisy, Tidy, Dead.",
+              "unit": "Unit 2",
+              "type": "vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define communication and explain the process of communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How is written communication better than oral communication?",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a paragraph on the disadvantages of Social Media.",
+              "unit": "Unit 4",
+              "type": "writing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a précis of the following passage (on punctuality).",
+              "unit": "Unit 4",
+              "type": "writing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write the different qualities of a good business letter.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Draft a job application letter with a resume for a suitable post as advertised in a newspaper.",
+              "unit": "Unit 5",
+              "type": "business"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "You are Mohan, working as a Junior Software Developer. Write an email to your HR Manager to grant sick leave for a week.",
+              "unit": "Unit 5",
+              "type": "business"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the importance of body language and gestures in the process of communication.",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define barriers to communication. Explain any two barriers.",
+              "unit": "Unit 3",
+              "type": "communication"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How can communication be made effective?",
+              "unit": "Unit 3",
+              "type": "communication"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Describe any two of the following: a) Email etiquette b) Disadvantages of oral communication c) Parts and layout of a business letter d) SQ3R reading technique",
+              "unit": "Unit 5/3/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain subject-verb agreement with suitable examples.",
+              "unit": "Unit 1",
+              "type": "grammar",
+              "isPredicted": true
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the correct use of articles with suitable examples.",
+              "unit": "Unit 1",
+              "type": "grammar",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain reported speech with suitable examples.",
+              "unit": "Unit 1",
+              "type": "grammar",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate between active and passive voice with illustrations.",
+              "unit": "Unit 1",
+              "type": "grammar",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain prefixes and suffixes used in English vocabulary with five examples for each.",
+              "unit": "Unit 2",
+              "type": "vocabulary",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write short notes on synonyms and antonyms and write five examples for each.",
+              "unit": "Unit 2",
+              "type": "vocabulary",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is reading comprehension?",
+              "unit": "Unit 2",
+              "type": "vocabulary",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain methods to improve reading comprehension skills.",
+              "unit": "Unit 2",
+              "type": "vocabulary",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define communication and discuss its importance for technical students.",
+              "unit": "Unit 3",
+              "type": "communication",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the process of communication with a neat diagram.",
+              "unit": "Unit 3",
+              "type": "communication",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain non-verbal communication with examples.",
+              "unit": "Unit 3",
+              "type": "communication",
+              "isPredicted": true
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss barriers to communication and methods to overcome them.",
+              "unit": "Unit 3",
+              "type": "communication",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the steps involved in planning, drafting and editing.",
+              "unit": "Unit 4",
+              "type": "writing",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write a short note on précis writing or technical description.",
+              "unit": "Unit 4",
+              "type": "writing",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the structure of a formal report.",
+              "unit": "Unit 4",
+              "type": "writing",
+              "isPredicted": true
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on resume writing and business letters.",
+              "unit": "Unit 5",
+              "type": "business",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

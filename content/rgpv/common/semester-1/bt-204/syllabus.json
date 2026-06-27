@@ -1,0 +1,215 @@
+{
+  "subject": {
+    "id": "bt-204",
+    "code": "BT-204",
+    "name": "Basic Civil Engineering & Mechanics",
+    "title": "BT-204 – Basic Civil Engineering & Mechanics",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "I/II",
+    "credits": 4,
+    "lectureTutorialPractical": "3L-0T-2P",
+    "commonTo": "All Disciplines"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Building Materials & Construction",
+      "hours": null,
+      "topics": [
+        "Stones, bricks, cement, lime, timber-types, properties, test & uses",
+        "laboratory tests concrete and mortar Materials",
+        "Workability, Strength properties of Concrete",
+        "Nominal proportion of Concrete preparation of concrete, compaction, curing",
+        "Elements of Building Construction",
+        "Foundations conventional spread footings, RCC footings",
+        "brick masonry walls, plastering and pointing",
+        "floors, roofs, Doors, windows, lintels, staircases – types and their suitability"
+      ],
+      "questionIds": [
+        "bt204_m1_nov2022_q1",
+        "bt204_m1_nov2022_q2",
+        "bt204_m1_june2023_q3",
+        "bt204_m1_june2023_q4",
+        "bt204_m1_june2023_q5",
+        "bt204_m1_june2023_q6",
+        "bt204_m1_dec2023_q7",
+        "bt204_m1_dec2023_q8",
+        "bt204_m1_dec2023_q9",
+        "bt204_m1_dec2023_q10",
+        "bt204_m1_dec2023_q11",
+        "bt204_m1_dec2023_q12",
+        "bt204_m1_june2024_q13",
+        "bt204_m1_june2024_q14",
+        "bt204_m1_dec2024_q15",
+        "bt204_m1_dec2024_q16",
+        "bt204_m1_dec2024_q17",
+        "bt204_m1_june2025_q18",
+        "bt204_m1_june2025_q19",
+        "bt204_m1_june2025_q20",
+        "bt204_m1_june2025_q21",
+        "bt204_m1_june2025_q22"
+      ],
+      "predictedQuestionIds": [
+        "bt204_m1_predicted_q1",
+        "bt204_m1_predicted_q2",
+        "bt204_m1_predicted_q3",
+        "bt204_m1_predicted_q4",
+        "bt204_m1_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Surveying & Positioning",
+      "hours": null,
+      "topics": [
+        "Introduction to surveying Instruments – levels, theodolites, plane tables and related devices",
+        "Electronic surveying instruments etc.",
+        "Measurement of distances – conventional and EDM methods",
+        "measurement of directions by different methods",
+        "measurement of elevations by different methods",
+        "Reciprocal leveling"
+      ],
+      "questionIds": [
+        "bt204_m2_nov2022_q1",
+        "bt204_m2_nov2022_q2",
+        "bt204_m2_nov2022_q3",
+        "bt204_m2_dec2023_q3",
+        "bt204_m2_june2023_q4",
+        "bt204_m2_june2023_q5",
+        "bt204_m2_june2023_q6",
+        "bt204_m2_june2023_q7",
+        "bt204_m2_dec2023_q8",
+        "bt204_m2_dec2023_q9",
+        "bt204_m2_dec2023_q10",
+        "bt204_m2_june2024_q11",
+        "bt204_m2_june2024_q12",
+        "bt204_m2_june2024_q13",
+        "bt204_m2_dec2024_q14",
+        "bt204_m2_dec2024_q15",
+        "bt204_m2_june2025_q16",
+        "bt204_m2_june2025_q17"
+      ],
+      "predictedQuestionIds": [
+        "bt204_m2_predicted_q1",
+        "bt204_m2_predicted_q2",
+        "bt204_m2_predicted_q3",
+        "bt204_m2_predicted_q4",
+        "bt204_m2_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Mapping & Sensing",
+      "hours": null,
+      "topics": [
+        "Mapping details and contouring",
+        "Profile Cross sectioning and measurement of areas, volumes",
+        "application of measurements in quantity computations",
+        "Survey stations",
+        "Introduction of remote sensing and its applications"
+      ],
+      "questionIds": [
+        "bt204_m3_nov2022_q1",
+        "bt204_m3_nov2022_q2",
+        "bt204_m3_nov2022_q3",
+        "bt204_m3_june2023_q4",
+        "bt204_m3_june2023_q5",
+        "bt204_m3_dec2023_q6",
+        "bt204_m3_dec2023_q7",
+        "bt204_m3_dec2023_q8",
+        "bt204_m3_june2024_q9",
+        "bt204_m3_june2024_q10",
+        "bt204_m3_dec2024_q11",
+        "bt204_m3_dec2024_q12",
+        "bt204_m3_june2025_q13",
+        "bt204_m3_june2025_q14"
+      ],
+      "predictedQuestionIds": [
+        "bt204_m3_predicted_q1",
+        "bt204_m3_predicted_q2",
+        "bt204_m3_predicted_q3",
+        "bt204_m3_predicted_q4",
+        "bt204_m3_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Forces and Equilibrium",
+      "hours": null,
+      "topics": [
+        "Engineering Mechanics: Forces and Equilibrium",
+        "Graphical and Analytical Treatment of Concurrent and non-concurrent Co-planar forces",
+        "free Diagram, Force Diagram and Bow's notations",
+        "Application of Equilibrium Concepts: Analysis of plane Trusses: Method of joints, Method of Sections",
+        "Frictional force in equilibrium problems"
+      ],
+      "questionIds": [
+        "bt204_m4_nov2022_q1",
+        "bt204_m4_nov2022_q2",
+        "bt204_m4_nov2022_q3",
+        "bt204_m4_june2023_q4",
+        "bt204_m4_june2023_q5",
+        "bt204_m4_june2023_q6",
+        "bt204_m4_dec2023_q7",
+        "bt204_m4_dec2023_q8",
+        "bt204_m4_june2024_q9",
+        "bt204_m4_june2024_q10",
+        "bt204_m4_dec2024_q11",
+        "bt204_m4_dec2024_q12",
+        "bt204_m4_june2025_q13",
+        "bt204_m4_june2025_q14",
+        "bt204_m4_june2025_q15",
+        "bt204_m4_june2025_q16"
+      ],
+      "predictedQuestionIds": [
+        "bt204_m4_predicted_q1",
+        "bt204_m4_predicted_q2",
+        "bt204_m4_predicted_q3",
+        "bt204_m4_predicted_q4",
+        "bt204_m4_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Centre of Gravity and Moment of Inertia",
+      "hours": null,
+      "topics": [
+        "Centre of Gravity and moment of Inertia",
+        "Centroid and Centre of Gravity",
+        "Moment Inertia of Area and Mass, Radius of Gyration",
+        "Introduction to product of Inertia and Principle Axes",
+        "Support Reactions",
+        "Shear force and bending moment Diagram for Cantilever & simply supported beam with concentrated, distributed load and Couple"
+      ],
+      "questionIds": [
+        "bt204_m5_nov2022_q1",
+        "bt204_m5_nov2022_q2",
+        "bt204_m5_nov2022_q3",
+        "bt204_m5_june2023_q4",
+        "bt204_m5_dec2023_q5",
+        "bt204_m5_dec2023_q6",
+        "bt204_m5_dec2023_q7",
+        "bt204_m5_dec2023_q8",
+        "bt204_m5_june2024_q9",
+        "bt204_m5_june2024_q10",
+        "bt204_m5_dec2024_q11",
+        "bt204_m5_dec2024_q12",
+        "bt204_m5_june2025_q13",
+        "bt204_m5_june2025_q14"
+      ],
+      "predictedQuestionIds": [
+        "bt204_m5_predicted_q1",
+        "bt204_m5_predicted_q2",
+        "bt204_m5_predicted_q3",
+        "bt204_m5_predicted_q4",
+        "bt204_m5_predicted_q5"
+      ]
+    }
+  ]
+}

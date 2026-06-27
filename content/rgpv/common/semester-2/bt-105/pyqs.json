@@ -1,0 +1,1098 @@
+{
+  "subject": {
+    "id": "bt-105",
+    "code": "BT-105",
+    "name": "Engineering Graphics",
+    "title": "BT-105 (GS) – Engineering Graphics",
+    "semester": "I & II",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "An area of 144 sq cm on a map represents an area of 36 sq km on the field. Find the RF of the scale of the map and draw a diagonal scale to show km, hectometres and decametres and to measure up to 10 km. Indicate on the scale a distance 7 km, 5 hectometres and 6 decimetres.",
+              "unit": "Unit 1",
+              "type": "scales"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Construct a conic when the distance of its focus from its directrix is equal to 50 mm and its eccentricity is 2/3. Name the curve; mark its major axis and minor axis. Draw a tangent at any point, P on the curve.",
+              "unit": "Unit 1",
+              "type": "curves"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "The length of the front view of a line CD which is parallel to HP and inclined 30° to VP is 50 mm. The end C of the line is 15 mm in front of VP and 25 mm above HP. Draw the projections of the line and find its true length.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A line PS 65 mm has its end P, 15 mm above the HP and 15 mm in front of the VP. It is inclined at 55° to the HP and 35° to the VP. Draw its projections.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw the projections of a pentagonal prism of base 25 mm side and 50 mm long. The prism is resting on one of its rectangular faces in V.P with its axis inclined at 45° to HP.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Draw the isometric view of a hexagonal prism having side of base 25 mm and axis 65 mm long resting on its base on HP.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "A right circular cone of axis height 80 mm is resting on one of its generators in HP. Draw its projections. The base is 40 mm dia.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Give some examples where the layering concept is useful to use.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Name and explain five edit commands used in CAD.",
+              "unit": "Unit 5",
+              "type": "cad"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the various advantages of CAD.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is the use of UCS icon? Explain in detail?",
+              "unit": "Unit 5",
+              "type": "cad"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write about Dialog boxes and windows in CAD software.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the various commands used for transformation of an object: i) Move, ii) Copy, iii) Rotate, iv) Mirror.",
+              "unit": "Unit 5",
+              "type": "cad"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the different methods used for drawing a circle in AutoCAD.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes of the following: i) Isometric projection ii) Epicycloid iii) Basic drawing command",
+              "unit": "Unit 5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Fill in the blanks on orthographic projections, section views and CAD concepts.",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are Scale? Classify its different types, also describe how RF is calculated.",
+              "unit": "Unit 1",
+              "type": "scales"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A rectangular plot of land area 0.45 hectare, is represented on a map by a similar rectangle of 5 sq. cm. Calculate the RF of the map, Also draw a scale to read up to single metre from the map, the scale should be long enough to measure up to 400 metres.",
+              "unit": "Unit 1",
+              "type": "scales"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "An inelastic string is unwound to a length of 122 mm from a drum of φ 30 mm. Draw the locus of free end of the string which is held taut during unwinding.",
+              "unit": "Unit 1",
+              "type": "curves"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "The projections a'b' and ab of a line AB are 65 mm and 50 mm long, respectively. The midpoint of the line is 38 mm in front of VP and 30 mm above HP. End A is 10 mm in front of the VP and nearer to it. End B is nearer to the HP. Draw the projections of the line, find its true length.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A regular hexagonal lamina 40 mm side has a square hole of 25 mm side centrally cut through it. Draw its projections when it is resting on one of its sides on HP with its surface inclined at 60° to VP and its corner nearest to VP is 24 mm from VP.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "A triangular prism of side of base 30 mm and axis 55 mm long lies on one of its rectangular faces in HP with its axis parallel to VP. Draw its Projection.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "A right regular square pyramid, edge of base 35 mm and height 50 mm, rest on its base on HP with its base edges equally inclined to VP. A section plane perpendicular to VP and inclined to HP on 32°, cuts the pyramid bisecting its axis. Draw the projections and true shape of the section of truncated pyramid.",
+              "unit": "Unit 4",
+              "type": "sections"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Develop the lateral surface of an oblique cone, diameter of the base 40mm and height 40 mm having its axis inclined at 60° to its base.",
+              "unit": "Unit 4",
+              "type": "development"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "A right circular cone, diameter of base 50 mm and axis 62 mm long, rest on its base rim on HP with its axis parallel to VP and one of the elements perpendicular to HP. Draw the projections.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A cube 30 mm edge is placed centrally on the top of a cylindrical block of φ 52 mm and 20 mm height. Draw the isometric drawing of the solid.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the purpose of Zoom Command.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on (any two): i) View ports ii) Layering concept iii) Type of projections",
+              "unit": "Unit 5/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Fill in the blanks on orthographic projections, section views and CAD concepts.",
+              "unit": "Unit 1/2/4",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Draw an angle of 45° and 135° with the help of Scale of Chords.",
+              "unit": "Unit 1",
+              "type": "scales"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "The distance of 352 km between two cities, on a road map, is represented by a line of length 70.4 mm. Draw a diagonal scale to read up to single kilometer and long enough to measure up to 900 km. Show on the scale a distance of 649 km.",
+              "unit": "Unit 1",
+              "type": "scales"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Construct a Conic section having eccentricity of 3/4 and focus 25 mm from directrix. Measure its major and minor axes and the distance between two foci.",
+              "unit": "Unit 1",
+              "type": "curves"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "The plan of a line PQ 75 mm long, measures 54 mm. The midpoint of the line is 50 mm from VP and 15 mm from the HP. The point Q is 24 mm from the VP. Draw its projections and find the inclinations with HP and VP. Also locate its traces.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A regular hexagonal lamina 30 mm side has a corner on HP. Its surface is inclined at 45° to the HP and the plan of the diagonal through the corner, which is in the HP makes an angle of 45° with the VP. Draw its projections.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is meant by Projection? Explain the principle of projection and Differentiate between First Angle and Third Angle Projections.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A triangular prism of side of base 30 mm and axis 55 mm long lies on one of its rectangular faces in HP with its axis parallel to VP. Draw its Projection.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "A right regular square pyramid, edge of base 35 mm and height 50 mm, rest on its base on HP with its base edges equally inclined to VP. A section plane perpendicular to VP and inclined to HP on 32°, cuts the pyramid bisecting its axis. Draw the projections and true shape of the section of truncated pyramid.",
+              "unit": "Unit 4",
+              "type": "sections"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "A bicycle has a 650 mm diameter wheels. Draw the locus of a point P on the circumference of a wheel for its complete revolution when it passes over a segmental arched culvert of radius 1950 mm.",
+              "unit": "Unit 1",
+              "type": "curves"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A cube 30 mm edge is placed centrally on the top of a cylindrical block of φ 52 mm and 20 mm height. Draw the isometric drawing of the solid.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is CAD? Name two CAD softwares. Give advantages and limitations of using CAD.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on (any two): i) View ports ii) Layering concept iii) Edit commands used in CAD",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is scale? Classify its different types. What are the main uses of scale?",
+              "unit": "Unit 1",
+              "type": "scales"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Construct a vernier scale to read meters, decimeters and long enough to measure up to 6 meters when 1 meter is represented by 2.5 centimeters. Find R.F. and show on it a distance of 4.33 meters.",
+              "unit": "Unit 1",
+              "type": "scales"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is 3D modeling? Explain types of modeling.",
+              "unit": "Unit 5",
+              "type": "cad"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Construct a parabola when the distance between focus from the directrix is equal to 60 mm. Draw a tangent and normal at any point on the parabola.",
+              "unit": "Unit 1",
+              "type": "curves"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A straight line segment is 100 mm long, measures 80 mm in plan and 70 mm in elevation. The middle point M is situated 36 mm above H.P. and 46 mm in front of V.P. Draw the top and front views of the line AB.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Name the methods which are employed to determine the length and true inclinations of a straight line.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "A rectangular plate ABCD measuring 45 mm x 35 mm, has its diagonal AC inclined at 30° to the H.P. whereas the diagonal BD makes an apparent angle of 45° to V.P. Draw its projection.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Draw the projections of a pentagonal plane, side 25 mm, resting in the H.P. on one of its edges. The plane of pentagon is inclined at 45° to the H.P. and the perpendicular, from the midpoint of the resting edge, makes an angle of 30° with the V.P.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "A regular tetrahedron edge of base 30 mm, is resting on one of its edges on the horizontal plane. The resting edge makes an angle of 45° to V.P. and the face containing the edge makes an angle of 30° to H.P. Draw its projections.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "A right circular cylinder, base φ54 and axis 75 mm long, with a circular hole of φ30 mm, drilled centrally through it, rests on its base on H.P. A section plane 45° to H.P. cuts the axis at a distance of 20 mm from the top end face. Draw the sectional top view and true shape of section.",
+              "unit": "Unit 4",
+              "type": "sections"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A square prism of 50 mm edge and 65 mm height stands on one of its faces on the H.P. with a vertical face making 45° angle with V.P. A horizontal hole of 25 mm diameter is drilled centrally through the prism such that the hole passes through the opposite vertical edges of the cube. Draw the development of the surface of the prism and the hole.",
+              "unit": "Unit 4",
+              "type": "development"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A cube of 40 mm side rests centrally on a square block of 60 mm edges and 20 mm thick. Draw the isometric projection of the two objects with the edges of the two blocks mutually parallel to each other.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on the following (any two): i) Editing commands in CAD ii) Layering concept iii) Purpose of Zoom command",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "The distance between two stations is 100 km and on a road map it is shown by 30 cm. Draw a diagonal scale and indicate 46.8 km and 32.4 km on it.",
+              "unit": "Unit 1",
+              "type": "scales"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Draw an epicycloids, given that radii of generating and directing circle as r = 20 mm and R = 72 mm respectively. Also draw a normal and tangent at any point on the curve.",
+              "unit": "Unit 1",
+              "type": "curves"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A thread is unwinds itself from a cylindrical drum of 60 mm in radius. Draw the locus of the free end of the thread for unwinding through an angle of 180°.",
+              "unit": "Unit 1",
+              "type": "curves"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate between the first angles and third angles projection.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A line AB 120 mm long is inclined at 45° to HP and 30° to the VP. It's midpoint P is in VP and 20 mm above HP. The end A is in the third quadrant and B is in the first quadrant. Draw the projections of the line AB.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain layering concept with examples. How is it implemented in CAD software?",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw the projections of a regular hexagon of 25 mm side having one of its sides in the H.P. and inclined at 60° to the V.P. and its surface making an angle of 45° with the H.P.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Draw the projections of a rhombus having 100 mm and 40 mm long diagonals. The bigger diagonal is inclined at 30° to H.P. with one of the end point in H.P. and the smaller diagonal is parallel to both the planes.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "A right pentagonal prism 90 mm high with each side of the base 30 mm is resting on one of the base edges on the horizontal plane and inclined at 30° to V.P. and the face containing that edge is inclined at 45° to the H.P. Draw the projections of the pentagonal prism.",
+              "unit": "Unit 3",
+              "type": "solids"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "A right regular cylinder 50 mm diameter of base and 65 mm long lies on one of its generators, on the H.P. with its axis inclined at 30° to the V.P., cuts the cylinder and bisects its axis. Draw the apparent and true sections of the solid.",
+              "unit": "Unit 4",
+              "type": "sections"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A right cylinder of 30 mm diameter and 35mm height of axis, inclined at 30° to H.P. and passes 18 mm from base along the axis. Draw the development of the truncated cylinder.",
+              "unit": "Unit 4",
+              "type": "development"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A square pyramid rests centrally over a cylindrical block. Draw the isometric projection of the arrangement. Consider the pyramid has a base with 25 mm side and 40 mm long axis whereas the cylindrical block has a base with 50 mm diameter and 20 mm thickness.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on the following (any two): i) Modify commands ii) Building Information Modeling (BIM) iii) Isometric and orthographic projection",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compare diagonal scale and Vernier scale in terms of construction and precision. Provide a situation in engineering where each is used.",
+              "unit": "Unit 1",
+              "type": "scales"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A water tank of size 27 m³ was represented in the drawing by 216 cm³ size. Construct a Vernier Scale for the same to measure upto 5 meter. Also show on it the distance of 3.95 meter and 0.042 meter.",
+              "unit": "Unit 1",
+              "type": "scales"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A coin 30 mm diameter rolls on a straight line on a table. Plot and name the locus of a point lying on the circumference for one complete revolution.",
+              "unit": "Unit 1",
+              "type": "curves"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A line AB 70 mm long is inclined at an angle of 30° to HP. Its end A is 10 mm above the HP and 15 mm infront of VP. The front view is 50 mm. Draw the projection of line AB.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw the projection of a regular hexagonal lamina of 30 mm side having one of its edge in the VP and inclined at 60° to HP and the surface making an angle of 40° with the VP.",
+              "unit": "Unit 2",
+              "type": "projections"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write about Dialog boxes and Windows in CAD software.",
+              "unit": "Unit 5",
+              "type": "cad"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw the projection of a hexagonal prism base 30 mm and axis 75 mm long when its axis is inclined at 30° to the VP and parallel to HP and edge of the base is perpendicular to HP.",
+              "unit": "Unit 3",
+              "type": "solids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is meant by Projection? Explain the principle of projection and Differentiate between First Angle projection and Third Angle projection.",
+              "unit": "Unit 2",
+              "type": "projections"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "A hexagonal Pyramid side of base 30 mm and axis 60 mm long rest with its base on HP and one of the edge of its base is parallel to VP. It is cut by a horizontal section plane at a distance of 38 mm above the base. Draw its Front view and Sectional Top View.",
+              "unit": "Unit 4",
+              "type": "sections"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "A cone of base diameter 55 mm and axis 65 mm is lying on one of its generator on the horizontal plane with its axis parallel to VP. It is cut by a vertical plane section parallel to one of the generator and bisecting the axis. Draw its sectional front view and True shape of section.",
+              "unit": "Unit 4",
+              "type": "sections"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss how CAD software supports the visualization and creation of complex 3D objects such as compound solids. Include references to specific tools or features.",
+              "unit": "Unit 5",
+              "type": "cad"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw the Floor plan of a single BHK house showing all details like window, doors and other fixtures. Assume suitable dimension for plan.",
+              "unit": "Unit 3",
+              "type": "floor-plan"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the construction and use of an Isometric Scale.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw the Isometric view of given figure.",
+              "unit": "Unit 5",
+              "type": "isometric"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any three: i) Epicycloid ii) Traces of a line iii) Tool bar iv) View ports",
+              "unit": "Unit 1/2/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "To draw a line inclined at 45°, 30° or 60° to a given horizontal line from a given point.",
+              "unit": "Unit 1",
+              "type": "construction",
+              "isPredicted": true
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Without using a protractor, draw triangles having following base angles on a 75 mm long line as base: (i) 75° and 15°, (ii) 60° and 75°, (iii) 135° and 15°, (iv) 105° and 45°.",
+              "unit": "Unit 1",
+              "type": "construction",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the significance of Engineering Drawing in engineering communication.",
+              "unit": "Unit 1",
+              "type": "theory",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain lettering in Engineering Drawing. Discuss different types and rules for good lettering.",
+              "unit": "Unit 1",
+              "type": "theory",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define orthographic projection. Describe briefly the method of obtaining an orthographic projection of an object.",
+              "unit": "Unit 2",
+              "type": "projections",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A point P is 15 mm above the H.P. and 20 mm in front of the V.P. Another point Q is 25 mm behind the V.P. and 40 mm below the H.P. Draw projections of P and Q keeping the distance between their projectors equal to 90 mm. Draw straight lines joining (i) their top views and (ii) their front views.",
+              "unit": "Unit 2",
+              "type": "projections",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain in detail the principles of isometric projection and the construction of an isometric scale.",
+              "unit": "Unit 5",
+              "type": "isometric",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the construction of isometric views of simple solids such as pyramid, and cone.",
+              "unit": "Unit 5",
+              "type": "isometric",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "A square prism, base 40 mm side and height 65 mm, has its axis inclined at 45° to the H.P. and has an edge of its base, on the H.P and inclined at 30° to the V.P. Draw its projections.",
+              "unit": "Unit 3",
+              "type": "solids",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "A cylinder, 65 mm diameter and 90 mm long, has its axis parallel to the H.P. and inclined at 30° to the V.P. It is cut by a vertical section plane in such a way that the true shape of the section is an ellipse having the major axis 75 mm long. Draw its sectional front view and true shape of the section.",
+              "unit": "Unit 4",
+              "type": "sections",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "A pipe 40 mm diameter and 120 mm long (along the axis) is welded to the vertical side of a tank. Show the development of the pipe, if it makes an angle of 60° with the side to which it is welded, the other end of the pipe making an angle of 30° with its own axis. Neglect thickness of the pipe.",
+              "unit": "Unit 4",
+              "type": "development",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Draw the isometric view of a square prism, side of the base 20 mm long and the axis 40 mm long, when its axis is (i) vertical and (ii) horizontal.",
+              "unit": "Unit 5",
+              "type": "isometric",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define Building Information Modelling (BIM). How does a BIM \"wall\" object differ from two parallel lines in traditional 2D CAD?",
+              "unit": "Unit 5",
+              "type": "cad",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write the name and sequence of command to create hole in solid.",
+              "unit": "Unit 5",
+              "type": "cad",
+              "isPredicted": true
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Mention the use of Insert command and explain it's scale option.",
+              "unit": "Unit 5",
+              "type": "cad",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
