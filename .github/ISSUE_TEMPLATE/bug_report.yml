@@ -1,0 +1,123 @@
+name: Bug Report
+description: Report a reproducible bug or unexpected behavior in Hyper Learning Tech.
+title: "[Bug]: "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for reporting a bug!
+
+        Before submitting this report, please:
+
+        - Search existing issues.
+        - Verify the issue on the latest version.
+        - Provide enough information for us to reproduce it.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe the issue clearly.
+      placeholder: Tell us what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Explain exactly how to reproduce the issue.
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Enter...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      description: Select the part of the project where the issue occurs.
+      options:
+        - AI Workspace
+        - AI Answer Generation
+        - Dashboard
+        - Previous Year Questions (PYQs)
+        - Syllabus
+        - Search
+        - API
+        - Performance
+        - Documentation
+        - Build / CI
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser (Optional)
+      placeholder: Chrome 138, Firefox 140, Edge...
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System (Optional)
+      placeholder: Windows 11, Ubuntu 24.04, macOS...
+
+  - type: input
+    id: node
+    attributes:
+      label: Node.js Version (Optional)
+      placeholder: v22.16.0
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Error Messages
+      description: Paste any relevant logs or stack traces.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (Optional)
+      description: Drag and drop screenshots or recordings here if applicable.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before creating this report.
+          required: true
+
+        - label: I can consistently reproduce this issue.
+          required: true
+
+        - label: I tested on the latest version of the project.
+          required: true
+
+        - label: I have included all relevant information needed to reproduce this issue.
+          required: true

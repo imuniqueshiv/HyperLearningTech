@@ -1,545 +1,369 @@
-# 🚀 Hyper Learning V3
+<div align="center">
 
-> An AI-powered academic learning platform designed to transform how students learn, revise, and prepare for examinations through intelligent content generation, syllabus-driven learning, previous year question analysis, and personalized AI assistance.
+<img src="public/HyperLearningv3Hero.png" alt="Hyper Learning Tech" width="100%" />
 
-## ![Hyper Learning Hero Section](public/HyperLearningv3Hero.png)
+# Hyper Learning Tech
 
-## 🌟 Vision
+**AI-powered academic learning platform for engineering students**
 
-Hyper Learning aims to become a modern educational ecosystem that bridges the gap between static academic resources and intelligent learning experiences.
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com)
+[![Powered by Gemini](https://img.shields.io/badge/AI-Google_Gemini-4285F4?logo=google)](https://ai.google.dev)
 
-Instead of simply providing question papers and notes, Hyper Learning helps students:
+[**Live Platform →**](https://www.hyperlearningtech.in) · [Report a Bug](https://github.com/imuniqueshiv/HyperLearningTech/issues) · [Request a Feature](https://github.com/imuniqueshiv/HyperLearningTech/issues)
 
-- Learn concepts topic-by-topic
-- Explore AI-generated explanations
-- Understand previous year examination trends
-- Ask contextual follow-up questions
-- Track academic progress
-- Access structured learning paths
-
-The long-term goal is to build a scalable learning platform where syllabus, notes, PYQs, revision material, and AI tutoring are deeply connected.
+</div>
 
 ---
 
-# ✨ Features
+## What Is Hyper Learning Tech?
 
-## 📚 Academic Content Management
+Hyper Learning Tech bridges the gap between static academic resources and intelligent learning experiences. Instead of handing students a pile of PDFs and past papers, it connects **syllabus → notes → previous year questions → AI tutoring** into a single cohesive workflow.
+
+Built specifically for **RGPV engineering students**, it covers:
+
+- Semester-wise previous year question papers (PYQs) with branch and subject filtering
+- AI-generated topic-level notes on demand, cached for instant reuse
+- Structured answers for 2-mark, 5-mark, and 10-mark examination questions
+- An AI tutor that retains session context for follow-up questions
+- Student productivity tools: bookmarks, progress tracking, and a personalized dashboard
+- A role-gated admin system for editors and platform owners
+
+---
+
+## Features
+
+<details>
+<summary><strong>📚 Academic Content Management</strong></summary>
 
 - Subject-wise syllabus organization
 - Unit-wise topic breakdown
-- Topic-specific AI-generated notes
+- Topic-specific AI-generated notes (Gemini, cached in PostgreSQL)
 - Version-controlled content updates
-- Related PYQ mapping
+- Related PYQ mapping per topic
+
+</details>
+
+<details>
+<summary><strong>📝 Previous Year Questions (PYQs)</strong></summary>
+
+- Semester-wise and branch-wise paper collection
+- Subject-wise filtering and question-to-unit mapping
+- Fast retrieval backed by Redis caching
+
+</details>
+
+<details>
+<summary><strong>🤖 AI-Powered Learning</strong></summary>
+
+**AI Answer Generation** — structured answers for 2, 5, 10-mark, and long-answer exam questions, with Redis caching so repeat requests are instant.
+
+**AI Learning Notes** — on-demand notes for individual topics, units, or entire subjects, persisted to PostgreSQL after first generation.
+
+**AI Tutor** — a conversational interface with Redis-backed session context so students can ask follow-up questions, request examples, and simplify difficult concepts without losing thread.
+
+</details>
+
+<details>
+<summary><strong>🔖 Student Productivity</strong></summary>
+
+- Bookmarks and saved content
+- Learning progress tracking
+- Recently viewed topics
+- Personalized dashboard
+
+</details>
+
+<details>
+<summary><strong>👨‍💼 Administration System</strong></summary>
+
+| Role        | Capabilities                                                                |
+| ----------- | --------------------------------------------------------------------------- |
+| **Student** | Learn, bookmark, track progress, use AI tutor                               |
+| **Editor**  | Upload papers, edit content, generate notes, manage resources               |
+| **Owner**   | Manage editors, approve applications, review audit logs, configure platform |
+
+- Invitation-only editor accounts
+- Owner approval workflow
+- Full audit logging with login notifications
+
+</details>
+
+<details>
+<summary><strong>🔍 Search</strong></summary>
+
+Full-text search across subjects, units, topics, notes, and PYQs in a single query.
+
+</details>
 
 ---
 
-## 📝 Previous Year Questions (PYQs)
+## Tech Stack
 
-- Semester-wise paper collection
-- Branch-wise categorization
-- Subject-wise filtering
-- Question-to-unit mapping
-- Fast retrieval system
-
----
-
-## 🤖 AI-Powered Learning
-
-### AI Answer Generation
-
-Generate structured answers for:
-
-- 2 Mark Questions
-- 5 Mark Questions
-- 10 Mark Questions
-- Long Answer Questions
+| Layer              | Technology                                |
+| ------------------ | ----------------------------------------- |
+| **Framework**      | Next.js 16 (App Router)                   |
+| **Language**       | TypeScript 5.9                            |
+| **Styling**        | Tailwind CSS v4, ShadCN/UI, Framer Motion |
+| **Auth**           | Clerk (RBAC, MFA, protected routes)       |
+| **Database**       | PostgreSQL via Neon, Prisma ORM 7         |
+| **Cache**          | Redis via Upstash                         |
+| **AI**             | Google Gemini (`@google/genai`)           |
+| **Email**          | Resend                                    |
+| **Storage**        | Cloudinary                                |
+| **Monitoring**     | Sentry                                    |
+| **Analytics**      | PostHog                                   |
+| **Deployment**     | Vercel                                    |
+| **Math Rendering** | KaTeX + react-katex                       |
+| **PDF Export**     | html2pdf.js                               |
 
 ---
 
-### AI Learning Notes
+## Architecture
 
-Generate detailed notes for:
+```
+Browser (Student / Editor / Owner)
+            │
+            ▼
+    Next.js 16 (App Router)
+    Server Components + API Routes
+            │
+     ┌──────┼──────────┐
+     │      │          │
+     ▼      ▼          ▼
+PostgreSQL  Redis    Google
+  (Neon)  (Upstash)  Gemini
+     │      │
+     ▼      ▼
+  Topics  AI Answers
+  Notes   Chat Sessions
+  PYQs    Rate Limits
+  Users   Context Cache
+```
 
-- Individual Topics
-- Units
-- Complete Subjects
+### AI Workflow: PYQ Answer Generation
 
----
+```
+Student submits question
+        │
+        ▼
+   Redis Lookup
+        │
+   ┌────┴────┐
+Cache Hit  Cache Miss
+   │           │
+   ▼           ▼
+Return       Gemini API
+Answer           │
+             Save to Redis
+                 │
+             Return Answer
+```
 
-### AI Tutor
+### AI Workflow: Topic Note Generation
 
-Students can:
-
-- Ask contextual follow-up questions
-- Clarify doubts
-- Request examples
-- Simplify difficult concepts
-
----
-
-## 🔖 Student Productivity
-
-- Bookmarks
-- Learning Progress Tracking
-- Recently Viewed Topics
-- Personalized Dashboard
-- Saved Content
-
----
-
-## 👨‍💼 Administration System
-
-### Editor
-
-Can:
-
-- Upload Papers
-- Edit Content
-- Generate Notes
-- Manage Academic Resources
-
-### Owner
-
-Can:
-
-- Manage Editors
-- Approve Applications
-- Review Audit Logs
-- Configure Platform Settings
-
----
-
-## 🔍 Search System
-
-Search across:
-
-- Subjects
-- Units
-- Topics
-- Notes
-- PYQs
-
----
-
-# 🏗️ System Architecture
-
-```text
-Students
-    │
-    ▼
-Next.js Application
-    │
- ┌──┼───────────────┐
- │  │               │
- ▼  ▼               ▼
-
-PostgreSQL      Redis       Gemini
-(Permanent)    (Cache)       (AI)
-
- │              │
- ▼              ▼
-
-Topics      AI Answers
-Notes       Chat Sessions
-PYQs        Rate Limits
-Users       Context Cache
+```
+Student opens topic
+        │
+        ▼
+  PostgreSQL Lookup
+        │
+   ┌────┴────┐
+  Exists   Missing
+   │           │
+   ▼           ▼
+Return       Gemini API
+  Note           │
+             Save to PostgreSQL
+                 │
+             Return Note
 ```
 
 ---
 
-# 🛠️ Tech Stack
+## Project Structure
 
-## Frontend
-
-- Next.js 16
-- TypeScript
-- Tailwind CSS v4
-- ShadCN/UI
-- Lucide Icons
-
----
-
-## Authentication
-
-- Clerk
-- Role-Based Access Control (RBAC)
-- Multi-Factor Authentication (MFA)
-
----
-
-## Database
-
-- PostgreSQL
-- Prisma ORM
-
----
-
-## Caching
-
-- Redis
-- Upstash Redis / Vercel KV
-
----
-
-## Artificial Intelligence
-
-- Google Gemini
-
----
-
-## Storage
-
-- Cloudinary
-- Vercel Blob (Optional)
-
----
-
-## Email Services
-
-- Resend
-
----
-
-## Monitoring
-
-- Sentry
-
----
-
-## Analytics
-
-- PostHog
-
----
-
-## Deployment
-
-- Vercel
-- Neon PostgreSQL
-
----
-
-# 📂 Project Structure
-
-```text
-hyper-learning/
-
-├── app/
-├── components/
+```
+HyperLearningTech/
+├── app/                  # Next.js App Router pages and API routes
+├── components/           # Shared UI components
 ├── features/
-├── hooks/
-├── lib/
-├── prisma/
-├── public/
-├── types/
-├── constants/
-├── emails/
-├── actions/
-├── middleware.ts
+│   └── landing/          # Landing page feature module
+├── content/
+│   └── rgpv/             # RGPV syllabus and paper content
+├── data/                 # Static data and seed files
+├── hooks/                # Custom React hooks
+├── lib/                  # Prisma client, Redis client, Gemini client, utilities
+├── prisma/               # Schema and migrations
+├── public/               # Static assets
+├── types/                # Global TypeScript types
+├── constants/            # App-wide constants
+├── .github/              # Issue templates and CI workflows
+├── proxy.ts              # Edge middleware / route protection
 ├── next.config.ts
 └── package.json
 ```
 
 ---
 
-## Feature-Based Architecture
+## Getting Started
 
-```text
-features/
+### Prerequisites
 
-├── auth/
-├── papers/
-├── syllabus/
-├── ai/
-├── bookmarks/
-├── progress/
-├── search/
-├── admin/
-└── analytics/
-```
+- Node.js 20+
+- PostgreSQL database (Neon recommended)
+- Upstash Redis instance
+- Clerk account
+- Google AI API key (Gemini)
 
----
-
-# 🤖 AI Workflows
-
-## PYQ Answer Generation
-
-```text
-Question
-   │
-   ▼
-Redis Lookup
-   │
-   ├── Cache Hit
-   │      │
-   │      ▼
-   │   Return Answer
-   │
-   └── Cache Miss
-          │
-          ▼
-      Gemini
-          │
-          ▼
-      Save Cache
-          │
-          ▼
-      Return Answer
-```
-
----
-
-## Topic Note Generation
-
-```text
-Topic Click
-    │
-    ▼
-PostgreSQL Lookup
-    │
-    ├── Exists
-    │      │
-    │      ▼
-    │   Return Note
-    │
-    └── Missing
-           │
-           ▼
-        Gemini
-           │
-           ▼
-     Save Database
-           │
-           ▼
-      Return Note
-```
-
----
-
-## AI Tutor
-
-```text
-Student Question
-       │
-       ▼
-Redis Context
-       │
-       ▼
-Gemini
-       │
-       ▼
-Response
-```
-
----
-
-# 🔐 Security
-
-## Authentication
-
-- Clerk Authentication
-- Secure Sessions
-- MFA Support
-- Protected Routes
-
----
-
-## Authorization
-
-Roles:
-
-- Student
-- Editor
-- Owner
-
----
-
-## Administrative Security
-
-- Invitation-only editor accounts
-- Owner approval workflow
-- Audit logging
-- Login notifications
-- Role-based permissions
-
----
-
-## Infrastructure Security
-
-- Environment Variables
-- Server-Side API Keys
-- Protected AI Endpoints
-- Rate Limiting
-- Request Validation
-
----
-
-# 🚀 Local Setup
-
-## Clone Repository
+### Installation
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/imuniqueshiv/HyperLearningTech.git
-```
+cd HyperLearningTech
 
-```bash
-cd hyper-learning-tech
-```
-
----
-
-## Install Dependencies
-
-```bash
+# 2. Install dependencies
 npm install
-```
 
----
+# 3. Set up environment variables
+cp .env.example .env
+# Fill in all values in .env (see section below)
 
-## Setup Environment Variables
+# 4. Set up the database
+npx prisma migrate dev
 
-Create:
-
-```bash
-.env
-```
-
----
-
-## Run Development Server
-
-```bash
+# 5. Start the development server
 npm run dev
 ```
 
----
-
-Open:
-
-```text
-http://localhost:3000
-```
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
-# ⚙️ Environment Variables
+## Environment Variables
+
+Copy `.env.example` to `.env` and fill in the following:
 
 ```env
+# ── Database ──────────────────────────────────────────
 DATABASE_URL=
 
+# ── Upstash Redis ─────────────────────────────────────
 UPSTASH_REDIS_REST_URL=
 UPSTASH_REDIS_REST_TOKEN=
 
-GEMINI_API_KEY=
+# ── Google Gemini ─────────────────────────────────────
+GEMINI_KEY_1=
+GEMINI_WORKSPACE_KEY_1=
 
-CLERK_SECRET_KEY=
+# ── Clerk Authentication ──────────────────────────────
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
+# ── Email (Resend) ────────────────────────────────────
+RESEND_API_KEY=
+
+# ── Analytics (PostHog) ───────────────────────────────
+NEXT_PUBLIC_POSTHOG_KEY=
+NEXT_PUBLIC_POSTHOG_HOST=
+
+# ── Error Monitoring (Sentry) ─────────────────────────
+NEXT_PUBLIC_SENTRY_DSN=
+SENTRY_AUTH_TOKEN=
+```
+
+> **Note:** The platform currently supports up to 4 Gemini API keys for load distribution. Add them as `GEMINI_KEY_2`, `GEMINI_KEY_3`, etc.
+
+---
+
+## Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Production build
+npm run start        # Start production server
+npm run typecheck    # TypeScript type checking
+npm run lint         # ESLint
+npm run format       # Prettier (write)
+npm run format:check # Prettier (check only)
 ```
 
 ---
 
-# 🗺️ Roadmap
+## Roadmap
 
-## Phase 1
+| Phase       | Focus                                                                           | Status         |
+| ----------- | ------------------------------------------------------------------------------- | -------------- |
+| **Phase 1** | Next.js migration, PostgreSQL, Prisma, Clerk auth                               | ✅ Complete    |
+| **Phase 2** | Topic-based learning, AI note generation, versioning, search                    | 🔄 In Progress |
+| **Phase 3** | AI Tutor, progress tracking, bookmarks, personalized dashboard                  | 🔜 Planned     |
+| **Phase 4** | Admin dashboard, paper upload pipeline, OCR, content moderation                 | 🔜 Planned     |
+| **Phase 5** | Advanced analytics, recommendation engine, multi-university support, mobile app | 🔜 Planned     |
 
-- [ ] Next.js Migration
-- [ ] PostgreSQL Integration
-- [ ] Prisma ORM
-- [ ] Clerk Authentication
-
----
-
-## Phase 2
-
-- [ ] Topic-Based Learning System
-- [ ] AI Note Generation
-- [ ] Topic Versioning
-- [ ] Search System
+See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
 ---
 
-## Phase 3
+## Contributing
 
-- [ ] AI Tutor
-- [ ] Progress Tracking
-- [ ] Bookmarks
-- [ ] Personalized Dashboard
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
----
+```bash
+# Quick contribution workflow
+git fork https://github.com/imuniqueshiv/HyperLearningTech
+git checkout -b feat/your-feature-name
+git commit -m "feat: describe your change"
+git push origin feat/your-feature-name
+# Open a Pull Request on GitHub
+```
 
-## Phase 4
+Areas where contributions are especially valuable: UI/UX improvements, accessibility, performance optimization, documentation, and test coverage.
 
-- [ ] Admin Dashboard
-- [ ] Paper Upload Pipeline
-- [ ] OCR Processing
-- [ ] Content Moderation
-
----
-
-## Phase 5
-
-- [ ] Advanced Analytics
-- [ ] Recommendation Engine
-- [ ] Multi-University Support
-- [ ] Mobile Application
+Please also review our [Code of Conduct](CODE_OF_CONDUCT.md) and [Security Policy](SECURITY.md).
 
 ---
 
-# 🤝 Contributing
+## License
 
-Contributions are welcome.
-
-You can contribute by:
-
-- Improving UI/UX
-- Fixing bugs
-- Optimizing performance
-- Improving documentation
-- Adding new features
-- Enhancing accessibility
-
-### Contribution Process
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push your branch
-5. Open a Pull Request
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for full details.
 
 ---
 
-# 📜 License
+## Maintainers
 
-This project is licensed under the MIT License.
-
-See the LICENSE file for complete information.
-
----
-
-# 👨‍💻 Maintainers
-
-### Shiv Raj Singh
-
-**Founder & Lead Developer**
-Building Hyper Learning and leading product, AI, and platform development.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/shiv-raj-singh-387973299/) • [GitHub](https://github.com/imuniqueshiv)
-
-### Nitin Pandey
-
-**Frontend Developer**
-Contributing to UI/UX design and frontend development.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/nitin-mohan-9251ab328/) • [GitHub](https://github.com/nitinmohan18)
-
-### Ramoo Kachhee
-
-**Community & Outreach Contributor**
-Promoting Hyper Learning across student communities and social platforms.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/ramoo-kachhee-9b1616405/) • [GitHub](https://github.com/RamuuXfree)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Shiv Raj Singh</strong><br/>
+      Founder &amp; Lead Full Stack Developer<br/>
+      <a href="https://www.linkedin.com/in/shiv-raj-singh-387973299/">LinkedIn</a> ·
+      <a href="https://github.com/imuniqueshiv">GitHub</a>
+    </td>
+    <td align="center">
+      <strong>Nitin Pandey</strong><br/>
+      UI/UX Designer<br/>
+      <a href="https://www.linkedin.com/in/nitin-mohan-9251ab328/">LinkedIn</a> ·
+      <a href="https://github.com/nitinmohan18">GitHub</a>
+    </td>
+    <td align="center">
+      <strong>Ramoo Kachhee</strong><br/>
+      Frontend Developer<br/>
+      <a href="https://www.linkedin.com/in/ramoo-kachhee-9b1616405/">LinkedIn</a> ·
+      <a href="https://github.com/RamuuXfree">GitHub</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-⭐ If you find this project useful, consider starring the repository and contributing to its growth.
+<div align="center">
+
+**[www.hyperlearningtech.in](https://www.hyperlearningtech.in)**
+
+If this project helps you, please ⭐ star the repository — it helps others find it.
+
+</div>
