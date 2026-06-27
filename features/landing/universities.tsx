@@ -112,7 +112,7 @@ export default function Universities() {
           viewport={{ once: true }}
           className="mx-auto mb-10 max-w-2xl"
         >
-          <div className="relative group flex items-center justify-between rounded-full border border-border/50 dark:border-white/10 bg-background/80 dark:bg-white/[0.03] p-2 shadow-xl dark:shadow-2xl backdrop-blur-xl transition-all focus-within:border-blue-500/50 focus-within:bg-background dark:focus-within:bg-white/[0.05] focus-within:shadow-[0_0_30px_rgba(37,99,235,0.1)] dark:focus-within:shadow-[0_0_30px_rgba(37,99,235,0.15)]">
+          <div className="relative group flex items-center justify-between rounded-full border border-white/10 bg-white/[0.03] p-2 shadow-2xl backdrop-blur-xl transition-all focus-within:border-blue-500/50 focus-within:bg-white/[0.05] focus-within:shadow-[0_0_30px_rgba(37,99,235,0.15)]">
             <input
               type="text"
               aria-label="Search universities"
@@ -121,9 +121,9 @@ export default function Universities() {
               placeholder="Search universities by name, branch, or location..."
               className="w-full bg-transparent px-6 py-3 text-base text-foreground placeholder:text-muted-foreground/50 focus:outline-none"
             />
-            <div className="group/lens relative mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border/50 bg-muted/50 text-muted-foreground transition-all duration-500 hover:scale-[1.03] hover:border-border hover:bg-muted hover:text-foreground hover:shadow-sm cursor-pointer active:scale-95 overflow-hidden">
-              <div className="absolute inset-0 rounded-full shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] pointer-events-none" />
-              <Search className="relative z-10 h-[18px] w-[18px] transition-transform duration-300 group-hover/lens:scale-[1.05]" />
+            <div className="group/lens relative mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/5 bg-white/[0.02] text-white/50 backdrop-blur-2xl transition-all duration-500 hover:scale-[1.03] hover:border-white/20 hover:bg-white/10 hover:text-white hover:shadow-[0_0_10px_rgba(255,255,255,0.05)] cursor-pointer active:scale-95 overflow-hidden">
+              <div className="absolute inset-0 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] pointer-events-none" />
+              <Search className="relative z-10 h-[18px] w-[18px] drop-shadow-md transition-transform duration-300 group-hover/lens:scale-[1.05]" />
             </div>
           </div>
         </motion.div>
@@ -145,11 +145,11 @@ export default function Universities() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className={`group relative flex flex-col overflow-hidden rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-500/20 hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.15)] ${
+                  className={`group relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-5 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-500/20 hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.15)] dark:from-white/5 dark:to-transparent ${
                     university.status === "Available" ? "cursor-pointer" : ""
                   }`}
                 >
-                  <div className="absolute inset-0 rounded-3xl border border-border/50 dark:border-white/5 transition-colors pointer-events-none group-hover:border-blue-500/15" />
+                  <div className="absolute inset-0 rounded-3xl border border-white/5 transition-colors pointer-events-none group-hover:border-blue-500/15" />
                   {/* Hover Glow */}
                   <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/15 blur-3xl dark:bg-blue-500/15" />
@@ -193,7 +193,7 @@ export default function Universities() {
                           className={`rounded-lg px-2.5 py-1 text-xs font-bold ring-1 ring-inset ${
                             university.status === "Available"
                               ? "bg-blue-50 text-blue-700 ring-blue-700/10 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/20"
-                              : "bg-muted text-muted-foreground ring-border/50 dark:bg-white/[0.02] dark:text-white/50 dark:ring-white/10"
+                              : "bg-white/[0.02] text-white/50 ring-white/10"
                           }`}
                         >
                           {branch}
