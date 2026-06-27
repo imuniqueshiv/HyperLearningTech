@@ -1,8 +1,46 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, BrainCircuit, Sparkles, CheckCircle2 } from "lucide-react";
-import { motion, Variants } from "framer-motion";
+import { ArrowRight, BrainCircuit, CheckCircle2 } from "lucide-react";
+import { motion, Variants, animate, useInView } from "framer-motion";
+
+function Counter({
+  from = 0,
+  to,
+  suffix = "",
+  prefix = "",
+}: {
+  from?: number;
+  to: number;
+  suffix?: string;
+  prefix?: string;
+}) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    if (inView && ref.current) {
+      animate(from, to, {
+        duration: 1.5,
+        ease: "easeOut",
+        onUpdate: (value) => {
+          if (ref.current) {
+            ref.current.textContent = `${prefix}${Math.round(value)}${suffix}`;
+          }
+        },
+      });
+    }
+  }, [inView, from, to, prefix, suffix]);
+
+  return (
+    <span ref={ref}>
+      {prefix}
+      {from}
+      {suffix}
+    </span>
+  );
+}
 
 export default function Hero() {
   const containerVariants: Variants = {
@@ -61,32 +99,46 @@ export default function Hero() {
           >
             {/* Badge */}
             <motion.div variants={itemVariants}>
-              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200/60 bg-blue-50/80 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-                <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                Trusted Learning Companion for Engineering Students
+              <div className="badge-shimmer mb-8 inline-flex items-center gap-2.5 rounded-full border border-blue-200/40 bg-blue-50/80 px-4 py-1.5 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/15 dark:bg-blue-500/10 dark:text-blue-400">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                </span>
+                Smart Learning for Engineers
               </div>
             </motion.div>
 
             {/* Heading */}
             <motion.h1
               variants={itemVariants}
-              className="max-w-4xl text-5xl font-extrabold tracking-tight text-foreground md:text-6xl lg:text-7xl leading-[1.1]"
+              className="max-w-4xl text-5xl font-extrabold tracking-tight md:text-6xl lg:text-7xl leading-[1.05]"
             >
-              Learn Better.
-              <br />
-              <span className="bg-gradient-to-r from-[#1D4ED8] to-indigo-600 bg-clip-text text-transparent">
-                Study Smarter.
+              <span className="bg-gradient-to-b from-[hsl(var(--foreground))] to-[hsl(var(--muted-foreground))] bg-clip-text text-transparent">
+                Learn Better.
               </span>
               <br />
-              <span className="text-base font-medium italic text-muted-foreground md:text-xl lg:text-2xl">
-                &quot;Minimizing Distractions, Maximizing Clarity.&quot;
+              <span className="relative">
+                <span
+                  className="absolute -inset-x-4 -inset-y-2 bg-[#1D4ED8]/8 blur-xl rounded-full dark:bg-[#1D4ED8]/10"
+                  aria-hidden="true"
+                />
+                <span className="relative bg-gradient-to-r from-[#1D4ED8] to-indigo-500 bg-clip-text text-transparent">
+                  Study Smarter.
+                </span>
               </span>
             </motion.h1>
+
+            <motion.p
+              variants={itemVariants}
+              className="mt-6 mb-1 text-base font-normal text-muted-foreground/90 md:text-lg lg:text-xl tracking-wide"
+            >
+              &quot;Minimizing Distractions, Maximizing Clarity.&quot;
+            </motion.p>
 
             {/* Description */}
             <motion.p
               variants={itemVariants}
-              className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
+              className="mt-6 max-w-2xl text-lg leading-7 text-muted-foreground"
             >
               Access syllabus-mapped previous year questions, AI-powered notes,
               topic-wise explanations, and instant learning support designed to
@@ -102,7 +154,7 @@ export default function Hero() {
               <a
                 href="#Universities"
                 onClick={scrollToUniversities}
-                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-[#1D4ED8] px-8 py-4 font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:bg-[#1E40AF] hover:shadow-blue-500/40 hover:-translate-y-0.5"
+                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-[#1D4ED8] px-8 py-3.5 font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:bg-[#1E40AF] hover:shadow-blue-500/40 hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 Start Learning
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -110,7 +162,7 @@ export default function Hero() {
 
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center rounded-xl border-2 border-border bg-background/50 px-8 py-4 font-semibold text-foreground backdrop-blur-sm transition-all duration-300 hover:border-[#1D4ED8] hover:bg-background hover:text-[#1D4ED8]"
+                className="inline-flex items-center justify-center rounded-xl border border-border bg-background/50 px-8 py-3.5 font-semibold text-foreground backdrop-blur-sm transition-all duration-300 hover:border-[#1D4ED8]/50 hover:bg-background hover:text-[#1D4ED8] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 Explore Platform
               </Link>
@@ -119,23 +171,29 @@ export default function Hero() {
             {/* Stats */}
             <motion.div
               variants={itemVariants}
-              className="mt-16 grid max-w-xl grid-cols-3 gap-6 border-t border-border/60 pt-10"
+              className="mt-14 grid max-w-xl grid-cols-3 divide-x divide-border/50 border-t border-border/60 pt-8"
             >
-              <div>
-                <p className="text-3xl font-black text-foreground">22-25</p>
-                <p className="mt-1.5 font-medium text-sm text-muted-foreground">
-                  PYQ Coverage
+              <div className="pr-6">
+                <p className="text-3xl font-extrabold tracking-tight text-foreground">
+                  <Counter to={25} suffix="+" />
+                </p>
+                <p className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                  Years of PYQs
                 </p>
               </div>
-              <div>
-                <p className="text-3xl font-black text-foreground">100%</p>
-                <p className="mt-1.5 font-medium text-sm text-muted-foreground">
+              <div className="px-6">
+                <p className="text-3xl font-extrabold tracking-tight text-foreground">
+                  <Counter to={100} suffix="%" />
+                </p>
+                <p className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
                   Syllabus Mapped
                 </p>
               </div>
-              <div>
-                <p className="text-3xl font-black text-foreground">24/7</p>
-                <p className="mt-1.5 font-medium text-sm text-muted-foreground">
+              <div className="pl-6">
+                <p className="text-3xl font-extrabold tracking-tight text-foreground">
+                  <Counter to={24} suffix="/7" />
+                </p>
+                <p className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
                   AI Assistant
                 </p>
               </div>
@@ -149,9 +207,9 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-[2rem] border border-border/60 bg-background/80 p-6 shadow-2xl backdrop-blur-xl">
+            <div className="relative rounded-[2rem] border border-border/50 dark:border-white/[0.08] bg-background/80 p-6 shadow-[0_0_40px_rgba(29,78,216,0.08)] dark:shadow-[0_0_40px_rgba(29,78,216,0.15)] backdrop-blur-xl">
               {/* Chat Header */}
-              <div className="mb-6 flex items-center justify-between border-b border-border pb-4">
+              <div className="mb-6 flex items-center justify-between border-b border-border/50 pb-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
                     <BrainCircuit className="h-5 w-5 text-[#1D4ED8]" />
@@ -160,7 +218,11 @@ export default function Hero() {
                   <div>
                     <h3 className="font-semibold text-foreground">Hyper AI</h3>
 
-                    <p className="text-xs text-muted-foreground">
+                    <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                      <span className="relative flex h-1.5 w-1.5">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                      </span>
                       Online • Ready to Help
                     </p>
                   </div>
@@ -170,14 +232,14 @@ export default function Hero() {
               <div className="space-y-5">
                 {/* User Message */}
                 <div className="flex justify-end">
-                  <div className="max-w-[80%] rounded-2xl rounded-br-md bg-[#1D4ED8] px-5 py-3 text-sm font-medium text-white">
+                  <div className="max-w-[80%] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm bg-[#1D4ED8] px-5 py-3 text-sm font-medium text-white shadow-sm">
                     Explain Big O notation with an example.
                   </div>
                 </div>
 
                 {/* Hyper AI Message */}
                 <div className="flex justify-start">
-                  <div className="max-w-[90%] rounded-2xl rounded-bl-md border border-border bg-card px-5 py-4">
+                  <div className="max-w-[90%] rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-sm border border-border/50 dark:border-white/[0.05] bg-card px-5 py-4 shadow-sm">
                     <div className="mb-3 flex items-center gap-2">
                       <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#1D4ED8]/10">
                         <BrainCircuit className="h-4 w-4 text-[#1D4ED8]" />
@@ -188,12 +250,12 @@ export default function Hero() {
                       </span>
                     </div>
 
-                    <p className="text-sm leading-7 text-foreground/80">
+                    <p className="text-sm leading-6 text-foreground/80">
                       Big O notation represents the maximum growth rate of an
                       algorithm as input size increases.
                     </p>
 
-                    <p className="mt-3 text-sm leading-7 text-foreground/80">
+                    <p className="mt-2.5 text-sm leading-6 text-foreground/80">
                       For example, Linear Search has{" "}
                       <span className="font-semibold text-[#1D4ED8]">O(n)</span>{" "}
                       complexity because each element may need to be checked
@@ -203,31 +265,31 @@ export default function Hero() {
                 </div>
 
                 {/* Related Questions */}
-                <div className="rounded-2xl border border-border bg-muted/30 p-5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-[#1D4ED8]">
+                <div className="rounded-2xl border border-border/50 bg-muted/30 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">
                     Related Previous Year Questions
                   </p>
 
-                  <div className="mt-4 space-y-3 text-sm font-medium text-foreground/80">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                  <div className="mt-2 space-y-1 text-sm font-medium text-foreground/80">
+                    <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
+                      <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
                       Dec 2025 — Q1(b)
                     </div>
 
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                    <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
+                      <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
                       Jun 2025 — Q3(a)
                     </div>
 
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                    <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
+                      <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
                       Dec 2024 — Q2
                     </div>
                   </div>
                 </div>
 
                 {/* Input Box */}
-                <div className="rounded-2xl border border-border bg-background px-4 py-3">
+                <div className="rounded-2xl border border-border/50 bg-muted/30 px-5 py-3.5 transition-all focus-within:border-primary/50 focus-within:ring-4 focus-within:ring-primary/10 hover:border-border cursor-text">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">
                       Ask Hyper AI anything...
