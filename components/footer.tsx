@@ -163,6 +163,14 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/creators"
+                  className="text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
+                >
+                  Creators
+                </Link>
+              </li>
 
               <li>
                 <a
