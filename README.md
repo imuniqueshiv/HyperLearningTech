@@ -80,11 +80,11 @@ Built specifically for **RGPV engineering students**, it covers:
 <details>
 <summary><strong>👨‍💼 Administration System</strong></summary>
 
-| Role | Capabilities |
-|------|-------------|
-| **Student** | Learn, bookmark, track progress, use AI tutor |
-| **Editor** | Upload papers, edit content, generate notes, manage resources |
-| **Owner** | Manage editors, approve applications, review audit logs, configure platform |
+| Role        | Capabilities                                                                |
+| ----------- | --------------------------------------------------------------------------- |
+| **Student** | Learn, bookmark, track progress, use AI tutor                               |
+| **Editor**  | Upload papers, edit content, generate notes, manage resources               |
+| **Owner**   | Manage editors, approve applications, review audit logs, configure platform |
 
 - Invitation-only editor accounts
 - Owner approval workflow
@@ -103,22 +103,22 @@ Full-text search across subjects, units, topics, notes, and PYQs in a single que
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| **Framework** | Next.js 16 (App Router) |
-| **Language** | TypeScript 5.9 |
-| **Styling** | Tailwind CSS v4, ShadCN/UI, Framer Motion |
-| **Auth** | Clerk (RBAC, MFA, protected routes) |
-| **Database** | PostgreSQL via Neon, Prisma ORM 7 |
-| **Cache** | Redis via Upstash |
-| **AI** | Google Gemini (`@google/genai`) |
-| **Email** | Resend |
-| **Storage** | Cloudinary |
-| **Monitoring** | Sentry |
-| **Analytics** | PostHog |
-| **Deployment** | Vercel |
-| **Math Rendering** | KaTeX + react-katex |
-| **PDF Export** | html2pdf.js |
+| Layer              | Technology                                |
+| ------------------ | ----------------------------------------- |
+| **Framework**      | Next.js 16 (App Router)                   |
+| **Language**       | TypeScript 5.9                            |
+| **Styling**        | Tailwind CSS v4, ShadCN/UI, Framer Motion |
+| **Auth**           | Clerk (RBAC, MFA, protected routes)       |
+| **Database**       | PostgreSQL via Neon, Prisma ORM 7         |
+| **Cache**          | Redis via Upstash                         |
+| **AI**             | Google Gemini (`@google/genai`)           |
+| **Email**          | Resend                                    |
+| **Storage**        | Cloudinary                                |
+| **Monitoring**     | Sentry                                    |
+| **Analytics**      | PostHog                                   |
+| **Deployment**     | Vercel                                    |
+| **Math Rendering** | KaTeX + react-katex                       |
+| **PDF Export**     | html2pdf.js                               |
 
 ---
 
@@ -296,13 +296,13 @@ npm run format:check # Prettier (check only)
 
 ## Roadmap
 
-| Phase | Focus | Status |
-|-------|-------|--------|
-| **Phase 1** | Next.js migration, PostgreSQL, Prisma, Clerk auth | ✅ Complete |
-| **Phase 2** | Topic-based learning, AI note generation, versioning, search | 🔄 In Progress |
-| **Phase 3** | AI Tutor, progress tracking, bookmarks, personalized dashboard | 🔜 Planned |
-| **Phase 4** | Admin dashboard, paper upload pipeline, OCR, content moderation | 🔜 Planned |
-| **Phase 5** | Advanced analytics, recommendation engine, multi-university support, mobile app | 🔜 Planned |
+| Phase       | Focus                                                                           | Status         |
+| ----------- | ------------------------------------------------------------------------------- | -------------- |
+| **Phase 1** | Next.js migration, PostgreSQL, Prisma, Clerk auth                               | ✅ Complete    |
+| **Phase 2** | Topic-based learning, AI note generation, versioning, search                    | 🔄 In Progress |
+| **Phase 3** | AI Tutor, progress tracking, bookmarks, personalized dashboard                  | 🔜 Planned     |
+| **Phase 4** | Admin dashboard, paper upload pipeline, OCR, content moderation                 | 🔜 Planned     |
+| **Phase 5** | Advanced analytics, recommendation engine, multi-university support, mobile app | 🔜 Planned     |
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
