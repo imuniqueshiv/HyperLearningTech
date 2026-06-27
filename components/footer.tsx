@@ -41,7 +41,7 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-3">
               <a
                 href="mailto:contact@hyperlearning.tech"
-                className="group flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/60 transition-all duration-300 hover:border-[#EA4335] hover:bg-[#EA4335] hover:text-white hover:shadow-[0_0_15px_rgba(234,67,53,0.4)]"
+                className="group flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/60 transition-all duration-300 hover:border-[#EA4335]/50 hover:bg-[#EA4335]/10 hover:text-[#EA4335] hover:shadow-[0_0_12px_rgba(234,67,53,0.15)]"
               >
                 <Mail className="h-4 w-4 transition-transform group-hover:scale-110" />
               </a>
@@ -72,10 +72,10 @@ export default function Footer() {
 
           {/* Platform */}
           <div>
-            <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-white/90">
+            <h3 className="mb-6 text-[13px] font-bold uppercase tracking-[0.2em] text-white/80">
               Platform
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {["Subjects", "Universities", "Dashboard", "Student Login"].map(
                 (item, i) => (
                   <li key={i}>
@@ -87,10 +87,10 @@ export default function Footer() {
                             ? "/sign-in"
                             : `/${item.toLowerCase()}`
                       }
-                      className="group flex w-fit items-center text-[15px] font-medium text-slate-300 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_12px_rgba(96,165,250,0.4)]"
+                      className="group relative flex w-fit items-center text-[15px] font-medium text-slate-400 transition-all duration-300 hover:text-white"
                     >
-                      <span className="relative mr-3 flex h-1.5 w-1.5 items-center justify-center">
-                        <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-0 transition-all duration-500 group-hover:animate-ping group-hover:opacity-100" />
+                      <span className="relative mr-3 flex h-1.5 w-1.5 shrink-0 items-center justify-center">
+                        <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-0 transition-all duration-500 group-hover:scale-[2.5] group-hover:opacity-20" />
                         <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-white/30 transition-colors duration-300 group-hover:bg-blue-400" />
                       </span>
                       <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -105,30 +105,22 @@ export default function Footer() {
 
           {/* Learning */}
           <div>
-            <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-white/90">
+            <h3 className="mb-6 text-[13px] font-bold uppercase tracking-[0.2em] text-white/80">
               Learning
             </h3>
-            <ul className="space-y-3">
-              {[
-                { name: "AI Notes", icon: BookOpen },
-                { name: "PYQs", icon: GraduationCap },
-                { name: "AI Tutor" },
-                { name: "Syllabus" },
-              ].map((item, i) => (
+            <ul className="space-y-4">
+              {["AI Notes", "PYQs", "AI Tutor", "Syllabus"].map((item, i) => (
                 <li key={i}>
                   <Link
                     href="/rgpv"
-                    className="group flex w-fit items-center text-[15px] font-medium text-slate-300 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_12px_rgba(96,165,250,0.4)]"
+                    className="group relative flex w-fit items-center text-[15px] font-medium text-slate-400 transition-all duration-300 hover:text-white"
                   >
-                    <span className="relative mr-3 flex h-1.5 w-1.5 items-center justify-center">
-                      <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-0 transition-all duration-500 group-hover:animate-ping group-hover:opacity-100" />
+                    <span className="relative mr-3 flex h-1.5 w-1.5 shrink-0 items-center justify-center">
+                      <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-0 transition-all duration-500 group-hover:scale-[2.5] group-hover:opacity-20" />
                       <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-white/30 transition-colors duration-300 group-hover:bg-blue-400" />
                     </span>
-                    {item.icon && (
-                      <item.icon className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
-                    )}
                     <span className="transition-transform duration-300 group-hover:translate-x-1">
-                      {item.name}
+                      {item}
                     </span>
                   </Link>
                 </li>
@@ -138,18 +130,18 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-white/90">
+            <h3 className="mb-6 text-[13px] font-bold uppercase tracking-[0.2em] text-white/80">
               Company
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {["About", "Contact", "Creators", "Privacy"].map((item, i) => (
                 <li key={i}>
                   <Link
                     href={item === "Privacy" ? "/" : `/${item.toLowerCase()}`}
-                    className="group flex w-fit items-center text-[15px] font-medium text-slate-300 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_12px_rgba(96,165,250,0.4)]"
+                    className="group relative flex w-fit items-center text-[15px] font-medium text-slate-400 transition-all duration-300 hover:text-white"
                   >
-                    <span className="relative mr-3 flex h-1.5 w-1.5 items-center justify-center">
-                      <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-0 transition-all duration-500 group-hover:animate-ping group-hover:opacity-100" />
+                    <span className="relative mr-3 flex h-1.5 w-1.5 shrink-0 items-center justify-center">
+                      <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-0 transition-all duration-500 group-hover:scale-[2.5] group-hover:opacity-20" />
                       <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-white/30 transition-colors duration-300 group-hover:bg-blue-400" />
                     </span>
                     <span className="transition-transform duration-300 group-hover:translate-x-1">

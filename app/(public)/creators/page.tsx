@@ -196,7 +196,7 @@ export default function TeamPage() {
                           href={member.socials.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-white/10 hover:text-white hover:shadow-lg"
+                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-white/10 hover:text-white hover:shadow-md hover:shadow-white/5"
                           aria-label="GitHub"
                         >
                           <FaGithub size={20} />
@@ -208,7 +208,7 @@ export default function TeamPage() {
                           href={member.socials.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-[#0A66C2] hover:text-white hover:shadow-lg hover:shadow-[#0A66C2]/30"
+                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-[#0A66C2]/15 hover:text-[#0A66C2] hover:shadow-md hover:shadow-[#0A66C2]/15"
                           aria-label="LinkedIn"
                         >
                           <FaLinkedin size={20} />
@@ -220,7 +220,7 @@ export default function TeamPage() {
                           href={member.socials.twitter}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-black hover:text-white hover:shadow-lg hover:shadow-white/10"
+                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-white/10 hover:text-white hover:shadow-md hover:shadow-white/5"
                           aria-label="X (Twitter)"
                         >
                           <FaTwitter size={20} />
@@ -232,7 +232,7 @@ export default function TeamPage() {
                           href={member.socials.instagram}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:shadow-lg hover:shadow-[#E1306C]/30"
+                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-[#E1306C]/15 hover:text-[#E1306C] hover:shadow-md hover:shadow-[#E1306C]/15"
                           aria-label="Instagram"
                         >
                           <FaInstagram size={20} />
@@ -244,7 +244,7 @@ export default function TeamPage() {
                           href={member.socials.portfolio}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-[#10B981] hover:text-white hover:shadow-lg hover:shadow-[#10B981]/30"
+                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-[#10B981]/15 hover:text-[#10B981] hover:shadow-md hover:shadow-[#10B981]/15"
                           aria-label="Portfolio"
                         >
                           <Globe className="h-4 w-4" />
@@ -254,7 +254,7 @@ export default function TeamPage() {
                       {member.socials.email && (
                         <a
                           href={member.socials.email}
-                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-[#EA4335] hover:text-white hover:shadow-lg hover:shadow-[#EA4335]/30"
+                          className="rounded-lg p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-[#EA4335]/15 hover:text-[#EA4335] hover:shadow-md hover:shadow-[#EA4335]/15"
                           aria-label="Email"
                         >
                           <Mail className="h-4 w-4" />
