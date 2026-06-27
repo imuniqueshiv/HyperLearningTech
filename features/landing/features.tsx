@@ -1,54 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Search,
-  Bookmark,
-  GraduationCap,
-  Layers3,
-  Workflow,
-  ShieldCheck,
-  Sparkles,
-} from "lucide-react";
-
-const features = [
-  {
-    icon: Layers3,
-    title: "Multi-University Support",
-    description:
-      "Access curriculum structures, subjects, resources, and academic content across multiple universities from a single platform.",
-  },
-  {
-    icon: Search,
-    title: "Unified Smart Search",
-    description:
-      "Instantly search universities, subjects, units, topics, papers, notes, and learning resources through one powerful search experience.",
-  },
-  {
-    icon: Workflow,
-    title: "Connected Learning Journey",
-    description:
-      "Navigate seamlessly from syllabus topics to notes, related questions, explanations, and revision resources without losing context.",
-  },
-  {
-    icon: Bookmark,
-    title: "Personal Study Space",
-    description:
-      "Save important topics, resources, and study materials to create your own personalized learning dashboard.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Structured Academic Experience",
-    description:
-      "Designed specifically for higher education workflows with organized content, semester structures, and subject-level navigation.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Reliable Learning Resources",
-    description:
-      "Content is curated and organized to provide a distraction-free environment focused entirely on learning and preparation.",
-  },
-];
+import { Sparkles } from "lucide-react";
+import { landingFeatures } from "@/lib/data/landing";
 
 export default function Features() {
   return (
@@ -89,7 +43,7 @@ export default function Features() {
 
         {/* Feature Cards */}
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {features.map((feature, index) => {
+          {landingFeatures.map((feature, index) => {
             const Icon = feature.icon;
 
             return (

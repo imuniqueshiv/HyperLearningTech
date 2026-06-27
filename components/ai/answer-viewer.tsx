@@ -1,6 +1,6 @@
 "use client";
 
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -52,6 +52,188 @@ function preprocessMath(text: string): string {
 
   return result.trim();
 }
+
+const markdownComponents: Components = {
+  pre({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) {
+    return (
+      <pre
+        className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm"
+        {...props}
+      >
+        {children}
+      </pre>
+    );
+  },
+
+  code({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) {
+    const isCodeBlock = className?.includes("language-");
+
+    if (isCodeBlock) {
+      return (
+        <code className={className} {...props}>
+          {children}
+        </code>
+      );
+    }
+
+    return (
+      <code
+        className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400"
+        {...props}
+      >
+        {children}
+      </code>
+    );
+  },
+
+  table({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) {
+    return (
+      <div className="my-6 overflow-x-auto">
+        <table
+          className="w-full border-collapse border border-border text-sm sm:text-base"
+          {...props}
+        >
+          {children}
+        </table>
+      </div>
+    );
+  },
+
+  th({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
+    return (
+      <th
+        className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground"
+        {...props}
+      >
+        {children}
+      </th>
+    );
+  },
+
+  td({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
+    return (
+      <td
+        className="border border-border px-3 sm:px-4 py-2 text-foreground"
+        {...props}
+      >
+        {children}
+      </td>
+    );
+  },
+
+  blockquote({ children, ...props }: React.HTMLAttributes<HTMLQuoteElement>) {
+    return (
+      <blockquote
+        className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground"
+        {...props}
+      >
+        {children}
+      </blockquote>
+    );
+  },
+
+  h1({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+    return (
+      <h1
+        className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3"
+        {...props}
+      >
+        {children}
+      </h1>
+    );
+  },
+
+  h2({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+    return (
+      <h2
+        className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4"
+        {...props}
+      >
+        {children}
+      </h2>
+    );
+  },
+
+  h3({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+    return (
+      <h3
+        className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8"
+        {...props}
+      >
+        {children}
+      </h3>
+    );
+  },
+
+  h4({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+    return (
+      <h4
+        className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6"
+        {...props}
+      >
+        {children}
+      </h4>
+    );
+  },
+
+  hr() {
+    return <hr className="my-8 border-border" />;
+  },
+
+  ul({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) {
+    return (
+      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2" {...props}>
+        {children}
+      </ul>
+    );
+  },
+
+  ol({ children, ...props }: React.HTMLAttributes<HTMLOListElement>) {
+    return (
+      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2" {...props}>
+        {children}
+      </ol>
+    );
+  },
+
+  li({ children, ...props }: React.HTMLAttributes<HTMLLIElement>) {
+    return (
+      <li
+        className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground"
+        {...props}
+      >
+        {children}
+      </li>
+    );
+  },
+
+  p({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
+    return (
+      <p
+        className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground"
+        {...props}
+      >
+        {children}
+      </p>
+    );
+  },
+
+  strong({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
+    return (
+      <strong className="font-semibold text-foreground" {...props}>
+        {children}
+      </strong>
+    );
+  },
+
+  em({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
+    return (
+      <em className="italic text-muted-foreground" {...props}>
+        {children}
+      </em>
+    );
+  },
+};
 
 export default function AnswerViewer({ answer }: AnswerViewerProps) {
   const content = preprocessMath(answer);
@@ -191,143 +373,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypeKatex, rehypeHighlight]}
-        components={{
-          pre({ children }) {
-            return (
-              <pre className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm">
-                {children}
-              </pre>
-            );
-          },
-
-          code({ className, children }) {
-            const isCodeBlock = className?.includes("language-");
-
-            if (isCodeBlock) {
-              return <code className={className}>{children}</code>;
-            }
-
-            return (
-              <code className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400">
-                {children}
-              </code>
-            );
-          },
-
-          table({ children }) {
-            return (
-              <div className="my-6 overflow-x-auto">
-                <table className="w-full border-collapse border border-border text-sm sm:text-base">
-                  {children}
-                </table>
-              </div>
-            );
-          },
-
-          th({ children }) {
-            return (
-              <th className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground">
-                {children}
-              </th>
-            );
-          },
-
-          td({ children }) {
-            return (
-              <td className="border border-border px-3 sm:px-4 py-2 text-foreground">
-                {children}
-              </td>
-            );
-          },
-
-          blockquote({ children }) {
-            return (
-              <blockquote className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground">
-                {children}
-              </blockquote>
-            );
-          },
-
-          h1({ children }) {
-            return (
-              <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3">
-                {children}
-              </h1>
-            );
-          },
-
-          h2({ children }) {
-            return (
-              <h2 className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4">
-                {children}
-              </h2>
-            );
-          },
-
-          h3({ children }) {
-            return (
-              <h3 className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8">
-                {children}
-              </h3>
-            );
-          },
-
-          h4({ children }) {
-            return (
-              <h4 className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6">
-                {children}
-              </h4>
-            );
-          },
-
-          hr() {
-            return <hr className="my-8 border-border" />;
-          },
-
-          ul({ children }) {
-            return (
-              <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2">
-                {children}
-              </ul>
-            );
-          },
-
-          ol({ children }) {
-            return (
-              <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2">
-                {children}
-              </ol>
-            );
-          },
-
-          li({ children }) {
-            return (
-              <li className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground">
-                {children}
-              </li>
-            );
-          },
-
-          p({ children }) {
-            return (
-              <p className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground">
-                {children}
-              </p>
-            );
-          },
-
-          strong({ children }) {
-            return (
-              <strong className="font-semibold text-foreground">
-                {children}
-              </strong>
-            );
-          },
-
-          em({ children }) {
-            return <em className="italic text-muted-foreground">{children}</em>;
-          },
-        }}
+        components={markdownComponents}
       >
         {content}
       </ReactMarkdown>

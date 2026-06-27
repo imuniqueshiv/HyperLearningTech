@@ -29,6 +29,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
@@ -38,7 +39,16 @@ export default function Navbar() {
       setMounted(true);
     }, 0);
 
-    return () => clearTimeout(timer);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleNavClick = (
@@ -69,7 +79,13 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#00008B]/20 bg-[#00008B]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "border-b border-[#00008B]/20 bg-[#00008B]/95 shadow-md backdrop-blur-xl supports-[backdrop-filter]:bg-[#00008B]/80"
+          : "bg-[#00008B] border-transparent"
+      }`}
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -89,9 +105,9 @@ export default function Navbar() {
             </div>
 
             <div>
-              <h1 className="text-xl font-bold text-[#F4F5F7]">
+              <span className="block text-xl font-bold text-[#F4F5F7]">
                 Hyper Learning
-              </h1>
+              </span>
 
               <p className="text-xs text-[#AFC8FF]">
                 AI-Powered Learning Platform
@@ -146,7 +162,9 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle Menu"
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
             className="rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -158,6 +176,9 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            id="mobile-menu"
+            role="region"
+            aria-label="Mobile Navigation"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}

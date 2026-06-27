@@ -2,37 +2,8 @@
 
 import { motion, Variants } from "framer-motion";
 
-import {
-  BookOpen,
-  BrainCircuit,
-  FileText,
-  GraduationCap,
-  Sparkles,
-  CheckCircle2,
-} from "lucide-react";
-
-const stats = [
-  {
-    title: "500+",
-    subtitle: "Previous Year Questions",
-    icon: FileText,
-  },
-  {
-    title: "200+",
-    subtitle: "Topic-Wise AI Notes",
-    icon: BookOpen,
-  },
-  {
-    title: "24/7",
-    subtitle: "AI Learning Assistant",
-    icon: BrainCircuit,
-  },
-  {
-    title: "100%",
-    subtitle: "Syllabus Coverage",
-    icon: GraduationCap,
-  },
-];
+import { BrainCircuit, FileText, Sparkles, CheckCircle2 } from "lucide-react";
+import { landingStats } from "@/lib/data/landing";
 
 export default function Stats() {
   const containerVariants = {
@@ -108,7 +79,7 @@ export default function Stats() {
 
           {/* Stats Cards */}
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {stats.map((stat) => {
+            {landingStats.map((stat) => {
               const Icon = stat.icon;
 
               return (

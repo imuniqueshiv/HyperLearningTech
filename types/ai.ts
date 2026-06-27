@@ -74,6 +74,7 @@ export interface WorkspaceResponse {
   answer?: string;
   cached?: boolean;
   action?: WorkspaceAction;
+  relatedTopics?: string[];
   error?: string;
 }
 

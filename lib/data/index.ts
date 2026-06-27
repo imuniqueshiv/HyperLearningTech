@@ -1,3 +1,7 @@
+export * from "./branches";
+export * from "./subjects";
+export * from "./universities";
+
 import { subjects } from "./subjects";
 
 export function getSubjectsBySemester(semesterId: string) {
