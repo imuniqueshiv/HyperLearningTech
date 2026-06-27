@@ -5,7 +5,17 @@ import Link from "next/link";
 import { ArrowRight, BrainCircuit, CheckCircle2 } from "lucide-react";
 import { motion, Variants, animate, useInView } from "framer-motion";
 
-function Counter({ from = 0, to, suffix = "", prefix = "" }: { from?: number, to: number, suffix?: string, prefix?: string }) {
+function Counter({
+  from = 0,
+  to,
+  suffix = "",
+  prefix = "",
+}: {
+  from?: number;
+  to: number;
+  suffix?: string;
+  prefix?: string;
+}) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -23,7 +33,13 @@ function Counter({ from = 0, to, suffix = "", prefix = "" }: { from?: number, to
     }
   }, [inView, from, to, prefix, suffix]);
 
-  return <span ref={ref}>{prefix}{from}{suffix}</span>;
+  return (
+    <span ref={ref}>
+      {prefix}
+      {from}
+      {suffix}
+    </span>
+  );
 }
 
 export default function Hero() {
@@ -102,7 +118,10 @@ export default function Hero() {
               </span>
               <br />
               <span className="relative">
-                <span className="absolute -inset-x-4 -inset-y-2 bg-[#1D4ED8]/8 blur-xl rounded-full dark:bg-[#1D4ED8]/10" aria-hidden="true" />
+                <span
+                  className="absolute -inset-x-4 -inset-y-2 bg-[#1D4ED8]/8 blur-xl rounded-full dark:bg-[#1D4ED8]/10"
+                  aria-hidden="true"
+                />
                 <span className="relative bg-gradient-to-r from-[#1D4ED8] to-indigo-500 bg-clip-text text-transparent">
                   Study Smarter.
                 </span>

@@ -95,7 +95,7 @@ export default function Navbar() {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
         // Close mobile menu if open
         setIsOpen(false);
-        
+
         setTimeout(() => {
           isClickScrolling.current = false;
         }, 800);
