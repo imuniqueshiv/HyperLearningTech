@@ -9,7 +9,6 @@ export default function HomePage() {
       <Suspense fallback={<div className="h-96" />}>
         <Universities />
       </Suspense>
-
     </>
   );
 }

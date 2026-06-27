@@ -3,7 +3,15 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GraduationCap, ArrowRight, Sparkles, Search, Building2, BookOpen, Clock } from "lucide-react";
+import {
+  GraduationCap,
+  ArrowRight,
+  Sparkles,
+  Search,
+  Building2,
+  BookOpen,
+  Clock,
+} from "lucide-react";
 
 const universities = [
   {
@@ -53,9 +61,7 @@ export default function Universities() {
   });
 
   return (
-    <section
-      className="relative flex min-h-[115vh] flex-col justify-center overflow-hidden border-none bg-background pt-16 pb-32"
-    >
+    <section className="relative flex min-h-[115vh] flex-col justify-center overflow-hidden border-none bg-background pt-16 pb-32">
       {/* Background Glows & Patterns */}
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
       <div className="absolute inset-0 -z-10">
@@ -63,7 +69,10 @@ export default function Universities() {
         <div className="absolute right-[-10%] bottom-0 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
       </div>
 
-      <div id="Universities" className="relative mx-auto w-full max-w-7xl px-6 lg:px-8 scroll-mt-[12vh]">
+      <div
+        id="Universities"
+        className="relative mx-auto w-full max-w-7xl px-6 lg:px-8 scroll-mt-[12vh]"
+      >
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -76,7 +85,9 @@ export default function Universities() {
             <div className="group relative inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-950/40 px-4 py-1.5 text-sm font-semibold text-blue-300 shadow-[0_0_20px_rgba(37,99,235,0.15)] backdrop-blur-xl transition-all hover:border-blue-400/60 hover:bg-blue-900/50 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/10 via-transparent to-indigo-500/10 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity" />
               <GraduationCap className="relative z-10 h-4 w-4 text-blue-400 drop-shadow-[0_0_5px_rgba(96,165,250,0.5)]" />
-              <span className="relative z-10 tracking-wide">University Support</span>
+              <span className="relative z-10 tracking-wide">
+                University Support
+              </span>
             </div>
           </div>
 
@@ -194,9 +205,7 @@ export default function Universities() {
 
                     <div className="mt-auto pt-6">
                       {university.status === "Available" ? (
-                        <div
-                          className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3.5 text-sm font-bold text-white shadow-[0_0_30px_rgba(37,99,235,0.3)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_40px_rgba(37,99,235,0.5)] active:translate-y-0 active:shadow-[0_0_36px_rgba(37,99,235,0.45)] overflow-hidden"
-                        >
+                        <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3.5 text-sm font-bold text-white shadow-[0_0_30px_rgba(37,99,235,0.3)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_40px_rgba(37,99,235,0.5)] active:translate-y-0 active:shadow-[0_0_36px_rgba(37,99,235,0.45)] overflow-hidden">
                           <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] pointer-events-none" />
                           <span className="relative z-10 flex items-center gap-2">
                             Explore University
