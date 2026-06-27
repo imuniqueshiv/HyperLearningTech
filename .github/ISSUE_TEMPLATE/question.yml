@@ -1,0 +1,78 @@
+name: Question
+description: Ask a question about Hyper Learning Tech.
+title: "[Question]: "
+labels:
+  - question
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Ask a Question
+
+        Thanks for your interest in Hyper Learning Tech!
+
+        Before creating a question:
+
+        - Search existing Issues and Discussions.
+        - Read the README and CONTRIBUTING guide.
+        - Keep your question clear and specific.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Getting Started
+        - Installation
+        - Development Setup
+        - Project Architecture
+        - AI Workspace
+        - AI Answer Generation
+        - Previous Year Questions (PYQs)
+        - Syllabus
+        - API
+        - Deployment
+        - GitHub Workflow
+        - Contributing
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Clearly describe your question.
+      placeholder: Ask your question here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What Have You Tried?
+      description: Describe any steps you've already taken to solve the problem.
+      placeholder: Mention any documentation, code, or resources you've already checked.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Provide screenshots, links, code snippets, or any additional information that may help us understand your question.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing Issues and Discussions before asking this question.
+          required: true
+
+        - label: I have read the project documentation.
+          required: true
+
+        - label: I have provided enough information for maintainers to understand my question.
+          required: true
