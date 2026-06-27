@@ -1,0 +1,79 @@
+name: PR Template Validation
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+
+permissions:
+  pull-requests: read
+
+jobs:
+  validate-pr-template:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate Pull Request Template
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = (context.payload.pull_request.body || "").trim();
+
+            const errors = [];
+
+            function contains(text) {
+              return body.includes(text);
+            }
+
+            // PR description must not be empty
+            if (body.length === 0) {
+              errors.push("PR description cannot be empty.");
+            }
+
+            // Placeholder text must be removed
+            const placeholders = [
+              "Provide a brief description of your changes.",
+              "Briefly describe the key changes made in this Pull Request.",
+              "Describe how you tested your changes.",
+              "Add any additional context for reviewers if needed."
+            ];
+
+            for (const placeholder of placeholders) {
+              if (contains(placeholder)) {
+                errors.push(`Remove placeholder text: "${placeholder}"`);
+              }
+            }
+
+            // Require at least one Type of Change checkbox
+            const checkedType =
+              /\- \[x\] Feature/i.test(body) ||
+              /\- \[x\] Bug Fix/i.test(body) ||
+              /\- \[x\] Documentation/i.test(body) ||
+              /\- \[x\] Refactor/i.test(body) ||
+              /\- \[x\] Performance Improvement/i.test(body) ||
+              /\- \[x\] CI \/ Build/i.test(body) ||
+              /\- \[x\] Other/i.test(body);
+
+            if (!checkedType) {
+              errors.push("Select at least one 'Type of Change' checkbox.");
+            }
+
+            // Require at least one checklist item to be checked
+            const checkedChecklist =
+              /\- \[x\]/i.test(body);
+
+            if (!checkedChecklist) {
+              errors.push("Complete the checklist before requesting review.");
+            }
+
+            if (errors.length > 0) {
+              core.setFailed(
+                "Pull Request Template Validation Failed:\n\n• " +
+                errors.join("\n• ")
+              );
+            } else {
+              console.log("PR template validation passed.");
+            }
