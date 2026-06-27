@@ -1,0 +1,77 @@
+name: Documentation
+description: Report documentation issues or suggest improvements.
+title: "[Docs]: "
+labels:
+  - documentation
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation Improvement
+
+        Thank you for helping improve Hyper Learning Tech's documentation.
+
+        Before submitting:
+
+        - Search existing Issues.
+        - Check if the documentation already covers your topic.
+        - Keep one documentation request per issue.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Documentation Area
+      description: Which documentation needs improvement?
+      options:
+        - README
+        - CONTRIBUTING Guide
+        - Installation
+        - Setup / Environment Variables
+        - Architecture
+        - API Documentation
+        - AI Workspace
+        - Deployment
+        - GitHub Workflows
+        - Code Comments
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is missing or incorrect?
+      description: Describe the documentation issue.
+      placeholder: Explain what is outdated, missing, unclear, or incorrect.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Improvement
+      description: How should the documentation be improved?
+      placeholder: Describe your proposed changes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References (Optional)
+      description: Add links, screenshots, examples, or related resources that may help improve the documentation.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing documentation before creating this issue.
+          required: true
+
+        - label: This issue is focused on documentation only.
+          required: true
+
+        - label: I have clearly described the improvement.
+          required: true
