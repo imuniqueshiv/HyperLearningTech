@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <Link
-                  href="/subjects"
+                  href="/rgpv"
                   className="text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   Subjects
@@ -65,7 +65,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/universities"
+                  href="/#Universities"
                   className="text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   Universities
@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <Link
-                  href="/subjects"
+                  href="/rgpv"
                   className="flex items-center gap-2 text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   <BookOpen className="h-4 w-4" />
@@ -111,7 +111,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/subjects"
+                  href="/rgpv"
                   className="flex items-center gap-2 text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   <GraduationCap className="h-4 w-4" />
@@ -121,7 +121,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/subjects"
+                  href="/rgpv"
                   className="text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   AI Tutor
@@ -130,7 +130,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/subjects"
+                  href="/rgpv"
                   className="text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   Syllabus
@@ -177,7 +177,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/privacy"
+                  href="/"
                   className="text-sm text-[#AFC8FF]/70 transition-colors hover:text-white"
                 >
                   Privacy

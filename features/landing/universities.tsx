@@ -43,6 +43,7 @@ export default function Universities() {
 
   const filteredUniversities = universities.filter((uni) => {
     const query = searchQuery.trim().toLowerCase();
+    if (!query) return true;
     return (
       uni.name.toLowerCase().includes(query) ||
       uni.fullName.toLowerCase().includes(query) ||
