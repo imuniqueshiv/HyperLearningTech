@@ -1,0 +1,232 @@
+{
+  "subject": {
+    "id": "bt-103",
+    "code": "BT-103",
+    "name": "English for Communication",
+    "title": "BT-103 – English for Communication",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "I/II",
+    "credits": 4,
+    "lectureTutorialPractical": "3L-0T-2P",
+    "commonTo": "All Disciplines"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Identifying Common errors in writing",
+      "hours": null,
+      "topics": [
+        "Articles",
+        "Subject-Verb Agreement",
+        "Prepositions",
+        "Active and Passive Voice",
+        "Reported Speech: Direct and Indirect",
+        "Sentence Structure"
+      ],
+      "questionIds": [
+        "bt103_m1_nov2022_q1",
+        "bt103_m1_june2023_q2",
+        "bt103_m1_june2023_q3",
+        "bt103_m1_dec2023_q4",
+        "bt103_m1_dec2023_q5",
+        "bt103_m1_june2024_q6",
+        "bt103_m1_june2024_q7",
+        "bt103_m1_dec2024_q8",
+        "bt103_m1_dec2024_q9",
+        "bt103_m1_dec2024_q10",
+        "bt103_m1_june2025_q11",
+        "bt103_m1_june2025_q12"
+      ],
+      "predictedQuestionIds": [
+        "bt103_m1_predicted_q1",
+        "bt103_m1_predicted_q2",
+        "bt103_m1_predicted_q3",
+        "bt103_m1_predicted_q4",
+        "bt103_m1_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Vocabulary building and Comprehension",
+      "hours": null,
+      "topics": [
+        "Acquaintance with prefixes and suffixes from foreign languages in English to form derivatives",
+        "synonyms",
+        "antonyms",
+        "Reading comprehension"
+      ],
+      "questionIds": [
+        "bt103_m2_nov2022_q1",
+        "bt103_m2_june2023_q2",
+        "bt103_m2_june2023_q3",
+        "bt103_m2_dec2023_q4",
+        "bt103_m2_dec2023_q5",
+        "bt103_m2_june2024_q6",
+        "bt103_m2_june2024_q7",
+        "bt103_m2_dec2024_q8",
+        "bt103_m2_dec2024_q9",
+        "bt103_m2_dec2024_q10",
+        "bt103_m2_june2025_q11",
+        "bt103_m2_june2025_q12",
+        "bt103_m2_june2025_q13"
+      ],
+      "predictedQuestionIds": [
+        "bt103_m2_predicted_q1",
+        "bt103_m2_predicted_q2",
+        "bt103_m2_predicted_q3",
+        "bt103_m2_predicted_q4",
+        "bt103_m2_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Communication",
+      "hours": null,
+      "topics": [
+        "Introduction, Meaning and Significance",
+        "Process of Communication",
+        "Oral and Written Communication",
+        "7 c's of Communication",
+        "Barriers to Communication and Ways to overcome them",
+        "Importance of Communication for Technical students",
+        "nonverbal communication"
+      ],
+      "questionIds": [
+        "bt103_m3_nov2022_q1",
+        "bt103_m3_nov2022_q2",
+        "bt103_m3_nov2022_q3",
+        "bt103_m3_nov2022_q4",
+        "bt103_m3_nov2022_q5",
+        "bt103_m3_june2023_q4",
+        "bt103_m3_june2023_q5",
+        "bt103_m3_june2023_q9",
+        "bt103_m3_dec2023_q6",
+        "bt103_m3_dec2023_q7",
+        "bt103_m3_dec2023_q8",
+        "bt103_m3_june2024_q5",
+        "bt103_m3_june2024_q9",
+        "bt103_m3_june2024_q10",
+        "bt103_m3_dec2024_q2",
+        "bt103_m3_dec2024_q5",
+        "bt103_m3_dec2024_q6",
+        "bt103_m3_dec2024_q11",
+        "bt103_m3_june2025_q6",
+        "bt103_m3_june2025_q12",
+        "bt103_m3_june2025_q13",
+        "bt103_m3_june2025_q14",
+        "bt103_m3_june2025_q15",
+        "bt103_m3_june2025_q16"
+      ],
+      "predictedQuestionIds": [
+        "bt103_m3_predicted_q1",
+        "bt103_m3_predicted_q2",
+        "bt103_m3_predicted_q3",
+        "bt103_m3_predicted_q4",
+        "bt103_m3_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Developing Writing Skills",
+      "hours": null,
+      "topics": [
+        "Planning, Drafting and Editing",
+        "Precise Writing, Précis",
+        "Technical definition and Technical description",
+        "Report Writing: Features of writing a good Report",
+        "Structure of a Formal Report",
+        "Report of Trouble, Laboratory Report, Progress Report"
+      ],
+      "questionIds": [
+        "bt103_m4_nov2022_q1",
+        "bt103_m4_nov2022_q2",
+        "bt103_m4_nov2022_q3",
+        "bt103_m4_nov2022_q4",
+        "bt103_m4_june2023_q1",
+        "bt103_m4_june2023_q5",
+        "bt103_m4_june2023_q6",
+        "bt103_m4_june2023_q9",
+        "bt103_m4_june2023_q10",
+        "bt103_m4_june2023_q11",
+        "bt103_m4_dec2023_q4",
+        "bt103_m4_dec2023_q5",
+        "bt103_m4_dec2023_q6",
+        "bt103_m4_dec2023_q7",
+        "bt103_m4_dec2023_q8",
+        "bt103_m4_june2024_q5",
+        "bt103_m4_june2024_q6",
+        "bt103_m4_june2024_q9",
+        "bt103_m4_june2024_q10",
+        "bt103_m4_june2024_q12",
+        "bt103_m4_june2024_q13",
+        "bt103_m4_dec2024_q5",
+        "bt103_m4_dec2024_q14",
+        "bt103_m4_dec2024_q15",
+        "bt103_m4_dec2024_q16",
+        "bt103_m4_june2025_q17",
+        "bt103_m4_june2025_q18"
+      ],
+      "predictedQuestionIds": [
+        "bt103_m4_predicted_q1",
+        "bt103_m4_predicted_q2",
+        "bt103_m4_predicted_q3",
+        "bt103_m4_predicted_q4",
+        "bt103_m4_predicted_q5"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Business Correspondence",
+      "hours": null,
+      "topics": [
+        "Importance of Business Letters, Parts and Layout",
+        "Application, Contents of good Resume",
+        "guidelines for writing Resume",
+        "Calling/Sending Quotation",
+        "Order",
+        "Complaint",
+        "E-mail and Tender"
+      ],
+      "questionIds": [
+        "bt103_m5_nov2022_q1",
+        "bt103_m5_nov2022_q2",
+        "bt103_m5_nov2022_q3",
+        "bt103_m5_nov2022_q4",
+        "bt103_m5_june2023_q10",
+        "bt103_m5_june2023_q11",
+        "bt103_m5_june2023_q12",
+        "bt103_m5_june2023_q13",
+        "bt103_m5_dec2023_q5",
+        "bt103_m5_dec2023_q6",
+        "bt103_m5_dec2023_q7",
+        "bt103_m5_dec2023_q8",
+        "bt103_m5_dec2023_q9",
+        "bt103_m5_june2024_q10",
+        "bt103_m5_june2024_q14",
+        "bt103_m5_june2024_q15",
+        "bt103_m5_june2024_q16",
+        "bt103_m5_dec2024_q16",
+        "bt103_m5_dec2024_q17",
+        "bt103_m5_dec2024_q18",
+        "bt103_m5_dec2024_q19",
+        "bt103_m5_june2025_q20",
+        "bt103_m5_june2025_q21",
+        "bt103_m5_june2025_q22",
+        "bt103_m5_june2025_q23"
+      ],
+      "predictedQuestionIds": [
+        "bt103_m5_predicted_q1",
+        "bt103_m5_predicted_q2",
+        "bt103_m5_predicted_q3",
+        "bt103_m5_predicted_q4",
+        "bt103_m5_predicted_q5"
+      ]
+    }
+  ]
+}
