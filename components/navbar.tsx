@@ -200,7 +200,9 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 md:flex">
             {mounted && (
               <button
-                onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+                onClick={() =>
+                  setTheme(currentTheme === "dark" ? "light" : "dark")
+                }
                 aria-label="Toggle theme"
                 className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/10 dark:border-white/15 bg-black/[0.02] dark:bg-black/20 shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_2px_6px_rgba(0,0,0,0.3)] transition-all hover:border-black/20 dark:hover:border-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
               >
@@ -301,7 +303,9 @@ export default function Navbar() {
 
               <div className="mt-6 flex flex-col gap-3 border-t border-border/50 dark:border-white/10 pt-6">
                 <button
-                  onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+                  onClick={() =>
+                    setTheme(currentTheme === "dark" ? "light" : "dark")
+                  }
                   aria-label="Toggle theme"
                   className="flex w-full items-center justify-between rounded-xl p-3 text-base font-medium text-foreground transition-colors hover:bg-black/5 dark:text-white/90 dark:hover:bg-white/10"
                 >

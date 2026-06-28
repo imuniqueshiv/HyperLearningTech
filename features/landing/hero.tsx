@@ -124,7 +124,8 @@ export default function Hero() {
               <span className="text-slate-900 dark:text-[#f1f5f9]">Master</span>
               <br />
               <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent dark:from-[#6366f1] dark:to-[#6366f1] dark:text-[#6366f1] dark:bg-none">
-                Engineering<span className="text-[#34d399] dark:text-[#34d399]">.</span>
+                Engineering
+                <span className="text-[#34d399] dark:text-[#34d399]">.</span>
               </span>
             </motion.h1>
 
@@ -142,8 +143,14 @@ export default function Hero() {
               className="mt-6 max-w-[560px] text-[15px] leading-[1.8] text-slate-600 dark:text-[#94a3b8]"
             >
               Everything you need for smarter exam preparation—from{" "}
-              <span className="font-[600] text-slate-900 dark:font-[500] dark:text-[#cbd5e1]">syllabus-mapped PYQs</span> and{" "}
-              <span className="font-[600] text-slate-900 dark:font-[500] dark:text-[#cbd5e1]">AI-powered notes</span> to topic-wise explanations and instant AI guidance.
+              <span className="font-[600] text-slate-900 dark:font-[500] dark:text-[#cbd5e1]">
+                syllabus-mapped PYQs
+              </span>{" "}
+              and{" "}
+              <span className="font-[600] text-slate-900 dark:font-[500] dark:text-[#cbd5e1]">
+                AI-powered notes
+              </span>{" "}
+              to topic-wise explanations and instant AI guidance.
             </motion.p>
 
             {/* Feature pills row */}
@@ -165,8 +172,18 @@ export default function Hero() {
               </div>
               <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
                 <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(59,130,246,0.15)]">
-                  <svg className="h-3 w-3 text-blue-500 dark:text-[#60a5fa]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <svg
+                    className="h-3 w-3 text-blue-500 dark:text-[#60a5fa]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
                   </svg>
                 </div>
                 Topic-wise PYQs
@@ -204,13 +221,13 @@ export default function Hero() {
             </motion.div>
 
             {/* Divider */}
-            <motion.div variants={itemVariants} className="mt-2 h-[1px] w-full bg-[linear-gradient(90deg,transparent,rgba(0,0,0,0.03)_20%,rgba(0,0,0,0.03)_80%,transparent)] dark:bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.06)_20%,rgba(255,255,255,0.06)_80%,transparent)]" />
-
-            {/* Stats row */}
             <motion.div
               variants={itemVariants}
-              className="mt-2 flex flex-row"
-            >
+              className="mt-2 h-[1px] w-full bg-[linear-gradient(90deg,transparent,rgba(0,0,0,0.03)_20%,rgba(0,0,0,0.03)_80%,transparent)] dark:bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.06)_20%,rgba(255,255,255,0.06)_80%,transparent)]"
+            />
+
+            {/* Stats row */}
+            <motion.div variants={itemVariants} className="mt-2 flex flex-row">
               <div className="pr-[32px]">
                 <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
                   <Counter to={25} />
@@ -256,7 +273,10 @@ export default function Hero() {
               {/* Chat Header */}
               <div className="-mt-6 -mx-6 mb-5 flex items-center gap-3 border-b border-white/[0.04] bg-white/[0.02] px-6 pt-6 pb-4 backdrop-blur-sm">
                 <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#5964F4] to-[#7D52F5] shadow-[0_0_12px_rgba(99,102,241,0.4)]">
-                  <BrainCircuit className="h-[18px] w-[18px] text-white" strokeWidth={2.2} />
+                  <BrainCircuit
+                    className="h-[18px] w-[18px] text-white"
+                    strokeWidth={2.2}
+                  />
                 </div>
 
                 <div className="flex flex-col justify-center">
@@ -284,7 +304,10 @@ export default function Hero() {
                 <div className="flex flex-col items-start gap-2">
                   <div className="flex items-center gap-2 px-1">
                     <div className="flex h-5 w-5 items-center justify-center rounded-[6px] bg-indigo-500/10">
-                      <BrainCircuit className="h-3.5 w-3.5 text-[#818cf8]" strokeWidth={2.5} />
+                      <BrainCircuit
+                        className="h-3.5 w-3.5 text-[#818cf8]"
+                        strokeWidth={2.5}
+                      />
                     </div>
                     <span className="text-[12px] font-[600] text-[#818cf8]">
                       Hyper AI
@@ -322,24 +345,39 @@ export default function Hero() {
                   <div className="flex flex-col divide-y divide-white/[0.02]">
                     <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-white/[0.02]">
                       <div className="flex items-center gap-3">
-                        <CheckCircle2 className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]" strokeWidth={2.5} />
-                        <span className="text-[13px] font-medium text-[#d1d5db]">Dec 2025 — Q1(b)</span>
+                        <CheckCircle2
+                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                          strokeWidth={2.5}
+                        />
+                        <span className="text-[13px] font-medium text-[#d1d5db]">
+                          Dec 2025 — Q1(b)
+                        </span>
                       </div>
                       <ArrowRight className="h-4 w-4 text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
                     </div>
 
                     <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-white/[0.02]">
                       <div className="flex items-center gap-3">
-                        <CheckCircle2 className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]" strokeWidth={2.5} />
-                        <span className="text-[13px] font-medium text-[#d1d5db]">Jun 2025 — Q3(a)</span>
+                        <CheckCircle2
+                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                          strokeWidth={2.5}
+                        />
+                        <span className="text-[13px] font-medium text-[#d1d5db]">
+                          Jun 2025 — Q3(a)
+                        </span>
                       </div>
                       <ArrowRight className="h-4 w-4 text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
                     </div>
 
                     <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-white/[0.02]">
                       <div className="flex items-center gap-3">
-                        <CheckCircle2 className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]" strokeWidth={2.5} />
-                        <span className="text-[13px] font-medium text-[#d1d5db]">Dec 2024 — Q2</span>
+                        <CheckCircle2
+                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                          strokeWidth={2.5}
+                        />
+                        <span className="text-[13px] font-medium text-[#d1d5db]">
+                          Dec 2024 — Q2
+                        </span>
                       </div>
                       <ArrowRight className="h-4 w-4 text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
                     </div>

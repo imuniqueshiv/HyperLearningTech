@@ -163,14 +163,15 @@ export default function Footer() {
   return (
     <footer className="relative -mt-10 border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-hidden">
       {/* Light Mode Premium Dot Matrix Background */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none dark:hidden"
         style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.25) 1px, transparent 0)',
-          backgroundSize: '24px 24px'
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.25) 1px, transparent 0)",
+          backgroundSize: "24px 24px",
         }}
       />
-      
+
       {/* Light Mode Bottom Radial Glow */}
       <div className="absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full pointer-events-none dark:hidden" />
 
