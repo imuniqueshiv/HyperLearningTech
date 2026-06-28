@@ -205,98 +205,102 @@ export default function Hero() {
           >
             <div className="relative rounded-[2rem] border border-border/20 dark:border-white/[0.08] bg-transparent p-[5px] shadow-[0_0_20px_rgba(29,78,216,0.02)] dark:shadow-[0_0_30px_rgba(29,78,216,0.04)] backdrop-blur-xl">
               <div className="relative h-full w-full rounded-[calc(2rem-5px)] border border-border/35 dark:border-white/[0.05] bg-background/80 p-6 shadow-inner">
-              {/* Chat Header */}
-              <div className="mb-6 flex items-center justify-between border-b border-border/50 pb-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
-                    <BrainCircuit className="h-5 w-5 text-[#1D4ED8]" />
-                  </div>
+                {/* Chat Header */}
+                <div className="mb-6 flex items-center justify-between border-b border-border/50 pb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
+                      <BrainCircuit className="h-5 w-5 text-[#1D4ED8]" />
+                    </div>
 
-                  <div>
-                    <h3 className="font-semibold text-foreground">Hyper AI</h3>
+                    <div>
+                      <h3 className="font-semibold text-foreground">
+                        Hyper AI
+                      </h3>
 
-                    <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                      <span className="relative flex h-1.5 w-1.5">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                      </span>
-                      Online • Ready to Help
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-5">
-                {/* User Message */}
-                <div className="flex justify-end">
-                  <div className="max-w-[80%] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm bg-[#1D4ED8] px-5 py-3 text-sm font-medium text-white shadow-sm">
-                    Explain Big O notation with an example.
+                      <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                        <span className="relative flex h-1.5 w-1.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                        </span>
+                        Online • Ready to Help
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Hyper AI Message */}
-                <div className="flex justify-start">
-                  <div className="max-w-[90%] rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-sm border border-border/50 dark:border-white/[0.05] bg-card px-5 py-4 shadow-sm">
-                    <div className="mb-3 flex items-center gap-2">
-                      <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#1D4ED8]/10">
-                        <BrainCircuit className="h-4 w-4 text-[#1D4ED8]" />
+                <div className="space-y-5">
+                  {/* User Message */}
+                  <div className="flex justify-end">
+                    <div className="max-w-[80%] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm bg-[#1D4ED8] px-5 py-3 text-sm font-medium text-white shadow-sm">
+                      Explain Big O notation with an example.
+                    </div>
+                  </div>
+
+                  {/* Hyper AI Message */}
+                  <div className="flex justify-start">
+                    <div className="max-w-[90%] rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-sm border border-border/50 dark:border-white/[0.05] bg-card px-5 py-4 shadow-sm">
+                      <div className="mb-3 flex items-center gap-2">
+                        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#1D4ED8]/10">
+                          <BrainCircuit className="h-4 w-4 text-[#1D4ED8]" />
+                        </div>
+
+                        <span className="text-sm font-semibold text-[#1D4ED8]">
+                          Hyper AI
+                        </span>
                       </div>
 
-                      <span className="text-sm font-semibold text-[#1D4ED8]">
-                        Hyper AI
+                      <p className="text-sm leading-6 text-foreground/80">
+                        Big O notation represents the maximum growth rate of an
+                        algorithm as input size increases.
+                      </p>
+
+                      <p className="mt-2.5 text-sm leading-6 text-foreground/80">
+                        For example, Linear Search has{" "}
+                        <span className="font-semibold text-[#1D4ED8]">
+                          O(n)
+                        </span>{" "}
+                        complexity because each element may need to be checked
+                        once.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Related Questions */}
+                  <div className="rounded-2xl border border-border/50 bg-muted/30 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">
+                      Related Previous Year Questions
+                    </p>
+
+                    <div className="mt-2 space-y-1 text-sm font-medium text-foreground/80">
+                      <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
+                        <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
+                        Dec 2025 — Q1(b)
+                      </div>
+
+                      <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
+                        <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
+                        Jun 2025 — Q3(a)
+                      </div>
+
+                      <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
+                        <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
+                        Dec 2024 — Q2
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Input Box */}
+                  <div className="rounded-2xl border border-border/50 bg-muted/30 px-5 py-3.5 transition-all focus-within:border-primary/50 focus-within:ring-4 focus-within:ring-primary/10 hover:border-border cursor-text">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">
+                        Ask Hyper AI anything...
                       </span>
+
+                      <ArrowRight className="h-4 w-4 text-muted-foreground" />
                     </div>
-
-                    <p className="text-sm leading-6 text-foreground/80">
-                      Big O notation represents the maximum growth rate of an
-                      algorithm as input size increases.
-                    </p>
-
-                    <p className="mt-2.5 text-sm leading-6 text-foreground/80">
-                      For example, Linear Search has{" "}
-                      <span className="font-semibold text-[#1D4ED8]">O(n)</span>{" "}
-                      complexity because each element may need to be checked
-                      once.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Related Questions */}
-                <div className="rounded-2xl border border-border/50 bg-muted/30 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">
-                    Related Previous Year Questions
-                  </p>
-
-                  <div className="mt-2 space-y-1 text-sm font-medium text-foreground/80">
-                    <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
-                      Dec 2025 — Q1(b)
-                    </div>
-
-                    <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
-                      Jun 2025 — Q3(a)
-                    </div>
-
-                    <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
-                      Dec 2024 — Q2
-                    </div>
-                  </div>
-                </div>
-
-                {/* Input Box */}
-                <div className="rounded-2xl border border-border/50 bg-muted/30 px-5 py-3.5 transition-all focus-within:border-primary/50 focus-within:ring-4 focus-within:ring-primary/10 hover:border-border cursor-text">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">
-                      Ask Hyper AI anything...
-                    </span>
-
-                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
                   </div>
                 </div>
               </div>
-            </div>
             </div>
           </motion.div>
         </div>

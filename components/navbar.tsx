@@ -177,11 +177,15 @@ export default function Navbar() {
                     <motion.div
                       layoutId="activeNavIndicator"
                       className="absolute inset-0 rounded-full bg-white border border-black/5 shadow-[0_1px_3px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.6)] dark:bg-white/[0.08] dark:border-white/[0.08] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_2px_4px_rgba(0,0,0,0.2)] dark:backdrop-blur-md"
-                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 350,
+                        damping: 30,
+                      }}
                     />
                   )}
                   <span className="relative z-10">{link.label}</span>
-                  
+
                   {/* Hover Underline */}
                   {!isActive && (
                     <span className="absolute bottom-1.5 left-1/2 h-[1.5px] w-[calc(100%-1.5rem)] -translate-x-1/2 origin-center scale-x-0 bg-gradient-to-r from-transparent via-blue-600/80 to-transparent transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-x-100 dark:via-white/70" />
@@ -201,17 +205,27 @@ export default function Navbar() {
               >
                 <div
                   className={`flex h-full w-1/2 items-center justify-center transition-all duration-300 ${
-                    theme !== "dark" ? "bg-white dark:bg-white/15 shadow-[0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.2)]" : "hover:bg-black/5 dark:hover:bg-white/5"
+                    theme !== "dark"
+                      ? "bg-white dark:bg-white/15 shadow-[0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.2)]"
+                      : "hover:bg-black/5 dark:hover:bg-white/5"
                   }`}
                 >
-                  <Sun strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme !== "dark" ? "text-amber-600 drop-shadow-sm" : "text-slate-500 dark:text-white/40"}`} />
+                  <Sun
+                    strokeWidth={2.5}
+                    className={`h-[15px] w-[15px] ${theme !== "dark" ? "text-amber-600 drop-shadow-sm" : "text-slate-500 dark:text-white/40"}`}
+                  />
                 </div>
                 <div
                   className={`flex h-full w-1/2 items-center justify-center transition-all duration-300 ${
-                    theme === "dark" ? "bg-white dark:bg-white/15 shadow-[0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.2)]" : "hover:bg-black/5 dark:hover:bg-white/5"
+                    theme === "dark"
+                      ? "bg-white dark:bg-white/15 shadow-[0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.2)]"
+                      : "hover:bg-black/5 dark:hover:bg-white/5"
                   }`}
                 >
-                  <Moon strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme === "dark" ? "text-white drop-shadow-sm" : "text-slate-500 dark:text-white/40"}`} />
+                  <Moon
+                    strokeWidth={2.5}
+                    className={`h-[15px] w-[15px] ${theme === "dark" ? "text-white drop-shadow-sm" : "text-slate-500 dark:text-white/40"}`}
+                  />
                 </div>
               </button>
             )}
@@ -293,11 +307,21 @@ export default function Navbar() {
                   <span>Theme</span>
                   {mounted && (
                     <div className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/20 dark:border-white/25 bg-transparent">
-                      <div className={`flex h-full w-1/2 items-center justify-center transition-colors ${theme !== "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}>
-                        <Sun strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme !== "dark" ? "text-amber-600" : "text-slate-500 dark:text-white/60"}`} />
+                      <div
+                        className={`flex h-full w-1/2 items-center justify-center transition-colors ${theme !== "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}
+                      >
+                        <Sun
+                          strokeWidth={2.5}
+                          className={`h-[15px] w-[15px] ${theme !== "dark" ? "text-amber-600" : "text-slate-500 dark:text-white/60"}`}
+                        />
                       </div>
-                      <div className={`flex h-full w-1/2 items-center justify-center transition-colors ${theme === "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}>
-                        <Moon strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme === "dark" ? "text-white" : "text-slate-500 dark:text-white/60"}`} />
+                      <div
+                        className={`flex h-full w-1/2 items-center justify-center transition-colors ${theme === "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}
+                      >
+                        <Moon
+                          strokeWidth={2.5}
+                          className={`h-[15px] w-[15px] ${theme === "dark" ? "text-white" : "text-slate-500 dark:text-white/60"}`}
+                        />
                       </div>
                     </div>
                   )}
