@@ -53,10 +53,25 @@ export default function Universities() {
 
   return (
     <section className="relative flex min-h-[115vh] flex-col justify-center overflow-hidden border-none bg-background pt-16 pb-32">
-      {/* Background Glows */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-[-10%] top-20 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
-        <div className="absolute right-[-10%] bottom-0 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
+      {/* Background Layers */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Light Mode Wavy Refraction Background (Inverted) */}
+        <div 
+          className="absolute inset-0 dark:hidden"
+          style={{
+            backgroundImage: `
+              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 800' preserveAspectRatio='none'%3E%3Cpath fill='%234a6cf7' fill-opacity='0.10' d='M0,400 C320,500 420,300 720,400 C1020,500 1120,300 1440,400 L1440,0 L0,0 Z'/%3E%3Cpath fill='%236e8efb' fill-opacity='0.14' d='M0,500 C320,400 420,600 720,500 C1020,400 1120,600 1440,500 L1440,0 L0,0 Z'/%3E%3Cpath fill='%234a6cf7' fill-opacity='0.08' d='M0,600 C320,700 420,500 720,600 C1020,700 1120,500 1440,600 L1440,0 L0,0 Z'/%3E%3C/svg%3E"),
+              linear-gradient(to top, #f0f4ff, #ffffff)
+            `,
+            backgroundSize: 'cover, auto',
+            backgroundPosition: 'center, top',
+            backgroundRepeat: 'no-repeat, no-repeat'
+          }}
+        />
+
+        {/* Dark Mode Ambient Glows */}
+        <div className="hidden dark:block absolute left-[-10%] top-20 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
+        <div className="hidden dark:block absolute right-[-10%] bottom-0 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
       </div>
 
       <div
