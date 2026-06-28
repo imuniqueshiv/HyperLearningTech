@@ -1,17 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  GraduationCap,
-  ArrowRight,
-  Sparkles,
-  Search,
-  Building2,
-  BookOpen,
-  Clock,
-} from "lucide-react";
+import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
 
 const universities = [
   {

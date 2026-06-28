@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Mail, Zap, Shield, Users, Bell, Globe } from "lucide-react";
 
-const GithubIcon = (props: any) => (
+const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -23,7 +23,7 @@ const GithubIcon = (props: any) => (
   </svg>
 );
 
-const LinkedinIcon = (props: any) => (
+const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -42,7 +42,7 @@ const LinkedinIcon = (props: any) => (
   </svg>
 );
 
-const TwitterIcon = (props: any) => (
+const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -59,7 +59,7 @@ const TwitterIcon = (props: any) => (
   </svg>
 );
 
-const InstagramIcon = (props: any) => (
+const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -78,31 +78,19 @@ const InstagramIcon = (props: any) => (
   </svg>
 );
 
-const YoutubeIcon = (props: any) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M2.5 7.1C2.5 5 4.5 3 7.1 3h9.8C19 3 21.5 5 21.5 7.1v9.8c0 2.1-2.5 4.1-4.6 4.1H7.1C4.5 21 2.5 19 2.5 16.9V7.1z" />
-    <path d="m10 15 5-3-5-3v6z" />
-  </svg>
-);
-
 const SocialDropdown = ({
   icon: Icon,
   label,
   links,
   size = "sm",
   hoverClass,
-}: any) => {
+}: {
+  icon: React.ElementType;
+  label: string;
+  links: { name: string; url: string }[];
+  size?: "sm" | "md";
+  hoverClass?: string;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -150,7 +138,7 @@ const SocialDropdown = ({
       {isOpen && (
         <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[150px] rounded-[14px] border border-slate-200 dark:border-white/10 bg-white/90 dark:bg-[#0a101f]/90 shadow-lg dark:shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_1px_rgba(255,255,255,0.05)] backdrop-blur-xl z-50 overflow-hidden transform animate-in fade-in zoom-in-95 duration-200">
           <div className="p-1.5 flex flex-col gap-1">
-            {links.map((link: any, i: number) => (
+            {links.map((link: { name: string; url: string }, i: number) => (
               <a
                 key={i}
                 href={link.url}
