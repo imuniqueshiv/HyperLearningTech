@@ -9,8 +9,6 @@ import {
   Users,
   Code2,
   Palette,
-  BrainCircuit,
-  Award,
   GraduationCap,
 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -138,8 +136,6 @@ export default function TeamPage() {
             className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
           >
             {teamMembers.map((member) => {
-              const Icon = member.icon;
-
               return (
                 <motion.div
                   key={member.id}

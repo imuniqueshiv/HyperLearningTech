@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
 
 @layer base {
   :root {
@@ -77,4 +78,34 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
+}
+
+/* Hero Badge Shimmer */
+@keyframes badge-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.badge-shimmer {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(59, 130, 246, 0.12) 37%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  animation: badge-shimmer 4s ease-in-out infinite;
+}
+
+.dark .badge-shimmer {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(96, 165, 250, 0.08) 37%,
+    transparent 50%
+  );
 }
