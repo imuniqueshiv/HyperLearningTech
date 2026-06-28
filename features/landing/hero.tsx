@@ -81,182 +81,249 @@ export default function Hero() {
   return (
     <section
       id="Home"
-      className="relative overflow-hidden border-b border-border bg-background"
+      className="relative overflow-hidden border-b border-border bg-gradient-to-b from-[#FCFCFE] via-[#F8FAFC] to-white dark:bg-none dark:bg-transparent"
     >
-      {/* Background Glows - Removed grid pattern */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-blue-500/10 blur-[100px]" />
-        <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[100px]" />
+      {/* Background Layers */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Restored Wavy Bluish Effect (40% less contrast) */}
+        <div className="absolute inset-0 opacity-60 dark:hidden pointer-events-none">
+          <div className="absolute top-[-20%] left-[-10%] h-[800px] w-[1200px] -rotate-12 rounded-full bg-gradient-to-br from-blue-400/[0.12] via-indigo-300/[0.08] to-transparent blur-[80px]" />
+          <div className="absolute top-[20%] right-[-10%] h-[700px] w-[1000px] rotate-12 rounded-full bg-gradient-to-bl from-cyan-300/[0.12] via-blue-300/[0.08] to-transparent blur-[80px]" />
+          <div className="absolute bottom-[-10%] left-[15%] h-[600px] w-[900px] -rotate-6 rounded-full bg-gradient-to-tr from-indigo-300/[0.1] via-blue-200/[0.05] to-transparent blur-[80px]" />
+        </div>
+
+        {/* Existing subtle glows */}
+        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-blue-500/[0.02] blur-[160px] dark:bg-blue-500/10" />
+        <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-purple-500/[0.02] blur-[160px] dark:bg-indigo-500/10" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
+      <div className="mx-auto max-w-7xl px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-20">
+        <div className="grid items-center gap-16 lg:grid-cols-[1.3fr_0.7fr] lg:gap-8">
           {/* Left Content */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
+            className="flex flex-col items-start font-sans -mt-6 lg:-mt-8"
           >
-            {/* Badge */}
+            {/* Eyebrow pill */}
             <motion.div variants={itemVariants}>
-              <div className="badge-shimmer mb-8 inline-flex items-center gap-2.5 rounded-full border border-blue-200/40 bg-blue-50/80 px-4 py-1.5 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/15 dark:bg-blue-500/10 dark:text-blue-400">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+              <div className="mb-10 inline-flex items-center rounded-full border border-indigo-500/25 bg-[rgba(99,102,241,0.1)] py-[6px] pl-[8px] pr-[14px]">
+                <div className="mr-2 h-2 w-2 rounded-full bg-[#6366f1] shadow-[0_0_8px_rgba(99,102,241,0.8)]" />
+                <span className="text-[12px] font-[600] tracking-[0.04em] text-indigo-600 dark:text-[#818cf8]">
+                  Smart learning for engineers
                 </span>
-                Smart Learning for Engineers
               </div>
             </motion.div>
 
-            {/* Heading */}
+            {/* Headline */}
             <motion.h1
               variants={itemVariants}
-              className="max-w-4xl text-5xl font-extrabold tracking-tight md:text-6xl lg:text-7xl leading-[1.05]"
+              className="text-[54px] font-[800] leading-[1.1] tracking-[-0.03em] lg:text-[64px]"
             >
-              <span className="bg-gradient-to-b from-[hsl(var(--foreground))] to-[hsl(var(--muted-foreground))] bg-clip-text text-transparent">
-                Learn Better.
-              </span>
+              <span className="text-slate-900 dark:text-[#f1f5f9]">Master</span>
               <br />
-              <span className="relative">
-                <span className="relative bg-gradient-to-r from-[#1D4ED8] to-indigo-500 bg-clip-text text-transparent">
-                  Study Smarter.
-                </span>
+              <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent dark:from-[#6366f1] dark:to-[#6366f1] dark:text-[#6366f1] dark:bg-none">
+                Engineering
+                <span className="text-[#34d399] dark:text-[#34d399]">.</span>
               </span>
             </motion.h1>
 
+            {/* Tagline */}
             <motion.p
               variants={itemVariants}
-              className="mt-6 mb-1 text-base font-normal text-muted-foreground/90 md:text-lg lg:text-xl tracking-wide"
+              className="mt-4 text-[19px] font-[600] tracking-[-0.01em] text-slate-600 dark:text-[#e2e8f0]"
             >
-              &quot;Minimizing Distractions, Maximizing Clarity.&quot;
+              From confusion to confidence.
             </motion.p>
 
-            {/* Description */}
+            {/* Body text */}
             <motion.p
               variants={itemVariants}
-              className="mt-6 max-w-2xl text-lg leading-7 text-muted-foreground"
+              className="mt-6 max-w-[560px] text-[15px] leading-[1.8] text-slate-600 dark:text-[#94a3b8]"
             >
-              Access syllabus-mapped previous year questions, AI-powered notes,
-              topic-wise explanations, and instant learning support designed to
-              help you prepare efficiently and perform confidently in your
-              university examinations.
+              Everything you need for smarter exam preparation—from{" "}
+              <span className="font-[600] text-slate-900 dark:font-[500] dark:text-[#cbd5e1]">
+                syllabus-mapped PYQs
+              </span>{" "}
+              and{" "}
+              <span className="font-[600] text-slate-900 dark:font-[500] dark:text-[#cbd5e1]">
+                AI-powered notes
+              </span>{" "}
+              to topic-wise explanations and instant AI guidance.
             </motion.p>
 
-            {/* Buttons */}
+            {/* Feature pills row */}
             <motion.div
               variants={itemVariants}
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
+              className="mt-12 flex flex-wrap gap-4"
+            >
+              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)]">
+                  <BrainCircuit className="h-3 w-3 text-indigo-600 dark:text-[#818cf8]" />
+                </div>
+                AI-powered notes
+              </div>
+              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(52,211,153,0.15)]">
+                  <CheckCircle2 className="h-3 w-3 text-emerald-600 dark:text-[#34d399]" />
+                </div>
+                Syllabus mapped
+              </div>
+              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(59,130,246,0.15)]">
+                  <svg
+                    className="h-3 w-3 text-blue-500 dark:text-[#60a5fa]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                Topic-wise PYQs
+              </div>
+              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)]">
+                  <BrainCircuit className="h-3 w-3 text-indigo-600 dark:text-[#818cf8]" />
+                </div>
+                Instant AI help
+              </div>
+            </motion.div>
+
+            {/* CTA buttons row */}
+            <motion.div
+              variants={itemVariants}
+              className="mt-8 mb-4 flex flex-row gap-[16px]"
             >
               <a
                 href="#Universities"
                 onClick={scrollToUniversities}
-                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-[#1D4ED8] px-8 py-3.5 font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:bg-[#1E40AF] hover:shadow-blue-500/40 hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="group flex cursor-pointer items-center gap-2 rounded-[12px] bg-gradient-to-br from-[#4f46e5] to-[#6366f1] px-[32px] py-[18px] text-[16px] font-[600] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_8px_30px_rgba(99,102,241,0.25)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_20px_50px_rgba(99,102,241,0.3)] active:scale-[0.98]"
               >
                 Start Learning
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <div className="flex h-[22px] w-[22px] items-center justify-center rounded-[6px] bg-white/15">
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </div>
               </a>
 
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center rounded-xl border border-border bg-background/50 px-8 py-3.5 font-semibold text-foreground backdrop-blur-sm transition-all duration-300 hover:border-[#1D4ED8]/50 hover:bg-background hover:text-[#1D4ED8] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="flex cursor-pointer items-center gap-2 rounded-[12px] border border-[#D8E2F0] bg-transparent px-[28px] py-[15px] text-[15px] font-[600] text-slate-600 transition-all duration-300 hover:border-[#C4D2E5] hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:text-slate-900 dark:border-white/10 dark:text-[#94a3b8] dark:hover:border-white/20 dark:hover:bg-transparent dark:hover:shadow-none dark:hover:text-[#e2e8f0]"
               >
-                Explore Platform
+                Explore platform ↗
               </Link>
             </motion.div>
 
-            {/* Stats */}
+            {/* Divider */}
             <motion.div
               variants={itemVariants}
-              className="mt-14 grid max-w-xl grid-cols-3 divide-x divide-border/50 border-t border-border/60 pt-8"
-            >
-              <div className="pr-6">
-                <p className="text-3xl font-extrabold tracking-tight text-foreground">
-                  <Counter to={25} suffix="+" />
-                </p>
-                <p className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+              className="mt-2 h-[1px] w-full bg-[linear-gradient(90deg,transparent,rgba(0,0,0,0.03)_20%,rgba(0,0,0,0.03)_80%,transparent)] dark:bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.06)_20%,rgba(255,255,255,0.06)_80%,transparent)]"
+            />
+
+            {/* Stats row */}
+            <motion.div variants={itemVariants} className="mt-2 flex flex-row">
+              <div className="pr-[32px]">
+                <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
+                  <Counter to={25} />
+                  <span className="text-[#6366f1]">+</span>
+                </div>
+                <div className="mt-1 text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
                   Years of PYQs
-                </p>
+                </div>
               </div>
-              <div className="px-6">
-                <p className="text-3xl font-extrabold tracking-tight text-foreground">
-                  <Counter to={100} suffix="%" />
-                </p>
-                <p className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+              <div className="border-l border-slate-200 px-[32px] dark:border-white/10">
+                <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
+                  <Counter to={100} />
+                  <span className="text-[#6366f1]">%</span>
+                </div>
+                <div className="mt-1 text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
                   Syllabus Mapped
-                </p>
+                </div>
               </div>
-              <div className="pl-6">
-                <p className="text-3xl font-extrabold tracking-tight text-foreground">
-                  <Counter to={24} suffix="/7" />
-                </p>
-                <p className="mt-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+              <div className="border-l border-slate-200 pl-[32px] dark:border-white/10">
+                <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
+                  <Counter to={24} />
+                  <span className="text-[#6366f1]">/7</span>
+                </div>
+                <div className="mt-1 text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
                   AI Assistant
-                </p>
+                </div>
               </div>
             </motion.div>
           </motion.div>
 
           {/* Right Mockup */}
+          {/* Right Mockup */}
+          {/* Right Mockup */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="relative"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="relative mx-auto mt-16 flex w-full max-w-[500px] justify-center lg:mt-0 lg:max-w-none lg:justify-end"
           >
-            <div className="relative rounded-[2rem] border border-border/20 dark:border-white/[0.08] bg-transparent p-[5px] shadow-[0_0_20px_rgba(29,78,216,0.02)] dark:shadow-[0_0_30px_rgba(29,78,216,0.04)] backdrop-blur-xl">
-              <div className="relative h-full w-full rounded-[calc(2rem-5px)] border border-border/35 dark:border-white/[0.05] bg-background/80 p-6 shadow-inner">
-                {/* Chat Header */}
-                <div className="mb-6 flex items-center justify-between border-b border-border/50 pb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
-                      <BrainCircuit className="h-5 w-5 text-[#1D4ED8]" />
-                    </div>
+            {/* Glowing aura for Light Mode behind AI card */}
+            <div className="absolute inset-0 -z-10 rounded-[24px] bg-indigo-500/20 blur-[60px] dark:bg-transparent" />
+            <div className="relative w-full max-w-[440px] origin-top scale-[1.05] overflow-hidden rounded-[24px] border border-white/[0.04] bg-[#13151A]/95 p-6 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] backdrop-blur-sm font-sans lg:origin-left lg:scale-[1.08] dark:shadow-[0_30px_60px_-15px_rgba(255,255,255,0.07)]">
+              {/* Chat Header */}
+              <div className="-mt-6 -mx-6 mb-5 flex items-center gap-3 border-b border-white/[0.04] bg-white/[0.02] px-6 pt-6 pb-4 backdrop-blur-sm">
+                <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#5964F4] to-[#7D52F5] shadow-[0_0_12px_rgba(99,102,241,0.4)]">
+                  <BrainCircuit
+                    className="h-[18px] w-[18px] text-white"
+                    strokeWidth={2.2}
+                  />
+                </div>
 
-                    <div>
-                      <h3 className="font-semibold text-foreground">
-                        Hyper AI
-                      </h3>
+                <div className="flex flex-col justify-center">
+                  <h3 className="text-[14px] font-[600] leading-tight text-[#f0f0f5]">
+                    Hyper AI
+                  </h3>
+                  <div className="mt-1 flex items-center gap-1.5">
+                    <div className="h-1.5 w-1.5 rounded-full bg-[#34d399] shadow-[0_0_5px_rgba(52,211,153,0.6)]" />
+                    <p className="text-[12px] font-medium leading-tight text-gray-400">
+                      Online • Ready to Help
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                      <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                        <span className="relative flex h-1.5 w-1.5">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                        </span>
-                        Online • Ready to Help
-                      </p>
-                    </div>
+              <div className="space-y-4">
+                {/* User Message */}
+                <div className="flex justify-end">
+                  <div className="max-w-[85%] rounded-[20px_20px_6px_20px] bg-gradient-to-r from-[#5964F4] to-[#7D52F5] px-4 py-2.5 text-[13px] font-medium text-white shadow-[0_3px_10px_rgba(99,102,241,0.3)]">
+                    Explain Big O notation with an example.
                   </div>
                 </div>
 
-                <div className="space-y-5">
-                  {/* User Message */}
-                  <div className="flex justify-end">
-                    <div className="max-w-[80%] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm bg-[#1D4ED8] px-5 py-3 text-sm font-medium text-white shadow-sm">
-                      Explain Big O notation with an example.
+                {/* Hyper AI Message */}
+                <div className="flex flex-col items-start gap-2">
+                  <div className="flex items-center gap-2 px-1">
+                    <div className="flex h-5 w-5 items-center justify-center rounded-[6px] bg-indigo-500/10">
+                      <BrainCircuit
+                        className="h-3.5 w-3.5 text-[#818cf8]"
+                        strokeWidth={2.5}
+                      />
                     </div>
+                    <span className="text-[12px] font-[600] text-[#818cf8]">
+                      Hyper AI
+                    </span>
                   </div>
 
-                  {/* Hyper AI Message */}
-                  <div className="flex justify-start">
-                    <div className="max-w-[90%] rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-sm border border-border/50 dark:border-white/[0.05] bg-card px-5 py-4 shadow-sm">
-                      <div className="mb-3 flex items-center gap-2">
-                        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#1D4ED8]/10">
-                          <BrainCircuit className="h-4 w-4 text-[#1D4ED8]" />
-                        </div>
-
-                        <span className="text-sm font-semibold text-[#1D4ED8]">
-                          Hyper AI
-                        </span>
-                      </div>
-
-                      <p className="text-sm leading-6 text-foreground/80">
+                  <div className="w-full rounded-[16px] border border-white/5 bg-white/[0.05] px-5 py-4">
+                    <div className="space-y-2">
+                      <p className="text-[13px] leading-[1.7] text-[#c8ccd8]">
                         Big O notation represents the maximum growth rate of an
                         algorithm as input size increases.
                       </p>
 
-                      <p className="mt-2.5 text-sm leading-6 text-foreground/80">
+                      <p className="text-[13px] leading-[1.7] text-[#c8ccd8]">
                         For example, Linear Search has{" "}
-                        <span className="font-semibold text-[#1D4ED8]">
+                        <span className="font-semibold text-[#60a5fa]">
                           O(n)
                         </span>{" "}
                         complexity because each element may need to be checked
@@ -264,40 +331,66 @@ export default function Hero() {
                       </p>
                     </div>
                   </div>
+                </div>
 
-                  {/* Related Questions */}
-                  <div className="rounded-2xl border border-border/50 bg-muted/30 p-5">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-[#1D4ED8]">
+                {/* Related Questions */}
+                <div className="flex flex-col overflow-hidden rounded-[16px] border border-white/5 bg-white/[0.05]">
+                  <div className="flex items-center gap-2 px-5 pb-1.5 pt-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-indigo-400 shadow-[0_0_4px_rgba(129,140,248,0.5)]" />
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#818cf8]">
                       Related Previous Year Questions
                     </p>
-
-                    <div className="mt-2 space-y-1 text-sm font-medium text-foreground/80">
-                      <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
-                        <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
-                        Dec 2025 — Q1(b)
-                      </div>
-
-                      <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
-                        <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
-                        Jun 2025 — Q3(a)
-                      </div>
-
-                      <div className="group flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors hover:bg-foreground/5 -mx-2.5">
-                        <CheckCircle2 className="h-4 w-4 text-emerald-500 transition-transform group-hover:scale-110" />
-                        Dec 2024 — Q2
-                      </div>
-                    </div>
                   </div>
 
-                  {/* Input Box */}
-                  <div className="rounded-2xl border border-border/50 bg-muted/30 px-5 py-3.5 transition-all focus-within:border-primary/50 focus-within:ring-4 focus-within:ring-primary/10 hover:border-border cursor-text">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">
-                        Ask Hyper AI anything...
-                      </span>
-
-                      <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                  <div className="flex flex-col divide-y divide-white/[0.02]">
+                    <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-white/[0.02]">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle2
+                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                          strokeWidth={2.5}
+                        />
+                        <span className="text-[13px] font-medium text-[#d1d5db]">
+                          Dec 2025 — Q1(b)
+                        </span>
+                      </div>
+                      <ArrowRight className="h-4 w-4 text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
                     </div>
+
+                    <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-white/[0.02]">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle2
+                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                          strokeWidth={2.5}
+                        />
+                        <span className="text-[13px] font-medium text-[#d1d5db]">
+                          Jun 2025 — Q3(a)
+                        </span>
+                      </div>
+                      <ArrowRight className="h-4 w-4 text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
+                    </div>
+
+                    <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-white/[0.02]">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle2
+                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                          strokeWidth={2.5}
+                        />
+                        <span className="text-[13px] font-medium text-[#d1d5db]">
+                          Dec 2024 — Q2
+                        </span>
+                      </div>
+                      <ArrowRight className="h-4 w-4 text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Input Box */}
+                <div className="group mt-3 flex items-center justify-between rounded-[16px] border border-transparent bg-white/[0.04] px-4 py-3.5 shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-indigo-500/50 hover:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2),0_0_15px_rgba(99,102,241,0.2)]">
+                  <span className="text-[13px] font-medium text-[#6b7280]">
+                    Ask Hyper AI anything...
+                  </span>
+                  <div className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-[10px] bg-gradient-to-r from-indigo-500 to-purple-500 shadow-[0_4px_12px_rgba(168,85,247,0.25)] transition-transform hover:scale-105">
+                    <ArrowRight className="h-4 w-4 text-white" />
                   </div>
                 </div>
               </div>
