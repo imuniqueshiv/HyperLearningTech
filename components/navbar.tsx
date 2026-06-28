@@ -119,10 +119,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-500 ${
+      className={`dark sticky top-0 z-50 transition-all duration-500 border-b border-white/10 ${
         scrolled
-          ? "border-b border-border/50 dark:border-white/5 bg-background/85 dark:bg-[#0B1528]/85 shadow-sm backdrop-blur-md supports-[backdrop-filter]:bg-background/70 dark:supports-[backdrop-filter]:bg-[#0B1528]/70"
-          : "bg-background dark:bg-gradient-to-r dark:from-[#0B1528] dark:to-[#0A101D] border-b border-border/50 dark:border-white/5"
+          ? "bg-[#091A40]/85 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#091A40]/70"
+          : "bg-gradient-to-r from-[#061126] via-[#0D245A] to-[#061126]"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -167,21 +167,25 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className={`relative px-3 py-1.5 text-[14px] font-medium tracking-[0.02em] transition-colors duration-200 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50 ${
+                  className={`group relative px-4 py-2 text-[14.5px] tracking-[0.01em] transition-colors duration-200 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/50 ${
                     isActive
-                      ? "text-foreground dark:text-white"
-                      : "text-muted-foreground hover:text-foreground dark:text-[#AFC8FF] dark:hover:text-white after:absolute after:bottom-[4px] after:left-3 after:right-3 after:h-[1px] after:bg-foreground/60 dark:after:bg-white/60 after:scale-x-0 after:origin-right hover:after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out"
+                      ? "text-foreground font-semibold dark:text-white"
+                      : "text-muted-foreground font-medium hover:text-foreground dark:text-slate-300 dark:hover:text-white"
                   }`}
                 >
                   {isActive && (
                     <motion.div
-                      className="absolute inset-0 rounded-full bg-black/[0.04] border border-black/10 dark:bg-white/[0.06] dark:border-white/10"
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      layoutId="activeNavIndicator"
+                      className="absolute inset-0 rounded-full bg-white border border-black/5 shadow-[0_1px_3px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.6)] dark:bg-white/[0.08] dark:border-white/[0.08] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_2px_4px_rgba(0,0,0,0.2)] dark:backdrop-blur-md"
+                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
                   )}
                   <span className="relative z-10">{link.label}</span>
+                  
+                  {/* Hover Underline */}
+                  {!isActive && (
+                    <span className="absolute bottom-1.5 left-1/2 h-[1.5px] w-[calc(100%-1.5rem)] -translate-x-1/2 origin-center scale-x-0 bg-gradient-to-r from-transparent via-blue-600/80 to-transparent transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-x-100 dark:via-white/70" />
+                  )}
                 </Link>
               );
             })}
@@ -189,22 +193,32 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden items-center gap-3 md:flex">
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              aria-label="Toggle theme"
-              className="relative flex h-10 w-10 items-center justify-center rounded-full text-foreground/80 transition-colors duration-200 hover:bg-black/5 hover:text-foreground dark:text-white/90 dark:hover:bg-white/10 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
-            >
-              {mounted &&
-                (theme === "dark" ? (
-                  <Sun className="h-[18px] w-[18px]" />
-                ) : (
-                  <Moon className="h-[18px] w-[18px]" />
-                ))}
-            </button>
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                aria-label="Toggle theme"
+                className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/10 dark:border-white/15 bg-black/[0.02] dark:bg-black/20 shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_2px_6px_rgba(0,0,0,0.3)] transition-all hover:border-black/20 dark:hover:border-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
+              >
+                <div
+                  className={`flex h-full w-1/2 items-center justify-center transition-all duration-300 ${
+                    theme !== "dark" ? "bg-white dark:bg-white/15 shadow-[0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.2)]" : "hover:bg-black/5 dark:hover:bg-white/5"
+                  }`}
+                >
+                  <Sun strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme !== "dark" ? "text-amber-600 drop-shadow-sm" : "text-slate-500 dark:text-white/40"}`} />
+                </div>
+                <div
+                  className={`flex h-full w-1/2 items-center justify-center transition-all duration-300 ${
+                    theme === "dark" ? "bg-white dark:bg-white/15 shadow-[0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.2)]" : "hover:bg-black/5 dark:hover:bg-white/5"
+                  }`}
+                >
+                  <Moon strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme === "dark" ? "text-white drop-shadow-sm" : "text-slate-500 dark:text-white/40"}`} />
+                </div>
+              </button>
+            )}
 
             <Link
               href="/sign-in"
-              className="rounded-xl border border-border px-5 py-2 text-[14px] font-medium text-foreground transition-all duration-300 hover:border-border/80 hover:bg-muted dark:border-white/15 dark:text-[#F4F5F7] dark:hover:border-white/25 dark:hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
+              className="flex h-[34px] items-center justify-center rounded-[14px] border border-black/10 dark:border-white/10 px-5 text-[14px] font-semibold text-foreground transition-all duration-300 bg-gradient-to-b from-black/[0.01] to-black/[0.05] dark:from-white/[0.08] dark:to-white/[0.01] backdrop-blur-md shadow-[inset_0_1px_0px_rgba(255,255,255,0.6),0_1px_2px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_1px_0px_rgba(255,255,255,0.1),0_1px_2px_rgba(0,0,0,0.2)] hover:shadow-[inset_0_1px_0px_rgba(255,255,255,0.8),0_2px_6px_rgba(0,0,0,0.08)] dark:hover:shadow-[inset_0_1px_0px_rgba(255,255,255,0.15),0_2px_8px_rgba(0,0,0,0.3)] hover:-translate-y-[0.5px] hover:border-black/20 dark:hover:border-white/20 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
             >
               Sign In
             </Link>
@@ -241,7 +255,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-border/50 dark:border-white/10 bg-background/95 dark:bg-[#0B1528]/95 backdrop-blur-md md:hidden"
+            className="overflow-hidden border-t border-border/50 dark:border-white/10 bg-background/95 dark:bg-[#091A40]/95 backdrop-blur-xl md:hidden"
           >
             <div className="space-y-1 px-6 py-6">
               {navLinks.map((link) => {
@@ -272,24 +286,27 @@ export default function Navbar() {
 
               <div className="mt-6 flex flex-col gap-3 border-t border-border/50 dark:border-white/10 pt-6">
                 <button
-                  onClick={() => {
-                    setTheme(theme === "dark" ? "light" : "dark");
-                    setIsOpen(false);
-                  }}
-                  className="flex w-full items-center justify-center rounded-xl border border-border px-4 py-3 text-foreground/90 transition-all duration-200 hover:bg-black/5 hover:text-foreground dark:border-white/15 dark:text-white/90 dark:hover:bg-white/5 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                  aria-label="Toggle theme"
+                  className="flex w-full items-center justify-between rounded-xl p-3 text-base font-medium text-foreground transition-colors hover:bg-black/5 dark:text-white/90 dark:hover:bg-white/10"
                 >
-                  {mounted &&
-                    (theme === "dark" ? (
-                      <Sun className="h-[18px] w-[18px]" />
-                    ) : (
-                      <Moon className="h-[18px] w-[18px]" />
-                    ))}
+                  <span>Theme</span>
+                  {mounted && (
+                    <div className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/20 dark:border-white/25 bg-transparent">
+                      <div className={`flex h-full w-1/2 items-center justify-center transition-colors ${theme !== "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}>
+                        <Sun strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme !== "dark" ? "text-amber-600" : "text-slate-500 dark:text-white/60"}`} />
+                      </div>
+                      <div className={`flex h-full w-1/2 items-center justify-center transition-colors ${theme === "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}>
+                        <Moon strokeWidth={2.5} className={`h-[15px] w-[15px] ${theme === "dark" ? "text-white" : "text-slate-500 dark:text-white/60"}`} />
+                      </div>
+                    </div>
+                  )}
                 </button>
 
                 <Link
                   href="/sign-in"
                   onClick={() => setIsOpen(false)}
-                  className="w-full rounded-xl border border-border px-4 py-3 text-center text-[15px] font-medium text-foreground transition-all duration-200 hover:bg-muted dark:border-white/15 dark:text-[#F4F5F7] dark:hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
+                  className="w-full rounded-xl border border-black/20 px-4 py-3 text-center text-[15px] font-semibold text-foreground transition-all duration-200 hover:bg-black/5 dark:border-white/25 dark:text-white dark:hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
                 >
                   Sign In
                 </Link>

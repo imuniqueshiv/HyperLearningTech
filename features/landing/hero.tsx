@@ -118,10 +118,6 @@ export default function Hero() {
               </span>
               <br />
               <span className="relative">
-                <span
-                  className="absolute -inset-x-4 -inset-y-2 bg-[#1D4ED8]/8 blur-xl rounded-full dark:bg-[#1D4ED8]/10"
-                  aria-hidden="true"
-                />
                 <span className="relative bg-gradient-to-r from-[#1D4ED8] to-indigo-500 bg-clip-text text-transparent">
                   Study Smarter.
                 </span>
@@ -207,7 +203,8 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-[2rem] border border-border/50 dark:border-white/[0.08] bg-background/80 p-6 shadow-[0_0_40px_rgba(29,78,216,0.08)] dark:shadow-[0_0_40px_rgba(29,78,216,0.15)] backdrop-blur-xl">
+            <div className="relative rounded-[2rem] border border-border/20 dark:border-white/[0.08] bg-transparent p-[5px] shadow-[0_0_20px_rgba(29,78,216,0.02)] dark:shadow-[0_0_30px_rgba(29,78,216,0.04)] backdrop-blur-xl">
+              <div className="relative h-full w-full rounded-[calc(2rem-5px)] border border-border/35 dark:border-white/[0.05] bg-background/80 p-6 shadow-inner">
               {/* Chat Header */}
               <div className="mb-6 flex items-center justify-between border-b border-border/50 pb-4">
                 <div className="flex items-center gap-3">
@@ -299,6 +296,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </motion.div>
         </div>
