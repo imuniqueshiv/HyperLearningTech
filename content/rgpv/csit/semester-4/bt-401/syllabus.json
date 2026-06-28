@@ -1,1 +1,10 @@
-{}
+{
+  "subject": {
+    "id": "bt-401-csit",
+    "code": "BT-401",
+    "name": "Mathematics-III",
+    "title": "BT-401 - Mathematics-III",
+    "semester": "IV"
+  },
+  "modules": []
+}
