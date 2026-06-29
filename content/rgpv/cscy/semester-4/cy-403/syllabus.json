@@ -6,5 +6,82 @@
     "title": "CY-403 - Computer Networks",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Computer Networks & Physical Layer",
+      "hours": 8,
+      "topics": [
+        "Introduction to Computer Networks",
+        "Network architecture",
+        "OSI and TCP/IP reference models",
+        "Network Topologies",
+        "Switching Techniques: Circuit, Packet and Message Switching",
+        "Physical Layer: Transmission Media (Guided and Unguided)",
+        "Data Rate Limits",
+        "Nyquist and Shannon's Theorem",
+        "ISDN"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Link Layer & Medium Access Control",
+      "hours": 8,
+      "topics": [
+        "Data Link Layer Design Issues",
+        "Error Detection and Correction",
+        "Cyclic Redundancy Check (CRC)",
+        "Hamming Codes",
+        "Flow Control Protocols: Stop-and-Wait, Sliding Window",
+        "Medium Access Control (MAC) Sublayer: Static vs Dynamic channel allocation",
+        "ALOHA",
+        "CSMA, CSMA/CD",
+        "HDLC",
+        "Frame Relay",
+        "PPP, SLIP"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Network Devices & LAN Standards",
+      "hours": 8,
+      "topics": [
+        "IEEE 802 Standards: IEEE 802.3 (Ethernet), IEEE 802.4 (Token Bus), IEEE 802.5 (Token Ring)",
+        "Network interconnection devices: Hubs, Switches, Bridges, Routers, and Gateways",
+        "Remote Bridging",
+        "Virtual Circuit vs Datagram Subnets"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Network Layer & Routing Protocols",
+      "hours": 8,
+      "topics": [
+        "Network Layer Protocols",
+        "IP Addressing: Classful IP Addressing, Classless Inter-Domain Routing (CIDR)",
+        "Subnetting and Subnet Masks",
+        "Routing Algorithms: Shortest Path Routing, Distance Vector Routing (DVR), Link State Routing",
+        "Internet Control Protocols: ARP, RARP, ICMP",
+        "TCP/IP protocol stack"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Transport Layer & Application Layer",
+      "hours": 8,
+      "topics": [
+        "Transport Layer Services",
+        "Connection establishment and release (Three-way and Four-way handshakes)",
+        "Connectionless and Connection-oriented communication",
+        "Congestion Control Algorithms",
+        "Load Shedding, Jitter Control",
+        "Application Layer: Domain Name System (DNS), Email Architecture and Formats"
+      ]
+    }
+  ]
 }

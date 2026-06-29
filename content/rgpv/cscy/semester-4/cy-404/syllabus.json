@@ -6,5 +6,84 @@
     "title": "CY-404 - Operating Systems",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Operating Systems",
+      "hours": 8,
+      "topics": [
+        "Introduction to Operating Systems: Function, Evolution",
+        "Desirable Characteristics and features of an O/S",
+        "Operating Systems Services: Types of Services",
+        "Different ways of providing these Services – Utility Programs, System Calls"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Process Management & Inter Process Communication",
+      "hours": 8,
+      "topics": [
+        "Process Management: Concept of a process, Process State Diagram",
+        "Process based kernel, Dual mode of process execution",
+        "CPU scheduling algorithms, deterministic modeling",
+        "System calls for Process Management",
+        "Concept of Threads: User level & Kernel level Threads",
+        "Process Management in UNIX & Windows",
+        "Inter Process Communication: Real and Virtual Concurrency",
+        "Mutual Exclusion, Synchronization",
+        "Critical Section Problem, Solution to Critical Section Problem : Semaphores and their Operations and their implementation",
+        "Deadlocks: Deadlock Problems, Characterization, Prevention, Avoidance, Recovery",
+        "IPC in UNIX & Windows"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Memory Management",
+      "hours": 8,
+      "topics": [
+        "Memory Management: Different Memory Management Techniques – Partitioning, Swapping, Segmentation, Paging, Paged Segmentation",
+        "Comparison of these techniques",
+        "Techniques for supporting the execution of large programs: Overlay, Dynamic Linking and Loading",
+        "Virtual Memory – Concept, Implementation by Demand Paging etc.",
+        "Memory management in UNIX & Windows"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "File Systems Management",
+      "hours": 8,
+      "topics": [
+        "File Systems Management: File Concept",
+        "User’s and System Programmer’s view of File System",
+        "Disk Organization, Tape Organization",
+        "Different Modules of a File System",
+        "Disk Space Allocation Methods – Contiguous, Linked, Indexed",
+        "Directory Structures",
+        "File Protection",
+        "System Calls for File Management",
+        "Disk Scheduling Algorithms",
+        "File Systems in UNIX & Windows"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Input / Output Management",
+      "hours": 8,
+      "topics": [
+        "Input / Output Management : Principles and Programming",
+        "Input/Output Problems",
+        "Different I/O operations: Program Controlled, Interrupt Driven, Concurrent I/O, Asynchronous Operations",
+        "Logical structure of I/O function",
+        "I/O Buffering",
+        "Kernel I/o Subsystem",
+        "Introduction to Network, Distributed and Multiprocessor Operating Systems",
+        "I/O management in UNIX & Windows"
+      ]
+    }
+  ]
 }

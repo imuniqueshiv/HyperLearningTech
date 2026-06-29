@@ -6,5 +6,79 @@
     "title": "CY-401 - Introduction to Linear Algebra",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Vector Spaces and Linear Transformations",
+      "hours": 8,
+      "topics": [
+        "Direct sum of a vector space",
+        "Dual Spaces",
+        "Annihilator of a subspace",
+        "Quotient Spaces",
+        "Algebra of Linear transformations"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Characteristic Values and Decompositions",
+      "hours": 8,
+      "topics": [
+        "Characteristic values and characteristic polynomials",
+        "diagonalizable transformations",
+        "annihilating polynomials",
+        "Cayley-Hamilton theorem",
+        "invariant subspaces and triangular form",
+        "simultaneous triangularization and diagonalization",
+        "direct sum decompositions",
+        "invariant direct sums",
+        "primary decomposition theorem"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Inner Product Spaces and Spectral Theory",
+      "hours": 8,
+      "topics": [
+        "Adjoint of a linear transformation",
+        "Inner product spaces",
+        "Eigen values and eigenvectors of a linear transformation",
+        "Diagonalization",
+        "Invariant subspaces",
+        "Inner product spaces, adjoints, unitary and normal transformations",
+        "spectral Theorem",
+        "Jordan canonical form"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Canonical Forms and Similarity",
+      "hours": 8,
+      "topics": [
+        "Canonical forms",
+        "Similarity of linear transformations",
+        "Reduction to triangular forms",
+        "Nilpotent transformations",
+        "Primary decomposition theorem",
+        "Jordan blocks and Jordan forms",
+        "Invariants of linear transformations"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Bilinear Forms and Transformations",
+      "hours": 8,
+      "topics": [
+        "Hermitian, Self adjoint, Unitary and normal linear transformation",
+        "Symmetric bilinear forms",
+        "skew symmetric bilinear forms",
+        "Group preserving bilinear forms"
+      ]
+    }
+  ]
 }

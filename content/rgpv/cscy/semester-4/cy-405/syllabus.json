@@ -6,5 +6,83 @@
     "title": "CY-405 - Database Management System",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Concepts of Data and DBMS",
+      "hours": 8,
+      "topics": [
+        "Basic Concepts of Data and DBMS",
+        "File organization and access methods",
+        "Introduction to DBMS",
+        "Difference between DBMS and traditional file storage system",
+        "Characteristics of DBMS",
+        "Data Models, Schemas and Instances",
+        "DBMS architecture",
+        "Components of DBMS",
+        "Data Independence",
+        "Study of Entity Relationship Model",
+        "Type of attributes",
+        "Entity types",
+        "Relationship and Cardinalities",
+        "Participation, Roles and constraints"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Relational Data Model",
+      "hours": 8,
+      "topics": [
+        "Relational Data Model: Domains, Tuples, Attributes, Relations",
+        "keys and types of keys",
+        "Integrity Constraints",
+        "Relational Algebra: Queries using Select operation, project operation, renaming, joins, union, intersection, difference, division, and product etc.",
+        "SQL –basic SQL queries, functions, constraints, joins and nested queries",
+        "Triggers, assertions, views and stored procedures and PL/SQL"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Normalization Theory and Database methodologies",
+      "hours": 8,
+      "topics": [
+        "Normalization Theory and Database methodologies: Relation Schemas",
+        "Functional Dependencies- Definition and rules of axioms",
+        "Normal forms- 1NF, 2NF, 3NF and BCNF",
+        "Dependency preservation, properties",
+        "loss less join decomposition"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Transaction Processing",
+      "hours": 8,
+      "topics": [
+        "Transaction Processing: States of transaction and desirable properties",
+        "Introduction to Concurrency and Recovery",
+        "Schedules, Recoverability & Serializability",
+        "types of serializability and test for serializability",
+        "Concurrency Control: Two phase locking, Timestamp Based concurrency control",
+        "Deadlocks: Avoidance, Prevention , detection & resolution",
+        "Recovery: Basic concepts, techniques based on deferred update and immediate update",
+        "Shadow paging, check points"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Storage structures",
+      "hours": 8,
+      "topics": [
+        "Storage structures: Secondary Storage Devices",
+        "Hashing & Indexing structures: Single level & multilevel indices",
+        "Query Processing and Optimization: Various algorithms to implement select, project & join operation of relational algebra, complexity measures",
+        "Case Study of any contemporary DBMS"
+      ]
+    }
+  ]
 }
