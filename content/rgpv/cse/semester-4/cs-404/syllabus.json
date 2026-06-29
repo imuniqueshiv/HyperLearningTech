@@ -2,9 +2,101 @@
   "subject": {
     "id": "cs-404",
     "code": "CS-404",
-    "name": "Computer Org. & Architecture (COA)",
-    "title": "CS-404 - Computer Org. & Architecture (COA)",
+    "name": "Computer Org. & Architecture",
+    "title": "CS-404 - Computer Org. & Architecture",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Structure of Computer",
+      "hours": 8,
+      "topics": [
+        "Structure of Desktop Computers",
+        "CPU: General Register Organization-Memory Register, Instruction Register, Control Word, Stack Organization",
+        "Instruction Format",
+        "ALU",
+        "I/O System",
+        "bus",
+        "CPU and Memory Program Counter",
+        "Bus Structure",
+        "Register Transfer Language-Bus and Memory Transfer",
+        "addressing modes"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Control Unit Organization",
+      "hours": 8,
+      "topics": [
+        "Basic Concept of Instruction",
+        "Instruction Types",
+        "Micro Instruction Formats",
+        "Fetch and Execution cycle",
+        "Hardwired control unit",
+        "Microprogrammed Control unit microprogram sequencer Control Memory",
+        "Sequencing and Execution of Micro Instruction"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Computer Arithmetic",
+      "hours": 8,
+      "topics": [
+        "Addition and Subtraction",
+        "Tools Compliment Representation",
+        "Signed Addition and Subtraction",
+        "Multiplication and division",
+        "Booths Algorithm",
+        "Division Operation",
+        "Floating Point Arithmetic Operation",
+        "design of Arithmetic unit"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "I/O Organization",
+      "hours": 8,
+      "topics": [
+        "I/O Interface –PCI Bus, SCSI Bus, USB",
+        "Data Transfer: Serial, Parallel, Synchronous, Asynchronous Modes of Data Transfer",
+        "Direct Memory Access(DMA)",
+        "I/O Processor"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Memory Organization",
+      "hours": 8,
+      "topics": [
+        "Main memory-RAM, ROM",
+        "Secondary Memory –Magnetic Tape, Disk, Optical Storage",
+        "Cache Memory: Cache Structure and Design, Mapping Scheme, Replacement Algorithm, Improving Cache Performance",
+        "Virtual Memory",
+        "memory management hardware"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Multiprocessors",
+      "hours": 8,
+      "topics": [
+        "Characteristics of Multiprocessor",
+        "Structure of Multiprocessor-Inter-processor Arbitration",
+        "Inter-Processor Communication and Synchronization",
+        "Memory in Multiprocessor System",
+        "Concept of Pipelining",
+        "Vector Processing",
+        "Array Processing",
+        "RISC And CISC",
+        "Study of Multicore Processor –Intel, AMD"
+      ]
+    }
+  ]
 }
