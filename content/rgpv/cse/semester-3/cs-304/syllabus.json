@@ -2,9 +2,89 @@
   "subject": {
     "id": "cs-304",
     "code": "CS-304",
-    "name": "Digital Systems (DS)",
-    "title": "CS-304 - Digital Systems (DS)",
+    "name": "Digital Systems",
+    "title": "CS-304 - Digital Systems",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Review of number systems",
+      "hours": 8,
+      "topics": [
+        "Review of number systems and number base conversions",
+        "Binary codes",
+        "Boolean algebra",
+        "Boolean functions",
+        "Logic gates",
+        "Simplification of Boolean functions",
+        "Karnaugh map methods",
+        "SOP-POS simplification",
+        "NAND-NOR implementation"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Combinational Logic",
+      "hours": 8,
+      "topics": [
+        "Combinational Logic: Half adder, Half subtractor, Full adder, Full subtractor",
+        "Lookahead carry generator",
+        "BCD adder",
+        "Series and parallel addition",
+        "Multiplexer – demultiplexer",
+        "Encoder- decoder",
+        "Arithmetic circuits",
+        "ALU"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Sequential logic",
+      "hours": 8,
+      "topics": [
+        "Sequential logic: flip flops, D, T, S-R, J-K Master- Slave",
+        "Racing condition",
+        "Edge & Level triggered circuits",
+        "Shift registers",
+        "Asynchronous and synchronous counters, their types and state diagrams",
+        "Semiconductor memories",
+        "Introduction to digital ICs 2716, 2732 etc. & their address decoding",
+        "Modern trends in semiconductor memories such as DRAM, FLASH RAM etc.",
+        "Designing with ROM and PLA"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to A/D & D/A convertors",
+      "hours": 8,
+      "topics": [
+        "Introduction to A/D & D/A convertors & their types",
+        "Sample and hold circuits",
+        "Voltage to Frequency & Frequency to Voltage conversion",
+        "Multivibrators: Bistable, Monostable, Astable, Schmitt trigger",
+        "IC 555 & Its applications",
+        "TTL, PMOS, CMOS and NMOS logic",
+        "Interfacing between TTL to MOS"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to Digital Communication",
+      "hours": 8,
+      "topics": [
+        "Introduction to Digital Communication: Nyquist sampling theorem",
+        "Time division multiplexing",
+        "PCM",
+        "Quantization error",
+        "Introduction to BPSK & BFSK modulation schemes",
+        "Shannon’s theorem for channel capacity"
+      ]
+    }
+  ]
 }

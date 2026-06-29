@@ -2,9 +2,95 @@
   "subject": {
     "id": "cs-303",
     "code": "CS-303",
-    "name": "Data Structure (DS)",
-    "title": "CS-303 - Data Structure (DS)",
+    "name": "Data Structures",
+    "title": "CS-303 - Data Structures",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Data Structures & Linear Data Structures",
+      "hours": 8,
+      "topics": [
+        "Review of C programming language",
+        "Introduction to Data Structure: Concepts of Data and Information",
+        "Classification of Data structures",
+        "Abstract Data Types",
+        "Implementation aspects: Memory representation",
+        "Data structures operations and its cost estimation",
+        "Introduction to linear data structures - Arrays",
+        "Linked List: Representation of linked list in memory",
+        "Different implementation of linked list",
+        "Circular linked list, doubly linked list, etc.",
+        "Application of linked list: polynomial manipulation using linked list, etc."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Stacks and Queues",
+      "hours": 8,
+      "topics": [
+        "Stacks: Stacks as ADT",
+        "Different implementation of stack",
+        "Multiple stacks",
+        "Application of Stack: Conversion of infix to postfix notation using stack",
+        "Evaluation of postfix expression",
+        "Recursion",
+        "Queues: Queues as ADT",
+        "Different implementation of queue",
+        "Circular queue",
+        "Concept of Dqueue and Priority Queue",
+        "Queue simulation",
+        "Application of queues"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Trees",
+      "hours": 8,
+      "topics": [
+        "Tree: Definitions - Height, depth, order, degree etc.",
+        "Binary Search Tree - Operations, Traversal, Search",
+        "AVL Tree",
+        "Heap",
+        "Applications and comparison of various types of tree",
+        "Introduction to forest, multi-way Tree, B tree, B+ tree, B* tree and red-black tree"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Graphs",
+      "hours": 8,
+      "topics": [
+        "Graphs: Introduction",
+        "Classification of graph: Directed and Undirected graphs, etc",
+        "Representation",
+        "Graph Traversal: Depth First Search (DFS), Breadth First Search (BFS)",
+        "Graph algorithm: Minimum Spanning Tree (MST)- Kruskal, Prim’s algorithms",
+        "Dijkstra’s shortest path algorithm",
+        "Comparison between different graph algorithms",
+        "Application of graphs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Sorting, Searching, and Hashing",
+      "hours": 8,
+      "topics": [
+        "Sorting: Introduction",
+        "Sort methods like: Bubble Sort, Quick sort",
+        "Selection sort, Heap sort, Insertion sort, Shell sort, Merge sort and Radix sort",
+        "Comparison of various sorting techniques",
+        "Searching: Basic Search Techniques: Sequential search, Binary search",
+        "Comparison of search methods",
+        "Hashing & Indexing",
+        "Case Study: Application of various data structures in operating system, DBMS etc."
+      ]
+    }
+  ]
 }
