@@ -1,9 +1,1141 @@
 {
   "subject": {
-    "id": "al-305",
-    "code": "AL-305",
-    "name": "Object Oriented Programming and Methodology (OOPM)",
-    "title": "AL-305 - Object Oriented Programming and Methodology (OOPM)"
+    "id": "ad-305",
+    "code": "AD-305",
+    "name": "Object Oriented Programming and Methodology",
+    "title": "AD/AL/CD/CY/IS-305 (GS) – Object Oriented Programming and Methodology",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the various control statement with example.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss and compare run time and compile time polymorphism.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain object oriented programming languages with its features.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are Empty classes? Can instance empty class be created? Give reason.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the role of Cout and Cin in detail. Why they are used in C++ and from which class they belong to? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Operator overloading? Can friend function be used to overload the assignment operator (=).",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Write short notes on (any two): i) Exception handling ii) New and delete iii) Polymorphism",
+              "unit": "Unit 5/2/4",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a program in C++ which demonstrate the use of Inheritance.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain pointer and function pointer.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the advantages and limitation of using default arguments in a function? Write a program which defines a function with three default arguments and call the function in four different ways.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How inherited method is different from redefined method?",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Design a class called as FATHER and MOTHER as base classes and class CHILD which is derived from both FATHER and MOTHER. Write a C++ program to display the qualities of CHILD due to inheritance.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the various stream classes and stream error? Explain them in brief. What are input and output streams? Give examples.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What are the access modifiers? How many types of access modifiers are available in C++? Explain each of them and their role in implementing the data hiding in object oriented programming.",
+              "unit": "Unit 2",
+              "type": "encapsulation"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain in detail about exception and how they handled? Define function template and class template.",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the characteristics of Object-Oriented Programming and Procedural Programming in brief.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe in detail the features of object-oriented paradigm.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is meant by abstract class?",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is constructor? Is it mandatory to use constructor in a class.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the fundamental concept behind inheritance in object-oriented programming by taking an example. Define multiple, multilevel and hybrid inheritance with diagram and syntax.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the concept of association and aggregation in object-oriented approach. What is Abstract class? Why Abstract classes are used?",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Create a class called cake with attributes height, weight, shape and message with a default constructor. Overload the constructor with arguments. Create methods to display details and increase the height by 2 cms and weight by 0.5 kg.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How polymorphism is achieved at compile time and run time?",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is meant by exceptions? How exception is handled?",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain ATM system using object-oriented diagram.",
+              "unit": "Unit 5",
+              "type": "case-study"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by Array Index Out of Bounds Exception and Null Pointer Exception?",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are member functions? Explain with example.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How message passing is possible in JAVA? Give example.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Give example of multiple object declaration, variable declarations and constant declaration.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Association b) Access modifiers c) Abstract base classes",
+              "unit": "Unit 3/2/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by object-oriented programming? What are the advantages of programming using object oriented? Explain and define various OOP concepts in brief.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Briefly describe merits and demerits of object-oriented methodology.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the properties of encapsulation and data abstraction?",
+              "unit": "Unit 2",
+              "type": "encapsulation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is construction and destruction? Explain with suitable example.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the parameter passing models briefly.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe the role of multiple inheritance in object-oriented programming.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the meaning of polymorphism. How polymorphism is achieved at run time? Explain with an example.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Differentiate between Overriding and Overloading methods.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the concept of exception handling in JAVA.",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is meant by file stream objects? Give example.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write a C++/JAVA program to calculate the area of rectangle, square and circle using constructor overloading.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is interface? Discuss its concept interfaces.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the concept of multithreading in object-oriented programming approach. Write its benefits.",
+              "unit": "Unit 5",
+              "type": "multithreading"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain library management system using object-oriented diagram.",
+              "unit": "Unit 5",
+              "type": "case-study"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Data Collection b) Message Passing c) Static polymorphism",
+              "unit": "Unit 5/2/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the various control statement with example.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss and compare run time and compile time polymorphism.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is meant by abstract class?",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is constructor? Is it mandatory to use constructor in a class.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain public, private and protected access specifiers and show their visibility when they are inherited as public, private and protected?",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define operator overloading? Explain how to overload unary operator and binary operator?",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Write short notes on (any two): i) Exception handling ii) New and delete iii) Polymorphism",
+              "unit": "Unit 5/2/4",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What do you mean by Array Index Out of Bounds Exception and Null Pointer Exception?",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are member functions? Explain with example.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Write a program having student as an abstract class and create many derived classes such as engineering, science medical etc. from the student class. Create their objects and process them.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write an interactive program for manipulating object of distance class. Support member functions for adding and subtracting distance members of two objects?",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain virtual function and write its purpose.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Access modifiers b) Abstract base classes c) Association",
+              "unit": "Unit 2/3/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "How does Object-Oriented Programming (OOP) differ from procedural programming, and what are the key features of the object-oriented paradigm?",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the merits and demerits of using object-oriented methodology in software development, compared to other programming paradigms.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the concept of exception handling in object-oriented programming, including the mechanisms used to handle runtime errors and exceptions gracefully.",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the process of Input/Output (I/O) processing in object-oriented programming, including the handling of data types, type conversion and control statements.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the concepts of encapsulation and data abstraction in object-oriented programming and explain how they enable modular and reusable code design.",
+              "unit": "Unit 2",
+              "type": "encapsulation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the concept of objects in object-oriented programming, including their state, behavior and identity and how they are represented in code.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss attributes and services in the context of object-oriented programming, including the role of access modifier and static members in defining class behavior.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the concept of instances in object-oriented programming and how they represent individual objects created from a class template?",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the process of message passing in object-oriented programming and its role in enabling communication between objects.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the construction and destruction of objects in object-oriented programming, including the use of constructors and destructors to manage object lifecycle.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss association and aggregation as relationship types in object-oriented programming and provide examples of each.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the concept of interfaces and abstract classes in object-oriented programming, including their role in defining common behavior and enforcing contracts.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss virtual functions, friend functions and static functions in object-oriented programming, including their usage and implications for class design.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain how strings are handled in object-oriented programming, including common operations and best practices for string manipulation.",
+              "unit": "Unit 5",
+              "type": "strings"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Introduce the concepts of multi-threading and data collections in object-oriented programming and discuss their applications in building concurrent and data-intensive systems. Additionally, provide a case study, such as an ATM or library management system, to illustrate the practical application of object-oriented thinking and programming principles.",
+              "unit": "Unit 5",
+              "type": "case-study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define the object model. What are the core elements of an object model in OOP?",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the main features of the object-oriented paradigm and how do they contribute to its advantages and disadvantages?",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How are objects constructed and destroyed in OOP and what are the key concepts involved in this process?",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the concept of objects with respect to their state, behaviour and identity.",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain different types of loops in OOP. Give examples of for, while and do-while loops.",
+              "unit": "Unit 1",
+              "type": "oop-basics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are static members of a class? How are they different from instance members?",
+              "unit": "Unit 2",
+              "type": "classes-objects"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the concept of the 'is a' relationship in inheritance.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Compare interfaces and abstract classes in terms of features, use cases and flexibility.",
+              "unit": "Unit 3",
+              "type": "inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How does a friend class in C++ access the private and protected members of another class and what are the implications of this access?",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate between compile-time (static) and run-time (dynamic) polymorphism with examples.",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "What is a friend function in C++? Why and when is it used? What are the limitations of friend functions in terms of encapsulation and security?",
+              "unit": "Unit 4",
+              "type": "polymorphism"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How do you handle exceptions in a program and what are some best practices for exception handling?",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the difference between throwing and catching an exception? Provide a code example.",
+              "unit": "Unit 5",
+              "type": "exception-handling"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes (any three): i) Multi-threading ii) Virtual Friend function iii) Abstract classes iv) Data collection v) Type conversion",
+              "unit": "Unit 5/4/3/5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compare procedural programming with object oriented programming.",
+              "unit": "Unit 1",
+              "type": "oop-basics",
+              "isPredicted": true
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain features, merits and demerits of Object Oriented paradigm.",
+              "unit": "Unit 1",
+              "type": "oop-basics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain object model and basic elements of OOPS.",
+              "unit": "Unit 1",
+              "type": "oop-basics",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss control statements, loops and arrays used in OOPS languages.",
+              "unit": "Unit 1",
+              "type": "oop-basics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define encapsulation and data abstraction.",
+              "unit": "Unit 2",
+              "type": "encapsulation",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a C++ program to demonstrate the concept of Encapsulation by creating a class Student with data members (roll number, name, and marks) and appropriate member functions.",
+              "unit": "Unit 2",
+              "type": "encapsulation",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain classes and objects.",
+              "unit": "Unit 2",
+              "type": "classes-objects",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss access modifiers, static members and object life cycle.",
+              "unit": "Unit 2",
+              "type": "classes-objects",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain inheritance and its types.",
+              "unit": "Unit 3",
+              "type": "inheritance",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate between association and aggregation.",
+              "unit": "Unit 3",
+              "type": "inheritance",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain interfaces and abstract classes.",
+              "unit": "Unit 3",
+              "type": "inheritance",
+              "isPredicted": true
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss their role in software design.",
+              "unit": "Unit 3",
+              "type": "inheritance",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain polymorphism with method overloading and overriding.",
+              "unit": "Unit 4",
+              "type": "polymorphism",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Differentiate between compile-time and run-time polymorphism.",
+              "unit": "Unit 4",
+              "type": "polymorphism",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain exception handling and multithreading.",
+              "unit": "Unit 5",
+              "type": "exception-handling",
+              "isPredicted": true
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss data collections with a suitable case study (ATM/Library).",
+              "unit": "Unit 5",
+              "type": "case-study",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
