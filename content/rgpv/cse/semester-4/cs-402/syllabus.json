@@ -2,9 +2,72 @@
   "subject": {
     "id": "cs-402",
     "code": "CS-402",
-    "name": "Analysis Design of Algorithm (ADA)",
-    "title": "CS-402 - Analysis Design of Algorithm (ADA)",
+    "name": "Analysis Design of Algorithm",
+    "title": "CS-402 - Analysis Design of Algorithm",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Algorithms and Divide & Conquer",
+      "hours": 8,
+      "topics": [
+        "Algorithms",
+        "Designing algorithms",
+        "analyzing algorithms",
+        "asymptotic notations",
+        "heap and heap sort",
+        "Introduction to divide and conquer technique",
+        "analysis, design and comparison of various algorithms based on this technique",
+        "example binary search, merge sort, quick sort, strassen’s matrix multiplication"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Greedy Strategy",
+      "hours": 8,
+      "topics": [
+        "Study of Greedy strategy",
+        "examples of greedy method like optimal merge patterns, Huffman coding, minimum spanning trees, knapsack problem, job sequencing with deadlines, single source shortest path algorithm"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Dynamic Programming",
+      "hours": 8,
+      "topics": [
+        "Concept of dynamic programming",
+        "problems based on this approach such as 0/1 knapsack, multistage graph, reliability design, Floyd-Warshall algorithm"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Backtracking and Branch & Bound",
+      "hours": 8,
+      "topics": [
+        "Backtracking concept and its examples like 8 queen’s problem, Hamiltonian cycle, Graph coloring problem etc.",
+        "Introduction to branch & bound method",
+        "examples of branch and bound method like traveling salesman problem etc.",
+        "Meaning of lower bound theory and its use in solving algebraic problem",
+        "introduction to parallel algorithms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Trees, Graphs, and NP-Completeness",
+      "hours": 8,
+      "topics": [
+        "Binary search trees",
+        "height balanced trees",
+        "2-3 trees, B-trees",
+        "basic search and traversal techniques for trees and graphs (In order, preorder, postorder, DFS, BFS)",
+        "NP-completeness"
+      ]
+    }
+  ]
 }

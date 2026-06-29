@@ -2,9 +2,87 @@
   "subject": {
     "id": "cs-405",
     "code": "CS-405",
-    "name": "Operating Systems (OS)",
-    "title": "CS-405 - Operating Systems (OS)",
+    "name": "Operating Systems",
+    "title": "CS-405 - Operating Systems",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Operating Systems",
+      "hours": 8,
+      "topics": [
+        "Function, Evolution, Different Types",
+        "Desirable Characteristics and features of an O/S",
+        "Operating Systems Services: Types of Services, Different ways of providing these Services – Utility Programs, System Calls"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "File Systems",
+      "hours": 8,
+      "topics": [
+        "File Concept",
+        "User’s and System Programmer’s view of File System",
+        "Disk Organization, Tape Organization",
+        "Different Modules of a File System",
+        "Disk Space Allocation Methods – Contiguous, Linked, Indexed",
+        "Directory Structures",
+        "File Protection",
+        "System Calls for File Management",
+        "Disk Scheduling Algorithms"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "CPU Scheduling & Memory Management",
+      "hours": 8,
+      "topics": [
+        "CPU Scheduling: Process Concept, Scheduling Concepts, Types of Schedulers",
+        "Process State Diagram",
+        "Scheduling Algorithms, Algorithms Evaluation",
+        "System calls for Process Management",
+        "Multiple Processor Scheduling",
+        "Concept of Threads",
+        "Memory Management: Different Memory Management Techniques – Partitioning, Swapping, Segmentation, Paging, Paged Segmentation",
+        "Comparison of these techniques",
+        "Techniques for supporting the execution of large programs: Overlay, Dynamic Linking and Loading",
+        "Virtual Memory – Concept, Implementation by Demand Paging etc."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Input / Output & Concurrent Processes",
+      "hours": 8,
+      "topics": [
+        "Input / Output: Principles and Programming",
+        "Input/Output Problems",
+        "Asynchronous Operations",
+        "Speed gap Format conversion",
+        "I/O Interfaces",
+        "Programme Controlled I/O",
+        "Interrupt Driven I/O",
+        "Concurrent I/O",
+        "Concurrent Processes: Real and Virtual Concurrency",
+        "Mutual Exclusion, Synchronization, Inter-Process Communication",
+        "Critical Section Problem, Solution to Critical Section Problem: Semaphores – Binary and Counting Semaphores",
+        "WAIT & SIGNAL Operations and their implementation",
+        "Deadlocks: Deadlock Problems, Characterization, Prevention, Avoidance, Recovery"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Network, Distributed and Multiprocessor Operating Systems",
+      "hours": 8,
+      "topics": [
+        "Introduction to Network, Distributed and Multiprocessor Operating Systems",
+        "Case Studies: Unix/Linux, WINDOWS and other Contemporary Operating Systems"
+      ]
+    }
+  ]
 }

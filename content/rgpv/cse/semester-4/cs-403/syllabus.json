@@ -2,9 +2,108 @@
   "subject": {
     "id": "cs-403",
     "code": "CS-403",
-    "name": "Software Engineering (SE)",
-    "title": "CS-403 - Software Engineering (SE)",
+    "name": "Software Engineering",
+    "title": "CS-403 - Software Engineering",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "The Software Product and Software Process",
+      "hours": 8,
+      "topics": [
+        "Software Product and Process Characteristics",
+        "Software Process Models: Linear Sequential Model, Prototyping Model, RAD Model",
+        "Evolutionary Process Models like Incremental Model, Spiral Model",
+        "Component Assembly Model",
+        "RUP and Agile processes",
+        "Software Process customization and improvement",
+        "CMM",
+        "Product and ProcessMetrics"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Requirement Elicitation, Analysis, and Specification",
+      "hours": 8,
+      "topics": [
+        "Functional and Non-functional requirements",
+        "Requirement Sources and Elicitation Techniques",
+        "Analysis Modeling for Function-oriented and Object-oriented software development",
+        "Use case Modeling",
+        "System and Software Requirement Specifications",
+        "Requirement Validation",
+        "Traceability"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Software Design",
+      "hours": 8,
+      "topics": [
+        "The Software Design Process",
+        "Design Concepts and Principles",
+        "Software Modeling and UML",
+        "Architectural Design",
+        "Architectural Views and Styles",
+        "User Interface Design",
+        "Function- oriented Design",
+        "SA/SD Component Based Design",
+        "DesignMetrics"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Software Analysis and Testing",
+      "hours": 8,
+      "topics": [
+        "Software Static and Dynamic analysis",
+        "Code inspections",
+        "Software Testing, Fundamentals",
+        "Software Test Process",
+        "Testing Levels",
+        "Test Criteria",
+        "Test Case Design",
+        "Test Oracles",
+        "Test Techniques",
+        "BlackBox Testing",
+        "White-Box Unit Testing and Unit",
+        "Testing Frameworks",
+        "Integration Testing",
+        "System Testing and other Specialized Testing",
+        "Test Plan, Test Metrics, Testing Tools",
+        "Introduction to Object-oriented analysis, design and comparison with structured SoftwareEngg"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Software Maintenance & Software Project Measurement",
+      "hours": 8,
+      "topics": [
+        "Need and Types of Maintenance",
+        "Software Configuration Management (SCM)",
+        "Software Change Management",
+        "Version Control",
+        "Change control and Reporting",
+        "Program Comprehension Techniques",
+        "Re-engineering",
+        "Reverse Engineering",
+        "Tool Support",
+        "Project Management Concepts",
+        "Feasibility Analysis",
+        "Project and Process Planning",
+        "Resources Allocations",
+        "Software efforts, Schedule, and Cost estimations",
+        "Project Scheduling and Tracking",
+        "Risk Assessment and Mitigation",
+        "Software Quality Assurance (SQA)",
+        "Project Plan, ProjectMetrics"
+      ]
+    }
+  ]
 }
