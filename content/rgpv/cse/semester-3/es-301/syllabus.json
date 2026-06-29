@@ -1,10 +1,106 @@
 {
   "subject": {
-    "id": "es-301-cse",
+    "id": "es-301",
     "code": "ES-301",
-    "name": "Energy & Environmental Engineering (EEE)",
-    "title": "ES-301 - Energy & Environmental Engineering (EEE)",
+    "name": "Energy & Environmental Engineering",
+    "title": "ES-301 - Energy & Environmental Engineering",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Energy Science",
+      "hours": 8,
+      "topics": [
+        "Introduction to energy systems and resources",
+        "Introduction to Energy, sustainability & the environment",
+        "Overview of energy systems, sources, transformations, efficiency, and storage",
+        "Fossil fuels (coal, oil, oil-bearing shale and sands, coal gasification) - past, present & future",
+        "Remedies & alternatives for fossil fuels - biomass, wind, solar, nuclear, wave, tidal and hydrogen",
+        "Sustainability and environmental trade-offs of different energy systems",
+        "possibilities for energy storage or regeneration (Ex. Pumped storage hydro power projects, superconductor-based energy storages, high efficiency batteries)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Ecosystems",
+      "hours": 8,
+      "topics": [
+        "Concept of an ecosystem",
+        "Structure and function of an ecosystem",
+        "Producers, consumers and decomposers",
+        "Energy flow in the ecosystem",
+        "Ecological succession",
+        "Food chains, food webs and ecological pyramids",
+        "Introduction, types, characteristic features, structure and function of the following ecosystem (a.)Forest ecosystem (b) Grassland ecosystem (c) Desert ecosystem (d) Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Biodiversity and its conservation",
+      "hours": 8,
+      "topics": [
+        "Introduction – Definition: genetic, species and ecosystem diversity",
+        "Bio-geographical classification of India",
+        "Value of biodiversity: consumptive use, productive use, social, ethical, aesthetic and option values",
+        "Biodiversity at global, National and local levels",
+        "India as a mega-diversity nation",
+        "Hot-sports of biodiversity",
+        "Threats to biodiversity: habitat loss, poaching of wildlife, man-wildlife conflicts",
+        "Endangered and endemic species of India",
+        "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Environmental Pollution",
+      "hours": 8,
+      "topics": [
+        "Definition, Cause, effects and control measures of Air pollution, Water pollution, Soil pollution, Marine pollution, Noise pollution, Thermal pollution, Nuclear hazards",
+        "Solid waste Management: Causes, effects and control measures of urban and industrial wastes",
+        "Role of an individual in prevention of pollution",
+        "Pollution case studies",
+        "Disaster management: floods, earthquake, cyclone and landslides"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Social Issues and the Environment",
+      "hours": 8,
+      "topics": [
+        "From Unsustainable to Sustainable development",
+        "Urban problems related to energy",
+        "Water conservation, rain water harvesting, watershed management",
+        "Resettlement and rehabilitation of people; its problems and concerns. Case Studies",
+        "Environmental ethics: Issues and possible solutions",
+        "Climate change, global warming, acid rain, ozone layer depletion, nuclear accidents and holocaust. Case Studies",
+        "Wasteland reclamation",
+        "Consumerism and waste products",
+        "Environment Protection Act",
+        "Air (Prevention and Control of Pollution) Act",
+        "Water (Prevention and control of Pollution) Act",
+        "Wildlife Protection Act",
+        "Forest Conservation Act",
+        "Issues involved in enforcement of environmental legislation",
+        "Public awareness"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Field Work",
+      "hours": 8,
+      "topics": [
+        "Visit to a local area to document environmental assets river/forest/grassland/hill/mountain",
+        "Visit to a local polluted site-Urban/Rural/Industrial/Agricultural",
+        "Study of common plants, insects, birds",
+        "Study of simple ecosystems-pond, river, hill slopes, etc."
+      ]
+    }
+  ]
 }
