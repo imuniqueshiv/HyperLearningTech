@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { FileText, Calendar, Clock } from "lucide-react";
 import { getPYQs } from "@/lib/content";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
-
 interface PaperPageProps {
   params: Promise<{
     branch: string;
@@ -38,7 +37,6 @@ function splitQuestionText(text: string): string[] {
 
   return lines;
 }
-
 export default async function PaperPage({ params }: PaperPageProps) {
   const { branch, semester, subject, paper } = await params;
 
