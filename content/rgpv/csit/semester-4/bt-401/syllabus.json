@@ -1,10 +1,77 @@
 {
   "subject": {
-    "id": "bt-401-csit",
+    "id": "bt-401",
     "code": "BT-401",
     "name": "Mathematics-III",
     "title": "BT-401 - Mathematics-III",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Numerical Methods – 1",
+      "hours": 8,
+      "topics": [
+        "Solution of polynomial and transcendental equations – Bisection method, Newton-Raphson method and Regula-Falsi method",
+        "Finite differences",
+        "Relation between operators",
+        "Interpolation using Newton’s forward and backward difference formulae",
+        "Interpolation with unequal intervals: Newton’s divided difference and Lagrange’s formulae"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Numerical Methods – 2",
+      "hours": 6,
+      "topics": [
+        "Numerical Differentiation",
+        "Numerical integration: Trapezoidal rule and Simpson’s 1/3rd and 3/8 rules",
+        "Solution of Simultaneous Linear Algebraic Equations by Gauss’s Elimination, Gauss’s Jordan, Crout’s methods, Jacobi’s, Gauss-Seidal, and Relaxation method"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Numerical Methods – 3",
+      "hours": 10,
+      "topics": [
+        "Ordinary differential equations: Taylor’s series, Euler and modified Euler’s methods",
+        "RungeKutta method of fourth order for solving first and second order equations",
+        "Milne’s and Adam’s predicator-corrector methods",
+        "Partial differential equations: Finite difference solution two dimensional Laplace equation and Poission equation",
+        "Implicit and explicit methods for one dimensional heat equation (BenderSchmidt and Crank-Nicholson methods)",
+        "Finite difference explicit method for wave equation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Transform Calculus",
+      "hours": 8,
+      "topics": [
+        "Laplace Transform",
+        "Properties of Laplace Transform",
+        "Laplace transform of periodic functions",
+        "Finding inverse Laplace transform by different methods",
+        "convolution theorem",
+        "Evaluation of integrals by Laplace transform",
+        "solving ODEs by Laplace Transform method",
+        "Fourier transforms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Concept of Probability",
+      "hours": 8,
+      "topics": [
+        "Probability Mass function",
+        "Probability Density Function",
+        "Discrete Distribution: Binomial, Poisson’s",
+        "Continuous Distribution: Normal Distribution, Exponential Distribution"
+      ]
+    }
+  ]
 }

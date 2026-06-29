@@ -2,9 +2,93 @@
   "subject": {
     "id": "csit-405",
     "code": "CSIT-405",
-    "name": "Database Management System (DBMS)",
-    "title": "CSIT-405 - Database Management System (DBMS)",
+    "name": "Database Management System",
+    "title": "CSIT-405 - Database Management System",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Concepts",
+      "hours": 8,
+      "topics": [
+        "Introduction to DBMS",
+        "File system vs DBMS",
+        "Advantages of database systems",
+        "Database System architecture",
+        "Data models",
+        "Schemas and instances",
+        "Data independence",
+        "Functions of DBA and designer",
+        "Entities and attributes",
+        "Entity types",
+        "Key attributes",
+        "Relationships",
+        "Defining the E-R diagram of database"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Relational Model",
+      "hours": 8,
+      "topics": [
+        "Structure of relational databases",
+        "Domains",
+        "Tuples",
+        "Attributes",
+        "Relations",
+        "keys and types of keys",
+        "Integrity Constraints",
+        "Relational Algebra: Queries using Select operation, project operation, renaming, joins, union, intersection, difference, division, and product etc.",
+        "SQL –basic SQL queries, functions, constraints, joins and nested queries",
+        "Triggers, assertions, views and stored procedures and PL/SQL"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "SQL",
+      "hours": 8,
+      "topics": [
+        "Data definition in SQL, update statements and views in SQL: Data storage and definitions",
+        "Data retrieval queries and update statements",
+        "Query Processing & Query Optimization: Overview, measures of query cost",
+        "selection operation, sorting, join, evaluation of expressions",
+        "transformation of relational expressions",
+        "estimating statistics of expression results",
+        "evaluation plans",
+        "Case Study of ORACLE and DB2"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Relational Database design",
+      "hours": 8,
+      "topics": [
+        "Functional Dependency –definition, trivial and non-trivial FD, closure of FD set, closure of attributes, irreducible set of FD",
+        "Normalization –1NF, 2NF, 3NF",
+        "Decomposition using FD-dependency preservation",
+        "lossless join",
+        "BCNF",
+        "Multi-valued dependency, 4NF",
+        "Join dependency and 5NF"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction of transaction, transaction processing and recovery, Concurrency control",
+      "hours": 8,
+      "topics": [
+        "Lock management",
+        "specialized locking techniques",
+        "concurrency control without locking",
+        "Protection and Security Introduction to: Distributed databases",
+        "Basic concepts of object oriented data base system"
+      ]
+    }
+  ]
 }

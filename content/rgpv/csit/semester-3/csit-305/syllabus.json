@@ -2,9 +2,118 @@
   "subject": {
     "id": "csit-305",
     "code": "CSIT-305",
-    "name": "Object Oriented Programming and Methodology (OOPM)",
-    "title": "CSIT-305 - Object Oriented Programming and Methodology (OOPM)",
+    "name": "Object Oriented Programming and Methodology",
+    "title": "CSIT-305 - Object Oriented Programming and Methodology",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "hours": 8,
+      "topics": [
+        "Object oriented programming, Introduction, Application, characteristics",
+        "difference between object oriented and procedure programming",
+        "Comparison of C and C++",
+        "Cout, Cin",
+        "Data Type",
+        "Type Conversion",
+        "Control Statement",
+        "Loops",
+        "Arrays and string arrays fundamentals",
+        "Function",
+        "Returning values from functions",
+        "Reference arguments",
+        "Overloaded function",
+        "Inline function",
+        "Default arguments",
+        "Returning by reference"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Object and Classes",
+      "hours": 8,
+      "topics": [
+        "Implementation of class and object in C++",
+        "access modifiers",
+        "object as datatype",
+        "constructor, destructor",
+        "Object as function arguments",
+        "default copy constructor",
+        "parameterized constructor",
+        "returning object from function",
+        "Structures and classes",
+        "Classes objects and memory",
+        "static class data",
+        "Arrays of object",
+        "Arrays as class Member Data",
+        "The standard C++ String class",
+        "Run time and Compile time polymorphism"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Operator overloading and Inheritance",
+      "hours": 8,
+      "topics": [
+        "Overloading unary operators",
+        "Overloading binary operators",
+        "data conversion",
+        "pitfalls of operators overloading",
+        "Concept of inheritance",
+        "Derived class and base class",
+        "access modifiers",
+        "types of inheritance",
+        "Derived class constructors",
+        "member function",
+        "public and private inheritance"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Pointer and Virtual Function",
+      "hours": 8,
+      "topics": [
+        "Addresses and pointers",
+        "the address-of operator & pointer and arrays",
+        "Pointer and Function pointer",
+        "Memory management: New and Delete",
+        "pointers to objects",
+        "debugging pointers",
+        "Virtual Function",
+        "friend function",
+        "Static function",
+        "friend class",
+        "Assignment and copy initialization",
+        "this pointer",
+        "dynamic type information"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Streams and Files",
+      "hours": 8,
+      "topics": [
+        "Streams classes",
+        "Stream Errors",
+        "Disk File I/O with streams",
+        "file pointers",
+        "error handling in file I/O with member function",
+        "overloading the extraction and insertion operators",
+        "memory as a stream object",
+        "command line arguments",
+        "printer output",
+        "Function templates",
+        "Class templates Exceptions",
+        "Containers",
+        "exception handling"
+      ]
+    }
+  ]
 }
