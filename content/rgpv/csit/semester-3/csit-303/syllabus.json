@@ -2,9 +2,100 @@
   "subject": {
     "id": "csit-303",
     "code": "CSIT-303",
-    "name": "Data Structure (DS)",
-    "title": "CSIT-303 - Data Structure (DS)",
+    "name": "Data Structure",
+    "title": "CSIT-303 - Data Structure",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "hours": 8,
+      "topics": [
+        "Data, data type, data object",
+        "Types of data structure – primitive & non-primitive, linear & non-linear",
+        "Operations on data structures – traversing, searching, inserting, deleting",
+        "Complexity analysis – worst case, best case, average case",
+        "Time – space trade off",
+        "algorithm efficiency",
+        "asymptotic notations – big oh, omega, theta"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Arrays & Structure",
+      "hours": 8,
+      "topics": [
+        "Introduction",
+        "declaration of arrays",
+        "operations on arrays – inserting, deleting, merging of two arrays",
+        "1 dimensional & 2 dimensional arrays",
+        "row & column major representation",
+        "address calculation in array",
+        "storing values in arrays",
+        "evaluation of polynomial – addition & representation",
+        "Searching & sorting – Introduction",
+        "sequential search",
+        "binary search",
+        "Fibonacci search",
+        "indexed sequential search",
+        "hashed search",
+        "Types of sorting with general concepts – bubble, heap, insertion, selection, quick, shell, bucket, radix and merge sort"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Stacks & Queues",
+      "hours": 8,
+      "topics": [
+        "Basic concept of stacks & queues",
+        "array representation of stacks",
+        "operation on stacks – Push, Pop, Create, getTop, empty",
+        "linked representation of stack",
+        "multiple stack",
+        "Application of stack – Conversion: infix, prefix, postfix and evaluation of arithmetic expression",
+        "Linked representation of queue",
+        "operations on queue – insertion & deletion",
+        "Types of queue with functions – circular, deque, priority queue",
+        "Applications of queues – Job scheduling, Josephus problem"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Linked List",
+      "hours": 8,
+      "topics": [
+        "Introduction – basic terminology, memory allocation & deallocation for linked list",
+        "Linked list variants – head pointer, head node",
+        "types linked list – linear & circular linked list",
+        "Doubly linked list",
+        "creation of doubly list",
+        "deletion of node from doubly linked list",
+        "insertion of a node from doubly linked list",
+        "traversal of doubly linked list",
+        "Circular linked list – singly circular linked list, circular linked list with header node, doubly circular linked list",
+        "Applications of linked list – polynomial representation & garbage collection"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Trees",
+      "hours": 8,
+      "topics": [
+        "Basic terminology – general tree",
+        "representation of general tree",
+        "types of trees",
+        "binary tree- realization and properties",
+        "traversal in binary trees – inorder, preorder, postorder",
+        "applications of trees",
+        "Graph- Basic Terminologies and representations",
+        "Graph search and traversal algorithms"
+      ]
+    }
+  ]
 }
