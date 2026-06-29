@@ -6,5 +6,95 @@
     "title": "AL-301 - Technical Communication",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Technical Communication Skills",
+      "hours": 8,
+      "topics": [
+        "Understanding the process and scope of Communication",
+        "Relevance & Importance of Communication in a Globalized world",
+        "Forms of Communication",
+        "Role of Unity, Brevity and Clarity in various forms of communication"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Types of Communication & Soft Skills",
+      "hours": 8,
+      "topics": [
+        "Verbal & Non-verbal Communication",
+        "Classification of NVC",
+        "Barriers to Communication",
+        "Communicating Globally",
+        "Culture and Communication",
+        "Interpersonal Communication",
+        "Listening",
+        "Persuasion",
+        "Negotiation",
+        "Communicating bad news/messages",
+        "Communicating in a global world"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Writing Skills & Speaking Skills",
+      "hours": 8,
+      "topics": [
+        "Traits of Technical Writing",
+        "Principles of Business Writing",
+        "Style of Writing",
+        "Writing Memos, Letters, Reports",
+        "Types of technical reports",
+        "Characteristics, format and structure of technical reports",
+        "Writing Research Papers",
+        "Audience-awareness",
+        "Voice, Vocabulary and Paralanguage",
+        "Group Discussion",
+        "Combating Nervousness",
+        "Speaking to one and to one thousand",
+        "Mock Presentations"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Job Interviews, GD & Presentations",
+      "hours": 8,
+      "topics": [
+        "Preparing for interviews",
+        "Assessing yourself",
+        "Drafting Effective Resume",
+        "Dress, decorum and Delivery techniques",
+        "Techniques of handling interviews",
+        "Use of Nonverbals during Interviews",
+        "Handling turbulence during interviews",
+        "Group Discussion: Objective, Method, Focus, Content, Style and Argumentation skills",
+        "Individual Presentations",
+        "Audience Awareness, Body Language, Delivery and Content of Presentation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Grammar & Linguistic Ability",
+      "hours": 8,
+      "topics": [
+        "Basics of grammar",
+        "Common error in writing and speaking",
+        "Study of advanced grammar",
+        "Vocabulary",
+        "Pronunciation Etiquette",
+        "Syllables, Vowel sounds, Consonant sounds",
+        "Tone: Rising tone, Falling Tone",
+        "Flow in Speaking",
+        "Speaking with a purpose",
+        "Speech & personality",
+        "Professional Personality Attributes"
+      ]
+    }
+  ]
 }
