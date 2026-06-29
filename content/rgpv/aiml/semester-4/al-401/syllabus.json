@@ -6,5 +6,83 @@
     "title": "AL-401 - Intro to Discrete Structure & Linear Algebra",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Set Theory, Relation, Function, Theorem Proving Techniques",
+      "hours": 8,
+      "topics": [
+        "Set theory: definition of sets",
+        "Venn Diagram",
+        "Proofs of some general identities on set",
+        "Relation: Definition, Types of relation, Composition of relation, Equivalence relation, Partial ordering relation",
+        "POSET",
+        "Hasse diagram and Lattice"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Algebraic structure",
+      "hours": 8,
+      "topics": [
+        "Definition, Properties, types: Semi Group, Monoid, Groups, Abelian Group",
+        "Properties of group",
+        "Cyclic group",
+        "Normal subgroup",
+        "Ring and Fields: definition and standard result",
+        "Introduction to Recurrence Relation and Generating Functions"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Propositional logic & Graph theory",
+      "hours": 8,
+      "topics": [
+        "Propositional logic: Proposition",
+        "First order Logic",
+        "Basic logical operation",
+        "Truth tables",
+        "Tautologies and Contradiction",
+        "Algebra of proposition",
+        "Logical implication",
+        "Logical equivalence",
+        "Predicates",
+        "Normal Forms",
+        "Quantifiers",
+        "Graph theory: Introduction and basic terminology of graph",
+        "Types of graph",
+        "Path, Cycles",
+        "Shortest path in weighted graph",
+        "Graph colorings"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Matrices",
+      "hours": 8,
+      "topics": [
+        "Determinant and Trace",
+        "Cholesky Decomposition",
+        "Eigen decomposition",
+        "Singular Value decomposition(SVD)",
+        "Gradient of a matrix: Useful identities For computing Gradient"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Test of Hypothesis",
+      "hours": 8,
+      "topics": [
+        "Concept and Formulation",
+        "Type-I and Type-II Errors",
+        "Time Series Analysis",
+        "Analysis of Variance (ANOVA)"
+      ]
+    }
+  ]
 }

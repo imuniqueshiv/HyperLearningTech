@@ -2,9 +2,74 @@
   "subject": {
     "id": "al-402",
     "code": "AL-402",
-    "name": "Analysis & Design of Algorithms (ADA)",
-    "title": "AL-402 - Analysis & Design of Algorithms (ADA)",
+    "name": "Analysis & Design of Algorithms",
+    "title": "AL-402 - Analysis & Design of Algorithms",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Definitions & Divide and Conquer",
+      "hours": 8,
+      "topics": [
+        "Definitions of algorithms and complexity",
+        "Time and Space Complexity",
+        "Time space tradeoff",
+        "Various bounds on complexity",
+        "Asymptotic notation",
+        "Recurrences and Recurrences solving techniques",
+        "Introduction to divide and conquer technique",
+        "Example: binary search, merge sort, quick sort, heap sort, strassen’s matrix multiplication etc.",
+        "Code tuning techniques: Loop Optimization, Data Transfer Optimization, Logic Optimization, etc."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Greedy Strategy",
+      "hours": 8,
+      "topics": [
+        "Study of Greedy strategy",
+        "Examples of greedy method like optimal merge patterns, Huffman coding, minimum spanning trees, knapsack problem, job sequencing with deadlines, single source shortest path algorithm etc.",
+        "Correctness proof of Greedy algorithms"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Dynamic Programming",
+      "hours": 8,
+      "topics": [
+        "Concept of dynamic programming",
+        "Problems based on this approach such as 0/1 knapsack, multistage graph, reliability design, Floyd-Warshall algorithm etc."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Backtracking and Branch & Bound",
+      "hours": 8,
+      "topics": [
+        "Backtracking concept and its examples like 8 queen’s problem, Hamiltonian cycle, Graph colouring problem etc.",
+        "Introduction to branch & bound method",
+        "Examples of branch and bound method like travelling salesman problem etc.",
+        "Meaning of lower bound theory and its use in solving algebraic problem",
+        "Introduction to parallel algorithms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Advanced Topics & Complexity",
+      "hours": 8,
+      "topics": [
+        "Advanced tree and graph algorithms",
+        "NP-hard and NP-complete problems",
+        "Approximations Algorithms",
+        "Data Stream Algorithms",
+        "Introduction to design and complexity of Parallel Algorithms"
+      ]
+    }
+  ]
 }

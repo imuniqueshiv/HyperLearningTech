@@ -2,9 +2,87 @@
   "subject": {
     "id": "al-405",
     "code": "AL-405",
-    "name": "Machine Learning (ML)",
-    "title": "AL-405 - Machine Learning (ML)",
+    "name": "Machine Learning",
+    "title": "AL-405 - Machine Learning",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to machine learning",
+      "hours": 8,
+      "topics": [
+        "Scope and limitations",
+        "Machine learning models",
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Hypothesis space and inductive bias",
+        "Evaluation, cross-validation",
+        "Dimensionality Reduction: Subset Selection, Shrinkage Methods, Principle Components Analysis, Partial Least Squares"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Neural Networks",
+      "hours": 8,
+      "topics": [
+        "From Biology to Simulation",
+        "Neural network representation",
+        "Neural Networks as a paradigm for parallel processing",
+        "Perceptron Learning",
+        "Training a perceptron",
+        "Multilayer perceptron",
+        "Back propagation Algorithm",
+        "Training & Validation",
+        "Activation functions",
+        "Vanishing and Exploding Gradients"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Supervised Learning Techniques",
+      "hours": 8,
+      "topics": [
+        "Decision Trees",
+        "Naive Bayes",
+        "Classification",
+        "Support vector machines for classification problems",
+        "Random forest for classification and regression problems",
+        "Linear regression for regression problems",
+        "Ordinary Least Squares Regression",
+        "Logistic Regression"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unsupervised Learning",
+      "hours": 8,
+      "topics": [
+        "Clustering: k-means, adaptive hierarchical clustering, Gaussian mixture model",
+        "Optimization Using Evolutionary Techniques",
+        "Number of Clusters",
+        "Advanced discussion on clustering",
+        "Expectation Maximization"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Design and Analysis of Machine Learning Experiments",
+      "hours": 8,
+      "topics": [
+        "Factors, response and strategy of experimentation",
+        "Guidelines for machine learning experiments",
+        "Cross-validation and resampling methods",
+        "Measuring classifier performance",
+        "Hypothesis testing",
+        "Comparing multiple algorithms",
+        "Comparison over multiple datasets"
+      ]
+    }
+  ]
 }
