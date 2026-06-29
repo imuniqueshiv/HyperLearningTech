@@ -50,7 +50,7 @@ const teamMembers = [
   {
     id: "ramoo",
     name: "Ramoo Kachhee",
-    role: "Content Contributor",
+    role: "Co-Founder & Content Contributor & Full Stack Developer  ",
     bio: "Actively contributes to Hyper Learning by curating and uploading essential study materials, including PYQs, syllabuses, and question papers.",
     image: "https://avatars.githubusercontent.com/u/231412959?v=4",
     socials: {
@@ -60,6 +60,7 @@ const teamMembers = [
       email: "mailto:ramoo@hyperlearning.tech",
     },
     icon: GraduationCap,
+    badge: "Co-Founder",
   },
 ];
 
