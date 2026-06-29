@@ -2,9 +2,98 @@
   "subject": {
     "id": "al-302",
     "code": "AL-302",
-    "name": "Introduction to Probability and Statistics",
-    "title": "AL-302 - Introduction to Probability and Statistics",
+    "name": "Probability and Statistics",
+    "title": "AL-302 - Probability and Statistics",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Probability",
+      "hours": 8,
+      "topics": [
+        "Probability spaces",
+        "Conditional probability",
+        "Independence",
+        "Discrete random variables",
+        "Independent random variables",
+        "The multinomial distribution",
+        "Poisson approximation to the binomial distribution",
+        "Infinite sequences of Bernoulli trials",
+        "Sums of independent random variables",
+        "Expectation of Discrete Random Variables",
+        "Moments",
+        "Variance of a sum",
+        "Correlation coefficient",
+        "Chebyshev's Inequality"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Continuous Probability Distributions",
+      "hours": 8,
+      "topics": [
+        "Continuous random variables and their properties",
+        "Distribution functions and densities",
+        "Normal densities",
+        "Exponential densities",
+        "Gamma densities"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Bivariate Distributions",
+      "hours": 8,
+      "topics": [
+        "Bivariate distributions and their properties",
+        "Distribution of sums and quotients",
+        "Conditional densities",
+        "Bayes' rule"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Basic Statistics",
+      "hours": 8,
+      "topics": [
+        "Measures of Central tendency: Moments, skewness and Kurtosis",
+        "Probability distributions: Binomial, Poisson and Normal",
+        "Evaluation of statistical parameters for these three distributions",
+        "Correlation and regression",
+        "Rank correlation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Applied Statistics",
+      "hours": 8,
+      "topics": [
+        "Curve fitting by the method of least squares",
+        "Fitting of straight lines",
+        "Fitting of second degree parabolas and more general curves",
+        "Test of significance: Large sample test for single proportion",
+        "Difference of proportions",
+        "Single mean",
+        "Difference of means",
+        "Difference of standard deviations"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Small Samples",
+      "hours": 8,
+      "topics": [
+        "Test for single mean",
+        "Difference of means and correlation coefficients",
+        "Test for ratio of variances",
+        "Chi-square test for goodness of fit and independence of attributes"
+      ]
+    }
+  ]
 }
