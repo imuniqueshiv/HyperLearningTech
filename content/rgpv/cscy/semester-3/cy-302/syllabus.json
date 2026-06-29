@@ -6,5 +6,77 @@
     "title": "CY-302 - Fundamental of Cryptography",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction, Symmetric-key Encryption & Historical Ciphers",
+      "hours": 8,
+      "topics": [
+        "Introduction of cryptography",
+        "Symmetric-key Encryption",
+        "Historical Ciphers",
+        "Computational Security",
+        "Semantic Security and Pseudorandom Generators (PRGs)",
+        "Perfect secrecy",
+        "One-timepad encryption",
+        "Characterizations of perfect secrecy",
+        "Limitations of perfect secrecy"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Block Ciphers, DES, AES & MAC",
+      "hours": 8,
+      "topics": [
+        "CPA-Secure Ciphers from PRF",
+        "Modes of Operations of Block Ciphers",
+        "DES, AES and Message Authentication Codes (MAC)",
+        "Information-theoretic Secure MAC",
+        "Cryptographic Hash Functions"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Hash Functions, Trapdoor Functions & Authenticated Encryption",
+      "hours": 8,
+      "topics": [
+        "Ideal-Cipher Model",
+        "Davies-Meyer construction and Merkle-Damgård Paradigm",
+        "Birthday Attacks on Cryptographic Hash Functions",
+        "Applications of Hash Functions",
+        "Random Oracle Model and Authenticated Encryption",
+        "Generic Constructions of Authenticated Encryption Schemes",
+        "Key-exchange Problem",
+        "One-way Trapdoor Functions and Cyclic Groups"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Discrete Logarithm, Diffie-Hellman & Public-Key Encryption",
+      "hours": 8,
+      "topics": [
+        "Discrete-Logarithm Problem",
+        "Computational Diffie-Hellman Problem",
+        "Decisional, DiffieHellman Problem",
+        "Elliptic-Curve Based Cryptography and Public-Key Encryption"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "RSA, Digital Signatures, TLS/SSL & Number Theory",
+      "hours": 8,
+      "topics": [
+        "CCA -secure Public-key Hybrid Ciphers Based on Diffie-Hellman Problems and RSAassumption",
+        "Digital Signatures",
+        "Overview of TLS/SSL",
+        "Number Theory",
+        "Interactive Protocols"
+      ]
+    }
+  ]
 }
