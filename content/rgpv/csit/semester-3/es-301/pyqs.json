@@ -1,9 +1,1051 @@
 {
   "subject": {
-    "id": "es-301-csit",
+    "id": "es-301",
     "code": "ES-301",
-    "name": "Energy & Environmental Engineering (EEE)",
-    "title": "ES-301 - Energy & Environmental Engineering (EEE)"
+    "name": "Energy & Environmental Engineering",
+    "title": "ES-301 - Energy & Environmental Engineering",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec25-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec25-q1a",
+              "label": "a)",
+              "text": "Explain the concept of energy systems and discuss major energy resources.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q1b",
+              "label": "b)",
+              "text": "Discuss sustainability and environmental trade-offs of fossil fuel-based energy systems.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec25-q2a",
+              "label": "a)",
+              "text": "Describe renewable energy alternatives to fossil fuels with examples.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q2b",
+              "label": "b)",
+              "text": "Explain energy storage technologies such as pumped storage and high-efficiency batteries.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec25-q3a",
+              "label": "a)",
+              "text": "Define an ecosystem and explain its structure and functions.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec25-q3b",
+              "label": "b)",
+              "text": "Describe energy flow and ecological pyramids in an ecosystem.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec25-q4a",
+              "label": "a)",
+              "text": "Explain forest and grassland ecosystems highlighting their characteristics.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec25-q4b",
+              "label": "b)",
+              "text": "Discuss aquatic ecosystems with reference to ponds and oceans.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec25-q5a",
+              "label": "a)",
+              "text": "Define biodiversity and explain its different levels.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec25-q5b",
+              "label": "b)",
+              "text": "Discuss India as a mega-diversity nation and biodiversity hotspots.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec25-q6a",
+              "label": "a)",
+              "text": "What are the major threats to biodiversity in India?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec25-q6b",
+              "label": "b)",
+              "text": "Explain in-situ and ex-situ conservation methods.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec25-q7a",
+              "label": "a)",
+              "text": "Define environmental pollution and discuss causes and effects of air and water pollution.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec25-q7b",
+              "label": "b)",
+              "text": "Explain solid waste management and the role of individuals in pollution prevention.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec25-q8a",
+              "label": "a)",
+              "text": "Discuss climate change and global warming with suitable examples.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec25-q8b",
+              "label": "b)",
+              "text": "Explain major environmental protection acts in India and public awareness.",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "jun25-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "jun25-q1a",
+              "label": "a)",
+              "text": "Describe the different stages involved in the extraction, processing and utilization of coal as a fossil fuel.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun25-q1b",
+              "label": "b)",
+              "text": "What are the environmental impacts associated with each stage. Discuss.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "jun25-q2a",
+              "label": "a)",
+              "text": "Compare and contrast the different types of hydro energy technology and also discuss their applications, advantages and limitations.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun25-q2b",
+              "label": "b)",
+              "text": "Illustrate the concept of energy sustainability and its relationship with environmental, social and economic development.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "jun25-q3a",
+              "label": "a)",
+              "text": "Describe the structure and function of a forest ecosystem, including the role of producers, consumers and decomposers.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun25-q3b",
+              "label": "b)",
+              "text": "How does the human activities impact forest ecosystems and mention its consequences on biodiversity and ecosystem services.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "jun25-q4a",
+              "label": "a)",
+              "text": "Explain in brief about the energy flow and nutrient cycling in an aquatic ecosystem.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun25-q4b",
+              "label": "b)",
+              "text": "Mention the importance of community involvement in biodiversity conservation efforts in India.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "jun25-q5a",
+              "label": "a)",
+              "text": "Explain the concept of hotspots of biodiversity. Describe the different hotspots of biodiversity in India.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun25-q5b",
+              "label": "b)",
+              "text": "Describe the role of India in global biodiversity conservation efforts.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "jun25-q6a",
+              "label": "a)",
+              "text": "Describe the causes, effects and control measures of air pollution in urban areas. How can individuals contribute to reducing air pollution?",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "jun25-q6b",
+              "label": "b)",
+              "text": "Explain in brief about the government's responsibilities in mitigating the air pollution issue in urban area.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "jun25-q7a",
+              "label": "a)",
+              "text": "Discuss the impact of urbanization on the environment.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun25-q7b",
+              "label": "b)",
+              "text": "Describe the different strategies for mitigating the environmental impacts of urbanization.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q8",
+          "questionNumber": "Q.8",
+          "text": "Explain in brief any two of the following.",
+          "subQuestions": [
+            {
+              "id": "jun25-q8a",
+              "label": "a)",
+              "text": "Forest Conservation Act, 1980",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun25-q8b",
+              "label": "b)",
+              "text": "Rainwater harvesting",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun25-q8c",
+              "label": "c)",
+              "text": "Genetic Diversity",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun25-q8d",
+              "label": "d)",
+              "text": "Hydrogen energy",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec24-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec24-q1a",
+              "label": "a)",
+              "text": "Describe the concept of energy efficiency and its importance in reducing energy consumption and greenhouse gas emissions.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec24-q1b",
+              "label": "b)",
+              "text": "Discuss the various strategies and technologies used to improve energy efficiency in buildings, industries and transportation sectors.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec24-q2a",
+              "label": "a)",
+              "text": "State the advantages and disadvantages of using nuclear energy as a source of electricity.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec24-q2b",
+              "label": "b)",
+              "text": "Describe in brief about the environmental impacts of fossil fuel combustion and greenhouse gas emissions on air pollution, water pollution.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec24-q3a",
+              "label": "a)",
+              "text": "Discuss the importance of conservation and management of ecosystems for maintaining biodiversity and ecosystem services.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec24-q3b",
+              "label": "b)",
+              "text": "Mention the different types of approaches and strategies for ecosystem conservation and management.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec24-q4a",
+              "label": "a)",
+              "text": "Explain the concept of ecological pyramids and also describe its various type.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec24-q4b",
+              "label": "b)",
+              "text": "Discuss in brief about the which local communities can contribute to conservation, including ecotourism, sustainable livelihoods and traditional knowledge with a suitable example.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec24-q5a",
+              "label": "a)",
+              "text": "Describe the importance of biodiversity at global, national and local region.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec24-q5b",
+              "label": "b)",
+              "text": "How come the human involvement impact biodiversity at each level and state its consequences for ecosystem services and human well-being.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec24-q6a",
+              "label": "a)",
+              "text": "Describe the causes and effects of marine pollution including the impact on human health and the environment.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec24-q6b",
+              "label": "b)",
+              "text": "Discuss the impact of nuclear hazards on human health and the environment.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec24-q7a",
+              "label": "a)",
+              "text": "Describe the concept of Environmental Impact Assessment (EIA) and its importance in promoting sustainable development.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q7b",
+              "label": "b)",
+              "text": "Discuss the different stages of the EIA process.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q8",
+          "questionNumber": "Q.8",
+          "text": "Explain in brief an two of the following.",
+          "subQuestions": [
+            {
+              "id": "dec24-q8a",
+              "label": "a)",
+              "text": "Wildlife Protection Act, 1972",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q8b",
+              "label": "b)",
+              "text": "Watershed management",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q8c",
+              "label": "c)",
+              "text": "Species Diversity",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec24-q8d",
+              "label": "d)",
+              "text": "High-efficiency batteries",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "jun24-q1",
+          "questionNumber": "Q.1",
+          "text": "How is an ecosystem evolved? Write different components of an ecosystem. How is balance maintained in an ecosystem? Comment on the statement, \"An ecosystem with large population is not healthy\".",
+          "unit": "Unit 2"
+        },
+        {
+          "id": "jun24-q2",
+          "questionNumber": "Q.2",
+          "text": "What is Biodiversity? Discuss about the different kinds of diversity in organisms. Write in detail about conservation of biodiversity.",
+          "unit": "Unit 3"
+        },
+        {
+          "id": "jun24-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "jun24-q3a",
+              "label": "a)",
+              "text": "Give the classification of hydro-electric power plant. What are the criteria of site selection for hydroelectric plant?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun24-q3b",
+              "label": "b)",
+              "text": "Differentiate between single-basin and double-basin tidal plants. Explain briefly the various components of tidal power plants.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q4",
+          "questionNumber": "Q.4",
+          "text": "Explain the term Solid waste. What are adverse effects of solid wastes in society? Discuss various methods for disposal of solid wastes.",
+          "unit": "Unit 4"
+        },
+        {
+          "id": "jun24-q5",
+          "questionNumber": "Q.5",
+          "text": "Write short notes on any two of the following.",
+          "subQuestions": [
+            {
+              "id": "jun24-q5a",
+              "label": "a)",
+              "text": "Fossil fuels",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun24-q5b",
+              "label": "b)",
+              "text": "Ozone layer depletion",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun24-q5c",
+              "label": "c)",
+              "text": "Acid rain",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "jun24-q6a",
+              "label": "a)",
+              "text": "What is Food Chain? Explain various types of food chains.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun24-q6b",
+              "label": "b)",
+              "text": "Explain aquatic Ecosystem.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "jun24-q7a",
+              "label": "a)",
+              "text": "What do you understand by concept of Green building? Explain.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun24-q7b",
+              "label": "b)",
+              "text": "What is Energy conservation? Write down different methods of energy conservation.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q8",
+          "questionNumber": "Q.8",
+          "text": "Write brief notes on any two of following:",
+          "subQuestions": [
+            {
+              "id": "jun24-q8i",
+              "label": "i)",
+              "text": "Ecological pyramid",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun24-q8ii",
+              "label": "ii)",
+              "text": "Ethics",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun24-q8iii",
+              "label": "iii)",
+              "text": "Global warming",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun24-q8iv",
+              "label": "iv)",
+              "text": "Disaster management",
+              "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec23-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec23-q1a",
+              "label": "a)",
+              "text": "What are the Primary Goals of Sustainability?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec23-q1b",
+              "label": "b)",
+              "text": "How can our energy system be more Earth-friendly?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec23-q2a",
+              "label": "a)",
+              "text": "What are the challenges for the implementation of Geothermal Energy power generation system?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec23-q2b",
+              "label": "b)",
+              "text": "Explain in your words how far is research in the field of combined solar panels (PV and Thermal)? [Image of combined photovoltaic thermal system diagram]",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec23-q3a",
+              "label": "a)",
+              "text": "What are the indicators, tools and techniques of diagnosis, prognosis and therapy (treatment) of ecosystem health?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q3b",
+              "label": "b)",
+              "text": "A collection of trees is attractive to rainfall. Is it a scientific thought. How to evaluate the economic and social values of a forest?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec23-q4a",
+              "label": "a)",
+              "text": "What is the meaning of law of tolerance? Explain how tolerance can increase biodiversity?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q4b",
+              "label": "b)",
+              "text": "Why India is called a mega biodiversity Centre? How many hotspots are present in India? [Image of biodiversity hotspots in India map]",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec23-q5a",
+              "label": "a)",
+              "text": "What are the differences between soil pollution and soil contamination? How many horizons are there in soils? [Image of soil horizon layers diagram]",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec23-q5b",
+              "label": "b)",
+              "text": "How can chemists, physicists, biologists and other scientists reduce disasters and crises of life?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec23-q6a",
+              "label": "a)",
+              "text": "What impact do humans have on aquatic life zones?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q6b",
+              "label": "b)",
+              "text": "Which gas does not cause air pollution? Who had coined the term SMOG?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec23-q7a",
+              "label": "a)",
+              "text": "What is a watershed? What is the function of a watershed? Is there a code or symbol for the watersheds in the country? [Image of watershed management diagram]",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec23-q7b",
+              "label": "b)",
+              "text": "Write a brief note on Resettlement and rehabilitation of people: Problems and Concerns!",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec23-q8a",
+              "label": "a)",
+              "text": "What are the objectives of Wildlife Protection Act? When was Wildlife Protection Act implemented write its features?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec23-q8b",
+              "label": "b)",
+              "text": "What are the main goals of Forest Conservation Act 1980?",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "jun23-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "jun23-q1a",
+              "label": "a)",
+              "text": "What are the Primary Goals of Sustainability?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q1b",
+              "label": "b)",
+              "text": "How can our energy system be more Earth-friendly?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "jun23-q2a",
+              "label": "a)",
+              "text": "State advantage, disadvantages and applications of solar energy.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q2b",
+              "label": "b)",
+              "text": "How does a forced circulation solar water heater differ from natural circulation solar water heater?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "jun23-q3a",
+              "label": "a)",
+              "text": "Give the classification of hydro-electric power plant. What are the criteria of site selection for hydroelectric plant?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q3b",
+              "label": "b)",
+              "text": "Differentiate between single-basin and double-basin tidal plants. Explain briefly the various components of tidal power plants.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "jun23-q4a",
+              "label": "a)",
+              "text": "What do you understand by concept of Green building? Explain.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun23-q4b",
+              "label": "b)",
+              "text": "What is Energy conservation? Write down different methods of energy conservation.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "jun23-q5a",
+              "label": "a)",
+              "text": "What are semiconductors? What is the difference between intrinsic and extrinsic semiconductors?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q5b",
+              "label": "b)",
+              "text": "What is a photovoltaic cell? Explain briefly with a neat diagram a silicon photovoltaic cell.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "jun23-q6a",
+              "label": "a)",
+              "text": "Explain with a neat sketch the construction and working of wind-electric generating plant.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q6b",
+              "label": "b)",
+              "text": "Explain with a neat diagram the construction and working of floating drum type biogas plant. State also its advantages and disadvantages.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "jun23-q7a",
+              "label": "a)",
+              "text": "What is LEED? What are the different LEED rating systems?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun23-q7b",
+              "label": "b)",
+              "text": "What is an energy audit? Explain briefly the difference between preliminary and detailed energy audits?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "jun23-q8a",
+              "label": "a)",
+              "text": "What impact do humans have on aquatic life zones?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun23-q8b",
+              "label": "b)",
+              "text": "Which gas does not cause Air pollution? Who had coined the term SMOG?",
+              "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "nov22-q1",
+          "questionNumber": "Q.1",
+          "text": "What is Energy? Discuss the energy scenario giving emphasis on: Sources, efficiency and storage.",
+          "unit": "Unit 1"
+        },
+        {
+          "id": "nov22-q2",
+          "questionNumber": "Q.2",
+          "text": "Describe the fundamentals of an ecosystem. Explain the relationship among the different parts of an ecosystem with the help of a schematic diagram.",
+          "unit": "Unit 2"
+        },
+        {
+          "id": "nov22-q3",
+          "questionNumber": "Q.3",
+          "text": "What is Biodiversity? What are the major factors responsible for the loss of genetic biodiversity? How can biodiversity be conserved?",
+          "unit": "Unit 3"
+        },
+        {
+          "id": "nov22-q4",
+          "questionNumber": "Q.4",
+          "text": "Explain Water pollution. Enlist various sources of water pollution giving their adverse effects. How water pollution can be minimized?",
+          "unit": "Unit 4"
+        },
+        {
+          "id": "nov22-q5",
+          "questionNumber": "Q.5",
+          "text": "Explain the term Solid waste. What are adverse effects of solid wastes in society? Discuss various methods for disposal of solid wastes.",
+          "unit": "Unit 4"
+        },
+        {
+          "id": "nov22-q6",
+          "questionNumber": "Q.6",
+          "text": "Write short notes on any two of the following.",
+          "subQuestions": [
+            {
+              "id": "nov22-q6a",
+              "label": "a)",
+              "text": "Fossil fuels",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "nov22-q6b",
+              "label": "b)",
+              "text": "Global warming",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "nov22-q6c",
+              "label": "c)",
+              "text": "Ozone layer depletion",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "nov22-q6d",
+              "label": "d)",
+              "text": "Acid rain",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "nov22-q7a",
+              "label": "a)",
+              "text": "What is Food Chain? Explain various types of food chains.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "nov22-q7b",
+              "label": "b)",
+              "text": "Explain aquatic Ecosystem.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q8",
+          "questionNumber": "Q.8",
+          "text": "Write brief notes on any two of the following:",
+          "subQuestions": [
+            {
+              "id": "nov22-q8a",
+              "label": "a)",
+              "text": "Desert ecosystem",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "nov22-q8b",
+              "label": "b)",
+              "text": "Noise pollution",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "nov22-q8c",
+              "label": "c)",
+              "text": "Environment Protection Act",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "nov22-q8d",
+              "label": "d)",
+              "text": "Wind Energy",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
