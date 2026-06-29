@@ -96,9 +96,9 @@ export default function Universities() {
           </div>
 
           <h2 className="text-3xl font-black tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Learn Across
-            <span className="block bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent pb-1">
-              Universities
+            One Platform,
+            <span className="block bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent pb-4 -mb-3">
+              Every University
             </span>
           </h2>
 

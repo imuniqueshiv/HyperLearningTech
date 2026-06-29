@@ -67,7 +67,7 @@ export default function UniversityHero() {
         <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-blue-500/10 blur-[100px]" />{" "}
         <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[100px]" />{" "}
       </div>
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pt-24 pb-28 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
           {/* Left Side */}
           <motion.div
