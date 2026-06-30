@@ -545,24 +545,53 @@
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .contactSection {
-    padding: 100px 24px;
+    padding: 64px 20px;
+  }
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+  }
+  .horizontalDivider {
+    display: none;
   }
   .featuresHorizontal {
     flex-direction: column;
-    align-items: center;
-    gap: 24px;
+    align-items: flex-start;
+    width: max-content;
+    margin: 0 auto;
+    gap: 20px;
   }
   .contactCard {
-    padding: 48px 32px;
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+  .cardHeading {
+    font-size: 1.6rem;
+  }
+  .cardSubtitle {
+    margin-bottom: 24px;
+    font-size: 0.85rem;
+  }
+  .form {
+    gap: 20px;
+  }
+  .input {
+    padding: 6px 28px 6px 0;
+    font-size: 0.85rem;
+  }
+  .textarea {
+    min-height: 36px;
   }
   .submitRow {
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: flex-end;
-    margin-top: 32px;
+    justify-content: center;
+    margin-top: 0;
   }
 }

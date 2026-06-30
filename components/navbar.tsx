@@ -18,12 +18,12 @@ const navLinks = [
     href: "/#Universities",
   },
   {
-    label: "About",
-    href: "/about",
+    label: "Contact",
+    href: "/#Contact",
   },
   {
-    label: "Contact",
-    href: "/contact",
+    label: "About",
+    href: "/about",
   },
 ];
 
