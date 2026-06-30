@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import {
   Bug,
   Headphones,
-  MessageSquare,
+  MessageSquareText,
   Mail,
   Send,
   User,
@@ -43,12 +43,11 @@ export default function ContactSection() {
       </div>
 
       <div className={styles.container}>
-        {/* Left Section */}
+        {/* Left Section - 52% */}
         <div className={styles.leftSection}>
           <div className={styles.labelWrapper}>
             <span className={styles.label}>CONTACT US</span>
             <div className={styles.horizontalDivider}>
-              <div className={styles.line}></div>
               <div className={styles.dot}></div>
             </div>
           </div>
@@ -69,7 +68,7 @@ export default function ContactSection() {
             {/* Feature 1 */}
             <div className={styles.featureItem}>
               <div className={styles.iconWrapper}>
-                <Bug size={20} strokeWidth={1.5} />
+                <Bug size={24} strokeWidth={2} />
               </div>
               <div className={styles.featureText}>
                 <h3 className={styles.featureTitle}>Report Issues</h3>
@@ -80,7 +79,7 @@ export default function ContactSection() {
             {/* Feature 2 */}
             <div className={styles.featureItem}>
               <div className={styles.iconWrapper}>
-                <Headphones size={20} strokeWidth={1.5} />
+                <Headphones size={24} strokeWidth={2} />
               </div>
               <div className={styles.featureText}>
                 <h3 className={styles.featureTitle}>Get Support</h3>
@@ -91,7 +90,7 @@ export default function ContactSection() {
             {/* Feature 3 */}
             <div className={styles.featureItem}>
               <div className={styles.iconWrapper}>
-                <MessageSquare size={20} strokeWidth={1.5} />
+                <MessageSquareText size={24} strokeWidth={2} />
               </div>
               <div className={styles.featureText}>
                 <h3 className={styles.featureTitle}>Share Feedback</h3>
@@ -103,24 +102,36 @@ export default function ContactSection() {
 
         {/* Center Vertical Divider */}
         <div className={styles.centerDivider}>
-          <div className={styles.verticalLineTop}></div>
           <div className={styles.centerDot}></div>
-          <div className={styles.verticalLineBottom}></div>
         </div>
 
-        {/* Right Section */}
+        {/* Right Section - 48% */}
         <div className={styles.rightSection}>
           <div className={styles.contactCard}>
-            {/* Corner Glows */}
+            {/* Corner Glow */}
             <div className={styles.cardGlowTopRight}></div>
 
             <div className={styles.heroIconWrapper}>
-              <div className={styles.heroCircles}></div>
+              {/* Continuous Signal Rings */}
+              <div
+                className={styles.signalRing}
+                style={{ animationDelay: "0s" }}
+              ></div>
+              <div
+                className={styles.signalRing}
+                style={{ animationDelay: "1.5s" }}
+              ></div>
+              <div
+                className={styles.signalRing}
+                style={{ animationDelay: "3s" }}
+              ></div>
+
               <div className={styles.mailIconCircle}>
                 <Mail className={styles.heroIcon} size={22} strokeWidth={1.5} />
               </div>
               <div className={styles.floatingDot1}></div>
               <div className={styles.floatingDot2}></div>
+              <div className={styles.floatingDot3}></div>
             </div>
 
             <h3 className={styles.cardHeading}>Send us a message</h3>
@@ -145,7 +156,7 @@ export default function ContactSection() {
                 />
                 <User
                   className={styles.inputIcon}
-                  size={18}
+                  size={16}
                   strokeWidth={1.5}
                 />
                 <div className={styles.inputLine}></div>
@@ -167,7 +178,7 @@ export default function ContactSection() {
                 />
                 <Mail
                   className={styles.inputIcon}
-                  size={18}
+                  size={16}
                   strokeWidth={1.5}
                 />
                 <div className={styles.inputLine}></div>
@@ -187,7 +198,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                 />
-                <Tag className={styles.inputIcon} size={18} strokeWidth={1.5} />
+                <Tag className={styles.inputIcon} size={16} strokeWidth={1.5} />
                 <div className={styles.inputLine}></div>
               </div>
 
@@ -206,7 +217,7 @@ export default function ContactSection() {
                 ></textarea>
                 <PenLine
                   className={styles.inputIcon}
-                  size={18}
+                  size={16}
                   strokeWidth={1.5}
                 />
                 <div className={styles.inputLine}></div>
@@ -218,7 +229,7 @@ export default function ContactSection() {
                   className={styles.submitBtn}
                   aria-label="Send Message"
                 >
-                  <Send className={styles.btnIcon} size={18} strokeWidth={2} />
+                  <Send className={styles.btnIcon} size={16} strokeWidth={2} />
                 </button>
               </div>
             </form>
