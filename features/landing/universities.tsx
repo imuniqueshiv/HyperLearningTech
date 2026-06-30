@@ -52,7 +52,7 @@ export default function Universities() {
   });
 
   return (
-    <section className="relative flex min-h-[115vh] flex-col justify-center overflow-hidden border-none bg-background pt-16 pb-32">
+    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden border-none bg-background pt-12 pb-24 md:pt-16 md:pb-32">
       {/* Background Layers */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {/* Light Mode Wavy Refraction Background (Inverted) */}
@@ -150,7 +150,7 @@ export default function Universities() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className={`group relative flex flex-col overflow-hidden rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
+                  className={`group relative flex flex-col overflow-hidden rounded-[20px] md:rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-4 md:p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
                     university.status === "Available" ? "cursor-pointer" : ""
                   }`}
                 >
@@ -162,8 +162,8 @@ export default function Universities() {
 
                   {/* Badge */}
                   <div className="relative z-10 mb-4 flex items-center justify-between">
-                    <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                      <GraduationCap className="relative z-10 h-7 w-7 drop-shadow-sm" />
+                    <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-[14px] md:rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+                      <GraduationCap className="relative z-10 h-6 w-6 md:h-7 md:w-7 drop-shadow-sm" />
                     </div>
 
                     <span
@@ -179,7 +179,7 @@ export default function Universities() {
 
                   {/* Content */}
                   <div className="relative z-10 flex flex-1 flex-col">
-                    <h3 className="text-2xl font-black tracking-tight text-foreground">
+                    <h3 className="text-xl md:text-2xl font-black tracking-tight text-foreground">
                       {university.name}
                     </h3>
 
@@ -187,7 +187,7 @@ export default function Universities() {
                       {university.fullName}
                     </p>
 
-                    <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
+                    <p className="mt-2.5 md:mt-3 text-[14px] md:text-[15px] leading-relaxed text-muted-foreground">
                       {university.description}
                     </p>
 
@@ -208,7 +208,7 @@ export default function Universities() {
 
                     <div className="mt-auto pt-6">
                       {university.status === "Available" ? (
-                        <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3.5 text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
+                        <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3 md:py-3.5 text-[13px] md:text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
                           <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] pointer-events-none" />
                           <span className="relative z-10 flex items-center gap-2">
                             Explore University

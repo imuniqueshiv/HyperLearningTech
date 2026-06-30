@@ -36,7 +36,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className={styles.contactSection}>
+    <section id="Contact" className={styles.contactSection}>
       {/* Background Effects */}
       <div className={styles.bgEffects}>
         <div className={styles.radialGradient}></div>
