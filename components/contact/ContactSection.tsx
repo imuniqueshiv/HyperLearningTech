@@ -53,7 +53,7 @@ export default function ContactSection() {
           </div>
 
           <h2 className={styles.heading}>
-            <span className={styles.headingWhite}>We're here to</span>
+            <span className={styles.headingWhite}>We&apos;re here to</span>
             <br />
             <span className={styles.headingGold}>help you.</span>
           </h2>
@@ -61,7 +61,7 @@ export default function ContactSection() {
           <p className={styles.description}>
             Have a question, found a bug, or need support?
             <br />
-            Let us know — we'll get back to you as soon as possible.
+            Let us know — we&apos;ll get back to you as soon as possible.
           </p>
 
           <div className={styles.featuresHorizontal}>
@@ -83,7 +83,7 @@ export default function ContactSection() {
               </div>
               <div className={styles.featureText}>
                 <h3 className={styles.featureTitle}>Get Support</h3>
-                <p className={styles.featureDesc}>We're here to help</p>
+                <p className={styles.featureDesc}>We&apos;re here to help</p>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export default function ContactSection() {
 
             <h3 className={styles.cardHeading}>Send us a message</h3>
             <p className={styles.cardSubtitle}>
-              We'll respond as soon as possible.
+              We&apos;ll respond as soon as possible.
             </p>
 
             <form className={styles.form} onSubmit={handleSubmit}>
