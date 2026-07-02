@@ -234,10 +234,9 @@ export default function Navbar() {
 
           {/* Desktop Navigation - Ultra Premium Floating Dock */}
           <div className="absolute left-1/2 top-1/2 z-50 hidden -translate-x-1/2 -translate-y-1/2 md:block">
-            {/* Outer pill styling removed for borderless test */}
-            <nav className="relative flex h-[56px] items-center gap-[10px] rounded-full px-[11px]">
-              {/* Dock Background & Shimmer (Disabled for test) */}
-              {/* <div className="pointer-events-none absolute inset-0 -z-20 overflow-hidden rounded-full bg-gradient-to-b from-[#102B5C]/80 to-[#081426]/90 backdrop-blur-[24px]">
+            <nav className="relative flex h-[56px] items-center gap-[10px] rounded-full border border-white/[0.08] px-[11px] shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_1px_rgba(255,255,255,0.15)]">
+              {/* Dock Background & Shimmer */}
+              <div className="pointer-events-none absolute inset-0 -z-20 overflow-hidden rounded-full bg-gradient-to-b from-[#102B5C]/80 to-[#081426]/90 backdrop-blur-[24px]">
                 <motion.div
                   className="absolute -inset-x-full inset-0 h-full w-[200%] -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
                   animate={{ x: ["-100%", "100%"] }}
@@ -248,7 +247,7 @@ export default function Navbar() {
                     repeatDelay: 12,
                   }}
                 />
-              </div> */}
+              </div>
 
               {navLinks.map((link, index) => {
                 const isActive =
