@@ -133,7 +133,7 @@ export default function Navbar() {
             href="/"
             className="group flex items-center gap-3.5 transition-opacity duration-300 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:focus-visible:ring-offset-[#0B1528] rounded-lg"
           >
-            <div className="relative h-10 w-10 md:h-11 md:w-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-[1.02] bg-white/95 rounded-[12px] p-1.5 shadow-[0_4px_12px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] border border-black/5 dark:bg-transparent dark:p-0 dark:shadow-none dark:border-transparent flex items-center justify-center">
+            <div className="relative h-10 w-10 md:h-11 md:w-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-[1.02] flex items-center justify-center">
               <Image
                 src="/hl-logo.png"
                 alt="Hyper Learning Official Logo"
@@ -169,16 +169,12 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
                   className={`group relative px-4 py-2 text-[14.5px] tracking-[0.01em] transition-colors duration-200 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/50 ${
-                    link.label === "Contact"
-                      ? "bg-white/10 hover:bg-white/15 border border-white/10 shadow-sm"
-                      : ""
-                  } ${
                     isActive
                       ? "text-white font-semibold"
                       : "text-slate-300 font-medium hover:text-white"
                   }`}
                 >
-                  {isActive && link.label !== "Contact" && (
+                  {isActive && (
                     <motion.div
                       layoutId="activeNavIndicator"
                       className="absolute inset-0 rounded-full bg-white/[0.08] border border-white/[0.08] shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_2px_4px_rgba(0,0,0,0.2)] backdrop-blur-md"
@@ -192,7 +188,7 @@ export default function Navbar() {
                   <span className="relative z-10">{link.label}</span>
 
                   {/* Hover Underline */}
-                  {!isActive && link.label !== "Contact" && (
+                  {!isActive && (
                     <span className="absolute bottom-1.5 left-1/2 h-[1.5px] w-[calc(100%-1.5rem)] -translate-x-1/2 origin-center scale-x-0 bg-gradient-to-r from-transparent via-blue-600/80 to-transparent transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-x-100 dark:via-white/70" />
                   )}
                 </Link>
