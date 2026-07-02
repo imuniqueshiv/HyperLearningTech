@@ -49,7 +49,7 @@ function MagneticNavItem({
 }: {
   children: React.ReactNode;
   isActive: boolean;
-  onClick: (e: any, href: string) => void;
+  onClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
   href: string;
   label: string;
 }) {
