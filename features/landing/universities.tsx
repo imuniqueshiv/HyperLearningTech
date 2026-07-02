@@ -55,7 +55,7 @@ export default function Universities() {
     <section className="relative flex min-h-screen flex-col justify-center overflow-hidden border-none bg-background pt-12 pb-24 md:pt-16 md:pb-32">
       {/* Background Layers */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* Light Mode Wavy Refraction Background (Inverted) */}
+        {/* Light Mode Wavy Refraction Background - Centered with edge fade */}
         <div
           className="absolute inset-0 dark:hidden"
           style={{
@@ -66,6 +66,10 @@ export default function Universities() {
             backgroundSize: "cover, auto",
             backgroundPosition: "center, top",
             backgroundRepeat: "no-repeat, no-repeat",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 15%, rgba(0,0,0,0.8) 35%, black 45%, black 55%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.3) 85%, transparent 100%)",
+            maskImage:
+              "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 15%, rgba(0,0,0,0.8) 35%, black 45%, black 55%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.3) 85%, transparent 100%)",
           }}
         />
 

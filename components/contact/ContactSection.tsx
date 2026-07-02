@@ -37,6 +37,9 @@ export default function ContactSection() {
 
   return (
     <section id="Contact" className={styles.contactSection}>
+      {/* Top Section Divider */}
+      <div className={styles.sectionDivider}></div>
+
       {/* Background Effects */}
       <div className={styles.bgEffects}>
         <div className={styles.radialGradient}></div>
@@ -98,6 +101,13 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
+
+          <div className={styles.availabilityBadge}>
+            <div className={styles.availabilityDot}></div>
+            <span className={styles.availabilityText}>
+              Usually replies within 12 hours
+            </span>
+          </div>
         </div>
 
         {/* Center Vertical Divider */}
@@ -105,7 +115,7 @@ export default function ContactSection() {
           <div className={styles.centerDot}></div>
         </div>
 
-        {/* Right Section - 48% */}
+        {/* Right Section - 50% */}
         <div className={styles.rightSection}>
           <div className={styles.contactCard}>
             {/* Corner Glow */}
@@ -140,54 +150,65 @@ export default function ContactSection() {
             </p>
 
             <form className={styles.form} onSubmit={handleSubmit}>
-              <div className={styles.inputGroup}>
-                <label htmlFor="name" className="sr-only">
-                  Your name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className={styles.input}
-                  placeholder="Your name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-                <User
-                  className={styles.inputIcon}
-                  size={16}
-                  strokeWidth={1.5}
-                />
-                <div className={styles.inputLine}></div>
-              </div>
+              <div className={styles.inputRow}>
+                <div className={styles.inputGroup}>
+                  <label htmlFor="name" className="sr-only">
+                    Your name
+                  </label>
+                  <div className={styles.inputIconWrapper}>
+                    <User
+                      className={styles.inputIcon}
+                      size={16}
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className={styles.input}
+                    placeholder="Your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
-              <div className={styles.inputGroup}>
-                <label htmlFor="email" className="sr-only">
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className={styles.input}
-                  placeholder="Your email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-                <Mail
-                  className={styles.inputIcon}
-                  size={16}
-                  strokeWidth={1.5}
-                />
-                <div className={styles.inputLine}></div>
+                <div className={styles.inputGroup}>
+                  <label htmlFor="email" className="sr-only">
+                    Your email
+                  </label>
+                  <div className={styles.inputIconWrapper}>
+                    <Mail
+                      className={styles.inputIcon}
+                      size={16}
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className={styles.input}
+                    placeholder="Your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
               </div>
 
               <div className={styles.inputGroup}>
                 <label htmlFor="subject" className="sr-only">
                   Subject
                 </label>
+                <div className={styles.inputIconWrapper}>
+                  <Tag
+                    className={styles.inputIcon}
+                    size={16}
+                    strokeWidth={1.5}
+                  />
+                </div>
                 <input
                   type="text"
                   id="subject"
@@ -198,14 +219,19 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                 />
-                <Tag className={styles.inputIcon} size={16} strokeWidth={1.5} />
-                <div className={styles.inputLine}></div>
               </div>
 
               <div className={`${styles.inputGroup} ${styles.messageGroup}`}>
                 <label htmlFor="message" className="sr-only">
                   Your message
                 </label>
+                <div className={styles.inputIconWrapper}>
+                  <PenLine
+                    className={styles.inputIcon}
+                    size={16}
+                    strokeWidth={1.5}
+                  />
+                </div>
                 <textarea
                   id="message"
                   name="message"
@@ -215,20 +241,11 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                 ></textarea>
-                <PenLine
-                  className={styles.inputIcon}
-                  size={16}
-                  strokeWidth={1.5}
-                />
-                <div className={styles.inputLine}></div>
               </div>
 
               <div className={styles.submitRow}>
-                <button
-                  type="submit"
-                  className={styles.submitBtn}
-                  aria-label="Send Message"
-                >
+                <button type="submit" className={styles.submitBtn}>
+                  <span className={styles.submitText}>Send Message</span>
                   <Send className={styles.btnIcon} size={16} strokeWidth={2} />
                 </button>
               </div>

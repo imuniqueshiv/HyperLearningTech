@@ -13,6 +13,21 @@
   min-height: 800px;
 }
 
+.sectionDivider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(232, 185, 98, 0.3) 50%,
+    transparent
+  );
+  z-index: 10;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -62,9 +77,9 @@
   gap: 64px; /* Scaled down gap */
 }
 
-/* Left Section - 52% */
+/* Left Section - 45% */
 .leftSection {
-  flex: 0 0 52%;
+  flex: 0 0 45%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -106,10 +121,10 @@
 
 .heading {
   font-family: "Cormorant Garamond", serif;
-  font-size: 4.5rem; /* Scaled down for elegance */
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .headingWhite {
@@ -124,50 +139,67 @@
 }
 
 .description {
-  font-size: 1.05rem; /* Slightly smaller */
+  font-size: 1rem;
   color: #94a3b8;
-  line-height: 1.7;
-  margin-bottom: 56px;
-  font-weight: 300;
-  max-width: 85%;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 500;
+  max-width: 90%;
 }
 
 /* Feature Cards */
 .featuresHorizontal {
   display: flex;
-  align-items: center;
-  gap: 32px; /* Scaled down */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+  width: 100%;
 }
 
 .featureItem {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 16px;
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: rgba(10, 14, 24, 0.4);
+  border: 1px solid rgba(232, 185, 98, 0.05);
+  padding: 8px 16px 8px 10px;
+  border-radius: 18px;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .iconWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px; /* Increased to match reference */
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: rgba(232, 185, 98, 0.08); /* Clean, slightly warmer flat fill */
-  border: 1px solid rgba(232, 185, 98, 0.05); /* Extremely subtle edge */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05),
+    rgba(232, 185, 98, 0.05)
+  );
+  box-shadow: 0 8px 20px rgba(232, 185, 98, 0.12);
+  border: 1px solid rgba(232, 185, 98, 0.08);
   color: #e8b962;
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
 .featureItem:hover {
-  transform: translateY(-4px); /* Slight lift */
+  transform: translateX(4px);
+  background: rgba(10, 14, 24, 0.7);
+  border-color: rgba(232, 185, 98, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .featureItem:hover .iconWrapper {
-  box-shadow: 0 0 16px rgba(232, 185, 98, 0.25); /* Icon glow */
-  border-color: rgba(232, 185, 98, 0.5); /* Subtle border glow */
+  box-shadow: 0 0 16px rgba(232, 185, 98, 0.15);
+  border-color: rgba(232, 185, 98, 0.3);
 }
 
 .featureText {
@@ -177,20 +209,46 @@
 }
 
 .featureTitle {
-  font-size: 15px;
-  font-weight: 600; /* Slightly bolder */
+  font-size: 14px;
+  font-weight: 600;
   color: #ffffff;
 }
 
 .featureDesc {
-  font-size: 12px; /* Smaller */
-  color: rgba(148, 163, 184, 0.7); /* Reduced opacity */
+  font-size: 12px;
+  color: rgba(148, 163, 184, 0.7);
+}
+
+/* Availability Badge */
+.availabilityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: max-content;
+}
+
+.availabilityDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.availabilityText {
+  font-size: 13px;
+  font-weight: 500;
+  color: #cbd5e1;
 }
 
 /* Center Vertical Divider */
 .centerDivider {
   position: absolute;
-  left: 54%; /* Placed between 52% and 48% */
+  left: 48.5%;
   top: 0;
   bottom: 0;
   width: 1px;
@@ -214,11 +272,11 @@
   box-shadow: 0 0 12px 2px rgba(232, 185, 98, 0.8);
 }
 
-/* Right Section - 48% */
+/* Right Section - 50% */
 .rightSection {
-  flex: 0 0 44%; /* 48% minus some gap spacing */
+  flex: 0 0 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -227,9 +285,10 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(232, 185, 98, 0.12);
-  border-radius: 20px; /* Subtle rounded border */
-  padding: 56px 48px; /* Reduced to fix huge card size */
+  border-radius: 20px;
+  padding: 32px 32px 16px 32px;
   width: 100%;
+  max-width: 530px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -287,11 +346,12 @@
 /* Removed the sharp glowing dot from the top right corner as requested */
 
 /* Top Icon */
+
 .heroIconWrapper {
   position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 24px auto;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 12px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +432,7 @@
 .cardHeading {
   font-family: "Cormorant Garamond", serif;
   font-size: 2.2rem; /* Scaled down slightly */
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   color: #ffffff;
   margin-bottom: 8px;
@@ -383,7 +443,9 @@
   text-align: center;
   color: #94a3b8;
   font-size: 0.9rem;
-  margin-bottom: 48px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232, 185, 98, 0.1);
+  margin-bottom: 24px;
   z-index: 1;
 }
 
@@ -391,53 +453,87 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 40px; /* Reduced from massive 56px */
+  gap: 12px;
   z-index: 1;
   position: relative;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
 }
 
 .inputGroup {
   position: relative;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(232, 185, 98, 0.08);
+  border-radius: 14px;
+  padding: 4px 12px;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inputGroup:focus-within {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: rgba(232, 185, 98, 0.35);
+  box-shadow: 0 8px 24px rgba(232, 185, 98, 0.15);
+}
+
+.inputIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(232, 185, 98, 0.08);
+  color: #e8b962;
+  margin-top: 8px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.inputGroup:focus-within .inputIconWrapper {
+  background: rgba(232, 185, 98, 0.15);
 }
 
 .input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(232, 185, 98, 0.15); /* Thin gold underline */
-  padding: 8px 32px 8px 0;
+  padding: 14px 12px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 400;
   outline: none;
   width: 100%;
   transition: all 0.3s ease;
 }
 
 .textarea {
-  resize: vertical;
-  min-height: 48px; /* Scaled back */
+  resize: none;
+  min-height: 48px;
 }
 
 .messageGroup {
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .input::placeholder {
-  color: rgba(255, 255, 255, 0.6); /* Slightly brighter labels */
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
 .inputIcon {
-  position: absolute;
-  right: 0; /* Align perfectly on the right */
-  top: 8px;
-  color: rgba(255, 255, 255, 0.3);
+  color: inherit;
   pointer-events: none;
-  transition: color 0.3s ease;
 }
 
 /* Animate underline and soft gold glow on focus */
@@ -464,45 +560,45 @@
 }
 
 .input:focus::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /* Send Button */
 .submitRow {
-  position: absolute;
-  bottom: -48px; /* Moved down by approx 0.6cm (~24px) */
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  margin-top: 16px;
 }
 
 .submitBtn {
-  width: 36px; /* Reduced by 40% (60px * 0.6) */
-  height: 36px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at top left,
-    #f2c572 0%,
-    #d4af37 100%
-  ); /* Smooth radial gold */
+  width: 100%;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #d9ac53 0%, #b88a30 100%);
   border: none;
-  color: #030508; /* Deep black icon */
+  color: #030508;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   box-shadow:
-    0 0 30px rgba(232, 185, 98, 0.18),
-    /* Reduced by 50% */ 0 0 60px rgba(232, 185, 98, 0.07); /* Reduced by 50% */
+    0 8px 20px rgba(232, 185, 98, 0.15),
+    0 2px 8px rgba(232, 185, 98, 0.1);
   transition:
-    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
     box-shadow 0.3s ease;
 }
 
 .submitBtn:hover {
-  transform: scale(1.08); /* Gentle scale animation */
+  transform: translateY(-2px);
   box-shadow:
-    0 0 40px rgba(232, 185, 98, 0.25),
-    /* Reduced by 50% */ 0 0 80px rgba(232, 185, 98, 0.1); /* Reduced by 50% */
+    0 12px 28px rgba(232, 185, 98, 0.25),
+    0 4px 12px rgba(232, 185, 98, 0.15);
 }
 
 .btnIcon {
@@ -593,5 +689,345 @@
     display: flex;
     justify-content: center;
     margin-top: 0;
+  }
+}
+
+/* ===== LIGHT MODE OVERRIDES ===== */
+:global(html:not(.dark)) .contactSection {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f8faff 15%,
+    #eef2ff 50%,
+    #f8faff 85%,
+    #ffffff 100%
+  );
+  color: #1e293b;
+}
+
+:global(html:not(.dark)) .sectionDivider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.2) 50%,
+    transparent
+  );
+}
+
+/* 2. & 10. Shady and wavy pattern background */
+:global(html:not(.dark)) .radialGradient {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 800' preserveAspectRatio='none'%3E%3Cpath fill='%236366f1' fill-opacity='0.05' d='M0,400 C320,500 420,300 720,400 C1020,500 1120,300 1440,400 L1440,0 L0,0 Z'/%3E%3Cpath fill='%238b5cf6' fill-opacity='0.08' d='M0,500 C320,400 420,600 720,500 C1020,400 1120,600 1440,500 L1440,0 L0,0 Z'/%3E%3Cpath fill='%236366f1' fill-opacity='0.04' d='M0,600 C320,700 420,500 720,600 C1020,700 1120,500 1440,600 L1440,0 L0,0 Z'/%3E%3C/svg%3E"),
+    linear-gradient(to top, rgba(248, 250, 255, 0), rgba(248, 250, 255, 1));
+  background-size: cover, auto;
+  background-position: center, top;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 15%,
+    rgba(0, 0, 0, 0.5) 30%,
+    black 45%,
+    black 55%,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0.1) 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 15%,
+    rgba(0, 0, 0, 0.5) 30%,
+    black 45%,
+    black 55%,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0.1) 85%,
+    transparent 100%
+  );
+}
+
+:global(html:not(.dark)) .label {
+  color: #6366f1;
+}
+
+:global(html:not(.dark)) .horizontalDivider {
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.4), transparent);
+}
+
+:global(html:not(.dark)) .horizontalDivider .dot {
+  background: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.6);
+}
+
+/* 1. & 5. Strengthen left hierarchy */
+:global(html:not(.dark)) .heading {
+  font-size: 3.2rem;
+  margin-bottom: 36px;
+  line-height: 1.05;
+}
+
+:global(html:not(.dark)) .headingWhite {
+  color: #111827;
+}
+
+:global(html:not(.dark)) .headingGold {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+:global(html:not(.dark)) .description {
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* 6. Feature Cards */
+:global(html:not(.dark)) .featureItem {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(99, 102, 241, 0.08);
+  padding: 12px 20px 12px 12px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+:global(html:not(.dark)) .iconWrapper {
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  color: #6366f1;
+  width: 44px;
+  height: 44px;
+}
+
+:global(html:not(.dark)) .featureItem:hover {
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.08);
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(99, 102, 241, 0.15);
+}
+
+:global(html:not(.dark)) .featureItem:hover .iconWrapper {
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.15);
+}
+
+:global(html:not(.dark)) .featureTitle {
+  color: #1e293b;
+}
+
+:global(html:not(.dark)) .featureDesc {
+  color: #64748b;
+}
+
+/* 7. Subtle Divider */
+:global(html:not(.dark)) .centerDivider {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(124, 92, 255, 0.2) 50%,
+    transparent
+  );
+}
+
+:global(html:not(.dark)) .centerDot {
+  width: 4px;
+  height: 4px;
+  background: #7c5cff;
+  box-shadow: 0 0 8px 1px rgba(124, 92, 255, 0.6);
+}
+
+/* 3. Form Card */
+:global(html:not(.dark)) .contactCard {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(124, 92, 255, 0.12);
+  box-shadow:
+    0 30px 80px rgba(80, 90, 200, 0.12),
+    0 10px 30px rgba(124, 92, 255, 0.08);
+}
+
+:global(html:not(.dark)) .contactCard:hover {
+  border-color: rgba(124, 92, 255, 0.2);
+  box-shadow:
+    0 35px 90px rgba(80, 90, 200, 0.15),
+    0 15px 35px rgba(124, 92, 255, 0.1);
+}
+
+:global(html:not(.dark)) .cardGlowTopRight {
+  background: radial-gradient(
+    circle at top right,
+    rgba(124, 92, 255, 0.12) 0%,
+    transparent 60%
+  );
+}
+
+:global(html:not(.dark)) .cardGlowTopRight::after {
+  border-top: 1px solid rgba(124, 92, 255, 0.2);
+  border-right: 1px solid rgba(124, 92, 255, 0.2);
+}
+
+/* 8. Email Icon Area */
+:global(html:not(.dark)) .mailIconCircle {
+  background: linear-gradient(135deg, #7c5cff 0%, #6d28d9 100%);
+  border: none;
+  color: #ffffff;
+  width: 42px;
+  height: 42px;
+  box-shadow:
+    0 4px 16px rgba(124, 92, 255, 0.25),
+    0 0 0 4px rgba(124, 92, 255, 0.06),
+    0 0 0 8px rgba(124, 92, 255, 0.03);
+}
+
+:global(html:not(.dark)) .signalRing {
+  border: 1px solid rgba(124, 92, 255, 0.15);
+}
+
+:global(html:not(.dark)) .floatingDot1,
+:global(html:not(.dark)) .floatingDot2,
+:global(html:not(.dark)) .floatingDot3 {
+  background: #7c5cff;
+  box-shadow: 0 0 6px rgba(124, 92, 255, 0.4);
+}
+
+:global(html:not(.dark)) .availabilityBadge {
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+:global(html:not(.dark)) .availabilityText {
+  color: #4b5563;
+}
+
+:global(html:not(.dark)) .cardHeading {
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+:global(html:not(.dark)) .cardSubtitle {
+  color: #4b5563;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eef0f6;
+  margin-bottom: 16px;
+}
+
+:global(html:not(.dark)) .form {
+  gap: 12px;
+}
+
+/* 4. Improve Input Fields */
+:global(html:not(.dark)) .inputGroup {
+  background: #fafbfd;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  padding: 4px 12px;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+:global(html:not(.dark)) .inputGroup:hover {
+  border-color: rgba(124, 92, 255, 0.4);
+}
+
+:global(html:not(.dark)) .inputGroup:focus-within {
+  background: #ffffff;
+  border-color: #7c5cff;
+  box-shadow:
+    0 0 0 4px rgba(124, 92, 255, 0.12),
+    0 8px 24px rgba(124, 92, 255, 0.08);
+}
+
+:global(html:not(.dark)) .inputIconWrapper {
+  background: rgba(99, 102, 241, 0.06);
+  color: #6366f1;
+}
+
+:global(html:not(.dark)) .inputGroup:focus-within .inputIconWrapper {
+  background: rgba(124, 92, 255, 0.1);
+  color: #7c5cff;
+}
+
+:global(html:not(.dark)) .input {
+  color: #111827;
+  border-bottom: none;
+  padding: 14px 12px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+:global(html:not(.dark)) .input:hover {
+  border-bottom: none;
+}
+
+:global(html:not(.dark)) .input::placeholder {
+  color: #6b7280;
+  font-weight: 400;
+}
+
+:global(html:not(.dark)) .input:focus::placeholder {
+  color: #9ca3af;
+}
+
+:global(html:not(.dark)) .inputLine {
+  display: none;
+}
+
+:global(html:not(.dark)) .messageGroup {
+  margin-bottom: 0;
+}
+
+:global(html:not(.dark)) .textarea {
+  min-height: 48px;
+}
+
+:global(html:not(.dark)) .submitRow {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 16px;
+}
+
+/* 9. Send Button */
+:global(html:not(.dark)) .submitBtn {
+  width: 100%;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow:
+    0 4px 12px rgba(124, 92, 255, 0.2),
+    0 1px 3px rgba(124, 92, 255, 0.1);
+}
+
+:global(html:not(.dark)) .submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 20px rgba(124, 92, 255, 0.3),
+    0 2px 6px rgba(124, 92, 255, 0.15);
+}
+
+:global(html:not(.dark)) .submitBtn:hover .btnIcon {
+  animation: sendIconFly 1s ease-in-out infinite alternate;
+}
+
+@keyframes sendIconFly {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(2px, -2px);
   }
 }
