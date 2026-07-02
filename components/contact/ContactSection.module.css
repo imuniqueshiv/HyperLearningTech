@@ -22,7 +22,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(232, 185, 98, 0.3) 50%,
+    rgba(212, 175, 55, 0.3) 50%,
     transparent
   );
   z-index: 10;
@@ -60,7 +60,7 @@
   height: 150vh;
   background: radial-gradient(
     circle,
-    rgba(12, 18, 32, 0.4) 0%,
+    rgba(30, 58, 138, 0.15) 0%,
     rgba(6, 8, 18, 1) 70%
   );
 }
@@ -98,13 +98,13 @@
   letter-spacing: 0.3em;
   font-size: 13px;
   font-weight: 600;
-  color: #e8b962;
+  color: #d4af37;
 }
 
 .horizontalDivider {
   width: 48px;
   height: 1px;
-  background: linear-gradient(90deg, rgba(232, 185, 98, 0.4), transparent);
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.4), transparent);
   position: relative;
 }
 
@@ -114,9 +114,9 @@
   top: -1.5px;
   width: 4px;
   height: 4px;
-  background: #e8b962;
+  background: #d4af37;
   border-radius: 50%;
-  box-shadow: 0 0 8px #e8b962;
+  box-shadow: 0 0 8px #d4af37;
 }
 
 .heading {
@@ -132,7 +132,7 @@
 }
 
 .headingGold {
-  background: linear-gradient(135deg, #f2c572 0%, #b97a2e 100%);
+  background: linear-gradient(135deg, #e7c86e 0%, #a67c1b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -163,7 +163,7 @@
   width: 100%;
   gap: 16px;
   background: rgba(10, 14, 24, 0.4);
-  border: 1px solid rgba(232, 185, 98, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.05);
   padding: 8px 16px 8px 10px;
   border-radius: 18px;
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -181,11 +181,11 @@
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.05),
-    rgba(232, 185, 98, 0.05)
+    rgba(212, 175, 55, 0.05)
   );
-  box-shadow: 0 8px 20px rgba(232, 185, 98, 0.12);
-  border: 1px solid rgba(232, 185, 98, 0.08);
-  color: #e8b962;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.08);
+  color: #d4af37;
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
@@ -193,13 +193,13 @@
 .featureItem:hover {
   transform: translateX(4px);
   background: rgba(10, 14, 24, 0.7);
-  border-color: rgba(232, 185, 98, 0.15);
+  border-color: rgba(212, 175, 55, 0.15);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .featureItem:hover .iconWrapper {
-  box-shadow: 0 0 16px rgba(232, 185, 98, 0.15);
-  border-color: rgba(232, 185, 98, 0.3);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.3);
 }
 
 .featureText {
@@ -259,7 +259,7 @@
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(232, 185, 98, 0.15) 50%,
+    rgba(212, 175, 55, 0.15) 50%,
     transparent
   );
 }
@@ -267,9 +267,9 @@
 .centerDot {
   width: 5px;
   height: 5px;
-  background: #e8b962;
+  background: #d4af37;
   border-radius: 50%;
-  box-shadow: 0 0 12px 2px rgba(232, 185, 98, 0.8);
+  box-shadow: 0 0 12px 2px rgba(212, 175, 55, 0.8);
 }
 
 /* Right Section - 50% */
@@ -281,10 +281,10 @@
 }
 
 .contactCard {
-  background: rgba(10, 14, 24, 0.5); /* Transparent with blur */
+  background: rgba(15, 23, 42, 0.5); /* Transparent with blur */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(232, 185, 98, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.15);
   border-radius: 20px;
   padding: 32px 32px 16px 32px;
   width: 100%;
@@ -301,11 +301,11 @@
 
 /* Soft golden border glow only on hover */
 .contactCard:hover {
-  border-color: rgba(232, 185, 98, 0.18); /* Reduced by 40% */
+  border-color: rgba(96, 165, 250, 0.3); /* Reduced by 40% */
   box-shadow:
     0 24px 60px rgba(0, 0, 0, 0.5),
-    0 0 40px rgba(232, 185, 98, 0.05) inset,
-    /* Reduced by 40% */ 0 0 40px rgba(232, 185, 98, 0.05); /* Reduced by 40% */
+    0 0 40px rgba(96, 165, 250, 0.05) inset,
+    /* Reduced by 40% */ 0 0 40px rgba(96, 165, 250, 0.05); /* Reduced by 40% */
 }
 
 /* Sharp Top-Right Flare and Glow */
@@ -317,7 +317,7 @@
   height: 250px;
   background: radial-gradient(
     circle at top right,
-    rgba(232, 185, 98, 0.3) 0%,
+    rgba(96, 165, 250, 0.2) 0%,
     transparent 70%
   );
   border-top-right-radius: 20px;
@@ -362,13 +362,13 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid rgba(232, 185, 98, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
   background: #060812;
-  color: #e8b962;
+  color: #d4af37;
 }
 
 /* Continuous Signal Rings */
@@ -379,7 +379,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid rgba(232, 185, 98, 0.2); /* Balanced border opacity */
+  border: 1px solid rgba(96, 165, 250, 0.25); /* Balanced border opacity */
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0;
@@ -403,8 +403,8 @@
 .floatingDot3 {
   position: absolute;
   border-radius: 50%;
-  background: #e8b962;
-  box-shadow: 0 0 6px rgba(232, 185, 98, 0.8);
+  background: #d4af37;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.8);
   z-index: 4;
 }
 
@@ -444,7 +444,7 @@
   color: #94a3b8;
   font-size: 0.9rem;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(232, 185, 98, 0.1);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
   margin-bottom: 24px;
   z-index: 1;
 }
@@ -472,7 +472,7 @@
   flex-direction: row;
   align-items: flex-start;
   background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(232, 185, 98, 0.08);
+  border: 1px solid rgba(96, 165, 250, 0.1);
   border-radius: 14px;
   padding: 4px 12px;
   transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -481,8 +481,8 @@
 
 .inputGroup:focus-within {
   background: rgba(15, 23, 42, 0.8);
-  border-color: rgba(232, 185, 98, 0.35);
-  box-shadow: 0 8px 24px rgba(232, 185, 98, 0.15);
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.15);
 }
 
 .inputIconWrapper {
@@ -492,15 +492,15 @@
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  background: rgba(232, 185, 98, 0.08);
-  color: #e8b962;
+  background: rgba(212, 175, 55, 0.08);
+  color: #d4af37;
   margin-top: 8px;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
 .inputGroup:focus-within .inputIconWrapper {
-  background: rgba(232, 185, 98, 0.15);
+  background: rgba(212, 175, 55, 0.15);
 }
 
 .input {
@@ -543,8 +543,8 @@
   left: 50%; /* Start from center */
   width: 0;
   height: 1px;
-  background: #e8b962;
-  box-shadow: 0 0 8px rgba(232, 185, 98, 0.6); /* Soft golden glow */
+  background: #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.6); /* Soft blue glow */
   transition:
     width 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
     left 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -556,7 +556,7 @@
 }
 
 .input:focus ~ .inputIcon {
-  color: #e8b962;
+  color: #d4af37;
 }
 
 .input:focus::placeholder {
@@ -576,9 +576,10 @@
   width: 100%;
   height: 52px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #d9ac53 0%, #b88a30 100%);
-  border: none;
-  color: #030508;
+  background: rgba(212, 175, 55, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #d4af37;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,19 +587,42 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow:
-    0 8px 20px rgba(232, 185, 98, 0.15),
-    0 2px 8px rgba(232, 185, 98, 0.1);
-  transition:
-    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.05);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.submitBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #e7c86e 0%, #a67c1b 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.submitBtn:hover::before {
+  opacity: 1;
 }
 
 .submitBtn:hover {
   transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0); /* Transparent border */
+  color: #030508;
   box-shadow:
-    0 12px 28px rgba(232, 185, 98, 0.25),
-    0 4px 12px rgba(232, 185, 98, 0.15);
+    0 12px 28px rgba(212, 175, 55, 0.25),
+    0 4px 12px rgba(212, 175, 55, 0.15);
+}
+
+.submitBtn:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+  transition:
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s ease;
 }
 
 .btnIcon {
