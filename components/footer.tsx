@@ -191,18 +191,21 @@ export default function Footer() {
               href="/"
               className="group inline-flex items-center gap-3.5 w-fit"
             >
-              <div className="relative flex h-[54px] w-[54px] items-center justify-center overflow-hidden rounded-[14px] bg-white dark:bg-white/[0.02] p-1.5 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] ring-1 ring-slate-200 dark:ring-white/[0.08] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:bg-blue-50 dark:group-hover:bg-blue-500/10 group-hover:ring-blue-200 dark:group-hover:ring-blue-500/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.15)]">
+              <div className="relative flex h-[54px] w-[54px] items-center justify-center overflow-hidden rounded-[14px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]">
                 <Image
                   src="/hl-logo.png"
                   alt="Hyper Learning Logo"
                   width={46}
                   height={46}
-                  className="object-contain"
+                  className="object-contain dark:brightness-[1.8] dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
                 />
               </div>
               <div>
-                <h2 className="text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300 group-hover:text-blue-600 dark:group-hover:to-white">
-                  Hyper Learning
+                <h2 className="text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300">
+                  <span className="transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    Hyper
+                  </span>{" "}
+                  Learning
                 </h2>
                 <p className="text-[10.5px] font-semibold tracking-[0.2em] uppercase text-blue-500 dark:text-indigo-300 mt-0.5">
                   AI-Powered Learning
@@ -253,7 +256,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation Container */}
-          <div className="flex flex-col gap-10 sm:flex-row sm:gap-8 xl:gap-10 shrink-0">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:flex sm:flex-row sm:gap-8 xl:gap-10 shrink-0 w-full xl:w-auto">
             {/* Platform */}
             <div className="flex flex-col sm:w-[130px] xl:border-l border-slate-200 dark:border-white/[0.03] xl:pl-8">
               <h3 className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-black dark:text-white/90">
@@ -311,12 +314,12 @@ export default function Footer() {
             </div>
 
             {/* Company */}
-            <div className="flex flex-col sm:w-[130px] sm:border-l border-slate-200 dark:border-white/[0.03] sm:pl-8">
+            <div className="flex flex-col sm:w-[130px] sm:border-l border-slate-200 dark:border-white/[0.03] sm:pl-8 col-span-2 sm:col-span-1">
               <h3 className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-black dark:text-white/90">
                 Company
               </h3>
               <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
-              <ul className="space-y-3.5">
+              <ul className="grid grid-cols-2 gap-x-4 gap-y-3.5 sm:flex sm:flex-col sm:gap-y-0 sm:space-y-3.5">
                 {[
                   { name: "About Us", href: "/about" },
                   { name: "Contact", href: "/contact" },
@@ -340,8 +343,8 @@ export default function Footer() {
           </div>
 
           {/* Feature Cards */}
-          <div className="w-full xl:border-l xl:border-slate-200 dark:xl:border-white/[0.03] xl:pl-10">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 h-full">
+          <div className="w-full mt-4 xl:mt-0 xl:border-l xl:border-slate-200 dark:xl:border-white/[0.03] xl:pl-10">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 h-full">
               {[
                 {
                   title: "AI-Powered",
@@ -393,7 +396,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-white/[0.01] backdrop-blur-lg px-6 py-4 shadow-sm dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
+        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-white/[0.01] backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
           {/* Left: Copyright */}
           <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0">
             © {new Date().getFullYear()} Hyper Learning. All rights reserved.

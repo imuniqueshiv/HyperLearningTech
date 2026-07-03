@@ -3,7 +3,1159 @@
     "id": "al-302",
     "code": "AL-302",
     "name": "Introduction to Probability and Statistics",
-    "title": "AL-302 - Introduction to Probability and Statistics"
+    "title": "AI/AL/CD-302 (GS) – Introduction to Probability and Statistics",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "A random variable X has the following probability function. Determine K, evaluate P(x<6) and P(0≤x≤4), find minimum value of K if P(x≤K)>(1/2), determine the distribution function of X and mean.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "The density function of a random variable X is f(x)=e^(-x) when x≥0. Find E(x), E(x²) and variance of X.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Suppose a continuous random variable X has the probability density function f(x)=K(1-x²) for 0<x<1, and f(x)=0 otherwise. Find: i) K ii) Mean iii) Variance.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define Bivariate distribution. Explain their properties.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Baye's theorem. The chance that doctor A will diagnose a disease X correctly is 60%. The chance that a patient will die by his treatment after correct diagnosis is 40% and the chance of death by wrong diagnosis is 70%. A patient of doctor A, who had disease X, died. What is the chance that his disease was diagnosed correctly.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "The mean and variance of a binomial variable X with parameters n and P are 16 and 8 respectively. Find P(X≥1) and P(X>2).",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A manufacturer knows that the condensers he makes contain on average 1% defectives. He packs them in boxes of 100. What is the probability that a box picked at random will contain 3 or more faulty condensers?",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "If X is a normal variate with mean 30 and standard deviation 5. Find i) P(26≤X≤40) ii) P(X≥45).",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Find Karl Pearson's coefficient of correlation from the given data on wages and cost of living.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "By the method of least squares fit a parabola of the form y=a+bx+cx² for the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "It is claimed that a random sample of 49 tyres has mean life of 15200 km. This sampled was drawn from a population whose mean is 15150 km and a standard deviation of 1200 km. Test the significance at 0.05 level.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define: i) Correlation coefficient ii) Chebyshev's inequality.",
+              "unit": "Unit 1/4",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "A sample of 26 bulbs gives a mean life of 900 hours with a standard deviation of 20 hours. The manufacturer claims that the mean life of bulbs is 1000 hours. Is the sample not up to the standard. (5% L.O.S.)",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "In one sample of 10 observations, the sum of the squares of the deviations of the sample values from mean was 120 and in the other sample of 12 observations, it was 314. Test whether the difference is significant at 5% level?",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define continuous random variable. Also show that E(X₁X₂...Xₙ)=E(X₁)E(X₂)...E(Xₙ).",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define non-central and central moments. Also, show that V(2X+3)=4V(X).",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Show that Poisson distribution is a limiting case of binomial distribution under the case n→∞, p→0 and np=m.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define gamma distribution. If X follows exponential distribution with parameter λ, then obtain its mean and variance.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "If X~N(μ,σ²), then show that φₓ(t)=e^(iμt-½t²σ²).",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A large number of measurement is normally distributed with a mean 65.5 cm and S.D. of 6.2 cm. Find the percentage of measurement that fall between 54.8 cm and 68.8 cm.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write down merits and demerits of measure of central tendency. Find the median for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Show that sum of two independent random variables follows normal distribution.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Using method of Least squares, find the curve y=ax+ax² that best fit the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Out of 8000 graduates in a town, 800 are females, out of 1600 graduate employees, 120 are females. Use χ² test to determine if any distinction is made in appointment on the basis of sex. The value of χ² for 1 degree of freedom at 5% level is 3.841.",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define Poisson distribution and obtain its mean and variance.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define gamma distribution with parameter λ and obtain its mean, variance, and characteristic function.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you mean by measure of kurtosis? Obtain β₁ and β₂ for the function: f(x)=y₀x(2-x); 0≤x≤2.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define Karl Pearson's correlation coefficient and obtain the correlation coefficient for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Find the rank correlation coefficient for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Define binomial distribution and derive its moment generating function. Hence, obtain its mean and variance.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define discrete random variable and independence of random variable. Also, show that E(X₁+X₂+...+Xₙ)=E(X₁)+E(X₂)+...+E(Xₙ).",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define expectation of random variables. Also, show that V(aX+b)=a²V(X).",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "State Chebyshev's inequality. If n→∞, p→0 and np=λ then show that binomial distribution reduces to Poisson distribution.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define gamma distribution. If X follows exponential distribution with parameter θ, then obtain its mean and variance.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define regression coefficient with its properties. If X~N(μ,σ²), then show that Mₓ(t)=e^(μt+½t²σ²).",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define normal distribution with its properties. Describe the methodology for difference of means for large samples.",
+              "unit": "Unit 2/5",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by measure of central tendency? Also, write down its merits and demerits. Calculate mean and standard deviation for the observations 5, 10, 20, 25, 40, 42, 45, 48, 70, 80.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe bivariate distribution. Write down the probability density function of bivariate normal distribution.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Fit a second degree parabola to the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you understand by Chi-square test of goodness of fit? Write condition for applying Chi-square test.",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define Binomial distribution and obtain its mean and variance.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define exponential distribution with parameter λ and obtain its mean, variance and moment generating function.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you mean by measure of skewness? Write tests of skewness.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define Spearman's rank correlation coefficient and obtain rank correlation coefficient for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Find the coefficient of correlation between X and Y.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Find the regression line of y on x for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define discrete random variables. If X and Y are any two random variables, then show that E(X+Y)=E(X)+E(Y) provided E(X) and E(Y) exist.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "If X is a continuous random variable and Y=aX+b. Prove that E(Y)=aE(X)+b and V(Y)=a²V(X), where V stands for variance and a, b are constants.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A sample of 4 items is selected at random from a box containing 12 items of which 5 are defective. Find the expected number E of defective items.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Let f(X) be the probability density function of a continuous random variable X. Then explain Mean, Median, Mode, variance and mean deviation.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "The probability density f(X) of a continuous random variable is given by f(x)=Ce^(-|x|), -∞<x<∞. Show that C=1/2 and find the mean and Variance of the distribution. Also find the probability that the variate lies between 0 and 4.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "State and prove Bayes theorem. Suppose 5 men out of 100 and 25 Women out of 10,000 are color blind. A color blind person is chosen at random. What is the probability of the person being a male. (Assuming male and female to be in equal numbers).",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "The first four central moments of a distribution are 0, 2.5, 0.7 and 1.75. Calculate β₁, β₂.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "The mean and variance of a binomial variable X with parameters n and p are 16 and 8. Find P(x≥1) and P(x>2).",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "If X is normally distributed with mean 2 and variance 0.1, then find P(|x-2|≥0.01).",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain comparison between Correlation and Regression.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Fit a parabola for the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "In a big city 325 men out of 600 men were found to be smokers. Does this information support the conclusion that the majority of men in this city are smokers.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "The table below give the number of air craft accidents that occurred during the various days of the week. Test whether the accidents are uniformly distributed over the week.",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Show that the maximum value of rank Correlation coefficient is 1.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "If X is a continuous random variable and k is a constant. Then prove that Var(X+k)=Var(X) and Var(kX)=k²Var(X).",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "State and Prove Chebyshev's inequality.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A random variable X is defined as the sum of the numbers on the faces when two dice are thrown. Find the mean of X.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain Exponential and Gamma densities with properties.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "The probability density function of a random variable X is f(x)=sin(x)/2 for 0≤x≤π and 0 elsewhere. Find the mean, mode and median of a distribution and also find the probability between 0 and π/2.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define Bivariate distribution and explain their properties.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "If first box contains 2 black, 3 red, 1 white balls; Second box contains 1 black, 1 red, 2 white balls; Third box contains 5 black, 3 red, 4 white balls. Of these a box is selected at random. From it a red ball is randomly drawn. If the ball is red, find the probability that it is from second box.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "The values of μ₁, μ₂, μ₃ and μ₄ are 0, 9.2, 3.6 and 1.22 respectively. Find out the Skewness and Kurtosis of the distribution.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "The mean and standard deviation of a normal variable are 8 and 4 respectively. Find: P(5≤X≤10) and P(X≥5).",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Average number of accidents on any day on a national highway is 1.6. Determine the probability that the number of accidents are: i) at least one ii) at most one.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define correlation. Explain types of correlation and methods of studying correlation.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Fit a Straight line for the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A sample of 400 items is taken from a population whose standard deviation is 10. The mean of the sample is 40. Test whether the sample has come from a population with mean 38. Also calculate 95% confidence interval for the population.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define Chi-Square test of goodness of fit. Explain the conditions for Chi-Square test.",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Calculate coefficient of correlation from the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Determine (i) P(B/A) (ii) P(A/B^c) if A and B are events with P(A)=1/3, P(B)=1/4, P(A∪B)=1/2.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A random variable X has the following probability function. Find i) K ii) Mean iii) Variance.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define Moments. Explain types of moments.",
+              "unit": "Unit 1",
+              "type": "basic-probability"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find the mean and standard deviation of a normal distribution in which 7% of items are under 35 and 89% are under 63.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "The density function of a random variable X is f(x)=e^(-x), x≥0. Find E(x), E(x²) and variance of X.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define gamma distribution. Find the mean and Variance of gamma distribution.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Two factories produce identical clocks. The production of the first factory consists of 10,000 clocks of which 100 are defective. The second factory produces 20,000 clocks of which 300 are defective. What is the probability that a particular defective clock was produced in the first factory.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain bivariate distributions and their properties.",
+              "unit": "Unit 3",
+              "type": "bivariate"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "If the variance of a Poisson variate is 3, then find P(x=0), P(0<x≤3) and P(1≤x<4).",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Fit a straight line to the form y=a+bx for the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "20% of items produced from a factory are defective. Find the probability that in a sample of 5 chosen at random: i) none is defective ii) one is defective iii) P(1<x<4).",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Calculate the coefficient of rank correlation from the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "The average marks scored by 32 boys is 72 with a standard deviation of 8. While that for 36 girls is 70 with a standard deviation of 6, does this indicate that the boys perform better than girls at level of significance 0.05? Explain.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Experience has shown that 20% of a manufactured product is of the top quality. In one day's production of 400 articles only 50 are of top quality. Test the hypothesis at 0.05 level.",
+              "unit": "Unit 5",
+              "type": "applied-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain partial and multiple correlation coefficients.",
+              "unit": "Unit 4",
+              "type": "basic-statistics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Define chi-square distribution. Explain its properties.",
+              "unit": "Unit 6",
+              "type": "small-samples"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "A random variable x has the following probability function. Determine k, evaluate P(x<6) and P(0≤x≤4). If P(x≤k)>(1/2) find the minimum value of k. Determine the distribution function of x. Mean.",
+              "unit": "Unit 1",
+              "type": "basic-probability",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "The density function of a random variable X is f(x)=e^(-x) when x≥0. Find E(X), E(X²) and variance of X.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions",
+              "isPredicted": true
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Suppose a continuous random variable X has the probability density function f(x)=k(1-x²) for 0<x<1, and f(x)=0 otherwise. Find (i) k (ii) Mean (iii) Variance.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write down merits and demerits of measure of central tendency. Find the median for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Show that sum of two independent random variables follows normal distribution.",
+              "unit": "Unit 3",
+              "type": "bivariate",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State Chebyshev's inequality. If n→∞, p→0 and np=λ, then show that binomial distribution reduces to Poisson distribution.",
+              "unit": "Unit 1",
+              "type": "basic-probability",
+              "isPredicted": true
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define regression coefficient with its properties. If X~N(μ,σ²), then show that Mₓ(t)=e^(μt+½t²σ²).",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Fit a second degree parabola to the given data.",
+              "unit": "Unit 5",
+              "type": "applied-statistics",
+              "isPredicted": true
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you understand by Chi-square test of goodness of fit? Write condition for applying Chi-square test.",
+              "unit": "Unit 6",
+              "type": "small-samples",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define Binomial distribution and obtain its mean and variance.",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define exponential distribution with parameter θ and obtain its mean, variance and moment generating function.",
+              "unit": "Unit 2",
+              "type": "continuous-distributions",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Average number of accidents on any day on a national highway is 1.6. Determine the probability that the number of accidents are (i) at least one (ii) at most one.",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define correlation. Explain types of correlation and method of studying correlation.",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Find Karl Pearson's coefficient of correlation from the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Find the regression line of y on x for the given data.",
+              "unit": "Unit 4",
+              "type": "basic-statistics",
+              "isPredicted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

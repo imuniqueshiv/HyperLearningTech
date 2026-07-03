@@ -2,9 +2,120 @@
   "subject": {
     "id": "csit-402",
     "code": "CSIT-402",
-    "name": "Analog & Digital Communication (ADC)",
-    "title": "CSIT-402 - Analog & Digital Communication (ADC)",
+    "name": "Analog & Digital Communication",
+    "title": "CSIT-402 - Analog & Digital Communication",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Signals and Systems",
+      "hours": 8,
+      "topics": [
+        "Block diagram of a communication system",
+        "signal-definition",
+        "types of signals continuous, discrete, deterministic, non-deterministic, periodic, non-periodic, energy, power, analog and digital signals",
+        "Electromagnetic Spectra",
+        "Standard signals- DC, sinusoidal, unit step, ramp, signum, rectangular pulse, impulse(delta) signal",
+        "System definition",
+        "classification of systems",
+        "linear, nonlinear, time variant, time invariant, causal, non causal, stable and unstable systems",
+        "Fourier transforms: Time domain and frequency domain representation of signal",
+        "Fourier Transform and its properties",
+        "conditions for existence",
+        "Transform of Gate, unit step, constant, impulse, sine and cosine wave",
+        "Shifting property of delta function",
+        "convolution, time and frequency convolution theorems"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Amplitude Modulation",
+      "hours": 8,
+      "topics": [
+        "Modulation, need of modulation",
+        "types of modulation techniques",
+        "amplitude modulation (DSB-FC)",
+        "modulation index",
+        "frequency spectrum of AM wave",
+        "linear and over modulation",
+        "power relation in AM",
+        "transmission efficiency",
+        "modulation by a complex signal",
+        "bandwidth of AM",
+        "AM modulators",
+        "square law and switching modulator",
+        "advantages and disadvantages of AM",
+        "Demodulation of AM: Suppressed carrier amplitude modulation systems",
+        "DSB-SC, SSB-SC, VSB-SC systems",
+        "comparison of various amplitude modulation systems",
+        "Demodulation of AM, square law and envelope detector",
+        "synchronous detection of AM",
+        "Low and high power AM transmitters",
+        "AM receivers, TRF and superheterodyne receivers",
+        "sensitivity, selectivity and fidelity of receivers"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Angle modulation",
+      "hours": 8,
+      "topics": [
+        "Introduction and types of angle modulation",
+        "frequency modulation",
+        "frequency deviation",
+        "modulation index",
+        "deviation ratio",
+        "bandwidth requirement of FM wave",
+        "types of FM",
+        "Phase modulation, difference between FM and PM",
+        "Direct and indirect method of FM generation",
+        "FM demodulators- slope detector, Foster seeley discriminator, ratio detector",
+        "Introduction to pulse modulation systems"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Sampling of signal",
+      "hours": 8,
+      "topics": [
+        "sampling theorem for low pass and Band pass signal",
+        "Pulse amplitude modulation (PAM)",
+        "Time division, multiplexing (TDM)",
+        "Channel Bandwidth for PAMTDM signal",
+        "Type of sampling instantaneous, Natural and flat top",
+        "Aperture effect",
+        "Introduction to pulse position and pulse duration modulations",
+        "Digital signal, Quantization, Quantization error",
+        "Pulse code modulation",
+        "signal to noise ratio",
+        "Companding",
+        "Data rate and Baud rate, Bit rate",
+        "multiplexed PCM signal",
+        "Differential PCM (DPCM)",
+        "Delta Modulation (DM) and Adaptive Delta Modulation (ADM)",
+        "comparison of various systems"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Digital modulations Techniques",
+      "hours": 8,
+      "topics": [
+        "Generation, detection, equation and Bandwidth of amplitude shift keying (ASK)",
+        "Binary Phase Shift keying (BPSK)",
+        "Differential phase shift keying (DPSK)",
+        "offset and non offset quadrature phase shift keying (QPSK)",
+        "M-Ary PSK",
+        "Binary frequency Shift Keying (BFSK)",
+        "M-Ary FSK",
+        "Quadrature Amplitude modulation (QAM)"
+      ]
+    }
+  ]
 }

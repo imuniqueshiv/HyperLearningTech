@@ -2,9 +2,81 @@
   "subject": {
     "id": "cy-305",
     "code": "CY-305",
-    "name": "Object Oriented Programming and Methodology (OOPM)",
-    "title": "CY-305 - Object Oriented Programming and Methodology (OOPM)",
+    "name": "Object Oriented Programming and Methodology",
+    "title": "CY-305 - Object Oriented Programming and Methodology",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to OOP & OO Thinking",
+      "hours": 8,
+      "topics": [
+        "Introduction to Object Oriented Thinking & Object Oriented Programming",
+        "Comparison with Procedural Programming",
+        "features of Object oriented paradigm– Merits and demerits of OO methodology",
+        "Object model",
+        "Elements of OOPS",
+        "IO processing",
+        "Data Type",
+        "Type Conversion",
+        "Control Statement",
+        "Loops",
+        "Arrays"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Encapsulation and Data Abstraction",
+      "hours": 8,
+      "topics": [
+        "Concept of Objects: State, Behavior & Identity of an object",
+        "Classes: identifying classes and candidates for Classes Attributes and Services",
+        "Access modifiers",
+        "Static members of a Class",
+        "Instances",
+        "Message passing",
+        "Construction and destruction of Objects"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Relationships & Inheritance",
+      "hours": 8,
+      "topics": [
+        "Inheritance: purpose and its types, ‘is a’ relationship",
+        "Association, Aggregation",
+        "Concept of interfaces and Abstract classes"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Polymorphism",
+      "hours": 8,
+      "topics": [
+        "Introduction, Method Overriding & Overloading",
+        "static and run time Polymorphism",
+        "Virtual Function",
+        "friend function",
+        "Static function",
+        "friend class"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Advanced Features & Case Studies",
+      "hours": 8,
+      "topics": [
+        "Strings",
+        "Exceptional handling",
+        "Introduction of Multi-threading and Data collections",
+        "Case study like: ATM, Library management system"
+      ]
+    }
+  ]
 }

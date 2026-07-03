@@ -81,23 +81,29 @@ export default function Hero() {
   return (
     <section
       id="Home"
-      className="relative overflow-hidden scroll-mt-24 border-b border-border bg-gradient-to-b from-[#FCFCFE] via-[#F8FAFC] to-white dark:bg-none dark:bg-transparent"
+      className="relative overflow-hidden scroll-mt-24 border-b border-border dark:bg-transparent"
     >
       {/* Background Layers */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* Restored Wavy Bluish Effect (40% less contrast) */}
-        <div className="absolute inset-0 opacity-60 dark:hidden pointer-events-none">
-          <div className="absolute top-[-20%] left-[-10%] h-[800px] w-[1200px] -rotate-12 rounded-full bg-gradient-to-br from-blue-400/[0.12] via-indigo-300/[0.08] to-transparent blur-[80px]" />
-          <div className="absolute top-[20%] right-[-10%] h-[700px] w-[1000px] rotate-12 rounded-full bg-gradient-to-bl from-cyan-300/[0.12] via-blue-300/[0.08] to-transparent blur-[80px]" />
-          <div className="absolute bottom-[-10%] left-[15%] h-[600px] w-[900px] -rotate-6 rounded-full bg-gradient-to-tr from-indigo-300/[0.1] via-blue-200/[0.05] to-transparent blur-[80px]" />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Light Mode: Base gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FCFCFE] via-[#F8FAFC] to-white dark:hidden" />
+
+        {/* Light Mode: Refined Gradient Blobs */}
+        <div className="absolute inset-0 dark:hidden pointer-events-none">
+          <div className="absolute top-[-15%] left-[-5%] h-[700px] w-[900px] -rotate-12 rounded-full bg-gradient-to-br from-blue-500/[0.25] via-indigo-400/[0.18] to-transparent blur-[90px]" />
+          <div className="absolute top-[15%] right-[-8%] h-[600px] w-[800px] rotate-12 rounded-full bg-gradient-to-bl from-violet-400/[0.22] via-blue-300/[0.15] to-transparent blur-[90px]" />
+          <div className="absolute bottom-[-5%] left-[20%] h-[500px] w-[700px] -rotate-6 rounded-full bg-gradient-to-tr from-indigo-300/[0.22] via-cyan-300/[0.12] to-transparent blur-[90px]" />
         </div>
 
-        {/* Existing subtle glows */}
-        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-blue-500/[0.02] blur-[160px] dark:bg-blue-500/10" />
-        <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-purple-500/[0.02] blur-[160px] dark:bg-indigo-500/10" />
+        {/* Light Mode: Central Radial Glow */}
+        <div className="absolute top-[25%] left-1/2 -translate-x-1/2 h-[600px] w-[90%] rounded-full bg-gradient-to-b from-blue-200/70 via-indigo-100/50 to-transparent blur-[100px] dark:hidden pointer-events-none" />
+
+        {/* Dark mode glows */}
+        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-transparent blur-[160px] dark:bg-blue-500/10" />
+        <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-transparent blur-[160px] dark:bg-indigo-500/10" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-16 lg:px-8 lg:pb-32 lg:pt-20">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-12 md:pb-24 md:pt-16 lg:px-8 lg:pb-32 lg:pt-20">
         <div className="grid items-center gap-16 lg:grid-cols-[1.3fr_0.7fr] lg:gap-8">
           {/* Left Content */}
           <motion.div
@@ -119,7 +125,7 @@ export default function Hero() {
             {/* Headline */}
             <motion.h1
               variants={itemVariants}
-              className="text-[54px] font-[800] leading-[1.1] tracking-[-0.03em] lg:text-[64px]"
+              className="text-[42px] md:text-[54px] font-[800] leading-[1.1] tracking-[-0.03em] lg:text-[64px]"
             >
               <span className="text-slate-900 dark:text-[#f1f5f9]">Master</span>
               <br />
@@ -269,9 +275,9 @@ export default function Hero() {
           >
             {/* Glowing aura for Light Mode behind AI card */}
             <div className="absolute inset-0 -z-10 rounded-[24px] bg-indigo-500/20 blur-[60px] dark:bg-transparent" />
-            <div className="relative w-full max-w-[440px] origin-top scale-[1.05] overflow-hidden rounded-[24px] border border-indigo-100 dark:border-white/[0.06] bg-gradient-to-br from-indigo-100 via-white/80 to-purple-100 dark:bg-none dark:bg-white/5 p-6 shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] backdrop-blur-2xl font-sans lg:origin-left lg:scale-[1.08]">
+            <div className="relative w-full max-w-[440px] origin-top scale-100 md:scale-[1.05] overflow-hidden rounded-[20px] md:rounded-[24px] border border-indigo-100 dark:border-white/[0.06] bg-gradient-to-br from-indigo-100 via-white/80 to-purple-100 dark:bg-none dark:bg-white/5 p-4 md:p-6 shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] backdrop-blur-2xl font-sans lg:origin-left lg:scale-[1.08]">
               {/* Chat Header */}
-              <div className="-mt-6 -mx-6 mb-5 flex items-center gap-3 border-b border-indigo-100 dark:border-white/[0.06] bg-[#F4F7FF] dark:bg-white/[0.02] px-6 pt-6 pb-4 backdrop-blur-md">
+              <div className="-mt-4 -mx-4 md:-mt-6 md:-mx-6 mb-4 md:mb-5 flex items-center gap-3 border-b border-indigo-100 dark:border-white/[0.06] bg-[#F4F7FF] dark:bg-white/[0.02] px-4 pt-4 pb-3 md:px-6 md:pt-6 md:pb-4 backdrop-blur-md">
                 <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#5964F4] to-[#7D52F5] shadow-[0_0_12px_rgba(99,102,241,0.4)]">
                   <BrainCircuit
                     className="h-[18px] w-[18px] text-white"
@@ -292,10 +298,10 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4">
                 {/* User Message */}
                 <div className="flex justify-end">
-                  <div className="max-w-[85%] rounded-[20px_20px_6px_20px] bg-gradient-to-r from-[#5B6EFF] to-[#8B5CF6] px-4 py-2.5 text-[13px] font-medium text-white shadow-[0_3px_10px_rgba(91,110,255,0.3)]">
+                  <div className="max-w-[85%] rounded-[20px_20px_6px_20px] bg-gradient-to-r from-[#5B6EFF] to-[#8B5CF6] px-3 py-2 md:px-4 md:py-2.5 text-[12px] md:text-[13px] font-medium text-white shadow-[0_3px_10px_rgba(91,110,255,0.3)]">
                     Explain Big O notation with an example.
                   </div>
                 </div>
@@ -314,7 +320,7 @@ export default function Hero() {
                     </span>
                   </div>
 
-                  <div className="w-full rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white/80 dark:bg-white/[0.09] px-5 py-4">
+                  <div className="w-full rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white/80 dark:bg-white/[0.09] px-4 py-3 md:px-5 md:py-4">
                     <div className="space-y-2">
                       <p className="text-[13px] leading-[1.7] text-slate-600 dark:text-[#c8ccd8]">
                         Big O notation represents the maximum growth rate of an
@@ -335,7 +341,7 @@ export default function Hero() {
 
                 {/* Related Questions */}
                 <div className="flex flex-col overflow-hidden rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white dark:bg-white/[0.05]">
-                  <div className="flex items-center gap-2 px-5 pb-1.5 pt-3">
+                  <div className="flex items-center gap-2 px-4 pb-1 pt-2.5 md:px-5 md:pb-1.5 md:pt-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-indigo-400 shadow-[0_0_4px_rgba(129,140,248,0.5)]" />
                     <p className="text-[10px] font-bold uppercase tracking-widest text-[#818cf8]">
                       Related Previous Year Questions
@@ -343,7 +349,7 @@ export default function Hero() {
                   </div>
 
                   <div className="flex flex-col divide-y divide-indigo-50 dark:divide-white/[0.02]">
-                    <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
+                    <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
                       <div className="flex items-center gap-3">
                         <CheckCircle2
                           className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
@@ -356,7 +362,7 @@ export default function Hero() {
                       <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
                     </div>
 
-                    <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
+                    <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
                       <div className="flex items-center gap-3">
                         <CheckCircle2
                           className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
@@ -369,7 +375,7 @@ export default function Hero() {
                       <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
                     </div>
 
-                    <div className="group flex cursor-pointer items-center justify-between px-5 py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
+                    <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
                       <div className="flex items-center gap-3">
                         <CheckCircle2
                           className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
@@ -384,7 +390,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <div className="group mt-3 flex items-center justify-between rounded-[16px] border border-indigo-100 dark:border-transparent bg-white/90 dark:bg-white/[0.04] px-4 py-3.5 shadow-sm dark:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-indigo-300/50 dark:hover:border-indigo-500/50 hover:shadow-[0_4px_20px_-10px_rgba(99,102,241,0.2)] dark:hover:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2),0_0_15px_rgba(99,102,241,0.2)]">
+                <div className="group mt-2 md:mt-3 flex items-center justify-between rounded-[16px] border border-indigo-100 dark:border-transparent bg-white/90 dark:bg-white/[0.04] px-3.5 py-2.5 md:px-4 md:py-3.5 shadow-sm dark:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-indigo-300/50 dark:hover:border-indigo-500/50 hover:shadow-[0_4px_20px_-10px_rgba(99,102,241,0.2)] dark:hover:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2),0_0_15px_rgba(99,102,241,0.2)]">
                   <span className="text-[13px] font-medium text-slate-400 dark:text-[#6b7280]">
                     Ask Hyper AI anything...
                   </span>

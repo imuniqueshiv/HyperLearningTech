@@ -2,9 +2,110 @@
   "subject": {
     "id": "csit-302",
     "code": "CSIT-302",
-    "name": "Discrete Structure (DS)",
-    "title": "CSIT-302 - Discrete Structure (DS)",
+    "name": "Discrete Structure",
+    "title": "CSIT-302 - Discrete Structure",
     "semester": "III"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Set Theory, Relation, Function, Theorem Proving Techniques",
+      "hours": 8,
+      "topics": [
+        "Set Theory: Definition of sets",
+        "Countable and uncountable sets",
+        "Venn Diagrams",
+        "Proofs of some general identities on sets",
+        "Relation: Definition",
+        "Types of relation",
+        "Composition of relations",
+        "Pictorial representation of relation",
+        "Equivalence relation",
+        "Partial ordering relation",
+        "Job-Scheduling problem",
+        "Function: Definition",
+        "Type of functions: one to one, into and onto function",
+        "Inverse function",
+        "Composition of functions",
+        "Recursively defined functions",
+        "Pigeonhole principle",
+        "Theorem proving Techniques: Mathematical induction, Proof by contradiction"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Algebraic Structures",
+      "hours": 8,
+      "topics": [
+        "Algebraic Structures: Definition, Properties",
+        "Types: Semi Groups, Monoid, Groups, Abelian group",
+        "Properties of groups",
+        "Subgroup",
+        "Cyclic groups",
+        "Cosets",
+        "Factor group",
+        "Permutation groups",
+        "Normal subgroup",
+        "Homomorphism and Isomorphism: Homomorphism and isomorphism of Groups, example and standard results",
+        "Rings and Fields: Definition and standard results"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Propositional Logic",
+      "hours": 8,
+      "topics": [
+        "Propositional Logic: Proposition",
+        "First order logic",
+        "Basic logical operation",
+        "Truth tables",
+        "Tautologies",
+        "Contradictions",
+        "Algebra of Proposition",
+        "Logical implications",
+        "Logical equivalence",
+        "Predicates",
+        "Normal Forms",
+        "Universal and existential quantifiers",
+        "Finite State Machine: Introduction to finite state machine",
+        "Finite state machines as models of physical system equivalence machines",
+        "Finite state machines as language recognizers"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Graph Theory",
+      "hours": 8,
+      "topics": [
+        "Introduction: Basic terminology of graphs",
+        "Planar graphs",
+        "Multigraphs and weighted graphs",
+        "Connectivity & Paths: Isomorphic graphs, Paths, Cycles and connectivity",
+        "Shortest path in weighted graph",
+        "Advanced Paths: Introduction to Eulerian paths and circuits, Hamiltonian paths and circuits",
+        "Coloring & Isomorphism: Graph coloring, chromatic number, Isomorphism and Homomorphism of graphs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Posets, Lattices, Combinatorics, Recurrence Relations",
+      "hours": 8,
+      "topics": [
+        "Posets, Hasse Diagram and Lattices: Introduction, ordered set",
+        "Hasse diagram of partially ordered set",
+        "Isomorphic ordered set, well ordered set",
+        "Properties of Lattices, bounded and complemented lattices",
+        "Combinatorics: Introduction, Permutation and combination, Binomial Theorem, Multinomial Coefficients",
+        "Recurrence Relation and Generating Function: Introduction to Recurrence Relation and Recursive algorithms",
+        "Linear recurrence relations with constant coefficients",
+        "Homogeneous solutions, Particular solutions, Total solutions",
+        "Generating functions, Solution by method of generating functions"
+      ]
+    }
+  ]
 }

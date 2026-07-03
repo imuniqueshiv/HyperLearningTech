@@ -6,5 +6,84 @@
     "title": "CY-402 - Fundamental of Cyber Security",
     "semester": "IV"
   },
-  "modules": []
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Cyber Crime",
+      "hours": 8,
+      "topics": [
+        "Introduction of Cyber Crime",
+        "Challenges of cyber crime",
+        "Classifications of Cybercrimes: E-Mail Spoofing, Spamming, Internet Time Theft, Salami attack/Salami Technique"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Cyber Frauds and Intrusions",
+      "hours": 8,
+      "topics": [
+        "Web jacking",
+        "Online Frauds",
+        "Software Piracy",
+        "Computer Network Intrusions",
+        "Password Sniffing",
+        "Identity Theft",
+        "cyber terrorism",
+        "Virtual Crime",
+        "Perception of cyber criminals: hackers, insurgents and extremist group etc.",
+        "Web servers were hacking, session hijacking"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Cyber Crime and Criminal justice",
+      "hours": 8,
+      "topics": [
+        "Cyber Crime and Criminal justice: Concept of Cyber Crime and the IT Act, 2000",
+        "Hacking",
+        "Teenage Web Vandals",
+        "Cyber Fraud and Cheating",
+        "Defamation, Harassment and E-mail Abuse",
+        "Other IT Act Offences",
+        "Monetary Penalties",
+        "jurisdiction and Cyber Crimes",
+        "Nature of Criminality",
+        "Strategies to tackle Cyber Crime and Trends"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Information Technology Act and Evidence",
+      "hours": 8,
+      "topics": [
+        "The Indian Evidence Act of 1872 v. Information Technology Act, 2000: Status of Electronic Records as Evidence",
+        "Proof and Management of Electronic Records; Relevancy, Admissibility and Probative Value of E-Evidence",
+        "Proving Digital Signatures",
+        "Proof of Electronic Agreements",
+        "Proving Electronic Messages"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Tools and Methods in Cybercrime",
+      "hours": 8,
+      "topics": [
+        "Tools and Methods in Cybercrime: Proxy Servers and Anonymizers",
+        "Password Cracking",
+        "Key loggers and Spyware",
+        "virus and worms",
+        "Trojan Horses",
+        "Backdoors",
+        "DoS and DDoS Attacks",
+        "Buffer and Overflow",
+        "Attack on Wireless Networks",
+        "Phishing : Method of Phishing, Phishing Techniques"
+      ]
+    }
+  ]
 }
