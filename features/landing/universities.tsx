@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
 
-const universities = [
+export const universities = [
   {
     id: "rgpv",
     name: "RGPV",
@@ -40,6 +40,18 @@ const universities = [
 export default function Universities() {
   const [searchQuery, setSearchQuery] = useState("");
 
+  useEffect(() => {
+    const handleSearch = (e: CustomEvent<string>) => {
+      setSearchQuery(e.detail);
+    };
+    window.addEventListener("university-search", handleSearch as EventListener);
+    return () =>
+      window.removeEventListener(
+        "university-search",
+        handleSearch as EventListener
+      );
+  }, []);
+
   const filteredUniversities = universities.filter((uni) => {
     const query = searchQuery.trim().toLowerCase();
     if (!query) return true;
@@ -52,7 +64,7 @@ export default function Universities() {
   });
 
   return (
-    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden border-none bg-background pt-12 pb-24 md:pt-16 md:pb-32">
+    <section className="relative flex flex-col justify-center overflow-hidden border-none bg-background pt-12 pb-16 md:pt-16 md:pb-20">
       {/* Background Layers */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {/* Light Mode Wavy Refraction Background - Centered with edge fade */}
@@ -88,7 +100,7 @@ export default function Universities() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mx-auto mb-6 max-w-3xl text-center"
+          className="mx-auto mb-16 md:mb-20 max-w-3xl text-center"
         >
           <div className="mb-6 flex items-center justify-center">
             <div className="group relative inline-flex items-center gap-2.5 rounded-full border border-blue-200/40 bg-blue-50/80 px-4 py-1.5 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/15 dark:bg-blue-500/10 dark:text-blue-400 transition-all">
@@ -106,35 +118,11 @@ export default function Universities() {
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground/90">
+          <p className="mx-auto mt-6 max-w-2xl text-[15px] md:text-lg leading-relaxed text-muted-foreground/80 font-medium">
             Hyper Learning is designed to evolve into a multi-university
             learning platform. Start with RGPV and expand to universities across
             India.
           </p>
-        </motion.div>
-
-        {/* Search Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-10 max-w-2xl"
-        >
-          <div className="relative group flex items-center justify-between rounded-full border border-border/50 dark:border-white/10 bg-background/80 dark:bg-white/[0.03] p-2 shadow-xl dark:shadow-2xl backdrop-blur-xl transition-all focus-within:border-blue-500/50 focus-within:bg-background dark:focus-within:bg-white/[0.05] focus-within:shadow-[0_0_30px_rgba(37,99,235,0.1)] dark:focus-within:shadow-[0_0_30px_rgba(37,99,235,0.15)]">
-            <input
-              type="text"
-              aria-label="Search universities"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search universities by name, branch, or location..."
-              className="w-full bg-transparent px-6 py-3 text-base text-foreground placeholder:text-muted-foreground/50 focus:outline-none"
-            />
-            <div className="group/lens relative mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border/50 bg-muted/50 text-muted-foreground transition-all duration-500 hover:scale-[1.03] hover:border-border hover:bg-muted hover:text-foreground hover:shadow-sm cursor-pointer active:scale-95 overflow-hidden">
-              <div className="absolute inset-0 rounded-full shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] pointer-events-none" />
-              <Search className="relative z-10 h-[18px] w-[18px] transition-transform duration-300 group-hover/lens:scale-[1.05]" />
-            </div>
-          </div>
         </motion.div>
 
         {/* Cards */}
@@ -244,7 +232,7 @@ export default function Universities() {
                   No universities found
                 </h3>
                 <p className="mt-2 text-muted-foreground">
-                  Try adjusting your search query.
+                  Try adjusting your search query in the navbar.
                 </p>
               </motion.div>
             )}
