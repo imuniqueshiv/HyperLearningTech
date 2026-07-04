@@ -164,7 +164,7 @@ export default function Footer() {
     <footer className="relative -mt-10 border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-hidden">
       {/* Light Mode Premium Dot Matrix Background */}
       <div
-        className="absolute inset-0 pointer-events-none dark:hidden"
+        className="hidden md:block absolute inset-0 pointer-events-none dark:hidden"
         style={{
           backgroundImage:
             "radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.25) 1px, transparent 0)",
@@ -363,7 +363,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-white/[0.01] backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
+        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-white/[0.01] md:backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
           {/* Left: Copyright */}
           <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0">
             © {new Date().getFullYear()} Hyper Learning. All rights reserved.
