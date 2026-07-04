@@ -150,8 +150,8 @@
 /* Feature Cards */
 .featuresHorizontal {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   gap: 16px;
   margin-bottom: 32px;
   width: 100%;
@@ -631,7 +631,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .container {
     flex-direction: column;
     gap: 80px;
@@ -665,10 +665,14 @@
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
   .contactSection {
     padding: 64px 20px;
+    min-height: auto;
+  }
+  .container {
+    gap: 48px;
   }
   .description {
     font-size: 0.95rem;
@@ -679,40 +683,68 @@
   }
   .featuresHorizontal {
     flex-direction: column;
-    align-items: flex-start;
-    width: max-content;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
     margin: 0 auto;
-    gap: 20px;
+    gap: 16px;
+  }
+  .availabilityBadge {
+    margin: 0 auto;
   }
   .contactCard {
-    padding: 28px 20px;
+    padding: 24px 20px;
     border-radius: 16px;
   }
+  .heroIconWrapper {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 8px;
+  }
+  .mailIconCircle {
+    width: 36px;
+    height: 36px;
+  }
   .cardHeading {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .cardSubtitle {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
     font-size: 0.85rem;
+  }
+  .inputRow {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
   .form {
-    gap: 20px;
+    gap: 10px;
+  }
+  .inputGroup {
+    padding: 2px 8px;
+  }
+  .inputIconWrapper {
+    margin-top: 4px;
+    width: 28px;
+    height: 28px;
   }
   .input {
-    padding: 6px 28px 6px 0;
-    font-size: 0.85rem;
+    padding: 6px 10px 6px 6px;
+    font-size: 0.9rem;
   }
   .textarea {
-    min-height: 36px;
+    min-height: 60px;
   }
   .submitRow {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 8px;
+    width: 100%;
+  }
+  .submitBtn {
+    height: 48px;
   }
 }
 
