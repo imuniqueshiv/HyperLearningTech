@@ -98,9 +98,9 @@ export default function Hero() {
         {/* Light Mode: Central Radial Glow */}
         <div className="absolute top-[25%] left-1/2 -translate-x-1/2 h-[600px] w-[90%] rounded-full bg-gradient-to-b from-blue-200/70 via-indigo-100/50 to-transparent blur-[100px] dark:hidden pointer-events-none" />
 
-        {/* Dark mode glows */}
-        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-transparent blur-[160px] dark:bg-blue-500/10" />
-        <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-transparent blur-[160px] dark:bg-indigo-500/10" />
+        {/* Dark mode glows — hidden on mobile to prevent GPU texture exhaustion */}
+        <div className="hidden md:block absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-transparent blur-[160px] dark:bg-blue-500/10" />
+        <div className="hidden md:block absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-transparent blur-[160px] dark:bg-indigo-500/10" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-12 md:pb-24 md:pt-16 lg:px-8 lg:pb-32 lg:pt-20">
