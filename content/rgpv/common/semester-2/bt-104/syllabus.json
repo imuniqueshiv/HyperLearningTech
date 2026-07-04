@@ -13,18 +13,53 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt104-u1",
       "number": 1,
       "title": "D.C. Circuits",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Voltage and current sources, dependent and independent sources",
-        "Units and dimensions, Source Conversion",
-        "Ohm's Law, Kirchhoff's Law",
-        "Superposition theorem, Thevenin's theorem and their application for analysis of series and parallel resistive circuits excited by independent voltage sources",
-        "Power & Energy in such circuits",
-        "Mesh & nodal analysis",
-        "Star Delta transformation & circuits"
+        {
+          "id": "bt104-u1-voltage-and-current-sources-dependent-and-independent-sources",
+          "slug": "voltage-and-current-sources-dependent-and-independent-sources",
+          "title": "Voltage and current sources, dependent and independent sources",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt104-u1-units-and-dimensions-source-conversion",
+          "slug": "units-and-dimensions-source-conversion",
+          "title": "Units and dimensions, Source Conversion",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt104-u1-ohms-law-kirchhoffs-law",
+          "slug": "ohms-law-kirchhoffs-law",
+          "title": "Ohm's Law, Kirchhoff's Law",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt104-u1-superposition-theorem-thevenins-theorem-and-their-application-for-analysis-of-series-and-parallel-resistive-circuits-excited-by-independent-voltage-sources",
+          "slug": "superposition-theorem-thevenins-theorem-and-their-application-for-analysis-of-series-and-parallel-resistive-circuits-excited-by-independent-voltage-sources",
+          "title": "Superposition theorem, Thevenin's theorem and their application for analysis of series and parallel resistive circuits excited by independent voltage sources",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt104-u1-power-and-energy-in-such-circuits",
+          "slug": "power-and-energy-in-such-circuits",
+          "title": "Power & Energy in such circuits",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt104-u1-mesh-and-nodal-analysis",
+          "slug": "mesh-and-nodal-analysis",
+          "title": "Mesh & nodal analysis",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt104-u1-star-delta-transformation-and-circuits",
+          "slug": "star-delta-transformation-and-circuits",
+          "title": "Star Delta transformation & circuits",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt104_m1_nov2022_q1",
@@ -60,20 +95,65 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt104-u2",
       "number": 2,
       "title": "AC Circuits",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "1-phase AC Circuits: Generation of sinusoidal AC voltage",
-        "definition of average value, R.M.S. value, form factor and peak factor of AC quantity",
-        "Concept of phasor, Concept of Power factor",
-        "Concept of impedance and admittance, Active, reactive and apparent power",
-        "analysis of R-L, R-C, R-L-C series & parallel circuit",
-        "3-phase AC Circuits: Necessity and advantages of three phase systems",
-        "Meaning of Phase sequence, balanced and unbalanced supply and loads",
-        "Relationship between line and phase values for balanced star and delta connections",
-        "Power in balanced & unbalanced three-phase system and their measurements"
+        {
+          "id": "bt104-u2-1-phase-ac-circuits-generation-of-sinusoidal-ac-voltage",
+          "slug": "1-phase-ac-circuits-generation-of-sinusoidal-ac-voltage",
+          "title": "1-phase AC Circuits: Generation of sinusoidal AC voltage",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt104-u2-definition-of-average-value-rms-value-form-factor-and-peak-factor-of-ac-quantity",
+          "slug": "definition-of-average-value-rms-value-form-factor-and-peak-factor-of-ac-quantity",
+          "title": "definition of average value, R.M.S. value, form factor and peak factor of AC quantity",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt104-u2-concept-of-phasor-concept-of-power-factor",
+          "slug": "concept-of-phasor-concept-of-power-factor",
+          "title": "Concept of phasor, Concept of Power factor",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt104-u2-concept-of-impedance-and-admittance-active-reactive-and-apparent-power",
+          "slug": "concept-of-impedance-and-admittance-active-reactive-and-apparent-power",
+          "title": "Concept of impedance and admittance, Active, reactive and apparent power",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt104-u2-analysis-of-r-l-r-c-r-l-c-series-and-parallel-circuit",
+          "slug": "analysis-of-r-l-r-c-r-l-c-series-and-parallel-circuit",
+          "title": "analysis of R-L, R-C, R-L-C series & parallel circuit",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt104-u2-3-phase-ac-circuits-necessity-and-advantages-of-three-phase-systems",
+          "slug": "3-phase-ac-circuits-necessity-and-advantages-of-three-phase-systems",
+          "title": "3-phase AC Circuits: Necessity and advantages of three phase systems",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt104-u2-meaning-of-phase-sequence-balanced-and-unbalanced-supply-and-loads",
+          "slug": "meaning-of-phase-sequence-balanced-and-unbalanced-supply-and-loads",
+          "title": "Meaning of Phase sequence, balanced and unbalanced supply and loads",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt104-u2-relationship-between-line-and-phase-values-for-balanced-star-and-delta-connections",
+          "slug": "relationship-between-line-and-phase-values-for-balanced-star-and-delta-connections",
+          "title": "Relationship between line and phase values for balanced star and delta connections",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt104-u2-power-in-balanced-and-unbalanced-three-phase-system-and-their-measurements",
+          "slug": "power-in-balanced-and-unbalanced-three-phase-system-and-their-measurements",
+          "title": "Power in balanced & unbalanced three-phase system and their measurements",
+          "displayOrder": 9
+        }
       ],
       "questionIds": [
         "bt104_m2_nov2022_q1",
@@ -110,21 +190,71 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt104-u3",
       "number": 3,
       "title": "Magnetic Circuits",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Magnetic Circuits: Basic definitions",
-        "magnetization characteristics of Ferro magnetic materials",
-        "self inductance and mutual inductance, energy in linear magnetic systems",
-        "coils connected in series, AC excitation in magnetic circuits",
-        "magnetic field produced by current carrying conductor",
-        "Force on a current carrying conductor. Induced voltage",
-        "laws of electromagnetic Induction, direction of induced E.M.F.",
-        "Single phase transformer- General construction, working principle, e.m.f. equation",
-        "equivalent circuits, phasor diagram, voltage regulation",
-        "losses and efficiency, open circuit and short circuit test"
+        {
+          "id": "bt104-u3-magnetic-circuits-basic-definitions",
+          "slug": "magnetic-circuits-basic-definitions",
+          "title": "Magnetic Circuits: Basic definitions",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt104-u3-magnetization-characteristics-of-ferro-magnetic-materials",
+          "slug": "magnetization-characteristics-of-ferro-magnetic-materials",
+          "title": "magnetization characteristics of Ferro magnetic materials",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt104-u3-self-inductance-and-mutual-inductance-energy-in-linear-magnetic-systems",
+          "slug": "self-inductance-and-mutual-inductance-energy-in-linear-magnetic-systems",
+          "title": "self inductance and mutual inductance, energy in linear magnetic systems",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt104-u3-coils-connected-in-series-ac-excitation-in-magnetic-circuits",
+          "slug": "coils-connected-in-series-ac-excitation-in-magnetic-circuits",
+          "title": "coils connected in series, AC excitation in magnetic circuits",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt104-u3-magnetic-field-produced-by-current-carrying-conductor",
+          "slug": "magnetic-field-produced-by-current-carrying-conductor",
+          "title": "magnetic field produced by current carrying conductor",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt104-u3-force-on-a-current-carrying-conductor-induced-voltage",
+          "slug": "force-on-a-current-carrying-conductor-induced-voltage",
+          "title": "Force on a current carrying conductor. Induced voltage",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt104-u3-laws-of-electromagnetic-induction-direction-of-induced-emf",
+          "slug": "laws-of-electromagnetic-induction-direction-of-induced-emf",
+          "title": "laws of electromagnetic Induction, direction of induced E.M.F.",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt104-u3-single-phase-transformer-general-construction-working-principle-emf-equation",
+          "slug": "single-phase-transformer-general-construction-working-principle-emf-equation",
+          "title": "Single phase transformer- General construction, working principle, e.m.f. equation",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt104-u3-equivalent-circuits-phasor-diagram-voltage-regulation",
+          "slug": "equivalent-circuits-phasor-diagram-voltage-regulation",
+          "title": "equivalent circuits, phasor diagram, voltage regulation",
+          "displayOrder": 9
+        },
+        {
+          "id": "bt104-u3-losses-and-efficiency-open-circuit-and-short-circuit-test",
+          "slug": "losses-and-efficiency-open-circuit-and-short-circuit-test",
+          "title": "losses and efficiency, open circuit and short circuit test",
+          "displayOrder": 10
+        }
       ],
       "questionIds": [
         "bt104_m3_nov2022_q1",
@@ -160,17 +290,47 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt104-u4",
       "number": 4,
       "title": "Electrical Machines",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Construction, Classification & Working Principle of DC machine, induction machine and synchronous machine",
-        "Working principle of 3-Phase induction motor",
-        "Concept of slip in 3-Phase induction motor",
-        "Explanation of Torque-slip characteristics of 3-Phase induction motor",
-        "Types of losses occurring in electrical machines",
-        "Applications of DC machine, induction machine and synchronous machine"
+        {
+          "id": "bt104-u4-construction-classification-and-working-principle-of-dc-machine-induction-machine-and-synchronous-machine",
+          "slug": "construction-classification-and-working-principle-of-dc-machine-induction-machine-and-synchronous-machine",
+          "title": "Construction, Classification & Working Principle of DC machine, induction machine and synchronous machine",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt104-u4-working-principle-of-3-phase-induction-motor",
+          "slug": "working-principle-of-3-phase-induction-motor",
+          "title": "Working principle of 3-Phase induction motor",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt104-u4-concept-of-slip-in-3-phase-induction-motor",
+          "slug": "concept-of-slip-in-3-phase-induction-motor",
+          "title": "Concept of slip in 3-Phase induction motor",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt104-u4-explanation-of-torque-slip-characteristics-of-3-phase-induction-motor",
+          "slug": "explanation-of-torque-slip-characteristics-of-3-phase-induction-motor",
+          "title": "Explanation of Torque-slip characteristics of 3-Phase induction motor",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt104-u4-types-of-losses-occurring-in-electrical-machines",
+          "slug": "types-of-losses-occurring-in-electrical-machines",
+          "title": "Types of losses occurring in electrical machines",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt104-u4-applications-of-dc-machine-induction-machine-and-synchronous-machine",
+          "slug": "applications-of-dc-machine-induction-machine-and-synchronous-machine",
+          "title": "Applications of DC machine, induction machine and synchronous machine",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt104_m4_nov2022_q1",
@@ -202,19 +362,59 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt104-u5",
       "number": 5,
       "title": "Basic Electronics",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Number systems & Their conversion used in digital electronics",
-        "De morgan's theorem, Logic Gates",
-        "half and full adder circuits",
-        "R-S flip flop, J-K flip flop",
-        "Introduction to Semiconductors, Diodes, V-I characteristics",
-        "Bipolar junction transistors (BJT) and their working",
-        "introduction to CC, CB & CE transistor configurations",
-        "different configurations and modes of operation of BJT"
+        {
+          "id": "bt104-u5-number-systems-and-their-conversion-used-in-digital-electronics",
+          "slug": "number-systems-and-their-conversion-used-in-digital-electronics",
+          "title": "Number systems & Their conversion used in digital electronics",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt104-u5-de-morgans-theorem-logic-gates",
+          "slug": "de-morgans-theorem-logic-gates",
+          "title": "De morgan's theorem, Logic Gates",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt104-u5-half-and-full-adder-circuits",
+          "slug": "half-and-full-adder-circuits",
+          "title": "half and full adder circuits",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt104-u5-r-s-flip-flop-j-k-flip-flop",
+          "slug": "r-s-flip-flop-j-k-flip-flop",
+          "title": "R-S flip flop, J-K flip flop",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt104-u5-introduction-to-semiconductors-diodes-v-i-characteristics",
+          "slug": "introduction-to-semiconductors-diodes-v-i-characteristics",
+          "title": "Introduction to Semiconductors, Diodes, V-I characteristics",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt104-u5-bipolar-junction-transistors-bjt-and-their-working",
+          "slug": "bipolar-junction-transistors-bjt-and-their-working",
+          "title": "Bipolar junction transistors (BJT) and their working",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt104-u5-introduction-to-cc-cb-and-ce-transistor-configurations",
+          "slug": "introduction-to-cc-cb-and-ce-transistor-configurations",
+          "title": "introduction to CC, CB & CE transistor configurations",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt104-u5-different-configurations-and-modes-of-operation-of-bjt",
+          "slug": "different-configurations-and-modes-of-operation-of-bjt",
+          "title": "different configurations and modes of operation of BJT",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt104_m5_nov2022_q1",

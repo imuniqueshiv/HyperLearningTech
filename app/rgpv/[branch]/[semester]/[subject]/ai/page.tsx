@@ -1,5 +1,6 @@
 import { BrainCircuit } from "lucide-react";
 import WorkspaceChat from "@/components/ai/workspace-chat";
+import { getTopicById } from "@/lib/content";
 
 interface AIPageProps {
   params: Promise<{
@@ -9,17 +10,24 @@ interface AIPageProps {
   }>;
 
   searchParams: Promise<{
-    topic?: string;
-    module?: string;
+    topicId?: string;
   }>;
 }
 
 export default async function AIPage({ params, searchParams }: AIPageProps) {
   const { branch, semester, subject } = await params;
 
-  const { topic, module } = await searchParams;
+  const { topicId } = await searchParams;
 
-  const isTopicMode = Boolean(topic) && Boolean(module);
+  const topicData = topicId
+    ? await getTopicById(branch, semester, subject, topicId)
+    : null;
+
+  const topicTitle = topicData?.topic.title ?? "";
+
+  const moduleTitle = topicData?.module.title ?? "";
+
+  const isTopicMode = topicData !== null;
 
   // Suggested prompts based on topic
   const getSuggestedPrompts = (mainTopic: string) => {
@@ -41,51 +49,57 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
     ];
   };
 
-  const suggestedPrompts =
-    isTopicMode && topic
-      ? getSuggestedPrompts(topic)
-      : [
-          "Explain the concept",
-          "Generate notes",
-          "Create revision sheet",
-          "Generate exam questions",
-          "Explain with examples",
-        ];
+  const suggestedPrompts = isTopicMode
+    ? getSuggestedPrompts(topicTitle)
+    : [
+        "Explain the concept",
+        "Generate notes",
+        "Create revision sheet",
+        "Generate exam questions",
+        "Explain with examples",
+      ];
 
   // Initial prompts for WorkspaceChat
-  const initialPrompts =
-    isTopicMode && topic && module
-      ? [
-          {
-            prompt: `Explain ${topic} in detail`,
-            action: "explain",
-            topic: topic,
-            module: module,
-          },
-          {
-            prompt: `Generate 5 mark answer on ${topic}`,
-            action: "generate",
-            topic: topic,
-            module: module,
-          },
-          {
-            prompt: `Create revision sheet for ${topic}`,
-            action: "summarize",
-            topic: topic,
-            module: module,
-          },
-        ]
-      : [
-          { prompt: "Explain the concept", action: "explain" },
-          { prompt: "Generate notes", action: "generate" },
-          { prompt: "Create revision sheet", action: "summarize" },
-        ];
+  const initialPrompts = isTopicMode
+    ? [
+        {
+          prompt: `Explain ${topicTitle} in detail`,
+          action: "explain",
+          topic: topicTitle,
+          module: moduleTitle,
+        },
+        {
+          prompt: `Generate 5 mark answer on ${topicTitle}`,
+          action: "generate",
+          topic: topicTitle,
+          module: moduleTitle,
+        },
+        {
+          prompt: `Create revision sheet for ${topicTitle}`,
+          action: "summarize",
+          topic: topicTitle,
+          module: moduleTitle,
+        },
+      ]
+    : [
+        {
+          prompt: "Explain the concept",
+          action: "explain",
+        },
+        {
+          prompt: "Generate notes",
+          action: "generate",
+        },
+        {
+          prompt: "Create revision sheet",
+          action: "summarize",
+        },
+      ];
 
   // Build welcome message with topic context
-  const welcomeMessage =
-    isTopicMode && topic
-      ? `Ask me anything about **${topic}**. I can help with explanations, examples, exam preparation, and suggest related topics based on your learning needs.`
-      : "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.";
+  const welcomeMessage = isTopicMode
+    ? `Ask me anything about **${topicTitle}**. I can help with explanations, examples, exam preparation, and suggest related topics based on your learning needs.`
+    : "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.";
 
   return (
     <main className="min-h-screen bg-background">
@@ -106,11 +120,11 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
             {isTopicMode ? (
               <>
                 <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-                  {topic}
+                  {topicTitle}
                 </h1>
 
                 <p className="mt-4 text-base font-medium text-blue-600 dark:text-blue-400 md:text-lg">
-                  {module}
+                  {moduleTitle}
                 </p>
 
                 <p className="mt-3 text-sm text-muted-foreground md:text-base">
@@ -150,14 +164,13 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
             {/* Main Chat Area */}
-            <div className="min-h-[500px] rounded-[2rem] border border-border bg-card p-4 shadow-sm md:p-6">
+            <div className="min-h-125 rounded-[2rem] border border-border bg-card p-4 shadow-sm md:p-6">
               <WorkspaceChat
                 subjectCode={subject.toUpperCase()}
                 initialPrompts={initialPrompts}
                 welcomeMessage={welcomeMessage}
                 apiEndpoint="/api/ai/workspace"
-                topic={topic}
-                module={module}
+                topicId={topicId}
               />
             </div>
 

@@ -13,16 +13,41 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt105-u1",
       "number": 1,
       "title": "Introduction to Engineering Drawing & Curves",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Principles of Engineering Graphics and their significance",
-        "usage of Drawing instruments, lettering",
-        "Conic sections including the Rectangular Hyperbola (General method only)",
-        "Cycloid, Epicycloid, Hypocycloid and Involute",
-        "Scales – Plain, Diagonal and Vernier Scales"
+        {
+          "id": "bt105-u1-principles-of-engineering-graphics-and-their-significance",
+          "slug": "principles-of-engineering-graphics-and-their-significance",
+          "title": "Principles of Engineering Graphics and their significance",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt105-u1-usage-of-drawing-instruments-lettering",
+          "slug": "usage-of-drawing-instruments-lettering",
+          "title": "usage of Drawing instruments, lettering",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt105-u1-conic-sections-including-the-rectangular-hyperbola-general-method-only",
+          "slug": "conic-sections-including-the-rectangular-hyperbola-general-method-only",
+          "title": "Conic sections including the Rectangular Hyperbola (General method only)",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt105-u1-cycloid-epicycloid-hypocycloid-and-involute",
+          "slug": "cycloid-epicycloid-hypocycloid-and-involute",
+          "title": "Cycloid, Epicycloid, Hypocycloid and Involute",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt105-u1-scales-plain-diagonal-and-vernier-scales",
+          "slug": "scales-plain-diagonal-and-vernier-scales",
+          "title": "Scales – Plain, Diagonal and Vernier Scales",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt105_m1_nov2022_q1",
@@ -55,15 +80,35 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt105-u2",
       "number": 2,
       "title": "Orthographic Projections",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Principles of Orthographic Projections- Conventions",
-        "Projections of Points and lines inclined to both planes",
-        "Projections of planes inclined Planes",
-        "Auxiliary Planes"
+        {
+          "id": "bt105-u2-principles-of-orthographic-projections-conventions",
+          "slug": "principles-of-orthographic-projections-conventions",
+          "title": "Principles of Orthographic Projections- Conventions",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt105-u2-projections-of-points-and-lines-inclined-to-both-planes",
+          "slug": "projections-of-points-and-lines-inclined-to-both-planes",
+          "title": "Projections of Points and lines inclined to both planes",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt105-u2-projections-of-planes-inclined-planes",
+          "slug": "projections-of-planes-inclined-planes",
+          "title": "Projections of planes inclined Planes",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt105-u2-auxiliary-planes",
+          "slug": "auxiliary-planes",
+          "title": "Auxiliary Planes",
+          "displayOrder": 4
+        }
       ],
       "questionIds": [
         "bt105_m2_nov2022_q1",
@@ -96,15 +141,35 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt105-u3",
       "number": 3,
       "title": "Projections of Regular Solids",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Projections of Regular Solids covering, those inclined to both the Planes",
-        "Auxiliary Views",
-        "Draw simple annotation, dimensioning and scale",
-        "Floor plans that include: windows, doors, and fixtures such as WC, bath, sink, shower, etc."
+        {
+          "id": "bt105-u3-projections-of-regular-solids-covering-those-inclined-to-both-the-planes",
+          "slug": "projections-of-regular-solids-covering-those-inclined-to-both-the-planes",
+          "title": "Projections of Regular Solids covering, those inclined to both the Planes",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt105-u3-auxiliary-views",
+          "slug": "auxiliary-views",
+          "title": "Auxiliary Views",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt105-u3-draw-simple-annotation-dimensioning-and-scale",
+          "slug": "draw-simple-annotation-dimensioning-and-scale",
+          "title": "Draw simple annotation, dimensioning and scale",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt105-u3-floor-plans-that-include-windows-doors-and-fixtures-such-as-wc-bath-sink-shower-etc",
+          "slug": "floor-plans-that-include-windows-doors-and-fixtures-such-as-wc-bath-sink-shower-etc",
+          "title": "Floor plans that include: windows, doors, and fixtures such as WC, bath, sink, shower, etc.",
+          "displayOrder": 4
+        }
       ],
       "questionIds": [
         "bt105_m3_nov2022_q1",
@@ -126,15 +191,35 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt105-u4",
       "number": 4,
       "title": "Sections of Solids & Development of Surfaces",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Sections and Sectional Views of Right Angular Solids covering, Prism, Cylinder, Pyramid, Cone",
-        "Auxiliary Views",
-        "Development of surfaces of Right Regular Solids - Prism, Pyramid, Cylinder and Cone",
-        "Draw the sectional orthographic views of geometrical solids, objects from industry and dwellings (foundation to slab only)"
+        {
+          "id": "bt105-u4-sections-and-sectional-views-of-right-angular-solids-covering-prism-cylinder-pyramid-cone",
+          "slug": "sections-and-sectional-views-of-right-angular-solids-covering-prism-cylinder-pyramid-cone",
+          "title": "Sections and Sectional Views of Right Angular Solids covering, Prism, Cylinder, Pyramid, Cone",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt105-u4-auxiliary-views",
+          "slug": "auxiliary-views",
+          "title": "Auxiliary Views",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt105-u4-development-of-surfaces-of-right-regular-solids-prism-pyramid-cylinder-and-cone",
+          "slug": "development-of-surfaces-of-right-regular-solids-prism-pyramid-cylinder-and-cone",
+          "title": "Development of surfaces of Right Regular Solids - Prism, Pyramid, Cylinder and Cone",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt105-u4-draw-the-sectional-orthographic-views-of-geometrical-solids-objects-from-industry-and-dwellings-foundation-to-slab-only",
+          "slug": "draw-the-sectional-orthographic-views-of-geometrical-solids-objects-from-industry-and-dwellings-foundation-to-slab-only",
+          "title": "Draw the sectional orthographic views of geometrical solids, objects from industry and dwellings (foundation to slab only)",
+          "displayOrder": 4
+        }
       ],
       "questionIds": [
         "bt105_m4_dec2023_q1",
@@ -157,19 +242,59 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt105-u5",
       "number": 5,
       "title": "Isometric Projections & Computer Graphics (CAD)",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Principles of Isometric projection – Isometric Scale, Isometric Views, Conventions",
-        "Isometric Views of lines, Planes, Simple and compound Solids",
-        "Conversion of Isometric Views to Orthographic Views and Vice-versa, Conventions",
-        "Overview of Computer Graphics... Theory of CAD software [Menu System, Toolbars, Drawing Area, etc.]",
-        "Customisation & CAD Drawing",
-        "Annotations, layering & other functions",
-        "Demonstration of a simple team design project",
-        "Introduction to Building Information Modelling (BIM)"
+        {
+          "id": "bt105-u5-principles-of-isometric-projection-isometric-scale-isometric-views-conventions",
+          "slug": "principles-of-isometric-projection-isometric-scale-isometric-views-conventions",
+          "title": "Principles of Isometric projection – Isometric Scale, Isometric Views, Conventions",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt105-u5-isometric-views-of-lines-planes-simple-and-compound-solids",
+          "slug": "isometric-views-of-lines-planes-simple-and-compound-solids",
+          "title": "Isometric Views of lines, Planes, Simple and compound Solids",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt105-u5-conversion-of-isometric-views-to-orthographic-views-and-vice-versa-conventions",
+          "slug": "conversion-of-isometric-views-to-orthographic-views-and-vice-versa-conventions",
+          "title": "Conversion of Isometric Views to Orthographic Views and Vice-versa, Conventions",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt105-u5-overview-of-computer-graphics-theory-of-cad-software-menu-system-toolbars-drawing-area-etc",
+          "slug": "overview-of-computer-graphics-theory-of-cad-software-menu-system-toolbars-drawing-area-etc",
+          "title": "Overview of Computer Graphics... Theory of CAD software [Menu System, Toolbars, Drawing Area, etc.]",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt105-u5-customisation-and-cad-drawing",
+          "slug": "customisation-and-cad-drawing",
+          "title": "Customisation & CAD Drawing",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt105-u5-annotations-layering-and-other-functions",
+          "slug": "annotations-layering-and-other-functions",
+          "title": "Annotations, layering & other functions",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt105-u5-demonstration-of-a-simple-team-design-project",
+          "slug": "demonstration-of-a-simple-team-design-project",
+          "title": "Demonstration of a simple team design project",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt105-u5-introduction-to-building-information-modelling-bim",
+          "slug": "introduction-to-building-information-modelling-bim",
+          "title": "Introduction to Building Information Modelling (BIM)",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt105_m5_nov2022_q1",

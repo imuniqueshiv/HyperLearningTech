@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import type { Topic } from "@/types/topic";
 
 export async function getSyllabus(
   branch: string,
@@ -63,4 +64,53 @@ export async function getPYQs(
 
     return null;
   }
+}
+interface SyllabusModule {
+  id: string;
+  number: number;
+  title: string;
+  hours: number;
+  topics?: Topic[];
+}
+
+export interface TopicLookupResult {
+  topic: Topic;
+  module: {
+    id: string;
+    number: number;
+    title: string;
+  };
+}
+export async function getTopicById(
+  branch: string,
+  semester: string,
+  subjectCode: string,
+  topicId: string
+): Promise<TopicLookupResult | null> {
+  const syllabus = await getSyllabus(branch, semester, subjectCode);
+
+  if (!syllabus) {
+    return null;
+  }
+
+  const modules = (syllabus.modules ?? []) as SyllabusModule[];
+
+  for (const syllabusModule of modules) {
+    const topics = syllabusModule.topics ?? [];
+
+    const topic = topics.find((item) => item.id === topicId);
+
+    if (topic) {
+      return {
+        topic,
+        module: {
+          id: syllabusModule.id,
+          number: syllabusModule.number,
+          title: syllabusModule.title,
+        },
+      };
+    }
+  }
+
+  return null;
 }

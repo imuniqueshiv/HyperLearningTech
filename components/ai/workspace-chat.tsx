@@ -18,15 +18,13 @@ interface WorkspaceChatProps {
   subjectCode: string;
   initialPrompts?: Array<{
     prompt: string;
-    topic?: string;
-    module?: string;
+    topicId?: string;
     action?: string;
   }>;
   welcomeMessage?: string;
   inputPlaceholder?: string;
   apiEndpoint?: string;
-  topic?: string;
-  module?: string;
+  topicId?: string;
 }
 
 export default function WorkspaceChat({
@@ -35,8 +33,7 @@ export default function WorkspaceChat({
   welcomeMessage = "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.",
   inputPlaceholder = "Type your question here...",
   apiEndpoint = API_ENDPOINTS.AI_WORKSPACE,
-  topic,
-  module,
+  topicId,
 }: WorkspaceChatProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -95,8 +92,7 @@ export default function WorkspaceChat({
         body: JSON.stringify({
           question: content.trim(),
           subjectCode,
-          topic,
-          module,
+          topicId,
           messages: messages.map((m) => ({
             role: m.role,
             content: m.content,
@@ -223,7 +219,7 @@ export default function WorkspaceChat({
                 </p>
                 {initialPrompts.map((item, index) => {
                   const promptText =
-                    item.prompt || `Ask about ${item.topic || "this topic"}`;
+                    item.prompt || `Ask about ${item.topicId || "this topic"}`;
 
                   return (
                     <button
