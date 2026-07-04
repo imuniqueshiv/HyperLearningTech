@@ -706,58 +706,71 @@
     margin: 0 auto;
   }
   .contactCard {
-    padding: 24px 20px;
+    padding: 20px 16px;
     border-radius: 16px;
   }
   .heroIconWrapper {
-    width: 56px;
-    height: 56px;
-    margin-bottom: 8px;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 6px;
+  }
+  .heroIconWrapper svg {
+    width: 20px;
+    height: 20px;
   }
   .mailIconCircle {
-    width: 36px;
-    height: 36px;
-  }
-  .cardHeading {
-    font-size: 1.5rem;
-  }
-  .cardSubtitle {
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-    font-size: 0.85rem;
-  }
-  .inputRow {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .form {
-    gap: 10px;
-  }
-  .inputGroup {
-    padding: 2px 8px;
-  }
-  .inputIconWrapper {
-    margin-top: 4px;
     width: 28px;
     height: 28px;
   }
+  .cardHeading {
+    font-size: 1.3rem;
+  }
+  .cardSubtitle {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  .inputRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .form {
+    gap: 8px;
+  }
+  .inputGroup {
+    padding: 0px 8px;
+    border-radius: 10px;
+  }
+  .inputIconWrapper {
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+  }
+  .inputIconWrapper svg {
+    width: 14px;
+    height: 14px;
+  }
   .input {
-    padding: 6px 10px 6px 6px;
-    font-size: 0.9rem;
+    padding: 8px 8px 8px 4px;
+    font-size: 0.85rem;
+    min-height: 38px;
   }
   .textarea {
-    min-height: 60px;
+    min-height: 50px;
   }
   .submitRow {
     position: relative;
     bottom: auto;
     left: auto;
     transform: none;
-    margin-top: 8px;
+    margin-top: 4px;
     width: 100%;
   }
   .submitBtn {
-    height: 48px;
+    height: 42px;
+    font-size: 0.85rem;
+    border-radius: 10px;
   }
 }
 
