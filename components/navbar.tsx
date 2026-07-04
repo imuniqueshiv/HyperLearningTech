@@ -43,55 +43,6 @@ const navLinks = [
   },
 ];
 
-function MagneticNavItem({
-  children,
-  isActive,
-  onClick,
-  href,
-  label,
-}: {
-  children: React.ReactNode;
-  isActive: boolean;
-  onClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
-  href: string;
-  label: string;
-}) {
-  const ref = useRef<HTMLAnchorElement>(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouse = (e: React.MouseEvent) => {
-    const { clientX, clientY } = e;
-    if (!ref.current) return;
-    const { height, width, left, top } = ref.current.getBoundingClientRect();
-    const middleX = clientX - (left + width / 2);
-    const middleY = clientY - (top + height / 2);
-    setPosition({ x: middleX * 0.1, y: middleY * 0.1 });
-  };
-
-  const reset = () => {
-    setPosition({ x: 0, y: 0 });
-  };
-
-  return (
-    <motion.a
-      ref={ref}
-      href={href}
-      onMouseMove={handleMouse}
-      onMouseLeave={reset}
-      onClick={(e) => onClick(e, href)}
-      animate={{ x: position.x, y: position.y }}
-      transition={{ type: "spring", stiffness: 200, damping: 20, mass: 0.1 }}
-      className="group relative flex h-[48px] w-[64px] cursor-pointer items-center justify-center rounded-[8px] outline-none transition-colors duration-200 hover:bg-white/[0.04]"
-      aria-label={label}
-      title={label}
-    >
-      <div className="relative z-10 flex items-center justify-center">
-        {children}
-      </div>
-    </motion.a>
-  );
-}
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);

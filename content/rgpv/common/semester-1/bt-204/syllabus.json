@@ -13,19 +13,59 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt204-u1",
       "number": 1,
       "title": "Building Materials & Construction",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Stones, bricks, cement, lime, timber-types, properties, test & uses",
-        "laboratory tests concrete and mortar Materials",
-        "Workability, Strength properties of Concrete",
-        "Nominal proportion of Concrete preparation of concrete, compaction, curing",
-        "Elements of Building Construction",
-        "Foundations conventional spread footings, RCC footings",
-        "brick masonry walls, plastering and pointing",
-        "floors, roofs, Doors, windows, lintels, staircases – types and their suitability"
+        {
+          "id": "bt204-u1-stones-bricks-cement-lime-timber-types-properties-test-and-uses",
+          "slug": "stones-bricks-cement-lime-timber-types-properties-test-and-uses",
+          "title": "Stones, bricks, cement, lime, timber-types, properties, test & uses",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt204-u1-laboratory-tests-concrete-and-mortar-materials",
+          "slug": "laboratory-tests-concrete-and-mortar-materials",
+          "title": "laboratory tests concrete and mortar Materials",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt204-u1-workability-strength-properties-of-concrete",
+          "slug": "workability-strength-properties-of-concrete",
+          "title": "Workability, Strength properties of Concrete",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt204-u1-nominal-proportion-of-concrete-preparation-of-concrete-compaction-curing",
+          "slug": "nominal-proportion-of-concrete-preparation-of-concrete-compaction-curing",
+          "title": "Nominal proportion of Concrete preparation of concrete, compaction, curing",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt204-u1-elements-of-building-construction",
+          "slug": "elements-of-building-construction",
+          "title": "Elements of Building Construction",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt204-u1-foundations-conventional-spread-footings-rcc-footings",
+          "slug": "foundations-conventional-spread-footings-rcc-footings",
+          "title": "Foundations conventional spread footings, RCC footings",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt204-u1-brick-masonry-walls-plastering-and-pointing",
+          "slug": "brick-masonry-walls-plastering-and-pointing",
+          "title": "brick masonry walls, plastering and pointing",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt204-u1-floors-roofs-doors-windows-lintels-staircases-types-and-their-suitability",
+          "slug": "floors-roofs-doors-windows-lintels-staircases-types-and-their-suitability",
+          "title": "floors, roofs, Doors, windows, lintels, staircases – types and their suitability",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt204_m1_nov2022_q1",
@@ -60,17 +100,47 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt204-u2",
       "number": 2,
       "title": "Surveying & Positioning",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Introduction to surveying Instruments – levels, theodolites, plane tables and related devices",
-        "Electronic surveying instruments etc.",
-        "Measurement of distances – conventional and EDM methods",
-        "measurement of directions by different methods",
-        "measurement of elevations by different methods",
-        "Reciprocal leveling"
+        {
+          "id": "bt204-u2-introduction-to-surveying-instruments-levels-theodolites-plane-tables-and-related-devices",
+          "slug": "introduction-to-surveying-instruments-levels-theodolites-plane-tables-and-related-devices",
+          "title": "Introduction to surveying Instruments – levels, theodolites, plane tables and related devices",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt204-u2-electronic-surveying-instruments-etc",
+          "slug": "electronic-surveying-instruments-etc",
+          "title": "Electronic surveying instruments etc.",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt204-u2-measurement-of-distances-conventional-and-edm-methods",
+          "slug": "measurement-of-distances-conventional-and-edm-methods",
+          "title": "Measurement of distances – conventional and EDM methods",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt204-u2-measurement-of-directions-by-different-methods",
+          "slug": "measurement-of-directions-by-different-methods",
+          "title": "measurement of directions by different methods",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt204-u2-measurement-of-elevations-by-different-methods",
+          "slug": "measurement-of-elevations-by-different-methods",
+          "title": "measurement of elevations by different methods",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt204-u2-reciprocal-leveling",
+          "slug": "reciprocal-leveling",
+          "title": "Reciprocal leveling",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt204_m2_nov2022_q1",
@@ -101,16 +171,41 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt204-u3",
       "number": 3,
       "title": "Mapping & Sensing",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Mapping details and contouring",
-        "Profile Cross sectioning and measurement of areas, volumes",
-        "application of measurements in quantity computations",
-        "Survey stations",
-        "Introduction of remote sensing and its applications"
+        {
+          "id": "bt204-u3-mapping-details-and-contouring",
+          "slug": "mapping-details-and-contouring",
+          "title": "Mapping details and contouring",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt204-u3-profile-cross-sectioning-and-measurement-of-areas-volumes",
+          "slug": "profile-cross-sectioning-and-measurement-of-areas-volumes",
+          "title": "Profile Cross sectioning and measurement of areas, volumes",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt204-u3-application-of-measurements-in-quantity-computations",
+          "slug": "application-of-measurements-in-quantity-computations",
+          "title": "application of measurements in quantity computations",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt204-u3-survey-stations",
+          "slug": "survey-stations",
+          "title": "Survey stations",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt204-u3-introduction-of-remote-sensing-and-its-applications",
+          "slug": "introduction-of-remote-sensing-and-its-applications",
+          "title": "Introduction of remote sensing and its applications",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt204_m3_nov2022_q1",
@@ -137,16 +232,41 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt204-u4",
       "number": 4,
       "title": "Forces and Equilibrium",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Engineering Mechanics: Forces and Equilibrium",
-        "Graphical and Analytical Treatment of Concurrent and non-concurrent Co-planar forces",
-        "free Diagram, Force Diagram and Bow's notations",
-        "Application of Equilibrium Concepts: Analysis of plane Trusses: Method of joints, Method of Sections",
-        "Frictional force in equilibrium problems"
+        {
+          "id": "bt204-u4-engineering-mechanics-forces-and-equilibrium",
+          "slug": "engineering-mechanics-forces-and-equilibrium",
+          "title": "Engineering Mechanics: Forces and Equilibrium",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt204-u4-graphical-and-analytical-treatment-of-concurrent-and-non-concurrent-co-planar-forces",
+          "slug": "graphical-and-analytical-treatment-of-concurrent-and-non-concurrent-co-planar-forces",
+          "title": "Graphical and Analytical Treatment of Concurrent and non-concurrent Co-planar forces",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt204-u4-free-diagram-force-diagram-and-bows-notations",
+          "slug": "free-diagram-force-diagram-and-bows-notations",
+          "title": "free Diagram, Force Diagram and Bow's notations",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt204-u4-application-of-equilibrium-concepts-analysis-of-plane-trusses-method-of-joints-method-of-sections",
+          "slug": "application-of-equilibrium-concepts-analysis-of-plane-trusses-method-of-joints-method-of-sections",
+          "title": "Application of Equilibrium Concepts: Analysis of plane Trusses: Method of joints, Method of Sections",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt204-u4-frictional-force-in-equilibrium-problems",
+          "slug": "frictional-force-in-equilibrium-problems",
+          "title": "Frictional force in equilibrium problems",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt204_m4_nov2022_q1",
@@ -175,17 +295,47 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt204-u5",
       "number": 5,
       "title": "Centre of Gravity and Moment of Inertia",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Centre of Gravity and moment of Inertia",
-        "Centroid and Centre of Gravity",
-        "Moment Inertia of Area and Mass, Radius of Gyration",
-        "Introduction to product of Inertia and Principle Axes",
-        "Support Reactions",
-        "Shear force and bending moment Diagram for Cantilever & simply supported beam with concentrated, distributed load and Couple"
+        {
+          "id": "bt204-u5-centre-of-gravity-and-moment-of-inertia",
+          "slug": "centre-of-gravity-and-moment-of-inertia",
+          "title": "Centre of Gravity and moment of Inertia",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt204-u5-centroid-and-centre-of-gravity",
+          "slug": "centroid-and-centre-of-gravity",
+          "title": "Centroid and Centre of Gravity",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt204-u5-moment-inertia-of-area-and-mass-radius-of-gyration",
+          "slug": "moment-inertia-of-area-and-mass-radius-of-gyration",
+          "title": "Moment Inertia of Area and Mass, Radius of Gyration",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt204-u5-introduction-to-product-of-inertia-and-principle-axes",
+          "slug": "introduction-to-product-of-inertia-and-principle-axes",
+          "title": "Introduction to product of Inertia and Principle Axes",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt204-u5-support-reactions",
+          "slug": "support-reactions",
+          "title": "Support Reactions",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt204-u5-shear-force-and-bending-moment-diagram-for-cantilever-and-simply-supported-beam-with-concentrated-distributed-load-and-couple",
+          "slug": "shear-force-and-bending-moment-diagram-for-cantilever-and-simply-supported-beam-with-concentrated-distributed-load-and-couple",
+          "title": "Shear force and bending moment Diagram for Cantilever & simply supported beam with concentrated, distributed load and Couple",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt204_m5_nov2022_q1",

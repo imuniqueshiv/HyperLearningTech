@@ -11,19 +11,59 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt202-u1",
       "number": 1,
       "title": "Ordinary Differential Equations I",
       "hours": 6,
       "topics": [
-        "Differential Equations of First Order and First Degree",
-        "Leibnitz linear",
-        "Bernoulli's",
-        "Exact",
-        "Differential Equations of First Order and Higher Degree",
-        "Higher order differential equations with constants coefficients",
-        "Homogeneous Linear Differential equations",
-        "Simultaneous Differential Equations"
+        {
+          "id": "bt202-u1-differential-equations-of-first-order-and-first-degree",
+          "slug": "differential-equations-of-first-order-and-first-degree",
+          "title": "Differential Equations of First Order and First Degree",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt202-u1-leibnitz-linear",
+          "slug": "leibnitz-linear",
+          "title": "Leibnitz linear",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt202-u1-bernoullis",
+          "slug": "bernoullis",
+          "title": "Bernoulli's",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt202-u1-exact",
+          "slug": "exact",
+          "title": "Exact",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt202-u1-differential-equations-of-first-order-and-higher-degree",
+          "slug": "differential-equations-of-first-order-and-higher-degree",
+          "title": "Differential Equations of First Order and Higher Degree",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt202-u1-higher-order-differential-equations-with-constants-coefficients",
+          "slug": "higher-order-differential-equations-with-constants-coefficients",
+          "title": "Higher order differential equations with constants coefficients",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt202-u1-homogeneous-linear-differential-equations",
+          "slug": "homogeneous-linear-differential-equations",
+          "title": "Homogeneous Linear Differential equations",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt202-u1-simultaneous-differential-equations",
+          "slug": "simultaneous-differential-equations",
+          "title": "Simultaneous Differential Equations",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt202_nov2022_q1",
@@ -54,17 +94,47 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt202-u2",
       "number": 2,
       "title": "Ordinary Differential Equations II",
       "hours": 8,
       "topics": [
-        "Second order linear differential equations with variable coefficients",
-        "Method of variation of parameters",
-        "Power series solutions",
-        "Legendre polynomials",
-        "Bessel functions of the first kind",
-        "Properties of Bessel functions"
+        {
+          "id": "bt202-u2-second-order-linear-differential-equations-with-variable-coefficients",
+          "slug": "second-order-linear-differential-equations-with-variable-coefficients",
+          "title": "Second order linear differential equations with variable coefficients",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt202-u2-method-of-variation-of-parameters",
+          "slug": "method-of-variation-of-parameters",
+          "title": "Method of variation of parameters",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt202-u2-power-series-solutions",
+          "slug": "power-series-solutions",
+          "title": "Power series solutions",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt202-u2-legendre-polynomials",
+          "slug": "legendre-polynomials",
+          "title": "Legendre polynomials",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt202-u2-bessel-functions-of-the-first-kind",
+          "slug": "bessel-functions-of-the-first-kind",
+          "title": "Bessel functions of the first kind",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt202-u2-properties-of-bessel-functions",
+          "slug": "properties-of-bessel-functions",
+          "title": "Properties of Bessel functions",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt202_nov2022_q5",
@@ -89,14 +159,29 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt202-u3",
       "number": 3,
       "title": "Partial Differential Equations",
       "hours": 8,
       "topics": [
-        "Formulation of Partial Differential equations",
-        "Linear and Non-Linear Partial Differential Equations",
-        "Homogeneous Linear Partial Differential Equations with Constants Coefficients"
+        {
+          "id": "bt202-u3-formulation-of-partial-differential-equations",
+          "slug": "formulation-of-partial-differential-equations",
+          "title": "Formulation of Partial Differential equations",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt202-u3-linear-and-non-linear-partial-differential-equations",
+          "slug": "linear-and-non-linear-partial-differential-equations",
+          "title": "Linear and Non-Linear Partial Differential Equations",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt202-u3-homogeneous-linear-partial-differential-equations-with-constants-coefficients",
+          "slug": "homogeneous-linear-partial-differential-equations-with-constants-coefficients",
+          "title": "Homogeneous Linear Partial Differential Equations with Constants Coefficients",
+          "displayOrder": 3
+        }
       ],
       "questionIds": [
         "bt202_nov2022_q6",
@@ -124,21 +209,71 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt202-u4",
       "number": 4,
       "title": "Functions of Complex Variable",
       "hours": 8,
       "topics": [
-        "Analytic Functions",
-        "Harmonic Conjugate",
-        "Cauchy-Riemann Equations",
-        "Line Integral",
-        "Cauchy-Goursat theorem",
-        "Cauchy Integral formula",
-        "Singular Points",
-        "Poles & Residues",
-        "Residue Theorem",
-        "Application of Residues theorem for Evaluation of Real Integral (Unit Circle)"
+        {
+          "id": "bt202-u4-analytic-functions",
+          "slug": "analytic-functions",
+          "title": "Analytic Functions",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt202-u4-harmonic-conjugate",
+          "slug": "harmonic-conjugate",
+          "title": "Harmonic Conjugate",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt202-u4-cauchy-riemann-equations",
+          "slug": "cauchy-riemann-equations",
+          "title": "Cauchy-Riemann Equations",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt202-u4-line-integral",
+          "slug": "line-integral",
+          "title": "Line Integral",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt202-u4-cauchy-goursat-theorem",
+          "slug": "cauchy-goursat-theorem",
+          "title": "Cauchy-Goursat theorem",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt202-u4-cauchy-integral-formula",
+          "slug": "cauchy-integral-formula",
+          "title": "Cauchy Integral formula",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt202-u4-singular-points",
+          "slug": "singular-points",
+          "title": "Singular Points",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt202-u4-poles-and-residues",
+          "slug": "poles-and-residues",
+          "title": "Poles & Residues",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt202-u4-residue-theorem",
+          "slug": "residue-theorem",
+          "title": "Residue Theorem",
+          "displayOrder": 9
+        },
+        {
+          "id": "bt202-u4-application-of-residues-theorem-for-evaluation-of-real-integral-unit-circle",
+          "slug": "application-of-residues-theorem-for-evaluation-of-real-integral-unit-circle",
+          "title": "Application of Residues theorem for Evaluation of Real Integral (Unit Circle)",
+          "displayOrder": 10
+        }
       ],
       "questionIds": [
         "bt202_nov2022_q8",
@@ -173,23 +308,83 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt202-u5",
       "number": 5,
       "title": "Vector Calculus",
       "hours": 10,
       "topics": [
-        "Differentiation of Vectors",
-        "Scalar and vector point function",
-        "Gradient",
-        "Geometrical meaning of gradient",
-        "Directional Derivative",
-        "Divergence and Curl",
-        "Line Integral",
-        "Surface Integral",
-        "Volume Integral",
-        "Gauss Divergence",
-        "Stokes theorem",
-        "Green theorems"
+        {
+          "id": "bt202-u5-differentiation-of-vectors",
+          "slug": "differentiation-of-vectors",
+          "title": "Differentiation of Vectors",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt202-u5-scalar-and-vector-point-function",
+          "slug": "scalar-and-vector-point-function",
+          "title": "Scalar and vector point function",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt202-u5-gradient",
+          "slug": "gradient",
+          "title": "Gradient",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt202-u5-geometrical-meaning-of-gradient",
+          "slug": "geometrical-meaning-of-gradient",
+          "title": "Geometrical meaning of gradient",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt202-u5-directional-derivative",
+          "slug": "directional-derivative",
+          "title": "Directional Derivative",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt202-u5-divergence-and-curl",
+          "slug": "divergence-and-curl",
+          "title": "Divergence and Curl",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt202-u5-line-integral",
+          "slug": "line-integral",
+          "title": "Line Integral",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt202-u5-surface-integral",
+          "slug": "surface-integral",
+          "title": "Surface Integral",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt202-u5-volume-integral",
+          "slug": "volume-integral",
+          "title": "Volume Integral",
+          "displayOrder": 9
+        },
+        {
+          "id": "bt202-u5-gauss-divergence",
+          "slug": "gauss-divergence",
+          "title": "Gauss Divergence",
+          "displayOrder": 10
+        },
+        {
+          "id": "bt202-u5-stokes-theorem",
+          "slug": "stokes-theorem",
+          "title": "Stokes theorem",
+          "displayOrder": 11
+        },
+        {
+          "id": "bt202-u5-green-theorems",
+          "slug": "green-theorems",
+          "title": "Green theorems",
+          "displayOrder": 12
+        }
       ],
       "questionIds": [
         "bt202_nov2022_q12",

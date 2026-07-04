@@ -5,10 +5,10 @@ import { generateWorkspace } from "@/lib/ai/workspace-service";
 import { WorkspaceAction } from "@/types/ai";
 import { getPrimaryKey } from "@/lib/ai/key-manager";
 import { trackMetric } from "@/lib/ai/metrics";
+import { getTopicById } from "@/lib/content";
 
 interface WorkspaceBody {
-  topic?: string;
-  module?: string;
+  topicId?: string;
   subjectCode?: string;
   action?: WorkspaceAction;
   forceRefresh?: boolean;
@@ -163,9 +163,21 @@ export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as WorkspaceBody;
 
-    const topic = body.topic?.trim();
-    const moduleTitle = body.module?.trim();
+    const topicId = body.topicId?.trim();
     const subjectCode = body.subjectCode?.trim().toUpperCase();
+    const topicData =
+      topicId && subjectCode
+        ? await getTopicById(
+            "common",
+            "semester-1",
+            subjectCode.toLowerCase(),
+            topicId
+          )
+        : null;
+
+    const topic = topicData?.topic.title;
+
+    const moduleTitle = topicData?.module.title;
     const forceRefresh = body.forceRefresh ?? false;
     const question = body.question?.trim();
     const messages = body.messages || [];
