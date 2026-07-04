@@ -94,6 +94,7 @@ function MagneticNavItem({
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const { theme, resolvedTheme, setTheme } = useTheme();
@@ -411,69 +412,86 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-            className="rounded-xl p-2 text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50 md:hidden"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Mobile Actions (Search & Menu) */}
+          <div className="flex items-center gap-2 md:hidden">
+            {/* Mobile Search Icon */}
+            <button
+              onClick={() => {
+                setIsMobileSearchOpen(!isMobileSearchOpen);
+                setIsOpen(false); // Close menu if search is opened
+              }}
+              aria-label="Toggle mobile search"
+              className="rounded-xl p-2 text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
+            >
+              <Search className="h-5 w-5" />
+            </button>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => {
+                setIsOpen(!isOpen);
+                setIsMobileSearchOpen(false); // Close search if menu is opened
+              }}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              className="rounded-xl p-2 text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50"
+            >
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Search Drawer */}
       <AnimatePresence>
-        {isOpen && (
+        {isMobileSearchOpen && (
           <motion.div
-            id="mobile-menu"
-            role="region"
-            aria-label="Mobile Navigation"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
+            transition={{ duration: 0.2 }}
             className="overflow-hidden border-t border-border/50 bg-background/95 backdrop-blur-xl dark:border-white/10 dark:bg-[#091A40]/95 md:hidden"
           >
-            <div className="space-y-1 px-6 py-6">
-              {/* Mobile Search Bar */}
-              <div className="relative mb-6 flex flex-col z-50">
-                <div className="relative flex items-center">
-                  <Search className="absolute left-3.5 h-[18px] w-[18px] text-muted-foreground/70 dark:text-white/50" />
-                  <input
-                    type="text"
-                    placeholder="Search universities..."
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                    onKeyDown={handleSearchKeyDown}
-                    className="w-full rounded-full border border-black/10 bg-black/5 py-2.5 pl-10 pr-4 text-[14px] text-foreground placeholder-muted-foreground/70 outline-none transition-all focus:border-blue-500/50 focus:bg-background focus:ring-1 focus:ring-blue-500/50 dark:border-white/10 dark:bg-black/20 dark:text-white dark:placeholder-white/50 dark:focus:border-white/30 dark:focus:bg-black/40"
-                  />
-                </div>
+            <div className="px-6 py-4 relative z-50">
+              <div className="relative">
+                <Search className="absolute left-3.5 h-[18px] w-[18px] top-1/2 -translate-y-1/2 text-muted-foreground/70 dark:text-white/50" />
+                <input
+                  type="text"
+                  placeholder="Search universities..."
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  onKeyDown={handleSearchKeyDown}
+                  className="w-full rounded-full border border-black/10 bg-black/5 py-2.5 pl-10 pr-4 text-[14px] text-foreground placeholder-muted-foreground/70 outline-none transition-all focus:border-blue-500/50 focus:bg-background focus:ring-1 focus:ring-blue-500/50 dark:border-white/10 dark:bg-black/20 dark:text-white dark:placeholder-white/50 dark:focus:border-white/30 dark:focus:bg-black/40"
+                  autoFocus
+                />
 
                 {/* Mobile Search Dropdown */}
                 <AnimatePresence>
                   {searchQuery && (
                     <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="absolute top-full left-0 mt-2 w-full overflow-hidden rounded-xl border border-black/10 bg-white shadow-xl dark:border-white/10 dark:bg-[#0B1528] z-[60]"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="mt-3 w-full overflow-hidden rounded-xl border border-black/10 bg-white shadow-xl dark:border-white/10 dark:bg-[#0B1528]"
                     >
                       {filteredUniversities.length > 0 ? (
-                        <div className="flex max-h-[250px] flex-col overflow-y-auto p-2">
+                        <div className="flex max-h-[300px] flex-col overflow-y-auto p-2">
                           {filteredUniversities.map((uni) => (
                             <button
                               key={uni.id}
                               onClick={() => {
                                 setSearchQuery("");
+                                setIsMobileSearchOpen(false);
                                 window.dispatchEvent(
                                   new CustomEvent("university-search", {
                                     detail: "",
                                   })
                                 );
-                                setIsOpen(false);
                                 if (uni.status === "Available") {
                                   router.push(uni.href);
                                 } else {
@@ -496,10 +514,10 @@ export default function Navbar() {
                               className="flex flex-col items-start rounded-lg p-3 text-left transition-colors hover:bg-black/5 dark:hover:bg-white/5"
                             >
                               <span className="text-[14px] font-semibold text-foreground dark:text-white">
-                                {uni.name}
+                                {uni.name} - {uni.fullName}
                               </span>
-                              <span className="mt-1 text-[11px] text-muted-foreground dark:text-white/60">
-                                {uni.fullName}
+                              <span className="mt-1 text-[12px] text-muted-foreground dark:text-white/60">
+                                {uni.status}
                               </span>
                             </button>
                           ))}
@@ -513,7 +531,25 @@ export default function Navbar() {
                   )}
                 </AnimatePresence>
               </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
+      {/* Mobile Navigation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            id="mobile-menu"
+            role="region"
+            aria-label="Mobile Navigation"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="overflow-hidden border-t border-border/50 bg-background/95 backdrop-blur-xl dark:border-white/10 dark:bg-[#091A40]/95 md:hidden"
+          >
+            <div className="space-y-1 px-6 py-6">
               {navLinks.map((link) => {
                 const isActive =
                   (pathname === "/" &&
