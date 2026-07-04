@@ -341,7 +341,7 @@ export default function Footer() {
               ].map((feature, idx) => (
                 <div
                   key={idx}
-                  className="group relative flex h-full min-h-[90px] flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#D8E2F0] dark:border-white/[0.03] bg-gradient-to-b from-white to-[#FBFCFF] dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-white/[0.01] p-3 text-center transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-blue-500/20"
+                  className="group relative flex h-full min-h-[90px] flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#D8E2F0] dark:border-white/[0.03] bg-gradient-to-b from-white to-[#FBFCFF] dark:bg-none dark:bg-[#0a101f] p-3 text-center transition-all duration-300 md:dark:bg-transparent md:dark:bg-gradient-to-b md:dark:from-white/[0.04] md:dark:to-white/[0.01] hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-blue-500/20"
                 >
                   <div className="relative mb-2 flex items-center justify-center">
                     <feature.icon
@@ -363,7 +363,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-white/[0.01] md:backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
+        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-[#0a101f] md:dark:bg-white/[0.01] md:backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-none md:dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
           {/* Left: Copyright */}
           <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0">
             © {new Date().getFullYear()} Hyper Learning. All rights reserved.

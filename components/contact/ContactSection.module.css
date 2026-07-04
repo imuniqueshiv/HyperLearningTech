@@ -771,9 +771,42 @@
     height: 42px;
     font-size: 0.85rem;
     border-radius: 10px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
+
+  /* ===== MOBILE GPU FIX: Kill ALL heavy rendering ===== */
   .radialGradient {
-    display: none; /* Huge gradients crash mobile GPUs */
+    display: none !important;
+  }
+  .bgEffects {
+    display: none !important;
+  }
+  .contactCard {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(15, 23, 42, 0.95); /* Solid instead of blur */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  .contactCard:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  .cardGlowTopRight {
+    display: none;
+  }
+  .signalRing {
+    display: none;
+  }
+  .floatingDot1,
+  .floatingDot2,
+  .floatingDot3 {
+    display: none;
+  }
+  .sectionDivider {
+    display: none;
+  }
+  .centerDivider {
+    display: none;
   }
 }
 
