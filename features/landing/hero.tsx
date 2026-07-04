@@ -104,7 +104,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-12 md:pb-24 md:pt-16 lg:px-8 lg:pb-32 lg:pt-20">
-        <div className="grid items-center gap-16 lg:grid-cols-[1.3fr_0.7fr] lg:gap-8">
+        <div className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr] lg:grid-cols-[1.3fr_0.7fr] lg:gap-8">
           {/* Left Content */}
           <motion.div
             variants={containerVariants}
