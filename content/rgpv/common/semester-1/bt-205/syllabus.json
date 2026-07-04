@@ -13,16 +13,41 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt205-u1",
       "number": 1,
       "title": "Computer & Operating System",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Computer: Definition, Classification, Organization i.e. CPU, register, Bus architecture, Instruction set",
-        "Memory & Storage Systems, I/O Devices, and System & Application Software",
-        "Computer Application in e-Business, Bio-Informatics, health Care, Remote Sensing & GIS, Meteorology and Climatology, Computer Gaming, Multimedia and Animation etc.",
-        "Operating System: Definition, Function, Types, Management of File, Process & Memory",
-        "Introduction to MS word, MS powerpoint, MS Excel"
+        {
+          "id": "bt205-u1-computer-definition-classification-organization-ie-cpu-register-bus-architecture-instruction-set",
+          "slug": "computer-definition-classification-organization-ie-cpu-register-bus-architecture-instruction-set",
+          "title": "Computer: Definition, Classification, Organization i.e. CPU, register, Bus architecture, Instruction set",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt205-u1-memory-and-storage-systems-io-devices-and-system-and-application-software",
+          "slug": "memory-and-storage-systems-io-devices-and-system-and-application-software",
+          "title": "Memory & Storage Systems, I/O Devices, and System & Application Software",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt205-u1-computer-application-in-e-business-bio-informatics-health-care-remote-sensing-and-gis-meteorology-and-climatology-computer-gaming-multimedia-and-animation-etc",
+          "slug": "computer-application-in-e-business-bio-informatics-health-care-remote-sensing-and-gis-meteorology-and-climatology-computer-gaming-multimedia-and-animation-etc",
+          "title": "Computer Application in e-Business, Bio-Informatics, health Care, Remote Sensing & GIS, Meteorology and Climatology, Computer Gaming, Multimedia and Animation etc.",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt205-u1-operating-system-definition-function-types-management-of-file-process-and-memory",
+          "slug": "operating-system-definition-function-types-management-of-file-process-and-memory",
+          "title": "Operating System: Definition, Function, Types, Management of File, Process & Memory",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt205-u1-introduction-to-ms-word-ms-powerpoint-ms-excel",
+          "slug": "introduction-to-ms-word-ms-powerpoint-ms-excel",
+          "title": "Introduction to MS word, MS powerpoint, MS Excel",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt205_m1_nov2022_q1",
@@ -52,18 +77,53 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt205-u2",
       "number": 2,
       "title": "Algorithms & Introduction to C++",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Introduction to Algorithms, Complexities and Flowchart",
-        "Introduction to Programming, Categories of Programming Languages, Program Design",
-        "Programming Paradigms, Characteristics or Concepts of OOP",
-        "Procedure Oriented Programming VS object oriented Programming",
-        "Introduction to C++: Character Set, Tokens, Precedence and Associativity, Program Structure",
-        "Data Types, Variables, Operators, Expressions, Statements and control structures",
-        "I/O operations, Array, Functions"
+        {
+          "id": "bt205-u2-introduction-to-algorithms-complexities-and-flowchart",
+          "slug": "introduction-to-algorithms-complexities-and-flowchart",
+          "title": "Introduction to Algorithms, Complexities and Flowchart",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt205-u2-introduction-to-programming-categories-of-programming-languages-program-design",
+          "slug": "introduction-to-programming-categories-of-programming-languages-program-design",
+          "title": "Introduction to Programming, Categories of Programming Languages, Program Design",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt205-u2-programming-paradigms-characteristics-or-concepts-of-oop",
+          "slug": "programming-paradigms-characteristics-or-concepts-of-oop",
+          "title": "Programming Paradigms, Characteristics or Concepts of OOP",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt205-u2-procedure-oriented-programming-vs-object-oriented-programming",
+          "slug": "procedure-oriented-programming-vs-object-oriented-programming",
+          "title": "Procedure Oriented Programming VS object oriented Programming",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt205-u2-introduction-to-cpp-character-set-tokens-precedence-and-associativity-program-structure",
+          "slug": "introduction-to-cpp-character-set-tokens-precedence-and-associativity-program-structure",
+          "title": "Introduction to C++: Character Set, Tokens, Precedence and Associativity, Program Structure",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt205-u2-data-types-variables-operators-expressions-statements-and-control-structures",
+          "slug": "data-types-variables-operators-expressions-statements-and-control-structures",
+          "title": "Data Types, Variables, Operators, Expressions, Statements and control structures",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt205-u2-io-operations-array-functions",
+          "slug": "io-operations-array-functions",
+          "title": "I/O operations, Array, Functions",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt205_m2_nov2022_q1",
@@ -92,16 +152,41 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt205-u3",
       "number": 3,
       "title": "C++ Object Oriented Programming",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Object & Classes, Scope Resolution Operator",
-        "Constructors & Destructors, Friend Functions",
-        "Inheritance, Polymorphism, Overloading Functions & Operators",
-        "Types of Inheritance, Virtual functions",
-        "Introduction to Data Structures"
+        {
+          "id": "bt205-u3-object-and-classes-scope-resolution-operator",
+          "slug": "object-and-classes-scope-resolution-operator",
+          "title": "Object & Classes, Scope Resolution Operator",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt205-u3-constructors-and-destructors-friend-functions",
+          "slug": "constructors-and-destructors-friend-functions",
+          "title": "Constructors & Destructors, Friend Functions",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt205-u3-inheritance-polymorphism-overloading-functions-and-operators",
+          "slug": "inheritance-polymorphism-overloading-functions-and-operators",
+          "title": "Inheritance, Polymorphism, Overloading Functions & Operators",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt205-u3-types-of-inheritance-virtual-functions",
+          "slug": "types-of-inheritance-virtual-functions",
+          "title": "Types of Inheritance, Virtual functions",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt205-u3-introduction-to-data-structures",
+          "slug": "introduction-to-data-structures",
+          "title": "Introduction to Data Structures",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt205_m3_nov2022_q1",
@@ -126,18 +211,53 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt205-u4",
       "number": 4,
       "title": "Networking & Security",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Computer Networking: Introduction, Goals, ISO-OSI Model, Functions of Different Layers",
-        "Internetworking Concepts, Devices, TCP/IP Model",
-        "Introduction to Internet, World Wide Web, E-commerce",
-        "Computer Security Basics: Introduction to viruses, worms, malware, Trojans, Spyware and Anti-Spyware Software",
-        "Different types of attacks like Money Laundering, Information Theft, Cyber Pornography, Email spoofing, Denial of Service (DoS), Cyber Stalking, Logic bombs, Hacking Spamming, Cyber Defamation, pharming",
-        "Security measures Firewall, Computer Ethics & Good Practices",
-        "Introduction of Cyber Laws about Internet Fraud, Good Computer Security Habits"
+        {
+          "id": "bt205-u4-computer-networking-introduction-goals-iso-osi-model-functions-of-different-layers",
+          "slug": "computer-networking-introduction-goals-iso-osi-model-functions-of-different-layers",
+          "title": "Computer Networking: Introduction, Goals, ISO-OSI Model, Functions of Different Layers",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt205-u4-internetworking-concepts-devices-tcpip-model",
+          "slug": "internetworking-concepts-devices-tcpip-model",
+          "title": "Internetworking Concepts, Devices, TCP/IP Model",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt205-u4-introduction-to-internet-world-wide-web-e-commerce",
+          "slug": "introduction-to-internet-world-wide-web-e-commerce",
+          "title": "Introduction to Internet, World Wide Web, E-commerce",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt205-u4-computer-security-basics-introduction-to-viruses-worms-malware-trojans-spyware-and-anti-spyware-software",
+          "slug": "computer-security-basics-introduction-to-viruses-worms-malware-trojans-spyware-and-anti-spyware-software",
+          "title": "Computer Security Basics: Introduction to viruses, worms, malware, Trojans, Spyware and Anti-Spyware Software",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt205-u4-different-types-of-attacks-like-money-laundering-information-theft-cyber-pornography-email-spoofing-denial-of-service-dos-cyber-stalking-logic-bombs-hacking-spamming-cyber-defamation-pharming",
+          "slug": "different-types-of-attacks-like-money-laundering-information-theft-cyber-pornography-email-spoofing-denial-of-service-dos-cyber-stalking-logic-bombs-hacking-spamming-cyber-defamation-pharming",
+          "title": "Different types of attacks like Money Laundering, Information Theft, Cyber Pornography, Email spoofing, Denial of Service (DoS), Cyber Stalking, Logic bombs, Hacking Spamming, Cyber Defamation, pharming",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt205-u4-security-measures-firewall-computer-ethics-and-good-practices",
+          "slug": "security-measures-firewall-computer-ethics-and-good-practices",
+          "title": "Security measures Firewall, Computer Ethics & Good Practices",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt205-u4-introduction-of-cyber-laws-about-internet-fraud-good-computer-security-habits",
+          "slug": "introduction-of-cyber-laws-about-internet-fraud-good-computer-security-habits",
+          "title": "Introduction of Cyber Laws about Internet Fraud, Good Computer Security Habits",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt205_m4_nov2022_q1",
@@ -165,19 +285,59 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt205-u5",
       "number": 5,
       "title": "DBMS & Cloud Computing",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Database Management System: Introduction, File oriented approach and Database approach",
-        "Data Models, Architecture of Database System",
-        "Data independence, Data dictionary, DBA, Primary Key",
-        "Data definition language and Manipulation Languages",
-        "Cloud computing: definition, cloud infrastructure",
-        "cloud segments or service delivery models (IaaS, PaaS and SaaS)",
-        "cloud deployment models/ types of cloud (public, private, community and hybrid clouds)",
-        "Pros and Cons of cloud computing"
+        {
+          "id": "bt205-u5-database-management-system-introduction-file-oriented-approach-and-database-approach",
+          "slug": "database-management-system-introduction-file-oriented-approach-and-database-approach",
+          "title": "Database Management System: Introduction, File oriented approach and Database approach",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt205-u5-data-models-architecture-of-database-system",
+          "slug": "data-models-architecture-of-database-system",
+          "title": "Data Models, Architecture of Database System",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt205-u5-data-independence-data-dictionary-dba-primary-key",
+          "slug": "data-independence-data-dictionary-dba-primary-key",
+          "title": "Data independence, Data dictionary, DBA, Primary Key",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt205-u5-data-definition-language-and-manipulation-languages",
+          "slug": "data-definition-language-and-manipulation-languages",
+          "title": "Data definition language and Manipulation Languages",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt205-u5-cloud-computing-definition-cloud-infrastructure",
+          "slug": "cloud-computing-definition-cloud-infrastructure",
+          "title": "Cloud computing: definition, cloud infrastructure",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt205-u5-cloud-segments-or-service-delivery-models-iaas-paas-and-saas",
+          "slug": "cloud-segments-or-service-delivery-models-iaas-paas-and-saas",
+          "title": "cloud segments or service delivery models (IaaS, PaaS and SaaS)",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt205-u5-cloud-deployment-models-types-of-cloud-public-private-community-and-hybrid-clouds",
+          "slug": "cloud-deployment-models-types-of-cloud-public-private-community-and-hybrid-clouds",
+          "title": "cloud deployment models/ types of cloud (public, private, community and hybrid clouds)",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt205-u5-pros-and-cons-of-cloud-computing",
+          "slug": "pros-and-cons-of-cloud-computing",
+          "title": "Pros and Cons of cloud computing",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt205_m5_nov2022_q1",

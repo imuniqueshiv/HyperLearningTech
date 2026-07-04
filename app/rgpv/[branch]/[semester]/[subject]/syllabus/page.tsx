@@ -3,13 +3,14 @@ import { BookOpen } from "lucide-react";
 import { getSyllabus, getPYQs } from "@/lib/content";
 import { getQuestionsForModule } from "@/lib/content/question-mapper";
 import ModuleCard from "@/components/syllabus/module-card";
+import type { Topic } from "@/types/topic";
 
 interface Module {
   id: string;
   number: number;
   title: string;
   hours: number;
-  topics?: string[];
+  topics?: Topic[];
   questionIds?: string[];
   predictedQuestionIds?: string[];
 }
