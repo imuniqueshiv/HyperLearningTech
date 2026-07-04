@@ -173,12 +173,12 @@ export default function Footer() {
       />
 
       {/* Light Mode Bottom Radial Glow */}
-      <div className="absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full pointer-events-none dark:hidden" />
+      <div className="hidden md:block absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full pointer-events-none dark:hidden" />
 
       {/* Premium ambient light effect at the top */}
       <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none">
         <div className="w-[80%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/10 dark:via-blue-500/20 to-transparent" />
-        <div className="absolute top-0 w-[40%] h-[150px] bg-blue-500/5 blur-[120px] rounded-full" />
+        <div className="hidden md:block absolute top-0 w-[40%] h-[150px] bg-blue-500/5 blur-[120px] rounded-full" />
       </div>
 
       {/* Premium Outer wrapper */}

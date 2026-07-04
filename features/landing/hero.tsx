@@ -162,22 +162,22 @@ export default function Hero() {
             {/* Feature pills row */}
             <motion.div
               variants={itemVariants}
-              className="mt-12 flex flex-wrap gap-4"
+              className="mt-12 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4"
             >
-              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
-                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)] shrink-0">
                   <BrainCircuit className="h-3 w-3 text-indigo-600 dark:text-[#818cf8]" />
                 </div>
-                AI-powered notes
+                <span className="truncate">AI-powered notes</span>
               </div>
-              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
-                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(52,211,153,0.15)]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(52,211,153,0.15)] shrink-0">
                   <CheckCircle2 className="h-3 w-3 text-emerald-600 dark:text-[#34d399]" />
                 </div>
-                Syllabus mapped
+                <span className="truncate">Syllabus mapped</span>
               </div>
-              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
-                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(59,130,246,0.15)]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(59,130,246,0.15)] shrink-0">
                   <svg
                     className="h-3 w-3 text-blue-500 dark:text-[#60a5fa]"
                     fill="none"
@@ -192,13 +192,13 @@ export default function Hero() {
                     />
                   </svg>
                 </div>
-                Topic-wise PYQs
+                <span className="truncate">Topic-wise PYQs</span>
               </div>
-              <div className="group flex cursor-default items-center gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-[18px] py-[10px] text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
-                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+                <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)] shrink-0">
                   <BrainCircuit className="h-3 w-3 text-indigo-600 dark:text-[#818cf8]" />
                 </div>
-                Instant AI help
+                <span className="truncate">Instant AI help</span>
               </div>
             </motion.div>
 
