@@ -161,7 +161,7 @@ const SocialDropdown = ({
 
 export default function Footer() {
   return (
-    <footer className="relative -mt-10 border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-hidden">
+    <footer className="relative -mt-10 border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-x-clip">
       {/* Light Mode Premium Dot Matrix Background */}
       <div
         className="hidden md:block absolute inset-0 pointer-events-none dark:hidden"
@@ -314,8 +314,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Feature Cards */}
-          <div className="w-full mt-8 lg:mt-0 lg:w-[320px] xl:w-[360px] shrink-0 lg:border-l lg:border-slate-200 dark:lg:border-white/[0.03] lg:pl-10">
+          {/* Feature Cards — hidden on mobile to prevent GPU glitch */}
+          <div className="hidden md:block w-full mt-8 lg:mt-0 lg:w-[320px] xl:w-[360px] shrink-0 lg:border-l lg:border-slate-200 dark:lg:border-white/[0.03] lg:pl-10">
             <div className="grid grid-cols-2 gap-3 h-full">
               {[
                 {
@@ -341,7 +341,7 @@ export default function Footer() {
               ].map((feature, idx) => (
                 <div
                   key={idx}
-                  className="group relative flex h-full min-h-[90px] flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#D8E2F0] dark:border-white/[0.03] bg-gradient-to-b from-white to-[#FBFCFF] dark:bg-none dark:bg-[#0a101f] p-3 text-center transition-all duration-300 md:dark:bg-transparent md:dark:bg-gradient-to-b md:dark:from-white/[0.04] md:dark:to-white/[0.01] hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-blue-500/20"
+                  className="group relative flex h-full min-h-[90px] flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#D8E2F0] dark:border-white/[0.03] bg-gradient-to-b from-white to-[#FBFCFF] dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-white/[0.01] p-3 text-center transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-blue-500/20"
                 >
                   <div className="relative mb-2 flex items-center justify-center">
                     <feature.icon
