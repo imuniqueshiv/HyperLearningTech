@@ -161,24 +161,17 @@ const SocialDropdown = ({
 
 export default function Footer() {
   return (
-    <footer className="relative -mt-10 border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-x-clip">
-      {/* Light Mode Premium Dot Matrix Background */}
-      <div
-        className="hidden md:block absolute inset-0 pointer-events-none dark:hidden"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.25) 1px, transparent 0)",
-          backgroundSize: "24px 24px",
-        }}
-      />
+    <footer className="relative border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-x-clip">
+      {/* Background elements wrapper with overflow-hidden to prevent scroll overflow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Light Mode Bottom Radial Glow */}
+        <div className="hidden md:block absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full dark:hidden" />
 
-      {/* Light Mode Bottom Radial Glow */}
-      <div className="hidden md:block absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full pointer-events-none dark:hidden" />
-
-      {/* Premium ambient light effect at the top */}
-      <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none">
-        <div className="w-[80%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/10 dark:via-blue-500/20 to-transparent" />
-        <div className="hidden md:block absolute top-0 w-[40%] h-[150px] bg-blue-500/5 blur-[120px] rounded-full" />
+        {/* Premium ambient light effect at the top */}
+        <div className="absolute top-0 inset-x-0 flex justify-center">
+          <div className="w-[80%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/10 dark:via-blue-500/20 to-transparent" />
+          <div className="hidden md:block absolute top-0 w-[40%] h-[150px] bg-blue-500/5 blur-[120px] rounded-full" />
+        </div>
       </div>
 
       {/* Premium Outer wrapper */}
