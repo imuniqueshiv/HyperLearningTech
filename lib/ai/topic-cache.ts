@@ -77,9 +77,7 @@ export async function saveTopicCache(
  *
  * Used by forceRefresh and future admin tools.
  */
-export async function deleteTopicCache(
-  topicId: string
-): Promise<void> {
+export async function deleteTopicCache(topicId: string): Promise<void> {
   const redis = getRedis();
 
   if (!redis) {
