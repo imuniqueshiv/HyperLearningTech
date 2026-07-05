@@ -174,7 +174,7 @@ export default function Navbar() {
     >
       {/* glow */}
       <div className="absolute -top-20 left-[55%] w-72 h-72 rounded-full bg-blue-500/30 blur-[60px] pointer-events-none" />
-      
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between gap-6 md:h-[72px]">
           {/* Left Side: Logo & Search */}
