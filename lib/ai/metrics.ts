@@ -3,10 +3,10 @@ import { saveMetric } from "./analytics-storage";
 export type MetricEvent =
   | "CACHE_HIT"
   | "CACHE_MISS"
+  | "CACHE_REFRESH"
   | "GENERATION_SUCCESS"
   | "GENERATION_FAILED"
   | "GENERATION_RETRY";
-
 export interface MetricPayload {
   subjectCode?: string;
   durationMs?: number;

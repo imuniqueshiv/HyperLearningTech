@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 
-import { generateWorkspace } from "@/lib/ai/workspace-service";
+import { generateTopicAnswer } from "@/lib/ai/topic-service";
 import { WorkspaceAction } from "@/types/ai";
 import { getPrimaryKey } from "@/lib/ai/key-manager";
 import { trackMetric } from "@/lib/ai/metrics";
-import { getTopicById } from "@/lib/content";
 
 interface WorkspaceBody {
+  branch?: string;
+  semester?: string;
   topicId?: string;
   subjectCode?: string;
   action?: WorkspaceAction;
@@ -163,24 +164,13 @@ export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as WorkspaceBody;
 
+    const branch = body.branch?.trim().toLowerCase();
+    const semester = body.semester?.trim().toLowerCase();
     const topicId = body.topicId?.trim();
     const subjectCode = body.subjectCode?.trim().toUpperCase();
-    const topicData =
-      topicId && subjectCode
-        ? await getTopicById(
-            "common",
-            "semester-1",
-            subjectCode.toLowerCase(),
-            topicId
-          )
-        : null;
-
-    const topic = topicData?.topic.title;
-
-    const moduleTitle = topicData?.module.title;
     const forceRefresh = body.forceRefresh ?? false;
     const question = body.question?.trim();
-    const messages = body.messages || [];
+    const messages = body.messages ?? [];
 
     // Chat/question mode
     if (question) {
@@ -196,8 +186,8 @@ export async function POST(request: NextRequest) {
       const prompt = buildChatPrompt(
         question,
         detectedAction,
-        topic,
-        moduleTitle,
+        undefined,
+        undefined,
         subjectCode,
         context
       );
@@ -215,7 +205,7 @@ export async function POST(request: NextRequest) {
       });
 
       const relatedTopics = await generateRelatedTopics(
-        topic || question,
+        question,
         subjectCode || "unknown"
       );
 
@@ -231,15 +221,21 @@ export async function POST(request: NextRequest) {
     // Workspace action mode
     const action = body.action;
 
-    if (!topic) {
+    if (!branch) {
       return NextResponse.json(
-        { success: false, error: "Topic is required." },
+        { success: false, error: "Branch is required." },
         { status: 400 }
       );
     }
-    if (!moduleTitle) {
+    if (!semester) {
       return NextResponse.json(
-        { success: false, error: "Module is required." },
+        { success: false, error: "Semester is required." },
+        { status: 400 }
+      );
+    }
+    if (!topicId) {
+      return NextResponse.json(
+        { success: false, error: "Topic ID is required." },
         { status: 400 }
       );
     }
@@ -256,22 +252,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const result = await generateWorkspace({
-      topic,
-      module: moduleTitle,
+    const result = await generateTopicAnswer({
+      branch,
+      semester,
       subjectCode,
+      topicId,
       action,
       forceRefresh,
     });
-
-    const relatedTopics = await generateRelatedTopics(topic, subjectCode);
 
     return NextResponse.json({
       success: true,
       answer: result.answer,
       cached: result.cached,
       action,
-      relatedTopics,
+      relatedTopics: [],
     });
   } catch (error) {
     console.error("Workspace API Error:", error);

@@ -62,9 +62,8 @@ export type WorkspaceAction =
   | "FORMULA";
 
 export interface WorkspaceRequest {
+  topicId: string;
   subjectCode: string;
-  module: string;
-  topic: string;
   action: WorkspaceAction;
   forceRefresh?: boolean;
 }
