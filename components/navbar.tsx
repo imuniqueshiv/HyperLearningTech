@@ -166,12 +166,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 ${
+      className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 relative overflow-hidden ${
         scrolled
           ? "bg-[#091A40]/85 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#091A40]/70"
-          : "bg-gradient-to-r from-[#061126] via-[#0D245A] to-[#061126]"
+          : "bg-[linear-gradient(90deg,#0E1736_0%,#081E6E_25%,#0D33A6_50%,#1153C4_75%,#006BDE_100%)]"
       }`}
     >
+      {/* glow */}
+      <div className="absolute -top-20 left-[55%] w-72 h-72 rounded-full bg-blue-500/30 blur-[60px] pointer-events-none" />
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between gap-6 md:h-[72px]">
           {/* Left Side: Logo & Search */}
@@ -498,7 +501,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-border/50 bg-background/95 backdrop-blur-xl dark:border-white/10 dark:bg-[#091A40]/95 md:hidden"
+            className="overflow-hidden border-t border-black/10 bg-white/95 backdrop-blur-xl dark:border-white/10 dark:bg-[#091A40]/95 md:hidden"
           >
             <div className="space-y-1 px-6 py-6">
               {navLinks.map((link) => {
@@ -518,8 +521,8 @@ export default function Navbar() {
                     }}
                     className={`block rounded-xl px-4 py-3 text-[15px] font-medium tracking-[0.02em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:focus-visible:ring-white/50 ${
                       isActive
-                        ? "bg-black/5 text-foreground dark:bg-white/5 dark:text-white"
-                        : "text-muted-foreground hover:bg-black/5 hover:text-foreground dark:text-[#AFC8FF] dark:hover:bg-white/5 dark:hover:text-white"
+                        ? "bg-slate-100 text-slate-900 dark:bg-white/5 dark:text-white"
+                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-[#AFC8FF] dark:hover:bg-white/5 dark:hover:text-white"
                     }`}
                   >
                     {link.label}
@@ -527,23 +530,23 @@ export default function Navbar() {
                 );
               })}
 
-              <div className="mt-6 flex flex-col gap-3 border-t border-border/50 pt-6 dark:border-white/10">
+              <div className="mt-6 flex flex-col gap-3 border-t border-black/10 pt-6 dark:border-white/10">
                 <button
                   onClick={() =>
                     setTheme(currentTheme === "dark" ? "light" : "dark")
                   }
                   aria-label="Toggle theme"
-                  className="flex w-full items-center justify-between rounded-xl p-3 text-base font-medium text-foreground transition-colors hover:bg-black/5 dark:text-white/90 dark:hover:bg-white/10"
+                  className="flex w-full items-center justify-between rounded-xl p-3 text-base font-medium text-slate-900 transition-colors hover:bg-slate-50 dark:text-white/90 dark:hover:bg-white/10"
                 >
                   <span>Theme</span>
                   {mounted && (
-                    <div className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/20 bg-transparent dark:border-white/25">
+                    <div className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/10 bg-transparent dark:border-white/25">
                       <div
-                        className={`flex h-full w-1/2 items-center justify-center transition-colors ${currentTheme !== "dark" ? "bg-black/10 dark:bg-white/20" : ""}`}
+                        className={`flex h-full w-1/2 items-center justify-center transition-colors ${currentTheme !== "dark" ? "bg-black/5 dark:bg-white/20" : ""}`}
                       >
                         <Sun
                           strokeWidth={2.5}
-                          className={`h-[15px] w-[15px] ${currentTheme !== "dark" ? "text-amber-600" : "text-slate-500 dark:text-white/60"}`}
+                          className={`h-[15px] w-[15px] ${currentTheme !== "dark" ? "text-amber-600" : "text-slate-400 dark:text-white/60"}`}
                         />
                       </div>
                       <div
@@ -551,7 +554,7 @@ export default function Navbar() {
                       >
                         <Moon
                           strokeWidth={2.5}
-                          className={`h-[15px] w-[15px] ${currentTheme === "dark" ? "text-white" : "text-slate-500 dark:text-white/60"}`}
+                          className={`h-[15px] w-[15px] ${currentTheme === "dark" ? "text-white" : "text-slate-400 dark:text-white/60"}`}
                         />
                       </div>
                     </div>
@@ -561,7 +564,7 @@ export default function Navbar() {
                 <Link
                   href="/sign-in"
                   onClick={() => setIsOpen(false)}
-                  className="w-full rounded-xl border border-black/20 px-4 py-3 text-center text-[15px] font-semibold text-foreground transition-all duration-200 hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:border-white/25 dark:text-white dark:hover:bg-white/10 dark:focus-visible:ring-white/50"
+                  className="w-full rounded-xl border border-black/15 px-4 py-3 text-center text-[15px] font-semibold text-slate-900 transition-all duration-200 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:border-white/25 dark:text-white dark:hover:bg-white/10 dark:focus-visible:ring-white/50"
                 >
                   Sign In
                 </Link>
