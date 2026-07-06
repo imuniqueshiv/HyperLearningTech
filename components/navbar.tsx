@@ -306,7 +306,7 @@ export default function Navbar() {
                       } ${
                         isActive
                           ? "text-white"
-                          : "text-white/50 group-hover:text-white/80 group-hover:scale-110"
+                          : "text-white/75 group-hover:text-white group-hover:scale-110"
                       }`}
                       strokeWidth={isActive ? 2.5 : 2}
                     />
@@ -314,7 +314,7 @@ export default function Navbar() {
                       className={`text-[12px] font-semibold tracking-wide transition-colors duration-300 ${
                         isActive
                           ? "text-white"
-                          : "text-white/60 group-hover:text-white"
+                          : "text-white/80 group-hover:text-white"
                       }`}
                     >
                       {link.label}
