@@ -11,7 +11,7 @@ import {
   House,
   GraduationCap,
   Mail,
-  BookOpen,
+  LayoutDashboard,
   Search,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,14 +32,14 @@ const navLinks = [
     icon: GraduationCap,
   },
   {
+    label: "Dashboard",
+    href: "/dashboard",
+    icon: LayoutDashboard,
+  },
+  {
     label: "Contact",
     href: "/#Contact",
     icon: Mail,
-  },
-  {
-    label: "About",
-    href: "/about",
-    icon: BookOpen,
   },
 ];
 
