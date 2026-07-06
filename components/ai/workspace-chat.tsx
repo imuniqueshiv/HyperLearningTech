@@ -1,11 +1,20 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Loader2, Sparkles, AlertCircle } from "lucide-react";
+import { Send, Loader2, Sparkles, AlertCircle, ArrowDown } from "lucide-react";
 import WorkspaceMessage from "@/components/ai/workspace-message";
 import ContinueExternalAI from "@/components/ai/continue-external-ai";
 import { API_ENDPOINTS } from "@/lib/api-endpoints";
+import {
+  formatContinueLearningLabel,
+  formatLastStudied,
+  fromStoredMessages,
+  loadSession,
+  saveSession,
+  sessionMatchesContext,
+  toStoredMessages,
+} from "@/lib/ai/session-service";
 import { FOLLOWUP_QUESTION_LIMIT, type WorkspaceResponse } from "@/types/ai";
 
 interface Message {
@@ -35,6 +44,77 @@ export interface WorkspaceChatProps {
   followupLimit?: number;
 }
 
+function buildInitialExplanationMessage(content: string): Message {
+  return {
+    id: "initial-cached-explanation",
+    role: "assistant",
+    content,
+    timestamp: new Date(),
+  };
+}
+
+interface WorkspaceInitialState {
+  topicExplanation: string;
+  messages: Message[];
+  lastStudiedAt: string | null;
+  sessionSaved: boolean;
+  showContinueLearning: boolean;
+  skipPersist: boolean;
+  explanationRequested: boolean;
+}
+
+function getWorkspaceInitialState(params: {
+  topicId?: string;
+  branch?: string;
+  semester?: string;
+  subjectCode: string;
+  cachedExplanation?: string;
+}): WorkspaceInitialState {
+  const empty: WorkspaceInitialState = {
+    topicExplanation: "",
+    messages: [],
+    lastStudiedAt: null,
+    sessionSaved: false,
+    showContinueLearning: false,
+    skipPersist: false,
+    explanationRequested: false,
+  };
+
+  const { topicId, branch, semester, subjectCode, cachedExplanation } = params;
+
+  if (!topicId || !branch || !semester) {
+    return empty;
+  }
+
+  const session = loadSession(topicId);
+
+  if (
+    session &&
+    sessionMatchesContext(session, { branch, semester, subjectCode })
+  ) {
+    return {
+      topicExplanation: session.cachedExplanation,
+      messages: fromStoredMessages(session.messages),
+      lastStudiedAt: session.updatedAt,
+      sessionSaved: true,
+      showContinueLearning: session.questionCount > 0,
+      skipPersist: true,
+      explanationRequested: true,
+    };
+  }
+
+  if (cachedExplanation) {
+    return {
+      ...empty,
+      topicExplanation: cachedExplanation,
+      messages: [buildInitialExplanationMessage(cachedExplanation)],
+      explanationRequested: true,
+    };
+  }
+
+  return empty;
+}
+
 export default function WorkspaceChat({
   subjectCode,
   branch,
@@ -54,35 +134,46 @@ export default function WorkspaceChat({
     topicId && branch && semester && topicTitle && moduleTitle
   );
 
+  const [initialWorkspace] = useState(() =>
+    getWorkspaceInitialState({
+      topicId,
+      branch,
+      semester,
+      subjectCode,
+      cachedExplanation,
+    })
+  );
+
   const [topicExplanation, setTopicExplanation] = useState(
-    cachedExplanation ?? ""
+    initialWorkspace.topicExplanation
   );
   const [explanationCached, setExplanationCached] = useState(
     initialExplanationCached
   );
   const [explanationLoading, setExplanationLoading] = useState(false);
-
-  const isFollowupMode = isTopicContextReady && Boolean(topicExplanation);
-
-  const [messages, setMessages] = useState<Message[]>(() => {
-    if (!cachedExplanation) return [];
-
-    return [
-      {
-        id: "initial-cached-explanation",
-        role: "assistant",
-        content: cachedExplanation,
-        timestamp: new Date(),
-      },
-    ];
-  });
+  const [messages, setMessages] = useState<Message[]>(
+    initialWorkspace.messages
+  );
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [lastStudiedAt, setLastStudiedAt] = useState<string | null>(
+    initialWorkspace.lastStudiedAt
+  );
+  const [sessionSaved, setSessionSaved] = useState(
+    initialWorkspace.sessionSaved
+  );
+  const [showContinueLearning, setShowContinueLearning] = useState(
+    initialWorkspace.showContinueLearning
+  );
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+  const explanationRequestedRef = useRef(initialWorkspace.explanationRequested);
+  const skipPersistRef = useRef(initialWorkspace.skipPersist);
+
+  const isFollowupMode = isTopicContextReady && Boolean(topicExplanation);
 
   const activeExplanation =
     topicExplanation ||
@@ -95,26 +186,24 @@ export default function WorkspaceChat({
     followUpCount >= followupLimit &&
     !explanationLoading;
   const messageCount = messages.length;
+  const hasConversation = followUpCount > 0;
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollToBottom = useCallback((behavior: ScrollBehavior = "smooth") => {
+    messagesEndRef.current?.scrollIntoView({ behavior });
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
-  }, [messageCount, limitReached, loading]);
+  }, [messageCount, limitReached, loading, scrollToBottom]);
 
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
-  const explanationRequestedRef = useRef(false);
-
   useEffect(() => {
     if (
       !isTopicContextReady ||
       topicExplanation ||
-      cachedExplanation ||
       explanationRequestedRef.current
     ) {
       return;
@@ -150,14 +239,7 @@ export default function WorkspaceChat({
 
         setTopicExplanation(data.answer);
         setExplanationCached(data.cached);
-        setMessages([
-          {
-            id: "initial-cached-explanation",
-            role: "assistant",
-            content: data.answer,
-            timestamp: new Date(),
-          },
-        ]);
+        setMessages([buildInitialExplanationMessage(data.answer)]);
       } catch (err: unknown) {
         if (!cancelled) {
           setError(
@@ -181,11 +263,52 @@ export default function WorkspaceChat({
   }, [
     apiEndpoint,
     branch,
-    cachedExplanation,
     isTopicContextReady,
     semester,
     subjectCode,
     topicExplanation,
+    topicId,
+  ]);
+
+  useEffect(() => {
+    if (
+      !isTopicContextReady ||
+      !topicId ||
+      !branch ||
+      !semester ||
+      !activeExplanation
+    ) {
+      return;
+    }
+
+    if (skipPersistRef.current) {
+      skipPersistRef.current = false;
+      return;
+    }
+
+    const now = new Date().toISOString();
+
+    saveSession({
+      topicId,
+      branch,
+      semester,
+      subjectCode,
+      cachedExplanation: activeExplanation,
+      messages: toStoredMessages(messages),
+      questionCount: followUpCount,
+      updatedAt: now,
+    });
+
+    setLastStudiedAt(now);
+    setSessionSaved(true);
+  }, [
+    activeExplanation,
+    branch,
+    followUpCount,
+    isTopicContextReady,
+    messages,
+    semester,
+    subjectCode,
     topicId,
   ]);
 
@@ -196,6 +319,8 @@ export default function WorkspaceChat({
       setError("Topic explanation is still loading. Please wait.");
       return;
     }
+
+    setShowContinueLearning(false);
 
     const userMessage: Message = {
       id: crypto.randomUUID(),
@@ -308,6 +433,11 @@ export default function WorkspaceChat({
     }
   };
 
+  const handleContinueLearning = () => {
+    setShowContinueLearning(false);
+    scrollToBottom();
+  };
+
   const followupPlaceholder = isFollowupMode
     ? `Ask a follow-up about ${topicTitle}...`
     : inputPlaceholder;
@@ -323,15 +453,27 @@ export default function WorkspaceChat({
     ? `${followupLimit} / ${followupLimit} Completed`
     : `${followUpCount} / ${followupLimit}`;
 
+  const lastStudied = lastStudiedAt ? formatLastStudied(lastStudiedAt) : null;
+
   return (
     <div className="flex h-full flex-col rounded-2xl border border-border bg-card/50 backdrop-blur-xl">
       <div className="flex items-center gap-3 border-b border-border px-4 py-3 sm:px-6 sm:py-4">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10">
           <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
         </div>
-        <div className="flex-1">
-          <h3 className="font-semibold text-foreground">Hyper AI Workspace</h3>
-          <p className="text-xs text-muted-foreground">
+        <div className="flex-1 min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="font-semibold text-foreground">
+              Hyper AI Workspace
+            </h3>
+            {sessionSaved && isTopicContextReady && (
+              <span className="inline-flex items-center gap-1 rounded-full border border-green-500/20 bg-green-500/10 px-2 py-0.5 text-[10px] font-medium text-green-700 dark:text-green-400">
+                <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                Saved on this device
+              </span>
+            )}
+          </div>
+          <p className="truncate text-xs text-muted-foreground">
             {isFollowupMode
               ? topicTitle
               : `Ask questions about ${subjectCode.toUpperCase()}`}
@@ -363,6 +505,15 @@ export default function WorkspaceChat({
               transition={{ duration: 0.35, ease: "easeOut" }}
             />
           </div>
+          {lastStudied && (
+            <p className="mt-2 text-[10px] text-muted-foreground">
+              Last studied{" "}
+              <span className="font-medium text-foreground">
+                {lastStudied.prefix}
+                {lastStudied.detail ? ` · ${lastStudied.detail}` : ""}
+              </span>
+            </p>
+          )}
         </div>
       )}
 
@@ -404,6 +555,29 @@ export default function WorkspaceChat({
           </div>
         ) : (
           <>
+            {showContinueLearning && lastStudiedAt && hasConversation && (
+              <motion.div
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-4"
+              >
+                <p className="text-sm font-medium text-foreground">
+                  Continue Learning
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Last opened {formatContinueLearningLabel(lastStudiedAt)}.
+                </p>
+                <button
+                  type="button"
+                  onClick={handleContinueLearning}
+                  className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 transition hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  Continue
+                  <ArrowDown className="h-3.5 w-3.5" />
+                </button>
+              </motion.div>
+            )}
+
             {isTopicContextReady && explanationCached !== undefined && (
               <p className="text-center text-[10px] text-muted-foreground">
                 {explanationLoading
@@ -453,6 +627,20 @@ export default function WorkspaceChat({
                 </motion.div>
               )}
             </AnimatePresence>
+
+            {isFollowupMode &&
+              !hasConversation &&
+              !explanationLoading &&
+              !limitReached && (
+                <div className="rounded-2xl border border-dashed border-border bg-muted/10 p-4 text-center">
+                  <p className="text-sm text-foreground">
+                    Start asking questions about this topic.
+                  </p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    Your progress will be remembered on this device.
+                  </p>
+                </div>
+              )}
 
             {isFollowupMode &&
               !limitReached &&

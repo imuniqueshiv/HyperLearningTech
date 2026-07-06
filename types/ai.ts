@@ -140,3 +140,25 @@ export interface FollowupResponse {
   answer?: string;
   error?: string;
 }
+
+// =========================
+// Local Learning Session
+// =========================
+
+export interface StoredChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: string;
+}
+
+export interface LearningSession {
+  topicId: string;
+  branch: string;
+  semester: string;
+  subjectCode: string;
+  cachedExplanation: string;
+  messages: StoredChatMessage[];
+  questionCount: number;
+  updatedAt: string;
+}
