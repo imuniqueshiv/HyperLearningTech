@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { generateTopicAnswer } from "@/lib/ai/topic-service";
 import { generateFollowupAnswer } from "@/lib/ai/followup-service";
+import { resolveTopicExplanation } from "@/lib/ai/resolve-topic-explanation";
 import { WorkspaceAction } from "@/types/ai";
 import { trackMetric } from "@/lib/ai/metrics";
 
@@ -44,37 +45,35 @@ export async function POST(request: NextRequest) {
 
     // Follow-up question mode → followup-service (live, no cache)
     if (question) {
-      const cachedExplanation = body.cachedExplanation?.trim();
-      const topic = body.topic?.trim();
-      const moduleTitle = body.module?.trim();
-
       if (!subjectCode) {
         return NextResponse.json(
           { success: false, error: "Subject code is required." },
           { status: 400 }
         );
       }
-      if (!cachedExplanation) {
+
+      if (!branch || !semester || !topicId) {
         return NextResponse.json(
           {
             success: false,
-            error: "Cached explanation is required for follow-up questions.",
+            error:
+              "Topic context (branch, semester, topicId) is required for follow-up questions.",
           },
           { status: 400 }
         );
       }
-      if (!topic) {
-        return NextResponse.json(
-          { success: false, error: "Topic is required." },
-          { status: 400 }
-        );
-      }
-      if (!moduleTitle) {
-        return NextResponse.json(
-          { success: false, error: "Module is required." },
-          { status: 400 }
-        );
-      }
+
+      const resolved = await resolveTopicExplanation({
+        branch,
+        semester,
+        topicId,
+        subjectCode,
+      });
+
+      const topic = body.topic?.trim() || resolved.topic;
+      const moduleTitle = body.module?.trim() || resolved.module;
+      const cachedExplanation =
+        body.cachedExplanation?.trim() || resolved.explanation;
 
       const result = await generateFollowupAnswer({
         subjectCode,
@@ -151,10 +150,15 @@ export async function POST(request: NextRequest) {
       message: error instanceof Error ? error.message : "Unknown error",
     });
 
+    const message = error instanceof Error ? error.message : "Unknown error";
+
     return NextResponse.json(
       {
         success: false,
-        error: "Unable to generate content. Please try again.",
+        error:
+          message.includes("API key") || message.includes("Gemini")
+            ? "AI service is not configured. Please try again later."
+            : "Unable to generate content. Please try again.",
       },
       { status: 500 }
     );
