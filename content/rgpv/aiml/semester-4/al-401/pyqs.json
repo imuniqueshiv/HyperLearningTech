@@ -2,8 +2,664 @@
   "subject": {
     "id": "al-401",
     "code": "AL-401",
-    "name": "Intro to Discrete Structure & Linear Algebra",
-    "title": "AL-401 - Intro to Discrete Structure & Linear Algebra"
+    "name": "Introduction to Discrete Structure and Linear Algebra",
+    "title": "AI/AL/CD-401 (GS) – Introduction to Discrete Structure and Linear Algebra",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "If A = {2, 4, 6, 9} and B = {4, 6, 18, 27, 54}, a ∈ A, b ∈ B, find the set of ordered pairs such that 'a' is factor of 'b' and a < b.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Let R be the relation on the set R of all real numbers defined by a R b if and only if |a - b| ≤ 1. Then prove that R is reflexive, symmetric, but not transitive.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Let A = {1, 2, 3, 4, 5, 6} and a R b if and only if a is multiple of b. Find: i) Domain ii) Range iii) Matrix of a relation iv) Digraph of the relation R.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What common relations on Z are the transitive closures of the following relations? i) a S b if and only if a + 1 = b, ii) a R b if and only if a - b = 2.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "i) Prove that p ∧ q ⇒ q ∨ p is a Tautology. ii) Show that (p ∨ q) ∧ (¬p) ∧ (¬q) is a contradiction.",
+              "unit": "Unit 3",
+              "type": "logic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Prove that in any graph G, even number of vertices is of odd degree.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the equations 6x + 15y + 55z = 76, 15x + 55y + 225z = 295, 55x + 225y + 979z = 1259 using Cholesky decomposition method.",
+              "unit": "Unit 4",
+              "type": "linear-algebra"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find singular value decomposition for A = [[1, 0, 1], [-1, 1, 0]].",
+              "unit": "Unit 4",
+              "type": "linear-algebra"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "To test the hypothesis that eating fish makes one smarter, a random sample of 12 persons take a fish oil supplement for one year and then are given an IQ test. Test using the given hypothesis, report the test statistic with the P-value, then summarize your conclusion. H₀: μ = 100, Hₐ: μ > 100.",
+              "unit": "Unit 5",
+              "type": "statistics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the critical values for a one-independent sample non directional (two-tailed) z test at a .05 level of significance?",
+              "unit": "Unit 5",
+              "type": "statistics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Let A = {1, 2, 3, 4, 6, 8, 9, 12, 18, 24} be ordered by divisibility. Draw Hasse diagram.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Let G be a planar graph with 10 vertices, 3 components and 9 edges. Find the number of regions in G.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Find chromatic number of the given graph.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write short note on partially ordered sets and explain with suitable example.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short Note on: a) Hasse diagram b) Lattice c) Weighted Graph",
+              "unit": "Unit 1/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Prove that: i) A - (B ∩ C) = (A - B) ∪ (A - C) ii) A × (B ∩ C) = (A × B) ∩ (A × C).",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "With the help of Venn-diagram, prove that (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Consider the set Z of integers m > 1. We say that x is congruent to y modulo m written as x ≡ y (mod m) if x - y is divisible by m. Show that this defines an equivalence relation on Z.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Let Dₘ denotes the positive divisors of m ordered by divisibility. Draw the Hasse diagrams of: i) D₁₅ ii) D₂₄.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the set Q of rational numbers and let * be the operation on Q defined by: a * b = a + b - ab. i) Is (Q, *) a semi-group. Is it commutative. ii) Find the identity element for *. iii) Do any elements in Q have inverse? What is it?",
+              "unit": "Unit 2",
+              "type": "algebraic-structures"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Ring with example. Also explain Commutative ring and ring homomorphism.",
+              "unit": "Unit 2",
+              "type": "algebraic-structures"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the recurrence relation aₙ = 3aₙ₋₁ - 3aₙ₋₂ + aₙ₋₃, a₀ = 0, a₃ = 3, a₅ = 10.",
+              "unit": "Unit 2",
+              "type": "recurrence"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Show that ((p ∨ q) ∧ ¬(¬p ∧ (¬q ∨ ¬r))) ∨ (¬p ∧ ¬q) ∨ (¬p ∧ ¬r) ≡ T is a tautology by laws of algebra of propositions.",
+              "unit": "Unit 3",
+              "type": "logic"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Obtain the conjunctive normal form of: i) p ∧ (p ⇒ q) ii) ¬p ⇒ [r ∧ (p ⇒ q)].",
+              "unit": "Unit 3",
+              "type": "logic"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Check for Euler and Hamiltonian graphs for the given graph.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is coloring problem? Hence define coloring of graph.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Solve the simultaneous equations using Cholesky Decomposition.",
+              "unit": "Unit 4",
+              "type": "linear-algebra"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is null hypothesis? What is its significance in statistical variance?",
+              "unit": "Unit 5",
+              "type": "statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "An agricultural research organization wants to study the effect of four types of fertilizers on the yield of crop. Fill in the blanks in the ANOVA table and test at α = 0.5, whether the fertilizers differ significantly.",
+              "unit": "Unit 5",
+              "type": "statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "A coin was tossed 400 times and the head turned up 216 times. Test the hypothesis that the coin is unbiased.",
+              "unit": "Unit 5",
+              "type": "statistics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Find the singular value decomposition of the matrix A = [[-4, -7], [1, 4]].",
+              "unit": "Unit 4",
+              "type": "linear-algebra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Let T be the set of positive integers less than 10 and let R be the relation on T defined by aRb if and only if |a² - b²| is a multiple of 5. Prove that R is reflexive, symmetric, but not transitive.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Consider a set C = {1, 2, 3, 4, 5, 6, 8, 10, 12, 15} ordered by divisibility. Draw its Hasse diagram.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Consider two sets A and B. Let A = {2, 3, 4, 5} and B = {4, 5, 6, 7}. Using Venn diagrams, prove: (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Given the recurrence relation aₙ = aₙ₋₁ + 4aₙ₋₂ with initial conditions a₀ = 2 and a₁ = 5, determine the closed-form expression for the sequence.",
+              "unit": "Unit 2",
+              "type": "recurrence"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Show that the set H = {e, a, a², a³} is a subgroup of a group G where G = {e, a, a², a³, b, ab, a²b, a³b}.",
+              "unit": "Unit 2",
+              "type": "algebraic-structures"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Let (A, *) be a semigroup. Show that, for a, b, c in A, if a * c = c * a and b * c = c * b, then (a * b) * c = c * (a * b).",
+              "unit": "Unit 2",
+              "type": "algebraic-structures"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Let G be a simple graph. Show that the relation R on the set of vertices of G such that uRv if and only if there is an edge associated to (u, v) is a symmetric, irreflexive relation on G.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find a route with the least total airfare that visits each of the cities in the given graph, where the weight on an edge is the least price available for a flight between the two cities.",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find a shortest route in distance between Newark and Camden, and between Newark and Cape May, using the given roads (New Jersey graph).",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Find a least expensive route in terms of total tolls using the roads in the graph between the pairs of cities in part (A).",
+              "unit": "Unit 3",
+              "type": "graph-theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Calculate the gradient of the function f(X) = Tr(Xᵀ X) where X is a matrix.",
+              "unit": "Unit 4",
+              "type": "linear-algebra"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write a short note on Cholesky Decomposition.",
+              "unit": "Unit 4",
+              "type": "linear-algebra"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define Hypothesis. Write a short note on Null Hypothesis and Alternative Hypothesis.",
+              "unit": "Unit 5",
+              "type": "statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Suppose the average salary of a principal in a college in the private sector is Rs. 45,000 per month, and a sample of 50 principals has a mean of Rs. 48,326 with a significance level of α = 0.05. Can we claim that principals earn Rs. 45,000 per month, given that the standard deviation of the population is Rs. 1,523?",
+              "unit": "Unit 5",
+              "type": "statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on any two: a) Recurrence Relation b) Tautologies and Contradiction c) Time Series Analysis",
+              "unit": "Unit 2/3/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Let A be the set of even numbers between 10 and 20, and B be the set of multiples of 5 between 15 and 35. If a is an even number from set A, and b is a multiple of 5 from set B, find the set of ordered pairs such that 'a' is a factor of 'b' and a is less than b.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Consider the relation R on the set of integers Z defined by aRb if and only if a² - b² is divisible by 4. Determine the common relations on Z that are the transitive closures of R.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Suppose that the relation R is irreflexive. Is R² necessarily irreflexive? Give a reason for your answer.",
+              "unit": "Unit 1",
+              "type": "sets-relations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Solve the recurrence relation aₙ = aₙ₋₁ + 6aₙ₋₂ given the initial conditions a₀ = 3 and a₁ = 6.",
+              "unit": "Unit 1",
+              "type": "recurrence"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Prove that a subgroup H of a group G is normal if and only if xHx⁻¹ = H, ∀x ∈ G.",
+              "unit": "Unit 2",
+              "type": "algebraic-structures"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Let G = {0, 1, 2, 3, 4, 5} with addition modulo 6. Is G a group? Justify your answer.",
+              "unit": "Unit 2",
+              "type": "algebraic-structures"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Construct a niche overlap graph for six species of birds, where the hermit thrush competes with the robin and with the blue jay, the robin also competes with the mockingbird, the mockingbird also competes with the blue jay, and the nuthatch competes with the hairy woodpecker.",
+              "unit": "Unit 4",
+              "type": "graph-theory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write the given propositions using p and q and logical connectives (including negations): p: It is below freezing, q: It is snowing.",
+              "unit": "Unit 3",
+              "type": "logic"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find a route with the least total airfare that visits each of the cities in the given graph, where the weight on an edge is the least price available for a flight between the two cities.",
+              "unit": "Unit 4",
+              "type": "graph-theory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Given a matrix F with SVD F = UΣVᵀ, find the original matrix F.",
+              "unit": "Unit 5",
+              "type": "linear-algebra"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Find the Determinant and trace of the given matrix.",
+              "unit": "Unit 5",
+              "type": "linear-algebra"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Using Cholesky decomposition, verify whether the given matrix is positive definite or not.",
+              "unit": "Unit 5",
+              "type": "linear-algebra"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write a detail note on Analysis of Variance.",
+              "unit": "Unit 5",
+              "type": "statistics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A sample of 100 B.Sc. Student is taken from a medical college with height having standard deviation (S.D.= 10 cm). The mean height of sample of student is found 168.8 cm. Can we accept that the mean height of student is 170 cm. Justify your answer.",
+              "unit": "Unit 5",
+              "type": "statistics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on any two: a) Type-I and Type-II Errors b) Eigen decomposition c) Abelian group and cyclic group",
+              "unit": "Unit 5/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

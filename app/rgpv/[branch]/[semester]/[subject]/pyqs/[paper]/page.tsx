@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
-import { FileText, Calendar, Clock } from "lucide-react";
+import { FileText, Calendar, Clock, ChevronDown, Sparkles } from "lucide-react";
 import { getPYQs } from "@/lib/content";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
-
 interface PaperPageProps {
   params: Promise<{
     branch: string;
@@ -38,7 +37,6 @@ function splitQuestionText(text: string): string[] {
 
   return lines;
 }
-
 export default async function PaperPage({ params }: PaperPageProps) {
   const { branch, semester, subject, paper } = await params;
 
@@ -140,8 +138,8 @@ export default async function PaperPage({ params }: PaperPageProps) {
 
       {/* Questions */}
       <section className="py-10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="space-y-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="space-y-6">
             {selectedPaper.questions.map(
               (
                 question: {
@@ -156,69 +154,93 @@ export default async function PaperPage({ params }: PaperPageProps) {
                 },
                 index: number
               ) => (
-                <div
+                <article
                   key={question.id || index}
-                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md dark:hover:border-blue-700"
                 >
-                  <div className="px-6 py-5">
-                    <span className="text-lg font-semibold text-foreground md:text-xl">
+                  <header className="border-b border-border bg-muted/20 px-5 py-4 sm:px-6 sm:py-5">
+                    <span className="inline-flex items-center rounded-lg bg-blue-500/10 px-3 py-1 text-base font-bold text-blue-600 dark:text-blue-400 sm:text-lg">
                       {question.questionNumber}
                     </span>
-                  </div>
+                  </header>
 
                   {question.subQuestions?.length ? (
-                    <div className="border-t border-border px-6 py-5">
-                      {question.subQuestions.map((subQuestion, subIndex) => (
+                    <div className="space-y-4 p-4 sm:space-y-5 sm:p-6">
+                      {question.subQuestions.map((subQuestion) => (
                         <details
                           key={subQuestion.id}
-                          className={`group/sub ${subIndex > 0 ? "mt-6 pt-6 border-t border-border" : ""}`}
+                          className="group/sub overflow-hidden rounded-xl border border-border bg-background transition-all duration-300 hover:border-blue-300 hover:shadow-md open:border-blue-300 open:shadow-md dark:hover:border-blue-700 dark:open:border-blue-700"
                         >
-                          <summary className="cursor-pointer list-none">
-                            <div className="flex flex-wrap items-center gap-2">
-                              {subQuestion.label && (
-                                <span className="font-semibold text-blue-600 dark:text-blue-400">
-                                  {subQuestion.label}
-                                </span>
-                              )}
+                          <summary className="cursor-pointer list-none outline-none transition-all duration-300 [&::-webkit-details-marker]:hidden focus-visible:ring-2 focus-visible:ring-blue-500/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+                            <div className="space-y-4 px-4 pb-4 pt-4 sm:px-5 sm:pb-5 sm:pt-5">
+                              <div className="flex flex-wrap items-center gap-2.5">
+                                {subQuestion.label && (
+                                  <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-lg bg-blue-500/10 px-2.5 text-sm font-bold text-blue-600 dark:text-blue-400">
+                                    {subQuestion.label}
+                                  </span>
+                                )}
 
-                              <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
-                                {subQuestion.unit}
-                              </span>
+                                <span className="inline-flex items-center rounded-full border border-blue-500/20 bg-blue-500/5 px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400">
+                                  {subQuestion.unit}
+                                </span>
+                              </div>
+
+                              <div className="space-y-3">
+                                {splitQuestionText(subQuestion.text).map(
+                                  (line, lineIndex) => (
+                                    <p
+                                      key={lineIndex}
+                                      className="text-base leading-7 text-foreground sm:text-lg sm:leading-8"
+                                    >
+                                      {line}
+                                    </p>
+                                  )
+                                )}
+                              </div>
                             </div>
 
-                            <div className="mt-3 space-y-2">
-                              {splitQuestionText(subQuestion.text).map(
-                                (line, lineIndex) => (
-                                  <p
-                                    key={lineIndex}
-                                    className="text-lg leading-8 text-foreground md:text-xl md:leading-9"
-                                  >
-                                    {line}
-                                  </p>
-                                )
-                              )}
+                            <div
+                              aria-hidden="true"
+                              className="flex items-center justify-between gap-3 border-t border-blue-500/10 bg-gradient-to-r from-blue-500/5 via-indigo-500/5 to-blue-500/10 px-4 py-3 transition-all duration-300 group-open/sub:border-blue-500/25 group-open/sub:from-blue-500/10 group-open/sub:via-blue-500/15 group-open/sub:to-indigo-500/10 sm:px-5 sm:py-3.5"
+                            >
+                              <div className="flex min-w-0 items-center gap-2">
+                                <Sparkles className="h-4 w-4 shrink-0 text-blue-500 dark:text-blue-400" />
+                                <span className="truncate text-sm font-medium text-blue-600 dark:text-blue-400">
+                                  AI Answer Available
+                                </span>
+                              </div>
+
+                              <div className="flex shrink-0 items-center gap-1.5 text-xs font-medium text-muted-foreground transition-colors duration-300 group-open/sub:text-blue-600 dark:group-open/sub:text-blue-400">
+                                <span className="group-open/sub:hidden">
+                                  Click to expand
+                                </span>
+                                <span className="hidden group-open/sub:inline">
+                                  Expanded
+                                </span>
+                                <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-300 group-open/sub:rotate-180" />
+                              </div>
                             </div>
                           </summary>
 
-                          {/* AI Answer Button - only shows for this sub-question when opened */}
-                          <div className="mt-4">
+                          <div className="border-t border-blue-500/15 bg-blue-500/[0.03] px-0 pb-3 pt-2 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-top-2 motion-safe:duration-300 sm:px-5 sm:pb-5 sm:pt-4 dark:bg-blue-500/[0.06]">
                             <GenerateAnswerButton
                               question={subQuestion.text}
                               subjectCode={subject.toUpperCase()}
                               label={subQuestion.label}
+                              compactMobile
                             />
                           </div>
                         </details>
                       ))}
                     </div>
                   ) : (
-                    <div className="border-t border-border px-6 py-5">
-                      <p className="text-muted-foreground">
+                    <div className="border-t border-border px-5 py-5 sm:px-6">
+                      <p className="text-sm text-muted-foreground">
                         No sub-questions available.
                       </p>
                     </div>
                   )}
-                </div>
+                </article>
               )
             )}
           </div>

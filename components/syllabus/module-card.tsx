@@ -11,6 +11,7 @@ import {
   BookOpen,
   CheckCircle2,
 } from "lucide-react";
+import type { Topic } from "@/types/topic";
 
 interface MappedQuestion {
   id: string;
@@ -25,7 +26,7 @@ interface ModuleCardProps {
     number: number;
     title: string;
     hours: number;
-    topics?: string[];
+    topics?: Topic[];
     questionIds?: string[];
     predictedQuestionIds?: string[];
   };
@@ -105,14 +106,14 @@ export default function ModuleCard({
         <div className="flex flex-wrap gap-3">
           {(module.topics || []).map((topic) => (
             <Link
-              key={topic}
-              href={`/rgpv/${branch}/${semester}/${subject}/ai?module=${encodeURIComponent(
-                module.title
-              )}&topic=${encodeURIComponent(topic)}`}
+              key={topic.id}
+              href={`/rgpv/${branch}/${semester}/${subject}/ai?topicId=${encodeURIComponent(
+                topic.id
+              )}`}
               onClick={(e) => e.stopPropagation()}
               className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition hover:border-blue-500/40 hover:text-blue-500"
             >
-              {topic}
+              {topic.title}
             </Link>
           ))}
         </div>

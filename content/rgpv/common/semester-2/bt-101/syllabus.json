@@ -11,17 +11,47 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt101-u1",
       "number": 1,
       "title": "Water – Analysis, Treatments and Industrial Applications",
       "hours": 4,
       "topics": [
-        "Sources",
-        "Impurities",
-        "Hardness & its units",
-        "Determination of hardness by EDTA method",
-        "Alkalinity & It's determination",
-        "Related numerical problems"
+        {
+          "id": "bt101-u1-sources",
+          "slug": "sources",
+          "title": "Sources",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u1-impurities",
+          "slug": "impurities",
+          "title": "Impurities",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u1-hardness-and-its-units",
+          "slug": "hardness-and-its-units",
+          "title": "Hardness & its units",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt101-u1-determination-of-hardness-by-edta-method",
+          "slug": "determination-of-hardness-by-edta-method",
+          "title": "Determination of hardness by EDTA method",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt101-u1-alkalinity-and-its-determination",
+          "slug": "alkalinity-and-its-determination",
+          "title": "Alkalinity & It's determination",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt101-u1-related-numerical-problems",
+          "slug": "related-numerical-problems",
+          "title": "Related numerical problems",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q1a",
@@ -43,14 +73,29 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt101-u2",
       "number": 2,
       "title": "Boiler problem & softening methods",
       "hours": 4,
       "topics": [
-        "Boiler troubles (Sludge & Scale, Priming & Foaming, Boiler Corrosion, Caustic Embrittlement)",
-        "Softening methods (Lime-Soda, Zeolite and Ion Exchange Methods)",
-        "Related numerical problems"
+        {
+          "id": "bt101-u2-boiler-troubles-sludge-and-scale-priming-and-foaming-boiler-corrosion-caustic-embrittlement",
+          "slug": "boiler-troubles-sludge-and-scale-priming-and-foaming-boiler-corrosion-caustic-embrittlement",
+          "title": "Boiler troubles (Sludge & Scale, Priming & Foaming, Boiler Corrosion, Caustic Embrittlement)",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u2-softening-methods-lime-soda-zeolite-and-ion-exchange-methods",
+          "slug": "softening-methods-lime-soda-zeolite-and-ion-exchange-methods",
+          "title": "Softening methods (Lime-Soda, Zeolite and Ion Exchange Methods)",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u2-related-numerical-problems",
+          "slug": "related-numerical-problems",
+          "title": "Related numerical problems",
+          "displayOrder": 3
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q2a",
@@ -83,22 +128,77 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt101-u3",
       "number": 3,
       "title": "Lubricants and Lubrication",
       "hours": 4,
       "topics": [
-        "Introduction",
-        "Mechanism of lubrication",
-        "Classification of lubricants",
-        "Significance & determination of Viscosity and Viscosity Index",
-        "Flash & Fire Points",
-        "Cloud & Pour Points",
-        "Aniline Point",
-        "Acid Number",
-        "Saponification Number",
-        "Steam Emulsification Number",
-        "Related numerical problems"
+        {
+          "id": "bt101-u3-introduction",
+          "slug": "introduction",
+          "title": "Introduction",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u3-mechanism-of-lubrication",
+          "slug": "mechanism-of-lubrication",
+          "title": "Mechanism of lubrication",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u3-classification-of-lubricants",
+          "slug": "classification-of-lubricants",
+          "title": "Classification of lubricants",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt101-u3-significance-and-determination-of-viscosity-and-viscosity-index",
+          "slug": "significance-and-determination-of-viscosity-and-viscosity-index",
+          "title": "Significance & determination of Viscosity and Viscosity Index",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt101-u3-flash-and-fire-points",
+          "slug": "flash-and-fire-points",
+          "title": "Flash & Fire Points",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt101-u3-cloud-and-pour-points",
+          "slug": "cloud-and-pour-points",
+          "title": "Cloud & Pour Points",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt101-u3-aniline-point",
+          "slug": "aniline-point",
+          "title": "Aniline Point",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt101-u3-acid-number",
+          "slug": "acid-number",
+          "title": "Acid Number",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt101-u3-saponification-number",
+          "slug": "saponification-number",
+          "title": "Saponification Number",
+          "displayOrder": 9
+        },
+        {
+          "id": "bt101-u3-steam-emulsification-number",
+          "slug": "steam-emulsification-number",
+          "title": "Steam Emulsification Number",
+          "displayOrder": 10
+        },
+        {
+          "id": "bt101-u3-related-numerical-problems",
+          "slug": "related-numerical-problems",
+          "title": "Related numerical problems",
+          "displayOrder": 11
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q3",
@@ -124,19 +224,59 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt101-u4",
       "number": 4,
       "title": "Polymer & polymerization",
       "hours": 4,
       "topics": [
-        "Introduction",
-        "Types of polymerisation",
-        "Classification",
-        "Mechanism of polymerisation (Free radical & Ionic polymerization)",
-        "Thermoplastic & Thermosetting polymers",
-        "Elementary idea of Biodegradable polymers",
-        "Preparation, properties & uses of: PVC, PMMA, Teflon, Nylon 6, Nylon 6:6, Polyester, Phenol formaldehyde, Urea-Formaldehyde, Buna N, Buna S",
-        "Vulcanization of Rubber"
+        {
+          "id": "bt101-u4-introduction",
+          "slug": "introduction",
+          "title": "Introduction",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u4-types-of-polymerisation",
+          "slug": "types-of-polymerisation",
+          "title": "Types of polymerisation",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u4-classification",
+          "slug": "classification",
+          "title": "Classification",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt101-u4-mechanism-of-polymerisation-free-radical-and-ionic-polymerization",
+          "slug": "mechanism-of-polymerisation-free-radical-and-ionic-polymerization",
+          "title": "Mechanism of polymerisation (Free radical & Ionic polymerization)",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt101-u4-thermoplastic-and-thermosetting-polymers",
+          "slug": "thermoplastic-and-thermosetting-polymers",
+          "title": "Thermoplastic & Thermosetting polymers",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt101-u4-elementary-idea-of-biodegradable-polymers",
+          "slug": "elementary-idea-of-biodegradable-polymers",
+          "title": "Elementary idea of Biodegradable polymers",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt101-u4-preparation-properties-and-uses-of-pvc-pmma-teflon-nylon-6-nylon-66-polyester-phenol-formaldehyde-urea-formaldehyde-buna-n-buna-s",
+          "slug": "preparation-properties-and-uses-of-pvc-pmma-teflon-nylon-6-nylon-66-polyester-phenol-formaldehyde-urea-formaldehyde-buna-n-buna-s",
+          "title": "Preparation, properties & uses of: PVC, PMMA, Teflon, Nylon 6, Nylon 6:6, Polyester, Phenol formaldehyde, Urea-Formaldehyde, Buna N, Buna S",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt101-u4-vulcanization-of-rubber",
+          "slug": "vulcanization-of-rubber",
+          "title": "Vulcanization of Rubber",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q4a",
@@ -165,16 +305,41 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt101-u5",
       "number": 5,
       "title": "Phase equilibrium and Corrosion",
       "hours": 5,
       "topics": [
-        "Phase diagram of single component system (Water)",
-        "Phase diagram of binary Eutectic System (Cu-Ag)",
-        "Corrosion: Types",
-        "Corrosion: Mechanisms",
-        "Corrosion: Prevention"
+        {
+          "id": "bt101-u5-phase-diagram-of-single-component-system-water",
+          "slug": "phase-diagram-of-single-component-system-water",
+          "title": "Phase diagram of single component system (Water)",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u5-phase-diagram-of-binary-eutectic-system-cu-ag",
+          "slug": "phase-diagram-of-binary-eutectic-system-cu-ag",
+          "title": "Phase diagram of binary Eutectic System (Cu-Ag)",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u5-corrosion-types",
+          "slug": "corrosion-types",
+          "title": "Corrosion: Types",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt101-u5-corrosion-mechanisms",
+          "slug": "corrosion-mechanisms",
+          "title": "Corrosion: Mechanisms",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt101-u5-corrosion-prevention",
+          "slug": "corrosion-prevention",
+          "title": "Corrosion: Prevention",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q5a",
@@ -200,15 +365,35 @@
       ]
     },
     {
-      "id": "module-6",
+      "id": "bt101-u6",
       "number": 6,
       "title": "Spectroscopic techniques and application",
       "hours": 6,
       "topics": [
-        "Principle",
-        "Instrumentation & Applications",
-        "Electronics spectroscopy",
-        "Vibrational & Rotational Spectroscopy of diatomic molecules"
+        {
+          "id": "bt101-u6-principle",
+          "slug": "principle",
+          "title": "Principle",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u6-instrumentation-and-applications",
+          "slug": "instrumentation-and-applications",
+          "title": "Instrumentation & Applications",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u6-electronics-spectroscopy",
+          "slug": "electronics-spectroscopy",
+          "title": "Electronics spectroscopy",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt101-u6-vibrational-and-rotational-spectroscopy-of-diatomic-molecules",
+          "slug": "vibrational-and-rotational-spectroscopy-of-diatomic-molecules",
+          "title": "Vibrational & Rotational Spectroscopy of diatomic molecules",
+          "displayOrder": 4
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q6a",
@@ -234,17 +419,47 @@
       ]
     },
     {
-      "id": "module-7",
+      "id": "bt101-u7",
       "number": 7,
       "title": "Periodic properties",
       "hours": 4,
       "topics": [
-        "Effective Nuclear Charge",
-        "Variations: S, P, d & f Orbital energies of atoms in periodic table",
-        "Electronics Configuration",
-        "Atomic & Ionic sizes",
-        "Electron affinity & Electro negativity",
-        "Polarizability & Oxidation States"
+        {
+          "id": "bt101-u7-effective-nuclear-charge",
+          "slug": "effective-nuclear-charge",
+          "title": "Effective Nuclear Charge",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt101-u7-variations-s-p-d-and-f-orbital-energies-of-atoms-in-periodic-table",
+          "slug": "variations-s-p-d-and-f-orbital-energies-of-atoms-in-periodic-table",
+          "title": "Variations: S, P, d & f Orbital energies of atoms in periodic table",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt101-u7-electronics-configuration",
+          "slug": "electronics-configuration",
+          "title": "Electronics Configuration",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt101-u7-atomic-and-ionic-sizes",
+          "slug": "atomic-and-ionic-sizes",
+          "title": "Atomic & Ionic sizes",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt101-u7-electron-affinity-and-electro-negativity",
+          "slug": "electron-affinity-and-electro-negativity",
+          "title": "Electron affinity & Electro negativity",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt101-u7-polarizability-and-oxidation-states",
+          "slug": "polarizability-and-oxidation-states",
+          "title": "Polarizability & Oxidation States",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt101_nov2022_q8d",

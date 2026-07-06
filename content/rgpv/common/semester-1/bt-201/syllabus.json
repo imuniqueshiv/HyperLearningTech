@@ -13,20 +13,65 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt201-u1",
       "number": 1,
       "title": "Wave nature of particles and the Schrodinger equation",
       "hours": 8,
       "topics": [
-        "Introduction to Quantum mechanics",
-        "Wave nature of Particles",
-        "operators",
-        "Time-dependent and time-independent Schrodinger equation for wavefunction",
-        "Application: Particle in a One dimensional Box",
-        "Born interpretation",
-        "Free-particle wavefunction and wave-packets",
-        "vg and vp relation",
-        "Uncertainty principle"
+        {
+          "id": "bt201-u1-introduction-to-quantum-mechanics",
+          "slug": "introduction-to-quantum-mechanics",
+          "title": "Introduction to Quantum mechanics",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt201-u1-wave-nature-of-particles",
+          "slug": "wave-nature-of-particles",
+          "title": "Wave nature of Particles",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt201-u1-operators",
+          "slug": "operators",
+          "title": "operators",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt201-u1-time-dependent-and-time-independent-schrodinger-equation-for-wavefunction",
+          "slug": "time-dependent-and-time-independent-schrodinger-equation-for-wavefunction",
+          "title": "Time-dependent and time-independent Schrodinger equation for wavefunction",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt201-u1-application-particle-in-a-one-dimensional-box",
+          "slug": "application-particle-in-a-one-dimensional-box",
+          "title": "Application: Particle in a One dimensional Box",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt201-u1-born-interpretation",
+          "slug": "born-interpretation",
+          "title": "Born interpretation",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt201-u1-free-particle-wavefunction-and-wave-packets",
+          "slug": "free-particle-wavefunction-and-wave-packets",
+          "title": "Free-particle wavefunction and wave-packets",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt201-u1-vg-and-vp-relation",
+          "slug": "vg-and-vp-relation",
+          "title": "vg and vp relation",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt201-u1-uncertainty-principle",
+          "slug": "uncertainty-principle",
+          "title": "Uncertainty principle",
+          "displayOrder": 9
+        }
       ],
       "questionIds": [
         "bt201_m1_dec2022_q1",
@@ -64,20 +109,65 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt201-u2",
       "number": 2,
       "title": "Wave optics",
       "hours": 8,
       "topics": [
-        "Huygens' principle",
-        "superposition of waves and interference of light by wave front splitting and amplitude splitting",
-        "Young's double slit experiment",
-        "Newton's rings",
-        "Michelson interferometer",
-        "Mach-Zehnder interferometer",
-        "Fraunhofer diffraction from a single slit and a circular aperture",
-        "the Rayleigh criterion for limit of resolution and its application to vision",
-        "Diffraction gratings and their resolving power"
+        {
+          "id": "bt201-u2-huygens-principle",
+          "slug": "huygens-principle",
+          "title": "Huygens' principle",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt201-u2-superposition-of-waves-and-interference-of-light-by-wave-front-splitting-and-amplitude-splitting",
+          "slug": "superposition-of-waves-and-interference-of-light-by-wave-front-splitting-and-amplitude-splitting",
+          "title": "superposition of waves and interference of light by wave front splitting and amplitude splitting",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt201-u2-youngs-double-slit-experiment",
+          "slug": "youngs-double-slit-experiment",
+          "title": "Young's double slit experiment",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt201-u2-newtons-rings",
+          "slug": "newtons-rings",
+          "title": "Newton's rings",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt201-u2-michelson-interferometer",
+          "slug": "michelson-interferometer",
+          "title": "Michelson interferometer",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt201-u2-mach-zehnder-interferometer",
+          "slug": "mach-zehnder-interferometer",
+          "title": "Mach-Zehnder interferometer",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt201-u2-fraunhofer-diffraction-from-a-single-slit-and-a-circular-aperture",
+          "slug": "fraunhofer-diffraction-from-a-single-slit-and-a-circular-aperture",
+          "title": "Fraunhofer diffraction from a single slit and a circular aperture",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt201-u2-the-rayleigh-criterion-for-limit-of-resolution-and-its-application-to-vision",
+          "slug": "the-rayleigh-criterion-for-limit-of-resolution-and-its-application-to-vision",
+          "title": "the Rayleigh criterion for limit of resolution and its application to vision",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt201-u2-diffraction-gratings-and-their-resolving-power",
+          "slug": "diffraction-gratings-and-their-resolving-power",
+          "title": "Diffraction gratings and their resolving power",
+          "displayOrder": 9
+        }
       ],
       "questionIds": [
         "bt201_m2_dec2022_q1",
@@ -120,20 +210,65 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt201-u3",
       "number": 3,
       "title": "Introduction to solids",
       "hours": 8,
       "topics": [
-        "Free electron theory of metals",
-        "Fermi level of Intrinsic and extrinsic",
-        "density of states",
-        "Bloch's theorem for particles in a periodic potential",
-        "Kronig-Penney model (no derivation) and origin of energy bands",
-        "V-I characteristics of PN junction",
-        "Zener diode",
-        "Solar Cell",
-        "Hall Effect"
+        {
+          "id": "bt201-u3-free-electron-theory-of-metals",
+          "slug": "free-electron-theory-of-metals",
+          "title": "Free electron theory of metals",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt201-u3-fermi-level-of-intrinsic-and-extrinsic",
+          "slug": "fermi-level-of-intrinsic-and-extrinsic",
+          "title": "Fermi level of Intrinsic and extrinsic",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt201-u3-density-of-states",
+          "slug": "density-of-states",
+          "title": "density of states",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt201-u3-blochs-theorem-for-particles-in-a-periodic-potential",
+          "slug": "blochs-theorem-for-particles-in-a-periodic-potential",
+          "title": "Bloch's theorem for particles in a periodic potential",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt201-u3-kronig-penney-model-no-derivation-and-origin-of-energy-bands",
+          "slug": "kronig-penney-model-no-derivation-and-origin-of-energy-bands",
+          "title": "Kronig-Penney model (no derivation) and origin of energy bands",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt201-u3-v-i-characteristics-of-pn-junction",
+          "slug": "v-i-characteristics-of-pn-junction",
+          "title": "V-I characteristics of PN junction",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt201-u3-zener-diode",
+          "slug": "zener-diode",
+          "title": "Zener diode",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt201-u3-solar-cell",
+          "slug": "solar-cell",
+          "title": "Solar Cell",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt201-u3-hall-effect",
+          "slug": "hall-effect",
+          "title": "Hall Effect",
+          "displayOrder": 9
+        }
       ],
       "questionIds": [
         "bt201_m3_dec2022_q1",
@@ -172,22 +307,77 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt201-u4",
       "number": 4,
       "title": "Lasers",
       "hours": 8,
       "topics": [
-        "Einstein's theory of matter radiation interaction and A and B coefficients",
-        "amplification of light by population inversion",
-        "different types of lasers: gas lasers (He-Ne, CO2), solid-state lasers (ruby, Neodymium)",
-        "Properties of laser beams: mono-chromaticity, coherence, directionality and brightness",
-        "laser speckles",
-        "applications of lasers in science, engineering and medicine",
-        "Introduction to Optical fiber",
-        "acceptance angle and cone",
-        "Numerical aperture",
-        "V number",
-        "attenuation"
+        {
+          "id": "bt201-u4-einsteins-theory-of-matter-radiation-interaction-and-a-and-b-coefficients",
+          "slug": "einsteins-theory-of-matter-radiation-interaction-and-a-and-b-coefficients",
+          "title": "Einstein's theory of matter radiation interaction and A and B coefficients",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt201-u4-amplification-of-light-by-population-inversion",
+          "slug": "amplification-of-light-by-population-inversion",
+          "title": "amplification of light by population inversion",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt201-u4-different-types-of-lasers-gas-lasers-he-ne-co2-solid-state-lasers-ruby-neodymium",
+          "slug": "different-types-of-lasers-gas-lasers-he-ne-co2-solid-state-lasers-ruby-neodymium",
+          "title": "different types of lasers: gas lasers (He-Ne, CO2), solid-state lasers (ruby, Neodymium)",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt201-u4-properties-of-laser-beams-mono-chromaticity-coherence-directionality-and-brightness",
+          "slug": "properties-of-laser-beams-mono-chromaticity-coherence-directionality-and-brightness",
+          "title": "Properties of laser beams: mono-chromaticity, coherence, directionality and brightness",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt201-u4-laser-speckles",
+          "slug": "laser-speckles",
+          "title": "laser speckles",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt201-u4-applications-of-lasers-in-science-engineering-and-medicine",
+          "slug": "applications-of-lasers-in-science-engineering-and-medicine",
+          "title": "applications of lasers in science, engineering and medicine",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt201-u4-introduction-to-optical-fiber",
+          "slug": "introduction-to-optical-fiber",
+          "title": "Introduction to Optical fiber",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt201-u4-acceptance-angle-and-cone",
+          "slug": "acceptance-angle-and-cone",
+          "title": "acceptance angle and cone",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt201-u4-numerical-aperture",
+          "slug": "numerical-aperture",
+          "title": "Numerical aperture",
+          "displayOrder": 9
+        },
+        {
+          "id": "bt201-u4-v-number",
+          "slug": "v-number",
+          "title": "V number",
+          "displayOrder": 10
+        },
+        {
+          "id": "bt201-u4-attenuation",
+          "slug": "attenuation",
+          "title": "attenuation",
+          "displayOrder": 11
+        }
       ],
       "questionIds": [
         "bt201_m4_dec2022_q1",
@@ -231,20 +421,65 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt201-u5",
       "number": 5,
       "title": "Electrostatics in vacuum",
       "hours": 8,
       "topics": [
-        "Calculation of electric field and electrostatic potential for a charge distribution",
-        "Electric displacement",
-        "Basic Introduction to Dielectrics",
-        "Gradient, Divergence and curl",
-        "Stokes' theorem",
-        "Gauss Theorem",
-        "Continuity equation for current densities",
-        "Maxwell's equation in vacuum and non-conducting medium",
-        "Poynting vector"
+        {
+          "id": "bt201-u5-calculation-of-electric-field-and-electrostatic-potential-for-a-charge-distribution",
+          "slug": "calculation-of-electric-field-and-electrostatic-potential-for-a-charge-distribution",
+          "title": "Calculation of electric field and electrostatic potential for a charge distribution",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt201-u5-electric-displacement",
+          "slug": "electric-displacement",
+          "title": "Electric displacement",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt201-u5-basic-introduction-to-dielectrics",
+          "slug": "basic-introduction-to-dielectrics",
+          "title": "Basic Introduction to Dielectrics",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt201-u5-gradient-divergence-and-curl",
+          "slug": "gradient-divergence-and-curl",
+          "title": "Gradient, Divergence and curl",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt201-u5-stokes-theorem",
+          "slug": "stokes-theorem",
+          "title": "Stokes' theorem",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt201-u5-gauss-theorem",
+          "slug": "gauss-theorem",
+          "title": "Gauss Theorem",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt201-u5-continuity-equation-for-current-densities",
+          "slug": "continuity-equation-for-current-densities",
+          "title": "Continuity equation for current densities",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt201-u5-maxwells-equation-in-vacuum-and-non-conducting-medium",
+          "slug": "maxwells-equation-in-vacuum-and-non-conducting-medium",
+          "title": "Maxwell's equation in vacuum and non-conducting medium",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt201-u5-poynting-vector",
+          "slug": "poynting-vector",
+          "title": "Poynting vector",
+          "displayOrder": 9
+        }
       ],
       "questionIds": [
         "bt201_m5_dec2022_q1",

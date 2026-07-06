@@ -3,7 +3,22 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Zap, Shield, Users, Bell, Globe } from "lucide-react";
+import { usePathname } from "next/navigation";
+import {
+  Mail,
+  Zap,
+  Shield,
+  Users,
+  Bell,
+  Globe,
+  BookOpen,
+  Landmark,
+  LayoutDashboard,
+  UserRound,
+  Info,
+  Phone,
+} from "lucide-react";
+import ConciseFooter from "@/components/concise-footer";
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -159,50 +174,48 @@ const SocialDropdown = ({
   );
 };
 
-export default function Footer() {
+const AUTH_ROUTES = ["/sign-in", "/sign-up"];
+
+function FullFooter() {
   return (
-    <footer className="relative -mt-10 border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-hidden">
-      {/* Light Mode Premium Dot Matrix Background */}
-      <div
-        className="absolute inset-0 pointer-events-none dark:hidden"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.25) 1px, transparent 0)",
-          backgroundSize: "24px 24px",
-        }}
-      />
+    <footer className="relative border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-gradient-to-b dark:from-[#0B132B] dark:to-[#040814] overflow-x-clip">
+      {/* Background elements wrapper with overflow-hidden to prevent scroll overflow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Light Mode Bottom Radial Glow */}
+        <div className="hidden md:block absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full dark:hidden" />
 
-      {/* Light Mode Bottom Radial Glow */}
-      <div className="absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[80%] h-[400px] bg-gradient-to-t from-blue-500/15 to-transparent blur-[100px] rounded-full pointer-events-none dark:hidden" />
-
-      {/* Premium ambient light effect at the top */}
-      <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none">
-        <div className="w-[80%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/10 dark:via-blue-500/20 to-transparent" />
-        <div className="absolute top-0 w-[40%] h-[150px] bg-blue-500/5 blur-[120px] rounded-full" />
+        {/* Premium ambient light effect at the top */}
+        <div className="absolute top-0 inset-x-0 flex justify-center">
+          <div className="w-[80%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/10 dark:via-blue-500/20 to-transparent" />
+          <div className="hidden md:block absolute top-0 w-[40%] h-[150px] bg-blue-500/5 blur-[120px] rounded-full" />
+        </div>
       </div>
 
       {/* Premium Outer wrapper */}
       <div className="relative mx-auto max-w-[1600px] px-6 py-10 md:px-12 lg:px-16 xl:px-20 z-10">
         {/* Top Section */}
-        <div className="flex flex-col xl:flex-row xl:justify-between gap-10 xl:gap-8">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-12 lg:gap-8 xl:gap-16">
           {/* Brand - Flexible Width */}
-          <div className="flex flex-col shrink-0 xl:w-[260px] xl:pr-6 pt-1.5">
+          <div className="flex flex-col lg:max-w-[280px]">
             <Link
               href="/"
               className="group inline-flex items-center gap-3.5 w-fit"
             >
-              <div className="relative flex h-[54px] w-[54px] items-center justify-center overflow-hidden rounded-[14px] bg-white dark:bg-white/[0.02] p-1.5 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] ring-1 ring-slate-200 dark:ring-white/[0.08] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:bg-blue-50 dark:group-hover:bg-blue-500/10 group-hover:ring-blue-200 dark:group-hover:ring-blue-500/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.15)]">
+              <div className="relative flex h-[54px] w-[54px] items-center justify-center overflow-hidden rounded-[14px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]">
                 <Image
                   src="/hl-logo.png"
                   alt="Hyper Learning Logo"
                   width={46}
                   height={46}
-                  className="object-contain"
+                  className="object-contain dark:brightness-[1.8] dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
                 />
               </div>
               <div>
-                <h2 className="text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300 group-hover:text-blue-600 dark:group-hover:to-white">
-                  Hyper Learning
+                <h2 className="text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300">
+                  <span className="transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    Hyper
+                  </span>{" "}
+                  Learning
                 </h2>
                 <p className="text-[10.5px] font-semibold tracking-[0.2em] uppercase text-blue-500 dark:text-indigo-300 mt-0.5">
                   AI-Powered Learning
@@ -253,56 +266,37 @@ export default function Footer() {
           </div>
 
           {/* Navigation Container */}
-          <div className="flex flex-col gap-10 sm:flex-row sm:gap-8 xl:gap-10 shrink-0">
+          <div className="grid grid-cols-2 gap-12 sm:gap-20 xl:pr-10 w-full lg:w-auto mt-4 lg:mt-0">
             {/* Platform */}
-            <div className="flex flex-col sm:w-[130px] xl:border-l border-slate-200 dark:border-white/[0.03] xl:pl-8">
-              <h3 className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-black dark:text-white/90">
+            <div className="flex flex-col">
+              <h3 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.15em] text-slate-900 dark:text-white">
                 Platform
               </h3>
               <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
               <ul className="space-y-3.5">
                 {[
-                  { name: "Subjects", href: "/subjects" },
-                  { name: "Universities", href: "/#Universities" },
-                  { name: "Dashboard", href: "/dashboard" },
-                  { name: "Student Login", href: "/sign-in" },
+                  { name: "Subjects", href: "/subjects", icon: BookOpen },
+                  {
+                    name: "Universities",
+                    href: "/#Universities",
+                    icon: Landmark,
+                  },
+                  {
+                    name: "Dashboard",
+                    href: "/dashboard",
+                    icon: LayoutDashboard,
+                  },
+                  { name: "Student Login", href: "/sign-in", icon: UserRound },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="group flex w-fit items-center text-[14px] font-medium text-slate-500 dark:text-slate-400 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
+                      className="group flex w-fit items-center text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
                     >
-                      <span className="mr-2.5 text-[14px] text-slate-300 dark:text-slate-700/50 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]">
-                        •
-                      </span>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Learning */}
-            <div className="flex flex-col sm:w-[130px] sm:border-l border-slate-200 dark:border-white/[0.03] sm:pl-8">
-              <h3 className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-black dark:text-white/90">
-                Learning
-              </h3>
-              <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
-              <ul className="space-y-3.5">
-                {[
-                  { name: "AI Notes", href: "/rgpv" },
-                  { name: "PYQs", href: "/rgpv" },
-                  { name: "AI Tutor", href: "/rgpv" },
-                  { name: "Syllabus", href: "/rgpv" },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="group flex w-fit items-center text-[14px] font-medium text-slate-500 dark:text-slate-400 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
-                    >
-                      <span className="mr-2.5 text-[14px] text-slate-300 dark:text-slate-700/50 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]">
-                        •
-                      </span>
+                      <item.icon
+                        className="mr-3 h-[18px] w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
+                        strokeWidth={2}
+                      />
                       {item.name}
                     </Link>
                   </li>
@@ -311,26 +305,27 @@ export default function Footer() {
             </div>
 
             {/* Company */}
-            <div className="flex flex-col sm:w-[130px] sm:border-l border-slate-200 dark:border-white/[0.03] sm:pl-8">
-              <h3 className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-black dark:text-white/90">
+            <div className="flex flex-col">
+              <h3 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.15em] text-slate-900 dark:text-white">
                 Company
               </h3>
-              <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
+              <div className="mb-5 h-[2px] w-[28px] rounded-full bg-slate-300 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-indigo-400/50" />
               <ul className="space-y-3.5">
                 {[
-                  { name: "About Us", href: "/about" },
-                  { name: "Contact", href: "/contact" },
-                  { name: "Creators", href: "/creators" },
-                  { name: "Privacy Policy", href: "/" },
+                  { name: "About Us", href: "/about", icon: Info },
+                  { name: "Contact", href: "/contact", icon: Phone },
+                  { name: "Creators", href: "/creators", icon: Users },
+                  { name: "Privacy Policy", href: "/", icon: Shield },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="group flex w-fit items-center text-[14px] font-medium text-slate-500 dark:text-slate-400 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
+                      className="group flex w-fit items-center text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
                     >
-                      <span className="mr-2.5 text-[14px] text-slate-300 dark:text-slate-700/50 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]">
-                        •
-                      </span>
+                      <item.icon
+                        className="mr-3 h-[18px] w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
+                        strokeWidth={2}
+                      />
                       {item.name}
                     </Link>
                   </li>
@@ -339,51 +334,46 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Feature Cards */}
-          <div className="w-full xl:border-l xl:border-slate-200 dark:xl:border-white/[0.03] xl:pl-10">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 h-full">
+          {/* Feature Cards — hidden on mobile to prevent GPU glitch */}
+          <div className="hidden md:block w-full mt-8 lg:mt-0 lg:w-[320px] xl:w-[360px] shrink-0 lg:border-l lg:border-slate-200 dark:lg:border-white/[0.03] lg:pl-10">
+            <div className="grid grid-cols-2 gap-3 h-full">
               {[
                 {
                   title: "AI-Powered",
-                  desc: "Smarter learning for better results",
+                  desc: "Smarter learning",
                   icon: Zap,
                 },
                 {
                   title: "Trusted & Secure",
-                  desc: "Your data is safe and protected",
+                  desc: "Data protected",
                   icon: Shield,
                 },
                 {
-                  title: "Built for Engineers",
-                  desc: "Designed by learners, for learners",
+                  title: "For Engineers",
+                  desc: "Designed by learners",
                   icon: Users,
                 },
                 {
                   title: "Always Updated",
-                  desc: "New content & features added",
+                  desc: "New content added",
                   icon: Bell,
                 },
               ].map((feature, idx) => (
                 <div
                   key={idx}
-                  className="group relative flex h-full min-h-[140px] flex-col items-center justify-center overflow-hidden rounded-[16px] border border-[#D8E2F0] dark:border-white/[0.04] bg-gradient-to-b from-white to-[#FBFCFF] dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.06] dark:to-white/[0.02] p-4 text-center shadow-[0_12px_30px_rgba(15,23,42,0.08)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.15)] backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-1 hover:border-blue-200 dark:hover:border-blue-500/30 hover:shadow-[0_15px_40px_rgba(59,130,246,0.1)] dark:hover:shadow-[0_8px_32px_rgba(59,130,246,0.12),inset_0_1px_1px_rgba(255,255,255,0.05)]"
+                  className="group relative flex h-full min-h-[90px] flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#D8E2F0] dark:border-white/[0.03] bg-gradient-to-b from-white to-[#FBFCFF] dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-white/[0.01] p-3 text-center transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-blue-500/20"
                 >
-                  {/* Faint Inner Top Highlight */}
-                  <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/80 dark:via-white/30 to-transparent" />
-
-                  {/* Icon with Radial Blue Glow */}
-                  <div className="relative mb-3.5 flex items-center justify-center">
-                    <div className="absolute inset-0 bg-blue-100 dark:bg-blue-500/20 blur-[12px] rounded-full transition-all duration-500 group-hover:bg-blue-200 dark:group-hover:bg-blue-500/40" />
+                  <div className="relative mb-2 flex items-center justify-center">
                     <feature.icon
-                      className="relative z-10 h-[22px] w-[22px] text-blue-600 dark:text-blue-400/80 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110 group-hover:text-blue-500 dark:group-hover:text-blue-300 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.3)] dark:group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.6)]"
-                      strokeWidth={1.75}
+                      className="h-[16px] w-[16px] text-blue-600/70 dark:text-blue-400/50 transition-all duration-300 group-hover:scale-110 group-hover:text-blue-500 dark:group-hover:text-blue-300"
+                      strokeWidth={1.5}
                     />
                   </div>
 
-                  <h4 className="text-[13px] font-extrabold tracking-wide text-slate-900 dark:text-white/80 drop-shadow-sm dark:drop-shadow-[0_1px_2px_rgba(255,255,255,0.15)]">
+                  <h4 className="text-[11px] font-semibold tracking-wide text-slate-700 dark:text-white/60">
                     {feature.title}
                   </h4>
-                  <p className="mt-2 text-[11px] leading-[1.6] text-slate-500 dark:text-slate-300/80 font-medium">
+                  <p className="mt-1 text-[9px] leading-[1.3] text-slate-400 dark:text-slate-400/60 font-medium">
                     {feature.desc}
                   </p>
                 </div>
@@ -393,7 +383,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-white/[0.01] backdrop-blur-lg px-6 py-4 shadow-sm dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
+        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-[#0a101f] md:dark:bg-white/[0.01] md:backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-none md:dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
           {/* Left: Copyright */}
           <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0">
             © {new Date().getFullYear()} Hyper Learning. All rights reserved.
@@ -493,4 +483,18 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
+
+export default function Footer() {
+  const pathname = usePathname();
+
+  if (AUTH_ROUTES.includes(pathname)) {
+    return null;
+  }
+
+  if (pathname === "/") {
+    return <FullFooter />;
+  }
+
+  return <ConciseFooter />;
 }

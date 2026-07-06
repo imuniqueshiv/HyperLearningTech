@@ -5,5 +5,624 @@
     "name": "Data Structure (DS)",
     "title": "CSIT-303 - Data Structure (DS)"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec25-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec25-q1a",
+              "label": "a)",
+              "text": "What is a data structure? Differentiate between primitive and non-primitive data structures.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q1b",
+              "label": "b)",
+              "text": "Discuss time complexity and space complexity in detail. Explain best-case, worst-case and average-case time complexity with appropriate examples.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec25-q2a",
+              "label": "a)",
+              "text": "Write an algorithm for Quick sort. Use Quick sort algorithm to sort the following elements: 2, 8, 7, 1, 3, 5, 6, 4.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec25-q2b",
+              "label": "b)",
+              "text": "Write a program in C language to implement binary search algorithm. Also discuss the average behavior of the algorithm.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec25-q3a",
+              "label": "a)",
+              "text": "Define an array. Explain the need for arrays in programming. Describe the declaration, initialization and storage of arrays with suitable examples.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec25-q3b",
+              "label": "b)",
+              "text": "What is B-Tree? Write the various properties of B-Tree. Show the results of inserting the keys F, S, Q, K, C, L, H, T, V, W, M, R, N, P, A, B in order into a empty B-Tree of order 5.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec25-q4a",
+              "label": "a)",
+              "text": "What is Stack? Write a C program for linked list implementation of stack.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec25-q4b",
+              "label": "b)",
+              "text": "Explain different types of queues. Discuss circular queue, double-ended queue and priority queue along with their functions and applications.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec25-q5a",
+              "label": "a)",
+              "text": "What is spanning tree? Write down the Prim's algorithm to obtain minimum cost spanning tree. Use Prim's algorithm to find the minimum cost spanning tree in the following graph: [Image: Undirected graph with vertices A, B, C, D, E, F, G and the following weighted edges: A-B with weight 3, A-C with weight 6, B-C with weight 2, B-D with weight 4, C-D with weight 1, C-E with weight 4, C-F with weight 2, D-E with weight 2, D-G with weight 4, E-F with weight 2, E-G with weight 1, and F-G with weight 1.]",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec25-q5b",
+              "label": "b)",
+              "text": "Write the Dijkstra algorithm for shortest path in a graph and also find the shortest path from 'S' to all remaining vertices of graph in the following graph: [Image: Directed graph with vertices S, A, B, C, D, E, F and the following weighted directed edges: S to A with weight 3, S to C with weight 2, S to F with weight 6, A to B with weight 6, A to C with weight 2, A to D with weight 1, C to D with weight 3, B to E with weight 1, D to E with weight 4, and F to E with weight 2.]",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec25-q6a",
+              "label": "a)",
+              "text": "How to represent the polynomial using linked list? Write a C program to add two polynomials using linked list.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec25-q6b",
+              "label": "b)",
+              "text": "Discuss doubly linked list. Write an algorithm to insert a node after a given node in singly linked list.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec25-q7a",
+              "label": "a)",
+              "text": "Convert the following infix expression into postfix form. Show stack contents at each step.\n(A+B)*(C-D)",
+              "latex": "(A+B)*(C-D)",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec25-q7b",
+              "label": "b)",
+              "text": "Discuss left skewed and right skewed binary tree. Construct an AVL tree by inserting the following elements in the order of their occurrence: 60, 2, 14, 22, 13, 111, 92, 86.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec25-q8a",
+              "label": "a)",
+              "text": "Explain Red black trees also discuss the properties of red black tree.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec25-q8b",
+              "label": "b)",
+              "text": "Construct an expression tree for the expression and apply inorder, preorder and postorder traversals on tree.\n(a+bc)+((de+f)*g)",
+              "latex": "(a+bc)+((de+f)*g)",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec24-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec24-q1a",
+              "label": "a)",
+              "text": "What is Data structure? Write a brief note on classification of data structure.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec24-q1b",
+              "label": "b)",
+              "text": "What do you mean by algorithmic complexity? Explain Time complexity and space complexity in brief.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec24-q2a",
+              "label": "a)",
+              "text": "How do you implement binary search recursively?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec24-q2b",
+              "label": "b)",
+              "text": "How does the size of the input array affect the time complexity of linear search and binary search?",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec24-q3a",
+              "label": "a)",
+              "text": "Evaluate the post fix expression using stack:\n8 3 4 + - 3 8 2 / + * 2 $ 3 +",
+              "latex": "8 \\ 3 \\ 4 \\ + \\ - \\ 3 \\ 8 \\ 2 \\ / \\ + \\ * \\ 2 \\ $ \\ 3 \\ +",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec24-q3b",
+              "label": "b)",
+              "text": "Explain and implement a singly linked list with an example?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec24-q4a",
+              "label": "a)",
+              "text": "Suppose you have a queue with the following elements: [10, 20, 30, 40, 50]. What will be the result of dequeuing two elements from this queue, then enqueueing three new elements with the values of 60, 70 and 80, and finally dequeuing one more element?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec24-q4b",
+              "label": "b)",
+              "text": "How can you implement a queue using two stacks, and what are the advantages and disadvantages of this approach?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec24-q5a",
+              "label": "a)",
+              "text": "Explain Insertion sort in details. Write an algorithm for it. Discuss the complexity of insertion sort.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec24-q5b",
+              "label": "b)",
+              "text": "What is max heap? Write an algorithm to perform heap sort. Give example.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec24-q6a",
+              "label": "a)",
+              "text": "Suppose you have an array with the following elements: [22, 7, 2, 9, 8, 15, 13, 3, 11]. What will be the result of sorting this array using the quicksort algorithm with the first element as the pivot?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec24-q6b",
+              "label": "b)",
+              "text": "Construct a binary tree whose preorder and post order traversal as follows\ni) Preorder- F, B, A, D, C, E, G, I, H, K, J\nii) Postorder- A, C, E, D, B, H, K, I, J, G, F",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec24-q7a",
+              "label": "a)",
+              "text": "Insert the set of elements {30, 40, 24, 58, 48, 26, 11, 13} to construct a binary search tree starting from a null tree taking one element at a time from left to right. Draw a tree for each steps?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q7b",
+              "label": "b)",
+              "text": "Define the properties of circular queue. How will you check whether the circular queue is i) Full ii) Empty",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q8",
+          "questionNumber": "Q.8",
+          "text": "Write short note on any two:",
+          "subQuestions": [
+            {
+              "id": "dec24-q8i",
+              "label": "i)",
+              "text": "Application of queue",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec24-q8ii",
+              "label": "ii)",
+              "text": "BFS and DFS",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec24-q8iii",
+              "label": "iii)",
+              "text": "Doubly circular linked list",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec23-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec23-q1a",
+              "label": "a)",
+              "text": "Define Data Structures. With the aid of a neat diagram describe the classification of data structures.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec23-q1b",
+              "label": "b)",
+              "text": "What is asymptotic analysis? Explain Big-oh notation. Analyse and write the running time complexity of the following function.\n\n```c\nA(){\n  int i, j, k, n;\n  for(i = 1; i <= n; i++)\n    for(j = 1; j * j <= n; j++)\n      for(k = 1; 2 * k <= n; k++)\n        printf(\"*\");\n}\n```",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec23-q2a",
+              "label": "a)",
+              "text": "Given an array with both positive and negative numbers, find the two elements such that their sum is closest to zero. For the below array, algorithm should give -80 and 85. Example: 1, 60, 10, 70, -80, 85. Also discuss the complexity of the process and suggest an alternate way to optimize the complexity.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q2b",
+              "label": "b)",
+              "text": "Consider a two-dimensional array A of order [20*5]. The base address of the array is 840, words per memory cell is 8. Find the address of A [15, 3] using row major and column major addressing.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec23-q3a",
+              "label": "a)",
+              "text": "What is a link list? Discuss the advantages of using link list; also write about the various operations which can be performed on link list with their time complexities.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec23-q3b",
+              "label": "b)",
+              "text": "Suppose there are two singly linked lists both of which intersect at some point and become a single linked list as shown below:\n\n[Image: Diagram showing two separate singly linked lists merging into a single node with value '?', followed by another node pointing to NULL.]\n\nThe head pointers of both the lists are known. Give an algorithm for finding the merging point and write the running time complexity.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec23-q4a",
+              "label": "a)",
+              "text": "Define Stack. What are the different operations, which can be performed on stack. Explain why Stack is a recursive data structure?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec23-q4b",
+              "label": "b)",
+              "text": "Write an algorithm for evaluating a postfix expression and apply the same for the given postfix expression: 4 - 5 * + 7 7 / + showing the content of stack at each step.",
+              "latex": "4 \\ - \\ 5 \\ * \\ + \\ 7 \\ 7 \\ / \\ +",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec23-q5a",
+              "label": "a)",
+              "text": "Explain the importance of queue. Describe why it is a bad idea to implement a linked list version a queue which uses the head of the list as the rear of the queue.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec23-q5b",
+              "label": "b)",
+              "text": "What is the advantage of circular queue over ordinary queue? Write a C program to simulate the working of circular queue of integers using array. Provide the following operations: i) Insert ii) Delete iii) Display.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec23-q6a",
+              "label": "a)",
+              "text": "Show the steps of quick sort on the following set of elements. 26, 56, 47, 36, 13, 95, 85, 32. Assume the last element as the pivot element.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q6b",
+              "label": "b)",
+              "text": "Design a data representation which sequentially map 'n' data objects into an array a [1, n], n_1 of these data objects are stacks and the remaining are queues. Write algorithms to add and delete elements from these objects.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec23-q7a",
+              "label": "a)",
+              "text": "What is collision? What are the methods to resolves collision? Using the hash function 'key mod 7', insert the following sequence of keys in the hash table- 32, 50, 700, 140, 76, 85, 46, 92, 70, 73 and 101. Use separate chaining technique for collision resolution.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q7b",
+              "label": "b)",
+              "text": "What are L-L, L-R and R-R rotation? Write procedure for adding and deleting a node from the balanced tree and leave the resulting tree balanced.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec23-q8a",
+              "label": "a)",
+              "text": "What is the sequence of nodes visited for the following tree for a preorder, postorder, and breadth first traversal?\n\n[Image: A binary tree with root 'j', left child 'f', right child 'e'. 'f' has left child 'd'. 'd' has left child 'g'. 'e' has left child 'a', right child 'i'. 'a' has right child 'h'. 'i' has left child 'b'.]",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec23-q8b",
+              "label": "b)",
+              "text": "What is Graph traversal? Discuss the difference between traversing a graph and a tree. Consider the following graph. Among the following sequences, which are the depth-first traversals of the above graph? Justify your answer by showing the adjacency list and stack contents for the traversals.\n\n[Image: A graph with vertices a, b, e, f, g, h. Edges exist between (a,e), (a,b), (a,f), (e,b), (e,g), (b,f), (b,h), (b,g), (f,h), (g,h).]\n\ni) abeghf\nii) abfehg\niii) abfhge\niv) afghbe",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "nov22-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "nov22-q1a",
+              "label": "a)",
+              "text": "What are the merits and demerits of array? Given two arrays of integers in ascending order, develop an algorithm to merge these arrays to form a third array sorted in ascending order.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "nov22-q1b",
+              "label": "b)",
+              "text": "Given a 2D array A[-100, 50:-5, 50]. Find the address of element A[99, 49] considering the base address 10 and each element requires 4 bytes for storage. Follow row major order.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "nov22-q2a",
+              "label": "a)",
+              "text": "Write an algorithm of Heap sort. Sort the given sequence with the help of heap sort:\n50, 48, 35, 44, 80, 70, 10, 55, 11, 85",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "nov22-q2b",
+              "label": "b)",
+              "text": "How do you find the complexity of an algorithm? What is the relation between the time and space complexities of an algorithm? Justify your answer with an example.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "nov22-q3a",
+              "label": "a)",
+              "text": "Differentiate between linear search and binary search techniques. Write a C program to search an element in an array using binary search. Also write its time complexity.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "nov22-q3b",
+              "label": "b)",
+              "text": "What are the advantages of linked list over array? Write an algorithm/C code to insert a node at the end of a singly linked list.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "nov22-q4a",
+              "label": "a)",
+              "text": "Write an algorithm/C program that reverses the order of all the elements in a singly linked list.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "nov22-q4b",
+              "label": "b)",
+              "text": "Write an algorithm for the evaluation of a postfix expressions.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "nov22-q5a",
+              "label": "a)",
+              "text": "Convert the following infix expression to prefix and postfix expression using stack:\n((2 + 3) * 4 + (5 * (6 + 7) * 9))",
+              "latex": "((2 + 3) * 4 + (5 * (6 + 7) * 9))",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "nov22-q5b",
+              "label": "b)",
+              "text": "Show the addition of given polynomials using linked list:\nP = 3x^2 + 2x + 7\nQ = 5x^3 + 2x^2 + x",
+              "latex": "P = 3x^2 + 2x + 7 \\\\ Q = 5x^3 + 2x^2 + x",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "nov22-q6a",
+              "label": "a)",
+              "text": "What is Tree data structure? What are the different types of tree?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "nov22-q6b",
+              "label": "b)",
+              "text": "Show that the maximum number of nodes in a binary tree of height h is 2^(h+1) - 1",
+              "latex": "2^{h+1} - 1",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "nov22-q7a",
+              "label": "a)",
+              "text": "What do you mean by stack? What do you mean by overflow and underflow condition? Write an algorithm/C function for push and pop operations.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "nov22-q7b",
+              "label": "b)",
+              "text": "Explain DFS and BFS algorithm supporting with the example.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "nov22-q8a",
+              "label": "a)",
+              "text": "Construct a binary tree for given Sequence.\nIN ORDER: 9, 12, 14, 17, 23, 19, 50, 54, 67, 72, 76\nPOST ORDER: 9, 14, 12, 19, 23, 17, 67, 54, 76, 72, 50",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "nov22-q8b",
+              "label": "b)",
+              "text": "Explain Garbage collection and compaction.",
+              "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

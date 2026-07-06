@@ -13,19 +13,59 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt203-u1",
       "number": 1,
       "title": "Materials",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Classification of engineering material",
-        "Composition of Cast iron and Carbon steels",
-        "Iron Carbon diagram",
-        "Alloy steels their applications",
-        "Mechanical properties like strength, hardness, toughness, ductility, brittleness, malleability etc. of materials",
-        "Tensile test- Stress-strain diagram of ductile and brittle materials",
-        "Hooks law and modulus of elasticity",
-        "Hardness and Impact testing of materials, BHN etc."
+        {
+          "id": "bt203-u1-classification-of-engineering-material",
+          "slug": "classification-of-engineering-material",
+          "title": "Classification of engineering material",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt203-u1-composition-of-cast-iron-and-carbon-steels",
+          "slug": "composition-of-cast-iron-and-carbon-steels",
+          "title": "Composition of Cast iron and Carbon steels",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt203-u1-iron-carbon-diagram",
+          "slug": "iron-carbon-diagram",
+          "title": "Iron Carbon diagram",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt203-u1-alloy-steels-their-applications",
+          "slug": "alloy-steels-their-applications",
+          "title": "Alloy steels their applications",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt203-u1-mechanical-properties-like-strength-hardness-toughness-ductility-brittleness-malleability-etc-of-materials",
+          "slug": "mechanical-properties-like-strength-hardness-toughness-ductility-brittleness-malleability-etc-of-materials",
+          "title": "Mechanical properties like strength, hardness, toughness, ductility, brittleness, malleability etc. of materials",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt203-u1-tensile-test-stress-strain-diagram-of-ductile-and-brittle-materials",
+          "slug": "tensile-test-stress-strain-diagram-of-ductile-and-brittle-materials",
+          "title": "Tensile test- Stress-strain diagram of ductile and brittle materials",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt203-u1-hooks-law-and-modulus-of-elasticity",
+          "slug": "hooks-law-and-modulus-of-elasticity",
+          "title": "Hooks law and modulus of elasticity",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt203-u1-hardness-and-impact-testing-of-materials-bhn-etc",
+          "slug": "hardness-and-impact-testing-of-materials-bhn-etc",
+          "title": "Hardness and Impact testing of materials, BHN etc.",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt203_m1_nov2022_q1",
@@ -59,16 +99,41 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt203-u2",
       "number": 2,
       "title": "Measurement & Production Engineering",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Concept of measurements, errors in measurement",
-        "Temperature, Pressure, Velocity, Flow strain, Force and torque measurement",
-        "Vernier caliper, Micrometer, Dial gauge, Slip gauge, Sine-bar and Combination set",
-        "Elementary theoretical aspects of production processes like casting, carpentry, welding etc",
-        "Introduction to Lathe and Drilling machines and their various operations"
+        {
+          "id": "bt203-u2-concept-of-measurements-errors-in-measurement",
+          "slug": "concept-of-measurements-errors-in-measurement",
+          "title": "Concept of measurements, errors in measurement",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt203-u2-temperature-pressure-velocity-flow-strain-force-and-torque-measurement",
+          "slug": "temperature-pressure-velocity-flow-strain-force-and-torque-measurement",
+          "title": "Temperature, Pressure, Velocity, Flow strain, Force and torque measurement",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt203-u2-vernier-caliper-micrometer-dial-gauge-slip-gauge-sine-bar-and-combination-set",
+          "slug": "vernier-caliper-micrometer-dial-gauge-slip-gauge-sine-bar-and-combination-set",
+          "title": "Vernier caliper, Micrometer, Dial gauge, Slip gauge, Sine-bar and Combination set",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt203-u2-elementary-theoretical-aspects-of-production-processes-like-casting-carpentry-welding-etc",
+          "slug": "elementary-theoretical-aspects-of-production-processes-like-casting-carpentry-welding-etc",
+          "title": "Elementary theoretical aspects of production processes like casting, carpentry, welding etc",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt203-u2-introduction-to-lathe-and-drilling-machines-and-their-various-operations",
+          "slug": "introduction-to-lathe-and-drilling-machines-and-their-various-operations",
+          "title": "Introduction to Lathe and Drilling machines and their various operations",
+          "displayOrder": 5
+        }
       ],
       "questionIds": [
         "bt203_m2_nov2022_q1",
@@ -104,17 +169,47 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt203-u3",
       "number": 3,
       "title": "Fluids",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Fluid properties pressure, density and viscosity etc.",
-        "Types of fluids",
-        "Newton's law of viscosity",
-        "Pascal's law",
-        "Bernoulli's equation for incompressible fluids",
-        "Only working principle of Hydraulic machines, pumps, turbines, Reciprocating pumps"
+        {
+          "id": "bt203-u3-fluid-properties-pressure-density-and-viscosity-etc",
+          "slug": "fluid-properties-pressure-density-and-viscosity-etc",
+          "title": "Fluid properties pressure, density and viscosity etc.",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt203-u3-types-of-fluids",
+          "slug": "types-of-fluids",
+          "title": "Types of fluids",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt203-u3-newtons-law-of-viscosity",
+          "slug": "newtons-law-of-viscosity",
+          "title": "Newton's law of viscosity",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt203-u3-pascals-law",
+          "slug": "pascals-law",
+          "title": "Pascal's law",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt203-u3-bernoullis-equation-for-incompressible-fluids",
+          "slug": "bernoullis-equation-for-incompressible-fluids",
+          "title": "Bernoulli's equation for incompressible fluids",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt203-u3-only-working-principle-of-hydraulic-machines-pumps-turbines-reciprocating-pumps",
+          "slug": "only-working-principle-of-hydraulic-machines-pumps-turbines-reciprocating-pumps",
+          "title": "Only working principle of Hydraulic machines, pumps, turbines, Reciprocating pumps",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt203_m3_nov2022_q1",
@@ -147,19 +242,59 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt203-u4",
       "number": 4,
       "title": "Thermodynamics & Steam Engineering",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Thermodynamic system, properties, state, process",
-        "Zeroth, First and second law of thermodynamics",
-        "thermodynamic processes at constant pressure, volume, enthalpy & entropy",
-        "Classification and working of boilers",
-        "mountings and accessories of boilers",
-        "Efficiency and performance analysis",
-        "natural and artificial draught",
-        "steam properties, use of steam tables"
+        {
+          "id": "bt203-u4-thermodynamic-system-properties-state-process",
+          "slug": "thermodynamic-system-properties-state-process",
+          "title": "Thermodynamic system, properties, state, process",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt203-u4-zeroth-first-and-second-law-of-thermodynamics",
+          "slug": "zeroth-first-and-second-law-of-thermodynamics",
+          "title": "Zeroth, First and second law of thermodynamics",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt203-u4-thermodynamic-processes-at-constant-pressure-volume-enthalpy-and-entropy",
+          "slug": "thermodynamic-processes-at-constant-pressure-volume-enthalpy-and-entropy",
+          "title": "thermodynamic processes at constant pressure, volume, enthalpy & entropy",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt203-u4-classification-and-working-of-boilers",
+          "slug": "classification-and-working-of-boilers",
+          "title": "Classification and working of boilers",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt203-u4-mountings-and-accessories-of-boilers",
+          "slug": "mountings-and-accessories-of-boilers",
+          "title": "mountings and accessories of boilers",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt203-u4-efficiency-and-performance-analysis",
+          "slug": "efficiency-and-performance-analysis",
+          "title": "Efficiency and performance analysis",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt203-u4-natural-and-artificial-draught",
+          "slug": "natural-and-artificial-draught",
+          "title": "natural and artificial draught",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt203-u4-steam-properties-use-of-steam-tables",
+          "slug": "steam-properties-use-of-steam-tables",
+          "title": "steam properties, use of steam tables",
+          "displayOrder": 8
+        }
       ],
       "questionIds": [
         "bt203_m4_nov2022_q1",
@@ -194,15 +329,35 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt203-u5",
       "number": 5,
       "title": "Reciprocating Machines",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Working principle of steam Engine",
-        "Carnot, Otto, Diesel and Dual cycles P-V & T-S diagrams and its efficiency",
-        "working of Two stroke & Four stroke Petrol & Diesel engines",
-        "Working principle of compressor"
+        {
+          "id": "bt203-u5-working-principle-of-steam-engine",
+          "slug": "working-principle-of-steam-engine",
+          "title": "Working principle of steam Engine",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt203-u5-carnot-otto-diesel-and-dual-cycles-pv-and-ts-diagrams-and-its-efficiency",
+          "slug": "carnot-otto-diesel-and-dual-cycles-pv-and-ts-diagrams-and-its-efficiency",
+          "title": "Carnot, Otto, Diesel and Dual cycles P-V & T-S diagrams and its efficiency",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt203-u5-working-of-two-stroke-and-four-stroke-petrol-and-diesel-engines",
+          "slug": "working-of-two-stroke-and-four-stroke-petrol-and-diesel-engines",
+          "title": "working of Two stroke & Four stroke Petrol & Diesel engines",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt203-u5-working-principle-of-compressor",
+          "slug": "working-principle-of-compressor",
+          "title": "Working principle of compressor",
+          "displayOrder": 4
+        }
       ],
       "questionIds": [
         "bt203_m5_nov2022_q1",

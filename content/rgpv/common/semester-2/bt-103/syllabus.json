@@ -13,17 +13,47 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt103-u1",
       "number": 1,
       "title": "Identifying Common errors in writing",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Articles",
-        "Subject-Verb Agreement",
-        "Prepositions",
-        "Active and Passive Voice",
-        "Reported Speech: Direct and Indirect",
-        "Sentence Structure"
+        {
+          "id": "bt103-u1-articles",
+          "slug": "articles",
+          "title": "Articles",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt103-u1-subject-verb-agreement",
+          "slug": "subject-verb-agreement",
+          "title": "Subject-Verb Agreement",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt103-u1-prepositions",
+          "slug": "prepositions",
+          "title": "Prepositions",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt103-u1-active-and-passive-voice",
+          "slug": "active-and-passive-voice",
+          "title": "Active and Passive Voice",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt103-u1-reported-speech-direct-and-indirect",
+          "slug": "reported-speech-direct-and-indirect",
+          "title": "Reported Speech: Direct and Indirect",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt103-u1-sentence-structure",
+          "slug": "sentence-structure",
+          "title": "Sentence Structure",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt103_m1_nov2022_q1",
@@ -48,15 +78,35 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt103-u2",
       "number": 2,
       "title": "Vocabulary building and Comprehension",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Acquaintance with prefixes and suffixes from foreign languages in English to form derivatives",
-        "synonyms",
-        "antonyms",
-        "Reading comprehension"
+        {
+          "id": "bt103-u2-acquaintance-with-prefixes-and-suffixes-from-foreign-languages-in-english-to-form-derivatives",
+          "slug": "acquaintance-with-prefixes-and-suffixes-from-foreign-languages-in-english-to-form-derivatives",
+          "title": "Acquaintance with prefixes and suffixes from foreign languages in English to form derivatives",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt103-u2-synonyms",
+          "slug": "synonyms",
+          "title": "synonyms",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt103-u2-antonyms",
+          "slug": "antonyms",
+          "title": "antonyms",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt103-u2-reading-comprehension",
+          "slug": "reading-comprehension",
+          "title": "Reading comprehension",
+          "displayOrder": 4
+        }
       ],
       "questionIds": [
         "bt103_m2_nov2022_q1",
@@ -82,18 +132,53 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt103-u3",
       "number": 3,
       "title": "Communication",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Introduction, Meaning and Significance",
-        "Process of Communication",
-        "Oral and Written Communication",
-        "7 c's of Communication",
-        "Barriers to Communication and Ways to overcome them",
-        "Importance of Communication for Technical students",
-        "nonverbal communication"
+        {
+          "id": "bt103-u3-introduction-meaning-and-significance",
+          "slug": "introduction-meaning-and-significance",
+          "title": "Introduction, Meaning and Significance",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt103-u3-process-of-communication",
+          "slug": "process-of-communication",
+          "title": "Process of Communication",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt103-u3-oral-and-written-communication",
+          "slug": "oral-and-written-communication",
+          "title": "Oral and Written Communication",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt103-u3-7-cs-of-communication",
+          "slug": "7-cs-of-communication",
+          "title": "7 c's of Communication",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt103-u3-barriers-to-communication-and-ways-to-overcome-them",
+          "slug": "barriers-to-communication-and-ways-to-overcome-them",
+          "title": "Barriers to Communication and Ways to overcome them",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt103-u3-importance-of-communication-for-technical-students",
+          "slug": "importance-of-communication-for-technical-students",
+          "title": "Importance of Communication for Technical students",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt103-u3-nonverbal-communication",
+          "slug": "nonverbal-communication",
+          "title": "nonverbal communication",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt103_m3_nov2022_q1",
@@ -130,17 +215,47 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt103-u4",
       "number": 4,
       "title": "Developing Writing Skills",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Planning, Drafting and Editing",
-        "Precise Writing, Précis",
-        "Technical definition and Technical description",
-        "Report Writing: Features of writing a good Report",
-        "Structure of a Formal Report",
-        "Report of Trouble, Laboratory Report, Progress Report"
+        {
+          "id": "bt103-u4-planning-drafting-and-editing",
+          "slug": "planning-drafting-and-editing",
+          "title": "Planning, Drafting and Editing",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt103-u4-precise-writing-precis",
+          "slug": "precise-writing-precis",
+          "title": "Precise Writing, Précis",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt103-u4-technical-definition-and-technical-description",
+          "slug": "technical-definition-and-technical-description",
+          "title": "Technical definition and Technical description",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt103-u4-report-writing-features-of-writing-a-good-report",
+          "slug": "report-writing-features-of-writing-a-good-report",
+          "title": "Report Writing: Features of writing a good Report",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt103-u4-structure-of-a-formal-report",
+          "slug": "structure-of-a-formal-report",
+          "title": "Structure of a Formal Report",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt103-u4-report-of-trouble-laboratory-report-progress-report",
+          "slug": "report-of-trouble-laboratory-report-progress-report",
+          "title": "Report of Trouble, Laboratory Report, Progress Report",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt103_m4_nov2022_q1",
@@ -180,18 +295,53 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt103-u5",
       "number": 5,
       "title": "Business Correspondence",
-      "hours": null,
+      "hours": 8,
       "topics": [
-        "Importance of Business Letters, Parts and Layout",
-        "Application, Contents of good Resume",
-        "guidelines for writing Resume",
-        "Calling/Sending Quotation",
-        "Order",
-        "Complaint",
-        "E-mail and Tender"
+        {
+          "id": "bt103-u5-importance-of-business-letters-parts-and-layout",
+          "slug": "importance-of-business-letters-parts-and-layout",
+          "title": "Importance of Business Letters, Parts and Layout",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt103-u5-application-contents-of-good-resume",
+          "slug": "application-contents-of-good-resume",
+          "title": "Application, Contents of good Resume",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt103-u5-guidelines-for-writing-resume",
+          "slug": "guidelines-for-writing-resume",
+          "title": "guidelines for writing Resume",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt103-u5-calling-sending-quotation",
+          "slug": "calling-sending-quotation",
+          "title": "Calling/Sending Quotation",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt103-u5-order",
+          "slug": "order",
+          "title": "Order",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt103-u5-complaint",
+          "slug": "complaint",
+          "title": "Complaint",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt103-u5-e-mail-and-tender",
+          "slug": "e-mail-and-tender",
+          "title": "E-mail and Tender",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt103_m5_nov2022_q1",

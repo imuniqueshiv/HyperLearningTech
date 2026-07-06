@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
 
-const universities = [
+export const universities = [
   {
     id: "rgpv",
     name: "RGPV",
@@ -40,6 +40,18 @@ const universities = [
 export default function Universities() {
   const [searchQuery, setSearchQuery] = useState("");
 
+  useEffect(() => {
+    const handleSearch = (e: CustomEvent<string>) => {
+      setSearchQuery(e.detail);
+    };
+    window.addEventListener("university-search", handleSearch as EventListener);
+    return () =>
+      window.removeEventListener(
+        "university-search",
+        handleSearch as EventListener
+      );
+  }, []);
+
   const filteredUniversities = universities.filter((uni) => {
     const query = searchQuery.trim().toLowerCase();
     if (!query) return true;
@@ -52,10 +64,10 @@ export default function Universities() {
   });
 
   return (
-    <section className="relative flex min-h-[115vh] flex-col justify-center overflow-hidden border-none bg-background pt-16 pb-32">
+    <section className="relative flex flex-col justify-center overflow-hidden border-none bg-background pt-12 pb-16 md:pt-16 md:pb-20">
       {/* Background Layers */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* Light Mode Wavy Refraction Background (Inverted) */}
+        {/* Light Mode Wavy Refraction Background - Centered with edge fade */}
         <div
           className="absolute inset-0 dark:hidden"
           style={{
@@ -66,6 +78,10 @@ export default function Universities() {
             backgroundSize: "cover, auto",
             backgroundPosition: "center, top",
             backgroundRepeat: "no-repeat, no-repeat",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 15%, rgba(0,0,0,0.8) 35%, black 45%, black 55%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.3) 85%, transparent 100%)",
+            maskImage:
+              "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 15%, rgba(0,0,0,0.8) 35%, black 45%, black 55%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0.3) 85%, transparent 100%)",
           }}
         />
 
@@ -84,7 +100,7 @@ export default function Universities() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mx-auto mb-6 max-w-3xl text-center"
+          className="mx-auto mb-16 md:mb-20 max-w-3xl text-center"
         >
           <div className="mb-6 flex items-center justify-center">
             <div className="group relative inline-flex items-center gap-2.5 rounded-full border border-blue-200/40 bg-blue-50/80 px-4 py-1.5 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/15 dark:bg-blue-500/10 dark:text-blue-400 transition-all">
@@ -102,35 +118,11 @@ export default function Universities() {
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground/90">
+          <p className="mx-auto mt-6 max-w-2xl text-[15px] md:text-lg leading-relaxed text-muted-foreground/80 font-medium">
             Hyper Learning is designed to evolve into a multi-university
             learning platform. Start with RGPV and expand to universities across
             India.
           </p>
-        </motion.div>
-
-        {/* Search Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-10 max-w-2xl"
-        >
-          <div className="relative group flex items-center justify-between rounded-full border border-border/50 dark:border-white/10 bg-background/80 dark:bg-white/[0.03] p-2 shadow-xl dark:shadow-2xl backdrop-blur-xl transition-all focus-within:border-blue-500/50 focus-within:bg-background dark:focus-within:bg-white/[0.05] focus-within:shadow-[0_0_30px_rgba(37,99,235,0.1)] dark:focus-within:shadow-[0_0_30px_rgba(37,99,235,0.15)]">
-            <input
-              type="text"
-              aria-label="Search universities"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search universities by name, branch, or location..."
-              className="w-full bg-transparent px-6 py-3 text-base text-foreground placeholder:text-muted-foreground/50 focus:outline-none"
-            />
-            <div className="group/lens relative mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border/50 bg-muted/50 text-muted-foreground transition-all duration-500 hover:scale-[1.03] hover:border-border hover:bg-muted hover:text-foreground hover:shadow-sm cursor-pointer active:scale-95 overflow-hidden">
-              <div className="absolute inset-0 rounded-full shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] pointer-events-none" />
-              <Search className="relative z-10 h-[18px] w-[18px] transition-transform duration-300 group-hover/lens:scale-[1.05]" />
-            </div>
-          </div>
         </motion.div>
 
         {/* Cards */}
@@ -150,7 +142,7 @@ export default function Universities() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className={`group relative flex flex-col overflow-hidden rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
+                  className={`group relative flex flex-col overflow-hidden rounded-[20px] md:rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-4 md:p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
                     university.status === "Available" ? "cursor-pointer" : ""
                   }`}
                 >
@@ -162,8 +154,8 @@ export default function Universities() {
 
                   {/* Badge */}
                   <div className="relative z-10 mb-4 flex items-center justify-between">
-                    <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                      <GraduationCap className="relative z-10 h-7 w-7 drop-shadow-sm" />
+                    <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-[14px] md:rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+                      <GraduationCap className="relative z-10 h-6 w-6 md:h-7 md:w-7 drop-shadow-sm" />
                     </div>
 
                     <span
@@ -179,7 +171,7 @@ export default function Universities() {
 
                   {/* Content */}
                   <div className="relative z-10 flex flex-1 flex-col">
-                    <h3 className="text-2xl font-black tracking-tight text-foreground">
+                    <h3 className="text-xl md:text-2xl font-black tracking-tight text-foreground">
                       {university.name}
                     </h3>
 
@@ -187,7 +179,7 @@ export default function Universities() {
                       {university.fullName}
                     </p>
 
-                    <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
+                    <p className="mt-2.5 md:mt-3 text-[14px] md:text-[15px] leading-relaxed text-muted-foreground">
                       {university.description}
                     </p>
 
@@ -208,7 +200,7 @@ export default function Universities() {
 
                     <div className="mt-auto pt-6">
                       {university.status === "Available" ? (
-                        <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3.5 text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
+                        <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3 md:py-3.5 text-[13px] md:text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
                           <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] pointer-events-none" />
                           <span className="relative z-10 flex items-center gap-2">
                             Explore University
@@ -240,7 +232,7 @@ export default function Universities() {
                   No universities found
                 </h3>
                 <p className="mt-2 text-muted-foreground">
-                  Try adjusting your search query.
+                  Try adjusting your search query in the navbar.
                 </p>
               </motion.div>
             )}

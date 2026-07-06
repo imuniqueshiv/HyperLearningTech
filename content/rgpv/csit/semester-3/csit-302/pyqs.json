@@ -2,8 +2,1156 @@
   "subject": {
     "id": "csit-302",
     "code": "CSIT-302",
-    "name": "Discrete Structure (DS)",
-    "title": "CSIT-302 - Discrete Structure (DS)"
+    "name": "Discrete Structure",
+    "title": "CSIT-302 - Discrete Structure",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec25-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec25-q1a",
+              "label": "a)",
+              "text": "Define countable and uncountable sets. Prove that the set of rational numbers is countable.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q1b",
+              "label": "b)",
+              "text": "Using Venn diagram, prove: A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)",
+              "latex": "A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec25-q2a",
+              "label": "a)",
+              "text": "Define relation. Explain equivalence relation and partial ordering relation with suitable examples.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q2b",
+              "label": "b)",
+              "text": "Let A = {1, 2, 3}, R = {(1,1), (2,2), (3,3), (1,2), (2,1)}. Check whether R is an equivalence relation and find equivalence classes.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec25-q3a",
+              "label": "a)",
+              "text": "Define one-one, onto and bijective functions. Prove that inverse of a function exists if and only if the function is bijective.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q3b",
+              "label": "b)",
+              "text": "State and prove Pigeonhole Principle.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec25-q4a",
+              "label": "a)",
+              "text": "Construct truth table for the proposition (p → q) ↔ (¬p ∨ q) and show that it is a tautology.",
+              "latex": "(p \\to q) \\leftrightarrow (\\neg p \\lor q)",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec25-q4b",
+              "label": "b)",
+              "text": "Convert the following statement into predicate logic and write its negation: \"Every student studies Discrete Mathematics.\"",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec25-q5a",
+              "label": "a)",
+              "text": "Prove by mathematical induction that: 1 + 2 + 3 + ... + n = n(n+1)/2",
+              "latex": "1 + 2 + 3 + \\cdots + n = \\frac{n(n+1)}{2}",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec25-q5b",
+              "label": "b)",
+              "text": "Prove by contradiction that √2 is irrational.",
+              "latex": "\\sqrt{2}",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec25-q6a",
+              "label": "a)",
+              "text": "Define group and Abelian group. Prove that identity element of a group is unique.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec25-q6b",
+              "label": "b)",
+              "text": "Find all subgroups of the group Z_8.",
+              "latex": "Z_8",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec25-q7a",
+              "label": "a)",
+              "text": "Define Finite State Machine. Explain FSM as a language recognizer.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec25-q7b",
+              "label": "b)",
+              "text": "Design a finite state machine that accepts all binary strings ending with 01.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec25-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec25-q8a",
+              "label": "a)",
+              "text": "Define Euler path and Euler circuit. State necessary and sufficient conditions for their existence.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec25-q8b",
+              "label": "b)",
+              "text": "Explain Dijkstra's Algorithm and find the shortest path from a given source vertex 0 to all other vertices in a weighted graph. [Image: A weighted undirected graph with 5 vertices labeled 0 to 4. The edges and their weights are: edge between 0 and 1 with weight 4, edge between 0 and 2 with weight 8, edge between 1 and 4 with weight 6, edge between 2 and 3 with weight 2, and edge between 3 and 4 with weight 10]",
+              "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "jun25-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "jun25-q1a",
+              "label": "a)",
+              "text": "Consider three sets A = {1, 2, 3, 4, 5}, B = {3, 4, 5, 6} and C = {1, 5, 7}. Using Venn diagrams, determine and shade the regions corresponding to (A ∪ B) ∩ (B ∩ C) and A ∩ (B ∪ C). Verify if these expressions are equivalent by listing the elements.",
+              "latex": "(A \\cup B) \\cap (B \\cap C) \\text{ and } A \\cap (B \\cup C)",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun25-q1b",
+              "label": "b)",
+              "text": "Define and illustrate an equivalence relation by constructing an equivalence relation on the set S = {1, 2, 3, 4, 5, 6} where two elements are related if they have the same remainder when divided by 3.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "jun25-q2a",
+              "label": "a)",
+              "text": "What is pigeonhole principle? Prove it by using mathematical induction and use it to show that in a group of 15 people, at least two share the same birth month.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun25-q2b",
+              "label": "b)",
+              "text": "Explain a recursively defined function. Solve the recurrence relation f(n) = f(n-1) + 3 with initial condition f(0) = 2.",
+              "latex": "f(n) = f(n-1) + 3, f(0) = 2",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "jun25-q3a",
+              "label": "a)",
+              "text": "Prove that the set G = {0, 1, 2, 3} under addition modulo 4 is an abelian group. Identify the identity and inverse elements.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun25-q3b",
+              "label": "b)",
+              "text": "Define a homomorphism between two groups. Verify whether the mapping f: R → R defined by f(x) = 2x is a homomorphism under addition.",
+              "latex": "f: \\mathbb{R} \\to \\mathbb{R}, f(x) = 2x",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "jun25-q4a",
+              "label": "a)",
+              "text": "Consider the propositions p, q and r, where: p: \"It is raining.\" q: \"I am carrying an umbrella.\" r: \"I stay dry.\" Assume the implication (p → q) → r. Construct a truth table for the expression (p → q) → r and determine if it is a tautology or contradiction.",
+              "latex": "(p \\to q) \\to r",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun25-q4b",
+              "label": "b)",
+              "text": "What are predicates in propositional logic? Define universal and existential quantifiers with examples.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "jun25-q5a",
+              "label": "a)",
+              "text": "Define graph theory and explain the basic terminology of graphs such as vertices, edges, degree and adjacency.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "jun25-q5b",
+              "label": "b)",
+              "text": "Define and give an example of an isomorphic graph pair. Verify isomorphism between two adjacency matrices.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "jun25-q6a",
+              "label": "a)",
+              "text": "For the graph G with vertices V = {A, B, C, D} and edges E = {(A,B), (B,C), (C,D), (D,A), (A,C)}, determine: i) Whether the graph contains a Eulerian path or circuit or not. ii) All Hamiltonian circuits in the graph G.",
+              "latex": "V = \\{A, B, C, D\\}, E = \\{(A,B), (B,C), (C,D), (D,A), (A,C)\\}",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "jun25-q6b",
+              "label": "b)",
+              "text": "How many permutations can be formed from the letters of the word \"MATHEMATICS\" such that all vowels are together?",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "jun25-q7a",
+              "label": "a)",
+              "text": "What is a Hasse diagram? Draw the Hasse diagram for the set {1, 2, 3, 6, 9, 18} with the divisibility relation.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun25-q7b",
+              "label": "b)",
+              "text": "Define a lattice and prove that every finite lattice has a unique least upper bound and greatest lower bound.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun25-q8",
+          "questionNumber": "Q.8",
+          "text": "Write short notes on (any four):",
+          "subQuestions": [
+            {
+              "id": "jun25-q8i",
+              "label": "i)",
+              "text": "Finite state machines as language recognizers",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun25-q8ii",
+              "label": "ii)",
+              "text": "Binomial theorem",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun25-q8iii",
+              "label": "iii)",
+              "text": "Permutation group",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun25-q8iv",
+              "label": "iv)",
+              "text": "Partial Ordering Relation",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun25-q8v",
+              "label": "v)",
+              "text": "Countable and uncountable sets",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec24-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec24-q1a",
+              "label": "a)",
+              "text": "Define various types of functions. How many symmetric and reflexive relations are possible from a set A containing 'n' elements?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec24-q1b",
+              "label": "b)",
+              "text": "Let Z be the group of integers with binary operation * defined by a * b = a + b - 2, for all a, b ∈ Z. Find the identity element of the group ⟨Z, *⟩.",
+              "latex": "a * b = a + b - 2, a, b \\in Z, \\langle Z, * \\rangle",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec24-q2a",
+              "label": "a)",
+              "text": "Show that every Cyclic group is Abelian. Prove that a lattice with 5 elements is not a Boolean algebra.",
+              "unit": "Unit 2 / Unit 5"
+            },
+            {
+              "id": "dec24-q2b",
+              "label": "b)",
+              "text": "Define Pigeon hole Principle. Write the contra positive of the implication: \"if it is Sunday then it is a holiday.\"",
+              "unit": "Unit 1 / Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec24-q3a",
+              "label": "a)",
+              "text": "Show that there does not exist a graph with 5 vertices with degrees 1, 3, 4, 2, 3 respectively.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec24-q3b",
+              "label": "b)",
+              "text": "Obtain the generating function for the sequence 4, 4, 4, 4, 4, 4. Explain complete digraph.",
+              "unit": "Unit 5 / Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec24-q4a",
+              "label": "a)",
+              "text": "Define planar graph. Prove that for any connected planar graph, v - e + r = 2 Where v, e, r is the number of vertices, edges, and regions of the graph respectively.",
+              "latex": "v - e + r = 2",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec24-q4b",
+              "label": "b)",
+              "text": "Find the numbers between 1 to 500 that are not divisible by any of the integers 2 or 3 or 5 or 7.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec24-q5a",
+              "label": "a)",
+              "text": "A collection of 10 electric bulbs contain 3 defective ones. (i) In how many ways can a sample of four bulbs be selected? (ii) In how many ways can a sample of 4 bulbs be selected which contain 2 good bulbs and 2 defective ones? (iii) In how many ways can a sample of 4 bulbs be selected so that either the sample contains 3 good ones and 1 defectives ones or 1 good and 3 defectives ones?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q5b",
+              "label": "b)",
+              "text": "Discuss about Complete digraph and Euler Graph with the help of suitable examples.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec24-q6a",
+              "label": "a)",
+              "text": "Solve the following recurrence equation using generating function. G(K) - 7G(K-1) + 10G(K-2) = 8K + 6.",
+              "latex": "G(K) - 7G(K-1) + 10G(K-2) = 8K + 6",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q6b",
+              "label": "b)",
+              "text": "Prove the validity of the following argument \"if the races are fixed so the casinos are crooked, then the tourist trade will decline. If the tourist trade decreases, then the police will be happy. The police force is never happy. Therefore, the races are not fixed.\"",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec24-q7a",
+              "label": "a)",
+              "text": "Let (L, ∨, ∧, ≤) be a distributive lattice and a, b ∈ L. if a ∧ b = a ∧ c and a ∨ b = a ∨ c then show that b = c.",
+              "latex": "(L, \\lor, \\land, \\leq), a, b \\in L, a \\land b = a \\land c, a \\lor b = a \\lor c, b = c",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec24-q7b",
+              "label": "b)",
+              "text": "Explain various Rules of Inference for Propositional Logic.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec24-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec24-q8a",
+              "label": "a)",
+              "text": "What is Ring? Define elementary properties of Ring with example.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec24-q8b",
+              "label": "b)",
+              "text": "Prove or disprove that intersection of two normal subgroups of a group G is again a normal subgroup of G.",
+              "unit": "Unit 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "jun24-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "jun24-q1a",
+              "label": "a)",
+              "text": "Explain the following: i) Euler Graph ii) Isomorphic graphs iii) Minimal spanning tree iv) Height of the tree",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "jun24-q1b",
+              "label": "b)",
+              "text": "Let Z be the group of integers with binary operation * defined by a * b = a + b - 2, for all a, b ∈ Z. Find the identity element of the group ⟨Z, *⟩.",
+              "latex": "a * b = a + b - 2, a, b \\in Z, \\langle Z, * \\rangle",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "jun24-q2a",
+              "label": "a)",
+              "text": "Prove that the Complement of each element in a Boolean Algebra B is unique.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun24-q2b",
+              "label": "b)",
+              "text": "Let A be any finite set and P(A) be the power set of A. ⊆ be the inclusion relation on the elements of P(A). Draw the Hasse diagrams of (P(A), ⊆) for the following: i) A = {a} ii) A = {a, b} iii) A = {a, b, c} iv) A = {a, b, c, d}",
+              "latex": "P(A), \\subseteq, (P(A), \\subseteq)",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "jun24-q3a",
+              "label": "a)",
+              "text": "i) Prove that p ∧ q ⇒ q ∨ p is a Tautology. ii) Show that (p ∨ q) ∧ (¬p) ∧ (¬q) is a contradiction.",
+              "latex": "p \\land q \\Rightarrow q \\lor p, (p \\lor q) \\land (\\neg p) \\land (\\neg q)",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun24-q3b",
+              "label": "b)",
+              "text": "Explain complete digraph and Euler Graph using suitable example of both.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "jun24-q4a",
+              "label": "a)",
+              "text": "Define planar graph. Prove that for any connected planar graph, v - e + r = 2 where v, e, r is the number of vertices, edges, and regions of the graph respectively.",
+              "latex": "v - e + r = 2",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "jun24-q4b",
+              "label": "b)",
+              "text": "Prove that the relation R defined by \"a is congruent to b modulo m\" on the set of integers is an equivalence relation.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "jun24-q5a",
+              "label": "a)",
+              "text": "Prove that 5^(2n) - 1 is divisible by 24, where n is any positive integer.",
+              "latex": "5^{2n} - 1",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun24-q5b",
+              "label": "b)",
+              "text": "Draw the Hasse diagram representing the positive divisors of 36 and 45.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "jun24-q6a",
+              "label": "a)",
+              "text": "Show that the relation 'R' defined by (a, b)R(c, d) iff a + d = b + c is an equivalence relation.",
+              "latex": "(a, b)R(c, d), a + d = b + c",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun24-q6b",
+              "label": "b)",
+              "text": "Explain various Rules of Inference for Propositional Logic.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "jun24-q7a",
+              "label": "a)",
+              "text": "Show that every Cyclic group is Abelian. Prove that a lattice with 5 elements is not a Boolean algebra.",
+              "unit": "Unit 2 / Unit 5"
+            },
+            {
+              "id": "jun24-q7b",
+              "label": "b)",
+              "text": "Define Pigeon hole Principle. Write the contra positive of the implication: \"if it is Sunday then it is a holiday.\"",
+              "unit": "Unit 1 / Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "jun24-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "jun24-q8a",
+              "label": "a)",
+              "text": "Prove that G = {0, 1, 2, 3, 4, 5, 6} is an abelian group of order 7 with respect to addition modulo 7.",
+              "latex": "G = \\{0, 1, 2, 3, 4, 5, 6\\}",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun24-q8b",
+              "label": "b)",
+              "text": "Prove or disprove that intersection of two normal subgroups of a group G is again a normal subgroup of G. Define subgroup, normal subgroup, Quotient group, with an example for each.",
+              "unit": "Unit 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "dec23-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "dec23-q1a",
+              "label": "a)",
+              "text": "Out of 120 students surveyed, it was found that 20 students have studied French, 50 students have studied English, 70 students have studied Hindi, 5 have studied English and French, 20 have studied English and Hindi, 10 have studied Hindi and French, only 3 students have studied all the three languages. Find how many students have studied: i) Hindi alone ii) French alone iii) English, but not Hindi iv) Hindi, but not French",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec23-q1b",
+              "label": "b)",
+              "text": "If R be a relation in the set of integers Z defined by R = {(x,y) : x ∈ Z, y ∈ Z, (x-y) is multiple of 3} Show that it is an equivalence relation.",
+              "latex": "R = \\{(x,y) : x \\in \\mathbb{Z}, y \\in \\mathbb{Z}, (x-y) \\text{ is multiple of } 3\\}",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "dec23-q2a",
+              "label": "a)",
+              "text": "If f: R → R is defined by: f(x) = { 3x - 12, x > 3; 2x^2 + 3, -2 < x <= 3; 3x^2 - 7, x <= -2 } Find f^(-1)(3), f^(-1)(0), and f^(-1)(-2).",
+              "latex": "f(x) = \\begin{cases} 3x - 12, & x > 3 \\\\ 2x^2 + 3, & -2 < x \\le 3 \\\\ 3x^2 - 7, & x \\le -2 \\end{cases}, \\quad f^{-1}(3), f^{-1}(0), f^{-1}(-2)",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "dec23-q2b",
+              "label": "b)",
+              "text": "Show that 1^2 + 2^2 + 3^2 + ... + n^2 = (n(n+1)(2n+1))/6, n >= 1 by mathematical induction.",
+              "latex": "1^2 + 2^2 + 3^2 + \\cdots + n^2 = \\frac{n(n+1)(2n+1)}{6}, \\quad n \\ge 1",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "dec23-q3a",
+              "label": "a)",
+              "text": "Prove that F = {a + b√2 | a,b are rational} is a field.",
+              "latex": "F = \\{a + b\\sqrt{2} \\mid a,b \\text{ are rational}\\}",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "dec23-q3b",
+              "label": "b)",
+              "text": "Define the following: i) Symmetric Group ii) Normal Subgroup iii) Homomorphism",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "dec23-q4a",
+              "label": "a)",
+              "text": "Construct the truth table of the following formula: i) (~ (p ∨ (q ∨ r)) ⇔ ((p ∨ q) ∧ (p ∨ r))) ii) ((~q ⇒ ~p) ⇒ (p ⇒ q))",
+              "latex": "(\\sim (p \\lor (q \\lor r)) \\Leftrightarrow ((p \\lor q) \\land (p \\lor r))), ((\\sim q \\Rightarrow \\sim p) \\Rightarrow (p \\Rightarrow q))",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec23-q4b",
+              "label": "b)",
+              "text": "Write the negation of the following: i) If the determinant of a system of linear equations is zero then either the system has no solution or has an indefinite number of solutions. ii) Either today is not a Sunday or today is not a Wednesday.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "dec23-q5a",
+              "label": "a)",
+              "text": "Show that the proposition ~(p ∧ q) and ~p ∨ ~q are logically equivalent.",
+              "latex": "\\sim(p \\land q) \\text{ and } \\sim p \\lor \\sim q",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "dec23-q5b",
+              "label": "b)",
+              "text": "Obtain the conjunctive normal form (CNF) of: i) p ∧ (p ⇒ q) ii) ~p ⇒ [r ∧ (p ⇒ q)]",
+              "latex": "p \\land (p \\Rightarrow q), \\sim p \\Rightarrow [r \\land (p \\Rightarrow q)]",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "dec23-q6a",
+              "label": "a)",
+              "text": "Determine whether the graphs F1 and F2 are isomorphic. [Image: Graph F1 with vertices A, B, C, D, E, F, G forming a complex polygon with internal crossing edges.]",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "dec23-q6b",
+              "label": "b)",
+              "text": "Find an Euler Path in the graph below. [Image: Two graphs labeled F1 and F2. F1 is a complex shape with crossing lines, F2 is a pentagon with an internal star-like structure.]",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "dec23-q7a",
+              "label": "a)",
+              "text": "Define a lattice. Let (L, ≤, ∨, ∧) be a lattice, and a, b, c, d ∈ L be such that a ≤ b and c ≤ d. Show that a ∨ c ≤ b ∨ d and a ∧ c ≤ b ∧ d.",
+              "latex": "(L, \\le, \\lor, \\land), a, b, c, d \\in L, a \\le b, c \\le d, a \\lor c \\le b \\lor d, a \\land c \\le b \\land d",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec23-q7b",
+              "label": "b)",
+              "text": "Show that D12 and D18 are isomorphic lattices. Further, show that none is isomorphic to the lattice D20.",
+              "latex": "D_{12}, D_{18}, D_{20}",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "dec23-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "dec23-q8a",
+              "label": "a)",
+              "text": "Show that a_n = c_1 2^n + c_2 4^n is a solution of the recurrence relation a_n - 6a_{n-1} + 8a_{n-2} = 0.",
+              "latex": "a_n = c_1 2^n + c_2 4^n, a_n - 6a_{n-1} + 8a_{n-2} = 0",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "dec23-q8b",
+              "label": "b)",
+              "text": "Find the sequence having the generating function G(x) given by: G(x) = x / (1 - 2x)",
+              "latex": "G(x) = \\frac{x}{1 - 2x}",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "jun23-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "jun23-q1a",
+              "label": "a)",
+              "text": "Prove that P(A) ⊆ P(B) if and only if A ⊆ B.",
+              "latex": "P(A) \\subseteq P(B) \\text{ if and only if } A \\subseteq B",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q1b",
+              "label": "b)",
+              "text": "Suppose that R is the relation on the set of strings of English letters such that aRb if and only if l(a) = l(b), where l(x) is the length of the string x. Is R an equivalence relation?",
+              "latex": "aRb, l(a) = l(b), l(x)",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "jun23-q2a",
+              "label": "a)",
+              "text": "Illustrate the concept of an inverse function. Let f : Z → Z be such that f(x) = x + 1. Is f invertible? if it is then what is its inverse?",
+              "latex": "f: \\mathbb{Z} \\to \\mathbb{Z}, f(x) = x + 1",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q2b",
+              "label": "b)",
+              "text": "Define group. Explain the properties of groups.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q3",
+          "questionNumber": "Q.3",
+          "text": "Let S = N × N. Let * be the operation on S defined by (a, b) * (a', b') = (aa', bb').",
+          "latex": "S = \\mathbb{N} \\times \\mathbb{N}, (a, b) * (a', b') = (aa', bb')",
+          "subQuestions": [
+            {
+              "id": "jun23-q3i",
+              "label": "i)",
+              "text": "Define f : (S, *) → (Q, ×) by f(a, b) = a/b. Show that f is a homomorphism.",
+              "latex": "f: (S, *) \\to (\\mathbb{Q}, \\times), f(a, b) = a/b",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun23-q3ii",
+              "label": "ii)",
+              "text": "Find the congruence relation ~ in S determined by the homomorphism f, that is, where x ~ y if f(x) = f(y).",
+              "latex": "x \\sim y \\text{ if } f(x) = f(y)",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "jun23-q4a",
+              "label": "a)",
+              "text": "Show that the ((p ∨ q) ∧ ¬p) → q compound proposition is a tautology.",
+              "latex": "((p \\lor q) \\land \\neg p) \\to q",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun23-q4b",
+              "label": "b)",
+              "text": "Use existential and universal quantifiers to express the statement. \"No one has more than three grandmothers\" using the propositional function G(x, y), which represents \"x is the grandmother of y.\"",
+              "latex": "G(x, y)",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "jun23-q5a",
+              "label": "a)",
+              "text": "Discuss the 6 tuple notation of finite state machine M with an example.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun23-q5b",
+              "label": "b)",
+              "text": "Consider the complete weighted graph G in the following figure with 5 vertices. Find a Hamiltonian circuit of minimal weight. [Image: A complete weighted graph with 5 vertices A, B, C, D, E and edges with given weights.]",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "jun23-q6a",
+              "label": "a)",
+              "text": "Discuss the various applications of graph colouring.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "jun23-q6b",
+              "label": "b)",
+              "text": "State Euler's formula for a planar graph. Give an example of a planar graph with 5 vertices and 5 regions and verify Euler's formula for your example.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "jun23-q7a",
+              "label": "a)",
+              "text": "Consider the set A = {4, 5, 6, 7}. Let R be the relation ≤ on A. Draw the directed graph and the Hasse diagram of R.",
+              "latex": "A = \\{4, 5, 6, 7\\}, \\le",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "jun23-q7b",
+              "label": "b)",
+              "text": "Consider the lattice M in the following figure. i) Find the non-zero join irreducible elements and atoms of M. ii) Is M distributive and complemented? [Image: A Hasse diagram of a lattice M with elements 0, a, b, c, d, 1.]",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "jun23-q8",
+          "questionNumber": "Q.8",
+          "text": "Discuss in brief any two of the following:",
+          "subQuestions": [
+            {
+              "id": "jun23-q8i",
+              "label": "i)",
+              "text": "Partial ordering relation",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "jun23-q8ii",
+              "label": "ii)",
+              "text": "Cosets",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "jun23-q8iii",
+              "label": "iii)",
+              "text": "Disjunctive normal form",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "jun23-q8iv",
+              "label": "iv)",
+              "text": "Pigeonhole principle",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "nov22-q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "nov22-q1a",
+              "label": "a)",
+              "text": "Show that the relation 'R' defined by (a, b)R(c, d) if a + d = b + c is an equivalence relation.",
+              "latex": "(a, b)R(c, d) \\text{ if } a + d = b + c",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "nov22-q1b",
+              "label": "b)",
+              "text": "If X = {1, 2, 3, 4} and R = {(x, y)|x < y}. Draw the graph of 'R' and also give its matrix.",
+              "latex": "X = \\{1, 2, 3, 4\\}, R = \\{(x, y) \\mid x < y\\}",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "nov22-q2a",
+              "label": "a)",
+              "text": "Prove that if R is an equivalence relation on a set A, show that R^{-1} is also an equivalence relation on A.",
+              "latex": "R^{-1}",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "nov22-q2b",
+              "label": "b)",
+              "text": "What is Mathematical induction? Use mathematical induction to prove that: 1.1! + 2.2! + ... + n.n! = (n + 1)! - 1 where n is a positive integer.",
+              "latex": "1.1! + 2.2! + \\cdots + n.n! = (n + 1)! - 1",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "nov22-q3a",
+              "label": "a)",
+              "text": "Find the explicit formula for the Fibonacci numbers. Use f_n = f_{n-1} + f_{n-2} as recursive condition and f_0 = 0 and f_1 = 1 as initial condition.",
+              "latex": "f_n = f_{n-1} + f_{n-2}, f_0 = 0, f_1 = 1",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "nov22-q3b",
+              "label": "b)",
+              "text": "Draw the Hasse diagram representing the positive divisors of 36.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "nov22-q4a",
+              "label": "a)",
+              "text": "Prove that the set G = {0, 1, 2, 3, 4, 5, 6} is a finite abelian group of order 7 with respect to multiplication modulo 7 as the composition in G.",
+              "latex": "G = \\{0, 1, 2, 3, 4, 5, 6\\}",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "nov22-q4b",
+              "label": "b)",
+              "text": "State the Lagrange's Theorem with example. Also explain Permutation and Symmetric Group.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "nov22-q5a",
+              "label": "a)",
+              "text": "Find PDNF by constructing its PCNF of (Q ∨ P) ∧ (Q ∨ R) ∧ (~(P ∨ R) ∨ ~Q).",
+              "latex": "(Q \\lor P) \\land (Q \\lor R) \\land (\\sim(P \\lor R) \\lor \\sim Q)",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "nov22-q5b",
+              "label": "b)",
+              "text": "Prove that for any three propositions P, Q, R the compound proposition (P → (Q → R)) → ((P → Q) → (P → R)) is a tautology by laws of logic.",
+              "latex": "(P \\to (Q \\to R)) \\to ((P \\to Q) \\to (P \\to R))",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "nov22-q6a",
+              "label": "a)",
+              "text": "Explain Tautologies, Contradiction and Contingencies with suitable examples.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "nov22-q6b",
+              "label": "b)",
+              "text": "Explain the method of proving theorems by direct, indirect, contradiction and by cases.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "nov22-q7a",
+              "label": "a)",
+              "text": "Give a simple condition on the weights of a graph that will guarantee that there is a unique maximal spanning tree for the graph.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "nov22-q7b",
+              "label": "b)",
+              "text": "Define Isomorphism of graphs. What are the steps followed in discovering the Isomorphism?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "nov22-q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "nov22-q8a",
+              "label": "a)",
+              "text": "Explain Eulerian and Hamiltonian graphs with examples, also draw the graphs of the following: i) Eulerian but not Hamiltonian ii) Hamiltonian but not Eulerian",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "nov22-q8b",
+              "label": "b)",
+              "text": "Prove that the sum of the degree of all the vertices in a graph G is equal to twice the number of edges in G.",
+              "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
