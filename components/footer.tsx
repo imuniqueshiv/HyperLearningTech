@@ -4,7 +4,20 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Mail, Zap, Shield, Users, Bell, Globe } from "lucide-react";
+import {
+  Mail,
+  Zap,
+  Shield,
+  Users,
+  Bell,
+  Globe,
+  BookOpen,
+  Landmark,
+  LayoutDashboard,
+  UserRound,
+  Info,
+  Phone,
+} from "lucide-react";
 import ConciseFooter from "@/components/concise-footer";
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -165,7 +178,7 @@ const AUTH_ROUTES = ["/sign-in", "/sign-up"];
 
 function FullFooter() {
   return (
-    <footer className="relative border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-x-clip">
+    <footer className="relative border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-gradient-to-b dark:from-[#0B132B] dark:to-[#040814] overflow-x-clip">
       {/* Background elements wrapper with overflow-hidden to prevent scroll overflow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Light Mode Bottom Radial Glow */}
@@ -262,19 +275,28 @@ function FullFooter() {
               <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
               <ul className="space-y-3.5">
                 {[
-                  { name: "Subjects", href: "/subjects" },
-                  { name: "Universities", href: "/#Universities" },
-                  { name: "Dashboard", href: "/dashboard" },
-                  { name: "Student Login", href: "/sign-in" },
+                  { name: "Subjects", href: "/subjects", icon: BookOpen },
+                  {
+                    name: "Universities",
+                    href: "/#Universities",
+                    icon: Landmark,
+                  },
+                  {
+                    name: "Dashboard",
+                    href: "/dashboard",
+                    icon: LayoutDashboard,
+                  },
+                  { name: "Student Login", href: "/sign-in", icon: UserRound },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
                       href={item.href}
                       className="group flex w-fit items-center text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
                     >
-                      <span className="mr-3 text-[15px] text-slate-400 dark:text-slate-600 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]">
-                        •
-                      </span>
+                      <item.icon
+                        className="mr-3 h-[18px] w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
+                        strokeWidth={2}
+                      />
                       {item.name}
                     </Link>
                   </li>
@@ -290,19 +312,20 @@ function FullFooter() {
               <div className="mb-5 h-[2px] w-[28px] rounded-full bg-slate-300 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-indigo-400/50" />
               <ul className="space-y-3.5">
                 {[
-                  { name: "About Us", href: "/about" },
-                  { name: "Contact", href: "/contact" },
-                  { name: "Creators", href: "/creators" },
-                  { name: "Privacy Policy", href: "/" },
+                  { name: "About Us", href: "/about", icon: Info },
+                  { name: "Contact", href: "/contact", icon: Phone },
+                  { name: "Creators", href: "/creators", icon: Users },
+                  { name: "Privacy Policy", href: "/", icon: Shield },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
                       href={item.href}
                       className="group flex w-fit items-center text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
                     >
-                      <span className="mr-3 text-[15px] text-slate-400 dark:text-slate-600 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]">
-                        •
-                      </span>
+                      <item.icon
+                        className="mr-3 h-[18px] w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
+                        strokeWidth={2}
+                      />
                       {item.name}
                     </Link>
                   </li>
