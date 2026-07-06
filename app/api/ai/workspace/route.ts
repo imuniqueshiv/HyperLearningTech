@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { GoogleGenAI } from "@google/genai";
 
 import { generateTopicAnswer } from "@/lib/ai/topic-service";
+import { generateFollowupAnswer } from "@/lib/ai/followup-service";
 import { WorkspaceAction } from "@/types/ai";
-import { getPrimaryKey } from "@/lib/ai/key-manager";
 import { trackMetric } from "@/lib/ai/metrics";
 
 interface WorkspaceBody {
@@ -14,6 +13,9 @@ interface WorkspaceBody {
   action?: WorkspaceAction;
   forceRefresh?: boolean;
   question?: string;
+  topic?: string;
+  module?: string;
+  cachedExplanation?: string;
   messages?: Array<{ role: "user" | "assistant"; content: string }>;
 }
 
@@ -28,138 +30,6 @@ const ALLOWED_ACTIONS: WorkspaceAction[] = [
   "FORMULA",
 ];
 
-function detectAction(question: string): WorkspaceAction {
-  const q = question.toLowerCase();
-
-  if (q.includes("5 mark") || q.includes("5mark")) return "ANSWER_5";
-  if (q.includes("7 mark") || q.includes("7mark")) return "ANSWER_7";
-  if (q.includes("10 mark") || q.includes("10mark")) return "ANSWER_5";
-  if (
-    q.includes("revision") ||
-    q.includes("revise") ||
-    q.includes("revision sheet") ||
-    q.includes("quick notes")
-  )
-    return "REVISION";
-  if (q.includes("mcq") || q.includes("multiple choice") || q.includes("quiz"))
-    return "MCQ";
-  if (
-    q.includes("pyq") ||
-    q.includes("previous year") ||
-    q.includes("past question")
-  )
-    return "PYQ";
-  if (q.includes("formula") || q.includes("equation")) return "FORMULA";
-  if (
-    q.includes("notes") ||
-    q.includes("comprehensive") ||
-    q.includes("detailed notes")
-  )
-    return "NOTES";
-  if (
-    q.includes("explain") ||
-    q.includes("what is") ||
-    q.includes("define") ||
-    q.includes("describe")
-  )
-    return "EXPLAIN";
-
-  return "EXPLAIN";
-}
-
-async function generateRelatedTopics(
-  topic: string,
-  subjectCode: string
-): Promise<string[]> {
-  try {
-    const ai = new GoogleGenAI({ apiKey: getPrimaryKey() });
-
-    const prompt = `You are an academic advisor for engineering students.
-Based on the topic "${topic}" for subject "${subjectCode}", suggest 5 related sub-topics a student should study next.
-Return ONLY a JSON array of short topic names. No explanations, no markdown, no extra text.
-Example: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"]`;
-
-    const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash-lite",
-      contents: prompt,
-    });
-
-    const text = response.text?.trim() || "[]";
-
-    try {
-      const parsed = JSON.parse(text);
-      if (Array.isArray(parsed) && parsed.length > 0) return parsed.slice(0, 5);
-    } catch {
-      const match = text.match(/\[[\s\S]*?\]/);
-      if (match) {
-        try {
-          const extracted = JSON.parse(match[0]);
-          if (Array.isArray(extracted)) return extracted.slice(0, 5);
-        } catch {}
-      }
-    }
-
-    return [];
-  } catch (error) {
-    console.error("Failed to generate related topics:", error);
-    return [];
-  }
-}
-
-function buildChatPrompt(
-  question: string,
-  action: WorkspaceAction,
-  topic?: string,
-  moduleTitle?: string,
-  subjectCode?: string,
-  context?: string
-): string {
-  const wordLimits: Record<WorkspaceAction, string> = {
-    EXPLAIN: "HARD LIMIT: 140 words. Count words. Rewrite if over 150.",
-    NOTES: "HARD LIMIT: 200 words. Count words. Rewrite if over 200.",
-    ANSWER_5: "HARD LIMIT: 200 words. Structured 5-mark answer.",
-    ANSWER_7: "HARD LIMIT: 220 words. Structured 7-mark answer.",
-    REVISION: "HARD LIMIT: 80 words. Key points only.",
-    MCQ: "Generate exactly 5 MCQs with 4 options each and answers.",
-    PYQ: "List only 5-7 previous year questions. No explanations.",
-    FORMULA: "HARD LIMIT: 60 words. Formula + brief variable explanation only.",
-  };
-
-  const formatMap: Record<WorkspaceAction, string> = {
-    EXPLAIN: `# [Topic]\n## Concept\n[explanation]\n## Example\n[one example]\n## Exam Tip\n[one tip]`,
-    NOTES: `# [Topic] - Notes\n## Overview\n## Key Concepts\n## Important Points\n## Applications`,
-    ANSWER_5: `# [Topic] - 5 Mark Answer\n## Introduction\n## Main Content\n## Conclusion`,
-    ANSWER_7: `# [Topic] - 7 Mark Answer\n## Introduction\n## Detailed Explanation\n## Applications\n## Conclusion`,
-    REVISION: `# [Topic] - Quick Revision\n## Key Points\n## Formula (if any)\n## Exam Focus`,
-    MCQ: `## Question N\n**Question?**\n- A) \n- B) \n- C) \n- D) \n**Answer:** X)\n**Explanation:** [brief]`,
-    PYQ: `# [Topic] - PYQs\n1. [Year] - [Question]\n2. ...`,
-    FORMULA: `# [Topic] - Formula\n$$formula$$\n**Variables:** ...\n**Use:** ...`,
-  };
-
-  return `You are Hyper AI, an expert engineering professor for RGPV B.Tech students.
-
-Subject: ${subjectCode || "Engineering"}
-${topic ? `Topic: ${topic}` : ""}
-${moduleTitle ? `Module: ${moduleTitle}` : ""}
-Action: ${action}
-
-${context ? `Previous conversation:\n${context}\n` : ""}
-User question: ${question}
-
-${wordLimits[action]}
-
-Use this markdown structure:
-${formatMap[action]}
-
-Rules:
-- Markdown only. Use # headings, - bullets, $$ for math blocks, $ for inline math.
-- Never write introductions like "Welcome" or "Great question".
-- Never say "I am an AI" or mention Gemini.
-- No background history or classifications unless directly asked.
-- Answer ONLY what was asked. Stop immediately after.
-- COUNT your words. If over limit, delete sentences until under limit.`;
-}
-
 export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as WorkspaceBody;
@@ -172,53 +42,58 @@ export async function POST(request: NextRequest) {
     const question = body.question?.trim();
     const messages = body.messages ?? [];
 
-    // Chat/question mode
+    // Follow-up question mode → followup-service (live, no cache)
     if (question) {
-      const ai = new GoogleGenAI({ apiKey: getPrimaryKey() });
-      const startTime = Date.now();
+      const cachedExplanation = body.cachedExplanation?.trim();
+      const topic = body.topic?.trim();
+      const moduleTitle = body.module?.trim();
 
-      const detectedAction = detectAction(question);
+      if (!subjectCode) {
+        return NextResponse.json(
+          { success: false, error: "Subject code is required." },
+          { status: 400 }
+        );
+      }
+      if (!cachedExplanation) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: "Cached explanation is required for follow-up questions.",
+          },
+          { status: 400 }
+        );
+      }
+      if (!topic) {
+        return NextResponse.json(
+          { success: false, error: "Topic is required." },
+          { status: 400 }
+        );
+      }
+      if (!moduleTitle) {
+        return NextResponse.json(
+          { success: false, error: "Module is required." },
+          { status: 400 }
+        );
+      }
 
-      const context = messages
-        .map((m) => `${m.role === "user" ? "User" : "Assistant"}: ${m.content}`)
-        .join("\n");
-
-      const prompt = buildChatPrompt(
-        question,
-        detectedAction,
-        undefined,
-        undefined,
+      const result = await generateFollowupAnswer({
         subjectCode,
-        context
-      );
-
-      const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash-lite",
-        contents: prompt,
-      });
-
-      const answer = response.text?.trim() || "No answer generated.";
-
-      trackMetric("GENERATION_SUCCESS", {
-        subjectCode: subjectCode || "unknown",
-        durationMs: Date.now() - startTime,
-      });
-
-      const relatedTopics = await generateRelatedTopics(
+        module: moduleTitle,
+        topic,
+        cachedExplanation,
         question,
-        subjectCode || "unknown"
-      );
+        messages,
+      });
 
       return NextResponse.json({
         success: true,
-        answer,
-        relatedTopics,
+        answer: result.answer,
         cached: false,
-        action: detectedAction,
+        mode: "followup",
       });
     }
 
-    // Workspace action mode
+    // Topic action mode → topic-service (cached)
     const action = body.action;
 
     if (!branch) {
@@ -266,7 +141,7 @@ export async function POST(request: NextRequest) {
       answer: result.answer,
       cached: result.cached,
       action,
-      relatedTopics: [],
+      mode: "topic",
     });
   } catch (error) {
     console.error("Workspace API Error:", error);
@@ -292,6 +167,7 @@ export async function GET() {
     service: "Hyper AI Workspace",
     status: "healthy",
     supportedActions: ALLOWED_ACTIONS,
+    modes: ["topic", "followup"],
   });
 }
 

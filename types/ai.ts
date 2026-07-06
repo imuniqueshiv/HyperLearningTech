@@ -103,3 +103,40 @@ export interface WorkspaceGenerateResult {
   answer: string;
   cached: boolean;
 }
+
+// =========================
+// Follow-up Chat
+// =========================
+
+export const FOLLOWUP_QUESTION_LIMIT = 3;
+
+export interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface ChatPromptContext {
+  subjectCode: string;
+  subjectName: string;
+  subjectType: SubjectType;
+  module: string;
+  topic: string;
+  cachedExplanation: string;
+  messages: ChatMessage[];
+  question: string;
+}
+
+export interface FollowupRequest {
+  subjectCode: string;
+  module: string;
+  topic: string;
+  cachedExplanation: string;
+  question: string;
+  messages?: ChatMessage[];
+}
+
+export interface FollowupResponse {
+  success: boolean;
+  answer?: string;
+  error?: string;
+}

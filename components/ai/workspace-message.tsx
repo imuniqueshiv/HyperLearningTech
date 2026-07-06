@@ -2,6 +2,7 @@
 
 "use client";
 
+import { useSyncExternalStore } from "react";
 import { User, Sparkles } from "lucide-react";
 import AnswerViewer from "@/components/ai/answer-viewer";
 
@@ -9,6 +10,35 @@ interface WorkspaceMessageProps {
   answer: string;
   role: "user" | "assistant";
   timestamp?: Date;
+}
+
+function formatTime(timestamp: Date): string {
+  return timestamp.toLocaleTimeString(undefined, {
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
+
+function useClientTimeLabel(timestamp: Date): string | null {
+  return useSyncExternalStore(
+    () => () => {},
+    () => formatTime(timestamp),
+    () => null
+  );
+}
+
+function MessageTimestamp({ timestamp }: { timestamp: Date }) {
+  const timeLabel = useClientTimeLabel(timestamp);
+
+  if (!timeLabel) {
+    return null;
+  }
+
+  return (
+    <p className="mt-1 text-right text-[10px] text-muted-foreground">
+      {timeLabel}
+    </p>
+  );
 }
 
 export default function WorkspaceMessage({
@@ -46,11 +76,7 @@ export default function WorkspaceMessage({
         ) : (
           <AnswerViewer answer={answer} />
         )}
-        {timestamp && (
-          <p className="mt-1 text-right text-[10px] text-muted-foreground">
-            {timestamp.toLocaleTimeString()}
-          </p>
-        )}
+        {timestamp ? <MessageTimestamp timestamp={timestamp} /> : null}
       </div>
     </div>
   );
