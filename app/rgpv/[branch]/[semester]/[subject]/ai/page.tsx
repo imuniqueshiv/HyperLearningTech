@@ -130,6 +130,7 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
           <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
             <div className="min-h-125 rounded-[2rem] border border-border bg-card p-4 shadow-sm md:p-6">
               <WorkspaceChatLoader
+                key={topicId ?? "general"}
                 subjectCode={subject.toUpperCase()}
                 branch={branch}
                 semester={semester}
