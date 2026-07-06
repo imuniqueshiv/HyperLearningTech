@@ -1,6 +1,7 @@
 import { BrainCircuit } from "lucide-react";
-import WorkspaceChat from "@/components/ai/workspace-chat";
+import WorkspaceChatLoader from "@/components/ai/workspace-chat-loader";
 import { getTopicById } from "@/lib/content";
+import { generateTopicAnswer } from "@/lib/ai/topic-service";
 
 interface AIPageProps {
   params: Promise<{
@@ -14,9 +15,16 @@ interface AIPageProps {
   }>;
 }
 
+function getFollowupPrompts(topicTitle: string) {
+  return [
+    `Why is ${topicTitle} important?`,
+    "Give one practical example.",
+    `What are the disadvantages of ${topicTitle}?`,
+  ];
+}
+
 export default async function AIPage({ params, searchParams }: AIPageProps) {
   const { branch, semester, subject } = await params;
-
   const { topicId } = await searchParams;
 
   const topicData = topicId
@@ -24,86 +32,44 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
     : null;
 
   const topicTitle = topicData?.topic.title ?? "";
-
   const moduleTitle = topicData?.module.title ?? "";
-
   const isTopicMode = topicData !== null;
 
-  // Suggested prompts based on topic
-  const getSuggestedPrompts = (mainTopic: string) => {
-    if (!mainTopic)
-      return [
-        "Explain the concept",
-        "Generate notes",
-        "Create revision sheet",
-        "Generate exam questions",
-        "Explain with examples",
-      ];
+  let cachedExplanation: string | undefined;
+  let explanationCached: boolean | undefined;
 
-    return [
-      `Explain ${mainTopic} in detail`,
-      `Generate 5 mark answer on ${mainTopic}`,
-      `Generate 10 mark answer on ${mainTopic}`,
-      `Generate PYQs on ${mainTopic}`,
-      `Create revision sheet for ${mainTopic}`,
-    ];
-  };
+  if (isTopicMode && topicId) {
+    try {
+      const result = await generateTopicAnswer({
+        branch,
+        semester,
+        topicId,
+        subjectCode: subject.toUpperCase(),
+        action: "EXPLAIN",
+      });
+      cachedExplanation = result.answer;
+      explanationCached = result.cached;
+    } catch (error) {
+      console.error("Failed to load topic explanation:", error);
+    }
+  }
 
-  const suggestedPrompts = isTopicMode
-    ? getSuggestedPrompts(topicTitle)
-    : [
-        "Explain the concept",
-        "Generate notes",
-        "Create revision sheet",
-        "Generate exam questions",
-        "Explain with examples",
-      ];
+  const followupPrompts = isTopicMode
+    ? getFollowupPrompts(topicTitle).map((prompt) => ({ prompt }))
+    : [];
 
-  // Initial prompts for WorkspaceChat
-  const initialPrompts = isTopicMode
-    ? [
-        {
-          prompt: `Explain ${topicTitle} in detail`,
-          action: "explain",
-          topic: topicTitle,
-          module: moduleTitle,
-        },
-        {
-          prompt: `Generate 5 mark answer on ${topicTitle}`,
-          action: "generate",
-          topic: topicTitle,
-          module: moduleTitle,
-        },
-        {
-          prompt: `Create revision sheet for ${topicTitle}`,
-          action: "summarize",
-          topic: topicTitle,
-          module: moduleTitle,
-        },
-      ]
-    : [
-        {
-          prompt: "Explain the concept",
-          action: "explain",
-        },
-        {
-          prompt: "Generate notes",
-          action: "generate",
-        },
-        {
-          prompt: "Create revision sheet",
-          action: "summarize",
-        },
-      ];
+  const generalPrompts = [
+    { prompt: "Explain the concept", action: "explain" },
+    { prompt: "Generate notes", action: "generate" },
+    { prompt: "Create revision sheet", action: "summarize" },
+  ];
 
-  // Build welcome message with topic context
   const welcomeMessage = isTopicMode
-    ? `Ask me anything about **${topicTitle}**. I can help with explanations, examples, exam preparation, and suggest related topics based on your learning needs.`
-    : "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.";
+    ? `Your **${topicTitle}** explanation is ready below. Ask up to 3 follow-up questions — examples, comparisons, exam tips, and clarifications.`
+    : "Select a topic from the syllabus to get a cached explanation and follow-up chat.";
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 -z-10">
           <div className="absolute left-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
@@ -133,8 +99,9 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
                 </p>
 
                 <p className="mt-6 max-w-3xl text-sm text-muted-foreground md:text-base">
-                  Learn this topic with AI-generated explanations, notes, PYQ
-                  analysis, revision sheets, and exam-focused answers.
+                  One cached explanation for every student. Ask follow-up
+                  questions live — only your chat uses Gemini, not the topic
+                  itself.
                 </p>
               </>
             ) : (
@@ -149,9 +116,8 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
                 </p>
 
                 <p className="mt-6 max-w-3xl text-sm text-muted-foreground md:text-base">
-                  Ask questions, generate notes, create exam answers, understand
-                  concepts, and prepare smarter with AI-powered academic
-                  assistance.
+                  Pick a topic from the syllabus to open its AI workspace with
+                  cached explanations and live follow-up chat.
                 </p>
               </>
             )}
@@ -159,40 +125,48 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
         </div>
       </section>
 
-      {/* AI Workspace */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
-            {/* Main Chat Area */}
             <div className="min-h-125 rounded-[2rem] border border-border bg-card p-4 shadow-sm md:p-6">
-              <WorkspaceChat
+              <WorkspaceChatLoader
                 subjectCode={subject.toUpperCase()}
-                initialPrompts={initialPrompts}
+                branch={branch}
+                semester={semester}
+                topicId={topicId}
+                topicTitle={topicTitle || undefined}
+                moduleTitle={moduleTitle || undefined}
+                cachedExplanation={cachedExplanation}
+                explanationCached={explanationCached}
+                initialPrompts={isTopicMode ? followupPrompts : generalPrompts}
                 welcomeMessage={welcomeMessage}
                 apiEndpoint="/api/ai/workspace"
-                topicId={topicId}
               />
             </div>
 
-            {/* Sidebar - Suggested Prompts */}
-            <div className="space-y-6">
-              <div className="rounded-3xl border border-border bg-card p-5 md:p-6">
-                <h3 className="text-sm font-bold text-foreground md:text-base">
-                  Suggested Prompts
-                </h3>
-
-                <div className="mt-4 space-y-2.5">
-                  {suggestedPrompts.map((prompt) => (
-                    <button
-                      key={prompt}
-                      className="w-full rounded-xl border border-border bg-background px-3 py-2.5 text-left text-xs text-muted-foreground transition hover:border-blue-500/20 hover:bg-blue-500/5 hover:text-foreground md:text-sm"
-                    >
-                      {prompt}
-                    </button>
-                  ))}
+            {isTopicMode && (
+              <div className="space-y-6">
+                <div className="rounded-3xl border border-border bg-card p-5 md:p-6">
+                  <h3 className="text-sm font-bold text-foreground md:text-base">
+                    Follow-up Ideas
+                  </h3>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    The explanation above is cached once. Each question below
+                    uses a live Gemini call.
+                  </p>
+                  <div className="mt-4 space-y-2.5">
+                    {getFollowupPrompts(topicTitle).map((prompt) => (
+                      <p
+                        key={prompt}
+                        className="rounded-xl border border-border bg-background px-3 py-2.5 text-xs text-muted-foreground md:text-sm"
+                      >
+                        {prompt}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>

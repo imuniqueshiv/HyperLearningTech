@@ -4,8 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Loader2, Sparkles, AlertCircle } from "lucide-react";
 import WorkspaceMessage from "@/components/ai/workspace-message";
+import ContinueExternalAI from "@/components/ai/continue-external-ai";
 import { API_ENDPOINTS } from "@/lib/api-endpoints";
-import type { WorkspaceResponse } from "@/types/ai";
+import { FOLLOWUP_QUESTION_LIMIT, type WorkspaceResponse } from "@/types/ai";
 
 interface Message {
   id: string;
@@ -14,8 +15,15 @@ interface Message {
   timestamp: Date;
 }
 
-interface WorkspaceChatProps {
+export interface WorkspaceChatProps {
   subjectCode: string;
+  branch?: string;
+  semester?: string;
+  topicId?: string;
+  topicTitle?: string;
+  moduleTitle?: string;
+  cachedExplanation?: string;
+  explanationCached?: boolean;
   initialPrompts?: Array<{
     prompt: string;
     topicId?: string;
@@ -24,44 +32,71 @@ interface WorkspaceChatProps {
   welcomeMessage?: string;
   inputPlaceholder?: string;
   apiEndpoint?: string;
-  topicId?: string;
+  followupLimit?: number;
 }
 
 export default function WorkspaceChat({
   subjectCode,
+  branch,
+  semester,
+  topicId,
+  topicTitle,
+  moduleTitle,
+  cachedExplanation,
+  explanationCached,
   initialPrompts = [],
   welcomeMessage = "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.",
   inputPlaceholder = "Type your question here...",
   apiEndpoint = API_ENDPOINTS.AI_WORKSPACE,
-  topicId,
+  followupLimit = FOLLOWUP_QUESTION_LIMIT,
 }: WorkspaceChatProps) {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const isFollowupMode = Boolean(
+    cachedExplanation && topicTitle && moduleTitle
+  );
+
+  const [messages, setMessages] = useState<Message[]>(() => {
+    if (!cachedExplanation) return [];
+
+    return [
+      {
+        id: "initial-cached-explanation",
+        role: "assistant",
+        content: cachedExplanation,
+        timestamp: new Date(),
+      },
+    ];
+  });
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [relatedTopics, setRelatedTopics] = useState<string[]>([]);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
 
-  // Auto-scroll to bottom
+  const followUpCount = messages.filter((m) => m.role === "user").length;
+  const limitReached = isFollowupMode && followUpCount >= followupLimit;
+  const messageCount = messages.length;
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messageCount, limitReached, loading]);
 
-  // Focus input on mount
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
-  // Send message to API
   const sendMessage = async (content: string) => {
-    if (!content.trim()) return;
+    if (!content.trim() || limitReached) return;
+
+    if (isFollowupMode && !cachedExplanation) {
+      setError("Topic explanation is not available yet.");
+      return;
+    }
 
     const userMessage: Message = {
       id: crypto.randomUUID(),
@@ -69,6 +104,8 @@ export default function WorkspaceChat({
       content: content.trim(),
       timestamp: new Date(),
     };
+
+    const priorMessages = messages;
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
@@ -84,20 +121,36 @@ export default function WorkspaceChat({
       const abortController = new AbortController();
       abortControllerRef.current = abortController;
 
+      const conversationHistory = priorMessages.map((m) => ({
+        role: m.role,
+        content: m.content,
+      }));
+
       const response = await fetch(apiEndpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          question: content.trim(),
-          subjectCode,
-          topicId,
-          messages: messages.map((m) => ({
-            role: m.role,
-            content: m.content,
-          })),
-        }),
+        body: JSON.stringify(
+          isFollowupMode
+            ? {
+                question: content.trim(),
+                subjectCode,
+                branch,
+                semester,
+                topicId,
+                topic: topicTitle,
+                module: moduleTitle,
+                cachedExplanation,
+                messages: conversationHistory,
+              }
+            : {
+                question: content.trim(),
+                subjectCode,
+                topicId,
+                messages: conversationHistory,
+              }
+        ),
         signal: abortController.signal,
       });
 
@@ -116,34 +169,25 @@ export default function WorkspaceChat({
       };
 
       setMessages((prev) => [...prev, aiMessage]);
-
-      // Set related topics from AI
-      if (data.relatedTopics && data.relatedTopics.length > 0) {
-        setRelatedTopics(data.relatedTopics);
-      }
     } catch (err: unknown) {
       if (err instanceof Error && err.name === "AbortError") {
-        console.log("Fetch aborted");
         return;
       }
+
       const isDemoMode =
         err instanceof Error && err.message.includes("Failed to fetch");
 
-      if (isDemoMode) {
+      if (isDemoMode && !isFollowupMode) {
         const demoMessage: Message = {
           id: crypto.randomUUID(),
           role: "assistant",
-          content: `**Demo Mode Fallback Answer:**\n\nI see you're asking about **${content}**. Since the backend API is currently unavailable (missing environment variables), I am providing a simulated response.\n\nIn a production environment, I would analyze your question against the ${subjectCode.toUpperCase()} syllabus and provide a detailed, accurate explanation with examples.\n\n> Note: Please configure the required environment variables to activate my full capabilities.`,
+          content: `**Demo Mode Fallback Answer:**\n\nI see you're asking about **${content}**. Since the backend API is currently unavailable (missing environment variables), I am providing a simulated response.\n\nIn a production environment, I would analyze your question against the ${subjectCode.toUpperCase()} syllabus and provide a detailed, accurate explanation with examples.`,
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, demoMessage]);
-        setRelatedTopics([
-          "Syllabus Mapping",
-          "Exam Preparation",
-          "AI Features",
-        ]);
         setError(null);
       } else {
+        setMessages((prev) => prev.filter((m) => m.id !== userMessage.id));
         setError(err instanceof Error ? err.message : "Something went wrong");
       }
     } finally {
@@ -152,26 +196,9 @@ export default function WorkspaceChat({
     }
   };
 
-  //   const handlePromptClick = (prompt: string, topic?: string, module?: string, action?: string) => {
-  //     // Build the full prompt based on action
-  //     let fullPrompt = prompt;
-
-  //     if (action === "explain" && topic) {
-  //       fullPrompt = `Explain ${topic} in detail`;
-  //     } else if (action === "generate" && topic) {
-  //       fullPrompt = `Generate 5 mark answer on ${topic}`;
-  //     } else if (action === "summarize" && topic) {
-  //       fullPrompt = `Create revision sheet for ${topic}`;
-  //     } else if (prompt) {
-  //       fullPrompt = prompt;
-  //     }
-
-  //     sendMessage(fullPrompt);
-  //   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (input.trim() && !loading) {
+    if (input.trim() && !loading && !limitReached) {
       sendMessage(input);
     }
   };
@@ -183,24 +210,66 @@ export default function WorkspaceChat({
     }
   };
 
+  const followupPlaceholder = isFollowupMode
+    ? `Ask a follow-up about ${topicTitle}...`
+    : inputPlaceholder;
+
+  const conversationForExport = messages.map((m) => ({
+    role: m.role,
+    content: m.content,
+  }));
+
+  const progressPercent = Math.min((followUpCount / followupLimit) * 100, 100);
+
+  const followupStatusLabel = limitReached
+    ? `${followupLimit} / ${followupLimit} Completed`
+    : `${followUpCount} / ${followupLimit}`;
+
   return (
     <div className="flex h-full flex-col rounded-2xl border border-border bg-card/50 backdrop-blur-xl">
-      {/* Chat Header */}
-      <div className="flex items-center gap-3 border-b border-border px-6 py-4">
+      <div className="flex items-center gap-3 border-b border-border px-4 py-3 sm:px-6 sm:py-4">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10">
           <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
         </div>
-        <div>
+        <div className="flex-1">
           <h3 className="font-semibold text-foreground">Hyper AI Workspace</h3>
           <p className="text-xs text-muted-foreground">
-            Ask questions about {subjectCode.toUpperCase()}
+            {isFollowupMode
+              ? topicTitle
+              : `Ask questions about ${subjectCode.toUpperCase()}`}
           </p>
         </div>
       </div>
 
-      {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4">
-        {messages.length === 0 ? (
+      {isFollowupMode && (
+        <div className="border-b border-border px-4 py-3 sm:px-6">
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xs font-medium text-foreground">
+              Follow-up Questions
+            </p>
+            <p
+              className={`shrink-0 text-xs font-medium ${
+                limitReached
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-muted-foreground"
+              }`}
+            >
+              {followupStatusLabel}
+            </p>
+          </div>
+          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted sm:h-2">
+            <motion.div
+              className="h-full rounded-full bg-blue-600 dark:bg-blue-500"
+              initial={false}
+              animate={{ width: `${progressPercent}%` }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
+            />
+          </div>
+        </div>
+      )}
+
+      <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 space-y-4">
+        {!isFollowupMode && messages.length === 0 ? (
           <div className="flex h-full flex-col items-center justify-center text-center">
             <div className="mb-4 rounded-full bg-blue-500/10 p-4">
               <Sparkles className="h-8 w-8 text-blue-600 dark:text-blue-400" />
@@ -236,59 +305,70 @@ export default function WorkspaceChat({
             )}
           </div>
         ) : (
-          <AnimatePresence initial={false}>
-            {messages.map((message, index) => (
-              <motion.div
-                key={message.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.3,
-                  delay: index === messages.length - 1 ? 0 : 0.05,
-                }}
-              >
-                <WorkspaceMessage
-                  answer={message.content}
-                  role={message.role}
-                  timestamp={message.timestamp}
-                />
-              </motion.div>
-            ))}
-            {loading && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="flex items-start gap-3"
-              >
-                <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-500/10">
-                  <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                </div>
-                <div className="rounded-2xl rounded-tl-md border border-border bg-muted/30 px-4 py-3">
-                  <Loader2 className="h-5 w-5 animate-spin text-blue-600 dark:text-blue-400" />
-                </div>
-              </motion.div>
+          <>
+            {isFollowupMode && explanationCached !== undefined && (
+              <p className="text-center text-[10px] text-muted-foreground">
+                {explanationCached
+                  ? "Topic explanation loaded from cache"
+                  : "Topic explanation freshly generated"}
+              </p>
             )}
-          </AnimatePresence>
-        )}
 
-        {/* Related Topics - Display when available */}
-        {relatedTopics.length > 0 && messages.length > 0 && (
-          <div className="mt-6 rounded-2xl border border-border bg-muted/30 p-4">
-            <p className="text-xs font-medium text-muted-foreground">
-              Related Topics to Explore:
-            </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {relatedTopics.map((topicName, index) => (
-                <button
-                  key={index}
-                  onClick={() => sendMessage(`Explain ${topicName} in detail`)}
-                  className="rounded-full border border-border bg-background px-3 py-1.5 text-xs text-foreground transition hover:border-blue-500/30 hover:bg-blue-500/5"
+            <AnimatePresence initial={false}>
+              {messages.map((message, index) => (
+                <motion.div
+                  key={message.id}
+                  initial={false}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: index === messages.length - 1 ? 0 : 0.05,
+                  }}
                 >
-                  {topicName}
-                </button>
+                  <WorkspaceMessage
+                    answer={message.content}
+                    role={message.role}
+                    timestamp={message.timestamp}
+                  />
+                </motion.div>
               ))}
-            </div>
-          </div>
+              {loading && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="flex items-start gap-3"
+                >
+                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-500/10">
+                    <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div className="rounded-2xl rounded-tl-md border border-border bg-muted/30 px-4 py-3">
+                    <Loader2 className="h-5 w-5 animate-spin text-blue-600 dark:text-blue-400" />
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            {isFollowupMode && !limitReached && initialPrompts.length > 0 && (
+              <div className="rounded-2xl border border-border bg-muted/20 p-3 sm:p-4">
+                <p className="text-xs font-medium text-muted-foreground">
+                  Suggested follow-ups:
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {initialPrompts.map((item, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={() => sendMessage(item.prompt)}
+                      disabled={loading || limitReached}
+                      className="rounded-full border border-border bg-background px-3 py-1.5 text-xs text-foreground transition hover:border-blue-500/30 hover:bg-blue-500/5 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      {item.prompt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
         )}
 
         {error && (
@@ -301,39 +381,55 @@ export default function WorkspaceChat({
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input Area */}
-      <div className="border-t border-border p-4 md:p-6">
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <div className="relative flex-1">
-            <label htmlFor="chat-input" className="sr-only">
-              Type your question here
-            </label>
-            <textarea
-              id="chat-input"
-              ref={inputRef}
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder={inputPlaceholder}
-              rows={1}
-              className="w-full resize-none rounded-xl border border-border bg-background px-4 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-50"
-              disabled={loading}
-            />
-            <button
-              type="submit"
-              disabled={!input.trim() || loading}
-              className="absolute bottom-2 right-2 rounded-lg bg-blue-600 p-2 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
-              aria-label="Send message"
-            >
-              <Send className="h-4 w-4" aria-hidden="true" />
-            </button>
-          </div>
-        </form>
+      <div className="border-t border-border p-3 sm:p-4 md:p-6">
+        {limitReached && cachedExplanation ? (
+          <ContinueExternalAI
+            subjectCode={subjectCode}
+            topic={topicTitle!}
+            module={moduleTitle!}
+            cachedExplanation={cachedExplanation}
+            messages={conversationForExport}
+          />
+        ) : !isFollowupMode ? (
+          <p className="text-center text-sm text-muted-foreground">
+            Select a topic from the syllabus to start follow-up chat.
+          </p>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex gap-2">
+            <div className="relative flex-1">
+              <label htmlFor="chat-input" className="sr-only">
+                Type your question here
+              </label>
+              <textarea
+                id="chat-input"
+                ref={inputRef}
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder={followupPlaceholder}
+                rows={1}
+                className="w-full resize-none rounded-xl border border-border bg-background px-3 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-50 sm:px-4"
+                disabled={loading || !cachedExplanation}
+              />
+              <button
+                type="submit"
+                disabled={!input.trim() || loading || !cachedExplanation}
+                className="absolute bottom-2 right-2 rounded-lg bg-blue-600 p-2 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                aria-label="Send message"
+              >
+                <Send className="h-4 w-4" aria-hidden="true" />
+              </button>
+            </div>
+          </form>
+        )}
 
-        <p className="mt-2 text-center text-xs text-muted-foreground">
-          Hyper AI may generate educational content. Please verify important
-          information.
-        </p>
+        {!limitReached && (
+          <p className="mt-2 text-center text-xs text-muted-foreground">
+            {isFollowupMode
+              ? "Follow-up answers are live and not cached."
+              : "Hyper AI may generate educational content. Please verify important information."}
+          </p>
+        )}
       </div>
     </div>
   );

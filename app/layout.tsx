@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -108,7 +109,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className="flex min-h-[100dvh] flex-col overflow-x-hidden">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.classList.remove("light","dark");document.documentElement.classList.add(t);document.documentElement.style.colorScheme=t}catch(e){document.documentElement.classList.add("dark")}})();`,
+          }}
+        />
+      </head>
+      <body
+        className="flex min-h-[100dvh] flex-col overflow-x-hidden"
+        suppressHydrationWarning
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -126,6 +137,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <Toaster richColors closeButton position="top-center" offset={72} />
         </ThemeProvider>
       </body>
     </html>

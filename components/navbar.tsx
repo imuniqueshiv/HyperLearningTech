@@ -15,7 +15,7 @@ import {
   Search,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/components/theme-provider";
 import { useRouter, usePathname } from "next/navigation";
 import { universities } from "../features/landing/universities";
 import { toast } from "sonner";
