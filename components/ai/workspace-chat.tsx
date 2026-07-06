@@ -43,16 +43,26 @@ export default function WorkspaceChat({
   topicTitle,
   moduleTitle,
   cachedExplanation,
-  explanationCached,
+  explanationCached: initialExplanationCached,
   initialPrompts = [],
   welcomeMessage = "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.",
   inputPlaceholder = "Type your question here...",
   apiEndpoint = API_ENDPOINTS.AI_WORKSPACE,
   followupLimit = FOLLOWUP_QUESTION_LIMIT,
 }: WorkspaceChatProps) {
-  const isFollowupMode = Boolean(
-    cachedExplanation && topicTitle && moduleTitle
+  const isTopicContextReady = Boolean(
+    topicId && branch && semester && topicTitle && moduleTitle
   );
+
+  const [topicExplanation, setTopicExplanation] = useState(
+    cachedExplanation ?? ""
+  );
+  const [explanationCached, setExplanationCached] = useState(
+    initialExplanationCached
+  );
+  const [explanationLoading, setExplanationLoading] = useState(false);
+
+  const isFollowupMode = isTopicContextReady && Boolean(topicExplanation);
 
   const [messages, setMessages] = useState<Message[]>(() => {
     if (!cachedExplanation) return [];
@@ -74,8 +84,16 @@ export default function WorkspaceChat({
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
 
+  const activeExplanation =
+    topicExplanation ||
+    messages.find((m) => m.id === "initial-cached-explanation")?.content ||
+    "";
+
   const followUpCount = messages.filter((m) => m.role === "user").length;
-  const limitReached = isFollowupMode && followUpCount >= followupLimit;
+  const limitReached =
+    isTopicContextReady &&
+    followUpCount >= followupLimit &&
+    !explanationLoading;
   const messageCount = messages.length;
 
   const scrollToBottom = () => {
@@ -90,11 +108,92 @@ export default function WorkspaceChat({
     inputRef.current?.focus();
   }, []);
 
+  const explanationRequestedRef = useRef(false);
+
+  useEffect(() => {
+    if (
+      !isTopicContextReady ||
+      topicExplanation ||
+      cachedExplanation ||
+      explanationRequestedRef.current
+    ) {
+      return;
+    }
+
+    explanationRequestedRef.current = true;
+    let cancelled = false;
+
+    const loadExplanation = async () => {
+      setExplanationLoading(true);
+      setError(null);
+
+      try {
+        const response = await fetch(apiEndpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            branch,
+            semester,
+            topicId,
+            subjectCode,
+            action: "EXPLAIN",
+          }),
+        });
+
+        const data = (await response.json()) as WorkspaceResponse;
+
+        if (cancelled) return;
+
+        if (!response.ok || !data.answer) {
+          throw new Error(data.error || "Failed to load topic explanation.");
+        }
+
+        setTopicExplanation(data.answer);
+        setExplanationCached(data.cached);
+        setMessages([
+          {
+            id: "initial-cached-explanation",
+            role: "assistant",
+            content: data.answer,
+            timestamp: new Date(),
+          },
+        ]);
+      } catch (err: unknown) {
+        if (!cancelled) {
+          setError(
+            err instanceof Error
+              ? err.message
+              : "Failed to load topic explanation."
+          );
+        }
+      } finally {
+        if (!cancelled) {
+          setExplanationLoading(false);
+        }
+      }
+    };
+
+    void loadExplanation();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    apiEndpoint,
+    branch,
+    cachedExplanation,
+    isTopicContextReady,
+    semester,
+    subjectCode,
+    topicExplanation,
+    topicId,
+  ]);
+
   const sendMessage = async (content: string) => {
     if (!content.trim() || limitReached) return;
 
-    if (isFollowupMode && !cachedExplanation) {
-      setError("Topic explanation is not available yet.");
+    if (isTopicContextReady && !activeExplanation) {
+      setError("Topic explanation is still loading. Please wait.");
       return;
     }
 
@@ -132,7 +231,7 @@ export default function WorkspaceChat({
           "Content-Type": "application/json",
         },
         body: JSON.stringify(
-          isFollowupMode
+          isTopicContextReady
             ? {
                 question: content.trim(),
                 subjectCode,
@@ -141,7 +240,6 @@ export default function WorkspaceChat({
                 topicId,
                 topic: topicTitle,
                 module: moduleTitle,
-                cachedExplanation,
                 messages: conversationHistory,
               }
             : {
@@ -241,7 +339,7 @@ export default function WorkspaceChat({
         </div>
       </div>
 
-      {isFollowupMode && (
+      {isTopicContextReady && (
         <div className="border-b border-border px-4 py-3 sm:px-6">
           <div className="flex items-center justify-between gap-2">
             <p className="text-xs font-medium text-foreground">
@@ -269,7 +367,7 @@ export default function WorkspaceChat({
       )}
 
       <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 space-y-4">
-        {!isFollowupMode && messages.length === 0 ? (
+        {!isTopicContextReady && messages.length === 0 ? (
           <div className="flex h-full flex-col items-center justify-center text-center">
             <div className="mb-4 rounded-full bg-blue-500/10 p-4">
               <Sparkles className="h-8 w-8 text-blue-600 dark:text-blue-400" />
@@ -306,12 +404,20 @@ export default function WorkspaceChat({
           </div>
         ) : (
           <>
-            {isFollowupMode && explanationCached !== undefined && (
+            {isTopicContextReady && explanationCached !== undefined && (
               <p className="text-center text-[10px] text-muted-foreground">
-                {explanationCached
-                  ? "Topic explanation loaded from cache"
-                  : "Topic explanation freshly generated"}
+                {explanationLoading
+                  ? "Loading topic explanation..."
+                  : explanationCached
+                    ? "Topic explanation loaded from cache"
+                    : "Topic explanation freshly generated"}
               </p>
+            )}
+
+            {explanationLoading && messages.length === 0 && (
+              <div className="flex items-center justify-center py-8">
+                <Loader2 className="h-6 w-6 animate-spin text-blue-600 dark:text-blue-400" />
+              </div>
             )}
 
             <AnimatePresence initial={false}>
@@ -348,26 +454,29 @@ export default function WorkspaceChat({
               )}
             </AnimatePresence>
 
-            {isFollowupMode && !limitReached && initialPrompts.length > 0 && (
-              <div className="rounded-2xl border border-border bg-muted/20 p-3 sm:p-4">
-                <p className="text-xs font-medium text-muted-foreground">
-                  Suggested follow-ups:
-                </p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {initialPrompts.map((item, index) => (
-                    <button
-                      key={index}
-                      type="button"
-                      onClick={() => sendMessage(item.prompt)}
-                      disabled={loading || limitReached}
-                      className="rounded-full border border-border bg-background px-3 py-1.5 text-xs text-foreground transition hover:border-blue-500/30 hover:bg-blue-500/5 disabled:cursor-not-allowed disabled:opacity-50"
-                    >
-                      {item.prompt}
-                    </button>
-                  ))}
+            {isFollowupMode &&
+              !limitReached &&
+              !explanationLoading &&
+              initialPrompts.length > 0 && (
+                <div className="rounded-2xl border border-border bg-muted/20 p-3 sm:p-4">
+                  <p className="text-xs font-medium text-muted-foreground">
+                    Suggested follow-ups:
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {initialPrompts.map((item, index) => (
+                      <button
+                        key={index}
+                        type="button"
+                        onClick={() => sendMessage(item.prompt)}
+                        disabled={loading || limitReached}
+                        className="rounded-full border border-border bg-background px-3 py-1.5 text-xs text-foreground transition hover:border-blue-500/30 hover:bg-blue-500/5 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
+                        {item.prompt}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
           </>
         )}
 
@@ -382,17 +491,21 @@ export default function WorkspaceChat({
       </div>
 
       <div className="border-t border-border p-3 sm:p-4 md:p-6">
-        {limitReached && cachedExplanation ? (
+        {limitReached && activeExplanation ? (
           <ContinueExternalAI
             subjectCode={subjectCode}
             topic={topicTitle!}
             module={moduleTitle!}
-            cachedExplanation={cachedExplanation}
+            cachedExplanation={activeExplanation}
             messages={conversationForExport}
           />
-        ) : !isFollowupMode ? (
+        ) : !isTopicContextReady ? (
           <p className="text-center text-sm text-muted-foreground">
             Select a topic from the syllabus to start follow-up chat.
+          </p>
+        ) : explanationLoading ? (
+          <p className="text-center text-sm text-muted-foreground">
+            Loading topic explanation...
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="flex gap-2">
@@ -409,11 +522,16 @@ export default function WorkspaceChat({
                 placeholder={followupPlaceholder}
                 rows={1}
                 className="w-full resize-none rounded-xl border border-border bg-background px-3 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-50 sm:px-4"
-                disabled={loading || !cachedExplanation}
+                disabled={loading || explanationLoading || !activeExplanation}
               />
               <button
                 type="submit"
-                disabled={!input.trim() || loading || !cachedExplanation}
+                disabled={
+                  !input.trim() ||
+                  loading ||
+                  explanationLoading ||
+                  !activeExplanation
+                }
                 className="absolute bottom-2 right-2 rounded-lg bg-blue-600 p-2 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
                 aria-label="Send message"
               >
