@@ -3,7 +3,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Mail, Zap, Shield, Users, Bell, Globe } from "lucide-react";
+import ConciseFooter from "@/components/concise-footer";
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -159,7 +161,9 @@ const SocialDropdown = ({
   );
 };
 
-export default function Footer() {
+const AUTH_ROUTES = ["/sign-in", "/sign-up"];
+
+function FullFooter() {
   return (
     <footer className="relative border-t border-[#D8E2F0] dark:border-white/[0.04] bg-[#F5F7FF] dark:bg-[#020617] overflow-x-clip">
       {/* Background elements wrapper with overflow-hidden to prevent scroll overflow */}
@@ -456,4 +460,18 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
+
+export default function Footer() {
+  const pathname = usePathname();
+
+  if (AUTH_ROUTES.includes(pathname)) {
+    return null;
+  }
+
+  if (pathname === "/") {
+    return <FullFooter />;
+  }
+
+  return <ConciseFooter />;
 }
