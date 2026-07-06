@@ -10,8 +10,8 @@ import {
   Moon,
   House,
   GraduationCap,
-  MessageSquare,
-  Info,
+  Mail,
+  BookOpen,
   Search,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,14 +32,14 @@ const navLinks = [
     icon: GraduationCap,
   },
   {
-    label: "About",
-    href: "/about",
-    icon: Info,
-  },
-  {
     label: "Contact",
     href: "/#Contact",
-    icon: MessageSquare,
+    icon: Mail,
+  },
+  {
+    label: "About",
+    href: "/about",
+    icon: BookOpen,
   },
 ];
 
@@ -168,7 +168,7 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 relative overflow-hidden ${
         scrolled
-          ? "bg-[#091A40]/85 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#091A40]/70"
+          ? "bg-[#0D33A6]/85 dark:bg-[#0D33A6]/75 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#0D33A6]/70 dark:supports-[backdrop-filter]:bg-[#0D33A6]/50"
           : "bg-[linear-gradient(90deg,#0E1736_0%,#081E6E_25%,#0D33A6_50%,#1153C4_75%,#006BDE_100%)]"
       }`}
     >
@@ -299,15 +299,19 @@ export default function Navbar() {
                     className="group relative flex flex-col items-center justify-center gap-1.5 outline-none"
                   >
                     <Icon
-                      className={`transition-colors duration-200 ${
+                      className={`transition-all duration-300 ${
+                        link.label === "Contact"
+                          ? "h-[19px] w-[19px]"
+                          : "h-[22px] w-[22px]"
+                      } ${
                         isActive
-                          ? "h-[22px] w-[22px] text-[#E8B962]" /* Gold icon as in mockup */
-                          : "h-[22px] w-[22px] text-white/50 group-hover:text-white/80"
+                          ? "text-white"
+                          : "text-white/50 group-hover:text-white/80 group-hover:scale-110"
                       }`}
                       strokeWidth={isActive ? 2.5 : 2}
                     />
                     <span
-                      className={`text-[12px] font-semibold tracking-wide transition-colors duration-200 ${
+                      className={`text-[12px] font-semibold tracking-wide transition-colors duration-300 ${
                         isActive
                           ? "text-white"
                           : "text-white/60 group-hover:text-white"
@@ -316,11 +320,11 @@ export default function Navbar() {
                       {link.label}
                     </span>
 
-                    {/* Active Indicator Line (Facebook Style) */}
+                    {/* Active Indicator Line (Premium Clean Style) */}
                     {isActive && (
                       <motion.div
                         layoutId="activeMinimalLine"
-                        className="absolute -bottom-[12px] h-[3px] w-full rounded-t-md bg-[#60A5FA]"
+                        className="absolute -bottom-[12px] h-[3px] w-full rounded-t-full bg-white shadow-[0_-1px_2px_rgba(255,255,255,0.1)]"
                         transition={{
                           type: "spring",
                           stiffness: 400,
@@ -342,7 +346,7 @@ export default function Navbar() {
                   setTheme(currentTheme === "dark" ? "light" : "dark")
                 }
                 aria-label="Toggle theme"
-                className="flex h-[36px] w-[36px] items-center justify-center overflow-hidden rounded-full border border-black/10 bg-black/[0.02] shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)] transition-all hover:border-black/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:border-white/15 dark:bg-black/20 dark:shadow-[inset_0_2px_6px_rgba(0,0,0,0.3)] dark:hover:border-white/25 dark:focus-visible:ring-white/50"
+                className="flex h-[36px] w-[36px] items-center justify-center overflow-hidden rounded-xl border border-black/10 bg-black/[0.02] shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)] transition-all hover:border-black/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]/50 dark:border-white/15 dark:bg-black/20 dark:shadow-[inset_0_2px_6px_rgba(0,0,0,0.3)] dark:hover:border-white/25 dark:focus-visible:ring-white/50"
               >
                 {currentTheme !== "dark" ? (
                   <Sun
@@ -540,7 +544,7 @@ export default function Navbar() {
                 >
                   <span>Theme</span>
                   {mounted && (
-                    <div className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-full border border-black/10 bg-transparent dark:border-white/25">
+                    <div className="flex h-[34px] w-[68px] items-center overflow-hidden rounded-xl border border-black/10 bg-transparent dark:border-white/25">
                       <div
                         className={`flex h-full w-1/2 items-center justify-center transition-colors ${currentTheme !== "dark" ? "bg-black/5 dark:bg-white/20" : ""}`}
                       >
