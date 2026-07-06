@@ -11,6 +11,7 @@ import "highlight.js/styles/github-dark.css";
 
 interface AnswerViewerProps {
   answer: string;
+  compact?: boolean;
 }
 
 /**
@@ -53,205 +54,250 @@ function preprocessMath(text: string): string {
   return result.trim();
 }
 
-const markdownComponents: Components = {
-  pre({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) {
-    return (
-      <pre
-        className="my-6 overflow-x-auto rounded-xl border border-border bg-black/90 p-4 sm:p-6 shadow-sm"
-        {...props}
-      >
-        {children}
-      </pre>
-    );
-  },
-
-  code({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) {
-    const isCodeBlock = className?.includes("language-");
-
-    if (isCodeBlock) {
+function createMarkdownComponents(compact: boolean): Components {
+  return {
+    pre({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) {
       return (
-        <code className={className} {...props}>
-          {children}
-        </code>
-      );
-    }
-
-    return (
-      <code
-        className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400"
-        {...props}
-      >
-        {children}
-      </code>
-    );
-  },
-
-  table({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) {
-    return (
-      <div className="my-6 overflow-x-auto">
-        <table
-          className="w-full border-collapse border border-border text-sm sm:text-base"
+        <pre
+          className={`overflow-x-auto rounded-xl border border-border bg-black/90 shadow-sm ${
+            compact ? "my-4 p-3 sm:my-6 sm:p-6" : "my-6 p-4 sm:p-6"
+          }`}
           {...props}
         >
           {children}
-        </table>
-      </div>
-    );
-  },
+        </pre>
+      );
+    },
 
-  th({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
-    return (
-      <th
-        className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground"
-        {...props}
-      >
-        {children}
-      </th>
-    );
-  },
+    code({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) {
+      const isCodeBlock = className?.includes("language-");
 
-  td({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
-    return (
-      <td
-        className="border border-border px-3 sm:px-4 py-2 text-foreground"
-        {...props}
-      >
-        {children}
-      </td>
-    );
-  },
+      if (isCodeBlock) {
+        return (
+          <code className={className} {...props}>
+            {children}
+          </code>
+        );
+      }
 
-  blockquote({ children, ...props }: React.HTMLAttributes<HTMLQuoteElement>) {
-    return (
-      <blockquote
-        className="my-5 border-l-4 border-blue-500 bg-blue-500/5 pl-4 sm:pl-6 py-2 rounded-r-xl italic text-muted-foreground"
-        {...props}
-      >
-        {children}
-      </blockquote>
-    );
-  },
+      return (
+        <code
+          className="rounded-md bg-muted px-1.5 py-1 text-sm sm:text-base text-blue-600 dark:text-blue-400"
+          {...props}
+        >
+          {children}
+        </code>
+      );
+    },
 
-  h1({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-    return (
-      <h1
-        className="text-2xl sm:text-3xl font-bold text-foreground mb-6 mt-8 border-b border-border pb-3"
-        {...props}
-      >
-        {children}
-      </h1>
-    );
-  },
+    table({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) {
+      return (
+        <div
+          className={
+            compact ? "my-4 overflow-x-auto sm:my-6" : "my-6 overflow-x-auto"
+          }
+        >
+          <table
+            className="w-full border-collapse border border-border text-sm sm:text-base"
+            {...props}
+          >
+            {children}
+          </table>
+        </div>
+      );
+    },
 
-  h2({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-    return (
-      <h2
-        className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 mt-10 border-l-4 border-blue-500 pl-4"
-        {...props}
-      >
-        {children}
-      </h2>
-    );
-  },
+    th({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
+      return (
+        <th
+          className="border border-border bg-muted px-3 sm:px-4 py-2 text-left font-semibold text-foreground"
+          {...props}
+        >
+          {children}
+        </th>
+      );
+    },
 
-  h3({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-    return (
-      <h3
-        className="text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 mt-8"
-        {...props}
-      >
-        {children}
-      </h3>
-    );
-  },
+    td({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) {
+      return (
+        <td
+          className="border border-border px-3 sm:px-4 py-2 text-foreground"
+          {...props}
+        >
+          {children}
+        </td>
+      );
+    },
 
-  h4({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-    return (
-      <h4
-        className="text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 mt-6"
-        {...props}
-      >
-        {children}
-      </h4>
-    );
-  },
+    blockquote({ children, ...props }: React.HTMLAttributes<HTMLQuoteElement>) {
+      return (
+        <blockquote
+          className={`border-l-4 border-blue-500 bg-blue-500/5 py-2 rounded-r-xl italic text-muted-foreground ${
+            compact ? "my-4 pl-3 sm:my-5 sm:pl-6" : "my-5 pl-4 sm:pl-6"
+          }`}
+          {...props}
+        >
+          {children}
+        </blockquote>
+      );
+    },
 
-  hr() {
-    return <hr className="my-8 border-border" />;
-  },
+    h1({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+      return (
+        <h1
+          className={`text-2xl sm:text-3xl font-bold text-foreground border-b border-border pb-3 ${
+            compact ? "mb-4 mt-4 sm:mb-6 sm:mt-8" : "mb-6 mt-8"
+          }`}
+          {...props}
+        >
+          {children}
+        </h1>
+      );
+    },
 
-  ul({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) {
-    return (
-      <ul className="list-disc pl-6 sm:pl-8 my-5 space-y-2" {...props}>
-        {children}
-      </ul>
-    );
-  },
+    h2({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+      return (
+        <h2
+          className={`text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 border-l-4 border-blue-500 ${
+            compact ? "mt-6 pl-3 sm:mt-10 sm:pl-4" : "mt-10 pl-4"
+          }`}
+          {...props}
+        >
+          {children}
+        </h2>
+      );
+    },
 
-  ol({ children, ...props }: React.HTMLAttributes<HTMLOListElement>) {
-    return (
-      <ol className="list-decimal pl-6 sm:pl-8 my-5 space-y-2" {...props}>
-        {children}
-      </ol>
-    );
-  },
+    h3({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+      return (
+        <h3
+          className={`text-lg sm:text-xl font-bold text-cyan-600 dark:text-cyan-400 mb-3 ${
+            compact ? "mt-5 sm:mt-8" : "mt-8"
+          }`}
+          {...props}
+        >
+          {children}
+        </h3>
+      );
+    },
 
-  li({ children, ...props }: React.HTMLAttributes<HTMLLIElement>) {
-    return (
-      <li
-        className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-3 text-foreground"
-        {...props}
-      >
-        {children}
-      </li>
-    );
-  },
+    h4({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+      return (
+        <h4
+          className={`text-base sm:text-lg font-semibold text-emerald-600 dark:text-emerald-400 mb-2 ${
+            compact ? "mt-4 sm:mt-6" : "mt-6"
+          }`}
+          {...props}
+        >
+          {children}
+        </h4>
+      );
+    },
 
-  p({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-    return (
-      <p
-        className="text-base sm:text-lg leading-[1.8] sm:leading-[1.9] mb-5 text-foreground"
-        {...props}
-      >
-        {children}
-      </p>
-    );
-  },
+    hr() {
+      return (
+        <hr
+          className={
+            compact ? "my-5 border-border sm:my-8" : "my-8 border-border"
+          }
+        />
+      );
+    },
 
-  strong({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
-    return (
-      <strong className="font-semibold text-foreground" {...props}>
-        {children}
-      </strong>
-    );
-  },
+    ul({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) {
+      return (
+        <ul
+          className={`list-disc space-y-2 ${
+            compact ? "my-4 pl-4 sm:my-5 sm:pl-8" : "my-5 pl-6 sm:pl-8"
+          }`}
+          {...props}
+        >
+          {children}
+        </ul>
+      );
+    },
 
-  em({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
-    return (
-      <em className="italic text-muted-foreground" {...props}>
-        {children}
-      </em>
-    );
-  },
-};
+    ol({ children, ...props }: React.HTMLAttributes<HTMLOListElement>) {
+      return (
+        <ol
+          className={`list-decimal space-y-2 ${
+            compact ? "my-4 pl-4 sm:my-5 sm:pl-8" : "my-5 pl-6 sm:pl-8"
+          }`}
+          {...props}
+        >
+          {children}
+        </ol>
+      );
+    },
 
-export default function AnswerViewer({ answer }: AnswerViewerProps) {
+    li({ children, ...props }: React.HTMLAttributes<HTMLLIElement>) {
+      return (
+        <li
+          className={`text-base sm:text-lg text-foreground ${
+            compact
+              ? "mb-2 leading-[1.7] sm:mb-3 sm:leading-[1.9]"
+              : "mb-3 leading-[1.8] sm:leading-[1.9]"
+          }`}
+          {...props}
+        >
+          {children}
+        </li>
+      );
+    },
+
+    p({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
+      return (
+        <p
+          className={`text-base sm:text-lg text-foreground ${
+            compact
+              ? "mb-4 leading-[1.7] sm:mb-5 sm:leading-[1.8] sm:leading-[1.9]"
+              : "mb-5 leading-[1.8] sm:leading-[1.9]"
+          }`}
+          {...props}
+        >
+          {children}
+        </p>
+      );
+    },
+
+    strong({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
+      return (
+        <strong className="font-semibold text-foreground" {...props}>
+          {children}
+        </strong>
+      );
+    },
+
+    em({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
+      return (
+        <em className="italic text-muted-foreground" {...props}>
+          {children}
+        </em>
+      );
+    },
+  };
+}
+
+export default function AnswerViewer({
+  answer,
+  compact = false,
+}: AnswerViewerProps) {
   const content = preprocessMath(answer);
+  const markdownComponents = createMarkdownComponents(compact);
 
   return (
     <div
-      className="
+      className={`
         prose dark:prose-invert
         max-w-none
-        px-4 sm:px-0
+        ${compact ? "px-0" : "px-4 sm:px-0"}
 
         prose-headings:text-foreground
         prose-headings:font-bold
 
         prose-h1:text-2xl
         sm:prose-h1:text-3xl
-        prose-h1:mb-6
-        prose-h1:mt-8
+        ${compact ? "prose-h1:mb-4 prose-h1:mt-4 sm:prose-h1:mb-6 sm:prose-h1:mt-8" : "prose-h1:mb-6 prose-h1:mt-8"}
         prose-h1:border-b
         prose-h1:border-border
         prose-h1:pb-3
@@ -259,36 +305,31 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         prose-h2:text-xl
         sm:prose-h2:text-2xl
         prose-h2:mb-4
-        prose-h2:mt-10
+        ${compact ? "prose-h2:mt-6 prose-h2:pl-3 sm:prose-h2:mt-10 sm:prose-h2:pl-4" : "prose-h2:mt-10 prose-h2:pl-4"}
         prose-h2:text-blue-600
         prose-h2:border-l-4
         prose-h2:border-blue-500
-        prose-h2:pl-4
 
         prose-h3:text-lg
         sm:prose-h3:text-xl
         prose-h3:mb-3
-        prose-h3:mt-8
+        ${compact ? "prose-h3:mt-5 sm:prose-h3:mt-8" : "prose-h3:mt-8"}
         prose-h3:text-cyan-600
 
         prose-h4:text-base
         sm:prose-h4:text-lg
         prose-h4:mb-2
-        prose-h4:mt-6
+        ${compact ? "prose-h4:mt-4 sm:prose-h4:mt-6" : "prose-h4:mt-6"}
         prose-h4:text-emerald-600
 
         prose-p:text-base
         sm:prose-p:text-lg
-        prose-p:leading-[1.8]
-        sm:prose-p:leading-[1.9]
-        prose-p:mb-5
+        ${compact ? "prose-p:leading-[1.7] prose-p:mb-4 sm:prose-p:leading-[1.8] sm:prose-p:mb-5" : "prose-p:leading-[1.8] sm:prose-p:leading-[1.9] prose-p:mb-5"}
         prose-p:text-foreground
 
         prose-li:text-base
         sm:prose-li:text-lg
-        prose-li:leading-[1.8]
-        sm:prose-li:leading-[1.9]
-        prose-li:mb-3
+        ${compact ? "prose-li:leading-[1.7] prose-li:mb-2 sm:prose-li:leading-[1.8] sm:prose-li:mb-3" : "prose-li:leading-[1.8] sm:prose-li:leading-[1.9] prose-li:mb-3"}
 
         prose-strong:text-foreground
         prose-strong:font-semibold
@@ -307,17 +348,13 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         prose-pre:border
         prose-pre:border-border
         prose-pre:rounded-xl
-        prose-pre:p-4
-        sm:prose-pre:p-6
-        prose-pre:my-6
+        ${compact ? "prose-pre:p-3 prose-pre:my-4 sm:prose-pre:p-6 sm:prose-pre:my-6" : "prose-pre:p-4 sm:prose-pre:p-6 prose-pre:my-6"}
         prose-pre:overflow-x-auto
 
         prose-blockquote:border-l-4
         prose-blockquote:border-blue-500
-        prose-blockquote:pl-4
-        sm:prose-blockquote:pl-6
+        ${compact ? "prose-blockquote:pl-3 prose-blockquote:my-4 sm:prose-blockquote:pl-6 sm:prose-blockquote:my-5" : "prose-blockquote:pl-4 sm:prose-blockquote:pl-6 prose-blockquote:my-5"}
         prose-blockquote:py-2
-        prose-blockquote:my-5
         prose-blockquote:bg-blue-500/5
         prose-blockquote:rounded-r-xl
         prose-blockquote:text-muted-foreground
@@ -325,7 +362,7 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
 
         prose-table:w-full
         prose-table:border-collapse
-        prose-table:my-6
+        ${compact ? "prose-table:my-4 sm:prose-table:my-6" : "prose-table:my-6"}
         prose-table:text-sm
         sm:prose-table:text-base
 
@@ -347,28 +384,24 @@ export default function AnswerViewer({ answer }: AnswerViewerProps) {
         prose-td:text-foreground
 
         prose-ul:list-disc
-        prose-ul:pl-6
-        sm:prose-ul:pl-8
-        prose-ul:my-5
+        ${compact ? "prose-ul:pl-4 prose-ul:my-4 sm:prose-ul:pl-8 sm:prose-ul:my-5" : "prose-ul:pl-6 sm:prose-ul:pl-8 prose-ul:my-5"}
         prose-ul:space-y-2
 
         prose-ol:list-decimal
-        prose-ol:pl-6
-        sm:prose-ol:pl-8
-        prose-ol:my-5
+        ${compact ? "prose-ol:pl-4 prose-ol:my-4 sm:prose-ol:pl-8 sm:prose-ol:my-5" : "prose-ol:pl-6 sm:prose-ol:pl-8 prose-ol:my-5"}
         prose-ol:space-y-2
 
         prose-hr:border-border
-        prose-hr:my-8
+        ${compact ? "prose-hr:my-5 sm:prose-hr:my-8" : "prose-hr:my-8"}
 
         [&_.katex-display]:overflow-x-auto
         [&_.katex-display]:overflow-y-hidden
-        [&_.katex-display]:my-6
+        ${compact ? "[&_.katex-display]:my-4 sm:[&_.katex-display]:my-6" : "[&_.katex-display]:my-6"}
         [&_.katex-display]:py-2
         [&_.katex-display]:px-1
         [&_.katex]:text-[1.05em]
         sm:[&_.katex]:text-[1.1em]
-      "
+      `}
     >
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkMath]}
