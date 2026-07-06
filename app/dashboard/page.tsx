@@ -7,6 +7,9 @@ import { RecentActivityCard } from "@/components/dashboard/recent-activity-card"
 export default function DashboardPage() {
   return (
     <div className="w-full bg-background pb-12 animate-in fade-in duration-700">
+      {/* Top Section Divider for visual separation from Universities */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
+      
       {/* 1. Premium Welcome Hero */}
       <section className="relative overflow-hidden border-b border-border bg-card/30 dark:bg-card/10">
         <div className="absolute inset-0 -z-10">
