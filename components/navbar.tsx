@@ -33,7 +33,7 @@ const navLinks = [
   },
   {
     label: "Dashboard",
-    href: "/dashboard",
+    href: "/#Dashboard",
     icon: LayoutDashboard,
   },
   {
@@ -101,11 +101,15 @@ export default function Navbar() {
           .map((link) => link.href.substring(2));
 
         let current = "";
+        // Use a viewing offset at 40% of the screen height (where the user's eyes naturally focus)
+        const viewingOffset = window.innerHeight * 0.4;
+        
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
             const rect = element.getBoundingClientRect();
-            if (rect.top <= 120 && rect.bottom >= 120) {
+            // A section is active if this viewing offset falls within its top and bottom bounds
+            if (rect.top <= viewingOffset && rect.bottom >= viewingOffset) {
               current = section;
               break;
             }
@@ -287,7 +291,8 @@ export default function Navbar() {
                   (pathname === "/" &&
                     link.href.startsWith("/#") &&
                     activeSection === link.href) ||
-                  (pathname === link.href && !link.href.startsWith("/#"));
+                  (pathname === link.href && !link.href.startsWith("/#")) ||
+                  (pathname === "/dashboard" && link.label === "Dashboard");
 
                 const Icon = link.icon;
 
@@ -513,7 +518,8 @@ export default function Navbar() {
                   (pathname === "/" &&
                     link.href.startsWith("/#") &&
                     activeSection === link.href) ||
-                  (pathname === link.href && !link.href.startsWith("/#"));
+                  (pathname === link.href && !link.href.startsWith("/#")) ||
+                  (pathname === "/dashboard" && link.label === "Dashboard");
 
                 return (
                   <Link
