@@ -62,9 +62,8 @@ export type WorkspaceAction =
   | "FORMULA";
 
 export interface WorkspaceRequest {
+  topicId: string;
   subjectCode: string;
-  module: string;
-  topic: string;
   action: WorkspaceAction;
   forceRefresh?: boolean;
 }
@@ -103,4 +102,63 @@ export interface WorkspaceGenerateInput {
 export interface WorkspaceGenerateResult {
   answer: string;
   cached: boolean;
+}
+
+// =========================
+// Follow-up Chat
+// =========================
+
+export const FOLLOWUP_QUESTION_LIMIT = 3;
+
+export interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface ChatPromptContext {
+  subjectCode: string;
+  subjectName: string;
+  subjectType: SubjectType;
+  module: string;
+  topic: string;
+  cachedExplanation: string;
+  messages: ChatMessage[];
+  question: string;
+}
+
+export interface FollowupRequest {
+  subjectCode: string;
+  module: string;
+  topic: string;
+  cachedExplanation: string;
+  question: string;
+  messages?: ChatMessage[];
+}
+
+export interface FollowupResponse {
+  success: boolean;
+  answer?: string;
+  error?: string;
+}
+
+// =========================
+// Local Learning Session
+// =========================
+
+export interface StoredChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: string;
+}
+
+export interface LearningSession {
+  topicId: string;
+  branch: string;
+  semester: string;
+  subjectCode: string;
+  cachedExplanation: string;
+  messages: StoredChatMessage[];
+  questionCount: number;
+  updatedAt: string;
 }

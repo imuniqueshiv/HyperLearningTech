@@ -20,12 +20,14 @@ interface GenerateAnswerButtonProps {
   question: string;
   subjectCode: string;
   label?: string;
+  compactMobile?: boolean;
 }
 
 export default function GenerateAnswerButton({
   question,
   subjectCode,
   label,
+  compactMobile = false,
 }: GenerateAnswerButtonProps) {
   const [loading, setLoading] = useState(false);
   const [answer, setAnswer] = useState<string | null>(null);
@@ -119,7 +121,7 @@ export default function GenerateAnswerButton({
   }
 
   return (
-    <div className="mt-4 w-full">
+    <div className={`w-full ${compactMobile ? "mt-0 sm:mt-4" : "mt-4"}`}>
       {!answer && (
         <button
           onClick={() => generateAnswer()}
@@ -151,13 +153,25 @@ export default function GenerateAnswerButton({
       )}
 
       {answer && !hidden && (
-        <div className="mt-4 rounded-2xl border border-border bg-card p-4 sm:p-6 shadow-sm">
-          <AnswerViewer answer={answer} />
+        <div
+          className={
+            compactMobile
+              ? "mt-2 rounded-lg border-x-0 border-border bg-card p-2 shadow-sm sm:mt-4 sm:rounded-2xl sm:border-x sm:p-6"
+              : "mt-4 rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6"
+          }
+        >
+          <AnswerViewer answer={answer} compact={compactMobile} />
         </div>
       )}
 
       {answer && (
-        <div className="mt-3 flex flex-wrap items-center gap-1.5 sm:gap-2 border-t border-border pt-3">
+        <div
+          className={`flex flex-wrap items-center gap-1.5 border-t border-border sm:gap-2 ${
+            compactMobile
+              ? "mt-2 px-2 pt-2 sm:mt-3 sm:px-0 sm:pt-3"
+              : "mt-3 pt-3"
+          }`}
+        >
           {/* Hide/Show Button */}
           <button
             onClick={() => setHidden(!hidden)}
