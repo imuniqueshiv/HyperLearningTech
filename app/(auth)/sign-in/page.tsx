@@ -54,7 +54,9 @@ export default function SignInPage() {
           <div className="w-full border-t border-border/50" />
         </div>
         <div className="relative flex justify-center text-xs font-semibold uppercase tracking-wider">
-          <span className="bg-background px-4 text-muted-foreground">Or</span>
+          <span className="bg-zinc-50 dark:bg-[#0A0A0A] px-4 text-muted-foreground">
+            Or
+          </span>
         </div>
       </div>
 
