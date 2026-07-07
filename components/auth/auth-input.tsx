@@ -8,6 +8,7 @@ interface AuthInputProps {
   required?: boolean;
   hint?: ReactNode;
   rightElement?: ReactNode;
+  suggestions?: string[];
 }
 
 export function AuthInput({
@@ -18,6 +19,7 @@ export function AuthInput({
   required = true,
   hint,
   rightElement,
+  suggestions,
 }: AuthInputProps) {
   return (
     <div className="flex flex-col gap-1.5">
@@ -31,9 +33,17 @@ export function AuthInput({
         id={id}
         type={type}
         placeholder={placeholder}
-        className="rounded-xl border border-border bg-background px-4 py-3 text-sm shadow-sm transition-colors focus:border-[#1D4ED8] focus:outline-none focus:ring-1 focus:ring-[#1D4ED8] dark:bg-muted/20"
+        className="w-full rounded-xl border border-zinc-200 dark:border-white/10 bg-zinc-50 dark:bg-white/[0.03] px-4 py-3.5 text-sm transition-all focus:border-blue-500 focus:bg-white dark:focus:bg-white/[0.05] focus:outline-none focus:ring-4 focus:ring-blue-500/10 placeholder:text-zinc-400 dark:placeholder:text-white/30"
         required={required}
+        list={suggestions ? `${id}-suggestions` : undefined}
       />
+      {suggestions && (
+        <datalist id={`${id}-suggestions`}>
+          {suggestions.map((suggestion, index) => (
+            <option key={index} value={suggestion} />
+          ))}
+        </datalist>
+      )}
       {hint && <p className="text-xs text-muted-foreground mt-1">{hint}</p>}
     </div>
   );

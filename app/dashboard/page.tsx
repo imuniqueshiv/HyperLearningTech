@@ -6,7 +6,7 @@ import { RecentActivityCard } from "@/components/dashboard/recent-activity-card"
 
 export default function DashboardPage() {
   return (
-    <div className="relative w-full bg-background dark:bg-transparent pt-16 pb-12 animate-in fade-in duration-700 z-0">
+    <div className="relative min-h-[90vh] w-full bg-background dark:bg-transparent pt-16 pb-12 animate-in fade-in duration-700 z-0">
       {/* Background Layers */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {/* Light Mode Wavy Refraction Background (Properly visible at the top) */}

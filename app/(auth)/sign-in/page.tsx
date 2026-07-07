@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { AuthInput } from "@/components/auth/auth-input";
@@ -6,70 +7,76 @@ import { OAuthButton } from "@/components/auth/oauth-button";
 
 export default function SignInPage() {
   return (
-    <div className="flex flex-col gap-6 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
-      <div className="flex flex-col gap-2 text-center lg:text-left">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground">
-          Welcome back
+    <div className="flex flex-col gap-4 w-full max-w-[360px] mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
+      <div className="flex flex-col gap-2 text-center items-center mb-4">
+        <div className="h-20 w-20 rounded-full bg-zinc-100 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/10 flex items-center justify-center mb-2 shadow-inner">
+          <Image
+            src="/hl-logo.png"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="opacity-80"
+          />
+        </div>
+        <h1 className="text-[22px] font-semibold tracking-tight text-foreground">
+          Log in to Hyper Learning
         </h1>
-        <p className="text-muted-foreground text-sm">
-          Enter your credentials to access your workspace
-        </p>
       </div>
 
-      <form className="flex flex-col gap-5 mt-2">
+      <form className="flex flex-col gap-3">
         <AuthInput
           id="email"
           type="email"
-          label="Email address"
-          placeholder="name@student.university.edu"
+          label=""
+          placeholder="Email address or username"
         />
 
         <AuthInput
           id="password"
           type="password"
-          label="Password"
-          placeholder="••••••••"
-          rightElement={
-            <Link
-              href="#"
-              className="text-xs font-medium text-[#1D4ED8] transition-colors hover:text-[#1E40AF] dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Forgot password?
-            </Link>
-          }
+          label=""
+          placeholder="Password"
         />
+
+        <div className="flex justify-end w-full mb-1">
+          <Link
+            href="#"
+            className="text-[11px] font-semibold text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Forgot password?
+          </Link>
+        </div>
 
         <button
           type="button"
-          className="group mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-4 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-[#1E40AF] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2 dark:bg-blue-600 dark:hover:bg-blue-700"
+          className="mt-1 flex w-full items-center justify-center rounded-full bg-[#0064e0] px-4 py-3 text-[15px] font-bold text-white transition-all hover:bg-[#0054c2] focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/20"
         >
-          Sign In
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          Log in
         </button>
       </form>
 
-      <div className="relative mt-2">
+      <div className="relative mt-3 mb-1">
         <div className="absolute inset-0 flex items-center">
-          <div className="w-full border-t border-border" />
+          <div className="w-full border-t border-border/50" />
         </div>
-        <div className="relative flex justify-center text-xs">
-          <span className="bg-background px-3 text-muted-foreground">
-            Or continue with
-          </span>
+        <div className="relative flex justify-center text-xs font-semibold uppercase tracking-wider">
+          <span className="bg-background px-4 text-muted-foreground">Or</span>
         </div>
       </div>
 
       <OAuthButton />
 
-      <p className="text-center text-sm text-muted-foreground mt-2">
-        Don&apos;t have an account?{" "}
+      <div className="mt-3 flex w-full justify-center rounded-xl border border-zinc-200 dark:border-white/10 p-4 text-[13px] shadow-sm bg-white dark:bg-white/[0.02]">
+        <span className="text-muted-foreground mr-1.5">
+          Don&apos;t have an account?
+        </span>
         <Link
           href="/sign-up"
-          className="font-semibold text-[#1D4ED8] transition-colors hover:text-[#1E40AF] hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          className="font-semibold text-[#0064e0] hover:underline"
         >
           Sign up
         </Link>
-      </p>
+      </div>
     </div>
   );
 }
