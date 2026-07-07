@@ -297,6 +297,7 @@
   transition:
     box-shadow 0.4s ease,
     border-color 0.4s ease;
+  overflow: hidden;
 }
 
 /* Soft golden border glow only on hover */
@@ -794,19 +795,27 @@
   .cardGlowTopRight {
     display: none;
   }
+  /* The signal ring and floating dots were previously disabled here for GPU performance.
+     Enabled as per request. */
   .signalRing {
-    display: none;
-  }
-  .floatingDot1,
-  .floatingDot2,
-  .floatingDot3 {
-    display: none;
+    animation: signalPulseMobile 4.5s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
   }
   .sectionDivider {
     display: none;
   }
   .centerDivider {
     display: none;
+  }
+}
+
+@keyframes signalPulseMobile {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.7);
+    opacity: 0;
   }
 }
 
@@ -1147,5 +1156,25 @@
   }
   100% {
     transform: translate(2px, -2px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Fix Light Mode Mobile Overrides */
+  :global(html:not(.dark)) .cardSubtitle {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+  :global(html:not(.dark)) .form {
+    gap: 8px;
+  }
+  :global(html:not(.dark)) .inputGroup {
+    padding: 0px 8px;
+  }
+  :global(html:not(.dark)) .input {
+    padding: 8px 8px 8px 4px;
+  }
+  :global(html:not(.dark)) .submitBtn {
+    height: 42px;
   }
 }

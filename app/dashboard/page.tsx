@@ -144,7 +144,7 @@ export default function DashboardPage() {
                   Quick Actions
                 </h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 flex-1">
+              <div className="grid grid-cols-2 gap-3 sm:gap-5 flex-1">
                 <QuickActionCard
                   title="Universities"
                   description="Explore institutions."

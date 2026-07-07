@@ -4,7 +4,6 @@ import {
   LayoutDashboard,
   BrainCircuit,
   Sparkles,
-  Star,
   Library,
   FileText,
   Target,
@@ -21,24 +20,24 @@ export default function AuthLayout({
       {/* Main Split Content */}
       <div className="flex flex-1 w-full min-h-[600px]">
         {/* Left Side - Brand & Features (Hidden on Mobile) */}
-        <div className="relative hidden w-1/2 flex-col items-center justify-center overflow-hidden bg-slate-950 dark:bg-black lg:flex border-r border-border/50">
+        <div className="relative hidden w-1/2 flex-col items-center justify-center overflow-hidden bg-slate-50 dark:bg-black lg:flex border-r border-border/50">
           {/* Background Gradients & Effects */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute -left-[10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
-            <div className="absolute -right-[10%] bottom-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
-            <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay" />
+            <div className="absolute -left-[10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/20 dark:bg-blue-500/10 blur-[120px]" />
+            <div className="absolute -right-[10%] bottom-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-500/20 dark:bg-indigo-500/10 blur-[120px]" />
+            <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] dark:opacity-10 mix-blend-overlay" />
           </div>
 
           {/* Top Logo - Large like Instagram */}
           <div className="absolute top-12 left-12 z-10">
-            <div className="relative flex h-[72px] w-[72px] items-center justify-center overflow-hidden rounded-[1.25rem] bg-gradient-to-tr from-blue-600 via-indigo-500 to-purple-500 p-[2px] shadow-2xl">
-              <div className="flex h-full w-full items-center justify-center rounded-[1.1rem] bg-black">
+            <div className="relative flex h-[72px] w-[72px] items-center justify-center overflow-hidden rounded-[1.25rem] bg-gradient-to-tr from-blue-600 via-indigo-500 to-purple-500 p-[2px] shadow-[0_8px_30px_rgba(99,102,241,0.2)] dark:shadow-2xl">
+              <div className="flex h-full w-full items-center justify-center rounded-[1.1rem] bg-white dark:bg-black">
                 <Image
                   src="/hl-logo.png"
                   alt="Hyper Learning Logo"
                   width={44}
                   height={44}
-                  className="object-contain invert brightness-0"
+                  className="object-contain dark:invert dark:brightness-0 opacity-90 dark:opacity-100"
                 />
               </div>
             </div>
@@ -46,9 +45,9 @@ export default function AuthLayout({
 
           {/* Center Premium Content */}
           <div className="relative z-10 flex flex-col items-center text-center px-8 py-4 max-w-[540px] mt-8">
-            <h1 className="text-[36px] font-semibold tracking-tight text-slate-100 xl:text-[42px] leading-[1.2]">
+            <h1 className="text-[36px] font-semibold tracking-tight text-slate-900 dark:text-slate-100 xl:text-[42px] leading-[1.2]">
               Elevate your engineering journey with a{" "}
-              <span className="bg-gradient-to-br from-blue-400 to-indigo-400 bg-clip-text text-transparent font-bold">
+              <span className="bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent font-bold">
                 personalized AI tutor
               </span>
               .
@@ -229,7 +228,7 @@ export default function AuthLayout({
       {/* Global Footer */}
       <footer className="w-full py-4 px-6 bg-zinc-50 dark:bg-black border-t border-border/40 text-[12px]">
         <div className="mx-auto max-w-[1280px]">
-          <div className="flex flex-col items-center gap-3 text-center lg:flex-row lg:flex-wrap lg:items-center lg:justify-center lg:gap-x-4 lg:gap-y-2 lg:text-left">
+          <div className="flex flex-col items-center gap-4 text-center lg:flex-row lg:flex-wrap lg:items-center lg:justify-center lg:gap-x-4 lg:gap-y-2 lg:text-left">
             <Link
               href="/"
               className="inline-flex shrink-0 items-center gap-2 text-[12px] text-muted-foreground transition-colors hover:text-foreground"
@@ -247,39 +246,39 @@ export default function AuthLayout({
               </span>
             </Link>
 
-            <div className="flex items-center gap-6 text-[12px] font-medium text-muted-foreground">
+            <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-6 text-[12px] font-medium text-muted-foreground">
               <Link
                 href="/about"
-                className="relative group py-1 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"
+                className="relative group py-1 transition-all duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)] dark:hover:text-blue-400"
               >
                 About
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
               </Link>
               <Link
                 href="/contact"
-                className="relative group py-1 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"
+                className="relative group py-1 transition-all duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)] dark:hover:text-blue-400"
               >
                 Contact
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
               </Link>
               <Link
                 href="/creators"
-                className="relative group py-1 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"
+                className="relative group py-1 transition-all duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)] dark:hover:text-blue-400"
               >
                 Creators
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
               </Link>
               <Link
                 href="/#Contact"
-                className="relative group py-1 transition-all duration-300 hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"
+                className="relative group py-1 transition-all duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.5)] dark:hover:text-blue-400"
               >
                 Feedback
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
               </Link>
             </div>
 
-            <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground/70 max-w-[400px] lg:max-w-none text-center lg:text-left">
-              <span>Disclaimer:</span>
+            <div className="flex flex-col lg:flex-row items-center gap-1 lg:gap-1.5 text-[11px] text-muted-foreground/70 max-w-[400px] lg:max-w-none text-center lg:text-left mt-2 lg:mt-0">
+              <span className="font-semibold">Disclaimer:</span>
               <span>
                 Some content may contain errors. Please cross-check and share
                 corrections via our feedback section.

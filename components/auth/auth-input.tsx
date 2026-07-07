@@ -33,7 +33,7 @@ export function AuthInput({
         id={id}
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-zinc-200 dark:border-white/10 bg-zinc-50 dark:bg-white/[0.03] px-4 py-3.5 text-sm transition-all focus:border-blue-500 focus:bg-white dark:focus:bg-white/[0.05] focus:outline-none focus:ring-4 focus:ring-blue-500/10 placeholder:text-zinc-400 dark:placeholder:text-white/30"
+        className="w-full rounded-xl border border-zinc-200 dark:border-white/10 bg-white dark:bg-white/[0.03] px-4 py-3.5 text-sm transition-all focus:border-blue-500 focus:bg-white dark:focus:bg-white/[0.05] focus:outline-none focus:ring-4 focus:ring-blue-500/10 placeholder:text-zinc-400 dark:placeholder:text-white/30"
         required={required}
         list={suggestions ? `${id}-suggestions` : undefined}
       />
