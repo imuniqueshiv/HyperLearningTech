@@ -312,7 +312,8 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
 Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
-```bash
+- 🖼️ [Question Attachments Guide](docs/QUESTION_ATTACHMENTS_GUIDE.md) — Standards for adding educational figures, diagrams, graphs, tables, and other question attachments.
+
 # Quick contribution workflow
 git fork https://github.com/imuniqueshiv/HyperLearningTech
 git checkout -b feat/your-feature-name
