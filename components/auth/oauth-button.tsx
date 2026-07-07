@@ -2,7 +2,7 @@ export function OAuthButton() {
   return (
     <button
       type="button"
-      className="flex w-full items-center justify-center gap-3 rounded-xl border border-border bg-background px-4 py-3.5 text-sm font-medium text-foreground shadow-sm transition-all hover:bg-muted/50 hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2"
+      className="flex w-full items-center justify-center gap-3 rounded-full border border-zinc-200 dark:border-white/10 bg-zinc-50 dark:bg-white/[0.03] px-4 py-3 text-[15px] font-semibold text-foreground transition-all hover:bg-zinc-100 dark:hover:bg-white/[0.08] focus:outline-none focus:ring-4 focus:ring-zinc-500/10"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
