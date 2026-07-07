@@ -5,5 +5,791 @@
     "name": "Machine Learning (ML)",
     "title": "AL-405 - Machine Learning (ML)"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Machine Learning. Explain how Machine Learning differs from traditional programming paradigms. Illustrate your answer with examples."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define unsupervised learning. Explain its significance and challenges. Discuss different approaches to clustering and dimensionality reduction, citing examples of common algorithms used."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is a neural network? Explain how a neural network is represented mathematically. Describe the role of weights, biases, and activation functions in the working of a neural network."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is a Multilayer Perceptron (MLP)? Describe its architecture and how it differs from a single-layer perceptron. Explain how hidden layers contribute to solving complex problems."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of Support Vector Machines (SVM) for classification. What is the role of margin maximization? Discuss the importance of kernel tricks and explain different types of kernels used in SVM."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Logistic Regression? Explain how logistic regression is used for binary classification problems. Derive the logistic function and explain how the cost function is optimized during training."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the k-means clustering algorithm in detail. Describe the steps involved, the objective function it minimizes, and the limitations of k-means. How does the choice of k affect the outcome?"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the difference between hard clustering and soft clustering. Which clustering algorithms produce hard clusters and which produce soft clusters? Provide examples and use cases for each."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the key guidelines to follow when designing machine learning experiments? Discuss the importance of reproducibility, dataset partitioning, and the control of confounding variables. How do these guidelines ensure the validity and generalizability of experimental results?"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Why is it important to compare machine learning models over multiple datasets? Discuss the benefits and challenges of cross-dataset validation. How can the results of comparisons over multiple datasets provide more robust insights into model performance?"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept of Principal Components Analysis (PCA). Derive the mathematical formulation of PCA. How does PCA help in dimensionality reduction and visualization?"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the gradient descent algorithm. Compare its different variants like Stochastic Gradient Descent (SGD), Mini-batch Gradient Descent, Momentum, RMSProp, and Adam optimizers."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the bias-variance tradeoff in supervised learning. How do different supervised learning techniques like decision trees and random forests handle bias and variance?"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How can Genetic Algorithms be applied to optimize clustering solutions? Discuss chromosome representation, fitness function design, and genetic operations in the context of clustering."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss how to evaluate the stability of a machine learning model. What metrics or methods can be used to assess how consistent a model's performance is across different datasets, environments, or perturbations? How does model stability impact its generalization ability?"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss the trade-off between bias and variance when designing machine learning experiments. How can experimental design mitigate the effects of high bias or high variance? Explain how this trade-off is related to overfitting and underfitting in model evaluation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "How does supervised learning differ from unsupervised learning? Discuss."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Briefly explain the need of Inductive Bias in decision Tree Learning."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is Principal Component Analysis (PCA) in machine learning? How does PCA help in reducing the dimensionality of data?"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Evaluate the effectiveness of biologically inspired neural network architectures in solving complex machine learning tasks."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the back propagation algorithm in neural networks? How does it compute gradients to update the weights of a neural network?"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss how the Multilayer Perceptron algorithm compute outputs from inputs through its interconnected layers?"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is Naive Bayes classification in machine learning? Describe the fundamental principle behind Naive Bayes and how it calculates probabilities."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss about linear regression and derive the Individual error and Minimization functions."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the basic concept of a Random Forest and how it combines multiple decision trees for classification."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "List the applications of clustering and identify advantages and disadvantages of clustering algorithm."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the Expectation-Maximization (EM) algorithm used to train Gaussian Mixture Models."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are evolutionary optimization techniques in machine learning? Provide an overview of common evolutionary algorithms used for optimization tasks."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe key elements of experimental design such as hypothesis formulation, variable manipulation, and control."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the significance of comparing machine learning models over multiple datasets?"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two of the following:\na) Shrinkage Methods\nb) Vanishing and Exploding Gradients\nc) Issues in decision trees\nd) Hypothesis testing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the difference between classification and regression models."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What a hypothesis space represents in machine learning? List some basic characteristics of a hypothesis space?"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss some common limitations of machine learning."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How do neural networks leverage parallel processing to perform computations efficiently?"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the Perceptron learning algorithm? Discuss how the Perceptron learning algorithm adjust the weights of connections between neurons to learn from data?"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe how neural network architectures are represented graphically or conceptually in machine learning?"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the concept of entropy in the context of Decision Trees. How does entropy affect the construction and splitting of nodes in a Decision Tree?"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the difference between linear and logistics regression with example."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List the advantages of Support Vector Machine (SVM) and how optimal Hyper plane differ from Hyper plane."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe the basic concept of K-means clustering and how it partitions data into K clusters based on similarity."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How does adaptive hierarchical clustering adaptively adjust the number of clusters based on the data? Discuss."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the difference between the E-step and M-step in the EM algorithm. How does EM handle missing or incomplete data in probabilistic models?"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "List the fundamental steps involved in designing and conducting a machine learning experiment."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is cross-validation in machine learning? Describe its purpose and how it helps in evaluating the performance of machine learning models."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two of the following.\na) Partial Least Squares\nb) Activation functions\nc) Goals of clustering\nd) Measuring classifier performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain Principle component analysis with Examples."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define Machine Learning and explain different issues of Machine Learning."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain Multi layer perception model with neat diagram."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain parallel processing perception learning in neural networks with neat diagram."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain Random Forest algorithm and explain different regression problems."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Decision tree. Explain Decision tree learning algorithm with example."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Use K Means clustering to cluster the following data into two groups. Assume cluster centroid are m1 = 2 and m2 = 4. The distance function used is Euclidean distance. {2, 4, 10, 12, 3, 20, 30, 11, 25}"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain Expectation Maximization algorithm with example. And also explain why we need it?"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define Neural Networks and Explain different functions used in Neural Networks."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Logistic regression with examples."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Linear Regression? Explain in detail with example and list all the assumptions to be met before starting with Linear Regression."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain adaptive hierarchical clustering"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is cross validation and Explain resampling methods in machine learning?"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain different shrinkage methods in machine learning."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on the following:\na) Hypothesis testing\nb) Subset selection\nc) Inductive bias\nd) Simulation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "List and Explain perspectives and issues of Machine Learning."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Distinguish between supervised learning and Unsupervised learning with example."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define Back propagation and write an algorithm for Back Propagation with examples."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is a Perceptron? Explain the working of a perceptron with a neat diagram."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain how Support Vector Machine can be used for classification of linearly separable data."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Decision tree. Explain Decision tree algorithm with example."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Use K Means clustering to cluster the following data in to two groups. Assume cluster centroid are m1 = 2 and m2 = 4. The distance function used is Euclidean distance {2, 4, 10, 12, 3, 20, 30, 11, 25}."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain Expectation Maximization algorithm with example. And also explain why we need it?"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain hypothesis testing with examples."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain resample methods of machine learning."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Linear Regression? Explain in detail with example and list all the assumptions to be met before starting with Linear Regression."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Differentiate between regression and classifications."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Gaussian Mixture density estimation with example."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain different algorithms for dimension reduction with example."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "write short notes on the following:\na) Cross validation\nb) Training and validation\nc) Cluster\nd) Factors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the concept of hypothesis space and inductive bias in brief."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "List and explain perspectives and issues in machine learning."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define artificial neural network. Explain the biological learning system."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the characteristics of back propagation algorithm."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define Decision tree learning. List and explain appropriate problems for decision tree learning."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "List and explain the issues in Decision tree learning."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Illustrate K. means clustering algorithm."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write K means algorithm and separate { 5, 11, 19, 27, 23, 25, 6, 18, 2, 8, 10, 12, 31, 29, 4 } into 3 clusters."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain resampling methods in machine learning."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of measuring the classifier performance."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Distinguish between Supervised machine learning and reinforcement learning."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the multi-layer perceptron model with a neat diagram."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain parallel processing perception learning in neural networks."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the goal of support vector machine (SVM)? How to compute the margin."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Describe the following:\na) Logistic Regression\nb) Issues in machine Learning\nc) Requirements of clustering algorithms"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
