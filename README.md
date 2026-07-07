@@ -315,11 +315,14 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before
 - 🖼️ [Question Attachments Guide](docs/QUESTION_ATTACHMENTS_GUIDE.md) — Standards for adding educational figures, diagrams, graphs, tables, and other question attachments.
 
 # Quick contribution workflow
+
 git fork https://github.com/imuniqueshiv/HyperLearningTech
 git checkout -b feat/your-feature-name
 git commit -m "feat: describe your change"
 git push origin feat/your-feature-name
+
 # Open a Pull Request on GitHub
+
 ```
 
 Areas where contributions are especially valuable: UI/UX improvements, accessibility, performance optimization, documentation, and test coverage.
@@ -368,3 +371,4 @@ This project is licensed under the **Apache License 2.0**. See the [LICENSE](LIC
 If this project helps you, please ⭐ star the repository — it helps others find it.
 
 </div>
+```
