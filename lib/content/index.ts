@@ -102,7 +102,7 @@ export async function getTopicById(
       if (typeof item === "string") {
         return item === topicId;
       }
-      return (item as any).id === topicId;
+      return (item as { id: string }).id === topicId;
     });
 
     if (topic) {

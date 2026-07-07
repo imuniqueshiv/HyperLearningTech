@@ -106,10 +106,10 @@ export default function ModuleCard({
         <div className="flex flex-wrap gap-3">
           {(module.topics || []).map((topic, index) => {
             const isString = typeof topic === "string";
-            const topicId = isString ? (topic as string) : (topic as any).id;
+            const topicId = isString ? (topic as string) : (topic as { id: string }).id;
             const topicTitle = isString
               ? (topic as string)
-              : (topic as any).title;
+              : (topic as { title: string }).title;
 
             return (
               <Link

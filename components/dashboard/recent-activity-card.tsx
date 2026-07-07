@@ -27,13 +27,6 @@ export function RecentActivityCard({
 
   // Determine dynamic colors based on theme
   const isCyan = theme === "cyan";
-  const glowBorderClass = isCyan
-    ? "group-hover:border-cyan-500/30"
-    : "group-hover:border-orange-500/30";
-  const iconBgClass = isCyan
-    ? "bg-cyan-500/10 text-cyan-400 border-cyan-500/20"
-    : "bg-orange-500/10 text-orange-400 border-orange-500/20";
-  const trackBgClass = "bg-zinc-800/50";
   const barBgClass = isCyan
     ? "bg-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.56)]"
     : "bg-orange-400 shadow-[0_0_15px_rgba(251,146,60,0.56)]";
