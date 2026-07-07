@@ -4,7 +4,6 @@ import {
   LayoutDashboard,
   BrainCircuit,
   Sparkles,
-  Star,
   Library,
   FileText,
   Target,
