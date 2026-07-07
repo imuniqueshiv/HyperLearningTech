@@ -2,6 +2,9 @@ import { notFound } from "next/navigation";
 import { FileText, Calendar, Clock, ChevronDown, Sparkles } from "lucide-react";
 import { getPYQs } from "@/lib/content";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
+import QuestionAttachments from "@/components/pyqs/question-attachments";
+import { buildQuestionWithAttachments } from "@/lib/ai/prompt-builder";
+import type { SubQuestion } from "@/types/pyq";
 interface PaperPageProps {
   params: Promise<{
     branch: string;
@@ -145,12 +148,7 @@ export default async function PaperPage({ params }: PaperPageProps) {
                 question: {
                   id: string;
                   questionNumber: string;
-                  subQuestions?: {
-                    id: string;
-                    label: string;
-                    text: string;
-                    unit: string;
-                  }[];
+                  subQuestions?: SubQuestion[];
                 },
                 index: number
               ) => (
@@ -197,6 +195,13 @@ export default async function PaperPage({ params }: PaperPageProps) {
                                   )
                                 )}
                               </div>
+
+                              <QuestionAttachments
+                                attachments={subQuestion.attachments}
+                                branch={branch}
+                                semester={semester}
+                                subject={subject}
+                              />
                             </div>
 
                             <div
@@ -224,7 +229,10 @@ export default async function PaperPage({ params }: PaperPageProps) {
 
                           <div className="border-t border-blue-500/15 bg-blue-500/[0.03] px-0 pb-3 pt-2 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-top-2 motion-safe:duration-300 sm:px-5 sm:pb-5 sm:pt-4 dark:bg-blue-500/[0.06]">
                             <GenerateAnswerButton
-                              question={subQuestion.text}
+                              question={buildQuestionWithAttachments(
+                                subQuestion.text,
+                                subQuestion.attachments
+                              )}
                               subjectCode={subject.toUpperCase()}
                               label={subQuestion.label}
                               compactMobile

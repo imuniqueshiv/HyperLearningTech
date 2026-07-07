@@ -28,14 +28,36 @@
               "label": "a)",
               "text": "Find the voltage Vab in the network shown below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1a-img-1",
+                  "type": "image",
+                  "path": "november-2022/Q.1-a-dec-2022.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for finding voltage Vab.",
+                  "caption": "Figure for Question 1(a).",
+                  "aiContext": "The circuit consists of two interconnected DC networks. The left network contains a 2 A downward current source connected in series with two 5 Ω resistors. The junction of the two 5 Ω resistors connects to node a through a 10 Ω resistor. The right network contains a 6 Ω resistor between nodes a and d, a 4 Ω resistor between nodes a and b, and an ideal 30 V voltage source between nodes d and c. Nodes b and c are directly connected by a conductor. Determine the voltage between nodes a and b (Vab) using circuit analysis."
+                }
+              ]
             },
             {
               "id": "q1b",
               "label": "b)",
               "text": "Find the current through the 6Ω resistor using Thevenin's theorem.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "november-2022/Q.1-b-dec-2022.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for Thevenin theorem problem with dependent voltage source.",
+                  "caption": "Figure for Question 1(b).",
+                  "aiContext": "The circuit contains an independent 18 V voltage source on the left, followed by a 1 Ω resistor. The voltage across the 1 Ω resistor is labelled Vx with positive polarity on the right side. A 3 A current source is connected from the reference node to the junction after the 1 Ω resistor. A dependent voltage source of value 2Vx is connected in series between the junction and the right side of the circuit. A 6 Ω resistor is connected from the output node to the reference node. Using Thevenin's theorem, determine the current flowing through the 6 Ω resistor."
+                }
+              ]
             }
           ]
         },
@@ -188,14 +210,36 @@
               "label": "a)",
               "text": "Using the mesh analysis, find the Io in the circuit as given below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1a-img-1",
+                  "type": "image",
+                  "path": "june-2023/Q.1-a-june-2023.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining current Io using mesh analysis.",
+                  "caption": "Figure for Question 1(a).",
+                  "aiContext": "The circuit is a three-mesh DC network. The left vertical branch contains an independent 16 V voltage source with the positive terminal at the top and the negative terminal at the bottom. The current Io is indicated by an upward arrow in the upper portion of the left vertical conductor above the 16 V source. The top branch contains a 6 Ω resistor connecting the left and right top nodes. The middle horizontal branch contains a 4 Ω resistor on the left and an 8 Ω resistor on the right, meeting at a central junction. A 2 Ω resistor is connected vertically from the central junction to the bottom reference conductor. The right vertical branch contains a dependent voltage source of value 10Io, with positive polarity at the bottom terminal and negative polarity at the top terminal. Three clockwise mesh currents are labelled i1 in the lower-left mesh, i2 in the lower-right mesh, and i3 in the upper mesh. Determine the current Io using mesh analysis."
+                }
+              ]
             },
             {
               "id": "q1b",
               "label": "b)",
               "text": "In the figure below, find the current flowing through R1 using Thevenin's Theorem.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "june-2023/Q.1-b-june-2023.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for finding the current through resistor R1 using Thevenin's theorem.",
+                  "caption": "Figure for Question 1(b).",
+                  "aiContext": "The circuit contains a common bottom conductor connecting all branches. The left vertical branch contains an independent 6 V voltage source labelled E = 6 V with the positive terminal at the top and the negative terminal at the bottom. Two upper nodes are connected by a resistor R1 = 2 Ω across the top branch. From the left upper node, a vertical resistor R2 = 3 Ω connects to the bottom conductor. From the right upper node, a vertical resistor R3 = 4 Ω connects to the bottom conductor. The rightmost vertical branch contains an independent 3 A current source directed upward from the bottom conductor to the right upper node. Determine the current flowing through the resistor R1 using Thevenin's theorem."
+                }
+              ]
             }
           ]
         },
@@ -348,14 +392,36 @@
               "label": "a)",
               "text": "Use mesh analysis to determine the three mesh current in the circuit of the figure below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1a-img-1",
+                  "type": "image",
+                  "path": "december-2023/Q.1-a-dec-2023.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining three mesh currents using mesh analysis.",
+                  "caption": "Figure for Question 1(a).",
+                  "aiContext": "The circuit is a planar DC network divided into three meshes labelled I1, I2 and I3, with all mesh currents indicated in the anticlockwise direction. The left mesh contains an independent 7 V voltage source connected between the top and bottom rails. The central vertical branch consists of a 1 Ω resistor at the top, an independent 6 V voltage source in the middle with positive polarity at the upper terminal, and a 2 Ω resistor at the bottom. A 3 Ω resistor is connected horizontally from the junction between the 1 Ω resistor and the 6 V source to the midpoint of the right-hand branch. The right vertical branch contains a 2 Ω resistor above the midpoint and a 1 Ω resistor below the midpoint. The top and bottom conductors connect all three meshes together. Determine the three mesh currents I1, I2 and I3 using mesh analysis."
+                }
+              ]
             },
             {
               "id": "q1b",
               "label": "b)",
               "text": "Using super position, find the V0 in the circuit shown in figure below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "december-2023/Q.1-b-dec-2023.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining node voltage V0 using the superposition theorem.",
+                  "caption": "Figure for Question 1(b).",
+                  "aiContext": "The circuit contains a common bottom reference node (ground). On the left side, a 5 Ω vertical resistor connects the bottom node to the left upper node, which is connected to the central node V0 through a 4 Ω resistor. The central node is labelled V0. From V0, a 1 Ω resistor connects to the right upper node. A vertical branch extends downward from V0 through a 3 Ω resistor followed by an independent 9 V voltage source connected to ground, with the positive terminal at the top of the source. On the right side, an independent 3 V voltage source connects the upper right node to the bottom reference node, with the positive terminal at the top. Determine the node voltage V0 using the superposition theorem by considering the contribution of each independent voltage source separately."
+                }
+              ]
             }
           ]
         },
@@ -528,7 +594,18 @@
               "label": "a)",
               "text": "Using the mesh analysis, find the current through 5Ω resistor in the network as shown in figure below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q2a-img-1",
+                  "type": "image",
+                  "path": "june-2024/Q.2-a-june-2024.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining the current through the 5 Ω resistor using mesh analysis.",
+                  "caption": "Figure for Question 2(a).",
+                  "aiContext": "The circuit consists of a rectangular DC network with common top and bottom conductors. The left vertical branch contains an independent 100 V voltage source with the positive terminal at the top and the negative terminal at the bottom. The centre vertical branch contains a 20 Ω resistor connected between the top conductor and the middle junction, and a 5 Ω resistor connected between the middle junction and the bottom conductor. The right vertical branch contains a 2 Ω resistor connected between the top conductor and the right middle junction, and a 1 Ω resistor connected between the right middle junction and the bottom conductor. A horizontal branch connects the centre junction to the right junction. This branch contains an independent 4 A current source with its arrow pointing from right to left, followed in series by a 3 Ω resistor before reaching the right junction. The top conductor directly connects the upper terminals of the 100 V source, the 20 Ω resistor and the 2 Ω resistor. The bottom conductor directly connects the lower terminals of the 100 V source, the 5 Ω resistor and the 1 Ω resistor. Determine the current flowing through the 5 Ω resistor using mesh analysis."
+                }
+              ]
             },
             {
               "id": "q2b",
@@ -675,7 +752,18 @@
               "label": "b)",
               "text": "Using Nodal Analysis, find the current through the 10Ω resistor in the figure shown below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "december-2024/Q.1-b-dec-2024.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining the current through the 10 Ω resistor using nodal analysis.",
+                  "caption": "Figure for Question 1(b).",
+                  "aiContext": "The circuit contains two principal nodes labelled A and B connected by a 10 Ω resistor on the top branch. An arrow beneath the 10 Ω resistor indicates that the required current is the current flowing from node A toward node B through the 10 Ω resistor. Node A is connected to the common bottom reference node through two separate branches. The first branch contains a single 4 Ω resistor. The second branch contains a 5 Ω resistor connected in series with an independent 15 V voltage source whose positive terminal is at the top and negative terminal is at the bottom. Node B is also connected to the common bottom reference node through two separate branches. The first branch contains a vertical resistor of 5 Ω connected directly from node B to the reference node. The second branch consists of a 4 Ω resistor connected in series with an independent 30 V voltage source whose positive terminal is at the top and negative terminal is at the bottom. The lower conductor is a common reference node shared by all branches. Apply nodal analysis by assigning node voltages VA and VB with respect to the common reference node, write KCL equations at nodes A and B, and determine the current through the 10 Ω resistor using I = (VA − VB) / 10 A in the indicated direction from A to B."
+                }
+              ]
             }
           ]
         },
@@ -688,7 +776,18 @@
               "label": "a)",
               "text": "Find the value of current in branch AB using the Superposition Theorem. Refer to the circuit below.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q2a-img-1",
+                  "type": "image",
+                  "path": "december-2024/Q.2-a-dec-2024.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining the current in branch AB using the superposition theorem.",
+                  "caption": "Figure for Question 2(a).",
+                  "aiContext": "The circuit contains a common bottom reference conductor connecting all branches. The left vertical branch contains an independent 3 A current source with its arrow directed upward from the reference node to the upper left node. A 1.5 Ω resistor is connected vertically between the same upper left node and the bottom reference node, making it parallel with the current source. Along the top conductor, a 2 Ω resistor connects the upper left node to a central upper node. From the central upper node, a 5 Ω resistor is connected vertically to the bottom reference node. Another 2 Ω resistor connects the central upper node to the upper right node. The rightmost vertical branch contains an independent 15 V voltage source connected between the upper right node and the common reference node, with the positive terminal at the top and the negative terminal at the bottom. Branch AB refers to the top branch between the left and central upper nodes containing the first 2 Ω resistor. Using the superposition theorem, determine the current flowing through branch AB by analysing the contribution of the 3 A current source with the 15 V source deactivated (short-circuited), then the contribution of the 15 V voltage source with the 3 A current source deactivated (open-circuited), and finally summing the individual branch currents algebraically."
+                }
+              ]
             },
             {
               "id": "q2b",
@@ -835,7 +934,18 @@
               "label": "b)",
               "text": "For the circuit shown in Fig (i) find the current in 2Ω resistor.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "june-2025/Q.1-b-june-2025.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit containing two DC voltage sources and three resistors for finding the current through the 2 Ω resistor.",
+                  "caption": "Figure (i) for Question 1(b).",
+                  "aiContext": "The circuit consists of a common bottom conductor connecting nodes A, F and E. The left vertical branch contains an independent 35 V DC voltage source connected between node A (bottom) and node B (top), with the positive terminal at node B and the negative terminal at node A. Along the top branch, node B is connected to node C through a 12 Ω resistor. Node C is connected to node D through a 4 Ω resistor. The right vertical branch contains an independent 40 V DC voltage source connected between node E (bottom) and node D (top), with the positive terminal at node D and the negative terminal at node E. From the central top node C, a 2 Ω resistor is connected vertically downward to node F on the common bottom reference conductor. Nodes A, F and E are directly connected by an ideal conductor and therefore represent the same reference node. The network therefore contains two independent DC voltage sources, a 12 Ω resistor between nodes B and C, a 4 Ω resistor between nodes C and D, and a 2 Ω resistor connected from node C to the common reference node. Determine the current flowing through the vertical 2 Ω resistor using appropriate circuit analysis such as Kirchhoff's laws, nodal analysis, mesh analysis, or any equivalent network analysis technique."
+                }
+              ]
             }
           ]
         },
@@ -855,7 +965,18 @@
               "label": "b)",
               "text": "Find the current through 5-ohm resistance in Fig (ii) using mesh current analysis.",
               "unit": "Unit 1",
-              "type": "dc-circuits"
+              "type": "dc-circuits",
+              "attachments": [
+                {
+                  "id": "q2b-img-1",
+                  "type": "image",
+                  "path": "june-2025/Q.2-b-june-2025.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit containing two 20 V DC voltage sources and multiple resistors for determining the current through the 5 Ω resistor using mesh analysis.",
+                  "caption": "Figure (ii) for Question 2(b).",
+                  "aiContext": "The circuit consists of a common bottom reference conductor shared by all branches. The left vertical branch contains an independent 20 V DC voltage source with its positive terminal at the top and negative terminal connected to the common bottom node. The positive terminal of this source connects to the left end of the top branch. Along the top branch, a 3 Ω resistor connects the left source node to the first junction. From this first junction, a 2 Ω resistor is connected vertically downward to the common bottom reference node. Continuing along the top branch, a 5 Ω resistor connects the first junction to a second junction. From the second junction, a 3 Ω resistor is connected vertically downward to the common bottom reference node. Continuing further along the top branch, a 6 Ω resistor connects the second junction to the top terminal of a second independent 20 V DC voltage source located on the right side of the circuit. The right voltage source has its positive terminal at the top and negative terminal connected to the common bottom reference node. Thus, the upper network consists of three series resistors of 3 Ω, 5 Ω and 6 Ω, while two vertical shunt resistors of 2 Ω and 3 Ω connect the intermediate junctions to the common reference node. Independent 20 V DC sources energize both ends of the network. Determine the current flowing through the central 5 Ω resistor by applying mesh current analysis. Define mesh currents for the left, middle and right meshes, write the corresponding KVL equations, solve the simultaneous equations, and calculate the current through the 5 Ω resistor."
+                }
+              ]
             }
           ]
         },
@@ -998,7 +1119,18 @@
               "text": "Find the current through 3 Ω resistor using superposition theorem in given figure.",
               "unit": "Unit 1",
               "type": "dc-circuits",
-              "isPredicted": true
+              "isPredicted": true,
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "december-2025/Q.1-b-dec-2025.webp",
+                  "title": "Circuit Diagram",
+                  "alt": "Electrical circuit for determining the current through the 3 Ω resistor using the superposition theorem.",
+                  "caption": "Figure for Question 1(b).",
+                  "aiContext": "The circuit consists of two independent DC voltage sources sharing a common bottom reference conductor. The left vertical branch contains an ideal 20 V voltage source with its positive terminal at the top and negative terminal connected to the common reference node. The positive terminal of the 20 V source is connected through a 5 Ω resistor to a central top junction. The right vertical branch contains an ideal 40 V voltage source with its positive terminal at the top and negative terminal connected to the same common reference node. The positive terminal of the 40 V source is connected through a 6 Ω resistor to the same central top junction. A 3 Ω resistor is connected vertically from the central top junction directly to the common bottom reference node. Thus, the central node is connected to three branches: a 5 Ω resistor leading to the 20 V source, a 6 Ω resistor leading to the 40 V source, and a 3 Ω resistor leading to the reference node. Determine the current flowing through the 3 Ω resistor using the superposition theorem by considering one independent voltage source at a time. While analysing each case, replace the inactive ideal voltage source with a short circuit, calculate the contribution of each source to the current through the 3 Ω resistor, and obtain the final current by algebraically summing the individual contributions."
+                }
+              ]
             }
           ]
         },
@@ -1100,7 +1232,18 @@
               "text": "Determine the equivalent resistance between terminals A and B in the given figure.",
               "unit": "Unit 1",
               "type": "dc-circuits",
-              "isPredicted": true
+              "isPredicted": true,
+              "attachments": [
+                {
+                  "id": "q6a-img-1",
+                  "type": "image",
+                  "path": "december-2025/Q.6-a-dec-2025.webp",
+                  "title": "Resistance Network",
+                  "alt": "Bridge resistor network for determining the equivalent resistance between terminals A and B.",
+                  "caption": "Figure for Question 6(a).",
+                  "aiContext": "The figure represents a passive resistor network between terminals A and B. Terminal A is connected to two left-side branches. The upper branch connects terminal A to the upper-left node through a 4 Ω resistor, while the lower branch connects terminal A to the lower-left node through a 6 Ω resistor. Between the upper-left and lower-left nodes there is a vertical 10 Ω resistor. The upper-left node is connected to the upper-right node through a 6 Ω resistor across the top of the network. The lower-left node is connected to the lower-right node through a 9 Ω resistor across the bottom of the network. Between the upper-right and lower-right nodes there is a vertical 20 Ω resistor. On the right side, the upper-right node is connected to terminal B through a 10 Ω resistor, and the lower-right node is connected to terminal B through a 15 Ω resistor. No independent or dependent voltage or current sources are present in the network; it is a purely resistive bridge-type circuit. Determine the equivalent resistance measured between terminals A and B by applying appropriate series-parallel reduction, bridge-network simplification, or circuit analysis techniques such as nodal analysis, mesh analysis, or a test-source method if direct reduction is not possible."
+                }
+              ]
             },
             {
               "id": "q6b",

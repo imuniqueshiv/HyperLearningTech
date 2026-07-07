@@ -1,30 +1,6 @@
 // lib/content/question-mapper.ts
 
-interface SubQuestion {
-  id: string;
-  label: string;
-  text: string;
-  latex?: string;
-  unit: string;
-  type?: string;
-}
-
-interface Question {
-  id: string;
-  questionNumber: string;
-  subQuestions: SubQuestion[];
-}
-
-interface Paper {
-  exam: string;
-  year: number;
-  month: string;
-  questions: Question[];
-}
-
-interface PYQData {
-  papers: Paper[];
-}
+import type { PYQData } from "@/types/pyq";
 
 interface Module {
   number: number;
@@ -46,3 +22,5 @@ export function getQuestionsForModule(module: Module, pyqs: PYQData | null) {
     )
   );
 }
+
+export type { PYQData } from "@/types/pyq";
