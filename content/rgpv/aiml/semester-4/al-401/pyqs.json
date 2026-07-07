@@ -5,5 +5,636 @@
     "name": "Intro to Discrete Structure & Linear Algebra",
     "title": "AL-401 - Intro to Discrete Structure & Linear Algebra"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Venn diagram. Draw the Venn diagrams for each of these combinations of the sets A, B and C.\ni) A n (B - C)\nii) (A n B) U (A n C)"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain Reflexive, symmetric, Transitive, equivalence relations with example."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Let A = { 1, 2, 3, 4, 6, 8, 9, 12, 18, 24 } be ordered by divisibility. Draw Hasse diagram."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Prove that G = {-1, 1, i, -i} is an abelian group under multiplication."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Find all the subgroups\ni) (Z_12, +_12)\nii) (Z_7^*, x_7)"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Solve the recurrence relation a_n = 2a_{n-1} + 3a_{n-2} for n >= 2 where a_0 = 2 and a_1 = 2."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define compound proposition. Explain different operations on propositions with truth tables."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Show that (P v Q) ^ (~P ^ (~P ^ Q)) <=> (~P ^ Q)."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is a Graph? Write about various ways of representing graphs."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Using properties of determinants, prove that\n|a, b, c|\n|a-b, b-c, c-a| = a^3 + b^3 + c^3 - 3abc\n|b+c, c+a, a+b|"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Find Single Value Decomposition of A = [[1, -1], [-2, 2], [2, 2]]"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Type-I and Type-II errors."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Three samples, each of size 5, were drawn from three uncorrelated normal populations with equal variances. Test the hypothesis that the population means are equal at 5% level.\nSample 1 | 10 | 12 | 9 | 16 | 13\nSample 2 | 9 | 7 | 12 | 11 | 11\nSample 3 | 14 | 11 | 15 | 14 | 16"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on (any three)\na) POSET\nb) Normal forms\nc) Gradient of a matrix\nd) Ring and fields."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Let A be the set of even numbers between 10 and 20, and B be the set of multiples of 5 between 15 and 35. If a is an even number from set A, and b is a multiple of 5 from set B, find the set of ordered pairs such that 'a' is a factor of 'b' and a is less than b."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Consider the relation R on the set of integers Z defined by aRb if and only if a^2 - b^2 is divisible by 4. Determine the common relations on Z that are the transitive closures of R."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Suppose that the relation R is irreflexive. Is R^2 necessarily irreflexive? Give a reason for your answer."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Solve the recurrence relation a_n = a_{n-1} + 6a_{n-2} given the initial conditions a_0 = 3 and a_1 = 6."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Prove that a subgroup H of a group G is normal if and only if xHx^-1 = H, for all x in G."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Let G = {0, 1, 2, 3, 4, 5} with addition modulo 6. Is G a group? Justify your answer."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Construct a niche overlap graph for six species of birds, where the hermit thrush competes with the robin and with the blue jay, the robin also competes with the mockingbird, the mockingbird also competes with the blue jay, and the nuthatch competes with the hairy wood-pecker."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Let p and q be the propositions\np : It is below freezing.\nq : It is snowing.\nWrite these propositions using p and q and logical connectives (including negations).\ni) It is below freezing and snowing.\nii) It is below freezing but not snowing.\niii) It is not below freezing and it is not snowing.\niv) It is either snowing or below freezing (or both).\nv) If it is below freezing, it is also snowing.\nvi) Either it is below freezing or it is snowing, but it is not snowing if it is below freezing.\nvii) That it is below freezing is necessary and sufficient for it to be snowing."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find a route with the least total airfare that visits each of the cities in this graph, where the weight on an edge is the least price available for a flight between the two cities.\n(Graph image with cities)"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Given a matrix F with SVD F = U \\Sigma V^T, where:\nU = [[1, 0], [0, 1]], \\Sigma = [[2, 0], [0, 3]], V = [[1, 0], [0, 1]]\nFind the original matrix F."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Find the Determinant and trace of the matrix:\n[[2, -1, 0], [3, 4, 2], [1, 0, -3]]"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Using Cholesky decomposition, Verify that whether the following matrix is positive definite or not."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write a detail note on Analysis of Variance."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A sample of 100 B.Sc. Student is taken from a medical college with height having standard deviation (S.D. = 10 cm). The mean height of sample of student is found 168.8 cm. Can we accept that the mean height of student is 170 cm. Justify your answer."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on any two:\na) Type-I and Type-II Errors\nb) Eigen decomposition\nc) Abelian group and cyclic group"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Prove that:\ni) A-(B n C) = (A-B) U (A-C)\nii) A x (B n C) = (A x B) n (A x C)"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "With the help of Venn-diagram, prove that\n(A U B)' = A' n B' and (A n B)' = A' U B'"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Consider the set Z of integers m > 1. We say that x is congruent to y modulo m written as x = y (mod m).\nIf x - y is divisible by m. Show that this defines an equivalence relation on Z."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Let D_m denotes the positive divisors of m ordered by divisibility. Draw the Hasse diagrams of the following:\ni) D_15\nii) D_24"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the set Q of rational numbers and let * be the operation on Q defined by:\na * b = a + b - ab\ni) Is (Q, *) a semi-group. Is it commutative.\nii) Find the identity element for *.\niii) Do any elements in Q have inverse? What is it?"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Ring with example. Also explain Commutative ring and ring homomorphism."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the following recurrence relations\na_n = 3a_{n-1} - 3a_{n-2} + a_{n-3}, a_0 = 0, a_1 = 3, a_2 = 10"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Show that\n((p v q) ^ ~(~p ^ (~q v ~r))) v (~p ^ ~q) v (~p ^ ~r) = T\nis a tautology by laws of algebra of propositions."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Obtain the conjunctive normal form of\ni) p ^ (p => q)\nii) ~p => [r ^ (p => q)]"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Check for Euler and Hamiltonian graphs:\n(Image of a graph with 5 vertices)"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is coloring problem? Hence define coloring of graph."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Solve the simultaneous equations:\n25x + 15y - 5z = 35\n15x + 18y + 0.z = 33\n-5x + 0.y + 11z = 6\nUsing Cholesky Decomposition."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is null hypothesis? What is its significance in statistical variance?"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "A coin was tossed 400 times and the head turned up 216 times. Test the hypothesis that the coin is unbiased."
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Find the singular value decomposition of the matrix:\nA = [[-4, -7], [1, 4]]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "If A = {2, 4, 6, 9} and B = {4, 6, 18, 27, 54}, a ∈ A, b ∈ B, find the set of ordered pairs such that 'a' is factor of 'b' and a < b."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Let R be the relation on the set R of all real numbers defined by a R b if and only if |a - b| <= 1. Then prove that R is reflexive, symmetric, but not transitive."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Let A = {1, 2, 3, 4, 5, 6} and a R b if and only if a is multiple of b. Find:\ni) Domain\nii) Range\niii) Matrix of a relation\niv) Digraph of the relation R."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What common relations on Z are the transitive closures of the following relations?\ni) a S b if and only if a + 1 = b.\nii) a R b if and only if a - b = 2."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "i) Prove that p ^ q => q v p is a Tautology.\nii) Show that (p v q) ^ (-p) ^ (-q) is a contradiction"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Prove that in any graph G, even number of vertices is of odd degree."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the equations\n6x + 15y + 55z = 76\n15x + 55y + 225z = 295\n55x + 225y + 979z = 1259\nUsing Cholesky decomposition method."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find singular value decomposition for A = [[1, 0, 1], [-1, 1, 0]]"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "To test the hypothesis that eating fish makes one smarter, a random sample of 12 persons take a fish oil supplement for one year and then are given an IQ test. Here are the results:\n116 111 101 120 99 94 106 115 107 101 110 92\nTest using the following hypothesis, report the test statistic with the P-value, then summarize your conclusion.\nH0: μ = 100\nHa: μ > 100"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the critical values for a one-independent sample non directional (two-tailed) z test at a .05 level of significance?"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Let A = {1, 2, 3, 4, 6, 8, 9, 12, 18, 24} be ordered by divisibility. Draw Hasse diagram."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Let G be a planar graph with 10 vertices, 3 components and 9 edges. Find the number of regions in G."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Find chromatic number of the following graph:\n(Image of a graph)"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write short note on partially ordered sets and explain with suitable example."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short Note on\na) Hasse diagram\nb) Lattice\nc) Weighted Graph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "List the 16 different relations on the set {0, 1}. How many of the 16 different relations on {0, 1} contain the pair (0, 1). Which of the 16 relations on {0, 1} are reflexive, symmetric and transitive."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Show that the set S = {(1, 3, 5, 7), X_8} forms a group."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Prove that nP_n(x) = xP'_n(x) - P'_{n-1}(x) using recurrence relation."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Demonstrate that pv(q^r) and (pvq)^(pvr) are logically equivalent. (Using Truth table)"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Show that ~(pv(~p^q)) and (~p^~q) are logically equivalent by developing series of logical equivalence."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw the Hasse diagram for divisibility on the set {1, 2, 3, 4, 5, 6}"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define the terms: Abelian Group, Cyclic Group and Normal Sub group."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss various graph terminologies."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is coloring problem and hence define coloring of graph?"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Solve the system by Cholesky decomposition.\nx + 2y + 3z = 5, 2x + 8y + 22z = 6, 3x + 22y + 82z = -10."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "Find the singular value decomposition of the matrix\nA = [[3, 1, 1], [-1, 3, 1]]"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Three samples, each of size 5, were drawn from three uncorrelated normal populations with equal variances. Test the hypothesis that the population means are equal at 5% Level.\nSample 1 | 10 | 12 | 9 | 16 | 13\nSample 2 | 9 | 7 | 12 | 11 | 11\nSample 3 | 14 | 11 | 15 | 14 | 16"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -15,959 +15,6 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Discuss the classification computer with examples.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define Operating System. Briefly explain the function.",
-              "unit": "Unit 1",
-              "type": "os"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "What is a Programming language? Differentiate Assembly level language and High Level language.",
-              "unit": "Unit 2",
-              "type": "programming"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Why is Algorithm writing and drawing a flow chart necessary before writing a computer program?",
-              "unit": "Unit 2",
-              "type": "algorithm"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "How is Function overloading and operator overloading done? Explain them with a simple program.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Write a C++ program to insert and delete an element from a stack.",
-              "unit": "Unit 3",
-              "type": "ds"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Differentiate ISO-OSI with TCP/IP.",
-              "unit": "Unit 4",
-              "type": "networking"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What is a firewall? How can it provide security to the system?",
-              "unit": "Unit 4",
-              "type": "security"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain DDL and DML commands with suitable examples.",
-              "unit": "Unit 5",
-              "type": "dbms"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain different types of clouds.",
-              "unit": "Unit 5",
-              "type": "cloud"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6",
-              "label": "",
-              "text": "Write short notes on: a) BUS Architecture b) MS Word Vs MS Excel c) Polymorphism",
-              "unit": "Unit 1/3",
-              "type": "mixed"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "What is an Array? Explain different types of Arrays with syntax and suitable example programs.",
-              "unit": "Unit 2",
-              "type": "programming"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What is E-Commerce? Write the advantages and disadvantages.",
-              "unit": "Unit 4",
-              "type": "ecommerce"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short notes on: a) Cloud Infrastructure b) DBA c) Logic Bombs",
-              "unit": "Unit 5/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2023",
-      "year": 2023,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Describe the following: i) Remote sensing and GIS ii) Computer applications in E-business",
-              "unit": "Unit 1",
-              "type": "applications"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Explain I/O devices in detail with suitable examples.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explain memory and type of memory in detail.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Define algorithms. What is the need of algorithms? Describe three benefits of algorithms.",
-              "unit": "Unit 2",
-              "type": "algorithm"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain procedure-oriented programming with examples.",
-              "unit": "Unit 2",
-              "type": "programming"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain the following: i) data type ii) tokens iii) variables iv) operator",
-              "unit": "Unit 2",
-              "type": "programming"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain data structures in detail.",
-              "unit": "Unit 3",
-              "type": "ds"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Define objects and classes. Can a class in C++ have more than one constructor with the same name? Justify your answer with a suitable example.",
-              "unit": "Unit 3",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain Function overloading and Operator overloading with an example.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain TCP/IP model in detail with a diagram.",
-              "unit": "Unit 4",
-              "type": "networking"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Describe Denial of Service (DoS) and logic bombs in detail.",
-              "unit": "Unit 4",
-              "type": "security"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Write a short note on good computer security habits.",
-              "unit": "Unit 4",
-              "type": "security"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Describe data independence and DBA in detail.",
-              "unit": "Unit 5",
-              "type": "dbms"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What do you understand by cloud computing? Describe cloud infrastructure in detail.",
-              "unit": "Unit 5",
-              "type": "cloud"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short note (on any two): a) Pros and cons of cloud computing b) World Wide Web c) Characteristics of OOP d) Classification of computer",
-              "unit": "Unit 5/4/2/1",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What functions do application and system software perform in a computer system? What distinguishes them from one another?",
-              "unit": "Unit 1",
-              "type": "software"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Could you explain the various memory and storage techniques typically utilized by computers.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "What are the primary features and applications of Microsoft PowerPoint for generating presentations?",
-              "unit": "Unit 1",
-              "type": "ms-office"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Contrast programming paradigms including procedural programming, object-oriented programming and functional programming. Discuss their benefits and drawbacks.",
-              "unit": "Unit 2",
-              "type": "programming"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Discuss the various sorts of algorithmic complexities, such as time and space complexity, as well as how they are quantified.",
-              "unit": "Unit 2",
-              "type": "algorithm"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Compare and contrast low-level programming languages (e.g., assembly language) and high-level programming languages (e.g., Python) in terms of their characteristics and use cases.",
-              "unit": "Unit 2",
-              "type": "programming"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain what \"data types\" are used in C++ and what the difference is between \"primitive\" and \"derived\" data types? Give an example of each one.",
-              "unit": "Unit 2",
-              "type": "programming"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What is an operating system, and what are its key responsibilities in a computer system? Also, discuss various types of operating systems now in use.",
-              "unit": "Unit 1",
-              "type": "os"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain the inheritance in object-oriented programming and its implications in terms of code reuse and extensibility. Discuss the various forms of inheritance, such as single inheritance, multiple inheritance and multilevel inheritance.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Describe the object-oriented programming concepts of objects and classes. Correlate how classes and objects interact and how it affects the modularity and organization of the code?",
-              "unit": "Unit 3",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Illustrate the purpose of friend functions in C++ and their importance in gaining access to a class's private and protected members. Explain how to declare and define friend functions with an example.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "In terms of structure, layering and compatibility with existing network protocols, compare and contrast the ISO-OSI model to the TCP/IP paradigm.",
-              "unit": "Unit 4",
-              "type": "networking"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Determine internetworking and the difficulties associated with joining numerous networks. Discuss the importance of technologies such as routers and switches in supporting communication within the internetwork.",
-              "unit": "Unit 4",
-              "type": "networking"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Describe the fundamentals of computer security as well as several types of malware such as viruses, worms, trojans and spyware. Examine their properties, mechanisms of propagation and potential effects on computer systems.",
-              "unit": "Unit 4",
-              "type": "security"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Explain the following with a suitable example: a) Data dictionary b) Cloud infrastructure",
-              "unit": "Unit 5",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2024",
-      "year": 2024,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the organization of computer with help of block diagram.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Give examples of basic mathematical functions in Excel such as SUM, AVERAGE and MAX.",
-              "unit": "Unit 1",
-              "type": "ms-office"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "How do you insert headers and footers into a Word document? What content can be included in headers and footers? Discuss.",
-              "unit": "Unit 1",
-              "type": "ms-office"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is Microsoft Office and what is its primary purpose?",
-              "unit": "Unit 1",
-              "type": "ms-office"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Discuss the generation computers.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What are the principles of Object-Oriented Programming (OOP)?",
-              "unit": "Unit 2",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What is the difference between single inheritance and multiple inheritance?",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Explain the concept of operator overloading with an example.",
-              "unit": "Unit 3",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "What is operator overloading and why is it useful in C++?",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain the difference between one-dimensional and multi-dimensional arrays.",
-              "unit": "Unit 2",
-              "type": "programming"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Explain the concept of cloud computing and its relationship to the Internet.",
-              "unit": "Unit 5",
-              "type": "cloud"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What role do social media platforms play in e-commerce marketing and customer engagement?",
-              "unit": "Unit 4",
-              "type": "ecommerce"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain common types of cyber threats, such as malware, phishing and Denial-of-Service (DoS) attacks.",
-              "unit": "Unit 4",
-              "type": "security"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What is a database transaction and why is it important in maintaining data integrity?",
-              "unit": "Unit 5",
-              "type": "dbms"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short note: i) DDL and DML Commands ii) Remote Sensing and GIS iii) I/O Device",
-              "unit": "Unit 5/1",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2024",
-      "year": 2024,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What is application software and how does it differ from system software?",
-              "unit": "Unit 1",
-              "type": "software"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define computer memory and differentiate between primary and secondary memory.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Discuss the classification of computer with example.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What are the advantages of a computer? Discuss with suitable examples.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "What are limitations do flowcharts have in representing complex algorithms or processes?",
-              "unit": "Unit 2",
-              "type": "algorithm"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain how to create a flowchart for a simple algorithm, such as finding the maximum of two numbers.",
-              "unit": "Unit 2",
-              "type": "algorithm"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Describe the key components of a typical DBMS architecture.",
-              "unit": "Unit 5",
-              "type": "dbms"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What is a class in C++ and how does it differ from an object? Provide an example.",
-              "unit": "Unit 3",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain the concept of constructors and destructors in C++.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What is encapsulation and why is it important in OOP?",
-              "unit": "Unit 2",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "What are the seven layers of the OSI model and what is the purpose of each layer?",
-              "unit": "Unit 4",
-              "type": "networking"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What is the TCP/IP model and why is it significant in computer networking?",
-              "unit": "Unit 4",
-              "type": "networking"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain the elements required to prove internet fraud under the law.",
-              "unit": "Unit 4",
-              "type": "security"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What is cloud computing and how does it differ from traditional computing models?",
-              "unit": "Unit 5",
-              "type": "cloud"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short note: i) Logical operators in C++ ii) Data Independence iii) Service delivery models in cloud computing",
-              "unit": "Unit 2/5",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2025",
-      "year": 2025,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Classify computers based on size and functionality. Compare supercomputers, mainframes and embedded systems.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Explain the architecture and working of a CPU with a labeled diagram.",
-              "unit": "Unit 1",
-              "type": "computer-basics"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Define an Operating System. Discuss its structure and explain the concept of a kernel.",
-              "unit": "Unit 1",
-              "type": "os"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is an algorithm? Write an algorithm to find largest value from the given three numbers.",
-              "unit": "Unit 2",
-              "type": "algorithm"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "List and explain various operators in object oriented program.",
-              "unit": "Unit 2",
-              "type": "programming"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Write a C++ program to swap two numbers.",
-              "unit": "Unit 2",
-              "type": "programming"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "How many types of constructors are present in C++? Explain in detail.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Demonstrate the working of a friend function in C++ with an example.",
-              "unit": "Unit 3",
-              "type": "oop"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Write a program to read and print employee information using multiple inheritance.",
-              "unit": "Unit 3",
-              "type": "oop"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Differentiate between TCP/IP and ISO-OSI reference model.",
-              "unit": "Unit 4",
-              "type": "networking"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "What is a Firewall? Illustrate the working principle of a firewall.",
-              "unit": "Unit 4",
-              "type": "security"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Explain the procedure involved in protecting devices from malware, virus and worms.",
-              "unit": "Unit 4",
-              "type": "security"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Describe the functions of a DBA in maintaining the performance, integrity and security of a database.",
-              "unit": "Unit 5",
-              "type": "dbms"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Discuss about the different cloud service delivery models.",
-              "unit": "Unit 5",
-              "type": "cloud"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write a short note on any two of the following: i) Meteorology and Climatology ii) Object oriented features iii) Cyberstalking iv) Cloud infrastructure",
-              "unit": "Unit 1/2/4/5",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
@@ -1146,6 +193,959 @@
               "unit": "Unit 5",
               "type": "cloud",
               "isPredicted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Classify computers based on size and functionality. Compare supercomputers, mainframes and embedded systems.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the architecture and working of a CPU with a labeled diagram.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define an Operating System. Discuss its structure and explain the concept of a kernel.",
+              "unit": "Unit 1",
+              "type": "os"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is an algorithm? Write an algorithm to find largest value from the given three numbers.",
+              "unit": "Unit 2",
+              "type": "algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "List and explain various operators in object oriented program.",
+              "unit": "Unit 2",
+              "type": "programming"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a C++ program to swap two numbers.",
+              "unit": "Unit 2",
+              "type": "programming"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How many types of constructors are present in C++? Explain in detail.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Demonstrate the working of a friend function in C++ with an example.",
+              "unit": "Unit 3",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a program to read and print employee information using multiple inheritance.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate between TCP/IP and ISO-OSI reference model.",
+              "unit": "Unit 4",
+              "type": "networking"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is a Firewall? Illustrate the working principle of a firewall.",
+              "unit": "Unit 4",
+              "type": "security"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the procedure involved in protecting devices from malware, virus and worms.",
+              "unit": "Unit 4",
+              "type": "security"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the functions of a DBA in maintaining the performance, integrity and security of a database.",
+              "unit": "Unit 5",
+              "type": "dbms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss about the different cloud service delivery models.",
+              "unit": "Unit 5",
+              "type": "cloud"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two of the following: i) Meteorology and Climatology ii) Object oriented features iii) Cyberstalking iv) Cloud infrastructure",
+              "unit": "Unit 1/2/4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is application software and how does it differ from system software?",
+              "unit": "Unit 1",
+              "type": "software"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define computer memory and differentiate between primary and secondary memory.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the classification of computer with example.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the advantages of a computer? Discuss with suitable examples.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are limitations do flowcharts have in representing complex algorithms or processes?",
+              "unit": "Unit 2",
+              "type": "algorithm"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain how to create a flowchart for a simple algorithm, such as finding the maximum of two numbers.",
+              "unit": "Unit 2",
+              "type": "algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the key components of a typical DBMS architecture.",
+              "unit": "Unit 5",
+              "type": "dbms"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is a class in C++ and how does it differ from an object? Provide an example.",
+              "unit": "Unit 3",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the concept of constructors and destructors in C++.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is encapsulation and why is it important in OOP?",
+              "unit": "Unit 2",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the seven layers of the OSI model and what is the purpose of each layer?",
+              "unit": "Unit 4",
+              "type": "networking"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the TCP/IP model and why is it significant in computer networking?",
+              "unit": "Unit 4",
+              "type": "networking"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the elements required to prove internet fraud under the law.",
+              "unit": "Unit 4",
+              "type": "security"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is cloud computing and how does it differ from traditional computing models?",
+              "unit": "Unit 5",
+              "type": "cloud"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note: i) Logical operators in C++ ii) Data Independence iii) Service delivery models in cloud computing",
+              "unit": "Unit 2/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the organization of computer with help of block diagram.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Give examples of basic mathematical functions in Excel such as SUM, AVERAGE and MAX.",
+              "unit": "Unit 1",
+              "type": "ms-office"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How do you insert headers and footers into a Word document? What content can be included in headers and footers? Discuss.",
+              "unit": "Unit 1",
+              "type": "ms-office"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is Microsoft Office and what is its primary purpose?",
+              "unit": "Unit 1",
+              "type": "ms-office"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the generation computers.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the principles of Object-Oriented Programming (OOP)?",
+              "unit": "Unit 2",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the difference between single inheritance and multiple inheritance?",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the concept of operator overloading with an example.",
+              "unit": "Unit 3",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is operator overloading and why is it useful in C++?",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the difference between one-dimensional and multi-dimensional arrays.",
+              "unit": "Unit 2",
+              "type": "programming"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept of cloud computing and its relationship to the Internet.",
+              "unit": "Unit 5",
+              "type": "cloud"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What role do social media platforms play in e-commerce marketing and customer engagement?",
+              "unit": "Unit 4",
+              "type": "ecommerce"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain common types of cyber threats, such as malware, phishing and Denial-of-Service (DoS) attacks.",
+              "unit": "Unit 4",
+              "type": "security"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is a database transaction and why is it important in maintaining data integrity?",
+              "unit": "Unit 5",
+              "type": "dbms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note: i) DDL and DML Commands ii) Remote Sensing and GIS iii) I/O Device",
+              "unit": "Unit 5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What functions do application and system software perform in a computer system? What distinguishes them from one another?",
+              "unit": "Unit 1",
+              "type": "software"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Could you explain the various memory and storage techniques typically utilized by computers.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the primary features and applications of Microsoft PowerPoint for generating presentations?",
+              "unit": "Unit 1",
+              "type": "ms-office"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Contrast programming paradigms including procedural programming, object-oriented programming and functional programming. Discuss their benefits and drawbacks.",
+              "unit": "Unit 2",
+              "type": "programming"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the various sorts of algorithmic complexities, such as time and space complexity, as well as how they are quantified.",
+              "unit": "Unit 2",
+              "type": "algorithm"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare and contrast low-level programming languages (e.g., assembly language) and high-level programming languages (e.g., Python) in terms of their characteristics and use cases.",
+              "unit": "Unit 2",
+              "type": "programming"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain what \"data types\" are used in C++ and what the difference is between \"primitive\" and \"derived\" data types? Give an example of each one.",
+              "unit": "Unit 2",
+              "type": "programming"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is an operating system, and what are its key responsibilities in a computer system? Also, discuss various types of operating systems now in use.",
+              "unit": "Unit 1",
+              "type": "os"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the inheritance in object-oriented programming and its implications in terms of code reuse and extensibility. Discuss the various forms of inheritance, such as single inheritance, multiple inheritance and multilevel inheritance.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe the object-oriented programming concepts of objects and classes. Correlate how classes and objects interact and how it affects the modularity and organization of the code?",
+              "unit": "Unit 3",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Illustrate the purpose of friend functions in C++ and their importance in gaining access to a class's private and protected members. Explain how to declare and define friend functions with an example.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "In terms of structure, layering and compatibility with existing network protocols, compare and contrast the ISO-OSI model to the TCP/IP paradigm.",
+              "unit": "Unit 4",
+              "type": "networking"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Determine internetworking and the difficulties associated with joining numerous networks. Discuss the importance of technologies such as routers and switches in supporting communication within the internetwork.",
+              "unit": "Unit 4",
+              "type": "networking"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the fundamentals of computer security as well as several types of malware such as viruses, worms, trojans and spyware. Examine their properties, mechanisms of propagation and potential effects on computer systems.",
+              "unit": "Unit 4",
+              "type": "security"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following with a suitable example: a) Data dictionary b) Cloud infrastructure",
+              "unit": "Unit 5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the following: i) Remote sensing and GIS ii) Computer applications in E-business",
+              "unit": "Unit 1",
+              "type": "applications"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain I/O devices in detail with suitable examples.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain memory and type of memory in detail.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define algorithms. What is the need of algorithms? Describe three benefits of algorithms.",
+              "unit": "Unit 2",
+              "type": "algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain procedure-oriented programming with examples.",
+              "unit": "Unit 2",
+              "type": "programming"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the following: i) data type ii) tokens iii) variables iv) operator",
+              "unit": "Unit 2",
+              "type": "programming"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain data structures in detail.",
+              "unit": "Unit 3",
+              "type": "ds"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define objects and classes. Can a class in C++ have more than one constructor with the same name? Justify your answer with a suitable example.",
+              "unit": "Unit 3",
+              "type": "oop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain Function overloading and Operator overloading with an example.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain TCP/IP model in detail with a diagram.",
+              "unit": "Unit 4",
+              "type": "networking"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe Denial of Service (DoS) and logic bombs in detail.",
+              "unit": "Unit 4",
+              "type": "security"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write a short note on good computer security habits.",
+              "unit": "Unit 4",
+              "type": "security"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe data independence and DBA in detail.",
+              "unit": "Unit 5",
+              "type": "dbms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you understand by cloud computing? Describe cloud infrastructure in detail.",
+              "unit": "Unit 5",
+              "type": "cloud"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note (on any two): a) Pros and cons of cloud computing b) World Wide Web c) Characteristics of OOP d) Classification of computer",
+              "unit": "Unit 5/4/2/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the classification computer with examples.",
+              "unit": "Unit 1",
+              "type": "computer-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define Operating System. Briefly explain the function.",
+              "unit": "Unit 1",
+              "type": "os"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is a Programming language? Differentiate Assembly level language and High Level language.",
+              "unit": "Unit 2",
+              "type": "programming"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Why is Algorithm writing and drawing a flow chart necessary before writing a computer program?",
+              "unit": "Unit 2",
+              "type": "algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How is Function overloading and operator overloading done? Explain them with a simple program.",
+              "unit": "Unit 3",
+              "type": "oop"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a C++ program to insert and delete an element from a stack.",
+              "unit": "Unit 3",
+              "type": "ds"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Differentiate ISO-OSI with TCP/IP.",
+              "unit": "Unit 4",
+              "type": "networking"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is a firewall? How can it provide security to the system?",
+              "unit": "Unit 4",
+              "type": "security"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain DDL and DML commands with suitable examples.",
+              "unit": "Unit 5",
+              "type": "dbms"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain different types of clouds.",
+              "unit": "Unit 5",
+              "type": "cloud"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Write short notes on: a) BUS Architecture b) MS Word Vs MS Excel c) Polymorphism",
+              "unit": "Unit 1/3",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is an Array? Explain different types of Arrays with syntax and suitable example programs.",
+              "unit": "Unit 2",
+              "type": "programming"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is E-Commerce? Write the advantages and disadvantages.",
+              "unit": "Unit 4",
+              "type": "ecommerce"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on: a) Cloud Infrastructure b) DBA c) Logic Bombs",
+              "unit": "Unit 5/4",
+              "type": "mixed"
             }
           ]
         }
