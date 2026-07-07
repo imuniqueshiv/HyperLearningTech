@@ -9,11 +9,9 @@ export default function DashboardPage() {
     <div className="relative w-full bg-background pt-16 pb-12 animate-in fade-in duration-700">
       {/* Top Section Divider for visual separation from Universities */}
       <div className="absolute inset-x-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
-      
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        
         <div className="flex flex-col gap-8">
-          
           {/* 1. Premium Welcome Banner (Full Width) */}
           <div className="relative w-full overflow-hidden rounded-[24px] border border-border/80 bg-gradient-to-br from-card to-background p-8 sm:p-10 shadow-sm group">
             <div className="absolute inset-0 -z-10 opacity-30 transition-opacity duration-500 group-hover:opacity-60">
@@ -30,7 +28,8 @@ export default function DashboardPage() {
                   Welcome Back 👋
                 </h1>
                 <p className="max-w-xl text-[15px] leading-relaxed text-muted-foreground font-medium">
-                  Pick up where you left off. Access your syllabus, study your AI-generated notes, and practice with past year questions.
+                  Pick up where you left off. Access your syllabus, study your
+                  AI-generated notes, and practice with past year questions.
                 </p>
               </div>
             </div>
@@ -111,7 +110,6 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

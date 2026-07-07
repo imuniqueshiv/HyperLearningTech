@@ -61,18 +61,20 @@ export function QuickActionCard({
       className={`group relative flex flex-col gap-3 overflow-hidden rounded-[20px] border border-black/10 dark:border-white/[0.08] bg-black/[0.02] dark:bg-white/[0.03] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition-transform hover:-translate-y-1 hover:shadow-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.05] hover:border-blue-500/30 ${style.wrapper}`}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-black/5 dark:from-white/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      
+
       <div className="relative z-10 flex items-center justify-between">
         <div
           className={`flex h-12 w-12 items-center justify-center rounded-xl transition-colors duration-300 ${style.iconBox}`}
         >
           <Icon className="h-6 w-6" />
         </div>
-        <div className={`flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bg-[#1D4ED8]/10 group-hover:border-[#1D4ED8]/20 group-hover:text-[#1D4ED8] ${style.arrow}`}>
+        <div
+          className={`flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bg-[#1D4ED8]/10 group-hover:border-[#1D4ED8]/20 group-hover:text-[#1D4ED8] ${style.arrow}`}
+        >
           <ArrowRight className="h-4 w-4" />
         </div>
       </div>
-      
+
       <div className="relative z-10 mt-1">
         <h3
           className={`font-bold text-[15px] sm:text-base tracking-tight text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 ${style.title}`}

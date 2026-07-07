@@ -38,7 +38,9 @@ export function RecentActivityCard({
             <h3 className="font-bold text-[15px] sm:text-base tracking-tight text-foreground group-hover:text-[#1D4ED8] dark:group-hover:text-blue-400">
               {title}
             </h3>
-            <p className="mt-0.5 text-[13px] sm:text-sm font-medium text-muted-foreground">{subtitle}</p>
+            <p className="mt-0.5 text-[13px] sm:text-sm font-medium text-muted-foreground">
+              {subtitle}
+            </p>
           </div>
         </div>
         <div className="hidden sm:flex w-fit items-center gap-1.5 self-start rounded-md bg-background border border-border px-2.5 py-1 text-xs font-semibold text-muted-foreground">
@@ -46,7 +48,7 @@ export function RecentActivityCard({
           <span>{timeAgo}</span>
         </div>
       </div>
-      
+
       <div className="relative z-10 mt-6 flex items-center justify-between border-t border-border pt-4">
         <div className="flex items-center gap-2.5 text-[13px] sm:text-sm font-medium text-muted-foreground">
           <span className={`h-2 w-2 rounded-full ${statusColor}`} />

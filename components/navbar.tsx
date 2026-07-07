@@ -103,7 +103,7 @@ export default function Navbar() {
         let current = "";
         // Use a viewing offset at 40% of the screen height (where the user's eyes naturally focus)
         const viewingOffset = window.innerHeight * 0.4;
-        
+
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
