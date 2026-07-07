@@ -58,26 +58,33 @@ export function QuickActionCard({
   return (
     <Link
       href={href}
-      className={`group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 ${style.wrapper}`}
+      className={`group relative flex flex-col gap-3 overflow-hidden rounded-[20px] border border-black/10 dark:border-white/[0.08] bg-black/[0.02] dark:bg-white/[0.03] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition-transform hover:-translate-y-1 hover:shadow-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.05] hover:border-blue-500/30 ${style.wrapper}`}
     >
-      <div
-        className={`flex h-12 w-12 items-center justify-center rounded-xl transition-colors ${style.iconBox}`}
-      >
-        <Icon className="h-6 w-6" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/5 dark:from-white/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+      <div className="relative z-10 flex items-center justify-between">
+        <div
+          className={`flex h-12 w-12 items-center justify-center rounded-xl transition-colors duration-300 ${style.iconBox}`}
+        >
+          <Icon className="h-6 w-6" />
+        </div>
+        <div
+          className={`flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bg-[#1D4ED8]/10 group-hover:border-[#1D4ED8]/20 group-hover:text-[#1D4ED8] ${style.arrow}`}
+        >
+          <ArrowRight className="h-4 w-4" />
+        </div>
       </div>
-      <div>
+
+      <div className="relative z-10 mt-1">
         <h3
-          className={`font-semibold text-foreground transition-colors ${style.title}`}
+          className={`font-bold text-[15px] sm:text-base tracking-tight text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 ${style.title}`}
         >
           {title}
         </h3>
-        <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-1 text-[13px] sm:text-sm leading-relaxed text-muted-foreground font-medium line-clamp-2">
           {description}
         </p>
       </div>
-      <ArrowRight
-        className={`absolute bottom-6 right-6 h-5 w-5 text-muted-foreground opacity-0 transition-all duration-300 group-hover:opacity-100 ${style.arrow}`}
-      />
     </Link>
   );
 }
