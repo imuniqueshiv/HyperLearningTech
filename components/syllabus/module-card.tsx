@@ -104,18 +104,28 @@ export default function ModuleCard({
       {/* TOPICS - ALWAYS VISIBLE */}
       <div className="px-6 pb-6 md:px-8">
         <div className="flex flex-wrap gap-3">
-          {(module.topics || []).map((topic) => (
-            <Link
-              key={topic.id}
-              href={`/rgpv/${branch}/${semester}/${subject}/ai?topicId=${encodeURIComponent(
-                topic.id
-              )}`}
-              onClick={(e) => e.stopPropagation()}
-              className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition hover:border-blue-500/40 hover:text-blue-500"
-            >
-              {topic.title}
-            </Link>
-          ))}
+          {(module.topics || []).map((topic, index) => {
+            const isString = typeof topic === "string";
+            const topicId = isString
+              ? (topic as string)
+              : (topic as { id: string }).id;
+            const topicTitle = isString
+              ? (topic as string)
+              : (topic as { title: string }).title;
+
+            return (
+              <Link
+                key={topicId || `topic-${index}`}
+                href={`/rgpv/${branch}/${semester}/${subject}/ai?topicId=${encodeURIComponent(
+                  topicId
+                )}`}
+                onClick={(e) => e.stopPropagation()}
+                className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition hover:border-blue-500/40 hover:text-blue-500"
+              >
+                {topicTitle}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
