@@ -15,1072 +15,6 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "latex": "\\frac{\\pi}{3} > \\frac{1}{\\sqrt{53}}\\cos^{-1}\\frac{3}{5} > \\frac{\\pi}{3} - \\frac{1}{8}",
-              "text": "Prove that π/3 > (1/√53)cos⁻¹(3/5) > π/3 - 1/8 using Lagrange's mean value theorem.",
-              "unit": "Unit 1",
-              "type": "calculus"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "latex": "f(x,y)=x^3+3xy^2-3x^2-3y^2+4",
-              "text": "Find the minimum and maximum value of f(x,y)=x³+3xy²-3x²-3y²+4.",
-              "unit": "Unit 1",
-              "type": "calculus"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "latex": "f(x)=e^x, g(x)=e^{-x}, (a,b>0)",
-              "text": "Find C of Cauchy's Mean value theorem on [a, b] for the function f(x)=eˣ and g(x)=e⁻ˣ, (a,b>0).",
-              "unit": "Unit 1",
-              "type": "calculus"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "latex": "\\Gamma(n)\\Gamma(1-n)=\\frac{\\pi}{\\sin n\\pi}",
-              "text": "Prove that Γ(n)Γ(1-n)=π/sin nπ.",
-              "unit": "Unit 2",
-              "type": "gamma"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "latex": "\\int_{0}^{1}\\int_{0}^{\\sqrt{1-x^2}}y^2dydx",
-              "text": "By Changing the order of integration, evaluate ∫₀¹∫₀^√(1-x²) y² dy dx.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "latex": "\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1",
-              "text": "Find the area of a plane in the form of a quadrant of the ellipse x²/a²+y²/b²=1.",
-              "unit": "Unit 2",
-              "type": "area"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4",
-              "label": "",
-              "latex": "\\dim(V/W) = \\dim V - \\dim W",
-              "text": "Let W be a subspace of a finite dimensional vector space V(F). Then dim(V/W) = dim V - dim W.",
-              "unit": "Unit 4",
-              "type": "vector-space"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5",
-              "label": "",
-              "latex": "f(x)=x\\sin x, 0<x<2\\pi",
-              "text": "Obtain the Fourier series to represent f(x)=x sin x, 0<x<2π.",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "latex": "T: V_2(R) \\to V_3(R), T(a, b) = (a-b, b-a, -a)",
-              "text": "Show that T: V₂(R) → V₃(R) is defined as T(a, b) = (a-b, b-a, -a) is linear transformation.",
-              "unit": "Unit 4",
-              "type": "linear-transformation"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "latex": "\\sum_{n=1}^{\\infty}(\\sqrt{n+1}-\\sqrt{n-1})",
-              "text": "Test the convergence of the series Σ(√(n+1)-√(n-1)).",
-              "unit": "Unit 3",
-              "type": "convergence"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "latex": "A = \\begin{pmatrix} 1 & -2 & 2 \\\\ 1 & -2 & 3 \\\\ 0 & -1 & 2 \\end{pmatrix}",
-              "text": "Verify Cayley-Hamilton theorem for the matrix A. Hence find A⁻¹.",
-              "unit": "Unit 5",
-              "type": "cayley-hamilton"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "latex": "x+y+z=3, x+2y+3z=4, x+4y+9z=6",
-              "text": "Examine the consistency of the system of equations. If consistent, solve: x+y+z=3, x+2y+3z=4, x+4y+9z=6.",
-              "unit": "Unit 5",
-              "type": "consistency"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "latex": "A = \\begin{pmatrix} 1 & 1 & 0 \\\\ 6 & 2 & 0 \\\\ 1 & 0 & 3 \\end{pmatrix}",
-              "text": "Diagonalize the matrix A.",
-              "unit": "Unit 5",
-              "type": "diagonalization"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2023",
-      "year": 2023,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "latex": "f(x)=x^2+2x, [-2, 0]",
-              "text": "State Rolle's theorem hence verify for f(x)=x²+2x defined in the interval [-2, 0].",
-              "unit": "Unit 1",
-              "type": "rolles"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "latex": "e^x\\log(1+y)",
-              "text": "Find the first six terms of the expansions of the function eˣ log(1+y) in a Taylor series in the neighbourhood of the point (0, 0).",
-              "unit": "Unit 1",
-              "type": "taylor"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "latex": "u=400xz^2, x^2+y^2+z^2=1",
-              "text": "The temperature u(x,y,z) at any point in space is u=400xz² find the highest temperature on surface of the sphere x²+y²+z²=1.",
-              "unit": "Unit 1",
-              "type": "lagrange"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "latex": "u=x^2\\tan^{-1}\\frac{y}{x}-y^2\\tan^{-1}\\frac{x}{y}",
-              "text": "If u=x²tan⁻¹(y/x)-y²tan⁻¹(x/y) find the value of ∂²u/∂x∂y.",
-              "unit": "Unit 1",
-              "type": "partial"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "latex": "x^2+4xy+6y^2=140",
-              "text": "Find shortest distance from the origin to the curve x²+4xy+6y²=140.",
-              "unit": "Unit 1",
-              "type": "lagrange"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "latex": "u=x^2+y^2, x=a\\cos t, y=b\\sin t",
-              "text": "Find du/dt if u=x²+y², x=a cos t, y=b sin t.",
-              "unit": "Unit 1",
-              "type": "partial"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "latex": "\\int_{0}^{1}\\int_{x^2}^{2-x}xy\\ dy\\ dx",
-              "text": "Change the order of integration in ∫₀¹∫ₓ²²⁻ˣ xy dy dx and hence evaluate.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "latex": "\\iint e^{2x+3y}dxdy, x=0, y=0, x+y=1",
-              "text": "Evaluate ∬ e²ˣ⁺³ʸ dxdy over the triangle bounded by x=0, y=0 and x+y=1.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "latex": "1+\\frac{x}{2}+\\frac{x^2}{5}+\\frac{x^3}{10}+...+\\frac{x^n}{n^2+1}+...",
-              "text": "Test the convergence of the series 1 + x/2 + x²/5 + x³/10 + ... + xⁿ/(n²+1) + ...",
-              "unit": "Unit 3",
-              "type": "convergence"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "latex": "f(x)=x\\sin x, 0<x<2",
-              "text": "Expand as a half range f(x)=x sin x series and cosine series for the interval 0<x<2.",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "latex": "f(x)=x\\sin x, 0<x<2\\pi",
-              "text": "Expand f(x)=x sin x, 0<x<2π as a Fourier series.",
-              "unit": "Unit 3",
-              "type": "fourier"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "latex": "f(x)=x+x^2, (-1, 1)",
-              "text": "Find the a₀ and aₙ if the function f(x)=x+x² is expanded in Fourier series defined in (-1, 1).",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "latex": "A \\text{ skew symmetric}, A^2 \\text{ symmetric}, \\begin{pmatrix} 5 & 4 \\\\ 1 & 2 \\end{pmatrix}",
-              "text": "i) If A is a skew symmetric matrix then show that A² is a symmetric matrix. ii) Find eigen values of the matrix [[5,4],[1,2]].",
-              "unit": "Unit 5",
-              "type": "matrix"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "latex": "\\begin{pmatrix} 0 & 1 & 2 \\\\ 1 & 2 & 3 \\\\ 3 & 1 & 1 \\end{pmatrix}",
-              "text": "Find the inverse of the matrix by using elementary row transformations.",
-              "unit": "Unit 5",
-              "type": "inverse"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "latex": "\\begin{pmatrix} 1 & 2 & -2 \\\\ -1 & 3 & 0 \\\\ 0 & -2 & 1 \\end{pmatrix}",
-              "text": "Verify Cayley Hamilton theorem for the matrix A and hence find A⁻¹.",
-              "unit": "Unit 5",
-              "type": "cayley-hamilton"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "latex": "x+2y-z=3, 3x-y+2z=1, 2x-2y+3z=2, x-y+z=-1",
-              "text": "Test the consistency and hence, solve the following set of equations: x+2y-z=3, 3x-y+2z=1, 2x-2y+3z=2, x-y+z=-1.",
-              "unit": "Unit 5",
-              "type": "consistency"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "latex": "f(x)=x^2+2x, [-2, 0]",
-              "text": "State Lagrange's theorem hence verify for f(x)=x²+2x defined in the interval [-2, 0].",
-              "unit": "Unit 1",
-              "type": "lagrange"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "latex": "e^x\\cos y",
-              "text": "Find the first six terms of the expansions of the function eˣ cos y in a Taylor series in the neighbourhood of the point (0, 0).",
-              "unit": "Unit 1",
-              "type": "taylor"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "latex": "x^3+y^3-63(x+y)+12xy",
-              "text": "Estimate the extreme values of the function x³+y³-63(x+y)+12xy.",
-              "unit": "Unit 1",
-              "type": "maxima-minima"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "latex": "u=\\left(\\frac{y-x}{xy}\\right)\\left(\\frac{z-x}{xz}\\right)",
-              "text": "If u=((y-x)/xy)((z-x)/xz) find the value of x²uₓ+y²u_y+z²u_z.",
-              "unit": "Unit 1",
-              "type": "partial"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "latex": "",
-              "text": "Show that the rectangular solid of maximum volume that can be inscribed in a given sphere is a cube.",
-              "unit": "Unit 1",
-              "type": "maxima-minima"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "latex": "u=x^2+y^2, x=a\\cos t, y=b\\sin t",
-              "text": "Find du/dt if u=x²+y², x=a cos t, y=b sin t.",
-              "unit": "Unit 1",
-              "type": "partial"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "latex": "\\int_{0}^{1}\\int_{x^2}^{2-x}xy\\ dy\\ dx",
-              "text": "Change the order of integration in ∫₀¹∫ₓ²²⁻ˣ xy dy dx and hence evaluate.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "latex": "\\Gamma(\\frac{3}{2}), \\int_{0}^{1}x^3(1-\\sqrt{x})^2dx",
-              "text": "i) Find the value of Γ(3/2). ii) Evaluate ∫₀¹ x³(1-√x)² dx.",
-              "unit": "Unit 2",
-              "type": "gamma-beta"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5",
-              "label": "",
-              "latex": "1+\\frac{x}{2}+\\frac{x^2}{5}+\\frac{x^3}{10}+...+\\frac{x^n}{n^2+1}+...",
-              "text": "Test the series 1 + x/2 + x²/5 + x³/10 + ... + xⁿ/(n²+1) + ...",
-              "unit": "Unit 3",
-              "type": "convergence"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "latex": "\\beta(l,m)=\\frac{\\Gamma(l)\\Gamma(m)}{\\Gamma(l+m)}",
-              "text": "Show that β(l,m)=Γ(l)Γ(m)/Γ(l+m).",
-              "unit": "Unit 2",
-              "type": "gamma-beta"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "latex": "f(x)=x\\sin x, 0<x<2",
-              "text": "Expand as a half range f(x)=x sin x series and cosine series for the interval 0<x<2.",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "latex": "\\begin{pmatrix} 5 & 3 & 14 & 4 \\\\ 0 & 1 & 2 & 1 \\\\ 1 & -1 & 2 & 0 \\end{pmatrix}",
-              "text": "Transform the matrix into normal form and hence find its rank.",
-              "unit": "Unit 5",
-              "type": "rank"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "latex": "\\begin{pmatrix} 0 & 1 & 2 \\\\ 1 & 2 & 3 \\\\ 3 & 1 & 1 \\end{pmatrix}",
-              "text": "Find the inverse of the matrix by using elementary row transformations.",
-              "unit": "Unit 5",
-              "type": "inverse"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "latex": "\\begin{pmatrix} 2 & -2 & 2 \\\\ 1 & 1 & 1 \\\\ 1 & 3 & -1 \\end{pmatrix}",
-              "text": "Find the eigen values and eigen vectors of the matrix.",
-              "unit": "Unit 5",
-              "type": "eigen"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "latex": "x+2y-z=3, 3x-y+2z=1, 2x-2y+3z=2, x-y+z=-1",
-              "text": "Test the consistency and hence, solve the following set of equations.",
-              "unit": "Unit 5",
-              "type": "consistency"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2024",
-      "year": 2024,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "latex": "(1+x)^x",
-              "text": "Expand (1+x)ˣ by Maclaurin's Theorem.",
-              "unit": "Unit 1",
-              "type": "maclaurin"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "latex": "u=\\sin x \\sin y \\sin(x+y)",
-              "text": "Find the Maximum value of u=sin x sin y sin(x+y).",
-              "unit": "Unit 1",
-              "type": "maxima-minima"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "latex": "r=a(1+\\cos\\theta)",
-              "text": "Find the volume of the solid generated by the revolution of the Cardioid r=a(1+cosθ) about the initial line.",
-              "unit": "Unit 2",
-              "type": "volume"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "latex": "\\int_{0}^{\\infty}\\cos(x^2)dx=\\frac{1}{2}\\sqrt{\\frac{\\pi}{2}}",
-              "text": "Prove that ∫₀^∞ cos(x²)dx = ½√(π/2).",
-              "unit": "Unit 2",
-              "type": "gamma"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "latex": "(x_n), |x|<1",
-              "text": "Show that Sequence (xₙ) where |x|<1 converge to 0.",
-              "unit": "Unit 3",
-              "type": "convergence"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "latex": "f(x)=x\\sin x, (-\\pi<x<\\pi)",
-              "text": "Find the Fourier Series for the function f(x)=x sin x, (-π<x<π).",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "latex": "x-y+2z=4, 3x+y+4z=6, x+y+z=1",
-              "text": "Show that the following equations are consistent and solve them: x-y+2z=4, 3x+y+4z=6, x+y+z=1.",
-              "unit": "Unit 5",
-              "type": "consistency"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "latex": "w_1 \\cap w_2",
-              "text": "If w₁ and w₂ be two subspace of V(F) then Show that w₁ ∩ w₂ also subspace of V(F).",
-              "unit": "Unit 4",
-              "type": "vector-space"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "latex": "\\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 3 & -4 \\\\ 1 & 0 & -1 \\end{pmatrix}",
-              "text": "Find the Characteristic equation of the matrix and hence find the Eigen values and Eigen vectors.",
-              "unit": "Unit 5",
-              "type": "eigen"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "latex": "A = \\begin{pmatrix} 1 & 0 & -1 \\\\ 1 & 2 & 1 \\\\ 2 & 2 & 3 \\end{pmatrix}",
-              "text": "Show that the following matrix A is Diagonalizable.",
-              "unit": "Unit 5",
-              "type": "diagonalization"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "latex": "u=a^2x^2+b^2y^2+c^2z^2, x^2+y^2+z^2=1, lx+my+nz=0",
-              "text": "Find the Maximum and Minimum value of u=a²x²+b²y²+c²z², where x²+y²+z²=1 and lx+my+nz=0.",
-              "unit": "Unit 1",
-              "type": "lagrange"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "latex": "f(x)=x+x^2, (-\\pi<x<\\pi)",
-              "text": "Find the Fourier Series for the function f(x)=x+x², (-π<x<π).",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "latex": "x=t^2, y=t-\\frac{1}{3}t^3",
-              "text": "Show that the surfaces area of the solid generated by revolution of the loop of the curve x=t², y=t-t³/3 about the x axis is 3π.",
-              "unit": "Unit 2",
-              "type": "surface-area"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "latex": "X+Y+Z=6, X+2Y+3Z=10, X+2Y+\\lambda Z=\\mu",
-              "text": "Investigate for what values of λ and μ the simultaneous equations have solutions.",
-              "unit": "Unit 5",
-              "type": "consistency"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "latex": "\\log x, (x-1)",
-              "text": "Expand log x in power (x-1) by Taylor's theorem and hence find the value log 1.1.",
-              "unit": "Unit 1",
-              "type": "taylor"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "latex": "\\iint xy\\ dx\\ dy, x+y<1",
-              "text": "Evaluate ∬ xy dx dy where the region of integration is x+y<1 in the positive quadrant.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2024",
-      "year": 2024,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "latex": "x^3+y^3-3axy",
-              "text": "Find the points where the function x³+y³-3axy has maximum or minimum value.",
-              "unit": "Unit 1",
-              "type": "maxima-minima"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "latex": "y=\\sin x, x=\\pi/2",
-              "text": "Find the Taylor's expansion of y=sin x about point x=π/2.",
-              "unit": "Unit 1",
-              "type": "taylor"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "latex": "y^2=4ax",
-              "text": "The part of the parabola y²=4ax cut off by the latus rectum revolves about the tangent at the vertex. Find the volume of the reel thus generated.",
-              "unit": "Unit 2",
-              "type": "volume"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "latex": "\\int_{0}^{1}\\frac{dx}{\\sqrt{1-x^4}} = \\frac{(\\Gamma(1/4))^2}{6\\sqrt{2\\pi}}",
-              "text": "Prove that ∫₀¹ dx/√(1-x⁴) = (Γ(1/4))²/(6√(2π)).",
-              "unit": "Unit 2",
-              "type": "gamma"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "latex": "\\frac{1}{4} - \\frac{1}{4^2} + \\frac{1}{4^3} - \\frac{1}{4^4} + \\dots",
-              "text": "Show that the following series is Convergent: 1/4 - 1/4² + 1/4³ - 1/4⁴ + ...",
-              "unit": "Unit 3",
-              "type": "convergence"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "latex": "f(x) = e^x, 0 < x < 1",
-              "text": "Obtain the Half-Range Sine Series for f(x) = eˣ in 0 < x < 1.",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "latex": "w=\\{(a,b,0):a,b \\in R\\}",
-              "text": "Show that the set w={(a,b,0):a,b ∈ R} is subspace of R³.",
-              "unit": "Unit 4",
-              "type": "vector-space"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "latex": "X_1=(1,3,4,2), X_2=(3,-5,2,2), X_3=(-2,1,-3,2)",
-              "text": "Are the following vectors LD? If so express one of these as a LC of other two: X₁=(1,3,4,2), X₂=(3,-5,2,2), X₃=(-2,1,-3,2).",
-              "unit": "Unit 4",
-              "type": "linear-dependence"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "latex": "A = \\begin{pmatrix} -2 & 2 & -3 \\\\ 2 & 1 & -6 \\\\ -1 & -2 & 0 \\end{pmatrix}",
-              "text": "Find a similarity transformation that diagonalise the matrix A.",
-              "unit": "Unit 5",
-              "type": "diagonalization"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "latex": "\\begin{pmatrix} 8 & -6 & 2 \\\\ -6 & 7 & -4 \\\\ 2 & -4 & 3 \\end{pmatrix}",
-              "text": "Find the Eigen value and Corresponding Eigen Vectors of the matrix.",
-              "unit": "Unit 5",
-              "type": "eigen"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "latex": "B(m,n)=\\frac{\\Gamma(m)\\Gamma(n)}{\\Gamma(m+n)}",
-              "text": "Define Beta and Gamma Function and show that relation B(m,n)=Γ(m)Γ(n)/Γ(m+n).",
-              "unit": "Unit 2",
-              "type": "gamma-beta"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "latex": "\\int_{0}^{2}x^2(1-x)^3dx, \\int_{0}^{1}\\sqrt{x(1-x)}dx",
-              "text": "Evaluate: i) ∫₀² x²(1-x)³ dx ii) ∫₀¹ √(x(1-x)) dx.",
-              "unit": "Unit 2",
-              "type": "gamma-beta"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "latex": "x^2/a^2+y^2/b^2=1",
-              "text": "Prove that the surface area of the solid generated by the revolution of the ellipse x²/a²+y²/b²=1 about the major axis is: 2(πab)·{√(1-e²) + sin⁻¹e/e}.",
-              "unit": "Unit 2",
-              "type": "surface-area"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "latex": "(n^{1/n})",
-              "text": "Show that the sequence (n^(1/n)) converge to 1.",
-              "unit": "Unit 3",
-              "type": "convergence"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "latex": "",
-              "text": "Prove that a rectangular solid of maximum volume within a sphere is a cube.",
-              "unit": "Unit 1",
-              "type": "maxima-minima"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "latex": "y=x^2+2, a=-2, b=2",
-              "text": "Verify Rolle's Theorem for the function y=x²+2, a=-2 and b=2.",
-              "unit": "Unit 1",
-              "type": "rolles"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2025",
-      "year": 2025,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "latex": "",
-              "text": "Prove that a rectangular solid of maximum volume within a sphere is a cube.",
-              "unit": "Unit 1",
-              "type": "maxima-minima"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "latex": "u=\\tan^{-1}\\frac{x^3+y^3}{x-y}",
-              "text": "If u=tan⁻¹((x³+y³)/(x-y)) then prove that x ∂u/∂x + y ∂u/∂y = sin 2u.",
-              "unit": "Unit 1",
-              "type": "partial"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "latex": "x=t^2, y=t-t^3/3",
-              "text": "Show that the surface area of solid generated by revolution of the loop of curve x=t², y=t-t³/3 about the x-axis is 3π.",
-              "unit": "Unit 2",
-              "type": "surface-area"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "latex": "\\int_{0}^{\\infty}\\int_{x}^{\\infty}\\frac{e^{-y}}{y}dydx",
-              "text": "Change the order of integration in the following integral and then evaluate ∫₀^∞∫ₓ^∞ e^(-y)/y dy dx.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "latex": "f(x)=x+x^2, (-\\pi,\\pi)",
-              "text": "Find the Fourier Series for f(x)=x+x² in (-π,π).",
-              "unit": "Unit 3",
-              "type": "fourier"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "latex": "f(x)=x(\\pi-x), (0,\\pi)",
-              "text": "Find the half range sine series for f(x)=x(π-x) in (0,π). Hence Deduce that 1-1/3³+1/5³-...=π³/32.",
-              "unit": "Unit 3",
-              "type": "fourier"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "latex": "W_1 \\cap W_2 = \\{0\\}, w_1 \\neq 0, w_2 \\neq 0",
-              "text": "Let W₁ and W₂ be subspaces of a vector space V and assume that W₁ ∩ W₂ = {0}. Let w₁∈W₁ and w₂∈W₂ be such that w₁≠0 and w₂≠0. Prove that {w₁, w₂} is linearly independent.",
-              "unit": "Unit 4",
-              "type": "linear-independence"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "latex": "W_1 \\cap W_2, W_1 \\cup W_2",
-              "text": "i) Prove that W₁ ∩ W₂ is a subspace of V. ii) Give an example to show that W₁ ∪ W₂ need not be a subspace of V. iii) Is W₁ ∪ W₂ a subspace of V?",
-              "unit": "Unit 4",
-              "type": "vector-space"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "latex": "\\begin{pmatrix} 2 & -2 & 2 \\\\ 1 & 1 & 1 \\\\ 1 & 3 & -1 \\end{pmatrix}",
-              "text": "Find Eigen Value and Eigen vectors of the matrix.",
-              "unit": "Unit 5",
-              "type": "eigen"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "latex": "\\begin{pmatrix} 3 & -1 & 1 \\\\ -1 & 5 & -1 \\\\ 1 & -1 & 3 \\end{pmatrix}",
-              "text": "Diagonalizable the matrix.",
-              "unit": "Unit 5",
-              "type": "diagonalization"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "latex": "\\begin{pmatrix} 3 & 2 & -1 \\\\ 4 & 2 & 6 \\\\ 7 & 4 & 5 \\end{pmatrix}",
-              "text": "Reduce the matrix to the normal form, hence find its rank.",
-              "unit": "Unit 5",
-              "type": "rank"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "latex": "\\sin^{-1}x, xe^{-x}",
-              "text": "Find the first 3 terms in the Maclaurin series for i) sin⁻¹x ii) xe^(-x).",
-              "unit": "Unit 1",
-              "type": "maclaurin"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "latex": "x+y+z=6, x+2y+3z=10, x+2y+\\lambda z=\\mu",
-              "text": "Investigate for what values of λ and μ the simultaneous equations have i) no solution ii) a unique solution iii) an infinite number of solutions.",
-              "unit": "Unit 5",
-              "type": "consistency"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "latex": "x^4+x-2, a=1",
-              "text": "Find the Taylor series for the function x⁴+x-2 centered at a=1.",
-              "unit": "Unit 1",
-              "type": "taylor"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "latex": "\\int_{0}^{\\infty}\\int_{x}^{\\infty}\\frac{e^{-y}}{y}dydx",
-              "text": "Evaluate ∫₀^∞∫ₓ^∞ e^(-y)/y dy dx.",
-              "unit": "Unit 2",
-              "type": "multiple-integral"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "latex": "x^x y^y z^z = C",
-              "text": "If xˣ yʸ zᶻ = C then show that ∂²z/∂x∂y = -(x log ex)⁻¹.",
-              "unit": "Unit 1",
-              "type": "partial"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
@@ -1275,6 +209,1072 @@
               "unit": "Unit 1",
               "type": "maxima-minima",
               "isPredicted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "",
+              "text": "Prove that a rectangular solid of maximum volume within a sphere is a cube.",
+              "unit": "Unit 1",
+              "type": "maxima-minima"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "u=\\tan^{-1}\\frac{x^3+y^3}{x-y}",
+              "text": "If u=tan⁻¹((x³+y³)/(x-y)) then prove that x ∂u/∂x + y ∂u/∂y = sin 2u.",
+              "unit": "Unit 1",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "x=t^2, y=t-t^3/3",
+              "text": "Show that the surface area of solid generated by revolution of the loop of curve x=t², y=t-t³/3 about the x-axis is 3π.",
+              "unit": "Unit 2",
+              "type": "surface-area"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\int_{0}^{\\infty}\\int_{x}^{\\infty}\\frac{e^{-y}}{y}dydx",
+              "text": "Change the order of integration in the following integral and then evaluate ∫₀^∞∫ₓ^∞ e^(-y)/y dy dx.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "f(x)=x+x^2, (-\\pi,\\pi)",
+              "text": "Find the Fourier Series for f(x)=x+x² in (-π,π).",
+              "unit": "Unit 3",
+              "type": "fourier"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "f(x)=x(\\pi-x), (0,\\pi)",
+              "text": "Find the half range sine series for f(x)=x(π-x) in (0,π). Hence Deduce that 1-1/3³+1/5³-...=π³/32.",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "W_1 \\cap W_2 = \\{0\\}, w_1 \\neq 0, w_2 \\neq 0",
+              "text": "Let W₁ and W₂ be subspaces of a vector space V and assume that W₁ ∩ W₂ = {0}. Let w₁∈W₁ and w₂∈W₂ be such that w₁≠0 and w₂≠0. Prove that {w₁, w₂} is linearly independent.",
+              "unit": "Unit 4",
+              "type": "linear-independence"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "W_1 \\cap W_2, W_1 \\cup W_2",
+              "text": "i) Prove that W₁ ∩ W₂ is a subspace of V. ii) Give an example to show that W₁ ∪ W₂ need not be a subspace of V. iii) Is W₁ ∪ W₂ a subspace of V?",
+              "unit": "Unit 4",
+              "type": "vector-space"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "\\begin{pmatrix} 2 & -2 & 2 \\\\ 1 & 1 & 1 \\\\ 1 & 3 & -1 \\end{pmatrix}",
+              "text": "Find Eigen Value and Eigen vectors of the matrix.",
+              "unit": "Unit 5",
+              "type": "eigen"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "\\begin{pmatrix} 3 & -1 & 1 \\\\ -1 & 5 & -1 \\\\ 1 & -1 & 3 \\end{pmatrix}",
+              "text": "Diagonalizable the matrix.",
+              "unit": "Unit 5",
+              "type": "diagonalization"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "\\begin{pmatrix} 3 & 2 & -1 \\\\ 4 & 2 & 6 \\\\ 7 & 4 & 5 \\end{pmatrix}",
+              "text": "Reduce the matrix to the normal form, hence find its rank.",
+              "unit": "Unit 5",
+              "type": "rank"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\sin^{-1}x, xe^{-x}",
+              "text": "Find the first 3 terms in the Maclaurin series for i) sin⁻¹x ii) xe^(-x).",
+              "unit": "Unit 1",
+              "type": "maclaurin"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "x+y+z=6, x+2y+3z=10, x+2y+\\lambda z=\\mu",
+              "text": "Investigate for what values of λ and μ the simultaneous equations have i) no solution ii) a unique solution iii) an infinite number of solutions.",
+              "unit": "Unit 5",
+              "type": "consistency"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "x^4+x-2, a=1",
+              "text": "Find the Taylor series for the function x⁴+x-2 centered at a=1.",
+              "unit": "Unit 1",
+              "type": "taylor"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "\\int_{0}^{\\infty}\\int_{x}^{\\infty}\\frac{e^{-y}}{y}dydx",
+              "text": "Evaluate ∫₀^∞∫ₓ^∞ e^(-y)/y dy dx.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "x^x y^y z^z = C",
+              "text": "If xˣ yʸ zᶻ = C then show that ∂²z/∂x∂y = -(x log ex)⁻¹.",
+              "unit": "Unit 1",
+              "type": "partial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "x^3+y^3-3axy",
+              "text": "Find the points where the function x³+y³-3axy has maximum or minimum value.",
+              "unit": "Unit 1",
+              "type": "maxima-minima"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "y=\\sin x, x=\\pi/2",
+              "text": "Find the Taylor's expansion of y=sin x about point x=π/2.",
+              "unit": "Unit 1",
+              "type": "taylor"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "y^2=4ax",
+              "text": "The part of the parabola y²=4ax cut off by the latus rectum revolves about the tangent at the vertex. Find the volume of the reel thus generated.",
+              "unit": "Unit 2",
+              "type": "volume"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\int_{0}^{1}\\frac{dx}{\\sqrt{1-x^4}} = \\frac{(\\Gamma(1/4))^2}{6\\sqrt{2\\pi}}",
+              "text": "Prove that ∫₀¹ dx/√(1-x⁴) = (Γ(1/4))²/(6√(2π)).",
+              "unit": "Unit 2",
+              "type": "gamma"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "\\frac{1}{4} - \\frac{1}{4^2} + \\frac{1}{4^3} - \\frac{1}{4^4} + \\dots",
+              "text": "Show that the following series is Convergent: 1/4 - 1/4² + 1/4³ - 1/4⁴ + ...",
+              "unit": "Unit 3",
+              "type": "convergence"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "f(x) = e^x, 0 < x < 1",
+              "text": "Obtain the Half-Range Sine Series for f(x) = eˣ in 0 < x < 1.",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "w=\\{(a,b,0):a,b \\in R\\}",
+              "text": "Show that the set w={(a,b,0):a,b ∈ R} is subspace of R³.",
+              "unit": "Unit 4",
+              "type": "vector-space"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "X_1=(1,3,4,2), X_2=(3,-5,2,2), X_3=(-2,1,-3,2)",
+              "text": "Are the following vectors LD? If so express one of these as a LC of other two: X₁=(1,3,4,2), X₂=(3,-5,2,2), X₃=(-2,1,-3,2).",
+              "unit": "Unit 4",
+              "type": "linear-dependence"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "A = \\begin{pmatrix} -2 & 2 & -3 \\\\ 2 & 1 & -6 \\\\ -1 & -2 & 0 \\end{pmatrix}",
+              "text": "Find a similarity transformation that diagonalise the matrix A.",
+              "unit": "Unit 5",
+              "type": "diagonalization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "\\begin{pmatrix} 8 & -6 & 2 \\\\ -6 & 7 & -4 \\\\ 2 & -4 & 3 \\end{pmatrix}",
+              "text": "Find the Eigen value and Corresponding Eigen Vectors of the matrix.",
+              "unit": "Unit 5",
+              "type": "eigen"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "B(m,n)=\\frac{\\Gamma(m)\\Gamma(n)}{\\Gamma(m+n)}",
+              "text": "Define Beta and Gamma Function and show that relation B(m,n)=Γ(m)Γ(n)/Γ(m+n).",
+              "unit": "Unit 2",
+              "type": "gamma-beta"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\int_{0}^{2}x^2(1-x)^3dx, \\int_{0}^{1}\\sqrt{x(1-x)}dx",
+              "text": "Evaluate: i) ∫₀² x²(1-x)³ dx ii) ∫₀¹ √(x(1-x)) dx.",
+              "unit": "Unit 2",
+              "type": "gamma-beta"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "x^2/a^2+y^2/b^2=1",
+              "text": "Prove that the surface area of the solid generated by the revolution of the ellipse x²/a²+y²/b²=1 about the major axis is: 2(πab)·{√(1-e²) + sin⁻¹e/e}.",
+              "unit": "Unit 2",
+              "type": "surface-area"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "(n^{1/n})",
+              "text": "Show that the sequence (n^(1/n)) converge to 1.",
+              "unit": "Unit 3",
+              "type": "convergence"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "",
+              "text": "Prove that a rectangular solid of maximum volume within a sphere is a cube.",
+              "unit": "Unit 1",
+              "type": "maxima-minima"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "y=x^2+2, a=-2, b=2",
+              "text": "Verify Rolle's Theorem for the function y=x²+2, a=-2 and b=2.",
+              "unit": "Unit 1",
+              "type": "rolles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "(1+x)^x",
+              "text": "Expand (1+x)ˣ by Maclaurin's Theorem.",
+              "unit": "Unit 1",
+              "type": "maclaurin"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "u=\\sin x \\sin y \\sin(x+y)",
+              "text": "Find the Maximum value of u=sin x sin y sin(x+y).",
+              "unit": "Unit 1",
+              "type": "maxima-minima"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "r=a(1+\\cos\\theta)",
+              "text": "Find the volume of the solid generated by the revolution of the Cardioid r=a(1+cosθ) about the initial line.",
+              "unit": "Unit 2",
+              "type": "volume"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\int_{0}^{\\infty}\\cos(x^2)dx=\\frac{1}{2}\\sqrt{\\frac{\\pi}{2}}",
+              "text": "Prove that ∫₀^∞ cos(x²)dx = ½√(π/2).",
+              "unit": "Unit 2",
+              "type": "gamma"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "(x_n), |x|<1",
+              "text": "Show that Sequence (xₙ) where |x|<1 converge to 0.",
+              "unit": "Unit 3",
+              "type": "convergence"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "f(x)=x\\sin x, (-\\pi<x<\\pi)",
+              "text": "Find the Fourier Series for the function f(x)=x sin x, (-π<x<π).",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "x-y+2z=4, 3x+y+4z=6, x+y+z=1",
+              "text": "Show that the following equations are consistent and solve them: x-y+2z=4, 3x+y+4z=6, x+y+z=1.",
+              "unit": "Unit 5",
+              "type": "consistency"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "w_1 \\cap w_2",
+              "text": "If w₁ and w₂ be two subspace of V(F) then Show that w₁ ∩ w₂ also subspace of V(F).",
+              "unit": "Unit 4",
+              "type": "vector-space"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "\\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 3 & -4 \\\\ 1 & 0 & -1 \\end{pmatrix}",
+              "text": "Find the Characteristic equation of the matrix and hence find the Eigen values and Eigen vectors.",
+              "unit": "Unit 5",
+              "type": "eigen"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "A = \\begin{pmatrix} 1 & 0 & -1 \\\\ 1 & 2 & 1 \\\\ 2 & 2 & 3 \\end{pmatrix}",
+              "text": "Show that the following matrix A is Diagonalizable.",
+              "unit": "Unit 5",
+              "type": "diagonalization"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "u=a^2x^2+b^2y^2+c^2z^2, x^2+y^2+z^2=1, lx+my+nz=0",
+              "text": "Find the Maximum and Minimum value of u=a²x²+b²y²+c²z², where x²+y²+z²=1 and lx+my+nz=0.",
+              "unit": "Unit 1",
+              "type": "lagrange"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "f(x)=x+x^2, (-\\pi<x<\\pi)",
+              "text": "Find the Fourier Series for the function f(x)=x+x², (-π<x<π).",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "x=t^2, y=t-\\frac{1}{3}t^3",
+              "text": "Show that the surfaces area of the solid generated by revolution of the loop of the curve x=t², y=t-t³/3 about the x axis is 3π.",
+              "unit": "Unit 2",
+              "type": "surface-area"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "X+Y+Z=6, X+2Y+3Z=10, X+2Y+\\lambda Z=\\mu",
+              "text": "Investigate for what values of λ and μ the simultaneous equations have solutions.",
+              "unit": "Unit 5",
+              "type": "consistency"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "\\log x, (x-1)",
+              "text": "Expand log x in power (x-1) by Taylor's theorem and hence find the value log 1.1.",
+              "unit": "Unit 1",
+              "type": "taylor"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "\\iint xy\\ dx\\ dy, x+y<1",
+              "text": "Evaluate ∬ xy dx dy where the region of integration is x+y<1 in the positive quadrant.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "f(x)=x^2+2x, [-2, 0]",
+              "text": "State Lagrange's theorem hence verify for f(x)=x²+2x defined in the interval [-2, 0].",
+              "unit": "Unit 1",
+              "type": "lagrange"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "e^x\\cos y",
+              "text": "Find the first six terms of the expansions of the function eˣ cos y in a Taylor series in the neighbourhood of the point (0, 0).",
+              "unit": "Unit 1",
+              "type": "taylor"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "x^3+y^3-63(x+y)+12xy",
+              "text": "Estimate the extreme values of the function x³+y³-63(x+y)+12xy.",
+              "unit": "Unit 1",
+              "type": "maxima-minima"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "u=\\left(\\frac{y-x}{xy}\\right)\\left(\\frac{z-x}{xz}\\right)",
+              "text": "If u=((y-x)/xy)((z-x)/xz) find the value of x²uₓ+y²u_y+z²u_z.",
+              "unit": "Unit 1",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "",
+              "text": "Show that the rectangular solid of maximum volume that can be inscribed in a given sphere is a cube.",
+              "unit": "Unit 1",
+              "type": "maxima-minima"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "u=x^2+y^2, x=a\\cos t, y=b\\sin t",
+              "text": "Find du/dt if u=x²+y², x=a cos t, y=b sin t.",
+              "unit": "Unit 1",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "\\int_{0}^{1}\\int_{x^2}^{2-x}xy\\ dy\\ dx",
+              "text": "Change the order of integration in ∫₀¹∫ₓ²²⁻ˣ xy dy dx and hence evaluate.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "\\Gamma(\\frac{3}{2}), \\int_{0}^{1}x^3(1-\\sqrt{x})^2dx",
+              "text": "i) Find the value of Γ(3/2). ii) Evaluate ∫₀¹ x³(1-√x)² dx.",
+              "unit": "Unit 2",
+              "type": "gamma-beta"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "latex": "1+\\frac{x}{2}+\\frac{x^2}{5}+\\frac{x^3}{10}+...+\\frac{x^n}{n^2+1}+...",
+              "text": "Test the series 1 + x/2 + x²/5 + x³/10 + ... + xⁿ/(n²+1) + ...",
+              "unit": "Unit 3",
+              "type": "convergence"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "\\beta(l,m)=\\frac{\\Gamma(l)\\Gamma(m)}{\\Gamma(l+m)}",
+              "text": "Show that β(l,m)=Γ(l)Γ(m)/Γ(l+m).",
+              "unit": "Unit 2",
+              "type": "gamma-beta"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "f(x)=x\\sin x, 0<x<2",
+              "text": "Expand as a half range f(x)=x sin x series and cosine series for the interval 0<x<2.",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "\\begin{pmatrix} 5 & 3 & 14 & 4 \\\\ 0 & 1 & 2 & 1 \\\\ 1 & -1 & 2 & 0 \\end{pmatrix}",
+              "text": "Transform the matrix into normal form and hence find its rank.",
+              "unit": "Unit 5",
+              "type": "rank"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "\\begin{pmatrix} 0 & 1 & 2 \\\\ 1 & 2 & 3 \\\\ 3 & 1 & 1 \\end{pmatrix}",
+              "text": "Find the inverse of the matrix by using elementary row transformations.",
+              "unit": "Unit 5",
+              "type": "inverse"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "\\begin{pmatrix} 2 & -2 & 2 \\\\ 1 & 1 & 1 \\\\ 1 & 3 & -1 \\end{pmatrix}",
+              "text": "Find the eigen values and eigen vectors of the matrix.",
+              "unit": "Unit 5",
+              "type": "eigen"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "x+2y-z=3, 3x-y+2z=1, 2x-2y+3z=2, x-y+z=-1",
+              "text": "Test the consistency and hence, solve the following set of equations.",
+              "unit": "Unit 5",
+              "type": "consistency"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "f(x)=x^2+2x, [-2, 0]",
+              "text": "State Rolle's theorem hence verify for f(x)=x²+2x defined in the interval [-2, 0].",
+              "unit": "Unit 1",
+              "type": "rolles"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "e^x\\log(1+y)",
+              "text": "Find the first six terms of the expansions of the function eˣ log(1+y) in a Taylor series in the neighbourhood of the point (0, 0).",
+              "unit": "Unit 1",
+              "type": "taylor"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "u=400xz^2, x^2+y^2+z^2=1",
+              "text": "The temperature u(x,y,z) at any point in space is u=400xz² find the highest temperature on surface of the sphere x²+y²+z²=1.",
+              "unit": "Unit 1",
+              "type": "lagrange"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "u=x^2\\tan^{-1}\\frac{y}{x}-y^2\\tan^{-1}\\frac{x}{y}",
+              "text": "If u=x²tan⁻¹(y/x)-y²tan⁻¹(x/y) find the value of ∂²u/∂x∂y.",
+              "unit": "Unit 1",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "x^2+4xy+6y^2=140",
+              "text": "Find shortest distance from the origin to the curve x²+4xy+6y²=140.",
+              "unit": "Unit 1",
+              "type": "lagrange"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "u=x^2+y^2, x=a\\cos t, y=b\\sin t",
+              "text": "Find du/dt if u=x²+y², x=a cos t, y=b sin t.",
+              "unit": "Unit 1",
+              "type": "partial"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "latex": "\\int_{0}^{1}\\int_{x^2}^{2-x}xy\\ dy\\ dx",
+              "text": "Change the order of integration in ∫₀¹∫ₓ²²⁻ˣ xy dy dx and hence evaluate.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "latex": "\\iint e^{2x+3y}dxdy, x=0, y=0, x+y=1",
+              "text": "Evaluate ∬ e²ˣ⁺³ʸ dxdy over the triangle bounded by x=0, y=0 and x+y=1.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "latex": "1+\\frac{x}{2}+\\frac{x^2}{5}+\\frac{x^3}{10}+...+\\frac{x^n}{n^2+1}+...",
+              "text": "Test the convergence of the series 1 + x/2 + x²/5 + x³/10 + ... + xⁿ/(n²+1) + ...",
+              "unit": "Unit 3",
+              "type": "convergence"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "latex": "f(x)=x\\sin x, 0<x<2",
+              "text": "Expand as a half range f(x)=x sin x series and cosine series for the interval 0<x<2.",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "f(x)=x\\sin x, 0<x<2\\pi",
+              "text": "Expand f(x)=x sin x, 0<x<2π as a Fourier series.",
+              "unit": "Unit 3",
+              "type": "fourier"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "f(x)=x+x^2, (-1, 1)",
+              "text": "Find the a₀ and aₙ if the function f(x)=x+x² is expanded in Fourier series defined in (-1, 1).",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "A \\text{ skew symmetric}, A^2 \\text{ symmetric}, \\begin{pmatrix} 5 & 4 \\\\ 1 & 2 \\end{pmatrix}",
+              "text": "i) If A is a skew symmetric matrix then show that A² is a symmetric matrix. ii) Find eigen values of the matrix [[5,4],[1,2]].",
+              "unit": "Unit 5",
+              "type": "matrix"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "\\begin{pmatrix} 0 & 1 & 2 \\\\ 1 & 2 & 3 \\\\ 3 & 1 & 1 \\end{pmatrix}",
+              "text": "Find the inverse of the matrix by using elementary row transformations.",
+              "unit": "Unit 5",
+              "type": "inverse"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "latex": "\\begin{pmatrix} 1 & 2 & -2 \\\\ -1 & 3 & 0 \\\\ 0 & -2 & 1 \\end{pmatrix}",
+              "text": "Verify Cayley Hamilton theorem for the matrix A and hence find A⁻¹.",
+              "unit": "Unit 5",
+              "type": "cayley-hamilton"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "latex": "x+2y-z=3, 3x-y+2z=1, 2x-2y+3z=2, x-y+z=-1",
+              "text": "Test the consistency and hence, solve the following set of equations: x+2y-z=3, 3x-y+2z=1, 2x-2y+3z=2, x-y+z=-1.",
+              "unit": "Unit 5",
+              "type": "consistency"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "latex": "\\frac{\\pi}{3} > \\frac{1}{\\sqrt{53}}\\cos^{-1}\\frac{3}{5} > \\frac{\\pi}{3} - \\frac{1}{8}",
+              "text": "Prove that π/3 > (1/√53)cos⁻¹(3/5) > π/3 - 1/8 using Lagrange's mean value theorem.",
+              "unit": "Unit 1",
+              "type": "calculus"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "latex": "f(x,y)=x^3+3xy^2-3x^2-3y^2+4",
+              "text": "Find the minimum and maximum value of f(x,y)=x³+3xy²-3x²-3y²+4.",
+              "unit": "Unit 1",
+              "type": "calculus"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "latex": "f(x)=e^x, g(x)=e^{-x}, (a,b>0)",
+              "text": "Find C of Cauchy's Mean value theorem on [a, b] for the function f(x)=eˣ and g(x)=e⁻ˣ, (a,b>0).",
+              "unit": "Unit 1",
+              "type": "calculus"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "latex": "\\Gamma(n)\\Gamma(1-n)=\\frac{\\pi}{\\sin n\\pi}",
+              "text": "Prove that Γ(n)Γ(1-n)=π/sin nπ.",
+              "unit": "Unit 2",
+              "type": "gamma"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "latex": "\\int_{0}^{1}\\int_{0}^{\\sqrt{1-x^2}}y^2dydx",
+              "text": "By Changing the order of integration, evaluate ∫₀¹∫₀^√(1-x²) y² dy dx.",
+              "unit": "Unit 2",
+              "type": "multiple-integral"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "latex": "\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1",
+              "text": "Find the area of a plane in the form of a quadrant of the ellipse x²/a²+y²/b²=1.",
+              "unit": "Unit 2",
+              "type": "area"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "latex": "\\dim(V/W) = \\dim V - \\dim W",
+              "text": "Let W be a subspace of a finite dimensional vector space V(F). Then dim(V/W) = dim V - dim W.",
+              "unit": "Unit 4",
+              "type": "vector-space"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "latex": "f(x)=x\\sin x, 0<x<2\\pi",
+              "text": "Obtain the Fourier series to represent f(x)=x sin x, 0<x<2π.",
+              "unit": "Unit 3",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "latex": "T: V_2(R) \\to V_3(R), T(a, b) = (a-b, b-a, -a)",
+              "text": "Show that T: V₂(R) → V₃(R) is defined as T(a, b) = (a-b, b-a, -a) is linear transformation.",
+              "unit": "Unit 4",
+              "type": "linear-transformation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "latex": "\\sum_{n=1}^{\\infty}(\\sqrt{n+1}-\\sqrt{n-1})",
+              "text": "Test the convergence of the series Σ(√(n+1)-√(n-1)).",
+              "unit": "Unit 3",
+              "type": "convergence"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "latex": "A = \\begin{pmatrix} 1 & -2 & 2 \\\\ 1 & -2 & 3 \\\\ 0 & -1 & 2 \\end{pmatrix}",
+              "text": "Verify Cayley-Hamilton theorem for the matrix A. Hence find A⁻¹.",
+              "unit": "Unit 5",
+              "type": "cayley-hamilton"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "latex": "x+y+z=3, x+2y+3z=4, x+4y+9z=6",
+              "text": "Examine the consistency of the system of equations. If consistent, solve: x+y+z=3, x+2y+3z=4, x+4y+9z=6.",
+              "unit": "Unit 5",
+              "type": "consistency"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "latex": "A = \\begin{pmatrix} 1 & 1 & 0 \\\\ 6 & 2 & 0 \\\\ 1 & 0 & 3 \\end{pmatrix}",
+              "text": "Diagonalize the matrix A.",
+              "unit": "Unit 5",
+              "type": "diagonalization"
             }
           ]
         }

@@ -15,987 +15,6 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Write about physical and chemical properties of concrete.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Explain the different types of stair case used in building construction with a neat sketch.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explain the individual component of the Theodolite with a Sketch.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Narrate about the classification of stone used in construction industry.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain in brief with about the Remote sensing and its application in construction.",
-              "unit": "Unit 3",
-              "type": "remote-sensing"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "State and derive the Lami's theorem and solve the problem given below using the theorem.",
-              "unit": "Unit 4",
-              "type": "forces"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Discuss us about the Contour line, Contour Interval, Horizontal Interval and Use of Contour Map.",
-              "unit": "Unit 3",
-              "type": "mapping"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "A block of mass M= 10 kg is sitting on a surface inclined at angle θ = 45°. Given that the coefficient of static friction is μs=0.5 between block and surface, what is the minimum force F necessary to prevent slipping? What is the maximum force F that can be exerted without causing the block to slip?",
-              "unit": "Unit 4",
-              "type": "friction"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Illustrate the difference between the Height of Collimation and Rise and Fall method.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "The following are the consecutive reading were taken with a levelling instrument at intervals of 20 m. 2.375, 1.730, 0.615, 3.450, 2.835, 2.070, 1.835, 0.985, 0.435, 1.630, 2.255 and 3.630 m. The instrument was shifted after the fourth and eighth reading. The last reading was taken on a BM of RL 110.200 m. Find the RLS of all the point using Rise and Fall method and satisfy the answer with arithmetic Check.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Differentiate the difference between Moment of inertia and Product of inertia.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Calculate the Moment of inertia about the X-axis.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Write about the difference between Method of Joint and Method of Section.",
-              "unit": "Unit 4",
-              "type": "truss"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Draw the Shear force and Bending moment diagram for the simple supported beam carries a Uniform distributed load of intensity \"W\" kN/m throughout a span of length \"L\" m.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Explain about the following Terms: a) Centroid and Centre of Gravity b) Profile Cross-sectioning c) Plane table and its used instruments",
-              "unit": "Unit 5/3/2",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2023",
-      "year": 2023,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What do you understand by the term 'levelling'? Explain 'reciprocal levelling' in details.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "What is the purpose to provide the foundation and describe its various types in details?",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Write short notes on any four: i) Remote sensing ii) Contour lines iii) Type of surveying iv) EDM v) Survey station",
-              "unit": "Unit 3/2",
-              "type": "mixed"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Explain the 'auto level' with a neat sketch.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Write notes on the following with neat sketch: i) Mid ordinate rule ii) Average ordinate rule iii) Trapezoidal rule iv) Simpson's rule",
-              "unit": "Unit 3",
-              "type": "mapping"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain concurrent and non-concurrent co-planer forces in details.",
-              "unit": "Unit 4",
-              "type": "forces"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Draw the shear force and bending moment diagram for simply supported beam, which carries a uniformly distributed load of 10kN/m and a point load of 20kN on its center having span of 5m.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Determine the moment of inertia of the given plane lamina about its centroidal axis as shown in the figure.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "List out the various stages for the construction of a building and list out the various building materials used in construction works with brief details.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Define any two-laboratory test, those are conducted on bricks and cement.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Define the method of joints and method of section to analyze a plane truss with a suitable example.",
-              "unit": "Unit 4",
-              "type": "truss"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Define the following terms with respect to concrete: i) Workability ii) Segregation iii) Bleeding",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "What are the various types of bonds used in the construction of brick masonry?",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Discuss plastering and pointing in Civil Engineering construction works.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Define the following terms: i) True bearing and magnetic bearing ii) Fore sight and back sight iii) Local attraction iv) Errors in chain surveying",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "What do you understand by reversible and irreversible machines? Explain with suitable examples.",
-              "unit": "Unit 4",
-              "type": "forces"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What are the contour lines and explain its various properties?",
-              "unit": "Unit 3",
-              "type": "mapping"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "What do you understand by the term moment of inertia and radius of gyration?",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Write short notes on any four: i) Shallow foundation ii) Survey stations iii) Indian Remote Sensing Satellite iv) Geodetic surveying v) Free body diagram",
-              "unit": "Unit 1/3/2/4",
-              "type": "mixed"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is the workability of concrete? Explain those factors that affecting the workability of concrete.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain nominal and design mix concrete in details.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What are the principle and applications of the remote sensing in the Civil Engineering?",
-              "unit": "Unit 3",
-              "type": "remote-sensing"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Draw the shear force and bending moment diagram for simply supported beam, which carries a uniformly varying load of 15 kN/m and a point load of 25 KN on its center having span of 6m.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Define any two-field test; those are conducted on cement and sand.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "What is the composition of cement? Explain in detail.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Define any four: i) Law of machine ii) Initial and final setting time of cement iii) Efflorescence iv) Curing of concrete v) Plastering and pointing",
-              "unit": "Unit 4/1",
-              "type": "mixed"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "What is the local attraction in surveying? How is it detected at any survey station?",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What are the various types of doors and windows used in the building construction?",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Define and derive an expression for parallel axis theorem.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Determine the moment of inertia of the given plane lamina about its centroidal axis as shown in the figure below.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Write short notes on any four: i) Magnetic declination ii) Bow's notation iii) Plane tables iv) D-Alembert's principle v) Types of staircase",
-              "unit": "Unit 2/4/1",
-              "type": "mixed"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "What do you understand by support reactions and its type? Explain shear force and bending moment for a cantilever beam.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2024",
-      "year": 2024,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Give an explanation of \"workability of concrete\" and discuss over the factors that affect it.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Explain about any two-laboratory experiments that were done on concrete.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Give a brief explanation of the various levelling operations (Profile, Cross-sectional, Differential, and Fly levelling) that are utilized in field surveys.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Give a brief explanation of remote sensing and how it is used in the construction field.",
-              "unit": "Unit 3",
-              "type": "remote-sensing"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Using a clear sketch, describe the various stair case types utilized in the construction of structures.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Identify the various kinds of stones that serve a purpose in the construction Industry.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "An embankment of a width 10m and side slope of 1.5:1 is required to be made on a ground which is level in a direction transverse to the centreline. The centreline heights at 40 m intervals are as follows: 1.90, 2.25, 3.15, 1.50, 3.85, 2.35 and 1.85. Calculate the volume of earth work according to trapezoidal and prismoidal method.",
-              "unit": "Unit 3",
-              "type": "mapping"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Explain the different terminology used in profile levelling.",
-              "unit": "Unit 3",
-              "type": "mapping"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "The following are the consecutive reading were taken with a level a 4-meter levelling staff on a continuously sloping ground at a common interval of 30 m. 0.555(A), 2.545, 3.345, 4.125, 5.835, 0.755, 2.350, 3.455, 1.825, 4.485, 1.585, 2.415, 1.840, 3.765 and 3.855(B). The R.L. of the first reading at A was 490.500. Make entries in level book and apply the usual check. Determine the gradient of AB. The instrument is shifted after 4th and 10th reading.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain in a brief about the difference between line of collimation and Rise & Fall Method.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Define and prove the theorem of Lami's.",
-              "unit": "Unit 4",
-              "type": "forces"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Solve the problem using theorem the block P = 5 kg and Block Q of mass \"m\" kg is suspended through the chord is in the equilibrium position as shown in figure. Determine the mass of Block Q.",
-              "unit": "Unit 4",
-              "type": "forces"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Differentiate the difference between Moment of inertia of mass, Moment of inertia of Area and Product of inertia.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Find the moment of inertia of the below fig.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Explain about the following terms: a) Centroid and Centre of Gravity b) EDM measurement and conventional measurement c) Method of joints and Method of Section",
-              "unit": "Unit 5/2/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2024",
-      "year": 2024,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Write on the characteristics of concrete's chemical and physical state.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Use a sketch to illustrate each Theodolite component.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Give a brief explanation of remote sensing and how it is used in the building industry.",
-              "unit": "Unit 3",
-              "type": "remote-sensing"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Briefly talk about the concrete preparation procedure.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Describe in brief about the different types of RCC footing.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Briefly discuss the compaction and curing process.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain in briefly about the Reciprocal levelling.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "The following are the consecutive reading were taken with a levelling instrument at intervals of 20 m. 3.375, 2.730, 1.615, 2.450, 3.835, 5.070, 4.835, 2.985, 4.435, 2.630, 4.255 and 5.630 m. The instrument was shifted after the fourth and eight reading. The last reading was taken BM of RL 125.250 m. Find the RLs of all the point using Rise and Fall method and satisfy the answer with arithmetic Check.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Find the least value of P required to cause the system of blocks shown in Figure to have impending motion to the left. The coefficient of friction under each block is 0.20.",
-              "unit": "Unit 4",
-              "type": "friction"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "The following offset were taken from a line to an irregular boundary line at an interval of 10 m. 0, 3.500, 2.550, 5.250, 6.650, 4.250, 0 m. Compute the area between the chain line, the irregular boundary line and the end offsets by: i) Mid-Ordinate Rule, ii) Average-Ordinate Rule, iii) The Trapezoidal Rule, iv) Simpson's Rule.",
-              "unit": "Unit 3",
-              "type": "mapping"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Write down the assumption used in Method of the joints.",
-              "unit": "Unit 4",
-              "type": "truss"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Solve the force in all the member using the using method of joint.",
-              "unit": "Unit 4",
-              "type": "truss"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Provide the detailed procedure to draw the shear force and bending moment diagram under point load, U.D.L. and Couple.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Draw the shear force and bending moment diagram for the simple supported beam of the length \"L\" carrying U.D.L. of \"W\" kN/m throughout its length of the beam and also find the max bending moment and shear force.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Explain in brief about any two: i) Principle Axes with the example ii) Product of inertia with the example iii) Moment of inertia of Rectangular Shape",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2025",
-      "year": 2025,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "State the D'Alembert's principle and its application.",
-              "unit": "Unit 4",
-              "type": "forces"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "What are different characteristics of stones and their methods of testing. Write the name of various types of stones which are used in building work?",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "With neat sketch explain the principle of positioning with GPS.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Discuss the general principles that need to be observed in brick masonry construction.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain various types of stone masonry. Draw typical sketches to illustrate them.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What is mortar? Describe the estimation of mortar requirement.",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Discuss the application of remote sensing in: i) Terrain analysis ii) Construction material inventories iii) Site investigation",
-              "unit": "Unit 3",
-              "type": "remote-sensing"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "State the assumptions used in simple bending and derive the bending equation.",
-              "unit": "Unit 5",
-              "type": "sfd-bmd"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Describe various types of windows.",
-              "unit": "Unit 1",
-              "type": "building-construction"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "An effort of 180 N is required just to move a certain body up an inclined plane of angle 15°, the force being parallel to the plane. If the angle of inclination of the plane is made 20°, the effort required, again applied parallel to the plane, is found to be 210 N. Find the weight of the body and co-efficient of friction.",
-              "unit": "Unit 4",
-              "type": "friction"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Determine the diameter of a rod 200 m long length vertically and subjected to an axial pull of 325 kN at its lower end if its weight per cubic meter is 80 kN and working stress is 75 MPa. Also determine the total elongation of rod. Take E=210 GPa.",
-              "unit": "Unit 5",
-              "type": "moment-of-inertia"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "State the work-energy principle. A uniform cylinder of 125mm radius has a mass of 0.15 kg this cylinder rolls along the horizontal surface without slipping with a translation velocity of 20cm/s. Determine its total kinetic energy.",
-              "unit": "Unit 4",
-              "type": "forces"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Write the steps for finding the resultant of a concurrent coplanar force system.",
-              "unit": "Unit 4",
-              "type": "forces"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What are the constituent, desirable properties, and types of Paints?",
-              "unit": "Unit 1",
-              "type": "building-materials"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Define the term contour and Explain in detail the different methods of contouring.",
-              "unit": "Unit 3",
-              "type": "mapping"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Explain with a neat sketch the following: i) Traversing by the method of included angles ii) Traversing by the method of direct angles.",
-              "unit": "Unit 2",
-              "type": "surveying"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
@@ -1174,6 +193,987 @@
               "unit": "Unit 1",
               "type": "building-materials",
               "isPredicted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "State the D'Alembert's principle and its application.",
+              "unit": "Unit 4",
+              "type": "forces"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are different characteristics of stones and their methods of testing. Write the name of various types of stones which are used in building work?",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "With neat sketch explain the principle of positioning with GPS.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the general principles that need to be observed in brick masonry construction.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain various types of stone masonry. Draw typical sketches to illustrate them.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is mortar? Describe the estimation of mortar requirement.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the application of remote sensing in: i) Terrain analysis ii) Construction material inventories iii) Site investigation",
+              "unit": "Unit 3",
+              "type": "remote-sensing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "State the assumptions used in simple bending and derive the bending equation.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe various types of windows.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "An effort of 180 N is required just to move a certain body up an inclined plane of angle 15°, the force being parallel to the plane. If the angle of inclination of the plane is made 20°, the effort required, again applied parallel to the plane, is found to be 210 N. Find the weight of the body and co-efficient of friction.",
+              "unit": "Unit 4",
+              "type": "friction"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Determine the diameter of a rod 200 m long length vertically and subjected to an axial pull of 325 kN at its lower end if its weight per cubic meter is 80 kN and working stress is 75 MPa. Also determine the total elongation of rod. Take E=210 GPa.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "State the work-energy principle. A uniform cylinder of 125mm radius has a mass of 0.15 kg this cylinder rolls along the horizontal surface without slipping with a translation velocity of 20cm/s. Determine its total kinetic energy.",
+              "unit": "Unit 4",
+              "type": "forces"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write the steps for finding the resultant of a concurrent coplanar force system.",
+              "unit": "Unit 4",
+              "type": "forces"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the constituent, desirable properties, and types of Paints?",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define the term contour and Explain in detail the different methods of contouring.",
+              "unit": "Unit 3",
+              "type": "mapping"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain with a neat sketch the following: i) Traversing by the method of included angles ii) Traversing by the method of direct angles.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Write on the characteristics of concrete's chemical and physical state.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Use a sketch to illustrate each Theodolite component.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Give a brief explanation of remote sensing and how it is used in the building industry.",
+              "unit": "Unit 3",
+              "type": "remote-sensing"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Briefly talk about the concrete preparation procedure.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe in brief about the different types of RCC footing.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Briefly discuss the compaction and curing process.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain in briefly about the Reciprocal levelling.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "The following are the consecutive reading were taken with a levelling instrument at intervals of 20 m. 3.375, 2.730, 1.615, 2.450, 3.835, 5.070, 4.835, 2.985, 4.435, 2.630, 4.255 and 5.630 m. The instrument was shifted after the fourth and eight reading. The last reading was taken BM of RL 125.250 m. Find the RLs of all the point using Rise and Fall method and satisfy the answer with arithmetic Check.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find the least value of P required to cause the system of blocks shown in Figure to have impending motion to the left. The coefficient of friction under each block is 0.20.",
+              "unit": "Unit 4",
+              "type": "friction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "The following offset were taken from a line to an irregular boundary line at an interval of 10 m. 0, 3.500, 2.550, 5.250, 6.650, 4.250, 0 m. Compute the area between the chain line, the irregular boundary line and the end offsets by: i) Mid-Ordinate Rule, ii) Average-Ordinate Rule, iii) The Trapezoidal Rule, iv) Simpson's Rule.",
+              "unit": "Unit 3",
+              "type": "mapping"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write down the assumption used in Method of the joints.",
+              "unit": "Unit 4",
+              "type": "truss"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Solve the force in all the member using the using method of joint.",
+              "unit": "Unit 4",
+              "type": "truss"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Provide the detailed procedure to draw the shear force and bending moment diagram under point load, U.D.L. and Couple.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw the shear force and bending moment diagram for the simple supported beam of the length \"L\" carrying U.D.L. of \"W\" kN/m throughout its length of the beam and also find the max bending moment and shear force.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain in brief about any two: i) Principle Axes with the example ii) Product of inertia with the example iii) Moment of inertia of Rectangular Shape",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Give an explanation of \"workability of concrete\" and discuss over the factors that affect it.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain about any two-laboratory experiments that were done on concrete.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Give a brief explanation of the various levelling operations (Profile, Cross-sectional, Differential, and Fly levelling) that are utilized in field surveys.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Give a brief explanation of remote sensing and how it is used in the construction field.",
+              "unit": "Unit 3",
+              "type": "remote-sensing"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Using a clear sketch, describe the various stair case types utilized in the construction of structures.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Identify the various kinds of stones that serve a purpose in the construction Industry.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "An embankment of a width 10m and side slope of 1.5:1 is required to be made on a ground which is level in a direction transverse to the centreline. The centreline heights at 40 m intervals are as follows: 1.90, 2.25, 3.15, 1.50, 3.85, 2.35 and 1.85. Calculate the volume of earth work according to trapezoidal and prismoidal method.",
+              "unit": "Unit 3",
+              "type": "mapping"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the different terminology used in profile levelling.",
+              "unit": "Unit 3",
+              "type": "mapping"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "The following are the consecutive reading were taken with a level a 4-meter levelling staff on a continuously sloping ground at a common interval of 30 m. 0.555(A), 2.545, 3.345, 4.125, 5.835, 0.755, 2.350, 3.455, 1.825, 4.485, 1.585, 2.415, 1.840, 3.765 and 3.855(B). The R.L. of the first reading at A was 490.500. Make entries in level book and apply the usual check. Determine the gradient of AB. The instrument is shifted after 4th and 10th reading.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain in a brief about the difference between line of collimation and Rise & Fall Method.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define and prove the theorem of Lami's.",
+              "unit": "Unit 4",
+              "type": "forces"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Solve the problem using theorem the block P = 5 kg and Block Q of mass \"m\" kg is suspended through the chord is in the equilibrium position as shown in figure. Determine the mass of Block Q.",
+              "unit": "Unit 4",
+              "type": "forces"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Differentiate the difference between Moment of inertia of mass, Moment of inertia of Area and Product of inertia.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Find the moment of inertia of the below fig.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain about the following terms: a) Centroid and Centre of Gravity b) EDM measurement and conventional measurement c) Method of joints and Method of Section",
+              "unit": "Unit 5/2/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the contour lines and explain its various properties?",
+              "unit": "Unit 3",
+              "type": "mapping"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What do you understand by the term moment of inertia and radius of gyration?",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write short notes on any four: i) Shallow foundation ii) Survey stations iii) Indian Remote Sensing Satellite iv) Geodetic surveying v) Free body diagram",
+              "unit": "Unit 1/3/2/4",
+              "type": "mixed"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the workability of concrete? Explain those factors that affecting the workability of concrete.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain nominal and design mix concrete in details.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the principle and applications of the remote sensing in the Civil Engineering?",
+              "unit": "Unit 3",
+              "type": "remote-sensing"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw the shear force and bending moment diagram for simply supported beam, which carries a uniformly varying load of 15 kN/m and a point load of 25 KN on its center having span of 6m.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define any two-field test; those are conducted on cement and sand.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the composition of cement? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define any four: i) Law of machine ii) Initial and final setting time of cement iii) Efflorescence iv) Curing of concrete v) Plastering and pointing",
+              "unit": "Unit 4/1",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is the local attraction in surveying? How is it detected at any survey station?",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the various types of doors and windows used in the building construction?",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define and derive an expression for parallel axis theorem.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Determine the moment of inertia of the given plane lamina about its centroidal axis as shown in the figure below.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any four: i) Magnetic declination ii) Bow's notation iii) Plane tables iv) D-Alembert's principle v) Types of staircase",
+              "unit": "Unit 2/4/1",
+              "type": "mixed"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What do you understand by support reactions and its type? Explain shear force and bending moment for a cantilever beam.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by the term 'levelling'? Explain 'reciprocal levelling' in details.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the purpose to provide the foundation and describe its various types in details?",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write short notes on any four: i) Remote sensing ii) Contour lines iii) Type of surveying iv) EDM v) Survey station",
+              "unit": "Unit 3/2",
+              "type": "mixed"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the 'auto level' with a neat sketch.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write notes on the following with neat sketch: i) Mid ordinate rule ii) Average ordinate rule iii) Trapezoidal rule iv) Simpson's rule",
+              "unit": "Unit 3",
+              "type": "mapping"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain concurrent and non-concurrent co-planer forces in details.",
+              "unit": "Unit 4",
+              "type": "forces"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw the shear force and bending moment diagram for simply supported beam, which carries a uniformly distributed load of 10kN/m and a point load of 20kN on its center having span of 5m.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Determine the moment of inertia of the given plane lamina about its centroidal axis as shown in the figure.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List out the various stages for the construction of a building and list out the various building materials used in construction works with brief details.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define any two-laboratory test, those are conducted on bricks and cement.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define the method of joints and method of section to analyze a plane truss with a suitable example.",
+              "unit": "Unit 4",
+              "type": "truss"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define the following terms with respect to concrete: i) Workability ii) Segregation iii) Bleeding",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the various types of bonds used in the construction of brick masonry?",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss plastering and pointing in Civil Engineering construction works.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define the following terms: i) True bearing and magnetic bearing ii) Fore sight and back sight iii) Local attraction iv) Errors in chain surveying",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What do you understand by reversible and irreversible machines? Explain with suitable examples.",
+              "unit": "Unit 4",
+              "type": "forces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Write about physical and chemical properties of concrete.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the different types of stair case used in building construction with a neat sketch.",
+              "unit": "Unit 1",
+              "type": "building-construction"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the individual component of the Theodolite with a Sketch.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Narrate about the classification of stone used in construction industry.",
+              "unit": "Unit 1",
+              "type": "building-materials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain in brief with about the Remote sensing and its application in construction.",
+              "unit": "Unit 3",
+              "type": "remote-sensing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "State and derive the Lami's theorem and solve the problem given below using the theorem.",
+              "unit": "Unit 4",
+              "type": "forces"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss us about the Contour line, Contour Interval, Horizontal Interval and Use of Contour Map.",
+              "unit": "Unit 3",
+              "type": "mapping"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A block of mass M= 10 kg is sitting on a surface inclined at angle θ = 45°. Given that the coefficient of static friction is μs=0.5 between block and surface, what is the minimum force F necessary to prevent slipping? What is the maximum force F that can be exerted without causing the block to slip?",
+              "unit": "Unit 4",
+              "type": "friction"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Illustrate the difference between the Height of Collimation and Rise and Fall method.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "The following are the consecutive reading were taken with a levelling instrument at intervals of 20 m. 2.375, 1.730, 0.615, 3.450, 2.835, 2.070, 1.835, 0.985, 0.435, 1.630, 2.255 and 3.630 m. The instrument was shifted after the fourth and eighth reading. The last reading was taken on a BM of RL 110.200 m. Find the RLS of all the point using Rise and Fall method and satisfy the answer with arithmetic Check.",
+              "unit": "Unit 2",
+              "type": "surveying"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate the difference between Moment of inertia and Product of inertia.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Calculate the Moment of inertia about the X-axis.",
+              "unit": "Unit 5",
+              "type": "moment-of-inertia"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write about the difference between Method of Joint and Method of Section.",
+              "unit": "Unit 4",
+              "type": "truss"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw the Shear force and Bending moment diagram for the simple supported beam carries a Uniform distributed load of intensity \"W\" kN/m throughout a span of length \"L\" m.",
+              "unit": "Unit 5",
+              "type": "sfd-bmd"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain about the following Terms: a) Centroid and Centre of Gravity b) Profile Cross-sectioning c) Plane table and its used instruments",
+              "unit": "Unit 5/3/2",
+              "type": "mixed"
             }
           ]
         }
