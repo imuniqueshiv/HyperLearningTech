@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { User } from "lucide-react";
 
 import { AuthInput } from "@/components/auth/auth-input";
 import { OAuthButton } from "@/components/auth/oauth-button";
@@ -9,14 +8,9 @@ export default function SignInPage() {
   return (
     <div className="flex flex-col gap-4 w-full max-w-[360px] mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
       <div className="flex flex-col gap-2 text-center items-center mb-4">
-        <div className="h-20 w-20 rounded-full bg-zinc-100 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/10 flex items-center justify-center mb-2 shadow-inner">
-          <Image
-            src="/hl-logo.png"
-            alt="Logo"
-            width={32}
-            height={32}
-            className="opacity-80"
-          />
+        <div className="relative flex h-16 w-16 items-center justify-center rounded-[1.25rem] border border-black/5 bg-gradient-to-b from-white to-zinc-50 shadow-sm dark:border-white/10 dark:from-zinc-900 dark:to-zinc-950 mb-2">
+          <div className="absolute inset-0 rounded-[1.25rem] ring-1 ring-inset ring-black/5 dark:ring-white/5" />
+          <User className="relative z-10 h-7 w-7 text-zinc-700 dark:text-zinc-300" />
         </div>
         <h1 className="text-[22px] font-semibold tracking-tight text-foreground">
           Log in to Hyper Learning
