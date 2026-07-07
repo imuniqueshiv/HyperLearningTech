@@ -109,3 +109,21 @@
     transparent 50%
   );
 }
+
+/* Activity Pulse Animation */
+@keyframes pulse-line {
+  0% {
+    stroke-dashoffset: 170;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -170;
+  }
+}
+
+.animate-pulse-line {
+  stroke-dasharray: 170;
+  animation: pulse-line 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
