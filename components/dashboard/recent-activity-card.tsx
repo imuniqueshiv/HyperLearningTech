@@ -25,17 +25,17 @@ export function RecentActivityCard({
   return (
     <Link
       href={href}
-      className="group relative flex flex-col justify-between overflow-hidden rounded-[20px] border border-border bg-[#0a0c10] sm:bg-card p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]"
+      className="group relative flex flex-col justify-between overflow-hidden rounded-[20px] border border-black/10 dark:border-white/[0.08] bg-black/[0.02] dark:bg-white/[0.03] p-5 sm:p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition-transform hover:-translate-y-1 hover:shadow-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.05] hover:border-blue-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8]"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/5 dark:from-white/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative z-10 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div className="flex gap-4 items-center sm:items-start">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-background border border-border text-muted-foreground transition-all duration-300 group-hover:bg-[#1D4ED8]/10 group-hover:text-[#1D4ED8] dark:group-hover:text-blue-400">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-background border border-border text-muted-foreground transition-colors group-hover:bg-[#1D4ED8]/10 group-hover:text-[#1D4ED8] dark:group-hover:text-blue-400">
             <Icon className="h-6 w-6" />
           </div>
           <div className="flex flex-col justify-center">
-            <h3 className="font-bold text-[15px] sm:text-base tracking-tight text-foreground transition-colors group-hover:text-[#1D4ED8] dark:group-hover:text-blue-400">
+            <h3 className="font-bold text-[15px] sm:text-base tracking-tight text-foreground group-hover:text-[#1D4ED8] dark:group-hover:text-blue-400">
               {title}
             </h3>
             <p className="mt-0.5 text-[13px] sm:text-sm font-medium text-muted-foreground">{subtitle}</p>

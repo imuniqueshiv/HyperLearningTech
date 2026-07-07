@@ -58,9 +58,9 @@ export function QuickActionCard({
   return (
     <Link
       href={href}
-      className={`group relative flex flex-col gap-3 overflow-hidden rounded-[20px] border border-border bg-[#0a0c10] sm:bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-500/30 ${style.wrapper}`}
+      className={`group relative flex flex-col gap-3 overflow-hidden rounded-[20px] border border-black/10 dark:border-white/[0.08] bg-black/[0.02] dark:bg-white/[0.03] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition-transform hover:-translate-y-1 hover:shadow-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.05] hover:border-blue-500/30 ${style.wrapper}`}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/5 dark:from-white/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       
       <div className="relative z-10 flex items-center justify-between">
         <div
@@ -75,7 +75,7 @@ export function QuickActionCard({
       
       <div className="relative z-10 mt-1">
         <h3
-          className={`font-bold text-[15px] sm:text-base tracking-tight text-foreground transition-colors duration-300 ${style.title}`}
+          className={`font-bold text-[15px] sm:text-base tracking-tight text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 ${style.title}`}
         >
           {title}
         </h3>
