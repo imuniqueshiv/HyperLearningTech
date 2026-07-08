@@ -128,7 +128,7 @@ export default function RootLayout({
           <Navbar />
           <main
             id="main-content"
-            className="flex flex-col flex-1"
+            className="flex min-h-0 flex-1 flex-col"
             tabIndex={-1}
           >
             {children}

@@ -53,6 +53,9 @@ export default function Navbar() {
   const currentTheme = mounted ? resolvedTheme : theme;
   const router = useRouter();
   const pathname = usePathname();
+  const isWorkspaceFocusRoute = /^\/rgpv\/[^/]+\/[^/]+\/[^/]+\/ai$/.test(
+    pathname
+  );
   const [activeSection, setActiveSection] = useState<string>("/#Home");
   const isClickScrolling = useRef(false);
 
@@ -167,6 +170,54 @@ export default function Navbar() {
       }
     }
   };
+
+  if (isWorkspaceFocusRoute) {
+    return (
+      <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+        <div className="mx-auto flex h-14 w-full max-w-[1500px] items-center justify-between px-4 sm:px-4 lg:px-6">
+          <Link
+            href="/"
+            className="flex items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+          >
+            <Image
+              src="/hl-logo.png"
+              alt="Hyper Learning"
+              width={24}
+              height={24}
+              className="h-6 w-6 object-contain"
+            />
+            <span className="text-sm font-semibold text-foreground">
+              Hyper Learning
+            </span>
+          </Link>
+
+          <div className="flex items-center gap-2">
+            {mounted && (
+              <button
+                onClick={() =>
+                  setTheme(currentTheme === "dark" ? "light" : "dark")
+                }
+                aria-label="Toggle theme"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-background text-foreground transition hover:border-blue-500/30"
+              >
+                {currentTheme !== "dark" ? (
+                  <Sun className="h-4 w-4 text-amber-600" />
+                ) : (
+                  <Moon className="h-4 w-4" />
+                )}
+              </button>
+            )}
+            <Link
+              href="/sign-in"
+              className="inline-flex h-8 items-center rounded-lg border border-border bg-background px-3 text-xs font-medium text-foreground transition hover:border-blue-500/30"
+            >
+              Sign In
+            </Link>
+          </div>
+        </div>
+      </header>
+    );
+  }
 
   return (
     <header
