@@ -65,7 +65,7 @@ export default function WorkspaceMessage({
       </div>
 
       <div
-        className={`max-w-[85%] rounded-2xl px-4 py-3 ${
+        className={`max-w-[94%] sm:max-w-[92%] rounded-2xl px-3 py-3 sm:px-4 ${
           isUser
             ? "bg-muted/50 text-foreground"
             : "border border-border bg-card/50"
