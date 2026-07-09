@@ -3,7 +3,788 @@
     "id": "cy-401",
     "code": "CY-401",
     "name": "Introduction to Linear Algebra",
-    "title": "CY-401 - Introduction to Linear Algebra"
+    "title": "CY-401 (GS) – Introduction to Linear Algebra",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Suppose V is finite dimensional and U is subspace of V. Show that U=V if and only if U⁰={0}.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Show that the mapping T: V₃(R)→V₂(R) defined as T(a₁,a₂,a₃)=(3a₁-2a₂+a₃, a₁-3a₂-2a₃) is a linear transformation.",
+              "unit": "Unit 1",
+              "type": "linear-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Suppose V is finite dimensional and U is a subspace of V. Then prove that dim(V/U)=dim V - dim U.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write short note on: i) Cayley-Hamilton theorem ii) Annihilating Polynomials.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Let a, b, c be elements of a field F, and let A be the 3×3 matrix over F. Prove that the characteristic polynomial for A is x³-ax²-bx-c and that it is also the minimal polynomial for A.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Let A be an n×n triangular matrix over the field F. Prove that characteristic values of A are the diagonal entries of A.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Diagonalize the matrix [[1,0,-1],[1,2,1],[2,2,3]].",
+              "unit": "Unit 3",
+              "type": "diagonalization"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Show that V₂(R) is an inner product space defined by (α,β)=3a₁b₁+2a₂b₂ for all α=(a₁,a₂), β=(b₁,b₂) in V₂(R).",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Jordan blocks with suitable examples.",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Show that two nilpotent linear transformations are similar if and only if they have same invariants.",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Find a basis for the space of all skew-symmetric linear forms on Rⁿ.",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Find all bilinear forms on the space of n×1 matrices over C which are invariant under O(n,C).",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on following (any two): a) Dual Spaces b) Primary decomposition theorem c) Bilinear forms d) Inner product spaces.",
+              "unit": "Unit 1/4/5/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Show that u₁+u₂+u₃ is not a direct sum for given subspaces of F³.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Let F be a field of complex numbers and let T: F³→F³ be defined. Verify that T is linear transformation.",
+              "unit": "Unit 1",
+              "type": "linear-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Suppose V is finite dimensional and U is subset to V. Show that U={0} if and only if U⁰=V'.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write short note on: i) Characteristic values and characteristic vectors ii) Algebraic multiplicity and Geometric multiplicity.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Let A be a 4×4 real matrix. Show that the characteristic polynomial for A is x²(x-1)² and that it is also the minimal polynomial.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Let T be a linear operator on the n-dimensional vector space V and suppose that T has n distinct characteristic values. Prove that T is diagonalizable.",
+              "unit": "Unit 2",
+              "type": "diagonalization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Find the eigen values and eigen vectors of the matrix [[6,-2,2],[-2,3,-1],[2,-1,3]].",
+              "unit": "Unit 3",
+              "type": "eigen-values"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain invariant subspace with suitable examples.",
+              "unit": "Unit 3",
+              "type": "invariant-subspaces"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Find Jordan canonical form of the matrix [[1,1,2],[1,2,1],[0,1,3]].",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "If T in A(V) has all its characteristic roots in F, then there exists a basis of V such that matrix representation of T is triangular. Prove it.",
+              "unit": "Unit 4",
+              "type": "triangular-form"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Find all Skew-symmetric bilinear forms on R³.",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Find all bilinear forms on the space n×1 matrices over R which are invariant under O(n,R).",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on the following (any two): a) Quotient spaces b) Direct sum decomposition c) Self adjoint d) Jordan blocks.",
+              "unit": "Unit 1/2/5/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Let U₁, U₂ and U₃ be subspaces of a vector space V. Prove that U₁∩(U₂+(U₁∩U₃))=(U₁∩U₂)+(U₁∩U₃).",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Let V be a vector space. Show that dim(V)=n≥1 if and only if there exist one-dimensional subspaces U₁...Uₙ such that V=U₁⊕...⊕Uₙ.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define the annihilator of a subspace W of V. Prove that W⁰ is a subspace of V* and determine its dimension in terms of the dimension of V and W.",
+              "unit": "Unit 1",
+              "type": "dual-spaces"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Let A be a 4×4 real matrix. Show that the characteristic polynomial for A is x²(x-1)² and that it is also the minimal polynomial.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Let W be an invariant subspace for linear operator T. Prove that the minimal polynomial for the restriction operator T_w divides the minimal polynomial for T.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "For the matrix A=[[3,1],[2,2]], verify Cayley-Hamilton theorem by finding its characteristic polynomial and substituting the matrix into it.",
+              "unit": "Unit 2",
+              "type": "cayley-hamilton"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Consider the matrix A=[[6,1,0],[0,6,1],[0,0,6]]. Find the Jordan canonical form of the matrix A and the corresponding Jordan basis.",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Let V be an inner product space, and let α and β be vectors in V. Show that α=β if and only if (α|γ)=(β|γ) for every γ in V.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Consider matrix A=[[3,1],[1,3]]. Find the eigenvalues and corresponding eigenvectors of A. Determine the invariant subspaces corresponding to each distinct eigenvalue.",
+              "unit": "Unit 3",
+              "type": "eigen-values"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Given basis and linear transformation values, find T(2,-3,4).",
+              "unit": "Unit 1",
+              "type": "linear-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "If V is the space of all polynomials of degree less than or equal to n over a field F, prove that the differentiation operator on V is nilpotent.",
+              "unit": "Unit 4",
+              "type": "nilpotent-operators"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Consider a 2×2 matrix G with characteristic polynomial (t+1)²(t-2) and minimal polynomial (t+1)(t-2). Determine the primary decomposition of R² with respect to G.",
+              "unit": "Unit 4",
+              "type": "primary-decomposition"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Let A, B in O(n), the orthogonal group of real n×n matrices. Define the bilinear form as B(A,B)=tr(AᵀB). Verify if B preserves the group structure of O(n).",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write a detail note on skew symmetric bilinear forms.",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on any two: a) Cayley-Hamilton theorem b) Primary decomposition theorem c) Invariant subspaces.",
+              "unit": "Unit 2/4/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Prove: Let V be a vector space and W be a subspace of V. Then the map η:V→V/W defined by η(x)=x+W, x∈V, is a linear transformation.",
+              "unit": "Unit 1",
+              "type": "linear-transformations"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Prove that, if V₀ is a subspace of a vector space V, then there exists a subspace V₁ of V such that V=V₀+V₁ and V₀∩V₁={0}.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Find two linear operators T and U on R² such that TU=0 but UT≠0.",
+              "unit": "Unit 1",
+              "type": "linear-transformations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find the characteristic polynomial and the minimal polynomial for the matrix B=[[2,1,0],[0,2,0],[0,0,3]].",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Prove that T is diagonalizable for the given matrix A=[[5,-6,-6],[-1,4,2],[3,-6,-4]]. Find the diagonalizable matrix P such that PAP⁻¹ is diagonal.",
+              "unit": "Unit 2",
+              "type": "diagonalization"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Given matrix B=[[5,2],[3,4]], use the Cayley-Hamilton theorem to calculate B²-9B+14 and verify that it results in the zero matrix.",
+              "unit": "Unit 2",
+              "type": "cayley-hamilton"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find the eigenvalues and eigenvectors of the symmetric matrix D=[[5,2,-1],[2,3,2],[-1,2,5]].",
+              "unit": "Unit 3",
+              "type": "eigen-values"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the essential properties of inner product spaces? Provide an example of a vector space that satisfies these properties.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Consider matrix A=[[5,4,2],[0,1,0],[0,0,3]]. Find the Jordan canonical form and determine the corresponding Jordan basis.",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Show that the set of all continuous functions on [0,1] equipped with inner product ⟨f,g⟩=∫₀¹ f(x)g(x)dx forms an inner product space.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Let V be the space of n×n matrices over F. Define T(B)=AB-BA. Prove that if A is a nilpotent matrix, then T is a nilpotent operator.",
+              "unit": "Unit 4",
+              "type": "nilpotent-operators"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Let C be a 5×5 matrix with characteristic polynomial (t-1)(t-2)²(t-3)². Determine the possible Jordan canonical forms of C.",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Let T:C³→C³ be a linear transformation with matrix representation Λ=[[2,-i,0],[i,4,-3i],[0,3i,1]]. Determine whether T is Hermitian.",
+              "unit": "Unit 5",
+              "type": "hermitian-operators"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Suppose T:C²→C² is a linear transformation with matrix representation A. Determine whether T is unitary or not.",
+              "unit": "Unit 5",
+              "type": "unitary-operators"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on any two: a) Direct sum decompositions b) Unitary and normal linear transformation c) Annihilator of a subspace.",
+              "unit": "Unit 2/5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define subspace of a vector space. Show that the quotient space of finitely generated space is finitely generated.",
+              "unit": "Unit 1",
+              "type": "vector-spaces"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "State and prove Rank nullity theorem.",
+              "unit": "Unit 1",
+              "type": "linear-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Let f be linear functional on R³. Show that there exists a vector a in R³ such that f(r)=r·a.",
+              "unit": "Unit 1",
+              "type": "dual-spaces"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define Characteristic polynomials. Show that all eigen values of A*A are real and it is unitary similar to diagonal matrix.",
+              "unit": "Unit 2",
+              "type": "characteristic-polynomials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "State and prove Cayley Hamilton theorem.",
+              "unit": "Unit 2",
+              "type": "cayley-hamilton"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Let T be a linear transformation on a vector space V of dimension n. Suppose that T has distinct eigen values. Then show that T is diagonalizable.",
+              "unit": "Unit 2",
+              "type": "diagonalization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define adjoint of Linear Transformation. Show that the given transformation T is a linear transformation.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Let W be a subspace of finite dimensional inner product space V and x∈V. Given the inequality condition, show that x∈W⊥.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Show that there is no proper open subspace of an inner product space.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define Canonical form of linear transformation. Show that every m×n matrix is equivalent to unique matrix in one of canonical form.",
+              "unit": "Unit 4",
+              "type": "canonical-forms"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Show that all eigen values of hermitian matrix are all real.",
+              "unit": "Unit 5",
+              "type": "hermitian-operators"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define Jordan canonical form. Reduce the matrix [[1,0,0],[1,1,0],[0,0,3]] into Jordan canonical forms.",
+              "unit": "Unit 4",
+              "type": "jordan-form"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Show that a bilinear form on V is a product of linear functional iff it is of rank 1.",
+              "unit": "Unit 5",
+              "type": "bilinear-forms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State and prove Gram Schmidt orthogonalization process.",
+              "unit": "Unit 3",
+              "type": "inner-product-spaces"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on: i) Symmetric bilinear forms ii) Group preserving bilinear forms iii) Inner product space.",
+              "unit": "Unit 5/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
