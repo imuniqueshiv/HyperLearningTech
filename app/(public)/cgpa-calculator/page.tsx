@@ -14,7 +14,6 @@ import {
   TrendingUp,
   BookOpen,
   Lightbulb,
-  Award,
   Star,
   Briefcase,
   ShieldCheck,
@@ -33,11 +32,7 @@ export default function CgpaCalculatorPage() {
   // Radar State
   const [radarTier, setRadarTier] = useState<string>("tier1");
 
-  useEffect(() => {
-    calculateRequiredSgpa();
-  }, [totalSemesters, currentSemester, currentCgpa, targetCgpa]);
-
-  const calculateRequiredSgpa = () => {
+  const calculateRequiredSgpa = React.useCallback(() => {
     setError(null);
     setResult(null);
     setProgressValue(0);
@@ -67,7 +62,12 @@ export default function CgpaCalculatorPage() {
 
     setResult(parseFloat(requiredSgpa.toFixed(2)));
     setProgressValue((current / target) * 100);
-  };
+  }, [totalSemesters, currentSemester, currentCgpa, targetCgpa]);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    calculateRequiredSgpa();
+  }, [calculateRequiredSgpa]);
 
   return (
     <main className="relative min-h-screen pt-24 pb-20 overflow-hidden bg-slate-50/80 dark:bg-[#040814]">
@@ -533,7 +533,7 @@ export default function CgpaCalculatorPage() {
                           </h4>
                           <p className="text-[13px] text-red-700 dark:text-red-400/80 leading-relaxed font-medium">
                             You are currently falling short of the{" "}
-                            {required.toFixed(1)} cutoff. Don't panic! Set{" "}
+                            {required.toFixed(1)} cutoff. Don&apos;t panic! Set{" "}
                             <strong className="text-red-800 dark:text-red-300">
                               {required.toFixed(1)}
                             </strong>{" "}

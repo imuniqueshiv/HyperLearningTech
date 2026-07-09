@@ -11,13 +11,11 @@ import {
   Users,
   Bell,
   Globe,
-  BookOpen,
   Landmark,
   LayoutDashboard,
   UserRound,
   Info,
   Phone,
-  House,
   Calculator,
 } from "lucide-react";
 import ConciseFooter from "@/components/concise-footer";

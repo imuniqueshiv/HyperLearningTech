@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, useAnimation, useReducedMotion } from "framer-motion";
+import { useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import { Quote, Star, Pause, Play, Sparkles } from "lucide-react";
 
 import { landingTestimonials } from "@/lib/data/landing";
