@@ -71,11 +71,37 @@ export default function CgpaCalculatorPage() {
 
   return (
     <main className="relative min-h-screen pt-28 pb-24 overflow-hidden bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none dark:bg-[#020617]">
-      {/* Ultra-Premium Ambient Background */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[10%] left-[20%] h-[700px] w-[700px] rounded-full bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent dark:from-blue-600/20 dark:via-indigo-900/10 blur-[120px] mix-blend-multiply dark:mix-blend-screen" />
-        <div className="absolute bottom-[20%] right-[10%] h-[600px] w-[600px] rounded-full bg-gradient-to-bl from-indigo-500/10 via-purple-500/5 to-transparent dark:from-indigo-600/20 dark:via-purple-900/10 blur-[150px] mix-blend-multiply dark:mix-blend-screen" />
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] dark:opacity-[0.04] mix-blend-overlay" />
+      {/* Ultra-Premium Dynamic Ambient Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none flex items-center justify-center">
+        {/* Orb 1: Top Left Blue */}
+        <motion.div
+          animate={{ x: [0, 80, 0], y: [0, 60, 0], scale: [1, 1.1, 1] }}
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -top-[20%] -left-[10%] h-[900px] w-[900px] rounded-full bg-blue-500/10 dark:bg-blue-500/5 blur-[160px] mix-blend-multiply dark:mix-blend-normal"
+        />
+        {/* Orb 2: Top Right Purple */}
+        <motion.div
+          animate={{ x: [0, -100, 0], y: [0, 80, 0], scale: [1, 1.05, 1] }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+          className="absolute top-[10%] -right-[20%] h-[800px] w-[800px] rounded-full bg-purple-500/10 dark:bg-purple-500/5 blur-[160px] mix-blend-multiply dark:mix-blend-normal"
+        />
+        {/* Orb 3: Bottom Center Indigo */}
+        <motion.div
+          animate={{ x: [0, 60, 0], y: [0, -100, 0], scale: [1, 1.2, 1] }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 5,
+          }}
+          className="absolute -bottom-[20%] left-[15%] h-[1000px] w-[1000px] rounded-full bg-indigo-500/10 dark:bg-indigo-500/5 blur-[160px] mix-blend-multiply dark:mix-blend-normal"
+        />
+        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] dark:opacity-[0.05] mix-blend-overlay" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1200px] px-6 lg:px-8">
@@ -118,11 +144,11 @@ export default function CgpaCalculatorPage() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="lg:col-span-3 p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-gradient-to-br from-white/90 to-blue-50/60 dark:bg-none dark:bg-white/[0.02] backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] relative overflow-hidden"
+            className="lg:col-span-3 p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-blue-50/90 dark:bg-white/[0.02] backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] relative overflow-hidden"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 sm:gap-y-10">
               {/* Total Semesters */}
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <label className="text-[11px] font-black tracking-widest uppercase text-slate-500 dark:text-slate-400">
                   Total Semesters
                 </label>
@@ -138,13 +164,13 @@ export default function CgpaCalculatorPage() {
                     max="12"
                     value={totalSemesters}
                     onChange={(e) => setTotalSemesters(Number(e.target.value))}
-                    className="w-full pl-14 pr-4 py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md"
+                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-lg sm:text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md"
                   />
                 </div>
               </div>
 
               {/* Current Semester */}
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <label className="text-[11px] font-black tracking-widest uppercase text-slate-500 dark:text-slate-400">
                   Completed Sems
                 </label>
@@ -160,13 +186,13 @@ export default function CgpaCalculatorPage() {
                     max="12"
                     value={currentSemester}
                     onChange={(e) => setCurrentSemester(Number(e.target.value))}
-                    className="w-full pl-14 pr-4 py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md"
+                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-lg sm:text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md"
                   />
                 </div>
               </div>
 
               {/* Current CGPA */}
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <label className="text-[11px] font-black tracking-widest uppercase text-slate-500 dark:text-slate-400">
                   Current CGPA
                 </label>
@@ -184,13 +210,13 @@ export default function CgpaCalculatorPage() {
                     placeholder="0.00"
                     value={currentCgpa}
                     onChange={(e) => setCurrentCgpa(e.target.value)}
-                    className="w-full pl-14 pr-4 py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
+                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-lg sm:text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
                   />
                 </div>
               </div>
 
               {/* Target CGPA */}
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <label className="text-[11px] font-black tracking-widest uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2">
                   Target CGPA
                 </label>
@@ -208,13 +234,13 @@ export default function CgpaCalculatorPage() {
                     placeholder="0.00"
                     value={targetCgpa}
                     onChange={(e) => setTargetCgpa(e.target.value)}
-                    className="w-full pl-14 pr-4 py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
+                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-white/5 bg-white dark:bg-white/[0.03] text-slate-900 dark:text-white font-black text-lg sm:text-xl focus:bg-white dark:focus:bg-black/40 focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 flex items-start gap-4 p-5 rounded-r-2xl rounded-l-md bg-gradient-to-r from-blue-50/80 to-transparent dark:from-blue-500/10 dark:to-transparent border-y border-r border-slate-100 dark:border-white/[0.05] border-l-4 border-l-blue-500 shadow-sm relative overflow-hidden">
+            <div className="mt-8 sm:mt-12 flex items-start gap-4 p-5 rounded-r-2xl rounded-l-md bg-gradient-to-r from-blue-50/80 to-transparent dark:from-blue-500/10 dark:to-transparent border-y border-r border-slate-100 dark:border-white/[0.05] border-l-4 border-l-blue-500 shadow-sm relative overflow-hidden">
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
               <div className="p-2 bg-white dark:bg-white/[0.06] rounded-full shrink-0 shadow-sm border border-slate-100 dark:border-slate-700 relative z-10">
                 <Info className="w-4 h-4 text-blue-600 dark:text-blue-400" />
@@ -236,7 +262,7 @@ export default function CgpaCalculatorPage() {
           >
             {/* Absolute Glow behind the card */}
             <div className="absolute inset-0 bg-blue-500/20 dark:bg-indigo-500/20 blur-[80px] rounded-full pointer-events-none z-0" />
-            <div className="flex-1 p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-gradient-to-bl from-white/90 to-indigo-50/60 dark:from-white/[0.05] dark:to-transparent shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] flex flex-col justify-center relative overflow-hidden backdrop-blur-3xl z-10">
+            <div className="flex-1 p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-indigo-50/90 dark:bg-white/[0.05] shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] flex flex-col justify-center relative overflow-hidden backdrop-blur-3xl z-10">
               <AnimatePresence mode="wait">
                 {!currentCgpa || !targetCgpa ? (
                   <motion.div
@@ -478,11 +504,7 @@ export default function CgpaCalculatorPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Placement Eligibility Radar */}
-            <div className="p-8 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-gradient-to-tr from-white/90 to-violet-50/60 dark:bg-none dark:bg-white/[0.02] backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-8 opacity-[0.03] pointer-events-none">
-                <Compass className="w-32 h-32" />
-              </div>
-
+            <div className="p-6 sm:p-8 md:p-10 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-indigo-50/90 dark:bg-white/[0.02] backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] relative overflow-hidden">
               <div className="flex items-center gap-3 mb-8 relative z-10">
                 <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                   <Briefcase className="w-5 h-5" />
@@ -523,19 +545,27 @@ export default function CgpaCalculatorPage() {
                       <button
                         key={tier.id}
                         onClick={() => setRadarTier(tier.id)}
-                        className={`flex items-center justify-between p-3.5 rounded-xl border text-left transition-all ${
+                        className={`group flex items-center justify-between p-4 rounded-2xl border text-left transition-colors duration-200 ${
                           radarTier === tier.id
-                            ? "bg-indigo-50/50 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/50 shadow-sm"
-                            : "bg-slate-50/50 dark:bg-white/5 border-slate-100 dark:border-white/5 hover:bg-slate-50 dark:hover:bg-white/10"
+                            ? "bg-indigo-50/80 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/30 shadow-sm"
+                            : "bg-slate-50/50 dark:bg-white/5 border-slate-100 dark:border-white/5 hover:bg-slate-100/50 dark:hover:bg-white/10 hover:border-slate-200 dark:hover:border-white/10"
                         }`}
                       >
                         <span
-                          className={`font-semibold ${radarTier === tier.id ? "text-indigo-700 dark:text-indigo-300" : "text-slate-700 dark:text-slate-300"}`}
+                          className={`font-semibold transition-colors ${
+                            radarTier === tier.id
+                              ? "text-indigo-700 dark:text-indigo-300"
+                              : "text-slate-600 group-hover:text-slate-800 dark:text-slate-400 dark:group-hover:text-slate-200"
+                          }`}
                         >
                           {tier.label}
                         </span>
                         <span
-                          className={`text-[13px] font-bold px-2.5 py-1 rounded-md ${radarTier === tier.id ? "bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300" : "bg-slate-200/50 dark:bg-white/10 text-slate-600 dark:text-slate-400"}`}
+                          className={`text-[13px] font-bold px-3 py-1 rounded-full transition-colors ${
+                            radarTier === tier.id
+                              ? "bg-indigo-600 text-white shadow-sm dark:bg-indigo-500"
+                              : "bg-slate-200/60 dark:bg-white/10 text-slate-500 group-hover:bg-slate-300/50 group-hover:text-slate-700 dark:group-hover:bg-white/20 dark:group-hover:text-slate-200"
+                          }`}
                         >
                           {tier.cutoff}+
                         </span>
@@ -599,7 +629,7 @@ export default function CgpaCalculatorPage() {
                     );
                   } else {
                     return (
-                      <div className="flex gap-4 p-5 rounded-2xl bg-red-50 dark:bg-red-500/10 border border-red-100 dark:border-red-500/20">
+                      <div className="flex gap-4 p-4 sm:p-5 rounded-2xl bg-red-50 dark:bg-red-500/10 border border-red-100 dark:border-red-500/20">
                         <AlertTriangle className="w-6 h-6 text-red-600 dark:text-red-400 shrink-0" />
                         <div>
                           <h4 className="font-bold text-red-800 dark:text-red-300 mb-1">
@@ -624,7 +654,7 @@ export default function CgpaCalculatorPage() {
             </div>
 
             {/* Pro-Tips for Boosting SGPA */}
-            <div className="p-8 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-gradient-to-tl from-white/90 to-emerald-50/60 dark:bg-none dark:bg-white/[0.02] backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]">
+            <div className="p-6 sm:p-8 md:p-10 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.05] bg-blue-50/90 dark:bg-white/[0.02] backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] relative overflow-hidden">
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                   <Lightbulb className="w-5 h-5" />
@@ -634,7 +664,7 @@ export default function CgpaCalculatorPage() {
                 </h3>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {[
                   {
                     title: "Master High-Credit Subjects",
