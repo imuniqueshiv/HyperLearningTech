@@ -1,13 +1,24 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Loader2, Sparkles, AlertCircle, ArrowDown } from "lucide-react";
+import {
+  Send,
+  Loader2,
+  Sparkles,
+  AlertCircle,
+  ChevronDown,
+  ChevronRight,
+  X,
+  Home,
+  PanelLeft,
+  PanelLeftClose,
+} from "lucide-react";
 import WorkspaceMessage from "@/components/ai/workspace-message";
 import ContinueExternalAI from "@/components/ai/continue-external-ai";
 import { API_ENDPOINTS } from "@/lib/api-endpoints";
 import {
-  formatContinueLearningLabel,
   formatLastStudied,
   fromStoredMessages,
   loadSession,
@@ -31,6 +42,7 @@ export interface WorkspaceChatProps {
   topicId?: string;
   topicTitle?: string;
   moduleTitle?: string;
+  contextLabel?: string;
   cachedExplanation?: string;
   explanationCached?: boolean;
   initialPrompts?: Array<{
@@ -58,7 +70,6 @@ interface WorkspaceInitialState {
   messages: Message[];
   lastStudiedAt: string | null;
   sessionSaved: boolean;
-  showContinueLearning: boolean;
   skipPersist: boolean;
   explanationRequested: boolean;
 }
@@ -75,7 +86,6 @@ function getWorkspaceInitialState(params: {
     messages: [],
     lastStudiedAt: null,
     sessionSaved: false,
-    showContinueLearning: false,
     skipPersist: false,
     explanationRequested: false,
   };
@@ -97,7 +107,6 @@ function getWorkspaceInitialState(params: {
       messages: fromStoredMessages(session.messages),
       lastStudiedAt: session.updatedAt,
       sessionSaved: true,
-      showContinueLearning: session.questionCount > 0,
       skipPersist: true,
       explanationRequested: true,
     };
@@ -122,8 +131,8 @@ export default function WorkspaceChat({
   topicId,
   topicTitle,
   moduleTitle,
+  contextLabel,
   cachedExplanation,
-  explanationCached: initialExplanationCached,
   initialPrompts = [],
   welcomeMessage = "Ask me anything about your subject. I can help with explanations, examples, and exam preparation.",
   inputPlaceholder = "Type your question here...",
@@ -147,9 +156,6 @@ export default function WorkspaceChat({
   const [topicExplanation, setTopicExplanation] = useState(
     initialWorkspace.topicExplanation
   );
-  const [explanationCached, setExplanationCached] = useState(
-    initialExplanationCached
-  );
   const [explanationLoading, setExplanationLoading] = useState(false);
   const [messages, setMessages] = useState<Message[]>(
     initialWorkspace.messages
@@ -163,11 +169,10 @@ export default function WorkspaceChat({
   const [sessionSaved, setSessionSaved] = useState(
     initialWorkspace.sessionSaved
   );
-  const [showContinueLearning, setShowContinueLearning] = useState(
-    initialWorkspace.showContinueLearning
-  );
+  const [suggestionsCollapsed, setSuggestionsCollapsed] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const explanationRequestedRef = useRef(initialWorkspace.explanationRequested);
@@ -185,16 +190,6 @@ export default function WorkspaceChat({
     isTopicContextReady &&
     followUpCount >= followupLimit &&
     !explanationLoading;
-  const messageCount = messages.length;
-  const hasConversation = followUpCount > 0;
-
-  const scrollToBottom = useCallback((behavior: ScrollBehavior = "smooth") => {
-    messagesEndRef.current?.scrollIntoView({ behavior });
-  }, []);
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messageCount, limitReached, loading, scrollToBottom]);
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -238,7 +233,6 @@ export default function WorkspaceChat({
         }
 
         setTopicExplanation(data.answer);
-        setExplanationCached(data.cached);
         setMessages([buildInitialExplanationMessage(data.answer)]);
       } catch (err: unknown) {
         if (!cancelled) {
@@ -319,8 +313,6 @@ export default function WorkspaceChat({
       setError("Topic explanation is still loading. Please wait.");
       return;
     }
-
-    setShowContinueLearning(false);
 
     const userMessage: Message = {
       id: crypto.randomUUID(),
@@ -433,11 +425,6 @@ export default function WorkspaceChat({
     }
   };
 
-  const handleContinueLearning = () => {
-    setShowContinueLearning(false);
-    scrollToBottom();
-  };
-
   const followupPlaceholder = isFollowupMode
     ? `Ask a follow-up about ${topicTitle}...`
     : inputPlaceholder;
@@ -454,289 +441,396 @@ export default function WorkspaceChat({
     : `${followUpCount} / ${followupLimit}`;
 
   const lastStudied = lastStudiedAt ? formatLastStudied(lastStudiedAt) : null;
+  const explanationMessage =
+    messages.find((message) => message.id === "initial-cached-explanation") ??
+    null;
+  const conversationMessages = messages.filter(
+    (message) => message.id !== "initial-cached-explanation"
+  );
+  const breadcrumbSegments = [
+    { label: "RGPV", href: "/rgpv" },
+    ...(branch
+      ? [{ label: branch.replace(/-/g, " "), href: `/rgpv/${branch}` }]
+      : []),
+    ...(branch && semester
+      ? [
+          {
+            label: semester.replace(/-/g, " "),
+            href: `/rgpv/${branch}/${semester}`,
+          },
+        ]
+      : []),
+    ...(branch && semester && subjectCode
+      ? [
+          {
+            label: subjectCode,
+            href: `/rgpv/${branch}/${semester}/${subjectCode.toLowerCase()}`,
+          },
+        ]
+      : []),
+    { label: "AI", href: "#" },
+  ];
 
   return (
-    <div className="flex h-full flex-col rounded-2xl border border-border bg-card/50 backdrop-blur-xl">
-      <div className="flex items-center gap-3 border-b border-border px-4 py-3 sm:px-6 sm:py-4">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10">
-          <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <h3 className="font-semibold text-foreground">
-              Hyper AI Workspace
-            </h3>
-            {sessionSaved && isTopicContextReady && (
-              <span className="inline-flex items-center gap-1 rounded-full border border-green-500/20 bg-green-500/10 px-2 py-0.5 text-[10px] font-medium text-green-700 dark:text-green-400">
-                <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                Saved on this device
-              </span>
-            )}
-          </div>
-          <p className="truncate text-xs text-muted-foreground">
-            {isFollowupMode
-              ? topicTitle
-              : `Ask questions about ${subjectCode.toUpperCase()}`}
-          </p>
-        </div>
-      </div>
-
-      {isTopicContextReady && (
-        <div className="border-b border-border px-4 py-3 sm:px-6">
-          <div className="flex items-center justify-between gap-2">
-            <p className="text-xs font-medium text-foreground">
-              Follow-up Questions
-            </p>
-            <p
-              className={`shrink-0 text-xs font-medium ${
-                limitReached
-                  ? "text-blue-600 dark:text-blue-400"
-                  : "text-muted-foreground"
-              }`}
-            >
-              {followupStatusLabel}
-            </p>
-          </div>
-          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted sm:h-2">
-            <motion.div
-              className="h-full rounded-full bg-blue-600 dark:bg-blue-500"
-              initial={false}
-              animate={{ width: `${progressPercent}%` }}
-              transition={{ duration: 0.35, ease: "easeOut" }}
-            />
-          </div>
-          {lastStudied && (
-            <p className="mt-2 text-[10px] text-muted-foreground">
-              Last studied{" "}
-              <span className="font-medium text-foreground">
-                {lastStudied.prefix}
-                {lastStudied.detail ? ` · ${lastStudied.detail}` : ""}
-              </span>
-            </p>
-          )}
-        </div>
-      )}
-
-      <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 space-y-4">
-        {!isTopicContextReady && messages.length === 0 ? (
-          <div className="flex h-full flex-col items-center justify-center text-center">
-            <div className="mb-4 rounded-full bg-blue-500/10 p-4">
-              <Sparkles className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-            </div>
-            <h3 className="text-lg font-semibold text-foreground">
-              Welcome to Hyper AI Workspace
-            </h3>
-            <p className="mt-2 max-w-md text-sm text-muted-foreground">
-              {welcomeMessage}
-            </p>
-
-            {initialPrompts.length > 0 && (
-              <div className="mt-6 w-full max-w-xl space-y-2">
-                <p className="text-xs font-medium text-muted-foreground">
-                  Suggested Questions:
-                </p>
-                {initialPrompts.map((item, index) => {
-                  const promptText =
-                    item.prompt || `Ask about ${item.topicId || "this topic"}`;
-
-                  return (
-                    <button
-                      key={index}
-                      onClick={() => sendMessage(promptText)}
-                      className="flex w-full items-center gap-3 rounded-xl border border-border bg-background/50 px-4 py-3 text-left text-sm text-muted-foreground transition hover:border-blue-500/20 hover:bg-blue-500/5 hover:text-foreground"
-                    >
-                      <Sparkles className="h-4 w-4 flex-shrink-0 text-blue-500/60" />
-                      {promptText}
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        ) : (
+    <div
+      className={`grid h-full min-h-0 grid-cols-1 transition-[grid-template-columns] duration-300 ease-out ${
+        sidebarCollapsed
+          ? "md:grid-cols-[52px_minmax(0,1fr)]"
+          : "md:grid-cols-[280px_minmax(0,1fr)]"
+      }`}
+    >
+      <AnimatePresence>
+        {sidebarOpen && (
           <>
-            {showContinueLearning && lastStudiedAt && hasConversation && (
-              <motion.div
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-4"
+            <motion.button
+              type="button"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-30 bg-black/40 md:hidden"
+              aria-label="Close sidebar overlay"
+              onClick={() => setSidebarOpen(false)}
+            />
+            <motion.aside
+              initial={{ x: -24, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -24, opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="fixed inset-y-0 left-0 z-40 w-[85vw] max-w-[320px] border-r border-border bg-card p-4 md:hidden"
+            >
+              <button
+                type="button"
+                onClick={() => setSidebarOpen(false)}
+                className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-md border border-border bg-background text-muted-foreground"
+                aria-label="Close workspace sidebar"
               >
-                <p className="text-sm font-medium text-foreground">
-                  Continue Learning
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Last opened {formatContinueLearningLabel(lastStudiedAt)}.
-                </p>
-                <button
-                  type="button"
-                  onClick={handleContinueLearning}
-                  className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 transition hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-                >
-                  Continue
-                  <ArrowDown className="h-3.5 w-3.5" />
-                </button>
-              </motion.div>
-            )}
-
-            {isTopicContextReady && explanationCached !== undefined && (
-              <p className="text-center text-[10px] text-muted-foreground">
-                {explanationLoading
-                  ? "Loading topic explanation..."
-                  : explanationCached
-                    ? "Topic explanation loaded from cache"
-                    : "Topic explanation freshly generated"}
-              </p>
-            )}
-
-            {explanationLoading && messages.length === 0 && (
-              <div className="flex items-center justify-center py-8">
-                <Loader2 className="h-6 w-6 animate-spin text-blue-600 dark:text-blue-400" />
-              </div>
-            )}
-
-            <AnimatePresence initial={false}>
-              {messages.map((message, index) => (
-                <motion.div
-                  key={message.id}
-                  initial={false}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: index === messages.length - 1 ? 0 : 0.05,
-                  }}
-                >
-                  <WorkspaceMessage
-                    answer={message.content}
-                    role={message.role}
-                    timestamp={message.timestamp}
-                  />
-                </motion.div>
-              ))}
-              {loading && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="flex items-start gap-3"
-                >
-                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-500/10">
-                    <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <div className="rounded-2xl rounded-tl-md border border-border bg-muted/30 px-4 py-3">
-                    <Loader2 className="h-5 w-5 animate-spin text-blue-600 dark:text-blue-400" />
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-
-            {isFollowupMode &&
-              !hasConversation &&
-              !explanationLoading &&
-              !limitReached && (
-                <div className="rounded-2xl border border-dashed border-border bg-muted/10 p-4 text-center">
-                  <p className="text-sm text-foreground">
-                    Start asking questions about this topic.
-                  </p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    Your progress will be remembered on this device.
-                  </p>
-                </div>
-              )}
-
-            {isFollowupMode &&
-              !limitReached &&
-              !explanationLoading &&
-              initialPrompts.length > 0 && (
-                <div className="rounded-2xl border border-border bg-muted/20 p-3 sm:p-4">
-                  <p className="text-xs font-medium text-muted-foreground">
-                    Suggested follow-ups:
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {initialPrompts.map((item, index) => (
-                      <button
-                        key={index}
-                        type="button"
-                        onClick={() => sendMessage(item.prompt)}
-                        disabled={loading || limitReached}
-                        className="rounded-full border border-border bg-background px-3 py-1.5 text-xs text-foreground transition hover:border-blue-500/30 hover:bg-blue-500/5 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
-                        {item.prompt}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
+                <PanelLeftClose className="h-4 w-4" />
+              </button>
+              <SidebarDetails />
+            </motion.aside>
           </>
         )}
+      </AnimatePresence>
 
-        {error && (
-          <div className="flex items-start gap-2 rounded-xl border border-red-500/20 bg-red-500/10 p-3">
-            <AlertCircle className="h-4 w-4 flex-shrink-0 text-red-500" />
-            <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
-          </div>
-        )}
-
-        <div ref={messagesEndRef} />
-      </div>
-
-      <div className="border-t border-border p-3 sm:p-4 md:p-6">
-        {limitReached && activeExplanation ? (
-          <ContinueExternalAI
-            subjectCode={subjectCode}
-            topic={topicTitle!}
-            module={moduleTitle!}
-            cachedExplanation={activeExplanation}
-            messages={conversationForExport}
-          />
-        ) : !isTopicContextReady ? (
-          <p className="text-center text-sm text-muted-foreground">
-            Select a topic from the syllabus to start follow-up chat.
-          </p>
-        ) : explanationLoading ? (
-          <p className="text-center text-sm text-muted-foreground">
-            Loading topic explanation...
-          </p>
-        ) : (
-          <form onSubmit={handleSubmit} className="flex gap-2">
-            <div className="relative flex-1">
-              <label htmlFor="chat-input" className="sr-only">
-                Type your question here
-              </label>
-              <textarea
-                id="chat-input"
-                ref={inputRef}
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder={followupPlaceholder}
-                rows={1}
-                className="w-full resize-none rounded-xl border border-border bg-background px-3 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-50 sm:px-4"
-                disabled={loading || explanationLoading || !activeExplanation}
-              />
-              <button
-                type="submit"
-                disabled={
-                  !input.trim() ||
-                  loading ||
-                  explanationLoading ||
-                  !activeExplanation
-                }
-                className="absolute bottom-2 right-2 rounded-lg bg-blue-600 p-2 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
-                aria-label="Send message"
-              >
-                <Send className="h-4 w-4" aria-hidden="true" />
-              </button>
+      <aside className="hidden min-h-0 border-r border-border bg-card/40 md:block">
+        <div className="flex h-full min-h-0 flex-col overflow-hidden p-2">
+          {!sidebarCollapsed && (
+            <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto p-1">
+              <h3 className="text-sm font-semibold text-foreground">
+                Hyper AI Workspace
+              </h3>
+              <SidebarDetails />
             </div>
-          </form>
-        )}
+          )}
+        </div>
+      </aside>
 
-        {!limitReached && (
-          <p className="mt-2 text-center text-xs text-muted-foreground">
-            {isFollowupMode
-              ? "Follow-up answers are live and not cached."
-              : "Hyper AI may generate educational content. Please verify important information."}
-          </p>
-        )}
+      <div className="flex min-h-0 flex-col overflow-hidden">
+        <div className="sticky top-0 z-20 border-b border-border bg-background/95 px-2.5 py-2 backdrop-blur sm:px-4">
+          <nav aria-label="workspace breadcrumb" className="min-w-0">
+            <ol className="flex flex-wrap items-center gap-1 text-xs text-muted-foreground">
+              <li>
+                <Link
+                  href="/"
+                  className="inline-flex items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                  aria-label="Home"
+                >
+                  <Home className="h-3.5 w-3.5" />
+                </Link>
+              </li>
+              {breadcrumbSegments.map((segment, index) => {
+                const isLast = index === breadcrumbSegments.length - 1;
+                return (
+                  <li
+                    key={`${segment.label}-${index}`}
+                    className="inline-flex items-center gap-1"
+                  >
+                    <ChevronRight className="h-3.5 w-3.5" />
+                    {isLast || segment.href === "#" ? (
+                      <span className="font-medium text-foreground">
+                        {segment.label.toUpperCase()}
+                      </span>
+                    ) : (
+                      <Link
+                        href={segment.href}
+                        className="hover:text-foreground"
+                      >
+                        {segment.label.toUpperCase()}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
+        </div>
+
+        <div className="sticky top-[33px] z-20 border-b border-border bg-background/95 px-2.5 py-1.5 backdrop-blur sm:px-4">
+          <button
+            type="button"
+            onClick={() => setSidebarOpen(true)}
+            className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-border bg-background text-muted-foreground md:hidden"
+            aria-label="Open workspace sidebar"
+          >
+            <PanelLeft className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            onClick={() => setSidebarCollapsed((prev) => !prev)}
+            className="hidden h-8 w-8 items-center justify-center rounded-md border border-border bg-background text-muted-foreground md:inline-flex"
+            aria-label={
+              sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"
+            }
+          >
+            {sidebarCollapsed ? (
+              <PanelLeft className="h-4 w-4" />
+            ) : (
+              <PanelLeftClose className="h-4 w-4" />
+            )}
+          </button>
+        </div>
+
+        <div className="min-h-0 flex-1 overflow-y-auto px-2.5 py-2 sm:px-4">
+          {!isTopicContextReady && messages.length === 0 ? (
+            <div className="flex min-h-full flex-col items-center justify-center py-8 text-center">
+              <div className="mb-4 rounded-full bg-blue-500/10 p-4">
+                <Sparkles className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground">
+                Welcome to Hyper AI Workspace
+              </h3>
+              <p className="mt-2 max-w-md text-sm text-muted-foreground">
+                {welcomeMessage}
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-3 pb-2">
+              {explanationLoading && !explanationMessage && (
+                <div className="flex items-center justify-center py-8">
+                  <Loader2 className="h-6 w-6 animate-spin text-blue-600 dark:text-blue-400" />
+                </div>
+              )}
+
+              {explanationMessage && (
+                <WorkspaceMessage
+                  answer={explanationMessage.content}
+                  role={explanationMessage.role}
+                  timestamp={explanationMessage.timestamp}
+                />
+              )}
+
+              <AnimatePresence initial={false}>
+                {conversationMessages.map((message, index) => (
+                  <motion.div
+                    key={message.id}
+                    initial={false}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.3,
+                      delay:
+                        index === conversationMessages.length - 1 ? 0 : 0.05,
+                    }}
+                  >
+                    <WorkspaceMessage
+                      answer={message.content}
+                      role={message.role}
+                      timestamp={message.timestamp}
+                    />
+                  </motion.div>
+                ))}
+                {loading && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex items-start gap-3"
+                  >
+                    <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-500/10">
+                      <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div className="rounded-2xl rounded-tl-md border border-border bg-muted/30 px-4 py-3">
+                      <Loader2 className="h-5 w-5 animate-spin text-blue-600 dark:text-blue-400" />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {error && (
+                <div className="flex items-start gap-2 rounded-xl border border-red-500/20 bg-red-500/10 p-3">
+                  <AlertCircle className="h-4 w-4 flex-shrink-0 text-red-500" />
+                  <p className="text-sm text-red-600 dark:text-red-400">
+                    {error}
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+
+        <div className="shrink-0 border-t border-border bg-background/95 p-2.5 backdrop-blur sm:p-3">
+          {isFollowupMode &&
+            !limitReached &&
+            !explanationLoading &&
+            initialPrompts.length > 0 && (
+              <div className="mb-2 border-b border-border pb-2">
+                <div className="mb-2 flex items-center justify-between gap-2">
+                  <p className="text-xs font-medium text-muted-foreground">
+                    Suggested Follow-ups
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setSuggestionsCollapsed((prev) => !prev)}
+                    className="inline-flex h-6 w-6 items-center justify-center rounded-md border border-border bg-background text-muted-foreground transition hover:border-blue-500/30 hover:text-foreground"
+                    aria-label={
+                      suggestionsCollapsed
+                        ? "Expand suggested follow-ups"
+                        : "Collapse suggested follow-ups"
+                    }
+                  >
+                    {suggestionsCollapsed ? (
+                      <ChevronDown className="h-3.5 w-3.5" />
+                    ) : (
+                      <X className="h-3.5 w-3.5" />
+                    )}
+                  </button>
+                </div>
+                <AnimatePresence initial={false}>
+                  {!suggestionsCollapsed && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.2, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="flex flex-wrap gap-2">
+                        {initialPrompts.map((item, index) => (
+                          <button
+                            key={index}
+                            type="button"
+                            onClick={() => sendMessage(item.prompt)}
+                            disabled={loading || limitReached}
+                            className="rounded-full border border-border bg-background px-3 py-1.5 text-xs text-foreground transition hover:border-blue-500/30 hover:bg-blue-500/5 disabled:cursor-not-allowed disabled:opacity-50"
+                          >
+                            {item.prompt}
+                          </button>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            )}
+
+          {limitReached && activeExplanation ? (
+            <ContinueExternalAI
+              subjectCode={subjectCode}
+              topic={topicTitle!}
+              module={moduleTitle!}
+              cachedExplanation={activeExplanation}
+              messages={conversationForExport}
+            />
+          ) : !isTopicContextReady ? (
+            <p className="text-center text-sm text-muted-foreground">
+              Select a topic from the syllabus to start follow-up chat.
+            </p>
+          ) : explanationLoading ? (
+            <p className="text-center text-sm text-muted-foreground">
+              Loading topic explanation...
+            </p>
+          ) : (
+            <form onSubmit={handleSubmit} className="flex w-full gap-2">
+              <div className="relative flex-1">
+                <label htmlFor="chat-input" className="sr-only">
+                  Type your question here
+                </label>
+                <textarea
+                  id="chat-input"
+                  ref={inputRef}
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder={followupPlaceholder}
+                  rows={1}
+                  className="w-full resize-none rounded-xl border border-border bg-background px-3 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 disabled:opacity-50 sm:px-4"
+                  disabled={loading || explanationLoading || !activeExplanation}
+                />
+                <button
+                  type="submit"
+                  disabled={
+                    !input.trim() ||
+                    loading ||
+                    explanationLoading ||
+                    !activeExplanation
+                  }
+                  className="absolute bottom-2 right-2 rounded-lg bg-blue-600 p-2 text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                  aria-label="Send message"
+                >
+                  <Send className="h-4 w-4" aria-hidden="true" />
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
       </div>
     </div>
   );
+
+  function SidebarDetails() {
+    return (
+      <div className="space-y-4">
+        {sessionSaved && isTopicContextReady && (
+          <span className="inline-flex items-center gap-1 rounded-full border border-green-500/20 bg-green-500/10 px-2 py-0.5 text-[10px] font-medium text-green-700 dark:text-green-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+            Saved locally
+          </span>
+        )}
+
+        <div className="space-y-1.5 border-t border-border pt-3">
+          {topicTitle ? (
+            <p className="line-clamp-3 text-sm font-medium text-foreground">
+              {topicTitle}
+            </p>
+          ) : (
+            <p className="text-sm text-muted-foreground">No topic selected</p>
+          )}
+          {moduleTitle ? (
+            <p className="line-clamp-2 text-xs text-blue-600 dark:text-blue-400">
+              {moduleTitle}
+            </p>
+          ) : null}
+          {contextLabel ? (
+            <p className="text-[11px] text-muted-foreground">{contextLabel}</p>
+          ) : null}
+        </div>
+
+        {isTopicContextReady && (
+          <div className="space-y-2 border-t border-border pt-3">
+            <p className="text-[11px] text-muted-foreground">
+              Progress{" "}
+              <span className="font-medium text-foreground">
+                {followupStatusLabel}
+              </span>
+            </p>
+            <div className="h-1.5 overflow-hidden rounded-full bg-muted">
+              <motion.div
+                className="h-full rounded-full bg-blue-600 dark:bg-blue-500"
+                initial={false}
+                animate={{ width: `${progressPercent}%` }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+              />
+            </div>
+            {lastStudied && (
+              <p className="text-[11px] text-muted-foreground">
+                Last studied{" "}
+                <span className="font-medium text-foreground">
+                  {lastStudied.prefix}
+                  {lastStudied.detail ? ` · ${lastStudied.detail}` : ""}
+                </span>
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
 }

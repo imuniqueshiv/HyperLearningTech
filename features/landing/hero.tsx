@@ -88,15 +88,14 @@ export default function Hero() {
         {/* Light Mode: Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#FCFCFE] via-[#F8FAFC] to-white dark:hidden" />
 
-        {/* Light Mode: Refined Gradient Blobs */}
+        {/* Light Mode: Refined Gradient Blobs (Forcing Hot Reload to clear Hydration mismatch) */}
         <div className="absolute inset-0 dark:hidden pointer-events-none">
-          <div className="absolute top-[-15%] left-[-5%] h-[700px] w-[900px] -rotate-12 rounded-full bg-gradient-to-br from-blue-500/[0.25] via-indigo-400/[0.18] to-transparent blur-[90px]" />
-          <div className="absolute top-[15%] right-[-8%] h-[600px] w-[800px] rotate-12 rounded-full bg-gradient-to-bl from-violet-400/[0.22] via-blue-300/[0.15] to-transparent blur-[90px]" />
-          <div className="absolute bottom-[-5%] left-[20%] h-[500px] w-[700px] -rotate-6 rounded-full bg-gradient-to-tr from-indigo-300/[0.22] via-cyan-300/[0.12] to-transparent blur-[90px]" />
+          <div className="absolute top-[-10%] left-[-5%] h-[800px] w-[800px] -rotate-12 rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px]" />
+          <div className="absolute top-[10%] right-[-10%] h-[800px] w-[800px] rotate-12 rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px]" />
         </div>
 
         {/* Light Mode: Central Radial Glow */}
-        <div className="absolute top-[25%] left-1/2 -translate-x-1/2 h-[600px] w-[90%] rounded-full bg-gradient-to-b from-blue-200/70 via-indigo-100/50 to-transparent blur-[100px] dark:hidden pointer-events-none" />
+        <div className="absolute top-[25%] left-1/2 -translate-x-1/2 h-[600px] w-[90%] rounded-full bg-gradient-to-b from-blue-400/10 via-indigo-300/5 to-transparent blur-[120px] dark:hidden pointer-events-none" />
 
         {/* Dark mode glows — hidden on mobile to prevent GPU texture exhaustion */}
         <div className="hidden md:block absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-transparent blur-[160px] dark:bg-blue-500/10" />
@@ -205,22 +204,22 @@ export default function Hero() {
             {/* CTA buttons row */}
             <motion.div
               variants={itemVariants}
-              className="mt-8 mb-4 flex flex-row gap-[16px]"
+              className="mt-8 mb-4 flex flex-col sm:flex-row gap-3 md:gap-[16px] w-full sm:w-auto"
             >
               <a
                 href="#Universities"
                 onClick={scrollToUniversities}
-                className="group flex cursor-pointer items-center gap-2 rounded-[12px] bg-gradient-to-br from-[#4f46e5] to-[#6366f1] px-[32px] py-[18px] text-[16px] font-[600] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_8px_30px_rgba(99,102,241,0.25)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_20px_50px_rgba(99,102,241,0.3)] active:scale-[0.98]"
+                className="group flex justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-gradient-to-br from-[#4f46e5] to-[#6366f1] px-[20px] py-[12px] text-[14px] md:px-[32px] md:py-[18px] md:text-[16px] font-[600] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_8px_30px_rgba(99,102,241,0.25)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_20px_50px_rgba(99,102,241,0.3)] active:scale-[0.98] w-full sm:w-auto"
               >
                 Start Learning
-                <div className="flex h-[22px] w-[22px] items-center justify-center rounded-[6px] bg-white/15">
+                <div className="flex h-[20px] w-[20px] md:h-[22px] md:w-[22px] items-center justify-center rounded-[6px] bg-white/15">
                   <ArrowRight className="h-3.5 w-3.5" />
                 </div>
               </a>
 
               <Link
                 href="/about"
-                className="flex cursor-pointer items-center gap-2 rounded-[12px] border border-[#D8E2F0] bg-transparent px-[28px] py-[15px] text-[15px] font-[600] text-slate-600 transition-all duration-300 hover:border-[#C4D2E5] hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:text-slate-900 dark:border-white/10 dark:text-[#94a3b8] dark:hover:border-white/20 dark:hover:bg-transparent dark:hover:shadow-none dark:hover:text-[#e2e8f0]"
+                className="flex justify-center cursor-pointer items-center gap-2 rounded-[12px] border border-[#D8E2F0] bg-transparent px-[20px] py-[12px] text-[14px] md:px-[28px] md:py-[15px] md:text-[15px] font-[600] text-slate-600 transition-all duration-300 hover:border-[#C4D2E5] hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:text-slate-900 dark:border-white/10 dark:text-[#94a3b8] dark:hover:border-white/20 dark:hover:bg-transparent dark:hover:shadow-none dark:hover:text-[#e2e8f0] w-full sm:w-auto"
               >
                 Explore platform ↗
               </Link>
@@ -233,31 +232,34 @@ export default function Hero() {
             />
 
             {/* Stats row */}
-            <motion.div variants={itemVariants} className="mt-2 flex flex-row">
-              <div className="pr-[32px]">
-                <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
+            <motion.div
+              variants={itemVariants}
+              className="mt-4 flex flex-row items-center justify-between sm:justify-start"
+            >
+              <div className="pr-2 sm:pr-[32px]">
+                <div className="text-[24px] sm:text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
                   <Counter to={25} />
                   <span className="text-[#6366f1]">+</span>
                 </div>
-                <div className="mt-1 text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
+                <div className="mt-0.5 sm:mt-1 text-[9px] sm:text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
                   Years of PYQs
                 </div>
               </div>
-              <div className="border-l border-slate-200 px-[32px] dark:border-white/10">
-                <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
+              <div className="border-l border-slate-200 px-2 sm:px-[32px] dark:border-white/10">
+                <div className="text-[24px] sm:text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
                   <Counter to={100} />
                   <span className="text-[#6366f1]">%</span>
                 </div>
-                <div className="mt-1 text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
+                <div className="mt-0.5 sm:mt-1 text-[9px] sm:text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
                   Syllabus Mapped
                 </div>
               </div>
-              <div className="border-l border-slate-200 pl-[32px] dark:border-white/10">
-                <div className="text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
+              <div className="border-l border-slate-200 pl-2 sm:pl-[32px] dark:border-white/10">
+                <div className="text-[24px] sm:text-[32px] font-[800] tracking-[-0.04em] text-gray-900 dark:text-[#f1f5f9]">
                   <Counter to={24} />
                   <span className="text-[#6366f1]">/7</span>
                 </div>
-                <div className="mt-1 text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
+                <div className="mt-0.5 sm:mt-1 text-[9px] sm:text-[10px] font-[600] uppercase tracking-[0.08em] text-slate-500 dark:text-[#475569]">
                   AI Assistant
                 </div>
               </div>
@@ -271,7 +273,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="relative mx-auto mt-16 flex w-full max-w-[500px] justify-center lg:mt-0 lg:max-w-none lg:justify-end"
+            className="hidden md:flex relative mx-auto mt-16 w-full max-w-[500px] justify-center lg:mt-0 lg:max-w-none lg:justify-end"
           >
             {/* Glowing aura for Light Mode behind AI card */}
             <div className="absolute inset-0 -z-10 rounded-[24px] bg-indigo-500/20 blur-[60px] dark:bg-transparent" />

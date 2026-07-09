@@ -3,6 +3,7 @@ import Features from "@/features/landing/features";
 import AIDemo from "@/features/landing/ai-demo";
 import Testimonials from "@/features/landing/testimonials";
 import FAQ from "@/features/landing/faq";
+import CgpaFeature from "@/features/landing/cgpa-feature";
 import { Suspense } from "react";
 
 export default function AboutPage() {
@@ -10,6 +11,9 @@ export default function AboutPage() {
     <>
       <Suspense fallback={<div className="h-40" />}>
         <Stats />
+      </Suspense>
+      <Suspense fallback={<div className="h-96" />}>
+        <CgpaFeature />
       </Suspense>
       <Suspense fallback={<div className="h-96" />}>
         <Features />

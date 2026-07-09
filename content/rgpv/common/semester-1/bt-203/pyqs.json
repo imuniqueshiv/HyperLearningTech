@@ -15,980 +15,6 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the methods to measure the hardness of materials.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "A flat plate of area 1.5 × 10⁶ mm² is pulled with a speed of 0.4 m/s relative to another plate located at a distance of 0.15 mm from it. Find the force and power required to maintain this speed, if the fluid separating them is having viscosity as 1 poise. [1 poise = 0.1 N s/m²]",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Classify engineering materials. What do you mean by alloys? Write some applications of alloys.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "A rod 200 cm long and of diameter 3.0 cm is subjected to an axial pull of 30 kN. If the Young's modulus of the material of the road is 2 × 10⁵ N/mm², determine: i) Stress, ii) Strain, iii) Elongation of the road.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "With a neat diagram explain the main parts of a lathe machine. Explain any two operations performed on a lathe machine.",
-              "unit": "Unit 2",
-              "type": "production"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "During a trial operation of a boiler 1630 kg of coal were consumed in 24 hrs. and 13000 kg of water evaporated. The mean steam pressure was 7 kgf/cm² and condition dry saturated. The fuel contained 3 percent moisture and 4 percent ash and had a calorific value of 7200 kcal/kg. The feed water temperature was 35°C. Determine: i) The boiler efficiency, ii) The equivalent evaporation per kg of dry coal, iii) The equivalent evaporation per kg of combustibles.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain the working of a manometer for pressure measurement. Also relate absolute pressure, gauge pressure and vacuum pressure.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Explain the measurement process using vernier calliper with neat sketch.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Define Viscosity. What is the importance of viscosity while selecting fluids in various engineering applications?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Discuss briefly the differences between externally fired and internally fired-steam generators. Also discuss the application of each type of steam generators.",
-              "unit": "Unit 4",
-              "type": "steam"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Explain working principle of hydraulic turbines (Pelton wheel) with neat sketch.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Derive an expression for efficiency of Otto cycle with neat sketches of PV and TS diagrams.",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "State the Zeroth Law of thermodynamics. How is mercury in thermometer able to find the temperature of a body using the Zeroth law of thermodynamics?",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Explain the working of four stroke diesel engine with neat sketch.",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write Short notes on (Any two): a) Welding defects b) Dial gauge c) Sine bar d) Thermodynamic properties",
-              "unit": "Unit 2/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2023",
-      "year": 2023,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the Stress-Strain Diagram for ductile materials with neat sketch?",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define the following: i) Young modulus, ii) Elastic limit, iii) Ultimate point.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explain the effect of any 8 (eight) alloying element in alloy steel with details.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Explain feed mechanism used in a drilling machine.",
-              "unit": "Unit 2",
-              "type": "production"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain the process of Pitot tube for velocity measurement of a Fluid with neat sketch.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain the method of using Slip Gauge with the neat sketch.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "The dynamic viscosity of lubricating oil used between shaft and sleeve is 10 poise. The diameter of the shaft, which rotates at 200 rpm, is 0.5 m. The sleeve length is 100 mm. Calculate the power lost if the thickness of oil film is 2 mm?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What is a draft tube? Why is it used in a reaction turbine? Describe with a neat sketch?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain the working and construction of Pelton wheel turbine with neat sketch.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Prove that work and heat are the path function.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Explain the working of Cochran boiler and fusible plug with neat sketches.",
-              "unit": "Unit 4",
-              "type": "steam"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Derive an expression for the first law of thermodynamics applied to a closed system. Define the internal energy of a system.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain the structure and working of four-stroke diesel engine with a neat sketch?",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Explain the working principle of the centrifugal compressor.",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write Short note on any two: a) Thermodynamic system, properties and state b) Working principle of steam Engine c) Casting and Patterns d) Impact testing of materials",
-              "unit": "Unit 4/5/2/1",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Define Hardness? Explain the Brinell Hardness test method in details?",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define the following mechanical properties: i) Strength, ii) Ductility.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "A mild steel specimen with an original diameter of 10 mm and a gauge length of 50 mm was found to have an ultimate load of 60 kN and breaking load of 40 kN. The gauge length at rupture was 55 mm and diameter at rupture cross-section was 8 mm. Determine: i) The ultimate stress, ii) Breaking stress, iii) True breaking stress, iv) Percentage elongation.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "With a neat sketch, explain the following lathe operations: i) Facing, ii) Knurling.",
-              "unit": "Unit 2",
-              "type": "production"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Discuss the application vernier caliper and its method of measurement.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain the method of using Sine Bar with neat sketch.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "The water is flowing through a pipe having diameters 30 cm and 20 cm at two sections 1 and 2, respectively. The rate of flow through the pipe is 80 liters/sec. Section 1 is 8 m above the datum and section 2 is 5 m above the datum. If the pressure at section 1 is 4 bar, find the intensity of pressure at section 2.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What is priming? Why is it required in a centrifugal pump?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain the working and construction of single acting reciprocating pump with neat sketch?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Discuss the concept of thermal equilibrium and state zeroth law of thermodynamics?",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Explain the construction and working of Babcock and Wilcox boiler with a neat sketch.",
-              "unit": "Unit 4",
-              "type": "steam"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "State the Kelvin-Planck and the Clausius statements of the second law of thermodynamics. Explain the equivalence of Kelvin-Planck and Clausius statements.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain the structure and working of four-stroke petrol engine with a neat sketch.",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Write short notes on surging, choking and stalling.",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write Short note on any two: a) Hooks law and modulus of elasticity b) Micrometer c) Newton's law of viscosity d) Natural and artificial draught",
-              "unit": "Unit 1/2/3/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2024",
-      "year": 2024,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Draw Fe-Fe3C phase diagram and explain the phase transformation reactions in the diagram.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define the following Mechanical properties of materials: i) Strength, ii) Hardness, iii) Toughness, iv) Ductility, v) Brittleness, vi) Malleability.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Describe the typical shape of the stress-strain curve for a ductile material. Explain the significance of the yield point and ultimate tensile strength on the stress-strain curve of a ductile material.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "State and explain various types of errors in measurements.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "List out various operations performed by Lathe and explain some of them in detail.",
-              "unit": "Unit 2",
-              "type": "production"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "List out various Temperature measuring instruments and explain any two with neat diagram.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Describe the working principle of hydraulic pumps. Give classification of pumps with their applications.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Derive Bernoulli's equation for incompressible fluids.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "What is Pascal's law, Explain how Pascal's law is applied in hydraulic systems?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What are the main types of boilers, and how are they classified based on construction and operation?",
-              "unit": "Unit 4",
-              "type": "steam"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Explain the concept of draught in boiler operation. Discuss the factors influencing the choice between natural and artificial draught systems in boiler installations.",
-              "unit": "Unit 4",
-              "type": "steam"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Explain thermodynamic processes at constant pressure and volume.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "With a neat sketch, explain the working of Carnot and derive the expression for thermal efficiency.",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Explain the Working principle of compressor with neat sketch.",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Explain the working of a 2 stroke petrol engine with neat sketch.",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Write short notes on Slip gauge, Sine-bar and Combination set.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2024",
-      "year": 2024,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What is the necessity of Alloying? What are alloy steels, and how do they differ from carbon steels?",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "What is the purpose of hardness testing in materials and how it is performed?",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Write in detail classification of cast irons along their applications.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Explain the working principles of Drilling machine and different parts of it indicating with line diagram.",
-              "unit": "Unit 2",
-              "type": "production"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Give in detail the flow chart followed in preparation of sand casting.",
-              "unit": "Unit 2",
-              "type": "production"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Write short notes on: i) Vernier caliper, ii) Micrometer, iii) Dial gauge.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain how hydraulic turbines convert fluid energy into mechanical energy. Discuss the types of hydraulic turbines and their applications.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Define and distinguish between: i) Uniform flow and non-uniform flow, ii) Laminar and turbulent flow, iii) Newtonian and Non-Newtonian flow.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "State Newton's law of viscosity and explain its significance. Describe how viscosity is related to shear stress and shear rate in Newtonian fluids.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Differentiate between boiler mountings and accessories. Discuss the role of boiler accessories in enhancing efficiency and safety in boiler systems.",
-              "unit": "Unit 4",
-              "type": "steam"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Define thermodynamic system and explain open, close and isolated systems.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What does the First Law of Thermodynamics state, and how does it relate to the conservation of energy?",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "With a neat sketch, explain the working of Diesel and derive the expression for thermal efficiency.",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Write about the various processes involved in Dual cycle with P-V and T-S diagrams.",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Explain the working of a 4 stroke diesel engine with neat sketch.",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Explain in detail Classification of engineering material along their applications.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2025",
-      "year": 2025,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Classify engineering materials. What do you mean by alloys? Write some applications of alloys.",
-              "unit": "Unit 1",
-              "type": "materials"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define the following Mechanical properties: i) Toughness, ii) Brittleness, iii) Tensile strength, iv) Ductility.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Describe the construction and use of sine bar. How will you measure taper of a job with the help of a sine bar.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Describe the procedure of a tensile test. Explain the stress-strain curve for a ductile material.",
-              "unit": "Unit 1",
-              "type": "materials"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "With a neat diagram explain the main parts of a drilling machine? Explain any two operations performed on drilling machine.",
-              "unit": "Unit 2",
-              "type": "production"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What is the basic principle of turbine? Classify various types of turbines according to type of energy, direction of flow head and specific speed.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain working of a thermocouple and radiation pyrometer with neat sketches.",
-              "unit": "Unit 2",
-              "type": "measurement"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "The water is flowing through a pipe having diameters 25cm and 10cm at section 1 and 2 respectively the rate of flow of water through the pipe is 30lit/sec. Section 1 is 10m above the ground and section 2 is 2m above the ground. If pressure at section 1 is 40N/cm², find the pressure at section 2.",
-              "unit": "Unit 3",
-              "type": "fluids"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Describe the construction and working principle of the pelton wheel?",
-              "unit": "Unit 3",
-              "type": "fluids"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What is constant volume process? Derive expressions for the work done, change in internal energy heat transfer and change in enthalpy.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Define internal energy and prove that energy is a property of a system?",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "State the first law of thermodynamics for a closed system undergoing a cyclic process and non-cyclic process.",
-              "unit": "Unit 4",
-              "type": "thermodynamics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain the structure and working of two stroke diesel engine with a neat sketch?",
-              "unit": "Unit 5",
-              "type": "engines"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "With the help of a neat sketch describe the construction and working of a steam engine?",
-              "unit": "Unit 5",
-              "type": "engines"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short note on any three: i) Newton's law of viscosity ii) Zeroth law of thermodynamics iii) Micrometer iv) Centrifugal compressor",
-              "unit": "Unit 3/4/2/5",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
@@ -1167,6 +193,980 @@
               "unit": "Unit 1",
               "type": "materials",
               "isPredicted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Classify engineering materials. What do you mean by alloys? Write some applications of alloys.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the following Mechanical properties: i) Toughness, ii) Brittleness, iii) Tensile strength, iv) Ductility.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the construction and use of sine bar. How will you measure taper of a job with the help of a sine bar.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the procedure of a tensile test. Explain the stress-strain curve for a ductile material.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "With a neat diagram explain the main parts of a drilling machine? Explain any two operations performed on drilling machine.",
+              "unit": "Unit 2",
+              "type": "production"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is the basic principle of turbine? Classify various types of turbines according to type of energy, direction of flow head and specific speed.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain working of a thermocouple and radiation pyrometer with neat sketches.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "The water is flowing through a pipe having diameters 25cm and 10cm at section 1 and 2 respectively the rate of flow of water through the pipe is 30lit/sec. Section 1 is 10m above the ground and section 2 is 2m above the ground. If pressure at section 1 is 40N/cm², find the pressure at section 2.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the construction and working principle of the pelton wheel?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is constant volume process? Derive expressions for the work done, change in internal energy heat transfer and change in enthalpy.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define internal energy and prove that energy is a property of a system?",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "State the first law of thermodynamics for a closed system undergoing a cyclic process and non-cyclic process.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the structure and working of two stroke diesel engine with a neat sketch?",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "With the help of a neat sketch describe the construction and working of a steam engine?",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on any three: i) Newton's law of viscosity ii) Zeroth law of thermodynamics iii) Micrometer iv) Centrifugal compressor",
+              "unit": "Unit 3/4/2/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the necessity of Alloying? What are alloy steels, and how do they differ from carbon steels?",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the purpose of hardness testing in materials and how it is performed?",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write in detail classification of cast irons along their applications.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the working principles of Drilling machine and different parts of it indicating with line diagram.",
+              "unit": "Unit 2",
+              "type": "production"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Give in detail the flow chart followed in preparation of sand casting.",
+              "unit": "Unit 2",
+              "type": "production"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write short notes on: i) Vernier caliper, ii) Micrometer, iii) Dial gauge.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain how hydraulic turbines convert fluid energy into mechanical energy. Discuss the types of hydraulic turbines and their applications.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define and distinguish between: i) Uniform flow and non-uniform flow, ii) Laminar and turbulent flow, iii) Newtonian and Non-Newtonian flow.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "State Newton's law of viscosity and explain its significance. Describe how viscosity is related to shear stress and shear rate in Newtonian fluids.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate between boiler mountings and accessories. Discuss the role of boiler accessories in enhancing efficiency and safety in boiler systems.",
+              "unit": "Unit 4",
+              "type": "steam"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define thermodynamic system and explain open, close and isolated systems.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What does the First Law of Thermodynamics state, and how does it relate to the conservation of energy?",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "With a neat sketch, explain the working of Diesel and derive the expression for thermal efficiency.",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write about the various processes involved in Dual cycle with P-V and T-S diagrams.",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the working of a 4 stroke diesel engine with neat sketch.",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain in detail Classification of engineering material along their applications.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Draw Fe-Fe3C phase diagram and explain the phase transformation reactions in the diagram.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the following Mechanical properties of materials: i) Strength, ii) Hardness, iii) Toughness, iv) Ductility, v) Brittleness, vi) Malleability.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the typical shape of the stress-strain curve for a ductile material. Explain the significance of the yield point and ultimate tensile strength on the stress-strain curve of a ductile material.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "State and explain various types of errors in measurements.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "List out various operations performed by Lathe and explain some of them in detail.",
+              "unit": "Unit 2",
+              "type": "production"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "List out various Temperature measuring instruments and explain any two with neat diagram.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the working principle of hydraulic pumps. Give classification of pumps with their applications.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Derive Bernoulli's equation for incompressible fluids.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Pascal's law, Explain how Pascal's law is applied in hydraulic systems?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the main types of boilers, and how are they classified based on construction and operation?",
+              "unit": "Unit 4",
+              "type": "steam"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept of draught in boiler operation. Discuss the factors influencing the choice between natural and artificial draught systems in boiler installations.",
+              "unit": "Unit 4",
+              "type": "steam"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain thermodynamic processes at constant pressure and volume.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "With a neat sketch, explain the working of Carnot and derive the expression for thermal efficiency.",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the Working principle of compressor with neat sketch.",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the working of a 2 stroke petrol engine with neat sketch.",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on Slip gauge, Sine-bar and Combination set.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Hardness? Explain the Brinell Hardness test method in details?",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the following mechanical properties: i) Strength, ii) Ductility.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A mild steel specimen with an original diameter of 10 mm and a gauge length of 50 mm was found to have an ultimate load of 60 kN and breaking load of 40 kN. The gauge length at rupture was 55 mm and diameter at rupture cross-section was 8 mm. Determine: i) The ultimate stress, ii) Breaking stress, iii) True breaking stress, iv) Percentage elongation.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "With a neat sketch, explain the following lathe operations: i) Facing, ii) Knurling.",
+              "unit": "Unit 2",
+              "type": "production"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the application vernier caliper and its method of measurement.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the method of using Sine Bar with neat sketch.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "The water is flowing through a pipe having diameters 30 cm and 20 cm at two sections 1 and 2, respectively. The rate of flow through the pipe is 80 liters/sec. Section 1 is 8 m above the datum and section 2 is 5 m above the datum. If the pressure at section 1 is 4 bar, find the intensity of pressure at section 2.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is priming? Why is it required in a centrifugal pump?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the working and construction of single acting reciprocating pump with neat sketch?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the concept of thermal equilibrium and state zeroth law of thermodynamics?",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the construction and working of Babcock and Wilcox boiler with a neat sketch.",
+              "unit": "Unit 4",
+              "type": "steam"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "State the Kelvin-Planck and the Clausius statements of the second law of thermodynamics. Explain the equivalence of Kelvin-Planck and Clausius statements.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the structure and working of four-stroke petrol engine with a neat sketch.",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write short notes on surging, choking and stalling.",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write Short note on any two: a) Hooks law and modulus of elasticity b) Micrometer c) Newton's law of viscosity d) Natural and artificial draught",
+              "unit": "Unit 1/2/3/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Stress-Strain Diagram for ductile materials with neat sketch?",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the following: i) Young modulus, ii) Elastic limit, iii) Ultimate point.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the effect of any 8 (eight) alloying element in alloy steel with details.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain feed mechanism used in a drilling machine.",
+              "unit": "Unit 2",
+              "type": "production"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the process of Pitot tube for velocity measurement of a Fluid with neat sketch.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the method of using Slip Gauge with the neat sketch.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "The dynamic viscosity of lubricating oil used between shaft and sleeve is 10 poise. The diameter of the shaft, which rotates at 200 rpm, is 0.5 m. The sleeve length is 100 mm. Calculate the power lost if the thickness of oil film is 2 mm?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is a draft tube? Why is it used in a reaction turbine? Describe with a neat sketch?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the working and construction of Pelton wheel turbine with neat sketch.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Prove that work and heat are the path function.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the working of Cochran boiler and fusible plug with neat sketches.",
+              "unit": "Unit 4",
+              "type": "steam"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Derive an expression for the first law of thermodynamics applied to a closed system. Define the internal energy of a system.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the structure and working of four-stroke diesel engine with a neat sketch?",
+              "unit": "Unit 5",
+              "type": "engines"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the working principle of the centrifugal compressor.",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write Short note on any two: a) Thermodynamic system, properties and state b) Working principle of steam Engine c) Casting and Patterns d) Impact testing of materials",
+              "unit": "Unit 4/5/2/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the methods to measure the hardness of materials.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A flat plate of area 1.5 × 10⁶ mm² is pulled with a speed of 0.4 m/s relative to another plate located at a distance of 0.15 mm from it. Find the force and power required to maintain this speed, if the fluid separating them is having viscosity as 1 poise. [1 poise = 0.1 N s/m²]",
+              "unit": "Unit 3",
+              "type": "fluids"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Classify engineering materials. What do you mean by alloys? Write some applications of alloys.",
+              "unit": "Unit 1",
+              "type": "materials"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A rod 200 cm long and of diameter 3.0 cm is subjected to an axial pull of 30 kN. If the Young's modulus of the material of the road is 2 × 10⁵ N/mm², determine: i) Stress, ii) Strain, iii) Elongation of the road.",
+              "unit": "Unit 1",
+              "type": "materials"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "With a neat diagram explain the main parts of a lathe machine. Explain any two operations performed on a lathe machine.",
+              "unit": "Unit 2",
+              "type": "production"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "During a trial operation of a boiler 1630 kg of coal were consumed in 24 hrs. and 13000 kg of water evaporated. The mean steam pressure was 7 kgf/cm² and condition dry saturated. The fuel contained 3 percent moisture and 4 percent ash and had a calorific value of 7200 kcal/kg. The feed water temperature was 35°C. Determine: i) The boiler efficiency, ii) The equivalent evaporation per kg of dry coal, iii) The equivalent evaporation per kg of combustibles.",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the working of a manometer for pressure measurement. Also relate absolute pressure, gauge pressure and vacuum pressure.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the measurement process using vernier calliper with neat sketch.",
+              "unit": "Unit 2",
+              "type": "measurement"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define Viscosity. What is the importance of viscosity while selecting fluids in various engineering applications?",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss briefly the differences between externally fired and internally fired-steam generators. Also discuss the application of each type of steam generators.",
+              "unit": "Unit 4",
+              "type": "steam"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain working principle of hydraulic turbines (Pelton wheel) with neat sketch.",
+              "unit": "Unit 3",
+              "type": "fluids"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Derive an expression for efficiency of Otto cycle with neat sketches of PV and TS diagrams.",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "State the Zeroth Law of thermodynamics. How is mercury in thermometer able to find the temperature of a body using the Zeroth law of thermodynamics?",
+              "unit": "Unit 4",
+              "type": "thermodynamics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the working of four stroke diesel engine with neat sketch.",
+              "unit": "Unit 5",
+              "type": "engines"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write Short notes on (Any two): a) Welding defects b) Dial gauge c) Sine bar d) Thermodynamic properties",
+              "unit": "Unit 2/4",
+              "type": "mixed"
             }
           ]
         }

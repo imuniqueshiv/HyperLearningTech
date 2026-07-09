@@ -11,7 +11,7 @@ import {
   House,
   GraduationCap,
   Mail,
-  BookOpen,
+  LayoutDashboard,
   Search,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,14 +32,14 @@ const navLinks = [
     icon: GraduationCap,
   },
   {
+    label: "Dashboard",
+    href: "/#Dashboard",
+    icon: LayoutDashboard,
+  },
+  {
     label: "Contact",
     href: "/#Contact",
     icon: Mail,
-  },
-  {
-    label: "About",
-    href: "/about",
-    icon: BookOpen,
   },
 ];
 
@@ -53,6 +53,9 @@ export default function Navbar() {
   const currentTheme = mounted ? resolvedTheme : theme;
   const router = useRouter();
   const pathname = usePathname();
+  const isWorkspaceFocusRoute = /^\/rgpv\/[^/]+\/[^/]+\/[^/]+\/ai$/.test(
+    pathname
+  );
   const [activeSection, setActiveSection] = useState<string>("/#Home");
   const isClickScrolling = useRef(false);
 
@@ -101,11 +104,15 @@ export default function Navbar() {
           .map((link) => link.href.substring(2));
 
         let current = "";
+        // Use a viewing offset at 40% of the screen height (where the user's eyes naturally focus)
+        const viewingOffset = window.innerHeight * 0.4;
+
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
             const rect = element.getBoundingClientRect();
-            if (rect.top <= 120 && rect.bottom >= 120) {
+            // A section is active if this viewing offset falls within its top and bottom bounds
+            if (rect.top <= viewingOffset && rect.bottom >= viewingOffset) {
               current = section;
               break;
             }
@@ -164,16 +171,66 @@ export default function Navbar() {
     }
   };
 
+  if (isWorkspaceFocusRoute) {
+    return (
+      <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+        <div className="mx-auto flex h-14 w-full max-w-[1500px] items-center justify-between px-4 sm:px-4 lg:px-6">
+          <Link
+            href="/"
+            className="flex items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+          >
+            <Image
+              src="/hl-logo.png"
+              alt="Hyper Learning"
+              width={24}
+              height={24}
+              className="h-6 w-6 object-contain"
+            />
+            <span className="text-sm font-semibold text-foreground">
+              Hyper Learning
+            </span>
+          </Link>
+
+          <div className="flex items-center gap-2">
+            {mounted && (
+              <button
+                onClick={() =>
+                  setTheme(currentTheme === "dark" ? "light" : "dark")
+                }
+                aria-label="Toggle theme"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-background text-foreground transition hover:border-blue-500/30"
+              >
+                {currentTheme !== "dark" ? (
+                  <Sun className="h-4 w-4 text-amber-600" />
+                ) : (
+                  <Moon className="h-4 w-4" />
+                )}
+              </button>
+            )}
+            <Link
+              href="/sign-in"
+              className="inline-flex h-8 items-center rounded-lg border border-border bg-background px-3 text-xs font-medium text-foreground transition hover:border-blue-500/30"
+            >
+              Sign In
+            </Link>
+          </div>
+        </div>
+      </header>
+    );
+  }
+
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 relative overflow-hidden ${
+      className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 ${
         scrolled
           ? "bg-[#0D33A6]/85 dark:bg-[#0D33A6]/75 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#0D33A6]/70 dark:supports-[backdrop-filter]:bg-[#0D33A6]/50"
           : "bg-[linear-gradient(90deg,#0E1736_0%,#081E6E_25%,#0D33A6_50%,#1153C4_75%,#006BDE_100%)]"
       }`}
     >
-      {/* glow */}
-      <div className="absolute -top-20 left-[55%] w-72 h-72 rounded-full bg-blue-500/30 blur-[60px] pointer-events-none" />
+      {/* glow background container */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-20 left-[55%] w-72 h-72 rounded-full bg-blue-500/30 blur-[60px]" />
+      </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between gap-6 md:h-[72px]">
@@ -287,7 +344,8 @@ export default function Navbar() {
                   (pathname === "/" &&
                     link.href.startsWith("/#") &&
                     activeSection === link.href) ||
-                  (pathname === link.href && !link.href.startsWith("/#"));
+                  (pathname === link.href && !link.href.startsWith("/#")) ||
+                  (pathname === "/dashboard" && link.label === "Dashboard");
 
                 const Icon = link.icon;
 
@@ -513,7 +571,8 @@ export default function Navbar() {
                   (pathname === "/" &&
                     link.href.startsWith("/#") &&
                     activeSection === link.href) ||
-                  (pathname === link.href && !link.href.startsWith("/#"));
+                  (pathname === link.href && !link.href.startsWith("/#")) ||
+                  (pathname === "/dashboard" && link.label === "Dashboard");
 
                 return (
                   <Link
