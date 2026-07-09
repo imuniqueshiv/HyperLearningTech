@@ -108,7 +108,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" className="dark overflow-y-scroll" suppressHydrationWarning>
       <body
         className="flex min-h-[100dvh] flex-col overflow-x-hidden"
         suppressHydrationWarning

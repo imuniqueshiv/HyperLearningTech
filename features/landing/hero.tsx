@@ -90,13 +90,12 @@ export default function Hero() {
 
         {/* Light Mode: Refined Gradient Blobs */}
         <div className="absolute inset-0 dark:hidden pointer-events-none">
-          <div className="absolute top-[-15%] left-[-5%] h-[700px] w-[900px] -rotate-12 rounded-full bg-gradient-to-br from-blue-500/[0.25] via-indigo-400/[0.18] to-transparent blur-[90px]" />
-          <div className="absolute top-[15%] right-[-8%] h-[600px] w-[800px] rotate-12 rounded-full bg-gradient-to-bl from-violet-400/[0.22] via-blue-300/[0.15] to-transparent blur-[90px]" />
-          <div className="absolute bottom-[-5%] left-[20%] h-[500px] w-[700px] -rotate-6 rounded-full bg-gradient-to-tr from-indigo-300/[0.22] via-cyan-300/[0.12] to-transparent blur-[90px]" />
+          <div className="absolute top-[-10%] left-[-5%] h-[800px] w-[800px] -rotate-12 rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px]" />
+          <div className="absolute top-[10%] right-[-10%] h-[800px] w-[800px] rotate-12 rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px]" />
         </div>
 
         {/* Light Mode: Central Radial Glow */}
-        <div className="absolute top-[25%] left-1/2 -translate-x-1/2 h-[600px] w-[90%] rounded-full bg-gradient-to-b from-blue-200/70 via-indigo-100/50 to-transparent blur-[100px] dark:hidden pointer-events-none" />
+        <div className="absolute top-[25%] left-1/2 -translate-x-1/2 h-[600px] w-[90%] rounded-full bg-gradient-to-b from-blue-400/10 via-indigo-300/5 to-transparent blur-[120px] dark:hidden pointer-events-none" />
 
         {/* Dark mode glows — hidden on mobile to prevent GPU texture exhaustion */}
         <div className="hidden md:block absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-transparent blur-[160px] dark:bg-blue-500/10" />
