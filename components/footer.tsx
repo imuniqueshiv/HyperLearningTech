@@ -277,7 +277,11 @@ function FullFooter() {
               <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
               <ul className="space-y-3.5">
                 {[
-                  { name: "Target CGPA", href: "/cgpa-calculator", icon: Calculator },
+                  {
+                    name: "Target CGPA",
+                    href: "/cgpa-calculator",
+                    icon: Calculator,
+                  },
                   {
                     name: "Universities",
                     href: "/#Universities",
