@@ -7,7 +7,6 @@ import {
   RefreshCw,
   Mail,
   ArrowRight,
-  Zap,
 } from "lucide-react";
 import { Metadata } from "next";
 import { InteractivePath } from "./InteractivePath";
@@ -41,9 +40,9 @@ export default function PrivacyPolicyPage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-500 dark:text-slate-400 font-normal leading-relaxed max-w-2xl mx-auto">
-            Your academic records are deeply personal. We don't just protect
-            them—we've engineered an impenetrable, world-class architecture to
-            ensure your data remains exclusively yours.
+            Your academic records are deeply personal. We don&apos;t just
+            protect them—we&apos;ve engineered an impenetrable, world-class
+            architecture to ensure your data remains exclusively yours.
           </p>
 
           {/* The Path Origin Connector */}
@@ -170,7 +169,7 @@ function TimelineNode({
   delay,
 }: {
   index: string;
-  icon: any;
+  icon: React.ElementType;
   title: string;
   content: string;
   side: "left" | "right";
