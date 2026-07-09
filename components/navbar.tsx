@@ -221,14 +221,16 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 relative overflow-hidden ${
+      className={`sticky top-0 z-50 transition-all duration-500 border-b border-black/10 dark:border-white/10 ${
         scrolled
           ? "bg-[#0D33A6]/85 dark:bg-[#0D33A6]/75 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#0D33A6]/70 dark:supports-[backdrop-filter]:bg-[#0D33A6]/50"
           : "bg-[linear-gradient(90deg,#0E1736_0%,#081E6E_25%,#0D33A6_50%,#1153C4_75%,#006BDE_100%)]"
       }`}
     >
-      {/* glow */}
-      <div className="absolute -top-20 left-[55%] w-72 h-72 rounded-full bg-blue-500/30 blur-[60px] pointer-events-none" />
+      {/* glow background container */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-20 left-[55%] w-72 h-72 rounded-full bg-blue-500/30 blur-[60px]" />
+      </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between gap-6 md:h-[72px]">

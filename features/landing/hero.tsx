@@ -88,7 +88,7 @@ export default function Hero() {
         {/* Light Mode: Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#FCFCFE] via-[#F8FAFC] to-white dark:hidden" />
 
-        {/* Light Mode: Refined Gradient Blobs */}
+        {/* Light Mode: Refined Gradient Blobs (Forcing Hot Reload to clear Hydration mismatch) */}
         <div className="absolute inset-0 dark:hidden pointer-events-none">
           <div className="absolute top-[-10%] left-[-5%] h-[800px] w-[800px] -rotate-12 rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px]" />
           <div className="absolute top-[10%] right-[-10%] h-[800px] w-[800px] rotate-12 rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px]" />

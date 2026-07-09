@@ -110,7 +110,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark overflow-y-scroll" suppressHydrationWarning>
       <body
-        className="flex min-h-[100dvh] flex-col overflow-x-hidden"
+        className="flex min-h-[100dvh] flex-col"
         suppressHydrationWarning
       >
         <ThemeProvider
