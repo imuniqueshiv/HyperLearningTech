@@ -1,4 +1,6 @@
 import { PromptContext } from "@/types/ai";
+import { collectAttachmentAiContexts } from "@/lib/content/attachment-utils";
+import type { QuestionAttachment } from "@/types/pyq";
 
 /**
  * Subject-specific instructions.
@@ -43,6 +45,19 @@ const TYPE_INSTRUCTIONS: Record<string, string> = {
   GENERAL:
     "Provide detailed engineering explanations with clear, student-friendly examples — no filler.",
 };
+
+export function buildQuestionWithAttachments(
+  question: string,
+  attachments?: QuestionAttachment[]
+): string {
+  const contexts = collectAttachmentAiContexts(attachments);
+
+  if (!contexts.length) {
+    return question;
+  }
+
+  return `${question}\n\nATTACHMENT CONTEXT:\n\n${contexts.join("\n\n")}`;
+}
 
 export function buildPrompt({ question, subjectType }: PromptContext): string {
   const instruction =

@@ -1,9 +1,16 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hyperlearningtech.in"),
@@ -108,18 +115,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.classList.remove("light","dark");document.documentElement.classList.add(t);document.documentElement.style.colorScheme=t}catch(e){document.documentElement.classList.add("dark")}})();`,
-          }}
-        />
-      </head>
-      <body
-        className="flex min-h-[100dvh] flex-col overflow-x-hidden"
-        suppressHydrationWarning
-      >
+    <html lang="en" className="dark overflow-y-scroll" suppressHydrationWarning>
+      <body className="flex min-h-[100dvh] flex-col" suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -133,7 +130,11 @@ export default function RootLayout({
             Skip to content
           </a>
           <Navbar />
-          <main id="main-content" className="flex-1" tabIndex={-1}>
+          <main
+            id="main-content"
+            className="flex min-h-0 flex-1 flex-col"
+            tabIndex={-1}
+          >
             {children}
           </main>
           <Footer />

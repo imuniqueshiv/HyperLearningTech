@@ -13,18 +13,53 @@
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt102-u1",
       "number": 1,
       "title": "Calculus",
       "hours": 10,
       "topics": [
-        "Rolle's theorem",
-        "Mean Value theorems",
-        "Expansion of functions by Mc. Laurin's and Taylor's for one variable",
-        "Taylor's theorem for function of two variables",
-        "Partial Differentiation",
-        "Maxima & Minima (two and three variables)",
-        "Method of Lagranges Multipliers"
+        {
+          "id": "bt102-u1-rolles-theorem",
+          "slug": "rolles-theorem",
+          "title": "Rolle's theorem",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt102-u1-mean-value-theorems",
+          "slug": "mean-value-theorems",
+          "title": "Mean Value theorems",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt102-u1-expansion-of-functions-by-mc-laurins-and-taylors-for-one-variable",
+          "slug": "expansion-of-functions-by-mc-laurins-and-taylors-for-one-variable",
+          "title": "Expansion of functions by Mc. Laurin's and Taylor's for one variable",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt102-u1-taylors-theorem-for-function-of-two-variables",
+          "slug": "taylors-theorem-for-function-of-two-variables",
+          "title": "Taylor's theorem for function of two variables",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt102-u1-partial-differentiation",
+          "slug": "partial-differentiation",
+          "title": "Partial Differentiation",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt102-u1-maxima-and-minima-two-and-three-variables",
+          "slug": "maxima-and-minima-two-and-three-variables",
+          "title": "Maxima & Minima (two and three variables)",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt102-u1-method-of-lagranges-multipliers",
+          "slug": "method-of-lagranges-multipliers",
+          "title": "Method of Lagranges Multipliers",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt102_m1_nov2022_q1",
@@ -62,17 +97,47 @@
       ]
     },
     {
-      "id": "module-2",
+      "id": "bt102-u2",
       "number": 2,
       "title": "Calculus",
       "hours": 8,
       "topics": [
-        "Definite Integral as a limit of a sum and Its application in summation of series",
-        "Beta and Gamma functions and their properties",
-        "Applications of definite integrals to evaluate surface areas and volumes of revolutions",
-        "Multiple Integral",
-        "Change the order of the integration",
-        "Applications of multiple integral for calculating area and volumes of the curves"
+        {
+          "id": "bt102-u2-definite-integral-as-a-limit-of-a-sum-and-its-application-in-summation-of-series",
+          "slug": "definite-integral-as-a-limit-of-a-sum-and-its-application-in-summation-of-series",
+          "title": "Definite Integral as a limit of a sum and Its application in summation of series",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt102-u2-beta-and-gamma-functions-and-their-properties",
+          "slug": "beta-and-gamma-functions-and-their-properties",
+          "title": "Beta and Gamma functions and their properties",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt102-u2-applications-of-definite-integrals-to-evaluate-surface-areas-and-volumes-of-revolutions",
+          "slug": "applications-of-definite-integrals-to-evaluate-surface-areas-and-volumes-of-revolutions",
+          "title": "Applications of definite integrals to evaluate surface areas and volumes of revolutions",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt102-u2-multiple-integral",
+          "slug": "multiple-integral",
+          "title": "Multiple Integral",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt102-u2-change-the-order-of-the-integration",
+          "slug": "change-the-order-of-the-integration",
+          "title": "Change the order of the integration",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt102-u2-applications-of-multiple-integral-for-calculating-area-and-volumes-of-the-curves",
+          "slug": "applications-of-multiple-integral-for-calculating-area-and-volumes-of-the-curves",
+          "title": "Applications of multiple integral for calculating area and volumes of the curves",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt102_m2_nov2022_q1",
@@ -102,18 +167,53 @@
       ]
     },
     {
-      "id": "module-3",
+      "id": "bt102-u3",
       "number": 3,
       "title": "Sequences and series",
       "hours": 6,
       "topics": [
-        "Convergence of sequence and series",
-        "tests for convergence",
-        "Power series",
-        "Taylor's series",
-        "series for exponential, trigonometric and logarithm functions",
-        "Fourier series: Half range sine and cosine series",
-        "Parseval's theorem"
+        {
+          "id": "bt102-u3-convergence-of-sequence-and-series",
+          "slug": "convergence-of-sequence-and-series",
+          "title": "Convergence of sequence and series",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt102-u3-tests-for-convergence",
+          "slug": "tests-for-convergence",
+          "title": "tests for convergence",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt102-u3-power-series",
+          "slug": "power-series",
+          "title": "Power series",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt102-u3-taylors-series",
+          "slug": "taylors-series",
+          "title": "Taylor's series",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt102-u3-series-for-exponential-trigonometric-and-logarithm-functions",
+          "slug": "series-for-exponential-trigonometric-and-logarithm-functions",
+          "title": "series for exponential, trigonometric and logarithm functions",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt102-u3-fourier-series-half-range-sine-and-cosine-series",
+          "slug": "fourier-series-half-range-sine-and-cosine-series",
+          "title": "Fourier series: Half range sine and cosine series",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt102-u3-parsevals-theorem",
+          "slug": "parsevals-theorem",
+          "title": "Parseval's theorem",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt102_m3_nov2022_q1",
@@ -142,18 +242,53 @@
       ]
     },
     {
-      "id": "module-4",
+      "id": "bt102-u4",
       "number": 4,
       "title": "Vector Spaces",
       "hours": 8,
       "topics": [
-        "Vector Space",
-        "Vector Sub Space",
-        "Linear Combination of Vectors",
-        "Linearly Dependent",
-        "Linearly Independent",
-        "Basis of a Vector Space",
-        "Linear Transformations"
+        {
+          "id": "bt102-u4-vector-space",
+          "slug": "vector-space",
+          "title": "Vector Space",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt102-u4-vector-sub-space",
+          "slug": "vector-sub-space",
+          "title": "Vector Sub Space",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt102-u4-linear-combination-of-vectors",
+          "slug": "linear-combination-of-vectors",
+          "title": "Linear Combination of Vectors",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt102-u4-linearly-dependent",
+          "slug": "linearly-dependent",
+          "title": "Linearly Dependent",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt102-u4-linearly-independent",
+          "slug": "linearly-independent",
+          "title": "Linearly Independent",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt102-u4-basis-of-a-vector-space",
+          "slug": "basis-of-a-vector-space",
+          "title": "Basis of a Vector Space",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt102-u4-linear-transformations",
+          "slug": "linear-transformations",
+          "title": "Linear Transformations",
+          "displayOrder": 7
+        }
       ],
       "questionIds": [
         "bt102_m4_nov2022_q1",
@@ -173,17 +308,47 @@
       ]
     },
     {
-      "id": "module-5",
+      "id": "bt102-u5",
       "number": 5,
       "title": "Matrices",
       "hours": 8,
       "topics": [
-        "Rank of a Matrix",
-        "Solution of Simultaneous Linear Equations by Elementary Transformation",
-        "Consistency of Equation",
-        "Eigen Values and Eigen Vectors",
-        "Diagonalization of Matrices",
-        "Cayley-Hamilton theorem and its applications to find inverse"
+        {
+          "id": "bt102-u5-rank-of-a-matrix",
+          "slug": "rank-of-a-matrix",
+          "title": "Rank of a Matrix",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt102-u5-solution-of-simultaneous-linear-equations-by-elementary-transformation",
+          "slug": "solution-of-simultaneous-linear-equations-by-elementary-transformation",
+          "title": "Solution of Simultaneous Linear Equations by Elementary Transformation",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt102-u5-consistency-of-equation",
+          "slug": "consistency-of-equation",
+          "title": "Consistency of Equation",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt102-u5-eigen-values-and-eigen-vectors",
+          "slug": "eigen-values-and-eigen-vectors",
+          "title": "Eigen Values and Eigen Vectors",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt102-u5-diagonalization-of-matrices",
+          "slug": "diagonalization-of-matrices",
+          "title": "Diagonalization of Matrices",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt102-u5-cayley-hamilton-theorem-and-its-applications-to-find-inverse",
+          "slug": "cayley-hamilton-theorem-and-its-applications-to-find-inverse",
+          "title": "Cayley-Hamilton theorem and its applications to find inverse",
+          "displayOrder": 6
+        }
       ],
       "questionIds": [
         "bt102_m5_nov2022_q1",

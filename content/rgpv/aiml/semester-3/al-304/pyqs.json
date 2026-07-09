@@ -15,980 +15,6 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What do you understand by the term 'Intelligence'? Explain the goals of AI in modern technology.",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Write Heuristic search algorithm. Explain it with suitable example.",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explain about A* algorithm in detail.",
-              "unit": "Unit 1",
-              "type": "search"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Differentiate between Forward and Backward reasoning.",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain these terms: i) Frames ii) Scripts iii) Conceptual dependency.",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Elucidate various knowledge level representations involved in reasoning process.",
-              "unit": "Unit 2",
-              "type": "knowledge-rep"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain resolution in predicate logic.",
-              "unit": "Unit 2",
-              "type": "logic"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Write about Natural Language Processing. Also explain about applications of NLP to design expert system.",
-              "unit": "Unit 4",
-              "type": "nlp"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Explain the alpha-beta cut-off in game playing techniques.",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain Baye's theorem.",
-              "unit": "Unit 3",
-              "type": "probabilistic"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Explain about resolution, refutation and deduction.",
-              "unit": "Unit 2",
-              "type": "logic"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Write about the semantic networks used in artificial intelligence.",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain about the contribution of AI in human life.",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Explain about forward and backward chaining.",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "What is Expert System? Write about its characteristics.",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Explain about the components and capability of Expert system.",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2023",
-      "year": 2023,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the Best First Search algorithm in detail?",
-              "unit": "Unit 1",
-              "type": "search"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "List and explain the goals of Artificial Intelligence (AI).",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explain how does predicate logic help in knowledge representation in AI?",
-              "unit": "Unit 2",
-              "type": "logic"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is AI Inference? Explain.",
-              "unit": "Unit 2",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Define Baye's Theorem? Explain the applications of Baye's Theorem.",
-              "unit": "Unit 3",
-              "type": "probabilistic"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain the causes of uncertainty in AI?",
-              "unit": "Unit 3",
-              "type": "probabilistic"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Give an overview of applications of Natural Language Processing?",
-              "unit": "Unit 4",
-              "type": "nlp"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Discuss Mini-Max algorithm steps in detail?",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "List and explain the components and capabilities of Expert System?",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Discuss the usage of backward chaining in Inference Engine?",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Discuss A* algorithm in detail?",
-              "unit": "Unit 1",
-              "type": "search"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Explain the various problems in knowledge representation?",
-              "unit": "Unit 2",
-              "type": "knowledge-rep"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Write a short note on backward reasoning?",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What is pruning? Discuss alpha-beta pruning method?",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Explain any two: a) AI Applications b) Refutation in AI c) Conceptual Dependency d) Benefits of Expert System",
-              "unit": "Unit 1/2/3/5",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Four approaches of AI are Acting Humanly, Thinking humanly, Thinking rationally and Acting rationally. Discuss feasibility of the approaches in current scenario. Which approach is best suitable for rational agent and why?",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Explain how A* search different with AO* search technique. Discuss the advantage and disadvantage of both the techniques?",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "State the difference between informed search and uninformed search with suitable example.",
-              "unit": "Unit 1",
-              "type": "search"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "For the Blocks World problem given below, use Hill Climbing to show the next 3 best moves. State and use a suitable global heuristic.",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Translate given facts into predicate logic, convert them into clausal form, and using resolution prove 'What course would Steve like'.",
-              "unit": "Unit 2",
-              "type": "logic"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Describe the difference between Depth First Search (DFS) and Breath First Search (BFS) with suitable example.",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What are the key advantages of using Bayes theorem compared to other probability frameworks?",
-              "unit": "Unit 3",
-              "type": "probabilistic"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Consider the given graph. Find the most cost-effective path to reach from start state A to final state J using A* Algorithm.",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Write short notes on: i) Propositional logic ii) First Order Predicate logic.",
-              "unit": "Unit 2",
-              "type": "logic"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "How would you define Natural Language Processing (NLP) and its significance in today's technological landscape?",
-              "unit": "Unit 4",
-              "type": "nlp"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "What are the key advantage and limitations of expert systems in the field of Artificial Intelligence?",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What are the main differences between forward chaining and backward chaining in expert systems, and when would you prefer to use each approach?",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Consider a state space where the start state is number 1 and the successor function for state n returns two states, numbers 2n and 2n+1. Draw the portion of the state space for states 1 to 15. Suppose the goal state is 11. List the order in which nodes will be visited for BFS, DFS with limit 3.",
-              "unit": "Unit 1",
-              "type": "search"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Given heuristic values for each state, draw a diagram illustrating the search tree of explored states using A* search (unit cost). Indicate the calculated cost at each node.",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Consider the given game tree. Apply α-β pruning and identify all prune nodes for the given tree.",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "What are the critical factors to consider when designing and developing an effective expert system?",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2024",
-      "year": 2024,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What are the essential characteristics of production systems and how do they differ from other AI problem-solving approaches?",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "What is the A* search algorithm, and how does it combine elements of other search algorithms? Why is it considered a popular choice for many AI applications?",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "How can AI contribute to solving global challenges, such as climate change, healthcare or education? Provide specific examples.",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "How does knowledge representation facilitate the process of deductive reasoning in AI?",
-              "unit": "Unit 2",
-              "type": "knowledge-rep"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Compare and contrast propositional logic and predicate logic in terms of their expressiveness and applicability in different problem domains.",
-              "unit": "Unit 2",
-              "type": "logic"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Analyze a complex AI problem, such as natural language understanding and propose a knowledge representation scheme that would effectively address its challenges.",
-              "unit": "Unit 4",
-              "type": "nlp"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Differentiate between scripts, schemas and frames. How are they applied in knowledge representation?",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Define Bayes' Theorem and explain its significance in probabilistic reasoning.",
-              "unit": "Unit 3",
-              "type": "probabilistic"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Evaluate the limitations of frames in knowledge representation and propose enhancements or alternatives to address these limitations.",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What is the 'block world' problem in robotics and why is it a significant challenge in the field of artificial intelligence?",
-              "unit": "Unit 4",
-              "type": "robotics"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Given a simplified game tree for tic-tac-toe, apply the minimax procedure to determine the optimal move for a player at a particular state of the game.",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Evaluate the ethical implications of using NLP in surveillance and monitoring systems. How can these implications be addressed responsibly?",
-              "unit": "Unit 4",
-              "type": "nlp"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "List and describe the key characteristics that distinguish expert systems from other computer programs.",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Develop a comprehensive expert system for a complex domain, such as legal advice or financial planning. Explain how you would ensure the system's knowledge is up to date.",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Attempt any two: a) Analyze the limitations of expert systems b) Differentiate between classical and heuristic search algorithms c) Compare classical AI and modern AI systems d) Define NLP and its importance in AI",
-              "unit": "Unit 5/1/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2024",
-      "year": 2024,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Why is AI considered an interdisciplinary field, and how does it incorporate knowledge from multiple domains?",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Compare and contrast hill climbing and best-first search algorithms. What are their strengths and weaknesses?",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explore the potential risks and limitations of heuristic search algorithms in AI. How can these risks be mitigated?",
-              "unit": "Unit 1",
-              "type": "search"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "List and explain some common problems and challenges in representing knowledge in AI systems.",
-              "unit": "Unit 2",
-              "type": "knowledge-rep"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Give examples of scenarios where non-monotonic reasoning is essential in AI applications. What distinguishes it from monotonic reasoning?",
-              "unit": "Unit 2",
-              "type": "reasoning"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Evaluate the strengths and weaknesses of different inference methods (e.g., forward chaining, backward chaining) in AI and provide scenarios where each is more appropriate.",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What are semantic networks in the context of knowledge representation? Provide an example to illustrate their use.",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Analyze a real-world problem and suggest how frames can be used to represent the knowledge required to solve it effectively?",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Investigate the role of scripts, schemas and frames in AI chatbots and virtual assistants. Assess their potential for improving user interactions.",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain the minimax procedure in the context of game playing. What is its primary objective, and how does it work in games like chess?",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Propose a variation of the alpha-beta pruning algorithm that further optimize the search process in game trees and assess its potential advantages.",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Investigate recent advancements in robotic systems for solving the block world problem. Discuss the innovations and technologies that have improved performance.",
-              "unit": "Unit 4",
-              "type": "robotics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Define what Expert Systems (ES) are and explain their role in artificial intelligence and problem-solving?",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Compare and contrast the inference engines used in expert systems: forward chaining and backward chaining. Provide examples of scenarios where each is more suitable.",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short notes on any two: a) Benefits of Expert Systems b) Components of NLP c) Compare conceptual dependency analysis and semantic networks d) Importance of knowledge representation",
-              "unit": "Unit 5/4/3/2",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2025",
-      "year": 2025,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What is production system? Explain it with an example. Discuss the characteristics of a production system.",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Give an example of a problem for which breadth first search would work better than depth first search.",
-              "unit": "Unit 1",
-              "type": "search"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Discuss various approaches and issues in knowledge representation. Also discuss various problems in representing knowledge.",
-              "unit": "Unit 2",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Consider the given statements and use predicate logic to express them formally (Marcus and Caesar problem).",
-              "unit": "Unit 2",
-              "type": "logic"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Design a simple knowledge base using semantic networks for a weather prediction system.",
-              "unit": "Unit 3",
-              "type": "knowledge-rep"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Define Baye's theorem. What are the applications of Bayes theorem?",
-              "unit": "Unit 3",
-              "type": "probabilistic"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What is the Block World problem in AI planning? Explain with an example.",
-              "unit": "Unit 4",
-              "type": "robotics"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Develop a simple AI-based chatbot using rule-based NLP.",
-              "unit": "Unit 4",
-              "type": "nlp"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Describe the architecture and working of an expert system.",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Design a rule-based expert system for diagnosing diseases.",
-              "unit": "Unit 5",
-              "type": "expert-systems"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "What is the motivation and need of AI in modern technology?",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "How a problem is formally defined? List down the components of it?",
-              "unit": "Unit 1",
-              "type": "ai-basics"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Show how forward and backward reasoning are used in expert systems.",
-              "unit": "Unit 3",
-              "type": "reasoning"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Describe the Alpha-Beta pruning technique and its advantage.",
-              "unit": "Unit 4",
-              "type": "game-playing"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short notes on (any two): a) Minimax algorithm b) Frames and Scripts c) Heuristic search algorithm d) Components of NLP",
-              "unit": "Unit 4/3/1/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
@@ -1167,6 +193,980 @@
               "unit": "Unit 5",
               "type": "expert-systems",
               "isPredicted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is production system? Explain it with an example. Discuss the characteristics of a production system.",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Give an example of a problem for which breadth first search would work better than depth first search.",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss various approaches and issues in knowledge representation. Also discuss various problems in representing knowledge.",
+              "unit": "Unit 2",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Consider the given statements and use predicate logic to express them formally (Marcus and Caesar problem).",
+              "unit": "Unit 2",
+              "type": "logic"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Design a simple knowledge base using semantic networks for a weather prediction system.",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Baye's theorem. What are the applications of Bayes theorem?",
+              "unit": "Unit 3",
+              "type": "probabilistic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the Block World problem in AI planning? Explain with an example.",
+              "unit": "Unit 4",
+              "type": "robotics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Develop a simple AI-based chatbot using rule-based NLP.",
+              "unit": "Unit 4",
+              "type": "nlp"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the architecture and working of an expert system.",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Design a rule-based expert system for diagnosing diseases.",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is the motivation and need of AI in modern technology?",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How a problem is formally defined? List down the components of it?",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Show how forward and backward reasoning are used in expert systems.",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the Alpha-Beta pruning technique and its advantage.",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Minimax algorithm b) Frames and Scripts c) Heuristic search algorithm d) Components of NLP",
+              "unit": "Unit 4/3/1/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Why is AI considered an interdisciplinary field, and how does it incorporate knowledge from multiple domains?",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare and contrast hill climbing and best-first search algorithms. What are their strengths and weaknesses?",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explore the potential risks and limitations of heuristic search algorithms in AI. How can these risks be mitigated?",
+              "unit": "Unit 1",
+              "type": "search"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "List and explain some common problems and challenges in representing knowledge in AI systems.",
+              "unit": "Unit 2",
+              "type": "knowledge-rep"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Give examples of scenarios where non-monotonic reasoning is essential in AI applications. What distinguishes it from monotonic reasoning?",
+              "unit": "Unit 2",
+              "type": "reasoning"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Evaluate the strengths and weaknesses of different inference methods (e.g., forward chaining, backward chaining) in AI and provide scenarios where each is more appropriate.",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are semantic networks in the context of knowledge representation? Provide an example to illustrate their use.",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Analyze a real-world problem and suggest how frames can be used to represent the knowledge required to solve it effectively?",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Investigate the role of scripts, schemas and frames in AI chatbots and virtual assistants. Assess their potential for improving user interactions.",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the minimax procedure in the context of game playing. What is its primary objective, and how does it work in games like chess?",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Propose a variation of the alpha-beta pruning algorithm that further optimize the search process in game trees and assess its potential advantages.",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Investigate recent advancements in robotic systems for solving the block world problem. Discuss the innovations and technologies that have improved performance.",
+              "unit": "Unit 4",
+              "type": "robotics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define what Expert Systems (ES) are and explain their role in artificial intelligence and problem-solving?",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Compare and contrast the inference engines used in expert systems: forward chaining and backward chaining. Provide examples of scenarios where each is more suitable.",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Benefits of Expert Systems b) Components of NLP c) Compare conceptual dependency analysis and semantic networks d) Importance of knowledge representation",
+              "unit": "Unit 5/4/3/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the essential characteristics of production systems and how do they differ from other AI problem-solving approaches?",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the A* search algorithm, and how does it combine elements of other search algorithms? Why is it considered a popular choice for many AI applications?",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How can AI contribute to solving global challenges, such as climate change, healthcare or education? Provide specific examples.",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How does knowledge representation facilitate the process of deductive reasoning in AI?",
+              "unit": "Unit 2",
+              "type": "knowledge-rep"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Compare and contrast propositional logic and predicate logic in terms of their expressiveness and applicability in different problem domains.",
+              "unit": "Unit 2",
+              "type": "logic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Analyze a complex AI problem, such as natural language understanding and propose a knowledge representation scheme that would effectively address its challenges.",
+              "unit": "Unit 4",
+              "type": "nlp"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Differentiate between scripts, schemas and frames. How are they applied in knowledge representation?",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define Bayes' Theorem and explain its significance in probabilistic reasoning.",
+              "unit": "Unit 3",
+              "type": "probabilistic"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Evaluate the limitations of frames in knowledge representation and propose enhancements or alternatives to address these limitations.",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the 'block world' problem in robotics and why is it a significant challenge in the field of artificial intelligence?",
+              "unit": "Unit 4",
+              "type": "robotics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Given a simplified game tree for tic-tac-toe, apply the minimax procedure to determine the optimal move for a player at a particular state of the game.",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Evaluate the ethical implications of using NLP in surveillance and monitoring systems. How can these implications be addressed responsibly?",
+              "unit": "Unit 4",
+              "type": "nlp"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "List and describe the key characteristics that distinguish expert systems from other computer programs.",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Develop a comprehensive expert system for a complex domain, such as legal advice or financial planning. Explain how you would ensure the system's knowledge is up to date.",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Attempt any two: a) Analyze the limitations of expert systems b) Differentiate between classical and heuristic search algorithms c) Compare classical AI and modern AI systems d) Define NLP and its importance in AI",
+              "unit": "Unit 5/1/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Four approaches of AI are Acting Humanly, Thinking humanly, Thinking rationally and Acting rationally. Discuss feasibility of the approaches in current scenario. Which approach is best suitable for rational agent and why?",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain how A* search different with AO* search technique. Discuss the advantage and disadvantage of both the techniques?",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "State the difference between informed search and uninformed search with suitable example.",
+              "unit": "Unit 1",
+              "type": "search"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "For the Blocks World problem given below, use Hill Climbing to show the next 3 best moves. State and use a suitable global heuristic.",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Translate given facts into predicate logic, convert them into clausal form, and using resolution prove 'What course would Steve like'.",
+              "unit": "Unit 2",
+              "type": "logic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe the difference between Depth First Search (DFS) and Breath First Search (BFS) with suitable example.",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the key advantages of using Bayes theorem compared to other probability frameworks?",
+              "unit": "Unit 3",
+              "type": "probabilistic"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Consider the given graph. Find the most cost-effective path to reach from start state A to final state J using A* Algorithm.",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write short notes on: i) Propositional logic ii) First Order Predicate logic.",
+              "unit": "Unit 2",
+              "type": "logic"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How would you define Natural Language Processing (NLP) and its significance in today's technological landscape?",
+              "unit": "Unit 4",
+              "type": "nlp"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the key advantage and limitations of expert systems in the field of Artificial Intelligence?",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the main differences between forward chaining and backward chaining in expert systems, and when would you prefer to use each approach?",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Consider a state space where the start state is number 1 and the successor function for state n returns two states, numbers 2n and 2n+1. Draw the portion of the state space for states 1 to 15. Suppose the goal state is 11. List the order in which nodes will be visited for BFS, DFS with limit 3.",
+              "unit": "Unit 1",
+              "type": "search"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Given heuristic values for each state, draw a diagram illustrating the search tree of explored states using A* search (unit cost). Indicate the calculated cost at each node.",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Consider the given game tree. Apply α-β pruning and identify all prune nodes for the given tree.",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What are the critical factors to consider when designing and developing an effective expert system?",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Best First Search algorithm in detail?",
+              "unit": "Unit 1",
+              "type": "search"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "List and explain the goals of Artificial Intelligence (AI).",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain how does predicate logic help in knowledge representation in AI?",
+              "unit": "Unit 2",
+              "type": "logic"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is AI Inference? Explain.",
+              "unit": "Unit 2",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define Baye's Theorem? Explain the applications of Baye's Theorem.",
+              "unit": "Unit 3",
+              "type": "probabilistic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the causes of uncertainty in AI?",
+              "unit": "Unit 3",
+              "type": "probabilistic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Give an overview of applications of Natural Language Processing?",
+              "unit": "Unit 4",
+              "type": "nlp"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss Mini-Max algorithm steps in detail?",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List and explain the components and capabilities of Expert System?",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the usage of backward chaining in Inference Engine?",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss A* algorithm in detail?",
+              "unit": "Unit 1",
+              "type": "search"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the various problems in knowledge representation?",
+              "unit": "Unit 2",
+              "type": "knowledge-rep"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write a short note on backward reasoning?",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is pruning? Discuss alpha-beta pruning method?",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain any two: a) AI Applications b) Refutation in AI c) Conceptual Dependency d) Benefits of Expert System",
+              "unit": "Unit 1/2/3/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by the term 'Intelligence'? Explain the goals of AI in modern technology.",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Write Heuristic search algorithm. Explain it with suitable example.",
+              "unit": "Unit 1",
+              "type": "search"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain about A* algorithm in detail.",
+              "unit": "Unit 1",
+              "type": "search"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate between Forward and Backward reasoning.",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain these terms: i) Frames ii) Scripts iii) Conceptual dependency.",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Elucidate various knowledge level representations involved in reasoning process.",
+              "unit": "Unit 2",
+              "type": "knowledge-rep"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain resolution in predicate logic.",
+              "unit": "Unit 2",
+              "type": "logic"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write about Natural Language Processing. Also explain about applications of NLP to design expert system.",
+              "unit": "Unit 4",
+              "type": "nlp"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the alpha-beta cut-off in game playing techniques.",
+              "unit": "Unit 4",
+              "type": "game-playing"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Baye's theorem.",
+              "unit": "Unit 3",
+              "type": "probabilistic"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain about resolution, refutation and deduction.",
+              "unit": "Unit 2",
+              "type": "logic"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write about the semantic networks used in artificial intelligence.",
+              "unit": "Unit 3",
+              "type": "knowledge-rep"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain about the contribution of AI in human life.",
+              "unit": "Unit 1",
+              "type": "ai-basics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain about forward and backward chaining.",
+              "unit": "Unit 3",
+              "type": "reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is Expert System? Write about its characteristics.",
+              "unit": "Unit 5",
+              "type": "expert-systems"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain about the components and capability of Expert system.",
+              "unit": "Unit 5",
+              "type": "expert-systems"
             }
           ]
         }

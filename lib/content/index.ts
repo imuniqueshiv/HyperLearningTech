@@ -98,11 +98,21 @@ export async function getTopicById(
   for (const syllabusModule of modules) {
     const topics = syllabusModule.topics ?? [];
 
-    const topic = topics.find((item) => item.id === topicId);
+    const topic = topics.find((item) => {
+      if (typeof item === "string") {
+        return item === topicId;
+      }
+      return (item as { id: string }).id === topicId;
+    });
 
     if (topic) {
+      const topicObj =
+        typeof topic === "string"
+          ? ({ id: topic, title: topic, slug: topic, displayOrder: 0 } as Topic)
+          : (topic as Topic);
+
       return {
-        topic,
+        topic: topicObj,
         module: {
           id: syllabusModule.id,
           number: syllabusModule.number,

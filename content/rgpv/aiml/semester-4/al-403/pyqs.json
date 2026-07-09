@@ -5,5 +5,791 @@
     "name": "Software Engineering (SE)",
     "title": "AL-403 - Software Engineering (SE)"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Differentiate between software product characteristics and software process characteristics."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the Linear Sequential Model and discuss its advantages and disadvantages."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the Component Assembly Model? How does it differ from the Incremental Model?"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the purpose of process customization and improvement with reference to CMM."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe functional and non-functional requirements with examples."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the major requirement elicitation techniques? Discuss any two in detail."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain use case modeling with the help of an example."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the key contents of a Software Requirement Specification (SRS) document?"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe any four fundamental software design principles."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the SA/SD approach to function-oriented design."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are architectural views? Briefly describe different architectural styles."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the key design metrics used to evaluate software design quality?"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Differentiate between static and dynamic code analysis."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the black-box testing technique with an example."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is Software Configuration Management (SCM)? Describe its major activities."
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain software project feasibility analysis and its types."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain with neat diagram about RAD model."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe briefly about Prototyping model for Software development?"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Draw and explain the Incremental Model with its Merits and Demerits?"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss briefly about Use case Model with neat sketch?"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Differentiate between Function-Oriented and Object-Oriented Software development?"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe different checks to be carried out during requirement validation process?"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How system modeling is achieved using UML? Explain with a suitable example."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you understand by Function-Oriented design? Discuss in detail."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List and Explain different kinds of architecture styles and patterns?"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Test Oracles? Explain different types of test techniques."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "With neat sketch explain briefly about testing levels?"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain briefly about Software Configuration Management (SCM)?"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss about Risk Assessment and Mitigation."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Re-Engineering and discuss about steps involved in Re-Engineering?"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two :\ni) Resource Allocation\nii) Component Assembly Model\niii) SA/SD Component Based Design\niv) Testing frameworks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Elucidate the key features of the software process models with suitable examples?"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Write about CMM (Capability Maturity Model) and how it is used for Software Quality?"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Draw and explain the spiral model with its advantages and disadvantages?"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the components of a software requirement specification document?"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Differentiate between functional and Non Functional requirements with suitable examples?"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the activities of requirement elicitation and Analysis? Explain."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss about pattern based software design in detail?"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Briefly explain about Function-Oriented design?"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List and explain the golden rules of User-Interface design?"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Briefly discuss about Integration testing Strategies?"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Black- Box testing? What is boundary value Analysis? Explain the technique Specifying rules and its usage with the help of an example."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is White-Box testing? How white box testing is carried out ? Demonstrate With example."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain briefly about Software Configuration Management (SCM)?"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you understand by Feasibility Analysis? Explain."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two:\na) Schedule and Cost Estimation\nb) RUP\nc) Traceability\nd) Design Principles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is spiral model? Explain with neat diagram."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is SDLC? Illustrate the phases of SDLC in software engineering."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the difference between function oriented modeling and object oriented modeling?"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss about system and software requirement specifications."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is a design metrics? Explain the importance of design metrics."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss about the function oriented design strategies in detail."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is software testing and system testing? Explain in detail."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss about integration testing with suitable example."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is risk and how to identify the risk in software engineering? Explain."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write the difference between reverse engineering and re-engineering."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the steps of acceptance testing? Explain in detail."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the principles of risk assessment and mitigation."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write about project scheduling and tracking."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe RUP and agile processes in detail."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two:\na) Structured methods\nb) White-Box Testing\nc) Feasibility Analysis\nd) Test Case Design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss in detail about Evolutionary process model in software Engineering."
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is RAD Model and why it is important. Give the applications of RAD model."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "\"The functional requirements specification of a system should be both complete and consistent\". Substantiate this statement with relevant examples."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the use-case model and how to make it? Discuss the four basic parts of a use-case model."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss about the basic principles of software design in software engineering."
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are SA and SD? Discuss about component based design and what are its advantages."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the strategic approaches to software testing? Explain in detail."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is unit testing in software Engineering? Explain with suitable example."
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is meant by software quality? Explain the metrics for maintenance."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss about SCM function in software engineering with suitable example."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is system testing. Discuss about different types of system testing."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are test metrics and its types? What is the purpose of testing metrics? Explain."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the difference between product and process metric?"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is component model in software engineering? Explain with neat diagram."
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two:\na) Object Models\nb) Black-Box Testing\nc) Program Comprehension Techniques\nd) Testing Tools"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is software? What is the difference between a software process and a software product?"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How do you customize the development of software process?"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain in detail about the RAD model."
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How software requirements specifications are used in the development of the software? Write the characteristics for the software requirements specification."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the elicitation techniques used in the software requirements?"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain in detail about the DFD and its levels."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you mean by software modeling? How model view are used in the designing a software?"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How object oriented design is used in the development of the software? What are the different metrics used for it?"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "With a neat diagram explain interface analysis and design model."
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How is software being tested? Explain the process with a neat sketch."
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the difference between the black box and white box testing."
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is a test plan? What are the different parameters used for testing. Explain."
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the purpose of maintaining the software? Explain the different types."
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the different program comprehensions?"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on.\na) Requirement validation\nb) Dynamic analysis\nc) Software quality assurance"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

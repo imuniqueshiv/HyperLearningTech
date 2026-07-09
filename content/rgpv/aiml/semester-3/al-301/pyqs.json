@@ -15,778 +15,6 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the Unity, Brevity and clarity in various forms of communication.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Briefly describe about Interpersonal Communication?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Explain the barriers of Communication in detail.",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is the process and scope of communication?",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "What are the traits of technical writing? And what are the principles of business writing?",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain format and structure of Technical Report.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What is an Interview? Write do's and don'ts of an interview.",
-              "unit": "Unit 4",
-              "type": "interviews"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Discuss style and argumentative skills in group discussion.",
-              "unit": "Unit 4",
-              "type": "gd"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "What is the difference between General and Technical vocabulary?",
-              "unit": "Unit 5",
-              "type": "grammar"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What are the common errors in speaking and writing? Explain.",
-              "unit": "Unit 5",
-              "type": "grammar"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6",
-              "label": "",
-              "text": "What are the different types of presentations? Explain.",
-              "unit": "Unit 4",
-              "type": "presentations"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7",
-              "label": "",
-              "text": "Explain various types of interviews. How should an interviewee prepare for a selection of an interview?",
-              "unit": "Unit 4",
-              "type": "interviews"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write a letter of application along with your resume for the post of Software Engineer at TCS, Mumbai.",
-              "unit": "Unit 4",
-              "type": "resume"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Discuss the process and scope of communication.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "How clarity can be achieved in technical communication? Describe.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "How can soft skills contribute to success in one's professional life? Explain.",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is the difference between verbal and non-verbal Communication? Explain with examples.",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "What is technical research paper? What is the structure of technical research paper?",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Enlist the features, types and structure and format of Technical reports.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What benefits does audience analysis provide you as the speaker? Give answer.",
-              "unit": "Unit 3",
-              "type": "speaking-skills"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What does decorum mean? What are the different forms of decorum? Explain.",
-              "unit": "Unit 4",
-              "type": "interviews"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Write a short note on: i) Pronunciation Etiquette ii) Tone",
-              "unit": "Unit 5",
-              "type": "grammar"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What is syllable in technical communication? What are the different types of syllables? What are the rules of syllables? Discuss.",
-              "unit": "Unit 5",
-              "type": "grammar"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Classify importance of communication in globalized world.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What are the barriers to effective communication? How can we overcome language barriers?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "What are the styles of writing in technical communication? Explain.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What is Memo? For what purpose are Memo used? You are the managing Director of ABC limited. Draft a memo to the customer relations officer for not attending to a customer complaint.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Answer the following (any two): a) Professional personality Attributes b) Speech and personality c) Delivery and Content of presentation d) Combating Nervousness",
-              "unit": "Unit 5/4/3",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2024",
-      "year": 2024,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Why clarity is the ultimate goal of technical communication how can you achieve clarity? Give answer.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Discuss the forms of technical communication, giving suitable examples.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Differentiate Verbal and Non-verbal communication.",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What are the different types of communication barriers?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "What is the role of language in technical writing. Write the characteristics of technical writing.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What is mock presentation? Why is mock presentation important? Discuss it.",
-              "unit": "Unit 3",
-              "type": "speaking-skills"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What is an Interview? Write do's and don'ts of an interview.",
-              "unit": "Unit 4",
-              "type": "interviews"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Discuss style and argumentative skills in group discussion.",
-              "unit": "Unit 4",
-              "type": "gd"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "What is a syllable? Write examples of English syllables.",
-              "unit": "Unit 5",
-              "type": "grammar"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain Attributes of Professional Personality in brief.",
-              "unit": "Unit 5",
-              "type": "grammar"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6",
-              "label": "",
-              "text": "What are the different types of presentations? Explain.",
-              "unit": "Unit 4",
-              "type": "presentations"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7",
-              "label": "",
-              "text": "Write a letter to the DELL Company placing order for the supply of Two Hundred computers with latest features.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Answer the following (any two): a) Common error in writing and speaking b) Group discussion c) Vocabulary and paralanguage d) Communicating in a global world",
-              "unit": "Unit 5/4/3/2",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2024",
-      "year": 2024,
-      "month": "December",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the importance of understanding the audience in technical communication. Provide two examples.",
-              "unit": "Unit 3",
-              "type": "speaking-skills"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Discuss the forms of technical communication with suitable examples.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Discuss the role of technology in facilitating global communication. What are its advantages and challenges?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What are the key principles to keep in mind when delivering bad news in a professional setting?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Why is clarity important in business writing, and how can writers achieve it?",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What are the common causes of nervousness during public speaking or communication?",
-              "unit": "Unit 3",
-              "type": "speaking-skills"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What is the primary objective of a group discussion, and how does it differ from other forms of communication?",
-              "unit": "Unit 4",
-              "type": "gd"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "How does body language influence the perception of a professional presentation?",
-              "unit": "Unit 4",
-              "type": "presentations"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "How do general vocabulary and technical vocabulary differ and what roles do they play in communication?",
-              "unit": "Unit 5",
-              "type": "grammar"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What are the basic of grammar? What is grammatical correctness in technical writing?",
-              "unit": "Unit 5",
-              "type": "grammar"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Discuss the impact of technology on the process and scope of technical communication. How has it changed the way information is shared, and what are some challenges associated with this shift?",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Provide a detailed classification of NVC. How do you apply the NVC process?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "You observed a fire accident in a slum area near your colony on Saturday night. The incident left you deeply disturbed by the tragic scene. Write a detailed report on the accident, including the cause, damages, response from authorities, and the impact on the affected community.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What are the different styles of writing in technical communication? Explain them.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Answer the following (Any two): a) Vocabulary and Paralanguage b) Pronunciation Etiquette c) Communicating in a global world d) Mock presentation",
-              "unit": "Unit 3/5/2",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "June 2025",
-      "year": 2025,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the importance of understanding the audience in technical communication. Provide two examples.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "How do advancements in technology enhance communication in a globalized environment?",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "How can a communicator balance honesty and sensitivity when conveying a difficult message?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "What is interpersonal communication? Provide a detailed explanation.",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Why is it important to adapt vocabulary and paralanguage according to the audience and context? Provide a specific example.",
-              "unit": "Unit 3",
-              "type": "speaking-skills"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "What do you understand by a mock presentation? Explain its significance.",
-              "unit": "Unit 3",
-              "type": "speaking-skills"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "What are the key elements of a professional presentation? Provide examples of how each element contributes to its effectiveness.",
-              "unit": "Unit 4",
-              "type": "presentations"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "What strategies can you use to assess your performance after an interview and how can this reflection help you improve in future interviews?",
-              "unit": "Unit 4",
-              "type": "interviews"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "How can strong communication skills enhance your professional personality and improve workplace relationships?",
-              "unit": "Unit 5",
-              "type": "grammar"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "What is the difference between rising tone and falling tone in speech and how does each affect the meaning of a sentence?",
-              "unit": "Unit 5",
-              "type": "grammar"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "What are some common barriers to effective interpersonal communication and how can they be overcome?",
-              "unit": "Unit 2",
-              "type": "soft-skills"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What do you understand by a group discussion? Discuss its objectives and significance.",
-              "unit": "Unit 4",
-              "type": "gd"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Why is clarity considered essential in technical communication and what strategies can be used to achieve it? Explain.",
-              "unit": "Unit 1",
-              "type": "communication-skills"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "You are interested in pursuing a course in Computer Hardware. Write a letter seeking information about the same.",
-              "unit": "Unit 3",
-              "type": "writing-skills"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Explain the following (any two): a) Listening persuasion b) Delivery and Content of presentation c) Combating Nervousness d) Handling turbulence during interviews",
-              "unit": "Unit 2/4/3/4",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
@@ -965,6 +193,778 @@
               "unit": "Unit 5",
               "type": "grammar",
               "isPredicted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the importance of understanding the audience in technical communication. Provide two examples.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How do advancements in technology enhance communication in a globalized environment?",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How can a communicator balance honesty and sensitivity when conveying a difficult message?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is interpersonal communication? Provide a detailed explanation.",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Why is it important to adapt vocabulary and paralanguage according to the audience and context? Provide a specific example.",
+              "unit": "Unit 3",
+              "type": "speaking-skills"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What do you understand by a mock presentation? Explain its significance.",
+              "unit": "Unit 3",
+              "type": "speaking-skills"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the key elements of a professional presentation? Provide examples of how each element contributes to its effectiveness.",
+              "unit": "Unit 4",
+              "type": "presentations"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What strategies can you use to assess your performance after an interview and how can this reflection help you improve in future interviews?",
+              "unit": "Unit 4",
+              "type": "interviews"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How can strong communication skills enhance your professional personality and improve workplace relationships?",
+              "unit": "Unit 5",
+              "type": "grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the difference between rising tone and falling tone in speech and how does each affect the meaning of a sentence?",
+              "unit": "Unit 5",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are some common barriers to effective interpersonal communication and how can they be overcome?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you understand by a group discussion? Discuss its objectives and significance.",
+              "unit": "Unit 4",
+              "type": "gd"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Why is clarity considered essential in technical communication and what strategies can be used to achieve it? Explain.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "You are interested in pursuing a course in Computer Hardware. Write a letter seeking information about the same.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following (any two): a) Listening persuasion b) Delivery and Content of presentation c) Combating Nervousness d) Handling turbulence during interviews",
+              "unit": "Unit 2/4/3/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the importance of understanding the audience in technical communication. Provide two examples.",
+              "unit": "Unit 3",
+              "type": "speaking-skills"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the forms of technical communication with suitable examples.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the role of technology in facilitating global communication. What are its advantages and challenges?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the key principles to keep in mind when delivering bad news in a professional setting?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Why is clarity important in business writing, and how can writers achieve it?",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the common causes of nervousness during public speaking or communication?",
+              "unit": "Unit 3",
+              "type": "speaking-skills"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the primary objective of a group discussion, and how does it differ from other forms of communication?",
+              "unit": "Unit 4",
+              "type": "gd"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How does body language influence the perception of a professional presentation?",
+              "unit": "Unit 4",
+              "type": "presentations"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How do general vocabulary and technical vocabulary differ and what roles do they play in communication?",
+              "unit": "Unit 5",
+              "type": "grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the basic of grammar? What is grammatical correctness in technical writing?",
+              "unit": "Unit 5",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the impact of technology on the process and scope of technical communication. How has it changed the way information is shared, and what are some challenges associated with this shift?",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Provide a detailed classification of NVC. How do you apply the NVC process?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "You observed a fire accident in a slum area near your colony on Saturday night. The incident left you deeply disturbed by the tragic scene. Write a detailed report on the accident, including the cause, damages, response from authorities, and the impact on the affected community.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the different styles of writing in technical communication? Explain them.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Answer the following (Any two): a) Vocabulary and Paralanguage b) Pronunciation Etiquette c) Communicating in a global world d) Mock presentation",
+              "unit": "Unit 3/5/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Why clarity is the ultimate goal of technical communication how can you achieve clarity? Give answer.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the forms of technical communication, giving suitable examples.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Differentiate Verbal and Non-verbal communication.",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the different types of communication barriers?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the role of language in technical writing. Write the characteristics of technical writing.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is mock presentation? Why is mock presentation important? Discuss it.",
+              "unit": "Unit 3",
+              "type": "speaking-skills"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is an Interview? Write do's and don'ts of an interview.",
+              "unit": "Unit 4",
+              "type": "interviews"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss style and argumentative skills in group discussion.",
+              "unit": "Unit 4",
+              "type": "gd"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is a syllable? Write examples of English syllables.",
+              "unit": "Unit 5",
+              "type": "grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Attributes of Professional Personality in brief.",
+              "unit": "Unit 5",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "What are the different types of presentations? Explain.",
+              "unit": "Unit 4",
+              "type": "presentations"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "Write a letter to the DELL Company placing order for the supply of Two Hundred computers with latest features.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Answer the following (any two): a) Common error in writing and speaking b) Group discussion c) Vocabulary and paralanguage d) Communicating in a global world",
+              "unit": "Unit 5/4/3/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the process and scope of communication.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How clarity can be achieved in technical communication? Describe.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How can soft skills contribute to success in one's professional life? Explain.",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the difference between verbal and non-verbal Communication? Explain with examples.",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is technical research paper? What is the structure of technical research paper?",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Enlist the features, types and structure and format of Technical reports.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What benefits does audience analysis provide you as the speaker? Give answer.",
+              "unit": "Unit 3",
+              "type": "speaking-skills"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What does decorum mean? What are the different forms of decorum? Explain.",
+              "unit": "Unit 4",
+              "type": "interviews"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a short note on: i) Pronunciation Etiquette ii) Tone",
+              "unit": "Unit 5",
+              "type": "grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is syllable in technical communication? What are the different types of syllables? What are the rules of syllables? Discuss.",
+              "unit": "Unit 5",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Classify importance of communication in globalized world.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the barriers to effective communication? How can we overcome language barriers?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the styles of writing in technical communication? Explain.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Memo? For what purpose are Memo used? You are the managing Director of ABC limited. Draft a memo to the customer relations officer for not attending to a customer complaint.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Answer the following (any two): a) Professional personality Attributes b) Speech and personality c) Delivery and Content of presentation d) Combating Nervousness",
+              "unit": "Unit 5/4/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Unity, Brevity and clarity in various forms of communication.",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Briefly describe about Interpersonal Communication?",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the barriers of Communication in detail.",
+              "unit": "Unit 2",
+              "type": "soft-skills"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the process and scope of communication?",
+              "unit": "Unit 1",
+              "type": "communication-skills"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the traits of technical writing? And what are the principles of business writing?",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain format and structure of Technical Report.",
+              "unit": "Unit 3",
+              "type": "writing-skills"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is an Interview? Write do's and don'ts of an interview.",
+              "unit": "Unit 4",
+              "type": "interviews"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss style and argumentative skills in group discussion.",
+              "unit": "Unit 4",
+              "type": "gd"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the difference between General and Technical vocabulary?",
+              "unit": "Unit 5",
+              "type": "grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the common errors in speaking and writing? Explain.",
+              "unit": "Unit 5",
+              "type": "grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "What are the different types of presentations? Explain.",
+              "unit": "Unit 4",
+              "type": "presentations"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "Explain various types of interviews. How should an interviewee prepare for a selection of an interview?",
+              "unit": "Unit 4",
+              "type": "interviews"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a letter of application along with your resume for the post of Software Engineer at TCS, Mumbai.",
+              "unit": "Unit 4",
+              "type": "resume"
             }
           ]
         }

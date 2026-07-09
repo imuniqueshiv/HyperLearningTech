@@ -15,9 +15,10 @@
   },
   "papers": [
     {
-      "exam": "November 2022",
-      "year": 2022,
-      "month": "November",
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "isPredicted": true,
       "questions": [
         {
           "id": "q1",
@@ -26,16 +27,18 @@
             {
               "id": "q1a",
               "label": "a)",
-              "text": "Mention the types of data. Write all built-in data types in C.",
+              "text": "Explain the classification of data structures in detail.",
               "unit": "Unit 1",
-              "type": "ds-basics"
+              "type": "ds-basics",
+              "isPredicted": true
             },
             {
               "id": "q1b",
               "label": "b)",
-              "text": "What do you mean by data structure and mention its types?",
+              "text": "Define Abstract Data Types (ADT). Explain the different operations performed on data structures and describe the criteria for cost estimation.",
               "unit": "Unit 1",
-              "type": "ds-basics"
+              "type": "ds-basics",
+              "isPredicted": true
             }
           ]
         },
@@ -46,16 +49,18 @@
             {
               "id": "q2a",
               "label": "a)",
-              "text": "What do you mean by an algorithm? Write the criteria and characteristics of an algorithm.",
+              "text": "Describe the memory representation of a Singly Linked List. Write an algorithm to insert a node at a specific position in a linked list.",
               "unit": "Unit 1",
-              "type": "algorithm"
+              "type": "linked-list",
+              "isPredicted": true
             },
             {
               "id": "q2b",
               "label": "b)",
-              "text": "Demonstrate the efficiency of an algorithm.",
-              "unit": "Unit 1",
-              "type": "algorithm"
+              "text": "Define Stack as an ADT. Explain the array and linked list implementation of stacks.",
+              "unit": "Unit 2",
+              "type": "stacks",
+              "isPredicted": true
             }
           ]
         },
@@ -66,16 +71,18 @@
             {
               "id": "q3a",
               "label": "a)",
-              "text": "Draw an AVL tree on following inputs, assume that tree is initially empty: 485, 575, 655, 745, 830, 910, 100, 110, 520, 130, 340, 450, 365, 525, 204, 155, 130, 35.",
-              "unit": "Unit 3",
-              "type": "trees"
+              "text": "Explain the algorithm to convert an Infix expression to a Postfix notation using a stack.",
+              "unit": "Unit 2",
+              "type": "stacks",
+              "isPredicted": true
             },
             {
               "id": "q3b",
               "label": "b)",
-              "text": "Compare and Contrast the Spanning tree and Minimum Spanning Tree.",
-              "unit": "Unit 4",
-              "type": "graphs"
+              "text": "Explain the concept of Queue simulation with a real-world example.",
+              "unit": "Unit 2",
+              "type": "queues",
+              "isPredicted": true
             }
           ]
         },
@@ -86,16 +93,18 @@
             {
               "id": "q4a",
               "label": "a)",
-              "text": "Design an efficient algorithm for finding the longest directed path from a vertex s to a vertex of an acyclic weighted digraph G. Specify the graph representation used and any auxiliary data structures used. Analyze the time complexity of your algorithm.",
-              "unit": "Unit 4",
-              "type": "graphs"
+              "text": "Define a Binary Search Tree (BST). Explain the algorithms for In-order, Pre-order, and Post-order traversal with an example.",
+              "unit": "Unit 3",
+              "type": "trees",
+              "isPredicted": true
             },
             {
               "id": "q4b",
               "label": "b)",
-              "text": "Reconstruct the proof of correctness of the Bellman-Ford Algorithm. How Bellman-Ford algorithm able to work with negative weight?",
-              "unit": "Unit 4",
-              "type": "graphs"
+              "text": "What are AVL Trees? Explain the four types of rotations (LL, RR, LR, RL) used to balance an AVL tree.",
+              "unit": "Unit 3",
+              "type": "trees",
+              "isPredicted": true
             }
           ]
         },
@@ -106,16 +115,18 @@
             {
               "id": "q5a",
               "label": "a)",
-              "text": "Determine the addressing formula to find the location of (i,j)th element of an m×n matrix stored in column-major order. Consider the linear arrays AAA[5:50], BBB[-5:10] and CCC[1:8]. i) Find the number of elements in each array. ii) Suppose base(AAA)=300 and w=4 words per memory cell for AAA. Find the address of AAA[15], AAA[35], and AAA[55].",
-              "unit": "Unit 1",
-              "type": "arrays"
+              "text": "Define the following tree terminologies: Height, Depth, Degree of a node, and Forest.",
+              "unit": "Unit 3",
+              "type": "trees",
+              "isPredicted": true
             },
             {
               "id": "q5b",
               "label": "b)",
-              "text": "What is a singly linked list? Write its advantage and application and explain its node structure. Write the algorithm and program in C to create and traverse a singly linked list.",
-              "unit": "Unit 1",
-              "type": "linked-list"
+              "text": "Explain the Adjacency Matrix and Adjacency List representations of a graph.",
+              "unit": "Unit 4",
+              "type": "graphs",
+              "isPredicted": true
             }
           ]
         },
@@ -126,16 +137,18 @@
             {
               "id": "q6a",
               "label": "a)",
-              "text": "The problem of finding a subset T of the edges of a connected graph G such that all nodes remain connected when only the edges of T are used, and the sum of weights of edges in T is as small as possible, still makes sense even if G has edges with negative weights. Adapt either Kruskal's or Prim's algorithm to work on a graph that may include negative weights.",
+              "text": "Describe the Depth First Search (DFS) and Breadth First Search (BFS) algorithms for graph traversal with examples.",
               "unit": "Unit 4",
-              "type": "graphs"
+              "type": "graphs",
+              "isPredicted": true
             },
             {
               "id": "q6b",
               "label": "b)",
-              "text": "Explain heap and radix sort with the algorithm.",
-              "unit": "Unit 5",
-              "type": "sorting"
+              "text": "What is a Minimum Spanning Tree (MST)? Explain Kruskal's or Prim's algorithm to find the MST of a weighted graph.",
+              "unit": "Unit 4",
+              "type": "graphs",
+              "isPredicted": true
             }
           ]
         },
@@ -146,16 +159,18 @@
             {
               "id": "q7a",
               "label": "a)",
-              "text": "How to measure the complexity of an algorithm, also discuss various types of notation for this purpose?",
-              "unit": "Unit 1",
-              "type": "algorithm"
+              "text": "Explain the Quick Sort algorithm with suitable example.",
+              "unit": "Unit 5",
+              "type": "sorting",
+              "isPredicted": true
             },
             {
               "id": "q7b",
               "label": "b)",
-              "text": "How doubly linked list is better than a linked list? Justify with examples.",
-              "unit": "Unit 1",
-              "type": "linked-list"
+              "text": "Explain Binary Search with an example.",
+              "unit": "Unit 5",
+              "type": "searching",
+              "isPredicted": true
             }
           ]
         },
@@ -164,193 +179,20 @@
           "questionNumber": "Q.8",
           "subQuestions": [
             {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Draw the directed graph that corresponds to the given adjacency matrix.",
-              "unit": "Unit 4",
-              "type": "graphs"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Explore all types of operations that can be performed on a linked list.",
-              "unit": "Unit 1",
-              "type": "linked-list"
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any Two: (a) Circular Linked Lists (b) Linear Probing and Chaining (c) B+ Trees (d) Dijkstra's shortest path algorithm",
+              "unit": "Unit 1/5/3/4",
+              "type": "mixed",
+              "isPredicted": true
             }
           ]
         }
       ]
     },
     {
-      "exam": "June 2023",
-      "year": 2023,
-      "month": "June",
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "What is Abstract data type? Explain with the help of example.",
-              "unit": "Unit 1",
-              "type": "ds-basics"
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Differentiate array and linked list.",
-              "unit": "Unit 1",
-              "type": "ds-basics"
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "What is the application of linked list. And also write the algorithm how to add two polynomials using linked list.",
-              "unit": "Unit 1",
-              "type": "linked-list"
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Write a program in C to insert a node at any specified position in doubly linked list.",
-              "unit": "Unit 1",
-              "type": "linked-list"
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "What is the difference between data and information? Give one example of each.",
-              "unit": "Unit 1",
-              "type": "ds-basics"
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "How to represent 2-D array in memory? Explain with the help of example.",
-              "unit": "Unit 1",
-              "type": "arrays"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Write an algorithm to convert infix expression into postfix form using Stack. Also evaluate the given postfix form using stack.",
-              "unit": "Unit 2",
-              "type": "stacks"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Write a program in 'C' to implementation of QUEUE.",
-              "unit": "Unit 2",
-              "type": "queues"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "What are the differences between: i) Height and depth ii) Order and degree.",
-              "unit": "Unit 3",
-              "type": "trees"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Show that the maximum number of nodes in a binary tree of height h is 2^(h+1)-1.",
-              "unit": "Unit 3",
-              "type": "trees"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Construct the steps to configure a B-tree of order 5 for the given data.",
-              "unit": "Unit 3",
-              "type": "trees"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Explain Dijkstra Algorithm with the help of example.",
-              "unit": "Unit 4",
-              "type": "graphs"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Write a Heap sort algorithm. Use Heap sort algorithm to sort the following elements: D A T A S T R U C T U R E S.",
-              "unit": "Unit 5",
-              "type": "sorting"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Differentiate internal sorting and external sorting. Also enlists the name of two sorting techniques of each.",
-              "unit": "Unit 5",
-              "type": "sorting"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Binary search is more efficient than Linear search. Justify your answer.",
-              "unit": "Unit 5",
-              "type": "searching"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Write short note on Hashing and Indexing.",
-              "unit": "Unit 5",
-              "type": "hashing"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2023",
-      "year": 2023,
+      "exam": "December 2024",
+      "year": 2024,
       "month": "December",
       "questions": [
         {
@@ -360,16 +202,16 @@
             {
               "id": "q1a",
               "label": "a)",
-              "text": "Construct a Binary tree for the given traversals (Postorder and Inorder). Also, find the Preorder traversal of the Binary tree so formed.",
-              "unit": "Unit 3",
-              "type": "trees"
+              "text": "Explain the insertion operation in linked list. How nodes are inserted after a specified node?",
+              "unit": "Unit 1",
+              "type": "linked-list"
             },
             {
               "id": "q1b",
               "label": "b)",
-              "text": "How a tree can be stored in the memory? Explain with an example. Explain the advantages and disadvantages of the array representation of a tree.",
-              "unit": "Unit 3",
-              "type": "trees"
+              "text": "What are the drawbacks of single linked list? Write and explain the algorithm for search and modify operations in doubly linked list with example.",
+              "unit": "Unit 1",
+              "type": "linked-list"
             }
           ]
         },
@@ -380,16 +222,16 @@
             {
               "id": "q2a",
               "label": "a)",
-              "text": "Construct an expression tree for the algebraic expression (3a-b)²(4c+2d)³.",
-              "unit": "Unit 3",
-              "type": "trees"
+              "text": "What are the limitations of queue? Explain the algorithms for various operations of circular queue.",
+              "unit": "Unit 2",
+              "type": "queues"
             },
             {
               "id": "q2b",
               "label": "b)",
-              "text": "Explain the Binary Search Tree with an example. Make a BST for the given sequence and perform deletions. Also write an algorithm to insert an element into a BST.",
-              "unit": "Unit 3",
-              "type": "trees"
+              "text": "Explain the array implementation of stack ADT in detail.",
+              "unit": "Unit 2",
+              "type": "stacks"
             }
           ]
         },
@@ -400,14 +242,14 @@
             {
               "id": "q3a",
               "label": "a)",
-              "text": "Define AVL Trees. Explain its rotation operations with example. Construct AVL Tree by inserting the given data.",
-              "unit": "Unit 3",
-              "type": "trees"
+              "text": "Explain an algorithm to check whether the parentheses in an expression are balanced using a stack.",
+              "unit": "Unit 2",
+              "type": "stacks"
             },
             {
               "id": "q3b",
               "label": "b)",
-              "text": "Define Huffman tree and describe an algorithm to create a Huffman tree. Construct a Huffman Tree for data structures with its optimal code.",
+              "text": "How to insert and delete an element into a binary search tree and write down the code for the insertion.",
               "unit": "Unit 3",
               "type": "trees"
             }
@@ -418,18 +260,11 @@
           "questionNumber": "Q.4",
           "subQuestions": [
             {
-              "id": "q4a",
-              "label": "a)",
-              "text": "Explain in detail about the graph traversal techniques with suitable example.",
-              "unit": "Unit 4",
-              "type": "graphs"
-            },
-            {
-              "id": "q4b",
-              "label": "b)",
-              "text": "Consider the given undirected graph. Find the adjacency list representation and find a minimum cost spanning tree by Kruskal's algorithm.",
-              "unit": "Unit 4",
-              "type": "graphs"
+              "id": "q4",
+              "label": "",
+              "text": "Construct an expression tree for the expression (a+b*c)+((d*e+f)*g). Give the outputs when you apply inorder, preorder and postorder traversals.",
+              "unit": "Unit 3",
+              "type": "trees"
             }
           ]
         },
@@ -440,16 +275,16 @@
             {
               "id": "q5a",
               "label": "a)",
-              "text": "Write the algorithm to create a heap and sort the given elements using heap sort.",
-              "unit": "Unit 5",
-              "type": "sorting"
+              "text": "Compare Prim's algorithm with Kruskal's algorithm for finding minimum spanning trees.",
+              "unit": "Unit 4",
+              "type": "graphs"
             },
             {
               "id": "q5b",
               "label": "b)",
-              "text": "How do you implement a circular queue in C using array? Write routines to implement operations for it. Differentiate between Linear Queue and Circular Queue.",
-              "unit": "Unit 2",
-              "type": "queues"
+              "text": "Explain Breadth First Search algorithm with example.",
+              "unit": "Unit 4",
+              "type": "graphs"
             }
           ]
         },
@@ -458,11 +293,18 @@
           "questionNumber": "Q.6",
           "subQuestions": [
             {
-              "id": "q6",
-              "label": "",
-              "text": "Define doubly linked list. Describe an algorithm to insert an element at the beginning of the doubly linked list. Describe an algorithm to delete an element from the end of doubly linked list. Also explain the advantages and disadvantages of doubly linked list.",
-              "unit": "Unit 1",
-              "type": "linked-list"
+              "id": "q6a",
+              "label": "a)",
+              "text": "Create a binary search tree for the given numbers. Delete keys 10, 60 and 45 one after the other and show the trees at each step.",
+              "unit": "Unit 3",
+              "type": "trees"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Provide examples of real-world applications where hashing is used and explain any two example in details.",
+              "unit": "Unit 5",
+              "type": "hashing"
             }
           ]
         },
@@ -473,21 +315,14 @@
             {
               "id": "q7a",
               "label": "a)",
-              "text": "Given a 2D array A[-100:100, -5:50]. Find the address of element A[99, 49] considering the base address 10 and each element requires 4 bytes for storage. Follow row-major order.",
-              "unit": "Unit 1",
-              "type": "arrays"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "What do you understand by stable and in-place sorting?",
+              "text": "Explain how to sort the elements by using selection sort and derive time complexity for the same.",
               "unit": "Unit 5",
               "type": "sorting"
             },
             {
-              "id": "q7c",
-              "label": "c)",
-              "text": "Define Extended binary tree with example.",
+              "id": "q7b",
+              "label": "b)",
+              "text": "Illustrate with examples the operations of insertion and deletion in an AVL tree.",
               "unit": "Unit 3",
               "type": "trees"
             }
@@ -498,18 +333,11 @@
           "questionNumber": "Q.8",
           "subQuestions": [
             {
-              "id": "q8a",
-              "label": "a)",
-              "text": "Define hash function. Discuss various methods used for resolving hash collisions.",
-              "unit": "Unit 5",
-              "type": "hashing"
-            },
-            {
-              "id": "q8b",
-              "label": "b)",
-              "text": "Suppose multidimensional arrays A and B are declared. Find the length of each dimension, the number of elements, and address of the element B[3,3,3].",
-              "unit": "Unit 1",
-              "type": "arrays"
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes (any three): i) Merge Sort ii) Graph iii) B+ Tree iv) Dqueue",
+              "unit": "Unit 5/4/3/2",
+              "type": "mixed"
             }
           ]
         }
@@ -683,8 +511,8 @@
       ]
     },
     {
-      "exam": "December 2024",
-      "year": 2024,
+      "exam": "December 2023",
+      "year": 2023,
       "month": "December",
       "questions": [
         {
@@ -694,16 +522,16 @@
             {
               "id": "q1a",
               "label": "a)",
-              "text": "Explain the insertion operation in linked list. How nodes are inserted after a specified node?",
-              "unit": "Unit 1",
-              "type": "linked-list"
+              "text": "Construct a Binary tree for the given traversals (Postorder and Inorder). Also, find the Preorder traversal of the Binary tree so formed.",
+              "unit": "Unit 3",
+              "type": "trees"
             },
             {
               "id": "q1b",
               "label": "b)",
-              "text": "What are the drawbacks of single linked list? Write and explain the algorithm for search and modify operations in doubly linked list with example.",
-              "unit": "Unit 1",
-              "type": "linked-list"
+              "text": "How a tree can be stored in the memory? Explain with an example. Explain the advantages and disadvantages of the array representation of a tree.",
+              "unit": "Unit 3",
+              "type": "trees"
             }
           ]
         },
@@ -714,16 +542,16 @@
             {
               "id": "q2a",
               "label": "a)",
-              "text": "What are the limitations of queue? Explain the algorithms for various operations of circular queue.",
-              "unit": "Unit 2",
-              "type": "queues"
+              "text": "Construct an expression tree for the algebraic expression (3a-b)²(4c+2d)³.",
+              "unit": "Unit 3",
+              "type": "trees"
             },
             {
               "id": "q2b",
               "label": "b)",
-              "text": "Explain the array implementation of stack ADT in detail.",
-              "unit": "Unit 2",
-              "type": "stacks"
+              "text": "Explain the Binary Search Tree with an example. Make a BST for the given sequence and perform deletions. Also write an algorithm to insert an element into a BST.",
+              "unit": "Unit 3",
+              "type": "trees"
             }
           ]
         },
@@ -734,176 +562,16 @@
             {
               "id": "q3a",
               "label": "a)",
-              "text": "Explain an algorithm to check whether the parentheses in an expression are balanced using a stack.",
-              "unit": "Unit 2",
-              "type": "stacks"
+              "text": "Define AVL Trees. Explain its rotation operations with example. Construct AVL Tree by inserting the given data.",
+              "unit": "Unit 3",
+              "type": "trees"
             },
             {
               "id": "q3b",
               "label": "b)",
-              "text": "How to insert and delete an element into a binary search tree and write down the code for the insertion.",
+              "text": "Define Huffman tree and describe an algorithm to create a Huffman tree. Construct a Huffman Tree for data structures with its optimal code.",
               "unit": "Unit 3",
               "type": "trees"
-            }
-          ]
-        },
-        {
-          "id": "q4",
-          "questionNumber": "Q.4",
-          "subQuestions": [
-            {
-              "id": "q4",
-              "label": "",
-              "text": "Construct an expression tree for the expression (a+b*c)+((d*e+f)*g). Give the outputs when you apply inorder, preorder and postorder traversals.",
-              "unit": "Unit 3",
-              "type": "trees"
-            }
-          ]
-        },
-        {
-          "id": "q5",
-          "questionNumber": "Q.5",
-          "subQuestions": [
-            {
-              "id": "q5a",
-              "label": "a)",
-              "text": "Compare Prim's algorithm with Kruskal's algorithm for finding minimum spanning trees.",
-              "unit": "Unit 4",
-              "type": "graphs"
-            },
-            {
-              "id": "q5b",
-              "label": "b)",
-              "text": "Explain Breadth First Search algorithm with example.",
-              "unit": "Unit 4",
-              "type": "graphs"
-            }
-          ]
-        },
-        {
-          "id": "q6",
-          "questionNumber": "Q.6",
-          "subQuestions": [
-            {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Create a binary search tree for the given numbers. Delete keys 10, 60 and 45 one after the other and show the trees at each step.",
-              "unit": "Unit 3",
-              "type": "trees"
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "Provide examples of real-world applications where hashing is used and explain any two example in details.",
-              "unit": "Unit 5",
-              "type": "hashing"
-            }
-          ]
-        },
-        {
-          "id": "q7",
-          "questionNumber": "Q.7",
-          "subQuestions": [
-            {
-              "id": "q7a",
-              "label": "a)",
-              "text": "Explain how to sort the elements by using selection sort and derive time complexity for the same.",
-              "unit": "Unit 5",
-              "type": "sorting"
-            },
-            {
-              "id": "q7b",
-              "label": "b)",
-              "text": "Illustrate with examples the operations of insertion and deletion in an AVL tree.",
-              "unit": "Unit 3",
-              "type": "trees"
-            }
-          ]
-        },
-        {
-          "id": "q8",
-          "questionNumber": "Q.8",
-          "subQuestions": [
-            {
-              "id": "q8",
-              "label": "",
-              "text": "Write short notes (any three): i) Merge Sort ii) Graph iii) B+ Tree iv) Dqueue",
-              "unit": "Unit 5/4/3/2",
-              "type": "mixed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "exam": "December 2025",
-      "year": 2025,
-      "month": "December",
-      "isPredicted": true,
-      "questions": [
-        {
-          "id": "q1",
-          "questionNumber": "Q.1",
-          "subQuestions": [
-            {
-              "id": "q1a",
-              "label": "a)",
-              "text": "Explain the classification of data structures in detail.",
-              "unit": "Unit 1",
-              "type": "ds-basics",
-              "isPredicted": true
-            },
-            {
-              "id": "q1b",
-              "label": "b)",
-              "text": "Define Abstract Data Types (ADT). Explain the different operations performed on data structures and describe the criteria for cost estimation.",
-              "unit": "Unit 1",
-              "type": "ds-basics",
-              "isPredicted": true
-            }
-          ]
-        },
-        {
-          "id": "q2",
-          "questionNumber": "Q.2",
-          "subQuestions": [
-            {
-              "id": "q2a",
-              "label": "a)",
-              "text": "Describe the memory representation of a Singly Linked List. Write an algorithm to insert a node at a specific position in a linked list.",
-              "unit": "Unit 1",
-              "type": "linked-list",
-              "isPredicted": true
-            },
-            {
-              "id": "q2b",
-              "label": "b)",
-              "text": "Define Stack as an ADT. Explain the array and linked list implementation of stacks.",
-              "unit": "Unit 2",
-              "type": "stacks",
-              "isPredicted": true
-            }
-          ]
-        },
-        {
-          "id": "q3",
-          "questionNumber": "Q.3",
-          "subQuestions": [
-            {
-              "id": "q3a",
-              "label": "a)",
-              "text": "Explain the algorithm to convert an Infix expression to a Postfix notation using a stack.",
-              "unit": "Unit 2",
-              "type": "stacks",
-              "isPredicted": true
-            },
-            {
-              "id": "q3b",
-              "label": "b)",
-              "text": "Explain the concept of Queue simulation with a real-world example.",
-              "unit": "Unit 2",
-              "type": "queues",
-              "isPredicted": true
             }
           ]
         },
@@ -914,18 +582,16 @@
             {
               "id": "q4a",
               "label": "a)",
-              "text": "Define a Binary Search Tree (BST). Explain the algorithms for In-order, Pre-order, and Post-order traversal with an example.",
-              "unit": "Unit 3",
-              "type": "trees",
-              "isPredicted": true
+              "text": "Explain in detail about the graph traversal techniques with suitable example.",
+              "unit": "Unit 4",
+              "type": "graphs"
             },
             {
               "id": "q4b",
               "label": "b)",
-              "text": "What are AVL Trees? Explain the four types of rotations (LL, RR, LR, RL) used to balance an AVL tree.",
-              "unit": "Unit 3",
-              "type": "trees",
-              "isPredicted": true
+              "text": "Consider the given undirected graph. Find the adjacency list representation and find a minimum cost spanning tree by Kruskal's algorithm.",
+              "unit": "Unit 4",
+              "type": "graphs"
             }
           ]
         },
@@ -936,18 +602,16 @@
             {
               "id": "q5a",
               "label": "a)",
-              "text": "Define the following tree terminologies: Height, Depth, Degree of a node, and Forest.",
-              "unit": "Unit 3",
-              "type": "trees",
-              "isPredicted": true
+              "text": "Write the algorithm to create a heap and sort the given elements using heap sort.",
+              "unit": "Unit 5",
+              "type": "sorting"
             },
             {
               "id": "q5b",
               "label": "b)",
-              "text": "Explain the Adjacency Matrix and Adjacency List representations of a graph.",
-              "unit": "Unit 4",
-              "type": "graphs",
-              "isPredicted": true
+              "text": "How do you implement a circular queue in C using array? Write routines to implement operations for it. Differentiate between Linear Queue and Circular Queue.",
+              "unit": "Unit 2",
+              "type": "queues"
             }
           ]
         },
@@ -956,20 +620,11 @@
           "questionNumber": "Q.6",
           "subQuestions": [
             {
-              "id": "q6a",
-              "label": "a)",
-              "text": "Describe the Depth First Search (DFS) and Breadth First Search (BFS) algorithms for graph traversal with examples.",
-              "unit": "Unit 4",
-              "type": "graphs",
-              "isPredicted": true
-            },
-            {
-              "id": "q6b",
-              "label": "b)",
-              "text": "What is a Minimum Spanning Tree (MST)? Explain Kruskal's or Prim's algorithm to find the MST of a weighted graph.",
-              "unit": "Unit 4",
-              "type": "graphs",
-              "isPredicted": true
+              "id": "q6",
+              "label": "",
+              "text": "Define doubly linked list. Describe an algorithm to insert an element at the beginning of the doubly linked list. Describe an algorithm to delete an element from the end of doubly linked list. Also explain the advantages and disadvantages of doubly linked list.",
+              "unit": "Unit 1",
+              "type": "linked-list"
             }
           ]
         },
@@ -980,18 +635,23 @@
             {
               "id": "q7a",
               "label": "a)",
-              "text": "Explain the Quick Sort algorithm with suitable example.",
-              "unit": "Unit 5",
-              "type": "sorting",
-              "isPredicted": true
+              "text": "Given a 2D array A[-100:100, -5:50]. Find the address of element A[99, 49] considering the base address 10 and each element requires 4 bytes for storage. Follow row-major order.",
+              "unit": "Unit 1",
+              "type": "arrays"
             },
             {
               "id": "q7b",
               "label": "b)",
-              "text": "Explain Binary Search with an example.",
+              "text": "What do you understand by stable and in-place sorting?",
               "unit": "Unit 5",
-              "type": "searching",
-              "isPredicted": true
+              "type": "sorting"
+            },
+            {
+              "id": "q7c",
+              "label": "c)",
+              "text": "Define Extended binary tree with example.",
+              "unit": "Unit 3",
+              "type": "trees"
             }
           ]
         },
@@ -1000,12 +660,352 @@
           "questionNumber": "Q.8",
           "subQuestions": [
             {
-              "id": "q8",
-              "label": "",
-              "text": "Write short notes on any Two: (a) Circular Linked Lists (b) Linear Probing and Chaining (c) B+ Trees (d) Dijkstra's shortest path algorithm",
-              "unit": "Unit 1/5/3/4",
-              "type": "mixed",
-              "isPredicted": true
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define hash function. Discuss various methods used for resolving hash collisions.",
+              "unit": "Unit 5",
+              "type": "hashing"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Suppose multidimensional arrays A and B are declared. Find the length of each dimension, the number of elements, and address of the element B[3,3,3].",
+              "unit": "Unit 1",
+              "type": "arrays"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Abstract data type? Explain with the help of example.",
+              "unit": "Unit 1",
+              "type": "ds-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate array and linked list.",
+              "unit": "Unit 1",
+              "type": "ds-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the application of linked list. And also write the algorithm how to add two polynomials using linked list.",
+              "unit": "Unit 1",
+              "type": "linked-list"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write a program in C to insert a node at any specified position in doubly linked list.",
+              "unit": "Unit 1",
+              "type": "linked-list"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the difference between data and information? Give one example of each.",
+              "unit": "Unit 1",
+              "type": "ds-basics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How to represent 2-D array in memory? Explain with the help of example.",
+              "unit": "Unit 1",
+              "type": "arrays"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write an algorithm to convert infix expression into postfix form using Stack. Also evaluate the given postfix form using stack.",
+              "unit": "Unit 2",
+              "type": "stacks"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a program in 'C' to implementation of QUEUE.",
+              "unit": "Unit 2",
+              "type": "queues"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the differences between: i) Height and depth ii) Order and degree.",
+              "unit": "Unit 3",
+              "type": "trees"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Show that the maximum number of nodes in a binary tree of height h is 2^(h+1)-1.",
+              "unit": "Unit 3",
+              "type": "trees"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Construct the steps to configure a B-tree of order 5 for the given data.",
+              "unit": "Unit 3",
+              "type": "trees"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Dijkstra Algorithm with the help of example.",
+              "unit": "Unit 4",
+              "type": "graphs"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write a Heap sort algorithm. Use Heap sort algorithm to sort the following elements: D A T A S T R U C T U R E S.",
+              "unit": "Unit 5",
+              "type": "sorting"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Differentiate internal sorting and external sorting. Also enlists the name of two sorting techniques of each.",
+              "unit": "Unit 5",
+              "type": "sorting"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Binary search is more efficient than Linear search. Justify your answer.",
+              "unit": "Unit 5",
+              "type": "searching"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short note on Hashing and Indexing.",
+              "unit": "Unit 5",
+              "type": "hashing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Mention the types of data. Write all built-in data types in C.",
+              "unit": "Unit 1",
+              "type": "ds-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What do you mean by data structure and mention its types?",
+              "unit": "Unit 1",
+              "type": "ds-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you mean by an algorithm? Write the criteria and characteristics of an algorithm.",
+              "unit": "Unit 1",
+              "type": "algorithm"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Demonstrate the efficiency of an algorithm.",
+              "unit": "Unit 1",
+              "type": "algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw an AVL tree on following inputs, assume that tree is initially empty: 485, 575, 655, 745, 830, 910, 100, 110, 520, 130, 340, 450, 365, 525, 204, 155, 130, 35.",
+              "unit": "Unit 3",
+              "type": "trees"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare and Contrast the Spanning tree and Minimum Spanning Tree.",
+              "unit": "Unit 4",
+              "type": "graphs"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Design an efficient algorithm for finding the longest directed path from a vertex s to a vertex of an acyclic weighted digraph G. Specify the graph representation used and any auxiliary data structures used. Analyze the time complexity of your algorithm.",
+              "unit": "Unit 4",
+              "type": "graphs"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Reconstruct the proof of correctness of the Bellman-Ford Algorithm. How Bellman-Ford algorithm able to work with negative weight?",
+              "unit": "Unit 4",
+              "type": "graphs"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Determine the addressing formula to find the location of (i,j)th element of an m×n matrix stored in column-major order. Consider the linear arrays AAA[5:50], BBB[-5:10] and CCC[1:8]. i) Find the number of elements in each array. ii) Suppose base(AAA)=300 and w=4 words per memory cell for AAA. Find the address of AAA[15], AAA[35], and AAA[55].",
+              "unit": "Unit 1",
+              "type": "arrays"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is a singly linked list? Write its advantage and application and explain its node structure. Write the algorithm and program in C to create and traverse a singly linked list.",
+              "unit": "Unit 1",
+              "type": "linked-list"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "The problem of finding a subset T of the edges of a connected graph G such that all nodes remain connected when only the edges of T are used, and the sum of weights of edges in T is as small as possible, still makes sense even if G has edges with negative weights. Adapt either Kruskal's or Prim's algorithm to work on a graph that may include negative weights.",
+              "unit": "Unit 4",
+              "type": "graphs"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain heap and radix sort with the algorithm.",
+              "unit": "Unit 5",
+              "type": "sorting"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How to measure the complexity of an algorithm, also discuss various types of notation for this purpose?",
+              "unit": "Unit 1",
+              "type": "algorithm"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How doubly linked list is better than a linked list? Justify with examples.",
+              "unit": "Unit 1",
+              "type": "linked-list"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Draw the directed graph that corresponds to the given adjacency matrix.",
+              "unit": "Unit 4",
+              "type": "graphs"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explore all types of operations that can be performed on a linked list.",
+              "unit": "Unit 1",
+              "type": "linked-list"
             }
           ]
         }

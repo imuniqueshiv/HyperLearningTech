@@ -1,83 +1,118 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { User } from "lucide-react";
 
 import { AuthInput } from "@/components/auth/auth-input";
 import { OAuthButton } from "@/components/auth/oauth-button";
 
+import { branches } from "@/lib/data/branches";
+
+const BRANCHES = branches.map((branch) => {
+  if (branch.id === "common") return branch.name;
+  let acronym = branch.id.toUpperCase();
+  if (branch.id === "civil") acronym = "CE";
+  if (branch.id === "ec") acronym = "ECE";
+  return `${branch.name} (${acronym})`;
+});
+
+const UNIVERSITIES = [
+  "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+  "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
+  "Rajasthan Technical University (RTU)",
+  "Other",
+];
+
 export default function SignUpPage() {
   return (
-    <div className="flex flex-col gap-6 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
-      <div className="flex flex-col gap-2 text-center lg:text-left">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground">
+    <div className="flex flex-col gap-4 w-full max-w-[360px] mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
+      <div className="flex flex-col gap-2 text-center items-center mb-3">
+        <div className="relative flex h-16 w-16 items-center justify-center rounded-[1.25rem] border border-black/5 bg-gradient-to-b from-white to-zinc-50 shadow-sm dark:border-white/10 dark:from-zinc-900 dark:to-zinc-950 mb-2">
+          <div className="absolute inset-0 rounded-[1.25rem] ring-1 ring-inset ring-black/5 dark:ring-white/5" />
+          <User className="relative z-10 h-7 w-7 text-zinc-700 dark:text-zinc-300" />
+        </div>
+        <h1 className="text-[22px] font-semibold tracking-tight text-foreground">
           Create an account
         </h1>
-        <p className="text-muted-foreground text-sm">
-          Join thousands of students learning smarter
-        </p>
       </div>
 
-      <form className="flex flex-col gap-5 mt-2">
-        <div className="grid grid-cols-2 gap-4">
+      <form className="flex flex-col gap-3">
+        <div className="grid grid-cols-2 gap-3">
           <AuthInput
             id="firstName"
             type="text"
-            label="First name"
-            placeholder="John"
+            label=""
+            placeholder="First name"
           />
           <AuthInput
             id="lastName"
             type="text"
-            label="Last name"
-            placeholder="Doe"
+            label=""
+            placeholder="Last name"
           />
         </div>
 
         <AuthInput
           id="email"
           type="email"
-          label="Email address"
-          placeholder="name@student.university.edu"
+          label=""
+          placeholder="Email address"
+        />
+
+        <AuthInput
+          id="university"
+          type="text"
+          label=""
+          placeholder="University (e.g. RGPV, AKTU, RTU)"
+          suggestions={UNIVERSITIES}
+        />
+
+        <AuthInput
+          id="branch"
+          type="text"
+          label=""
+          placeholder="Engineering Branch"
+          suggestions={BRANCHES}
         />
 
         <AuthInput
           id="password"
           type="password"
-          label="Password"
-          placeholder="••••••••"
+          label=""
+          placeholder="Password"
           hint="Must be at least 8 characters long."
         />
 
         <button
           type="button"
-          className="group mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-4 py-3.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-[#1E40AF] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] focus-visible:ring-offset-2 dark:bg-blue-600 dark:hover:bg-blue-700"
+          className="mt-1 flex w-full items-center justify-center rounded-full bg-[#0064e0] px-4 py-3 text-[15px] font-bold text-white transition-all hover:bg-[#0054c2] focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/20"
         >
-          Create Account
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          Sign Up
         </button>
       </form>
 
-      <div className="relative mt-2">
+      <div className="relative mt-3 mb-1">
         <div className="absolute inset-0 flex items-center">
-          <div className="w-full border-t border-border" />
+          <div className="w-full border-t border-border/50" />
         </div>
-        <div className="relative flex justify-center text-xs">
-          <span className="bg-background px-3 text-muted-foreground">
-            Or sign up with
+        <div className="relative flex justify-center text-xs font-semibold uppercase tracking-wider">
+          <span className="bg-zinc-50 dark:bg-[#0A0A0A] px-4 text-muted-foreground">
+            Or
           </span>
         </div>
       </div>
 
       <OAuthButton />
 
-      <p className="text-center text-sm text-muted-foreground mt-2">
-        Already have an account?{" "}
+      <div className="mt-3 flex w-full justify-center rounded-xl border border-zinc-200 dark:border-white/10 p-4 text-sm shadow-sm bg-white dark:bg-white/[0.02]">
+        <span className="text-muted-foreground mr-1.5">
+          Already have an account?
+        </span>
         <Link
           href="/sign-in"
-          className="font-semibold text-[#1D4ED8] transition-colors hover:text-[#1E40AF] hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          className="font-semibold text-[#0064e0] hover:underline"
         >
-          Sign in
+          Log in
         </Link>
-      </p>
+      </div>
     </div>
   );
 }
