@@ -89,7 +89,7 @@ export default function Stats() {
         {/* Light Mode Blobs - Premium prominent pastel mesh */}
         <div className="absolute -left-[10%] top-[20%] h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
         <div className="absolute -right-[10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
-        
+
         {/* Dark Mode Blobs */}
         <div className="hidden dark:block absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-600/15 blur-[120px]" />
         <div className="hidden dark:block absolute bottom-[-20%] right-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-600/15 blur-[120px]" />
@@ -133,18 +133,21 @@ export default function Stats() {
             Hyper Learning brings together previous year questions, AI-powered
             explanations, syllabus mapping, and smart revision tools.
           </motion.p>
-          
+
           {/* Enhanced Stats Cards */}
-          <motion.div variants={itemVariants} className="mt-8 lg:mt-10 grid w-full gap-3 sm:gap-4 grid-cols-2 lg:grid-cols-4">
+          <motion.div
+            variants={itemVariants}
+            className="mt-8 lg:mt-10 grid w-full gap-3 sm:gap-4 grid-cols-2 lg:grid-cols-4"
+          >
             {landingStats.map((stat, i) => {
               const Icon = stat.icon;
               const { num, suffix } = getNumberInfo(stat.title);
-              
+
               const solidColors = [
-                "bg-[#3B82F6] shadow-blue-500/20",    // Solid Blue
-                "bg-[#EC4899] shadow-pink-500/20",    // Solid Pink
-                "bg-[#06B6D4] shadow-cyan-500/20",    // Solid Cyan
-                "bg-[#8B5CF6] shadow-purple-500/20"   // Solid Purple
+                "bg-[#3B82F6] shadow-blue-500/20", // Solid Blue
+                "bg-[#EC4899] shadow-pink-500/20", // Solid Pink
+                "bg-[#06B6D4] shadow-cyan-500/20", // Solid Cyan
+                "bg-[#8B5CF6] shadow-purple-500/20", // Solid Purple
               ];
 
               return (
@@ -153,10 +156,14 @@ export default function Stats() {
                   className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] border border-transparent bg-white p-4 sm:p-5 md:p-6 text-left shadow-[0_4px_20px_rgb(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:scale-[1.02] hover:-translate-y-1 hover:border-indigo-400/50 hover:bg-white hover:shadow-[0_20px_40px_-12px_rgba(99,102,241,0.25)] dark:border-white/[0.08] dark:bg-[#0f172a]/60 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] dark:hover:border-indigo-500/[0.2] dark:hover:bg-[#1e293b]/80 flex flex-col justify-between"
                 >
                   <div className="absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full ${solidColors[i % 4].split(' ')[0]} opacity-5 dark:opacity-20 blur-2xl`} />
+                    <div
+                      className={`absolute -right-8 -top-8 h-24 w-24 rounded-full ${solidColors[i % 4].split(" ")[0]} opacity-5 dark:opacity-20 blur-2xl`}
+                    />
                   </div>
 
-                  <div className={`mb-3 sm:mb-4 inline-flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-[10px] sm:rounded-[12px] text-white shadow-sm ${solidColors[i % 4]} dark:bg-gradient-to-br dark:from-white/10 dark:to-white/5 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] dark:border dark:border-white/10`}>
+                  <div
+                    className={`mb-3 sm:mb-4 inline-flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-[10px] sm:rounded-[12px] text-white shadow-sm ${solidColors[i % 4]} dark:bg-gradient-to-br dark:from-white/10 dark:to-white/5 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] dark:border dark:border-white/10`}
+                  >
                     <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform duration-500 group-hover:scale-110" />
                   </div>
 
@@ -187,10 +194,12 @@ export default function Stats() {
                   <BrainCircuit className="h-4 w-4" />
                 </div>
                 <div>
-                  <h4 className="text-[14px] sm:text-[16px] font-[800] text-slate-900 dark:text-white leading-tight">AI Tutor</h4>
+                  <h4 className="text-[14px] sm:text-[16px] font-[800] text-slate-900 dark:text-white leading-tight">
+                    AI Tutor
+                  </h4>
                   <p className="mt-0.5 md:mt-1.5 text-[12px] sm:text-[13px] leading-[1.5] sm:leading-[1.6] font-[500] text-slate-600 dark:text-slate-400">
-                    Interactive learning with topic-based explanations, follow-up
-                    questions, and concept clarification.
+                    Interactive learning with topic-based explanations,
+                    follow-up questions, and concept clarification.
                   </p>
                 </div>
               </div>
@@ -200,7 +209,9 @@ export default function Stats() {
                   <FileText className="h-4 w-4" />
                 </div>
                 <div>
-                  <h4 className="text-[14px] sm:text-[16px] font-[800] text-slate-900 dark:text-white leading-tight">Mapped PYQs</h4>
+                  <h4 className="text-[14px] sm:text-[16px] font-[800] text-slate-900 dark:text-white leading-tight">
+                    Mapped PYQs
+                  </h4>
                   <p className="mt-0.5 md:mt-1.5 text-[12px] sm:text-[13px] leading-[1.5] sm:leading-[1.6] font-[500] text-slate-600 dark:text-slate-400">
                     Previous year questions connected directly with syllabus
                     topics, saving your valuable time.
@@ -213,10 +224,12 @@ export default function Stats() {
                   <CheckCircle2 className="h-4 w-4" />
                 </div>
                 <div>
-                  <h4 className="text-[14px] sm:text-[16px] font-[800] text-slate-900 dark:text-white leading-tight">Smart Revision</h4>
+                  <h4 className="text-[14px] sm:text-[16px] font-[800] text-slate-900 dark:text-white leading-tight">
+                    Smart Revision
+                  </h4>
                   <p className="mt-0.5 md:mt-1.5 text-[12px] sm:text-[13px] leading-[1.5] sm:leading-[1.6] font-[500] text-slate-600 dark:text-slate-400">
-                    Learn faster through structured notes, concise summaries, and
-                    targeted exam-focused content.
+                    Learn faster through structured notes, concise summaries,
+                    and targeted exam-focused content.
                   </p>
                 </div>
               </div>

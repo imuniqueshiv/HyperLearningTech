@@ -18,13 +18,13 @@ export default function Testimonials() {
           100% { transform: translate3d(-50%, 0, 0); }
         }
       `}</style>
-      
+
       {/* Premium High-Contrast Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Light Mode Blobs - Premium prominent pastel mesh */}
         <div className="absolute -left-[10%] top-[20%] h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
         <div className="absolute -right-[10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
-        
+
         {/* Dark Mode Blobs */}
         <div className="hidden dark:block absolute left-[10%] top-[20%] h-[400px] w-[400px] rounded-full bg-blue-600/10 blur-[100px]" />
         <div className="hidden dark:block absolute right-[10%] bottom-[20%] h-[400px] w-[400px] rounded-full bg-indigo-600/10 blur-[100px]" />
@@ -76,17 +76,19 @@ export default function Testimonials() {
               )}
             </button>
           </div>
-          
+
           <div
             className="flex gap-5"
-            style={{ 
+            style={{
               width: "max-content",
-              animation: shouldReduceMotion ? "none" : "custom-marquee 40s linear infinite",
+              animation: shouldReduceMotion
+                ? "none"
+                : "custom-marquee 40s linear infinite",
               animationPlayState: isPaused ? "paused" : "running",
               willChange: "transform",
               backfaceVisibility: "hidden",
               WebkitBackfaceVisibility: "hidden",
-              transform: "translateZ(0)"
+              transform: "translateZ(0)",
             }}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
@@ -105,7 +107,10 @@ export default function Testimonials() {
                   <div className="mb-4 flex items-center justify-between">
                     {/* Quote Icon */}
                     <div className="inline-flex h-8 w-8 items-center justify-center rounded-[10px] bg-[#3B82F6] text-white shadow-sm shadow-blue-500/20 dark:bg-gradient-to-br dark:from-white/10 dark:to-white/5 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] dark:border dark:border-white/10">
-                      <Quote className="h-3.5 w-3.5 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6" aria-hidden="true" />
+                      <Quote
+                        className="h-3.5 w-3.5 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6"
+                        aria-hidden="true"
+                      />
                     </div>
 
                     {/* Rating */}
@@ -158,14 +163,35 @@ export default function Testimonials() {
           </div>
 
           <div className="group relative z-10 flex flex-col items-center sm:flex-row sm:gap-6 rounded-[24px] sm:rounded-full border border-slate-200/80 bg-white/70 px-6 py-5 sm:px-8 sm:py-3.5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-2xl transition-all hover:scale-[1.02] dark:border-white/[0.08] dark:bg-[#0A0F1C]/70 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_15px_40px_rgba(0,0,0,0.4)]">
-            
             {/* Avatar Cluster */}
             <div className="flex -space-x-2.5 mb-4 sm:mb-0">
-               <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-blue-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4" alt="avatar" /></div>
-               <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-pink-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1 delay-75"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka&backgroundColor=ffdfbf" alt="avatar" /></div>
-               <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-emerald-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1 delay-100"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John&backgroundColor=c0aede" alt="avatar" /></div>
-               <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-indigo-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1 delay-150"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria&backgroundColor=e6e6fa" alt="avatar" /></div>
-               <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white text-[11px] font-bold shadow-inner z-10 transition-transform duration-300 group-hover:-translate-y-1 delay-200">500+</div>
+              <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-blue-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4"
+                  alt="avatar"
+                />
+              </div>
+              <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-pink-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1 delay-75">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka&backgroundColor=ffdfbf"
+                  alt="avatar"
+                />
+              </div>
+              <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-emerald-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1 delay-100">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=John&backgroundColor=c0aede"
+                  alt="avatar"
+                />
+              </div>
+              <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-indigo-100 flex items-center justify-center overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1 delay-150">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria&backgroundColor=e6e6fa"
+                  alt="avatar"
+                />
+              </div>
+              <div className="h-10 w-10 rounded-full border-2 border-white dark:border-[#0A0F1C] bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white text-[11px] font-bold shadow-inner z-10 transition-transform duration-300 group-hover:-translate-y-1 delay-200">
+                500+
+              </div>
             </div>
 
             {/* Separator line */}
@@ -173,17 +199,26 @@ export default function Testimonials() {
 
             {/* Stars and Text */}
             <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-               <div className="flex items-center gap-2.5 mb-1.5">
-                 <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-3.5 w-3.5 fill-[#F59E0B] text-[#F59E0B] drop-shadow-[0_0_4px_rgba(245,158,11,0.6)]" />
-                    ))}
-                 </div>
-                 <span className="text-[13px] font-[800] text-slate-900 dark:text-white leading-none tracking-tight">4.9/5 Rating</span>
-               </div>
-               <p className="text-[13px] font-[500] text-slate-500 dark:text-slate-300">
-                  Join <span className="font-[800] bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-cyan-300 bg-clip-text text-transparent">500+</span> engineers already learning
-               </p>
+              <div className="flex items-center gap-2.5 mb-1.5">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="h-3.5 w-3.5 fill-[#F59E0B] text-[#F59E0B] drop-shadow-[0_0_4px_rgba(245,158,11,0.6)]"
+                    />
+                  ))}
+                </div>
+                <span className="text-[13px] font-[800] text-slate-900 dark:text-white leading-none tracking-tight">
+                  4.9/5 Rating
+                </span>
+              </div>
+              <p className="text-[13px] font-[500] text-slate-500 dark:text-slate-300">
+                Join{" "}
+                <span className="font-[800] bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-cyan-300 bg-clip-text text-transparent">
+                  500+
+                </span>{" "}
+                engineers already learning
+              </p>
             </div>
           </div>
         </motion.div>

@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 import { motion, Variants, AnimatePresence } from "framer-motion";
-import { ChevronDown, Sparkles, ArrowRight, MessageCircleQuestion } from "lucide-react";
+import {
+  ChevronDown,
+  Sparkles,
+  ArrowRight,
+  MessageCircleQuestion,
+} from "lucide-react";
 import { landingFaqs as faqs } from "@/lib/data/landing";
 import Link from "next/link";
 
@@ -39,7 +44,7 @@ export default function FAQ() {
         {/* Light Mode Blobs - Premium prominent pastel mesh */}
         <div className="absolute -left-[10%] top-[20%] h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
         <div className="absolute -right-[10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
-        
+
         {/* Dark Mode Blobs */}
         <div className="hidden dark:block absolute left-[20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-[120px]" />
       </div>
@@ -90,13 +95,16 @@ export default function FAQ() {
           >
             {/* Soft backdrop glow */}
             <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-b from-slate-200/50 to-slate-100/10 opacity-50 blur-xl transition duration-500 group-hover/card:opacity-100 dark:from-white/10 dark:to-transparent" />
-            
+
             <div className="relative w-full overflow-hidden rounded-[24px] border border-transparent bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:border-white/[0.08] dark:bg-[#0f172a]/60 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] dark:backdrop-blur-2xl">
               <div className="divide-y divide-slate-100 dark:divide-white/10">
                 {faqs.map((faq, index) => {
                   const isOpen = openIndex === index;
                   return (
-                    <div key={index} className={`transition-colors duration-500 ease-out ${isOpen ? 'bg-slate-50/50 dark:bg-white/[0.03]' : 'hover:bg-slate-50/50 dark:hover:bg-white/[0.02]'}`}>
+                    <div
+                      key={index}
+                      className={`transition-colors duration-500 ease-out ${isOpen ? "bg-slate-50/50 dark:bg-white/[0.03]" : "hover:bg-slate-50/50 dark:hover:bg-white/[0.02]"}`}
+                    >
                       <button
                         onClick={() => setOpenIndex(isOpen ? null : index)}
                         className="flex w-full items-center justify-between px-5 py-4 md:px-8 md:py-7 text-left outline-none group"
@@ -131,7 +139,10 @@ export default function FAQ() {
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                            transition={{
+                              duration: 0.4,
+                              ease: [0.22, 1, 0.36, 1],
+                            }}
                           >
                             <div className="px-5 pb-5 pt-0 md:px-8 md:pb-8 text-[14px] md:text-[15px] leading-[1.6] md:leading-[1.75] font-[500] text-slate-600 dark:text-slate-400">
                               {faq.answer}

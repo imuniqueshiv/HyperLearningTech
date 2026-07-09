@@ -37,7 +37,7 @@ export default function Features() {
         {/* Light Mode Blobs - Premium prominent pastel mesh */}
         <div className="absolute -left-[10%] top-[20%] h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-cyan-400/15 via-blue-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
         <div className="absolute -right-[10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-gradient-to-bl from-fuchsia-400/15 via-purple-500/10 to-transparent blur-[120px] dark:hidden pointer-events-none" />
-        
+
         {/* Dark Mode Blobs */}
         <div className="hidden dark:block absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-blue-600/15 blur-[120px]" />
         <div className="hidden dark:block absolute bottom-[10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-600/15 blur-[120px]" />
@@ -82,17 +82,56 @@ export default function Features() {
           </motion.p>
 
           {/* Feature Cards Grid */}
-          <motion.div variants={itemVariants} className="mt-8 lg:mt-10 flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 lg:gap-5 divide-y sm:divide-y-0 divide-slate-100 sm:divide-transparent bg-white sm:bg-transparent rounded-[24px] sm:rounded-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:shadow-none border border-slate-100 sm:border-transparent overflow-hidden sm:overflow-visible dark:border-white/[0.08] dark:divide-white/[0.08] dark:bg-[#0f172a]/40 sm:dark:bg-transparent">
+          <motion.div
+            variants={itemVariants}
+            className="mt-8 lg:mt-10 flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 lg:gap-5 divide-y sm:divide-y-0 divide-slate-100 sm:divide-transparent bg-white sm:bg-transparent rounded-[24px] sm:rounded-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:shadow-none border border-slate-100 sm:border-transparent overflow-hidden sm:overflow-visible dark:border-white/[0.08] dark:divide-white/[0.08] dark:bg-[#0f172a]/40 sm:dark:bg-transparent"
+          >
             {landingFeatures.map((feature, i) => {
               const Icon = feature.icon;
-              
+
               const theme = [
-                { id: "purple", bg: "bg-purple-100 dark:bg-purple-500/10", border: "border-purple-200 dark:border-purple-500/20", text: "text-purple-600 dark:text-purple-400", glow: "bg-purple-500/20" },
-                { id: "pink", bg: "bg-pink-100 dark:bg-pink-500/10", border: "border-pink-200 dark:border-pink-500/20", text: "text-pink-600 dark:text-pink-400", glow: "bg-pink-500/20" },
-                { id: "cyan", bg: "bg-cyan-100 dark:bg-cyan-500/10", border: "border-cyan-200 dark:border-cyan-500/20", text: "text-cyan-600 dark:text-cyan-400", glow: "bg-cyan-500/20" },
-                { id: "emerald", bg: "bg-emerald-100 dark:bg-emerald-500/10", border: "border-emerald-200 dark:border-emerald-500/20", text: "text-emerald-600 dark:text-emerald-400", glow: "bg-emerald-500/20" },
-                { id: "orange", bg: "bg-orange-100 dark:bg-orange-500/10", border: "border-orange-200 dark:border-orange-500/20", text: "text-orange-600 dark:text-orange-400", glow: "bg-orange-500/20" },
-                { id: "blue", bg: "bg-blue-100 dark:bg-blue-500/10", border: "border-blue-200 dark:border-blue-500/20", text: "text-blue-600 dark:text-blue-400", glow: "bg-blue-500/20" }
+                {
+                  id: "purple",
+                  bg: "bg-purple-100 dark:bg-purple-500/10",
+                  border: "border-purple-200 dark:border-purple-500/20",
+                  text: "text-purple-600 dark:text-purple-400",
+                  glow: "bg-purple-500/20",
+                },
+                {
+                  id: "pink",
+                  bg: "bg-pink-100 dark:bg-pink-500/10",
+                  border: "border-pink-200 dark:border-pink-500/20",
+                  text: "text-pink-600 dark:text-pink-400",
+                  glow: "bg-pink-500/20",
+                },
+                {
+                  id: "cyan",
+                  bg: "bg-cyan-100 dark:bg-cyan-500/10",
+                  border: "border-cyan-200 dark:border-cyan-500/20",
+                  text: "text-cyan-600 dark:text-cyan-400",
+                  glow: "bg-cyan-500/20",
+                },
+                {
+                  id: "emerald",
+                  bg: "bg-emerald-100 dark:bg-emerald-500/10",
+                  border: "border-emerald-200 dark:border-emerald-500/20",
+                  text: "text-emerald-600 dark:text-emerald-400",
+                  glow: "bg-emerald-500/20",
+                },
+                {
+                  id: "orange",
+                  bg: "bg-orange-100 dark:bg-orange-500/10",
+                  border: "border-orange-200 dark:border-orange-500/20",
+                  text: "text-orange-600 dark:text-orange-400",
+                  glow: "bg-orange-500/20",
+                },
+                {
+                  id: "blue",
+                  bg: "bg-blue-100 dark:bg-blue-500/10",
+                  border: "border-blue-200 dark:border-blue-500/20",
+                  text: "text-blue-600 dark:text-blue-400",
+                  glow: "bg-blue-500/20",
+                },
               ];
               const t = theme[i % 6];
 
@@ -103,12 +142,21 @@ export default function Features() {
                 >
                   {/* Subtle hover glow behind icon (hidden on mobile to keep list clean) */}
                   <div className="hidden sm:block absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none">
-                    <div className={`absolute -left-8 -top-8 h-32 w-32 rounded-full ${t.glow} blur-3xl`} />
+                    <div
+                      className={`absolute -left-8 -top-8 h-32 w-32 rounded-full ${t.glow} blur-3xl`}
+                    />
                   </div>
 
-                  <div className={`relative shrink-0 sm:mb-6 inline-flex h-[42px] w-[42px] sm:h-14 sm:w-14 items-center justify-center rounded-[12px] sm:rounded-[16px] border ${t.bg} ${t.border} transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:scale-110 group-hover:rotate-3 shadow-sm`}>
-                    <div className={`absolute inset-0 rounded-[12px] sm:rounded-[16px] ${t.glow} blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                    <Icon className={`relative z-10 h-5 w-5 sm:h-6 sm:w-6 ${t.text}`} strokeWidth={2.2} />
+                  <div
+                    className={`relative shrink-0 sm:mb-6 inline-flex h-[42px] w-[42px] sm:h-14 sm:w-14 items-center justify-center rounded-[12px] sm:rounded-[16px] border ${t.bg} ${t.border} transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:scale-110 group-hover:rotate-3 shadow-sm`}
+                  >
+                    <div
+                      className={`absolute inset-0 rounded-[12px] sm:rounded-[16px] ${t.glow} blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                    />
+                    <Icon
+                      className={`relative z-10 h-5 w-5 sm:h-6 sm:w-6 ${t.text}`}
+                      strokeWidth={2.2}
+                    />
                   </div>
 
                   <div className="flex flex-col flex-grow pt-1 sm:pt-0">

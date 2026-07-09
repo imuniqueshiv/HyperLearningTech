@@ -1,6 +1,14 @@
 "use client";
 
-import { BrainCircuit, ArrowRight, CheckCircle2, FileText, Download, Code2, GraduationCap } from "lucide-react";
+import {
+  BrainCircuit,
+  ArrowRight,
+  CheckCircle2,
+  FileText,
+  Download,
+  Code2,
+  GraduationCap,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export interface ChatMessage {
@@ -16,7 +24,12 @@ export interface ChatMockupProps {
   id: number;
 }
 
-export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProps) {
+export default function ChatMockup({
+  topic,
+  messages,
+  pyqs,
+  id,
+}: ChatMockupProps) {
   return (
     <div className="relative w-full max-w-[440px] origin-top overflow-hidden rounded-[20px] md:rounded-[24px] border border-indigo-100 dark:border-white/[0.06] bg-gradient-to-br from-indigo-50 via-white/80 to-purple-50 dark:bg-none dark:bg-[#0f172a]/80 shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] backdrop-blur-2xl font-sans">
       {/* Header */}
@@ -65,7 +78,9 @@ export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProp
                   <div
                     key={idx}
                     className={`flex ${
-                      msg.type === "user" ? "justify-end" : "flex-col items-start gap-1.5 md:gap-2"
+                      msg.type === "user"
+                        ? "justify-end"
+                        : "flex-col items-start gap-1.5 md:gap-2"
                     }`}
                   >
                     {msg.type === "user" ? (
@@ -91,7 +106,7 @@ export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProp
                               {msg.text}
                             </p>
                           )}
-                          
+
                           {/* Rich UI Components */}
                           {msg.uiComponent === "notes" && (
                             <div className="mt-2 flex items-center justify-between rounded-xl border border-indigo-100 bg-white p-3 dark:border-white/10 dark:bg-[#0f172a]/50 shadow-sm">
@@ -100,8 +115,12 @@ export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProp
                                   <FileText className="h-5 w-5" />
                                 </div>
                                 <div>
-                                  <p className="text-[13px] font-bold text-slate-900 dark:text-white">Deadlocks_Revision.pdf</p>
-                                  <p className="text-[11px] font-medium text-slate-500 dark:text-slate-400">RGPV Syllabus Mapped • 2.4 MB</p>
+                                  <p className="text-[13px] font-bold text-slate-900 dark:text-white">
+                                    Deadlocks_Revision.pdf
+                                  </p>
+                                  <p className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                                    RGPV Syllabus Mapped • 2.4 MB
+                                  </p>
                                 </div>
                               </div>
                               <div className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-slate-50 hover:bg-slate-100 dark:bg-white/5 dark:hover:bg-white/10 transition-colors">
@@ -114,19 +133,27 @@ export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProp
                             <div className="mt-2 space-y-2 rounded-xl border border-emerald-100 bg-emerald-50/50 p-3 dark:border-emerald-500/20 dark:bg-emerald-500/10">
                               <div className="flex items-center gap-2 mb-3">
                                 <GraduationCap className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-                                <span className="text-[12px] font-bold text-emerald-700 dark:text-emerald-300">10-Mark Blueprint Guarantee</span>
+                                <span className="text-[12px] font-bold text-emerald-700 dark:text-emerald-300">
+                                  10-Mark Blueprint Guarantee
+                                </span>
                               </div>
                               <div className="flex items-center justify-between text-[12px] font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0f172a]/60 px-3 py-1.5 rounded-md border border-slate-100 dark:border-white/5">
                                 <span>1. Introduction & Definitions</span>
-                                <span className="text-emerald-600 dark:text-emerald-400 font-bold">[2M]</span>
+                                <span className="text-emerald-600 dark:text-emerald-400 font-bold">
+                                  [2M]
+                                </span>
                               </div>
                               <div className="flex items-center justify-between text-[12px] font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0f172a]/60 px-3 py-1.5 rounded-md border border-slate-100 dark:border-white/5">
                                 <span>2. OSI 7-Layer Diagram</span>
-                                <span className="text-emerald-600 dark:text-emerald-400 font-bold">[3M]</span>
+                                <span className="text-emerald-600 dark:text-emerald-400 font-bold">
+                                  [3M]
+                                </span>
                               </div>
                               <div className="flex items-center justify-between text-[12px] font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0f172a]/60 px-3 py-1.5 rounded-md border border-slate-100 dark:border-white/5">
                                 <span>3. Detailed Layer Functions</span>
-                                <span className="text-emerald-600 dark:text-emerald-400 font-bold">[5M]</span>
+                                <span className="text-emerald-600 dark:text-emerald-400 font-bold">
+                                  [5M]
+                                </span>
                               </div>
                             </div>
                           )}
@@ -135,23 +162,54 @@ export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProp
                             <div className="mt-2 overflow-hidden rounded-xl border border-slate-200 dark:border-white/10 bg-[#1e293b]">
                               <div className="flex items-center gap-2 bg-slate-900 px-3 py-2 border-b border-white/10">
                                 <Code2 className="h-3.5 w-3.5 text-slate-400" />
-                                <span className="text-[11px] font-medium text-slate-400">SQL Example - 3NF Fix</span>
+                                <span className="text-[11px] font-medium text-slate-400">
+                                  SQL Example - 3NF Fix
+                                </span>
                               </div>
                               <div className="p-3 text-[12px] font-mono leading-relaxed text-slate-300">
-                                <span className="text-purple-400">CREATE TABLE</span> Departments (<br />
-                                &nbsp;&nbsp;Dept_ID <span className="text-blue-400">INT PRIMARY KEY</span>,<br />
-                                &nbsp;&nbsp;Dept_Name <span className="text-blue-400">VARCHAR(50)</span><br />
-                                );<br />
+                                <span className="text-purple-400">
+                                  CREATE TABLE
+                                </span>{" "}
+                                Departments (<br />
+                                &nbsp;&nbsp;Dept_ID{" "}
+                                <span className="text-blue-400">
+                                  INT PRIMARY KEY
+                                </span>
+                                ,<br />
+                                &nbsp;&nbsp;Dept_Name{" "}
+                                <span className="text-blue-400">
+                                  VARCHAR(50)
+                                </span>
                                 <br />
-                                <span className="text-purple-400">CREATE TABLE</span> Employees (<br />
-                                &nbsp;&nbsp;Emp_ID <span className="text-blue-400">INT PRIMARY KEY</span>,<br />
-                                &nbsp;&nbsp;Dept_ID <span className="text-blue-400">INT</span>,<br />
-                                &nbsp;&nbsp;<span className="text-emerald-400">FOREIGN KEY</span> (Dept_ID) <span className="text-purple-400">REFERENCES</span> Departments(Dept_ID)<br />
+                                );
+                                <br />
+                                <br />
+                                <span className="text-purple-400">
+                                  CREATE TABLE
+                                </span>{" "}
+                                Employees (<br />
+                                &nbsp;&nbsp;Emp_ID{" "}
+                                <span className="text-blue-400">
+                                  INT PRIMARY KEY
+                                </span>
+                                ,<br />
+                                &nbsp;&nbsp;Dept_ID{" "}
+                                <span className="text-blue-400">INT</span>,
+                                <br />
+                                &nbsp;&nbsp;
+                                <span className="text-emerald-400">
+                                  FOREIGN KEY
+                                </span>{" "}
+                                (Dept_ID){" "}
+                                <span className="text-purple-400">
+                                  REFERENCES
+                                </span>{" "}
+                                Departments(Dept_ID)
+                                <br />
                                 );
                               </div>
                             </div>
                           )}
-
                         </div>
                       </>
                     )}
@@ -170,7 +228,10 @@ export default function ChatMockup({ topic, messages, pyqs, id }: ChatMockupProp
                   </div>
                   <div className="flex flex-col divide-y divide-indigo-50 dark:divide-white/[0.02]">
                     {pyqs.map((pyq, idx) => (
-                      <div key={idx} className="group flex cursor-pointer items-center justify-between px-4 py-2 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
+                      <div
+                        key={idx}
+                        className="group flex cursor-pointer items-center justify-between px-4 py-2 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]"
+                      >
                         <div className="flex items-center gap-2.5">
                           <CheckCircle2
                             className="h-3.5 w-3.5 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
