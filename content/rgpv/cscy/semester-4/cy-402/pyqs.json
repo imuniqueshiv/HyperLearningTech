@@ -3,7 +3,990 @@
     "id": "cy-402",
     "code": "CY-402",
     "name": "Fundamental of Cyber Security",
-    "title": "CY-402 - Fundamental of Cyber Security"
+    "title": "CY-402 (GS) – Fundamental of Cyber Security",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Give difference between spoofing and phishing.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain spamming with suitable example.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1c",
+              "label": "c)",
+              "text": "What is Salami attack explain with example?",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How do you prevent network intrusions?",
+              "unit": "Unit 2",
+              "type": "network-security"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is password sniffing in cyber security?",
+              "unit": "Unit 2",
+              "type": "network-security"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the characteristics of cyber criminals?",
+              "unit": "Unit 2",
+              "type": "cyber-criminals"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is World Wide Web? Explain.",
+              "unit": "Unit 2",
+              "type": "web-security"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the impact of Digital signatures in ITA 2000.",
+              "unit": "Unit 4",
+              "type": "it-act"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the positive aspects of the ITA 2000? Explain.",
+              "unit": "Unit 3",
+              "type": "it-act"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a short note on Network Forensics.",
+              "unit": "Unit 5",
+              "type": "forensics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is cyber defamation and harassment?",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are some examples of password attack techniques?",
+              "unit": "Unit 5",
+              "type": "cyber-attacks"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How does viruses and worms works in cyber-attacks?",
+              "unit": "Unit 5",
+              "type": "malware"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the most common attacks on wireless networks?",
+              "unit": "Unit 5",
+              "type": "wireless-security"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is spyware and key loggers?",
+              "unit": "Unit 5",
+              "type": "malware"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following terms according to IT Act 2000: i) Records as evidence ii) Proof of electronic agreements iii) Status of electronic iv) Software Piracy.",
+              "unit": "Unit 4/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the challenges of cyber security and identify its elements?",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is spoofing explain with example?",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What types of Internet frauds are most common explain?",
+              "unit": "Unit 2",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is software piracy and its types?",
+              "unit": "Unit 2",
+              "type": "software-piracy"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is cyber crime also brief about IT Act, 2000?",
+              "unit": "Unit 3",
+              "type": "it-act"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is the meaning of cyber criminality?",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the impact of Digital signatures in ITA 2000.",
+              "unit": "Unit 4",
+              "type": "it-act"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the Chain of Custody concept? How it is related to forensics?",
+              "unit": "Unit 4",
+              "type": "forensics"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the role of digital signature in digital evidence?",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you mean by proof and management of electronic records?",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the methods and tools of cyber crime?",
+              "unit": "Unit 5",
+              "type": "cyber-tools"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How are proxy servers different from Anonymizers?",
+              "unit": "Unit 5",
+              "type": "network-security"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the characteristics of cyber criminals?",
+              "unit": "Unit 2",
+              "type": "cyber-criminals"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is World Wide Web? Explain.",
+              "unit": "Unit 2",
+              "type": "web-security"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following terms related to cyber crimes: i) Spamming ii) Salami technique iii) Hacking iv) Password sniffing.",
+              "unit": "Unit 1/3/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain cyber crime. Mention some important cyber crime and explain each of them.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain E-mail spoofing, spamming.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain web jacking along with the prevention measure of online fraud and software piracy.",
+              "unit": "Unit 2",
+              "type": "web-security"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is theft in cyber terrorism also explain web server hacking?",
+              "unit": "Unit 2",
+              "type": "cyber-terrorism"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain criminal justice with some of the main provisions of cyber crime in IT Act 2000.",
+              "unit": "Unit 3",
+              "type": "it-act"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain DoS and DDoS attacks in brief. What are the techniques behind such attacks?",
+              "unit": "Unit 5",
+              "type": "cyber-attacks"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Indian Evidence Act 1872. What are the provisions mention in it.",
+              "unit": "Unit 4",
+              "type": "it-act"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you understand by attack on web server? Explain the steps taken to avoid web server hacking.",
+              "unit": "Unit 2",
+              "type": "web-security"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List down some of the strategies to tackle cyber crime.",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the term 'Hacking'. What are the various classification of hacker? Mention them.",
+              "unit": "Unit 3",
+              "type": "hacking"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by 'Salami attack'? What are the adverse effect on economic structure of society. Explain with example.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain defamation in the context of cyber crime. Mention the provision of cyber defamation.",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you understand by the term VIRUS and WORMS along with their types in details.",
+              "unit": "Unit 5",
+              "type": "malware"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain 'Software Piracy' write down various activities that constitutes software piracy.",
+              "unit": "Unit 2",
+              "type": "software-piracy"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "How to find record as evidence to proof and management of electronic record for relevancy.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain Session Hijacking with the method of initiating session hijacking.",
+              "unit": "Unit 2",
+              "type": "web-security"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Cyber-crime. What are the challenges of the Cyber Crimes.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Write short notes on the E-mail Spoofing and Spamming.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain in detail about the Salami Technique.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Compare and contrast hackers and insurgents.",
+              "unit": "Unit 2",
+              "type": "cyber-criminals"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is meant by software piracy? What are the major factors contributing to its persistence?",
+              "unit": "Unit 2",
+              "type": "software-piracy"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the most prevalent tactics and techniques utilized by cybercriminals in perpetrating online fraud, and how can individuals and organizations effectively safeguard themselves against such threats?",
+              "unit": "Unit 2",
+              "type": "cyber-crime"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the major elements of the Cyber Crime and IT Act 2000?",
+              "unit": "Unit 3",
+              "type": "it-act"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss about the monetary penalties applied for the different types of Cyber Crimes.",
+              "unit": "Unit 3",
+              "type": "it-act"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Differentiate Defamation and E-mail Abuse.",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How do management strategies address the unique challenges posed by electronic records in the investigation and prosecution of Cyber Crimes.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write short notes on the probative value of e-signatures.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain in briefly about the status of the electronic records as evidence.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How do proxy servers and anonymizers function to enhance online privacy and security and what are the distinguishing features between the two?",
+              "unit": "Unit 5",
+              "type": "network-security"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the primary differences between keyloggers and spyware in terms of functionality, potential impact on computer systems?",
+              "unit": "Unit 5",
+              "type": "malware"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two of the following: i) Internet Time Theft ii) Web Jacking iii) Trends of Cyber Crime iv) Phishing.",
+              "unit": "Unit 1/2/3/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Cyber Crime. Classify the different types of Cyber Crimes.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Write short notes on the Internet Time Theft.",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the distinguishing characteristics between email spoofing and spamming, and how do these practices impact cyber security measures and user trust in online communication?",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate Hackers and extremist groups.",
+              "unit": "Unit 2",
+              "type": "cyber-criminals"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the different types of computer network intrusion techniques? Explain how we prevent them with suitable examples?",
+              "unit": "Unit 2",
+              "type": "network-security"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How does web jacking differ from traditional hacking methods, and what are the specific techniques and vulnerabilities exploited in web jacking attacks?",
+              "unit": "Unit 2",
+              "type": "web-security"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the different strategies followed to tackle the Cyber Crimes? Explain them.",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How has the proliferation of teenage web vandals impacted online communities and digital spaces and what measures can be implemented to mitigate their influence and protect internet integrity?",
+              "unit": "Unit 3",
+              "type": "cyber-criminals"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How the nature of criminality effects the Cyber Crime? Provide necessary examples.",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Compare and contrast The Indian Evidence Act of 1872 v/s Information Technology Act, 2000.",
+              "unit": "Unit 4",
+              "type": "it-act"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain in brief about the role of proving electronic messages in the Cyber Crime.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write short notes on the electronic agreements as the proofs of the Cyber Crime.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How has the evolution of computer viruses influenced the cybercrime and what are the most significant challenges in detecting and mitigating the viruses?",
+              "unit": "Unit 5",
+              "type": "malware"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write short notes on the DDoS Attacks.",
+              "unit": "Unit 5",
+              "type": "cyber-attacks"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two of the following: i) Salami Technique ii) Software Piracy iii) Cyber Fraud iv) Trojan Horses.",
+              "unit": "Unit 1/2/3/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is cybercrime and how has the rise of the internet and mobile devices influenced its growth?",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How do differences in cyber laws and lack of international cooperation affect enforcement?",
+              "unit": "Unit 3",
+              "type": "cyber-laws"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define Spamming. How does spamming affect individuals and organizations? Describe types of spam (email, SMS, social media).",
+              "unit": "Unit 1",
+              "type": "cyber-crime"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the implications of web jacking on individuals and organizations, and suggest counter measures to prevent such attacks.",
+              "unit": "Unit 2",
+              "type": "web-security"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of software piracy. Discuss its various forms, including softlifting, counterfeiting and online piracy.",
+              "unit": "Unit 2",
+              "type": "software-piracy"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is password sniffing? Describe the techniques used in sniffing attacks and how they can compromise user data.",
+              "unit": "Unit 2",
+              "type": "network-security"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How does the Information Technology Act, 2000 address various cyber crimes in India?",
+              "unit": "Unit 3",
+              "type": "it-act"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Who are teenage web vandals, what motivates them and what psychological and social factors contribute to their behavior?",
+              "unit": "Unit 3",
+              "type": "cyber-criminals"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss the monetary penalties and adjudication mechanisms provided under the IT Act, 2000 for cyber offences.",
+              "unit": "Unit 3",
+              "type": "it-act"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the evolution of India's legal framework for evidence, comparing the Indian Evidence Act, 1872 and the Information Technology Act, 2000.",
+              "unit": "Unit 4",
+              "type": "it-act"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How do courts assess whether electronic evidence can be accepted and relied upon in criminal and civil cases?",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain electronic agreements under Indian law, their validation, and provisions in the IT Act and Indian Contract Act ensuring enforceability.",
+              "unit": "Unit 4",
+              "type": "digital-evidence"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are DoS and DDoS attacks? Explain their mechanism, objectives and impact on online services and infrastructure.",
+              "unit": "Unit 5",
+              "type": "cyber-attacks"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss types of attacks on wireless networks, including Wi-Fi sniffing, rogue access points and man-in-the-middle attacks.",
+              "unit": "Unit 5",
+              "type": "wireless-security"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any Two: i) The E-mail Spoofing in cyber crime ii) Web Servers Hacking iii) Strategies to Tackle Cyber Crime iv) Proxy Servers and Anonymizers.",
+              "unit": "Unit 1/2/3/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
