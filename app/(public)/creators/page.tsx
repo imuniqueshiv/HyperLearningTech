@@ -19,7 +19,7 @@ const teamMembers = [
     name: "Shiv Raj Singh",
     role: "Founder & Full-Stack Engineer",
     bio: "Creator of Hyper Learning. Built the entire platform from scratch, designed the architecture, AI systems, and leads product development.",
-    image: "https://avatars.githubusercontent.com/u/144125626?v=4",
+    image: "https://github.com/imuniqueshiv.png",
     socials: {
       github: "https://github.com/imuniqueshiv",
       linkedin: "https://www.linkedin.com/in/shiv-raj-singh-387973299/",
@@ -35,7 +35,7 @@ const teamMembers = [
     name: "Nitin Mohan",
     role: "Co-Founder, UI/UX Designer & Full Stack Developer",
     bio: "Designs intuitive user interfaces and improves the overall user experience of Hyper Learning.",
-    image: "https://avatars.githubusercontent.com/u/272735419?v=4",
+    image: "https://github.com/nitinmohan18.png",
     socials: {
       github: "https://github.com/nitinmohan18",
       linkedin: "https://linkedin.com/in/nitin-mohan-9251ab328",
@@ -52,7 +52,7 @@ const teamMembers = [
     name: "Ramoo Kachhee",
     role: "Co-Founder & Content Contributor & Full Stack Developer  ",
     bio: "Actively contributes to Hyper Learning by curating and uploading essential study materials, including PYQs, syllabuses, and question papers.",
-    image: "https://avatars.githubusercontent.com/u/231412959?v=4",
+    image: "https://github.com/RamuuXfree.png",
     socials: {
       github: "https://github.com/RamuuXfree",
       linkedin: "https://www.linkedin.com/in/ramoo-kachhee-9b1616405/",

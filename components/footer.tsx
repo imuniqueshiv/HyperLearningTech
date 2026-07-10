@@ -319,7 +319,7 @@ function FullFooter() {
                   { name: "About Us", href: "/about", icon: Info },
                   { name: "Contact", href: "/contact", icon: Phone },
                   { name: "Creators", href: "/creators", icon: Users },
-                  { name: "Privacy Policy", href: "/", icon: Shield },
+                  { name: "Privacy Policy", href: "/privacy", icon: Shield },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
