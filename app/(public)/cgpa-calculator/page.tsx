@@ -17,7 +17,6 @@ import {
   Star,
   Briefcase,
   ShieldCheck,
-  Compass,
 } from "lucide-react";
 
 export default function CgpaCalculatorPage() {
