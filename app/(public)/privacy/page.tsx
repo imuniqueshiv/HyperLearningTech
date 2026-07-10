@@ -52,22 +52,10 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
 
-        {/* Custom Animation for the Traveling Map Path & Pendulum */}
-        <style>{`
-          @keyframes pendulum-swing {
-            0% { transform: rotate(0deg); }
-            20% { transform: rotate(1.5deg); }
-            60% { transform: rotate(-1deg); }
-            80% { transform: rotate(0.5deg); }
-            100% { transform: rotate(0deg); }
-          }
-          .hover-pendulum:hover {
-            animation: pendulum-swing 2.5s ease-in-out infinite;
-          }
-        `}</style>
+        {/* Custom Animation for the Traveling Map Path */}
 
         {/* Central Timeline Layout */}
-        <div className="relative max-w-5xl mx-auto mt-20">
+        <div className="relative max-w-5xl mx-auto mt-20 z-50 pb-8">
           {/* Unified Desktop & Mobile Scroll-Linked Path with Tracker */}
           <InteractivePath />
 
@@ -110,10 +98,10 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
 
-        {/* Floating Premium CTA (Hanging Pendulum) */}
-        <div className="relative mt-40 mb-16 max-w-4xl mx-auto hover-pendulum">
+        {/* Floating Premium CTA */}
+        <div className="relative mt-36 mb-16 max-w-4xl mx-auto">
           {/* Connector linking timeline path to CTA */}
-          <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-0 h-40 border-l-[2.5px] border-dashed border-slate-300 dark:border-cyan-500/30">
+          <div className="absolute -top-36 left-1/2 -translate-x-1/2 w-0 h-36 border-l-[2.5px] border-dashed border-slate-300 dark:border-cyan-500/30">
             {/* End Node */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-4 h-4 rounded-full bg-white dark:bg-[#030712] border-4 border-cyan-500 shadow-[0_0_10px_rgba(34,211,238,0.2)]" />
           </div>
