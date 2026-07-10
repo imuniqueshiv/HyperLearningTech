@@ -5,5 +5,586 @@
     "name": "Computer Networks",
     "title": "CY-403 - Computer Networks"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the ISO-OSI reference model in detail. Compare it with the TCP/IP model based on layer functionalities and real-world implementation.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "If a noiseless channel has a bandwidth of 3 kHz and each signal level carries 4 bits, calculate the maximum bit rate using the Nyquist formula. What if the number of signal levels is increased?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the principles and operation of circuit switching, packet switching and message switching.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Given data block : 1101011011 and generator polynomial : 10011. Perform CRC computation and provide the final codeword.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the stop-and-wait protocol and sliding window protocol. How does the sender and receiver manage buffers in both cases?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss static Vs dynamic channel allocation. Compare ALOHA, slotted ALOHA and CSMA protocols.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe IEEE 802.3, IEEE 802.4 and IEEE 802.5 LAN standards in terms of access methods, performance and topology.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Compare and contrast the operations of hubs, switches, bridges, routers and gateways.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain remote bridging. What challenges arise in implementing remote bridges in large LANs?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Compare connection establishment and release in TCP using three-way and four-way handshakes. Why is graceful termination important?",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the working of link state routing and distance vector routing algorithms with their convergence speed and scalability.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe classful IP addressing. Discuss the limitations that led to the evolution of CIDR and classless addressing.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "You are given a network 192.168.10.0/24. Divide it into 4 subnets and determine the range of IP addresses and broadcast address for each subnet.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the working of DNS. How does it resolve domain names to IP addresses using caching and hierarchical servers.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on (any two) :\na) ARP, RARP and ICMP protocols\nb) PPP, SLIP and HDLC protocols\nc) Types of transmission media (guided and unguided)",
+              "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe each of the seven layers of the ISO/OSI model. For each layer explain its function and provide examples of protocols and devices associated with it.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is Shannon's Theorem and what does it state about the maximum data rate of a communication channel? Establish a relationship between channel capacity, bandwidth and signal-to-noise ratio (SNR) according to Shannon's Theorem.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you understand by transmission media. Give the difference between Guided and Unguided media.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Why is error control necessary in data communication? Describe the methods used for error detection and correction in the Data Link Layer.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Calculate the CRC checksum for a data word represented by the polynomial D(x) = x^5 + x^4 + x^2 + 1 and a CRC polynomial C(x) = x^3 + x + 1.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How does ALOHA handle contention among multiple devices trying to access the shared channel? Give the advantages and limitations of the pure ALOHA protocol.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the key features and characteristics of the IEEE 802.3 Ethernet standard.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is a network switch and what role does it play in computer networking? How does a switch build and maintain its MAC address table?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the primary design issues in the Network Layer and also discuss the main functions performed by the Network Layer?",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of Shortest Path Routing with suitable example. Also discuss the advantages and limitations of Shortest Path Routing.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the role of each layer in the TCP/IP protocol stack with suitable layered architecture.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is ICMP? Describe the role of ICMP messages in network communication. What types of information do ICMP messages convey? Explain.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the Domain Name System (DNS) and what role does it play in computer networking? Explain how DNS translates domain names to IP addresses and vice versa.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is load shedding and how does it relate to congestion control? Discuss some techniques used for load shedding in the Transport Layer.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write a short note on any two :\na) Circuit, Packet and Message Switching\nb) HDLC\nc) Router and Gateways\nd) Connection establishment and release",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Difference between server based and Peer to Peer Networking.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the term Nyquist bit rate and Shannon capacity.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain MAC along with working of all CSMA protocols.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the purpose of Hamming code? Construct Hamming code for the bit sequence 10011101.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the working of IEEE 802.4 standard. Also explain the working of Frame format.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Imagine the length of ring in token ring is 1000 meter if the speed of propagation in a twisted pair cables is 60 percent of the speed of light (300,000,000 meter/second). How long does it takes for a bit to make a complete trip?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain any two unicast static and dynamic routing Algorithms.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe subnet mask. Explain different classes of IP address.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the various congestion control Algorithms.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the addressing using DNS.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain OSI model stating its importance in network architecture.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the principle difference between connectionless and connection oriented communication.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss internet services standards for TCP/IP and the process of standardization for RFCS and TCP/IP.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain distance vector routing with example.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Describe Frame Relay Protocol architecture and explain the function of each one.",
+              "unit": "Unit 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Draw the ISO-OSI architecture and outline the function performed by each layer.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare and contrast guided and unguided media for transmission.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "List out the functions of the Data Link Layer. One channel with a bit rate of 190 kbps and another with a bit rate of 180 kbps are to be multiplexed using TDM with no synchronization bits.\ni) What is the size of a frame in bits?\nii) What is the data rate?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define the relationship between transmission delay and propagation delay, if the efficiency is at least 50% in STOP N WAIT protocol.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Differentiate between Virtual Circuit versus Datagram Subnets.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "The IP network 200.198.160.0 is using subnet mask 255.255.255.224. Design the subnets.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Distance Vector Routing (DVR) with working example in detail.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss in detail about ICMP role in network layer.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the format of an Email? Explain the architecture of a mailing system.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Provide few reasons for congestion in a network. What is the purpose of the Domain Name System?",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain network topological design with necessary diagram and brief the advantages and disadvantages of various topologies.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the issues in the data link layer and about its protocol on the basis of layering principle.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Assume we want to send a data from S to R and there are 2 routers in between. What will be the total time taken if total number of packets is 5? Data is like: Tp=0 ms, Data size=1000 bytes, BW=1 mbps, Header of the packet=100 bytes.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain CSMA/CD in detail.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write Technical short note on any two:\ni) Introduction to ISDN\nii) HDLC\niii) HUB\niv) Jitter control",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
