@@ -5,5 +5,707 @@
     "name": "Operating Systems",
     "title": "CY-404 - Operating Systems"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss in detail the services of an operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain some utility programs supported in the operating system.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "With a neat sketch explain the structure of an operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the concept of a process-based kernel and its advantages.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss in detail the differences between user level and kernel level threads.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain briefly the working of any two deadlock prevention techniques.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Consider the following reference string 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1, find the number of page faults that occur using 3 frames for FIFO and LRU algorithms.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define Virtual memory. Explain in detail the advantages of using virtual memory technique.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail contiguous and linked file allocation methods.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss in the disk performance parameters with examples.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain FCFS and SSTF disk scheduling algorithms with examples.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Differentiate between distributed and multiprocessor operating systems.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the logical structure of I/O function with an example.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two of the following:\na) System calls for Process Management\nb) Dynamic linking and loading\nc) File system in Unix\nd) Kernel I/O subsystem",
+              "unit": "Unit 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Discuss in detail the characteristics and features of the Operating system.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain different types of Linux System Calls.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the dual mode of process execution and why it's necessary.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider 3 processes P1, P2, P3 which require 7, 3 and 6 time units with arrival times 0, 1, 2. Draw the Gantt chart and calculate the average waiting time and completion time for each process using the Shortest Job First algorithm.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How does semaphores help to solve the critical section problem. Explain their operations.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Consider the following reference string 1, 2, 3, 4, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6, find the number of page faults that occur using 4 frames for FIFO and LRU algorithms.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain in detail about segmentation with an example.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail the advantages and disadvantages of contiguous allocation over disk space allocation strategy.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "List and explain the various File protection methods.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the following commands: lseek, stat and ioctl with examples.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the key characteristics of a network operating system and how they differ from traditional operating system.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss in detail about asynchronous operations in I/O management.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two of the following:\na) Real and Virtual Concurrency\nb) Dynamic linking and loading\nc) File system in Windows\nd) Interrupt driven",
+              "unit": "Unit 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "List and explain the various features of operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the evolution of operating system in detail.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the various services provided by operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the Peterson solution for critical section problem.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the following set of process, with the length of the CPU burst given in milliseconds.\nProcess | Burst Time | Priority\nP1      | 10         | 3\nP2      | 1          | 1\nP3      | 2          | 3\nP4      | 1          | 4\nP5      | 5          | 2\nThe processes are assumed to have arrived in the order P1, P2, P3, P4, P5 all at time 0. Calculate the turnaround time of each process by applying priority scheduling algorithm.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write and explain the Banker's algorithm for deadlock avoidance.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the advantage of segmentation over paging.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain in brief the need of demand paging.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define Belady's anomaly. Why does Belady's anomaly happen explain with an example?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Suppose the head of a moving head disk with 200 tracks, numbered 0 to 199, is currently serving a request at track 143 and has just finished a request at track 125. If the queue of requests is kept in FIFO order: 86, 147, 91, 177, 94, 150, 102, 175, and 130. What is the total head movement to satisfy these requests for the FCFS disk scheduling algorithms?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the following with relevant diagrams:\nTwo level directory structure",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the following with relevant diagrams:\nAcyclic-graph directory structure",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss in brief the logical structure of I/O function.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the interrupt driven I/O techniques.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Discuss in brief any of the following:\na) User level and kernel level threads\nb) Virtual memory\nc) Tape organization\nd) I/O Buffering",
+              "unit": "Unit 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the functions of operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "List and explain the types of system calls.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the characteristics of operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write and explain the process states with a neat sketch.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define semaphore. How does the semaphore work. Illustrate with an example.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "List the conditions that must be present for deadlock to occur and for each condition give brief example or reason that illustrate the disadvantage in preventing the condition.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Differentiate between internal and external fragmentation.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the procedure that ensure protection using paging.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write short notes on memory management in UNIX.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Suppose the head of a moving head disk with 200 tracks, numbered 0 to 199, is currently serving a request at track 143 and has just finished a request at track 125. If the queue of requests is kept in FIFO order:\n86, 147, 91, 177, 94, 150, 102, 175, and 130\nWhat is the total head movement to satisfy these requests for the FCFS disk scheduling algorithms?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Discuss in brief the following diskspace allocation methods:\na) Linked\nb) Indexed",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain in detail about asynchronous operations in I/O management.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "List out the differences between distributed and multiprocessor operating systems.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two of the following:\na) Utility programs\nb) Virtual concurrency\nc) Paged segmentation\nd) File Systems in UNIX",
+              "unit": "Unit 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "With a neat diagram, explain the layered structures of UNIX operating system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the advantages and disadvantages of using the same system call interface for manipulating both file and device?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the advantages of inter process communication? How communication takes place in a shared memory environments Explain.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Assume the following work load in a system:\nProcess | Arrival Time | Burst Time\nP1      | 5            | 5\nP2      | 4            | 6\nP3      | 3            | 7\nP4      | 1            | 9\nP5      | 2            | 2\nP6      | 6            | 3\nDraw a Gantt chart illustrating the execution of these jobs using Round-Robin algorithm and also calculate average waiting time and average turnaround time.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is a Process? Explain about various fields of Process Control Block.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is dining philosophers problem? Discuss the solution to dining philosophers problem using monitors.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the concepts of demand paging in detail with neat diagram.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Given memory partition of 100 kb, 500 kb, 200 kb and 600 kb (in order). Show with neat sketch how would each of the first fit, best fit and worst fit algorithms place processes of 412 kb, 317 kb and 326 kb (in order).",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is a Virtual Memory? Discuss the benefits of virtual memory techniques.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Resource Allocation Graph algorithm for deadlock avoidance.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write in detail about file attributes, operations, and types and structures.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain in detail about various ways of accessing disk storage.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain and compare the FCFS and SSTF disk scheduling algorithm.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the Indexed allocation of disk space with examples.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Discuss the following:\ni) I/O buffering\nii) Kernel I/O subsystem\niii) Concurrent I/O\niv) Interrupt Driven",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
