@@ -36,7 +36,7 @@ export default function DashboardPage() {
 
               <div className="flex flex-col items-center gap-2.5">
                 <h1 className="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">
-                  Welcome Back, Alex{" "}
+                  Welcome Back, ABHAY{" "}
                   <span className="inline-block animate-wave">👋</span>
                 </h1>
                 <p className="max-w-2xl text-[14.5px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-medium mt-1">
