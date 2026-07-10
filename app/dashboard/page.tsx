@@ -93,7 +93,7 @@ export default function DashboardPage() {
             <div className="col-span-1 lg:col-span-7 flex flex-col gap-5">
               <div className="flex items-center justify-between px-1 shrink-0">
                 <h2 className="text-xl font-bold tracking-tight text-foreground">
-                  Continue Learning
+                  Start your journey
                 </h2>
                 <Link
                   href="/rgpv"
