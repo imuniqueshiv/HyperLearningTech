@@ -56,7 +56,7 @@ export default function ContactSection() {
           </div>
 
           <h2 className={styles.heading}>
-            <span className={styles.headingWhite}>We&apos;re here to</span>
+            <span className={styles.headingWhite}>Hyper Learning is here to</span>
             <br />
             <span className={styles.headingGold}>help you.</span>
           </h2>
