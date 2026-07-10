@@ -188,7 +188,7 @@ export default function FAQ() {
               </h3>
 
               <p className="mt-4 text-[16px] md:text-[17px] font-[500] text-slate-500 dark:text-slate-400 max-w-[480px] mx-auto leading-relaxed">
-                Can't find the answer you're looking for? Please chat to our
+                Can&apos;t find the answer you&apos;re looking for? Please chat to our
                 friendly team.
               </p>
 
