@@ -6,7 +6,6 @@ import { motion, Variants } from "framer-motion";
 import {
   Globe,
   Mail,
-  Users,
   Code2,
   Palette,
   GraduationCap,
