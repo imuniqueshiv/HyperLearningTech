@@ -58,7 +58,7 @@ export default function ContactSection() {
           <h2 className={styles.heading}>
             <span className={styles.headingWhite}>Hyper Learning is here to</span>
             <br />
-            <span className={styles.headingGold}>help you.</span>
+            <span className={styles.headingGold}>help you today.</span>
           </h2>
 
           <p className={styles.description}>
