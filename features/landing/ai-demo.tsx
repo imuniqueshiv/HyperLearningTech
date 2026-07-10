@@ -172,7 +172,7 @@ export default function AIDemo() {
             {/* Left Side (Features) */}
             <motion.div
               variants={containerVariants}
-              className="flex flex-row overflow-x-auto snap-x snap-mandatory scrollbar-hide -mx-6 px-6 pb-4 pt-1 lg:mx-0 lg:px-0 lg:pb-0 lg:pt-0 lg:flex-col lg:space-y-4 gap-4 lg:gap-0"
+              className="flex flex-row overflow-x-auto lg:overflow-visible snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] -mx-6 px-6 pb-4 pt-1 lg:mx-0 lg:px-0 lg:pb-0 lg:pt-0 lg:flex-col lg:space-y-4 gap-4 lg:gap-0"
             >
               {aiFeatures.map((feature, idx) => {
                 const isActive = activeIndex === idx;
@@ -183,10 +183,10 @@ export default function AIDemo() {
                     key={idx}
                     onClick={() => setActiveIndex(idx)}
                     variants={itemVariants}
-                    className={`group relative text-left overflow-hidden rounded-[16px] sm:rounded-[20px] p-4 sm:p-5 transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] min-w-[280px] w-[85vw] sm:w-auto lg:w-full snap-center flex-shrink-0 lg:flex-shrink ${
+                    className={`group relative text-left overflow-hidden rounded-[16px] sm:rounded-[20px] p-4 sm:p-5 transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)] min-w-[280px] w-[85vw] sm:w-auto lg:w-full snap-center flex-shrink-0 lg:flex-shrink active:scale-[0.98] ${
                       isActive
-                        ? "border border-indigo-400/50 bg-white shadow-[0_20px_40px_-12px_rgba(99,102,241,0.2)] lg:scale-[1.02] lg:-translate-y-2 dark:border-indigo-500/[0.4] dark:bg-[#1e293b]/90 dark:shadow-[0_15px_30px_-10px_rgba(99,102,241,0.2)]"
-                        : "border border-slate-100 sm:border-transparent bg-white shadow-[0_4px_20px_rgb(0,0,0,0.06)] hover:scale-[1.01] sm:hover:scale-[1.02] hover:-translate-y-1 sm:hover:-translate-y-2 hover:border-indigo-400/50 hover:bg-white hover:shadow-[0_30px_60px_-12px_rgba(99,102,241,0.25)] dark:border-white/[0.08] dark:bg-[#0f172a]/60 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] dark:hover:border-indigo-500/[0.2] dark:hover:bg-[#1e293b]/80"
+                        ? "border border-indigo-500/50 bg-indigo-50/60 shadow-sm ring-1 ring-indigo-500/20 dark:border-indigo-400/40 dark:bg-indigo-500/[0.08] dark:ring-indigo-400/20"
+                        : "border border-slate-200/70 bg-white/90 shadow-sm hover:bg-white hover:border-slate-300 dark:border-white/[0.06] dark:bg-[#0f172a]/40 dark:hover:bg-[#1e293b]/60 dark:hover:border-white/[0.1]"
                     }`}
                   >
                     <div
