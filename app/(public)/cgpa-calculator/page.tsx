@@ -17,6 +17,7 @@ import {
   Star,
   Briefcase,
   ShieldCheck,
+  LucideIcon,
 } from "lucide-react";
 
 export default function CgpaCalculatorPage() {
@@ -29,7 +30,7 @@ export default function CgpaCalculatorPage() {
   const [progressValue, setProgressValue] = useState<number>(0);
 
   // Radar State
-  const [radarTier, setRadarTier] = useState<string>("tier1");
+  const [radarTier, setRadarTier] = useState<string | null>(null);
 
   const calculateRequiredSgpa = React.useCallback(() => {
     setError(null);
@@ -69,7 +70,7 @@ export default function CgpaCalculatorPage() {
   }, [calculateRequiredSgpa]);
 
   return (
-    <main className="relative min-h-screen pt-28 pb-24 overflow-hidden bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none dark:bg-[#020617]">
+    <main className="relative min-h-[90vh] pt-12 md:pt-16 pb-12 overflow-hidden bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none dark:bg-[#020617] flex flex-col justify-center">
       {/* Ultra-Premium Dynamic Ambient Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none flex items-center justify-center">
         {/* Orb 1: Top Left Blue */}
@@ -103,14 +104,14 @@ export default function CgpaCalculatorPage() {
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] dark:opacity-[0.05] mix-blend-overlay" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-[1200px] px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 lg:px-8 w-full">
         {/* Header Section */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-200/50 bg-white/80 backdrop-blur-sm text-blue-700 text-[13px] font-bold tracking-wide dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-300 mb-6 shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-200/50 bg-white/80 backdrop-blur-sm text-blue-700 text-[12px] font-bold tracking-wide dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-300 mb-4 shadow-sm"
           >
             <Calculator className="w-4 h-4" />
             <span className="uppercase tracking-widest">Academic Planning</span>
@@ -119,7 +120,7 @@ export default function CgpaCalculatorPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[40px] md:text-[56px] font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-[1.1]"
+            className="text-[32px] md:text-[42px] font-extrabold tracking-tight text-slate-900 dark:text-white mb-3 leading-[1.1]"
           >
             Target CGPA{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
@@ -130,7 +131,7 @@ export default function CgpaCalculatorPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-slate-600 dark:text-slate-400 text-lg md:text-xl font-medium max-w-xl mx-auto"
+            className="text-slate-600 dark:text-slate-400 text-sm md:text-base font-medium max-w-xl mx-auto"
           >
             Find out exactly how much SGPA you need to score in your remaining
             semesters to reach your graduation goal.
@@ -138,14 +139,14 @@ export default function CgpaCalculatorPage() {
         </div>
 
         {/* Calculator Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mb-24 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-6 mb-8 relative z-10">
           {/* Input Section */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="lg:col-span-3 p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.08] bg-blue-50/90 dark:bg-slate-900/50 dark:bg-gradient-to-br dark:from-white/[0.05] dark:to-transparent backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-inset ring-transparent dark:ring-white/[0.05] relative overflow-hidden"
+            className="lg:col-span-3 p-5 sm:p-6 md:p-8 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] border border-white/80 dark:border-white/[0.08] bg-blue-50/90 dark:bg-slate-900/50 dark:bg-gradient-to-br dark:from-white/[0.05] dark:to-transparent backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-inset ring-transparent dark:ring-white/[0.05] relative overflow-hidden"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 sm:gap-y-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 sm:gap-y-6">
               {/* Total Semesters */}
               <div className="space-y-2 sm:space-y-3">
                 <label className="text-[11px] font-black tracking-widest uppercase text-slate-500 dark:text-slate-400">
@@ -163,7 +164,7 @@ export default function CgpaCalculatorPage() {
                     max="12"
                     value={totalSemesters}
                     onChange={(e) => setTotalSemesters(Number(e.target.value))}
-                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg sm:text-xl dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md"
+                    className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md"
                   />
                 </div>
               </div>
@@ -185,7 +186,7 @@ export default function CgpaCalculatorPage() {
                     max="12"
                     value={currentSemester}
                     onChange={(e) => setCurrentSemester(Number(e.target.value))}
-                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg sm:text-xl dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md"
+                    className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md"
                   />
                 </div>
               </div>
@@ -209,7 +210,7 @@ export default function CgpaCalculatorPage() {
                     placeholder="0.00"
                     value={currentCgpa}
                     onChange={(e) => setCurrentCgpa(e.target.value)}
-                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg sm:text-xl dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
+                    className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
                   />
                 </div>
               </div>
@@ -233,13 +234,13 @@ export default function CgpaCalculatorPage() {
                     placeholder="0.00"
                     value={targetCgpa}
                     onChange={(e) => setTargetCgpa(e.target.value)}
-                    className="w-full pl-14 pr-4 py-3 sm:py-4 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg sm:text-xl dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
+                    className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-slate-100 dark:border-transparent bg-white dark:bg-slate-950/50 text-slate-900 dark:text-white font-black text-lg dark:ring-1 dark:ring-inset dark:ring-white/[0.06] focus:bg-white dark:focus:bg-slate-900/80 focus:border-blue-500 dark:focus:border-transparent focus:ring-4 focus:ring-blue-500/20 dark:focus:ring-blue-500/40 outline-none transition-all shadow-sm hover:shadow-md placeholder:font-medium placeholder:text-slate-300 dark:placeholder:text-slate-600"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 sm:mt-12 flex items-start gap-4 p-5 rounded-r-2xl rounded-l-md bg-gradient-to-r from-blue-50/80 to-transparent dark:from-blue-500/10 dark:to-transparent border-y border-r border-slate-100 dark:border-white/[0.05] border-l-4 border-l-blue-500 shadow-sm relative overflow-hidden">
+            <div className="mt-6 sm:mt-8 flex items-start gap-4 p-4 rounded-r-xl rounded-l-md bg-gradient-to-r from-blue-50/80 to-transparent dark:from-blue-500/10 dark:to-transparent border-y border-r border-slate-100 dark:border-white/[0.05] border-l-4 border-l-blue-500 shadow-sm relative overflow-hidden">
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
               <div className="p-2 bg-white dark:bg-white/[0.06] rounded-full shrink-0 shadow-sm border border-slate-100 dark:border-slate-700 relative z-10">
                 <Info className="w-4 h-4 text-blue-600 dark:text-blue-400" />
@@ -261,7 +262,7 @@ export default function CgpaCalculatorPage() {
           >
             {/* Absolute Glow behind the card */}
             <div className="absolute inset-0 bg-blue-500/10 dark:bg-indigo-500/10 blur-[80px] rounded-full pointer-events-none z-0" />
-            <div className="flex-1 w-full min-h-[450px] sm:min-h-[500px] lg:min-h-[540px] p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.04] bg-indigo-50/90 dark:bg-[#030712]/80 dark:bg-gradient-to-br dark:from-white/[0.03] dark:to-transparent shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] ring-1 ring-inset ring-transparent dark:ring-white/[0.03] flex flex-col justify-center items-center relative overflow-hidden backdrop-blur-3xl z-10">
+            <div className="flex-1 w-full min-h-[380px] lg:min-h-[420px] p-5 sm:p-6 md:p-8 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] border border-white/80 dark:border-white/[0.04] bg-indigo-50/90 dark:bg-[#030712]/80 dark:bg-gradient-to-br dark:from-white/[0.03] dark:to-transparent shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] ring-1 ring-inset ring-transparent dark:ring-white/[0.03] flex flex-col justify-center items-center relative overflow-hidden backdrop-blur-3xl z-10">
               <AnimatePresence mode="wait">
                 {!currentCgpa || !targetCgpa ? (
                   <motion.div
@@ -553,7 +554,9 @@ export default function CgpaCalculatorPage() {
                     ].map((tier) => (
                       <button
                         key={tier.id}
-                        onClick={() => setRadarTier(tier.id)}
+                        onClick={() =>
+                          setRadarTier(radarTier === tier.id ? null : tier.id)
+                        }
                         className={`group flex items-center justify-between p-4 rounded-2xl text-left transition-all duration-300 ${
                           radarTier === tier.id
                             ? "bg-indigo-50/50 dark:bg-white/[0.04] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]"
@@ -584,6 +587,17 @@ export default function CgpaCalculatorPage() {
                 </div>
 
                 {(() => {
+                  if (!radarTier) {
+                    return (
+                      <div className="p-6 rounded-2xl border border-dashed border-slate-200 dark:border-white/10 text-center">
+                        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                          Select a career path above to unlock tailored insights
+                          and view your eligibility status.
+                        </p>
+                      </div>
+                    );
+                  }
+
                   const cutoffs: Record<string, number> = {
                     tier1: 8.0,
                     core: 7.5,
@@ -598,7 +612,7 @@ export default function CgpaCalculatorPage() {
                       <div className="p-6 rounded-2xl border border-dashed border-slate-200 dark:border-white/10 text-center">
                         <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
                           Enter your current CGPA above to see your eligibility
-                          status.
+                          status for this path.
                         </p>
                       </div>
                     );
@@ -668,46 +682,144 @@ export default function CgpaCalculatorPage() {
                 <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                   <Lightbulb className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                  Pro-Tips for Higher SGPA
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white transition-all">
+                  {radarTier
+                    ? "Premium Career Insights"
+                    : "Pro-Tips for Higher SGPA"}
                 </h3>
               </div>
 
-              <div className="space-y-3 sm:space-y-4">
-                {[
-                  {
-                    title: "Master High-Credit Subjects",
-                    desc: "Subjects with 4 or 5 credits impact your SGPA exponentially more than 1-credit labs.",
-                    icon: BarChart,
-                  },
-                  {
-                    title: "Analyze Previous Year Questions",
-                    desc: "Professors frequently repeat patterns. Mastering PYQs is the fastest way to score marks.",
-                    icon: History,
-                  },
-                  {
-                    title: "Utilize the Hyper AI Tutor",
-                    desc: "Stuck on a concept? Use our AI tutor to instantly get syllabus-mapped explanations.",
-                    icon: BookOpen,
-                  },
-                ].map((tip, idx) => (
-                  <div
-                    key={idx}
-                    className="flex gap-4 p-4 rounded-2xl bg-transparent hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all cursor-default group"
-                  >
-                    <div className="shrink-0 p-2.5 rounded-xl bg-slate-50 dark:bg-white/[0.03] text-slate-500 dark:text-slate-400 group-hover:dark:text-white transition-colors h-fit">
-                      <tip.icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900 dark:text-white mb-1">
-                        {tip.title}
-                      </h4>
-                      <p className="text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
-                        {tip.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+              <div className="relative">
+                {(() => {
+                  const defaultTips = [
+                    {
+                      title: "Master High-Credit Subjects",
+                      desc: "Subjects with 4 or 5 credits impact your SGPA exponentially more than 1-credit labs.",
+                      icon: BarChart,
+                    },
+                    {
+                      title: "Analyze Previous Year Questions",
+                      desc: "Professors frequently repeat patterns. Mastering PYQs is the fastest way to score marks.",
+                      icon: History,
+                    },
+                    {
+                      title: "Utilize the Hyper AI Tutor",
+                      desc: "Stuck on a concept? Use our AI tutor to instantly get syllabus-mapped explanations.",
+                      icon: BookOpen,
+                    },
+                  ];
+
+                  const tierTips: Record<
+                    string,
+                    { title: string; desc: string; icon: LucideIcon }[]
+                  > = {
+                    tier1: [
+                      {
+                        title: "Advanced DSA & Problem Solving",
+                        desc: "Top product companies test heavily on data structures. Master Leetcode Medium/Hard and participate in contests.",
+                        icon: BookOpen,
+                      },
+                      {
+                        title: "Impactful Open Source Contributions",
+                        desc: "Build a strong GitHub profile. Contributing to real-world open source projects sets you apart from the crowd.",
+                        icon: Star,
+                      },
+                      {
+                        title: "System Design Fundamentals",
+                        desc: "Learn how large-scale systems work. Understanding scalability and databases is crucial for top-tier roles.",
+                        icon: Lightbulb,
+                      },
+                    ],
+                    core: [
+                      {
+                        title: "GATE & ESE Preparation",
+                        desc: "Start preparing for competitive exams early. A high GATE score opens doors to top PSUs and core companies.",
+                        icon: Target,
+                      },
+                      {
+                        title: "Core Subject Mastery",
+                        desc: "Focus intensely on fundamental subjects like Thermodynamics, Fluid Mechanics, or Power Systems.",
+                        icon: BookOpen,
+                      },
+                      {
+                        title: "Industrial Internships",
+                        desc: "Practical experience is vital. Secure internships at manufacturing plants or core research labs.",
+                        icon: Briefcase,
+                      },
+                    ],
+                    tier2: [
+                      {
+                        title: "Full Stack Development",
+                        desc: "Build end-to-end projects. Frameworks like React, Node.js, and Spring Boot are highly sought after.",
+                        icon: Lightbulb,
+                      },
+                      {
+                        title: "Aptitude & Soft Skills",
+                        desc: "Many companies have rigorous aptitude rounds. Regular practice of quantitative and logical reasoning is essential.",
+                        icon: Target,
+                      },
+                      {
+                        title: "Hackathon Participation",
+                        desc: "Winning or participating in hackathons demonstrates your ability to build under pressure.",
+                        icon: Star,
+                      },
+                    ],
+                    mass: [
+                      {
+                        title: "Quantitative Aptitude",
+                        desc: "The first elimination round is almost always an aptitude test. Practice quantitative reasoning daily.",
+                        icon: Calculator,
+                      },
+                      {
+                        title: "Basic Coding & CS Fundamentals",
+                        desc: "Ensure you are very comfortable with OOPS, DBMS, and basic coding in at least one language (Java/C++).",
+                        icon: BookOpen,
+                      },
+                      {
+                        title: "Communication & Interview Skills",
+                        desc: "Strong verbal and written English can significantly improve your chances during HR and technical interviews.",
+                        icon: Info,
+                      },
+                    ],
+                  };
+
+                  const activeTips =
+                    radarTier && tierTips[radarTier]
+                      ? tierTips[radarTier]
+                      : defaultTips;
+
+                  return (
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={radarTier || "default"}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3 }}
+                        className="space-y-3 sm:space-y-4"
+                      >
+                        {activeTips.map((tip, idx) => (
+                          <div
+                            key={idx}
+                            className="flex gap-4 p-4 rounded-2xl bg-transparent hover:bg-slate-50/50 dark:hover:bg-white/[0.02] transition-all cursor-default group"
+                          >
+                            <div className="shrink-0 p-2.5 rounded-xl bg-slate-50 dark:bg-white/[0.03] text-slate-500 dark:text-slate-400 group-hover:dark:text-white transition-colors h-fit">
+                              <tip.icon className="w-5 h-5" />
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-slate-900 dark:text-white mb-1">
+                                {tip.title}
+                              </h4>
+                              <p className="text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                                {tip.desc}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </motion.div>
+                    </AnimatePresence>
+                  );
+                })()}
               </div>
             </div>
           </div>

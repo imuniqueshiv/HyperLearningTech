@@ -3,14 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
-import {
-  Globe,
-  Mail,
-  Users,
-  Code2,
-  Palette,
-  GraduationCap,
-} from "lucide-react";
+import { Globe, Mail, Code2, Palette, GraduationCap } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const teamMembers = [
