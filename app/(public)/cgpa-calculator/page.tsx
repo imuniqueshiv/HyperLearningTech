@@ -17,6 +17,7 @@ import {
   Star,
   Briefcase,
   ShieldCheck,
+  LucideIcon,
 } from "lucide-react";
 
 export default function CgpaCalculatorPage() {
@@ -710,7 +711,7 @@ export default function CgpaCalculatorPage() {
 
                   const tierTips: Record<
                     string,
-                    { title: string; desc: string; icon: any }[]
+                    { title: string; desc: string; icon: LucideIcon }[]
                   > = {
                     tier1: [
                       {
