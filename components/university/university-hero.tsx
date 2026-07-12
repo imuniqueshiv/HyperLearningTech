@@ -1,56 +1,34 @@
 "use client";
 
-import Link from "next/link";
 import { motion, Variants } from "framer-motion";
-import {
-  ArrowRight,
-  GraduationCap,
-  Building2,
-  BookOpen,
-  BrainCircuit,
-  CheckCircle2,
-} from "lucide-react";
+import { ArrowRight, GraduationCap, Sparkles, Check } from "lucide-react";
+import UniversityFlowBanner from "./university-flow-banner";
 
 export default function UniversityHero() {
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.1,
-      },
+      transition: { staggerChildren: 0.1, delayChildren: 0.1 },
     },
   };
 
   const itemVariants: Variants = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
+    hidden: { opacity: 0, y: 15 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
-      },
+      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
     },
   };
 
-  const flowSteps = [
-    { icon: GraduationCap, label: "RGPV" },
-    { icon: Building2, label: "All Branches" },
-    { icon: BookOpen, label: "Subjects & Syllabus" },
-    { icon: BrainCircuit, label: "Hyper AI Learning" },
+  const features = [
+    "Semester-wise Subjects",
+    "Unit-wise Breakdowns",
+    "Curated PYQ Archives",
+    "Instant AI Assistance",
   ];
 
-  const resources = [
-    "Semester-wise Subjects",
-    "Unit-wise Syllabus",
-    "Previous Year Questions",
-    "Hyper AI Assistance",
-  ];
   const handleScrollToBranches = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const section = document.getElementById("branches");
@@ -60,174 +38,128 @@ export default function UniversityHero() {
   };
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-background">
-      {/* Background */}{" "}
-      <div className="absolute inset-0 -z-10">
-        {" "}
-        <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-blue-500/10 blur-[100px]" />{" "}
-        <div className="absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[100px]" />{" "}
-      </div>
-      <div className="mx-auto max-w-7xl px-6 pt-24 pb-28 lg:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
-          {/* Left Side */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <motion.div variants={itemVariants}>
-              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200/60 bg-blue-50/80 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-                <GraduationCap className="h-4 w-4" />
-                Rajiv Gandhi Proudyogiki Vishwavidyalaya
-              </div>
-            </motion.div>
-
-            <motion.h1
-              variants={itemVariants}
-              className="max-w-5xl text-5xl font-extrabold tracking-tight text-foreground md:text-6xl lg:text-7xl leading-[1.05]"
-            >
-              RGPV
-              <br />
-              <span className="bg-gradient-to-r from-[#1D4ED8] to-indigo-600 bg-clip-text text-transparent">
-                Engineering Hub
-              </span>
-              <br />
-              <span className="text-base font-medium italic text-muted-foreground md:text-xl lg:text-2xl">
-                Explore Branches, Subjects, Syllabus & Previous Year Questions
-              </span>
-            </motion.h1>
-
-            <motion.p
-              variants={itemVariants}
-              className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
-            >
-              Access organized engineering resources across all branches and
-              semesters. Navigate subjects, syllabus topics, previous year
-              papers, AI-generated notes, and Hyper AI learning support from a
-              single academic platform.
-            </motion.p>
-
-            <motion.div
-              variants={itemVariants}
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
-            >
-              <a
-                href="#branches"
-                onClick={handleScrollToBranches}
-                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-[#1D4ED8] px-8 py-4 font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:bg-[#1E40AF]"
-              >
-                Explore Branches
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-
-              <Link
-                href="/subjects"
-                className="inline-flex items-center justify-center rounded-xl border-2 border-border bg-background/50 px-8 py-4 font-semibold text-foreground backdrop-blur-sm transition-all duration-300 hover:border-[#1D4ED8] hover:text-[#1D4ED8]"
-              >
-                Browse Subjects
-              </Link>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              className="mt-16 grid max-w-2xl grid-cols-2 gap-8 border-t border-border/60 pt-10 md:grid-cols-4"
-            >
-              <div>
-                <p className="text-3xl font-black text-foreground">13+</p>
-                <p className="mt-1 text-sm text-muted-foreground">Branches</p>
-              </div>
-
-              <div>
-                <p className="text-3xl font-black text-foreground">8</p>
-                <p className="mt-1 text-sm text-muted-foreground">Semesters</p>
-              </div>
-
-              <div>
-                <p className="text-3xl font-black text-foreground">100+</p>
-                <p className="mt-1 text-sm text-muted-foreground">Subjects</p>
-              </div>
-
-              <div>
-                <p className="text-3xl font-black text-foreground">AI</p>
-                <p className="mt-1 text-sm text-muted-foreground">Learning</p>
-              </div>
-            </motion.div>
+    <section className="relative pt-10 pb-16">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 lg:px-8 text-center">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col items-center"
+        >
+          <motion.div variants={itemVariants}>
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur-sm transition-colors hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-slate-200 dark:hover:bg-white/20">
+              <GraduationCap className="h-3.5 w-3.5" />
+              Rajiv Gandhi Proudyogiki Vishwavidyalaya
+            </div>
           </motion.div>
 
-          {/* Right Side */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0.95,
-            }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-              delay: 0.2,
-            }}
+          <motion.h1
+            variants={itemVariants}
+            className="text-[48px] font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-[64px] lg:text-[80px] leading-[1.05]"
           >
-            <div className="rounded-[1.75rem] border border-border/60 bg-background/80 p-5 shadow-2xl backdrop-blur-xl">
-              <div className="mb-5 flex items-center gap-3 border-b border-border pb-4">
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1D4ED8]/10">
-                  <Building2 className="h-4.5 w-4.5 text-[#1D4ED8]" />
-                </div>
+            RGPV
+            <br />
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:via-blue-400 dark:to-cyan-400">
+              Engineering Hub
+            </span>
+          </motion.h1>
 
-                <div>
-                  <h3 className="text-sm font-semibold text-foreground">
-                    Academic Navigation
-                  </h3>
+          <motion.p
+            variants={itemVariants}
+            className="mt-6 max-w-2xl text-[16px] leading-relaxed text-slate-600 sm:text-[18px] font-medium dark:text-slate-300"
+          >
+            A premium academic environment designed for absolute clarity. Access
+            meticulously organized syllabus topics, curated previous year
+            questions, and AI-driven insights to master your engineering
+            journey.
+          </motion.p>
 
-                  <p className="text-xs text-muted-foreground">
-                    Structured Learning Path
-                  </p>
+          <motion.div
+            variants={itemVariants}
+            className="mt-10 flex flex-col items-center gap-8"
+          >
+            <a
+              href="#branches"
+              onClick={handleScrollToBranches}
+              className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-b from-cyan-400 via-blue-500 to-blue-700 px-9 py-4 text-[15px] font-bold text-white shadow-[0_4px_12px_-4px_rgba(6,182,212,0.2),inset_0_1.5px_1.5px_rgba(255,255,255,0.2),inset_0_-4px_8px_rgba(30,58,138,0.4)] transition-all hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_6px_16px_-4px_rgba(6,182,212,0.25),inset_0_1.5px_1.5px_rgba(255,255,255,0.2),inset_0_-4px_8px_rgba(30,58,138,0.4)]"
+            >
+              {/* Extra glossy top highlight for 3D tactile shade */}
+              <div className="absolute inset-x-0 top-0 h-1/2 rounded-t-full bg-gradient-to-b from-white/15 to-transparent"></div>
+
+              <span className="relative z-10 flex items-center gap-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
+                Explore Branches
+                <ArrowRight className="h-4.5 w-4.5 text-cyan-100 transition-transform group-hover:translate-x-1" />
+              </span>
+            </a>
+
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+              {features.map((feature, i) => (
+                <div key={i} className="flex items-center gap-2.5">
+                  <Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                  <span className="text-[13px] font-medium text-slate-700 dark:text-slate-300">
+                    {feature}
+                  </span>
                 </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Authentic, ultra-minimal stats section */}
+          <motion.div
+            variants={itemVariants}
+            className="mt-12 w-full max-w-4xl mx-auto"
+          >
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
+              <div className="flex flex-col items-center justify-center gap-1.5">
+                <span className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                  13+
+                </span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Branches
+                </span>
               </div>
 
-              {/* Compact step flow */}
-              <div className="grid grid-cols-2 gap-3">
-                {flowSteps.map((step, i) => {
-                  const Icon = step.icon;
-                  return (
-                    <div
-                      key={step.label}
-                      className="relative rounded-xl border border-border bg-card p-3.5"
-                    >
-                      <div className="flex items-center gap-2">
-                        <Icon className="h-4 w-4 flex-shrink-0 text-[#1D4ED8]" />
-                        <span className="text-sm font-semibold leading-snug text-foreground">
-                          {step.label}
-                        </span>
-                      </div>
+              <div className="hidden h-10 w-px bg-slate-200 dark:bg-white/10 md:block" />
 
-                      <span className="absolute -top-2 -left-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#1D4ED8] text-[10px] font-bold text-white">
-                        {i + 1}
-                      </span>
-                    </div>
-                  );
-                })}
+              <div className="flex flex-col items-center justify-center gap-1.5">
+                <span className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                  8
+                </span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Semesters
+                </span>
               </div>
 
-              <div className="mt-4 rounded-xl border border-border bg-muted/30 p-4">
-                <p className="text-xs font-bold uppercase tracking-wider text-[#1D4ED8]">
-                  Available Resources
-                </p>
+              <div className="hidden h-10 w-px bg-slate-200 dark:bg-white/10 md:block" />
 
-                <div className="mt-3 grid grid-cols-2 gap-y-2.5 gap-x-3 text-sm font-medium text-foreground/80">
-                  {resources.map((resource) => (
-                    <div key={resource} className="flex items-center gap-1.5">
-                      <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0 text-emerald-500" />
-                      <span className="leading-tight">{resource}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="flex flex-col items-center justify-center gap-1.5">
+                <span className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                  100+
+                </span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Subjects
+                </span>
+              </div>
+
+              <div className="hidden h-10 w-px bg-slate-200 dark:bg-white/10 md:block" />
+
+              <div className="flex flex-col items-center justify-center gap-1.5">
+                <span className="flex items-center gap-1.5 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                  <Sparkles className="h-5 w-5 text-blue-600 dark:text-indigo-400" />
+                  AI
+                </span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Powered
+                </span>
               </div>
             </div>
           </motion.div>
-        </div>
+        </motion.div>
+      </div>
+
+      {/* Submerged Flow Banner with Corrected Hierarchy */}
+      <div className="relative z-10 mt-20 pb-4">
+        <UniversityFlowBanner />
       </div>
     </section>
   );
