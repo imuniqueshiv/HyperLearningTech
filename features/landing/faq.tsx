@@ -160,30 +160,51 @@ export default function FAQ() {
           {/* Still Have Questions CTA */}
           <motion.div
             variants={itemVariants}
-            className="mt-12 w-full max-w-[800px] overflow-hidden rounded-[24px] border border-transparent bg-white p-8 text-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:scale-[1.02] hover:-translate-y-2 hover:border-indigo-400/50 hover:bg-white hover:shadow-[0_30px_60px_-12px_rgba(99,102,241,0.25)] dark:border-white/[0.08] dark:bg-[#0f172a]/60 dark:hover:border-indigo-500/[0.5] dark:hover:bg-[#1e293b]/80 md:p-10"
+            className="relative mt-24 w-full border-t border-slate-200/60 dark:border-white/[0.05] pt-16 pb-10"
           >
-            <div className="mx-auto mb-5 inline-flex h-14 w-14 items-center justify-center rounded-[16px] bg-[#3B82F6] text-white shadow-lg shadow-blue-500/25 dark:bg-gradient-to-br dark:from-white/10 dark:to-white/5 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] dark:border dark:border-white/10">
-              <MessageCircleQuestion className="h-6 w-6" />
-            </div>
-            <h3 className="text-[20px] font-[800] tracking-tight text-slate-900 dark:text-white">
-              Still have questions?
-            </h3>
-            <p className="mt-2 text-[15px] font-[500] text-slate-600 dark:text-slate-400">
-              Can&apos;t find the answer you&apos;re looking for? Please chat to
-              our friendly team.
-            </p>
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link href="/contact">
-                <button className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-full bg-[#3B82F6] px-8 text-[14px] font-[700] text-white shadow-md shadow-blue-500/20 transition-all hover:scale-105 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100">
-                  Contact Support
-                </button>
-              </Link>
-              <Link href="/auth/signup">
-                <button className="group inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-full border border-slate-200 bg-white px-8 text-[14px] font-[700] text-slate-900 shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 dark:border-white/[0.15] dark:bg-transparent dark:text-white dark:hover:bg-white/5">
-                  Get Started Free
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </button>
-              </Link>
+            {/* Premium Texture & Glow */}
+            <div className="absolute inset-0 z-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-40 dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_10%,transparent_100%)] pointer-events-none" />
+            <div className="absolute left-1/2 top-0 z-0 h-[300px] w-[600px] -translate-x-1/2 bg-indigo-500/10 blur-[120px] dark:bg-indigo-500/15 pointer-events-none" />
+
+            <div className="relative z-10 mx-auto max-w-[800px] text-center">
+              {/* Dynamic Status Badge */}
+              <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-200/50 bg-emerald-50/50 px-3 py-1.5 text-[13px] font-[650] text-emerald-700 shadow-sm backdrop-blur-sm dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                </span>
+                Support team is online
+              </div>
+
+              <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-[20px] bg-gradient-to-b from-slate-50 to-white text-slate-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] ring-1 ring-inset ring-slate-200/60 dark:from-white/10 dark:to-white/5 dark:text-white dark:ring-white/10 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+                <MessageCircleQuestion
+                  className="h-7 w-7 drop-shadow-sm"
+                  strokeWidth={2}
+                />
+              </div>
+
+              <h3 className="text-[28px] md:text-[36px] font-[900] tracking-tight text-slate-900 dark:text-white">
+                Still have questions?
+              </h3>
+
+              <p className="mt-4 text-[16px] md:text-[17px] font-[500] text-slate-500 dark:text-slate-400 max-w-[480px] mx-auto leading-relaxed">
+                Can&apos;t find the answer you&apos;re looking for? Please chat
+                to our friendly team.
+              </p>
+
+              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <Link href="/contact">
+                  <button className="inline-flex h-[52px] w-full sm:w-auto items-center justify-center rounded-full bg-slate-900 px-8 text-[15px] font-[650] text-white shadow-md shadow-slate-900/10 transition-all hover:bg-slate-800 hover:shadow-lg dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 active:scale-[0.98]">
+                    Contact Support
+                  </button>
+                </Link>
+                <Link href="/auth/signup">
+                  <button className="group inline-flex h-[52px] w-full sm:w-auto items-center justify-center rounded-full border border-slate-200 bg-white/60 px-8 text-[15px] font-[650] text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 dark:border-white/[0.08] dark:bg-transparent dark:text-slate-300 dark:hover:bg-white/[0.04] dark:hover:text-white active:scale-[0.98] backdrop-blur-sm">
+                    Get Started Free
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </button>
+                </Link>
+              </div>
             </div>
           </motion.div>
         </motion.div>

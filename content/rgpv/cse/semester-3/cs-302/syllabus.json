@@ -1,111 +1,686 @@
 {
   "subject": {
-    "id": "cs-302",
-    "code": "CS-302",
+    "id": "cse-302",
+    "code": "CSE-302",
     "name": "Discrete Structure",
-    "title": "CS-302 - Discrete Structure",
-    "semester": "III"
+    "title": "(CSE)-302 – Discrete Structure",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "cse302-u1",
       "number": 1,
       "title": "Set Theory, Relation, Function, Theorem Proving Techniques",
       "hours": 8,
       "topics": [
-        "Set Theory: Definition of sets",
-        "Countable and uncountable sets",
-        "Venn Diagrams",
-        "Proofs of some general identities on sets",
-        "Relation: Definition",
-        "Types of relation",
-        "Composition of relations",
-        "Pictorial representation of relation",
-        "Equivalence relation",
-        "Partial ordering relation",
-        "Job-Scheduling problem",
-        "Function: Definition",
-        "Type of functions: one to one, into and onto function",
-        "Inverse function",
-        "Composition of functions",
-        "Recursively defined functions",
-        "Pigeonhole principle",
-        "Theorem proving Techniques: Mathematical induction, Proof by contradiction"
-      ]
+        {
+          "id": "cse302-u1-set-theory-definition",
+          "slug": "set-theory-definition",
+          "title": "Set Theory: Definition of sets",
+          "displayOrder": 1
+        },
+        {
+          "id": "cse302-u1-countable-uncountable",
+          "slug": "countable-uncountable",
+          "title": "Countable and uncountable sets",
+          "displayOrder": 2
+        },
+        {
+          "id": "cse302-u1-venn-diagrams",
+          "slug": "venn-diagrams",
+          "title": "Venn Diagrams",
+          "displayOrder": 3
+        },
+        {
+          "id": "cse302-u1-proofs-set-identities",
+          "slug": "proofs-set-identities",
+          "title": "Proofs of some general identities on sets",
+          "displayOrder": 4
+        },
+        {
+          "id": "cse302-u1-relation-definition",
+          "slug": "relation-definition",
+          "title": "Relation: Definition",
+          "displayOrder": 5
+        },
+        {
+          "id": "cse302-u1-types-of-relation",
+          "slug": "types-of-relation",
+          "title": "Types of relation",
+          "displayOrder": 6
+        },
+        {
+          "id": "cse302-u1-composition-of-relations",
+          "slug": "composition-of-relations",
+          "title": "Composition of relations",
+          "displayOrder": 7
+        },
+        {
+          "id": "cse302-u1-pictorial-representation",
+          "slug": "pictorial-representation",
+          "title": "Pictorial representation of relation",
+          "displayOrder": 8
+        },
+        {
+          "id": "cse302-u1-equivalence-relation",
+          "slug": "equivalence-relation",
+          "title": "Equivalence relation",
+          "displayOrder": 9
+        },
+        {
+          "id": "cse302-u1-partial-ordering-relation",
+          "slug": "partial-ordering-relation",
+          "title": "Partial ordering relation",
+          "displayOrder": 10
+        },
+        {
+          "id": "cse302-u1-job-scheduling",
+          "slug": "job-scheduling",
+          "title": "Job-Scheduling problem",
+          "displayOrder": 11
+        },
+        {
+          "id": "cse302-u1-function-definition",
+          "slug": "function-definition",
+          "title": "Function: Definition",
+          "displayOrder": 12
+        },
+        {
+          "id": "cse302-u1-type-of-functions",
+          "slug": "type-of-functions",
+          "title": "Type of functions: one to one, into and onto function",
+          "displayOrder": 13
+        },
+        {
+          "id": "cse302-u1-inverse-function",
+          "slug": "inverse-function",
+          "title": "Inverse function",
+          "displayOrder": 14
+        },
+        {
+          "id": "cse302-u1-composition-of-functions",
+          "slug": "composition-of-functions",
+          "title": "Composition of functions",
+          "displayOrder": 15
+        },
+        {
+          "id": "cse302-u1-recursively-defined-functions",
+          "slug": "recursively-defined-functions",
+          "title": "Recursively defined functions",
+          "displayOrder": 16
+        },
+        {
+          "id": "cse302-u1-pigeonhole-principle",
+          "slug": "pigeonhole-principle",
+          "title": "Pigeonhole principle",
+          "displayOrder": 17
+        },
+        {
+          "id": "cse302-u1-mathematical-induction",
+          "slug": "mathematical-induction",
+          "title": "Mathematical induction",
+          "displayOrder": 18
+        },
+        {
+          "id": "cse302-u1-proof-by-contradiction",
+          "slug": "proof-by-contradiction",
+          "title": "Proof by contradiction",
+          "displayOrder": 19
+        }
+      ],
+      "questionIds": [
+        "q1a_nov2022",
+        "q1b_nov2022",
+        "q2a_nov2022",
+        "q2b_nov2022",
+        "q6b_nov2022",
+        "q1a_june2023",
+        "q1b_june2023",
+        "q2a_june2023",
+        "q8a_june2023_p1",
+        "q8a_june2023_p4",
+        "q1a_dec2023",
+        "q1b_dec2023",
+        "q2a_dec2023",
+        "q2b_dec2023",
+        "q4b_june2024",
+        "q5a_june2024",
+        "q6a_june2024",
+        "q7b_june2024",
+        "q1a_dec2024",
+        "q2b_dec2024",
+        "q1a_june2025",
+        "q1b_june2025",
+        "q2a_june2025",
+        "q8a_june2025_p4",
+        "q8a_june2025_p5",
+        "q1a_dec2025",
+        "q1b_dec2025",
+        "q2a_dec2025",
+        "q2b_dec2025",
+        "q3a_dec2025",
+        "q3b_dec2025",
+        "q5a_dec2025",
+        "q5b_dec2025"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "cse302-u2",
       "number": 2,
       "title": "Algebraic Structures",
       "hours": 8,
       "topics": [
-        "Algebraic Structures: Definition, Properties",
-        "Types: Semi Groups, Monoid, Groups, Abelian group",
-        "Properties of groups",
-        "Subgroup",
-        "Cyclic groups",
-        "Cosets",
-        "Factor group",
-        "Permutation groups",
-        "Normal subgroup",
-        "Homomorphism and Isomorphism: Homomorphism and isomorphism of Groups, example and standard results",
-        "Rings and Fields: Definition and standard results"
-      ]
+        {
+          "id": "cse302-u2-algebraic-structures-definition",
+          "slug": "algebraic-structures-definition",
+          "title": "Algebraic Structures: Definition",
+          "displayOrder": 1
+        },
+        {
+          "id": "cse302-u2-properties",
+          "slug": "algebraic-structures-properties",
+          "title": "Properties of Algebraic Structures",
+          "displayOrder": 2
+        },
+        {
+          "id": "cse302-u2-semi-groups-monoid",
+          "slug": "semi-groups-monoid",
+          "title": "Types: Semi Groups, Monoid",
+          "displayOrder": 3
+        },
+        {
+          "id": "cse302-u2-groups-abelian-group",
+          "slug": "groups-abelian-group",
+          "title": "Groups, Abelian group",
+          "displayOrder": 4
+        },
+        {
+          "id": "cse302-u2-properties-of-groups",
+          "slug": "properties-of-groups",
+          "title": "Properties of groups",
+          "displayOrder": 5
+        },
+        {
+          "id": "cse302-u2-subgroup",
+          "slug": "subgroup",
+          "title": "Subgroup",
+          "displayOrder": 6
+        },
+        {
+          "id": "cse302-u2-cyclic-groups",
+          "slug": "cyclic-groups",
+          "title": "Cyclic groups",
+          "displayOrder": 7
+        },
+        {
+          "id": "cse302-u2-cosets",
+          "slug": "cosets",
+          "title": "Cosets",
+          "displayOrder": 8
+        },
+        {
+          "id": "cse302-u2-factor-group",
+          "slug": "factor-group",
+          "title": "Factor group",
+          "displayOrder": 9
+        },
+        {
+          "id": "cse302-u2-permutation-groups",
+          "slug": "permutation-groups",
+          "title": "Permutation groups",
+          "displayOrder": 10
+        },
+        {
+          "id": "cse302-u2-normal-subgroup",
+          "slug": "normal-subgroup",
+          "title": "Normal subgroup",
+          "displayOrder": 11
+        },
+        {
+          "id": "cse302-u2-homomorphism-isomorphism",
+          "slug": "homomorphism-isomorphism",
+          "title": "Homomorphism and Isomorphism of Groups",
+          "displayOrder": 12
+        },
+        {
+          "id": "cse302-u2-homomorphism-examples",
+          "slug": "homomorphism-examples",
+          "title": "Homomorphism and Isomorphism: example and standard results",
+          "displayOrder": 13
+        },
+        {
+          "id": "cse302-u2-rings-definition",
+          "slug": "rings-definition",
+          "title": "Rings: Definition",
+          "displayOrder": 14
+        },
+        {
+          "id": "cse302-u2-rings-standard-results",
+          "slug": "rings-standard-results",
+          "title": "Rings: standard results",
+          "displayOrder": 15
+        },
+        {
+          "id": "cse302-u2-fields-definition",
+          "slug": "fields-definition",
+          "title": "Fields: Definition",
+          "displayOrder": 16
+        },
+        {
+          "id": "cse302-u2-fields-standard-results",
+          "slug": "fields-standard-results",
+          "title": "Fields: standard results",
+          "displayOrder": 17
+        }
+      ],
+      "questionIds": [
+        "q4a_nov2022",
+        "q4b_nov2022",
+        "q2b_june2023",
+        "q3a_june2023",
+        "q8a_june2023_p2",
+        "q3a_dec2023",
+        "q3b_dec2023",
+        "q1b_june2024",
+        "q7a_june2024",
+        "q8a_june2024",
+        "q8b_june2024",
+        "q1b_dec2024",
+        "q2a_dec2024",
+        "q8a_dec2024",
+        "q8b_dec2024",
+        "q3a_june2025",
+        "q3b_june2025",
+        "q8a_june2025_p3",
+        "q6a_dec2025",
+        "q6b_dec2025"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "cse302-u3",
       "number": 3,
       "title": "Propositional Logic",
       "hours": 8,
       "topics": [
-        "Propositional Logic: Proposition",
-        "First order logic",
-        "Basic logical operation",
-        "Truth tables",
-        "Tautologies",
-        "Contradictions",
-        "Algebra of Proposition",
-        "Logical implications",
-        "Logical equivalence",
-        "Predicates",
-        "Normal Forms",
-        "Universal and existential quantifiers",
-        "Finite State Machine: Introduction to finite state machine",
-        "Finite state machines as models of physical system equivalence machines",
-        "Finite state machines as language recognizers"
-      ]
+        {
+          "id": "cse302-u3-proposition",
+          "slug": "proposition",
+          "title": "Propositional Logic: Proposition",
+          "displayOrder": 1
+        },
+        {
+          "id": "cse302-u3-first-order-logic",
+          "slug": "first-order-logic",
+          "title": "First order logic",
+          "displayOrder": 2
+        },
+        {
+          "id": "cse302-u3-basic-logical-operation",
+          "slug": "basic-logical-operation",
+          "title": "Basic logical operation",
+          "displayOrder": 3
+        },
+        {
+          "id": "cse302-u3-truth-tables",
+          "slug": "truth-tables",
+          "title": "Truth tables",
+          "displayOrder": 4
+        },
+        {
+          "id": "cse302-u3-tautologies",
+          "slug": "tautologies",
+          "title": "Tautologies",
+          "displayOrder": 5
+        },
+        {
+          "id": "cse302-u3-contradictions",
+          "slug": "contradictions",
+          "title": "Contradictions",
+          "displayOrder": 6
+        },
+        {
+          "id": "cse302-u3-algebra-of-proposition",
+          "slug": "algebra-of-proposition",
+          "title": "Algebra of Proposition",
+          "displayOrder": 7
+        },
+        {
+          "id": "cse302-u3-logical-implications",
+          "slug": "logical-implications",
+          "title": "Logical implications",
+          "displayOrder": 8
+        },
+        {
+          "id": "cse302-u3-logical-equivalence",
+          "slug": "logical-equivalence",
+          "title": "Logical equivalence",
+          "displayOrder": 9
+        },
+        {
+          "id": "cse302-u3-predicates",
+          "slug": "predicates",
+          "title": "Predicates",
+          "displayOrder": 10
+        },
+        {
+          "id": "cse302-u3-normal-forms",
+          "slug": "normal-forms",
+          "title": "Normal Forms",
+          "displayOrder": 11
+        },
+        {
+          "id": "cse302-u3-universal-existential-quantifiers",
+          "slug": "universal-existential-quantifiers",
+          "title": "Universal and existential quantifiers",
+          "displayOrder": 12
+        },
+        {
+          "id": "cse302-u3-fsm-introduction",
+          "slug": "fsm-introduction",
+          "title": "Finite State Machine: Introduction",
+          "displayOrder": 13
+        },
+        {
+          "id": "cse302-u3-fsm-models",
+          "slug": "fsm-models",
+          "title": "Finite state machines as models of physical system equivalence machines",
+          "displayOrder": 14
+        },
+        {
+          "id": "cse302-u3-fsm-language-recognizers",
+          "slug": "fsm-language-recognizers",
+          "title": "Finite state machines as language recognizers",
+          "displayOrder": 15
+        }
+      ],
+      "questionIds": [
+        "q5a_nov2022",
+        "q5b_nov2022",
+        "q6a_nov2022",
+        "q4a_june2023",
+        "q4b_june2023",
+        "q5a_june2023",
+        "q8a_june2023_p3",
+        "q4a_dec2023",
+        "q4b_dec2023",
+        "q5a_dec2023",
+        "q5b_dec2023",
+        "q3a_june2024",
+        "q6b_june2024",
+        "q7b_june2024",
+        "q2b_dec2024",
+        "q6b_dec2024",
+        "q7b_dec2024",
+        "q4a_june2025",
+        "q4b_june2025",
+        "q8a_june2025_p1",
+        "q4a_dec2025",
+        "q4b_dec2025",
+        "q7a_dec2025",
+        "q7b_dec2025"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "cse302-u4",
       "number": 4,
       "title": "Graph Theory",
       "hours": 8,
       "topics": [
-        "Introduction: Basic terminology of graphs",
-        "Planar graphs",
-        "Multigraphs and weighted graphs",
-        "Connectivity & Paths: Isomorphic graphs, Paths, Cycles and connectivity",
-        "Shortest path in weighted graph",
-        "Advanced Paths: Introduction to Eulerian paths and circuits, Hamiltonian paths and circuits",
-        "Coloring & Isomorphism: Graph coloring, chromatic number, Isomorphism and Homomorphism of graphs"
-      ]
+        {
+          "id": "cse302-u4-basic-terminology",
+          "slug": "basic-terminology",
+          "title": "Basic terminology of graphs",
+          "displayOrder": 1
+        },
+        {
+          "id": "cse302-u4-planar-graphs",
+          "slug": "planar-graphs",
+          "title": "Planar graphs",
+          "displayOrder": 2
+        },
+        {
+          "id": "cse302-u4-multigraphs",
+          "slug": "multigraphs",
+          "title": "Multigraphs",
+          "displayOrder": 3
+        },
+        {
+          "id": "cse302-u4-weighted-graphs",
+          "slug": "weighted-graphs",
+          "title": "Weighted graphs",
+          "displayOrder": 4
+        },
+        {
+          "id": "cse302-u4-isomorphic-graphs",
+          "slug": "isomorphic-graphs",
+          "title": "Isomorphic graphs",
+          "displayOrder": 5
+        },
+        {
+          "id": "cse302-u4-paths-cycles-connectivity",
+          "slug": "paths-cycles-connectivity",
+          "title": "Paths, Cycles and connectivity",
+          "displayOrder": 6
+        },
+        {
+          "id": "cse302-u4-shortest-path",
+          "slug": "shortest-path",
+          "title": "Shortest path in weighted graph",
+          "displayOrder": 7
+        },
+        {
+          "id": "cse302-u4-eulerian-paths-circuits",
+          "slug": "eulerian-paths-circuits",
+          "title": "Introduction to Eulerian paths and circuits",
+          "displayOrder": 8
+        },
+        {
+          "id": "cse302-u4-hamiltonian-paths-circuits",
+          "slug": "hamiltonian-paths-circuits",
+          "title": "Hamiltonian paths and circuits",
+          "displayOrder": 9
+        },
+        {
+          "id": "cse302-u4-graph-coloring",
+          "slug": "graph-coloring",
+          "title": "Graph coloring",
+          "displayOrder": 10
+        },
+        {
+          "id": "cse302-u4-chromatic-number",
+          "slug": "chromatic-number",
+          "title": "Chromatic number",
+          "displayOrder": 11
+        },
+        {
+          "id": "cse302-u4-isomorphism-homomorphism-graphs",
+          "slug": "isomorphism-homomorphism-graphs",
+          "title": "Isomorphism and Homomorphism of graphs",
+          "displayOrder": 12
+        }
+      ],
+      "questionIds": [
+        "q7a_nov2022",
+        "q7b_nov2022",
+        "q8a_nov2022",
+        "q8b_nov2022",
+        "q5b_june2023",
+        "q6a_june2023",
+        "q6b_june2023",
+        "q6a_dec2023",
+        "q6b_dec2023",
+        "q1a_june2024",
+        "q3b_june2024",
+        "q4a_june2024",
+        "q3a_dec2024",
+        "q3b_dec2024",
+        "q4a_dec2024",
+        "q5b_dec2024",
+        "q5a_june2025",
+        "q5b_june2025",
+        "q6a_june2025",
+        "q8a_dec2025",
+        "q8b_dec2025"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "cse302-u5",
       "number": 5,
       "title": "Posets, Lattices, Combinatorics, Recurrence Relations",
       "hours": 8,
       "topics": [
-        "Posets, Hasse Diagram and Lattices: Introduction, ordered set",
-        "Hasse diagram of partially ordered set",
-        "Isomorphic ordered set, well ordered set",
-        "Properties of Lattices, bounded and complemented lattices",
-        "Combinatorics: Introduction, Permutation and combination, Binomial Theorem, Multinomial Coefficients",
-        "Recurrence Relation and Generating Function: Introduction to Recurrence Relation and Recursive algorithms",
-        "Linear recurrence relations with constant coefficients",
-        "Homogeneous solutions, Particular solutions, Total solutions",
-        "Generating functions, Solution by method of generating functions"
-      ]
+        {
+          "id": "cse302-u5-posets-introduction",
+          "slug": "posets-introduction",
+          "title": "Posets: Introduction",
+          "displayOrder": 1
+        },
+        {
+          "id": "cse302-u5-ordered-set",
+          "slug": "ordered-set",
+          "title": "Ordered set",
+          "displayOrder": 2
+        },
+        {
+          "id": "cse302-u5-hasse-diagram",
+          "slug": "hasse-diagram",
+          "title": "Hasse diagram of partially ordered set",
+          "displayOrder": 3
+        },
+        {
+          "id": "cse302-u5-isomorphic-ordered-set",
+          "slug": "isomorphic-ordered-set",
+          "title": "Isomorphic ordered set",
+          "displayOrder": 4
+        },
+        {
+          "id": "cse302-u5-well-ordered-set",
+          "slug": "well-ordered-set",
+          "title": "Well ordered set",
+          "displayOrder": 5
+        },
+        {
+          "id": "cse302-u5-properties-of-lattices",
+          "slug": "properties-of-lattices",
+          "title": "Properties of Lattices",
+          "displayOrder": 6
+        },
+        {
+          "id": "cse302-u5-bounded-complemented-lattices",
+          "slug": "bounded-complemented-lattices",
+          "title": "Bounded and complemented lattices",
+          "displayOrder": 7
+        },
+        {
+          "id": "cse302-u5-combinatorics-introduction",
+          "slug": "combinatorics-introduction",
+          "title": "Combinatorics: Introduction",
+          "displayOrder": 8
+        },
+        {
+          "id": "cse302-u5-permutation-combination",
+          "slug": "permutation-combination",
+          "title": "Permutation and combination",
+          "displayOrder": 9
+        },
+        {
+          "id": "cse302-u5-binomial-theorem",
+          "slug": "binomial-theorem",
+          "title": "Binomial Theorem",
+          "displayOrder": 10
+        },
+        {
+          "id": "cse302-u5-multinomial-coefficients",
+          "slug": "multinomial-coefficients",
+          "title": "Multinomial Coefficients",
+          "displayOrder": 11
+        },
+        {
+          "id": "cse302-u5-recurrence-relation-introduction",
+          "slug": "recurrence-relation-introduction",
+          "title": "Introduction to Recurrence Relation",
+          "displayOrder": 12
+        },
+        {
+          "id": "cse302-u5-recursive-algorithms",
+          "slug": "recursive-algorithms",
+          "title": "Recursive algorithms",
+          "displayOrder": 13
+        },
+        {
+          "id": "cse302-u5-linear-recurrence-relations",
+          "slug": "linear-recurrence-relations",
+          "title": "Linear recurrence relations with constant coefficients",
+          "displayOrder": 14
+        },
+        {
+          "id": "cse302-u5-homogeneous-solutions",
+          "slug": "homogeneous-solutions",
+          "title": "Homogeneous solutions",
+          "displayOrder": 15
+        },
+        {
+          "id": "cse302-u5-particular-solutions",
+          "slug": "particular-solutions",
+          "title": "Particular solutions",
+          "displayOrder": 16
+        },
+        {
+          "id": "cse302-u5-total-solutions",
+          "slug": "total-solutions",
+          "title": "Total solutions",
+          "displayOrder": 17
+        },
+        {
+          "id": "cse302-u5-generating-functions",
+          "slug": "generating-functions",
+          "title": "Generating functions",
+          "displayOrder": 18
+        },
+        {
+          "id": "cse302-u5-solution-by-generating-functions",
+          "slug": "solution-by-generating-functions",
+          "title": "Solution by method of generating functions",
+          "displayOrder": 19
+        }
+      ],
+      "questionIds": [
+        "q3a_nov2022",
+        "q3b_nov2022",
+        "q7a_june2023",
+        "q7b_june2023",
+        "q7a_dec2023",
+        "q7b_dec2023",
+        "q8a_dec2023",
+        "q8b_dec2023",
+        "q2a_june2024",
+        "q2b_june2024",
+        "q5b_june2024",
+        "q7a_june2024",
+        "q2a_dec2024",
+        "q3b_dec2024",
+        "q4b_dec2024",
+        "q5a_dec2024",
+        "q6a_dec2024",
+        "q7a_dec2024",
+        "q2b_june2025",
+        "q6b_june2025",
+        "q7a_june2025",
+        "q7b_june2025",
+        "q8a_june2025_p2"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }
