@@ -14,6 +14,7 @@ export const PremiumAnimatedBoy = ({
 }) => {
   const [stride, setStride] = useState(0);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const t: any = {
     duration: isJumping && jumpType === "running" ? 0.6 : 0.45,
     ease:
@@ -26,6 +27,7 @@ export const PremiumAnimatedBoy = ({
     ease: "easeInOut" as const,
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sideToFrontVars = (sideVal: number, frontVal: number): any => ({
     run_a: { x: sideVal, transition: t },
     run_b: { x: sideVal, transition: t },
@@ -100,6 +102,7 @@ export const PremiumAnimatedBoy = ({
     k_h: number[],
     L1: number,
     L2: number
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): any => ({
     run_a: { d: getLimbPath(h_ra, k_ra, L1, L2), transition: t },
     run_b: { d: getLimbPath(h_rb, k_rb, L1, L2), transition: t },
@@ -133,6 +136,7 @@ export const PremiumAnimatedBoy = ({
     a_h: number[] | null,
     L1: number,
     L2: number
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): any => ({
     run_a: {
       ...getEndObj(h_ra, k_ra, L1, L2),

@@ -311,12 +311,14 @@ export default function UniversityFlowBanner() {
                               {
                                 maskPosition: "-80% 0%",
                                 WebkitMaskPosition: "-80% 0%",
+                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                               } as any
                             }
                             animate={
                               {
                                 maskPosition: "100% 0%",
                                 WebkitMaskPosition: "100% 0%",
+                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                               } as any
                             }
                             exit={{ opacity: 0, transition: { duration: 0.1 } }}
