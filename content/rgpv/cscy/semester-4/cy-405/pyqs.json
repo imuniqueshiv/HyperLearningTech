@@ -5,5 +5,731 @@
     "name": "Database Management System",
     "title": "CY-405 - Database Management System"
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the architecture of DBMS and describe the main components.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between DBMS and traditional file systems. Explain how DBMS offers data independence with examples.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Draw and explain an ER diagram for a Hospital Management System with entities like Patients, Doctors and Appointments, including relationships and constraints.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe different types of relational keys. What is the importance of primary and candidate keys in relational databases?",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write SQL queries to perform the following tasks on a student database:\ni) Retrieve all students who scored above 85 in Mathematics.\nii) Find the names of students who are enrolled in both Math and Science courses.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define triggers in SQL. Write a trigger that updates the total order amount in an \"Orders\" table whenever a new order is added in an \"OrderItems\" table.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define functional dependencies with examples. Explain the importance of functional dependencies in achieving database normalization.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Normalize the following relation to 2NF and 3NF:\nEmployee(SSN, EmpName, DeptID, DeptName, DeptLocation, ProjectID, ProjectName)",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define deadlock in the context of databases. Describe one technique each for deadlock prevention, detection and resolution.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss two-phase locking protocol. Explain its role in maintaining serializability in concurrent transactions.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between serial and non-serial schedules. Test if the following schedule is serializable or not:\nT1 : R(X), W(X), R(Y), W(Y)\nT2 : R(X), R(Y), W(Y)\nT3 : R(Y), W(X)",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the purpose of indexing in database. How does a primary index differ from a clustering index?",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the different phases of query processing in DBMS. How does query optimization contribute to the efficiency of database systems?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Given a database of student records, explain how a hash function can be used for quick data retrieval.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two):\ni) Relational integrity constraints and their importance in databases\nii) Entity-Relationship (ER) model\niii) Lossless Join and Dependency Preserving Decomposition\niv) Serializability and its types",
+              "unit": "Unit 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is DBMS and differentiate between DBMS and traditional file Storage System?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain different types of data models in DBMS?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "State and Explain various features of E-R models?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the statements in SQL for destroying and altering tables. Explain with examples?",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss about different types of Integrity Constraints?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write Relational Algebra Queries for the following for (Sailor Database). Sailors(Sid, Sname, Rating, Age), Boats(Bid, Bname, Color), Reserves(Sid, Bid, Day)\ni) Find the following id's with age over 20 and who have not reserved a red boat.\nii) Find the names of Sailors who reserved boat 103.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by a Functional Dependencies. Explain?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "State and Explain Lossless join decomposition?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain in detail about Relation Schemas with suitable examples?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is a transaction and explain its properties and States?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Schedule? Explain about Serial and Non Serial Schedule?",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How the Lock Manager implements lock and Unlock request? Explain.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain extendable hashing techniques for indexing data records. Consider your Class students data records and roll numbers as index attribute and show the Hash directory?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain Static Hashing? What are the advantages of static hashing in DBMS?",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two:\ni) Query Processing\nii) Data independence\niii) Union and Intersection\niv) Dependency Preservation",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the architecture of Database Management Systems with neat diagram?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is Null Attribute? With suitable diagram explain Weak and Strong Entity Set.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss about File Organization and Access methods.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How to write the queries in Relational Algebra? Explain with examples.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What do you understand by Tuples and Attributes? Explain with examples.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss about Joins with suitable examples.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain normalization using (1NF, 2NF, 4NF) with suitable examples?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the steps to be followed to convert a relation in 3NF to BCNF?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compute the closer of the following set of functional dependencies for a relation scheme. R(A, B, C, D, E), F = { A → BC, CD → E, B → D, E → A } List out the candidate keys of R.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "State and explain shadow paging with suitable example.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss about Timestamp Based Concurrency Control.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you understand by Deadlocks, Explain Avoidance and Prevention in deadlock?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write an algorithm to implement project and join operation of relational algebra.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Compare Single and Multilevel indices.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two:\ni) Complexity Measures\nii) Components of DBMS\niii) Triggers\niv) Recoverability",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the various levels of data abstraction in a database management system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain different types of relationships amongst tables in a DBMS. Explain different types of attributes in a DBMS.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define degree and cardinality. Based upon the given table write degree and cardinality.\nPatients Table:\nPatNo | PatName  | Dept  | DocID\n1     | Leena    | ENT   | 100\n2     | Supreeth | Ortho | 200\n3     | Madhu    | ENT   | 100\n4     | Neha     | ENT   | 100\n5     | Deepak   | Ortho | 200",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the meaning of ACID characteristics in relational databases? Define the structure of a relational database schema.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the different types of keys. Explain different operations in Relational algebra.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Consider the student table given below. Write commands (using relational algebra operations), and outputs for the followings:\nStudent Table:\nReg.No. | Branch | Section\n1       | CSE    | A\n2       | ECE    | B\n3       | CIVIL  | B\n4       | IT     | A\ni) To display all the records of student table.\nii) To display all the records of CSE branch in student table.\niii) To display the record of ECE branch section B students.\niv) To display the records of section B CSE and IT branch.\nv) To display all the records in student tables whose regno>2.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What does Normalization mean? Explain different normal forms with examples.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Suppose you are given a relation R = (A, B, C, D, E) with the following functional dependencies: {CE→D, D→B, C→A}.\ni) Find all candidate keys.\nii) Identify the best normal form that R satisfies (1NF, 2NF, 3NF, or BCNF).\niii) If the relation is not in BCNF, decompose it until it becomes BCNF. At each step, identify a new relation, decompose and re-compute the keys and the normal forms they satisfy.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Let R = (A, B, C, D, E, F) be a relation scheme with the following dependencies: C→F, E→A, EC→D, A→B. Find candidate key for R?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "The following functional dependencies are given: AB→CD, AF→D, DE→F, C→G, F→E, G→A. Find the closure of CF, BG, AB and AF.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by Serializability? Discuss the conflict and view serializability with suitable example.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you mean by Multiple granularities? How is it implemented in transaction system?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the methods used for deadlock prevention in DBMS? What is difference between blocking and deadlock?",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Checkpoint in DBMS? Why is Checkpoint used in database? How Checkpoint works in DBMS?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write secondary storage? Explain types of data storage in DBMS and describe storage hierarchy.\nDistinguish between:\ni) Primary and Secondary indexing.\nii) Ordered indexing and hashing.",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Mention the drawbacks of traditional file-based systems that make a database management system a better option.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define data, database, and database management system. Discuss the advantages of DBMS?",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is meant by an entity-relationship (E-R) model? Explain the terms Entity, Entity Type and Entity Set in DBMS.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Draw E-R Diagram of Library Management System.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the difference between a relation and a relation schema? Discuss their relationship.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is a Foreign key? List the properties of a foreign key. Explain with the help of an example.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a query and explain with examples that JOIN two tables so that all rows from the first table are in the result.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the difference between a LEFT JOIN and a FULL JOIN? Explain with the help of an example.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain aggregate function with syntax and give an example.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write the SQL query for the followings:\ni) Fetch the EmpId and FullName of all the employees working under Manager with id – '121' from Employee table.\nii) Fetch the different projects available from the Employee Salary table.\niii) Fetch the count of employees working in project 'P1' from Employee Salary table.\niv) Find the maximum, minimum, and average salary of the employees from Employee Salary table.\nv) Find the employee id whose salary lies in the range of 9000 and 15000 from Employee Salary table.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is difference between Lossless join decomposition and lossy less join decomposition? Explain with examples.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Given a relation R(A, B, C, D) and Functional Dependency set FD = { AB → CD, B → C }, determine whether the given R is in 2NF? If not convert it into 2NF.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Log? How is it maintained? Discuss the salient features of deferred database modification and immediate database modification strategies in brief.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Recoverable schedule? Why is recoverability of schedules desirable? Are there any circumstances under which it would be desirable to allow non-recoverable schedules? Explain your answer.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Why query Optimization is needed? What is the difference between query processing and query optimization?\nWhat are the phases of Query Processing? How are query processing and query optimization related?",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

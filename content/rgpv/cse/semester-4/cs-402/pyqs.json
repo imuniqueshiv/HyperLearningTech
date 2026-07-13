@@ -2,8 +2,949 @@
   "subject": {
     "id": "cs-402",
     "code": "CS-402",
-    "name": "Analysis Design of Algorithm (ADA)",
-    "title": "CS-402 - Analysis Design of Algorithm (ADA)"
+    "name": "Analysis Design of Algorithm",
+    "title": "CS/SD-402 (GS) – Analysis Design of Algorithm",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Write and explain the control abstraction for Divide and conquer.",
+              "unit": "Unit 1",
+              "type": "divide-conquer"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the theta notation used in algorithm analysis.",
+              "unit": "Unit 1",
+              "type": "asymptotic"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is an algorithm? Explain its characteristics.",
+              "unit": "Unit 1",
+              "type": "algorithms"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate between greedy method and dynamic programming.",
+              "unit": "Unit 3",
+              "type": "dp"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "Write a greedy algorithm to state the Job-Sequencing with deadlines problem. Find an optimal sequence for n=5 jobs with profits (20,15,10,5,1) and deadlines (2,2,1,3,3).",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you mean by forward and backward approach of problem solving in Dynamic Programming?",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the need of Floyd Warshall Algorithm. Write the advantages and its time complexity.",
+              "unit": "Unit 3",
+              "type": "floyd-warshall"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find minimum path cost between vertex s and t for the given multistage graph using dynamic programming.",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the use of lower bound theory and its uses in solving the algebraic problem.",
+              "unit": "Unit 4",
+              "type": "lower-bound"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is graph coloring problem? Describe the backtracking technique to m-coloring with the given planar graph.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write about Hamiltonian cycle. Draw portion state space tree for the given graph.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Construct B Tree of order 5 for the list of elements 2,8,5,6,13,9,14,12,19,24,18,15,5,16,20,21.",
+              "unit": "Unit 5",
+              "type": "b-trees"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How do you find the height of a balanced tree? Explain with an example.",
+              "unit": "Unit 5",
+              "type": "avl"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: i) Binary search ii) Huffman coding iii) Tree Traversals iv) NP completeness.",
+              "unit": "Unit 1/2/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Trace the quick sort algorithm to sort the list C,O,L,L,E,G,E in alphabetical order.",
+              "unit": "Unit 1",
+              "type": "quick-sort"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss Strassen's matrix multiplication and derive its time complexity.",
+              "unit": "Unit 1",
+              "type": "strassen"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Design merge sort algorithm and discuss its best-case, average-case and worst-case Efficiency.",
+              "unit": "Unit 1",
+              "type": "merge-sort"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How to solve the Knapsack problem with greedy method? Explain.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write an algorithm for single source shortest path and explain with an example.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss briefly about the minimum spanning tree.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you mean by forward and backward approach of problem solving in Dynamic Programming?",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How the reliability of a system is determined using dynamic programming? Discuss.",
+              "unit": "Unit 3",
+              "type": "dp"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find an optimal solution for 0/1 Knapsack problem using DP: n=4, M=5, W=(2,3,4,5), P=(3,4,5,6).",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the 8 queen's problem and apply the backtracking to solve the 8 queen's problem.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Write the control abstraction for LC-Search. Explain how Traveling Salesperson problem is solved using LCBB with the given cost matrix.",
+              "unit": "Unit 4",
+              "type": "branch-bound"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the differences between BFS and DFS.",
+              "unit": "Unit 5",
+              "type": "graph-traversal"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are 2-3 trees used for? Why are 2-3 trees better than BST trees? Write the limitations of 2-3 tree.",
+              "unit": "Unit 5",
+              "type": "2-3-trees"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Discuss briefly any two: a) Heap sort b) Dynamic Programming c) Height balanced tree d) Parallel algorithm.",
+              "unit": "Unit 1/3/5/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Solve the recurrence relation T(n)=1 for n≤4, T(n)=T(√n)+C for n>4 using substitution method.",
+              "unit": "Unit 1",
+              "type": "recurrence"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Give an algorithm for quick sort and analyze the algorithm.",
+              "unit": "Unit 1",
+              "type": "quick-sort"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the solution generated by JS when n=7, P=(3,5,20,18,1,6,30), d=(1,3,4,3,2,1,2).",
+              "unit": "Unit 2",
+              "type": "greedy"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Show that adding an edge not in spanning tree T to T creates a unique cycle.",
+              "unit": "Unit 2",
+              "type": "mst"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Find optimal solution for 0/1 knapsack problem: W=(10,15,6,9), P=(2,5,8,1), M=30.",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How reliability design can be obtained using dynamic programming?",
+              "unit": "Unit 3",
+              "type": "dp"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Generalize Hamiltonian so that it processes a graph with edge costs and finds a Hamiltonian cycle with minimum cost.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How can comparison trees be used for deriving lower bounds on problem of sorting.",
+              "unit": "Unit 4",
+              "type": "lower-bound"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a function to construct binary tree from given inorder and postorder sequences. What is the complexity?",
+              "unit": "Unit 5",
+              "type": "binary-tree"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Give an example of n-vertex graph where DFS recursion depth is n-1 but BFS queue has at most one vertex.",
+              "unit": "Unit 5",
+              "type": "graph-traversal"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by performance analysis of an algorithm? Explain.",
+              "unit": "Unit 1",
+              "type": "algorithms"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Heap? Sort the data using heap sort: 81,39,10,36,45,15,55,23,91,88,12.",
+              "unit": "Unit 1",
+              "type": "heap-sort"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Draw the portion of state space tree generated by LCBB for knapsack: n=4, P=(10,10,12,18), W=(2,4,6,9), M=15.",
+              "unit": "Unit 4",
+              "type": "branch-bound"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Give an example of knapsack instances for which |Sⁱ|=2ⁱ, 0≤i≤n.",
+              "unit": "Unit 3",
+              "type": "dp"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Asymptotic Notations b) DFS and BFS c) Graph Coloring Problem.",
+              "unit": "Unit 1/5/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Obtain asymptotic bound using substitution method for T(n)=3T(n/3)+n and represent in θ notation.",
+              "unit": "Unit 1",
+              "type": "recurrence"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is Merge sort? Sort the elements 20,30,15,11,35,19,12,11,55 using Merge sort.",
+              "unit": "Unit 1",
+              "type": "merge-sort"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss Strassen's matrix multiplication and Classical O(n³) methods. When does Strassen's outperform?",
+              "unit": "Unit 1",
+              "type": "strassen"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define spanning tree? Construct a minimal spanning tree for the given graph using Prim's algorithm.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "Solve job sequencing with deadlines using Greedy: n=4, P=(100,10,15,27), d=(2,1,2,1).",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Apply greedy method to solve 0/1 Knapsack: n=3, m=20, W=(18,15,10), P=(25,24,15).",
+              "unit": "Unit 2",
+              "type": "greedy"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Construct a multistage graph for the given graph using the greedy method.",
+              "unit": "Unit 3",
+              "type": "dp"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the Floyd Warshall algorithm for the given graph.",
+              "unit": "Unit 3",
+              "type": "floyd-warshall"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Using branch and bound technique explain the 0/1 knapsack problem.",
+              "unit": "Unit 4",
+              "type": "branch-bound"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Give the solution to the 8-queens problem using backtracking.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is graph coloring? Explain graph coloring for the given graph.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Use OBST to compute w(i,j), r(i,j), c(i,j) for identifier set (char,float,while,else) with given probabilities and construct optimal BST.",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain in detail about 2-3 Trees with an example.",
+              "unit": "Unit 5",
+              "type": "2-3-trees"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Binary search algorithm and its time complexity b) Single source shortest path c) Parallel algorithms d) NP Completeness.",
+              "unit": "Unit 1/2/4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Give the asymptotic bounds for f(n)=2n²-4n+20 and represent in θ notation.",
+              "unit": "Unit 1",
+              "type": "asymptotic"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define Quicksort? Sort elements 22,12,30,46,28,14,8,10,56,18,3 using Merge sort.",
+              "unit": "Unit 1",
+              "type": "merge-sort"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write an algorithm to find matrix multiplication using Strassen's method.",
+              "unit": "Unit 1",
+              "type": "strassen"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Construct Huffman coding for the given character frequencies and write applications.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "Solve job sequencing with deadlines using Greedy: n=5, P=(5,20,10,15,1), d=(3,2,1,2,3).",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve 0/1 Knapsack using DP: n=4, m=40, W=(2,11,22,15), P=(11,21,31,33).",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Construct a multistage graph for the given graph using the Greedy method.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the Floyd Warshall algorithm for the given graph.",
+              "unit": "Unit 3",
+              "type": "floyd-warshall"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain in detail about the FIFO branch and bound.",
+              "unit": "Unit 4",
+              "type": "branch-bound"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write an algorithm for the 8-queens problem using backtracking.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw the state space tree for 'm' coloring when n=3 and m=3.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Use OBST to compute w(i,j), r(i,j), c(i,j) for identifier set (double,int,for,if) and construct optimal BST.",
+              "unit": "Unit 5",
+              "type": "bst"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain in detail Height balanced tree with an example.",
+              "unit": "Unit 5",
+              "type": "avl"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Binary search algorithm and its time complexity b) Single source shortest path c) Hamiltonian graph and cycle d) Breadth First Search.",
+              "unit": "Unit 1/2/4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Solve T(n)=1 for n≤4, T(n)=2T(√n)+log n for n>4 using substitution method.",
+              "unit": "Unit 1",
+              "type": "recurrence"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "The worst case of merge sort is O(n log n). What is its best case? Can we say merge sort is O(n log n)?",
+              "unit": "Unit 1",
+              "type": "merge-sort"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Obtain optimal Huffman codes for messages with frequencies (4,5,7,8,10,12,20). Draw the decode tree.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Use shortest paths algorithm to obtain lengths from vertex 1 to all remaining vertices in the given di-graph.",
+              "unit": "Unit 2",
+              "type": "greedy"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Give an example of knapsack instances for which |Sⁱ|=2ⁱ, 0≤i≤n, with one instance for each n.",
+              "unit": "Unit 3",
+              "type": "dp"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain Floyd Warshall algorithm with suitable example.",
+              "unit": "Unit 3",
+              "type": "floyd-warshall"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Given an n×n chessboard, present an algorithm for Knight's tour problem to visit all squares exactly once.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Consider the traveling salesperson instance defined by the given 5×5 cost matrix.",
+              "unit": "Unit 4",
+              "type": "branch-bound"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Show that DFS visits all vertices in G reachable from V.",
+              "unit": "Unit 5",
+              "type": "graph-traversal"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Obtain a nondeterministic algorithm of O(n) to determine if a subset of n numbers sums to m.",
+              "unit": "Unit 5",
+              "type": "np"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write an algorithm to delete element x from a BST. What is the time complexity?",
+              "unit": "Unit 5",
+              "type": "bst"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you mean by balance factor in AVL tree? Give example to balance an AVL tree.",
+              "unit": "Unit 5",
+              "type": "avl"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write an algorithm for n jobs on k parallel processors to minimize finish time.",
+              "unit": "Unit 4",
+              "type": "parallel"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Find optimal solution for 0/1 knapsack: W=(10,15,6,9), P=(2,5,8,1), M=30.",
+              "unit": "Unit 3",
+              "type": "dp"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) B-Trees b) Tree Traversal c) Reliability Design.",
+              "unit": "Unit 5/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

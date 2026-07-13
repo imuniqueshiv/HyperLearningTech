@@ -1,9 +1,1020 @@
 {
   "subject": {
-    "id": "bt-401-cse",
+    "id": "bt-401",
     "code": "BT-401",
     "name": "Mathematics-III",
-    "title": "BT-401 - Mathematics-III"
+    "title": "BT-401 (GS) – Mathematics-III",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Use Newton's formula for interpolation to find the net premium at the age 25 from the given table.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Using Newton-Raphson's method find the real root of x⁴ - x - 10 = 0.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Solve the simultaneous linear equations using Crout's method: x₁+x₂+x₃=1, 3x₁+x₂-3x₃=5, x₁-2x₂-5x₃=10.",
+              "unit": "Unit 2",
+              "type": "linear-equations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Evaluate ∫₀¹ log x cos x dx by (i) Trapezoidal rule (ii) Simpson 3/8 rule.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Find y(0.1) for differential equation dy/dx = x²y - 1, y(0) = 1 using Taylor's series method.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Solve xy'' + y' + xy = 0, where y(0) = 1, y'(0) = 0, for x = 0 to x = 1.5.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find Laplace transform of piecewise function f(t) = sin t for 0 < t < 2π, and 0 for 2π < t.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find the Fourier series for periodic extension of piecewise function f(t) = sin t for 0 ≤ t ≤ π, and 0 for π ≤ t ≤ 2π.",
+              "unit": "Unit 4",
+              "type": "fourier"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "If m balls are distributed among a men and b women, show that the probability that the number of balls received by men is odd is (1/2)[((b+a)^m - (b-a)^m)/(b+a)^m].",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Two independent random variable X and Y are both normally distributed with means 1 and 2 and standard deviations 3 and 4 respectively. If Z = X - Y, write the pdf of Z and find P[Z+1 ≤ 0].",
+              "unit": "Unit 5",
+              "type": "probability"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Prove that Δⁿ 0^(n+1) = [n(n+1)/2] Δⁿ 0^n.",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Given log x values for x = 310, 320, 330, 340, 350, 360, find the value of log 3375.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Use Runge-Kutta method to approximate y when x=0.1 and x=0.2, given x=0 when y=1 and dy/dx=x+y.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Use Milne's method to solve dy/dx = x + y with initial condition y(0)=1, from x=0.20 to x=0.30.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Prove that for normal distribution, QD:MD:SD :: 10:12:15.",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Prove that Δⁿ sin(ax+b) = (2 sin(ah/2))^n sin[ax+b+n((ah+π)/2)].",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Find the real root of the equation x³ - 3x - 5 = 0 correct to four places of decimals by Newton Raphson method.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Evaluate Δ⁶(ax-1)(bx²-1)(cx³-1); h=1.",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Using Newton's divided difference formula, find f(8) and f(15) from the given table.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find the real root of the equation xe^x - 3 = 0 correct to three decimal places by Regula Falsi method.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Use Simpson's 1/3 and 3/8 rule to evaluate ∫₀¹ dx/(1+x²). Hence obtain the approximate value of π.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compute the value of ∫₀·₂¹·⁴ (sin x - log_e x + e^x) dx by trapezoidal rule.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the following system by Gauss Seidel iteration method: 27x+6y-z=85, 6x+15y+2z=72, x+y+54z=110.",
+              "unit": "Unit 2",
+              "type": "linear-equations"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Use Simpson's rule to find approximate value of ∫₁² dx/x.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Use Euler's method compute the solution of dy/dx = y² - x² with y(0)=1 at x=0.1.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Use Euler's Modified method to solve dy/dx = x + y, y(0)=1, h=0.2 compute y(1).",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Use Laplace transform to solve the IVP: y' + 2y = 26 sin 3t, y(0) = 3.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Evaluate L(t cos at).",
+              "unit": "Unit 4",
+              "type": "laplace"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Evaluate L⁻¹[1/(1+s)³].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Evaluate L{t² e^(-3t)}.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Find mean of Poisson distribution.",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write Short note on Exponential Distribution.",
+              "unit": "Unit 5",
+              "type": "probability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Evaluate √12 to four decimal places by Newton Raphson Method.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the rate of convergence of bisection method?",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Prove the relations between finite difference operators Δ, δ, and ∇.",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Construct a backward difference table for y = log x and find values of ∇³log 40 and ∇⁴log 50.",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Using Lagrange's Method find f(x) as a polynomial in x from the given data.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Using Newton's divided difference formula, calculate the value of f(6) from the given data.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find f'(1.1) and f''(1.1) from the given table.",
+              "unit": "Unit 2",
+              "type": "numerical-differentiation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find missing values in the given table.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find ∫₀⁶ e^x/(1+x) dx approximately using Simpson's 3/8th rule.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Solve dy/dx = 1 - y with y(0)=0 using Euler's modified method at x=0.1,0.2,0.3.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Using Lagrange's interpolation formula to fit a polynomial to the given data.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Using Regula-Falsi method, find the real root of x log₁₀ x = 1.2 correct to four decimal places.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Solve dy/dx = x + y² by Runge-Kutta method of fourth order for y at x=0.2, given y=1 at x=0, h=0.1.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Evaluate L⁻¹[(s+7)/(s²+4s+8)].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Find the inverse Laplace transform of (s+4)/[s(s-1)(s²+4)].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Prove that L{f(t)/t} = ∫_s^∞ F(s) ds and hence evaluate (e^(at) - cos bt)/t.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "If f(x)=x³-x²+4x-4=0, find next approximation from x=2 correct up to 2 decimal places.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the rate of convergence of Newton Raphson method?",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Find Δe^(ax), Δ²e^x, Δlog x.",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Prove that f(4) = f(3) + Δf(2) + Δ²f(1) + Δ³f(1) taking 1 as the interval of differencing.",
+              "unit": "Unit 1",
+              "type": "finite-differences"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Using Simpson's 3/8 rule to solve the integral ∫₄⁵·² log_e x dx.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Find f(0.18) from the given table using Newton's Forward interpolation formula.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Apply Gauss Elimination method to solve: 2x-y+3z=9, x+y+z=6, x-y+z=2.",
+              "unit": "Unit 2",
+              "type": "linear-equations"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find missing values in the given table.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Use Runge-Kutta method to approximate y at x=0.1,0.2, given y=1 at x=0 and dy/dx=x+y.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Use Milne's method to solve dy/dx=x+y with y(0)=1 from x=0.20 to x=0.30.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Find the value of f(5) from the given table using interpolation.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Find the real root of x log₁₀ x - 1.2 = 0 correct to five decimal places by Regula Falsi Method.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Find the inverse Laplace transform of (2s+1)/[s(s-1)].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State convolution theorem and evaluate L⁻¹[s/{(s²+1)(s²+4)}].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "A binomial variable X satisfies 9P(X=4)=P(X=2) when n=6. Find p and P(X=1).",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Find the percentage of measurements between 54.8\" and 68.8\" for N(65.5, 6.2²).",
+              "unit": "Unit 5",
+              "type": "probability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Using Newton-Raphson method find the real root of 3x = cos x + 1 correct to five decimal places.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find f(g) from the given table.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Apply Simpson's 3/8 rule to evaluate ∫₁·₀¹·³ √x dx for six digits.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Solve the system using Gauss-Seidel method: 27x+6y-z=85, 6x+15y+2z=72, x+y+54z=110.",
+              "unit": "Unit 2",
+              "type": "linear-equations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Using Runge-Kutta 4th order solve dy/dx=(y²-x²)/(y²+x²), y(0)=1 at x=0.4, step 0.2.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Find y(2.2) using Euler's method for dy/dx = -xy² where y(2)=1.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find the Inverse Laplace transform of 1/[p³(p²+a²)].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Using Laplace transform solve y'''+2y''-y'-2y=0 with y(0)=1, y'(0)=2, y''(0)=2.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Fit a Poisson distribution to the given data.",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Calculate the mean and standard deviation of Binomial Distribution.",
+              "unit": "Unit 5",
+              "type": "probability"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Find dy/dx at x=1.5 from the given table.",
+              "unit": "Unit 2",
+              "type": "numerical-differentiation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Evaluate ∫₀^∞ e^(-t)·sin t / t dt.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Show that Newton Raphson method is quadratic convergent.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Derive Newton forward interpolation formula and estimate f(1.25) from the given table.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Solve the system using Gauss elimination: 3x+y-z=3, 2x-8y+z=-5, x-2y+9z=8.",
+              "unit": "Unit 2",
+              "type": "linear-equations"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Find Fourier sine transform of 1/x.",
+              "unit": "Unit 4",
+              "type": "fourier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Find the real root of f(x)=x³-x-10 by Newton Raphson method correct up to 4 decimal places.",
+              "unit": "Unit 1",
+              "type": "root-finding"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find solution y(301) using Newton Divided difference interpolation formula.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Evaluate the integral using Simpson's 3/8 rule from the given table.",
+              "unit": "Unit 2",
+              "type": "numerical-integration"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Solve the system by Gauss elimination: x+y+z=4, x+4y+3z=8, x+6y+2z=6.",
+              "unit": "Unit 2",
+              "type": "linear-equations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Using modified Euler's method, find y at x=0.3 given dy/dx=x+y, y=1 when x=0.",
+              "unit": "Unit 3",
+              "type": "ode"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Find y(1.05) using 4th order Runge-Kutta for dy/dx=x²+y², y(1)=1.2.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find the inverse Laplace transform of F(s)=1/[(s+1)(s²+1)].",
+              "unit": "Unit 4",
+              "type": "inverse-laplace"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find Laplace transform of y(t) satisfying y''-2y'-y=1, y(0)=-1, y'(0)=1.",
+              "unit": "Unit 4",
+              "type": "laplace"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find probability that car speed >100 km/hr for N(90,10²).",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Find binomial distribution with mean 100 and SD 5.",
+              "unit": "Unit 5",
+              "type": "probability"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Find mean and SD of normal distribution where 10.03% items under 25 kg and 89.97% under 70 kg.",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Find solution using Lagrange's Interpolation formula.",
+              "unit": "Unit 1",
+              "type": "interpolation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Find L(t² e^(-t) cosh 2t) and L(e^(3t) sin² 4t).",
+              "unit": "Unit 4",
+              "type": "laplace"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Using Milne's method find y(4.4) given 5xy+y²-2=0 and four starting values.",
+              "unit": "Unit 3",
+              "type": "ode"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Find mean of Poisson distribution.",
+              "unit": "Unit 5",
+              "type": "probability"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short note on Exponential distribution.",
+              "unit": "Unit 5",
+              "type": "probability"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
