@@ -307,14 +307,18 @@ export default function UniversityFlowBanner() {
                       <AnimatePresence>
                         {jumpGap === index && (
                           <motion.div
-                            initial={{
-                              maskPosition: "-80% 0%",
-                              WebkitMaskPosition: "-80% 0%",
-                            }}
-                            animate={{
-                              maskPosition: "100% 0%",
-                              WebkitMaskPosition: "100% 0%",
-                            }}
+                            initial={
+                              {
+                                maskPosition: "-80% 0%",
+                                WebkitMaskPosition: "-80% 0%",
+                              } as any
+                            }
+                            animate={
+                              {
+                                maskPosition: "100% 0%",
+                                WebkitMaskPosition: "100% 0%",
+                              } as any
+                            }
                             exit={{ opacity: 0, transition: { duration: 0.1 } }}
                             transition={{ duration: 0.5, ease: "linear" }}
                             style={{
@@ -331,12 +335,10 @@ export default function UniversityFlowBanner() {
                           />
                         )}
                       </AnimatePresence>
+                      
+                      {/* Mobile Separator */}
+                      <div className="sm:hidden absolute top-[35px] w-full border-t-2 border-dashed border-slate-300" />
                     </div>
-                  )}
-
-                  {/* Mobile Separator */}
-                  {index < steps.length - 1 && (
-                    <div className="sm:hidden flex-1 border-t-2 border-dashed border-slate-300 mx-2" />
                   )}
                 </React.Fragment>
               ))}
