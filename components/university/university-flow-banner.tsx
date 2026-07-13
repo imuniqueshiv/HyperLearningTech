@@ -306,35 +306,28 @@ export default function UniversityFlowBanner() {
                     <div className="flex-1 relative h-[70px] -mt-[35px] mx-[8px] z-0 pointer-events-none">
                       <AnimatePresence>
                         {jumpGap === index && (
-                          <motion.div
-                            initial={
-                              {
-                                maskPosition: "-80% 0%",
-                                WebkitMaskPosition: "-80% 0%",
-                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                              } as any
-                            }
-                            animate={
-                              {
-                                maskPosition: "100% 0%",
-                                WebkitMaskPosition: "100% 0%",
-                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                              } as any
-                            }
-                            exit={{ opacity: 0, transition: { duration: 0.1 } }}
-                            transition={{ duration: 0.5, ease: "linear" }}
-                            style={{
-                              maskImage:
-                                "linear-gradient(to right, transparent 0%, black 85%, transparent 100%)",
-                              WebkitMaskImage:
-                                "linear-gradient(to right, transparent 0%, black 85%, transparent 100%)",
-                              maskSize: "80% 100%",
-                              WebkitMaskSize: "80% 100%",
-                              maskRepeat: "no-repeat",
-                              WebkitMaskRepeat: "no-repeat",
-                            }}
-                            className="absolute inset-0 border-t-[3px] border-dashed border-blue-400/80 rounded-t-full shadow-[0_-4px_10px_rgba(59,130,246,0.2)]"
-                          />
+                          <svg
+                            className="absolute inset-0 h-full w-full overflow-visible pointer-events-none"
+                            preserveAspectRatio="none"
+                            viewBox="0 0 100 100"
+                          >
+                            <motion.path
+                              d="M 0 100 Q 50 -20 100 100"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="3"
+                              strokeDasharray="6 6"
+                              vectorEffect="non-scaling-stroke"
+                              className="text-blue-400/80"
+                              initial={{ pathLength: 0 }}
+                              animate={{ pathLength: 1 }}
+                              exit={{
+                                opacity: 0,
+                                transition: { duration: 0.1 },
+                              }}
+                              transition={{ duration: 0.5, ease: "linear" }}
+                            />
+                          </svg>
                         )}
                       </AnimatePresence>
 

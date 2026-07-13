@@ -92,11 +92,11 @@ export default function UniversityHero() {
               </span>
             </a>
 
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-x-3 sm:gap-x-8 gap-y-3 w-full max-w-sm sm:max-w-none mx-auto">
               {features.map((feature, i) => (
-                <div key={i} className="flex items-center gap-2.5">
-                  <Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-                  <span className="text-[13px] font-medium text-slate-700 dark:text-slate-300">
+                <div key={i} className="flex items-center gap-2 sm:gap-2.5">
+                  <Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                  <span className="text-[12px] sm:text-[13px] font-medium text-slate-700 dark:text-slate-300 text-left">
                     {feature}
                   </span>
                 </div>

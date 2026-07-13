@@ -46,12 +46,12 @@ export const PremiumAnimatedBoy = ({
   }, [isJumping, isHappy, isIdle]);
 
   const isStrideB = stride % 2 === 1;
-  const currentVariant = isHappy
-    ? "happy"
-    : isJumping
-      ? jumpType === "running"
-        ? "running_jump"
-        : "standing_jump"
+  const currentVariant = isJumping
+    ? jumpType === "running"
+      ? "running_jump"
+      : "standing_jump"
+    : isHappy
+      ? "happy"
       : isIdle
         ? "idle"
         : isStrideB
