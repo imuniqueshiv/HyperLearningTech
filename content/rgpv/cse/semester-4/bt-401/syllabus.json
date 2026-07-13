@@ -3,75 +3,398 @@
     "id": "bt-401",
     "code": "BT-401",
     "name": "Mathematics-III",
-    "title": "BT-401 - Mathematics-III",
-    "semester": "IV"
+    "title": "BT-401 – Mathematics-III",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "IV",
+    "branch": "CSE-Computer Science Engineering"
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "bt401-m1",
       "number": 1,
       "title": "Numerical Methods – 1",
       "hours": 8,
       "topics": [
-        "Solution of polynomial and transcendental equations – Bisection method, Newton-Raphson method and Regula-Falsi method",
-        "Finite differences",
-        "Relation between operators",
-        "Interpolation using Newton’s forward and backward difference formulae",
-        "Interpolation with unequal intervals: Newton’s divided difference and Lagrange’s formulae"
-      ]
+        {
+          "id": "bt401-m1-bisection",
+          "slug": "bisection-method",
+          "title": "Bisection method",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt401-m1-newton-raphson",
+          "slug": "newton-raphson-method",
+          "title": "Newton-Raphson method",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt401-m1-regula-falsi",
+          "slug": "regula-falsi-method",
+          "title": "Regula-Falsi method",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt401-m1-finite-differences",
+          "slug": "finite-differences",
+          "title": "Finite differences, Relation between operators",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt401-m1-newton-forward-backward",
+          "slug": "newton-forward-backward",
+          "title": "Interpolation using Newton's forward and backward difference formulae",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt401-m1-newton-divided-difference",
+          "slug": "newton-divided-difference",
+          "title": "Newton's divided difference formula",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt401-m1-lagrange",
+          "slug": "lagrange-formula",
+          "title": "Lagrange's interpolation formula",
+          "displayOrder": 7
+        }
+      ],
+      "questionIds": [
+        "bt401_m1_june2025_q1",
+        "bt401_m1_june2025_q2",
+        "bt401_m1_june2025_q3",
+        "bt401_m1_dec2024_q4",
+        "bt401_m1_dec2024_q5",
+        "bt401_m1_dec2024_q6",
+        "bt401_m1_dec2024_q7",
+        "bt401_m1_june2024_q8",
+        "bt401_m1_june2024_q9",
+        "bt401_m1_june2024_q10",
+        "bt401_m1_june2024_q11",
+        "bt401_m1_june2024_q12",
+        "bt401_m1_june2024_q13",
+        "bt401_m1_june2024_q14",
+        "bt401_m1_nov2023_q15",
+        "bt401_m1_nov2023_q16",
+        "bt401_m1_nov2023_q17",
+        "bt401_m1_nov2023_q18",
+        "bt401_m1_nov2023_q19",
+        "bt401_m1_nov2023_q20",
+        "bt401_m1_nov2023_q21",
+        "bt401_m1_nov2023_q22",
+        "bt401_m1_nov2023_q23",
+        "bt401_m1_june2023_q24",
+        "bt401_m1_june2023_q25",
+        "bt401_m1_june2023_q26",
+        "bt401_m1_june2023_q27",
+        "bt401_m1_nov2022_q28",
+        "bt401_m1_nov2022_q29",
+        "bt401_m1_nov2022_q30",
+        "bt401_m1_nov2022_q31",
+        "bt401_m1_nov2022_q32"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "bt401-m2",
       "number": 2,
       "title": "Numerical Methods – 2",
       "hours": 6,
       "topics": [
-        "Numerical Differentiation",
-        "Numerical integration: Trapezoidal rule and Simpson’s 1/3rd and 3/8 rules",
-        "Solution of Simultaneous Linear Algebraic Equations by Gauss’s Elimination, Gauss’s Jordan, Crout’s methods, Jacobi’s, Gauss-Seidal, and Relaxation method"
-      ]
+        {
+          "id": "bt401-m2-numerical-differentiation",
+          "slug": "numerical-differentiation",
+          "title": "Numerical Differentiation",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt401-m2-trapezoidal",
+          "slug": "trapezoidal-rule",
+          "title": "Numerical integration: Trapezoidal rule",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt401-m2-simpson",
+          "slug": "simpson-rules",
+          "title": "Simpson's 1/3rd and 3/8 rules",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt401-m2-gauss-elimination",
+          "slug": "gauss-elimination",
+          "title": "Gauss's Elimination method",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt401-m2-gauss-jordan",
+          "slug": "gauss-jordan",
+          "title": "Gauss's Jordan method",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt401-m2-crout",
+          "slug": "crout-method",
+          "title": "Crout's method",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt401-m2-jacobi",
+          "slug": "jacobi-method",
+          "title": "Jacobi's method",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt401-m2-gauss-seidal",
+          "slug": "gauss-seidal",
+          "title": "Gauss-Seidal method",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt401-m2-relaxation",
+          "slug": "relaxation-method",
+          "title": "Relaxation method",
+          "displayOrder": 9
+        }
+      ],
+      "questionIds": [
+        "bt401_m2_june2025_q1",
+        "bt401_m2_june2025_q2",
+        "bt401_m2_dec2024_q3",
+        "bt401_m2_dec2024_q4",
+        "bt401_m2_dec2024_q5",
+        "bt401_m2_dec2024_q6",
+        "bt401_m2_june2024_q7",
+        "bt401_m2_june2024_q8",
+        "bt401_m2_nov2023_q9",
+        "bt401_m2_nov2023_q10",
+        "bt401_m2_june2023_q4",
+        "bt401_m2_june2023_q11",
+        "bt401_m2_june2023_q12",
+        "bt401_m2_june2023_q13",
+        "bt401_m2_nov2022_q14",
+        "bt401_m2_nov2022_q15"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "bt401-m3",
       "number": 3,
       "title": "Numerical Methods – 3",
       "hours": 10,
       "topics": [
-        "Ordinary differential equations: Taylor’s series, Euler and modified Euler’s methods",
-        "RungeKutta method of fourth order for solving first and second order equations",
-        "Milne’s and Adam’s predicator-corrector methods",
-        "Partial differential equations: Finite difference solution two dimensional Laplace equation and Poission equation",
-        "Implicit and explicit methods for one dimensional heat equation (BenderSchmidt and Crank-Nicholson methods)",
-        "Finite difference explicit method for wave equation"
-      ]
+        {
+          "id": "bt401-m3-taylor-series",
+          "slug": "taylor-series-method",
+          "title": "Taylor's series method",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt401-m3-euler",
+          "slug": "euler-method",
+          "title": "Euler method",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt401-m3-modified-euler",
+          "slug": "modified-euler-method",
+          "title": "Modified Euler's method",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt401-m3-runge-kutta",
+          "slug": "runge-kutta-method",
+          "title": "Runge-Kutta method of fourth order for first and second order equations",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt401-m3-milne",
+          "slug": "milne-method",
+          "title": "Milne's predictor-corrector method",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt401-m3-adams",
+          "slug": "adams-method",
+          "title": "Adam's predictor-corrector method",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt401-m3-laplace-poisson",
+          "slug": "laplace-poisson-fde",
+          "title": "Finite difference solution of two dimensional Laplace and Poisson equations",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt401-m3-heat-equation",
+          "slug": "heat-equation-methods",
+          "title": "Bender-Schmidt and Crank-Nicholson methods for one dimensional heat equation",
+          "displayOrder": 8
+        },
+        {
+          "id": "bt401-m3-wave-equation",
+          "slug": "wave-equation-fde",
+          "title": "Finite difference explicit method for wave equation",
+          "displayOrder": 9
+        }
+      ],
+      "questionIds": [
+        "bt401_m3_june2025_q1",
+        "bt401_m3_june2025_q2",
+        "bt401_m3_june2025_q3",
+        "bt401_m3_dec2024_q4",
+        "bt401_m3_dec2024_q5",
+        "bt401_m3_june2024_q6",
+        "bt401_m3_june2024_q7",
+        "bt401_m3_nov2023_q8",
+        "bt401_m3_nov2023_q9",
+        "bt401_m3_june2023_q10",
+        "bt401_m3_june2023_q11",
+        "bt401_m3_nov2022_q6",
+        "bt401_m3_nov2022_q7",
+        "bt401_m3_nov2022_q12",
+        "bt401_m3_nov2022_q13"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "bt401-m4",
       "number": 4,
       "title": "Transform Calculus",
       "hours": 8,
       "topics": [
-        "Laplace Transform",
-        "Properties of Laplace Transform",
-        "Laplace transform of periodic functions",
-        "Finding inverse Laplace transform by different methods",
-        "Convolution theorem",
-        "Evaluation of integrals by Laplace transform",
-        "Solving ODEs by Laplace Transform method",
-        "Fourier transforms"
-      ]
+        {
+          "id": "bt401-m4-laplace-transform",
+          "slug": "laplace-transform",
+          "title": "Laplace Transform",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt401-m4-laplace-properties",
+          "slug": "laplace-properties",
+          "title": "Properties of Laplace Transform",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt401-m4-laplace-periodic",
+          "slug": "laplace-periodic",
+          "title": "Laplace transform of periodic functions",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt401-m4-inverse-laplace",
+          "slug": "inverse-laplace",
+          "title": "Finding inverse Laplace transform by different methods",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt401-m4-convolution",
+          "slug": "convolution-theorem",
+          "title": "Convolution theorem",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt401-m4-laplace-integrals",
+          "slug": "laplace-integrals",
+          "title": "Evaluation of integrals by Laplace transform",
+          "displayOrder": 6
+        },
+        {
+          "id": "bt401-m4-laplace-ode",
+          "slug": "laplace-ode",
+          "title": "Solving ODEs by Laplace Transform method",
+          "displayOrder": 7
+        },
+        {
+          "id": "bt401-m4-fourier-transform",
+          "slug": "fourier-transform",
+          "title": "Fourier transforms",
+          "displayOrder": 8
+        }
+      ],
+      "questionIds": [
+        "bt401_m4_june2025_q1",
+        "bt401_m4_june2025_q2",
+        "bt401_m4_june2025_q3",
+        "bt401_m4_dec2024_q4",
+        "bt401_m4_dec2024_q5",
+        "bt401_m4_dec2024_q6",
+        "bt401_m4_dec2024_q7",
+        "bt401_m4_june2024_q8",
+        "bt401_m4_june2024_q9",
+        "bt401_m4_nov2023_q10",
+        "bt401_m4_nov2023_q11",
+        "bt401_m4_nov2023_q12",
+        "bt401_m4_june2023_q13",
+        "bt401_m4_june2023_q14",
+        "bt401_m4_june2023_q15",
+        "bt401_m4_june2023_q16",
+        "bt401_m4_nov2022_q17",
+        "bt401_m4_nov2022_q18"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "bt401-m5",
       "number": 5,
       "title": "Concept of Probability",
       "hours": 8,
       "topics": [
-        "Probability Mass function",
-        "Probability Density Function",
-        "Discrete Distribution: Binomial, Poisson’s",
-        "Continuous Distribution: Normal Distribution, Exponential Distribution"
-      ]
+        {
+          "id": "bt401-m5-pmf",
+          "slug": "probability-mass-function",
+          "title": "Probability Mass function",
+          "displayOrder": 1
+        },
+        {
+          "id": "bt401-m5-pdf",
+          "slug": "probability-density-function",
+          "title": "Probability Density Function",
+          "displayOrder": 2
+        },
+        {
+          "id": "bt401-m5-binomial",
+          "slug": "binomial-distribution",
+          "title": "Binomial Distribution",
+          "displayOrder": 3
+        },
+        {
+          "id": "bt401-m5-poisson",
+          "slug": "poisson-distribution",
+          "title": "Poisson Distribution",
+          "displayOrder": 4
+        },
+        {
+          "id": "bt401-m5-normal",
+          "slug": "normal-distribution",
+          "title": "Normal Distribution",
+          "displayOrder": 5
+        },
+        {
+          "id": "bt401-m5-exponential",
+          "slug": "exponential-distribution",
+          "title": "Exponential Distribution",
+          "displayOrder": 6
+        }
+      ],
+      "questionIds": [
+        "bt401_m5_june2025_q1",
+        "bt401_m5_june2025_q2",
+        "bt401_m5_june2025_q3",
+        "bt401_m5_june2025_q4",
+        "bt401_m5_june2025_q5",
+        "bt401_m5_dec2024_q6",
+        "bt401_m5_dec2024_q7",
+        "bt401_m5_june2024_q8",
+        "bt401_m5_june2024_q9",
+        "bt401_m5_nov2023_q6",
+        "bt401_m5_nov2023_q7",
+        "bt401_m5_june2023_q4",
+        "bt401_m5_june2023_q5",
+        "bt401_m5_nov2022_q10",
+        "bt401_m5_nov2022_q11",
+        "bt401_m5_nov2022_q12"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }
