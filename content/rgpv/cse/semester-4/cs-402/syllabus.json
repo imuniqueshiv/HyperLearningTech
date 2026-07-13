@@ -3,71 +3,373 @@
     "id": "cs-402",
     "code": "CS-402",
     "name": "Analysis Design of Algorithm",
-    "title": "CS-402 - Analysis Design of Algorithm",
-    "semester": "IV"
+    "title": "CS-402 – Analysis Design of Algorithm (ADA)",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "IV",
+    "branch": "CSE-Computer Science Engineering"
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "cs402-m1",
       "number": 1,
       "title": "Introduction to Algorithms and Divide & Conquer",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Algorithms",
-        "Designing algorithms",
-        "analyzing algorithms",
-        "asymptotic notations",
-        "heap and heap sort",
-        "Introduction to divide and conquer technique",
-        "analysis, design and comparison of various algorithms based on this technique",
-        "example binary search, merge sort, quick sort, strassen’s matrix multiplication"
-      ]
+        {
+          "id": "cs402-m1-algorithms",
+          "slug": "algorithms",
+          "title": "Algorithms, Designing algorithms, analyzing algorithms",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs402-m1-asymptotic",
+          "slug": "asymptotic-notations",
+          "title": "Asymptotic notations",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs402-m1-heap",
+          "slug": "heap-sort",
+          "title": "Heap and heap sort",
+          "displayOrder": 3
+        },
+        {
+          "id": "cs402-m1-divide-conquer",
+          "slug": "divide-and-conquer",
+          "title": "Introduction to divide and conquer technique",
+          "displayOrder": 4
+        },
+        {
+          "id": "cs402-m1-binary-search",
+          "slug": "binary-search",
+          "title": "Binary search",
+          "displayOrder": 5
+        },
+        {
+          "id": "cs402-m1-merge-sort",
+          "slug": "merge-sort",
+          "title": "Merge sort",
+          "displayOrder": 6
+        },
+        {
+          "id": "cs402-m1-quick-sort",
+          "slug": "quick-sort",
+          "title": "Quick sort",
+          "displayOrder": 7
+        },
+        {
+          "id": "cs402-m1-strassen",
+          "slug": "strassen-multiplication",
+          "title": "Strassen's matrix multiplication",
+          "displayOrder": 8
+        }
+      ],
+      "questionIds": [
+        "cs402_m1_june2025_q1",
+        "cs402_m1_june2025_q2",
+        "cs402_m1_dec2024_q3",
+        "cs402_m1_dec2024_q4",
+        "cs402_m1_dec2024_q5",
+        "cs402_m1_dec2024_q6",
+        "cs402_m1_june2024_q7",
+        "cs402_m1_june2024_q8",
+        "cs402_m1_june2024_q9",
+        "cs402_m1_june2024_q10",
+        "cs402_m1_nov2023_q11",
+        "cs402_m1_nov2023_q12",
+        "cs402_m1_nov2023_q13",
+        "cs402_m1_nov2023_q14",
+        "cs402_m1_nov2023_q15",
+        "cs402_m1_june2023_q16",
+        "cs402_m1_june2023_q17",
+        "cs402_m1_june2023_q18",
+        "cs402_m1_june2023_q19",
+        "cs402_m1_nov2022_q20",
+        "cs402_m1_nov2022_q21",
+        "cs402_m1_nov2022_q22",
+        "cs402_m1_nov2022_q23"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "cs402-m2",
       "number": 2,
       "title": "Greedy Strategy",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Study of Greedy strategy",
-        "examples of greedy method like optimal merge patterns, Huffman coding, minimum spanning trees, knapsack problem, job sequencing with deadlines, single source shortest path algorithm"
-      ]
+        {
+          "id": "cs402-m2-greedy-intro",
+          "slug": "greedy-strategy",
+          "title": "Study of Greedy strategy",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs402-m2-optimal-merge",
+          "slug": "optimal-merge-patterns",
+          "title": "Optimal merge patterns",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs402-m2-huffman",
+          "slug": "huffman-coding",
+          "title": "Huffman coding",
+          "displayOrder": 3
+        },
+        {
+          "id": "cs402-m2-mst",
+          "slug": "minimum-spanning-trees",
+          "title": "Minimum spanning trees",
+          "displayOrder": 4
+        },
+        {
+          "id": "cs402-m2-knapsack",
+          "slug": "knapsack-problem",
+          "title": "Knapsack problem",
+          "displayOrder": 5
+        },
+        {
+          "id": "cs402-m2-job-sequencing",
+          "slug": "job-sequencing-deadlines",
+          "title": "Job sequencing with deadlines",
+          "displayOrder": 6
+        },
+        {
+          "id": "cs402-m2-sssp",
+          "slug": "single-source-shortest-path",
+          "title": "Single source shortest path algorithm",
+          "displayOrder": 7
+        }
+      ],
+      "questionIds": [
+        "cs402_m2_june2025_q1",
+        "cs402_m2_june2025_q2",
+        "cs402_m2_dec2024_q3",
+        "cs402_m2_dec2024_q4",
+        "cs402_m2_dec2024_q5",
+        "cs402_m2_dec2024_q6",
+        "cs402_m2_june2024_q7",
+        "cs402_m2_june2024_q8",
+        "cs402_m2_june2024_q9",
+        "cs402_m2_june2024_q10",
+        "cs402_m2_nov2023_q11",
+        "cs402_m2_nov2023_q12",
+        "cs402_m2_june2023_q13",
+        "cs402_m2_june2023_q14",
+        "cs402_m2_june2023_q15",
+        "cs402_m2_nov2022_q16",
+        "cs402_m2_nov2022_q17"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "cs402-m3",
       "number": 3,
       "title": "Dynamic Programming",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Concept of dynamic programming",
-        "problems based on this approach such as 0/1 knapsack, multistage graph, reliability design, Floyd-Warshall algorithm"
-      ]
+        {
+          "id": "cs402-m3-dp-concept",
+          "slug": "dynamic-programming",
+          "title": "Concept of dynamic programming",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs402-m3-knapsack-dp",
+          "slug": "knapsack-dp",
+          "title": "0/1 Knapsack problem using DP",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs402-m3-multistage",
+          "slug": "multistage-graph",
+          "title": "Multistage graph",
+          "displayOrder": 3
+        },
+        {
+          "id": "cs402-m3-reliability",
+          "slug": "reliability-design",
+          "title": "Reliability design",
+          "displayOrder": 4
+        },
+        {
+          "id": "cs402-m3-floyd-warshall",
+          "slug": "floyd-warshall",
+          "title": "Floyd-Warshall algorithm",
+          "displayOrder": 5
+        }
+      ],
+      "questionIds": [
+        "cs402_m3_june2025_q1",
+        "cs402_m3_june2025_q2",
+        "cs402_m3_june2025_q3",
+        "cs402_m3_june2025_q4",
+        "cs402_m3_dec2024_q5",
+        "cs402_m3_dec2024_q6",
+        "cs402_m3_june2024_q7",
+        "cs402_m3_june2024_q8",
+        "cs402_m3_june2024_q9",
+        "cs402_m3_nov2023_q10",
+        "cs402_m3_nov2023_q11",
+        "cs402_m3_nov2023_q12",
+        "cs402_m3_june2023_q13",
+        "cs402_m3_june2023_q14",
+        "cs402_m3_june2023_q15",
+        "cs402_m3_june2023_q16",
+        "cs402_m3_nov2022_q17",
+        "cs402_m3_nov2022_q18",
+        "cs402_m3_nov2022_q19",
+        "cs402_m3_nov2022_q20"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "cs402-m4",
       "number": 4,
       "title": "Backtracking and Branch & Bound",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Backtracking concept and its examples like 8 queen’s problem, Hamiltonian cycle, Graph coloring problem etc.",
-        "Introduction to branch & bound method",
-        "examples of branch and bound method like traveling salesman problem etc.",
-        "Meaning of lower bound theory and its use in solving algebraic problem",
-        "introduction to parallel algorithms"
-      ]
+        {
+          "id": "cs402-m4-backtracking",
+          "slug": "backtracking",
+          "title": "Backtracking concept",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs402-m4-8queens",
+          "slug": "8-queens-problem",
+          "title": "8 Queen's problem",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs402-m4-hamiltonian",
+          "slug": "hamiltonian-cycle",
+          "title": "Hamiltonian cycle",
+          "displayOrder": 3
+        },
+        {
+          "id": "cs402-m4-graph-coloring",
+          "slug": "graph-coloring",
+          "title": "Graph coloring problem",
+          "displayOrder": 4
+        },
+        {
+          "id": "cs402-m4-branch-bound",
+          "slug": "branch-and-bound",
+          "title": "Introduction to branch & bound method",
+          "displayOrder": 5
+        },
+        {
+          "id": "cs402-m4-tsp",
+          "slug": "traveling-salesman",
+          "title": "Traveling salesman problem using branch & bound",
+          "displayOrder": 6
+        },
+        {
+          "id": "cs402-m4-lower-bound",
+          "slug": "lower-bound-theory",
+          "title": "Lower bound theory and its use in solving algebraic problem",
+          "displayOrder": 7
+        },
+        {
+          "id": "cs402-m4-parallel",
+          "slug": "parallel-algorithms",
+          "title": "Introduction to parallel algorithms",
+          "displayOrder": 8
+        }
+      ],
+      "questionIds": [
+        "cs402_m4_june2025_q1",
+        "cs402_m4_june2025_q2",
+        "cs402_m4_june2025_q3",
+        "cs402_m4_dec2024_q4",
+        "cs402_m4_dec2024_q5",
+        "cs402_m4_dec2024_q6",
+        "cs402_m4_dec2024_q7",
+        "cs402_m4_june2024_q8",
+        "cs402_m4_june2024_q9",
+        "cs402_m4_june2024_q10",
+        "cs402_m4_june2024_q11",
+        "cs402_m4_nov2023_q12",
+        "cs402_m4_nov2023_q13",
+        "cs402_m4_nov2023_q14",
+        "cs402_m4_nov2023_q15",
+        "cs402_m4_june2023_q16",
+        "cs402_m4_june2023_q17",
+        "cs402_m4_june2023_q18",
+        "cs402_m4_nov2022_q19",
+        "cs402_m4_nov2022_q20",
+        "cs402_m4_nov2022_q21"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "cs402-m5",
       "number": 5,
       "title": "Trees, Graphs, and NP-Completeness",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Binary search trees",
-        "height balanced trees",
-        "2-3 trees, B-trees",
-        "basic search and traversal techniques for trees and graphs (In order, preorder, postorder, DFS, BFS)",
-        "NP-completeness"
-      ]
+        {
+          "id": "cs402-m5-bst",
+          "slug": "binary-search-trees",
+          "title": "Binary search trees",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs402-m5-avl",
+          "slug": "height-balanced-trees",
+          "title": "Height balanced trees (AVL)",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs402-m5-23trees",
+          "slug": "2-3-trees",
+          "title": "2-3 trees",
+          "displayOrder": 3
+        },
+        {
+          "id": "cs402-m5-btrees",
+          "slug": "b-trees",
+          "title": "B-trees",
+          "displayOrder": 4
+        },
+        {
+          "id": "cs402-m5-traversals",
+          "slug": "tree-graph-traversals",
+          "title": "Basic search and traversal techniques (Inorder, Preorder, Postorder, DFS, BFS)",
+          "displayOrder": 5
+        },
+        {
+          "id": "cs402-m5-np",
+          "slug": "np-completeness",
+          "title": "NP-completeness",
+          "displayOrder": 6
+        }
+      ],
+      "questionIds": [
+        "cs402_m5_june2025_q1",
+        "cs402_m5_june2025_q2",
+        "cs402_m5_june2025_q3",
+        "cs402_m5_june2025_q4",
+        "cs402_m5_june2025_q5",
+        "cs402_m5_june2025_q6",
+        "cs402_m5_dec2024_q7",
+        "cs402_m5_dec2024_q8",
+        "cs402_m5_dec2024_q9",
+        "cs402_m5_june2024_q10",
+        "cs402_m5_june2024_q11",
+        "cs402_m5_nov2023_q12",
+        "cs402_m5_nov2023_q13",
+        "cs402_m5_nov2023_q14",
+        "cs402_m5_june2023_q15",
+        "cs402_m5_june2023_q16",
+        "cs402_m5_june2023_q17",
+        "cs402_m5_nov2022_q18",
+        "cs402_m5_nov2022_q19",
+        "cs402_m5_nov2022_q20",
+        "cs402_m5_nov2022_q21"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }
