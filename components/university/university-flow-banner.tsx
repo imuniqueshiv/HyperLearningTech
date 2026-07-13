@@ -335,7 +335,7 @@ export default function UniversityFlowBanner() {
                           />
                         )}
                       </AnimatePresence>
-                      
+
                       {/* Mobile Separator */}
                       <div className="sm:hidden absolute top-[35px] w-full border-t-2 border-dashed border-slate-300" />
                     </div>
