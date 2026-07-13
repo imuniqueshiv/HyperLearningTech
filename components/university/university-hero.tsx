@@ -158,7 +158,7 @@ export default function UniversityHero() {
       </div>
 
       {/* Submerged Flow Banner with Corrected Hierarchy */}
-      <div className="relative z-10 mt-20 pb-4">
+      <div className="relative z-10 mt-4 pb-4">
         <UniversityFlowBanner />
       </div>
     </section>
