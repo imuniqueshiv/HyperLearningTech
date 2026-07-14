@@ -1,6 +1,6 @@
 import UniversityHero from "@/components/university/university-hero";
 import BranchGrid from "@/components/university/branch-grid";
-import QuickAccess from "@/components/university/quick-access";
+import DashboardPage from "@/app/dashboard/page";
 
 export default function RGPVPage() {
   return (
@@ -33,8 +33,8 @@ export default function RGPVPage() {
         {/* Branch Selection */}
         <BranchGrid />
 
-        {/* Academic Navigation */}
-        <QuickAccess />
+        {/* Dashboard */}
+        <DashboardPage />
       </div>
     </main>
   );
