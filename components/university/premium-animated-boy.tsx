@@ -14,11 +14,12 @@ export const PremiumAnimatedBoy = ({
 }) => {
   const [stride, setStride] = useState(0);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const t: any = {
+  const t: import("framer-motion").Transition = {
     duration: isJumping && jumpType === "running" ? 0.6 : 0.45,
     ease:
-      isJumping && jumpType === "running" ? "easeInOut" : [0.25, 1, 0.35, 1],
+      isJumping && jumpType === "running"
+        ? "easeInOut"
+        : ([0.25, 1, 0.35, 1] as const),
   };
   const ht = {
     repeat: Infinity,
@@ -27,8 +28,10 @@ export const PremiumAnimatedBoy = ({
     ease: "easeInOut" as const,
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const sideToFrontVars = (sideVal: number, frontVal: number): any => ({
+  const sideToFrontVars = (
+    sideVal: number,
+    frontVal: number
+  ): import("framer-motion").Variants => ({
     run_a: { x: sideVal, transition: t },
     run_b: { x: sideVal, transition: t },
     standing_jump: { x: sideVal, transition: t },
@@ -102,8 +105,7 @@ export const PremiumAnimatedBoy = ({
     k_h: number[],
     L1: number,
     L2: number
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ): any => ({
+  ): import("framer-motion").Variants => ({
     run_a: { d: getLimbPath(h_ra, k_ra, L1, L2), transition: t },
     run_b: { d: getLimbPath(h_rb, k_rb, L1, L2), transition: t },
     standing_jump: { d: getLimbPath(h_j, k_j, L1, L2), transition: t },
@@ -136,8 +138,7 @@ export const PremiumAnimatedBoy = ({
     a_h: number[] | null,
     L1: number,
     L2: number
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ): any => ({
+  ): import("framer-motion").Variants => ({
     run_a: {
       ...getEndObj(h_ra, k_ra, L1, L2),
       rotate: h_ra.map((h, i) => h + k_ra[i] + (a_ra?.[i] || 0)),
