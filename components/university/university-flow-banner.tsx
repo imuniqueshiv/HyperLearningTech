@@ -162,7 +162,6 @@ export default function UniversityFlowBanner() {
                       }
                       jumpType={jumpGap === 0 ? "standing" : "running"}
                     />
-
                     {/* Premium Minimal Wind Waves */}
                     <AnimatePresence>
                       {isJumping && (
@@ -270,7 +269,6 @@ export default function UniversityFlowBanner() {
                         </motion.div>
                       )}
                     </AnimatePresence>
-
                     {activeStep === steps.length - 1 && !isJumping && (
                       <>
                         {/* Minimal Radial Burst */}

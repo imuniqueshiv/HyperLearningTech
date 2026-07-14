@@ -3,86 +3,251 @@
     "id": "cs-405",
     "code": "CS-405",
     "name": "Operating Systems",
-    "title": "CS-405 - Operating Systems",
-    "semester": "IV"
+    "title": "CS-405 – Operating Systems (OS)",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "IV",
+    "branch": "CSE-Computer Science Engineering"
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "cs405-m1",
       "number": 1,
       "title": "Introduction to Operating Systems",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Function, Evolution, Different Types",
-        "Desirable Characteristics and features of an O/S",
-        "Operating Systems Services: Types of Services, Different ways of providing these Services – Utility Programs, System Calls"
-      ]
+        {
+          "id": "cs405-m1-functions-evolution",
+          "slug": "functions-evolution-types",
+          "title": "Function, Evolution, Different Types",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs405-m1-characteristics",
+          "slug": "desirable-characteristics-features",
+          "title": "Desirable Characteristics and features of an O/S",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs405-m1-services",
+          "slug": "operating-systems-services",
+          "title": "Operating Systems Services: Types of Services, Different ways of providing these Services – Utility Programs, System Calls",
+          "displayOrder": 3
+        }
+      ],
+      "questionIds": [
+        "cs405_m1_nov2022_q1",
+        "cs405_m1_nov2022_q2",
+        "cs405_m1_june2023_q3",
+        "cs405_m1_june2023_q4",
+        "cs405_m1_june2024_q5",
+        "cs405_m1_june2025_q6",
+        "cs405_m1_june2025_q7",
+        "cs405_m1_june2023_q8",
+        "cs405_m1_june2024_dec2024_june2025_q9"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "cs405-m2",
       "number": 2,
       "title": "File Systems",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "File Concept",
-        "User’s and System Programmer’s view of File System",
-        "Disk Organization, Tape Organization",
-        "Different Modules of a File System",
-        "Disk Space Allocation Methods – Contiguous, Linked, Indexed",
-        "Directory Structures",
-        "File Protection",
-        "System Calls for File Management",
-        "Disk Scheduling Algorithms"
-      ]
+        {
+          "id": "cs405-m2-file-concept",
+          "slug": "file-concept-views",
+          "title": "File Concept, User's and System Programmer's view of File System",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs405-m2-disk-tape-org",
+          "slug": "disk-tape-organization",
+          "title": "Disk Organization, Tape Organization",
+          "displayOrder": 2
+        },
+        {
+          "id": "cs405-m2-file-system-modules",
+          "slug": "file-system-modules",
+          "title": "Different Modules of a File System",
+          "displayOrder": 3
+        },
+        {
+          "id": "cs405-m2-allocation-methods",
+          "slug": "disk-space-allocation",
+          "title": "Disk Space Allocation Methods – Contiguous, Linked, Indexed",
+          "displayOrder": 4
+        },
+        {
+          "id": "cs405-m2-directory-structures",
+          "slug": "directory-structures",
+          "title": "Directory Structures",
+          "displayOrder": 5
+        },
+        {
+          "id": "cs405-m2-file-protection",
+          "slug": "file-protection",
+          "title": "File Protection",
+          "displayOrder": 6
+        },
+        {
+          "id": "cs405-m2-file-system-calls",
+          "slug": "system-calls-file-management",
+          "title": "System Calls for File Management",
+          "displayOrder": 7
+        },
+        {
+          "id": "cs405-m2-disk-scheduling",
+          "slug": "disk-scheduling-algorithms",
+          "title": "Disk Scheduling Algorithms",
+          "displayOrder": 8
+        }
+      ],
+      "questionIds": [
+        "cs405_m2_nov2022_q1",
+        "cs405_m2_nov2022_q2",
+        "cs405_m2_june2023_q3",
+        "cs405_m2_june2023_q4",
+        "cs405_m2_june2023_q5",
+        "cs405_m2_june2023_q6",
+        "cs405_m2_june2024_q7",
+        "cs405_m2_june2024_june2025_q8",
+        "cs405_m2_dec2024_q9",
+        "cs405_m2_june2025_q10",
+        "cs405_m2_june2025_q11",
+        "cs405_m2_june2025_q12",
+        "cs405_m2_dec2024_q13"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "cs405-m3",
       "number": 3,
       "title": "CPU Scheduling & Memory Management",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "CPU Scheduling: Process Concept, Scheduling Concepts, Types of Schedulers",
-        "Process State Diagram",
-        "Scheduling Algorithms, Algorithms Evaluation",
-        "System calls for Process Management",
-        "Multiple Processor Scheduling",
-        "Concept of Threads",
-        "Memory Management: Different Memory Management Techniques – Partitioning, Swapping, Segmentation, Paging, Paged Segmentation",
-        "Comparison of these techniques",
-        "Techniques for supporting the execution of large programs: Overlay, Dynamic Linking and Loading",
-        "Virtual Memory – Concept, Implementation by Demand Paging etc."
-      ]
+        {
+          "id": "cs405-m3-process-concept",
+          "slug": "process-concept-scheduling",
+          "title": "CPU Scheduling: Process Concept, Scheduling Concepts, Types of Schedulers, Process State Diagram, Scheduling Algorithms, Algorithms Evaluation, System calls for Process Management; Multiple Processor Scheduling; Concept of Threads",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs405-m3-memory-management",
+          "slug": "memory-management-techniques",
+          "title": "Memory Management: Different Memory Management Techniques – Partitioning, Swapping, Segmentation, Paging, Paged Segmentation, Comparison of these techniques, Techniques for supporting the execution of large programs: Overlay, Dynamic Linking and Loading, Virtual Memory – Concept, Implementation by Demand Paging etc.",
+          "displayOrder": 2
+        }
+      ],
+      "questionIds": [
+        "cs405_m3_nov2022_q1",
+        "cs405_m3_nov2022_q2",
+        "cs405_m3_nov2022_q3",
+        "cs405_m3_nov2022_q4",
+        "cs405_m3_nov2022_q5",
+        "cs405_m3_june2023_q6",
+        "cs405_m3_june2023_q7",
+        "cs405_m3_june2023_q8",
+        "cs405_m3_june2023_q9",
+        "cs405_m3_june2024_q10",
+        "cs405_m3_june2024_q11",
+        "cs405_m3_june2024_june2025_q12",
+        "cs405_m3_june2024_q13",
+        "cs405_m3_june2024_q14",
+        "cs405_m3_june2024_q15",
+        "cs405_m3_dec2024_q16",
+        "cs405_m3_dec2024_q17",
+        "cs405_m3_dec2024_q18",
+        "cs405_m3_dec2024_q19",
+        "cs405_m3_dec2024_q20",
+        "cs405_m3_june2025_q21",
+        "cs405_m3_june2025_q22",
+        "cs405_m3_june2025_q23",
+        "cs405_m3_june2025_q24",
+        "cs405_m3_nov2022_q25",
+        "cs405_m3_june2024_q26",
+        "cs405_m3_dec2024_q27",
+        "cs405_m3_june2025_q28"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "cs405-m4",
       "number": 4,
       "title": "Input / Output & Concurrent Processes",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Input / Output: Principles and Programming",
-        "Input/Output Problems",
-        "Asynchronous Operations",
-        "Speed gap Format conversion",
-        "I/O Interfaces",
-        "Programme Controlled I/O",
-        "Interrupt Driven I/O",
-        "Concurrent I/O",
-        "Concurrent Processes: Real and Virtual Concurrency",
-        "Mutual Exclusion, Synchronization, Inter-Process Communication",
-        "Critical Section Problem, Solution to Critical Section Problem: Semaphores – Binary and Counting Semaphores",
-        "WAIT & SIGNAL Operations and their implementation",
-        "Deadlocks: Deadlock Problems, Characterization, Prevention, Avoidance, Recovery"
-      ]
+        {
+          "id": "cs405-m4-io",
+          "slug": "input-output",
+          "title": "Input / Output: Principles and Programming, Input/Output Problems, Asynchronous Operations, Speed gap Format conversion, I/O Interfaces, Programme Controlled I/O, Interrupt Driven I/O, Concurrent I/O",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs405-m4-concurrent-processes",
+          "slug": "concurrent-processes",
+          "title": "Concurrent Processes: Real and Virtual Concurrency, Mutual Exclusion, Synchronization, Inter-Process Communication, Critical Section Problem, Solution to Critical Section Problem: Semaphores – Binary and Counting Semaphores, WAIT & SIGNAL Operations and their implementation. Deadlocks: Deadlock Problems, Characterization, Prevention, Avoidance, Recovery",
+          "displayOrder": 2
+        }
+      ],
+      "questionIds": [
+        "cs405_m4_nov2022_q1",
+        "cs405_m4_nov2022_q2",
+        "cs405_m4_nov2022_q3",
+        "cs405_m4_nov2022_q4",
+        "cs405_m4_nov2022_q5",
+        "cs405_m4_june2023_q6",
+        "cs405_m4_june2023_q7",
+        "cs405_m4_june2023_q8",
+        "cs405_m4_june2024_june2025_q9",
+        "cs405_m4_june2024_june2025_q10",
+        "cs405_m4_dec2024_q11",
+        "cs405_m4_june2025_q12",
+        "cs405_m4_june2025_q13",
+        "cs405_m4_june2025_q14",
+        "cs405_m4_june2025_q15",
+        "cs405_m4_june2025_q16",
+        "cs405_m4_june2023_q17",
+        "cs405_m4_june2024_q18",
+        "cs405_m4_june2025_q19"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "cs405-m5",
       "number": 5,
       "title": "Network, Distributed and Multiprocessor Operating Systems",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Introduction to Network, Distributed and Multiprocessor Operating Systems",
-        "Case Studies: Unix/Linux, WINDOWS and other Contemporary Operating Systems"
-      ]
+        {
+          "id": "cs405-m5-intro",
+          "slug": "network-distributed-multiprocessor-os",
+          "title": "Introduction to Network, Distributed and Multiprocessor Operating Systems",
+          "displayOrder": 1
+        },
+        {
+          "id": "cs405-m5-case-studies",
+          "slug": "os-case-studies",
+          "title": "Case Studies: Unix/Linux, WINDOWS and other Contemporary Operating Systems",
+          "displayOrder": 2
+        }
+      ],
+      "questionIds": [
+        "cs405_m5_june2023_q1",
+        "cs405_m5_june2024_june2025_q2",
+        "cs405_m5_june2024_june2025_q3",
+        "cs405_m5_june2024_q4",
+        "cs405_m5_june2025_q5",
+        "cs405_m5_june2025_q6",
+        "cs405_m5_june2025_q7",
+        "cs405_m5_nov2022_q8",
+        "cs405_m5_nov2022_q9",
+        "cs405_m5_nov2022_q10",
+        "cs405_m5_june2023_q11",
+        "cs405_m5_june2023_q12",
+        "cs405_m5_june2025_q13"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }
