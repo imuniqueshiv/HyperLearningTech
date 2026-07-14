@@ -162,7 +162,113 @@ export default function UniversityFlowBanner() {
                       }
                       jumpType={jumpGap === 0 ? "standing" : "running"}
                     />
+                    {/* Premium Minimal Wind Waves */}
+                    <AnimatePresence>
+                      {isJumping && (
+                        <motion.div
+                          className="absolute top-[40%] right-[50%] mr-[12px] pointer-events-none z-[-1]"
+                          initial={{ opacity: 0, x: 10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          exit={{
+                            opacity: 0,
+                            x: -10,
+                            transition: { duration: 0.3 },
+                          }}
+                        >
+                          <svg
+                            viewBox="0 0 70 40"
+                            fill="none"
+                            className="w-[45px] sm:w-[70px] h-auto opacity-90"
+                          >
+                            <defs>
+                              <linearGradient
+                                id="wind-wave"
+                                x1="0%"
+                                y1="100%"
+                                x2="100%"
+                                y2="0%"
+                              >
+                                <stop
+                                  offset="0%"
+                                  stopColor="#60a5fa"
+                                  stopOpacity="0"
+                                />
+                                <stop
+                                  offset="50%"
+                                  stopColor="#93c5fd"
+                                  stopOpacity="0.5"
+                                />
+                                <stop
+                                  offset="100%"
+                                  stopColor="#ffffff"
+                                  stopOpacity="0.9"
+                                />
+                              </linearGradient>
+                              <filter
+                                id="soft-wind-glow"
+                                x="-50%"
+                                y="-50%"
+                                width="200%"
+                                height="200%"
+                              >
+                                <feGaussianBlur
+                                  stdDeviation="1.5"
+                                  result="blur"
+                                />
+                                <feMerge>
+                                  <feMergeNode in="blur" />
+                                  <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                              </filter>
+                            </defs>
 
+                            {/* Wind Line 1 (Main) */}
+                            <motion.path
+                              d="M 70 10 Q 40 10 0 30"
+                              stroke="url(#wind-wave)"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              filter="url(#soft-wind-glow)"
+                              initial={{ pathLength: 0 }}
+                              animate={{ pathLength: 1 }}
+                              transition={{ duration: 0.3, ease: "easeOut" }}
+                            />
+
+                            {/* Wind Line 2 (Lower, thinner) */}
+                            <motion.path
+                              d="M 60 20 Q 30 15 5 40"
+                              stroke="url(#wind-wave)"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              filter="url(#soft-wind-glow)"
+                              initial={{ pathLength: 0 }}
+                              animate={{ pathLength: 1 }}
+                              transition={{
+                                duration: 0.4,
+                                delay: 0.05,
+                                ease: "easeOut",
+                              }}
+                            />
+
+                            {/* Wind Line 3 (Highest, shortest) */}
+                            <motion.path
+                              d="M 65 2 Q 40 5 15 15"
+                              stroke="url(#wind-wave)"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              filter="url(#soft-wind-glow)"
+                              initial={{ pathLength: 0 }}
+                              animate={{ pathLength: 1 }}
+                              transition={{
+                                duration: 0.25,
+                                delay: 0.1,
+                                ease: "easeOut",
+                              }}
+                            />
+                          </svg>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                     {activeStep === steps.length - 1 && !isJumping && (
                       <>
                         {/* Minimal Radial Burst */}
@@ -305,34 +411,8 @@ export default function UniversityFlowBanner() {
                   {index < steps.length - 1 && (
                     <div className="flex-1 relative h-[70px] -mt-[35px] mx-[8px] z-0 pointer-events-none">
                       <AnimatePresence>
-                        {jumpGap === index && (
-                          <svg
-                            className="absolute inset-0 h-full w-full overflow-visible pointer-events-none"
-                            preserveAspectRatio="none"
-                            viewBox="0 0 100 100"
-                          >
-                            <motion.path
-                              d="M 0 100 Q 50 -20 100 100"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="3"
-                              strokeDasharray="6 6"
-                              vectorEffect="non-scaling-stroke"
-                              className="text-blue-400/80"
-                              initial={{ pathLength: 0 }}
-                              animate={{ pathLength: 1 }}
-                              exit={{
-                                opacity: 0,
-                                transition: { duration: 0.1 },
-                              }}
-                              transition={{ duration: 0.5, ease: "linear" }}
-                            />
-                          </svg>
-                        )}
+                        {/* The ground arc is removed in favor of the cartoon wave on his back */}
                       </AnimatePresence>
-
-                      {/* Mobile Separator */}
-                      <div className="sm:hidden absolute top-[35px] w-full border-t-2 border-dashed border-slate-300" />
                     </div>
                   )}
                 </React.Fragment>
