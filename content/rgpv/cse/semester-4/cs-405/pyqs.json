@@ -2,8 +2,928 @@
   "subject": {
     "id": "cs-405",
     "code": "CS-405",
-    "name": "Operating Systems (OS)",
-    "title": "CS-405 - Operating Systems (OS)"
+    "name": "Operating Systems",
+    "title": "AD/CD/CS/SD-405 (GS) – Operating Systems",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the different types of services in Operating system and its features.",
+              "unit": "Unit 1",
+              "type": "os-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the Utility programs with example. Explain system call.",
+              "unit": "Unit 1",
+              "type": "system-calls"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is Process? Explain the process states diagram.",
+              "unit": "Unit 3",
+              "type": "process"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Solve using preemptive priority scheduling algorithm for given processes. Draw Gantt chart and calculate Average waiting time and Turnaround time.",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the given resource allocation graph. Find if the system is in a deadlock state otherwise find a safe sequence.",
+              "unit": "Unit 4",
+              "type": "deadlock"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Difference between Deadlock and Starvation. Explain the necessary Condition for Deadlock.",
+              "unit": "Unit 4",
+              "type": "deadlock"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the types of Semaphores in process synchronization.",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the different criteria for evaluating the CPU scheduling algorithm?",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Consider system with byte-addressable memory, 32-bit logical addresses, 4KB page size, 4-byte page table entries. Find page table size in MB.",
+              "unit": "Unit 3",
+              "type": "memory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe fixed and variable partitioned contiguous memory allocation scheme with merits and demerits.",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Disk requests for cylinders 10,22,20,2,40,6,38 at cylinder 20. Find total seek time for FCFS and SCAN (6ms/cylinder).",
+              "unit": "Unit 2",
+              "type": "disk-scheduling"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How many types of disk allocation methods? Describe Indexed method with merits and demerits.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the deadlock recovery in brief.",
+              "unit": "Unit 4",
+              "type": "deadlock"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the I/O buffering and Interrupt driven operation in short.",
+              "unit": "Unit 4",
+              "type": "io"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Distributed OS b) Multiprocessor OS c) Network OS d) Paged Segmentation.",
+              "unit": "Unit 5/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define an operating system. What are the goals of an operating system? Explain.",
+              "unit": "Unit 1",
+              "type": "os-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the differences among short term, medium term and long term scheduling.",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is meant by system call? How it can be used. How does an application program use these call during execution?",
+              "unit": "Unit 1",
+              "type": "system-calls"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define Process States. Draw the diagram of PCB.",
+              "unit": "Unit 3",
+              "type": "process"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Disk drive with 200 cylinders (0-199), work queue: 23,89,132,42,187. Determine total distance for SCAN and LOOK.",
+              "unit": "Unit 2",
+              "type": "disk-scheduling"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "List the advantages and disadvantages of Magnetic Tape memory.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain in detail about various ways of free space management.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the difference between threads and process.",
+              "unit": "Unit 3",
+              "type": "process"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain paging and segmentation. How are they helpful in removing fragmentation?",
+              "unit": "Unit 3",
+              "type": "memory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is deadlock prevention? A computer has six tape drives, each process needs two. For which values of n is the system deadlock free?",
+              "unit": "Unit 4",
+              "type": "deadlock"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain mutual exclusion with suitable example.",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss Reader-Writers solution using Monitors.",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain file system used in Linux and Windows.",
+              "unit": "Unit 5",
+              "type": "os-comparison"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is a file? Briefly explain different directory structures. What kind of directory structure is used in UNIX?",
+              "unit": "Unit 2",
+              "type": "file-system"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on: a) Concurrent Programming b) Virus c) Remote Procedure Call (RPC) d) Time Sharing.",
+              "unit": "Unit 4/5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "In multiprogramming/time-sharing, several users share system. What are two security problems? Can same security be ensured as dedicated machine?",
+              "unit": "Unit 1",
+              "type": "os-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the five major activities of an operating system in regards to process management?",
+              "unit": "Unit 3",
+              "type": "process"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Why do some systems keep track of file type while others don't? Which system is better?",
+              "unit": "Unit 2",
+              "type": "file-system"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "For a file system with 512-byte blocks, explain logical-to-physical address mapping for contiguous, linked and indexed allocation.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What resources are used when a thread is created? How do they differ from process creation?",
+              "unit": "Unit 3",
+              "type": "process"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Given a segment table, find physical addresses for logical addresses: 0430, 110, 2500, 3400.",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is busy waiting? What other kinds of waiting exist? Can busy waiting be avoided?",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Can a system detect starving processes? Explain how or how to deal with starvation.",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the advantages and disadvantages of making the computer network transparent to the user?",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "List three possible types of failures in a distributed system.",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the benefits of mapping objects into virtual memory? Explain.",
+              "unit": "Unit 3",
+              "type": "memory"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the benefits of DFS compared to a file system in a centralized system?",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Why Semaphore is important in OS? Explain Binary and counting semaphores with example.",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Overlay? How do dynamic linking and loading perform in memory management?",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Synchronization b) Paging c) System Calls.",
+              "unit": "Unit 4/3/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Explain the need for the Process Control Block (PCB) fields.",
+              "unit": "Unit 3",
+              "type": "process"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2",
+              "label": "",
+              "text": "Given processes with burst time, priority and arrival time. Find scheduling sequence, turnaround time and waiting time for FCFS, RR(q=3), preemptive SJF.",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "How multilevel feedback queue scheduling differs from multilevel queue scheduling.",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "What is Resource Allocation Graph? Explain occurrence and avoidance of deadlock among 3 processes and 3 resources.",
+              "unit": "Unit 4",
+              "type": "deadlock"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "Page requests: 1,2,3,5,4,1,2,5,3,2,4,3. With three frames, how many page faults using Optimal Page Replacement?",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Write short notes on (any two): a) Thrashing b) LRU algorithm c) PCB d) Contiguous and Linked Disk Allocation e) Optimal Page Replacement f) Interrupts g) Multilevel Feedback Queue Scheduling.",
+              "unit": "Unit 3/2/4",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "Define the term 'Directory'. Explain any two schemes of logical directory structures.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "When do page-faults occur? Describe the action taken by the OS when page-fault occurs.",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the five major activities of an operating system in regards to memory management?",
+              "unit": "Unit 3",
+              "type": "memory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "List the functions of OS. How operating system perform management task in a system?",
+              "unit": "Unit 1",
+              "type": "os-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Give an example of an application where data should be accessed sequentially and randomly.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Disk with 5000 cylinders at cylinder 143, previous at 125. Find total distance for SSTF, SCAN and LOOK for given queue.",
+              "unit": "Unit 2",
+              "type": "disk-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider variant of RR where entries in ready queue are pointers to PCB. Effect of two pointers to same process? Major advantage and drawback?",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How many page faults for optimal page replacement with 4 frames for given reference string?",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Process P wants to wait for two messages from mailbox A and B. What sequence of send/receive?",
+              "unit": "Unit 4",
+              "type": "ipc"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Why use interrupt-driven I/O for single serial port but polling I/O for terminal concentrator?",
+              "unit": "Unit 4",
+              "type": "io"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What aspects of a distributed system would you select for a system running on a totally reliable network?",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "List three possible types of failures in a distributed system.",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define a semaphore for dining philosopher's problem.",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe method for process migration across different architectures running same OS and different OS.",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain concurrency controls. Differences between real and virtual concurrency?",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How process is differing from program? Describe process transition diagram in detail.",
+              "unit": "Unit 3",
+              "type": "process"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Deadlock prevention and avoidance b) Kernel architecture in Unix c) System calls.",
+              "unit": "Unit 4/5/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the evolution of operating system in detail.",
+              "unit": "Unit 1",
+              "type": "os-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "List the functions of OS. How operating system perform management task in a system?",
+              "unit": "Unit 1",
+              "type": "os-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is a File? Write different file attributes and operations?",
+              "unit": "Unit 2",
+              "type": "file-system"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "For a file system with 512-byte blocks, explain logical-to-physical address mapping for contiguous, linked and indexed allocation.",
+              "unit": "Unit 2",
+              "type": "file-system"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How process is differing from program? Describe process transition diagram in detail.",
+              "unit": "Unit 3",
+              "type": "process"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Given a segment table, find physical addresses for logical addresses: 0430, 110, 2500, 3400.",
+              "unit": "Unit 3",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the five major activities of an operating system in regards to memory management?",
+              "unit": "Unit 3",
+              "type": "memory"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is busy waiting? What other kinds of waiting exist? Can busy waiting be avoided?",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain concurrency controls. Differences between real and virtual concurrency?",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of buffering and spooling.",
+              "unit": "Unit 4",
+              "type": "io"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Why Semaphore is important in OS? Explain Binary and counting semaphores with suitable example.",
+              "unit": "Unit 4",
+              "type": "synchronization"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the advantages and disadvantages of making the computer network transparent to the user?",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the design issues of distributed operating system.",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "List three possible types of failures in a distributed system.",
+              "unit": "Unit 5",
+              "type": "distributed-os"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on (any two): a) Synchronization b) Demand paging c) System calls d) Kernel architecture in Unix.",
+              "unit": "Unit 4/3/1/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
