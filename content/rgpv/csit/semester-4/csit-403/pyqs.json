@@ -1,9 +1,151 @@
 {
-  "subject": {
-    "id": "csit-403",
-    "code": "CSIT-403",
-    "name": "Analysis & Design of Algorithm (ADA)",
-    "title": "CSIT-403 - Analysis & Design of Algorithm (ADA)"
+  "paper": {
+    "id": "csit403-june-2025",
+    "subjectCode": "AG/CSIT(CI)/IT-403",
+    "subjectName": "Analysis and Design of Algorithm",
+    "exam": "B.Tech./B.Tech. (Working Professional) IV Semester Examination, June 2025",
+    "system": "Grading System (GS) / Working Professional",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "note": "i) Attempt any five questions.\nii) All questions carry equal marks.",
+    "totalQuestions": 8
   },
-  "papers": []
+  "questions": [
+    {
+      "number": 1,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Write a recursive algorithm for computing the nth Fibonacci number.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q1a"
+        },
+        {
+          "label": "b",
+          "text": "A machine needs a minimum of 200 sec to sort 1000 elements by Quick sort. What is the minimum time needed to sort 200 elements will be approximately?",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q1b"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Generate recurrence relation from the recursive binary search algorithm.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q2a"
+        },
+        {
+          "label": "b",
+          "text": "Consider the problem of finding the smallest and largest elements in an array of numbers using divide and Conquer method.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q2b"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Find the time complexity of the recurrence relation T(n)=n+T(n/10)+T(7n/5).",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q3a"
+        },
+        {
+          "label": "b",
+          "text": "Analyze the time complexity of Strassen's algorithm compared to conventional matrix multiplication.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q3b"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "parts": [
+        {
+          "label": "a",
+          "text": "What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm with the help of algorithm.",
+          "unit": 2,
+          "questionId": "CSIT-403_jun_2025_Q4a"
+        },
+        {
+          "label": "b",
+          "text": "The recurrence T(n)=7T(n/2)+n² describe the running time of an algorithm A. A competing algorithm A has a running time of Γ(n)=aΓ(n/4)+n². What is the largest integer value for a A' is asymptotically faster than A?",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q4b"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Explain properties of Binomial Heap. Write an algorithm to perform uniting two Binomial Heaps. And also, to find Minimum Key.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q5a"
+        },
+        {
+          "label": "b",
+          "text": "Explain Backtracking. Let set S={1,3,4,5} and X=8, we have to find subset sum problem using backtracking approach.",
+          "unit": 4,
+          "questionId": "CSIT-403_jun_2025_Q5b"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "parts": [
+        {
+          "label": "a",
+          "text": "What is stable sorting algorithm? Which of the sorting algorithms we have seen are stable and which are unstable? Give name with explanation.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q6a"
+        },
+        {
+          "label": "b",
+          "text": "Suppose character a, b, c, d, e, f has probabilities 0.07, 0.09, 0.12, 0.22, 0.23, 0.27 respectively. Find an optimal Huffman code and draw the Huffman tree. What is the average code length?",
+          "unit": 2,
+          "questionId": "CSIT-403_jun_2025_Q6b"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Write Merge sort algorithm and sort the following sequence {23, 11, 5, 15, 68, 31, 4, 17} using merge sort.",
+          "unit": 1,
+          "questionId": "CSIT-403_jun_2025_Q7a"
+        },
+        {
+          "label": "b",
+          "text": "Explain B-Tree and its properties. Also write B-Tree deletion cases with example.",
+          "unit": 5,
+          "questionId": "CSIT-403_jun_2025_Q7b"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "parts": [
+        {
+          "label": "a",
+          "text": "For a binary tree T, the preorder and in-order traversal sequences are as follows:\nIn order : BCAEGDHFIJ\nPreorder : ABCDEGFHIJ\ni) Construct a binary Tree.\nii) What is its post-order traversal sequence?",
+          "unit": 5,
+          "questionId": "CSIT-403_jun_2025_Q8a"
+        },
+        {
+          "label": "b",
+          "text": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Kruskal's Minimum Spanning Tree in detail.",
+          "unit": 2,
+          "questionId": "CSIT-403_jun_2025_Q8b"
+        }
+      ]
+    }
+  ]
 }

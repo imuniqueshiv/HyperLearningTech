@@ -1,121 +1,260 @@
 {
   "subject": {
-    "id": "csit-402",
-    "code": "CSIT-402",
+    "id": "ci-402",
+    "code": "CI-402 (CSIT)",
     "name": "Analog & Digital Communication",
-    "title": "CSIT-402 - Analog & Digital Communication",
-    "semester": "IV"
+    "title": "CI-402 (CSIT) – Analog & Digital Communication (ADC)",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "IV",
+    "branch": "CSIT-Computer Science & Information Technology"
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "ci402-m1",
       "number": 1,
       "title": "Signals and Systems",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Block diagram of a communication system",
-        "signal-definition",
-        "types of signals continuous, discrete, deterministic, non-deterministic, periodic, non-periodic, energy, power, analog and digital signals",
-        "Electromagnetic Spectra",
-        "Standard signals- DC, sinusoidal, unit step, ramp, signum, rectangular pulse, impulse(delta) signal",
-        "System definition",
-        "classification of systems",
-        "linear, nonlinear, time variant, time invariant, causal, non causal, stable and unstable systems",
-        "Fourier transforms: Time domain and frequency domain representation of signal",
-        "Fourier Transform and its properties",
-        "conditions for existence",
-        "Transform of Gate, unit step, constant, impulse, sine and cosine wave",
-        "Shifting property of delta function",
-        "convolution, time and frequency convolution theorems"
-      ]
+        {
+          "id": "ci402-m1-communication-system",
+          "slug": "block-diagram-communication-system",
+          "title": "Block diagram of a communication system",
+          "displayOrder": 1
+        },
+        {
+          "id": "ci402-m1-signal-types",
+          "slug": "signal-definition-types",
+          "title": "Signal-definition, types of signals continuous, discrete, deterministic, non-deterministic, periodic, non-periodic, energy, power, analog and digital signals",
+          "displayOrder": 2
+        },
+        {
+          "id": "ci402-m1-electromagnetic-spectra",
+          "slug": "electromagnetic-spectra-standard-signals",
+          "title": "Electromagnetic Spectra, Standard signals- DC, sinusoidal, unit step, ramp, signum, rectangular pulse, impulse(delta) signal",
+          "displayOrder": 3
+        },
+        {
+          "id": "ci402-m1-system-classification",
+          "slug": "system-definition-classification",
+          "title": "System definition, classification of systems, linear, nonlinear, time variant, time invariant, causal, non causal, stable and unstable systems",
+          "displayOrder": 4
+        },
+        {
+          "id": "ci402-m1-fourier-transform",
+          "slug": "fourier-transform-properties",
+          "title": "Fourier transforms: Time domain and frequency domain representation of signal, Fourier Transform and its properties, conditions for existence, Transform of Gate, unit step, constant, impulse, sine and cosine wave",
+          "displayOrder": 5
+        },
+        {
+          "id": "ci402-m1-convolution",
+          "slug": "shifting-convolution-theorems",
+          "title": "Shifting property of delta function, convolution, time and frequency convolution theorems",
+          "displayOrder": 6
+        }
+      ],
+      "questionIds": [
+        "ci402_m1_june2024_q1",
+        "ci402_m1_june2024_q2",
+        "ci402_m1_june2024_q3",
+        "ci402_m1_june2023_q4",
+        "ci402_m1_june2023_q5",
+        "ci402_m1_june2023_q6",
+        "ci402_m1_nov2023_q7",
+        "ci402_m1_nov2023_q8"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "ci402-m2",
       "number": 2,
       "title": "Amplitude Modulation",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Modulation, need of modulation",
-        "types of modulation techniques",
-        "amplitude modulation (DSB-FC)",
-        "modulation index",
-        "frequency spectrum of AM wave",
-        "linear and over modulation",
-        "power relation in AM",
-        "transmission efficiency",
-        "modulation by a complex signal",
-        "bandwidth of AM",
-        "AM modulators",
-        "square law and switching modulator",
-        "advantages and disadvantages of AM",
-        "Demodulation of AM: Suppressed carrier amplitude modulation systems",
-        "DSB-SC, SSB-SC, VSB-SC systems",
-        "comparison of various amplitude modulation systems",
-        "Demodulation of AM, square law and envelope detector",
-        "synchronous detection of AM",
-        "Low and high power AM transmitters",
-        "AM receivers, TRF and superheterodyne receivers",
-        "sensitivity, selectivity and fidelity of receivers"
-      ]
+        {
+          "id": "ci402-m2-am-basics",
+          "slug": "modulation-need-am-dsb-fc",
+          "title": "Modulation, need of modulation, types of modulation techniques, amplitude modulation (DSB-FC), modulation index, frequency spectrum of AM wave, linear and over modulation, power relation in AM, transmission efficiency, modulation by a complex signal, bandwidth of AM, AM modulators, square law and switching modulator, advantages and disadvantages of AM",
+          "displayOrder": 1
+        },
+        {
+          "id": "ci402-m2-suppressed-carrier",
+          "slug": "dsb-sc-ssb-sc-vsb-sc",
+          "title": "Demodulation of AM: Suppressed carrier amplitude modulation systems, DSB-SC, SSB-SC, VSB-SC systems, comparison of various amplitude modulation systems",
+          "displayOrder": 2
+        },
+        {
+          "id": "ci402-m2-am-demodulation",
+          "slug": "am-demodulation-detectors",
+          "title": "Demodulation of AM, square law and envelope detector, synchronous detection of AM",
+          "displayOrder": 3
+        },
+        {
+          "id": "ci402-m2-am-transmitters-receivers",
+          "slug": "am-transmitters-receivers",
+          "title": "Low and high power AM transmitters, AM receivers, TRF and superheterodyne receivers, sensitivity, selectivity and fidelity of receivers",
+          "displayOrder": 4
+        }
+      ],
+      "questionIds": [
+        "ci402_m2_june2024_nov2023_q1",
+        "ci402_m2_june2024_q2",
+        "ci402_m2_june2024_q3",
+        "ci402_m2_june2023_q4",
+        "ci402_m2_june2023_q5",
+        "ci402_m2_nov2023_q6",
+        "ci402_m2_nov2023_q7",
+        "ci402_m2_nov2023_q8",
+        "ci402_m2_june2024_june2023_q9"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "ci402-m3",
       "number": 3,
-      "title": "Angle modulation",
-      "hours": 8,
+      "title": "Angle Modulation",
+      "hours": null,
       "topics": [
-        "Introduction and types of angle modulation",
-        "frequency modulation",
-        "frequency deviation",
-        "modulation index",
-        "deviation ratio",
-        "bandwidth requirement of FM wave",
-        "types of FM",
-        "Phase modulation, difference between FM and PM",
-        "Direct and indirect method of FM generation",
-        "FM demodulators- slope detector, Foster seeley discriminator, ratio detector",
-        "Introduction to pulse modulation systems"
-      ]
+        {
+          "id": "ci402-m3-fm-basics",
+          "slug": "frequency-modulation-types",
+          "title": "Introduction and types of angle modulation, frequency modulation, frequency deviation, modulation index, deviation ratio, bandwidth requirement of FM wave, types of FM",
+          "displayOrder": 1
+        },
+        {
+          "id": "ci402-m3-pm-comparison",
+          "slug": "phase-modulation-fm-vs-pm",
+          "title": "Phase modulation, difference between FM and PM",
+          "displayOrder": 2
+        },
+        {
+          "id": "ci402-m3-fm-generation",
+          "slug": "direct-indirect-fm-generation",
+          "title": "Direct and indirect method of FM generation",
+          "displayOrder": 3
+        },
+        {
+          "id": "ci402-m3-fm-demodulators",
+          "slug": "fm-demodulators-slope-foster-seeley-ratio",
+          "title": "FM demodulators- slope detector, Foster seeley discriminator, ratio detector",
+          "displayOrder": 4
+        },
+        {
+          "id": "ci402-m3-pulse-modulation",
+          "slug": "introduction-pulse-modulation",
+          "title": "Introduction to pulse modulation systems",
+          "displayOrder": 5
+        }
+      ],
+      "questionIds": [
+        "ci402_m3_june2024_q1",
+        "ci402_m3_june2024_q2",
+        "ci402_m3_june2024_q3",
+        "ci402_m3_june2023_q4",
+        "ci402_m3_june2023_q5",
+        "ci402_m3_june2023_q6",
+        "ci402_m3_nov2023_q7",
+        "ci402_m3_nov2023_q8",
+        "ci402_m3_nov2023_q9",
+        "ci402_m3_nov2023_q10",
+        "ci402_m3_june2024_june2023_q11"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "ci402-m4",
       "number": 4,
-      "title": "Sampling of signal",
-      "hours": 8,
+      "title": "Sampling of Signal",
+      "hours": null,
       "topics": [
-        "sampling theorem for low pass and Band pass signal",
-        "Pulse amplitude modulation (PAM)",
-        "Time division, multiplexing (TDM)",
-        "Channel Bandwidth for PAMTDM signal",
-        "Type of sampling instantaneous, Natural and flat top",
-        "Aperture effect",
-        "Introduction to pulse position and pulse duration modulations",
-        "Digital signal, Quantization, Quantization error",
-        "Pulse code modulation",
-        "signal to noise ratio",
-        "Companding",
-        "Data rate and Baud rate, Bit rate",
-        "multiplexed PCM signal",
-        "Differential PCM (DPCM)",
-        "Delta Modulation (DM) and Adaptive Delta Modulation (ADM)",
-        "comparison of various systems"
-      ]
+        {
+          "id": "ci402-m4-sampling-theorem",
+          "slug": "sampling-theorem-low-pass-band-pass",
+          "title": "Sampling theorem for low pass and Band pass signal",
+          "displayOrder": 1
+        },
+        {
+          "id": "ci402-m4-pam-tdm",
+          "slug": "pam-tdm-channel-bandwidth",
+          "title": "Pulse amplitude modulation (PAM), Time division, multiplexing (TDM). Channel Bandwidth for PAMTDM signal",
+          "displayOrder": 2
+        },
+        {
+          "id": "ci402-m4-sampling-types",
+          "slug": "sampling-types-aperture-effect",
+          "title": "Type of sampling instantaneous, Natural and flat top, Aperture effect",
+          "displayOrder": 3
+        },
+        {
+          "id": "ci402-m4-ppm-pdm",
+          "slug": "pulse-position-duration-modulation",
+          "title": "Introduction to pulse position and pulse duration modulations",
+          "displayOrder": 4
+        },
+        {
+          "id": "ci402-m4-pcm",
+          "slug": "pcm-quantization-companding",
+          "title": "Digital signal, Quantization, Quantization error, Pulse code modulation, signal to noise ratio, Companding, Data rate and Baud rate, Bit rate, multiplexed PCM signal",
+          "displayOrder": 5
+        },
+        {
+          "id": "ci402-m4-dpcm-dm-adm",
+          "slug": "dpcm-delta-modulation-adaptive",
+          "title": "Differential PCM (DPCM), Delta Modulation (DM) and Adaptive Delta Modulation (ADM), comparison of various systems",
+          "displayOrder": 6
+        }
+      ],
+      "questionIds": [
+        "ci402_m4_june2024_q1",
+        "ci402_m4_june2024_q2",
+        "ci402_m4_june2024_q3",
+        "ci402_m4_june2023_q4",
+        "ci402_m4_june2023_q5",
+        "ci402_m4_june2023_q6",
+        "ci402_m4_nov2023_q7",
+        "ci402_m4_nov2023_q8",
+        "ci402_m4_nov2023_q9",
+        "ci402_m4_nov2023_q10",
+        "ci402_m4_june2024_q11",
+        "ci402_m4_june2023_q12"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "ci402-m5",
       "number": 5,
-      "title": "Digital modulations Techniques",
-      "hours": 8,
+      "title": "Digital Modulations Techniques",
+      "hours": null,
       "topics": [
-        "Generation, detection, equation and Bandwidth of amplitude shift keying (ASK)",
-        "Binary Phase Shift keying (BPSK)",
-        "Differential phase shift keying (DPSK)",
-        "offset and non offset quadrature phase shift keying (QPSK)",
-        "M-Ary PSK",
-        "Binary frequency Shift Keying (BFSK)",
-        "M-Ary FSK",
-        "Quadrature Amplitude modulation (QAM)"
-      ]
+        {
+          "id": "ci402-m5-ask-bpsk-dpsk",
+          "slug": "ask-bpsk-dpsk",
+          "title": "Generation, detection, equation and Bandwidth of amplitude shift keying (ASK) Binary Phase Shift keying (BPSK), Differential phase shift keying (DPSK)",
+          "displayOrder": 1
+        },
+        {
+          "id": "ci402-m5-qpsk-mpsk",
+          "slug": "qpsk-m-ary-psk",
+          "title": "Offset and non offset quadrature phase shift keying (QPSK), M-Ary PSK",
+          "displayOrder": 2
+        },
+        {
+          "id": "ci402-m5-fsk-qam",
+          "slug": "bfsk-m-ary-fsk-qam",
+          "title": "Binary frequency Shift Keying (BFSK), M-Ary FSK Quadrature Amplitude modulation (QAM)",
+          "displayOrder": 3
+        }
+      ],
+      "questionIds": [
+        "ci402_m5_june2024_q1",
+        "ci402_m5_june2024_q2",
+        "ci402_m5_june2023_q3",
+        "ci402_m5_june2023_q4",
+        "ci402_m5_nov2023_q5",
+        "ci402_m5_nov2023_q6",
+        "ci402_m5_june2024_june2023_q7"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }

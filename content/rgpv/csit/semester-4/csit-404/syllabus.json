@@ -3,92 +3,350 @@
     "id": "csit-404",
     "code": "CSIT-404",
     "name": "Computer Org & Architecture",
-    "title": "CSIT-404 - Computer Org & Architecture",
-    "semester": "IV"
+    "title": "CSIT-404 – Computer Org & Architecture (COA)",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "IV",
+    "branch": "CSIT-Computer Science & Information Technology"
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "csit404-m1",
       "number": 1,
       "title": "Basic Structure of Computer & Control Unit Organization",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Structure of Desktop Computers",
-        "CPU: General Register Organization-Memory Register, Instruction Register, Control Word, Stack Organization",
-        "Instruction Format",
-        "ALU",
-        "I/O System",
-        "bus",
-        "CPU and Memory Program Counter",
-        "Bus Structure",
-        "Register Transfer Language-Bus and Memory Transfer",
-        "addressing modes",
-        "Control Unit Organization: Basic Concept of Instruction",
-        "Instruction Types",
-        "Micro Instruction Formats",
-        "Fetch and Execution cycle",
-        "Hardwired control unit",
-        "Micro-programmed Control unit microprogram sequencer Control Memory",
-        "Sequencing and Execution of Micro Instruction"
-      ]
+        {
+          "id": "csit404-m1-desktop-structure",
+          "slug": "desktop-structure-cpu-registers",
+          "title": "Structure of Desktop Computers, CPU: General Register Organization-Memory Register, Instruction Register, Control Word",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit404-m1-stack-instruction",
+          "slug": "stack-organization-instruction-format",
+          "title": "Stack Organization, Instruction Format",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit404-m1-alu-io-bus",
+          "slug": "alu-io-system-bus",
+          "title": "ALU, I/O System, bus, CPU and Memory Program Counter, Bus Structure",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit404-m1-rtl-addressing",
+          "slug": "register-transfer-language-addressing-modes",
+          "title": "Register Transfer Language-Bus and Memory Transfer, addressing modes",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit404-m1-instruction-types",
+          "slug": "instruction-types-micro-instruction",
+          "title": "Control Unit Organization: Basic Concept of Instruction, Instruction Types, Micro Instruction Formats",
+          "displayOrder": 5
+        },
+        {
+          "id": "csit404-m1-fetch-execute",
+          "slug": "fetch-execution-cycle",
+          "title": "Fetch and Execution cycle",
+          "displayOrder": 6
+        },
+        {
+          "id": "csit404-m1-hardwired-microprogrammed",
+          "slug": "hardwired-microprogrammed-control",
+          "title": "Hardwired control unit, Micro-programmed Control unit microprogram sequencer Control Memory, Sequencing and Execution of Micro Instruction",
+          "displayOrder": 7
+        }
+      ],
+      "questionIds": [
+        "csit404_m1_june2025_q1",
+        "csit404_m1_june2025_q2",
+        "csit404_m1_june2025_q3",
+        "csit404_m1_dec2024_q4",
+        "csit404_m1_dec2024_q5",
+        "csit404_m1_dec2024_q6",
+        "csit404_m1_dec2024_q7",
+        "csit404_m1_june2024_q8",
+        "csit404_m1_june2024_q9",
+        "csit404_m1_june2024_q10",
+        "csit404_m1_june2024_q11",
+        "csit404_m1_nov2023_q12",
+        "csit404_m1_nov2023_q13",
+        "csit404_m1_nov2023_q14",
+        "csit404_m1_nov2023_q15",
+        "csit404_m1_june2023_q16",
+        "csit404_m1_june2023_q17",
+        "csit404_m1_june2023_q18",
+        "csit404_m1_june2023_q19",
+        "csit404_m1_nov2022_q20",
+        "csit404_m1_nov2022_q21",
+        "csit404_m1_nov2022_q22"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "csit404-m2",
       "number": 2,
       "title": "Computer Arithmetic",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Addition and Subtraction",
-        "Tools Compliment Representation",
-        "Signed Addition and Subtraction",
-        "Multiplication and division",
-        "Booths Algorithm",
-        "Division Operation",
-        "Floating Point Arithmetic Operation",
-        "design of Arithmetic unit"
-      ]
+        {
+          "id": "csit404-m2-add-sub",
+          "slug": "addition-subtraction-complement",
+          "title": "Addition and Subtraction, Two's Complement Representation, Signed Addition and Subtraction",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit404-m2-multiplication",
+          "slug": "multiplication-booths-algorithm",
+          "title": "Multiplication and division, Booth's Algorithm",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit404-m2-division",
+          "slug": "division-operation",
+          "title": "Division Operation",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit404-m2-floating-point",
+          "slug": "floating-point-arithmetic",
+          "title": "Floating Point Arithmetic Operation",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit404-m2-arithmetic-unit",
+          "slug": "arithmetic-unit-design",
+          "title": "Design of Arithmetic unit",
+          "displayOrder": 5
+        }
+      ],
+      "questionIds": [
+        "csit404_m2_june2025_q1",
+        "csit404_m2_june2025_q2",
+        "csit404_m2_june2025_q3",
+        "csit404_m2_dec2024_q4",
+        "csit404_m2_dec2024_q5",
+        "csit404_m2_dec2024_q6",
+        "csit404_m2_june2024_q7",
+        "csit404_m2_june2024_q8",
+        "csit404_m2_june2024_q9",
+        "csit404_m2_nov2023_q10",
+        "csit404_m2_june2023_q11",
+        "csit404_m2_june2023_q12",
+        "csit404_m2_nov2022_q13",
+        "csit404_m2_nov2022_q14"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "csit404-m3",
       "number": 3,
       "title": "I/O Organization",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "I/O Interface –PCI Bus, SCSI Bus, USB",
-        "Data Transfer: Serial, Parallel, Synchronous, Asynchronous Modes of Data Transfer",
-        "Direct Memory Access(DMA)",
-        "I/O Processor"
-      ]
+        {
+          "id": "csit404-m3-io-interface",
+          "slug": "io-interface-pci-scsi-usb",
+          "title": "I/O Interface –PCI Bus, SCSI Bus, USB",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit404-m3-data-transfer",
+          "slug": "data-transfer-modes",
+          "title": "Data Transfer: Serial, Parallel, Synchronous, Asynchronous Modes of Data Transfer",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit404-m3-dma",
+          "slug": "direct-memory-access",
+          "title": "Direct Memory Access(DMA)",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit404-m3-io-processor",
+          "slug": "io-processor",
+          "title": "I/O Processor",
+          "displayOrder": 4
+        }
+      ],
+      "questionIds": [
+        "csit404_m3_june2025_q1",
+        "csit404_m3_june2025_q2",
+        "csit404_m3_june2025_q3",
+        "csit404_m3_june2025_q4",
+        "csit404_m3_dec2024_q5",
+        "csit404_m3_dec2024_q6",
+        "csit404_m3_dec2024_q7",
+        "csit404_m3_dec2024_q8",
+        "csit404_m3_june2024_q9",
+        "csit404_m3_june2024_q10",
+        "csit404_m3_june2024_q11",
+        "csit404_m3_june2024_q12",
+        "csit404_m3_nov2023_q13",
+        "csit404_m3_nov2023_q14",
+        "csit404_m3_nov2023_q15",
+        "csit404_m3_nov2023_q16",
+        "csit404_m3_june2023_q17",
+        "csit404_m3_june2023_q18",
+        "csit404_m3_june2023_q19",
+        "csit404_m3_nov2022_q20",
+        "csit404_m3_nov2022_q21"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "csit404-m4",
       "number": 4,
       "title": "Memory Organization",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Main memory-RAM, ROM",
-        "Secondary Memory –Magnetic Tape, Disk, Optical Storage",
-        "Cache Memory: Cache Structure and Design, Mapping Scheme, Replacement Algorithm, Improving Cache Performance",
-        "Virtual Memory",
-        "memory management hardware"
-      ]
+        {
+          "id": "csit404-m4-main-memory",
+          "slug": "main-memory-ram-rom",
+          "title": "Main memory-RAM, ROM",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit404-m4-secondary-memory",
+          "slug": "secondary-memory",
+          "title": "Secondary Memory –Magnetic Tape, Disk, Optical Storage",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit404-m4-cache-structure",
+          "slug": "cache-structure-design",
+          "title": "Cache Memory: Cache Structure and Design",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit404-m4-mapping",
+          "slug": "cache-mapping-schemes",
+          "title": "Mapping Scheme",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit404-m4-replacement",
+          "slug": "replacement-algorithms",
+          "title": "Replacement Algorithm",
+          "displayOrder": 5
+        },
+        {
+          "id": "csit404-m4-cache-performance",
+          "slug": "cache-performance-improvement",
+          "title": "Improving Cache Performance",
+          "displayOrder": 6
+        },
+        {
+          "id": "csit404-m4-virtual-memory",
+          "slug": "virtual-memory",
+          "title": "Virtual Memory",
+          "displayOrder": 7
+        },
+        {
+          "id": "csit404-m4-mmu",
+          "slug": "memory-management-hardware",
+          "title": "Memory management hardware",
+          "displayOrder": 8
+        }
+      ],
+      "questionIds": [
+        "csit404_m4_june2025_q1",
+        "csit404_m4_june2025_q2",
+        "csit404_m4_june2025_q3",
+        "csit404_m4_june2025_q4",
+        "csit404_m4_dec2024_q5",
+        "csit404_m4_dec2024_q6",
+        "csit404_m4_dec2024_q7",
+        "csit404_m4_dec2024_q8",
+        "csit404_m4_june2024_q9",
+        "csit404_m4_june2024_q10",
+        "csit404_m4_june2024_q11",
+        "csit404_m4_june2024_q12",
+        "csit404_m4_nov2023_q13",
+        "csit404_m4_nov2023_q14",
+        "csit404_m4_nov2023_q15",
+        "csit404_m4_nov2023_q16",
+        "csit404_m4_nov2023_q17",
+        "csit404_m4_june2023_q18",
+        "csit404_m4_june2023_q19",
+        "csit404_m4_june2023_q20",
+        "csit404_m4_nov2022_q21",
+        "csit404_m4_nov2022_q22",
+        "csit404_m4_nov2022_q23"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "csit404-m5",
       "number": 5,
       "title": "Multiprocessors",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Characteristics of Multiprocessor",
-        "Structure of MultiprocessorInter-processor Arbitration",
-        "Inter-Processor Communication and Synchronization",
-        "Memory in Multiprocessor System",
-        "Concept of Pipelining",
-        "Vector Processing",
-        "Array Processing",
-        "RISC And CISC",
-        "Study of Multicore Processor –Intel, AMD"
-      ]
+        {
+          "id": "csit404-m5-multiprocessor-structure",
+          "slug": "multiprocessor-characteristics-structure",
+          "title": "Characteristics of Multiprocessor, Structure of Multiprocessor",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit404-m5-interprocessor",
+          "slug": "interprocessor-arbitration-communication",
+          "title": "Inter-processor Arbitration, Inter-Processor Communication and Synchronization",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit404-m5-memory-mp",
+          "slug": "memory-multiprocessor-system",
+          "title": "Memory in Multiprocessor System",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit404-m5-pipelining",
+          "slug": "pipelining",
+          "title": "Concept of Pipelining",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit404-m5-vector-array",
+          "slug": "vector-array-processing",
+          "title": "Vector Processing, Array Processing",
+          "displayOrder": 5
+        },
+        {
+          "id": "csit404-m5-risc-cisc",
+          "slug": "risc-and-cisc",
+          "title": "RISC And CISC",
+          "displayOrder": 6
+        },
+        {
+          "id": "csit404-m5-multicore",
+          "slug": "multicore-processors",
+          "title": "Study of Multicore Processor –Intel, AMD",
+          "displayOrder": 7
+        }
+      ],
+      "questionIds": [
+        "csit404_m5_june2025_q1",
+        "csit404_m5_june2025_q2",
+        "csit404_m5_dec2024_q3",
+        "csit404_m5_dec2024_q4",
+        "csit404_m5_dec2024_q5",
+        "csit404_m5_june2024_q6",
+        "csit404_m5_june2024_q7",
+        "csit404_m5_june2024_q8",
+        "csit404_m5_nov2023_q9",
+        "csit404_m5_nov2023_q10",
+        "csit404_m5_june2023_q11",
+        "csit404_m5_june2023_q12",
+        "csit404_m5_june2023_q13",
+        "csit404_m5_june2023_q14",
+        "csit404_m5_nov2022_q15",
+        "csit404_m5_nov2022_q16",
+        "csit404_m5_nov2022_q17"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }
