@@ -1,9 +1,145 @@
 {
-  "subject": {
-    "id": "csit-402",
-    "code": "CSIT-402",
-    "name": "Analog & Digital Communication (ADC)",
-    "title": "CSIT-402 - Analog & Digital Communication (ADC)"
+  "paper": {
+    "id": "ci402-june-2024",
+    "subjectCode": "CI-402 (CSIT)",
+    "subjectName": "Analog and Digital Communication",
+    "exam": "B.Tech. IV Semester Examination, June 2024",
+    "system": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "note": "i) Answer any five questions.\nii) All questions carry equal marks.",
+    "totalQuestions": 8
   },
-  "papers": []
+  "questions": [
+    {
+      "number": 1,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Define a signal. Explain the concepts of periodic, non-periodic, deterministic and non-deterministic signals? Provide examples for each.",
+          "unit": 1,
+          "questionId": "ci402_jun_2024_Q1a"
+        },
+        {
+          "label": "b",
+          "text": "Find the Fourier Transform of the following function\ni) Gate\nii) Unit Step\niii) Delta",
+          "unit": 1,
+          "questionId": "ci402_jun_2024_Q1b"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Explain the time convolution theorem and derive the mathematical expression of the convolution of two signals using the time convolution theorem.",
+          "unit": 1,
+          "questionId": "ci402_jun_2024_Q2a"
+        },
+        {
+          "label": "b",
+          "text": "What is the principle of Amplitude modulation? Derive expression for the AM wave and draw its spectrum.",
+          "unit": 2,
+          "questionId": "ci402_jun_2024_Q2b"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Explain the operation of Tuned Radio Frequency (TRF) receiver with the block diagram and mention its advantages and disadvantages.",
+          "unit": 2,
+          "questionId": "ci402_jun_2024_Q3a"
+        },
+        {
+          "label": "b",
+          "text": "Define suppressed carrier modulation. Explain single-Sideband Suppressed Carrier (SSB-SC) modulation with suitable diagram. What are the benefits of SSB-SC modulation over DSB-SC modulation?",
+          "unit": 2,
+          "questionId": "ci402_jun_2024_Q3b"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Distinguish between FM and PM by giving its mathematical analysis.",
+          "unit": 3,
+          "questionId": "ci402_jun_2024_Q4a"
+        },
+        {
+          "label": "b",
+          "text": "A 100 M Hz carrier is frequency modulated by a sinusoidal signal of amplitude 20V and frequency 100K Hz. The frequency sensitivity of the modulator is 25K Hz/volt.\nDetermine:\ni) Frequency deviation\nii) Modulation index β\niii) Bandwidth",
+          "unit": 3,
+          "questionId": "ci402_jun_2024_Q4b"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Discuss the operation of a Foster-Seeley discriminator as an FM demodulator with suitable diagram.",
+          "unit": 3,
+          "questionId": "ci402_jun_2024_Q5a"
+        },
+        {
+          "label": "b",
+          "text": "State and prove Sampling theorem.",
+          "unit": 4,
+          "questionId": "ci402_jun_2024_Q5b"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Explain the elements of PCM system with a neat block diagram and also draw the waveforms.",
+          "unit": 4,
+          "questionId": "ci402_jun_2024_Q6a"
+        },
+        {
+          "label": "b",
+          "text": "Find the signal amplitude for minimum quantization error in a delta modulation system if step size is 1 volt having repetition period 1 ms. The information signal operates at 100 Hz.",
+          "unit": 4,
+          "questionId": "ci402_jun_2024_Q6b"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "parts": [
+        {
+          "label": "a",
+          "text": "For a BPSK modulator with a Carrier frequency of 70 MHz and an input bit rate of 10 Mbps, determine the maximum and minimum upper and lower side frequencies, draw the output spectrum, determine the minimum Nyquist bandwidth, and calculate the baud (Assume f=5MHz)",
+          "unit": 5,
+          "questionId": "ci402_jun_2024_Q7a"
+        },
+        {
+          "label": "b",
+          "text": "Define binary FSK and explain about the generation and detection of Binary FSK signal using block diagram.",
+          "unit": 5,
+          "questionId": "ci402_jun_2024_Q7b"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "parts": [
+        {
+          "label": null,
+          "text": "Write a short note on any two:\na) Superheterodyne receiver (Unit 2)\nb) Ratio Detector (Unit 3)\nc) AM and ADM (Unit 2, 4)\nd) QAM (Unit 5)",
+          "unit": null,
+          "questionId": "ci402_jun_2024_Q8"
+        }
+      ]
+    }
+  ]
 }

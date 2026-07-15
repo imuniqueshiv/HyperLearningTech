@@ -3,92 +3,326 @@
     "id": "csit-405",
     "code": "CSIT-405",
     "name": "Database Management System",
-    "title": "CSIT-405 - Database Management System",
-    "semester": "IV"
+    "title": "CSIT-405 – Database Management System (DBMS)",
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "IV",
+    "branch": "CSIT-Computer Science & Information Technology"
   },
   "modules": [
     {
-      "id": "module-1",
+      "id": "csit405-m1",
       "number": 1,
       "title": "Basic Concepts",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Introduction to DBMS",
-        "File system vs DBMS",
-        "Advantages of database systems",
-        "Database System architecture",
-        "Data models",
-        "Schemas and instances",
-        "Data independence",
-        "Functions of DBA and designer",
-        "Entities and attributes",
-        "Entity types",
-        "Key attributes",
-        "Relationships",
-        "Defining the E-R diagram of database"
-      ]
+        {
+          "id": "csit405-m1-intro",
+          "slug": "introduction-dbms-file-system",
+          "title": "Introduction to DBMS, File system vs DBMS, Advantages of database systems",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit405-m1-architecture",
+          "slug": "database-system-architecture",
+          "title": "Database System architecture, Data models, Schemas and instances, Data independence",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit405-m1-dba",
+          "slug": "functions-dba-designer",
+          "title": "Functions of DBA and designer",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit405-m1-er-model",
+          "slug": "entities-attributes-er-diagram",
+          "title": "Entities and attributes, Entity types, Key attributes, Relationships, Defining the E-R diagram of database",
+          "displayOrder": 4
+        }
+      ],
+      "questionIds": [
+        "csit405_m1_june2025_q1",
+        "csit405_m1_june2025_q2",
+        "csit405_m1_june2025_q3",
+        "csit405_m1_june2025_q4",
+        "csit405_m1_dec2024_q5",
+        "csit405_m1_dec2024_q6",
+        "csit405_m1_dec2024_q7",
+        "csit405_m1_dec2024_q8",
+        "csit405_m1_june2024_q9",
+        "csit405_m1_june2024_q10",
+        "csit405_m1_june2024_q11",
+        "csit405_m1_june2024_q12",
+        "csit405_m1_nov2023_q13",
+        "csit405_m1_nov2023_q14",
+        "csit405_m1_nov2023_q15",
+        "csit405_m1_nov2023_q16",
+        "csit405_m1_june2023_q17",
+        "csit405_m1_june2023_q18",
+        "csit405_m1_june2023_q19",
+        "csit405_m1_june2023_q20",
+        "csit405_m1_june2023_q21",
+        "csit405_m1_june2022_q22",
+        "csit405_m1_june2022_q23",
+        "csit405_m1_june2022_q24",
+        "csit405_m1_june2022_q25",
+        "csit405_m1_june2022_q26",
+        "csit405_m1_june2022_q27",
+        "csit405_m1_june2022_q28"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-2",
+      "id": "csit405-m2",
       "number": 2,
       "title": "Relational Model",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Structure of relational databases",
-        "Domains",
-        "Tuples",
-        "Attributes",
-        "Relations",
-        "keys and types of keys",
-        "Integrity Constraints",
-        "Relational Algebra: Queries using Select operation, project operation, renaming, joins, union, intersection, difference, division, and product etc.",
-        "SQL –basic SQL queries, functions, constraints, joins and nested queries",
-        "Triggers, assertions, views and stored procedures and PL/SQL"
-      ]
+        {
+          "id": "csit405-m2-relational-structure",
+          "slug": "structure-relational-databases",
+          "title": "Structure of relational databases, Domains, Tuples, Attributes, Relations",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit405-m2-keys",
+          "slug": "keys-integrity-constraints",
+          "title": "Keys and types of keys, Integrity Constraints",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit405-m2-relational-algebra",
+          "slug": "relational-algebra-operations",
+          "title": "Relational Algebra: Queries using Select operation, project operation, renaming, joins, union, intersection, difference, division, and product etc.",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit405-m2-sql",
+          "slug": "sql-queries-functions-constraints",
+          "title": "SQL –basic SQL queries, functions, constraints, joins and nested queries",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit405-m2-advanced-sql",
+          "slug": "triggers-assertions-views-plsql",
+          "title": "Triggers, assertions, views and stored procedures and PL/SQL",
+          "displayOrder": 5
+        }
+      ],
+      "questionIds": [
+        "csit405_m2_june2025_q1",
+        "csit405_m2_june2025_q2",
+        "csit405_m2_dec2024_q3",
+        "csit405_m2_dec2024_q4",
+        "csit405_m2_dec2024_q5",
+        "csit405_m2_dec2024_q6",
+        "csit405_m2_june2024_q7",
+        "csit405_m2_june2024_q8",
+        "csit405_m2_june2024_q9",
+        "csit405_m2_june2024_q10",
+        "csit405_m2_nov2023_q11",
+        "csit405_m2_nov2023_q12",
+        "csit405_m2_nov2023_q13",
+        "csit405_m2_nov2023_q14",
+        "csit405_m2_june2023_q15",
+        "csit405_m2_june2023_q16",
+        "csit405_m2_june2023_q17",
+        "csit405_m2_june2022_q18",
+        "csit405_m2_june2022_q19",
+        "csit405_m2_june2022_q20",
+        "csit405_m2_june2022_q21",
+        "csit405_m2_june2022_q22",
+        "csit405_m2_june2022_q23",
+        "csit405_m2_june2022_q24",
+        "csit405_m2_june2022_q25",
+        "csit405_m2_june2022_q26"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-3",
+      "id": "csit405-m3",
       "number": 3,
       "title": "SQL",
-      "hours": 8,
+      "hours": null,
       "topics": [
-        "Data definition in SQL, update statements and views in SQL: Data storage and definitions",
-        "Data retrieval queries and update statements",
-        "Query Processing & Query Optimization: Overview, measures of query cost",
-        "selection operation, sorting, join, evaluation of expressions",
-        "transformation of relational expressions",
-        "estimating statistics of expression results",
-        "evaluation plans",
-        "Case Study of ORACLE and DB2"
-      ]
+        {
+          "id": "csit405-m3-sql-ddl-dml",
+          "slug": "data-definition-update-views",
+          "title": "Data definition in SQL, update statements and views in SQL: Data storage and definitions, Data retrieval queries and update statements",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit405-m3-query-processing",
+          "slug": "query-processing-optimization",
+          "title": "Query Processing & Query Optimization: Overview, measures of query cost, selection operation, sorting, join, evaluation of expressions, transformation of relational expressions, estimating statistics of expression results, evaluation plans",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit405-m3-case-study",
+          "slug": "case-study-oracle-db2",
+          "title": "Case Study of ORACLE and DB2",
+          "displayOrder": 3
+        }
+      ],
+      "questionIds": ["csit405_m3_june2023_q1", "csit405_m3_june2023_q2"],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-4",
+      "id": "csit405-m4",
       "number": 4,
-      "title": "Relational Database design",
-      "hours": 8,
+      "title": "Relational Database Design",
+      "hours": null,
       "topics": [
-        "Functional Dependency –definition, trivial and non-trivial FD, closure of FD set, closure of attributes, irreducible set of FD",
-        "Normalization –1NF, 2NF, 3NF",
-        "Decomposition using FD-dependency preservation",
-        "lossless join",
-        "BCNF",
-        "Multi-valued dependency, 4NF",
-        "Join dependency and 5NF"
-      ]
+        {
+          "id": "csit405-m4-functional-dependency",
+          "slug": "functional-dependency-closure",
+          "title": "Functional Dependency –definition, trivial and non-trivial FD, closure of FD set, closure of attributes, irreducible set of FD",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit405-m4-normalization",
+          "slug": "normalization-1nf-2nf-3nf",
+          "title": "Normalization –1NF, 2NF, 3NF",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit405-m4-decomposition",
+          "slug": "decomposition-dependency-preservation-lossless",
+          "title": "Decomposition using FD-dependency preservation, lossless join",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit405-m4-bcnf",
+          "slug": "bcnf",
+          "title": "BCNF",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit405-m4-mvd-4nf",
+          "slug": "multi-valued-dependency-4nf",
+          "title": "Multi-valued dependency, 4NF",
+          "displayOrder": 5
+        },
+        {
+          "id": "csit405-m4-join-5nf",
+          "slug": "join-dependency-5nf",
+          "title": "Join dependency and 5NF",
+          "displayOrder": 6
+        }
+      ],
+      "questionIds": [
+        "csit405_m4_june2025_q1",
+        "csit405_m4_june2025_q2",
+        "csit405_m4_june2025_q3",
+        "csit405_m4_june2025_q4",
+        "csit405_m4_dec2024_q5",
+        "csit405_m4_dec2024_q6",
+        "csit405_m4_dec2024_q7",
+        "csit405_m4_june2024_q8",
+        "csit405_m4_june2024_q9",
+        "csit405_m4_june2024_q10",
+        "csit405_m4_june2024_q11",
+        "csit405_m4_nov2023_q12",
+        "csit405_m4_nov2023_q13",
+        "csit405_m4_nov2023_q14",
+        "csit405_m4_june2023_q15",
+        "csit405_m4_june2023_q16",
+        "csit405_m4_june2023_q17",
+        "csit405_m4_june2022_q18",
+        "csit405_m4_june2022_q19",
+        "csit405_m4_june2022_q20",
+        "csit405_m4_june2022_q21",
+        "csit405_m4_june2022_q22"
+      ],
+      "predictedQuestionIds": []
     },
     {
-      "id": "module-5",
+      "id": "csit405-m5",
       "number": 5,
-      "title": "Introduction of transaction, transaction processing and recovery, Concurrency control",
-      "hours": 8,
+      "title": "Transaction Processing, Concurrency Control, and Advanced Topics",
+      "hours": null,
       "topics": [
-        "Lock management",
-        "specialized locking techniques",
-        "concurrency control without locking",
-        "Protection and Security Introduction to: Distributed databases",
-        "Basic concepts of object oriented data base system"
-      ]
+        {
+          "id": "csit405-m5-transaction",
+          "slug": "transaction-processing-recovery",
+          "title": "Introduction of transaction, transaction processing and recovery",
+          "displayOrder": 1
+        },
+        {
+          "id": "csit405-m5-concurrency",
+          "slug": "concurrency-control-locking",
+          "title": "Concurrency control: Lock management, specialized locking techniques, concurrency control without locking",
+          "displayOrder": 2
+        },
+        {
+          "id": "csit405-m5-security",
+          "slug": "protection-security",
+          "title": "Protection and Security",
+          "displayOrder": 3
+        },
+        {
+          "id": "csit405-m5-distributed",
+          "slug": "distributed-databases",
+          "title": "Introduction to: Distributed databases",
+          "displayOrder": 4
+        },
+        {
+          "id": "csit405-m5-oodb",
+          "slug": "object-oriented-database",
+          "title": "Basic concepts of object oriented data base system",
+          "displayOrder": 5
+        }
+      ],
+      "questionIds": [
+        "csit405_m5_june2025_q1",
+        "csit405_m5_june2025_q2",
+        "csit405_m5_june2025_q3",
+        "csit405_m5_june2025_q4",
+        "csit405_m5_june2025_q5",
+        "csit405_m5_dec2024_q6",
+        "csit405_m5_dec2024_q7",
+        "csit405_m5_dec2024_q8",
+        "csit405_m5_dec2024_q9",
+        "csit405_m5_june2024_q10",
+        "csit405_m5_june2024_q11",
+        "csit405_m5_june2024_q12",
+        "csit405_m5_nov2023_q13",
+        "csit405_m5_nov2023_q14",
+        "csit405_m5_nov2023_q15",
+        "csit405_m5_nov2023_q16",
+        "csit405_m5_june2023_q17",
+        "csit405_m5_june2023_q18",
+        "csit405_m5_june2023_q19",
+        "csit405_m5_june2023_q20",
+        "csit405_m5_june2022_q21",
+        "csit405_m5_june2022_q22",
+        "csit405_m5_june2022_q23",
+        "csit405_m5_june2022_q24",
+        "csit405_m5_june2022_q25",
+        "csit405_m5_june2025_q26",
+        "csit405_m5_june2025_q27",
+        "csit405_m5_june2025_q28",
+        "csit405_m5_dec2024_q29",
+        "csit405_m5_dec2024_q30",
+        "csit405_m5_dec2024_q31",
+        "csit405_m5_june2024_q32",
+        "csit405_m5_june2024_q33",
+        "csit405_m5_june2024_q34",
+        "csit405_m5_nov2023_q35",
+        "csit405_m5_nov2023_q36",
+        "csit405_m5_nov2023_q37",
+        "csit405_m5_june2023_q38",
+        "csit405_m5_june2023_q39",
+        "csit405_m5_june2022_q40",
+        "csit405_m5_june2022_q41",
+        "csit405_m5_june2022_q42",
+        "csit405_m5_june2022_q43",
+        "csit405_m5_june2022_q44",
+        "csit405_m5_june2022_q45",
+        "csit405_m5_june2022_q46"
+      ],
+      "predictedQuestionIds": []
     }
   ]
 }

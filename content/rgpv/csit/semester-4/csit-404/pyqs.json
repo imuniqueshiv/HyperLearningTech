@@ -1,9 +1,971 @@
 {
   "subject": {
-    "id": "csit-404",
-    "code": "CSIT-404",
-    "name": "Computer Org & Architecture (COA)",
-    "title": "CSIT-404 - Computer Org & Architecture (COA)"
+    "id": "cs-404",
+    "code": "CS-404",
+    "name": "Computer Organization & Architecture",
+    "title": "AL/CSIT (CI)/CS/CT/CO/IO/IS-404 (GS) – Computer Organization & Architecture",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Briefly explain the addressing modes in detail.",
+              "unit": "Unit 1",
+              "type": "addressing-modes"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss Stack Organization in detail.",
+              "unit": "Unit 1",
+              "type": "stack"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is Arithmetic operation? Explain how negative numbers are represented in 2's complement form?",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss Binary Addition. Explain the concept of Half Adder and Full Adder.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write a short note on Direct Memory Access (DMA).",
+              "unit": "Unit 4",
+              "type": "dma"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain serial and parallel data transfer techniques in detail.",
+              "unit": "Unit 4",
+              "type": "data-transfer"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "What is Cache mapping? Explain all cache mapping techniques in detail.",
+              "unit": "Unit 5",
+              "type": "cache"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a short note on AMD processor.",
+              "unit": "Unit 6",
+              "type": "processor"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the difference between Single and Multi-processor System.",
+              "unit": "Unit 6",
+              "type": "multiprocessor"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Discuss: a) CISC Architecture b) Magnetic Tape.",
+              "unit": "Unit 6/5",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "Write short notes on: a) Hit Ratio b) Average Access Time.",
+              "unit": "Unit 5",
+              "type": "cache"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Briefly explain Hardwired and Micro-programmed control unit.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain basic principles of computer architecture.",
+              "unit": "Unit 1",
+              "type": "architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is Multiprocessing? Discuss types of data transfer in detail.",
+              "unit": "Unit 4",
+              "type": "multiprocessing"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain: i) Stack organization ii) Bus structure and addressing modes iii) Fetch and execution cycle.",
+              "unit": "Unit 1",
+              "type": "basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss instruction types and explain execution of micro instruction.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write Booths algorithm. Also explain floating point arithmetic operation.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe signal addition and subtraction in detail.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Elaborate: i) Serial and parallel data transfer ii) Synchronous and asynchronous modes of data transfer.",
+              "unit": "Unit 4",
+              "type": "data-transfer"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write notes on: i) Direct memory access ii) PCI Bus and SCSI Bus.",
+              "unit": "Unit 4",
+              "type": "dma"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare: i) Main memory and secondary memory ii) Cache memory and Virtual memory.",
+              "unit": "Unit 5",
+              "type": "memory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe replacement algorithm and write steps to improve cache performance.",
+              "unit": "Unit 5",
+              "type": "cache"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain characteristics and structure of multiprocessor.",
+              "unit": "Unit 6",
+              "type": "multiprocessor"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is concept of pipelining? Differentiate vector processing and array processing.",
+              "unit": "Unit 6",
+              "type": "pipelining"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe: i) LRU algorithm ii) Two's complement representation iii) Memory management hardware.",
+              "unit": "Unit 5",
+              "type": "memory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is inter-processor communication and synchronization? Also describe inter-processor arbitration.",
+              "unit": "Unit 6",
+              "type": "multiprocessor"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss multicore processor in detail.",
+              "unit": "Unit 6",
+              "type": "multicore"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on: i) Semiconductor memories ii) Hardwired control unit iii) RISC and CISC iv) Micro instruction formats.",
+              "unit": "Unit 2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Draw and explain the architecture of a computer system.",
+              "unit": "Unit 1",
+              "type": "architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the addressing modes with suitable examples.",
+              "unit": "Unit 1",
+              "type": "addressing-modes"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the Booth's algorithm for multiplication of signed numbers.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What do you understand by direct memory access? Explain with block diagram how DMA operation is carried out.",
+              "unit": "Unit 4",
+              "type": "dma"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of pipelining.",
+              "unit": "Unit 6",
+              "type": "pipelining"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Differentiate between vectored and non-vectored interrupts.",
+              "unit": "Unit 4",
+              "type": "interrupts"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the instruction formats for computer system.",
+              "unit": "Unit 1",
+              "type": "instruction-format"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "List the differences between volatile and non-volatile memories?",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss memory hierarchy in computer system.",
+              "unit": "Unit 5",
+              "type": "memory"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the mapping techniques in cache memory.",
+              "unit": "Unit 5",
+              "type": "cache"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain: i) Cache hit and Cache miss ii) Cache coherency.",
+              "unit": "Unit 5",
+              "type": "cache"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write short notes on the USB interface.",
+              "unit": "Unit 4",
+              "type": "io"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain RISC Vs CISC.",
+              "unit": "Unit 6",
+              "type": "risc-cisc"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain Micro-program sequencer.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is memory organization? Discuss the different types of memory organization in computer system.",
+              "unit": "Unit 5",
+              "type": "memory"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the PCI, BUS and LRU algorithm in briefly.",
+              "unit": "Unit 4",
+              "type": "io"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the role and significance of registers in a CPU's general register organization.",
+              "unit": "Unit 1",
+              "type": "registers"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between Hardwired control unit and Micro-programmed control unit.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is register transfer language? Explain representation of instructions in RTL with suitable examples.",
+              "unit": "Unit 1",
+              "type": "rtl"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss how two's complement is used for representing negative numbers and performing subtraction as addition with complement.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss how binary division is performed and the steps involved with flowchart.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Design a 4-bit adder/subtractor circuit and explain how addition and subtraction are performed.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Why interface is needed in input output device? Explain how it is connected to I/O devices with neat sketch.",
+              "unit": "Unit 4",
+              "type": "io"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the strobe control and hand shaking methods in asynchronous data transfer.",
+              "unit": "Unit 4",
+              "type": "data-transfer"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the need of I/O processor? Explain the working of I/O processor.",
+              "unit": "Unit 4",
+              "type": "io"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss different types of secondary memory devices (HDDs, magnetic tapes, optical discs). Compare advantages and disadvantages.",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define cache memory and explain its role in improving CPU performance. Discuss principles of locality.",
+              "unit": "Unit 5",
+              "type": "cache"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the role of MMU in a computer system. Explain address translation between virtual and physical addresses.",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define RISC and CISC architectures and explain their fundamental differences.",
+              "unit": "Unit 6",
+              "type": "risc-cisc"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss how pipelining improves instruction execution throughput and overall system performance.",
+              "unit": "Unit 6",
+              "type": "pipelining"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Bus structure b) SCSI Bus c) Random Access Memory d) Inter processor arbitration.",
+              "unit": "Unit 1/4/5/6",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Differentiate between accumulator, index, stack and general-purpose registers in terms of their functions and usage.",
+              "unit": "Unit 1",
+              "type": "registers"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the sequence of steps involved in fetching an instruction from memory and executing it.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe how micro instructions are arranged in control memory and how they are interpreted.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Draw flowchart for Booth's algorithm for multiplication of signed 2's complement numbers and explain with example.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe basic arithmetic operations supported by floating-point arithmetic including addition, subtraction, multiplication and division.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What components are required to design the arithmetic unit? Explain with neat sketch.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss fundamental differences between serial and parallel data transfer methods in terms of data transmission, speed and implementation complexity.",
+              "unit": "Unit 4",
+              "type": "data-transfer"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is direct memory transfer? Give an overview and block diagram of a DMA controller.",
+              "unit": "Unit 4",
+              "type": "dma"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Differentiate synchronous and asynchronous data transfer.",
+              "unit": "Unit 4",
+              "type": "data-transfer"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of memory hierarchy and its significance in modern computer systems.",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Compare and contrast different cache mapping techniques: direct mapping, set-associative and fully associative. Discuss advantages and disadvantages.",
+              "unit": "Unit 5",
+              "type": "cache"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain memory segmentation and how it complements virtual memory. Discuss advantages and challenges.",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe different types of interconnection networks used in multiprocessor systems.",
+              "unit": "Unit 6",
+              "type": "multiprocessor"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define array processing and explain its significance in computer architecture and parallel computing.",
+              "unit": "Unit 6",
+              "type": "array-processing"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Instruction types b) PCI Bus c) Read Only Memory d) Inter-processor communication and synchronization.",
+              "unit": "Unit 2/4/5/6",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the structure and role of program counter, instruction register and memory register during a fetch-execute cycle.",
+              "unit": "Unit 2",
+              "type": "control-unit"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How does the control word help in micro-operation execution? Illustrate with an example.",
+              "unit": "Unit 1",
+              "type": "micro-operations"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Illustrate the concept of bus structure. How does it aid in CPU and memory communication?",
+              "unit": "Unit 1",
+              "type": "bus"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain 1's and 2's complement representation for negative numbers with examples.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe Booth's algorithm for multiplication. Illustrate with a 4-bit example.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare fixed point and floating point arithmetic operations with examples.",
+              "unit": "Unit 3",
+              "type": "arithmetic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How does USB differ from SCSI bus in terms of speed, cost and application?",
+              "unit": "Unit 4",
+              "type": "io"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a comparative note on different types of I/O interfaces.",
+              "unit": "Unit 4",
+              "type": "io"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the working of PCI bus. How does it improve I/O performance?",
+              "unit": "Unit 4",
+              "type": "io"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate magnetic tape, disk and optical storage based on access time, reliability and cost.",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How does cache memory improve system performance? Explain cache design.",
+              "unit": "Unit 5",
+              "type": "cache"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write a program in Pseudo code to simulate page replacement using LRU.",
+              "unit": "Unit 5",
+              "type": "memory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the structure and working of inter-processor communication and synchronization.",
+              "unit": "Unit 5",
+              "type": "multiprocessor"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Compare RISC and CISC architectures with examples.",
+              "unit": "Unit 5",
+              "type": "risc-cisc"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two: a) Direct Memory Access b) Virtual Memory c) Read Only Memory.",
+              "unit": "Unit 4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,9 +1,145 @@
 {
-  "subject": {
-    "id": "csit-405",
-    "code": "CSIT-405",
-    "name": "Database Management System (DBMS)",
-    "title": "CSIT-405 - Database Management System (DBMS)"
+  "paper": {
+    "id": "csit405-dec-2025",
+    "subjectCode": "AG/CSIT(CI)/IT-405",
+    "subjectName": "Data Base Management System",
+    "exam": "B.Tech./B.Tech. (Working Professional), IV Semester Examination, December 2025",
+    "system": "Grading System (GS) / Working Professional",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "note": "i) Attempt any five questions.\nii) All questions carry equal marks.\niii) Assume any missing data.",
+    "totalQuestions": 8
   },
-  "papers": []
+  "questions": [
+    {
+      "number": 1,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Differentiate between File System and DBMS. Discuss the advantages of a database system over a file-based system.",
+          "unit": 1,
+          "questionId": "IT-405_dec_2025_Q1a"
+        },
+        {
+          "label": "b",
+          "text": "Draw and explain an E-R diagram for a University database system. Consider entities like students, courses and faculty.",
+          "unit": 1,
+          "questionId": "IT-405_dec_2025_Q1b"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Explain the concept of weak entity sets. How do generalization, specialization and aggregation extend the E-R model.",
+          "unit": 2,
+          "questionId": "IT-405_dec_2025_Q2a"
+        },
+        {
+          "label": "b",
+          "text": "Consider the following relational schema:\nStudent(Roll_no, Name, Dept, Year, Marks)\nwrite relational algebra queries to:\ni) Retrieve names of students in the CS department\nii) Find students who scored more than 80 marks",
+          "unit": 2,
+          "questionId": "IT-405_dec_2025_Q2b"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Compare sorting, join and selection operations in query processing.",
+          "unit": 3,
+          "questionId": "IT-405_dec_2025_Q3a"
+        },
+        {
+          "label": "b",
+          "text": "Why is query optimization necessary in large databases? Discuss with an example. Explain the measures of query cost.",
+          "unit": 3,
+          "questionId": "IT-405_dec_2025_Q3b"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Discuss the types of anomalies that arise in an un-normalized database. Explain how normalization helps to eliminate these anomalies.",
+          "unit": 4,
+          "questionId": "IT-405_dec_2025_Q4a"
+        },
+        {
+          "label": "b",
+          "text": "Consider the following relation.\nEmployee (Emp_ID, Name, Dept, Salary, Project_ID, Project_Name, Manager_ID)\ni) Identify functional dependencies\nii) Convert it to 3NF and BCNF.",
+          "unit": 4,
+          "questionId": "IT-405_dec_2025_Q4b"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Define a transaction in a database. Explain the ACID properties of transactions with examples.",
+          "unit": 5,
+          "questionId": "IT-405_dec_2025_Q5a"
+        },
+        {
+          "label": "b",
+          "text": "Why is concurrency control important in database systems? Discuss the impact of concurrency control on transaction performance.",
+          "unit": 5,
+          "questionId": "IT-405_dec_2025_Q5b"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "parts": [
+        {
+          "label": "a",
+          "text": "What is data independence? Explain logical and physical data independence with an example.",
+          "unit": 1,
+          "questionId": "IT-405_dec_2025_Q6a"
+        },
+        {
+          "label": "b",
+          "text": "How does relational algebra help in database query processing? Explain with an example.",
+          "unit": 2,
+          "questionId": "IT-405_dec_2025_Q6b"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Explain the importance of decomposition in database design. What is lossless and dependency-preserving decomposition?",
+          "unit": 4,
+          "questionId": "IT-405_dec_2025_Q7a"
+        },
+        {
+          "label": "b",
+          "text": "What is deadlock in a database? Explain deadlock prevention and deadlock detection mechanisms.",
+          "unit": 5,
+          "questionId": "IT-405_dec_2025_Q7b"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "parts": [
+        {
+          "label": null,
+          "text": "Write short notes on (any two)\na) Two-Phase Locking (2PL) protocol (Unit 5)\nb) Distributed databases: Concepts and Challenges (Unit 5)\nc) Serializability in transactions (Unit 5)\nd) Multi-valued dependency (Unit 4)",
+          "unit": null,
+          "questionId": "IT-405_dec_2025_Q8"
+        }
+      ]
+    }
+  ]
 }
