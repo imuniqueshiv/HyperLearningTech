@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, FileText, Clock, ChevronRight } from "lucide-react";
+import { BookOpen, FileText, Clock, ChevronRight, Lock } from "lucide-react";
 
 interface RecentActivityCardProps {
   title: string;
@@ -11,6 +11,7 @@ interface RecentActivityCardProps {
   type: "book" | "file";
   progressValue: number;
   theme?: "cyan" | "orange";
+  isPreviewing?: boolean;
 }
 
 export function RecentActivityCard({
@@ -22,6 +23,7 @@ export function RecentActivityCard({
   type,
   progressValue,
   theme = "cyan",
+  isPreviewing,
 }: RecentActivityCardProps) {
   const Icon = type === "book" ? BookOpen : FileText;
 
@@ -37,8 +39,13 @@ export function RecentActivityCard({
 
   return (
     <Link
-      href={href}
-      className="group relative flex flex-col justify-between overflow-hidden rounded-[20px] border border-zinc-200/80 bg-white p-5 shadow-[0_8px_24px_rgba(149,157,165,0.15)] hover:border-blue-200 hover:shadow-[0_8px_24px_rgba(96,165,250,0.2)] hover:-translate-y-1 transition-all duration-300 dark:bg-slate-900/60 dark:border-blue-400/15 dark:bg-gradient-to-b dark:from-white/[0.02] dark:to-transparent dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] dark:hover:shadow-[0_15px_40px_rgba(0,0,0,0.4)] dark:hover:border-blue-400/30 focus-visible:outline-none focus-visible:ring-2 flex-1 h-full"
+      href={isPreviewing ? "#" : href}
+      onClick={(e) => {
+        if (isPreviewing) {
+          e.preventDefault();
+        }
+      }}
+      className={`group relative flex flex-col justify-between overflow-hidden rounded-[20px] border border-zinc-200/80 bg-white p-5 shadow-[0_8px_24px_rgba(149,157,165,0.15)] hover:border-blue-200 hover:shadow-[0_8px_24px_rgba(96,165,250,0.2)] hover:-translate-y-1 transition-all duration-300 dark:bg-slate-900/60 dark:border-blue-400/15 dark:bg-gradient-to-b dark:from-white/[0.02] dark:to-transparent dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] dark:hover:shadow-[0_15px_40px_rgba(0,0,0,0.4)] dark:hover:border-blue-400/30 focus-visible:outline-none focus-visible:ring-2 flex-1 h-full ${isPreviewing ? "cursor-default" : ""}`}
     >
       <div className="relative z-10 flex flex-col gap-5">
         {/* Header Row */}
@@ -95,8 +102,17 @@ export function RecentActivityCard({
             {progressText}
           </div>
           <div className="flex items-center px-3 py-1 rounded-full border border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-white/5 dark:bg-[#1b2234] text-[11.5px] font-medium dark:text-zinc-300 transition-colors dark:group-hover:bg-white/10 dark:group-hover:text-white group-hover:bg-zinc-100">
-            Resume{" "}
-            <ChevronRight className="ml-0.5 h-3.5 w-3.5 text-zinc-400 dark:text-zinc-500 transition-transform group-hover:translate-x-1" />
+            {isPreviewing ? (
+              <>
+                Locked{" "}
+                <Lock className="ml-1 h-3.5 w-3.5 text-zinc-400 dark:text-zinc-500" />
+              </>
+            ) : (
+              <>
+                Resume{" "}
+                <ChevronRight className="ml-0.5 h-3.5 w-3.5 text-zinc-400 dark:text-zinc-500 transition-transform group-hover:translate-x-1" />
+              </>
+            )}
           </div>
         </div>
       </div>

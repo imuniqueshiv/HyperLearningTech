@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LucideIcon } from "lucide-react";
+import { LucideIcon, Lock } from "lucide-react";
 
 type ColorVariant = "blue" | "indigo" | "emerald" | "purple";
 
@@ -9,6 +9,7 @@ interface QuickActionCardProps {
   href: string;
   icon: LucideIcon;
   colorVariant: ColorVariant;
+  isPreviewing?: boolean;
 }
 
 export function QuickActionCard({
@@ -17,6 +18,7 @@ export function QuickActionCard({
   href,
   icon: Icon,
   colorVariant,
+  isPreviewing,
 }: QuickActionCardProps) {
   const variants = {
     blue: {
@@ -41,8 +43,13 @@ export function QuickActionCard({
 
   return (
     <Link
-      href={href}
-      className={`group relative flex flex-col justify-between h-full overflow-hidden rounded-[20px] border border-zinc-200/80 bg-white p-5 shadow-[0_8px_24px_rgba(149,157,165,0.15)] hover:border-blue-200 hover:shadow-[0_8px_24px_rgba(96,165,250,0.2)] hover:-translate-y-1 transition-all duration-300 dark:bg-slate-900/60 dark:border-blue-400/15 dark:bg-gradient-to-b dark:from-white/[0.02] dark:to-transparent dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] dark:hover:shadow-[0_15px_40px_rgba(0,0,0,0.4)] dark:hover:border-blue-400/30 ${style.wrapper}`}
+      href={isPreviewing ? "#" : href}
+      onClick={(e) => {
+        if (isPreviewing) {
+          e.preventDefault();
+        }
+      }}
+      className={`group relative flex flex-col justify-between h-full overflow-hidden rounded-[20px] border border-zinc-200/80 bg-white p-5 shadow-[0_8px_24px_rgba(149,157,165,0.15)] hover:border-blue-200 hover:shadow-[0_8px_24px_rgba(96,165,250,0.2)] hover:-translate-y-1 transition-all duration-300 dark:bg-slate-900/60 dark:border-blue-400/15 dark:bg-gradient-to-b dark:from-white/[0.02] dark:to-transparent dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] dark:hover:shadow-[0_15px_40px_rgba(0,0,0,0.4)] dark:hover:border-blue-400/30 ${style.wrapper} ${isPreviewing ? "cursor-default" : ""}`}
     >
       {/* Subtle Radial Glow on the Right Edge (Only in Dark Mode or very faint in Light Mode) */}
       <div
@@ -59,7 +66,7 @@ export function QuickActionCard({
 
       <div className="absolute inset-0 bg-gradient-to-br from-zinc-100/50 dark:from-white/[0.02] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-      {/* Top Section: Icon */}
+      {/* Top Section: Icon & Optional Lock */}
       <div className="relative z-10 flex items-start justify-between">
         <div
           className={`flex h-[42px] w-[42px] items-center justify-center rounded-[12px] shadow-sm dark:shadow-inner border border-zinc-200/60 bg-zinc-50 dark:border-white/[0.08] dark:bg-[#0c1017] transition-colors ${style.iconBox}`}
@@ -69,6 +76,11 @@ export function QuickActionCard({
             strokeWidth={2}
           />
         </div>
+        {isPreviewing && (
+          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-100 dark:bg-white/[0.05] border border-slate-200/50 dark:border-white/[0.05]">
+            <Lock className="h-3 w-3 text-slate-400 dark:text-slate-500" />
+          </div>
+        )}
       </div>
 
       {/* Bottom Section: Text */}
