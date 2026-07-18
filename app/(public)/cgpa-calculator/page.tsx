@@ -514,7 +514,7 @@ export default function CgpaCalculatorPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Placement Eligibility Radar */}
-            <div className="p-6 sm:p-8 md:p-10 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.08] bg-indigo-50/90 dark:bg-slate-900/50 dark:bg-gradient-to-br dark:from-white/[0.05] dark:to-transparent backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-inset ring-transparent dark:ring-white/[0.05] relative overflow-hidden">
+            <div className="px-2 py-4 md:p-8 lg:p-10 md:rounded-[2.5rem] lg:rounded-[3rem] md:border md:border-white/80 md:dark:border-white/[0.08] md:bg-indigo-50/90 md:dark:bg-slate-900/50 md:dark:bg-gradient-to-br md:dark:from-white/[0.05] md:dark:to-transparent md:backdrop-blur-3xl md:shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] md:dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] md:ring-1 md:ring-inset md:ring-transparent md:dark:ring-white/[0.05] relative overflow-hidden">
               <div className="flex items-center gap-3 mb-8 relative z-10">
                 <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                   <Briefcase className="w-5 h-5" />
@@ -559,24 +559,24 @@ export default function CgpaCalculatorPage() {
                         }
                         className={`group flex items-center justify-between p-4 rounded-2xl text-left transition-all duration-300 ${
                           radarTier === tier.id
-                            ? "bg-indigo-50/50 dark:bg-white/[0.04] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]"
-                            : "bg-transparent hover:bg-slate-50/50 dark:hover:bg-white/[0.02]"
+                            ? "bg-indigo-50 dark:bg-white/[0.06] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)] border border-indigo-100/50 dark:border-white/10 md:border-transparent"
+                            : "bg-white dark:bg-white/[0.02] md:bg-transparent border border-slate-200/60 dark:border-white/[0.05] md:border-transparent shadow-sm md:shadow-none hover:bg-slate-50/80 dark:hover:bg-white/[0.04]"
                         }`}
                       >
                         <span
                           className={`font-semibold transition-colors ${
                             radarTier === tier.id
                               ? "text-indigo-700 dark:text-white"
-                              : "text-slate-600 group-hover:text-slate-900 dark:text-slate-500 dark:group-hover:text-slate-300"
+                              : "text-slate-700 group-hover:text-slate-900 dark:text-slate-300 dark:group-hover:text-white"
                           }`}
                         >
                           {tier.label}
                         </span>
                         <span
-                          className={`text-[13px] font-bold px-3 py-1 rounded-full transition-colors ${
+                          className={`text-[12px] md:text-[13px] font-bold px-3 py-1 rounded-full transition-colors ${
                             radarTier === tier.id
                               ? "bg-indigo-600 text-white shadow-sm dark:bg-white dark:text-slate-900"
-                              : "bg-slate-100 text-slate-500 group-hover:bg-slate-200 dark:bg-transparent dark:text-slate-500 group-hover:dark:text-slate-400"
+                              : "bg-slate-100 text-slate-500 group-hover:bg-slate-200 dark:bg-white/[0.06] dark:text-slate-400 group-hover:dark:text-slate-300"
                           }`}
                         >
                           {tier.cutoff}+
@@ -589,8 +589,8 @@ export default function CgpaCalculatorPage() {
                 {(() => {
                   if (!radarTier) {
                     return (
-                      <div className="p-6 rounded-2xl border border-dashed border-slate-200 dark:border-white/10 text-center">
-                        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                      <div className="p-6 rounded-2xl border border-dashed border-slate-300 md:border-slate-200 dark:border-white/10 text-center bg-white/50 md:bg-transparent dark:bg-white/[0.01] md:dark:bg-transparent">
+                        <p className="text-sm font-medium text-slate-600 md:text-slate-500 dark:text-slate-400">
                           Select a career path above to unlock tailored insights
                           and view your eligibility status.
                         </p>
@@ -609,8 +609,8 @@ export default function CgpaCalculatorPage() {
 
                   if (!currentCgpa || isNaN(current)) {
                     return (
-                      <div className="p-6 rounded-2xl border border-dashed border-slate-200 dark:border-white/10 text-center">
-                        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                      <div className="p-6 rounded-2xl border border-dashed border-slate-300 md:border-slate-200 dark:border-white/10 text-center bg-white/50 md:bg-transparent dark:bg-white/[0.01] md:dark:bg-transparent">
+                        <p className="text-sm font-medium text-slate-600 md:text-slate-500 dark:text-slate-400">
                           Enter your current CGPA above to see your eligibility
                           status for this path.
                         </p>
@@ -620,13 +620,13 @@ export default function CgpaCalculatorPage() {
 
                   if (current >= required) {
                     return (
-                      <div className="flex gap-4 p-5 rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-100 dark:border-emerald-500/20">
+                      <div className="flex gap-4 p-5 rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 md:border-emerald-100 dark:border-emerald-500/20 shadow-sm md:shadow-none">
                         <ShieldCheck className="w-6 h-6 text-emerald-600 dark:text-emerald-400 shrink-0" />
                         <div>
                           <h4 className="font-bold text-emerald-800 dark:text-emerald-300 mb-1">
                             Safe Zone
                           </h4>
-                          <p className="text-[13px] text-emerald-700 dark:text-emerald-400/80 leading-relaxed font-medium">
+                          <p className="text-[13px] text-emerald-800/80 md:text-emerald-700 dark:text-emerald-400/80 leading-relaxed font-medium">
                             Your CGPA comfortably meets the standard{" "}
                             {required.toFixed(1)} cutoff for this tier. Focus
                             heavily on DSA and interview prep!
@@ -636,13 +636,13 @@ export default function CgpaCalculatorPage() {
                     );
                   } else if (current >= required - 0.5) {
                     return (
-                      <div className="flex gap-4 p-5 rounded-2xl bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20">
+                      <div className="flex gap-4 p-5 rounded-2xl bg-amber-50 dark:bg-amber-500/10 border border-amber-200/80 md:border-amber-200 dark:border-amber-500/20 shadow-sm md:shadow-none">
                         <AlertTriangle className="w-6 h-6 text-amber-500 dark:text-amber-400 shrink-0" />
                         <div>
                           <h4 className="font-bold text-amber-800 dark:text-amber-300 mb-1">
                             Borderline
                           </h4>
-                          <p className="text-[13px] text-amber-700 dark:text-amber-400/80 leading-relaxed font-medium">
+                          <p className="text-[13px] text-amber-800/80 md:text-amber-700 dark:text-amber-400/80 leading-relaxed font-medium">
                             You are very close to the {required.toFixed(1)}{" "}
                             cutoff. Pushing your CGPA up slightly in remaining
                             semesters will safely unlock this tier.
@@ -652,13 +652,13 @@ export default function CgpaCalculatorPage() {
                     );
                   } else {
                     return (
-                      <div className="flex gap-4 p-4 sm:p-5 rounded-2xl bg-red-50 dark:bg-red-500/10 border border-red-100 dark:border-red-500/20">
+                      <div className="flex gap-4 p-4 sm:p-5 rounded-2xl bg-red-50 dark:bg-red-500/10 border border-red-200/80 md:border-red-100 dark:border-red-500/20 shadow-sm md:shadow-none">
                         <AlertTriangle className="w-6 h-6 text-red-600 dark:text-red-400 shrink-0" />
                         <div>
                           <h4 className="font-bold text-red-800 dark:text-red-300 mb-1">
                             Action Required
                           </h4>
-                          <p className="text-[13px] text-red-700 dark:text-red-400/80 leading-relaxed font-medium">
+                          <p className="text-[13px] text-red-800/80 md:text-red-700 dark:text-red-400/80 leading-relaxed font-medium">
                             You are currently falling short of the{" "}
                             {required.toFixed(1)} cutoff. Don&apos;t panic! Set{" "}
                             <strong className="text-red-800 dark:text-red-300">
@@ -677,7 +677,7 @@ export default function CgpaCalculatorPage() {
             </div>
 
             {/* Pro-Tips for Boosting SGPA */}
-            <div className="p-6 sm:p-8 md:p-10 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] border border-white/80 dark:border-white/[0.08] bg-blue-50/90 dark:bg-slate-900/50 dark:bg-gradient-to-br dark:from-white/[0.05] dark:to-transparent backdrop-blur-3xl shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-inset ring-transparent dark:ring-white/[0.05] relative overflow-hidden">
+            <div className="px-2 py-4 md:p-8 lg:p-10 md:rounded-[2.5rem] lg:rounded-[3rem] md:border md:border-white/80 md:dark:border-white/[0.08] md:bg-blue-50/90 md:dark:bg-slate-900/50 md:dark:bg-gradient-to-br md:dark:from-white/[0.05] md:dark:to-transparent md:backdrop-blur-3xl md:shadow-[0_30px_100px_-15px_rgba(0,0,0,0.12)] md:dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] md:ring-1 md:ring-inset md:ring-transparent md:dark:ring-white/[0.05] relative overflow-hidden">
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                   <Lightbulb className="w-5 h-5" />
