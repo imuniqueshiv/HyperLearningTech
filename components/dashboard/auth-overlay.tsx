@@ -52,10 +52,10 @@ export function DashboardAuthOverlay({
           <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 h-[200px] w-[300px] rounded-full bg-cyan-500/10 blur-[80px]" />
         </div>
 
-        <div className="relative z-10 flex flex-col items-center px-8 py-10 text-center sm:px-10 sm:py-12">
+        <div className="relative z-10 flex flex-col items-center px-5 py-6 sm:px-10 sm:py-12 text-center">
           {/* Dynamic Lock Icon with floating + pulse */}
           <motion.div
-            className="relative mb-5"
+            className="relative mb-3 sm:mb-5"
             animate={{ y: [0, -6, 0] }}
             transition={{
               duration: 4,
@@ -73,27 +73,27 @@ export function DashboardAuthOverlay({
                 ease: "easeInOut",
               }}
             />
-            <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50 to-white shadow-sm dark:border-cyan-500/20 dark:from-cyan-500/10 dark:to-transparent">
+            <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50 to-white shadow-sm dark:border-cyan-500/20 dark:from-cyan-500/10 dark:to-transparent">
               <Lock
-                className="h-7 w-7 text-blue-600 dark:text-cyan-400"
+                className="h-5 w-5 sm:h-7 sm:w-7 text-blue-600 dark:text-cyan-400"
                 strokeWidth={1.8}
               />
             </div>
           </motion.div>
 
           {/* Premium Badge */}
-          <div className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-amber-200/60 bg-amber-50/80 px-3 py-1 text-[11px] font-semibold text-amber-700 dark:border-amber-500/20 dark:bg-amber-500/10 dark:text-amber-400">
+          <div className="mb-3 sm:mb-4 inline-flex items-center gap-1.5 rounded-full border border-amber-200/60 bg-amber-50/80 px-3 py-1 text-[10px] sm:text-[11px] font-semibold text-amber-700 dark:border-amber-500/20 dark:bg-amber-500/10 dark:text-amber-400">
             <Sparkles className="h-3 w-3" />
             Personalized Dashboard
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-[26px]">
+          <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-[26px] px-2">
             Unlock Your Personalized Dashboard
           </h2>
 
           {/* Description — explains WHY login is needed */}
-          <p className="mx-auto mt-3 max-w-sm text-[13.5px] leading-relaxed text-slate-500 dark:text-slate-400">
+          <p className="mx-auto mt-2 sm:mt-3 max-w-sm text-[12px] sm:text-[13.5px] leading-snug sm:leading-relaxed text-slate-500 dark:text-slate-400 px-2">
             Create an account and complete your profile to unlock a dashboard
             tailored to your{" "}
             <span className="font-semibold text-slate-700 dark:text-slate-300">
@@ -112,7 +112,7 @@ export function DashboardAuthOverlay({
           </p>
 
           {/* Onboarding Steps */}
-          <div className="mt-6 flex w-full max-w-xs flex-col items-start gap-0 mx-auto">
+          <div className="mt-4 sm:mt-6 flex w-full max-w-[280px] sm:max-w-xs flex-col items-start gap-0 mx-auto">
             {onboardingSteps.map((step, i) => (
               <div key={step.label} className="flex items-start gap-3">
                 {/* Step indicator dot + connector */}
@@ -131,12 +131,12 @@ export function DashboardAuthOverlay({
                     )}
                   </div>
                   {i < onboardingSteps.length - 1 && (
-                    <div className="h-4 w-px bg-slate-200 dark:bg-white/10" />
+                    <div className="h-2.5 sm:h-4 w-px bg-slate-200 dark:bg-white/10" />
                   )}
                 </div>
                 {/* Step label */}
                 <span
-                  className={`pt-[1px] text-[12.5px] font-medium ${
+                  className={`pt-[1px] text-[11.5px] sm:text-[12.5px] font-medium ${
                     step.isLast
                       ? "text-blue-600 dark:text-cyan-400 font-semibold"
                       : "text-slate-500 dark:text-slate-400"
@@ -149,7 +149,7 @@ export function DashboardAuthOverlay({
           </div>
 
           {/* Action Buttons */}
-          <div className="mt-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-3">
+          <div className="mt-5 sm:mt-8 flex w-full flex-col gap-2.5 sm:flex-row sm:gap-3">
             <Link
               href="/sign-up"
               className="group flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 px-5 py-3 text-[14px] font-bold text-white shadow-[0_4px_12px_-4px_rgba(37,99,235,0.4),inset_0_1px_1px_rgba(255,255,255,0.15)] transition-all hover:scale-[1.02] hover:shadow-[0_6px_20px_-4px_rgba(37,99,235,0.5)] active:scale-[0.98] dark:from-cyan-400 dark:via-blue-500 dark:to-blue-700 dark:shadow-[0_4px_16px_-4px_rgba(6,182,212,0.3),inset_0_1px_1px_rgba(255,255,255,0.15)]"
@@ -170,14 +170,14 @@ export function DashboardAuthOverlay({
           {onPreview && (
             <button
               onClick={onPreview}
-              className="mt-6 text-[13px] font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
+              className="mt-4 sm:mt-6 text-[12px] sm:text-[13px] font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
             >
               Just browsing? Preview dashboard
             </button>
           )}
 
           {/* Personalization-focused bottom text */}
-          <div className="mt-5 flex items-center justify-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-500">
+          <div className="mt-4 sm:mt-5 flex items-center justify-center gap-1.5 text-[9.5px] sm:text-[11px] text-slate-400 dark:text-slate-500">
             <span className="inline-flex items-center gap-1">
               <GraduationCap className="h-3 w-3" />
               Your University
