@@ -83,7 +83,7 @@ export default function Stats() {
   };
 
   return (
-    <section className="relative flex min-h-[100dvh] flex-col items-center justify-center overflow-hidden border-b border-slate-100 bg-white py-8 lg:py-10 dark:border-border dark:bg-background">
+    <section className="relative flex min-h-[calc(100vh-72px)] flex-col items-center justify-center overflow-hidden border-b border-slate-100 bg-white py-8 lg:py-10 dark:border-border dark:bg-background">
       {/* Premium High-Contrast Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Light Mode Blobs - Premium prominent pastel mesh */}

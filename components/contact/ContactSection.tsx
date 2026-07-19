@@ -36,7 +36,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="Contact" className={styles.contactSection}>
+    <section
+      id="Contact"
+      className={`${styles.contactSection} min-h-[calc(100vh-72px)] flex flex-col justify-center`}
+    >
       {/* Top Section Divider */}
       <div className={styles.sectionDivider}></div>
 

@@ -57,7 +57,7 @@ export default function DashboardPage() {
       </AnimatePresence>
 
       {/* Top Section Divider for visual separation from Universities */}
-      <div className="absolute inset-x-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
+      <div className="absolute inset-x-0 top-0 z-50 h-px w-full bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col gap-8">

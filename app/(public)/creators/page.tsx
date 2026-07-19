@@ -82,7 +82,7 @@ export default function TeamPage() {
   };
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-[calc(100vh-72px)] flex flex-col justify-center py-12 bg-background">
       {/* Hero */}
       <section className="relative overflow-hidden pt-10 pb-4 lg:pt-14 lg:pb-6">
         {/* Subtle Ambient Glows */}
