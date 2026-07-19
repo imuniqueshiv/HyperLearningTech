@@ -38,7 +38,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="relative flex min-h-[100dvh] flex-col items-center pt-20 pb-16 lg:pt-28 lg:pb-24 overflow-hidden bg-slate-50 dark:bg-[#090e17]">
+    <section className="relative flex min-h-[calc(100vh-72px)] flex-col items-center justify-center pt-20 pb-16 lg:pt-28 lg:pb-24 overflow-hidden bg-slate-50 dark:bg-[#090e17]">
       {/* Premium High-Contrast Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Light Mode Blobs - Premium prominent pastel mesh */}

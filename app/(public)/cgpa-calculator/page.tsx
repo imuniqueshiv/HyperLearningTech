@@ -70,7 +70,7 @@ export default function CgpaCalculatorPage() {
   }, [calculateRequiredSgpa]);
 
   return (
-    <main className="relative min-h-[90vh] pt-12 md:pt-16 pb-12 overflow-hidden bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none dark:bg-[#020617] flex flex-col justify-center">
+    <main className="relative min-h-[calc(100vh-72px)] pt-12 md:pt-16 pb-12 overflow-hidden bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none dark:bg-[#020617] flex flex-col justify-center">
       {/* Ultra-Premium Dynamic Ambient Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none flex items-center justify-center">
         {/* Orb 1: Top Left Blue */}

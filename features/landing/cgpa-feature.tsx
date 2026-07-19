@@ -14,7 +14,7 @@ import {
 
 export default function CgpaFeature() {
   return (
-    <section className="relative flex flex-col items-center justify-center overflow-hidden border-b border-slate-100 bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none py-12 lg:py-20 dark:border-white/5 dark:bg-[#020617] min-h-[80vh] lg:min-h-0">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden border-b border-slate-100 bg-slate-50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/40 via-white to-slate-50 dark:bg-none py-12 lg:py-20 dark:border-white/5 dark:bg-[#020617] min-h-[calc(100vh-72px)]">
       {/* Ultra-Premium Ambient Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] left-[10%] h-[600px] w-[600px] rounded-full bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-transparent dark:from-indigo-600/20 dark:via-purple-900/10 blur-[120px]" />
