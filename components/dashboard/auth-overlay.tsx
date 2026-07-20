@@ -50,7 +50,7 @@ export function DashboardAuthOverlay({
       {/* Frosted Backdrop — opacity linked to scroll */}
       <motion.div
         style={{ opacity }}
-        className="absolute inset-0 bg-white/50 backdrop-blur-[6px] dark:bg-[#0a0a12]/55 dark:backdrop-blur-[8px]"
+        className="absolute inset-0 bg-slate-200/50 backdrop-blur-[10px] dark:bg-[#0a0a12]/55 dark:backdrop-blur-[8px]"
       />
 
       {/* Wrapper: Sticky scrolling on Mobile, Static absolute centering on Desktop */}
@@ -62,10 +62,10 @@ export function DashboardAuthOverlay({
           {/* Floating Card - Scale, Opacity, Y, and 3D Rotate linked to smooth scroll */}
           <motion.div
             style={{ scale, opacity, y, rotateX }}
-            className="relative w-full max-w-md overflow-hidden rounded-2xl border border-slate-200/70 bg-white/95 shadow-[0_20px_60px_-12px_rgba(0,0,0,0.15)] backdrop-blur-xl dark:border-white/[0.08] dark:bg-[#111119]/95 dark:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.6)]"
+            className="relative w-full max-w-md overflow-hidden rounded-2xl border border-blue-200/80 bg-white/95 shadow-[0_30px_100px_-20px_rgba(30,58,138,0.35),0_10px_40px_-10px_rgba(30,58,138,0.2),inset_0_1px_0_rgba(255,255,255,1)] backdrop-blur-xl dark:border-white/[0.08] dark:bg-[#111119]/95 dark:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.6)]"
           >
             {/* Top Gradient Accent Line */}
-            <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent dark:via-cyan-400" />
+            <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-transparent via-blue-600 to-transparent dark:via-cyan-400" />
 
             {/* Subtle ambient glow (dark mode) */}
             <div className="pointer-events-none absolute inset-0 hidden dark:block">
@@ -96,7 +96,7 @@ export function DashboardAuthOverlay({
                     ease: "easeInOut",
                   }}
                 />
-                <div className="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50 to-white shadow-sm dark:border-cyan-500/20 dark:from-cyan-500/10 dark:to-transparent">
+                <div className="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-100 to-blue-50 shadow-[0_12px_24px_-8px_rgba(37,99,235,0.4),inset_0_1px_2px_rgba(255,255,255,1)] dark:border-cyan-500/20 dark:from-cyan-500/10 dark:to-transparent dark:shadow-none">
                   <Lock
                     className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600 dark:text-cyan-400"
                     strokeWidth={1.8}
@@ -182,7 +182,7 @@ export function DashboardAuthOverlay({
                 </Link>
                 <Link
                   href="/sign-in"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-[13px] sm:text-[14px] font-bold text-slate-700 shadow-sm transition-all hover:scale-[1.02] hover:bg-slate-50 hover:shadow-md active:scale-[0.98] dark:border-white/10 dark:bg-white/[0.04] dark:text-white dark:hover:bg-white/[0.07]"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-[13px] sm:text-[14px] font-bold text-slate-700 shadow-sm transition-all hover:scale-[1.02] hover:border-blue-200 hover:bg-blue-50/50 hover:text-blue-700 hover:shadow-md active:scale-[0.98] dark:border-white/10 dark:bg-white/[0.04] dark:text-white dark:hover:border-white/10 dark:hover:bg-white/[0.07] dark:hover:text-white"
                 >
                   <LogIn className="h-4 w-4" />
                   Sign In
