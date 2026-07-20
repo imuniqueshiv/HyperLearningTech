@@ -84,7 +84,7 @@ export default function Features() {
           {/* Feature Cards Grid */}
           <motion.div
             variants={itemVariants}
-            className="mt-8 lg:mt-10 flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 lg:gap-5 divide-y sm:divide-y-0 divide-slate-100 sm:divide-transparent bg-white sm:bg-transparent rounded-[24px] sm:rounded-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:shadow-none border border-slate-100 sm:border-transparent overflow-hidden sm:overflow-visible dark:border-white/[0.08] dark:divide-white/[0.08] dark:bg-[#0f172a]/40 sm:dark:bg-transparent"
+            className="mt-8 lg:mt-10 flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 lg:gap-5 divide-y sm:divide-y-0 divide-slate-100 sm:divide-transparent bg-white sm:bg-transparent rounded-[24px] sm:rounded-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:shadow-none border border-slate-100 sm:border-transparent overflow-hidden sm:overflow-visible dark:border-white/[0.08] sm:dark:border-transparent dark:divide-white/[0.08] sm:dark:divide-transparent dark:bg-[#0f172a]/40 sm:dark:bg-transparent"
           >
             {landingFeatures.map((feature, i) => {
               const Icon = feature.icon;
@@ -140,8 +140,8 @@ export default function Features() {
                   key={feature.title}
                   className="group relative overflow-hidden sm:rounded-[20px] sm:border border-transparent sm:bg-white p-4 sm:p-6 lg:p-7 text-left sm:shadow-[0_4px_20px_rgb(0,0,0,0.08)] transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:bg-slate-50 sm:hover:bg-white sm:hover:scale-[1.01] sm:hover:-translate-y-1 sm:hover:border-indigo-400/30 sm:hover:shadow-[0_20px_40px_-12px_rgba(99,102,241,0.15)] sm:dark:border-white/[0.06] sm:dark:bg-[#0A0F1C]/60 sm:dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.03)] dark:hover:bg-white/[0.02] sm:dark:hover:border-indigo-500/[0.15] sm:dark:hover:bg-[#0f172a]/80 sm:dark:backdrop-blur-xl flex flex-row sm:flex-col items-start gap-4 sm:gap-0 h-full"
                 >
-                  {/* Subtle hover glow behind icon (hidden on mobile to keep list clean) */}
-                  <div className="hidden sm:block absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none">
+                  {/* Subtle hover glow behind icon (hidden on mobile and in dark mode to keep list clean) */}
+                  <div className="hidden sm:block absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 dark:group-hover:opacity-0 pointer-events-none">
                     <div
                       className={`absolute -left-8 -top-8 h-32 w-32 rounded-full ${t.glow} blur-3xl`}
                     />
@@ -151,7 +151,7 @@ export default function Features() {
                     className={`relative shrink-0 sm:mb-6 inline-flex h-[42px] w-[42px] sm:h-14 sm:w-14 items-center justify-center rounded-[12px] sm:rounded-[16px] border ${t.bg} ${t.border} transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:scale-110 group-hover:rotate-3 shadow-sm`}
                   >
                     <div
-                      className={`absolute inset-0 rounded-[12px] sm:rounded-[16px] ${t.glow} blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                      className={`absolute inset-0 rounded-[12px] sm:rounded-[16px] ${t.glow} blur-md opacity-0 group-hover:opacity-100 dark:group-hover:opacity-20 transition-opacity duration-500`}
                     />
                     <Icon
                       className={`relative z-10 h-5 w-5 sm:h-6 sm:w-6 ${t.text}`}
@@ -160,7 +160,7 @@ export default function Features() {
                   </div>
 
                   <div className="flex flex-col flex-grow pt-1 sm:pt-0">
-                    <h3 className="text-[15px] sm:text-[17px] font-[800] tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-300 transition-colors duration-300">
+                    <h3 className="text-[15px] sm:text-[17px] font-[800] tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-white transition-colors duration-300">
                       {feature.title}
                     </h3>
                     <p className="mt-1 sm:mt-2 text-[13px] sm:text-[14px] leading-[1.6] sm:leading-[1.65] font-[500] text-slate-500 dark:text-[#94a3b8]">
