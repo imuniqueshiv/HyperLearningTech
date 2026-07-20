@@ -62,13 +62,7 @@ export default function DashboardPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col gap-8">
           {/* 1. Premium Welcome Banner (Full Width) */}
-          <motion.div
-            initial={{ opacity: 0, y: 30, scale: 0.98 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.7, ease: [0.25, 1, 0.5, 1] }}
-            className="relative w-full overflow-hidden rounded-[24px] border border-slate-200/60 bg-white/80 dark:border-blue-400/15 dark:bg-slate-900/60 dark:bg-gradient-to-b dark:from-white/[0.02] dark:to-transparent backdrop-blur-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] group transition-all duration-300 dark:hover:border-blue-400/30"
-          >
+          <div className="relative w-full overflow-hidden rounded-[24px] border border-slate-200/60 bg-white/80 dark:border-blue-400/15 dark:bg-slate-900/60 dark:bg-gradient-to-b dark:from-white/[0.02] dark:to-transparent backdrop-blur-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)] group transition-all duration-300 dark:hover:border-blue-400/30">
             {/* Ambient Background Glow (Dark Mode only) */}
             <div className="hidden dark:block absolute inset-0 -z-10 opacity-[0.12] transition-opacity duration-500 group-hover:opacity-[0.24]">
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 h-[300px] w-[500px] rounded-full bg-cyan-500/24 blur-[100px]" />
@@ -160,21 +154,11 @@ export default function DashboardPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* 2. Continue Learning Section (Left side) */}
-            <motion.div
-              initial={{ opacity: 0, y: 30, scale: 0.96 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{
-                duration: 0.6,
-                delay: 0.1,
-                ease: [0.25, 1, 0.5, 1],
-              }}
-              className="col-span-1 lg:col-span-7 flex flex-col gap-5"
-            >
+            <div className="col-span-1 lg:col-span-7 flex flex-col gap-5">
               <div className="flex items-center justify-between px-1 shrink-0">
                 <h2 className="text-xl font-bold tracking-tight text-foreground">
                   Start your journey
@@ -212,20 +196,10 @@ export default function DashboardPage() {
                   isPreviewing={isPreviewing}
                 />
               </div>
-            </motion.div>
+            </div>
 
             {/* 3. Quick Actions (Right side grid) */}
-            <motion.div
-              initial={{ opacity: 0, y: 30, scale: 0.96 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{
-                duration: 0.6,
-                delay: 0.2,
-                ease: [0.25, 1, 0.5, 1],
-              }}
-              className="col-span-1 lg:col-span-5 flex flex-col gap-5"
-            >
+            <div className="col-span-1 lg:col-span-5 flex flex-col gap-5">
               <div className="flex items-center justify-between px-1 shrink-0">
                 <h2 className="text-xl font-bold tracking-tight text-foreground">
                   Quick Actions
@@ -265,7 +239,7 @@ export default function DashboardPage() {
                   isPreviewing={isPreviewing}
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import {
   Lock,
   UserPlus,
@@ -25,26 +26,42 @@ export function DashboardAuthOverlay({
 }: {
   onPreview?: () => void;
 }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 90%", "start 10%"],
+  });
+
+  // Snappy, premium spring (PhonePe style)
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 300,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  // Drop down from slightly above, scale up, and fold in 3D
+  const scale = useTransform(smoothProgress, [0, 1], [0.6, 1]);
+  const y = useTransform(smoothProgress, [0, 1], [-60, 0]);
+  const rotateX = useTransform(smoothProgress, [0, 1], [15, 0]);
+  const opacity = useTransform(smoothProgress, [0, 1], [0, 1]);
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
-      className="absolute inset-0 z-50"
-    >
-      {/* Frosted Backdrop — lighter blur so dashboard content is recognizable */}
-      <div className="absolute inset-0 bg-white/50 backdrop-blur-[6px] dark:bg-[#0a0a12]/55 dark:backdrop-blur-[8px]" />
+    <motion.div ref={containerRef} className="absolute inset-0 z-50">
+      {/* Frosted Backdrop — opacity linked to scroll */}
+      <motion.div
+        style={{ opacity }}
+        className="absolute inset-0 bg-white/50 backdrop-blur-[6px] dark:bg-[#0a0a12]/55 dark:backdrop-blur-[8px]"
+      />
 
       {/* Wrapper: Sticky scrolling on Mobile, Static absolute centering on Desktop */}
       <div className="absolute inset-x-0 top-16 bottom-16 sm:inset-0 pointer-events-none">
-        <div className="sticky top-[15vh] translate-y-0 sm:absolute sm:top-1/2 sm:-translate-y-1/2 flex w-full justify-center px-4 pointer-events-auto">
-          {/* Floating Card */}
+        <div
+          style={{ perspective: "1000px" }}
+          className="sticky top-[15vh] translate-y-0 sm:absolute sm:top-1/2 sm:-translate-y-1/2 flex w-full justify-center px-4 pointer-events-auto"
+        >
+          {/* Floating Card - Scale, Opacity, Y, and 3D Rotate linked to smooth scroll */}
           <motion.div
-            initial={{ opacity: 0, y: 24, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -20, scale: 0.95 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
+            style={{ scale, opacity, y, rotateX }}
             className="relative w-full max-w-md overflow-hidden rounded-2xl border border-slate-200/70 bg-white/95 shadow-[0_20px_60px_-12px_rgba(0,0,0,0.15)] backdrop-blur-xl dark:border-white/[0.08] dark:bg-[#111119]/95 dark:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.6)]"
           >
             {/* Top Gradient Accent Line */}
