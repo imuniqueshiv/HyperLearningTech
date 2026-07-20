@@ -93,8 +93,8 @@ export default function FAQ() {
             variants={itemVariants}
             className="w-full relative group/card"
           >
-            {/* Soft backdrop glow */}
-            <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-b from-slate-200/50 to-slate-100/10 opacity-50 blur-xl transition duration-500 group-hover/card:opacity-100 dark:from-white/10 dark:to-transparent" />
+            {/* Soft backdrop glow (hidden in dark mode for a cleaner look) */}
+            <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-b from-slate-200/50 to-slate-100/10 opacity-50 blur-xl transition duration-500 group-hover/card:opacity-100 dark:hidden" />
 
             <div className="relative w-full overflow-hidden rounded-[24px] border border-transparent bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:border-white/[0.08] dark:bg-[#0f172a]/60 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] dark:backdrop-blur-2xl">
               <div className="divide-y divide-slate-100 dark:divide-white/10">
@@ -112,8 +112,8 @@ export default function FAQ() {
                         <span
                           className={`text-[15px] md:text-[17px] font-[600] tracking-tight transition-colors duration-300 ${
                             isOpen
-                              ? "text-[#3B82F6] dark:text-blue-400"
-                              : "text-slate-900 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400"
+                              ? "text-[#3B82F6] dark:text-white"
+                              : "text-slate-900 group-hover:text-blue-600 dark:text-white dark:group-hover:text-white"
                           }`}
                         >
                           {faq.question}
@@ -121,8 +121,8 @@ export default function FAQ() {
                         <div
                           className={`ml-4 md:ml-6 flex h-8 w-8 md:h-9 md:w-9 shrink-0 items-center justify-center rounded-full transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
                             isOpen
-                              ? "bg-blue-100 text-[#3B82F6] shadow-sm dark:bg-blue-500/20 dark:text-blue-400"
-                              : "bg-slate-100 text-slate-400 group-hover:bg-blue-50 group-hover:text-blue-500 group-hover:scale-110 dark:bg-white/5 dark:text-slate-500 dark:group-hover:bg-white/10"
+                              ? "bg-blue-100 text-[#3B82F6] shadow-sm dark:bg-white/10 dark:text-white"
+                              : "bg-slate-100 text-slate-400 group-hover:bg-blue-50 group-hover:text-blue-500 group-hover:scale-110 dark:bg-white/5 dark:text-slate-500 dark:group-hover:bg-white/10 dark:group-hover:text-white"
                           }`}
                         >
                           <ChevronDown

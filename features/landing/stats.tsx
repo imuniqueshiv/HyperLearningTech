@@ -155,7 +155,7 @@ export default function Stats() {
                   key={stat.title}
                   className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] border border-transparent bg-white p-4 sm:p-5 md:p-6 text-left shadow-[0_4px_20px_rgb(0,0,0,0.08)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:scale-[1.02] hover:-translate-y-1 hover:border-indigo-400/50 hover:bg-white hover:shadow-[0_20px_40px_-12px_rgba(99,102,241,0.25)] dark:border-white/[0.08] dark:bg-[#0f172a]/60 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] dark:hover:border-indigo-500/[0.2] dark:hover:bg-[#1e293b]/80 flex flex-col justify-between"
                 >
-                  <div className="absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <div className="absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 dark:group-hover:opacity-0">
                     <div
                       className={`absolute -right-8 -top-8 h-24 w-24 rounded-full ${solidColors[i % 4].split(" ")[0]} opacity-5 dark:opacity-20 blur-2xl`}
                     />
