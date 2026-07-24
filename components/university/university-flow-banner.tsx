@@ -109,15 +109,15 @@ export default function UniversityFlowBanner() {
           <div className="relative min-w-[700px]">
             {/* Premium Braided Rope / Cable (Background Track) */}
             <div
-              className="absolute top-1/2 left-[5%] right-[5%] md:left-[8%] md:right-[8%] h-[8px] -translate-y-1/2 rounded-full z-0 overflow-hidden bg-slate-200 dark:bg-slate-700/80 border border-slate-300 dark:border-slate-600/80 shadow-[inset_0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_1px_4px_rgba(0,0,0,0.8)]"
+              className="absolute top-1/2 left-[5%] right-[5%] md:left-[8%] md:right-[8%] h-[8px] -translate-y-1/2 rounded-full z-0 overflow-hidden bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700/80 shadow-[inset_0_1px_3px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_1px_4px_rgba(0,0,0,0.8)]"
               style={{
                 backgroundImage:
-                  "repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0,0,0,0.1) 4px, rgba(0,0,0,0.1) 6px, rgba(255,255,255,0.2) 6px, rgba(255,255,255,0.2) 7px)",
+                  "repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(0,0,0,0.15) 4px, rgba(0,0,0,0.15) 6px, rgba(255,255,255,0.15) 6px, rgba(255,255,255,0.15) 7px)",
               }}
             >
               {/* Animated Blue Rope Fill */}
               <motion.div
-                className="h-full rounded-full bg-blue-500 shadow-[inset_0_1px_2px_rgba(255,255,255,0.4),0_0_12px_rgba(59,130,246,0.6)] dark:shadow-[inset_0_1px_2px_rgba(255,255,255,0.4),0_0_16px_rgba(59,130,246,0.8)]"
+                className="h-full rounded-full bg-blue-500 shadow-[inset_0_1px_2px_rgba(255,255,255,0.4),0_0_12px_rgba(59,130,246,0.5)] dark:bg-blue-600 dark:shadow-[inset_0_1px_2px_rgba(255,255,255,0.3),0_0_8px_rgba(37,99,235,0.35)]"
                 initial={{ width: "0%" }}
                 animate={{
                   width: `${(activeStep / (steps.length - 1)) * 100}%`,
@@ -382,25 +382,33 @@ export default function UniversityFlowBanner() {
                 <React.Fragment key={step}>
                   {/* Node Container */}
                   <div className="relative flex justify-center z-10 shrink-0 node-center-point">
-                    {/* Glass Platform underneath the Node */}
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-20 h-5 bg-blue-400/20 rounded-[100%] shadow-[inset_0_0_12px_rgba(59,130,246,0.3)] dark:bg-blue-600/30 dark:shadow-[inset_0_0_12px_rgba(59,130,246,0.6)] -z-10" />
+                    {/* Glass Platform & Ambient Floor Shadow underneath Node */}
+                    <div
+                      className={`absolute -bottom-4 left-1/2 -translate-x-1/2 w-20 h-5 rounded-[100%] transition-all duration-500 -z-10 ${
+                        activeStep === index
+                          ? "bg-blue-400/20 shadow-[inset_0_0_12px_rgba(59,130,246,0.3)] dark:bg-blue-500/15 dark:shadow-[0_4px_12px_rgba(37,99,235,0.25),inset_0_0_8px_rgba(59,130,246,0.3)] dark:border dark:border-blue-400/20 scale-105"
+                          : activeStep > index
+                            ? "bg-blue-400/20 shadow-[inset_0_0_12px_rgba(59,130,246,0.3)] dark:bg-blue-500/10 dark:shadow-[0_2px_8px_rgba(59,130,246,0.15)] dark:border dark:border-blue-500/15 scale-100"
+                            : "bg-blue-400/20 shadow-[inset_0_0_12px_rgba(59,130,246,0.3)] dark:bg-slate-900/40 dark:shadow-[0_2px_6px_rgba(0,0,0,0.4)] dark:border dark:border-slate-800/30 scale-95 opacity-50 dark:opacity-60"
+                      }`}
+                    />
 
                     {/* The Node Pill */}
                     <div
                       className={`relative z-10 flex items-center justify-center rounded-full px-5 py-2 text-[13px] md:text-[15px] font-semibold transition-all duration-500 whitespace-nowrap ${
                         activeStep === index
-                          ? "ring-4 ring-blue-400/30 ring-offset-2 dark:ring-offset-background scale-110"
+                          ? "ring-4 ring-blue-400/30 ring-offset-2 dark:ring-blue-500/25 dark:ring-offset-slate-950 scale-110"
                           : activeStep > index
                             ? "scale-100 opacity-100"
-                            : "scale-100 opacity-70"
+                            : "scale-100 opacity-70 dark:opacity-90"
                       } ${
                         step === "Hyper AI"
-                          ? "bg-gradient-to-b from-blue-500 to-indigo-600 text-white shadow-[0_4px_14px_0_rgb(59,130,246,40%)] border-0"
+                          ? "bg-gradient-to-b from-blue-500 to-indigo-600 text-white shadow-[0_4px_14px_0_rgb(59,130,246,40%)] border-0 dark:from-blue-600 dark:to-indigo-600 dark:shadow-[0_4px_14px_rgba(79,70,229,0.35),0_2px_4px_rgba(0,0,0,0.4)] dark:border dark:border-indigo-400/30"
                           : activeStep === index
-                            ? "bg-blue-50 border-2 border-blue-400 text-blue-700 shadow-sm dark:bg-blue-950 dark:border-blue-500/80 dark:text-blue-300"
+                            ? "bg-blue-50 border-2 border-blue-400 text-blue-700 shadow-sm dark:bg-blue-600 dark:border-blue-400 dark:text-white dark:shadow-[0_4px_14px_rgba(37,99,235,0.3),0_2px_4px_rgba(0,0,0,0.4)]"
                             : activeStep > index
-                              ? "bg-white border-2 border-blue-200 text-blue-600 shadow-sm dark:bg-slate-900 dark:border-blue-800/60 dark:text-blue-400"
-                              : "bg-white border-2 border-slate-200 text-slate-500 shadow-sm dark:bg-slate-900 dark:border-slate-700/80 dark:text-slate-400"
+                              ? "bg-white border-2 border-blue-200 text-blue-600 shadow-sm dark:bg-slate-900 dark:border-blue-500/50 dark:text-blue-300 dark:shadow-[0_4px_10px_rgba(0,0,0,0.4)]"
+                              : "bg-white border-2 border-slate-200 text-slate-500 shadow-sm dark:bg-slate-900/90 dark:border-slate-700/80 dark:text-slate-300 dark:shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
                       }`}
                     >
                       {step}

@@ -94,79 +94,88 @@ export default function BranchGrid() {
           </p>
         </motion.div>
 
-        {/* Branch Grid - Smaller Cards */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+        {/* Branch Grid */}
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {sortedBranches.map((branch, index) => {
             const config = branchConfig[branch.id] || branchConfig.cse;
             const Icon = config.icon;
+            const isAvailable = branch.status === "Available";
 
             const CardContent = (
               <motion.div
-                initial={{ opacity: 0, y: 30, scale: 0.96 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, margin: "-50px" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
                 transition={{
-                  duration: 0.5,
-                  delay: index * 0.05,
+                  duration: 0.4,
+                  delay: index * 0.04,
                   ease: [0.25, 1, 0.5, 1],
                 }}
-                className="group relative h-full overflow-hidden rounded-xl border border-slate-200/60 bg-gradient-to-bl from-blue-50/80 via-white to-white p-4 shadow-[0_2px_20px_rgba(0,0,0,0.04)] transition-all duration-500 hover:border-blue-300/50 hover:shadow-[0_8px_30px_rgba(59,130,246,0.09)] hover:-translate-y-1 dark:border-white/10 dark:bg-white/[0.03] dark:bg-none dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] dark:hover:border-blue-500/30"
+                className={`group relative h-full overflow-hidden rounded-2xl border p-5 sm:p-6 transition-all duration-300 ${
+                  isAvailable
+                    ? "border-slate-200 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06),0_6px_16px_rgba(0,0,0,0.04)] hover:border-blue-200 hover:shadow-[0_8px_30px_rgba(59,130,246,0.12),0_1px_3px_rgba(0,0,0,0.06)] hover:-translate-y-1 dark:border-white/[0.08] dark:bg-white/[0.03] dark:shadow-[0_2px_8px_rgba(0,0,0,0.4)] dark:hover:border-blue-500/25 dark:hover:shadow-[0_12px_32px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.1)]"
+                    : "border-slate-200/50 bg-slate-50/80 shadow-[0_1px_2px_rgba(0,0,0,0.03)] dark:border-white/[0.04] dark:bg-white/[0.01]"
+                }`}
               >
-                {/* Premium Inner Glow on Hover (Light Mode Only) */}
-                <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 dark:hidden">
-                  <div className="absolute -right-8 -top-8 h-36 w-36 rounded-full bg-blue-400/[0.17] blur-2xl" />
-                  <div className="absolute -left-8 -top-8 h-28 w-28 rounded-full bg-blue-400/[0.08] blur-2xl" />
-                </div>
+                {/* Ambient inner glow overlay */}
+                {isAvailable && (
+                  <>
+                    <div className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-blue-100/60 blur-2xl transition-all duration-500 group-hover:bg-blue-200/70 dark:bg-blue-400/[0.06] dark:group-hover:bg-blue-400/[0.10]" />
+                    <div className="pointer-events-none absolute -left-4 -bottom-4 h-24 w-24 rounded-full bg-indigo-100/40 blur-2xl transition-all duration-500 group-hover:bg-indigo-200/50 dark:bg-indigo-400/[0.04] dark:group-hover:bg-indigo-400/[0.07]" />
+                  </>
+                )}
+
+                {/* Top edge highlight */}
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-200/40 to-transparent dark:via-white/[0.06]" />
 
                 <div className="relative z-10 flex h-full flex-col">
-                  {/* Header */}
-                  <div className="flex items-start justify-between">
-                    <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg border border-blue-500/10 bg-blue-500/5 text-blue-600 dark:border-blue-500/20 dark:bg-blue-500/10 dark:text-blue-400">
-                      <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
-                    </div>
-
-                    <div className="inline-flex items-center gap-1.5 rounded-full border border-slate-200/60 bg-slate-50/80 px-2 py-0.5 text-[10px] font-medium text-slate-600 dark:border-white/[0.08] dark:bg-white/[0.02] dark:text-slate-300 sm:text-[11px]">
-                      <div
-                        className={`h-1.5 w-1.5 rounded-full ${
-                          branch.status === "Available"
-                            ? "bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.6)]"
-                            : "bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]"
-                        }`}
-                      />
-                      {branch.status === "Available" ? "Live" : "Soon"}
-                    </div>
+                  {/* Icon */}
+                  <div
+                    className={`flex h-11 w-11 items-center justify-center rounded-xl border transition-all duration-300 ${
+                      isAvailable
+                        ? "border-blue-100 bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600 shadow-[0_1px_4px_rgba(59,130,246,0.1)] group-hover:border-blue-200 group-hover:shadow-[0_4px_12px_rgba(59,130,246,0.15)] dark:border-blue-500/20 dark:from-blue-500/10 dark:to-blue-600/5 dark:text-blue-400 dark:shadow-none dark:group-hover:border-blue-400/30"
+                        : "border-slate-200/60 bg-slate-100 text-slate-400 dark:border-white/[0.06] dark:bg-white/[0.03] dark:text-slate-600"
+                    }`}
+                  >
+                    <Icon className="h-[18px] w-[18px]" />
                   </div>
 
-                  {/* Content */}
-                  <div className="mt-3 flex-1">
-                    <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+                  {/* Branch Name & Description */}
+                  <div className="mt-4 flex-1">
+                    <h3
+                      className={`text-lg font-extrabold tracking-tight sm:text-xl ${
+                        isAvailable
+                          ? "text-slate-900 dark:text-foreground"
+                          : "text-slate-400 dark:text-slate-600"
+                      }`}
+                    >
                       {branch.id.toUpperCase()}
                     </h3>
-
-                    <p className="mt-1 text-xs text-muted-foreground line-clamp-2 sm:text-sm">
+                    <p
+                      className={`mt-0.5 text-[12px] leading-snug line-clamp-1 sm:text-[13px] ${
+                        isAvailable
+                          ? "text-slate-500 dark:text-slate-400"
+                          : "text-muted-foreground/40"
+                      }`}
+                    >
                       {branch.name}
                     </p>
-
-                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-[10px] font-medium text-slate-600 shadow-sm sm:text-xs dark:border-white/10 dark:bg-white/[0.05] dark:text-zinc-300">
-                      <div className="h-1.5 w-1.5 rounded-full bg-blue-500/80"></div>
-                      {config.subjects}
-                    </div>
                   </div>
 
-                  {/* Footer */}
-                  <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 dark:border-white/[0.08]">
-                    {branch.status === "Available" ? (
-                      <div className="flex w-full items-center justify-between group/btn">
-                        <span className="text-xs font-semibold text-foreground transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400 sm:text-sm">
+                  {/* Bottom CTA */}
+                  <div className="mt-5 flex items-center justify-between">
+                    {isAvailable ? (
+                      <>
+                        <span className="text-[12px] font-semibold text-slate-500 transition-colors group-hover:text-blue-600 dark:text-muted-foreground/60 dark:group-hover:text-blue-400 sm:text-[13px]">
                           Explore
                         </span>
-                        <div className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-blue-500/5 transition-all duration-300 group-hover:bg-blue-500/10 text-blue-600 dark:text-blue-400 group-hover:translate-x-1">
-                          <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                        <div className="flex h-7 w-7 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-400 transition-all duration-300 group-hover:border-blue-200 group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:translate-x-0.5 dark:border-white/[0.06] dark:bg-white/[0.04] dark:text-slate-500 dark:group-hover:border-blue-500/20 dark:group-hover:bg-blue-500/10 dark:group-hover:text-blue-400">
+                          <ArrowRight className="h-3.5 w-3.5" />
                         </div>
-                      </div>
+                      </>
                     ) : (
-                      <span className="text-[10px] font-medium text-muted-foreground sm:text-xs">
-                        Planned
+                      <span className="text-[11px] font-medium text-muted-foreground/40">
+                        Coming soon
                       </span>
                     )}
                   </div>
@@ -174,7 +183,7 @@ export default function BranchGrid() {
               </motion.div>
             );
 
-            if (branch.status === "Available") {
+            if (isAvailable) {
               return (
                 <Link
                   key={branch.id}
