@@ -29,43 +29,50 @@ export function DashboardAuthOverlay({
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 45%", "start 10%"],
+    offset: ["start 90%", "start 10%"],
   });
 
-  // Snappy, premium spring (PhonePe style)
+  // Tuned spring — fast attack, no oscillation, buttery smooth
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 300,
-    damping: 30,
-    restDelta: 0.001,
+    stiffness: 180,
+    damping: 28,
+    restDelta: 0.0001,
   });
 
   // Drop down from slightly above, scale up, and fold in 3D
-  const scale = useTransform(smoothProgress, [0, 1], [0.6, 1]);
-  const y = useTransform(smoothProgress, [0, 1], [-60, 0]);
-  const rotateX = useTransform(smoothProgress, [0, 1], [15, 0]);
+  const scale = useTransform(smoothProgress, [0, 1], [0.7, 1]);
+  const y = useTransform(smoothProgress, [0, 1], [-40, 0]);
+  const rotateX = useTransform(smoothProgress, [0, 1], [12, 0]);
   const opacity = useTransform(smoothProgress, [0, 1], [0, 1]);
 
   return (
-    <motion.div ref={containerRef} className="absolute inset-0 z-50">
-      {/* Frosted Backdrop — covers dashboard section */}
+    <motion.div
+      ref={containerRef}
+      className="absolute inset-0 z-50"
+      style={{ willChange: "auto" }}
+    >
+      {/* Frosted Backdrop — GPU-promoted layer for smooth opacity */}
       <motion.div
-        style={{ opacity }}
-        className="absolute inset-0 bg-slate-900/20 backdrop-blur-[12px] dark:bg-[#0a0a12]/65 dark:backdrop-blur-[12px]"
+        style={{ opacity, willChange: "opacity" }}
+        className="absolute inset-0 bg-white/60 backdrop-blur-sm dark:bg-[#0a0a12]/60 dark:backdrop-blur-sm"
       />
 
-      {/* Fixed Card Container — viewport-pinned so it never scrolls away */}
-      <motion.div
-        style={{ opacity }}
-        className="fixed inset-0 z-[60] flex items-center justify-center pointer-events-none"
-      >
+      {/* Wrapper: Sticky scrolling on Mobile, Static absolute centering on Desktop */}
+      <div className="absolute inset-x-0 top-16 bottom-16 sm:inset-0 pointer-events-none">
         <div
           style={{ perspective: "1000px" }}
-          className="w-full flex justify-center px-4 pointer-events-auto"
+          className="sticky top-[15vh] translate-y-0 sm:absolute sm:top-1/2 sm:-translate-y-1/2 flex w-full justify-center px-4 pointer-events-auto"
         >
-          {/* Floating Card - Scale, Opacity, Y, and 3D Rotate linked to smooth scroll */}
+          {/* Floating Card — GPU-composited transforms for zero-lag scroll */}
           <motion.div
-            style={{ scale, opacity, y, rotateX }}
-            className="relative w-full max-w-[440px] overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-[0_25px_70px_-15px_rgba(30,58,138,0.18),0_10px_30px_-10px_rgba(0,0,0,0.04)] backdrop-blur-2xl dark:border-white/[0.08] dark:bg-[#111119] dark:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.8)]"
+            style={{
+              scale,
+              opacity,
+              y,
+              rotateX,
+              willChange: "transform, opacity",
+            }}
+            className="relative w-full max-w-[440px] overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-[0_25px_70px_-15px_rgba(30,58,138,0.18),0_10px_30px_-10px_rgba(0,0,0,0.04)] [contain:layout_style_paint] dark:border-white/[0.08] dark:bg-[#111119] dark:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.8)]"
           >
             {/* Light Mode Ambient Background Mesh */}
             <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden dark:hidden">
@@ -86,9 +93,9 @@ export function DashboardAuthOverlay({
               {/* Floating Glowing Lock Header */}
               <motion.div
                 className="relative mb-4 sm:mb-5"
-                animate={{ y: [0, -5, 0] }}
+                animate={{ y: [0, -4, 0] }}
                 transition={{
-                  duration: 4,
+                  duration: 5,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
@@ -97,11 +104,11 @@ export function DashboardAuthOverlay({
                 <motion.div
                   className="absolute -inset-3 rounded-full bg-gradient-to-tr from-blue-500/20 via-indigo-500/20 to-cyan-500/20 blur-xl dark:from-cyan-500/30 dark:via-blue-500/20 dark:to-cyan-400/20"
                   animate={{
-                    opacity: [0.5, 0.9, 0.5],
-                    scale: [0.95, 1.08, 0.95],
+                    opacity: [0.4, 0.8, 0.4],
+                    scale: [0.97, 1.05, 0.97],
                   }}
                   transition={{
-                    duration: 3,
+                    duration: 4,
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
@@ -232,7 +239,7 @@ export function DashboardAuthOverlay({
             </div>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
     </motion.div>
   );
 }
