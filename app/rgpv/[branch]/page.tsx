@@ -17,7 +17,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
   const { branch } = await params;
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="bg-background">
       <SemesterOverview branch={branch} />
     </main>
   );
