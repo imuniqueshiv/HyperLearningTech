@@ -62,7 +62,10 @@
         "bt101_june2024_q1a",
         "bt101_dec2024_q1a",
         "bt101_dec2024_q8a",
-        "bt101_june2025_q1b"
+        "bt101_june2025_q1b",
+        "bt101_june2026_q1a",
+        "bt101_june2026_q1b",
+        "bt101_june2026_q8a"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q1",
@@ -117,7 +120,10 @@
         "bt101_june2024_q2b",
         "bt101_june2025_q1a",
         "bt101_june2025_q2b",
-        "bt101_june2025_q7"
+        "bt101_june2025_q7",
+        "bt101_june2026_q2a",
+        "bt101_june2026_q2b",
+        "bt101_june2026_q7a"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q6",
@@ -213,7 +219,10 @@
         "bt101_dec2024_q8b",
         "bt101_june2025_q2a",
         "bt101_june2025_q3",
-        "bt101_june2025_q5b"
+        "bt101_june2025_q5b",
+        "bt101_june2026_q3a",
+        "bt101_june2026_q3b",
+        "bt101_june2026_q8b"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q11",
@@ -294,7 +303,11 @@
         "bt101_dec2024_q4b",
         "bt101_dec2024_q8c",
         "bt101_june2025_q4a",
-        "bt101_june2025_q4b"
+        "bt101_june2025_q4b",
+        "bt101_june2026_q4a",
+        "bt101_june2026_q4b",
+        "bt101_june2026_q7b",
+        "bt101_june2026_q8c"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q16",
@@ -354,7 +367,9 @@
         "bt101_june2024_q8a",
         "bt101_dec2024_q5a",
         "bt101_dec2024_q5b",
-        "bt101_june2025_q5a"
+        "bt101_june2025_q5a",
+        "bt101_june2026_q5a",
+        "bt101_june2026_q5b"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q21",
@@ -408,7 +423,8 @@
         "bt101_june2024_q8c",
         "bt101_dec2024_q6",
         "bt101_june2025_q6a",
-        "bt101_june2025_q6b"
+        "bt101_june2025_q6b",
+        "bt101_june2026_q6a"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q26",
@@ -473,7 +489,8 @@
         "bt101_dec2024_q7b",
         "bt101_dec2024_q8d",
         "bt101_june2025_q8a",
-        "bt101_june2025_q8b"
+        "bt101_june2025_q8b",
+        "bt101_june2026_q8d"
       ],
       "predictedQuestionIds": [
         "bt101_predicted_q31",
