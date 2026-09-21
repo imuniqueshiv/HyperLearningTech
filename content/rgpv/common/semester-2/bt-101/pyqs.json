@@ -15,6 +15,159 @@
   },
   "papers": [
     {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "i)",
+              "text": "What is meant by hardness? How will you determine hardness of water by EDTA method?",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "ii)",
+              "text": "50ml of hard water sample requires 35ml of 0.01 M EDTA for the titration. 50ml of the same water sample after boiling and filtering required 12ml of 0.01 M EDTA. Calculate the total, temporary hardness of the water.",
+              "unit": "Unit 1",
+              "type": "numerical"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "i)",
+              "text": "Criticize how caustic embrittlement can be prevented and define the same.",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q2b",
+              "label": "ii)",
+              "text": "How is hard water converted into soft water using ion exchange process?",
+              "unit": "Unit 2",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "i)",
+              "text": "Good lubricant should have high flash and fire point. Give reason.",
+              "unit": "Unit 3",
+              "type": "theory"
+            },
+            {
+              "id": "q3b",
+              "label": "ii)",
+              "text": "What is lubrication? Give classification of lubricants. Discuss mechanism of lubrication.",
+              "unit": "Unit 3",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "i)",
+              "text": "Illustrate free radical mechanism of polymer.",
+              "unit": "Unit 4",
+              "type": "theory"
+            },
+            {
+              "id": "q4b",
+              "label": "ii)",
+              "text": "Write elaborately about the applications of Biodegradable polymers.",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "i)",
+              "text": "What is chemical corrosion? Explain the mechanism.",
+              "unit": "Unit 5",
+              "type": "theory"
+            },
+            {
+              "id": "q5b",
+              "label": "ii)",
+              "text": "Explain Phase, component and degree of freedom.",
+              "unit": "Unit 5",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Discuss about Ultra-violet spectroscopy with principle, instrumentation and applications.",
+              "unit": "Unit 6",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "i)",
+              "text": "Write short notes on: Boiler corrosion",
+              "unit": "Unit 2",
+              "type": "theory"
+            },
+            {
+              "id": "q7b",
+              "label": "ii)",
+              "text": "Write short notes on: Classification of Polymer based on tacticity",
+              "unit": "Unit 4",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write short notes on any two: (i) Units of Hardness of water (ii) Saponification Number (iii) Vulcanization of Rubber (iv) Electron affinity",
+              "unit": "Unit 1, Unit 3, Unit 4, Unit 7",
+              "type": "theory"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "exam": "December 2025",
       "year": 2025,
       "month": "December",
