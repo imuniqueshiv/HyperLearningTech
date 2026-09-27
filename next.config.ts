@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Native / worker packages must stay external so Turbopack/webpack do not
+  // rewrite their platform-specific require() graphs (breaks .node bindings).
+  serverExternalPackages: [
+    "sharp",
+    "tesseract.js",
+    "pdfjs-dist",
+    "@napi-rs/canvas",
+  ],
   images: {
     localPatterns: [
       {
