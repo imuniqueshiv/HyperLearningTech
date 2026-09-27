@@ -1,9 +1,15 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, BrainCircuit, CheckCircle2 } from "lucide-react";
-import { motion, Variants, animate, useInView } from "framer-motion";
+import {
+  motion,
+  Variants,
+  animate,
+  useInView,
+  AnimatePresence,
+} from "framer-motion";
 
 function Counter({
   from = 0,
@@ -43,6 +49,29 @@ function Counter({
 }
 
 export default function Hero() {
+  const [typedText, setTypedText] = useState("");
+  const [messageSent, setMessageSent] = useState(false);
+  const fullText = "Explain Big O notation with an example.";
+
+  useEffect(() => {
+    let i = 0;
+    const timer = setTimeout(() => {
+      const interval = setInterval(() => {
+        setTypedText(fullText.slice(0, i + 1));
+        i++;
+        if (i >= fullText.length) {
+          clearInterval(interval);
+          setTimeout(() => {
+            setMessageSent(true);
+            setTypedText("");
+          }, 200);
+        }
+      }, 15);
+      return () => clearInterval(interval);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, []);
+
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -57,14 +86,14 @@ export default function Hero() {
   const itemVariants: Variants = {
     hidden: {
       opacity: 0,
-      y: 20,
+      y: 30,
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
+        duration: 1,
+        ease: [0.16, 1, 0.3, 1],
       },
     },
   };
@@ -81,7 +110,7 @@ export default function Hero() {
   return (
     <section
       id="Home"
-      className="relative overflow-hidden scroll-mt-24 border-b border-border dark:bg-transparent"
+      className="relative overflow-hidden scroll-mt-24 border-b border-border dark:bg-transparent min-h-[calc(100vh-72px)] flex items-center w-full"
     >
       {/* Background Layers */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -102,7 +131,7 @@ export default function Hero() {
         <div className="hidden md:block absolute right-[-5%] top-[15%] h-[500px] w-[500px] rounded-full bg-transparent blur-[160px] dark:bg-indigo-500/10" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-12 md:pb-24 md:pt-16 lg:px-8 lg:pb-32 lg:pt-20">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-12 md:py-16 lg:px-8 lg:py-20">
         <div className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr] lg:grid-cols-[1.3fr_0.7fr] lg:gap-8">
           {/* Left Content */}
           <motion.div
@@ -113,9 +142,9 @@ export default function Hero() {
           >
             {/* Eyebrow pill */}
             <motion.div variants={itemVariants}>
-              <div className="mb-10 inline-flex items-center rounded-full border border-indigo-500/25 bg-[rgba(99,102,241,0.1)] py-[6px] pl-[8px] pr-[14px]">
-                <div className="mr-2 h-2 w-2 rounded-full bg-[#6366f1] shadow-[0_0_8px_rgba(99,102,241,0.8)]" />
-                <span className="text-[12px] font-[600] tracking-[0.04em] text-indigo-600 dark:text-[#818cf8]">
+              <div className="mb-10 inline-flex items-center rounded-full border border-slate-200 bg-white/50 dark:border-white/10 dark:bg-white/5 py-[6px] pl-[8px] pr-[14px]">
+                <div className="mr-2 h-2 w-2 rounded-full bg-slate-400 dark:bg-slate-500" />
+                <span className="text-[12px] font-[600] tracking-[0.04em] text-slate-600 dark:text-slate-300">
                   Smart learning for engineers
                 </span>
               </div>
@@ -128,7 +157,7 @@ export default function Hero() {
             >
               <span className="text-slate-900 dark:text-[#f1f5f9]">Master</span>
               <br />
-              <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent dark:from-[#6366f1] dark:to-[#6366f1] dark:text-[#6366f1] dark:bg-none">
+              <span className="text-[#5457cd] dark:text-indigo-400">
                 Engineering
                 <span className="text-[#34d399] dark:text-[#34d399]">.</span>
               </span>
@@ -163,19 +192,19 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-12 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4"
             >
-              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-slate-900 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-white/20 dark:hover:bg-white/[0.04] dark:hover:text-white">
                 <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)] shrink-0">
                   <BrainCircuit className="h-3 w-3 text-indigo-600 dark:text-[#818cf8]" />
                 </div>
                 <span className="truncate">AI-powered notes</span>
               </div>
-              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-slate-900 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-white/20 dark:hover:bg-white/[0.04] dark:hover:text-white">
                 <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(52,211,153,0.15)] shrink-0">
                   <CheckCircle2 className="h-3 w-3 text-emerald-600 dark:text-[#34d399]" />
                 </div>
                 <span className="truncate">Syllabus mapped</span>
               </div>
-              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-slate-900 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-white/20 dark:hover:bg-white/[0.04] dark:hover:text-white">
                 <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(59,130,246,0.15)] shrink-0">
                   <svg
                     className="h-3 w-3 text-blue-500 dark:text-[#60a5fa]"
@@ -193,7 +222,7 @@ export default function Hero() {
                 </div>
                 <span className="truncate">Topic-wise PYQs</span>
               </div>
-              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-indigo-600 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-indigo-500/[0.35] dark:hover:bg-white/[0.04] dark:hover:text-[#c7d2fe]">
+              <div className="group flex cursor-default items-center gap-1.5 md:gap-2 rounded-[8px] border border-[#D8E2F0] bg-white/80 backdrop-blur-md px-2 py-2 md:px-[18px] md:py-[10px] text-[11px] md:text-[13px] font-[500] text-slate-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all duration-300 hover:bg-white hover:text-slate-900 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:border-white/[0.07] dark:bg-white/[0.04] dark:text-[#94a3b8] dark:shadow-none dark:hover:border-white/20 dark:hover:bg-white/[0.04] dark:hover:text-white">
                 <div className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-[rgba(99,102,241,0.2)] shrink-0">
                   <BrainCircuit className="h-3 w-3 text-indigo-600 dark:text-[#818cf8]" />
                 </div>
@@ -209,7 +238,7 @@ export default function Hero() {
               <a
                 href="#Universities"
                 onClick={scrollToUniversities}
-                className="group flex justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-gradient-to-br from-[#4f46e5] to-[#6366f1] px-[20px] py-[12px] text-[14px] md:px-[32px] md:py-[18px] md:text-[16px] font-[600] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_8px_30px_rgba(99,102,241,0.25)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_20px_50px_rgba(99,102,241,0.3)] active:scale-[0.98] w-full sm:w-auto"
+                className="group flex justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-indigo-600 hover:bg-indigo-500 px-[20px] py-[12px] text-[14px] md:px-[32px] md:py-[18px] md:text-[16px] font-[600] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_8px_30px_rgba(79,70,229,0.2)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_20px_50px_rgba(79,70,229,0.3)] active:scale-[0.98] w-full sm:w-auto"
               >
                 Start Learning
                 <div className="flex h-[20px] w-[20px] md:h-[22px] md:w-[22px] items-center justify-center rounded-[6px] bg-white/15">
@@ -270,17 +299,23 @@ export default function Hero() {
           {/* Right Mockup */}
           {/* Right Mockup */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="hidden md:flex relative mx-auto mt-16 w-full max-w-[500px] justify-center lg:mt-0 lg:max-w-none lg:justify-end"
+            initial={{ opacity: 0, x: 40, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="hidden md:flex relative mx-auto mt-16 w-full max-w-[500px] justify-center lg:mt-0 lg:max-w-none lg:justify-end will-change-transform will-change-opacity"
           >
-            {/* Glowing aura for Light Mode behind AI card */}
-            <div className="absolute inset-0 -z-10 rounded-[24px] bg-indigo-500/20 blur-[60px] dark:bg-transparent" />
-            <div className="relative w-full max-w-[440px] origin-top scale-100 md:scale-[1.05] overflow-hidden rounded-[20px] md:rounded-[24px] border border-indigo-100 dark:border-white/[0.06] bg-gradient-to-br from-indigo-100 via-white/80 to-purple-100 dark:bg-none dark:bg-white/5 p-4 md:p-6 shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] backdrop-blur-2xl font-sans lg:origin-left lg:scale-[1.08]">
+            {/* Glowing aura for Light Mode behind AI card (Moving Gradient) - Hidden in Dark Mode */}
+            <motion.div
+              animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+              transition={{ duration: 6, ease: "linear", repeat: Infinity }}
+              className="absolute inset-0 -z-10 rounded-[24px] bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-blue-500/30 bg-[length:200%_200%] blur-[60px] dark:hidden"
+            />
+            {/* Extremely subtle static aura for Dark Mode to create depth without flashiness */}
+            <div className="hidden dark:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[400px] w-[400px] rounded-full bg-indigo-500/[0.07] blur-[100px] pointer-events-none" />
+            <motion.div className="relative w-full max-w-[390px] origin-top scale-[0.95] md:scale-100 overflow-hidden rounded-[20px] md:rounded-[24px] border border-indigo-100 dark:border-white/[0.08] bg-gradient-to-br from-indigo-100 via-white/80 to-purple-100 dark:bg-none dark:bg-white/5 p-4 md:p-5 shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-none backdrop-blur-2xl font-sans lg:origin-left lg:scale-[0.98]">
               {/* Chat Header */}
-              <div className="-mt-4 -mx-4 md:-mt-6 md:-mx-6 mb-4 md:mb-5 flex items-center gap-3 border-b border-indigo-100 dark:border-white/[0.06] bg-[#F4F7FF] dark:bg-white/[0.02] px-4 pt-4 pb-3 md:px-6 md:pt-6 md:pb-4 backdrop-blur-md">
-                <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#5964F4] to-[#7D52F5] shadow-[0_0_12px_rgba(99,102,241,0.4)]">
+              <div className="-mt-4 -mx-4 md:-mt-5 md:-mx-5 mb-3 md:mb-4 flex items-center gap-3 border-b border-indigo-100 dark:border-white/[0.06] bg-[#F4F7FF] dark:bg-white/[0.02] px-4 pt-4 pb-3 md:px-5 md:pt-5 md:pb-3 backdrop-blur-md">
+                <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#5964F4] to-[#7D52F5] shadow-[0_2px_4px_rgba(99,102,241,0.2)]">
                   <BrainCircuit
                     className="h-[18px] w-[18px] text-white"
                     strokeWidth={2.2}
@@ -300,108 +335,167 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="space-y-3 md:space-y-4">
-                {/* User Message */}
-                <div className="flex justify-end">
-                  <div className="max-w-[85%] rounded-[20px_20px_6px_20px] bg-gradient-to-r from-[#5B6EFF] to-[#8B5CF6] px-3 py-2 md:px-4 md:py-2.5 text-[12px] md:text-[13px] font-medium text-white shadow-[0_3px_10px_rgba(91,110,255,0.3)]">
-                    Explain Big O notation with an example.
-                  </div>
-                </div>
+              <div className="flex flex-col gap-3">
+                <AnimatePresence>
+                  {messageSent && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                      className="flex flex-col gap-3 overflow-hidden"
+                    >
+                      {/* User Message */}
+                      <motion.div
+                        initial={{
+                          opacity: 0,
+                          scale: 0.9,
+                          y: 10,
+                          originX: 1,
+                          originY: 1,
+                        }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        transition={{
+                          duration: 0.4,
+                          type: "spring",
+                          bounce: 0.4,
+                        }}
+                        className="flex justify-end"
+                      >
+                        <div className="max-w-[85%] rounded-[20px_20px_6px_20px] bg-gradient-to-r from-[#5B6EFF] to-[#8B5CF6] px-3 py-2 md:px-4 md:py-2.5 text-[12px] md:text-[13px] font-medium text-white shadow-[0_2px_4px_rgba(91,110,255,0.15)]">
+                          {fullText}
+                        </div>
+                      </motion.div>
 
-                {/* Hyper AI Message */}
-                <div className="flex flex-col items-start gap-2">
-                  <div className="flex items-center gap-2 px-1">
-                    <div className="flex h-5 w-5 items-center justify-center rounded-[6px] bg-indigo-500/10">
-                      <BrainCircuit
-                        className="h-3.5 w-3.5 text-[#818cf8]"
-                        strokeWidth={2.5}
+                      {/* Hyper AI Message */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{
+                          duration: 0.4,
+                          delay: 0.1,
+                          ease: "easeOut",
+                        }}
+                        className="flex flex-col items-start gap-2"
+                      >
+                        <div className="flex items-center gap-2 px-1">
+                          <div className="flex h-5 w-5 items-center justify-center rounded-[6px] bg-indigo-500/10">
+                            <BrainCircuit
+                              className="h-3.5 w-3.5 text-[#818cf8]"
+                              strokeWidth={2.5}
+                            />
+                          </div>
+                          <span className="text-[12px] font-[600] text-[#818cf8]">
+                            Hyper AI
+                          </span>
+                        </div>
+
+                        <div className="w-full rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white/80 dark:bg-white/[0.09] px-4 py-3 md:px-5 md:py-4">
+                          <div className="space-y-2">
+                            <motion.p
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ duration: 0.4, delay: 0.3 }}
+                              className="text-[13px] leading-[1.7] text-slate-600 dark:text-[#c8ccd8]"
+                            >
+                              Big O notation represents the maximum growth rate
+                              of an algorithm as input size increases.
+                            </motion.p>
+
+                            <motion.p
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ duration: 0.4, delay: 0.6 }}
+                              className="text-[13px] leading-[1.7] text-slate-600 dark:text-[#c8ccd8]"
+                            >
+                              For example, Linear Search has{" "}
+                              <span className="font-semibold text-[#60a5fa]">
+                                O(n)
+                              </span>{" "}
+                              complexity because each element may need to be
+                              checked once.
+                            </motion.p>
+                          </div>
+                        </div>
+                      </motion.div>
+
+                      {/* Related Questions */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{
+                          duration: 0.4,
+                          delay: 1.0,
+                          ease: "easeOut",
+                        }}
+                        className="flex flex-col overflow-hidden rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white dark:bg-white/[0.05]"
+                      >
+                        <div className="flex items-center gap-2 px-4 pb-1 pt-2.5 md:px-5 md:pb-1.5 md:pt-3">
+                          <div className="h-1.5 w-1.5 rounded-full bg-indigo-400 shadow-[0_0_4px_rgba(129,140,248,0.5)]" />
+                          <p className="text-[10px] font-bold uppercase tracking-widest text-[#818cf8]">
+                            Related Previous Year Questions
+                          </p>
+                        </div>
+
+                        <div className="flex flex-col divide-y divide-indigo-50 dark:divide-white/[0.02]">
+                          <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
+                            <div className="flex items-center gap-3">
+                              <CheckCircle2
+                                className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                                strokeWidth={2.5}
+                              />
+                              <span className="text-[13px] font-medium text-slate-600 dark:text-[#d1d5db]">
+                                Dec 2025 — Q1(b)
+                              </span>
+                            </div>
+                            <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
+                          </div>
+
+                          <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
+                            <div className="flex items-center gap-3">
+                              <CheckCircle2
+                                className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
+                                strokeWidth={2.5}
+                              />
+                              <span className="text-[13px] font-medium text-slate-600 dark:text-[#d1d5db]">
+                                Jun 2025 — Q3(a)
+                              </span>
+                            </div>
+                            <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
+                          </div>
+                        </div>
+                      </motion.div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+                  className="group mt-2 md:mt-3 flex items-center justify-between rounded-[16px] border border-indigo-100 dark:border-transparent bg-white/90 dark:bg-white/[0.04] px-3.5 py-2.5 md:px-4 md:py-3.5 shadow-sm dark:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-indigo-300/50 dark:hover:border-indigo-500/50 hover:shadow-[0_4px_20px_-10px_rgba(99,102,241,0.2)] dark:hover:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2),0_0_15px_rgba(99,102,241,0.2)]"
+                >
+                  <span
+                    className={`text-[13px] font-medium ${typedText ? "text-slate-700 dark:text-white" : "text-slate-400 dark:text-[#6b7280]"}`}
+                  >
+                    {typedText || "Ask Hyper AI anything..."}
+                    {!messageSent && (
+                      <motion.span
+                        animate={{ opacity: [1, 0, 1] }}
+                        transition={{
+                          repeat: Infinity,
+                          duration: 0.8,
+                          ease: "linear",
+                        }}
+                        className="inline-block w-[1.5px] h-[1em] bg-slate-400 dark:bg-white ml-[2px] align-middle"
                       />
-                    </div>
-                    <span className="text-[12px] font-[600] text-[#818cf8]">
-                      Hyper AI
-                    </span>
-                  </div>
-
-                  <div className="w-full rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white/80 dark:bg-white/[0.09] px-4 py-3 md:px-5 md:py-4">
-                    <div className="space-y-2">
-                      <p className="text-[13px] leading-[1.7] text-slate-600 dark:text-[#c8ccd8]">
-                        Big O notation represents the maximum growth rate of an
-                        algorithm as input size increases.
-                      </p>
-
-                      <p className="text-[13px] leading-[1.7] text-slate-600 dark:text-[#c8ccd8]">
-                        For example, Linear Search has{" "}
-                        <span className="font-semibold text-[#60a5fa]">
-                          O(n)
-                        </span>{" "}
-                        complexity because each element may need to be checked
-                        once.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Related Questions */}
-                <div className="flex flex-col overflow-hidden rounded-[16px] border border-indigo-50 dark:border-white/5 bg-white dark:bg-white/[0.05]">
-                  <div className="flex items-center gap-2 px-4 pb-1 pt-2.5 md:px-5 md:pb-1.5 md:pt-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-indigo-400 shadow-[0_0_4px_rgba(129,140,248,0.5)]" />
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#818cf8]">
-                      Related Previous Year Questions
-                    </p>
-                  </div>
-
-                  <div className="flex flex-col divide-y divide-indigo-50 dark:divide-white/[0.02]">
-                    <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
-                      <div className="flex items-center gap-3">
-                        <CheckCircle2
-                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
-                          strokeWidth={2.5}
-                        />
-                        <span className="text-[13px] font-medium text-slate-600 dark:text-[#d1d5db]">
-                          Dec 2025 — Q1(b)
-                        </span>
-                      </div>
-                      <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
-                    </div>
-
-                    <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
-                      <div className="flex items-center gap-3">
-                        <CheckCircle2
-                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
-                          strokeWidth={2.5}
-                        />
-                        <span className="text-[13px] font-medium text-slate-600 dark:text-[#d1d5db]">
-                          Jun 2025 — Q3(a)
-                        </span>
-                      </div>
-                      <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
-                    </div>
-
-                    <div className="group flex cursor-pointer items-center justify-between px-4 py-2 md:px-5 md:py-2.5 transition-colors hover:bg-slate-50 dark:hover:bg-white/[0.02]">
-                      <div className="flex items-center gap-3">
-                        <CheckCircle2
-                          className="h-4 w-4 text-[#34d399] drop-shadow-[0_0_3px_rgba(52,211,153,0.4)]"
-                          strokeWidth={2.5}
-                        />
-                        <span className="text-[13px] font-medium text-slate-600 dark:text-[#d1d5db]">
-                          Dec 2024 — Q2
-                        </span>
-                      </div>
-                      <ArrowRight className="h-4 w-4 text-slate-400 dark:text-gray-500 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#818cf8]" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="group mt-2 md:mt-3 flex items-center justify-between rounded-[16px] border border-indigo-100 dark:border-transparent bg-white/90 dark:bg-white/[0.04] px-3.5 py-2.5 md:px-4 md:py-3.5 shadow-sm dark:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-indigo-300/50 dark:hover:border-indigo-500/50 hover:shadow-[0_4px_20px_-10px_rgba(99,102,241,0.2)] dark:hover:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2),0_0_15px_rgba(99,102,241,0.2)]">
-                  <span className="text-[13px] font-medium text-slate-400 dark:text-[#6b7280]">
-                    Ask Hyper AI anything...
+                    )}
                   </span>
-                  <div className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-[10px] bg-gradient-to-r from-indigo-500 to-purple-500 shadow-[0_4px_12px_rgba(168,85,247,0.25)] transition-transform hover:scale-105">
+                  <div className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-[10px] bg-indigo-600 hover:bg-indigo-500 shadow-[0_2px_4px_rgba(79,70,229,0.2)] transition-transform hover:scale-105">
                     <ArrowRight className="h-4 w-4 text-white" />
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

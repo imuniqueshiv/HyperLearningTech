@@ -21,6 +21,17 @@ const UNIVERSITIES = [
   "Other",
 ];
 
+const SEMESTERS = [
+  "1st Semester",
+  "2nd Semester",
+  "3rd Semester",
+  "4th Semester",
+  "5th Semester",
+  "6th Semester",
+  "7th Semester",
+  "8th Semester",
+];
+
 export default function SignUpPage() {
   return (
     <div className="flex flex-col gap-4 w-full max-w-[360px] mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -65,13 +76,22 @@ export default function SignUpPage() {
           suggestions={UNIVERSITIES}
         />
 
-        <AuthInput
-          id="branch"
-          type="text"
-          label=""
-          placeholder="Engineering Branch"
-          suggestions={BRANCHES}
-        />
+        <div className="grid grid-cols-2 gap-3">
+          <AuthInput
+            id="semester"
+            type="text"
+            label=""
+            placeholder="Semester"
+            suggestions={SEMESTERS}
+          />
+          <AuthInput
+            id="branch"
+            type="text"
+            label=""
+            placeholder="Engineering Branch"
+            suggestions={BRANCHES}
+          />
+        </div>
 
         <AuthInput
           id="password"
