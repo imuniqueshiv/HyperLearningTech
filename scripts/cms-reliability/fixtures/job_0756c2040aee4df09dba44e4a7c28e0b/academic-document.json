@@ -1,0 +1,381 @@
+{
+  "version": 1,
+  "metadata": {
+    "jobId": "job_0756c2040aee4df09dba44e4a7c28e0b",
+    "jobType": "pyq",
+    "sourceFilename": "al-cd-402-analysis-and-design-of-algorithm-nov-2023.pdf",
+    "subjectCode": "AL-402",
+    "subjectName": "Analysis and Design of Algorithm",
+    "subjectTitle": "Analysis and Design of Algorithm",
+    "branch": "aiml",
+    "semester": "semester-4",
+    "university": "RGPV",
+    "structuredAt": "2026-09-04T12:08:41.386Z",
+    "model": "gemini-2.5-flash-lite",
+    "detector": "gemini-structuring-v1"
+  },
+  "exam": {
+    "exam": "RGPV",
+    "year": 2023,
+    "month": "November",
+    "maxMarks": 70,
+    "time": "Three Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ],
+    "isPredicted": false,
+    "gradingSystem": "GS"
+  },
+  "units": [],
+  "topics": [],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "Q.1",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q1a",
+          "label": "a",
+          "text": "Define time complexity. Describe different notations used to represent time complexity.",
+          "latex": null,
+          "unit": "Unit 1",
+          "type": "complexity-analysis",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        },
+        {
+          "id": "q1b",
+          "label": "b",
+          "text": "Discuss Strassen’s matrix multiplication as well as classical O (n^3) one. Determine when Strassen's method outperforms the classical one.",
+          "latex": null,
+          "unit": "Unit 1",
+          "type": "strassen-matrix-multiplication",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "questionNumber": "Q.2",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q2a",
+          "label": "a",
+          "text": "Sort the following elements using Quick sort algorithm: 24, 12, 35, 23, 45, 34, 39, 45",
+          "latex": null,
+          "unit": "Unit 1",
+          "type": "quick-sort",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "numerical",
+          "attachments": []
+        },
+        {
+          "id": "q2b",
+          "label": "b",
+          "text": "State the Job Sequencing with deadlines problem. Find an optimal sequence to the n = 5 Jobs where profits (P1, P2, P3, P4, P5) = (20, 15, 10, 5, 1) and deadlines (d1, d2, d3, d4, d5) = (2, 2, 1, 3, 3).",
+          "latex": null,
+          "unit": "Unit 2",
+          "type": "job-sequencing-with-deadlines",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "numerical",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "questionNumber": "Q.3",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q3a",
+          "label": "a",
+          "text": "A thief enters a house for robbing. Thief can carry a maximum weight of 6kg into his bag. There are 3 items in house weights (W1, W2, W3) = (2, 3, 4) and profits (P1, P2, P3) = (1, 2, 5) what items should thief take to maximize profit.",
+          "latex": null,
+          "unit": "Unit 2",
+          "type": "fractional-knapsack",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "numerical",
+          "attachments": []
+        },
+        {
+          "id": "q3b",
+          "label": "b",
+          "text": "Explain Prim's and Kruskal's algorithm. Using suitable algorithm find minimum spanning tree for the following graph.",
+          "latex": null,
+          "unit": "Unit 3",
+          "type": "minimum-spanning-tree-prim-kruskal",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "diagram",
+          "attachments": [
+            {
+              "id": "q3b-img-1",
+              "type": "image",
+              "sourcePath": "diagrams/page-2/diagram-002.webp",
+              "title": "Graph for Prim's and Kruskal's Algorithm",
+              "alt": "A weighted undirected graph with 7 nodes and 10 edges.",
+              "caption": "Example graph for Prim's and Kruskal's algorithm",
+              "aiContext": "The diagram displays a weighted undirected graph. The nodes are labeled with numbers 1 through 7. The edges and their corresponding weights are as follows: (1, 4) with weight 2, (1, 2) with weight 2, (2, 4) with weight 1, (2, 7) with weight 7, (2, 5) with weight 10, (4, 6) with weight 8, (4, 7) with weight 4, (6, 7) with weight 1, (5, 7) with weight 6. The question asks to explain Prim's and Kruskal's algorithm using this example.",
+              "category": "graph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "questionNumber": "Q.4",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q4a",
+          "label": "a",
+          "text": "Solve the following instance of 0/1 Knapsack problem using Dynamic programming. n = 3; (W1, W2, W3) = (3, 5, 7); (P1, P2, P3) = (3, 7, 12); M = 4.",
+          "latex": null,
+          "unit": "Unit 4",
+          "type": "knapsack-dynamic-programming",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "numerical",
+          "attachments": []
+        },
+        {
+          "id": "q4b",
+          "label": "b",
+          "text": "Design a three stage system with device types D1, D2 and D3. The costs are $30, $15 and $20 respectively. The cost of the system is to be no more than $105. The reliability of each device is 0.9, 0.8 and 0.5 respectively.",
+          "latex": null,
+          "unit": "Unit 4",
+          "type": "system-design-reliability",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "questionNumber": "Q.5",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q5a",
+          "label": "a",
+          "text": "Solve the following instance of travelling sales person problem using Least Cost Branch Bound.",
+          "latex": null,
+          "unit": "Unit 5",
+          "type": "travelling-salesperson-branch-and-bound",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "numerical",
+          "attachments": []
+        },
+        {
+          "id": "q5b",
+          "label": "b",
+          "text": "Construct state space tree for solving four queen's problem using backtracking.",
+          "latex": null,
+          "unit": "Unit 5",
+          "type": "n-queens-backtracking",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "diagram",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "questionNumber": "Q.6",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q6a",
+          "label": "a",
+          "text": "Discuss about Multistage graph problem. Also give suitable algorithm and find its computing time.",
+          "latex": null,
+          "unit": "Unit 3",
+          "type": "multistage-graph",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        },
+        {
+          "id": "q6b",
+          "label": "b",
+          "text": "Write an algorithm to determine the Hamiltonian cycle in a given graph using backtracking.",
+          "latex": null,
+          "unit": "Unit 5",
+          "type": "hamiltonian-cycle-backtracking",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "questionNumber": "Q.7",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q7a",
+          "label": "a",
+          "text": "Explain the P, NP-Hard and NP-complete classes? Give the relation between them.",
+          "latex": null,
+          "unit": "Unit 5",
+          "type": "complexity-classes-p-np",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        },
+        {
+          "id": "q7b",
+          "label": "b",
+          "text": "Show the inorder, preorder and postorder for the following binary search tree:",
+          "latex": null,
+          "unit": "Unit 5",
+          "type": "tree-traversals",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "diagram",
+          "attachments": [
+            {
+              "id": "q7b-img-1",
+              "type": "image",
+              "sourcePath": "diagrams/page-3/diagram-003.webp",
+              "title": "Binary Tree Diagram",
+              "alt": "A diagram of a binary tree with nodes labeled A, B, C, D, E, F, G.",
+              "caption": "Show the inorder, preorder and postorder for the following tree",
+              "aiContext": "The diagram shows a binary tree structure. The root node is labeled 'A'. The left child of 'A' is 'B', and the right child of 'A' is 'G'. The left child of 'B' is 'C', and the right child of 'B' is 'F'. The left child of 'C' is 'D', and the right child of 'C' is 'E'.",
+              "category": "tree"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "questionNumber": "Q.8",
+      "marks": 14,
+      "subQuestions": [
+        {
+          "id": "q8a",
+          "label": "a",
+          "text": "Data Transfer Optimization and Logic Optimization",
+          "latex": null,
+          "unit": null,
+          "type": "optimization-techniques",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        },
+        {
+          "id": "q8b",
+          "label": "b",
+          "text": "Differentiate between prim's algorithm and Kruskal's algorithm",
+          "latex": null,
+          "unit": null,
+          "type": "prim-vs-kruskal",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        },
+        {
+          "id": "q8c",
+          "label": "c",
+          "text": "Parallel algorithms",
+          "latex": null,
+          "unit": null,
+          "type": "parallel-algorithms",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        },
+        {
+          "id": "q8d",
+          "label": "d",
+          "text": "Approximation Algorithms",
+          "latex": null,
+          "unit": null,
+          "type": "approximation-algorithms",
+          "marks": 7,
+          "difficulty": "unknown",
+          "questionType": "theory",
+          "attachments": []
+        }
+      ]
+    }
+  ],
+  "diagrams": [
+    {
+      "id": "diagram-1-1",
+      "sourcePath": "diagrams/page-1/diagram-001.webp",
+      "filename": "diagram-001.webp",
+      "pageNumber": 1,
+      "relatedQuestionId": null,
+      "relatedSubQuestionId": null,
+      "title": "Exam Paper Header and Questions",
+      "alt": "Header of an exam paper with course title, semester, exam details, and questions for Analysis and Design of Algorithm.",
+      "caption": "Exam paper details and questions.",
+      "aiContext": "The image displays the header of an exam paper for the course 'AL/CD-402 (GS) B.Tech. IV Semester Grading System (GS) Analysis and Design of Algorithm'. It includes examination details like 'Examination, November 2023', 'Time : Three Hours', and 'Maximum Marks : 70'. It also specifies instructions for attempting the questions, such as attempting any five questions, all questions carrying equal marks, and treating the English version as final in case of doubt. The image then presents several questions. Question 1 asks to define time complexity and describe notations for it, and to discuss Strassen's matrix multiplication. Question 2 asks to explain the partition exchange sort algorithm and trace it, and to state the Job-Sequencing with deadlines problem and find an optimal sequence. Question 3 describes a scenario about a thief carrying items with specified weights and profits, asking to determine which items the thief can take to maximize profit.",
+      "category": "document",
+      "width": 1684,
+      "height": 1191
+    },
+    {
+      "id": "diagram-2-2",
+      "sourcePath": "diagrams/page-2/diagram-002.webp",
+      "filename": "diagram-002.webp",
+      "pageNumber": 2,
+      "relatedQuestionId": "q3",
+      "relatedSubQuestionId": "q3b",
+      "title": "Graph for Prim's and Kruskal's Algorithm",
+      "alt": "A weighted undirected graph with 7 nodes and 10 edges.",
+      "caption": "Example graph for Prim's and Kruskal's algorithm",
+      "aiContext": "The diagram displays a weighted undirected graph. The nodes are labeled with numbers 1 through 7. The edges and their corresponding weights are as follows: (1, 4) with weight 2, (1, 2) with weight 2, (2, 4) with weight 1, (2, 7) with weight 7, (2, 5) with weight 10, (4, 6) with weight 8, (4, 7) with weight 4, (6, 7) with weight 1, (5, 7) with weight 6. The question asks to explain Prim's and Kruskal's algorithm using this example.",
+      "category": "graph",
+      "width": 1684,
+      "height": 1191
+    },
+    {
+      "id": "diagram-3-3",
+      "sourcePath": "diagrams/page-3/diagram-003.webp",
+      "filename": "diagram-003.webp",
+      "pageNumber": 3,
+      "relatedQuestionId": "q7",
+      "relatedSubQuestionId": "q7b",
+      "title": "Binary Tree Diagram",
+      "alt": "A diagram of a binary tree with nodes labeled A, B, C, D, E, F, G.",
+      "caption": "Show the inorder, preorder and postorder for the following tree",
+      "aiContext": "The diagram shows a binary tree structure. The root node is labeled 'A'. The left child of 'A' is 'B', and the right child of 'A' is 'G'. The left child of 'B' is 'C', and the right child of 'B' is 'F'. The left child of 'C' is 'D', and the right child of 'C' is 'E'.",
+      "category": "tree",
+      "width": 1684,
+      "height": 1191
+    }
+  ],
+  "usage": {
+    "promptTokens": 13523,
+    "completionTokens": 3915,
+    "totalTokens": 17438
+  }
+}

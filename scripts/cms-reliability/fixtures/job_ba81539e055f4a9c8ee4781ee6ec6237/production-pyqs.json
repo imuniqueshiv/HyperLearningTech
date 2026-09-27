@@ -1,0 +1,227 @@
+{
+  "subject": {
+    "id": "al-402",
+    "code": "AL-402",
+    "name": "Analysis and Design of Algorithm",
+    "title": "Analysis and Design of Algorithm",
+    "semester": "semester-4",
+    "gradingSystem": "GS",
+    "maxMarks": 70,
+    "time": "Three Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "B.Tech. Examination",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the performance analysis of an algorithm in detail.",
+              "unit": "Unit 1",
+              "type": "performance-analysis"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Consider the following recurrence T(n)=3T(n/3) + n obtain asymptotic bound using substitution method.",
+              "unit": "Unit 1",
+              "latex": "T(n)=3T(n/3) + n",
+              "type": "asymptotic-notation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write Divide — And — Conquer recursive Quick sort algorithm and analyze the algorithm for average time complexity.",
+              "unit": "Unit 2",
+              "type": "quicksort"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Obtain a set of optimal Huffman codes for the seven messages (M1, ... , M7) with relative frequencies (3, 5, 7, 8, 10, 22, 15). Draw the decode tree for this set of codes.",
+              "unit": "Unit 2",
+              "latex": "(q1, ..., q7) = (3, 5, 7, 8, 10, 22, 15)",
+              "type": "huffman-coding"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write Kruskal’s Algorithm. Generate the MCST for the graph given in Figure 1 by applying Kruskal’s algorithm.",
+              "unit": "Unit 3",
+              "type": "kruskals-algorithm",
+              "attachments": [
+                {
+                  "id": "q3a-img-1",
+                  "type": "image",
+                  "path": "diagrams/page-3/diagram-003.webp",
+                  "title": "Figure 1",
+                  "alt": "Graph for Kruskal's Algorithm",
+                  "caption": "Figure 1",
+                  "aiContext": "A graph with nodes labeled A, B, C, D, E, F and edges with weights is shown for applying Kruskal's algorithm to find the Minimum Spanning Tree (MCST)."
+                }
+              ]
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain Floyd Warshall algorithm problem with the graph given in figure.",
+              "unit": "Unit 3",
+              "type": "floyd-warshall-algorithm",
+              "attachments": [
+                {
+                  "id": "q3b-img-1",
+                  "type": "image",
+                  "path": "diagrams/page-3/diagram-003.webp",
+                  "title": "Figure 1",
+                  "alt": "Graph for Kruskal's Algorithm",
+                  "caption": "Figure 1",
+                  "aiContext": "A graph with nodes labeled A, B, C, D, E, F and edges with weights is shown for applying Kruskal's algorithm to find the Minimum Spanning Tree (MCST)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the following 0/1 Knapsack problem using dynamic programming P=(11, 21, 31, 33), W=(2, 12, 23, 15), C=42, n=4.",
+              "unit": "Unit 3",
+              "latex": "P=(11, 21, 31, 33), W=(2, 12, 23, 15), C=42, n=4",
+              "type": "dynamic-programming-knapsack"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Apply the Greedy method to solve Knapsack problem for given instance. Where n = 3, m = 20, (p1, p2, p3) =(25, 24, 15) and weight (w1, w2, w3) = (18, 15,10).",
+              "unit": "Unit 2",
+              "latex": "n = 3, m = 20, (p1, p2, p3) =(25, 24, 15) and (w1, w2, w3) = (18, 15, 10)",
+              "type": "greedy-method-knapsack"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is multistage graph problem? Discuss its solution based on dynamic programming approach. Also give a suitable algorithm and find its computing time?",
+              "unit": "Unit 4",
+              "type": "multistage-graph"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Backtracking? Discuss any problem solved by backtracking. Also give its advantages & disadvantages.",
+              "unit": "Unit 4",
+              "type": "backtracking"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Solve the traveling salesperson problem using branch and bound technique.",
+              "unit": "Unit 5",
+              "type": "travelling-salesperson-problem"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Create a B-tree for the following list of elements L = {86, 50, 40, 3, 94, 10, 70, 90, 110, 113, 116} given minimization factor t = 3, minimum degree = 2 and maximum degree = 5.",
+              "unit": "Unit 5",
+              "latex": "L = {86, 50, 40, 3, 94, 10, 70, 90, 110, 113, 116}",
+              "type": "b-trees"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Compare and contrast NP-Hard and NP-Complete classes.",
+              "unit": "Unit 5",
+              "type": "np-hard-np-complete"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Find a solution to the 8-Queens problem using backtracking strategy. Draw the solution space using necessary bounding function.",
+              "unit": "Unit 4",
+              "type": "8-queens-problem"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Reliability design",
+              "unit": "unit-unknown",
+              "type": "reliability-design"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Correctness proof of Greedy algorithms",
+              "unit": "unit-unknown",
+              "type": "correctness-proof-greedy"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Design and complexity of Parallel Algorithms",
+              "unit": "unit-unknown",
+              "type": "parallel-algorithms"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Graph coloring problem",
+              "unit": "unit-unknown",
+              "type": "graph-coloring"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

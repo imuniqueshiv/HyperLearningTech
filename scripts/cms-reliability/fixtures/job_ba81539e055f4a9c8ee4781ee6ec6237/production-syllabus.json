@@ -1,0 +1,162 @@
+{
+  "subject": {
+    "id": "al-402",
+    "code": "AL-402",
+    "name": "Analysis and Design of Algorithm",
+    "title": "Analysis and Design of Algorithm",
+    "university": "RGPV",
+    "scheme": "New Scheme Based On AICTE Flexible Curricula",
+    "semester": "semester-4",
+    "credits": 3,
+    "lectureTutorialPractical": "2L-0T-2P",
+    "commonTo": "All Disciplines"
+  },
+  "modules": [
+    {
+      "id": "al402-u1",
+      "number": 1,
+      "title": "Unit 1",
+      "hours": 8,
+      "topics": [
+        {
+          "id": "al402-u1-performance-analysis",
+          "slug": "performance-analysis",
+          "title": "Performance Analysis",
+          "displayOrder": 1
+        },
+        {
+          "id": "al402-u1-asymptotic-notation",
+          "slug": "asymptotic-notation",
+          "title": "Asymptotic Notation",
+          "displayOrder": 2
+        }
+      ],
+      "questionIds": ["al402_m1_june2023_q1", "al402_m1_june2023_q8"],
+      "predictedQuestionIds": []
+    },
+    {
+      "id": "al402-u2",
+      "number": 2,
+      "title": "Unit 2",
+      "hours": 8,
+      "topics": [
+        {
+          "id": "al402-u2-divide-and-conquer",
+          "slug": "divide-and-conquer",
+          "title": "Divide and Conquer",
+          "displayOrder": 3
+        },
+        {
+          "id": "al402-u2-quicksort",
+          "slug": "quicksort",
+          "title": "Quick Sort",
+          "displayOrder": 4
+        },
+        {
+          "id": "al402-u2-huffman-coding",
+          "slug": "huffman-coding",
+          "title": "Huffman Coding",
+          "displayOrder": 5
+        },
+        {
+          "id": "al402-u2-greedy-method-knapsack",
+          "slug": "greedy-method-knapsack",
+          "title": "Greedy Method - Knapsack",
+          "displayOrder": 6
+        }
+      ],
+      "questionIds": ["al402_m2_june2023_q2", "al402_m2_june2023_q4"],
+      "predictedQuestionIds": []
+    },
+    {
+      "id": "al402-u3",
+      "number": 3,
+      "title": "Unit 3",
+      "hours": 8,
+      "topics": [
+        {
+          "id": "al402-u3-kruskals-algorithm",
+          "slug": "kruskals-algorithm",
+          "title": "Kruskal's Algorithm",
+          "displayOrder": 7
+        },
+        {
+          "id": "al402-u3-floyd-warshall-algorithm",
+          "slug": "floyd-warshall-algorithm",
+          "title": "Floyd Warshall Algorithm",
+          "displayOrder": 8
+        },
+        {
+          "id": "al402-u3-dynamic-programming-knapsack",
+          "slug": "dynamic-programming-knapsack",
+          "title": "Dynamic Programming - Knapsack",
+          "displayOrder": 9
+        }
+      ],
+      "questionIds": ["al402_m3_june2023_q3", "al402_m3_june2023_q4"],
+      "predictedQuestionIds": []
+    },
+    {
+      "id": "al402-u4",
+      "number": 4,
+      "title": "Unit 4",
+      "hours": 8,
+      "topics": [
+        {
+          "id": "al402-u4-multistage-graph",
+          "slug": "multistage-graph",
+          "title": "Multistage Graph",
+          "displayOrder": 10
+        },
+        {
+          "id": "al402-u4-backtracking",
+          "slug": "backtracking",
+          "title": "Backtracking",
+          "displayOrder": 11
+        },
+        {
+          "id": "al402-u4-8-queens-problem",
+          "slug": "8-queens-problem",
+          "title": "8-Queens Problem",
+          "displayOrder": 12
+        }
+      ],
+      "questionIds": ["al402_m4_june2023_q5", "al402_m4_june2023_q7"],
+      "predictedQuestionIds": []
+    },
+    {
+      "id": "al402-u5",
+      "number": 5,
+      "title": "Unit 5",
+      "hours": 8,
+      "topics": [
+        {
+          "id": "al402-u5-travelling-salesperson-problem",
+          "slug": "travelling-salesperson-problem",
+          "title": "Traveling Salesperson Problem",
+          "displayOrder": 13
+        },
+        {
+          "id": "al402-u5-branch-and-bound",
+          "slug": "branch-and-bound",
+          "title": "Branch and Bound",
+          "displayOrder": 14
+        },
+        {
+          "id": "al402-u5-b-trees",
+          "slug": "b-trees",
+          "title": "B-Trees",
+          "displayOrder": 15
+        },
+        {
+          "id": "al402-u5-np-hard-np-complete",
+          "slug": "np-hard-np-complete",
+          "title": "NP-Hard and NP-Complete",
+          "displayOrder": 16
+        }
+      ],
+      "questionIds": ["al402_m5_june2023_q6", "al402_m5_june2023_q7"],
+      "predictedQuestionIds": []
+    }
+  ]
+}

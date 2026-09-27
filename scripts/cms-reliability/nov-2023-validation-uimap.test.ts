@@ -37,9 +37,13 @@ const REPO_ROOT = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   "../.."
 );
+/**
+ * Proven job artifacts live under fixtures/ (not .cms/) so CI can run the
+ * same regression without the gitignored upload workspace.
+ */
 const JOB_DIR = path.join(
   REPO_ROOT,
-  ".cms/uploads/job_0756c2040aee4df09dba44e4a7c28e0b"
+  "scripts/cms-reliability/fixtures/job_0756c2040aee4df09dba44e4a7c28e0b"
 );
 
 function readJson<T>(filePath: string): T {

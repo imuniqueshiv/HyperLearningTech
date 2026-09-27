@@ -52,9 +52,13 @@ const AL402_SYLLABUS = path.join(
   REPO_ROOT,
   "content/rgpv/aiml/semester-4/al-402/syllabus.json"
 );
+/**
+ * Proven job artifacts live under fixtures/ (not .cms/) so CI can run the
+ * same regression without the gitignored upload workspace.
+ */
 const JOB_DIR = path.join(
   REPO_ROOT,
-  ".cms/uploads/job_ba81539e055f4a9c8ee4781ee6ec6237"
+  "scripts/cms-reliability/fixtures/job_ba81539e055f4a9c8ee4781ee6ec6237"
 );
 const JOB_PYQS = path.join(JOB_DIR, "production-pyqs.json");
 const JOB_SYLLABUS = path.join(JOB_DIR, "production-syllabus.json");
