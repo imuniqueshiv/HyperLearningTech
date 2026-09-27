@@ -26,8 +26,7 @@ const report = runValidationEngine({
 
 const duplicateErrors = report.errors.filter(
   (e) =>
-    e.code === "DUPLICATE_QUESTION_ID" ||
-    e.code === "DUPLICATE_SUBQUESTION_ID"
+    e.code === "DUPLICATE_QUESTION_ID" || e.code === "DUPLICATE_SUBQUESTION_ID"
 );
 
 console.log(

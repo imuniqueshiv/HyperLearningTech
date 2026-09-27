@@ -16,11 +16,7 @@ import {
 
 const logPath = path.join(process.cwd(), "debug-26e666.log");
 
-function log(
-  location: string,
-  message: string,
-  data: Record<string, unknown>
-) {
+function log(location: string, message: string, data: Record<string, unknown>) {
   const line = JSON.stringify({
     sessionId: "26e666",
     runId: "post-fix",
@@ -96,7 +92,7 @@ async function main() {
       cause:
         err.cause instanceof Error
           ? { message: err.cause.message, stack: err.cause.stack }
-          : err.cause ?? null,
+          : (err.cause ?? null),
     });
     throw err;
   }

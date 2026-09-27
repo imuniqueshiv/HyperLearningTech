@@ -87,7 +87,9 @@ describe("pipeline supervisor contracts", () => {
   it("infers resume at validation when schema summary exists", () => {
     const job = baseJob({
       stage: PipelineStage.SCHEMA_READY,
-      structuring: { questionCount: 1 } as unknown as ImportJobRecord["structuring"],
+      structuring: {
+        questionCount: 1,
+      } as unknown as ImportJobRecord["structuring"],
       schema: { paperCount: 1 } as unknown as ImportJobRecord["schema"],
     });
     assert.equal(inferResumeStage(job), "validation");

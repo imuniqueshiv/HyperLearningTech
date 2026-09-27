@@ -207,8 +207,7 @@ export async function runDiagramsForJob(
       });
     } catch (logError) {
       reconstructionLog("Failed to write reconstruction.log", {
-        error:
-          logError instanceof Error ? logError.message : String(logError),
+        error: logError instanceof Error ? logError.message : String(logError),
       });
     }
 

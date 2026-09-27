@@ -292,11 +292,9 @@ export async function superviseJobPipeline(input: {
 
     if (autoReview && mode === "through-writer") {
       try {
-        await timedAwait(
-          "supervisor.review",
-          startReviewForJob(input.jobId),
-          { jobId: input.jobId }
-        );
+        await timedAwait("supervisor.review", startReviewForJob(input.jobId), {
+          jobId: input.jobId,
+        });
       } catch (error) {
         console.error(
           "[Supervisor] Auto-review failed (non-fatal):",

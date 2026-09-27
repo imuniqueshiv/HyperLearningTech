@@ -18,28 +18,28 @@ Stages never launch the next stage. The supervisor owns transitions, resume skip
 
 ## 3. Stage capability matrix (after)
 
-| Stage | Timeout | Sticky PROCESSING | inFlight+finally | Checkpoint | Stage log |
-|---|---|---|---|---|---|
-| OCR | 180s (supervisor) | Recoverable | Yes | Yes | Yes |
-| Layout | 60s | Recoverable | Yes | Yes | Yes |
-| Reconstruction | 60s | Recoverable | Yes | Yes | Yes |
-| Gemini | 240s + 90s/request | Recoverable | Yes | Yes | Yes |
-| Schema | 60s | Recoverable | Yes | Yes | Yes |
-| Validation | 60s | Recoverable | Yes | Yes | Yes |
-| Writer | 120s | Recoverable | Yes | Yes | Yes |
-| Review | 30s (auto) | N/A | N/A | Optional | Logged on fail |
+| Stage          | Timeout            | Sticky PROCESSING | inFlight+finally | Checkpoint | Stage log      |
+| -------------- | ------------------ | ----------------- | ---------------- | ---------- | -------------- |
+| OCR            | 180s (supervisor)  | Recoverable       | Yes              | Yes        | Yes            |
+| Layout         | 60s                | Recoverable       | Yes              | Yes        | Yes            |
+| Reconstruction | 60s                | Recoverable       | Yes              | Yes        | Yes            |
+| Gemini         | 240s + 90s/request | Recoverable       | Yes              | Yes        | Yes            |
+| Schema         | 60s                | Recoverable       | Yes              | Yes        | Yes            |
+| Validation     | 60s                | Recoverable       | Yes              | Yes        | Yes            |
+| Writer         | 120s               | Recoverable       | Yes              | Yes        | Yes            |
+| Review         | 30s (auto)         | N/A               | N/A              | Optional   | Logged on fail |
 
 ## 4. Hang / lifecycle points found
 
-| Risk | Location | Fix |
-|---|---|---|
-| `after()` not retaining pipeline Map | `upload/route.ts` | `ensureImportSessionPipeline` |
-| Sticky `STRUCTURING` / OCR / Schema / Validation / Writer | stage services | Recoverable + inFlight |
-| Gemini `generateContent` unbounded | `gemini-structuring.ts` | 90s race + httpOptions.timeout |
-| Queue lock deadlock | `import-queue.ts` | 15s wait timeout |
-| Missing stage timeout | most stages | Supervisor `withStageTimeout` |
-| UI Running forever on TIMEOUT | `session-status.ts` | Map TIMEOUT/CANCELLED → Failed |
-| Reconstruction Sharp orphan after race | diagram-service | Raised to 60s; abort checks (Sharp cancel N/A) |
+| Risk                                                      | Location                | Fix                                            |
+| --------------------------------------------------------- | ----------------------- | ---------------------------------------------- |
+| `after()` not retaining pipeline Map                      | `upload/route.ts`       | `ensureImportSessionPipeline`                  |
+| Sticky `STRUCTURING` / OCR / Schema / Validation / Writer | stage services          | Recoverable + inFlight                         |
+| Gemini `generateContent` unbounded                        | `gemini-structuring.ts` | 90s race + httpOptions.timeout                 |
+| Queue lock deadlock                                       | `import-queue.ts`       | 15s wait timeout                               |
+| Missing stage timeout                                     | most stages             | Supervisor `withStageTimeout`                  |
+| UI Running forever on TIMEOUT                             | `session-status.ts`     | Map TIMEOUT/CANCELLED → Failed                 |
+| Reconstruction Sharp orphan after race                    | diagram-service         | Raised to 60s; abort checks (Sharp cancel N/A) |
 
 ## 5. Terminal states
 
@@ -72,7 +72,7 @@ Returns current stage, elapsed, heartbeat, last log tail, artifacts, resume poin
 
 **Updated**
 
-- `batch-service.ts`, `upload/route.ts`, `import-session-service.ts` (already had ensure*)
+- `batch-service.ts`, `upload/route.ts`, `import-session-service.ts` (already had ensure\*)
 - `ocr-service.ts`, `layout-service.ts`, `diagram-service.ts`, `structuring-service.ts`
 - `schema-builder-service.ts`, `validation-service.ts`, `writer-service.ts`, `local-save-service.ts`
 - `gemini-structuring.ts`, `import-queue.ts`, `pipeline-stage.ts`, `session-status.ts`
