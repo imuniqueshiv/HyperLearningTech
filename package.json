@@ -10,12 +10,15 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "test": "echo \"No tests yet\""
+    "test": "tsx --test scripts/cms-reliability/phase-1-atomic-writer.test.ts scripts/cms-reliability/phase-2-3-merge-duplicate.test.ts scripts/cms-reliability/phase-4-resume.test.ts scripts/cms-reliability/phase-5-load.test.ts scripts/cms-reliability/logging-contract.test.ts scripts/cms-reliability/pipeline-supervisor.test.ts scripts/cms-reliability/ocr-quality.test.ts scripts/cms-reliability/metadata-extractor.test.ts scripts/cms-reliability/jbig2-raster.test.ts scripts/cms-reliability/merge-trim-crash.test.ts scripts/cms-reliability/nov-2023-validation-uimap.test.ts",
+    "cms:verify": "npm run test",
+    "cms:report": "tsx scripts/cms-reliability/generate-report.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.5.3",
     "@google/genai": "^2.10.0",
     "@hookform/resolvers": "^5.4.0",
+    "@napi-rs/canvas": "^1.0.2",
     "@prisma/client": "^7.8.0",
     "@radix-ui/react-dialog": "^1.1.17",
     "@sentry/nextjs": "^10.58.0",
@@ -30,6 +33,7 @@
     "lucide-react": "^1.20.0",
     "next": "16.2.9",
     "next-themes": "^0.4.6",
+    "pdfjs-dist": "^6.1.200",
     "posthog-js": "^1.388.1",
     "prisma": "^7.8.0",
     "react": "19.2.4",
@@ -43,8 +47,10 @@
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "resend": "^6.12.4",
+    "sharp": "^0.35.3",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.6.0",
+    "tesseract.js": "^7.0.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -56,6 +62,7 @@
     "eslint-config-next": "16.2.9",
     "prettier": "^3.8.4",
     "tailwindcss": "^4.3.1",
+    "tsx": "^4.23.1",
     "typescript": "^5.9.3"
   }
 }
