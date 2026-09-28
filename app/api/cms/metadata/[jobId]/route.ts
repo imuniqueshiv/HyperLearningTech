@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import {
   getJob,
@@ -14,6 +14,8 @@ import {
 } from "@/lib/content-pipeline/metadata-extractor";
 import type { ExamSession } from "@/lib/content-pipeline";
 
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
+
 interface RouteContext {
   params: Promise<{
     jobId: string;
@@ -24,7 +26,15 @@ interface RouteContext {
  * Administrator override for extracted Import Session metadata.
  * Always wins over auto-extraction.
  */
-export async function PATCH(request: Request, context: RouteContext) {
+export async function PATCH(request: NextRequest, context: RouteContext) {
+  try {
+    await requireCmsAuth(request, "ADMIN");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId } = await context.params;
     const metadata = await readJobMetadata(jobId);

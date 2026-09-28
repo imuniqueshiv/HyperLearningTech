@@ -1,8 +1,18 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import { listJobs } from "@/lib/content-pipeline/server";
 
-export async function GET() {
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
+
+export async function GET(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const jobs = await listJobs();
 
@@ -30,7 +40,15 @@ export async function GET() {
   }
 }
 
-export async function POST() {
+export async function POST(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   return NextResponse.json(
     {
       success: false,

@@ -1,6 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
+
 import { NextRequest, NextResponse } from "next/server";
 
 import { CMS_JOB_DIAGRAMS_DIR } from "@/lib/content-pipeline";
@@ -21,6 +23,14 @@ interface RouteContext {
  * Pass ?path=diagrams/... to stream a WEBP preview from the job workspace.
  */
 export async function GET(request: NextRequest, context: RouteContext) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId } = await context.params;
     const metadata = await readJobMetadata(jobId);

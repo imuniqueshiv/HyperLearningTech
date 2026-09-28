@@ -2,10 +2,20 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { getPipelineDebugSnapshot } from "@/lib/content-pipeline/server";
 
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
+
 export async function GET(
-  _request: NextRequest,
+  request: NextRequest,
   context: { params: Promise<{ jobId: string }> }
 ) {
+  try {
+    await requireCmsAuth(request, "ADMIN");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId: raw } = await context.params;
     const jobId = raw?.trim();

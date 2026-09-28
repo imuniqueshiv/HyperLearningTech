@@ -5,8 +5,10 @@ import {
   BulkUploadError,
   getBatchStatus,
   processBulkUpload,
-  type BatchPipelineMode,
 } from "@/lib/content-pipeline/server";
+import { parseImportUploadMode } from "@/lib/content-pipeline/import-limits";
+import { pipelineScheduleErrorResponse } from "@/lib/content-pipeline/pipeline-scheduler";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 function readOptionalField(value: FormDataEntryValue | null): string | null {
   if (typeof value !== "string") {
@@ -18,12 +20,13 @@ function readOptionalField(value: FormDataEntryValue | null): string | null {
 
 export async function POST(request: NextRequest) {
   try {
+    const auth = await requireCmsAuth(request, "ADMIN");
+
     const formData = await request.formData();
     const files = formData
       .getAll("files")
       .filter((entry): entry is File => entry instanceof File);
 
-    // Also accept repeated "file" fields for flexibility.
     const singleFiles = formData
       .getAll("file")
       .filter((entry): entry is File => entry instanceof File);
@@ -33,13 +36,13 @@ export async function POST(request: NextRequest) {
     const branch = readOptionalField(formData.get("branch"));
     const semester = readOptionalField(formData.get("semester"));
     const subjectCode = readOptionalField(formData.get("subjectCode"));
-    const maxConcurrencyRaw = readOptionalField(formData.get("maxConcurrency"));
     const autoPipeline =
-      readOptionalField(formData.get("autoPipeline")) === "true";
-    const pipelineMode =
-      (readOptionalField(
-        formData.get("pipelineMode")
-      ) as BatchPipelineMode | null) ?? "through-writer";
+      readOptionalField(formData.get("autoPipeline")) !== "false";
+    const uploadMode = parseImportUploadMode(
+      readOptionalField(formData.get("uploadMode"))
+    );
+    const paperCountRaw = readOptionalField(formData.get("paperCount"));
+    const paperCount = paperCountRaw ? Number(paperCountRaw) : 1;
 
     if (allFiles.length === 0) {
       return NextResponse.json(
@@ -63,19 +66,16 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const maxConcurrency = maxConcurrencyRaw
-      ? Number.parseInt(maxConcurrencyRaw, 10)
-      : 3;
-
     const result = await processBulkUpload({
       files: allFiles,
       type: typeEntry,
       branch,
       semester,
       subjectCode,
-      maxConcurrency: Number.isFinite(maxConcurrency) ? maxConcurrency : 3,
       autoPipeline,
-      pipelineMode,
+      uploadMode,
+      paperCount: Number.isFinite(paperCount) ? paperCount : 1,
+      createdBy: auth.userId,
     });
 
     return NextResponse.json(
@@ -85,11 +85,17 @@ export async function POST(request: NextRequest) {
         jobs: result.jobs,
         created: result.created,
         failed: result.failed,
-        pipeline: result.pipeline ?? null,
+        schedules: result.schedules,
+        pipeline: null,
       },
       { status: 201 }
     );
   } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    const scheduleResponse = pipelineScheduleErrorResponse(error);
+    if (scheduleResponse) return scheduleResponse;
+
     if (error instanceof BulkUploadError) {
       return NextResponse.json(
         {
@@ -114,6 +120,14 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "ADMIN");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const batchId = request.nextUrl.searchParams.get("batchId")?.trim();
     if (!batchId) {
@@ -155,4 +169,4 @@ export async function GET(request: NextRequest) {
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const maxDuration = 300;
+export const maxDuration = 120;

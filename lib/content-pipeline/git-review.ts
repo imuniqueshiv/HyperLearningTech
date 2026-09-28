@@ -78,8 +78,8 @@ export function buildManualGitCommands(branch: string): string[] {
   const safeBranch = branch.trim() || "<branch>";
   return [
     "git status",
-    "git diff",
-    "git add .",
+    "git diff -- content/rgpv",
+    "git add -- content/rgpv",
     'git commit -m "content: update approved CMS import"',
     `git push origin ${safeBranch}`,
   ];

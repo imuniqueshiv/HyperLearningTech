@@ -92,14 +92,51 @@ export function getSubjectContentDir(input: {
   semester: string;
   subjectCode: string;
 }): string {
-  return path.join(
+  const branch = sanitizePathSegment(input.branch, "branch");
+  const semester = sanitizePathSegment(input.semester, "semester");
+  const subjectCode = sanitizePathSegment(input.subjectCode, "subjectCode");
+  const dir = path.resolve(
     process.cwd(),
     "content",
     "rgpv",
-    input.branch.toLowerCase(),
-    input.semester.toLowerCase(),
-    input.subjectCode.toLowerCase()
+    branch,
+    semester,
+    subjectCode
   );
+  assertSubjectContentPath(dir);
+  return dir;
+}
+
+function sanitizePathSegment(value: string, label: string): string {
+  const trimmed = value.trim().toLowerCase();
+  if (
+    !trimmed ||
+    trimmed.includes("..") ||
+    trimmed.includes("/") ||
+    trimmed.includes("\\") ||
+    trimmed.includes("\0")
+  ) {
+    throw new WriterProcessingError(
+      "CONTENT_PATH_REJECTED",
+      `Invalid ${label} for content path.`
+    );
+  }
+  return trimmed;
+}
+
+/**
+ * Ensures a resolved absolute path stays inside content/rgpv.
+ */
+export function assertSubjectContentPath(absolutePath: string): void {
+  const root = path.resolve(process.cwd(), "content", "rgpv");
+  const resolved = path.resolve(absolutePath);
+  const rel = path.relative(root, resolved);
+  if (rel.startsWith("..") || path.isAbsolute(rel)) {
+    throw new WriterProcessingError(
+      "CONTENT_PATH_REJECTED",
+      "Content path is outside the allowed content/rgpv directory."
+    );
+  }
 }
 
 /**

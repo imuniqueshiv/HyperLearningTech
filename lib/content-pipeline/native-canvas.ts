@@ -24,45 +24,6 @@ export type NativeCanvas = {
 };
 
 export function loadNativeCanvas(): NativeCanvas {
-  // #region agent log
-  fetch("http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Debug-Session-Id": "26e666",
-    },
-    body: JSON.stringify({
-      sessionId: "26e666",
-      runId: "post-fix",
-      hypothesisId: "H-turbopack",
-      location: "native-canvas.ts:loadNativeCanvas",
-      message: "Loading @napi-rs/canvas via createRequire",
-      data: { cwd: process.cwd() },
-      timestamp: Date.now(),
-    }),
-  }).catch(() => {});
-  // #endregion
-
   const canvas = requireFromProject("@napi-rs/canvas") as NativeCanvas;
-
-  // #region agent log
-  fetch("http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Debug-Session-Id": "26e666",
-    },
-    body: JSON.stringify({
-      sessionId: "26e666",
-      runId: "post-fix",
-      hypothesisId: "H-turbopack",
-      location: "native-canvas.ts:loadNativeCanvas:ok",
-      message: "Native canvas loaded",
-      data: { hasCreateCanvas: typeof canvas.createCanvas === "function" },
-      timestamp: Date.now(),
-    }),
-  }).catch(() => {});
-  // #endregion
-
   return canvas;
 }

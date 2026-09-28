@@ -8,6 +8,7 @@ import {
   CMS_SAVE_REPORT_FILENAME,
   CMS_WRITE_REPORT_FILENAME,
 } from "./constants";
+import { isCmsContentWriteEnabled } from "@/lib/cms-auth";
 import { handleStageFailure } from "./failure-handler";
 import { writeHistoryFilesModified } from "./history-service";
 import { getJob, updateJobStatus } from "./import-queue";
@@ -64,10 +65,20 @@ export async function readSaveReport(
 /**
  * Commits approved pending JSON into content/rgpv/.
  * Advances: APPROVED → DIAGRAMS_WRITING → DIAGRAMS_WRITTEN → LOCAL_SAVED
+ *
+ * Phase 1: disabled unless CMS_ALLOW_CONTENT_WRITE=true so processing/review
+ * cannot mutate live production content by accident.
  */
 export async function runLocalSaveForJob(
   jobId: string
 ): Promise<RunLocalSaveResult> {
+  if (!isCmsContentWriteEnabled()) {
+    throw new SaveProcessingError(
+      "CONTENT_WRITE_DISABLED",
+      "Production content writes are disabled in Phase 1. Set CMS_ALLOW_CONTENT_WRITE=true to enable explicit Local Save after approval."
+    );
+  }
+
   if (saveInFlight.has(jobId)) {
     throw new SaveProcessingError(
       "SAVE_IN_PROGRESS",

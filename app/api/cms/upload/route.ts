@@ -1,10 +1,8 @@
-import { after } from "next/server";
 import { NextRequest, NextResponse } from "next/server";
 
 import { isJobType } from "@/lib/content-pipeline";
 import type { ExamSession } from "@/lib/content-pipeline";
 import {
-  ensureImportSessionPipeline,
   processImportSession,
   recordJobHistory,
   UploadValidationError,
@@ -13,6 +11,12 @@ import {
   isExamSession,
   isValidExamYear,
 } from "@/lib/content-pipeline/metadata-extractor";
+import { parseImportUploadMode } from "@/lib/content-pipeline/import-limits";
+import {
+  pipelineScheduleErrorResponse,
+  scheduleImportPipeline,
+} from "@/lib/content-pipeline/pipeline-scheduler";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 function readOptionalField(value: FormDataEntryValue | null): string | null {
   if (typeof value !== "string") {
@@ -50,8 +54,15 @@ function parseExamSession(value: string | null): ExamSession | null {
   return isExamSession(value) ? value : null;
 }
 
+function parsePaperCount(value: string | null): number | null {
+  if (!value) return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
 export async function POST(request: NextRequest) {
   try {
+    const auth = await requireCmsAuth(request, "ADMIN");
     const formData = await request.formData();
     const files = collectFiles(formData);
     const typeEntry = formData.get("type");
@@ -61,6 +72,12 @@ export async function POST(request: NextRequest) {
     const year = parseYear(readOptionalField(formData.get("year")));
     const examSession = parseExamSession(
       readOptionalField(formData.get("examSession"))
+    );
+    const uploadMode = parseImportUploadMode(
+      readOptionalField(formData.get("uploadMode"))
+    );
+    const paperCount = parsePaperCount(
+      readOptionalField(formData.get("paperCount"))
     );
     const autoPipelineRaw = readOptionalField(formData.get("autoPipeline"));
     const autoPipeline = autoPipelineRaw !== "false";
@@ -80,8 +97,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          error: "A valid job type is required (syllabus, pyq, diagram, bulk).",
-          code: "JOB_TYPE_INVALID",
+          error: "Invalid or missing content type.",
+          code: "TYPE_INVALID",
         },
         { status: 400 }
       );
@@ -95,29 +112,32 @@ export async function POST(request: NextRequest) {
       subjectCode,
       year,
       examSession,
+      uploadMode,
+      paperCount,
+      createdBy: auth.userId,
     });
 
-    try {
-      await recordJobHistory(job.id);
-    } catch {
-      // History is non-blocking for upload success.
-    }
+    await recordJobHistory(job.id).catch(() => {});
 
+    let schedule: { mode: string; alreadyQueued: boolean } | null = null;
     if (autoPipeline) {
-      // Module-level retention + after() so Layout → Reconstruction cannot
-      // be dropped when the request context ends.
-      after(() => ensureImportSessionPipeline(job.id));
+      schedule = await scheduleImportPipeline(job.id);
     }
 
     return NextResponse.json(
       {
         success: true,
         job,
-        pipelineStarted: autoPipeline,
+        schedule,
       },
       { status: 201 }
     );
   } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    const scheduleResponse = pipelineScheduleErrorResponse(error);
+    if (scheduleResponse) return scheduleResponse;
+
     if (error instanceof UploadValidationError) {
       return NextResponse.json(
         {
@@ -130,11 +150,10 @@ export async function POST(request: NextRequest) {
     }
 
     console.error("CMS Upload Error:", error);
-
     return NextResponse.json(
       {
         success: false,
-        error: "Failed to upload file.",
+        error: "Upload failed.",
         code: "UPLOAD_FAILED",
       },
       { status: 500 }
@@ -154,6 +173,4 @@ export async function GET() {
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-// The `after()` callback owns OCR → Writer. Without an explicit duration the
-// route can be terminated between Layout and Reconstruction.
-export const maxDuration = 300;
+export const maxDuration = 120;

@@ -1,13 +1,26 @@
 /**
- * Bulk upload: N independent jobs from N files.
+ * Bulk upload: N independent Import Sessions from N files.
+ * Same security boundary as single upload (limits, checksum, durable schedule).
+ * Never runs the pipeline inline inside the HTTP request.
  */
 
 import { createBatchRecord } from "./bulk-job-manager";
-import { runBatchPipeline, type BatchPipelineMode } from "./batch-service";
 import type { BulkUploadResult } from "./history-types";
 import { recordJobHistory } from "./history-service";
-import { processUpload } from "./upload-service";
+import {
+  IMPORT_LIMIT_MESSAGES,
+  MAX_IMPORT_IMAGES,
+  MAX_PAPERS_PER_IMPORT,
+  type ImportUploadMode,
+  parseImportUploadMode,
+} from "./import-limits";
+import { processImportSession } from "./import-session-service";
+import { scheduleImportPipeline } from "./pipeline-scheduler";
 import type { ImportJobRecord, JobType } from "./types";
+import { UploadValidationError } from "./upload-service";
+
+/** Soft cap on files per bulk request (each file = one Import Session). */
+export const MAX_BULK_FILES = 15;
 
 export class BulkUploadError extends Error {
   readonly code: string;
@@ -21,24 +34,42 @@ export class BulkUploadError extends Error {
 
 export interface BulkUploadInput {
   files: File[];
-  /** Per-file job type, or a single type applied to all. */
   type: JobType | JobType[];
   branch?: string | null;
   semester?: string | null;
   subjectCode?: string | null;
-  maxConcurrency?: number;
-  /** When true, run pipeline stages after enqueue (independent per job). */
+  /** When true, enqueue durable pipeline (never inline). */
   autoPipeline?: boolean;
-  pipelineMode?: BatchPipelineMode;
+  uploadMode?: ImportUploadMode | null;
+  paperCount?: number | null;
+  createdBy?: string | null;
+}
+
+function resolveModeForFile(
+  file: File,
+  declared: ImportUploadMode | null | undefined
+): ImportUploadMode {
+  const isPdf =
+    file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf");
+  if (isPdf) {
+    if (!declared || declared === "images") {
+      throw new BulkUploadError(
+        "UPLOAD_MODE_REQUIRED",
+        "PDF bulk uploads require uploadMode=normal_pdf or merged_pdf."
+      );
+    }
+    return declared;
+  }
+  return "images";
 }
 
 /**
- * Creates one import job per file. Never merges jobs.
+ * Creates one Import Session per file with the same validation as /upload.
  */
 export async function processBulkUpload(
   input: BulkUploadInput
 ): Promise<
-  BulkUploadResult & { pipeline?: Awaited<ReturnType<typeof runBatchPipeline>> }
+  BulkUploadResult & { schedules: Array<{ jobId: string; mode: string }> }
 > {
   if (!input.files.length) {
     throw new BulkUploadError(
@@ -47,8 +78,32 @@ export async function processBulkUpload(
     );
   }
 
+  if (input.files.length > MAX_BULK_FILES) {
+    throw new BulkUploadError(
+      "IMAGE_LIMIT_EXCEEDED",
+      `Bulk upload supports a maximum of ${MAX_BULK_FILES} files per request.`
+    );
+  }
+
+  const paperCount = input.paperCount ?? 1;
+  if (
+    !Number.isInteger(paperCount) ||
+    paperCount < 1 ||
+    paperCount > MAX_PAPERS_PER_IMPORT
+  ) {
+    throw new BulkUploadError(
+      "PAPER_LIMIT_EXCEEDED",
+      IMPORT_LIMIT_MESSAGES.papers
+    );
+  }
+
+  const declaredMode = input.uploadMode
+    ? parseImportUploadMode(input.uploadMode)
+    : input.uploadMode;
+
   const jobs: ImportJobRecord[] = [];
   const failed: { filename: string; error: string }[] = [];
+  const schedules: Array<{ jobId: string; mode: string }> = [];
 
   for (let index = 0; index < input.files.length; index += 1) {
     const file = input.files[index];
@@ -57,44 +112,54 @@ export async function processBulkUpload(
       : input.type;
 
     try {
-      const job = await processUpload({
-        file,
+      const uploadMode = resolveModeForFile(file, declaredMode ?? null);
+      if (uploadMode === "images" && input.files.length > MAX_IMPORT_IMAGES) {
+        // Per-session image batches are single-file here; multi-image sessions
+        // must use /upload. Bulk is one session per file.
+      }
+
+      const job = await processImportSession({
+        files: [file],
         type,
         branch: input.branch,
         semester: input.semester,
         subjectCode: input.subjectCode,
+        uploadMode,
+        paperCount,
+        createdBy: input.createdBy ?? null,
       });
       jobs.push(job);
       await recordJobHistory(job.id);
+
+      if (input.autoPipeline) {
+        const schedule = await scheduleImportPipeline(job.id);
+        schedules.push({ jobId: job.id, mode: schedule.mode });
+      }
     } catch (error) {
-      failed.push({
-        filename: file.name,
-        error: error instanceof Error ? error.message : "Upload failed.",
-      });
+      if (error instanceof UploadValidationError) {
+        failed.push({ filename: file.name, error: error.message });
+      } else if (error instanceof BulkUploadError) {
+        failed.push({ filename: file.name, error: error.message });
+      } else {
+        failed.push({
+          filename: file.name,
+          error: error instanceof Error ? error.message : "Upload failed.",
+        });
+      }
     }
   }
 
   const batch = await createBatchRecord({
     jobIds: jobs.map((job) => job.id),
-    maxConcurrency: input.maxConcurrency ?? 3,
+    maxConcurrency: 1,
     autoPipeline: Boolean(input.autoPipeline),
   });
-
-  let pipeline: Awaited<ReturnType<typeof runBatchPipeline>> | undefined;
-
-  if (input.autoPipeline && jobs.length > 0) {
-    pipeline = await runBatchPipeline({
-      jobIds: jobs.map((job) => job.id),
-      maxConcurrency: input.maxConcurrency ?? 3,
-      mode: input.pipelineMode ?? "through-writer",
-    });
-  }
 
   return {
     batchId: batch.batchId,
     jobs,
     created: jobs.length,
     failed,
-    pipeline,
+    schedules,
   };
 }

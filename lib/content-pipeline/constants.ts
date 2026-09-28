@@ -148,6 +148,15 @@ export const CMS_JOB_DIAGRAMS_DIR = "diagrams";
 /** Maximum accepted upload size (50 MiB). */
 export const MAX_UPLOAD_BYTES = 50 * 1024 * 1024;
 
+/** Re-export Phase 1 hard limits for a single import surface. */
+export {
+  MAX_NORMAL_PDF_PAGES,
+  MAX_MERGED_PDF_PAGES,
+  MAX_IMPORT_IMAGES,
+  MAX_PAPERS_PER_IMPORT,
+  MAX_CONCURRENT_PIPELINES,
+} from "./import-limits";
+
 /** Human-readable labels for job types. */
 export const JOB_TYPE_LABELS: Record<JobType, string> = {
   syllabus: "Syllabus",

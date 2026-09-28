@@ -14,22 +14,15 @@ import {
 
 import { API_ENDPOINTS } from "@/lib/api-endpoints";
 import type {
-  DiagramApiResult,
   DiagramManifest,
   DiagramRunSummary,
   ImportJobRecord,
-  LayoutApiResult,
   LayoutRunSummary,
-  OcrApiResult,
   OcrRunSummary,
-  SchemaBuildApiResult,
   SchemaBuildRunSummary,
-  StructuringApiResult,
   StructuringRunSummary,
-  ValidationApiResult,
   ValidationReport,
   ValidationRunSummary,
-  WriteApiResult,
   WriteReport,
   WritingRunSummary,
 } from "@/lib/content-pipeline";
@@ -175,7 +168,6 @@ export function QueuedJobs({
   jobs,
   loading = false,
   onRefresh,
-  onJobUpdated,
 }: QueuedJobsProps) {
   const [runningJobId, setRunningJobId] = useState<string | null>(null);
   const [runningAction, setRunningAction] = useState<RunningAction | null>(
@@ -220,29 +212,44 @@ export function QueuedJobs({
   const queuedCount = jobs.filter((job) => job.status === "queued").length;
 
   async function runOcr(jobId: string) {
+    await runSupervisorAction(jobId, "start");
+  }
+
+  async function runSupervisorAction(
+    jobId: string,
+    action: "start" | "resume" | "retry" | "cancel"
+  ) {
     setRunningJobId(jobId);
-    setRunningAction("ocr");
+    setRunningAction(
+      action === "start"
+        ? "ocr"
+        : action === "resume" || action === "retry"
+          ? "layout"
+          : "ocr"
+    );
     setActionError(null);
 
     try {
-      const response = await fetch(API_ENDPOINTS.CMS_OCR, {
+      const response = await fetch(API_ENDPOINTS.CMS_RECOVERY, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
+        body: JSON.stringify({ jobId, action }),
       });
-      const data = (await response.json()) as OcrApiResult;
+      const data = (await response.json()) as {
+        success: boolean;
+        error?: string;
+        message?: string;
+      };
 
       if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error ? data.error : "OCR failed."
-        );
+        throw new Error(data.error ?? "Pipeline control failed.");
       }
 
-      setSelectedDetail({ kind: "ocr", jobId, summary: data.summary });
-      onJobUpdated?.(data.job);
       onRefresh?.();
     } catch (error) {
-      setActionError(error instanceof Error ? error.message : "OCR failed.");
+      setActionError(
+        error instanceof Error ? error.message : "Pipeline control failed."
+      );
     } finally {
       setRunningJobId(null);
       setRunningAction(null);
@@ -250,233 +257,27 @@ export function QueuedJobs({
   }
 
   async function runLayout(jobId: string) {
-    setRunningJobId(jobId);
-    setRunningAction("layout");
-    setActionError(null);
-
-    try {
-      const response = await fetch(API_ENDPOINTS.CMS_LAYOUT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
-      });
-      const data = (await response.json()) as LayoutApiResult;
-
-      if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error ? data.error : "Layout detection failed."
-        );
-      }
-
-      setSelectedDetail({ kind: "layout", jobId, summary: data.summary });
-      onJobUpdated?.(data.job);
-      onRefresh?.();
-    } catch (error) {
-      setActionError(
-        error instanceof Error ? error.message : "Layout detection failed."
-      );
-    } finally {
-      setRunningJobId(null);
-      setRunningAction(null);
-    }
+    await runSupervisorAction(jobId, "resume");
   }
 
   async function runDiagrams(jobId: string) {
-    setRunningJobId(jobId);
-    setRunningAction("diagrams");
-    setActionError(null);
-
-    try {
-      const response = await fetch(API_ENDPOINTS.CMS_DIAGRAMS, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
-      });
-      const data = (await response.json()) as DiagramApiResult;
-
-      if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error
-            ? data.error
-            : "Diagram extraction failed."
-        );
-      }
-
-      setSelectedDetail({ kind: "diagrams", jobId, summary: data.summary });
-      onJobUpdated?.(data.job);
-      onRefresh?.();
-    } catch (error) {
-      setActionError(
-        error instanceof Error ? error.message : "Diagram extraction failed."
-      );
-    } finally {
-      setRunningJobId(null);
-      setRunningAction(null);
-    }
+    await runSupervisorAction(jobId, "resume");
   }
 
   async function runStructuring(jobId: string) {
-    setRunningJobId(jobId);
-    setRunningAction("structuring");
-    setActionError(null);
-
-    try {
-      const response = await fetch(API_ENDPOINTS.CMS_STRUCTURING, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
-      });
-      const data = (await response.json()) as StructuringApiResult;
-
-      if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error
-            ? data.error
-            : "Gemini structuring failed."
-        );
-      }
-
-      setSelectedDetail({
-        kind: "structuring",
-        jobId,
-        summary: data.summary,
-      });
-      onJobUpdated?.(data.job);
-      onRefresh?.();
-    } catch (error) {
-      setActionError(
-        error instanceof Error ? error.message : "Gemini structuring failed."
-      );
-    } finally {
-      setRunningJobId(null);
-      setRunningAction(null);
-    }
+    await runSupervisorAction(jobId, "resume");
   }
 
   async function runSchema(jobId: string) {
-    setRunningJobId(jobId);
-    setRunningAction("schema");
-    setActionError(null);
-
-    try {
-      const response = await fetch(API_ENDPOINTS.CMS_SCHEMA, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
-      });
-      const data = (await response.json()) as SchemaBuildApiResult;
-
-      if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error ? data.error : "Schema building failed."
-        );
-      }
-
-      void openSchemaDetail(jobId, data.summary);
-      onJobUpdated?.(data.job);
-      onRefresh?.();
-    } catch (error) {
-      setActionError(
-        error instanceof Error ? error.message : "Schema building failed."
-      );
-    } finally {
-      setRunningJobId(null);
-      setRunningAction(null);
-    }
+    await runSupervisorAction(jobId, "resume");
   }
 
   async function runValidation(jobId: string) {
-    setRunningJobId(jobId);
-    setRunningAction("validation");
-    setActionError(null);
-
-    try {
-      const response = await fetch(API_ENDPOINTS.CMS_VALIDATION, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
-      });
-      const data = (await response.json()) as ValidationApiResult;
-
-      if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error ? data.error : "Validation failed."
-        );
-      }
-
-      setSelectedDetail({
-        kind: "validation",
-        jobId,
-        summary: data.summary,
-        report: data.report,
-      });
-      onJobUpdated?.(data.job);
-      onRefresh?.();
-    } catch (error) {
-      setActionError(
-        error instanceof Error ? error.message : "Validation failed."
-      );
-    } finally {
-      setRunningJobId(null);
-      setRunningAction(null);
-    }
+    await runSupervisorAction(jobId, "resume");
   }
 
   async function runWriter(jobId: string) {
-    setRunningJobId(jobId);
-    setRunningAction("writing");
-    setActionError(null);
-
-    try {
-      const response = await fetch(API_ENDPOINTS.CMS_WRITE, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId }),
-      });
-      const data = (await response.json()) as WriteApiResult;
-
-      if (!response.ok || !data.success) {
-        throw new Error(
-          !data.success && data.error ? data.error : "Writer failed."
-        );
-      }
-
-      setSelectedDetail({
-        kind: "writing",
-        jobId,
-        summary: data.summary,
-        report: data.report,
-        manifest: null,
-      });
-      onJobUpdated?.(data.job);
-      onRefresh?.();
-
-      // Load diagram manifest when available.
-      void (async () => {
-        const response = await fetch(
-          `${API_ENDPOINTS.CMS_WRITE}/${encodeURIComponent(jobId)}`
-        );
-        const payload = (await response.json()) as {
-          success: boolean;
-          report?: WriteReport;
-          manifest?: DiagramManifest | null;
-        };
-        if (payload.success && payload.report) {
-          setSelectedDetail({
-            kind: "writing",
-            jobId,
-            summary: data.summary,
-            report: payload.report,
-            manifest: payload.manifest ?? null,
-          });
-        }
-      })();
-    } catch (error) {
-      setActionError(error instanceof Error ? error.message : "Writer failed.");
-    } finally {
-      setRunningJobId(null);
-      setRunningAction(null);
-    }
+    await runSupervisorAction(jobId, "resume");
   }
 
   return (

@@ -1,6 +1,8 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import { readSaveReport } from "@/lib/content-pipeline/server";
+
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 interface RouteContext {
   params: Promise<{
@@ -8,7 +10,15 @@ interface RouteContext {
   }>;
 }
 
-export async function GET(_request: Request, context: RouteContext) {
+export async function GET(request: NextRequest, context: RouteContext) {
+  try {
+    await requireCmsAuth(request, "ADMIN");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId } = await context.params;
     const report = await readSaveReport(jobId);

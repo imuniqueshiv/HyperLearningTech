@@ -7,7 +7,17 @@
 
 import type { AcceptedUploadMimeType } from "./constants";
 import { runBatchPipeline } from "./batch-service";
+import { sha256Hex, sha256HexOfBuffers } from "./checksum";
 import { enqueueJob, toImportJobRecord } from "./import-queue";
+import {
+  IMPORT_LIMIT_MESSAGES,
+  MAX_CONCURRENT_PIPELINES,
+  MAX_IMPORT_IMAGES,
+  MAX_MERGED_PDF_PAGES,
+  MAX_NORMAL_PDF_PAGES,
+  MAX_PAPERS_PER_IMPORT,
+  type ImportUploadMode,
+} from "./import-limits";
 import { generateJobId } from "./job-id";
 import {
   createInitialPipelineState,
@@ -16,6 +26,7 @@ import {
   writePipelineState,
 } from "./job-manager";
 import { isSupportedMimeType, normalizeMimeType } from "./mime";
+import { countPdfPages } from "./pdf-page-count";
 import { startReviewForJob } from "./review-service";
 import {
   createJobDirectory,
@@ -44,6 +55,11 @@ export interface ProcessImportSessionInput {
   subjectCode?: string | null;
   year?: number | null;
   examSession?: ExamSession | null;
+  /** Required for Phase 1 hard limits. */
+  uploadMode?: ImportUploadMode | null;
+  /** Declared paper count (1–3). Defaults to 1. */
+  paperCount?: number | null;
+  createdBy?: string | null;
 }
 
 function isPdfMime(mime: string): boolean {
@@ -52,6 +68,15 @@ function isPdfMime(mime: string): boolean {
 
 function isImageMime(mime: string): boolean {
   return mime.startsWith("image/");
+}
+
+function sanitizeOriginalFilename(name: string): string {
+  const base = name.replace(/\\/g, "/").split("/").pop() ?? "upload";
+  const cleaned = base.replace(/[^\w.\- ()[\]]+/g, "_").trim();
+  if (!cleaned || cleaned === "." || cleaned === "..") {
+    return "upload.bin";
+  }
+  return cleaned.slice(0, 180);
 }
 
 /**
@@ -84,7 +109,7 @@ export function classifySessionFiles(files: File[]): {
     }
     if (!isSupportedMimeType(mimeType)) {
       throw new UploadValidationError(
-        "MIME_UNSUPPORTED",
+        "UNSUPPORTED_FILE_TYPE",
         `Unsupported file type "${mimeType}" for ${file.name}.`
       );
     }
@@ -115,6 +140,46 @@ export function classifySessionFiles(files: File[]): {
   return { kind: "images", mimeTypes };
 }
 
+function resolveUploadMode(
+  classifiedKind: "pdf" | "images",
+  declared: ImportUploadMode | null | undefined
+): ImportUploadMode {
+  if (classifiedKind === "images") {
+    if (declared && declared !== "images") {
+      throw new UploadValidationError(
+        "UPLOAD_MODE_MISMATCH",
+        "Image uploads require uploadMode=images."
+      );
+    }
+    return "images";
+  }
+
+  if (!declared || declared === "images") {
+    throw new UploadValidationError(
+      "UPLOAD_MODE_REQUIRED",
+      "PDF uploads require uploadMode=normal_pdf or uploadMode=merged_pdf."
+    );
+  }
+  return declared;
+}
+
+function normalizePaperCount(raw: number | null | undefined): number {
+  const value = raw == null ? 1 : Number(raw);
+  if (!Number.isInteger(value) || value < 1) {
+    throw new UploadValidationError(
+      "PAPER_COUNT_INVALID",
+      "paperCount must be an integer between 1 and 3."
+    );
+  }
+  if (value > MAX_PAPERS_PER_IMPORT) {
+    throw new UploadValidationError(
+      "PAPER_LIMIT_EXCEEDED",
+      IMPORT_LIMIT_MESSAGES.papers
+    );
+  }
+  return value;
+}
+
 /**
  * Creates one Import Session job from 1 PDF or N ordered images.
  * Does not run the pipeline (caller schedules background execution).
@@ -126,6 +191,16 @@ export async function processImportSession(
     input;
 
   const classified = classifySessionFiles(files);
+  const uploadMode = resolveUploadMode(classified.kind, input.uploadMode);
+  const paperCount = normalizePaperCount(input.paperCount);
+
+  if (uploadMode === "normal_pdf" && paperCount > 1) {
+    throw new UploadValidationError(
+      "PAPER_LIMIT_EXCEEDED",
+      "Normal PDF mode accepts exactly 1 paper. Use merged_pdf for multi-paper imports."
+    );
+  }
+
   const jobId = generateJobId();
   const jobDir = await createJobDirectory(jobId);
 
@@ -135,6 +210,9 @@ export async function processImportSession(
   let mimeType: AcceptedUploadMimeType = classified.mimeTypes[0];
   let fileSize = 0;
   let originalFilePath = "";
+  let checksum = "";
+  let pageCount = 0;
+  let imageCount = 0;
 
   if (classified.kind === "pdf") {
     const file = files[0];
@@ -146,6 +224,27 @@ export async function processImportSession(
       );
     }
 
+    try {
+      pageCount = await countPdfPages(buffer);
+    } catch {
+      throw new UploadValidationError(
+        "INVALID_PDF",
+        "The PDF could not be opened. Encrypted or corrupt PDFs are rejected."
+      );
+    }
+
+    const maxPages =
+      uploadMode === "normal_pdf" ? MAX_NORMAL_PDF_PAGES : MAX_MERGED_PDF_PAGES;
+    if (pageCount > maxPages) {
+      throw new UploadValidationError(
+        "PAGE_LIMIT_EXCEEDED",
+        uploadMode === "normal_pdf"
+          ? IMPORT_LIMIT_MESSAGES.normalPdfPages
+          : IMPORT_LIMIT_MESSAGES.mergedPdfPages
+      );
+    }
+
+    checksum = sha256Hex(buffer);
     const saved = await saveOriginalFile({
       jobDir,
       mimeType: classified.mimeTypes[0],
@@ -153,7 +252,7 @@ export async function processImportSession(
     });
 
     filename = saved.filename;
-    originalFilename = file.name || saved.filename;
+    originalFilename = sanitizeOriginalFilename(file.name || saved.filename);
     mimeType = classified.mimeTypes[0];
     fileSize = buffer.byteLength;
     originalFilePath = saved.absolutePath;
@@ -168,11 +267,19 @@ export async function processImportSession(
       },
     ];
   } else {
+    if (files.length > MAX_IMPORT_IMAGES) {
+      throw new UploadValidationError(
+        "IMAGE_LIMIT_EXCEEDED",
+        IMPORT_LIMIT_MESSAGES.images
+      );
+    }
+
     const pages: Array<{
       mimeType: AcceptedUploadMimeType;
       data: Buffer;
       originalFilename: string;
     }> = [];
+    const buffers: Buffer[] = [];
 
     for (let i = 0; i < files.length; i += 1) {
       const file = files[i];
@@ -183,23 +290,27 @@ export async function processImportSession(
           `Empty file not allowed: ${file.name}`
         );
       }
+      buffers.push(buffer);
       pages.push({
         mimeType: classified.mimeTypes[i],
         data: buffer,
-        originalFilename: file.name,
+        originalFilename: sanitizeOriginalFilename(file.name),
       });
       fileSize += buffer.byteLength;
     }
 
+    checksum = await sha256HexOfBuffers(buffers);
     sourceFiles = await saveOriginalPages({ jobDir, pages });
     const first = sourceFiles[0];
     filename = first.relativePath;
     originalFilename =
       files.length === 1
-        ? files[0].name
-        : `${files.length}-page session (${files[0].name}…)`;
+        ? sanitizeOriginalFilename(files[0].name)
+        : `${files.length}-page session (${sanitizeOriginalFilename(files[0].name)}…)`;
     mimeType = first.mimeType as AcceptedUploadMimeType;
     originalFilePath = first.absolutePath;
+    pageCount = files.length;
+    imageCount = files.length;
   }
 
   const catalog = await loadSubjectCatalog().catch(() => []);
@@ -255,6 +366,13 @@ export async function processImportSession(
       year: type === "pyq" && year != null,
       examSession: type === "pyq" && Boolean(examSession),
     },
+    checksum,
+    uploadMode,
+    pageCount,
+    imageCount,
+    paperCount,
+    createdBy: input.createdBy ?? null,
+    pipelineVersion: "cms-phase1-v1",
   });
 
   await writeJobMetadata(metadata);
@@ -264,91 +382,58 @@ export async function processImportSession(
   return toImportJobRecord(metadata);
 }
 
-/**
- * Strong references so long-lived Node (next dev / standalone) does not GC
- * or drop the pipeline if `after()` aborts waiting between Layout and
- * Reconstruction. Serverless still needs `after(() => promise)` + maxDuration.
- */
-const backgroundPipelines = new Map<string, Promise<unknown>>();
+const backgroundPipelines = new Map<string, Promise<void>>();
 
 /**
- * Runs the full pipeline in the background for one or more sessions.
- * Resumes from the first incomplete stage; auto-opens Review on success.
+ * Starts the resumable Import Session pipeline through Writer, then opens review.
  */
 export async function startImportSessionPipeline(jobIds: string[]): Promise<{
   succeeded: string[];
-  failed: { jobId: string; error: string }[];
+  failed: Array<{ jobId: string; error: string }>;
 }> {
-  console.log("[Reconstruction] startImportSessionPipeline entering batch", {
-    jobIds,
-  });
-  const result = await runBatchPipeline({
+  return runBatchPipeline({
     jobIds,
     mode: "through-writer",
+    maxConcurrency: MAX_CONCURRENT_PIPELINES,
     resumable: true,
     autoReview: true,
   });
-  console.log("[Reconstruction] startImportSessionPipeline batch returned", {
-    succeeded: result.succeeded,
-    failed: result.failed,
-  });
-
-  return result;
 }
 
 /**
- * Starts (or joins) the import pipeline for a job and returns the retained
- * promise. Safe to pass directly to Next.js `after()`.
+ * Ensures a single in-flight supervisor for this jobId within the local process.
+ *
+ * Local CMS only: process-local Map dedupe + filesystem checkpoints under `.cms/`.
+ * After a process restart, START/RESUME reloads checkpoints from disk and continues.
+ * Not a distributed cloud worker — Git/GitHub is the durable content source of truth.
  */
-export function ensureImportSessionPipeline(jobId: string): Promise<{
-  succeeded: string[];
-  failed: { jobId: string; error: string }[];
-}> {
+export function ensureImportSessionPipeline(jobId: string): Promise<void> {
   const existing = backgroundPipelines.get(jobId);
   if (existing) {
-    console.log("[ImportSession] Joining in-flight pipeline", { jobId });
-    return existing as Promise<{
-      succeeded: string[];
-      failed: { jobId: string; error: string }[];
-    }>;
+    return existing;
   }
 
-  console.log("[ImportSession] Starting retained background pipeline", {
-    jobId,
-  });
+  if (backgroundPipelines.size >= MAX_CONCURRENT_PIPELINES) {
+    console.warn(
+      `[CMS] Concurrent pipeline limit (${MAX_CONCURRENT_PIPELINES}) — job ${jobId} still starts; state is durable for resume.`
+    );
+  }
 
-  const work = startImportSessionPipeline([jobId])
-    .catch((error) => {
-      console.error(
-        "[ImportSession] Background pipeline failed:",
-        error instanceof Error ? error.message : error
-      );
-      return {
-        succeeded: [] as string[],
-        failed: [
-          {
-            jobId,
-            error: error instanceof Error ? error.message : String(error),
-          },
-        ],
-      };
-    })
-    .finally(() => {
+  const run = (async () => {
+    try {
+      await startImportSessionPipeline([jobId]);
+    } finally {
       backgroundPipelines.delete(jobId);
-      console.log("[ImportSession] Background pipeline cleared", { jobId });
-    });
+    }
+  })();
 
-  backgroundPipelines.set(jobId, work);
-  return work;
+  backgroundPipelines.set(jobId, run);
+  return run;
 }
 
 /**
- * Best-effort: move a session into Review after Writer succeeds.
+ * Best-effort review open for a completed writer job.
  */
 export async function openSessionForReview(jobId: string): Promise<void> {
-  try {
-    await startReviewForJob(jobId);
-  } catch {
-    // Review can be started manually if automatic open fails.
-  }
+  await startReviewForJob(jobId);
 }
