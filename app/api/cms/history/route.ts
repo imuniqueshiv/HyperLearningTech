@@ -7,7 +7,17 @@ import {
 } from "@/lib/content-pipeline/server";
 import type { ImportStatus, JobType } from "@/lib/content-pipeline";
 
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
+
 export async function GET(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const params = request.nextUrl.searchParams;
     const filters: HistoryListFilters = {
@@ -55,7 +65,15 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export async function POST() {
+export async function POST(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   return NextResponse.json(
     { success: false, error: "Method not allowed" },
     { status: 405 }

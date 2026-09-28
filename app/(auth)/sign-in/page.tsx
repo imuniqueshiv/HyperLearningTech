@@ -1,10 +1,40 @@
 import Link from "next/link";
 import { User } from "lucide-react";
+import { SignIn } from "@clerk/nextjs";
 
 import { AuthInput } from "@/components/auth/auth-input";
 import { OAuthButton } from "@/components/auth/oauth-button";
+import { isLocalCmsMode } from "@/lib/cms-auth";
+import { isClerkConfigured } from "@/lib/clerk";
 
+/**
+ * Sign-in page.
+ * Clerk SignIn when configured (public app).
+ * Developer Admin (Local) only when CMS_LOCAL_MODE=true and not on Vercel.
+ */
 export default function SignInPage() {
+  const clerkReady = isClerkConfigured();
+  const localCms = isLocalCmsMode();
+
+  if (clerkReady) {
+    return (
+      <div className="flex w-full max-w-[420px] mx-auto flex-col items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <SignIn routing="hash" fallbackRedirectUrl="/" signUpUrl="/sign-up" />
+        {localCms ? (
+          <Link
+            href="/admin/content"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/60 bg-transparent px-4 py-2.5 text-[13px] font-medium text-muted-foreground transition-colors hover:border-border hover:bg-muted/40 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-border"
+          >
+            Developer Admin (Local)
+            <span className="rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
+              LOCAL CMS
+            </span>
+          </Link>
+        ) : null}
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-4 w-full max-w-[360px] mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
       <div className="flex flex-col gap-2 text-center items-center mb-4">
@@ -15,6 +45,11 @@ export default function SignInPage() {
         <h1 className="text-[22px] font-semibold tracking-tight text-foreground">
           Log in to Hyper Learning
         </h1>
+        <p className="text-xs text-muted-foreground">
+          {localCms
+            ? "Local CMS mode is enabled. Use Developer Admin for authoring."
+            : "Public sign-in. The content CMS runs only on the maintainer machine."}
+        </p>
       </div>
 
       <form className="flex flex-col gap-3">
@@ -74,15 +109,17 @@ export default function SignInPage() {
         </Link>
       </div>
 
-      <Link
-        href="/admin/content"
-        className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/60 bg-transparent px-4 py-2.5 text-[13px] font-medium text-muted-foreground transition-colors hover:border-border hover:bg-muted/40 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-border"
-      >
-        Developer Admin (Local)
-        <span className="rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
-          DEV ONLY
-        </span>
-      </Link>
+      {localCms ? (
+        <Link
+          href="/admin/content"
+          className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/60 bg-transparent px-4 py-2.5 text-[13px] font-medium text-muted-foreground transition-colors hover:border-border hover:bg-muted/40 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-border"
+        >
+          Developer Admin (Local)
+          <span className="rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
+            LOCAL CMS
+          </span>
+        </Link>
+      ) : null}
     </div>
   );
 }

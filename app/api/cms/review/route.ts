@@ -7,7 +7,17 @@ import {
   submitReviewDecision,
 } from "@/lib/content-pipeline/server";
 
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
+
 export async function POST(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const body = (await request.json()) as {
       jobId?: string;
@@ -120,7 +130,15 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   return NextResponse.json(
     { success: false, error: "Method not allowed" },
     { status: 405 }

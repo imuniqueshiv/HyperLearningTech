@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import {
   getImportHistory,
@@ -10,13 +10,26 @@ import {
   readWriteReport,
 } from "@/lib/content-pipeline/server";
 
+import {
+  cmsAuthErrorResponse,
+  requireCmsAuth,
+} from "@/lib/cms-auth";
+
 interface RouteContext {
   params: Promise<{
     jobId: string;
   }>;
 }
 
-export async function GET(_request: Request, context: RouteContext) {
+export async function GET(request: NextRequest, context: RouteContext) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId: rawId } = await context.params;
     const jobId = decodeURIComponent(rawId).trim();
@@ -88,6 +101,14 @@ export async function GET(_request: Request, context: RouteContext) {
 }
 
 export async function POST(request: Request, context: RouteContext) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId: rawId } = await context.params;
     const jobId = decodeURIComponent(rawId).trim();

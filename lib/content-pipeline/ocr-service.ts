@@ -159,39 +159,7 @@ export async function runOcrForJob(
         document,
         documents,
       });
-
-      // #region agent log
-      fetch(
-        "http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Debug-Session-Id": "26e666",
-          },
-          body: JSON.stringify({
-            sessionId: "26e666",
-            runId: "forensic-ocr",
-            hypothesisId: "H3",
-            location: "ocr-service.ts:afterExtract",
-            message: "OCR engine result summary",
-            data: {
-              jobId,
-              kind: document.kind,
-              mimeType: document.mimeType,
-              pageCount: rawDocument.metadata.pageCount,
-              textBlockCount: rawDocument.metadata.textBlockCount,
-              imageCount: rawDocument.metadata.imageCount,
-              engine: rawDocument.metadata.engine,
-              emptyPages: rawDocument.pages.filter((p) => !p.text).length,
-            },
-            timestamp: Date.now(),
-          }),
-        }
-      ).catch(() => {});
-      // #endregion
-
-      await writeRawDocument(jobId, rawDocument);
+await writeRawDocument(jobId, rawDocument);
       const ocrQuality = assertOcrDocumentUsable(rawDocument);
       const extractedMetadata = await extractAndApplyJobMetadata(
         metadata,

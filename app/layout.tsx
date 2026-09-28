@@ -4,6 +4,8 @@ import { Toaster } from "sonner";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ConditionalClerkProvider } from "@/components/providers/conditional-clerk-provider";
+
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -117,29 +119,31 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark overflow-y-scroll" suppressHydrationWarning>
       <body className="flex min-h-[100dvh] flex-col" suppressHydrationWarning>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:rounded-md focus:bg-blue-600 focus:px-4 focus:py-2 focus:text-white focus:font-semibold"
+        <ConditionalClerkProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem={false}
+            disableTransitionOnChange
           >
-            Skip to content
-          </a>
-          <Navbar />
-          <main
-            id="main-content"
-            className="flex min-h-0 flex-1 flex-col"
-            tabIndex={-1}
-          >
-            {children}
-          </main>
-          <Footer />
-          <Toaster richColors closeButton position="top-center" offset={72} />
-        </ThemeProvider>
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:rounded-md focus:bg-blue-600 focus:px-4 focus:py-2 focus:text-white focus:font-semibold"
+            >
+              Skip to content
+            </a>
+            <Navbar />
+            <main
+              id="main-content"
+              className="flex min-h-0 flex-1 flex-col"
+              tabIndex={-1}
+            >
+              {children}
+            </main>
+            <Footer />
+            <Toaster richColors closeButton position="top-center" offset={72} />
+          </ThemeProvider>
+        </ConditionalClerkProvider>
       </body>
     </html>
   );

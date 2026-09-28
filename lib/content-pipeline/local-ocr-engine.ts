@@ -248,28 +248,6 @@ export class LocalOcrEngine implements OcrEngine {
   }): Promise<RawDocument> {
     const data = new Uint8Array(input.document.buffer);
     const wasmUrl = resolvePdfJsWasmUrl();
-    // #region agent log
-    fetch("http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Debug-Session-Id": "26e666",
-      },
-      body: JSON.stringify({
-        sessionId: "26e666",
-        runId: "post-fix",
-        hypothesisId: "H-C",
-        location: "local-ocr-engine.ts:extractPdf:wasmUrl",
-        message: "Opening PDF with pdf.js wasmUrl",
-        data: {
-          jobId: input.jobId,
-          wasmUrl,
-          bufferBytes: input.document.buffer.byteLength,
-        },
-        timestamp: Date.now(),
-      }),
-    }).catch(() => {});
-    // #endregion
     const loadingTask = getDocument({
       data,
       useSystemFonts: true,
@@ -281,31 +259,6 @@ export class LocalOcrEngine implements OcrEngine {
     const pages: RawPage[] = [];
     const images: RawImageRef[] = [];
     const tables: RawTable[] = [];
-
-    // #region agent log
-    fetch("http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Debug-Session-Id": "26e666",
-      },
-      body: JSON.stringify({
-        sessionId: "26e666",
-        runId: "forensic-ocr",
-        hypothesisId: "H1",
-        location: "local-ocr-engine.ts:extractPdf",
-        message: "PDF opened for text extraction",
-        data: {
-          jobId: input.jobId,
-          numPages: pdf.numPages,
-          bufferBytes: input.document.buffer.byteLength,
-          filename: input.document.filename,
-        },
-        timestamp: Date.now(),
-      }),
-    }).catch(() => {});
-    // #endregion
-
     for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
       const page = await pdf.getPage(pageNumber);
       const viewport = page.getViewport({ scale: 1 });
@@ -313,20 +266,15 @@ export class LocalOcrEngine implements OcrEngine {
 
       let textBlocks: RawTextBlock[] = [];
       let blockIndex = 0;
-      let rawItemCount = 0;
-      let emptyStrCount = 0;
-      let usedTesseractFallback = false;
       let pageImagePath: string | null = null;
       let pageWidth = viewport.width;
       let pageHeight = viewport.height;
       const pageImageIds: string[] = [];
 
       for (const rawItem of textContent.items) {
-        rawItemCount += 1;
         const item = rawItem as PdfJsTextItem;
         const text = safeTrim(item.str);
         if (!text) {
-          emptyStrCount += 1;
           continue;
         }
 
@@ -353,7 +301,6 @@ export class LocalOcrEngine implements OcrEngine {
       let rasterStats: RawPage["raster"];
 
       if (!isPageTextUsable(null, textBlocks)) {
-        usedTesseractFallback = true;
         const raster = await rasterizePdfPage({
           page,
           jobDir: input.jobDir,
@@ -392,37 +339,6 @@ export class LocalOcrEngine implements OcrEngine {
           );
         }
       }
-
-      // #region agent log
-      fetch(
-        "http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Debug-Session-Id": "26e666",
-          },
-          body: JSON.stringify({
-            sessionId: "26e666",
-            runId: "post-fix",
-            hypothesisId: "H1",
-            location: "local-ocr-engine.ts:extractPdf:page",
-            message: "PDF page textContent stats",
-            data: {
-              jobId: input.jobId,
-              pageNumber,
-              rawItemCount,
-              emptyStrCount,
-              keptBlocks: textBlocks.length,
-              viewport: { w: pageWidth, h: pageHeight },
-              usesTesseractFallback: usedTesseractFallback,
-            },
-            timestamp: Date.now(),
-          }),
-        }
-      ).catch(() => {});
-      // #endregion
-
       const pageText = safeTrim(
         textBlocks.map((block) => block.text).join(" ")
       );
@@ -454,32 +370,6 @@ export class LocalOcrEngine implements OcrEngine {
       );
       tables.push(...pageTables);
     }
-
-    // #region agent log
-    fetch("http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Debug-Session-Id": "26e666",
-      },
-      body: JSON.stringify({
-        sessionId: "26e666",
-        runId: "post-fix",
-        hypothesisId: "H1",
-        location: "local-ocr-engine.ts:extractPdf:done",
-        message: "PDF extract complete",
-        data: {
-          jobId: input.jobId,
-          pageCount: pages.length,
-          totalTextBlocks: pages.reduce((s, p) => s + p.textBlocks.length, 0),
-          totalTextChars: pages.reduce((s, p) => s + (p.text?.length || 0), 0),
-          imageCount: images.length,
-        },
-        timestamp: Date.now(),
-      }),
-    }).catch(() => {});
-    // #endregion
-
     return {
       version: 1,
       metadata: {
@@ -566,31 +456,6 @@ async function rasterizePdfPage(input: {
     height,
     nonWhiteSampled,
   });
-  // #region agent log
-  fetch("http://127.0.0.1:7856/ingest/77f3b736-2f6d-4973-acf6-79f9a796e05e", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Debug-Session-Id": "26e666",
-    },
-    body: JSON.stringify({
-      sessionId: "26e666",
-      runId: "post-fix",
-      hypothesisId: "H-C",
-      location: "local-ocr-engine.ts:rasterizePdfPage",
-      message: "PDF page raster stats after render",
-      data: {
-        pageNumber: input.pageNumber,
-        pngBytes: pngBuffer.length,
-        width,
-        height,
-        nonWhiteSampled,
-        blank: quality.blank,
-      },
-      timestamp: Date.now(),
-    }),
-  }).catch(() => {});
-  // #endregion
   const raster = await writePageRaster({
     jobDir: input.jobDir,
     pageNumber: input.pageNumber,

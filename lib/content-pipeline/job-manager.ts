@@ -163,6 +163,13 @@ export function createUploadMetadata(input: {
   sourceFiles?: UploadJobMetadata["sourceFiles"];
   extractedMetadata?: UploadJobMetadata["extractedMetadata"];
   manualOverrides?: UploadJobMetadata["manualOverrides"];
+  checksum?: string | null;
+  uploadMode?: UploadJobMetadata["uploadMode"];
+  pageCount?: number | null;
+  imageCount?: number | null;
+  paperCount?: number | null;
+  createdBy?: string | null;
+  pipelineVersion?: string | null;
 }): UploadJobMetadata {
   const now = new Date().toISOString();
   const branch = normalizeOptionalField(input.branch);
@@ -203,6 +210,13 @@ export function createUploadMetadata(input: {
     temporaryPath: input.temporaryPath,
     originalFilePath: input.originalFilePath,
     sourceFiles: input.sourceFiles ?? [],
+    checksum: input.checksum ?? null,
+    uploadMode: input.uploadMode ?? null,
+    pageCount: input.pageCount ?? null,
+    imageCount: input.imageCount ?? null,
+    paperCount: input.paperCount ?? null,
+    createdBy: input.createdBy ?? null,
+    pipelineVersion: input.pipelineVersion ?? "cms-phase1-v1",
   };
 }
 

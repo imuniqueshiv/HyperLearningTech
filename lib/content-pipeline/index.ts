@@ -44,6 +44,7 @@ export type {
   UploadErrorResult,
   UploadJobMetadata,
   UploadSuccessResult,
+  ImportUploadMode,
   ValidationIssue,
   ValidationSeverity,
   ValidationStatus,
@@ -203,6 +204,10 @@ export {
   IMPORT_STATUS_LABELS,
   JOB_TYPE_LABELS,
   MAX_UPLOAD_BYTES,
+  MAX_NORMAL_PDF_PAGES,
+  MAX_MERGED_PDF_PAGES,
+  MAX_IMPORT_IMAGES,
+  MAX_PAPERS_PER_IMPORT,
   PIPELINE_STAGE_LABELS,
   QUEUE_STATUSES,
   VALIDATION_STATUS_LABELS,
@@ -224,6 +229,8 @@ export {
 } from "./mime";
 
 export { formatFileSize, isJobType, validateUploadConstraints } from "./utils";
+
+export { parseImportUploadMode, IMPORT_LIMIT_MESSAGES } from "./import-limits";
 
 export {
   getImportSessionStatus,

@@ -53,6 +53,12 @@ export {
 } from "./import-session-service";
 
 export {
+  scheduleImportPipeline,
+  pipelineScheduleErrorResponse,
+  PipelineScheduleError,
+} from "./pipeline-scheduler";
+
+export {
   superviseJobPipeline,
   inferResumeStage,
   type SupervisorMode,
@@ -140,6 +146,7 @@ export {
 export {
   getJobDiagramManifestPath,
   getSubjectContentDir,
+  assertSubjectContentPath,
   getWriteReportPath,
   readJobDiagramManifest,
   readWriteReport,

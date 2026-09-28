@@ -150,6 +150,9 @@ export interface PipelineState {
   rebuild?: RebuildRunSummary | null;
 }
 
+/** Phase 1 upload mode declared by the administrator. */
+export type ImportUploadMode = "normal_pdf" | "merged_pdf" | "images";
+
 /**
  * Persistable upload job metadata written to
  * `.cms/uploads/<jobId>/metadata.json`.
@@ -195,6 +198,20 @@ export interface UploadJobMetadata {
    * One PDF → single entry. Multiple images → ordered pages.
    */
   sourceFiles: SourceFileRef[];
+  /** SHA-256 of uploaded content (hex). */
+  checksum?: string | null;
+  /** Declared upload mode (normal_pdf | merged_pdf | images). */
+  uploadMode?: ImportUploadMode | null;
+  /** Measured page count (PDF pages or image count). */
+  pageCount?: number | null;
+  /** Image count for image sessions (0 for PDF). */
+  imageCount?: number | null;
+  /** Administrator-declared paper count (max 3). */
+  paperCount?: number | null;
+  /** Authenticated creator id when available. */
+  createdBy?: string | null;
+  /** Pipeline version tag for observability. */
+  pipelineVersion?: string | null;
 }
 
 /**

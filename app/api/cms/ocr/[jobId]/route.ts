@@ -1,6 +1,11 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import { readRawDocument } from "@/lib/content-pipeline/server";
+
+import {
+  cmsAuthErrorResponse,
+  requireCmsAuth,
+} from "@/lib/cms-auth";
 
 interface RouteContext {
   params: Promise<{
@@ -11,7 +16,15 @@ interface RouteContext {
 /**
  * Returns OCR summary stats for a job (not a full JSON dump for the UI).
  */
-export async function GET(_request: Request, context: RouteContext) {
+export async function GET(request: NextRequest, context: RouteContext) {
+  try {
+    await requireCmsAuth(request, "REVIEWER");
+  } catch (error) {
+    const authResponse = cmsAuthErrorResponse(error);
+    if (authResponse) return authResponse;
+    throw error;
+  }
+
   try {
     const { jobId } = await context.params;
     const document = await readRawDocument(jobId);
