@@ -1,10 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 
-import {
-  cmsAuthErrorResponse,
-  requireCmsAuth,
-} from "@/lib/cms-auth";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 import { NextRequest, NextResponse } from "next/server";
 

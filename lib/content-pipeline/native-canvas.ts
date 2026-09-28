@@ -24,6 +24,6 @@ export type NativeCanvas = {
 };
 
 export function loadNativeCanvas(): NativeCanvas {
-const canvas = requireFromProject("@napi-rs/canvas") as NativeCanvas;
-return canvas;
+  const canvas = requireFromProject("@napi-rs/canvas") as NativeCanvas;
+  return canvas;
 }

@@ -2,10 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { getPipelineDebugSnapshot } from "@/lib/content-pipeline/server";
 
-import {
-  cmsAuthErrorResponse,
-  requireCmsAuth,
-} from "@/lib/cms-auth";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 export async function GET(
   request: NextRequest,

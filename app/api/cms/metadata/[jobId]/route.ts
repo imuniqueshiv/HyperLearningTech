@@ -14,10 +14,7 @@ import {
 } from "@/lib/content-pipeline/metadata-extractor";
 import type { ExamSession } from "@/lib/content-pipeline";
 
-import {
-  cmsAuthErrorResponse,
-  requireCmsAuth,
-} from "@/lib/cms-auth";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 interface RouteContext {
   params: Promise<{

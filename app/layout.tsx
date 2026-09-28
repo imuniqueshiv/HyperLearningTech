@@ -6,7 +6,6 @@ import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ConditionalClerkProvider } from "@/components/providers/conditional-clerk-provider";
 
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,

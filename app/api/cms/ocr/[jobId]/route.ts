@@ -2,10 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { readRawDocument } from "@/lib/content-pipeline/server";
 
-import {
-  cmsAuthErrorResponse,
-  requireCmsAuth,
-} from "@/lib/cms-auth";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 interface RouteContext {
   params: Promise<{

@@ -10,10 +10,7 @@ import {
   readWriteReport,
 } from "@/lib/content-pipeline/server";
 
-import {
-  cmsAuthErrorResponse,
-  requireCmsAuth,
-} from "@/lib/cms-auth";
+import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
 interface RouteContext {
   params: Promise<{

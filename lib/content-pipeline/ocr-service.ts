@@ -159,7 +159,7 @@ export async function runOcrForJob(
         document,
         documents,
       });
-await writeRawDocument(jobId, rawDocument);
+      await writeRawDocument(jobId, rawDocument);
       const ocrQuality = assertOcrDocumentUsable(rawDocument);
       const extractedMetadata = await extractAndApplyJobMetadata(
         metadata,
