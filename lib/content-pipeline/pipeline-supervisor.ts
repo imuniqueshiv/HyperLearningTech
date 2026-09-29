@@ -243,10 +243,15 @@ export async function superviseJobPipeline(input: {
         if (stageId === "validation") {
           job = await getJob(input.jobId);
           if (job?.validation?.status === "FAILED") {
+            const reason = job.error ?? "Validation failed. Writer skipped.";
+            await updateJobStatus(input.jobId, "failed", {
+              stage: PipelineStage.FAILED,
+              error: reason,
+            });
             await handleStageFailure({
               jobId: input.jobId,
-              stage: PipelineStage.VALIDATING,
-              reason: "Validation failed. Writer skipped.",
+              stage: PipelineStage.FAILED,
+              reason,
             });
             throw new Error("Validation failed — writer not executed.");
           }

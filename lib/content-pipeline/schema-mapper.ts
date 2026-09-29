@@ -35,6 +35,14 @@ export interface LayoutSnapshot {
     width: number;
     height: number;
   }>;
+  /** Phase 2: table cell text from structure nodes when available. */
+  tables?: Array<{
+    id: string;
+    pageNumber: number;
+    path?: string;
+    rows?: number;
+    columns?: number;
+  }>;
 }
 
 /**
@@ -96,12 +104,26 @@ export function buildLayoutSnapshot(
     height: diagram.height,
   }));
 
+  const tables = Object.values(document.nodes)
+    .filter((node) => node.kind === "table")
+    .map((node) => {
+      const table = node as import("./structured-document").StructureTableNode;
+      return {
+        id: table.id,
+        pageNumber: table.pageNumber,
+        path: table.path,
+        rows: table.rows,
+        columns: table.columns,
+      };
+    });
+
   return {
     jobId: document.metadata.jobId,
     sourceFilename: document.metadata.sourceFilename,
     pageCount: document.metadata.pageCount,
     pages,
     diagrams,
+    tables,
   };
 }
 

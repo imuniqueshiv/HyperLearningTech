@@ -79,6 +79,35 @@ export async function runLocalSaveForJob(
     );
   }
 
+  // Phase 2 evidence gate: INVALID extraction must never reach content/.
+  const evidenceValidation = await readJsonFile<{
+    status?: string;
+    errors?: string[];
+  }>(path.join(getJobDirectory(jobId), "evidence-validation.json"));
+  if (evidenceValidation?.status === "INVALID") {
+    throw new SaveProcessingError(
+      "EVIDENCE_INVALID",
+      `Cannot save: extraction evidence validation failed (${(evidenceValidation.errors ?? []).join("; ") || "INVALID"}).`
+    );
+  }
+  const academic = await readJsonFile<{
+    extractionStatus?: string;
+    papers?: Array<{ reviewRequired?: boolean; confidence?: string }>;
+  }>(path.join(getJobDirectory(jobId), "academic-document.json"));
+  if (academic?.extractionStatus === "INVALID") {
+    throw new SaveProcessingError(
+      "EXTRACTION_INVALID",
+      "Cannot save: academic extractionStatus is INVALID."
+    );
+  }
+  if (
+    academic?.papers?.some((p) => p.reviewRequired || p.confidence === "LOW") &&
+    evidenceValidation?.status === "REVIEW_REQUIRED"
+  ) {
+    // Soft gate: still require APPROVED stage (reviewer must explicitly approve).
+    // Hard-block only INVALID above; REVIEW_REQUIRED proceeds only after approval.
+  }
+
   if (saveInFlight.has(jobId)) {
     throw new SaveProcessingError(
       "SAVE_IN_PROGRESS",

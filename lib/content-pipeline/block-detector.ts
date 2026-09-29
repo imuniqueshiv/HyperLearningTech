@@ -1,4 +1,8 @@
 import type { BoundingBox } from "./coordinates";
+import {
+  isLikelyQuestionMarker,
+  isLikelySubQuestionMarker,
+} from "./question-number";
 import type { StructureNodeKind } from "./structured-document";
 import { safeTrim } from "./string-normalize";
 
@@ -11,16 +15,13 @@ export interface ClassifiedTextBlock {
   kind: StructureNodeKind;
 }
 
-const QUESTION_PATTERN =
-  /^(?:q(?:uestion)?\.?\s*\d+|q\.\s*\d+|\d+\s*[\.\)]|(?:question)\s+\d+)/i;
-
-const SUB_QUESTION_PATTERN =
-  /^(?:\([a-z]\)|[a-z]\)|[ivxlcdm]+\)|\([ivxlcdm]+\)|(?:i{1,3}|iv|v|vi{0,3}|ix|x)\))/i;
-
 const CAPTION_PATTERN = /^(?:fig(?:ure)?\.?\s*\d*|table\s*\d*)\b/i;
 
 const HEADING_HINT_PATTERN =
   /^(?:unit|module|chapter|section|part)\b|^[A-Z0-9][A-Z0-9\s\-–—:]{8,}$/;
+
+const INSTRUCTION_PATTERN =
+  /^(?:note|instructions?|attempt\b|all questions are|use suitable|assume\b)/i;
 
 /**
  * Classifies a single text block by layout patterns only.
@@ -43,18 +44,32 @@ export function classifyTextBlock(input: {
       ? (input.bbox.y + input.bbox.height) / input.pageHeight
       : 0;
 
+  const degenerateSpatial =
+    input.bbox.height >= input.pageHeight * 0.85 ||
+    (input.bbox.y === 0 &&
+      input.bbox.height >= input.pageHeight * 0.5 &&
+      input.bbox.width >= input.pageWidth * 0.85);
+
   let kind: StructureNodeKind = "paragraph";
 
-  if (relativeY <= 0.08 && text.length <= 120) {
+  // Structural markers always win over chrome heuristics — especially critical
+  // when OCR bboxes are degenerate (full-page boxes → everything looks like a header).
+  if (isLikelyQuestionMarker(text)) {
+    kind = "question";
+  } else if (isLikelySubQuestionMarker(text)) {
+    kind = "sub_question";
+  } else if (!degenerateSpatial && relativeY <= 0.08 && text.length <= 120) {
     kind = "header";
-  } else if (relativeBottom >= 0.92 && text.length <= 120) {
+  } else if (
+    !degenerateSpatial &&
+    relativeBottom >= 0.92 &&
+    text.length <= 120
+  ) {
     kind = "footer";
   } else if (CAPTION_PATTERN.test(text)) {
     kind = "caption";
-  } else if (QUESTION_PATTERN.test(text)) {
-    kind = "question";
-  } else if (SUB_QUESTION_PATTERN.test(text)) {
-    kind = "sub_question";
+  } else if (INSTRUCTION_PATTERN.test(text)) {
+    kind = text.length <= 80 ? "heading" : "paragraph";
   } else if (
     input.bbox.height >= input.medianTextHeight * 1.35 ||
     HEADING_HINT_PATTERN.test(text) ||
@@ -62,6 +77,7 @@ export function classifyTextBlock(input: {
   ) {
     kind = text.length <= 80 ? "heading" : "section";
   } else if (
+    !degenerateSpatial &&
     relativeY <= 0.18 &&
     text.length <= 90 &&
     input.bbox.height >= input.medianTextHeight * 1.2

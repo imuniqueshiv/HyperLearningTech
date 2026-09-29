@@ -62,20 +62,29 @@ export async function writePageRaster(input: {
   jobDir: string;
   pageNumber: number;
   pngBuffer: Buffer;
+  /** When known from the renderer, skip a second sharp metadata parse. */
+  width?: number;
+  height?: number;
 }): Promise<ExtractedPageRaster> {
   const pagesDir = await ensurePagesDir(input.jobDir);
   const relativePath = `${CMS_JOB_PAGES_DIR}/page-${input.pageNumber}.png`;
   const absolutePath = path.join(pagesDir, `page-${input.pageNumber}.png`);
 
   await fs.writeFile(absolutePath, input.pngBuffer);
-  const meta = await sharp(input.pngBuffer).metadata();
+  let width = input.width ?? 0;
+  let height = input.height ?? 0;
+  if (width <= 0 || height <= 0) {
+    const meta = await sharp(input.pngBuffer).metadata();
+    width = meta.width ?? 0;
+    height = meta.height ?? 0;
+  }
 
   return {
     pageNumber: input.pageNumber,
     absolutePath,
     relativePath,
-    width: meta.width ?? 0,
-    height: meta.height ?? 0,
+    width,
+    height,
     mimeType: "image/png",
   };
 }

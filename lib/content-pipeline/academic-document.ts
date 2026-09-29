@@ -2,6 +2,7 @@ import type {
   AcademicDiagram,
   AcademicExam,
   AcademicMetadata,
+  AcademicPaper,
   AcademicQuestion,
   AcademicTokenUsage,
   AcademicTopic,
@@ -11,6 +12,9 @@ import type {
 /**
  * Intermediate Gemini structuring output.
  * Saved as academic-document.json — never written to content/.
+ *
+ * Phase 2: `papers` is authoritative for multi-paper imports.
+ * `questions` remains a flat compatibility view (all papers concatenated).
  */
 export interface AcademicDocument {
   version: 1;
@@ -19,8 +23,13 @@ export interface AcademicDocument {
   units: AcademicUnit[];
   topics: AcademicTopic[];
   questions: AcademicQuestion[];
+  /** Present for Phase 2 multi-paper aware documents. */
+  papers?: AcademicPaper[];
   diagrams: AcademicDiagram[];
   usage: AcademicTokenUsage | null;
+  /** Aggregate extraction status for save gating. */
+  extractionStatus?: "VALID" | "REVIEW_REQUIRED" | "INVALID";
+  extractionWarnings?: string[];
 }
 
 /** Summary stored on pipeline state for the admin dashboard. */

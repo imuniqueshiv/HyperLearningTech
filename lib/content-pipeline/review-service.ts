@@ -83,6 +83,9 @@ export async function getReviewPackage(jobId: string): Promise<ReviewPackage> {
     diagramManifest,
     saveReport,
     review,
+    evidenceFile,
+    evidenceValidation,
+    academicDoc,
   ] = await Promise.all([
     readJsonFile(path.join(jobDir, CMS_PENDING_PYQS_FILENAME)),
     readJsonFile(path.join(jobDir, CMS_PENDING_SYLLABUS_FILENAME)),
@@ -99,10 +102,76 @@ export async function getReviewPackage(jobId: string): Promise<ReviewPackage> {
     readJobDiagramManifest(jobId),
     readJsonFile<SaveReport>(path.join(jobDir, CMS_SAVE_REPORT_FILENAME)),
     readJsonFile<ReviewSummary>(path.join(jobDir, CMS_REVIEW_STATE_FILENAME)),
+    readJsonFile<{
+      paperSegmentation?: {
+        papers?: Array<{
+          paperId: string;
+          paperIndex: number;
+          pageNumbers: number[];
+          confidence: string;
+          headerHints?: { subjectCode?: string | null };
+          reasons?: string[];
+        }>;
+        status?: string;
+      };
+      questionCandidates?: Array<{
+        provisionalId?: string;
+        paperId?: string;
+        questionNumber?: number | string | null;
+        sourcePages?: number[];
+        text?: string;
+        hasDiagram?: boolean;
+      }>;
+      pages?: unknown[];
+      warnings?: string[];
+    }>(path.join(jobDir, "extraction-evidence.json")),
+    readJsonFile<{ status?: string; errors?: string[]; warnings?: string[] }>(
+      path.join(jobDir, "evidence-validation.json")
+    ),
+    readJsonFile<{
+      papers?: Array<{
+        paperId: string;
+        paperIndex: number;
+        sourcePages: number[];
+        confidence: string;
+        reviewRequired: boolean;
+        warnings?: string[];
+        metadata?: { subjectCode?: string | null };
+        questions: Array<{
+          id?: string;
+          paperId?: string;
+          questionNumber?: number | string | null;
+          sourcePages?: number[];
+          confidence?: string | number;
+          hasDiagram?: boolean;
+          validationStatus?: string | null;
+          warnings?: string[];
+          text?: string;
+        }>;
+      }>;
+      questions?: Array<{
+        id?: string;
+        paperId?: string;
+        questionNumber?: number | string | null;
+        sourcePages?: number[];
+        confidence?: string | number;
+        hasDiagram?: boolean;
+        validationStatus?: string | null;
+        warnings?: string[];
+        text?: string;
+      }>;
+      extractionStatus?: string;
+    }>(path.join(jobDir, "academic-document.json")),
   ]);
 
   const effectivePendingPyqs = pendingPyqs ?? productionPyqs;
   const effectivePendingSyllabus = pendingSyllabus ?? productionSyllabus;
+
+  const extractionEvidence = buildExtractionEvidenceSummary(
+    evidenceFile,
+    evidenceValidation,
+    academicDoc
+  );
 
   return {
     jobId,
@@ -128,6 +197,163 @@ export async function getReviewPackage(jobId: string): Promise<ReviewPackage> {
     subjectCode: metadata.subjectCode,
     year: metadata.year,
     examSession: metadata.examSession,
+    extractionEvidence,
+  };
+}
+
+function buildExtractionEvidenceSummary(
+  evidenceFile: {
+    paperSegmentation?: {
+      papers?: Array<{
+        paperId: string;
+        paperIndex: number;
+        pageNumbers: number[];
+        confidence: string;
+        headerHints?: { subjectCode?: string | null };
+        reasons?: string[];
+      }>;
+      status?: string;
+    };
+    questionCandidates?: Array<{
+      provisionalId?: string;
+      paperId?: string;
+      questionNumber?: number | string | null;
+      sourcePages?: number[];
+      text?: string;
+      hasDiagram?: boolean;
+    }>;
+    pages?: unknown[];
+    warnings?: string[];
+  } | null,
+  evidenceValidation: {
+    status?: string;
+    errors?: string[];
+    warnings?: string[];
+  } | null,
+  academicDoc: {
+    papers?: Array<{
+      paperId: string;
+      paperIndex: number;
+      sourcePages: number[];
+      confidence: string;
+      reviewRequired: boolean;
+      warnings?: string[];
+      metadata?: { subjectCode?: string | null };
+      questions: Array<{
+        id?: string;
+        paperId?: string;
+        questionNumber?: number | string | null;
+        sourcePages?: number[];
+        confidence?: string | number;
+        hasDiagram?: boolean;
+        validationStatus?: string | null;
+        warnings?: string[];
+        text?: string;
+      }>;
+    }>;
+    questions?: Array<{
+      id?: string;
+      paperId?: string;
+      questionNumber?: number | string | null;
+      sourcePages?: number[];
+      confidence?: string | number;
+      hasDiagram?: boolean;
+      validationStatus?: string | null;
+      warnings?: string[];
+      text?: string;
+    }>;
+    extractionStatus?: string;
+  } | null
+): ReviewPackage["extractionEvidence"] {
+  if (!evidenceFile && !academicDoc && !evidenceValidation) {
+    return null;
+  }
+
+  const confToNum = (c: string | number | undefined): number => {
+    if (typeof c === "number") return c;
+    if (c === "HIGH") return 0.9;
+    if (c === "MEDIUM") return 0.65;
+    if (c === "LOW") return 0.35;
+    return 0.5;
+  };
+
+  const papers =
+    academicDoc?.papers?.map((p) => ({
+      paperId: p.paperId,
+      paperIndex: p.paperIndex,
+      sourcePages: p.sourcePages,
+      confidence: confToNum(p.confidence),
+      questionCount: p.questions.length,
+      reviewRequired: p.reviewRequired,
+      subjectCode: p.metadata?.subjectCode ?? null,
+      warnings: p.warnings ?? [],
+    })) ??
+    evidenceFile?.paperSegmentation?.papers?.map((p) => ({
+      paperId: p.paperId,
+      paperIndex: p.paperIndex,
+      sourcePages: p.pageNumbers,
+      confidence: confToNum(p.confidence),
+      questionCount: 0,
+      reviewRequired: p.confidence === "LOW",
+      subjectCode: p.headerHints?.subjectCode ?? null,
+      warnings: p.reasons ?? [],
+    })) ??
+    [];
+
+  const questions =
+    academicDoc?.papers?.flatMap((p) =>
+      p.questions.map((q, qi) => ({
+        id: q.id ?? `${p.paperId}-q${qi + 1}`,
+        paperId: q.paperId ?? p.paperId,
+        questionNumber: q.questionNumber ?? null,
+        sourcePages: q.sourcePages ?? p.sourcePages,
+        confidence: confToNum(q.confidence),
+        hasDiagram: Boolean(q.hasDiagram),
+        validationStatus: q.validationStatus ?? null,
+        warnings: q.warnings ?? [],
+        textPreview: (q.text ?? "").slice(0, 160),
+      }))
+    ) ??
+    academicDoc?.questions?.map((q, qi) => ({
+      id: q.id ?? `q${qi + 1}`,
+      paperId: q.paperId ?? "paper-1",
+      questionNumber: q.questionNumber ?? null,
+      sourcePages: q.sourcePages ?? [],
+      confidence: confToNum(q.confidence),
+      hasDiagram: Boolean(q.hasDiagram),
+      validationStatus: q.validationStatus ?? null,
+      warnings: q.warnings ?? [],
+      textPreview: (q.text ?? "").slice(0, 160),
+    })) ??
+    evidenceFile?.questionCandidates?.map((q, qi) => ({
+      id: q.provisionalId ?? `cand-${qi + 1}`,
+      paperId: q.paperId ?? "paper-1",
+      questionNumber: q.questionNumber ?? null,
+      sourcePages: q.sourcePages ?? [],
+      confidence: 0.5,
+      hasDiagram: Boolean(q.hasDiagram),
+      validationStatus: null,
+      warnings: [] as string[],
+      textPreview: (q.text ?? "").slice(0, 160),
+    })) ??
+    [];
+
+  return {
+    status:
+      evidenceValidation?.status ??
+      academicDoc?.extractionStatus ??
+      evidenceFile?.paperSegmentation?.status ??
+      null,
+    paperCount: papers.length,
+    questionCount: questions.length,
+    pageCount: evidenceFile?.pages?.length ?? 0,
+    warnings: [
+      ...(evidenceValidation?.warnings ?? []),
+      ...(evidenceFile?.warnings ?? []),
+    ].slice(0, 40),
+    errors: evidenceValidation?.errors ?? [],
+    papers,
+    questions: questions.slice(0, 80),
   };
 }
 

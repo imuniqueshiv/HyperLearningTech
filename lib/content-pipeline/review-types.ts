@@ -75,6 +75,36 @@ export interface ReviewPackage {
   subjectCode?: string | null;
   year?: number | null;
   examSession?: string | null;
+  /** Phase 2 extraction evidence summary for reviewers. */
+  extractionEvidence?: {
+    status: string | null;
+    paperCount: number;
+    questionCount: number;
+    pageCount: number;
+    warnings: string[];
+    errors: string[];
+    papers: Array<{
+      paperId: string;
+      paperIndex: number;
+      sourcePages: number[];
+      confidence: number;
+      questionCount: number;
+      reviewRequired: boolean;
+      subjectCode?: string | null;
+      warnings: string[];
+    }>;
+    questions: Array<{
+      id: string;
+      paperId: string;
+      questionNumber: number | string | null;
+      sourcePages: number[];
+      confidence: number;
+      hasDiagram: boolean;
+      validationStatus?: string | null;
+      warnings: string[];
+      textPreview: string;
+    }>;
+  } | null;
 }
 
 export interface SaveReport {

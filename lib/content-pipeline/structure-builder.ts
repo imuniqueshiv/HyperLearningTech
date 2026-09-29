@@ -101,7 +101,9 @@ export function buildStructuredDocument(raw: RawDocument): StructuredDocument {
       blocks: classified.length,
     });
 
-    const ordered = sortByReadingOrder(classified).map((entry) => entry.item);
+    const ordered = sortByReadingOrder(classified, 8, page.width).map(
+      (entry) => entry.item
+    );
     const classifiedById = new Map(ordered.map((block) => [block.id, block]));
 
     for (const block of ordered) {

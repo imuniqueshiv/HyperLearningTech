@@ -148,6 +148,11 @@ export function normalizeSemester(raw: string): string | null {
     const n = Number(digit[1]);
     if (n >= 1 && n <= 8) return `semester-${n}`;
   }
+  // Admin UI / API often sends a bare semester digit ("4").
+  if (/^\d{1,2}$/.test(text)) {
+    const n = Number(text);
+    if (n >= 1 && n <= 8) return `semester-${n}`;
+  }
   return null;
 }
 

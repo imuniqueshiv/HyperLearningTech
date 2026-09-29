@@ -11,7 +11,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "test": "tsx --test scripts/cms-reliability/phase-1-atomic-writer.test.ts scripts/cms-reliability/phase-2-3-merge-duplicate.test.ts scripts/cms-reliability/phase-4-resume.test.ts scripts/cms-reliability/phase-5-load.test.ts scripts/cms-reliability/logging-contract.test.ts scripts/cms-reliability/pipeline-supervisor.test.ts scripts/cms-reliability/ocr-quality.test.ts scripts/cms-reliability/metadata-extractor.test.ts scripts/cms-reliability/jbig2-raster.test.ts scripts/cms-reliability/merge-trim-crash.test.ts scripts/cms-reliability/nov-2023-validation-uimap.test.ts scripts/cms-reliability/phase1-foundation.test.ts",
+    "test": "tsx --test scripts/cms-reliability/phase-1-atomic-writer.test.ts scripts/cms-reliability/phase-2-3-merge-duplicate.test.ts scripts/cms-reliability/phase-4-resume.test.ts scripts/cms-reliability/phase-5-load.test.ts scripts/cms-reliability/logging-contract.test.ts scripts/cms-reliability/pipeline-supervisor.test.ts scripts/cms-reliability/ocr-quality.test.ts scripts/cms-reliability/metadata-extractor.test.ts scripts/cms-reliability/jbig2-raster.test.ts scripts/cms-reliability/merge-trim-crash.test.ts scripts/cms-reliability/nov-2023-validation-uimap.test.ts scripts/cms-reliability/phase1-foundation.test.ts scripts/cms-reliability/phase2-extraction.test.ts scripts/cms-reliability/phase2-hardening.test.ts scripts/cms-reliability/phase2-real-document-acceptance.test.ts",
     "cms:verify": "npm run test",
     "cms:report": "tsx scripts/cms-reliability/generate-report.ts"
   },
@@ -31,7 +31,7 @@
     "geist": "^1.7.2",
     "html2pdf.js": "^0.14.0",
     "katex": "^0.17.0",
-    "lucide-react": "^1.20.0",
+    "lucide-react": "^1.48.0",
     "next": "16.2.9",
     "next-themes": "^0.4.6",
     "pdfjs-dist": "^6.1.200",
@@ -49,7 +49,7 @@
     "remark-math": "^6.0.0",
     "resend": "^6.12.4",
     "sharp": "^0.35.3",
-    "sonner": "^2.0.7",
+    "sonner": "^2.0.8",
     "tailwind-merge": "^3.6.0",
     "tesseract.js": "^7.0.0",
     "zod": "^4.4.3"

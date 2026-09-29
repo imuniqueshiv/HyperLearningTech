@@ -13,15 +13,15 @@
       "title": "Definitions & Divide and Conquer",
       "hours": 8,
       "topics": [
+        "Asymptotic notation",
+        "Code tuning techniques: Loop Optimization, Data Transfer Optimization, Logic Optimization, etc.",
         "Definitions of algorithms and complexity",
+        "Example: binary search, merge sort, quick sort, heap sort, strassen’s matrix multiplication etc.",
+        "Introduction to divide and conquer technique",
+        "Recurrences and Recurrences solving techniques",
         "Time and Space Complexity",
         "Time space tradeoff",
-        "Various bounds on complexity",
-        "Asymptotic notation",
-        "Recurrences and Recurrences solving techniques",
-        "Introduction to divide and conquer technique",
-        "Example: binary search, merge sort, quick sort, heap sort, strassen’s matrix multiplication etc.",
-        "Code tuning techniques: Loop Optimization, Data Transfer Optimization, Logic Optimization, etc."
+        "Various bounds on complexity"
       ]
     },
     {
@@ -30,9 +30,9 @@
       "title": "Greedy Strategy",
       "hours": 8,
       "topics": [
-        "Study of Greedy strategy",
+        "Correctness proof of Greedy algorithms",
         "Examples of greedy method like optimal merge patterns, Huffman coding, minimum spanning trees, knapsack problem, job sequencing with deadlines, single source shortest path algorithm etc.",
-        "Correctness proof of Greedy algorithms"
+        "Study of Greedy strategy"
       ]
     },
     {
@@ -52,10 +52,10 @@
       "hours": 8,
       "topics": [
         "Backtracking concept and its examples like 8 queen’s problem, Hamiltonian cycle, Graph colouring problem etc.",
-        "Introduction to branch & bound method",
         "Examples of branch and bound method like travelling salesman problem etc.",
-        "Meaning of lower bound theory and its use in solving algebraic problem",
-        "Introduction to parallel algorithms"
+        "Introduction to branch & bound method",
+        "Introduction to parallel algorithms",
+        "Meaning of lower bound theory and its use in solving algebraic problem"
       ]
     },
     {
@@ -65,10 +65,10 @@
       "hours": 8,
       "topics": [
         "Advanced tree and graph algorithms",
-        "NP-hard and NP-complete problems",
         "Approximations Algorithms",
         "Data Stream Algorithms",
-        "Introduction to design and complexity of Parallel Algorithms"
+        "Introduction to design and complexity of Parallel Algorithms",
+        "NP-hard and NP-complete problems"
       ]
     }
   ]

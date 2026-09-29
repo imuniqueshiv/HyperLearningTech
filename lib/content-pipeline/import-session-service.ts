@@ -13,10 +13,9 @@ import {
   IMPORT_LIMIT_MESSAGES,
   MAX_CONCURRENT_PIPELINES,
   MAX_IMPORT_IMAGES,
-  MAX_MERGED_PDF_PAGES,
   MAX_NORMAL_PDF_PAGES,
   MAX_PAPERS_PER_IMPORT,
-  type ImportUploadMode,
+  parseImportUploadMode,
 } from "./import-limits";
 import { generateJobId } from "./job-id";
 import {
@@ -56,8 +55,8 @@ export interface ProcessImportSessionInput {
   year?: number | null;
   examSession?: ExamSession | null;
   /** Required for Phase 1 hard limits. */
-  uploadMode?: ImportUploadMode | null;
-  /** Declared paper count (1–3). Defaults to 1. */
+  uploadMode?: "normal_pdf" | "images" | "merged_pdf" | null;
+  /** Declared paper count — must be 1. Defaults to 1. */
   paperCount?: number | null;
   createdBy?: string | null;
 }
@@ -142,10 +141,19 @@ export function classifySessionFiles(files: File[]): {
 
 function resolveUploadMode(
   classifiedKind: "pdf" | "images",
-  declared: ImportUploadMode | null | undefined
-): ImportUploadMode {
+  declared: string | null | undefined
+): "normal_pdf" | "images" {
+  const parsed = parseImportUploadMode(declared);
+
+  if (parsed === "merged_pdf") {
+    throw new UploadValidationError(
+      "MERGED_PDF_UNSUPPORTED",
+      IMPORT_LIMIT_MESSAGES.mergedModeUnsupported
+    );
+  }
+
   if (classifiedKind === "images") {
-    if (declared && declared !== "images") {
+    if (parsed && parsed !== "images") {
       throw new UploadValidationError(
         "UPLOAD_MODE_MISMATCH",
         "Image uploads require uploadMode=images."
@@ -154,13 +162,13 @@ function resolveUploadMode(
     return "images";
   }
 
-  if (!declared || declared === "images") {
+  if (!parsed || parsed === "images") {
     throw new UploadValidationError(
       "UPLOAD_MODE_REQUIRED",
-      "PDF uploads require uploadMode=normal_pdf or uploadMode=merged_pdf."
+      "PDF uploads require uploadMode=normal_pdf."
     );
   }
-  return declared;
+  return "normal_pdf";
 }
 
 function normalizePaperCount(raw: number | null | undefined): number {
@@ -168,7 +176,7 @@ function normalizePaperCount(raw: number | null | undefined): number {
   if (!Number.isInteger(value) || value < 1) {
     throw new UploadValidationError(
       "PAPER_COUNT_INVALID",
-      "paperCount must be an integer between 1 and 3."
+      "paperCount must be exactly 1."
     );
   }
   if (value > MAX_PAPERS_PER_IMPORT) {
@@ -177,7 +185,7 @@ function normalizePaperCount(raw: number | null | undefined): number {
       IMPORT_LIMIT_MESSAGES.papers
     );
   }
-  return value;
+  return 1;
 }
 
 /**
@@ -194,10 +202,10 @@ export async function processImportSession(
   const uploadMode = resolveUploadMode(classified.kind, input.uploadMode);
   const paperCount = normalizePaperCount(input.paperCount);
 
-  if (uploadMode === "normal_pdf" && paperCount > 1) {
+  if (paperCount !== 1) {
     throw new UploadValidationError(
       "PAPER_LIMIT_EXCEEDED",
-      "Normal PDF mode accepts exactly 1 paper. Use merged_pdf for multi-paper imports."
+      IMPORT_LIMIT_MESSAGES.papers
     );
   }
 
@@ -233,14 +241,11 @@ export async function processImportSession(
       );
     }
 
-    const maxPages =
-      uploadMode === "normal_pdf" ? MAX_NORMAL_PDF_PAGES : MAX_MERGED_PDF_PAGES;
+    const maxPages = MAX_NORMAL_PDF_PAGES;
     if (pageCount > maxPages) {
       throw new UploadValidationError(
         "PAGE_LIMIT_EXCEEDED",
-        uploadMode === "normal_pdf"
-          ? IMPORT_LIMIT_MESSAGES.normalPdfPages
-          : IMPORT_LIMIT_MESSAGES.mergedPdfPages
+        IMPORT_LIMIT_MESSAGES.normalPdfPages
       );
     }
 
