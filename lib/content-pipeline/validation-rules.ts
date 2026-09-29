@@ -627,15 +627,22 @@ function validateAttachment(
       })
     );
   } else if (!context.existingPaths.has(attachment.path.replace(/\\/g, "/"))) {
-    errors.push(
-      createIssue({
-        severity: "error",
-        code: "BROKEN_DIAGRAM_REFERENCE",
-        message: `Attachment file missing in job workspace: ${attachment.path}`,
-        path: `${path}.path`,
-        index: context.nextIndex(),
-      })
-    );
+    // Incoming CMS jobs must resolve attachments inside the job workspace.
+    // Repository / merged write validation includes existing papers whose
+    // diagram paths already live under content/.../diagrams/ — those files
+    // are not present in the job workspace Set, so treat as warning only.
+    const issue = createIssue({
+      severity: context.contract === "repository" ? "warning" : "error",
+      code: "BROKEN_DIAGRAM_REFERENCE",
+      message: `Attachment file missing in job workspace: ${attachment.path}`,
+      path: `${path}.path`,
+      index: context.nextIndex(),
+    });
+    if (context.contract === "repository") {
+      warnings.push(issue);
+    } else {
+      errors.push(issue);
+    }
   }
 
   if (!safeTrim(attachment.title)) {
