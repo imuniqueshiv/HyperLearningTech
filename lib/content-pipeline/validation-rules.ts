@@ -164,6 +164,8 @@ function validatePyqs(
     }
 
     let previousNumber = 0;
+    const seenQuestionNumbers = new Set<number>();
+    const questionNumberList: number[] = [];
 
     paper.questions.forEach((question, qIndex) => {
       const qPath = `${paperPath}.questions[${qIndex}]`;
@@ -207,6 +209,19 @@ function validatePyqs(
       const numberMatch = safeTrim(question.questionNumber).match(/(\d+)/);
       if (numberMatch) {
         const current = Number(numberMatch[1]);
+        questionNumberList.push(current);
+        if (seenQuestionNumbers.has(current)) {
+          warnings.push(
+            createIssue({
+              severity: "warning",
+              code: "DUPLICATE_QUESTION_NUMBER",
+              message: `Duplicate question number: ${question.questionNumber}`,
+              path: `${qPath}.questionNumber`,
+              index: context.nextIndex(),
+            })
+          );
+        }
+        seenQuestionNumbers.add(current);
         if (current < previousNumber) {
           warnings.push(
             createIssue({
@@ -222,9 +237,11 @@ function validatePyqs(
       }
 
       if (!question.subQuestions?.length) {
-        errors.push(
+        // Keep as warning so Gemini/OCR partials reach review instead of
+        // hard-failing the whole import (operator can reject in review).
+        warnings.push(
           createIssue({
-            severity: "error",
+            severity: "warning",
             code: "EMPTY_SUBQUESTIONS",
             message: `Question ${question.questionNumber} has no subQuestions.`,
             path: `${qPath}.subQuestions`,
@@ -322,6 +339,24 @@ function validatePyqs(
           );
         });
       });
+
+      // Phase 2: detect gaps in question serial numbers (do not invent missing Qs)
+      if (questionNumberList.length >= 2) {
+        const unique = [...new Set(questionNumberList)].sort((a, b) => a - b);
+        for (let n = unique[0]; n <= unique[unique.length - 1]; n += 1) {
+          if (!seenQuestionNumbers.has(n)) {
+            warnings.push(
+              createIssue({
+                severity: "warning",
+                code: "QUESTION_NUMBER_GAP",
+                message: `Missing question number Q.${n} in paper sequence.`,
+                path: `${paperPath}.questions`,
+                index: context.nextIndex(),
+              })
+            );
+          }
+        }
+      }
     });
   });
 }
@@ -592,15 +627,22 @@ function validateAttachment(
       })
     );
   } else if (!context.existingPaths.has(attachment.path.replace(/\\/g, "/"))) {
-    errors.push(
-      createIssue({
-        severity: "error",
-        code: "BROKEN_DIAGRAM_REFERENCE",
-        message: `Attachment file missing in job workspace: ${attachment.path}`,
-        path: `${path}.path`,
-        index: context.nextIndex(),
-      })
-    );
+    // Incoming CMS jobs must resolve attachments inside the job workspace.
+    // Repository / merged write validation includes existing papers whose
+    // diagram paths already live under content/.../diagrams/ — those files
+    // are not present in the job workspace Set, so treat as warning only.
+    const issue = createIssue({
+      severity: context.contract === "repository" ? "warning" : "error",
+      code: "BROKEN_DIAGRAM_REFERENCE",
+      message: `Attachment file missing in job workspace: ${attachment.path}`,
+      path: `${path}.path`,
+      index: context.nextIndex(),
+    });
+    if (context.contract === "repository") {
+      warnings.push(issue);
+    } else {
+      errors.push(issue);
+    }
   }
 
   if (!safeTrim(attachment.title)) {
@@ -640,11 +682,15 @@ function validateAttachment(
   }
 
   if (!safeTrim(attachment.aiContext)) {
-    errors.push(
+    // Diagram reconstruction is out of scope ([DIAGRAM_PRESENT] only).
+    // Missing Gemini/diagram aiContext must not hard-fail the pipeline —
+    // surface as REVIEW_REQUIRED via warning instead.
+    warnings.push(
       createIssue({
-        severity: "error",
+        severity: "warning",
         code: "MISSING_AI_CONTEXT",
-        message: "Attachment aiContext is required.",
+        message:
+          "Attachment aiContext is empty; review diagram placeholder before publish.",
         path: `${path}.aiContext`,
         index: context.nextIndex(),
       })

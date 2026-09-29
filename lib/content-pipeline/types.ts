@@ -150,8 +150,11 @@ export interface PipelineState {
   rebuild?: RebuildRunSummary | null;
 }
 
-/** Phase 1 upload mode declared by the administrator. */
-export type ImportUploadMode = "normal_pdf" | "merged_pdf" | "images";
+/** Phase 2 upload mode — one paper per import. */
+export type ImportUploadMode = "normal_pdf" | "images";
+
+/** @deprecated Rejected at upload — multi-paper imports removed. */
+export type DeprecatedMergedUploadMode = "merged_pdf";
 
 /**
  * Persistable upload job metadata written to

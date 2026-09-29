@@ -13,10 +13,10 @@
       "title": "Technical Communication Skills",
       "hours": 8,
       "topics": [
-        "Understanding the process and scope of Communication",
-        "Relevance, & Importance of Communication in a Globalized world",
         "Forms of Communication",
-        "Role of Unity, Brevity and Clarity in various forms of communication"
+        "Relevance, & Importance of Communication in a Globalized world",
+        "Role of Unity, Brevity and Clarity in various forms of communication",
+        "Understanding the process and scope of Communication"
       ]
     },
     {
@@ -25,17 +25,17 @@
       "title": "Types of Communication & Soft Skills",
       "hours": 8,
       "topics": [
-        "Types of Communication: Verbal & Non-verbal Communication",
-        "Classification of NVC",
         "Barriers to Communication",
-        "Communicating Globally",
-        "Culture and Communication",
-        "Soft Skills: Interpersonal Communication",
-        "Listening",
-        "Persuasion",
-        "Negotiation",
+        "Classification of NVC",
         "Communicating bad news/messages",
-        "communicating in a global world"
+        "Communicating Globally",
+        "communicating in a global world",
+        "Culture and Communication",
+        "Listening",
+        "Negotiation",
+        "Persuasion",
+        "Soft Skills: Interpersonal Communication",
+        "Types of Communication: Verbal & Non-verbal Communication"
       ]
     },
     {
@@ -44,19 +44,19 @@
       "title": "Writing Skills & Speaking Skills",
       "hours": 8,
       "topics": [
-        "Writing Skills: Traits of Technical Writing",
-        "Principles of Business Writing",
-        "Style of Writing",
-        "Writing Memos, Letters, Reports",
-        "Types of technical reports",
         "Characteristics, format and structure of technical reports",
-        "Writing Research Papers",
-        "Speaking Skills: Audience-awareness",
-        "Voice, Vocabulary and Paralanguage",
-        "Group Discussion",
         "Combating Nervousness",
+        "Group Discussion",
+        "Mock Presentations",
+        "Principles of Business Writing",
+        "Speaking Skills: Audience-awareness",
         "Speaking to one and to one thousand",
-        "Mock Presentations"
+        "Style of Writing",
+        "Types of technical reports",
+        "Voice, Vocabulary and Paralanguage",
+        "Writing Memos, Letters, Reports",
+        "Writing Research Papers",
+        "Writing Skills: Traits of Technical Writing"
       ]
     },
     {
@@ -65,15 +65,15 @@
       "title": "Job Interviews, GD & Presentations",
       "hours": 8,
       "topics": [
-        "Job Interviews: Preparing for interviews",
         "assessing yourself",
         "Drafting Effective Resume",
         "Dress, decorum and Delivery techniques",
-        "Techniques of handling interviews",
-        "Use of Nonverbals during Interviews",
-        "Handling turbulence during interviews",
         "Group Discussion: Objective, Method, Focus, Content, Style and Argumentation skills",
-        "Professional Presentations: Individual Presentations (Audience Awareness, Body Language, Delivery and Content of Presentation)"
+        "Handling turbulence during interviews",
+        "Job Interviews: Preparing for interviews",
+        "Professional Presentations: Individual Presentations (Audience Awareness, Body Language, Delivery and Content of Presentation)",
+        "Techniques of handling interviews",
+        "Use of Nonverbals during Interviews"
       ]
     },
     {
@@ -84,17 +84,17 @@
       "topics": [
         "Basics of grammar",
         "common error in writing and speaking",
-        "Study of advanced grammar",
-        "Vocabulary",
-        "Pronunciation Etiquette",
-        "Syllables",
-        "Vowel sounds",
         "Consonant sounds",
-        "Tone: Rising tone, Falling Tone",
         "Flow in Speaking",
+        "Professional Personality Attributes",
+        "Pronunciation Etiquette",
         "Speaking with a purpose",
         "Speech & personality",
-        "Professional Personality Attributes"
+        "Study of advanced grammar",
+        "Syllables",
+        "Tone: Rising tone, Falling Tone",
+        "Vocabulary",
+        "Vowel sounds"
       ]
     }
   ]

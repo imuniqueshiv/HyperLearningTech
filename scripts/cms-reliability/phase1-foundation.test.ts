@@ -27,7 +27,6 @@ import {
 import {
   IMPORT_LIMIT_MESSAGES,
   MAX_IMPORT_IMAGES,
-  MAX_MERGED_PDF_PAGES,
   MAX_NORMAL_PDF_PAGES,
   MAX_PAPERS_PER_IMPORT,
   parseImportUploadMode,
@@ -225,7 +224,7 @@ describe("Phase 1 upload limits", () => {
     assert.equal(parseImportUploadMode("nope"), null);
   });
 
-  it("rejects image batches above 15", async () => {
+  it("rejects image batches above 5", async () => {
     const files = Array.from({ length: MAX_IMPORT_IMAGES + 1 }, (_, i) =>
       fakeFile(`p${i}.png`, "image/png", 32)
     );
@@ -245,14 +244,14 @@ describe("Phase 1 upload limits", () => {
     );
   });
 
-  it("rejects fourth paper declaration", async () => {
+  it("rejects paperCount > 1", async () => {
     await assert.rejects(
       () =>
         processImportSession({
           files: [fakeFile("a.png", "image/png", 32)],
           type: "pyq",
           uploadMode: "images",
-          paperCount: MAX_PAPERS_PER_IMPORT + 1,
+          paperCount: 2,
         }),
       (error: unknown) => {
         assert.ok(error instanceof UploadValidationError);
@@ -263,7 +262,7 @@ describe("Phase 1 upload limits", () => {
     );
   });
 
-  it("rejects normal_pdf with paperCount > 1", async () => {
+  it("rejects merged_pdf mode", async () => {
     await assert.rejects(
       () =>
         processImportSession({
@@ -271,12 +270,12 @@ describe("Phase 1 upload limits", () => {
             fakeFile("paper.pdf", "application/pdf", Buffer.from("%PDF")),
           ],
           type: "pyq",
-          uploadMode: "normal_pdf",
-          paperCount: 2,
+          uploadMode: "merged_pdf" as never,
+          paperCount: 1,
         }),
       (error: unknown) => {
         assert.ok(error instanceof UploadValidationError);
-        assert.equal(error.code, "PAPER_LIMIT_EXCEEDED");
+        assert.equal(error.code, "MERGED_PDF_UNSUPPORTED");
         return true;
       }
     );
@@ -284,9 +283,8 @@ describe("Phase 1 upload limits", () => {
 
   it("exposes documented ceilings", () => {
     assert.equal(MAX_NORMAL_PDF_PAGES, 5);
-    assert.equal(MAX_MERGED_PDF_PAGES, 15);
-    assert.equal(MAX_IMPORT_IMAGES, 15);
-    assert.equal(MAX_PAPERS_PER_IMPORT, 3);
+    assert.equal(MAX_IMPORT_IMAGES, 5);
+    assert.equal(MAX_PAPERS_PER_IMPORT, 1);
     assert.equal(MAX_BULK_FILES, 15);
   });
 

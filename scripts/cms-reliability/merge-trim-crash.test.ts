@@ -73,11 +73,19 @@ describe("AL-402 June 2023 trim crash (exact job artifacts)", () => {
     const incoming = readJson<ProductionPyqsJson>(JOB_PYQS);
     const incomingSnapshot = JSON.stringify(incoming);
 
-    assert.equal(existing.subject.semester, undefined);
+    // Regression target: preferNonEmptyString / mergeSubject must tolerate a
+    // missing semester on repository subjects. Live content may now include a
+    // semester value — force undefined on a clone to keep the crash case covered.
+    const existingWithoutSemester: ProductionPyqsJson = {
+      ...existing,
+      subject: { ...existing.subject, semester: undefined as never },
+    };
+    delete (existingWithoutSemester.subject as { semester?: string }).semester;
+    assert.equal(existingWithoutSemester.subject.semester, undefined);
     assert.equal(incoming.papers[0]?.month, "June");
     assert.equal(incoming.papers[0]?.year, 2023);
 
-    const result = mergePyqs(existing, incoming);
+    const result = mergePyqs(existingWithoutSemester, incoming);
 
     assert.equal(incomingSnapshot, JSON.stringify(incoming));
     assert.doesNotThrow(() => sortProductionPyqs(result.pyqs));

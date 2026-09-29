@@ -1,4 +1,5 @@
 import type { AcademicDocument } from "./academic-document";
+import { DIAGRAM_PRESENT_MARKER } from "./extraction-evidence";
 import type {
   ProductionPaper,
   ProductionPyqSubject,
@@ -27,17 +28,23 @@ import {
 
 /**
  * Builds production pyqs.json shape from AcademicDocument.
+ * Phase 2: maps AcademicPaper[] → ProductionPaper[] when present.
  */
 export function buildProductionPyqs(
   document: AcademicDocument
 ): ProductionPyqsJson {
   try {
     const subject = buildPyqSubject(document);
-    const paper = buildPaper(document);
+    const papers =
+      document.papers && document.papers.length > 0
+        ? document.papers.map((paper, index) =>
+            buildPaperFromAcademicPaper(document, paper, index)
+          )
+        : [buildPaper(document)];
 
     return {
       subject,
-      papers: [paper],
+      papers,
     };
   } catch (error) {
     rethrowAsPipelineFieldError(error, "Schema Builder");
@@ -78,8 +85,9 @@ function buildPaper(document: AcademicDocument): ProductionPaper {
   const month = firstNonEmpty(document.exam?.month, "Unknown");
   const exam = firstNonEmpty(document.exam?.exam, `${month} ${year}`);
 
+  const usedIndexes = new Set<number>();
   const questions = document.questions.map((question, index) =>
-    buildQuestion(document, question, index)
+    buildQuestion(document, question, index, usedIndexes)
   );
 
   const paper: ProductionPaper = {
@@ -96,14 +104,80 @@ function buildPaper(document: AcademicDocument): ProductionPaper {
   return paper;
 }
 
+function buildPaperFromAcademicPaper(
+  document: AcademicDocument,
+  academicPaper: NonNullable<AcademicDocument["papers"]>[number],
+  index: number
+): ProductionPaper {
+  const year =
+    academicPaper.exam?.year ?? document.exam?.year ?? new Date().getFullYear();
+  const month = firstNonEmpty(
+    academicPaper.exam?.month,
+    document.exam?.month,
+    `Paper ${academicPaper.paperIndex}`
+  );
+  const baseExam = firstNonEmpty(
+    academicPaper.exam?.exam,
+    document.exam?.exam,
+    `${month} ${year}`
+  );
+  // Distinct exam labels only needed historically; single-import always one paper.
+  const exam = baseExam;
+
+  const usedIndexes = new Set<number>();
+  const questions = academicPaper.questions.map((question, qIndex) =>
+    buildQuestion(document, question, qIndex, usedIndexes)
+  );
+
+  const paper: ProductionPaper = {
+    exam,
+    year,
+    month,
+    questions,
+  };
+
+  if (
+    academicPaper.exam?.isPredicted === true ||
+    document.exam?.isPredicted === true
+  ) {
+    paper.isPredicted = true;
+  }
+
+  void index;
+  return paper;
+}
+
+/**
+ * Allocate a unique production question index.
+ * Prefer the numeric value from questionNumber; on collision (OCR/Gemini
+ * duplicate Q.1 etc.) pick the next free integer so ids stay unique.
+ */
+function allocateQuestionIndex(
+  questionNumber: string | null | undefined,
+  fallback: number,
+  usedIndexes: Set<number>
+): number {
+  let questionIndex = extractQuestionIndex(questionNumber, fallback);
+  if (usedIndexes.has(questionIndex)) {
+    questionIndex = fallback;
+    while (usedIndexes.has(questionIndex)) {
+      questionIndex += 1;
+    }
+  }
+  usedIndexes.add(questionIndex);
+  return questionIndex;
+}
+
 function buildQuestion(
   document: AcademicDocument,
   question: AcademicDocument["questions"][number],
-  index: number
+  index: number,
+  usedIndexes: Set<number>
 ): ProductionQuestion {
-  const questionIndex = extractQuestionIndex(
+  const questionIndex = allocateQuestionIndex(
     question.questionNumber,
-    index + 1
+    index + 1,
+    usedIndexes
   );
   const id = buildQuestionId(questionIndex);
   const questionNumber =
@@ -112,10 +186,42 @@ function buildQuestion(
   return {
     id,
     questionNumber,
-    subQuestions: question.subQuestions.map((sub, subIndex) =>
-      buildSubQuestion(document, sub, questionIndex, subIndex, questionNumber)
-    ),
+    subQuestions: (() => {
+      const usedLetters = new Set<string>();
+      return question.subQuestions.map((sub, subIndex) =>
+        buildSubQuestion(
+          document,
+          sub,
+          questionIndex,
+          subIndex,
+          questionNumber,
+          usedLetters
+        )
+      );
+    })(),
   };
+}
+
+function allocateSubQuestionLetter(
+  label: string | null | undefined,
+  fallbackIndex: number,
+  usedLetters: Set<string>
+): string {
+  let letter = extractSubQuestionLetter(label, fallbackIndex);
+  if (usedLetters.has(letter)) {
+    // Prefer a–z then numeric suffixes so production ids stay unique.
+    let n = 0;
+    while (usedLetters.has(letter)) {
+      if (n < 26) {
+        letter = String.fromCharCode(97 + n);
+      } else {
+        letter = `x${n}`;
+      }
+      n += 1;
+    }
+  }
+  usedLetters.add(letter);
+  return letter;
 }
 
 function buildSubQuestion(
@@ -123,9 +229,10 @@ function buildSubQuestion(
   sub: AcademicDocument["questions"][number]["subQuestions"][number],
   questionIndex: number,
   subIndex: number,
-  parentQuestionNumber: string
+  parentQuestionNumber: string,
+  usedLetters: Set<string>
 ): ProductionSubQuestion {
-  const letter = extractSubQuestionLetter(sub.label, subIndex);
+  const letter = allocateSubQuestionLetter(sub.label, subIndex, usedLetters);
   const id = buildSubQuestionId(questionIndex, letter);
   const label = normalizeLabel(sub.label, letter);
   const questionRef = `${parentQuestionNumber}(${letter})`;
@@ -207,7 +314,10 @@ function buildAttachments(
       title: firstNonEmpty(attachment?.title, "Diagram"),
       alt: firstNonEmpty(attachment?.alt, "Exam diagram"),
       caption: safeTrim(attachment?.caption, ""),
-      aiContext: safeTrim(attachment?.aiContext, ""),
+      aiContext: firstNonEmpty(
+        attachment?.aiContext,
+        `${DIAGRAM_PRESENT_MARKER} — diagram content not reconstructed`
+      ),
     });
   });
 
@@ -235,7 +345,10 @@ function buildAttachments(
       title: firstNonEmpty(diagram.title, "Diagram"),
       alt: firstNonEmpty(diagram.alt, `Diagram ${safeTrim(diagram.filename)}`),
       caption: safeTrim(diagram.caption, ""),
-      aiContext: safeTrim(diagram.aiContext, ""),
+      aiContext: firstNonEmpty(
+        diagram.aiContext,
+        `${DIAGRAM_PRESENT_MARKER} — diagram content not reconstructed`
+      ),
     });
   });
 

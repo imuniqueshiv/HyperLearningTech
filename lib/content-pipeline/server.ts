@@ -228,6 +228,40 @@ export {
 } from "./bulk-upload-service";
 
 export {
+  parseQuestionNumber,
+  parseSubQuestionLabel,
+  extractNumericalTokens,
+  analyzeQuestionNumberSequence,
+} from "./question-number";
+
+export { segmentPapers } from "./paper-segmenter";
+
+export {
+  buildExtractionEvidence,
+  DIAGRAM_PRESENT_MARKER,
+} from "./extraction-evidence";
+
+export {
+  validateAgainstEvidence,
+  academicFromEvidence,
+  ensurePapersOnAcademicDocument,
+} from "./evidence-validator";
+
+export { mergeCrossPageQuestionCandidates } from "./question-continuation";
+
+export {
+  detectOcrConfusion,
+  findSuspiciousNumericEdits,
+} from "./ocr-confusion";
+
+export { detectRepeatedHeaderFooter } from "./header-footer";
+
+export {
+  validateTableStructure,
+  validateTableNumericsAgainstText,
+} from "./table-validator";
+
+export {
   canRebuildJob,
   readRebuildReport,
   RebuildProcessingError,

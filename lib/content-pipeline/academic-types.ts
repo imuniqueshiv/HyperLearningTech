@@ -92,6 +92,32 @@ export interface AcademicQuestion {
   questionNumber: string;
   marks: number | null;
   subQuestions: AcademicSubQuestion[];
+  /** Phase 2: owning paper identity (1-based index as paper-1). */
+  paperId?: string;
+  paperIndex?: number;
+  sourcePages?: number[];
+  warnings?: string[];
+}
+
+/**
+ * Phase 2: one logical exam paper inside an Import Session.
+ */
+export interface AcademicPaper {
+  paperId: string;
+  paperIndex: number;
+  sourcePages: number[];
+  exam: AcademicExam | null;
+  instructions: string[];
+  questions: AcademicQuestion[];
+  confidence: "HIGH" | "MEDIUM" | "LOW";
+  warnings: string[];
+  /** When true, Local Save must not proceed without explicit review. */
+  reviewRequired: boolean;
+  /** Optional subject metadata hints from segmentation. */
+  metadata?: {
+    subjectCode?: string | null;
+    university?: string | null;
+  };
 }
 
 export interface AcademicDiagram {

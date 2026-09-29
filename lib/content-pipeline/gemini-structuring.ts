@@ -38,6 +38,8 @@ export interface StructureDocumentInput {
   subjectCode: string | null;
   sourceFilename: string;
   document: StructuredDocument;
+  /** Phase 2 authoritative extraction evidence (optional for backward compat). */
+  evidence?: import("./extraction-evidence").ExtractionEvidence | null;
 }
 
 export interface StructureDocumentResult {
@@ -81,6 +83,7 @@ export class GeminiStructuringEngine implements StructuringEngine {
       subjectCode: input.subjectCode,
       sourceFilename: input.sourceFilename,
       layoutSnapshot,
+      evidence: input.evidence ?? null,
       diagrams: diagrams.map((diagram) => ({
         id: diagram.id,
         path: diagram.path,

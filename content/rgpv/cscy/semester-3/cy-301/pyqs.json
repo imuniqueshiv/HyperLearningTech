@@ -3,7 +3,74 @@
     "id": "cy-301",
     "code": "CY-301",
     "name": "Technical Communication",
-    "title": "CY-301 - Technical Communication"
+    "title": "CY-301 - Technical Communication",
+    "semester": "3",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": ["Note: i) Attempt any five questions."]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the process and scope of communication.",
+              "unit": "Unit 1",
+              "type": "theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How clarity can be achieved in technical communication?\nDescribe.",
+              "unit": "Unit 1",
+              "attachments": [
+                {
+                  "id": "q1b-img-1",
+                  "type": "image",
+                  "path": "december-2023/Q.1-dec-2023.webp",
+                  "title": "Technical Communication Examination Paper",
+                  "alt": "A scanned image of an examination paper cover page and the first page containing instructions and the beginning of the questions.",
+                  "caption": "This image displays the front page of an examination paper for 'Technical Communication', part of the 'Grading System (GS)' for B.Tech. III Semester. It includes general instructions, the total number of questions, printed pages, and marks, along with the first two questions of the paper, presented in both English and Hindi.",
+                  "aiContext": "The image contains an exam paper. The context is educational, specifically for a B.Tech III Semester course on Technical Communication. The paper details are provided, including course code, semester, exam date, time limit, maximum marks, and instructions on how to attempt the questions. The first two questions are partially visible."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the process and scope of communication.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How can soft skills contribute to success in one’s\nprofessional life? Explain.",
+              "unit": "Unit 1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

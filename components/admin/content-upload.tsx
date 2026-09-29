@@ -72,10 +72,9 @@ export function ContentUpload({ onJobsCreated }: ContentUploadProps) {
   const [subjectCode, setSubjectCode] = useState("");
   const [year, setYear] = useState("");
   const [examSession, setExamSession] = useState<ExamSession | "">("");
-  const [uploadMode, setUploadMode] = useState<
-    "normal_pdf" | "merged_pdf" | "images"
-  >("normal_pdf");
-  const [paperCount, setPaperCount] = useState("1");
+  const [uploadMode, setUploadMode] = useState<"normal_pdf" | "images">(
+    "normal_pdf"
+  );
   const [files, setFiles] = useState<File[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -117,7 +116,7 @@ export function ContentUpload({ onJobsCreated }: ContentUploadProps) {
         const sessionIsPdf = sessionFiles.every(isPdf);
         const mode = sessionIsPdf ? uploadMode : "images";
         formData.append("uploadMode", mode);
-        formData.append("paperCount", paperCount || "1");
+        formData.append("paperCount", "1");
         if (branch.trim()) formData.append("branch", branch.trim());
         if (semester.trim()) formData.append("semester", semester.trim());
         if (subjectCode.trim()) {
@@ -173,10 +172,10 @@ export function ContentUpload({ onJobsCreated }: ContentUploadProps) {
       <div className="mb-5">
         <h2 className="text-lg font-semibold text-foreground">New Import</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          One PDF or multiple page images become one Import Session. Limits
-          (server-enforced): normal PDF ≤5 pages, merged PDF ≤15 pages, images
-          ≤15, papers ≤3. Processing stays in staging until review; production
-          content is not auto-published.
+          One PDF (≤5 pages) or 1–5 page images become one Import Session for
+          exactly one academic paper. Merged multi-paper PDFs are not supported
+          — split them first. Processing stays in staging until review;
+          production content is not auto-published.
         </p>
       </div>
 
@@ -187,9 +186,8 @@ export function ContentUpload({ onJobsCreated }: ContentUploadProps) {
         <div className="mt-2 flex flex-wrap gap-4">
           {(
             [
-              ["normal_pdf", "Normal PDF (≤5 pages, 1 paper)"],
-              ["merged_pdf", "Merged PDF (≤15 pages, ≤3 papers)"],
-              ["images", "Images (≤15)"],
+              ["normal_pdf", "PDF (≤5 pages, 1 paper)"],
+              ["images", "Images (1–5 pages, 1 paper)"],
             ] as const
           ).map(([value, label]) => (
             <label
@@ -207,17 +205,6 @@ export function ContentUpload({ onJobsCreated }: ContentUploadProps) {
             </label>
           ))}
         </div>
-        <label className="mt-3 block text-xs font-medium text-muted-foreground">
-          Declared paper count (1–3)
-          <input
-            type="number"
-            min={1}
-            max={3}
-            value={paperCount}
-            onChange={(event) => setPaperCount(event.target.value)}
-            className="mt-1 block w-24 rounded-md border border-border bg-background px-2 py-1 text-sm"
-          />
-        </label>
       </fieldset>
 
       <fieldset className="mb-5">

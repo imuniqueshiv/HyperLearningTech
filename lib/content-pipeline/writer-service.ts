@@ -48,6 +48,7 @@ import {
 } from "./write-report";
 import { writeProductionContent } from "./writer";
 import { validateForWrite } from "./writer-validator";
+import { normalizeSemester } from "./metadata-extractor";
 
 export class WriterProcessingError extends Error {
   readonly code: string;
@@ -93,7 +94,9 @@ export function getSubjectContentDir(input: {
   subjectCode: string;
 }): string {
   const branch = sanitizePathSegment(input.branch, "branch");
-  const semester = sanitizePathSegment(input.semester, "semester");
+  const normalizedSemester =
+    normalizeSemester(input.semester) ?? input.semester;
+  const semester = sanitizePathSegment(normalizedSemester, "semester");
   const subjectCode = sanitizePathSegment(input.subjectCode, "subjectCode");
   const dir = path.resolve(
     process.cwd(),

@@ -28,6 +28,7 @@ export async function ensureImagesDir(jobDir: string): Promise<string> {
 
 /**
  * Saves an extracted region (or full page image) as images/image-N.webp.
+ * Optional width/height skip a redundant sharp.metadata() when already known.
  */
 export async function saveExtractedImage(input: {
   jobDir: string;
@@ -35,6 +36,8 @@ export async function saveExtractedImage(input: {
   pageNumber: number;
   sourceBuffer: Buffer;
   bbox?: BoundingBox;
+  width?: number;
+  height?: number;
 }): Promise<SavedJobImage> {
   await ensureImagesDir(input.jobDir);
 
@@ -42,10 +45,13 @@ export async function saveExtractedImage(input: {
   const relativePath = `${CMS_JOB_IMAGES_DIR}/${id}.webp`;
   const absolutePath = path.join(input.jobDir, relativePath);
 
-  const pipeline = sharp(input.sourceBuffer);
-  const meta = await pipeline.metadata();
-  const width = meta.width ?? 0;
-  const height = meta.height ?? 0;
+  let width = input.width ?? 0;
+  let height = input.height ?? 0;
+  if (width <= 0 || height <= 0) {
+    const meta = await sharp(input.sourceBuffer).metadata();
+    width = meta.width ?? 0;
+    height = meta.height ?? 0;
+  }
 
   await sharp(input.sourceBuffer).webp({ quality: 85 }).toFile(absolutePath);
 

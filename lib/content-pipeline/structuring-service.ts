@@ -29,6 +29,13 @@ import { getJobDirectory } from "./temp-storage";
 import { readRawDocument } from "./ocr-service";
 import { MIN_USABLE_DOCUMENT_CHARS, pageTextCharCount } from "./ocr-quality";
 import { CMS_ERROR_CODES } from "./pipeline-errors";
+import { buildExtractionEvidence } from "./extraction-evidence";
+import {
+  academicFromEvidence,
+  ensurePapersOnAcademicDocument,
+  validateAgainstEvidence,
+} from "./evidence-validator";
+import { writeJsonAtomic } from "./json-writer";
 import type { ImportJobRecord } from "./types";
 
 export class StructuringProcessingError extends Error {
@@ -145,26 +152,104 @@ export async function runStructuringForJob(
     });
 
     try {
-      const result = await engine.structure({
-        jobId,
-        jobType: metadata.type,
-        branch: metadata.branch,
-        semester: metadata.semester,
-        subjectCode: metadata.subjectCode,
-        sourceFilename: metadata.originalFilename,
-        document: structuredDocument,
-      });
+      const rawDocument = await readRawDocument(jobId);
+      const evidence =
+        rawDocument != null
+          ? buildExtractionEvidence({
+              raw: rawDocument,
+              structured: structuredDocument,
+              declaredPaperCount: 1,
+            })
+          : null;
 
-      await writeAcademicDocument(jobId, result.academicDocument);
+      if (evidence) {
+        await writeJsonAtomic(
+          path.join(getJobDirectory(jobId), "extraction-evidence.json"),
+          evidence
+        );
+      }
+
+      let academicDocument;
+      let modelName = engine.name;
+      let usage = null;
+
+      try {
+        const result = await engine.structure({
+          jobId,
+          jobType: metadata.type,
+          branch: metadata.branch,
+          semester: metadata.semester,
+          subjectCode: metadata.subjectCode,
+          sourceFilename: metadata.originalFilename,
+          document: structuredDocument,
+          evidence,
+        });
+        academicDocument = result.academicDocument;
+        modelName = result.model;
+        usage = result.usage;
+      } catch (structuringError) {
+        // Preserve deterministic extraction when Gemini fails.
+        if (evidence && evidence.questionCandidates.length > 0) {
+          academicDocument = academicFromEvidence(evidence, {
+            metadata: {
+              jobId,
+              jobType: metadata.type,
+              sourceFilename: metadata.originalFilename,
+              subjectCode: metadata.subjectCode,
+              subjectName: null,
+              subjectTitle: null,
+              branch: metadata.branch,
+              semester: metadata.semester,
+              university: null,
+              structuredAt: new Date().toISOString(),
+              model: "evidence-fallback",
+              detector: "evidence-fallback-v1",
+            },
+          });
+          console.warn(
+            "[Structuring] Gemini failed; using evidence fallback:",
+            structuringError instanceof Error
+              ? structuringError.message
+              : structuringError
+          );
+        } else {
+          throw structuringError;
+        }
+      }
+
+      if (evidence) {
+        academicDocument = ensurePapersOnAcademicDocument(
+          academicDocument,
+          evidence
+        );
+      }
+
+      if (evidence) {
+        const evidenceCheck = validateAgainstEvidence(
+          academicDocument,
+          evidence
+        );
+        await writeJsonAtomic(
+          path.join(getJobDirectory(jobId), "evidence-validation.json"),
+          evidenceCheck
+        );
+        if (evidenceCheck.status === "INVALID") {
+          throw new StructuringProcessingError(
+            "EVIDENCE_VALIDATION_FAILED",
+            `AI output contradicts OCR evidence: ${evidenceCheck.errors.join("; ")}`
+          );
+        }
+      }
+
+      await writeAcademicDocument(jobId, academicDocument);
 
       if (metadata.type === "pyq") {
-        const rawDocument = await readRawDocument(jobId);
         const ocrChars = (rawDocument?.pages ?? []).reduce(
           (sum, page) => sum + pageTextCharCount(page.text, page.textBlocks),
           0
         );
         if (
-          result.academicDocument.questions.length === 0 &&
+          academicDocument.questions.length === 0 &&
           ocrChars >= MIN_USABLE_DOCUMENT_CHARS
         ) {
           throw new StructuringProcessingError(
@@ -173,6 +258,12 @@ export async function runStructuringForJob(
           );
         }
       }
+
+      const result = {
+        academicDocument,
+        model: modelName,
+        usage,
+      };
 
       const completedAt = new Date().toISOString();
       const summary = toStructuringSummary(result.academicDocument, {

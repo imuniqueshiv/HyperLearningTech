@@ -11,7 +11,6 @@ import {
   IMPORT_LIMIT_MESSAGES,
   MAX_IMPORT_IMAGES,
   MAX_PAPERS_PER_IMPORT,
-  type ImportUploadMode,
   parseImportUploadMode,
 } from "./import-limits";
 import { processImportSession } from "./import-session-service";
@@ -40,25 +39,31 @@ export interface BulkUploadInput {
   subjectCode?: string | null;
   /** When true, enqueue durable pipeline (never inline). */
   autoPipeline?: boolean;
-  uploadMode?: ImportUploadMode | null;
+  uploadMode?: "normal_pdf" | "images" | "merged_pdf" | null;
   paperCount?: number | null;
   createdBy?: string | null;
 }
 
 function resolveModeForFile(
   file: File,
-  declared: ImportUploadMode | null | undefined
-): ImportUploadMode {
+  declared: ReturnType<typeof parseImportUploadMode>
+): "normal_pdf" | "images" {
   const isPdf =
     file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf");
+  if (declared === "merged_pdf") {
+    throw new BulkUploadError(
+      "MERGED_PDF_UNSUPPORTED",
+      IMPORT_LIMIT_MESSAGES.mergedModeUnsupported
+    );
+  }
   if (isPdf) {
     if (!declared || declared === "images") {
       throw new BulkUploadError(
         "UPLOAD_MODE_REQUIRED",
-        "PDF bulk uploads require uploadMode=normal_pdf or merged_pdf."
+        "PDF bulk uploads require uploadMode=normal_pdf."
       );
     }
-    return declared;
+    return "normal_pdf";
   }
   return "images";
 }
