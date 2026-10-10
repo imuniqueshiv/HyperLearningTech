@@ -181,13 +181,13 @@ export default function Navbar() {
           >
             <Image
               src="/hl-logo.png"
-              alt="Hyper Learning"
+              alt="Hyper Learning Tech"
               width={24}
               height={24}
               className="h-6 w-6 object-contain"
             />
             <span className="text-sm font-semibold text-foreground">
-              Hyper Learning
+              Hyper Learning Tech
             </span>
           </Link>
 
@@ -244,7 +244,7 @@ export default function Navbar() {
               <div className="relative flex h-10 w-10 flex-shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-[1.02] md:h-11 md:w-11">
                 <Image
                   src="/hl-logo.png"
-                  alt="Hyper Learning Official Logo"
+                  alt="Hyper Learning Tech Official Logo"
                   width={44}
                   height={44}
                   className="object-contain drop-shadow-sm transition-all dark:drop-shadow-none"
@@ -254,7 +254,7 @@ export default function Navbar() {
 
               <div className="flex flex-col justify-center">
                 <span className="block text-lg font-extrabold tracking-tighter text-[#F4F5F7] md:text-[20px]">
-                  Hyper Learning
+                  Hyper Learning Tech
                 </span>
                 <p className="mt-0.5 text-[11px] font-medium text-[#94A3B8] md:text-xs">
                   AI-Powered Learning Platform

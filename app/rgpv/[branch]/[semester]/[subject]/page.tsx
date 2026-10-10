@@ -1,7 +1,9 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 
 import { getSyllabus, getPYQs } from "@/lib/content";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface SubjectPageProps {
   params: Promise<{
@@ -9,6 +11,21 @@ interface SubjectPageProps {
     semester: string;
     subject: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: SubjectPageProps): Promise<Metadata> {
+  const { branch, semester, subject } = await params;
+  const syllabus = await getSyllabus(branch, semester, subject);
+  const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
+  const semesterLabel = formatSemesterLabel(semester);
+
+  return buildPageMetadata({
+    title: `${subjectTitle} · ${branch.toUpperCase()} ${semesterLabel}`,
+    description: `Syllabus, previous-year questions, and AI study tools for ${subjectTitle} (${branch.toUpperCase()} ${semesterLabel}) on Hyper Learning Tech.`,
+    path: `/rgpv/${branch}/${semester}/${subject}`,
+  });
 }
 
 export default async function SubjectPage({ params }: SubjectPageProps) {
@@ -48,7 +65,7 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
             </h1>
 
             <p className="mt-4 text-lg text-muted-foreground">
-              {branch.toUpperCase()} • {semester.toUpperCase()}
+              {branch.toUpperCase()} · {formatSemesterLabel(semester)}
             </p>
 
             <p className="mt-6 max-w-2xl text-muted-foreground">

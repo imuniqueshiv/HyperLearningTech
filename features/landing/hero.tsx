@@ -97,16 +97,6 @@ export default function Hero() {
       },
     },
   };
-  const scrollToUniversities = () => {
-    const section = document.getElementById("Universities");
-
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section
       id="Home"
@@ -235,22 +225,21 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-8 mb-4 flex flex-col sm:flex-row gap-3 md:gap-[16px] w-full sm:w-auto"
             >
-              <a
-                href="#Universities"
-                onClick={scrollToUniversities}
+              <Link
+                href="/rgpv"
                 className="group flex justify-center cursor-pointer items-center gap-2 rounded-[12px] bg-indigo-600 hover:bg-indigo-500 px-[20px] py-[12px] text-[14px] md:px-[32px] md:py-[18px] md:text-[16px] font-[600] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_8px_30px_rgba(79,70,229,0.2)] transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_20px_50px_rgba(79,70,229,0.3)] active:scale-[0.98] w-full sm:w-auto"
               >
-                Start Learning
+                RGPV Engineering Hub
                 <div className="flex h-[20px] w-[20px] md:h-[22px] md:w-[22px] items-center justify-center rounded-[6px] bg-white/15">
                   <ArrowRight className="h-3.5 w-3.5" />
                 </div>
-              </a>
+              </Link>
 
               <Link
-                href="/about"
+                href="/subjects"
                 className="flex justify-center cursor-pointer items-center gap-2 rounded-[12px] border border-[#D8E2F0] bg-transparent px-[20px] py-[12px] text-[14px] md:px-[28px] md:py-[15px] md:text-[15px] font-[600] text-slate-600 transition-all duration-300 hover:border-[#C4D2E5] hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:text-slate-900 dark:border-white/10 dark:text-[#94a3b8] dark:hover:border-white/20 dark:hover:bg-transparent dark:hover:shadow-none dark:hover:text-[#e2e8f0] w-full sm:w-auto"
               >
-                Explore platform ↗
+                Subjects & Syllabus ↗
               </Link>
             </motion.div>
 

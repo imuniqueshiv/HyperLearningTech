@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = [
+  { name: "RGPV Engineering Hub", href: "/rgpv" },
+  { name: "Subjects & Syllabus", href: "/subjects" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
   { name: "Creators", href: "/creators" },
-  { name: "Feedback", href: "/#Contact" },
 ];
 
 export default function ConciseFooter() {
@@ -21,12 +22,12 @@ export default function ConciseFooter() {
           >
             <Image
               src="/hl-logo.png"
-              alt="Hyper Learning"
+              alt="Hyper Learning Tech"
               width={16}
               height={16}
               className="object-contain dark:brightness-[1.6]"
             />
-            <span>© {year} Hyper Learning. All rights reserved.</span>
+            <span>© {year} Hyper Learning Tech. All rights reserved.</span>
           </Link>
 
           <nav

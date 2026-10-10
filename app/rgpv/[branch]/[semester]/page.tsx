@@ -1,12 +1,30 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getSubjectsBySemester, type Subject } from "@/lib/data/subjects";
+import { branches } from "@/lib/data/branches";
 import { ArrowRight } from "lucide-react";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface SemesterPageProps {
   params: Promise<{
     branch: string;
     semester: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: SemesterPageProps): Promise<Metadata> {
+  const { branch, semester } = await params;
+  const branchInfo = branches.find((item) => item.id === branch);
+  const branchName = branchInfo?.name ?? branch.toUpperCase();
+  const semesterLabel = formatSemesterLabel(semester);
+
+  return buildPageMetadata({
+    title: `${branch.toUpperCase()} · ${semesterLabel}`,
+    description: `Subjects, syllabus, and previous-year questions for ${branchName} ${semesterLabel} on Hyper Learning Tech.`,
+    path: `/rgpv/${branch}/${semester}`,
+  });
 }
 
 function subjectSegment(subject: Subject) {
@@ -116,11 +134,11 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
             </span>
 
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-foreground md:text-6xl">
-              {semester.replace("-", " ").toUpperCase()}
+              {branch.toUpperCase()} · {formatSemesterLabel(semester)}
             </h1>
 
             <p className="mt-4 text-lg text-muted-foreground">
-              Branch:{" "}
+              RGPV subjects for{" "}
               <span className="font-semibold uppercase text-foreground">
                 {branch}
               </span>

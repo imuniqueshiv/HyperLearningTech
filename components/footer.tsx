@@ -12,7 +12,7 @@ import {
   Bell,
   Globe,
   Landmark,
-  LayoutDashboard,
+  BookOpen,
   UserRound,
   Info,
   Phone,
@@ -204,7 +204,7 @@ function FullFooter() {
               <div className="relative flex h-[54px] w-[54px] items-center justify-center overflow-hidden rounded-[14px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]">
                 <Image
                   src="/hl-logo.png"
-                  alt="Hyper Learning Logo"
+                  alt="Hyper Learning Tech Logo"
                   width={46}
                   height={46}
                   className="object-contain dark:brightness-[1.8] dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
@@ -213,9 +213,9 @@ function FullFooter() {
               <div>
                 <h2 className="text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300">
                   <span className="transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                    Hyper
+                    Hyper Learning
                   </span>{" "}
-                  Learning
+                  Tech
                 </h2>
                 <p className="text-[10.5px] font-semibold tracking-[0.2em] uppercase text-blue-500 dark:text-indigo-300 mt-0.5">
                   AI-Powered Learning
@@ -224,7 +224,7 @@ function FullFooter() {
             </Link>
 
             <p className="mt-5 max-w-[240px] text-[12.5px] leading-[1.6] text-slate-700 dark:text-slate-200 font-medium">
-              AI-powered learning platform for engineering students.
+              AI-powered RGPV learning for engineering students.
             </p>
 
             <div className="mt-7 flex items-center gap-3">
@@ -276,19 +276,19 @@ function FullFooter() {
               <ul className="space-y-3.5">
                 {[
                   {
-                    name: "Target CGPA",
-                    href: "/cgpa-calculator",
-                    icon: Calculator,
-                  },
-                  {
-                    name: "Universities",
-                    href: "/#Universities",
+                    name: "RGPV Engineering Hub",
+                    href: "/rgpv",
                     icon: Landmark,
                   },
                   {
-                    name: "Dashboard",
-                    href: "/dashboard",
-                    icon: LayoutDashboard,
+                    name: "Subjects & Syllabus",
+                    href: "/subjects",
+                    icon: BookOpen,
+                  },
+                  {
+                    name: "Target CGPA",
+                    href: "/cgpa-calculator",
+                    icon: Calculator,
                   },
                   { name: "Student Login", href: "/sign-in", icon: UserRound },
                 ].map((item) => (
@@ -316,7 +316,11 @@ function FullFooter() {
               <div className="mb-5 h-[2px] w-[28px] rounded-full bg-slate-300 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-indigo-400/50" />
               <ul className="space-y-3.5">
                 {[
-                  { name: "About Us", href: "/about", icon: Info },
+                  {
+                    name: "About Hyper Learning Tech",
+                    href: "/about",
+                    icon: Info,
+                  },
                   { name: "Contact", href: "/contact", icon: Phone },
                   { name: "Creators", href: "/creators", icon: Users },
                   { name: "Privacy Policy", href: "/privacy", icon: Shield },
@@ -390,7 +394,8 @@ function FullFooter() {
         <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-[#0a101f] md:dark:bg-white/[0.01] md:backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-none md:dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
           {/* Left: Copyright */}
           <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0">
-            © {new Date().getFullYear()} Hyper Learning. All rights reserved.
+            © {new Date().getFullYear()} Hyper Learning Tech. All rights
+            reserved.
           </p>
 
           {/* Center: Disclaimer */}

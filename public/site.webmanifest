@@ -1,7 +1,7 @@
 {
-  "name": "Hyper Learning",
-  "short_name": "Hyper Learning",
-  "description": "AI-powered engineering learning platform",
+  "name": "Hyper Learning Tech",
+  "short_name": "Hyper Learning Tech",
+  "description": "AI-powered RGPV B.Tech learning with syllabus-mapped subjects, previous year question papers and AI-powered study tools.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -16,5 +16,7 @@
   ],
   "theme_color": "#4F46E5",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
 }

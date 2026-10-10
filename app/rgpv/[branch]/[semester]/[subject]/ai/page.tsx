@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
 import WorkspaceChatLoader from "@/components/ai/workspace-chat-loader";
 import { getTopicById } from "@/lib/content";
 import { generateTopicAnswer } from "@/lib/ai/topic-service";
+
+export const metadata: Metadata = {
+  title: "Hyper AI",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 interface AIPageProps {
   params: Promise<{

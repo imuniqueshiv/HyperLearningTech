@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
 
@@ -129,94 +130,116 @@ export default function Universities() {
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filteredUniversities.length > 0 ? (
-              filteredUniversities.map((university) => (
-                <motion.div
-                  layout
-                  key={university.id}
-                  onClick={() => {
-                    if (university.status === "Available") {
-                      window.location.href = university.href;
-                    }
-                  }}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  className={`group relative flex flex-col overflow-hidden rounded-[20px] md:rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-4 md:p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
-                    university.status === "Available" ? "cursor-pointer" : ""
-                  }`}
-                >
-                  <div className="absolute inset-0 rounded-3xl border border-border/50 dark:border-white/5 transition-colors pointer-events-none group-hover:border-blue-500/15" />
-                  {/* Hover Glow */}
-                  <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/15 blur-3xl dark:bg-blue-500/15" />
-                  </div>
+              filteredUniversities.map((university) => {
+                const cardClassName = `group relative flex h-full flex-col overflow-hidden rounded-[20px] md:rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-4 md:p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
+                  university.status === "Available" ? "cursor-pointer" : ""
+                }`;
 
-                  {/* Badge */}
-                  <div className="relative z-10 mb-4 flex items-center justify-between">
-                    <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-[14px] md:rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                      <GraduationCap className="relative z-10 h-6 w-6 md:h-7 md:w-7 drop-shadow-sm" />
+                const cardBody = (
+                  <>
+                    <div className="absolute inset-0 rounded-3xl border border-border/50 dark:border-white/5 transition-colors pointer-events-none group-hover:border-blue-500/15" />
+                    {/* Hover Glow */}
+                    <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/15 blur-3xl dark:bg-blue-500/15" />
                     </div>
 
-                    <span
-                      className={`inline-flex items-center rounded-lg border px-3 py-1 text-xs font-bold uppercase tracking-wider ${
-                        university.status === "Available"
-                          ? "border-emerald-500/20 bg-emerald-50 text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-400"
-                          : "border-orange-500/20 bg-orange-50 text-orange-600 dark:bg-orange-500/10 dark:text-orange-400"
-                      }`}
-                    >
-                      {university.status}
-                    </span>
-                  </div>
+                    {/* Badge */}
+                    <div className="relative z-10 mb-4 flex items-center justify-between">
+                      <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-[14px] md:rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+                        <GraduationCap className="relative z-10 h-6 w-6 md:h-7 md:w-7 drop-shadow-sm" />
+                      </div>
 
-                  {/* Content */}
-                  <div className="relative z-10 flex flex-1 flex-col">
-                    <h3 className="text-xl md:text-2xl font-black tracking-tight text-foreground">
-                      {university.name}
-                    </h3>
-
-                    <p className="mt-1 text-xs font-bold uppercase tracking-wider text-[#1D4ED8] dark:text-blue-400">
-                      {university.fullName}
-                    </p>
-
-                    <p className="mt-2.5 md:mt-3 text-[14px] md:text-[15px] leading-relaxed text-muted-foreground">
-                      {university.description}
-                    </p>
-
-                    <div className="mt-4 mb-6 flex flex-wrap gap-2">
-                      {university.branches.map((branch) => (
-                        <span
-                          key={branch}
-                          className={`rounded-lg px-2.5 py-1 text-xs font-bold ring-1 ring-inset ${
-                            university.status === "Available"
-                              ? "bg-blue-50 text-blue-700 ring-blue-700/10 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/20"
-                              : "bg-muted text-muted-foreground ring-border/50 dark:bg-white/[0.02] dark:text-white/50 dark:ring-white/10"
-                          }`}
-                        >
-                          {branch}
-                        </span>
-                      ))}
+                      <span
+                        className={`inline-flex items-center rounded-lg border px-3 py-1 text-xs font-bold uppercase tracking-wider ${
+                          university.status === "Available"
+                            ? "border-emerald-500/20 bg-emerald-50 text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-orange-500/20 bg-orange-50 text-orange-600 dark:bg-orange-500/10 dark:text-orange-400"
+                        }`}
+                      >
+                        {university.status}
+                      </span>
                     </div>
 
-                    <div className="mt-auto pt-6">
-                      {university.status === "Available" ? (
-                        <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3 md:py-3.5 text-[13px] md:text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
-                          <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] pointer-events-none" />
-                          <span className="relative z-10 flex items-center gap-2">
-                            Explore University
-                            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1.5" />
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-1 flex-col">
+                      <h3 className="text-xl md:text-2xl font-black tracking-tight text-foreground">
+                        {university.name}
+                      </h3>
+
+                      <p className="mt-1 text-xs font-bold uppercase tracking-wider text-[#1D4ED8] dark:text-blue-400">
+                        {university.fullName}
+                      </p>
+
+                      <p className="mt-2.5 md:mt-3 text-[14px] md:text-[15px] leading-relaxed text-muted-foreground">
+                        {university.description}
+                      </p>
+
+                      <div className="mt-4 mb-6 flex flex-wrap gap-2">
+                        {university.branches.map((branch) => (
+                          <span
+                            key={branch}
+                            className={`rounded-lg px-2.5 py-1 text-xs font-bold ring-1 ring-inset ${
+                              university.status === "Available"
+                                ? "bg-blue-50 text-blue-700 ring-blue-700/10 dark:bg-blue-500/10 dark:text-blue-300 dark:ring-blue-500/20"
+                                : "bg-muted text-muted-foreground ring-border/50 dark:bg-white/[0.02] dark:text-white/50 dark:ring-white/10"
+                            }`}
+                          >
+                            {branch}
                           </span>
-                        </div>
-                      ) : (
-                        <div className="flex w-full items-center justify-start gap-2 py-3.5 text-sm font-medium text-muted-foreground/70">
-                          <Sparkles className="h-4 w-4 opacity-70" />
-                          Planned Expansion
-                        </div>
-                      )}
+                        ))}
+                      </div>
+
+                      <div className="mt-auto pt-6">
+                        {university.status === "Available" ? (
+                          <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3 md:py-3.5 text-[13px] md:text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
+                            <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] pointer-events-none" />
+                            <span className="relative z-10 flex items-center gap-2">
+                              RGPV Engineering Hub
+                              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1.5" />
+                            </span>
+                          </div>
+                        ) : (
+                          <div className="flex w-full items-center justify-start gap-2 py-3.5 text-sm font-medium text-muted-foreground/70">
+                            <Sparkles className="h-4 w-4 opacity-70" />
+                            Planned Expansion
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
-              ))
+                  </>
+                );
+
+                return university.status === "Available" ? (
+                  <motion.div
+                    layout
+                    key={university.id}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Link
+                      href={university.href}
+                      aria-label="RGPV Engineering Hub"
+                      className={cardClassName}
+                    >
+                      {cardBody}
+                    </Link>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    layout
+                    key={university.id}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                    className={cardClassName}
+                  >
+                    {cardBody}
+                  </motion.div>
+                );
+              })
             ) : (
               <motion.div
                 layout

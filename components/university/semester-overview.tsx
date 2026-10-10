@@ -117,9 +117,9 @@ export default function SemesterOverview({ branch }: { branch: string }) {
 
           {/* Main Title */}
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl text-foreground leading-[1.15]">
-            Semester Wise{" "}
+            {branchDisplayName}{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 bg-clip-text text-transparent dark:from-blue-400 dark:via-indigo-300 dark:to-cyan-400">
-              Learning Path
+              Semesters
             </span>
           </h1>
 

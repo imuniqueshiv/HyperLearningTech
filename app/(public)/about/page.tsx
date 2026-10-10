@@ -5,6 +5,15 @@ import Testimonials from "@/features/landing/testimonials";
 import FAQ from "@/features/landing/faq";
 import CgpaFeature from "@/features/landing/cgpa-feature";
 import { Suspense } from "react";
+import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "About Hyper Learning Tech",
+  description:
+    "Learn about Hyper Learning Tech — the AI-powered platform and mission behind syllabus-mapped RGPV subjects, PYQs, and study tools.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

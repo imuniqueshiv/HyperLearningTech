@@ -1,10 +1,13 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { FileText, Calendar, Clock, ChevronDown, Sparkles } from "lucide-react";
-import { getPYQs } from "@/lib/content";
+import { getPYQs, getSyllabus } from "@/lib/content";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 import QuestionAttachments from "@/components/pyqs/question-attachments";
 import { buildQuestionWithAttachments } from "@/lib/ai/prompt-builder";
 import type { SubQuestion } from "@/types/pyq";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
+
 interface PaperPageProps {
   params: Promise<{
     branch: string;
@@ -12,6 +15,25 @@ interface PaperPageProps {
     subject: string;
     paper: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PaperPageProps): Promise<Metadata> {
+  const { branch, semester, subject, paper } = await params;
+  const syllabus = await getSyllabus(branch, semester, subject);
+  const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
+  const semesterLabel = formatSemesterLabel(semester);
+  const paperLabel = paper
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+
+  return buildPageMetadata({
+    title: `${subjectTitle} PYQ · ${paperLabel}`,
+    description: `RGPV previous-year question paper (${paperLabel}) for ${subjectTitle} (${branch.toUpperCase()} ${semesterLabel}) on Hyper Learning Tech.`,
+    path: `/rgpv/${branch}/${semester}/${subject}/pyqs/${paper}`,
+  });
 }
 
 function splitQuestionText(text: string): string[] {
