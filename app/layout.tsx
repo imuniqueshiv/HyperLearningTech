@@ -5,6 +5,14 @@ import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ConditionalClerkProvider } from "@/components/providers/conditional-clerk-provider";
 import { Toaster } from "@/components/ui/sonner";
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_OG_IMAGE_PATH,
+  SITE_ORIGIN,
+  SITE_TITLE,
+  absoluteUrl,
+} from "@/lib/seo/site";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -14,41 +22,40 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.hyperlearningtech.in"),
+  metadataBase: new URL(SITE_ORIGIN),
 
   title: {
-    default: "Hyper Learning",
-    template: "%s | Hyper Learning",
+    default: SITE_TITLE,
+    template: `%s | ${SITE_NAME}`,
   },
 
-  description:
-    "Hyper Learning is an AI-powered engineering learning platform that helps students learn smarter through syllabus mapping, AI-generated explanations, previous year question analysis, and exam-focused preparation.",
+  description: SITE_DESCRIPTION,
 
-  applicationName: "Hyper Learning",
+  applicationName: SITE_NAME,
 
   keywords: [
-    "Hyper Learning",
-    "Engineering Notes",
+    "Hyper Learning Tech",
+    "HyperLearningTech",
     "RGPV",
-    "AI Learning Platform",
+    "RGPV B.Tech",
     "Previous Year Questions",
-    "Engineering Education",
-    "Semester Notes",
+    "Engineering Notes",
+    "AI Learning Platform",
+    "Syllabus",
     "Exam Preparation",
     "AI Tutor",
-    "HyperLearningTech",
   ],
 
   authors: [
     {
       name: "Shiv Raj Singh",
-      url: "https://www.hyperlearningtech.in",
+      url: SITE_ORIGIN,
     },
   ],
 
   creator: "Shiv Raj Singh",
 
-  publisher: "Hyper Learning",
+  publisher: SITE_NAME,
 
   robots: {
     index: true,
@@ -85,28 +92,27 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 
   openGraph: {
-    title: "Hyper Learning",
-    description:
-      "AI-powered engineering learning platform for syllabus-driven learning and exam preparation.",
-    url: "https://www.hyperlearningtech.in",
-    siteName: "Hyper Learning",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: absoluteUrl("/"),
+    siteName: SITE_NAME,
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/HL-social-share-image.png",
+        url: SITE_OG_IMAGE_PATH,
         width: 1200,
         height: 630,
-        alt: "Hyper Learning",
+        alt: SITE_NAME,
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Hyper Learning",
-    description: "AI-powered engineering learning platform for students.",
-    images: ["/HL-social-share-image.png"],
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [SITE_OG_IMAGE_PATH],
   },
 };
 

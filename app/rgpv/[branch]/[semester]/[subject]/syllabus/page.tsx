@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import { BookOpen } from "lucide-react";
 
 import { getSyllabus, getPYQs } from "@/lib/content";
 import { getQuestionsForModule } from "@/lib/content/question-mapper";
 import ModuleCard from "@/components/syllabus/module-card";
 import type { Topic } from "@/types/topic";
+import {
+  buildPageMetadata,
+  formatSemesterLabel,
+} from "@/lib/seo/metadata";
 
 interface Module {
   id: string;
@@ -21,6 +26,21 @@ interface SyllabusPageProps {
     semester: string;
     subject: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: SyllabusPageProps): Promise<Metadata> {
+  const { branch, semester, subject } = await params;
+  const syllabus = await getSyllabus(branch, semester, subject);
+  const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
+  const semesterLabel = formatSemesterLabel(semester);
+
+  return buildPageMetadata({
+    title: `${subjectTitle} Syllabus`,
+    description: `Unit-wise RGPV syllabus for ${subjectTitle} (${branch.toUpperCase()} ${semesterLabel}) on Hyper Learning Tech.`,
+    path: `/rgpv/${branch}/${semester}/${subject}/syllabus`,
+  });
 }
 
 interface MappedQuestion {
@@ -76,7 +96,7 @@ export default async function SyllabusPage({ params }: SyllabusPageProps) {
           </h1>
 
           <p className="mt-4 text-lg text-muted-foreground">
-            {branch.toUpperCase()} • {semester.toUpperCase()}
+            {branch.toUpperCase()} · {formatSemesterLabel(semester)}
           </p>
 
           {syllabus.subject?.university && (

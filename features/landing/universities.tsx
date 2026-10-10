@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
 
@@ -129,23 +130,13 @@ export default function Universities() {
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filteredUniversities.length > 0 ? (
-              filteredUniversities.map((university) => (
-                <motion.div
-                  layout
-                  key={university.id}
-                  onClick={() => {
-                    if (university.status === "Available") {
-                      window.location.href = university.href;
-                    }
-                  }}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  className={`group relative flex flex-col overflow-hidden rounded-[20px] md:rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-4 md:p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
-                    university.status === "Available" ? "cursor-pointer" : ""
-                  }`}
-                >
+              filteredUniversities.map((university) => {
+                const cardClassName = `group relative flex h-full flex-col overflow-hidden rounded-[20px] md:rounded-3xl border border-border/50 dark:border-white/10 bg-card dark:bg-gradient-to-b dark:from-white/5 dark:to-transparent p-4 md:p-5 shadow-lg dark:shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-[5.5px] hover:border-blue-400/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] ${
+                  university.status === "Available" ? "cursor-pointer" : ""
+                }`;
+
+                const cardBody = (
+                <>
                   <div className="absolute inset-0 rounded-3xl border border-border/50 dark:border-white/5 transition-colors pointer-events-none group-hover:border-blue-500/15" />
                   {/* Hover Glow */}
                   <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
@@ -203,7 +194,7 @@ export default function Universities() {
                         <div className="group/btn relative flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 px-4 py-3 md:py-3.5 text-[13px] md:text-sm font-bold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/50 hover:from-blue-500 hover:via-indigo-500 hover:to-blue-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] active:translate-y-0 active:shadow-[0_0_15px_rgba(37,99,235,0.2)] overflow-hidden">
                           <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)] pointer-events-none" />
                           <span className="relative z-10 flex items-center gap-2">
-                            Explore University
+                            RGPV Engineering Hub
                             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1.5" />
                           </span>
                         </div>
@@ -215,8 +206,40 @@ export default function Universities() {
                       )}
                     </div>
                   </div>
-                </motion.div>
-              ))
+                </>
+                );
+
+                return university.status === "Available" ? (
+                  <motion.div
+                    layout
+                    key={university.id}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Link
+                      href={university.href}
+                      aria-label="RGPV Engineering Hub"
+                      className={cardClassName}
+                    >
+                      {cardBody}
+                    </Link>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    layout
+                    key={university.id}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                    className={cardClassName}
+                  >
+                    {cardBody}
+                  </motion.div>
+                );
+              })
             ) : (
               <motion.div
                 layout

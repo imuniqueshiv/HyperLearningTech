@@ -11,11 +11,14 @@ import {
 import { Metadata } from "next";
 import { InteractivePath } from "./InteractivePath";
 import { ScrollReveal } from "./ScrollReveal";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Hyper Learning",
-  description: "Learn how we protect your data and privacy at Hyper Learning.",
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: "Privacy Policy",
+  description:
+    "Learn how Hyper Learning Tech protects your data and privacy while you use the learning platform.",
+  path: "/privacy",
+});
 
 export default function PrivacyPolicyPage() {
   return (

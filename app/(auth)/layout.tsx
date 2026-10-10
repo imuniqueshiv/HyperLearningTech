@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   LayoutDashboard,
   BrainCircuit,
@@ -9,6 +10,13 @@ import {
   Target,
   TrendingUp,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function AuthLayout({
   children,
@@ -241,7 +249,7 @@ export default function AuthLayout({
                 className="object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0 dark:opacity-70 dark:brightness-[1.2]"
               />
               <span>
-                © {new Date().getFullYear()} Hyper Learning. All rights
+                © {new Date().getFullYear()} Hyper Learning Tech. All rights
                 reserved.
               </span>
             </Link>

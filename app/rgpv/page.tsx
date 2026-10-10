@@ -1,6 +1,15 @@
 import UniversityHero from "@/components/university/university-hero";
 import BranchGrid from "@/components/university/branch-grid";
 import DashboardPage from "@/app/dashboard/page";
+import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "RGPV Engineering Hub",
+  description:
+    "Branches, semesters and subjects for RGPV B.Tech students — syllabus, previous-year questions, and AI learning tools on Hyper Learning Tech.",
+  path: "/rgpv",
+});
 
 export default function RGPVPage() {
   return (
