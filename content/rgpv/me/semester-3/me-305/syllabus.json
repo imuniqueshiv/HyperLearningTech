@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "me-305",
+    "code": "ME-305",
+    "name": "Manufacturing Process",
+    "title": "ME-305 - Manufacturing Process",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Casting",
+      "topics": [
+        ", metal forming, metal cutting and gear manufacturing.",
+        "Concepts of casting Technology. 2.",
+        "Mechanical working of metals. 3 Concepts of"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Welding",
+      "topics": [
+        "process 4 Concept of forging methods 5 Understanding press working .",
+        "Casting : Types of casting process .Molding and Foundry core sands and their properties, gating, runners, risers, solidification, defects and elimination, molding machines, centrifugal casting, dye casting, shell molding",
+        "Lost wax molding",
+        "continuous casting",
+        "cupola description and operation.",
+        "Welding: Types of welding ,Gas welding method, flames, gas cutting",
+        "Electric arc welding",
+        "AC and DC welding machines and their characteristics, flux, electrodes, submerged arc welding",
+        "TIG & MIG welding",
+        "pressure welding",
+        "electric resistance welding spot, seam and butt welding",
+        "Thermit chemical welding",
+        "brazing and soldering, welding defects & remedies .safety precautions ."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Pattern Making",
+      "topics": [
+        "Types of patters",
+        "Pattern and pattern making, pattern allowances",
+        "pattern design considerations, core, core boxes ."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Forging",
+      "topics": ["methods 5 Understanding"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Press working",
+      "topics": [
+        "Casting : Types of casting process .Molding and Foundry core sands and their properties, gating, runners, risers, solidification, defects and elimination, molding machines, centrifugal casting, dye casting, shell molding",
+        "Lost wax molding",
+        "continuous casting",
+        "cupola description and operation.",
+        "Welding: Types of welding ,Gas welding method, flames, gas cutting",
+        "Electric arc welding",
+        "AC and DC welding machines and their characteristics, flux, electrodes, submerged arc welding",
+        "TIG & MIG welding",
+        "pressure welding",
+        "electric resistance welding spot, seam and butt welding",
+        "Thermit chemical welding",
+        "brazing and soldering, welding defects & remedies .safety precautions .",
+        "Pattern Making: Types of patters",
+        "Pattern and pattern making, pattern allowances",
+        "pattern design considerations, core, core boxes .",
+        "Forging: types of forging operations Theory and application of forging processes description",
+        ", drop and horizontal forging machines .",
+        "Press working: Description and operation of processes, process of shearing, punching, piercing, blanking, trimming, perfecting, notching, lancing, embossing, coining, bending, forging and drawing",
+        "press, tool dies, auxiliary equipment, safety devices, stock feeders, scrap cutters, forces, pressure and power requirements .",
+        "Rolling: Types of Rolling operations ,General description of machines and process",
+        "rolling of structural section plates and sheets",
+        "hot and cold rolling techniques Metal Machining : Basics of Lathe machines , operations & components ,working principle of Shaper & planner ,Introduction to milling ,grinding and drilling machines ."
+      ]
+    }
+  ]
+}

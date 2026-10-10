@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "me-702-a",
+    "code": "ME-702 (A)",
+    "name": "Advance Machining Processes",
+    "title": "ME-702 (A) - Advance Machining Processes",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Mechanical processes",
+      "topics": [
+        "tool system design",
+        "ultrasonic machining",
+        "abrasive jet machining",
+        "water jet machining",
+        "effect of parameters and variables",
+        "applications and limitations",
+        "recent developments in mechanical processes."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Electrochemical and chemical metal removal processes",
+      "topics": [
+        "elements of ECM",
+        "power source and control system",
+        "electrolytes",
+        "tool work system",
+        "chemistry of the process",
+        "tool design and metal removal rate",
+        "process faults",
+        "material removal and surface finish",
+        "electrochemical grinding",
+        "electrochemical deburring",
+        "electrochemical honing",
+        "chemical machining,"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Thermal metal removal processes",
+      "topics": [
+        "mechanism of metal removal",
+        "spark erosion generator",
+        "electrod feed control",
+        "vibrating electrode system",
+        "dielectric fluid",
+        "flushing",
+        "accuracy",
+        "plasma arc machining[PAM]",
+        "non thermal generation of plasma",
+        "mechanisms and parameters",
+        "equipments",
+        "electron beam machining[EBM],generation and control of electron beam",
+        "theory and process capabilities",
+        "neutral particle etching",
+        "laser beam machining",
+        "hot machining",
+        "methods of local heating,tool lie and production rate."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Rapid prototyping fabrication methods",
+      "topics": [
+        "principles and working of 3D printing, subtractive v/s additive manufacturing process",
+        "VAT photo polymerization, material and binder jetting, continuous liquid inter phase production, direct metal laser sintering."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Technologies of micro fabrication",
+      "topics": [
+        "micro fabrication processes",
+        "LIGA process .Technologies of nano fabrication, importance of size, scanning probe microscope, carbon Buckyballs and nano tubes, nano fabrication processes,"
+      ]
+    }
+  ]
+}

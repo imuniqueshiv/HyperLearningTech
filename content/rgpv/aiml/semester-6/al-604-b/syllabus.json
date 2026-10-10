@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "al-604-b",
+    "code": "AL604 (B)",
+    "name": "Information Security & Management",
+    "title": "AL604 (B) - Information Security & Management",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Needs for Security",
+        "Basic security terminologies e.g. threats, vulnerability, exploit etc.",
+        "Security principles (CIA), authentication, nonrepudiation",
+        "Security attacks and their classifications",
+        "Mathematical foundation - Prime Number; Modular Arithmetic",
+        "Fermat's and Euler's Theorem",
+        "The Euclidean Algorithms",
+        "The Chinese Remainder Theorem",
+        "Discrete logarithms"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Symmetric Key Cryptography",
+      "topics": [
+        "Classical cryptography - substitution, transposition and their cryptanalysis",
+        "Symmetric Cryptography Algorithm - DES, 3DES, AES etc.",
+        "Modes of operation: ECB, CBC etc.",
+        "Cryptanalysis of Symmetric Key Ciphers: Linear Cryptanalysis, Differential Cryptanalysis"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Asymmetric Key Cryptography",
+      "topics": [
+        "Key Distribution and Management",
+        "Diffie-Hellman Key Exchange algorithm",
+        "Asymmetric Key Cryptography Algorithm - RSA, ECC etc.",
+        "Various types of attacks on Cryptosystems"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Authentication & Integrity",
+      "topics": [
+        "MAC, Hash function, SHA, MD5, HMAC",
+        "Digital signature and authentication protocols",
+        "Authorization",
+        "Access control mechanism",
+        "X.509 Digital Certificate"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "E-mail, IP and Web Security",
+      "topics": [
+        "E-mail security - PGP, MIME, S/MIME",
+        "IP security protocols",
+        "Web security - TLS, SSL etc.",
+        "Secure Electronic Transaction (SET)",
+        "Firewall and its types",
+        "Introduction to IDPS",
+        "Risk Management",
+        "Security Planning"
+      ]
+    }
+  ]
+}

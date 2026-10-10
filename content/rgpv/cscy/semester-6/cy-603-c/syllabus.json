@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "cy-603-c",
+    "code": "CY-603 (C)",
+    "name": "Autometa & Compiler design",
+    "title": "CY-603 (C) - Autometa & Compiler design",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Structure in compiler, types of Compiler",
+        "Front-end and Back-end of compiler",
+        "Compiler structure: analysis-synthesis model of compilation, various phases of a compiler",
+        "Lexical analysis: Input buffering",
+        "Specification & Recognition of Tokens,Design of a Lexical Analyzer Generator",
+        "LEX."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Syntax Analysis &Syntax Directed Translation Syntax analysis: CFGs, Top down",
+      "topics": [
+        "parsing",
+        "Brute force approach, recursive descent parsing, transformation on the grammars, predictive parsing, bottom up parsing, operator precedence parsing",
+        "LR parsers (SLR,LALR, LR),Parser generation.",
+        "Syntax directed definitions: Construction of Syntax trees",
+        "Bottom up evaluation of S-attributed definition",
+        "L-attribute definition",
+        "Top down translation",
+        "Bottom Up evaluation of inherited attributes Recursive Evaluation",
+        "Analysis of Syntax directed definition."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "simple type checker, equivalence of expression, types, type conversion, overloading of functions and operations, polymorphic functions.",
+        "Run time Environment: storage organization",
+        "Storage allocation strategies, parameter passing, dynamic storage allocation",
+        "Symbol table",
+        "Error Detection & Recovery",
+        "Ad-Hoc and Systematic Methods."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Boolean expressions",
+        "Case statements",
+        "Back patching",
+        "Procedure calls Code Generation: Issues in the design of code generator",
+        "Basic block and flow graphs",
+        "Register allocation and assignment",
+        "DAG representation of basic blocks, peephole optimization, generating code from DAG."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "blocks, loops in flow graphs, dead code elimination, loop optimization",
+        "Introduction to global data flow analysis",
+        "Code Improving transformations ,Data flow analysis of structure flow graph Symbolic debugging of optimized code."
+      ]
+    }
+  ]
+}

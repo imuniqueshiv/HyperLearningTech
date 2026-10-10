@@ -1,0 +1,28 @@
+{
+  "subject": {
+    "id": "me-505",
+    "code": "ME-505",
+    "name": "FEM/CFD Lab",
+    "title": "ME-505 - FEM/CFD Lab",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "To study fundamentals of Computational Fluid Dynamics (CFD)",
+        "To perform CFD analysis of lid driven cavity in Open-Foam",
+        "To perform CFD analysis of square tube in Open-Foam",
+        "To perform CFD analysis of a 2D-plate in Open-Foam",
+        "To perform CFD analysis of bifurcated blood vessel in FEM",
+        "To study fundamentals of Finite element method and FEA",
+        "To perform FEM analysis of deep drawing process in FEM",
+        "To study fundamentals of Sci-Lab",
+        "To perform matrix operations in Sci-lab",
+        "To plot 2D & 3D graphs in Sci-lab"
+      ]
+    }
+  ]
+}

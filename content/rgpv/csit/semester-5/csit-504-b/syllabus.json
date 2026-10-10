@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "csit-504-b",
+    "code": "CSIT-504 (B)",
+    "name": "Artificial Intelligence",
+    "title": "CSIT-504 (B) - Artificial Intelligence",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Artificial Intelligence",
+      "topics": [
+        "Meaning and definition of artificial intelligence",
+        "Production systems",
+        "Characteristics of production systems",
+        "Breadth-first search and depth-first search techniques",
+        "Hill climbing",
+        "Best-first search",
+        "A* algorithm",
+        "AO* algorithms",
+        "Various types of control strategies"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Knowledge Representation",
+      "topics": [
+        "Knowledge representation",
+        "Problems in representing knowledge",
+        "Knowledge representation using propositional and predicate logic",
+        "Comparison of propositional and predicate logic",
+        "Resolution",
+        "Refutation",
+        "Deduction",
+        "Theorem proving",
+        "Inferencing",
+        "Monotonic and non-monotonic reasoning"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Probabilistic and Structured Knowledge",
+      "topics": [
+        "Probabilistic reasoning",
+        "Bayes' theorem",
+        "Semantic networks",
+        "Scripts",
+        "Schemas",
+        "Frames",
+        "Conceptual dependency",
+        "Fuzzy logic",
+        "Forward and backward reasoning"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Game Playing and Natural Language",
+      "topics": [
+        "Game playing techniques: minimax procedure",
+        "Alpha-beta cut-offs",
+        "Planning",
+        "Study of the block world problem in robotics",
+        "Introduction to understanding",
+        "Natural language processing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Learning and Expert Systems",
+      "topics": [
+        "Introduction to learning",
+        "Various techniques used in learning",
+        "Introduction to neural networks",
+        "Applications of neural networks",
+        "Common sense reasoning",
+        "Examples of expert systems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "ad-404",
+    "code": "AD-404",
+    "name": "Data Science",
+    "title": "AD-404 - Data Science",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Data Science",
+      "topics": [
+        "Types of Data: structured and unstructured data",
+        "Data Science Road Map: Frame the Problem; Understand the Data, Data Wrangling, Exploratory Analysis, Extract Features, Model and Deploy Code",
+        "Graphical Summaries of Data: Pie Chart, Bar Graph, Pareto Chart, Histogram",
+        "Measures of central tendency of Quantitative Data: Mean, Median, Mode",
+        "Measures of Variability of Quantitative Data: Range, Standard Deviation and Variance",
+        "Probability: Introduction to Probability, Conditional Probability"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unstructured Data Analytics",
+      "topics": [
+        "Importance of Unstructured Data",
+        "Unstructured Data Analytics: Descriptive, diagnostic, predictive and prescriptive data Analytics based on Case study",
+        "Data Visualization: boxplots, histograms, scatterplots, features map visualization, t-SNE",
+        "Overview of Advance Excel- Introduction, Data validation, Introduction to charts, pivot table, Scenario manager, Protecting data, Excel minor, Introduction to macros"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Statistical & Probabilistic analysis of Data",
+      "topics": [
+        "Multiple hypothesis testing",
+        "Parameter Estimation methods",
+        "Confidence intervals",
+        "Correlation & Regression analysis, logistic regression",
+        "Shrinkage Methods, Lasso Regression, Bayesian statistics",
+        "L1 and L2 regularizations",
+        "POWERFUL DATA ANALYSIS—SUMIFS, SUMPRODUCT, VLOOKUP | XLOOKUP, INDEX + MATCH",
+        "Handling Formula Errors, Dynamic Array Formulas, Circular References, Formula Auditing, Pivoting"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Data Manipulation With Pandas",
+      "topics": [
+        "Introduction to Pandas, understanding DataFrame",
+        "Missing Values, Data operation, String Manipulation, Regular Expressions and Data learning",
+        "Outlier and Error",
+        "Visualization tool in Python: Representation of Pie Chart, Bar Chart, Histogram, Scatterplots using Python",
+        "Data Analysis, performance metrics, ROC curve, types of errors",
+        "Overfitting & Under fitting",
+        "Evaluating performance of learning model: Holdout, Random sampling, cross validation and Bootstrap method",
+        "Bagging & boosting, Gradient Boosting, Random Forests, Committee Machines"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to Business Intelligence",
+      "topics": [
+        "Introduction, Types of Business Intelligence",
+        "Modern Business Intelligence Tools, Modern Business Intelligence",
+        "Data Science and Ethical Issues- Unfair discrimination, Reinforcing human biases, Lack of transparency",
+        "Discussions on privacy, security, ethics",
+        "Role of Next-generation data scientists"
+      ]
+    }
+  ]
+}

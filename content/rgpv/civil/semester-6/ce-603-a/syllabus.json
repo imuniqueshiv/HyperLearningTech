@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "ce-603-a",
+    "code": "CE603 (A)",
+    "name": "Water Resource Engineering",
+    "title": "CE603 (A) - Water Resource Engineering",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Irrigation water requirement and Soil-Water-Crop relationship",
+      "topics": [
+        "Irrigation, definition, necessity, advantages and disadvantages, types and methods; Irrigation development",
+        "Soils - types and their occurrence, suitability for irrigation purposes, wilting coefficient and field capacity, optimum water supply, consumptive use and its determination",
+        "Irrigation methods surface and subsurface, sprinkler and drip irrigation",
+        "Duty of water, factors affecting duty and methods to improve duty, suitability of water for irrigation",
+        "Crops and crop seasons, principal crops and their water requirement, crop ratio and crop rotation, intensity of irrigation"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Ground Water and Well irrigation",
+      "topics": [
+        "Confined and unconfined aquifers, aquifer properties, hydraulics of wells under steady flow conditions, infiltration galleries",
+        "Ground water recharge-necessity and methods of improving ground water storage",
+        "Water logging-causes, effects and its prevention; Salt efflorescence causes and effects",
+        "Reclamation of water logged and salt affected lands",
+        "Types of wells, well construction, yield tests, specific capacity and specific yield, advantages and disadvantages of well irrigation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Hydrology",
+      "topics": [
+        "Hydrological cycle, precipitation and its measurement, recording and non recording rain gauges",
+        "Estimating missing rainfall data, rain gauge net works, mean depth of precipitation over a drainage area",
+        "Mass rainfall curves, intensity-duration curves, depth-area duration curves",
+        "Infiltration and infiltration indices, evaporation stream gauging, run off and its estimation",
+        "Hydrograph analysis, unit hydrograph and its derivation from isolated and complex storms, S curve hydrograph, synthetic unit hydrograph"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Canals and Structures",
+      "topics": [
+        "Types of canals, alignment, design of unlined and lined canals, Kennedy's and Lacey's silt theories, typical canal sections, canal losses",
+        "Lining-objectives, materials used, economics",
+        "Introductions to Hydraulic Structures viz. Dams, Spillways, Weirs, Barrages, Canal Regulation Structures"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Floods",
+      "topics": [
+        "Types of floods and their estimation by different methods, probability and frequency analysis",
+        "Flood routing through reservoirs and channels",
+        "Flood control measures, economics of flood control"
+      ]
+    }
+  ]
+}

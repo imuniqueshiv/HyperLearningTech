@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "ad-802-c",
+    "code": "AD-802 (C)",
+    "name": "Robotic Process Automation",
+    "title": "AD-802 (C) - Robotic Process Automation",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "IntroductiontoRPA: Scopeandtechniquesofautomation, Roboticprocessautomation,",
+      "topics": [
+        "BenefitsofRPA,ComponentsofRPA,RPAplatforms,Thefutureofautomation.RPABasics:Hist ory of Automation",
+        "RPA vs Automation",
+        "Processes & Flowcharts",
+        "Programming Constructs inRPA, Types of Bots",
+        "RPA Development methodologies",
+        "Robotic controlflow architecture,RPA business case",
+        "IndustriesbestsuitedforRPA, Risks&ChallengeswithRPA, RPAandemergingecosystem."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "RPA ToolIntroductionandBasics: Introduction to RPA Tool, The User Interface,",
+      "topics": [
+        "Variables",
+        "Managing Variables,Managing Arguments",
+        "Arguments Panel",
+        "Imported Namespaces",
+        "Control Flow-If Else Statements",
+        "Loops",
+        "Advanced Control Flow",
+        "Data Manipulation:Scalar variables, collections and Tables",
+        "Text Manipulation",
+        "Data Manipulation",
+        "Gathering and Assembling Data"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "AdvancedAutomationConcepts&Techniques: Recording Introduction: Basic and",
+      "topics": [
+        "Desktop Recording",
+        "Web Recording",
+        "Input-Output Methods",
+        "Screen Scraping",
+        "Data Scraping,scraping advanced techniques,Selectors",
+        "Defining and Assessing Selectors,Customization",
+        "Debugging",
+        "Dynamic Selectors",
+        "Partial Selectors.",
+        "RPA Challenge - Image",
+        "Text & Advanced Citrix Automation",
+        "ExcelDataTables&PDF,DataTablesinRPA,ExcelandDataTablebasics",
+        "DataManipulationine xcel-ExtractingDatafromPDF,extractingasinglepieceofdata,Anchors,Usinganchors inPDF."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Handling UserEvents&AssistantBots: What are assistant bots, Monitoring",
+      "topics": [
+        "system event triggers",
+        "Hotkey trigger",
+        "Mouse trigger",
+        "System trigger,Monitoringimageandelementtriggers",
+        "Launchinganassistantbotonakeyboardevent.ExceptionHandling:DebuggingandExceptionHa ndling,DebuggingTools,Strategiesforsolvingissues,Catchingerrors."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Deploying and Maintaining Bot:Publishing using publish utility, Creation of",
+      "topics": [
+        "Server",
+        "Using Server to control the bots,creating a provision Robot fromServer,connecting a Robot to Server",
+        "Deploy Robot to Server",
+        "Publishing and managing updates,managingpackages,uploadingpackages",
+        "Deleting packages ReferenceBooks: 1.",
+        "AlokManiTripathi,\"LearningRoboticProcessAutomation\",PacktPublishing,2018. 2.",
+        "Frank Casale",
+        "Rebecca Dilla",
+        "Heidi Jaynes",
+        "Lauren Livingston, \"Introduction to Robotic Process Automation:aPrimer\",Instituteof Robotic ProcessAutomation,1stEdition2015. 3.",
+        "RichardMurdoch,RoboticProcessAutomation:GuideToBuildingSoftwareRobot s,AutomateRepetitiveTasks&Become AnRPAConsultant\",IndependentlyPublished,1stEdition2018. 4.",
+        "Srikanth Merianda,\" Robotic Process Automation Tools",
+        "Process Automation andtheirbenefits:UnderstandingRPAandIntelligentAutomation\",Consulting opportunityHoldingsLLC,1stEdition2018. 5.",
+        "Lim Mei Ying, \"Robotic Process Automation with Blue Prism Quick Start Guide: Create software robots and automate business processes\", Packt Publishing, 1st Edition 2018.",
+        "Web references: 1. https://www.uipath.com/rpa/robotic,process,automation 2. https://www.academy.uipath.com"
+      ]
+    }
+  ]
+}

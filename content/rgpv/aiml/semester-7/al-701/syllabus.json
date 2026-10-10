@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "al-701",
+    "code": "AL-701",
+    "name": "Computer Vision",
+    "title": "AL-701 - Computer Vision",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to computer vision",
+      "topics": [
+        "Introduction to computer vision",
+        "Introduction to images",
+        "Image Processing VS Computer Vision",
+        "Problems in Computer Vision",
+        "Basic image operations",
+        "Mathematical operations on images: Datatype Conversion, Contrast Enhancement, Brightness Enhancement",
+        "Bitwise operations: Different Bitwise Operations"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Binary Image Processing",
+      "topics": [
+        "Binary Image Processing",
+        "Thresholding",
+        "Erosion / Dilation",
+        "Overview on Opening and Closing",
+        "Connected Component Analysis",
+        "Contour Analysis"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Image Enhancement and Filtering",
+      "topics": [
+        "Image Enhancement and Filtering",
+        "Color Spaces",
+        "Color Transforms",
+        "Histogram Equalization",
+        "Advanced Histogram Equalization (CLAHE)",
+        "Color Adjustment using Curves",
+        "Image Filtering: Introduction to Image Filtering",
+        "What is Convolution",
+        "Image Smoothing: Box Blur, Gaussian Blur, Median Blur"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Image Gradients, Segmentation and Recognition",
+      "topics": [
+        "Introduction to Image Gradients: First Order Derivative Filters, Second Order Derivative Filters",
+        "Edge Detection",
+        "Image Segmentation and Recognition",
+        "Image Classification",
+        "Object detection"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Applications of Computer Vision",
+      "topics": [
+        "Gesture Recognition",
+        "Motion Estimation and Object Tracking",
+        "Face detection",
+        "Deep Learning with OpenCV"
+      ]
+    }
+  ]
+}

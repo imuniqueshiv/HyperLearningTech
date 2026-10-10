@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-504-a",
+    "code": "CE504 (A)",
+    "name": "Urban & Town Planning",
+    "title": "CE504 (A) - Urban & Town Planning",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Definition and classification of urban areas",
+      "topics": [
+        "Definition and classification of urban areas - Trend of urbanization",
+        "Planning process - Various stages of the planning process - Surveys in planning",
+        "Plans - Delineation of planning areas, utility of spaces, future growth etc.",
+        "Role of Urban Planner in planning and designing in relation with spatial organization, utility, demand of the area and supply"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Plan implementation",
+      "topics": [
+        "Urban Planning agencies and their functions - Financing- Public, private, Nongovernmental organizations",
+        "Public participation in Planning; Development control regulations",
+        "Sustainability and rationality in planning, Components of sustainable urban and regional development",
+        "Emerging Concepts: Global City, inclusive city, Safe city, etc. City of the future, future of the city"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Town and country planning act",
+      "topics": [
+        "Town and country planning act- Building bye-laws",
+        "Elements of City Planning, Zoning and land use, Housing",
+        "Introduction to landscaping, importance, objectives, principles, elements",
+        "Urban Planning standards; Urban renewal for quality of life and livability"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Traffic transportation systems and Legal Issues",
+      "topics": [
+        "Traffic transportation systems: urban road, hierarchy, traffic management, Intelligent Transport Systems",
+        "Legal Issues in Planning and Professional Practice",
+        "Concepts and contents related to planning provision regarding property rights, Concept of Arbitration",
+        "State and Central government to deal with various matters concerning Town and Country Planning",
+        "Mechanism for preparation of DP: Land Acquisition Rehabilitation and Resettlement Act 2013"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Types of Development plans",
+      "topics": [
+        "Types of Development plans: Master Plan, City Development Plan, Structure Plan, housing, land use, Water Supply & sanitation, etc.",
+        "Planning agencies for various levels of planning",
+        "Their organization and purpose (CIDCO-MHADA-MIDC, MMRDA/ PMRDA etc)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "ce-504-d",
+    "code": "CE504 (D)",
+    "name": "Entrepreneurship Development & Management",
+    "title": "CE504 (D) - Entrepreneurship Development & Management",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Entrepreneurship",
+      "topics": [
+        "Entrepreneur Types of Entrepreneurs – Difference between Entrepreneur and Intrapreneur",
+        "Entrepreneurship in Economic Growth, Factors Affecting Entrepreneurial Growth"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Motivation",
+      "topics": [
+        "Major Motives Influencing an Entrepreneur – Achievement Motivation Training, Self Rating, Business Games, Thematic Apperception Test",
+        "Stress Management",
+        "Entrepreneurship Development Programs – Need, Objectives"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Business",
+      "topics": [
+        "Small Enterprises – Definition, Classification – Characteristics, Ownership Structures",
+        "Project Formulation – Steps involved in setting up a Business – identifying, selecting a Good Business opportunity",
+        "Market Survey and Research, Techno Economic Feasibility Assessment",
+        "Preparation of Preliminary Project Reports – Project Appraisal – Sources of Information – Classification of Needs and Agencies"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Financing And Accounting",
+      "topics": [
+        "Need – Sources of Finance, Term Loans, Capital Structure, Financial Institution",
+        "Management of working Capital, Costing, Break Even Analysis",
+        "Taxation – Income Tax, Excise Duty – Sales Tax"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Support To Entrepreneurs",
+      "topics": [
+        "Sickness in small Business – Concept, Magnitude, Causes and Consequences, Corrective Measures",
+        "Business Incubators – Government Policy for Small Scale Enterprises",
+        "Growth Strategies in small industry – Expansion, Diversification, Joint Venture, Merger and Sub Contracting"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "me-504-a",
+    "code": "ME-504 (A)",
+    "name": "Industrial Engineering & Ergonomics",
+    "title": "ME-504 (A) - Industrial Engineering & Ergonomics",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Method study: purpose of work study, its objectives, procedure and applications",
+      "topics": [
+        "study definition and basic procedure, selection of job, various recording techniques like outline process charts, flow process charts, man machine charts, two handed process charts, string diagram, flow diagram, multiple activity chart, simo, cyclographs and chrono-cyclographs",
+        "critical examination, development, installation and maintenance of improved method",
+        "principles of motion economy and their application in work design",
+        "micro motion study, memo motion study and their use in methods study."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "measurement",
+        "application of work measurement in industries",
+        "time study: basic procedure, equipments needed, methods of measuring time, selection of jobs, breaking a job into elements",
+        "numbers of cycles to be timed",
+        "rating and methods of rating, allowances, calculation of standard time.",
+        "Work sampling: Basic procedure, design of work sampling study conducting work sampling study and establishment of standard-time."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Job evaluation and incentive schemes: Starlight line, Tailor, Merrick and Gantt",
+      "topics": [
+        "incentive plans Standard data system",
+        "elemental and non-elemental predetermined motion systems, work factors system",
+        "Methods Time Measurement (MTM)",
+        "MOST"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Human factor engineering: Definition and history of development of human factors",
+      "topics": [
+        "engineering, types & characteristics of man-machine-system, relative capabilities of human being and machines",
+        "development and use of human factor data",
+        "information input and processing: Introduction to information theory",
+        "factors effecting information reception and processing",
+        "coding and selecting of sensory inputs."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "indicators and warning signals",
+        "factorial and graphic display",
+        "general principles of auditory and tactral display, characteristics and selection."
+      ]
+    }
+  ]
+}

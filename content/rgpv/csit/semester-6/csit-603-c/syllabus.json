@@ -1,0 +1,98 @@
+{
+  "subject": {
+    "id": "csit-603-c",
+    "code": "CSIT-603 (C)",
+    "name": "Advanced Computer Architecture (ACA)",
+    "title": "CSIT-603 (C) - Advanced Computer Architecture (ACA)",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Parallel Computer Models and Interconnection",
+      "topics": [
+        "Flynn's classification",
+        "System attributes to performance",
+        "Multiprocessors and multicomputers",
+        "Multivector and SIMD computers",
+        "Data and resource dependences",
+        "Hardware and software parallelism",
+        "Program partitioning and scheduling",
+        "Grain size and latency",
+        "Control flow, data flow and demand driven mechanisms",
+        "Static interconnection networks",
+        "Dynamic interconnection networks: bus systems, crossbar switch, multiport memory, multistage and combining networks"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Processors and Memory Hierarchy",
+      "topics": [
+        "Instruction set architecture",
+        "CISC scalar processors",
+        "RISC scalar processors",
+        "VLIW architecture",
+        "Memory hierarchy: inclusion, coherence and locality",
+        "Memory capacity planning",
+        "Interleaved memory organization and memory interleaving",
+        "Pipelined memory access",
+        "Bandwidth and fault tolerance",
+        "Backplane bus system: specification, addressing and timing protocols, arbitration transaction and interrupt"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Pipelining and Superscalar Design",
+      "topics": [
+        "Linear pipeline processor",
+        "Nonlinear pipeline processor",
+        "Instruction pipeline design",
+        "Mechanisms for instruction pipelining",
+        "Pipeline hazards",
+        "Dynamic instruction scheduling: scoreboarding and Tomasulo's algorithm",
+        "Branch handling techniques",
+        "Arithmetic pipeline design",
+        "Static arithmetic pipeline and multifunctional arithmetic pipelines",
+        "Superscalar pipeline design",
+        "Super pipeline processor design"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cache Coherence, Vector and Multithreading",
+      "topics": [
+        "Cache coherence",
+        "Snoopy protocols",
+        "Directory based protocols",
+        "Message routing schemes in multicomputer network",
+        "Deadlock and virtual channel",
+        "Vector processing principles and vector instruction types",
+        "Vector-access memory schemes",
+        "Vector supercomputer architecture",
+        "SIMD organization: distributed memory model and shared memory model",
+        "Principles of multithreading: issues and solutions",
+        "Multiple-context processors"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Parallel Programming Models",
+      "topics": [
+        "Shared-variable model",
+        "Message-passing model",
+        "Data-parallel model",
+        "Object-oriented model",
+        "Functional and logic models",
+        "Parallel languages and compilers",
+        "Language features for parallelism",
+        "Parallel programming environment",
+        "Software tools and environments"
+      ]
+    }
+  ]
+}

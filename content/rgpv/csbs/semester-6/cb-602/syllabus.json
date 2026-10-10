@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "cb-602",
+    "code": "CB-602",
+    "name": "Information Security",
+    "title": "CB-602 - Information Security",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview of Computer Security",
+      "topics": [
+        "The Basic Components- Confidentiality, integrity and availability",
+        "Security policy and procedure; Assumptions and Trust; Security Assurance, Implementation and operational issues",
+        "Security Life Cycle -Access Control Models: Role based Model"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Security Policies and System Design",
+      "topics": [
+        "Types of Security Policies-Confidentiality policies: Goals of Confidentiality Policies, The Bell-LaPadula Model",
+        "Integrity policies: Biba Integrity Model, Clark-Wilson Integrity Model",
+        "Hybrid policies: Chinese Wall Model, Clinical Information Systems Security Policy",
+        "Access Control Mechanisms: Access Control Lists",
+        "Information Flow: Compiler-Based Mechanisms, Execution-Based Mechanisms",
+        "Confinement Problem: Isolation, Covert Channels",
+        "Assurance: Building Secure and Trusted Systems- Evaluating Systems: Goals of Formal Evaluation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "System Security",
+      "topics": [
+        "Malicious Logic: Trojan Horses, Computer Viruses, Computer Worms",
+        "Vulnerability Analysis: Penetration Studies, Vulnerability Classification",
+        "Auditing: Anatomy of an Auditing System, Auditing Mechanisms, Audit Browsing",
+        "Intrusion Detection: Architecture, Organization of Intrusion Detection Systems",
+        "Design Principles- Representing Identity: Files and Objects, Users, Groups and Roles, Naming and Certificates"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Applications",
+      "topics": [
+        "Network Security: Policy Development, Network Organization",
+        "System Security: Policy",
+        "User Security: Policy, Access, Files and Devices",
+        "Program Security: Requirements and Policy, Design, Case Study: Common Security-Related Programming Problems"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Operating System and Database Security",
+      "topics": [
+        "Operating System Security: Security Architecture, Analysis of Security in Linux/Windows",
+        "Database Security: Security Architecture, Database Auditing",
+        "Case Study: Discretionary Access Control"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "cb-704-a",
+    "code": "CB-704 (A)",
+    "name": "Quantum Computation & Quantum Information",
+    "title": "CB-704 (A) - Quantum Computation & Quantum Information",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Quantum Information: States, Operators, Measurements, Quantum",
+      "topics": [
+        "Entanglement: Quantum Teleportation",
+        "Super-dense coding",
+        "CHSHGame",
+        "Quantum gates and circuits"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Quantum Algorithms: Deutsch-Jozsa",
+        "Simon",
+        "Grover",
+        "Shor",
+        "Implication of Grover's and Simon's algorithms towards classical symmetrickey cryptosystems",
+        "Implication of Shor's algorithm towards factorization and Discrete Logarithmbased classical public key cryptosystems"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Quantum True Random Number Generators (QTRNG): Detailed design and issues of",
+      "topics": ["quantumness", "Commercial products and applications"]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "variations",
+        "Issues of Device Independence",
+        "Commercial products"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Introductory topics in Post-Quantum Cryptography: Refer to https://csrc.nist.gov/projects/post- quantum-cryptography.",
+        "May discuss any two ciphers from this list."
+      ]
+    }
+  ]
+}

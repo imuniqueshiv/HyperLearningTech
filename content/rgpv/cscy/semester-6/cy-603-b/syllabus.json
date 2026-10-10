@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "cy-603-b",
+    "code": "CY-603 (B)",
+    "name": "Applied Cryptography",
+    "title": "CY-603 (B) - Applied Cryptography",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "cryptography (shift cipher, monoalphabetic substitution cipher, polyalphabetic substitution cipher), encryption with perfect secrecy, one-time pad",
+        "implementation aspects: shared secret randomness vs perfect secrecy Some background in algorithms and complexity theory, modern cryptography principles, one-way functions, trapdoor functions, hard-core bits, construction of a public-key cryptosystem based on general cryptographic primitives, implementation aspects: computational efficiency vs hardness."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "proofs by reductions, number theory candidates for cryptographic primitives (e.g., factoring and related problems), public-key cryptosystems from number theory problems",
+        "brief discussion of quantum computing",
+        "implementation aspects: large integer arithmetic for implemented public- key cryptosystems Randomness and pseudo-randomness, pseudo-random generators, functions and permutations.",
+        "Symmetric encryption: introduction, security notions, symmetric encryption schemes based on pseudo-randomness primitives, security proofs, fundamental concepts",
+        "implementation aspects: generating and testing randomness."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Symmetric encryption: block ciphers (e",
+      "topics": [
+        "substitution/permutation networks",
+        "Feistel networks, modes of operations (e.g., ECB, CBC, OFB, Counter), cryptanalysis attacks (e.g., exhaustive, linear, differential, meet-in-the-middle attack), key lengths",
+        "implementation aspects: security-performance-features tradeoffs.",
+        "Message authentication: introduction, notion and schemes (e.g., CBC-MAC), collision resistant hashing (MD5",
+        "SHA-1",
+        "SHA-2",
+        "SHA-3",
+        "HMAC, Merkle-Hellman)",
+        "CCA security for symmetric encryption, simultaneous message confidentiality and message integrity, the GCM mode, application case study 1: password-based secure computer access",
+        "implementation aspects: security performance-features tradeoffs."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "number theory candidates for cryptographic primitives (e",
+      "topics": [
+        "discussion of related problems including elliptic curves).",
+        "Asymmetric encryption: comparison with symmetric encryption, definitions, constructions (e.g., RSA variants",
+        "El Gamal), hybrid encryption",
+        "implementation aspects: security-performance-features tradeoffs.",
+        "Asymmetric encryption: malleable and homomorphic encryption notion and schemes (e.g., Paillier, brief discussion of various schemes, including Gentry's), additional schemes achieving various security notions in various models (e.g., Cramer-Shoup), identity-based encryption",
+        "implementation aspects: security-performance-features-trust tradeoffs."
+      ]
+    }
+  ]
+}

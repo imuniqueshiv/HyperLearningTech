@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "cb-103",
+    "code": "CB-103",
+    "name": "Fundamentals of Computer Science",
+    "title": "CB-103 - Fundamentals of Computer Science",
+    "semester": "I"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "General problem solving concepts",
+      "topics": [
+        "Algorithm, and Flowchart for problem solving with Sequential Logic Structure, Decisions and Loops",
+        "Imperative languages: Introduction to imperative language",
+        "Syntax and constructs of a specific language (ANSI C)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Types Operator and Expressions",
+      "topics": [
+        "Variable Names, Data Type and Sizes (Little Endian Big Endian)",
+        "Constants, Declarations",
+        "Arithmetic Operators, Relational Operators, Logical Operators",
+        "Type Conversion",
+        "Increment Decrement Operators, Bitwise Operators",
+        "Assignment Operators and Expressions",
+        "Precedence and Order of Evaluation",
+        "Proper variable naming and Hungarian Notation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Control Flow, Functions and Program Structure",
+      "topics": [
+        "Statements and Blocks, If-Else-If, Switch",
+        "Loops - while, do, for, break and continue, goto labels",
+        "Structured and unstructured programming",
+        "Basics of functions, parameter passing and returning type",
+        "C main return as integer",
+        "External, Auto, Local, Static, Register Variables",
+        "Scope Rules, Block structure, Initialisation, Recursion",
+        "Pre-processor, Standard Library Functions and return types"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Pointers, Arrays and Structures",
+      "topics": [
+        "Pointers and address, Pointers and Function Arguments, Pointers and Arrays",
+        "Address Arithmetic, character Pointers and Functions",
+        "Pointer Arrays, Pointer to Pointer",
+        "Multi-dimensional array and Row/column major formats",
+        "Initialisation of Pointer Arrays, Command line arguments",
+        "Pointer to functions, complicated declarations and how they are evaluated",
+        "Basic Structures, Structures and Functions, Array of structures",
+        "Pointer of structures, Self-referral structures, Table look up",
+        "Typedef, unions, Bit-fields"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Input and Output and Unix system Interface",
+      "topics": [
+        "Standard I/O, Formatted Output - printf, Formatted Input - scanf",
+        "Variable length argument list",
+        "File access including FILE structure, fopen, stdin, stdout and stderr",
+        "Error Handling including exit, perror and error.h, Line I/O",
+        "File Descriptor, Low level I/O - read and write, open, create, close and unlink",
+        "Random access - lseek, Listing Directory, Storage allocator",
+        "Debugging, Macro, User Defined Header, User Defined Library Function, makefile utility"
+      ]
+    }
+  ]
+}

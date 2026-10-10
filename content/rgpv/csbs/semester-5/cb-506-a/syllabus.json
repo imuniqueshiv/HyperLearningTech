@@ -1,0 +1,89 @@
+{
+  "subject": {
+    "id": "cb-506-a",
+    "code": "CB-506 (A)",
+    "name": "Conversational Systems",
+    "title": "CB-506 (A) - Conversational Systems",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamentals of Conversational Systems",
+      "topics": [
+        "Introduction: Overview, Case studies",
+        "Explanation about different modes of engagement for a human being",
+        "History and impact of AI",
+        "Underlying Technologies: Natural Language Processing, Artificial Intelligence and Machine Learning, NLG, Speech-To-Text, Text-To-Speech, Computer Vision etc.",
+        "Introduction to Top players in Market – Google, MS, Amazon & Market trends",
+        "Messaging Platforms (Facebook, WhatsApp) and Smart speakers – Alexa, Google Home and other new channels",
+        "Ethical and Legal Considerations in AI Overview"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Foundational Blocks for Programming and NLP",
+      "topics": [
+        "Basic Python programming concepts",
+        "Node Basics",
+        "Natural Language Processing: Brief history, Basic Concepts, Phases of NLP",
+        "Application of chatbots etc.",
+        "General chatbot architecture",
+        "Basic concepts in chatbots: Intents, Entities, Utterances, Variables and Slots, Fulfillment",
+        "Lexical Knowledge Networks (WordNet, Verbnet, PropBank, etc.)",
+        "Lexical Analysis, Part-of-Speech Tagging, Parsing/Syntactic analysis, Semantic Analysis, Word Sense Disambiguation",
+        "Information Extraction, Sentiment Analysis, Affective NLG"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Building a Chatbot / Conversational AI System",
+      "topics": [
+        "Fundamentals of Conversational Systems (NLU, DM and NLG)",
+        "Chatbot framework & Architecture",
+        "Conversational Flow & Design",
+        "Intent Classification (ML and DL based techniques)",
+        "Dialogue Management Strategies",
+        "Natural Language Generation",
+        "UX design, APIs and SDKs",
+        "Usage of Conversational Design Tools",
+        "Introduction to popular chatbot frameworks – Google Dialogflow, Microsoft Bot Framework, Amazon Lex, RASA",
+        "Channels: Facebook Messenger, Google Home, Alexa, WhatsApp, Custom Apps",
+        "Overview of CE Testing techniques, A/B Testing",
+        "Introduction to Testing Frameworks - Botium / Mocha, Chai",
+        "Security & Compliance – Data Management, Storage, GDPR, PCI"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Role of ML/AI in Conversational Technologies",
+      "topics": [
+        "Brief Understanding on how Conversational Systems uses ML technologies in ASR, NLP",
+        "Advanced Dialog management",
+        "Language Translation",
+        "Emotion/Sentiment Analysis",
+        "Information extraction, etc. to effectively converse"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Contact Centers, Analytics and Future",
+      "topics": [
+        "Introduction to Contact centers – Impact & Terminologies",
+        "Case studies & Trends",
+        "How does a Virtual Agent/Assistant fit in here?",
+        "Overview on Conversational Analytics: Conversation Analytics: The need of it",
+        "Introduction to Conversational Metrics",
+        "Future – Where are we headed? Summary",
+        "Robots and Sensory Applications overview",
+        "XR Technologies in Conversational Systems, XR-Commerce",
+        "What to expect next? – Future technologies and market innovations overview"
+      ]
+    }
+  ]
+}

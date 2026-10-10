@@ -1,0 +1,83 @@
+{
+  "subject": {
+    "id": "csit-702-c",
+    "code": "CSIT-702 (C)",
+    "name": "Semantic Web & Service Oriented Architecture",
+    "title": "CSIT-702 (C) - Semantic Web & Service Oriented Architecture",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Semantic Web",
+      "topics": [
+        "Building models",
+        "Calculating with knowledge",
+        "Exchanging information",
+        "Semantic web technologies",
+        "Types of web: smart web and dumb web",
+        "Applications",
+        "Semantic data",
+        "Search engine for semantic web"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Semantic Modeling",
+      "topics": [
+        "Modeling for human communication",
+        "Explanation and prediction",
+        "Mediating variability: variation and classes",
+        "Variation and layers",
+        "Expressivity in modeling"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Resource Description Language RDF",
+      "topics": [
+        "Introduction and advanced features",
+        "Simple ontologies in RDF Schema",
+        "Encoding of special data structures",
+        "RDF formal semantics",
+        "Syntactic reasoning with deduction rules",
+        "Distributing data across web",
+        "Managing data from multiple sources"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Web Ontology Language OWL",
+      "topics": [
+        "OWL syntax and intuitive semantics",
+        "OWL species",
+        "OWL formal semantics: Description Logics",
+        "Model-theoretic semantics of OWL",
+        "Automated reasoning with OWL",
+        "Ontology matching and distributed information"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Semantic Web Application Architecture and Ontology Engineering",
+      "topics": [
+        "RDF parser/serializer",
+        "RDF store: RDF data standards and interoperability of RDF stores",
+        "RDF query engines",
+        "SPARQL: query language for RDF",
+        "Conjunctive queries for OWL DL",
+        "RDF backed web portals",
+        "Data federation",
+        "Constructing ontologies manually",
+        "Reusing existing ontologies",
+        "Semiautomatic ontology acquisition",
+        "Ontology mapping"
+      ]
+    }
+  ]
+}

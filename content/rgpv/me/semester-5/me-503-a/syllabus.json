@@ -1,0 +1,89 @@
+{
+  "subject": {
+    "id": "me-503-a",
+    "code": "ME-503 (A)",
+    "name": "Mechatronics",
+    "title": "ME-503 (A) - Mechatronics",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "INTRODUCTION: Definition of Mechatronics, Multi-disciplinary scenario, origins",
+      "topics": [
+        "Evaluation of Mechatronics",
+        "An over view of mechatronics",
+        "Design of mechatronics system.",
+        "Measurements system and function of main elements of measurement systems.",
+        "Need for mechatronics in industries.",
+        "Objectives, advantages and disadvantages of mechatronics.",
+        "Microprocessor based controllers.",
+        "Principle of working of engine management system, automatic washing machine."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "REVIEW OF TRANSDUCERS AND SENSORS: Defination and classification of",
+      "topics": [
+        "transducers.",
+        "Definition and classification of sensors.",
+        "Principle of working and applications of light sensors, proximity sensors and Hall effect sensors.",
+        "MICROPROCESSOR: Introduction",
+        "Microprocessor based digital control.",
+        "Digital member system, binary and hexadecimal number system",
+        "Logic functions",
+        "Data word representation basic Elements of control systems."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "MICROPROCESSOR ARCHITECTURE: 8085A processor architecture",
+      "topics": [
+        "Terminology-such as",
+        "CPU, memory and address",
+        "ALU, assembler, data, registers",
+        "Fetch cycle, write cycle, state, bus interrupts.",
+        "Micro controllers - difference between microprocessor and micro controllers.",
+        "Requirements for control and their implementation in micro controllers.",
+        "Classification of micro controllers."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "ELECTRICAL ACTUATORS: Actuator and actuator system",
+      "topics": [
+        "with examples.",
+        "Mechanical switches.",
+        "Concept of bouncing Methods of Preventing bouncing of mechanical switches.",
+        "Solenoids",
+        "Relays.",
+        "Solid state switches - Diodes",
+        "Thyristors",
+        "Triacs",
+        "Trasistors",
+        "Darlington pair.",
+        "Electrical actuator.",
+        "Principle, construction and working of AC, DC motors, stepper motors, permanent motors, servomotors",
+        "Servo systems and control HYDRAULIC ACTUATORS: Valves - Classifications",
+        "Pressure Control Valves - Pressure relief valves",
+        "Pressure regulating/reducing valves",
+        "Pressure sequence valve.",
+        "Flow control valves - Principle, needle valve, globe valve.",
+        "Direction control valve -sliding spool valve, solenoid operated."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "SINGLE CONDITIONING: Concept, necessity, op-amps, protection, filtering, wheat",
+      "topics": [
+        "stone bridge - Digital Signals - Multiplexer.",
+        "Data acquisition - Introduction to digital signal processing - Concepts and different methods."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "subject": {
+    "id": "ce-604-c",
+    "code": "CE604 (C)",
+    "name": "Environmental Impact Assessment",
+    "title": "CE604 (C) - Environmental Impact Assessment",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Concept of EIA",
+      "topics": [
+        "Introduction of EIA, Utility and scope of EIA, Significant Environmental Impacts",
+        "Stage of EIA, Environmental Inventory, Environmental Impact Statement (EIS)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Methods of Impact Identification",
+      "topics": [
+        "Environmental Indices and indicators for describing the affected environment",
+        "Matrix methodologies, network, checklist, and other method"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Impact analysis",
+      "topics": [
+        "Framework, statement predication and assessment of impact of air, water, noise and socio-economic environment"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Preparation of written documentation",
+      "topics": [
+        "Initial planning phase, detailed planning phase, writing phase",
+        "Organizing relevant information, co-ordination of team writing effort"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Public Participation in Environmental Decision making",
+      "topics": [
+        "Basic definitions, Regulatory requirements",
+        "Advantages & disadvantages of Public Participation",
+        "Selection of Public participation techniques, Practical considerations for implementation"
+      ]
+    }
+  ]
+}

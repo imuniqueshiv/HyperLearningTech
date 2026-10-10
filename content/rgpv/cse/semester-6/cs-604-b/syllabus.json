@@ -1,0 +1,45 @@
+{
+  "subject": {
+    "id": "cs-604-b",
+    "code": "CS-604 (B)",
+    "name": "Project Management",
+    "title": "CS-604 (B) - Project Management",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Conventional Software Management",
+      "topics": [
+        "Evolution of software economics",
+        "Improving software economics: reducing product size, software processes, team effectiveness, automation through software environments",
+        "Principles of modern software management"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Software Management Process Framework",
+      "topics": [
+        "Life cycle phases - inception, elaboration, construction and training phase",
+        "Artifacts of the process - the artifact sets, management artifacts, engineering artifacts, pragmatics artifacts",
+        "Model based software architectures",
+        "Workflows of the process",
+        "Checkpoints of the process"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Software Management Disciplines",
+      "topics": [
+        "Iterative process planning",
+        "Project organisations and responsibilities",
+        "Process automation",
+        "Project control and process instrumentation - core metrics, management indicators, life cycle expectations",
+        "Process discriminants"
+      ]
+    }
+  ]
+}

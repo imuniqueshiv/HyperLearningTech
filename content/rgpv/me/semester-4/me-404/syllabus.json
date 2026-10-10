@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "me-404",
+    "code": "ME-404",
+    "name": "Fluid Mechanics",
+    "title": "ME-404 - Fluid Mechanics",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction, fluid and the continuum, fluid properties, surface tension, bulk modulus and thermodynamic properties",
+        "Newton's laws of viscosity and it's coefficients",
+        "Newtonian and non Newtonian fluids, hydrostatics and buoyancy, meta center and metacentric height, stability of floating bodies."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Fluid kinematics",
+        "Langragian and Eularian mrthod, description of fluid flow, stream line, path line and streak line, types of flow and types of motion, local and connective acceleration, continuity equation, potential flow, circulation, velocity potential, stream function, laplace equation, flow nets."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Fluid dynamics, system and control volume",
+        "Reynold transport theorem",
+        "Euler's equation",
+        "Bernoulli's equation, momentum and moment of momentum equation, their applications, forces on immersed bodies, lift and drag, streamlined and bluff bodies, flow around circular cylinder and aerofoils."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Flow through pipes",
+        "Reynold number, laminar and turbulent flow, viscous flow through parallel plates and pipes",
+        "Navier Stoke's equation, pressure gradient, head loss in turbulent flow ( Darcey's equation), friction factor, minor losses, hydraulic and energy gradient, pipe networks"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Introduction to boundary layer theory, description of boundary layer, boundary layer parameters",
+        "Von Karman momentum equation, laminar and turbulent boundary conditions, boundary layer separation, compressible flow",
+        "Mach number, isentropic flow, stagnation properties, normal and oblique shocks",
+        "Fanno and Reyleigh lines, flow through nozzles",
+        "BOOKS: 1.",
+        "Massy B.S., Mechanics of fluid",
+        "Routledge Publication 2.Shames",
+        "Fluid Mechanics",
+        "Tata McGraw Hills"
+      ]
+    }
+  ]
+}

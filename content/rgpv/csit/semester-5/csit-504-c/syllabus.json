@@ -1,0 +1,94 @@
+{
+  "subject": {
+    "id": "csit-504-c",
+    "code": "CSIT-504 (C)",
+    "name": "Web Technology & E Commerce",
+    "title": "CSIT-504 (C) - Web Technology & E Commerce",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Building Blocks of Electronic Commerce",
+      "topics": [
+        "Introduction to building blocks of electronic commerce",
+        "Internet and networking technologies",
+        "IP addressing",
+        "ARP and RARP",
+        "BOOTP and DHCP",
+        "ICMP",
+        "DNS",
+        "TFTP",
+        "TELNET"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Web Technologies",
+      "topics": [
+        "Static and dynamic web pages",
+        "Tiers, plug-ins, frames, and forms",
+        "Markup languages: HTML, DHTML, VRML, SGML, and XML",
+        "CGI, applets, and servlets",
+        "JSP and JavaBeans",
+        "ActiveX controls",
+        "ASP",
+        "Cookies: creating and reading cookies",
+        "Semantic web and semantic web service ontology",
+        "Comparative case study of Microsoft and Java technologies",
+        "Web server scalability",
+        "Distributed objects and object request brokers",
+        "Component technology",
+        "Web services",
+        "Web application architectures",
+        "Browsers and search engines"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to E-Commerce",
+      "topics": [
+        "History of e-commerce",
+        "E-business models: B2B, B2C, C2C, and C2B",
+        "Legal environment of e-commerce",
+        "Ethical issues",
+        "Electronic data interchange",
+        "Value chain and supply chain",
+        "Advantages and disadvantages of e-commerce"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Electronic Payment and E-Governance",
+      "topics": [
+        "Electronic payment systems: credit cards, debit cards, and smart cards",
+        "E-credit accounts and e-money",
+        "Marketing on the web and marketing strategies",
+        "Advertising on the web",
+        "Customer service and support",
+        "Introduction to m-commerce",
+        "Case study: e-commerce in passenger air transport",
+        "E-government: theoretical background of e-governance",
+        "Issues in e-governance applications",
+        "Evolution of e-governance, its scope and content",
+        "Benefits and reasons for the introduction of e-governance"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "E-Government and E-Commerce Security",
+      "topics": [
+        "Challenges and approaches to e-government security",
+        "Security concerns in e-commerce",
+        "Security for server computers",
+        "Communication channel security",
+        "Security for client computers"
+      ]
+    }
+  ]
+}

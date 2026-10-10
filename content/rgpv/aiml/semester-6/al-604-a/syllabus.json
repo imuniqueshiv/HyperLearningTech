@@ -1,0 +1,94 @@
+{
+  "subject": {
+    "id": "al-604-a",
+    "code": "AL604 (A)",
+    "name": "Cloud Computing",
+    "title": "AL604 (A) - Cloud Computing",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction of Grid and Cloud computing",
+      "topics": [
+        "Characteristics, components",
+        "Business and IT perspective",
+        "Cloud services requirements",
+        "Cloud models",
+        "Security in public model",
+        "Public verses private clouds",
+        "Cloud computing platforms: Amazon EC2",
+        "Platform as Service: Google App Engine, Microsoft Azure",
+        "Utility Computing, Elastic Computing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Cloud services",
+      "topics": [
+        "SAAS, PAAS, IAAS",
+        "Cloud design and implementation using SOA",
+        "Conceptual cloud model, cloud stack",
+        "Computing on demand",
+        "Information life cycle management",
+        "Cloud analytics",
+        "Information security",
+        "Virtual desktop infrastructure",
+        "Storage cloud"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Virtualization technology",
+      "topics": [
+        "Definition, benefits",
+        "Sensor virtualization",
+        "HVM",
+        "Study of hypervisor",
+        "Logical partitioning - LPAR",
+        "Storage virtualization, SAN, NAS",
+        "Cloud server virtualization",
+        "Virtualized data center"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cloud security",
+      "topics": [
+        "Cloud security fundamentals",
+        "Vulnerability assessment tool for cloud",
+        "Privacy and Security in cloud",
+        "Cloud computing security architecture: Architectural Considerations - General Issues",
+        "Trusted Cloud computing",
+        "Secure Execution Environments and Communications",
+        "Micro architectures",
+        "Identity Management and Access control - Identity management, Access control, Autonomic Security",
+        "Cloud computing security challenges: Virtualization security management virtual threats",
+        "VM Security Recommendations, VM-Specific Security techniques",
+        "Secure Execution Environments and Communications in cloud"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "SOA, performance and cloud platforms",
+      "topics": [
+        "SOA and cloud, SOA and IAAS",
+        "Cloud infrastructure benchmarks",
+        "OLAP, business intelligence, e-Business, ISV",
+        "Cloud performance monitoring commands",
+        "Issues in cloud computing",
+        "QOS issues in cloud",
+        "Mobile cloud computing",
+        "Inter cloud issues, Sky computing",
+        "Cloud Computing Platform: Xen Cloud Platform, Eucalyptus, OpenNebula, Nimbus, TPlatform",
+        "Apache Virtual Computing Lab (VCL)",
+        "Anomaly Elastic Computing Platform"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "subject": {
+    "id": "ad-802-a",
+    "code": "AD-802 (A)",
+    "name": "Natural Language Processing",
+    "title": "AD-802 (A) - Natural Language Processing",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "in various domains",
+        "Challenges and limitations.",
+        "NLP tasks in syntax, semantics, and pragmatics.",
+        "Different Data Models such as Boolean Model",
+        "Vector model",
+        "Probabilistic Model.",
+        "Comparison of classical NLP models: Rule-based model",
+        "Statistical model",
+        "Information retrieval model",
+        "Rule-based machine translation model",
+        "Probabilistic Graphical model."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Linguistics and Morphology: Linguistic essentials: Phonetics and Phonology,",
+      "topics": [
+        "Morphology: Morphens",
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Semiotics",
+        "Discourse Analysis",
+        "Psycholinguistics",
+        "Corpus Linguistics.",
+        "Word Formation Processes.",
+        "Morphological analysis.",
+        "Morphological Finite State Transducers."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Word Level Analysis: Tokenization, Part-of-Speech Tagging (POS Tagging),",
+      "topics": [
+        "Lemmatization",
+        "Stemming",
+        "Named Entity Recognition (NER)",
+        "Word Sense Disambiguation (WSD)",
+        "Word Embedding.",
+        "Types of PoS Tagging: Rule-based",
+        "Stochastic",
+        "Transformation- based",
+        "Lexical.",
+        "Hidden Markov model and Maximum Entropy model. n-grams.",
+        "Collocations.",
+        "Applications of NER."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Syntax Analysis: Grammatical Formalisms: Context Free Grammars, Grammar",
+      "topics": [
+        "rules for English",
+        "Syntactic parsing: Grammar formalisms and treebanks.",
+        "Efficient parsing for context-free grammars (CFGs).",
+        "Statistical parsing and probabilistic CFGs (PCFGs)."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Logics.",
+        "Syntax-Driven Semantic analysis",
+        "Semantic attachments.",
+        "Word Senses",
+        "Relations between Senses",
+        "Thematic Roles, selectional restrictions.",
+        "Word-sense disambiguation(WSD): WSD using Supervised",
+        "Dictionary and Thesaurus.",
+        "Applications of WSD.",
+        "TextBooks: 1.",
+        "Daniel Jurafsky& James H.",
+        "Martin",
+        "Speech and Language Processing",
+        "Perason publication,2018. 2.",
+        "Steven Bird",
+        "Ewan Klein and Edward Loper",
+        "Natural Language Processing with Python",
+        "First Edition",
+        "OReilly Media, 2009. 3.",
+        "Nitin Indurkhya-.",
+        "Handbook of natural language processing.",
+        "Chapman and Hall/CRC, 2010. 4.",
+        "Manning and Schutze \"Foundations of Statistical Natural Language Processing\", MIT Press,2009 ReferenceBooks: 1.",
+        "Dipanjan Sarkar- Text Analytics with Python.",
+        "Apress/Springer, 2016 2.",
+        "Rothman",
+        "Denis, and Antonio Gulli- Transformers for Natural Language Processing: Build, train, and fine-tune deep neural network architectures for NLP with Python",
+        "PyTorch",
+        "TensorFlow",
+        "BERT, and GPT-3.",
+        "Packt Publishing Ltd, 2022. 3.",
+        "Tanveer Siddiqui",
+        "U.S.",
+        "Tiwary",
+        "Natural Language Processing and Information Retrieval",
+        "Oxford University Press, 2008"
+      ]
+    }
+  ]
+}

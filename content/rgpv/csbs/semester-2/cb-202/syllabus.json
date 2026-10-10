@@ -1,0 +1,74 @@
+{
+  "subject": {
+    "id": "cb-202",
+    "code": "CB-202",
+    "name": "Statistical Methods",
+    "title": "CB-202 - Statistical Methods",
+    "semester": "II"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Linear Statistical Models",
+      "topics": [
+        "Simple linear regression & correlation",
+        "Multiple regression & multiple correlation",
+        "Analysis of variance (one way, two way with as well as without interaction)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Estimation and Sufficient Statistic",
+      "topics": [
+        "Point estimation, criteria for good estimates (un-biasedness, consistency)",
+        "Methods of estimation including maximum likelihood estimation",
+        "Sufficient Statistic: Concept & examples, complete sufficiency, their application in estimation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Test of hypothesis",
+      "topics": [
+        "Concept & formulation",
+        "Type I and Type II errors",
+        "Neyman Pearson lemma",
+        "Procedures of testing"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Non-parametric Inference",
+      "topics": [
+        "Comparison with parametric inference",
+        "Use of order statistics",
+        "Sign test, Wilcoxon signed rank test, Mann-Whitney test, Run test, Kolmogorov-Smirnov test",
+        "Spearman's and Kendall's test",
+        "Tolerance region"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Basics of Time Series Analysis & Forecasting",
+      "topics": [
+        "Stationary",
+        "ARIMA Models: Identification, Estimation and Forecasting"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "R statistical programming language",
+      "topics": [
+        "Introduction to R, Functions, Control flow and Loops",
+        "Working with Vectors and Matrices",
+        "Reading in Data, Writing Data, Working with Data, Manipulating Data",
+        "Simulation, Linear model, Data Frame, Graphics in R"
+      ]
+    }
+  ]
+}

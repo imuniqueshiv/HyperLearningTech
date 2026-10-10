@@ -1,0 +1,115 @@
+{
+  "subject": {
+    "id": "cy-503-b",
+    "code": "CY503 (B)",
+    "name": "Network Security",
+    "title": "CY503 (B) - Network Security",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Review of Cryptography",
+      "topics": [
+        "Symmetric Encryption Principles",
+        "Symmetric Block Encryption Algorithms",
+        "Random and Pseudorandom Numbers",
+        "Stream Ciphers and RC4",
+        "Cipher Block Modes of Operation",
+        "Approaches to Message Authentication",
+        "Secure Hash Function",
+        "Message Authentication Codes",
+        "Public-Key Cryptography Principles",
+        "Public-Key Cryptography Algorithms",
+        "Digital Signatures"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Hardware and Software Security",
+      "topics": [
+        "Hardware Security",
+        "Smart Cards",
+        "Biometrics",
+        "Virtual Private Networks",
+        "Types of VPNs",
+        "Trusted Operating Systems",
+        "Pretty Good Privacy (PGP)",
+        "Security Protocols",
+        "Security Socket Layer",
+        "Transport Layer Security",
+        "IPSec",
+        "S/MIME"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Intrusion Detection System and Firewalls",
+      "topics": [
+        "IDS- Infrastructure of IDS",
+        "Classification of IDS",
+        "Host-based IDS",
+        "Network based IDS",
+        "Anomaly v/s Signature Detection",
+        "Normal Behavior",
+        "Patterns-Anomaly Detection",
+        "Misbehaviour Signatures-Signature Detection",
+        "Parameter Pattern Matching",
+        "Managing an IDS",
+        "Malicious Software",
+        "Safeguards",
+        "Firewalls",
+        "Packet-Filtering Firewalls",
+        "State full Inspection Firewalls",
+        "Proxy firewalls",
+        "Guard",
+        "Personal Firewalls",
+        "Limitations of Firewalls"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Wireless Security",
+      "topics": [
+        "Wireless Application Protocol",
+        "WAP Security",
+        "Authentication",
+        "Integrity",
+        "Confidentiality",
+        "Security Issues with Wireless Transport Layer Security (WTLS)",
+        "Wireless LAN",
+        "WLAN Configuration",
+        "WLAN Technology consideration",
+        "Wireless LAN Security",
+        "Access Point Security",
+        "Work Station Security",
+        "Safeguarding Wireless LANs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Web Security",
+      "topics": [
+        "Client/Server Architecture",
+        "Security considerations and Threats",
+        "Web traffic security approaches",
+        "SSL/TLS for secure web services",
+        "The Twin concept of \"SSL Connection\" and \"SSL Session\"",
+        "SSL session state",
+        "SSL Connection State",
+        "SSL Record Protocol",
+        "SSL Handshake Protocol",
+        "S-HTTP",
+        "Secure Electronic Transaction(SET)",
+        "Business Requirements",
+        "SET Participants",
+        "SET Transaction Flow"
+      ]
+    }
+  ]
+}

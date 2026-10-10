@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "cb-603",
+    "code": "CB-603",
+    "name": "Artificial Intelligence",
+    "title": "CB-603 - Artificial Intelligence",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Artificial Intelligence and Problem-Solving Agent",
+      "topics": [
+        "Intelligent agents, agents & environment, nature of environment, structure of agents, goal-based agents, utility-based agents, learning agents",
+        "Problems of AI, AI technique, Tic - Tac - Toe problem",
+        "Defining the problem as state space search, production system, problem characteristics, and issues in the design of search programs"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Search Techniques",
+      "topics": [
+        "Problem solving agents, searching for solutions",
+        "Uniform search strategies: breadth first search, depth first search, depth limited search, bidirectional search, comparing uniform search strategies",
+        "Heuristic search strategies – Greedy best-first search, A* search, AO* search, memory bounded heuristic search",
+        "Local search algorithms & optimization problems: Hill climbing search, simulated annealing search, local beam search"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Constraint Satisfaction Problems and Game Theory",
+      "topics": [
+        "Local search for constraint satisfaction problems",
+        "Adversarial search, Games, optimal decisions & strategies in games",
+        "The minimax search procedure, alpha-beta pruning, additional refinements, iterative deepening"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Knowledge & Reasoning",
+      "topics": [
+        "Knowledge representation issues, representation & mapping, approaches to knowledge representation",
+        "Using predicate logic, representing simple fact in logic, representing instant & ISA relationship, computable functions & predicates, resolution, natural deduction",
+        "Representing knowledge using rules, Procedural verses declarative knowledge, logic programming, forward verses backward reasoning, matching, control knowledge"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Probabilistic Reasoning and Expert Systems",
+      "topics": [
+        "Representing knowledge in an uncertain domain, the semantics of Bayesian networks, Dempster-Shafer theory",
+        "Planning Overview, components of a planning system, Goal stack planning, Hierarchical planning, other planning techniques",
+        "Expert Systems: Representing and using domain knowledge, expert system shells, and knowledge acquisition"
+      ]
+    }
+  ]
+}

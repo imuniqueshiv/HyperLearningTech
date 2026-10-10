@@ -1,0 +1,64 @@
+{
+  "subject": {
+    "id": "ce-801",
+    "code": "CE-801",
+    "name": "Design of Steel Structures",
+    "title": "CE-801 - Design of Steel Structures",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basis of Structural Design and Connection Design",
+      "topics": [
+        "Introduction; Metallurgy of steel; Structural properties of steel; Design philosophies; Limit state method; Partial load factors",
+        "Loading and load combination on structures; Local buckling and section classification",
+        "Types of connections; Welded connections; Types of joints and welds; Connection design; Concentric connection; Eccentric connections; Truss connections",
+        "Bolted connections; Force transfer mechanism; Failure mechanism; Analysis of bolt groups; Beam column connections, shear connection; Moment connection"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design of Compression and Tension Members",
+      "topics": [
+        "Types of tension member; Behaviour of tension members; Factors affecting the strength of tension members",
+        "Design of tension member; for yielding; Net section rupture; Block shear; Tension splices; Lug angles; Concept of shear lag",
+        "Types of compression members; Basis of current codal provision for compression member design; Slenderness ratio; Elastic buckling; Strength curves; Design of compression members"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design of Flexural Members",
+      "topics": [
+        "Beam types; Lateral stability of beams; Lateral torsional buckling of symmetric beams",
+        "Design strength of Laterally supported and Unsupported beams in bending; Shear strength of steel beams; Web buckling and crippling",
+        "Design of beams; Built-up beams; Design of plate girders; Types of stiffeners; Flange and web splices",
+        "Design of beam-columns subjected to combined tension and bending"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design of Columns and Column Bases",
+      "topics": [
+        "Design of single section and compound section",
+        "Design of laced and battened type columns",
+        "Design of column bases; Slab base; Gusseted base; Grillage foundation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Design of Industrial Buildings",
+      "topics": [
+        "Introduction, Frames; Multistory frames",
+        "Various types of trusses and their selection; Design of purlin and elements of truss",
+        "Effect of wind loads on purlin and truss; Bracing systems",
+        "Design of Gantry Girder"
+      ]
+    }
+  ]
+}

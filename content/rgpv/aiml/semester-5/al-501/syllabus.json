@@ -1,0 +1,100 @@
+{
+  "subject": {
+    "id": "al-501",
+    "code": "AL-501",
+    "name": "Operating Systems",
+    "title": "AL-501 - Operating Systems",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Operating Systems",
+      "topics": [
+        "Function, evolution, and different types of operating systems",
+        "Desirable characteristics and features of an OS",
+        "Operating system services: types of services",
+        "Different ways of providing these services: commands and system calls",
+        "Need of system calls",
+        "Low level implementation of system calls",
+        "Portability issue",
+        "Operating system structures"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "File Systems (Secondary Storage Management)",
+      "topics": [
+        "File concept",
+        "User's and system programmer's view of the file system",
+        "Hard disk organization",
+        "Disk formatting and file system creation",
+        "Different modules of a file system",
+        "Disk space allocation methods: contiguous, linked, and indexed",
+        "Disk partitioning and mounting",
+        "Directory structures",
+        "File protection",
+        "Virtual and remote file systems",
+        "Case studies of file systems used in Unix/Linux and Windows",
+        "System calls used in these operating systems for file management"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Process Management, Concurrency and Deadlocks",
+      "topics": [
+        "Concept of a process",
+        "Process state diagram",
+        "Different types of schedulers",
+        "CPU scheduling algorithms",
+        "Evaluation of scheduling algorithms",
+        "Concept of threads: user level and kernel level threads",
+        "Thread scheduling",
+        "Multiprocessor and multicore processor scheduling",
+        "Case studies of process management in Unix/Linux and Windows",
+        "System calls used in these operating systems for process management",
+        "Real and virtual concurrency",
+        "Mutual exclusion, synchronization, and the critical section problem",
+        "Solution to the critical section problem: mutex locks, monitors, and semaphores",
+        "WAIT and SIGNAL operations and their implementation",
+        "Classical problems of synchronization",
+        "Inter-process communication",
+        "Deadlock characterization, prevention, avoidance, and recovery"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Memory Management",
+      "topics": [
+        "Contiguous allocation",
+        "Non-contiguous allocation: paging, segmentation, and paged segmentation",
+        "Comparison of memory management techniques",
+        "Virtual memory: concept, overlay, dynamic linking and loading",
+        "Implementation of virtual memory by demand paging",
+        "Memory management in Unix/Linux and Windows"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Input/Output Management",
+      "topics": [
+        "Overview of mass storage structures",
+        "Disk scheduling",
+        "I/O operations: program controlled, interrupt driven, and concurrent I/O",
+        "Synchronous/asynchronous and blocking/non-blocking I/O operations",
+        "I/O buffering",
+        "Application I/O interface",
+        "Kernel I/O subsystem",
+        "Transforming I/O requests to hardware operations",
+        "Overview of protection and security issues and mechanisms",
+        "Introduction to multiprocessor, real time, embedded, and mobile operating systems",
+        "Overview of virtualization"
+      ]
+    }
+  ]
+}

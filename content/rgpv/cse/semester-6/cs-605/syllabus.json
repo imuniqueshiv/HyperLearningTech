@@ -1,0 +1,49 @@
+{
+  "subject": {
+    "id": "cs-605",
+    "code": "CS-605",
+    "name": "Data Analytics Lab",
+    "title": "CS-605 - Data Analytics Lab",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basics of Data Analytics",
+      "topics": [
+        "Basics of data analytic framework",
+        "Data pre-processing",
+        "Statistics, probability, Probability Distribution",
+        "Bayes' Theorem, Central Limit theorem",
+        "Data Exploration & preparation",
+        "Concepts of Correlation, Regression, Covariance, Outliers",
+        "Data visualization"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Introduction to R as a Data Analytics Tool",
+      "topics": ["Introduction to R as a data analytics tool"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to MATLAB as a Data Analytics Tool",
+      "topics": ["Introduction to MATLAB as a data analytics tool"]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to Python as a Data Analytics Tool",
+      "topics": ["Introduction to python as a data analytics tool"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Case Studies",
+      "topics": ["Case studies"]
+    }
+  ]
+}

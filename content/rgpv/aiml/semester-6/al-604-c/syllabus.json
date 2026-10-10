@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "al-604-c",
+    "code": "AL604 (C)",
+    "name": "Intelligent Systems for Robotics",
+    "title": "AL604 (C) - Intelligent Systems for Robotics",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Introduction to Robotics Fundamentals of Robotics",
+        "Robot Kinematics: Position Analysis",
+        "Dynamic Analysis and Forces",
+        "Robot Programming languages & systems: Introduction",
+        "The three levels of robot programming",
+        "Requirements of a robot programming language",
+        "Problems peculiar to robot programming languages"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Need of AI in Robotics",
+      "topics": [
+        "History, state of the art",
+        "Need for AI in Robotics",
+        "Thinking and acting humanly",
+        "Intelligent agents",
+        "Structure of agents"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Game Playing",
+      "topics": [
+        "AI and game playing",
+        "Plausible move generator",
+        "Static evaluation move generator",
+        "Game playing strategies",
+        "Problems in game playing"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Robotics fundamentals",
+      "topics": [
+        "Robot Classification",
+        "Robot Specification, notation",
+        "Kinematic representations and transformations",
+        "Dynamics techniques",
+        "Trajectory planning and control"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Robotics and Its applications",
+      "topics": [
+        "DDD concept",
+        "Intelligent robots",
+        "Robot anatomy - Definition, law of robotics",
+        "History and Terminology of Robotics",
+        "Accuracy and repeatability of Robotics - Simple problems",
+        "Specifications of Robot - Speed of Robot",
+        "Robot joints and links",
+        "Robot classifications",
+        "Architecture of robotic systems",
+        "Robot Drive systems - Hydraulic, Pneumatic and Electric system"
+      ]
+    }
+  ]
+}

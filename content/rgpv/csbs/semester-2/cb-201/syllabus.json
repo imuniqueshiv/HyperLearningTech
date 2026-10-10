@@ -1,0 +1,65 @@
+{
+  "subject": {
+    "id": "cb-201",
+    "code": "CB-201",
+    "name": "Linear Algebra",
+    "title": "CB-201 - Linear Algebra",
+    "semester": "II"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Matrices and Determinants",
+      "topics": [
+        "Introduction to Matrices and Determinants",
+        "Solution of Linear Equations",
+        "Cramer's rule",
+        "Inverse of a Matrix"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Vectors and linear combinations",
+      "topics": [
+        "Rank of a matrix",
+        "Gaussian elimination",
+        "LU Decomposition",
+        "Solving Systems of Linear Equations using the tools of Matrices"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Vector Space",
+      "topics": [
+        "Vector space",
+        "Dimension",
+        "Basis",
+        "Orthogonality",
+        "Projections",
+        "Gram-Schmidt orthogonalization and QR decomposition"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Eigen Values and Eigen Vectors",
+      "topics": [
+        "Eigenvalues and Eigenvectors",
+        "Positive definite matrices",
+        "Linear transformations",
+        "Hermitian and unitary matrices"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Singular Value Decomposition and Principal component analysis",
+      "topics": [
+        "Introduction to their applications in Image Processing and Machine Learning"
+      ]
+    }
+  ]
+}

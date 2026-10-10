@@ -1,0 +1,90 @@
+{
+  "subject": {
+    "id": "al-703-b",
+    "code": "AL703 (B)",
+    "name": "Augmented and Virtual Reality",
+    "title": "AL703 (B) - Augmented and Virtual Reality",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Virtual Reality",
+      "topics": [
+        "Virtual Reality and Virtual Environment: Introduction",
+        "Applications of Virtual Reality",
+        "Computer graphics, Real time computer graphics, Flight Simulation",
+        "Virtual environment requirement, benefits of virtual reality",
+        "Historical development of VR, Scientific Landmark",
+        "3D Computer Graphics: Introduction, The Virtual world space",
+        "Positioning the virtual observer, the perspective projection",
+        "Human vision, stereo perspective projection, 3D clipping",
+        "Colour theory, Simple 3D modeling",
+        "Illumination models, Reflection models, Shading algorithms, Radiosity",
+        "Hidden Surface Removal, Realism Stereographic image"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Geometric Modeling",
+      "topics": [
+        "Geometric Modeling: Introduction, From 2D to 3D",
+        "3D space curves, 3D boundary representation",
+        "Geometrical Transformations: Introduction, Frames of reference",
+        "Modeling transformations, Instances, Picking, Flying",
+        "Scaling the VE, Collision detection",
+        "Generic VR system: Introduction, Virtual environment, Computer environment",
+        "VR technology, Model of interaction, VR Systems"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Virtual Environment",
+      "topics": [
+        "Animating the Virtual Environment: Introduction",
+        "The dynamics of numbers",
+        "Linear and Nonlinear interpolation",
+        "The animation of objects, linear and non-linear translation",
+        "Shape & object in betweening, free from deformation, particle system",
+        "Physical Simulation: Introduction",
+        "Objects falling in a gravitational field, Rotating wheels",
+        "Elastic collisions, projectiles, simple pendulum, springs",
+        "Flight dynamics of an aircraft"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "VR Hardware and Software",
+      "topics": [
+        "Human factors: Introduction, the eye, the ear, the somatic senses",
+        "VR Hardware: Introduction, sensor hardware",
+        "Head-coupled displays, Acoustic hardware, Integrated VR systems",
+        "VR Software: Introduction, Modeling virtual world",
+        "Physical simulation, VR toolkits",
+        "Introduction to VRML"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Augmented and Mixed Reality",
+      "topics": [
+        "Taxonomy, Technology and features of augmented reality",
+        "Difference between AR and VR",
+        "Challenges with AR",
+        "AR systems and functionality",
+        "Augmented reality methods",
+        "Visualization techniques for augmented reality",
+        "Wireless displays in educational augmented reality applications",
+        "Mobile projection interfaces",
+        "Marker-less tracking for augmented reality",
+        "Enhancing interactivity in AR environments",
+        "Evaluating AR systems"
+      ]
+    }
+  ]
+}

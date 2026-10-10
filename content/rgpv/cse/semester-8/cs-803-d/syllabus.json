@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "cs-803-d",
+    "code": "CS-803 (D)",
+    "name": "Managing Innovation and Entrepreneurship",
+    "title": "CS-803 (D) - Managing Innovation and Entrepreneurship",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Innovation Basics and Classification",
+      "topics": [
+        "Innovation, the basic definition and classification",
+        "The relationship of innovation and entrepreneurship",
+        "Creation of competitive advantage based on innovation",
+        "Innovative models",
+        "Product, process, organizational and marketing innovation and their role in business development"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Sources of Innovation and Creative Methods",
+      "topics": [
+        "Sources of innovation (push, pull, analogies), transfer of technology",
+        "Creative methods and approaches used in innovation management",
+        "Approaches to management of the innovation process (agile management, Six Thinking Hats, NUF test)"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Project Approach and Open Innovation",
+      "topics": [
+        "Project approach to innovation management, method Stage Gate, its essence, adaptation of access to selected business models",
+        "In-house business development of the innovation process in the company",
+        "Open Innovation as a modern concept, the limits of this method and its benefits for business development"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Human-Centered Innovation and Strategy",
+      "topics": [
+        "Innovations aimed at humans, role of co-creation in the innovation process",
+        "The strategy of innovation process, types and selection of appropriate strategies"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Measurement, Barriers and Innovation Workshop",
+      "topics": [
+        "Measurement and evaluation of the benefits of innovation for business (financial and non financial metrics, their combination and choice)",
+        "Barriers to innovation in business, innovation failure and its causes, post-audits of innovative projects",
+        "Organization and facilitation of an innovation workshop"
+      ]
+    }
+  ]
+}

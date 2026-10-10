@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "cb-803-a",
+    "code": "CB-803 (A)",
+    "name": "Enterprise Systems",
+    "title": "CB-803 (A) - Enterprise Systems",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Modern Enterprise Systems: Introduction to enterprise systems",
+      "topics": [
+        "enterprise systems - Business Information system",
+        "Decision support systems",
+        "Knowledge management systems",
+        "Financial and human resource systems.",
+        "Kinds of Enterprise systems- B2C and B2B models.",
+        "Components of Enterprise systems: Channels (Mobile, web, desktop, partner integration)",
+        "Data management, workflow",
+        "Controlling and Auditing",
+        "Accounting etc.",
+        "Sample Enterprise systems: ERP, SCM, CRM, Product Life cycle management (PLM)",
+        "HR Systems (HRM)",
+        "GL systems."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "processing",
+        "Collaboration",
+        "Data transformation.",
+        "Enterprise System architectures: Batch processing",
+        "Monolithic, client server, ecommerce, service oriented, microservice, and cloud architectures.",
+        "Introduction to Enterprise Application architectures: Layer Architecture",
+        "Event driven Architecture",
+        "Service oriented Architecture",
+        "Microservice architecture",
+        "Plug-in architecture."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Web Presentation",
+        "Concurrency.",
+        "Enterprise Application Integration: Introduction to Enterprise Integration, different integration styles.",
+        "Elements of messaging-based Integration.",
+        "Enterprise Integration patterns: Modern service integration techniques.",
+        "Introduction to WSDL, SOAP.",
+        "Introduction RESTFul webservices integration.",
+        "Differences between SOAP and REST."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Deployment of Enterprise applications: Key requirements in deployment - Stability, capacity",
+        "Security, availability",
+        "Network",
+        "Availability, and Transparency (Basic Introduction only).",
+        "Concepts of Cloud computing, cloud platforms and their role in Enterprise systems: Core Concepts - Types of Cloud: Private, public, and Hybrid clouds.",
+        "Advantage of cloud computing - Scaling",
+        "Availability, and cost.",
+        "Disadvantages - Technology overload",
+        "Security",
+        "Monitoring and troubleshooting",
+        "Testing",
+        "Latency etc.",
+        "Cloud service models: - Infrastructure, platform",
+        "Software as a Service in Cloud Computing.",
+        "Major public clouds: Google cloud",
+        "AWS, Azure."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Serverless.",
+        "Continuous Integration/Continuous Delivery Introduction to Enterprise Architecture: Importance of Enterprise Architecture.",
+        "Enterprise architecture models.",
+        "Zachman Framework",
+        "TOGAF Framework Enterprise Architecture Case study: To be identified"
+      ]
+    }
+  ]
+}

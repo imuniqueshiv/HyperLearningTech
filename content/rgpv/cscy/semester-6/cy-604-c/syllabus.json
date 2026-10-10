@@ -1,0 +1,84 @@
+{
+  "subject": {
+    "id": "cy-604-c",
+    "code": "CY-604 (C)",
+    "name": "Dataware Housing & Mining",
+    "title": "CY-604 (C) - Dataware Housing & Mining",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Data Mart",
+        "Data Warehouse Architecture, extract and load Process",
+        "Clean and Transform data",
+        "Star ,Snowflake and Galaxy Schemas for Multidimensional databases",
+        "Fact and dimension data",
+        "Partitioning Strategy-Horizontal and Vertical Partitioning."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Warehouse and OLAP technology, Multidimensional data models and different",
+      "topics": [
+        "OLAP Operations",
+        "OLAP Server: ROLAP, MOLAP, Data Warehouse implementation ,Efficient Computation of Data Cubes",
+        "Processing of OLAP queries",
+        "Indexing data."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Data Mining: Data Preprocessing ,Data Integration and Transformation, Data",
+      "topics": [
+        "Reduction",
+        "Discretizaion and Concept Hierarchy Generation",
+        "Basics of data mining",
+        "Data mining techniques",
+        "KDP (Knowledge Discovery Process)",
+        "Application and Challenges of Data Mining",
+        "Introduction of Web Structure Mining",
+        "Web Usage Mining",
+        "Spatial Mining",
+        "Text Mining",
+        "Security Issue",
+        "Privacy Issue",
+        "Ethical Issue."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Mining Association Rules in Large Databases: Association Rule Mining, Single-",
+      "topics": [
+        "Dimensional Boolean Association Rules",
+        "Multi-Level Association Rule",
+        "Apriori Algorithm",
+        "Fp- Growth Algorithm",
+        "Time series mining association rules, latest trends in association rules mining."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Classification and Clustering Distance Measures, Types of Clustering, K-Means",
+      "topics": [
+        "Algorithm",
+        "Decision Tree Induction",
+        "Bayesian Classification",
+        "Association Rule Based",
+        "Other Classification Methods",
+        "Prediction",
+        "Classifier Accuracy",
+        "Categorization of methods",
+        "Partitioning methods",
+        "Outlier Analysis."
+      ]
+    }
+  ]
+}

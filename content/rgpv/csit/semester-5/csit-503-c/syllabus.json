@@ -1,0 +1,92 @@
+{
+  "subject": {
+    "id": "csit-503-c",
+    "code": "CSIT-503 (C)",
+    "name": "Principles of Programming Languages",
+    "title": "CSIT-503 (C) - Principles of Programming Languages",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Language Design and Paradigms",
+      "topics": [
+        "Language evaluation criteria",
+        "Influences on language design",
+        "Language categories",
+        "Programming paradigms: imperative, object-oriented, functional, and logic programming",
+        "Programming language implementation: compilation and virtual machines",
+        "Programming environments"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Types and Control Structures",
+      "topics": [
+        "Data types: introduction",
+        "Primitive, character, and user-defined types",
+        "Array, associative, record, union, pointer, and reference types",
+        "Design and implementation issues related to these types",
+        "Names and variables",
+        "Concept of binding",
+        "Type checking, strong typing, and type compatibility",
+        "Named constants and variable initialization",
+        "Sequence control with expressions",
+        "Conditional statements and loops",
+        "Exception handling"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Subprograms and Blocks",
+      "topics": [
+        "Fundamentals of subprograms",
+        "Scope and lifetime of a variable",
+        "Static and dynamic scope",
+        "Design issues of subprograms and operations",
+        "Local referencing environments",
+        "Parameter passing methods",
+        "Overloaded subprograms",
+        "Generic subprograms",
+        "Design issues for functions",
+        "Overloaded operators",
+        "Coroutines"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Abstract Data Types and Concurrency",
+      "topics": [
+        "Abstractions and encapsulation",
+        "Introduction to data abstraction",
+        "Static and stack-based storage management",
+        "Heap-based storage management",
+        "Garbage collection",
+        "Object-oriented programming in Smalltalk, C++, Java, C#, PHP, and Perl",
+        "Concurrency: subprogram-level concurrency",
+        "Semaphores and monitors",
+        "Message passing",
+        "Java threads and C# threads"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Exception Handling and Language Paradigms",
+      "topics": [
+        "Exception handling",
+        "Exceptions and exception propagation",
+        "Exception handlers in C++ and Java",
+        "Logic programming languages: introduction and overview",
+        "Basic elements of Prolog",
+        "Applications of logic programming",
+        "Functional programming languages: introduction and fundamentals",
+        "Introduction to 4GL"
+      ]
+    }
+  ]
+}

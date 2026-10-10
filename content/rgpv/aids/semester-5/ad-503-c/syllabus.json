@@ -1,0 +1,92 @@
+{
+  "subject": {
+    "id": "ad-503-c",
+    "code": "AD-503 (C)",
+    "name": "Computer Org. & Architecture",
+    "title": "AD-503 (C) - Computer Org. & Architecture",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Structure of Computer and Control Unit",
+      "topics": [
+        "Structure of desktop computers",
+        "CPU: general register organization",
+        "Memory register, instruction register, and control word",
+        "Stack organization",
+        "Instruction format",
+        "ALU, I/O system, and bus",
+        "CPU and memory program counter",
+        "Bus structure",
+        "Register transfer language: bus and memory transfer",
+        "Addressing modes",
+        "Basic concept of instruction and instruction types",
+        "Microinstruction formats",
+        "Fetch and execution cycle",
+        "Hardwired control unit",
+        "Microprogrammed control unit and microprogram sequencer",
+        "Control memory",
+        "Sequencing and execution of microinstructions"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Computer Arithmetic",
+      "topics": [
+        "Addition and subtraction",
+        "Two's complement representation",
+        "Signed addition and subtraction",
+        "Multiplication and division",
+        "Booth's algorithm",
+        "Division operation",
+        "Floating-point arithmetic operation",
+        "Design of arithmetic unit"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "I/O Organization",
+      "topics": [
+        "I/O interface: PCI bus, SCSI bus, and USB",
+        "Data transfer: serial, parallel, synchronous, and asynchronous modes",
+        "Direct Memory Access (DMA)",
+        "I/O processor"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Memory Organization",
+      "topics": [
+        "Main memory: RAM and ROM",
+        "Secondary memory: magnetic tape, disk, and optical storage",
+        "Cache memory: structure and design",
+        "Mapping scheme",
+        "Replacement algorithm",
+        "Improving cache performance",
+        "Virtual memory",
+        "Memory management hardware"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Multiprocessors",
+      "topics": [
+        "Characteristics of multiprocessors",
+        "Structure of multiprocessor: interprocessor arbitration",
+        "Inter-processor communication and synchronization",
+        "Memory in multiprocessor systems",
+        "Concept of pipelining",
+        "Vector processing",
+        "Array processing",
+        "RISC and CISC",
+        "Study of multicore processors: Intel and AMD"
+      ]
+    }
+  ]
+}

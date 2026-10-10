@@ -1,0 +1,65 @@
+{
+  "subject": {
+    "id": "ad-702-d",
+    "code": "AD-702 (D)",
+    "name": "Predictive Analytics",
+    "title": "AD-702 (D) - Predictive Analytics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Understanding Data",
+      "topics": [
+        "Introduction to predictive analytics - Business analytics: types, applications- Models: predictive models - descriptive models - decision models - applications - analytical techniques.",
+        "Data types and associated techniques - complexities of data - data preparation, pre- processing - exploratory data analysis."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Principles and Techniques",
+      "topics": [
+        "Predictive modeling: Propensity models, cluster models, collaborative filtering, applications and limitations - Statistical analysis: Univariate and Multivariate Statistical analysis.",
+        "Model Selection - Preparing to model the data: supervised versus unsupervised methods, statistical and data mining methodology, cross-validation, overfitting, bias-variance trade-off, balancing the training dataset, establishing baseline performance."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Regression and Classification Models",
+      "topics": [
+        "Measuring Performance in Regression Models - Linear Regression and Its Cousins - Non- Linear Regression Models - Regression Trees and Rule-Based Models Case Study: Compressive Strength of Concrete Mixtures.",
+        "Measuring Performance in Classification Models - Discriminant Analysis and Other Linear Classification Models - Non-Linear Classification Models - Classification Trees and Rule-Based Models - Model Evaluation Techniques"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "autocorrelation function",
+        "Estimation and elimination of trend and seasonal components",
+        "Stationary Process and ARMA Models -- Basic properties and linear processes",
+        "Introduction to ARMA models, properties of sample mean and autocorrelation, function",
+        "Forecasting stationary time series",
+        "ARMA(p, q) processes",
+        "ACF and PACF, Modeling and Forecasting with ARMA."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Nonstationary and Seasonal Time Series Models- ARIMA models, Identification",
+      "topics": [
+        "techniques",
+        "Unit roots in time series",
+        "Forecasting ARIMA models",
+        "Seasonal ARIMA models Regression with ARMA errors.Multivariate Time Series analysis",
+        "State-Space Models",
+        "Deep Learning techniques of time series forecasting"
+      ]
+    }
+  ]
+}

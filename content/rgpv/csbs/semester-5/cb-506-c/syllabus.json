@@ -1,0 +1,85 @@
+{
+  "subject": {
+    "id": "cb-506-c",
+    "code": "CB-506 (C)",
+    "name": "Machine Learning",
+    "title": "CB-506 (C) - Machine Learning",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Machine Learning",
+      "topics": [
+        "Introduction to Machine Learning (ML)",
+        "Relationship between ML and human learning",
+        "A quick survey of major models of how machines learn",
+        "Example applications of ML"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Classification",
+      "topics": [
+        "Supervised Learning",
+        "The problem of classification",
+        "Feature Engineering",
+        "Training and testing classifier models",
+        "Cross-validation",
+        "Model evaluation (precision, recall, F1-measure, accuracy, area under curve)",
+        "Statistical decision theory including discriminant functions and decision surfaces",
+        "Naive Bayes classification",
+        "Bayesian networks",
+        "Decision Tree and Random Forests",
+        "k-Nearest neighbor classification",
+        "Support Vector Machines",
+        "Artificial neural networks including backpropagation",
+        "Applications of classifications",
+        "Ensembles of classifiers including bagging and boosting"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Hidden Markov Models and Sequence Classification",
+      "topics": [
+        "Hidden Markov Models (HMM) with forward-backward and Viterbi algorithms",
+        "Sequence classification using HMM",
+        "Conditional random fields",
+        "Applications of sequence classification such as part-of-speech tagging"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Regression",
+      "topics": [
+        "Multi-variable regression",
+        "Model evaluation",
+        "Least squares regression",
+        "Regularization",
+        "LASSO",
+        "Applications of regression"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Association Rule Mining and Clustering",
+      "topics": [
+        "Association rule mining algorithms including apriori",
+        "Expectation-Maximization (EM) algorithm for unsupervised learning",
+        "Clustering: Average linkage",
+        "Ward's algorithm",
+        "Minimum spanning tree clustering",
+        "K-nearest neighbours clustering",
+        "BIRCH",
+        "CURE",
+        "DBSCAN",
+        "Anomaly and outlier detection methods"
+      ]
+    }
+  ]
+}

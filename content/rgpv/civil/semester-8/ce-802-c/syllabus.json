@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "ce-802-c",
+    "code": "CE802 (C)",
+    "name": "Bridge Engineering",
+    "title": "CE802 (C) - Bridge Engineering",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Types of Bridge Super Structures",
+      "topics": [
+        "Introduction and types, temporary bridge superstructures, military bridges, other temporary bridges",
+        "Permanent bridges, R.C.C. bridges, Pre-stressed concrete bridges, steel bridges, movable steel bridge",
+        "Consideration of loads and stresses in road bridges: Introduction, loads, forces and stress, dead loads",
+        "Bridge loading as per relevant IRC and IRS specifications traffic lanes, foot way, kerbs, railing and parapet loading",
+        "Impact, wind load, longitudinal forces, Temperature effect of live load on back fill and on the abutment"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design of R.C. Bridge",
+      "topics": [
+        "Slab culvert, pipe culvert, T-beam, box culvert bridge super structure",
+        "Courbon's theory for load distribution, balanced cantilever bridges, design examples"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design of Steel Bridges",
+      "topics": [
+        "Types of steel superstructure, plate girder bridge, truss bridge",
+        "Wind forces of lattice girder bridge, bracings, arch and bowstring girder bridge, design example"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Pier, Abutment and Wing Walls",
+      "topics": [
+        "Types of piers and abutments, stability analysis of piers and abutments, design of piers",
+        "Forces on piers, stability, abutment, bridge code provision for abutments, wing walls, design examples"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Foundations and Bearings",
+      "topics": [
+        "Types of bridge foundations and general design criteria, shallow foundations, deep foundations, piles, wells and pneumatic caissons, river training works",
+        "Bearings: functions and types of bearings, necessity of bearings, design of elastomeric bearings",
+        "Expansion joints, necessity and types of expansion joints, design considerations"
+      ]
+    }
+  ]
+}

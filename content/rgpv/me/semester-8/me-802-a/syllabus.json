@@ -1,0 +1,149 @@
+{
+  "subject": {
+    "id": "me-802-a",
+    "code": "ME-802 (A)",
+    "name": "Automobile Engineering",
+    "title": "ME-802 (A) - Automobile Engineering",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Chassis and Body Engg",
+      "topics": [
+        "Types",
+        "Technical details of commercial vehicles",
+        "Types of chassis",
+        "Layout",
+        "Types of frames",
+        "Testing of frames for bending and torsion on unutilized body frame",
+        "Vehicle body and their construction",
+        "Driver's visibility and methods for improvement",
+        "Safety aspects of vehicles",
+        "Vehicle aerodynamics",
+        "Optimization of body shape",
+        "Driver's cab design",
+        "Body materials",
+        "Location of engine",
+        "Front wheel and rear wheel drive",
+        "Four wheel drive"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Steering System",
+      "topics": [
+        "Front axle beam",
+        "Stub axle",
+        "Front wheel assembly",
+        "Principles of types of wheel alignment",
+        "Front wheel geometry: camber, Kingpin inclination, castor, toe-in and toe-out",
+        "Condition for true rolling motion",
+        "Centre point steering",
+        "Directional stability of vehicles",
+        "Steering gear",
+        "Power steering",
+        "Slip angle",
+        "Cornering power",
+        "Over steer and under steer",
+        "Gyroscopic effect on steering gears"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Transmission System",
+      "topics": [
+        "Function and types of clutches",
+        "Single plate, multi-plate clutch",
+        "Roller and spring clutch",
+        "Clutch lining and bonding",
+        "Double declutching",
+        "Types of gear boxes",
+        "Synchroniser",
+        "Gear materials",
+        "Determination of gear ratio for vehicles",
+        "Gear box performance at different vehicle speed",
+        "Automatic transmission",
+        "Torque converters",
+        "Fluid coupling",
+        "Principle of hydrostatic drive",
+        "Propeller shaft",
+        "Constant velocity universal joints",
+        "Differential gear box",
+        "Rear axle construction"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Suspension System",
+      "topics": [
+        "Basic suspension movements",
+        "Independent front and rear suspension",
+        "Shock absorber",
+        "Type of springs: leaf spring, coil spring, air spring, torsion bar",
+        "Location of shackles",
+        "Power calculations",
+        "Resistance to vehicle motion during acceleration and breaking",
+        "Power and torque curve",
+        "Torque and mechanical efficiency at different vehicle speeds",
+        "Weight transfer",
+        "Braking systems",
+        "Disc theory",
+        "Mechanical, hydraulic and pneumatic power brake systems",
+        "Performance",
+        "Self-energisation",
+        "Air-bleeding of hydraulic brakes",
+        "Types of wheels and tyres",
+        "Tyre specifications",
+        "Construction and material properties of tyres and tubes"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Electrical and Control Systems",
+      "topics": [
+        "Storage battery",
+        "Construction and operation of lead acid battery",
+        "Testing of battery",
+        "Principle of operation of starting mechanism",
+        "Different drive systems",
+        "Starter relay switch",
+        "Regulator",
+        "Electric fuel gauge",
+        "Fuel pump",
+        "Horn",
+        "Wiper",
+        "Lighting system",
+        "Head light dazzling",
+        "Signaling devices",
+        "Battery operated vehicles",
+        "Choppers",
+        "Importance of maintenance",
+        "Scheduled and unscheduled maintenance",
+        "Wheel alignment",
+        "Trouble shooting probable causes and remedies of various systems",
+        "Microprocessor based control system for automobile",
+        "Intelligent automobile control systems"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Emission Standards and Pollution Control",
+      "topics": [
+        "Indian standards for automotive vehicles: Bharat I, II, III, IV",
+        "Euro I to Euro VI norms",
+        "Fuel quality standards",
+        "Environmental management systems for automotive vehicles",
+        "Catalytic converters",
+        "Fuel additives",
+        "Modern trends in automotive engine efficiency and emission control"
+      ]
+    }
+  ]
+}

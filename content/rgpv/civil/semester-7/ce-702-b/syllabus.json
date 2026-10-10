@@ -1,0 +1,58 @@
+{
+  "subject": {
+    "id": "ce-702-b",
+    "code": "CE702 (B)",
+    "name": "Environmental Engineering-II",
+    "title": "CE702 (B) - Environmental Engineering-II",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit operations for waste-water treatment",
+      "topics": [
+        "Theory and design of preliminary treatment such as screens, grit chamber, sedimentation and chemical clarification",
+        "Role of micro-organism in biological treatment"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Biological Treatment of waste-water",
+      "topics": [
+        "Methods of Biological Treatment (Theory & Design) – Trickling Filter, Activated Sludge process (ASP)",
+        "Oxidation ditch, Septic tank & imhoff tank, theory of sludge"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Advanced Waste-water treatment",
+      "topics": [
+        "Diatomaceous earth filters, Ultrafiltration",
+        "Adsorption by activated carbon",
+        "Phosphorus removal, Nitrogen removal"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction of Air pollution",
+      "topics": [
+        "Definition, Sources, classification and characterization of air pollutants",
+        "Effects of air pollution on health, vegetation & materials, photochemical smog"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Air pollution chemistry",
+      "topics": [
+        "Meteorological aspects of air pollution dispersion; temperature lapse rate and stability",
+        "Wind velocity and turbulence, plume behaviour, dispersion of air pollutants",
+        "The Gaussian Plume Model"
+      ]
+    }
+  ]
+}

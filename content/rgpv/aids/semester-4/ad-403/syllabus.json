@@ -1,0 +1,95 @@
+{
+  "subject": {
+    "id": "ad-403",
+    "code": "AD-403",
+    "name": "Software Engineering with Agile Methodology",
+    "title": "AD-403 - Software Engineering with Agile Methodology",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Software Engineering",
+      "topics": [
+        "Software Development Life Cycles",
+        "SDLC Models: Waterfall, V-Model, Prototype Model, Incremental, Evolutionary, RAD, Spiral",
+        "Project Planning, Metrics for Project Size Estimation, Project Estimation Techniques",
+        "Requirements Gathering and Analysis, Software Requirements Specification (SRS)",
+        "Software Product and Process Characteristics",
+        "Software Process Models, Evolutionary Process Models and Agile processes",
+        "Software Process customization and improvement, CMM",
+        "Product and Process Metrics",
+        "Functional and Non-functional requirements",
+        "Requirement Sources and Elicitation Techniques",
+        "Analysis Modeling for Function-oriented and Object-oriented software development",
+        "Use case Modeling",
+        "System and Software Requirement Specifications",
+        "Requirement Validation, Traceability"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Software Design, Analysis and Testing",
+      "topics": [
+        "The Software Design Process",
+        "Design Concepts and Principles",
+        "Software Modeling and UML",
+        "Architectural Design, Architectural Views and Styles",
+        "User Interface Design",
+        "Function oriented Design, SA/SD Component Based Design",
+        "Design Metrics",
+        "Software Static and Dynamic analysis, Code inspections",
+        "Software Testing Fundamentals, Software Test Process",
+        "Testing Levels, Test Criteria, Test Case Design, Test Oracles",
+        "Test Techniques, Testing Frameworks, Test Plan, Test Metrics, Testing Tools"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Software Maintenance & Software Project Measurement",
+      "topics": [
+        "Need and Types of Maintenance",
+        "Software Configuration Management (SCM)",
+        "Software Change Management, Version Control, Change control and Reporting",
+        "Program Comprehension Techniques, Re-engineering, Reverse Engineering, Tool Support",
+        "Project Management Concepts, Feasibility Analysis",
+        "Project and Process Planning, Resources Allocations",
+        "Software efforts, Schedule, and Cost estimations",
+        "Project Scheduling and Tracking",
+        "Risk Assessment and Mitigation",
+        "Software Quality Assurance (SQA)",
+        "Project Plan, Project Metrics"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Fundamentals of Agile Methodology",
+      "topics": [
+        "Introduction to Agile software development methodology",
+        "Life Cycle of Agile development",
+        "Agile v/s Traditional software development (Waterfall model)",
+        "Agile Manifesto: Principles, Benefits and Challenges of Agile",
+        "Agile Values, Agile Model, Phases of Agile Model"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Software Development using Agile Methodology",
+      "topics": [
+        "Gathering requirement using Agile way",
+        "User Stories: The currency of agile development",
+        "Characteristics of good user stories, Generating User Stories",
+        "Agile estimation and planning",
+        "Implementation of agile",
+        "Applying an Agile Mindset to a Project",
+        "Roles in agile development",
+        "Agile Frameworks: Scrum, Kanban, Crystal, XP, ASD, DSDM"
+      ]
+    }
+  ]
+}

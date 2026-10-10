@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "ad-305",
+    "code": "AD-305",
+    "name": "Object Oriented Programming & Methodology",
+    "title": "AD-305 - Object Oriented Programming & Methodology",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Object Oriented Thinking & Programming",
+      "topics": [
+        "Comparison with Procedural Programming",
+        "Features of Object oriented paradigm",
+        "Merits and demerits of OO methodology",
+        "Object model",
+        "Elements of OOPS, IO processing",
+        "Data Type, Type Conversion, Control Statement, Loops, Arrays"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Encapsulation and Data Abstraction",
+      "topics": [
+        "Concept of Objects: State, Behavior & Identity of an object",
+        "Classes: identifying classes and candidates for Classes Attributes and Services",
+        "Access modifiers",
+        "Static members of a Class, Instances",
+        "Message passing",
+        "Construction and destruction of Objects"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Relationships",
+      "topics": [
+        "Inheritance: purpose and its types",
+        "'is a' relationship",
+        "Association, Aggregation",
+        "Concept of interfaces and Abstract classes"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Polymorphism",
+      "topics": [
+        "Introduction",
+        "Method Overriding & Overloading",
+        "Static and run time Polymorphism",
+        "Virtual Function, friend function, Static function, friend class"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Strings, Exceptions, Multithreading and Case Study",
+      "topics": [
+        "Strings",
+        "Exceptional handling",
+        "Introduction of Multi-threading and Data collections",
+        "Case study like: ATM, Library management system"
+      ]
+    }
+  ]
+}

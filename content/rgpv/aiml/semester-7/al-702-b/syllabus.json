@@ -1,0 +1,80 @@
+{
+  "subject": {
+    "id": "al-702-b",
+    "code": "AL702 (B)",
+    "name": "Advance Machine Learning",
+    "title": "AL702 (B) - Advance Machine Learning",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Artificial Neural Network",
+      "topics": [
+        "Introduction to ANN",
+        "Perceptron",
+        "Cost Function",
+        "Gradient Checking",
+        "Multi-layer perceptron and backpropagation algorithm that is used to help learn parameters for a neural network",
+        "Random Initialization"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Decision Trees",
+      "topics": [
+        "Representing concepts as decision trees",
+        "Recursive induction of decision trees",
+        "Best splitting attribute: entropy and information gain",
+        "Searching for simple trees and computational complexity",
+        "Overfitting, noisy data, and pruning"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Ensemble Methods",
+      "topics": [
+        "Bagging, boosting, stacking and learning with ensembles",
+        "Random Forest"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to reinforcement learning (RL)",
+      "topics": [
+        "Reinforcement Learning",
+        "RL-framework, MDP",
+        "Bellman equations",
+        "Value Iteration and Policy Iteration",
+        "Actor-critic model",
+        "Q-learning, SARSA",
+        "Bandit algorithms - UCB, PAC, Median Elimination",
+        "Policy Gradient",
+        "Full RL & MDPs, Bellman Optimality"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Dynamic Programming and Advanced RL",
+      "topics": [
+        "Dynamic Programming - Value iteration, Policy iteration",
+        "Q-learning & Temporal Difference Methods",
+        "Temporal-Difference Learning",
+        "Eligibility Traces",
+        "Function Approximation",
+        "Least Squares Methods, Fitted Q",
+        "Deep Q-Learning",
+        "Advanced Q-learning algorithms",
+        "Inverse reinforcement learning",
+        "Deep Inverse Reinforcement Learning",
+        "Generative Adversarial Imitation Learning",
+        "Recent Trends in RL Architectures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "subject": {
+    "id": "cy-702-b",
+    "code": "CY-702 (B)",
+    "name": "Block Chain & Crypto-Currencies",
+    "title": "CY-702 (B) - Block Chain & Crypto-Currencies",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Basics of Blockchain: Introduction",
+        "Concept of Blockchain",
+        "Fundamentals of Blockchain",
+        "Characteristics of Blockchain",
+        "Consensus in Trust-Building Exercise",
+        "Public",
+        "Private, and Hybrid Block chains",
+        "Distributed Ledger Technologies",
+        "Architecture of Blockchain",
+        "Transactions",
+        "Chaining Blocks",
+        "Value Proposition of Blockchain",
+        "Permissioned Model of Blockchain."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Hash Functions",
+        "Hashing",
+        "Message Authentication Code",
+        "Secure Hash Algorithms (SHA-1)",
+        "Distributed Hash Tables",
+        "Hashing in Blockchain Mining Consensus",
+        "Consensus Algorithm",
+        "Byzantine Agreement Methods."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Blockchain Components",
+        "Ethereum Virtual Machine",
+        "Working of Ethereum",
+        "Ethereum Clients",
+        "Ethereum Transactions, , Ethereum Development Tools",
+        "Introduction of Cryptography",
+        "Cryptography Primitives",
+        "Symmetric Cryptography",
+        "Asymmetric Cryptography",
+        "Architecture of Hyper ledger."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Smart Contracts",
+        "Absolute and Immutable",
+        "Contractual Confidentiality",
+        "Supply Chain Management",
+        "Darknet",
+        "The Future Bit coins",
+        "Working of Bitcoin",
+        "Merkle Trees",
+        "Bitcoin Block Structure",
+        "Bitcoin Address",
+        "Bitcoin Transactions Bitcoin Payments",
+        "Mining in Blockchain."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Blockchain Vertical Solutions and Use Cases",
+        "Blockchain in Different domain like Insurance",
+        "Assets Management, healthcare etc., Smart Assets",
+        "Electronic Currency",
+        "Manufacturing Blockchain and Allied Technologies",
+        "Blockchain and Cloud Computing",
+        "Characteristics of Blockchain Cloud."
+      ]
+    }
+  ]
+}

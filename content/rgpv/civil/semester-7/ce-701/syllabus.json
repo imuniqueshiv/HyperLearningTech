@@ -1,0 +1,72 @@
+{
+  "subject": {
+    "id": "ce-701",
+    "code": "CE-701",
+    "name": "Geotechnical Engineering",
+    "title": "CE-701 - Geotechnical Engineering",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction, Index Properties and Classification of Soils",
+      "topics": [
+        "Definition and scope of soil mechanics, Origin of soil, formation of soil, clay minerals, Soil structure",
+        "3-phase soil system, Basic terminology, and their relations",
+        "Index properties of soil - Water content, Field density, Specific gravity, Grain size distribution by sieve and hydrometer analysis, Relative density",
+        "Atterberg limits and their determination, Various indices - Flow-Index, Plasticity Index, Toughness Index, Liquidity Index, Activity Ratio",
+        "Different Systems of Soil Classification - Particle Size, Textural, Unified, HRB and IS classification; Field identification of soils"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Permeability, Effective Stress and Seepage through Soils",
+      "topics": [
+        "Types of soil water, Capillarity in soils, Flow of water through soils, Darcy's Law, permeability, Factors affecting permeability",
+        "Laboratory & field tests for determination of coefficient of permeability, Permeability of layered soils",
+        "Seepage pressure, total, Neutral and effective stress, Upward and downward seepage through soils",
+        "Flow nets: characteristics, Methods of construction of flow net, Application of flow net, Quick condition",
+        "Laplace Equation for two-dimensional flow, Seepage through anisotropic soil and non-homogenous soil, Seepage through earth dam"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Stress Distribution in Soils and Compaction",
+      "topics": [
+        "Boussinesq's and Westergard's theories for point load, Uniformly loaded circular and rectangular areas, Pressure bulb",
+        "Variation of vertical stress under point load along vertical and horizontal plane, Newmark's influence chart for irregular areas",
+        "Contact pressure distribution in sands and clays",
+        "Mechanism importance of compaction, Standard Proctor compaction test, Modified compaction test",
+        "Factors affecting compaction, Effects of compaction on soil properties, Field compaction equipment and compaction quality control"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Consolidation",
+      "topics": [
+        "Types of compressibility, Spring analogy, Immediate settlement, Primary consolidation and secondary consolidation",
+        "Stress history of clay, e-p and e-log p curves",
+        "Normally consolidated soil, Over consolidated soil and under consolidated soil, Pre-consolidation pressure and its determination",
+        "Consolidation test, Terzaghi's 1-D consolidation theory, Coefficient of consolidation",
+        "Square root time and Logarithm of time fitting methods, Computation of total settlement"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Shear Strength & Stabilization of Soils",
+      "topics": [
+        "Definition and importance of shear strength, Mohr and coulomb failure theories, Mohr's Stress Circles",
+        "Measurement of shear strength-Different types of Shear Test namely, Direct Shear Test, Unconfined Compression Test, Tri Axial Compression Test & Vane Shear Test for strength parameters",
+        "Strength tests based on drainage conditions, Measurement of pore pressure, Pore pressure parameters, Strength envelops",
+        "Shear strength of sands, Critical void ratio, Liquefaction, Shear strength of clays; Factors affecting shear strength of granular soils and cohesive soils",
+        "Stabilization of Soil: Mechanical, Cement, Lime, Bituminous, Chemical, Thermal, Electrical stabilization, Stabilization by grouting",
+        "Use of geo-synthetic materials, Types, Functions and applications of geo-synthetics, Reinforced earth structures-components and construction"
+      ]
+    }
+  ]
+}

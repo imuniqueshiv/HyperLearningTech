@@ -1,0 +1,82 @@
+{
+  "subject": {
+    "id": "ad-504-c",
+    "code": "AD-504 (C)",
+    "name": "Operations Research",
+    "title": "AD-504 (C) - Operations Research",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Linear Programming",
+      "topics": [
+        "Origin and development of OR",
+        "Different phases of OR study",
+        "Methodology of OR",
+        "Scope and limitations of OR",
+        "OR in decision making",
+        "Linear programming: introduction",
+        "Mathematical formulation of a problem",
+        "Graphical solutions",
+        "Standard form of the simplex method for maximization and minimization problems",
+        "Interpretation of duality",
+        "Dual simplex method"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Transportation and Assignment Problems",
+      "topics": [
+        "Transportation problem (TP) and its formulation",
+        "Finding a basic feasible solution and optimal solution for the transportation problem",
+        "Assignment problem and its formulation",
+        "Hungarian method for solving the assignment problem",
+        "Travelling salesman problem"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Project Scheduling",
+      "topics": [
+        "PERT and CPM with known activity times",
+        "Critical path analysis",
+        "Various types of floats",
+        "Probability considerations in PERT",
+        "Updating of PERT charts",
+        "Project crashing",
+        "Formulation of CPM as a linear programming problem",
+        "Resource levelling and resource scheduling"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Sequencing and Dynamic Programming",
+      "topics": [
+        "Introduction to the sequencing problem",
+        "Flow shop problem: processing n jobs through 2, 3, and m machines",
+        "General n/m job-shop problem",
+        "Introduction to dynamic programming",
+        "Dynamic programming approach for solving linear programming problems",
+        "Applications of dynamic programming"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Queuing Theory",
+      "topics": [
+        "Introduction to queuing theory",
+        "Queuing systems and their characteristics",
+        "Pure-birth and pure-death models",
+        "Kendall and Lee's notation of queuing",
+        "Empirical queuing models",
+        "Numerical problems on M/M/1 and M/M/C queuing models"
+      ]
+    }
+  ]
+}

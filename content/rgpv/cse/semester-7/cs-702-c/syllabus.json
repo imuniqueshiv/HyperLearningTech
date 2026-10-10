@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "cs-702-c",
+    "code": "CS-702 (C)",
+    "name": "Wireless & Mobile Computing",
+    "title": "CS-702 (C) - Wireless & Mobile Computing",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Review of Traditional Networks",
+      "topics": [
+        "Review of LAN, MAN, WAN, Intranet, Internet",
+        "Interconnectivity devices: bridges, Routers etc.",
+        "Review of TCP/IP Protocol Architecture: ARP/RARP, IP addressing, IP Datagram format and its Delivery",
+        "Routing table format, ICMP Messages, Subnetting, Supernetting and CIDR, DNS",
+        "NAT: Private addressing and NAT, SNAT, DNAT, NAT and firewalls",
+        "VLANS: Concepts, Comparison with Real LANS, Type of VLAN, Tagging",
+        "IPV6: address structure, address space and header"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Traditional Routing and Transport",
+      "topics": [
+        "Routing Protocols: BGP - Concept of hidden network and autonomous system, An Exterior gateway protocol, Different messages of BGP",
+        "Interior Gateway protocol: RIP, OSPF",
+        "Multiplexing and ports",
+        "TCP: Segment format, Sockets, Synchronization, Three Way Hand Shaking",
+        "Variable window size and Flow control, Timeout and Retransmission algorithms, Connection Control, Silly window Syndrome",
+        "Example of TCP: Taho, Reno, Sack etc.",
+        "UDP: Message Encapsulation, Format and Pseudo header"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Wireless LAN and Mobile IP",
+      "topics": [
+        "Wireless LAN: Transmission Medium For WLANs, MAC problems",
+        "Hidden and Exposed terminals, Near and Far terminals",
+        "Infrastructure and Ad hoc Networks",
+        "IEEE 802.11 - System arch, Protocol arch, Physical layer, Concept of spread spectrum, MAC and its management, Power management, Security",
+        "Mobile IP: unsuitability of Traditional IP; Goals, Terminology, Agent advertisement and discovery, Registration, Tunneling techniques",
+        "Ad hoc network routing: Ad hoc Network routing v/s Traditional IP routing, types of routing protocols",
+        "Examples: OADV, DSDV, DSR, ZRP etc."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Mobile Transport Layer and Cellular Networks",
+      "topics": [
+        "Mobile transport layer: unsuitability of Traditional TCP; I-TCP, S-TCP, M-TCP",
+        "Wireless Cellular networks: Cellular system, Cellular networks v/s WLAN",
+        "GSM - Services, system architecture, Localization and calling, handover and Roaming"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Mobile OS and M-Commerce",
+      "topics": [
+        "Mobile Device Operating Systems: Special Constraints & Requirements, Commercial Mobile Operating Systems",
+        "Software Development Kit: iOS, Android etc.",
+        "MCommerce: Structure, Pros & Cons, Mobile Payment System, Security Issues"
+      ]
+    }
+  ]
+}

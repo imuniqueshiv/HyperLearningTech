@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "cb-105",
+    "code": "CB-105",
+    "name": "Fundamentals of Physics",
+    "title": "CB-105 - Fundamentals of Physics",
+    "semester": "I"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Oscillation",
+      "topics": [
+        "Periodic motion-simple harmonic motion-characteristics of simple harmonic motion-vibration of simple spring mass system",
+        "Resonance-definition",
+        "Damped harmonic oscillator - heavy, critical and light damping",
+        "Energy decay in a damped harmonic oscillator, quality factor",
+        "Forced mechanical and electrical oscillators"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Interference and Diffraction",
+      "topics": [
+        "Principle of superposition-young's experiment: Theory of interference fringes-types of interference-Fresnel's prism-Newton's rings",
+        "Diffraction-Two kinds of diffraction-Difference between interference and diffraction",
+        "Fresnel's half period zone and zone plate-Fraunhofer diffraction at single slit-plane diffraction grating",
+        "Temporal and Spatial Coherence"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Polarization of light and Basic Idea of Electromagnetisms",
+      "topics": [
+        "Polarization - Concept of production of polarized beam of light from two SHM acting at right angle",
+        "Plane, elliptical and circularly polarized light, Brewster's law, double refraction",
+        "Continuity equation for current densities",
+        "Maxwell's equation in vacuum and non-conducting medium"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Quantum Mechanics, Crystallography and Semiconductor Physics",
+      "topics": [
+        "Planck's quantum theory- Matter waves, de-Broglie wavelength, Heisenberg's Uncertainty principle",
+        "Time independent and time dependent Schrodinger's wave equation",
+        "Physical significance of wave function, Particle in a one dimensional potential box, Heisenberg Picture",
+        "Basic terms-types of crystal systems, Bravais lattices, miller indices, d spacing",
+        "Atomic packing factor for SC, BCC, FCC and HCP structures",
+        "Conductor, Semiconductor and Insulator; Basic concept of Band theory"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Laser and Fiber optics and Thermodynamics",
+      "topics": [
+        "Einstein's theory of matter radiation interaction and A and B coefficients",
+        "Amplification of light by population inversion",
+        "Different types of lasers: Ruby Laser, CO2 and Neodymium lasers",
+        "Properties of laser beams: mono-chromaticity, coherence, directionality and brightness, laser speckles",
+        "Applications of lasers in engineering",
+        "Fiber optics and Applications, Types of optical fibers",
+        "Zeroth law of thermodynamics, first law of thermodynamics, brief discussion on application of 1st law",
+        "Second law of thermodynamics and concept of Engine, entropy, change in entropy in reversible and irreversible processes"
+      ]
+    }
+  ]
+}

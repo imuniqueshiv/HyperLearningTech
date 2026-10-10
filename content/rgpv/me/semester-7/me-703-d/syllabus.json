@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "me-703-d",
+    "code": "ME-703 (D)",
+    "name": "Reliability Engineering",
+    "title": "ME-703 (D) - Reliability Engineering",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Reliability :",
+      "topics": [
+        "Definition",
+        "Importance",
+        "History",
+        "Reliabilty Vs.",
+        "Quality,Failure pattern of complex product",
+        "Factor of safety and reliability",
+        "Reliability analysis procedure",
+        "Reliability management",
+        "Some examples of system failures., Reliability function-MTTF, Hazard rate function",
+        "Bathtubcurve"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Basic probability theory:",
+      "topics": [
+        "Set theory",
+        "Laws of probability",
+        "Probability theorem Random variables and probability distributions",
+        "Bay's Theorem",
+        "Central limit theorem,"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Functions of random variables:",
+      "topics": [
+        "Single , two and several random variables",
+        "Probability distribution functions, density functions for different types of discrete and continuous variables, mean, mode and median",
+        "Numerical solutions",
+        "Extremal distributions, derivation of the reliability function-constant failure rate model - time dependent failure models.",
+        "Weibull distribution - normal distribution - the lognormal distribution."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Modeling of geometry, strength and loads:",
+      "topics": [
+        "Fatigue strength",
+        "Time dependent reliability of components",
+        "Failure rate versus time, reliability and hazard functions and different distributions",
+        "Estimation of failure rate",
+        "Expected residual life",
+        "Series, parallel and mixed systems, complex systems",
+        "Reliability enhancement,"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Reliability based design:",
+      "topics": [
+        "Optimization problems",
+        "Failure modes and effect analysis",
+        "Event tree and fault tree analysis",
+        "Reliability testing",
+        "Reliability data and analysis, measurement of reliability",
+        "Monte Carlo Simulation",
+        "Computation of reliability",
+        "Optimization techniques for system reliability with redundancy - heuristic methods applied to optimal system reliability- redundancy allocation by dynamic programming - reliability optimization by non linear programming."
+      ]
+    }
+  ]
+}

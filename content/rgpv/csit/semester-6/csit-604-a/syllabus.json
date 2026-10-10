@@ -1,0 +1,102 @@
+{
+  "subject": {
+    "id": "csit-604-a",
+    "code": "CSIT-604 (A)",
+    "name": "Cryptography and Network Security",
+    "title": "CSIT-604 (A) - Cryptography and Network Security",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Network Security and Intrusion Detection",
+      "topics": [
+        "Introduction to network security, computer security and cyber security",
+        "Security terminologies and principles",
+        "Security threats",
+        "Types of attacks: operating system, application level, shrink wrap code and misconfiguration attacks",
+        "Introduction to intrusion and terminologies",
+        "Intrusion Detection System (IDS) and types of intrusion detection systems",
+        "System Integrity Verifiers (SIVS)",
+        "Indication of intrusion: system, file system and network indications",
+        "Intrusion detection tools",
+        "Post attack IDS measures and evading IDS systems",
+        "Penetration testing and categories of security assessments",
+        "Vulnerability assessment and types of penetration testing",
+        "Risk management"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Cryptography and Public Key Systems",
+      "topics": [
+        "Classical cryptographic techniques",
+        "Encryption and decryption",
+        "Code breaking methodologies and cryptanalysis",
+        "Cryptography attacks and brute-force attack",
+        "Use of cryptography",
+        "Public key cryptography and principles of public key cryptosystems",
+        "Cryptographic algorithms: RSA, DES, RC4, RC5, RC6 and Blowfish",
+        "Key management",
+        "Diffie-Hellman key exchange",
+        "Elliptic curve cryptography"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Hash Functions, Authentication and Digital Signatures",
+      "topics": [
+        "One-way hash functions",
+        "SHA (Secure Hash Algorithm)",
+        "Authentication requirements and authentication functions",
+        "Kerberos",
+        "Message authentication codes",
+        "Message digest functions and MD5",
+        "SSL (Secure Sockets Layer)",
+        "SSH (Secure Shell)",
+        "Disk encryption",
+        "Government Access to Keys (GAK)",
+        "Digital signature: analysis, components, method, applications and standard",
+        "Signature generation/verification",
+        "ECDSA and ElGamal signature scheme",
+        "Digital certificates"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Malware, Sniffing, Phishing and DoS",
+      "topics": [
+        "Trojans and backdoors: overt and covert channels, working and types",
+        "Viruses and worms: characteristics, working, infection phase and attack phase",
+        "Sniffers: definition, spoofing, sniffing, vulnerable protocols and types",
+        "Phishing methods, process and attack types",
+        "Web application security: secured authentication, secured session management, cross-site scripting and SQL injection",
+        "Denial-of-service attacks and types including Smurf, buffer overflow, ping of death, teardrop, SYN attack and SYN flooding",
+        "DDoS attack",
+        "Session hijacking, spoofing vs hijacking and TCP/IP hijacking",
+        "CAPTCHA protection"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IP Security, Firewalls and Forensics",
+      "topics": [
+        "IP security",
+        "Web security",
+        "Firewalls: types, operation, design principles and trusted systems",
+        "Computer forensics: need, objectives, stages and steps of forensic investigation",
+        "Incident handling",
+        "Hacking and classes of hacker: black hats, grey hats, white hats and suicide hackers",
+        "Footprinting",
+        "Scanning types: port, network and vulnerability",
+        "E-mail spiders",
+        "Overview of system hacking cycle"
+      ]
+    }
+  ]
+}

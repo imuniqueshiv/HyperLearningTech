@@ -1,0 +1,102 @@
+{
+  "subject": {
+    "id": "al-503-b",
+    "code": "AL503 (B)",
+    "name": "Deep Learning",
+    "title": "AL503 (B) - Deep Learning",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "History of deep learning",
+        "McCulloch-Pitts neuron",
+        "Multilayer perceptrons (MLPs)",
+        "Representation power of MLPs",
+        "Sigmoid neurons",
+        "Feedforward neural networks",
+        "Backpropagation",
+        "Weight initialization methods",
+        "Batch normalization",
+        "Representation learning",
+        "GPU implementation",
+        "Decomposition: PCA and SVD"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Deep Feedforward Neural Networks",
+      "topics": [
+        "Gradient descent (GD)",
+        "Momentum-based gradient descent",
+        "Nesterov accelerated gradient descent",
+        "Stochastic gradient descent",
+        "AdaGrad, Adam, and RMSProp",
+        "Autoencoders",
+        "Regularization in autoencoders",
+        "Denoising autoencoders",
+        "Sparse autoencoders",
+        "Contractive autoencoders",
+        "Variational autoencoder",
+        "Relationship of autoencoders with PCA and SVD",
+        "Dataset augmentation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Convolutional Neural Networks",
+      "topics": [
+        "Introduction to convolutional neural networks and their architectures",
+        "CNN terminologies: ReLU activation function, stride, padding, and pooling",
+        "Convolution operations and convolutional kernels",
+        "Types of layers: convolutional, pooling, and fully connected",
+        "Visualizing CNNs",
+        "CNN examples: LeNet, AlexNet, ZF-Net, VGGNet, GoogLeNet, ResNet, and RCNN",
+        "Deep Dream and Deep Art",
+        "Regularization: dropout, DropConnect, unit pruning, and stochastic pooling",
+        "Artificial data, injecting noise in the input, and early stopping",
+        "Limiting the number of parameters and weight decay"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Deep Recurrent Neural Networks",
+      "topics": [
+        "Introduction to deep recurrent neural networks and their architectures",
+        "Backpropagation through time (BPTT)",
+        "Vanishing and exploding gradients",
+        "Truncated BPTT",
+        "Gated recurrent units (GRUs)",
+        "Long short-term memory (LSTM)",
+        "Solving the vanishing gradient problem with LSTMs",
+        "Encoding and decoding in an RNN",
+        "Attention mechanism",
+        "Attention over images",
+        "Hierarchical attention",
+        "Directed graphical models",
+        "Applications of deep RNNs in image processing, natural language processing, speech recognition, and video analytics"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Deep Generative Models",
+      "topics": [
+        "Introduction to deep generative models",
+        "Restricted Boltzmann machines (RBMs)",
+        "Gibbs sampling for training RBMs",
+        "Deep belief networks",
+        "Markov networks and Markov chains",
+        "Autoregressive models: NADE, MADE, and PixelRNN",
+        "Generative adversarial networks (GANs)",
+        "Applications of deep learning in object detection, speech and image recognition, video analysis, NLP, and medical science"
+      ]
+    }
+  ]
+}

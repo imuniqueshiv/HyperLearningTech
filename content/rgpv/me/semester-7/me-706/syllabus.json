@@ -1,0 +1,32 @@
+{
+  "subject": {
+    "id": "me-706",
+    "code": "ME-706",
+    "name": "Major Project -I",
+    "title": "ME-706 - Major Project -I",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Major Project - I",
+      "topics": [
+        "To develop an inquiring aptitude and build confidence among students by working on solutions of small industrial problems.",
+        "To give students an opportunity to do some thing creative and to assimilate real life work situation in institution.",
+        "To adapt students for latest development and to handle independently new situations.",
+        "To develop good expressions power and presentation abilities in students.",
+        "The focus of the Major Project I is on preparing a working system or some design or understanding of a complex system using system analysis tools and submit it the same in the form of a write up i.e. detail project report.",
+        "The student should select some real life problems for their project and maintain proper documentation of different stages of project such as need analysis market analysis, concept evaluation, requirement specification, objectives, work plan, analysis, design, implementation and test plan.",
+        "Each student is required to prepare a project report and present the same at the final examination with a demonstration of the working system (if any) Working schedule: The faculty and students should work according to following schedule: Each student undertakes substantial and individual project in an approved area of the subject and supervised by a faculty of the department.",
+        "In special case, if project is huge, then maximum 03 students may be permitted to work together as a team to do the same.",
+        "The student must submit outline and action plan for the project execution (time schedule) and the same be approved by the concerned faculty and Head of department.",
+        "Project guide should motivate students to develop some Innovative working models in the area of Advanced Automotives",
+        "Aero modelling",
+        "Renewable Energy based systems",
+        "Mechatronics,Robotic systems",
+        "Advanced Manufacturing Technology based systems etc. which can contribute to the society."
+      ]
+    }
+  ]
+}

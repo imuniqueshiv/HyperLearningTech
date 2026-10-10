@@ -1,0 +1,99 @@
+{
+  "subject": {
+    "id": "ad-502",
+    "code": "AD-502",
+    "name": "Machine Learning",
+    "title": "AD-502 - Machine Learning",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Machine Learning",
+      "topics": [
+        "Introduction to machine learning",
+        "Machine learning life cycle",
+        "Types of machine learning systems: supervised and unsupervised learning",
+        "Batch and online learning",
+        "Instance-based and model-based learning",
+        "Scope and limitations",
+        "Challenges of machine learning",
+        "Data visualization",
+        "Hypothesis function and testing",
+        "Data pre-processing",
+        "Data augmentation",
+        "Normalizing data sets",
+        "Bias-variance tradeoff",
+        "Relation between AI, ML, DL, and DS"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Clustering in Machine Learning",
+      "topics": [
+        "Types of clustering methods: partitioning clustering",
+        "Distribution model-based clustering",
+        "Hierarchical clustering",
+        "Fuzzy clustering",
+        "BIRCH algorithm",
+        "CURE algorithm",
+        "Gaussian mixture models and expectation maximization",
+        "Parameter estimation: MLE and MAP",
+        "Applications of clustering"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Classification Algorithms",
+      "topics": [
+        "Logistic regression",
+        "Decision tree classification",
+        "Neural network",
+        "K-nearest neighbors (K-NN)",
+        "Support vector machine",
+        "Naive Bayes: Gaussian, Multinomial, and Bernoulli",
+        "Performance measures: confusion matrix",
+        "Classification accuracy",
+        "Classification report: precision, recall, F1 score, and support"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Ensemble Learning and Random Forest",
+      "topics": [
+        "Introduction to ensemble learning",
+        "Basic ensemble techniques: max voting, averaging, and weighted average",
+        "Voting classifiers",
+        "Bagging and pasting",
+        "Out-of-bag evaluation",
+        "Random patches and random subspaces",
+        "Random forests: Extra-Trees and feature importance",
+        "Boosting: AdaBoost and Gradient Boosting",
+        "Stacking"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Dimensionality Reduction and Learning Theory",
+      "topics": [
+        "The curse of dimensionality",
+        "Main approaches for dimensionality reduction: projection and manifold learning",
+        "PCA: preserving the variance",
+        "Principal components",
+        "Projecting down to d dimensions",
+        "Explained variance ratio",
+        "Choosing the right number of dimensions",
+        "PCA for compression",
+        "Randomized PCA",
+        "Incremental PCA",
+        "Kernel PCA: selecting a kernel and tuning hyperparameters",
+        "Learning theory: PAC and VC model"
+      ]
+    }
+  ]
+}

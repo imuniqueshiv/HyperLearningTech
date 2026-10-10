@@ -1,0 +1,71 @@
+{
+  "subject": {
+    "id": "al-702-c",
+    "code": "AL702 (C)",
+    "name": "Predictive Analytics",
+    "title": "AL702 (C) - Predictive Analytics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Data Product",
+        "Data Product Examples in Enterprise",
+        "Developing a Data Product Strategy"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Reading Data and Data Processing in Python",
+      "topics": [
+        "Reading CSV & JSON Files",
+        "Processing Structured Data in Python",
+        "Live-Coding: JSON",
+        "Extracting Simple Statistics from Datasets",
+        "Data Filtering and Cleaning",
+        "Processing Text and Strings in Python",
+        "Processing Times and Dates in Python"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Python Libraries and Toolkits",
+      "topics": [
+        "Matrix Processing and Numpy",
+        "Introduction to Data Visualization",
+        "Introduction to Matplotlib",
+        "urllib and BeautifulSoup"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Gradient Descent Classification in Python",
+      "topics": [
+        "Introduction to Training and Testing",
+        "Gradient Descent in Python",
+        "Gradient Descent in TensorFlow"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Diagnostics for Data",
+      "topics": [
+        "Meaningful Predictive modelling",
+        "Regression Diagnostic",
+        "Over- and Under-Fitting",
+        "Classification Diagnostics: Accuracy and Error",
+        "Classification Diagnostics: Precision and Recall",
+        "Codebase for Evaluation and Validation",
+        "Model Complexity and Regularization",
+        "Evaluating Classifiers for Ranking"
+      ]
+    }
+  ]
+}

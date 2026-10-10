@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "csit-802-c",
+    "code": "CSIT-802 (C)",
+    "name": "Web & Information Retrieval",
+    "title": "CSIT-802 (C) - Web & Information Retrieval",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Information Retrieval",
+      "topics": [
+        "Information versus data retrieval",
+        "The retrieval process",
+        "Taxonomy of information retrieval models"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Classic Information Retrieval Techniques",
+      "topics": [
+        "Boolean model",
+        "Vector model",
+        "Probabilistic model",
+        "Comparison of classical models",
+        "Introduction to alternative algebraic models such as Latent Semantic Indexing"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Queries, Indexing and Searching",
+      "topics": [
+        "Keyword based queries",
+        "User relevance feedback",
+        "Query expansion and rewriting",
+        "Document preprocessing and clustering",
+        "Inverted index construction",
+        "Introduction to pattern matching"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Web Search",
+      "topics": [
+        "Crawling and indexes",
+        "Search engine architectures",
+        "Link analysis and ranking algorithms such as HITS and PageRank",
+        "Meta searches",
+        "Performance evaluation of search engines using various measures",
+        "Introduction to search engine optimization"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Online IR Systems and Personalization",
+      "topics": [
+        "Introduction to online IR systems",
+        "Digital library searches",
+        "Web personalization"
+      ]
+    }
+  ]
+}

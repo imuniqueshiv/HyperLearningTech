@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "cs-802-a",
+    "code": "CS-802 (A)",
+    "name": "Block Chain Technologies",
+    "title": "CS-802 (A) - Block Chain Technologies",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Overview of Block chain, Public Ledgers, Bit coin, Smart Contracts",
+        "Block in a Block chain, Transactions, Distributed Consensus",
+        "Public vs Private Block chain",
+        "Understanding Crypto currency to Block chain",
+        "Permissioned Model of Block chain",
+        "Overview of Security aspects of Block chain",
+        "Basic Crypto Primitives: Cryptographic Hash Function, Properties of a hash function, Hash pointer and Merkle tree, Digital Signature, Public Key Cryptography, A basic crypto currency"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Understanding Block chain with Crypto currency",
+      "topics": [
+        "Bit coin and Block chain: Creation of coins, Payments and double spending",
+        "Bit coin Scripts, Bit coin P2P Network, Transaction in Bit coin Network",
+        "Block Mining, Block propagation and block relay",
+        "Working with Consensus in Bit coin: Distributed consensus in open environments, Consensus in a Bitcoin network",
+        "Proof of Work (PoW) - basic introduction, Hash Cash PoW, Bit coin PoW",
+        "Attacks on PoW and the monopoly problem",
+        "Proof of Stake, Proof of Burn and Proof of Elapsed Time",
+        "The life of a Bitcoin Miner, Mining Difficulty, Mining Pool"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Understanding Block chain for Enterprises",
+      "topics": [
+        "Permissioned Block chain: Permissioned model and use cases",
+        "Design issues for Permissioned block chains, Execute contracts, State machine replication",
+        "Overview of Consensus models for permissioned block chain - Distributed consensus in closed environment",
+        "Paxos, RAFT Consensus",
+        "Byzantine general problem, Byzantine fault tolerant system",
+        "Lamport-Shostak-Pease BFT Algorithm, BFT over Asynchronous systems"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Enterprise Application of Block chain",
+      "topics": [
+        "Cross border payments",
+        "Know Your Customer (KYC)",
+        "Food Security",
+        "Mortgage over Block chain",
+        "Block chain enabled Trade",
+        "We Trade - Trade Finance Network",
+        "Supply Chain Financing",
+        "Identity on Block chain"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Block chain Application Development",
+      "topics": [
+        "Hyperledger Fabric - Architecture, Identities and Policies, Membership and Access Control, Channels, Transaction Validation",
+        "Writing smart contract using Hyperledger Fabric",
+        "Writing smart contract using Ethereum",
+        "Overview of Ripple and Corda"
+      ]
+    }
+  ]
+}

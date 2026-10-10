@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "cs-603-b",
+    "code": "CS-603 (B)",
+    "name": "Computer Graphics & Visualization",
+    "title": "CS-603 (B) - Computer Graphics & Visualization",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Raster Graphics and Scan Conversion",
+      "topics": [
+        "Introduction to Raster Scan displays, Pixels, Frame buffer",
+        "Vector & Character generation",
+        "Random Scan systems, Display devices",
+        "Scan Conversion techniques",
+        "Line Drawing algorithms: simple DDA, Bresenham's Algorithm",
+        "Circle Drawing Algorithms: Midpoint Circle drawing and Bresenham's Algorithm",
+        "Polygon fill algorithm: Boundary-fill and Flood-fill algorithms"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "2-D Transformation and Clipping",
+      "topics": [
+        "2-D Transformation: Translation, Rotation, Scaling, Shearing, Reflection",
+        "Inverse Transformation",
+        "Homogeneous coordinate system, Matrices Transformation, Composite Transformation",
+        "Windowing & Clipping: World Coordinate System, Screen Coordinate System, Viewing Transformation",
+        "Line Clipping & Polygon Clipping Algorithms"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "3-D Graphics and Illumination",
+      "topics": [
+        "3-D Transformations: Translation, Rotation and Scaling",
+        "Parallel & Perspective Projection: Types of Parallel & Perspective Projection",
+        "Hidden Surface elimination: Depth comparison, Back face detection algorithm, Painter's Algorithm, Z-Buffer Algorithm",
+        "Curve generation, Bezier and B-spline methods",
+        "Basic Illumination Model: Diffuse reflection, Specular reflection, Phong Shading, Gouraud shading, Ray Tracing",
+        "Color models like RGB, YIQ, CMY, HSV"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Visualization",
+      "topics": [
+        "Visualization of 2D/3D scalar fields: color mapping, ISO surfaces",
+        "Direct volume data rendering: ray-casting, transfer functions, segmentation",
+        "Visualization of Vector fields and flow data",
+        "Time-varying data",
+        "High-dimensional data: dimension reduction, parallel coordinates",
+        "Non-spatial data: multi-variate, tree/graph structured, text",
+        "Perceptual and cognitive foundations",
+        "Evaluation of visualization methods",
+        "Applications of visualization",
+        "Basic Animation Techniques like traditional, key framing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Multimedia",
+      "topics": [
+        "Basic of multimedia, application of Multimedia",
+        "Text-Types, Unicode Standard, text Compression, Text file formats",
+        "Audio Components, Digital Audio, Digital Audio processing, Sound cards, Audio file formats, Audio Processing software",
+        "Video-Video color spaces, Digital Video, Digital Video processing, Video file formats",
+        "Animation: Uses of Animation, Principles of Animation, Computer based animation, 3D Animation, Animation file formats, Animation software, Special Effects in animation, Storyboarding for Animation",
+        "Compression: Lossless/Lossy Compression techniques, Image, Audio & Video Compression, MPEG Standards",
+        "Multimedia Architecture, Multimedia databases"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "subject": {
+    "id": "cb-403",
+    "code": "CB-403",
+    "name": "Software Engineering",
+    "title": "CB-403 - Software Engineering",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Programming in the small vs. programming in the large",
+        "Software project failures and importance of software quality and timely availability",
+        "Software engineering towards successful execution of large software projects",
+        "Emergence of software engineering as a discipline",
+        "Software Engineering Historical Development from Jackson Structured Programming to Agile Development"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Software Project Management",
+      "topics": [
+        "Basic concepts of life cycle models – different models and milestones",
+        "Software project planning – identification of activities and resources; concepts of feasibility study",
+        "Techniques for estimation of schedule and effort; software cost estimation models and concepts of software engineering economics",
+        "Techniques of software project control and reporting",
+        "Introduction to measurement of software size",
+        "Introduction to the concepts of risk and its mitigation; configuration management"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Software Quality Management and Reliability",
+      "topics": [
+        "Software quality; Garvin's quality dimensions, McCall's quality factor, ISO 9126 quality factor",
+        "Software Quality Dilemma",
+        "Introduction to Capability Maturity Models (CMM and CMMI)",
+        "Introduction to software reliability, reliability models and estimation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Software Requirements Analysis, Design and Construction",
+      "topics": [
+        "Introduction to Software Requirements Specifications (SRS) and requirement elicitation techniques",
+        "Techniques for requirement modelling – decision tables, event tables, state transition tables, Petri nets",
+        "Requirements documentation through use cases",
+        "Introduction to UML, introduction to software metrics and metrics-based control methods",
+        "Measures of code and design quality"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Object Oriented Analysis, Design and Construction",
+      "topics": [
+        "The principles of abstraction, modularity, specification, encapsulation and information hiding",
+        "Concepts of abstract data type; Class Responsibility Collaborator (CRC) model",
+        "Quality of design; design measurements; concepts of design patterns; Refactoring",
+        "Object-oriented construction principles; object oriented metrics"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Software Testing and Agile Software Engineering",
+      "topics": [
+        "Introduction to faults and failures; basic testing concepts; concepts of verification and validation",
+        "Black box and white box tests; white box test coverage – code coverage, condition coverage, branch coverage",
+        "Basic concepts of black-box tests – equivalence classes, boundary value tests, usage of state tables",
+        "Testing use cases; transaction based testing; testing for non-functional requirements – volume, performance and efficiency",
+        "Concepts of inspection; Unit Testing, Integration Testing, System Testing and Acceptance Testing",
+        "Concepts of Agile Methods, Extreme Programming; Agile Process Model - Scrum, Feature; Scenarios and Stories"
+      ]
+    }
+  ]
+}

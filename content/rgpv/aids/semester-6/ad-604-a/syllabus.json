@@ -1,0 +1,74 @@
+{
+  "subject": {
+    "id": "ad-604-a",
+    "code": "AD-604 (A)",
+    "name": "Internet of Things",
+    "title": "AD-604 (A) - Internet of Things",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "IoT ecosystems",
+        "Physical and logical design of IoT, IoT enablers",
+        "Modern day IoTapplications",
+        "M2M communications",
+        "IoT vs M2M, IoT vs WoT, IoT reference architecture",
+        "IoTNetwork configurations",
+        "IoT LAN, IoT WAN, IoT Node",
+        "IoT Gateway",
+        "IoT Proxy",
+        "Review ofBasic Microcontrollers and interfacing."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "resolution",
+        "Sensor classes: Analog",
+        "Digital",
+        "Scalar",
+        "Vector Sensors",
+        "Sensor Types, bias,drift",
+        "Hysteresis error, quantization error",
+        "Actuator",
+        "Actuator types: Hydraulic",
+        "Pneumatic,electrical, thermal/magnetic, mechanical actuators, soft actuators."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Basics of IoT Networking, IoT Components, Functional components of IoT, IoT",
+      "topics": [
+        "serviceoriented architecture",
+        "IoT challenges, 6LowPAN, IEEE 802.15.4",
+        "ZigBee and its types",
+        "RFIDFeatures",
+        "RFID working principle and applications",
+        "NFC (Near Field communication),Bluetooth",
+        "Wireless Sensor Networks and its ApplicationsUnit IV MQTT, MQTT methods and components",
+        "MQTT communication, topics andapplications",
+        "SMQTT, CoAP, CoAP message types",
+        "CoAP Request-Response model",
+        "XMPP,AMQP features and components",
+        "AMQP frame types."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IoT Platforms, Arduino, Raspberry Pi Board, Other IoT Platforms",
+      "topics": [
+        "Cloud for IoT, Cloud storage models & communication APIs",
+        "Attacks in IoT system,vulnerability analysis in IoT, IoT case studies: Smart Home",
+        "Smart framing etc."
+      ]
+    }
+  ]
+}

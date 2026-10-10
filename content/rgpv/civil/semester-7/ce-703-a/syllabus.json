@@ -1,0 +1,58 @@
+{
+  "subject": {
+    "id": "ce-703-a",
+    "code": "CE703 (A)",
+    "name": "Internet of Things",
+    "title": "CE703 (A) - Internet of Things",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Definition, Characteristics of IOT, IOT Conceptual framework, IOT Architectural view",
+        "Physical design of IOT, Logical design of IOT, Application of IOT"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "M2M, SDN, NFV and Cloud",
+      "topics": [
+        "Machine-to-machine (M2M), SDN (software defined networking) and NFV (network function virtualization) for IOT",
+        "Data storage in IOT, IOT Cloud Based Services"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design Principles for Web Connectivity and Internet Connectivity",
+      "topics": [
+        "Web Communication Protocols for connected devices, Message Communication Protocols for connected devices",
+        "MQTT, CoAP, SOAP, REST, HTTP Restful and Web Sockets",
+        "Internet Connectivity, Internet based communication, IP addressing in IOT, Media Access control"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Sensor Technology and Wireless Sensor Network",
+      "topics": [
+        "Sensor Technology, Participatory Sensing, Industrial IOT and Automotive IOT, Actuator",
+        "Sensor data Communication Protocols, Radio Frequency Identification Technology, Wireless Sensor Network Technology"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IOT Design methodology, Privacy and Case studies",
+      "topics": [
+        "IOT Design methodology: Specification - Requirement, process, model, service, functional & operational view",
+        "IOT Privacy and security solutions, Raspberry Pi & arduino devices",
+        "IOT Case studies: smart city streetlights control & monitoring"
+      ]
+    }
+  ]
+}

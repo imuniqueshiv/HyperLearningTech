@@ -1,0 +1,122 @@
+{
+  "subject": {
+    "id": "ad-703-d",
+    "code": "AD-703 (D)",
+    "name": "Social Media & Web Analytics",
+    "title": "AD-703 (D) - Social Media & Web Analytics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Social Media & Analytics: Introduction to Social Media, Social Media Landscape,",
+      "topics": [
+        "Social Media Analytics & its Need.",
+        "SMA in Small and Large Organisations",
+        "Application of SMA in Different Social Media Platforms.",
+        "Introduction to Web Analytics: Definition",
+        "Process",
+        "Key Terms: Site References",
+        "Keywords and Key Phrases",
+        "Building Block Terms: Visit Characterization Terms",
+        "Content Characterization Terms",
+        "Conversion Metrics",
+        "Categories: Offsite Web, on Site Web",
+        "Web Analytics Platform",
+        "Web Analytics Evolution",
+        "Need of Web Analytics",
+        "Advantages & Limitations."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Network Fundamentals: The Social Networks Perspective - Nodes, Ties and",
+      "topics": [
+        "Influencers",
+        "Social Network",
+        "Web Data and Methods.",
+        "Data Collection and Web Analytics Fundamentals: Capturing Data: Web Logs",
+        "Web Beacons",
+        "Java Script Tags",
+        "Packet Sniffing",
+        "Outcome Data: E-commerce",
+        "Lead Generation",
+        "Brand/ Advocacy and Support",
+        "Competitive Data: Panel Based Measurement",
+        "ISP Based Measurement",
+        "Search Engine Data",
+        "Organisational Structure.",
+        "Type and Size of Data",
+        "Identifying Unique page Definition",
+        "Cookies",
+        "Link Coding Issues."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Web Metrics & Analytics: Common Metrics: Hits, Page Views, Visits, Unique",
+      "topics": [
+        "Page Views",
+        "Bounce",
+        "Bounce Rate & its Improvement",
+        "Average Time on Site",
+        "Real Time Report",
+        "Traffic Source Report",
+        "Custom Campaigns",
+        "Content Report",
+        "Google Analytics",
+        "Key- Performance Indicator: Need",
+        "Characteristics",
+        "Perspective and Uses.",
+        "Graphs and Matrices- Basic Measures for Individuals and Networks.",
+        "Random Graphs & Network Evolution",
+        "Social Context: Affiliation & Identity Web analytics Tools: A/B testing",
+        "Online Surveys",
+        "Web Crawling and Indexing.",
+        "Natural Language Processing Techniques for Micro-Text Analysis."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Facebook Analytics: Introduction, Parameters, Demographics",
+      "topics": [
+        "Audience: Reach and Engagement Analysis.",
+        "Post-Performance on FB; Social Campaigns: Goals and Evaluating Outcomes",
+        "Measuring and Analysing Social Campaigns",
+        "Social Network Analysis",
+        "AdWords",
+        "Benchmarking",
+        "Categories of Traffic.",
+        "Google Analytics: Brief Introduction and Working",
+        "Google Website Optimizer",
+        "Implementation Technology",
+        "Limitations",
+        "Performance Concerns",
+        "Privacy Issues."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Qualitative Analysis: Heuristic Evaluations: Conducting a Heuristic Evaluation,",
+      "topics": [
+        "Benefits of Heuristic Evaluations",
+        "Site Visits: Conducting a Site Visit",
+        "Benefits of Site Visits",
+        "Surveys: Website Surveys",
+        "Post-Visit Surveys",
+        "Creating and Running a Survey",
+        "Benefits of Surveys.",
+        "Web analytics 2.0: Web Analytics 1.0 & its Limitations",
+        "Introduction to WA 2.0",
+        "Competitive Intelligence Analysis and Data Sources",
+        "Website Traffic Analysis: Traffic Trends",
+        "Site Overlap and Opportunities."
+      ]
+    }
+  ]
+}

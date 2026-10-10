@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "cb-502",
+    "code": "CB-502",
+    "name": "Compiler Design",
+    "title": "CB-502 - Compiler Design",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Lexical Analysis",
+      "topics": [
+        "Phases of compilation and overview",
+        "Lexical Analysis (scanner): Regular languages",
+        "Finite automata",
+        "Regular expressions",
+        "Relating regular expressions and finite automata",
+        "Scanner generator",
+        "lex, flex"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Syntax Analysis (Parser)",
+      "topics": [
+        "Context-free languages and grammars",
+        "Push-down automata",
+        "LL(1) grammars and top-down parsing",
+        "Operator grammars",
+        "LR(0), SLR(1), LR(1), LALR(1) grammars and bottom-up parsing",
+        "Ambiguity and LR parsing",
+        "LALR(1) parser generator",
+        "yacc, bison"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Semantic Analysis, Symbol Table and Run-time Environment",
+      "topics": [
+        "Attribute grammars",
+        "Syntax directed definition",
+        "Evaluation and flow of attribute in a syntax tree",
+        "Symbol Table: Basic structure, symbol attributes and management",
+        "Run-time environment: Procedure activation",
+        "Parameter passing, value return",
+        "Memory allocation, scope"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Intermediate Code Generation and Code Improvement",
+      "topics": [
+        "Translation of different language features",
+        "Different types of intermediate forms",
+        "Code Improvement (optimization): control-flow, data-flow dependence etc.",
+        "Local optimization",
+        "Global optimization",
+        "Loop optimization",
+        "Peep-hole optimization etc."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Architecture Dependent Improvement and Advanced Topics",
+      "topics": [
+        "Instruction scheduling (for pipeline)",
+        "Loop optimization (for cache memory) etc.",
+        "Register allocation and target code generation",
+        "Type systems",
+        "Data abstraction",
+        "Compilation of Object Oriented features and non-imperative programming languages"
+      ]
+    }
+  ]
+}

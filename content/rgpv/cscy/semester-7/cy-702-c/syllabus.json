@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "cy-702-c",
+    "code": "CY-702 (C)",
+    "name": "Mobile Security and Forensics",
+    "title": "CY-702 (C) - Mobile Security and Forensics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction to Mobile Forensics:Mobile forensics",
+        "Challenges in mobile forensics The mobile phone evidence extraction",
+        "Documenting and reporting phase",
+        "Presentation phase",
+        "Archiving phase",
+        "Practical mobile forensic approaches: Overview of mobile operating systems",
+        "Data acquisition methods",
+        "Examination and analysis of evidence stored on mobile phones."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Android Forensics :Understanding Android",
+        "Android model",
+        "Android security- Secure kernel",
+        "Security- Enhanced Linux",
+        "Full Disk Encryption",
+        "Trusted Execution Environment",
+        "Android file system.",
+        "Android Forensic Setup and Pre-Data Extraction Techniques",
+        "Android Data Extraction Techniques",
+        "Android Data Analysis and Recovery",
+        "Android data recovery",
+        "Android App Analysis",
+        "Malware, and Reverse Engineering: Analyzing Android apps",
+        "Reverse engineering.",
+        "Android apps",
+        "extracting an APK file from an Android device",
+        "Android malware."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "iOS Forensics: Introducing iOS Application Security",
+        "Basics of iOS and application development",
+        "Developing your first iOS app",
+        "Running apps on iDevice, iOS MVC design, iOS security model, iOS secure boot chain, iOS application signing, iOS application."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Android Security:Sandboxing and the permission model",
+        "Application signing",
+        "Android startup process",
+        "Setting up the development environment",
+        "Creating an Android virtual device",
+        "Useful utilities for Android Pentest",
+        "Android Debug Bridge",
+        "Burp Suite",
+        "APKTool."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Traffic Analysis:Traffic Analysis for Android Devices",
+        "Android traffic interception.",
+        "Ways to analyze Android traffic",
+        "Passive analysis",
+        "Active analysis",
+        "HTTPS Proxy interception.",
+        "Recommended Books with Full Specification: 1.",
+        "Cyber Security by Nina Godbole - John Wiley Publication. 2.",
+        "Digital Forensic by Dr.",
+        "Nilakshi Jain - John Wiley Publication 3.",
+        "Aditya Gupta, \"Learning Pentesting for Android Devices\", Packt Pub Ltd",
+        "Illustrated edition, 2014. 4.",
+        "SwaroopYermalkar, \"Learning iOS Penetration Testing Paperback\", Packt Publishing, 2004."
+      ]
+    }
+  ]
+}

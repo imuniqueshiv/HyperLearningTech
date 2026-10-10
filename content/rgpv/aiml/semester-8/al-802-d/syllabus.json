@@ -1,0 +1,82 @@
+{
+  "subject": {
+    "id": "al-802-d",
+    "code": "AL802 (D)",
+    "name": "Quantum Computing",
+    "title": "AL802 (D) - Quantum Computing",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Motivation and Overview of Quantum Computing",
+      "topics": [
+        "Motivation for studying Quantum Computing",
+        "Major players in the industry (IBM, Microsoft, Rigetti, D-Wave etc.)",
+        "Origin of Quantum Computing",
+        "Overview of major concepts in Quantum Computing: Qubits and multi-qubits states",
+        "Braket notation",
+        "Bloch Sphere representation",
+        "Quantum Superposition",
+        "Quantum Entanglement"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Math Foundation for Quantum Computing",
+      "topics": [
+        "Matrix Algebra: basis vectors and orthogonality",
+        "Inner product and Hilbert spaces",
+        "Matrices and tensors",
+        "Unitary operators and projectors",
+        "Dirac notation",
+        "Eigen values and Eigen vectors"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Building Blocks for Quantum Program",
+      "topics": [
+        "Architecture of a Quantum Computing platform",
+        "Details of q-bit system of information representation: Block Sphere",
+        "Multi-qubits States",
+        "Quantum superposition of qubits (valid and invalid superposition)",
+        "Quantum Entanglement",
+        "Useful states from quantum algorithmic perceptive e.g. Bell State",
+        "Operation on qubits: Measuring and transforming using gates",
+        "Quantum Logic gates and Circuit: Pauli, Hadamard, phase shift, controlled gates, Ising, Deutsch, swap etc."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Programming model for a Quantum Computing Program",
+      "topics": [
+        "Steps performed on classical computer",
+        "Steps performed on Quantum Computer",
+        "Moving data between bits and qubits",
+        "Basic techniques exploited by quantum algorithms",
+        "Amplitude amplification",
+        "Quantum Fourier Transform",
+        "Phase Kick-back",
+        "Quantum Phase estimation",
+        "Quantum Walks"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Major Algorithms and OSS Toolkits",
+      "topics": [
+        "Shor's Algorithm",
+        "Grover's Algorithm",
+        "Deutsch's Algorithm",
+        "Deutsch-Jozsa Algorithm",
+        "OSS Toolkits for implementing Quantum program: IBM quantum experience, Microsoft Q, Rigetti PyQuil (QPU/QVM)"
+      ]
+    }
+  ]
+}

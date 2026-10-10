@@ -1,0 +1,89 @@
+{
+  "subject": {
+    "id": "csit-703-c",
+    "code": "CSIT-703 (C)",
+    "name": "Cloud Computing",
+    "title": "CSIT-703 (C) - Cloud Computing",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Cloud Computing",
+      "topics": [
+        "Historical development",
+        "Vision of cloud computing",
+        "Characteristics of cloud computing as per NIST",
+        "Cloud computing reference model",
+        "Cloud computing environments",
+        "Cloud services requirements",
+        "Cloud and dynamic infrastructure",
+        "Cloud adoption and rudiments",
+        "Overview of cloud applications: ECG analysis, protein structure prediction, gene expression data analysis, satellite image processing, CRM and ERP, and social networking"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Cloud Computing Architecture",
+      "topics": [
+        "Cloud reference model",
+        "Types of clouds",
+        "Cloud interoperability and standards",
+        "Scalability and fault tolerance",
+        "Cloud ecosystem",
+        "Cloud business process management",
+        "Cloud service management",
+        "Cloud analytics",
+        "Testing under control",
+        "Virtual desktop infrastructure"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Cloud Management and Virtualization Technology",
+      "topics": [
+        "Resiliency, provisioning and asset management",
+        "Concepts of MapReduce",
+        "Cloud governance",
+        "High availability and disaster recovery",
+        "Fundamental concepts of compute, storage, networking, desktop and application virtualization",
+        "Virtualization benefits",
+        "Server virtualization",
+        "Block and file level storage virtualization",
+        "Hypervisor management software",
+        "Infrastructure requirements",
+        "Virtual LAN (VLAN) and Virtual SAN (VSAN) and their benefits"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cloud Security",
+      "topics": [
+        "Cloud information security fundamentals",
+        "Cloud security services",
+        "Design principles",
+        "Secure cloud software requirements",
+        "Policy implementation",
+        "Cloud computing security challenges",
+        "Virtualization security management",
+        "Cloud computing security architecture"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Market Based Management and Case Studies",
+      "topics": [
+        "Market based management of clouds",
+        "Federated clouds / Inter Cloud: characterization and definition",
+        "Cloud federation stack",
+        "Third party cloud services",
+        "Case study: Google App Engine, Microsoft Azure, Hadoop, Amazon and Aneka"
+      ]
+    }
+  ]
+}

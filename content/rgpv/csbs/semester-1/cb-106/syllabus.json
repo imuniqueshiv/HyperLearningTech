@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "cb-106",
+    "code": "CB-106",
+    "name": "Business Communication & Value Science - I",
+    "title": "CB-106 - Business Communication & Value Science - I",
+    "semester": "I"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview of LOL and business communication",
+      "topics": [
+        "Overview of LOL (include activity on introducing self)",
+        "Class activity - presentation on favorite cricket captain in IPL and the skills and values they demonstrate",
+        "Self-work with immersion - interview a maid, watchman, sweeper, cab driver, beggar and narrate what you think are the values that drive them",
+        "Overview of business communication",
+        "Activity: Write a newspaper report on an IPL match",
+        "Activity: Record a conversation between a celebrity and an interviewer",
+        "Quiz, Self-awareness - identity, body awareness, stress management"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Essential Grammar - I",
+      "topics": [
+        "Refresher on Parts of Speech - Listen to an audio clip and note down the different parts of speech followed by discussion",
+        "Tenses: Applications of tenses in Functional Grammar - Take a quiz and then discuss",
+        "Sentence formation (general & Technical)",
+        "Common errors, Voices"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Communication Skills",
+      "topics": [
+        "Overview of Communication Skills",
+        "Barriers of communication",
+        "Effective communication",
+        "Types of communication- verbal and non-verbal - Role-play based learning",
+        "Importance of Questioning",
+        "Listening Skills: Law of nature- Importance of listening skills, Difference between listening and hearing, Types of listening",
+        "Expressing self, connecting with emotions, visualizing and experiencing purpose",
+        "Activity: Skit based on communication skills",
+        "Evaluation on Listening skills - listen to recording and answer questions based on them"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Email writing and Verbal communication",
+      "topics": [
+        "Formal and informal emails, activity",
+        "Verbal communication: Pronunciation, clarity of speech",
+        "Vocabulary Enrichment: Exposure to words from General Service List (GSL) by West, Academic word list (AWL) technical specific terms related to the field of technology, phrases, idioms, significant abbreviations formal business vocabulary",
+        "Group discussion using words learnt",
+        "Practice: Toastmaster style Table Topics speech with evaluation",
+        "Written Communication: Summary writing, story writing",
+        "Build your CV - start writing your comprehensive CV including every achievement in your life, no format, no page limit",
+        "Project: Create a podcast on a topic that will interest college students",
+        "Life skill: Stress management, working with rhythm and balance, colours, and teamwork",
+        "Project: Create a musical using the learnings from unit"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Understanding Life Skills",
+      "topics": [
+        "Movie based learning - Pursuit of Happyness. What are the skills and values you can identify, what can you relate to?",
+        "Introduction to life skills, What are the critical life skills, Multiple Intelligences",
+        "Embracing diversity - Activity on appreciation of diversity",
+        "Life skill: Community service - work with an NGO and make a presentation",
+        "Life skill: Join a trek - Values to be learned: Leadership, teamwork, dealing with ambiguity, managing stress, motivating people, creativity, result orientation"
+      ]
+    }
+  ]
+}

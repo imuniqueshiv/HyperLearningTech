@@ -1,0 +1,131 @@
+{
+  "subject": {
+    "id": "me-405",
+    "code": "ME-405",
+    "name": "Manufacturing Technology",
+    "title": "ME-405 - Manufacturing Technology",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Analysis of Machining processes",
+        "introduction",
+        "tool geometry",
+        "tool materials",
+        "wear characteristics",
+        "cutting forces",
+        "cutting fluids",
+        "failure of cutting tools",
+        "broaching operation",
+        "types of broaching machines",
+        "design of broaching tools",
+        "centre less grinding",
+        "thread chaser",
+        "thread grinding boring",
+        "super finishing processes like honing",
+        "lapping",
+        "electro polishing and buffing"
+      ]
+    },
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Ghosh A",
+      "topics": [
+        "Ghosh A., Mallik A.K.,Manufacturing science,EWP Pvt Ltd",
+        "ISBN 81 85095 85 X"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Gear machining",
+        "types of gears",
+        "elements of gears",
+        "different methods of gear production",
+        "gear cutting on milling machine",
+        "gear machining by generation method",
+        "principles of generation of surfaces - hobbing",
+        "shaping and basic rack cutting",
+        "gear finishing by shaving and gear grinding",
+        "tooth profile grinding",
+        "suitable gear treatments [3 Plastics",
+        "composition of plastic materials",
+        "moulding method- injection moulding",
+        "compression moulding",
+        "transfer moulding",
+        "extrusion moulding",
+        "calendaring",
+        "blow moulding",
+        "laminating and reinforcing",
+        "welding of plastics."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "R.K.Jain",
+        "Production Technology",
+        "Khanna Publishes",
+        "ISBN 81 7409 099 1"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Campbell J",
+      "topics": [
+        "Campbell J.S.",
+        "Principles of Manufacturing Materials and Processes."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Unconventional machining processes",
+        "introduction",
+        "abrasive jet machining",
+        "ultrasonic machining",
+        "electrochemical machining",
+        "electro discharge machining",
+        "electron beam machining",
+        "laser beam machining",
+        "plasma arc machining",
+        "non destructive testing of machined surfaces and tools,"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": ["CMTI Handbook"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Extrusion, principles, hot and cold extrusion processes, tube extrusion, sawing, power hacksaw, band saw, circular saw",
+        "Introduction to numerical control machining",
+        "NC Machine tools",
+        "NC tooling ,part programming, functions, coordinate systems BOOKS:"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Rao P",
+      "topics": ["Rao P.N., Manufacturing Technology", "Tata McGraw Hill"]
+    }
+  ]
+}

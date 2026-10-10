@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "cs-803-a",
+    "code": "CS-803 (A)",
+    "name": "Image Processing and Computer Vision",
+    "title": "CS-803 (A) - Image Processing and Computer Vision",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to CVIP and Morphological Processing",
+      "topics": [
+        "Basics of CVIP, History of CVIP, Evolution of CVIP, CV Models",
+        "Image Filtering, Image Representations, Image Statistics",
+        "Recognition Methodology: Conditioning, Labeling, Grouping, Extracting, and Matching",
+        "Morphological Image Processing: Introduction, Dilation, Erosion, Opening, Closing, Hit-or-Miss transformation",
+        "Morphological algorithm operations on binary images, Morphological algorithm operations on gray-scale images",
+        "Thinning, Thickening, Region growing, region shrinking"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Image Representation and Binary Machine Vision",
+      "topics": [
+        "Representation schemes, Boundary descriptors, Region descriptors",
+        "Binary Machine Vision: Thresholding, Segmentation, Connected component labeling",
+        "Hierarchal segmentation, Spatial clustering, Split & merge, Rule-based Segmentation, Motion-based segmentation",
+        "Area Extraction: Concepts, Data-structures, Edge, Line-Linking, Hough transform, Line fitting, Curve fitting (Least-square fitting)"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Region Analysis and Matching Frameworks",
+      "topics": [
+        "Region properties, External points, Spatial moments, Mixed spatial gray-level moments",
+        "Boundary analysis: Signature properties, Shape numbers",
+        "General Frame Works For Matching: Distance relational approach, Ordered structural matching, View class matching, Models database organization"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Facet Model Recognition and Image Matching",
+      "topics": [
+        "Labeling lines, Understanding line drawings",
+        "Classification of shapes by labeling of edges, Recognition of shapes",
+        "Consisting labeling problem, Back-tracking Algorithm",
+        "Perspective Projective geometry, Inverse perspective Projection, Photogrammetric - from 2D to 3D",
+        "Image matching: Intensity matching of ID signals, Matching of 2D image, Hierarchical image matching",
+        "Object Models And Matching: 2D representation, Global vs. Local features"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Knowledge Based Vision and Object Recognition",
+      "topics": [
+        "Knowledge representation, Control-strategies, Information Integration",
+        "Object recognition - Hough transforms and other simple object recognition methods",
+        "Shape correspondence and shape matching",
+        "Principal component analysis, feature extraction",
+        "Neural network and Machine learning for image shape recognition"
+      ]
+    }
+  ]
+}

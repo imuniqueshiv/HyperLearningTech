@@ -1,0 +1,111 @@
+{
+  "subject": {
+    "id": "cs-601",
+    "code": "CS-601",
+    "name": "Machine Learning",
+    "title": "CS-601 - Machine Learning",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Machine Learning",
+      "topics": [
+        "Introduction to machine learning, scope and limitations",
+        "Regression",
+        "Probability, statistics and linear algebra for machine learning",
+        "Convex optimization",
+        "Data visualization",
+        "Hypothesis function and testing",
+        "Data distributions",
+        "Data preprocessing",
+        "Data augmentation",
+        "Normalizing data sets",
+        "Machine learning models",
+        "Supervised and unsupervised learning"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Neural Networks and Training",
+      "topics": [
+        "Linearity vs non linearity",
+        "Activation functions like sigmoid, ReLU, etc.",
+        "Weights and bias",
+        "Loss function",
+        "Gradient descent",
+        "Multilayer network",
+        "Backpropagation",
+        "Weight initialization",
+        "Training and testing",
+        "Unstable gradient problem",
+        "Auto encoders",
+        "Batch normalization",
+        "Dropout",
+        "L1 and L2 regularization",
+        "Momentum",
+        "Tuning hyper parameters"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Convolutional Neural Networks",
+      "topics": [
+        "Convolutional neural network",
+        "Flattening",
+        "Subsampling",
+        "Padding",
+        "Stride",
+        "Convolution layer",
+        "Pooling layer",
+        "Loss layer",
+        "Dense layer",
+        "1x1 convolution",
+        "Inception network",
+        "Input channels",
+        "Transfer learning",
+        "One shot learning",
+        "Dimension reductions",
+        "Implementation of CNN like tensor flow, keras etc."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Recurrent Networks and Reinforcement Learning",
+      "topics": [
+        "Recurrent neural network",
+        "Long short-term memory",
+        "Gated recurrent unit",
+        "Translation",
+        "Beam search and width",
+        "Bleu score",
+        "Attention model",
+        "Reinforcement Learning",
+        "RL-framework",
+        "MDP",
+        "Bellman equations",
+        "Value Iteration and Policy Iteration",
+        "Actor-critic model",
+        "Q-learning",
+        "SARSA"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "SVM, Bayesian Learning and Applications",
+      "topics": [
+        "Support Vector Machines",
+        "Bayesian learning",
+        "Application of machine learning in computer vision",
+        "Speech processing",
+        "Natural language processing",
+        "Case Study: ImageNet Competition"
+      ]
+    }
+  ]
+}

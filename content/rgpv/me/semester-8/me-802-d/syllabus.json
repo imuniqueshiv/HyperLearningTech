@@ -1,0 +1,95 @@
+{
+  "subject": {
+    "id": "me-802-d",
+    "code": "ME-802 (D)",
+    "name": "Production Planning and Control",
+    "title": "ME-802 (D) - Production Planning and Control",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Preplanning",
+      "topics": [
+        "Types and characteristics of production systems",
+        "Objective and functions of Production, Planning and Control",
+        "Place of production",
+        "Planning in Engineering, manufactures organization",
+        "Forecasting and Market Analysis",
+        "Factory Location and Layout",
+        "Equipment policy and replacement",
+        "Preplanning production",
+        "Capacity planning"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Work Study",
+      "topics": [
+        "Method study",
+        "Basic procedure: Selection",
+        "Recording of process",
+        "Critical analysis",
+        "Development",
+        "Implementation",
+        "Micro motion and memo motion study",
+        "Work measurement",
+        "Techniques of work measurement",
+        "Time study",
+        "Production study",
+        "Work sampling",
+        "Synthesis from standard data",
+        "Predetermined motion time standards"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Production Planning",
+      "topics": [
+        "Aggregate Planning",
+        "MPS",
+        "Material Resource Planning",
+        "Selection of material methods, machines and manpower",
+        "Routing",
+        "Scheduling and Dispatching and its sheets and charts",
+        "Production Line Balancing"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Production and Inventory Control",
+      "topics": [
+        "Progress control through records and charts",
+        "Types of inventories",
+        "Inventory Classification",
+        "Inventory Control under constraints",
+        "Economic lot (batch) size",
+        "Trends in purchasing and store keeping",
+        "JIT production",
+        "MRP II",
+        "Comparison of Push and Pull systems",
+        "ERP",
+        "CAPPC"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Productivity and Human Factors",
+      "topics": [
+        "Importance of productivity",
+        "Productivity patterns",
+        "Productivity measurements and ratios",
+        "Improvement-maintenance process",
+        "Human abilities",
+        "Training and motivation",
+        "Safety programs",
+        "Workplace design and working conditions"
+      ]
+    }
+  ]
+}

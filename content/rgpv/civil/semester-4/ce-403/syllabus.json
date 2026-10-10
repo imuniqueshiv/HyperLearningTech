@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "ce-403",
+    "code": "CE-403",
+    "name": "Structural Analysis-I",
+    "title": "CE-403 - Structural Analysis-I",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Virtual work and Energy Principles",
+      "topics": [
+        "Principles of Virtual work applied to deformable bodies",
+        "Strain energy and complementary energy, Energy theorems",
+        "Maxwell's Reciprocal theorem",
+        "Analysis of Pin-Jointed frames for static loads"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Indeterminate Structures-I",
+      "topics": [
+        "Static and Kinematics indeterminacy",
+        "Analysis of Fixed and Continuous beams by theorem of three moments",
+        "Effect of sinking and rotation of supports",
+        "Moment distribution method (without sway)"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Indeterminate Structures-II",
+      "topics": [
+        "Analysis of beams and frames by slope Deflection method",
+        "Column Analogy method"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Arches and Suspension Cables",
+      "topics": [
+        "Three hinged arches of different shapes, Eddy's Theorem",
+        "Suspension cable, stiffening girders",
+        "Two Hinged and Fixed Arches - Rib shortening and Temperature effects"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Rolling loads and Influence Lines",
+      "topics": [
+        "Maximum SF and BM curves for various types of Rolling Loads, focal length, EUDL",
+        "Influence Lines for Determinate Structures- Beams, Three Hinged Arches"
+      ]
+    }
+  ]
+}

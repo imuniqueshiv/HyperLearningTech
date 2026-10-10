@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-305",
+    "code": "CE-305",
+    "name": "Strength of Materials",
+    "title": "CE-305 - Strength of Materials",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Simple Stress and Strains",
+      "topics": [
+        "Concept of Elastic body stress and Strain, Hooke's law, Various types of stress and strains, Elastic constants",
+        "Stresses in compound bars, composite and tapering bars, Temperature stresses",
+        "Complex Stress and Strains – Two dimensional and three dimensional stress system",
+        "Normal and tangential stresses, Principal Planes, Principal Stresses and Strains, Mohr's circle of stresses"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Bending and Shearing Stresses",
+      "topics": [
+        "Theory of simple bending, Concept of pure bending and bending stress, Equation of bending, Neutral axis, Section-Modulus",
+        "Differential equation of the elastic curve",
+        "Determination of bending stresses in simply supported, Cantilever and Overhanging beams subjected to point load and uniformly distributed loading",
+        "Bending stress distribution across a section of beam",
+        "Shearing Stress and shear stress distribution across a section in Beams"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Slope and Deflection of beams",
+      "topics": [
+        "Determination of Slope and Deflection of beams by Double Integration Method",
+        "Macaulay's Method, Area Moment Method, Conjugate Beam Method",
+        "Strain Energy Method, Castiglione's Method, and Unit Load Method"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Columns and Struts; Thin Pressure Vessels",
+      "topics": [
+        "Theory of columns, Slenderness ratio, Direct and bending stresses in short columns, Kern of a section",
+        "Buckling and stability, Euler's buckling/crippling load for columns with different end conditions, Rankin's formula",
+        "Eccentric loads and the Secant formula, Imperfections in columns",
+        "Thin Pressure Vessels: cylinders and spheres; Stress due to internal pressure, Change in diameter and volume; Theories of failure"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Torsion of Shafts; Unsymmetrical Bending; Curved beams",
+      "topics": [
+        "Concept of pure torsion, Torsion equation, Determination of shear stress and angle of twist of shafts of circular section",
+        "Torsion of solid and hollow circular shafts, Analyses of problems based on combined Bending and Torsion",
+        "Unsymmetrical Bending: Principal moment of Inertia, Product of Inertia, Bending of a beam in a plane which is not a plane of symmetry, Shear center",
+        "Curved beams: Pure bending of curved beams of rectangular, circular and trapezoidal sections, Stress distribution and position of neutral axis"
+      ]
+    }
+  ]
+}

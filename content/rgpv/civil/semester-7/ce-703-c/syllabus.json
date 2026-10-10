@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "ce-703-c",
+    "code": "CE703 (C)",
+    "name": "Integrated Waste Management",
+    "title": "CE703 (C) - Integrated Waste Management",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction of Solid Wastes",
+      "topics": [
+        "Definition of solid waste, garbage, rubbish-Sources and Types of solid wastes",
+        "Characteristics of Solid Wastes: Physical, chemical and biological characteristics",
+        "Problems occur due to improper disposal of solid wastes"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Integrated Solid Waste Management",
+      "topics": [
+        "Definition- Reduction, reuse, recycling and recovery principles of waste management",
+        "Functional elements of integrated solid Waste management",
+        "Waste generation and handling at Source-Collection of solid wastes- Collection methods and services",
+        "Guidelines for collection route layout"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction of Transfer Station",
+      "topics": [
+        "Transfer Station-Processing and segregation of the solid waste- various methods of material segregation",
+        "Importance of Transfer Stations",
+        "Site selection of transfer stations"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Processing and Transformation of Solid Wastes",
+      "topics": [
+        "Composting: definition-methods of composting-advantages of composting",
+        "Incineration: definition, methods of incineration-advantages and disadvantages of incineration"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Disposal of Solid Waste",
+      "topics": [
+        "Volume reduction, Open dumping, land filling techniques",
+        "Landfills: Classification-Design and Operation of landfills",
+        "Land Farming, Deep well injection"
+      ]
+    }
+  ]
+}

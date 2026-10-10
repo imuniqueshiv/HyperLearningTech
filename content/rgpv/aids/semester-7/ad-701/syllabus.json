@@ -1,0 +1,93 @@
+{
+  "subject": {
+    "id": "ad-701",
+    "code": "AD-701",
+    "name": "AI for Computer Vision",
+    "title": "AD-701 - AI for Computer Vision",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Image Formation and Processing",
+      "topics": [
+        "Computer Vision",
+        "Geometric primitives and transformations",
+        "Photometric image formation, digital camera",
+        "Point operators",
+        "Linear filtering",
+        "More neighborhood operators",
+        "Fourier transforms",
+        "Pyramids and wavelets",
+        "Geometric transformations",
+        "Global optimization."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Feature Detection, Matching and Segmentation",
+      "topics": [
+        "Points and patches",
+        "Edges",
+        "Lines",
+        "Segmentation",
+        "Active contours",
+        "Split and merge",
+        "Mean shift and mode finding",
+        "Normalized cuts",
+        "Graph cuts and energy-based methods."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Feature-based Alignment & Motion Estimation",
+      "topics": [
+        "2D and 3D feature-based alignment",
+        "Pose estimation",
+        "Geometric intrinsic calibration",
+        "Triangulation",
+        "Two-frame structure from motion",
+        "Factorization",
+        "Bundle adjustment",
+        "Constrained structure and motion",
+        "Translational alignment",
+        "Parametric motion",
+        "Spline-based motion",
+        "Optical flow",
+        "Layered motion."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "3D Reconstruction",
+      "topics": [
+        "Shape from X, Active range finding",
+        "Surface representations",
+        "Point-based representations Volumetric representations",
+        "Model-based reconstruction",
+        "Recovering texture maps and albedos."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Image-based Rendering and Recognition",
+      "topics": [
+        "View interpolation Layered depth images",
+        "Light fields and Lumigraphs",
+        "Environment mattes",
+        "Video-based rendering",
+        "Object detection",
+        "Face recognition",
+        "Instance recognition",
+        "Category recognition",
+        "Context and scene understanding",
+        "Recognition databases and test sets."
+      ]
+    }
+  ]
+}

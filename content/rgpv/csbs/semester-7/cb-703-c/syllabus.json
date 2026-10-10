@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "cb-703-c",
+    "code": "CB-703 (C)",
+    "name": "Cryptology",
+    "title": "CB-703 (C) - Cryptology",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": ["Elementary cryptosystems."]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Basic security services: confidentiality",
+        "integrity",
+        "availability",
+        "non-repudiation",
+        "privacy"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Symmetric key cryptosystems:Stream Cipher: Basic Ideas, Hardware and Software",
+      "topics": [
+        "Implementations",
+        "Exampleswith some prominent ciphers: A5/1",
+        "Grain family",
+        "RC4",
+        "Salsa and Cha- cha",
+        "HC128",
+        "SNOW family",
+        "ZUC; Block Ciphers: DES, AES, Modes of Operation",
+        "Hash Functions",
+        "Authentication"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Public Key Cryptosystems:RSA, ECC",
+      "topics": [
+        "Security Applications (Selected Topics):Electronic commerce (anonymous cash, micro- payments)",
+        "Key management",
+        "Zero-knowledge protocols",
+        "Cryptology in Contact Tracing Applications",
+        "Issues related to Quantum Cryptanalysis."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Introductory topics in Post-Quantum Cryptography: Refer to https://csrc.nist.gov/projects/post- quantum-cryptography.",
+        "May discuss any two ciphers from this list."
+      ]
+    }
+  ]
+}

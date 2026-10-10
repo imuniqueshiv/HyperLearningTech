@@ -1,0 +1,64 @@
+{
+  "subject": {
+    "id": "ce-504-b",
+    "code": "CE504 (B)",
+    "name": "Remote Sensing & GIS",
+    "title": "CE504 (B) - Remote Sensing & GIS",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Remote Sensing",
+      "topics": [
+        "Basic concept of Remote sensing, Data and Information, Remote sensing data collection",
+        "Remote sensing advantages & Limitations, Remote Sensing process",
+        "Electromagnetic Spectrum, Energy interactions with atmosphere and with earth surface features (soil, water, and vegetation)",
+        "Resolution, image registration and Image and False color composite, elements of visual interpretation techniques"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Remote Sensing Platforms and Sensors",
+      "topics": [
+        "Indian Satellites and Sensors characteristics, Remote Sensing Platforms, Sensors and Properties of Digital Data, Data Formats",
+        "Platforms- IRS, Landsat, SPOT, Cartosat, Ikonos, Envisat etc. sensors, sensor resolutions (spatial, spectral, radiometric and temporal)",
+        "Basics of digital image processing- introduction to digital data",
+        "Systematic errors (Scan Skew, Mirror-Scan Velocity, Panoramic Distortion, Platform Velocity, Earth Rotation) and non-systematic [random] errors (Altitude, Attitude)",
+        "Image enhancements (Gray Level Thresholding, level slicing, contrast stretching), image filtering"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Geographic Information System",
+      "topics": [
+        "Introduction to GIS; components of a GIS; Geographically Referenced Data",
+        "Spatial Data- Attribute data-Joining Spatial and attribute data",
+        "GIS Operations: Spatial Data Input – Attribute data Management",
+        "Geographic coordinate System, Datum; Map Projections: Types of Map Projections, Projected coordinate Systems, UTM Zones"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Data Models",
+      "topics": [
+        "Vector data model: Representation of simple features – Topology and its importance; coverage and its data structure, Shape file; Relational Database",
+        "Raster Data Model: Elements of the Raster data model, Types of Raster Data, Raster Data Structure, Data conversion"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Integrated Applications of Remote sensing and GIS",
+      "topics": [
+        "Applications in land use land cover analysis, change detection, water resources, urban planning, environmental planning",
+        "Natural resource management and Traffic management",
+        "Location Based Services And Its Applications"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "ce-604-d",
+    "code": "CE604 (D)",
+    "name": "Operation Research",
+    "title": "CE604 (D) - Operation Research",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Linear Models",
+      "topics": [
+        "The phase of an operation research study",
+        "Linear programming – Graphical method – Simplex algorithm",
+        "Duality formulation – Sensitivity analysis"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Transportation Models And Network Models",
+      "topics": [
+        "Transportation Assignment Models – Traveling Salesman problem",
+        "Networks models – Shortest route – Minimal spanning tree – Maximum flow models",
+        "Project network – CPM and PERT networks – Critical path scheduling – Sequencing models"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Inventory Models",
+      "topics": [
+        "Inventory models – Economic order quantity models – Quantity discount models",
+        "Stochastic inventory models – Multi product models",
+        "Inventory control models in practice"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Queueing Models",
+      "topics": [
+        "Queueing models – Queueing systems and structures – Notation parameter",
+        "Single server and multi server models – Poisson input – Exponential service – Constant rate service – Infinite population",
+        "Simulation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Decision Models",
+      "topics": [
+        "Decision models – Game theory – Two person zero sum games – Graphical solution – Algebraic solution – Linear Programming solution",
+        "Replacement models – Models based on service life – Economic life",
+        "Single / Multi variable search technique – Dynamic Programming – Simple Problem"
+      ]
+    }
+  ]
+}

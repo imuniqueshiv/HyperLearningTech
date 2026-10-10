@@ -1,0 +1,59 @@
+{
+  "subject": {
+    "id": "ce-603-b",
+    "code": "CE603 (B)",
+    "name": "Precast & Modular Construction",
+    "title": "CE603 (B) - Precast & Modular Construction",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Need for prefabrication – Principles – Materials",
+        "Modular coordination – Standardization – Systems",
+        "Production – Transportation – Erection"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Prefabricated components",
+      "topics": [
+        "Behavior of structural components – Large panel constructions",
+        "Construction of roof and floor slabs – Wall panels – Columns – Shear walls"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design Principles",
+      "topics": [
+        "Disuniting of structures",
+        "Design of cross section based on efficiency of material used",
+        "Problems in design because of joint flexibility – Allowance for joint deformation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Joints in Structural Members",
+      "topics": [
+        "Joints for different structural connections – Dimensions and detailing",
+        "Design of expansion joints"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Design of abnormal load",
+      "topics": [
+        "Progressive collapse – Code provisions",
+        "Equivalent design loads for considering abnormal effects such as earthquakes, cyclones, etc.",
+        "Importance of avoidance of progressive collapse"
+      ]
+    }
+  ]
+}

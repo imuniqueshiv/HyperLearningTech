@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "ce-503-b",
+    "code": "CE503 (B)",
+    "name": "Construction Planning & Management",
+    "title": "CE503 (B) - Construction Planning & Management",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Preliminary and detailed investigation methods",
+      "topics": [
+        "Methods of construction, form work and centering",
+        "Schedule of construction, job layout, principles of construction management",
+        "Modern management techniques like CPM/PERT with network analysis"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Construction equipments",
+      "topics": [
+        "Factors affecting selection, investment and operating cost, output of various equipments",
+        "Brief study of equipments required for various jobs such as earth work, dredging, conveyance, concreting, hoisting, pile driving, compaction and grouting"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Contracts",
+      "topics": [
+        "Different types of contracts, notice inviting tenders, contract document, departmental method of construction",
+        "Rate list, security deposit and earnest money, conditions of contract, arbitration",
+        "Administrative approval, technical sanction"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Specifications & Public Works Accounts",
+      "topics": [
+        "Importance, types of specifications, specifications for various trades of engineering works",
+        "Various forms used in construction works, measurement book, cash book, materials at site account, imprest account, tools and plants",
+        "Various types of running bills, secured advance, final bill"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Site Organization & Systems Approach to Planning",
+      "topics": [
+        "Accommodation of site staff, contractor's staff, various organization charts and manuals",
+        "Personnel in construction, welfare facilities, labour laws and human relations, safety engineering",
+        "Problem of equipment management, assignment model, transportation model and waiting line models with their applications",
+        "Shovel truck performance with waiting line method"
+      ]
+    }
+  ]
+}

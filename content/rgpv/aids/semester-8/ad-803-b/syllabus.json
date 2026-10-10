@@ -1,0 +1,96 @@
+{
+  "subject": {
+    "id": "ad-803-b",
+    "code": "AD-803 (B)",
+    "name": "Augmented & Virtual Reality",
+    "title": "AD-803 (B) - Augmented & Virtual Reality",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Virtual Reality, VR Basics, History of VR, VR paradigms,",
+      "topics": [
+        "Collaboration",
+        "Virtual reality systems",
+        "Representation",
+        "User interaction The Geometry of Virtual Worlds",
+        "Geometric Models",
+        "Changing Position and Orientation",
+        "Axis",
+        "Angle Representations of Rotation",
+        "Viewing Transformations",
+        "Chaining the Transformations"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Motion in Real and Virtual Worlds, Velocities and Accelerations, The Vestibular",
+      "topics": [
+        "System",
+        "Physics in the Virtual World",
+        "Mismatched Motion and Vection"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "an application a good candidate for VR, Promising application fields",
+        "Demonstrated benefits of virtual reality",
+        "More recent trends in virtual reality application development",
+        "A framework for VR application development"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Augmented Reality, Terminology, Simple augmented reality, Augmented reality as",
+      "topics": [
+        "an emerging technology",
+        "Augmented reality applications",
+        "Marker detection",
+        "Marker pose",
+        "Marker types and identification: Template markers, 2D bar-code markers",
+        "Imperceptible markers: Image markers",
+        "Infrared markers",
+        "Miniature markers",
+        "Discussion on marker use",
+        "General marker detection application"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "AR Development & Applications, User interfaces, Avoiding physical contacts,",
+      "topics": [
+        "Practical experiences with head- mounteddisplays",
+        "Authoring and dynamic content",
+        "AR applications and future visions",
+        "How to design an AR application",
+        "Technology adoption and acceptance",
+        "Where to use augmented reality ReferenceBooks: 1.",
+        "Virtual Reality",
+        "Steven M.",
+        "LaValle",
+        "Cambridge University Press, 2016 2.",
+        "Understanding Virtual Reality: Interface",
+        "Application and Design",
+        "William R Sherman and Alan B Craig",
+        "(The Morgan Kaufmann Series in Computer Graphics).",
+        "Morgan Kaufmann Publishers",
+        "San Francisco",
+        "CA, 2002 3.",
+        "Developing Virtual Reality Applications: Foundations of Effective Design",
+        "Alan B Craig",
+        "William R Sherman and Jeffrey D Will",
+        "Morgan Kaufmann, 2009. 4.",
+        "Theory and applications of marker,based augmented reality SanniSiltanen 5.",
+        "Virtual & Augmented Reality For Dummies by Paul Mealy - John Wiley Publication"
+      ]
+    }
+  ]
+}

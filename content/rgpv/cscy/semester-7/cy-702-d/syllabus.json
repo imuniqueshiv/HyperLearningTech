@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "cy-702-d",
+    "code": "CY-702 (D)",
+    "name": "Multimedia Security & Forensics",
+    "title": "CY-702 (D) - Multimedia Security & Forensics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Multimedia Data Encoding",
+        "Concept of data compression in multimedia field."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Concept",
+        "Resource Management",
+        "Media Server Architecture",
+        "Storage Management",
+        "Services",
+        "Protocols",
+        "Layers."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Security in Multimedia Applications: Security attacks",
+        "Multimedia Encryption",
+        "Steganography",
+        "Digital image watermarking",
+        "Multimedia Authentications."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Multimedia Evidence Handling: Digital Forensics Laboratories in Operation",
+        "Standards and Best Practices in Digital and Multimedia Forensics",
+        "Digital Evidence Extraction",
+        "Multimedia File Carving."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Scanner Forensics",
+        "Microphone Forensics",
+        "Multimedia Content Forensics."
+      ]
+    }
+  ]
+}

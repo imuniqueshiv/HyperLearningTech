@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "csit-701",
+    "code": "CSIT-701",
+    "name": "Internet of Things",
+    "title": "CSIT-701 - Internet of Things",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to IoT",
+      "topics": [
+        "Definition",
+        "Characteristics of IoT",
+        "IoT conceptual framework",
+        "IoT architectural view",
+        "Physical design of IoT",
+        "Logical design of IoT",
+        "Application of IoT"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "M2M, SDN, NFV and Cloud Services",
+      "topics": [
+        "Machine-to-machine (M2M)",
+        "SDN (software defined networking) for IoT",
+        "NFV (network function virtualization) for IoT",
+        "Data storage in IoT",
+        "IoT cloud based services"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Web and Internet Connectivity Principles",
+      "topics": [
+        "Design principles for web connectivity",
+        "Web communication protocols for connected devices",
+        "Message communication protocols for connected devices",
+        "SOAP, REST, HTTP Restful and Web Sockets",
+        "Internet connectivity",
+        "Internet based communication",
+        "IP addressing in IoT",
+        "Media access control"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Sensors, Actuators and WSN",
+      "topics": [
+        "Sensor technology",
+        "Participatory sensing",
+        "Industrial IoT and automotive IoT",
+        "Actuator",
+        "Sensor data communication protocols",
+        "Radio Frequency Identification technology",
+        "Wireless Sensor Network technology"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IoT Design Methodology and Case Studies",
+      "topics": [
+        "IoT design methodology: specification, requirement, process, model, service, functional and operational view",
+        "IoT privacy and security solutions",
+        "Raspberry Pi and Arduino devices",
+        "IoT case studies: smart city streetlights control and monitoring"
+      ]
+    }
+  ]
+}

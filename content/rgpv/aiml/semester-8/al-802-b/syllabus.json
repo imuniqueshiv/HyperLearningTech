@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "al-802-b",
+    "code": "AL802 (B)",
+    "name": "High Performance computing",
+    "title": "AL802 (B) - High Performance computing",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to modern processors",
+      "topics": [
+        "General Purpose cache based architecture - performance metric and bench marks",
+        "Moors Law, pipelining, super clarity, SIMD",
+        "Memory Hierarchies",
+        "Multi core processors, Multi threaded processors",
+        "Vector processors - Design principle, Max performance estimates, programming for vector architecture",
+        "Basic Optimizations for serial codes: Scalar profiling, common sense optimizations",
+        "Simple measures and their impacts, role of compilers, C++ optimizations"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data access optimizations and Parallel Computers",
+      "topics": [
+        "Balance analysis and light speed estimates",
+        "Storage order",
+        "Algorithm classifications and assess optimizations",
+        "Case studies for data access optimizations",
+        "Parallel Computers: Shared memory computers, Distributed memory computers, hybrid systems, Network computers"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Basics of parallel computing and Shared memory parallel programming with Open MP",
+      "topics": [
+        "Data and functional parallelism",
+        "Parallel scalability - laws, metrics, factors, efficiency and load imbalance",
+        "Shared memory parallel programming with Open MP: Parallel execution, data scoping",
+        "Work sharing using loops, synchronization",
+        "Reductions, loop scheduling and Tasking"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Efficient Open MP Programming",
+      "topics": [
+        "Program profiling",
+        "Performance pitfalls",
+        "Improving the impact of open MP work sharing constructs",
+        "Determining overheads for short loops",
+        "Serilisation and false sharing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Distributed Memory parallel programming with MPI",
+      "topics": [
+        "Message passing",
+        "Message and point to point communication",
+        "Collective communication",
+        "Non blocking point-to-point communication",
+        "Virtual topologies",
+        "Efficient MPI Programming: MPI performance tools, communication parameters",
+        "Impact of synchronizations sterilizations and contentions",
+        "Reductions in communication overhead"
+      ]
+    }
+  ]
+}

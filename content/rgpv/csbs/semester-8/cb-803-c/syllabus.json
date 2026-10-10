@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "cb-803-c",
+    "code": "CB-803 (C)",
+    "name": "Image Processing and Pattern Recognition",
+    "title": "CB-803 (C) - Image Processing and Pattern Recognition",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction: Image processing systems and its applications",
+      "topics": [
+        "Image formation: Geometric and photometric models",
+        "Digitization - sampling, quantization",
+        "Image definition and its representation, neighbourhood metrics."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Intensity transformations and spatial filtering: Enhancement, contrast stretching, histogram specification, local contrast enhancement",
+        "Smoothing, linear and order statistic filtering, sharpening, spatial convolution",
+        "Gaussian smoothing",
+        "DoG, LoG."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Segmentation: Pixel classification",
+        "Grey level thresholding, global/local thresholding",
+        "Optimum thresholding - Bayes analysis",
+        "Otsu method",
+        "Derivative based edge detection operators, edge detection/linking",
+        "Canny edge detector",
+        "Region growing, split/merge techniques, line detection",
+        "Hough transform."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Image/Object features extraction: Textural features - gray level co-occurrence matrix",
+        "Moments",
+        "Connected component analysis",
+        "Convex hull",
+        "Distance transform, medial axis transform, skeletonization/thinning, shape properties."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Registration: Mono-modal/multimodal image registration",
+        "Global/local registration",
+        "Transform and similarity measures for registration",
+        "Intensity/pixel interpolation.",
+        "Colour image processing: Fundamentals of different colour models - RGB, CMY, HSI, YCbCr",
+        "Lab",
+        "False colour",
+        "Pseudo colour",
+        "Enhancement",
+        "Segmentation.",
+        "Morphological Filtering Basics: Dilation and Erosion Operators",
+        "Top Hat Filters"
+      ]
+    }
+  ]
+}

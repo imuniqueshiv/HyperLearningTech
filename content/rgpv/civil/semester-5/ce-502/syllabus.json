@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "ce-502",
+    "code": "CE-502",
+    "name": "Transportation Engineering-II",
+    "title": "CE-502 - Transportation Engineering-II",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Highway planning, Alignment & Geometric Design",
+      "topics": [
+        "Principles of highway planning, road planning in India and financing of roads, classification patterns",
+        "Requirements, Engg. Surveys for highway location",
+        "Cross sectional elements- width, camber, super-elevation, sight distances, extra widening at curves",
+        "Horizontal and vertical curves, numerical problems"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Bituminous & Cement Concrete Pavements",
+      "topics": [
+        "Design of flexible pavements, design of mixes and stability",
+        "WBM, WMM, BM, IBM, surface dressing, interfacial treatment- seal coat, tack coat, prime coat, wearing coats, grouted macadam",
+        "Bituminous concrete specification, construction and maintenance",
+        "Advantages and disadvantages of rigid pavements, general principles of design, types, construction, maintenance and joints, dowel bars, tie bars",
+        "Brief study of recent developments in cement concrete pavement design, fatigue and reliability"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Low Cost Roads, Drainage of Roads, Traffic Engg. & Transportation Planning",
+      "topics": [
+        "Principles of stabilization, mechanical stabilization, requirements, advantages, disadvantages and uses, quality control",
+        "Macadam roads-types, specifications, construction, maintenance and causes of failures",
+        "Surface and sub-surface drainage, highway materials: properties and testing etc.",
+        "Channelised and unchannelised intersections, at grade & grade separated intersections, description, rotary-design elements, advantages and disadvantages",
+        "Marking, signs and signals, street lighting",
+        "Principles of planning, inventories, trip generation, trip distribution, model split, traffic assignment, plan preparation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Airport Planning, Runway & Taxiway",
+      "topics": [
+        "Airport site selection, aircraft characteristic and their effects on runway alignments, windrose diagrams",
+        "Basic runway length and corrections, classification of airports",
+        "Geometrical elements: taxi ways and runways, pattern of runway capacity"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Airport, Obstructions, Lighting & Traffic control",
+      "topics": [
+        "Zoning regulations, approach area, approach surface-imaginary, conical, and horizontal",
+        "Rotating beacon, boundary lights, approach lights, runway and taxiway lighting etc.",
+        "Instrument landing system, precision approach radar, VOR enroute traffic control"
+      ]
+    }
+  ]
+}

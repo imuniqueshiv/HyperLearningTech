@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "me-703-b",
+    "code": "ME-703 (B)",
+    "name": "Artificial Intelligence Techniques",
+    "title": "ME-703 (B) - Artificial Intelligence Techniques",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Artificial Intelligence",
+      "topics": [
+        "Main components and characteristics of AI (Feature Engineering,ANN,Deep Learning),Applications of AI",
+        "Advantages and disadvantages of AI",
+        "Goals of AI",
+        "Comparision of Programming of a System with AI and without AI,Challenges in AI",
+        "Programming languges preferably used in AI,Techniques/Algorithms used in AI,AI Software plaforms,Future of AI"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Various types of production systems and search techniques: Types of production",
+      "topics": [
+        "systems,Characteristics of production systems",
+        "Study and comparison of breadth first search and depth first search.",
+        "Techniques, other Search Techniques like hill Climbing",
+        "Best first Search.",
+        "A* algorithm",
+        "AO* algorithms etc, and various types of control strategies."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Knowledge Representation and Probabilistic Reasoning: Problems in representing",
+      "topics": [
+        "knowledge, knowledge representation using propositional and predicate logic, comparison of propositional and predicate logic",
+        "Resolution, refutation, deduction, theorem proving, inferencing, monotonic and nonmonotonic reasoning.",
+        "Probabilistic reasoning",
+        "Baye's theorem, semantic networks, scripts, schemas, frames, conceptual dependency, fuzzy logic, forward and backward reasoning."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "the block world problem in robotics",
+        "Introduction to understanding and natural languages processing."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Artificial neural networks, common sense, reasoning",
+        "Convolution Neural Network,Feedforward Neural Network",
+        "Recurrent Neural Network",
+        "Multilayer perceptron",
+        "Architecture / Three Layers in Artificial Neural Networks",
+        "Implementation of ANN, Applications of ANN in images,signals and languagesome example of expert systems."
+      ]
+    }
+  ]
+}

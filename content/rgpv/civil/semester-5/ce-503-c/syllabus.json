@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "ce-503-c",
+    "code": "CE503 (C)",
+    "name": "Quantity Surveying & Costing",
+    "title": "CE503 (C) - Quantity Surveying & Costing",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Purpose and importance of estimates, principles of estimating",
+        "Methods of taking out quantities of items of work",
+        "Mode of measurement, measurement sheet and abstract sheet; bill of quantities",
+        "Types of estimate, plinth area rate, cubical content rate, preliminary, original, revised and supplementary estimates for different projects"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Rate Analysis",
+      "topics": [
+        "Task for average artisan, various factors involved in the rate of an item",
+        "Material and labour requirement for various trades; preparation for rates of important items of work",
+        "Current schedule of rates (C.S.R.)"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Detailed Estimates",
+      "topics": [
+        "Preparing detailed estimates of various types of buildings, R.C.C. works",
+        "Earth work calculations for roads and estimating of culverts",
+        "Services for building such as water supply, drainage and electrification"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cost of Works",
+      "topics": [
+        "Factors affecting cost of work, overhead charges, Contingencies and work charge establishment",
+        "Various percentages for different services in building",
+        "Preparation of DPR"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Valuation",
+      "topics": [
+        "Purposes, depreciation, sinking fund, scrap value, year's purchase",
+        "Gross and net income, dual rate interest",
+        "Methods of valuation, rent fixation of buildings"
+      ]
+    }
+  ]
+}

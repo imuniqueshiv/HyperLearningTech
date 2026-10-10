@@ -1,0 +1,88 @@
+{
+  "subject": {
+    "id": "ad-504-a",
+    "code": "AD-504 (A)",
+    "name": "Management Information System",
+    "title": "AD-504 (A) - Management Information System",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Concepts of MIS",
+      "topics": [
+        "Basic concepts of MIS",
+        "Data versus information",
+        "Organization structures",
+        "Business process",
+        "Role of the MIS",
+        "Importance, scope, impact, and advantages of the MIS",
+        "MIS as a support to management",
+        "Structure and architecture of MIS",
+        "Classification of MIS based on information characteristics, application, and business function"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Resources and Components of Information Systems",
+      "topics": [
+        "Resources and components of information systems",
+        "Managing information resources in an organization",
+        "IT infrastructure and upcoming technologies",
+        "Integration and automation of business functions",
+        "Developing business models",
+        "Fundamentals of data processing"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Information System Development",
+      "topics": [
+        "SDLC",
+        "Models and approaches to system development",
+        "Information system planning",
+        "Need for system analysis",
+        "Analysis of the existing system",
+        "Analysis of new requirements",
+        "System development",
+        "System implementation",
+        "Factors responsible for success and failure of information systems"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Information System Applications",
+      "topics": [
+        "Business applications",
+        "Decision Support Systems (DSS): characteristics",
+        "Problem analysis versus decision making",
+        "DSS applications in e-enterprise",
+        "Knowledge management system and knowledge-based expert system",
+        "Enterprise model system and e-business",
+        "ERP systems",
+        "E-commerce",
+        "E-communication",
+        "Business process reengineering"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Evaluation, Security and Emerging Trends",
+      "topics": [
+        "Evaluation and maintenance of MIS",
+        "Protecting information systems",
+        "Security challenges in e-enterprises",
+        "Security threats, vulnerability, and safeguards",
+        "Controlling security threat and vulnerability",
+        "Technologies for information system control",
+        "Disaster recovery plans",
+        "Emerging trends and technologies with regard to management information systems"
+      ]
+    }
+  ]
+}

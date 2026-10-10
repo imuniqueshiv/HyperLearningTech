@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "cs-604-a",
+    "code": "CS-604 (A)",
+    "name": "Knowledge Management",
+    "title": "CS-604 (A) - Knowledge Management",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "An Introduction to Knowledge Management",
+        "The foundations of knowledge management - including cultural issues, technology applications, organizational concepts and processes, management aspects, and decision support systems",
+        "The Evolution of Knowledge management: From Information Management to Knowledge Management",
+        "Key Challenges Facing the Evolution of Knowledge Management",
+        "Ethics for Knowledge Management"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Creating the Culture of Learning and Knowledge Sharing",
+      "topics": [
+        "Organization and Knowledge Management",
+        "Building the Learning Organization",
+        "Knowledge Markets: Cooperation among Distributed Technical Specialists",
+        "Tacit Knowledge and Quality Assurance"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Knowledge Management - The Tools",
+      "topics": [
+        "Telecommunications and Networks in Knowledge Management",
+        "Internet Search Engines and Knowledge Management",
+        "Information Technology in Support of Knowledge Management",
+        "Knowledge Management and Vocabulary Control",
+        "Information Mapping in Information Retrieval",
+        "Information Coding in the Internet Environment",
+        "Repackaging Information"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Knowledge Management - Application",
+      "topics": [
+        "Components of a Knowledge Strategy",
+        "Case Studies (From Library to Knowledge Center, Knowledge Management in the Health Sciences, Knowledge Management in Developing Countries)"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Future Trends and Case Studies",
+      "topics": [
+        "Advanced topics and case studies in knowledge management",
+        "Development of a knowledge management map/plan that is integrated with an organization's strategic and business plan",
+        "A case study on Corporate Memories for supporting various aspects in the process life-cycles of an organization"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "subject": {
+    "id": "me-603-a",
+    "code": "ME-603 (A)",
+    "name": "Turbomachinery",
+    "title": "ME-603 (A) - Turbomachinery",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Energy Transfer in Turbo Machines",
+      "topics": [
+        "Application of first and second laws of thermodynamics to turbo machines",
+        "Moment of momentum equation and Euler turbine equation",
+        "Principles of impulse and reaction machines",
+        "Degree of reaction",
+        "Energy equation for relative velocities",
+        "One dimensional analysis only"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Steam Turbines",
+      "topics": [
+        "Impulse staging",
+        "Velocity and pressure compounding",
+        "Utilization factor",
+        "Analysis for optimum U.F. Curtis stage and Rateau stage",
+        "Qualitative analysis",
+        "Effect of blade and nozzle losses on vane efficiency and stage efficiency",
+        "Analysis for optimum efficiency",
+        "Mass flow and blade height",
+        "Reaction staging: Parson's stages",
+        "Degree of reaction, nozzle efficiency, velocity coefficient, stator efficiency",
+        "Carry over efficiency, stage efficiency, vane efficiency",
+        "Conditions for optimum efficiency",
+        "Speed ratio, axial thrust",
+        "Reheat factor in turbines",
+        "Problem of radial equilibrium",
+        "Free and forced vortex types of flow",
+        "Flow with constant reaction",
+        "Governing and performance characteristics of steam turbines"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Water Turbines and Centrifugal Pumps",
+      "topics": [
+        "Classification of water turbines",
+        "Pelton, Francis and Kaplan turbines",
+        "Vector diagrams and work-done",
+        "Draft tubes",
+        "Governing of water turbines",
+        "Centrifugal pumps: classification",
+        "Advantage over reciprocating type",
+        "Definition of mano-metric head, gross head, static head",
+        "Vector diagram and work done",
+        "Application of dimensional analysis and similarity to water turbines and centrifugal pumps",
+        "Unit and specific quantities",
+        "Selection of machines",
+        "Hydraulic, volumetric, mechanical and overall efficiencies",
+        "Main and operating characteristics of the machines",
+        "Cavitations"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Rotary Fans, Blowers and Compressors",
+      "topics": [
+        "Classification based on pressure rise",
+        "Centrifugal and axial flow machines",
+        "Centrifugal blowers: vane shape, velocity triangle, degree of reactions",
+        "Slip coefficient, size and speed of machine",
+        "Vane shape and stresses, efficiency, characteristics",
+        "Fan laws and characteristics",
+        "Centrifugal compressor: vector diagrams, work done, temp and pressure ratio",
+        "Slip factor, work input factor, pressure coefficient",
+        "Dimensions of inlet eye, impeller and diffuser",
+        "Axial flow compressors: vector diagrams, work done factor",
+        "Temp and pressure ratio, degree of reaction",
+        "Dimensional analysis, characteristics, surging",
+        "Polytrophic and isentropic efficiencies"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Power Transmitting Turbo Machines",
+      "topics": [
+        "Application and general theory",
+        "Torque ratio, speed ratio, slip and efficiency",
+        "Velocity diagrams",
+        "Fluid coupling and torque converter",
+        "Characteristics",
+        "Positive displacement machines and turbo machines, their distinction",
+        "Positive displacement pumps with fixed and variable displacements",
+        "Hydrostatic systems: hydraulic intensifier, accumulator, press and crane"
+      ]
+    }
+  ]
+}

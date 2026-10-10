@@ -1,0 +1,85 @@
+{
+  "subject": {
+    "id": "al-803-b",
+    "code": "AL803 (B)",
+    "name": "Bio Informatics",
+    "title": "AL803 (B) - Bio Informatics",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Introduction to bioinformatics",
+        "Objectives of bioinformatics",
+        "Basic chemistry of nucleic acids",
+        "Structure of DNA & RNA",
+        "Genes, structure of bacterial chromosome",
+        "Cloning methodology",
+        "Data maintenance and Integrity Tasks"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Bioinformatics Databases & Image Processing",
+      "topics": [
+        "Types of databases",
+        "Nucleotide sequence databases",
+        "Protein sequence databases",
+        "Protein structure databases",
+        "Normalization",
+        "Data cleaning and transformation",
+        "Protein folding, protein function, protein purification and characterization",
+        "Introduction to Java clients, CORBA",
+        "Using MYSQL",
+        "Feature Extraction"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Sequence Alignment and database searching",
+      "topics": [
+        "Introduction to sequence analysis",
+        "Models for sequence analysis",
+        "Methods of optimal alignment",
+        "Tools for sequence alignment",
+        "Dynamics Programming",
+        "Heuristic Methods",
+        "Multiple sequences Alignment"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Gene Finding and Expression",
+      "topics": [
+        "Cracking the Genome",
+        "Biological decoder ring",
+        "Finding genes through mathematics & learning",
+        "Genes prediction tools",
+        "Gene Mapping, Application of Mapping",
+        "Modes of Gene Expression data",
+        "Mining the Gene Expression Data"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Proteomics & Problem solving in Bioinformatics",
+      "topics": [
+        "Proteome analysis",
+        "Tools for proteome analysis",
+        "Genetic networks",
+        "Network properties and analysis",
+        "Complete pathway simulation: E-cell",
+        "Genomic analysis for DNA & Protein sequences",
+        "Strategies and options for similarity search",
+        "Flowcharts for protein structure prediction"
+      ]
+    }
+  ]
+}

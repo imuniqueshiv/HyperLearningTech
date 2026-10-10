@@ -1,0 +1,88 @@
+{
+  "subject": {
+    "id": "cb-303",
+    "code": "CB-303",
+    "name": "Object Oriented Programming",
+    "title": "CB-303 - Object Oriented Programming",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Procedural Programming and Overview of C",
+      "topics": [
+        "Procedural programming",
+        "Types Operator and Expressions",
+        "Scope and Lifetime, Constants",
+        "Pointers, Arrays, and References",
+        "Control Flow",
+        "Functions and Program Structure",
+        "Namespaces, error handling",
+        "Input and Output (C-way)",
+        "Library Functions (string, math, stdlib)",
+        "Command line arguments, Pre-processor directive"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Differences between C and C++",
+      "topics": [
+        "Single line comments",
+        "Local variable declaration within function scope, function declaration",
+        "Function overloading, stronger type checking",
+        "Reference variable, parameter passing – value vs reference",
+        "Passing pointer by value or reference",
+        "#define constant vs const",
+        "Operator new and delete, the typecasting operator",
+        "Inline Functions in contrast to macro, default arguments"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Fundamentals of Object Oriented Programming",
+      "topics": [
+        "Necessity for OOP",
+        "Data Hiding, Data Abstraction, Encapsulation, Procedural Abstraction",
+        "Class and Object",
+        "Scope of Class and Scope Resolution Operator",
+        "Member Function of a Class",
+        "private, protected and public Access Specifier",
+        "this Keyword",
+        "Constructors and Destructors",
+        "friend class, error handling (exception)"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Essentials of Object Oriented Programming",
+      "topics": [
+        "Operator overloading",
+        "Inheritance – Single and Multiple",
+        "Class Hierarchy",
+        "Pointers to Objects",
+        "Assignment of an Object to another Object",
+        "Polymorphism through dynamic binding",
+        "Virtual Functions",
+        "Overloading, overriding and hiding",
+        "Error Handling"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Generic Programming, I/O and Object Oriented Design",
+      "topics": [
+        "Template concept, class template, function template, template specialization",
+        "Streams, Files, Library functions, formatted output",
+        "UML concept",
+        "Use case for requirement capturing",
+        "Class diagram, Activity diagram and Sequence Diagram for design",
+        "Corresponding C++ code from design"
+      ]
+    }
+  ]
+}

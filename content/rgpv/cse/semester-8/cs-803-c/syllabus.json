@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "cs-803-c",
+    "code": "CS-803 (C)",
+    "name": "Internet of Things",
+    "title": "CS-803 (C) - Internet of Things",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "IoT Fundamentals and Architecture",
+      "topics": [
+        "IoT definition, Characteristics",
+        "IoT conceptual and architectural framework",
+        "Components of IoT ecosystems",
+        "Physical and logical design of IoT",
+        "IoT enablers, Modern day IoT applications",
+        "M2M communications, IoT vs M2M, IoT vs WoT",
+        "IoT reference architecture",
+        "IoT Network configurations, IoT LAN, IoT WAN, IoT Node, IoT Gateway, IoT Proxy",
+        "Review of Basic Microcontrollers and interfacing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Sensors and Actuators",
+      "topics": [
+        "Define Sensor, Basic components and challenges of a sensor node",
+        "Sensor features, Sensor resolution",
+        "Sensor classes: Analog, Digital, Scalar, Vector Sensors",
+        "Sensor Types, bias, drift, Hysteresis error, quantization error",
+        "Actuator; Actuator types: Hydraulic, Pneumatic, electrical, thermal/magnetic, mechanical actuators, soft actuators"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "IoT Networking",
+      "topics": [
+        "Basics of IoT Networking, IoT Components, Functional components of IoT",
+        "IoT service oriented architecture, IoT challenges",
+        "6LowPAN, IEEE 802.15.4, ZigBee and its types",
+        "RFID Features, RFID working principle and applications",
+        "NFC (Near Field communication), Bluetooth",
+        "Wireless Sensor Networks and its Applications"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "IoT Application Protocols",
+      "topics": [
+        "MQTT, MQTT methods and components, MQTT communication, topics and applications",
+        "SMQTT",
+        "CoAP, CoAP message types, CoAP Request-Response model",
+        "XMPP",
+        "AMQP features and components, AMQP frame types"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IoT Platforms, Analytics and Security",
+      "topics": [
+        "IoT Platforms, Arduino, Raspberry Pi Board, Other IoT Platforms",
+        "Data Analytics for IoT",
+        "Cloud for IoT, Cloud storage models & communication APIs",
+        "Attacks in IoT system, vulnerability analysis in IoT",
+        "IoT case studies: Smart Home, Smart framing etc."
+      ]
+    }
+  ]
+}

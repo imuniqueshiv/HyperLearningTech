@@ -1,0 +1,82 @@
+{
+  "subject": {
+    "id": "me-803-b",
+    "code": "ME-803 (B)",
+    "name": "Energy Conservation, Management & Audit",
+    "title": "ME-803 (B) - Energy Conservation, Management & Audit",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Energy Management and Conservation",
+      "topics": [
+        "Concept of energy management",
+        "Energy demand and supply",
+        "Economic analysis",
+        "Duties and responsibilities of energy managers",
+        "Energy Conservation: basic concept",
+        "Energy conservation in Household, Transportation, Agricultural, service and Industrial sectors",
+        "Lighting",
+        "HAVC"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Energy Audit",
+      "topics": [
+        "Definition, need and types of energy audit",
+        "Energy management (Audit) approach",
+        "Understanding energy cost",
+        "Bench marking",
+        "Energy performance",
+        "Matching energy use to requirement",
+        "Maximizing system efficiencies",
+        "Optimizing the input energy requirement",
+        "Fuel and energy substitution",
+        "Energy audit instruments",
+        "Energy conservation Act",
+        "Duties and responsibilities of energy manager and auditors"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Material Energy Balance and Energy Action Planning",
+      "topics": [
+        "Facility as an energy system",
+        "Method for preparing process flow",
+        "Material and energy balance diagrams",
+        "Key elements of Energy Action Planning",
+        "Force field analysis",
+        "Energy policy purpose, perspective, content, formulation, rectification"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Monitoring and Targeting and Electrical Energy Management",
+      "topics": [
+        "Definition of monitoring and targeting",
+        "Data and information analysis",
+        "Energy conservation in motors, pumps and fan systems",
+        "Energy efficient motors"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Thermal Energy Management",
+      "topics": [
+        "Energy conservation in boilers, steam turbine and industrial heating system",
+        "Application of FBC",
+        "Cogeneration and waste heat recovery",
+        "Thermal insulation",
+        "Heat exchangers and heat pump",
+        "Building Energy Management"
+      ]
+    }
+  ]
+}

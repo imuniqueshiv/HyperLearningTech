@@ -1,0 +1,64 @@
+{
+  "subject": {
+    "id": "ce-802-d",
+    "code": "CE802 (D)",
+    "name": "Earthquake Resistant Design of Structures",
+    "title": "CE802 (D) - Earthquake Resistant Design of Structures",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Engineering Seismology",
+      "topics": [
+        "Introduction to engineering seismology, Geological and tectonic features of India",
+        "Origin and propagation of seismic waves, Earthquake measurement parameters",
+        "Characteristics of earthquake and its quantification- Magnitude and Intensity scales, Seismic instruments",
+        "Seismic zoning map of India"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Response Spectrum",
+      "topics": [
+        "Response history and strong motion characteristics",
+        "Response Spectrum-elastic and inelastic response spectra, tripartite (D-V-A) response spectrum, use of response spectrum in earthquake resistant design",
+        "Computation of seismic forces in multi-storeyed buildings - using procedures as per codal provisions"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Aseismic Structural Modelling",
+      "topics": [
+        "Structural configuration for earthquake resistant design, Concept of plan irregularities and vertical irregularities, Soft storey, Torsion in buildings",
+        "Design provisions for these in IS-1893",
+        "Effect of infill masonry walls on frames, modeling concepts of infill masonry walls",
+        "Behaviour of masonry buildings during earthquakes, failure patterns, strength of masonry in shear and flexure, Slenderness concept of masonry walls"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design of structure for earthquake resistance",
+      "topics": [
+        "Seismic design philosophy, Load combinations, Ductility and energy absorption in buildings",
+        "Confinement of concrete for ductility, design of columns and beams for ductility",
+        "Ductile detailing provisions as per IS-1893",
+        "Lateral load resisting structural systems"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Seismic control of structures",
+      "topics": [
+        "Introduction, concept and types of seismic control systems as active, passive and semi-active systems",
+        "Requirements of efficient earthquake resistant structural system, damping devices, base isolation systems",
+        "Retrofitting of structures"
+      ]
+    }
+  ]
+}

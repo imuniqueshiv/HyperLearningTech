@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "me-504-b",
+    "code": "ME-504 (B)",
+    "name": "TQM and SQC",
+    "title": "ME-504 (B) - TQM and SQC",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "9000",
+        "information technology and Business Process Re-engineering (BPR)",
+        "TPM and quality awards",
+        "aids and barriers to quality mgt, creating vision and initiating transformation, establishing programs for education and self coordination, policy setting and review, flowchart of policy mgt and relation with daily mgt. improvements, measurement of key indicators",
+        "quality mgt leader",
+        "cross functional teams and coordination, policy setting and review, flowchart of policy mgt and relation with daily mgt."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Process- definition, variation and feedback, funnel-marble experiment- rules of",
+      "topics": [
+        "adjustment and its effects, quality- definition, goalpost and kaizen view, quality of design, conformance and performance",
+        "Taguchi loss function, cost of quality, chain action of improving quality to productivity to motivation and low cost",
+        "Deming's theory of mgt, fourteen points and variance reduction",
+        "attributes enumerative and variables analytic studies."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "tendency, variability and shapes, sampling, size and central value theorem, control chart structure, process plotting and stability, study of out-of-control evidences, defect detection and prevention, use of control charts in evaluating past, present and future trends",
+        "attribute control charts, count and classification charts, construction and interpretation of p , np , c and u charts",
+        "PDSA cycle(plan, do, study, act), and R charts, and s charts, individual and moving range chart, trial control limits and out of control points."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "disturbances, control chart patterns-natural, level-shift, cycle, wild, multi-universe, relationship and other out of control patterns",
+        "diagnosing a process, brainstorming",
+        "cause-effect",
+        "Ishikava, interrelationship, systematic and matrix diagrams",
+        "change concepts and waste elimination"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "variable-process capability studies",
+        "unstable and stable process capability studies and examples",
+        "attribute and variable improvement studies",
+        "Inspection: acceptance sampling(AS)- lot formation, single, double and multiple/sequential sampling plans, operating characteristic (OC) curve, producer and consumer risk, theoretical invalidation of AS, kp rule for stable and chaotic processes."
+      ]
+    }
+  ]
+}

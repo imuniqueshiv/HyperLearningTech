@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "ce-702-c",
+    "code": "CE702 (C)",
+    "name": "Structural Dynamics",
+    "title": "CE702 (C) - Structural Dynamics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Undamped Single Degree of Freedom System",
+      "topics": [
+        "Degree of freedom, undamped system, Force displacement relation, damping force",
+        "Equation of motion, mass-spring damper system, D'Alembert's Principle",
+        "Solution of differential equation of motion, frequency, period and amplitude of motion"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Damped Single Degree of Freedom System",
+      "topics": [
+        "Viscous damping, equation of motion",
+        "Critically damped systems, over and under damped systems",
+        "Logarithmic decrement"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Response to harmonic and periodic vibrations",
+      "topics": [
+        "Harmonic vibration of undamped and viscously damped systems, natural frequency and damping",
+        "Force transmission and vibration isolation",
+        "Fourier series representation, response to periodic force"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Response to Arbitrary, Step, and Pulse Excitation",
+      "topics": [
+        "Response to unit impulse, arbitrary force, Duhamel's Integral",
+        "Step force, rectangular pulse force, half cycle sinusoidal pulse force, triangular pulse force"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Multi Degree of Freedom System",
+      "topics": [
+        "Matrix formulation, stiffness and flexibility influence coefficients, eigen value problem",
+        "Normal modes and their properties",
+        "Matrix iteration technique for eigen value, and eigen vectors",
+        "Free and forced vibration by modal analysis"
+      ]
+    }
+  ]
+}

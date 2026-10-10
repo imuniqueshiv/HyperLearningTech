@@ -1,0 +1,98 @@
+{
+  "subject": {
+    "id": "me-402",
+    "code": "ME-402",
+    "name": "Instrumentation & Control",
+    "title": "ME-402 - Instrumentation & Control",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction to instrument systems",
+        "classifications",
+        "functional elements of a measurement system",
+        "standards and calibration",
+        "static performance characteristics",
+        "measurement errors and uncertainties",
+        "analysis",
+        "sequential and random test",
+        "specifications of instrument static characteristics",
+        "data acquisition",
+        "reduction",
+        "data outliner detection,"
+      ]
+    },
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Nakra B",
+      "topics": [
+        "Nakra B.C.Chaudhary K.K, Instrumentation measurement and analysisTata McGraw Hill",
+        "ISBN 0 07 451791 0"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Dynamic characteristics of the instruments, formulation of system equations, dynamic response, compensation, periodic input, harmonic signal non harmonic signal",
+        "Fourier transform, response to the transient input, response to random signal input, first and second order system compensation,"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Richard S, Figiola & Donal E",
+      "topics": [
+        "Richard S, Figiola & Donal E.",
+        "Beasley",
+        "John Wiley",
+        "Theory and design of mechanical measurements."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "(a) Temperature measurements, thermometry based on thermal expansion, liquid in glass, bimetallic, electric resistance- thermometry, thermocouples, thermistors, detectors",
+        "(b) pressure and velocity measurements, barometer, manometer, dead weight tester, pressure gauges and transducers, dynamic measurements,(c) flow measurements, pressure differential meters, orifice meter, venturi meter, rota-meter,"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "strain gauges",
+        "strain and stress measurements",
+        "electrical circuits",
+        "compensations",
+        "motion force and torque measurements",
+        "displacement measurements",
+        "potentiometers",
+        "linear and rotary variable differential transformers",
+        "velocity measurements",
+        "electromagnetic technique",
+        "stroboscope",
+        "load cell",
+        "measurement of torque on rotating shaft",
+        "power estimation from rotating shaft."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Control systems, open loop and close loop control, mathematical modeling of dynamic systems - mechanical systems, electrical systems, fluid systems, thermal systems, transfer function, impulse response function, block diagrams of close loop systems, system modeling using software.",
+        "BOOKS:"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "subject": {
+    "id": "csit-702-b",
+    "code": "CSIT-702 (B)",
+    "name": "Compiler Design",
+    "title": "CSIT-702 (B) - Compiler Design",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Compiling and Lexical Analysis",
+      "topics": [
+        "Introduction of compiler",
+        "Major data structure in compiler",
+        "Types of compiler",
+        "Front-end and back-end of compiler",
+        "Compiler structure: analysis-synthesis model of compilation",
+        "Various phases of a compiler",
+        "Lexical analysis: input buffering",
+        "Specification and recognition of tokens",
+        "Design of a lexical analyzer generator",
+        "LEX"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Syntax Analysis and Syntax Directed Translation",
+      "topics": [
+        "CFGs",
+        "Top down parsing",
+        "Brute force approach",
+        "Recursive descent parsing",
+        "Transformation on the grammars",
+        "Predictive parsing",
+        "Bottom up parsing",
+        "Operator precedence parsing",
+        "LR parsers: SLR, LALR and LR",
+        "Parser generation",
+        "Syntax directed definitions",
+        "Construction of syntax trees",
+        "Bottom up evaluation of S-attributed definition",
+        "L-attribute definition",
+        "Top down translation",
+        "Bottom up evaluation of inherited attributes",
+        "Recursive evaluation",
+        "Analysis of syntax directed definition"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Type Checking and Run Time Environment",
+      "topics": [
+        "Type system",
+        "Specification of simple type checker",
+        "Equivalence of expression types",
+        "Type conversion",
+        "Overloading of functions and operations",
+        "Polymorphic functions",
+        "Storage organization",
+        "Storage allocation strategies",
+        "Parameter passing",
+        "Dynamic storage allocation",
+        "Symbol table",
+        "Error detection and recovery",
+        "Ad-hoc and systematic methods"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Code Generation",
+      "topics": [
+        "Intermediate code generation: declarations, assignment statements, boolean expressions and case statements",
+        "Back patching",
+        "Procedure calls",
+        "Issues in the design of code generator",
+        "Basic block and flow graphs",
+        "Register allocation and assignment",
+        "DAG representation of basic blocks",
+        "Peephole optimization",
+        "Generating code from DAG"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Code Optimization",
+      "topics": [
+        "Sources of optimization of basic blocks",
+        "Loops in flow graphs",
+        "Dead code elimination",
+        "Loop optimization",
+        "Introduction to global data flow analysis",
+        "Code improving transformations",
+        "Data flow analysis of structure flow graph",
+        "Symbolic debugging of optimized code"
+      ]
+    }
+  ]
+}

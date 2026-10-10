@@ -1,0 +1,84 @@
+{
+  "subject": {
+    "id": "ad-504-b",
+    "code": "AD-504 (B)",
+    "name": "Game Theory with Engineering Applications",
+    "title": "AD-504 (B) - Game Theory with Engineering Applications",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview and Design Process",
+      "topics": [
+        "What is a game",
+        "Game design schema",
+        "Game design fundamentals",
+        "Engineering application of game theory",
+        "Design process: iterative design",
+        "Commissions",
+        "Design and testing of the board game",
+        "Introduction to meaningful play",
+        "Two kinds of meaningful play: discernable and integrated"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design and Semiotics",
+      "topics": [
+        "Introducing design",
+        "Design and meaning",
+        "Semiotics: a brief overview",
+        "Four semiotic concepts",
+        "Context shapes interpretations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Systems and Interactivity",
+      "topics": [
+        "Introduction to systems",
+        "Elements of a system",
+        "Framing systems",
+        "Open and closed systems",
+        "Introduction to interactivity",
+        "A multivalent model of interactivity",
+        "Interaction and choice",
+        "Choice molecules",
+        "Anatomy of choice",
+        "Space of possibility"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Defining Games and Primary Schemas",
+      "topics": [
+        "Defining games",
+        "Overview of digital games",
+        "Magic circle",
+        "Primary schemas: conceptual framework",
+        "Rule, play, and culture"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Rules and Case Studies",
+      "topics": [
+        "Defining rules",
+        "A deck of cards",
+        "Quality of rules",
+        "Rules in context",
+        "Rules on three levels: operational, constitutive, and implicit",
+        "Identity of a game",
+        "Specificity of rules",
+        "Rules of digital games",
+        "Case studies: Tic Tac Toe and a deck of cards"
+      ]
+    }
+  ]
+}

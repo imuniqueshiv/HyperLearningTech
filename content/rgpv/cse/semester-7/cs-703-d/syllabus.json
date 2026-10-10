@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "cs-703-d",
+    "code": "CS-703 (D)",
+    "name": "Disaster Management",
+    "title": "CS-703 (D) - Disaster Management",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Disasters",
+      "topics": [
+        "Definition: Disaster, Hazard, Vulnerability, Resilience, Risks",
+        "Disasters: Types of disasters - Earthquake, Landslide, Flood, Drought, Fire etc.",
+        "Classification, Causes, Impacts including social, economic, political, environmental, health, psychosocial, etc.",
+        "Differential impacts - in terms of caste, class, gender, age, location, disability",
+        "Global trends in disasters: urban disasters, pandemics, complex emergencies, Climate change",
+        "Dos and Dont's during various types of Disasters"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Approaches to Disaster Risk Reduction",
+      "topics": [
+        "Disaster cycle - Phases",
+        "Culture of safety, prevention, mitigation and preparedness community based DRR",
+        "Structural-nonstructural measures",
+        "Roles and responsibilities of community, Panchayati Raj Institutions/Urban Local Bodies (PRIs/ULBs), States, Centre, and other stake-holders",
+        "Institutional Processes and Framework at State and Central Level - State Disaster Management Authority (SDMA)",
+        "Early Warning System - Advisories from Appropriate Agencies"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Inter-relationship Between Disasters and Development",
+      "topics": [
+        "Factors affecting Vulnerabilities, differential impacts",
+        "Impact of Development projects such as dams, embankments, changes in Land-use etc.",
+        "Climate Change Adaptation - IPCC Scenario and Scenarios in the context of India",
+        "Relevance of indigenous knowledge, appropriate technology and local resources"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Disaster Risk Management in India",
+      "topics": [
+        "Hazard and Vulnerability profile of India",
+        "Components of Disaster Relief: Water, Food, Sanitation, Shelter, Health, Waste Management",
+        "Institutional arrangements (Mitigation, Response and Preparedness)",
+        "Disaster Management Act and Policy - Other related policies, plans, programmes and legislation",
+        "Role of GIS and Information Technology Components in Preparedness, Risk Assessment, Response and Recovery Phases of Disaster",
+        "Disaster Damage Assessment"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Disaster Management Applications and Case Studies",
+      "topics": [
+        "Landslide Hazard Zonation: Case Studies",
+        "Earthquake Vulnerability Assessment of Buildings and Infrastructure: Case Studies",
+        "Drought Assessment: Case Studies",
+        "Coastal Flooding: Storm Surge Assessment",
+        "Floods: Fluvial and Pluvial Flooding: Case Studies",
+        "Forest Fire: Case Studies",
+        "Man Made disasters: Case Studies",
+        "Space Based Inputs for Disaster Mitigation and Management and field works related to disaster management"
+      ]
+    }
+  ]
+}

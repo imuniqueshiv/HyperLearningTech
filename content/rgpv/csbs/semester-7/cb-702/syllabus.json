@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "cb-702",
+    "code": "CB-702",
+    "name": "Financial Management",
+    "title": "CB-702 - Financial Management",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Financial Management - Goals of the firm, Financial Environments",
+      "topics": [
+        "Time Value of Money: Simple and Compound Interest Rates",
+        "Amortization",
+        "Computing more than once a year",
+        "Annuity Factor."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Concept of Yield and YTM.",
+        "Risk & Return: Defining Risk and Return",
+        "Using Probability Distributions to Measure Risk",
+        "Attitudes Toward Risk",
+        "Risk and Return in a Portfolio Context",
+        "Diversification",
+        "The Capital Asset Pricing Model (CAPM)."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Indifference Analysis in leverage study.",
+        "Cost of Capital : Concept",
+        "Computation of Specific Cost of Capital for Equity - Preference - Debt",
+        "Weighted Average Cost of Capital - Factors affecting Cost of Capital 4L.",
+        "Capital Budgeting : The Capital Budgeting Concept & Process - An Overview",
+        "Generating Investment Project Proposals",
+        "Estimating Project",
+        "After Tax Incremental Operating Cash Flows",
+        "Capital Budgeting Techniques",
+        "Project Evaluation and Selection - Alternative Methods."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "(Short Term and Long Term- Mix)",
+        "Combining Liability Structures and Current Asset Decisions",
+        "Estimation of Working Capital."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Payouts",
+        "Electronic Commerce",
+        "Outsourcing",
+        "Cash Balances to maintain",
+        "Factoring.",
+        "Accounts Receivable Management: Credit & Collection Policies",
+        "Analyzing the Credit Applicant",
+        "Credit References",
+        "Selecting optimum Credit period."
+      ]
+    }
+  ]
+}

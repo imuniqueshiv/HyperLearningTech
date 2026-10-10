@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "me-303",
+    "code": "ME-303",
+    "name": "Materials Technology",
+    "title": "ME-303 - Materials Technology",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Solidification of metals",
+        "Crystallisation",
+        "Crystal and amorphous , different types of bonds in"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Cooling curves",
+        "Isomorphous",
+        "Utectic",
+        "Eutectoid",
+        "Eutectoid solid solution",
+        "Peritectic and"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Heat treatment of metals",
+        "Based on phase diagram and T-T-T-Diagram the heat treatment of"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Destructive and non-destructive testing methods",
+        "Tensile test",
+        "Compression test, shear test,"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Chemical Analysis of different alloying elements in commercial metals",
+        "C, Fe",
+        "Mn,"
+      ]
+    }
+  ]
+}

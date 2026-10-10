@@ -1,0 +1,87 @@
+{
+  "subject": {
+    "id": "al-703-d",
+    "code": "AL703 (D)",
+    "name": "Internet and Web Technology",
+    "title": "AL703 (D) - Internet and Web Technology",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Web Design",
+      "topics": [
+        "Concept of WWW, Internet and WWW",
+        "HTTP Protocol: Request and Response",
+        "Web browser and Web servers",
+        "Features of Web 2.0",
+        "Concepts of effective web design",
+        "Web design issues including Browser, Bandwidth and Cache, Display resolution",
+        "Look and Feel of the Website, Page Layout and linking",
+        "User centric design, Sitemap",
+        "Planning and publishing website",
+        "Designing effective navigation"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "HTML",
+      "topics": [
+        "Basics of HTML, formatting and fonts, commenting code, color",
+        "Hyperlink, lists, tables, images, forms",
+        "XHTML, Meta tags, Character entities",
+        "Frames and frame sets",
+        "Browser architecture and Web site structure",
+        "Overview and features of HTML5"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Style sheets, JavaScript and DHTML",
+      "topics": [
+        "Need for CSS, introduction to CSS, basic syntax and structure, using CSS",
+        "Background images, colors and properties",
+        "Manipulating texts, using fonts, borders and boxes, margins, padding lists",
+        "Positioning using CSS, CSS2, Overview and features of CSS3",
+        "Client side scripting with JavaScript: variables, functions, conditions, loops and repetition, Pop up boxes",
+        "Advance JavaScript: Javascript and objects, JavaScript own objects",
+        "The DOM and web browser environments, Manipulation using DOM",
+        "Forms and validations",
+        "DHTML: Combining HTML, CSS and JavaScript, Events and buttons"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "XML and PHP",
+      "topics": [
+        "Introduction to XML, uses of XML, simple XML, XML key components",
+        "DTD and Schemas",
+        "Using XML with application",
+        "Transforming XML using XSL and XSLT",
+        "Introduction and basic syntax of PHP",
+        "Decision and looping with examples",
+        "PHP and HTML, Arrays, Functions",
+        "Browser control and detection, string, Form processing, Files",
+        "Advance Features: Cookies and Sessions",
+        "Object Oriented Programming with PHP"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "PHP and MySQL",
+      "topics": [
+        "Basic commands with PHP examples",
+        "Connection to server, creating a database, selecting a database",
+        "Listing database, listing table names",
+        "Creating a table, inserting data, altering tables",
+        "Queries, deleting database, deleting data and tables",
+        "PHP myadmin and database bugs"
+      ]
+    }
+  ]
+}

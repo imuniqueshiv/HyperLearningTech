@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "ce-601",
+    "code": "CE-601",
+    "name": "Structural Design & Drawing (RCC-I)",
+    "title": "CE-601 - Structural Design & Drawing (RCC-I)",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Principles of Structural Design",
+      "topics": [
+        "Assumptions, Mechanism of load transfer",
+        "Various properties of concrete and reinforcing steel",
+        "Introduction to working stress method and limit state methods of design, partial safety factor for load and material",
+        "Calculation of various loads for structural design of singly reinforced beam, Partial load factors"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design of Beams",
+      "topics": [
+        "Doubly reinforced rectangular & Flanged Beams, Lintel, Cantilever, simply supported and continuous beams",
+        "Beams with compression reinforcement: Redistribution of moments in continuous beams",
+        "Circular girders: Deep beams",
+        "Design of beam for shear and bond"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design of Slabs",
+      "topics": [
+        "Slabs spanning in one direction; Cantilever, Simply supported and Continuous slabs",
+        "Slabs spanning in two directions, Circular slabs, Waffle slabs, Flat slabs",
+        "Yield line theory"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Columns & Footings",
+      "topics": [
+        "Effective length of columns, Short and long columns- Square, Rectangular and Circular columns",
+        "Isolated and combined footings, Strap footing",
+        "Columns subjected to axial loads and bending moments (sections with no tension)",
+        "Raft foundation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Staircases",
+      "topics": [
+        "Staircases with waist slab having equal and unequal flights with different support conditions",
+        "Slabless tread-riser staircase"
+      ]
+    }
+  ]
+}

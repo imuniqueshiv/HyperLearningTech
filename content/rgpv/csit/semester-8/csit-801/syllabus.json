@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "csit-801",
+    "code": "CSIT-801",
+    "name": "Data Science",
+    "title": "CSIT-801 - Data Science",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Data Science and Big Data Overview",
+      "topics": [
+        "Types of data",
+        "Sources of data",
+        "Data collection",
+        "Data storage and management",
+        "Big data overview",
+        "Characterization of big data",
+        "Drivers of big data",
+        "Challenges",
+        "Big data use cases",
+        "Defining big data analytics and examples of its use cases",
+        "Data analytics lifecycle: discovery, data preparation, model planning, model building, communicate results and operationalize"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Advanced Analytical Theory and Methods",
+      "topics": [
+        "Clustering and K-means",
+        "Additional clustering algorithms",
+        "Association rules and Apriori algorithm",
+        "Applications of association rules",
+        "Regression: linear regression and logistic regression",
+        "Classification: decision trees and Naive Bayes",
+        "Additional classification methods",
+        "Text analysis steps",
+        "Determining sentiments"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Advanced Analytics Technology and Tools",
+      "topics": [
+        "Analytics for unstructured data use cases",
+        "MapReduce",
+        "Apache Hadoop",
+        "Traditional database vs Hadoop",
+        "Hadoop core components",
+        "HDFS: design, components and architecture",
+        "Hadoop 2.0 architecture",
+        "Hadoop 2.0 resource management",
+        "YARN"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "The Hadoop Ecosystem",
+      "topics": [
+        "Introduction to Hive and HBase",
+        "Hive use cases: Facebook and healthcare",
+        "Hive architecture and components",
+        "Integrating data sources",
+        "Dealing with real-time data streams",
+        "Complex event processing",
+        "Overview of Pig",
+        "Difference between Hive and Pig",
+        "Use cases of Pig",
+        "Pig program structure, components, execution and data models",
+        "Overview of Mahout and Mahout working"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "R, Deliverables and Data Visualization",
+      "topics": [
+        "Introduction to R",
+        "Basic data analytics methods using R",
+        "Communicating and operationalizing an analytics project",
+        "Creating the final deliverables",
+        "Data visualization basics"
+      ]
+    }
+  ]
+}

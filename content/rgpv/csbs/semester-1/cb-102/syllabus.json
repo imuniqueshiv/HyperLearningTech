@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "cb-102",
+    "code": "CB-102",
+    "name": "Introductory Topics in Statistics, Probability and Calculus",
+    "title": "CB-102 - Introductory Topics in Statistics, Probability and Calculus",
+    "semester": "I"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Statistics",
+      "topics": [
+        "Definition of Statistics",
+        "Basic objectives",
+        "Applications in various branches of science with examples",
+        "Collection of Data: Internal and external data, Primary and secondary Data",
+        "Population and sample, Representative sample"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Descriptive Statistics",
+      "topics": [
+        "Classification and tabulation of univariate data",
+        "Graphical representation, Frequency curves",
+        "Descriptive measures - central tendency and dispersion",
+        "Bivariate data",
+        "Summarization, marginal and conditional frequency distribution"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Probability",
+      "topics": [
+        "Concept of experiments, sample space, event",
+        "Definition of Combinatorial Probability",
+        "Conditional Probability",
+        "Bayes Theorem"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Probability distributions",
+      "topics": [
+        "Discrete and continuous distributions",
+        "Binomial, Poisson and Geometric distributions",
+        "Uniform, Exponential, Normal, Chi-square, t, F distributions",
+        "Expected values and moments: mathematical expectation and its properties",
+        "Moments (including variance) and their properties, interpretation",
+        "Moment generating function"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Calculus",
+      "topics": [
+        "Basic concepts of Differential and integral calculus",
+        "Application of double and triple integral"
+      ]
+    }
+  ]
+}

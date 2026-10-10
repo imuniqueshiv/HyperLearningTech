@@ -1,0 +1,111 @@
+{
+  "subject": {
+    "id": "me-703-c",
+    "code": "ME-703 (C)",
+    "name": "Systems Engineering",
+    "title": "ME-703 (C) - Systems Engineering",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview of Systems Engineering:",
+      "topics": [
+        "Introduction",
+        "Origin",
+        "Examples of Systems requiring systems engineering,Systems Engineer Career Development Model",
+        "Perspectives of Systems Engineering",
+        "Systems Domains",
+        "Systems Engineering Fields",
+        "System Engineering Approaches."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Structure of Complex Systems:",
+      "topics": [
+        "System Building Blocks and Interfaces",
+        "Hierarchy of Complex Systems",
+        "System Building Blocks",
+        "The System Environment",
+        "Interfaces and Interactions",
+        "Complexity in Modern Systems."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Concept Development and Exploration:",
+      "topics": [
+        "Originating a New System",
+        "Operational Analysis",
+        "Functional Analysis",
+        "Feasibility",
+        "System Operational Requirements",
+        "Implementation of Concept Exploration.Exploration in system life cycle",
+        "Concept definition phase",
+        "Activities involved in concept definition phase."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Engineering Development:",
+      "topics": [
+        "Reducing Program Risks",
+        "Requirements Analysis",
+        "Functional Analysis and Design",
+        "Prototype Development as a Risk Mitigation Technique",
+        "Development Testing",
+        "Risk Reduction.",
+        "Place of engineering design phase in system life cycle",
+        "Various activities involved in engineering design phase."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Integration and Evaluation:",
+      "topics": [
+        "Integrating",
+        "Testing",
+        "And Evaluating The Total System",
+        "Test Planning And Preparation",
+        "System Integration",
+        "Developmental System Testing",
+        "Operational Test And Evaluation",
+        "Engineering For Production",
+        "Transition From Development To Production",
+        "Production Operations.operation and support phase.",
+        "Books: 1.Alexander Kossiakoff",
+        "William N Sweet, \"System Engineering Principles and Practice",
+        "Wiley India 2.Blanchard Fabrycky",
+        "Systems engineering and analysis",
+        "Pearson 3.",
+        "Dwivedi Krishna K, Pandey M., Fundamentals of Systems Engineering",
+        "Wiley Precise Text book Series",
+        "Wiley India.",
+        "ISBN: 978-265-6654-9 4.",
+        "Dennis M.",
+        "Buede",
+        "William D.Miller, \"The Engineering Design of Systems: Models & Methods\" Wiley India 5.JeffreyL Whitten",
+        "Lonnie D Bentley, \"System Analysis and Design Methods\" 6.Richard Stevens",
+        "Peter Brook,\" System Engineering - Coping with complexity",
+        "Prentice Hall of India. 7.Eisner",
+        "Essentials of Projects and Systems Engineering Management, 2nd edition.",
+        "John Wiley & Sons",
+        "New Jersey",
+        "USA. 8.",
+        "Buede",
+        "M..",
+        "The Engineering Design of Systems",
+        "Models and Methods.",
+        "John Wiley & Sons",
+        "New Jersey",
+        "USA."
+      ]
+    }
+  ]
+}

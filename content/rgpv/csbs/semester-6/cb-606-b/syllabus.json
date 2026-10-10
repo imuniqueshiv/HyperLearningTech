@@ -1,0 +1,59 @@
+{
+  "subject": {
+    "id": "cb-606-b",
+    "code": "CB606 (B)",
+    "name": "Modern Web Applications",
+    "title": "CB606 (B) - Modern Web Applications",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Internet & World Wide Web",
+      "topics": [
+        "History of the Internet & World-Wide Web, Web Browsers, Web Servers, Uniform Resource Locator",
+        "Tools and Web Programming Languages",
+        "Web Standards, Categories of Web Applications, Characteristics of Web Applications, Tiered Architecture"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS)",
+      "topics": [
+        "HTML: Basic HTML page, Text Formatting, Table, Headers, Linking, Images, List, Meta Elements",
+        "CSS: Inline, Internal and External Style Sheet, Bootstrap-CSS Text, CSS forms, CSS components drop down"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "JavaScript and Extensible Markup Language (XML)",
+      "topics": [
+        "JavaScript: Introduction to Java Scripts, Objects in Java Script, Dynamic HTML with Java Script, Bootstrap- JS Alert, JS Button, JS popover",
+        "XML: Introduction, Structuring Data, Document Type Definition, XML Vocabularies",
+        "Document Object Model (DOM) with JavaScript, Extensible Stylesheet Language Transforms (XSL)"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "PHP Basics",
+      "topics": [
+        "Writing Basic PHP Programs: Creating PHP Programs, Numbers and Strings, Literals and Variables, Operators and Functions",
+        "Form & PHP: Creating Form Controls, Using Values Returned From, Forms Using PHP"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "PHP Database Connectivity",
+      "topics": [
+        "PHP Database Connectivity: Connecting to MySQL Server, Selecting Databases, Checking for Errors, Closing the MySQL Server Connection",
+        "Manipulating Data in MySQL Using PHP: Inserting, Viewing, Updating and Deleting Records, Manipulating joined tables",
+        "User Authentication: Creating Session, Authorization Level"
+      ]
+    }
+  ]
+}

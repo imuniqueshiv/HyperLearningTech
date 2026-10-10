@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "ad-501",
+    "code": "AD-501",
+    "name": "Theory of Computation",
+    "title": "AD-501 - Theory of Computation",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction of Automata Theory",
+      "topics": [
+        "Review of sets",
+        "Mathematical formal proofs including proof by induction and by contradiction",
+        "Introduction to languages, grammars, and automata",
+        "Alphabet",
+        "Representation of language and grammar",
+        "Types of automata",
+        "Finite automata as a language acceptor and translator",
+        "Moore machines and Mealy machines",
+        "Composite machine",
+        "Conversion from Mealy to Moore and vice versa"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Types of Finite Automata",
+      "topics": [
+        "Non-deterministic finite automata (NDFA)",
+        "Deterministic finite automata machines",
+        "Conversion of NDFA to DFA",
+        "Minimization of automata machines",
+        "Regular expression",
+        "Applications of regular expressions",
+        "Arden's theorem",
+        "Meaning of union, intersection, concatenation, and closure",
+        "2-way DFA"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Grammars",
+      "topics": [
+        "Types of grammar",
+        "Context-sensitive grammar",
+        "Context-free grammar",
+        "Regular grammar",
+        "Derivation trees",
+        "Ambiguity in grammar",
+        "Simplification of context-free grammar",
+        "Conversion of grammar to automata machine and vice versa",
+        "Chomsky hierarchy of grammar",
+        "Chomsky normal form and Greibach normal form"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Pushdown Automata",
+      "topics": [
+        "Example of PDA",
+        "Deterministic and non-deterministic PDAs",
+        "Context-free grammar",
+        "Parsing",
+        "Ambiguity",
+        "Normal form of CFGs",
+        "CFG to NPDA",
+        "NPDA to CFGs",
+        "CFG equivalent to PDA",
+        "Petri nets model"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Turing Machine",
+      "topics": [
+        "Turing machine as acceptor",
+        "Recognizing a language",
+        "Universal Turing machines",
+        "Linear bounded automata",
+        "Context-sensitive languages",
+        "Recursive and recursively enumerable languages",
+        "Unrestricted grammars",
+        "Halting problem of Turing machine",
+        "The Post correspondence problem",
+        "Concept of solvability and unsolvability",
+        "Church's thesis",
+        "Complexity theory: P and NP problems"
+      ]
+    }
+  ]
+}

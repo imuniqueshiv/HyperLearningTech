@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "cb-703-b",
+    "code": "CB-703 (B)",
+    "name": "Introduction to IoT",
+    "title": "CB-703 (B) - Introduction to IoT",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Industrial Internet",
+        "Fundamental building blocks",
+        "Use Cases of IoT in various industry domains,"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Architecture: IoT reference architectures",
+        "Industrial Internet Reference Architecture",
+        "Edge Computing",
+        "IoT Gateways",
+        "Data Ingestion and Data Processing Pipelines",
+        "Data Stream Processing"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Sensors and Industrial Systems: Introduction to sensors and transducers",
+        "integrating sensors to sensor processing boards",
+        "introduction to industrial data acquisition systems",
+        "industrial control systems and their functions"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "architecture",
+        "Introduction to proximity networking technologies (ZigBee",
+        "Bluetooth",
+        "Serial Communication)",
+        "Industrial network protocols (Modbus",
+        "CAN bus)",
+        "Communicating with cloud applications (web services",
+        "REST, TCP/IP and UDP/IP sockets",
+        "MQTT, WebSocket's, protocols.",
+        "Message encoding (JSON, Protocol Buffers)"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "databases, basic time series analytics, data summarization and sketching, dealing with noisy and missing data, anomaly and outlier detection",
+        "Lab Exercises 1.",
+        "Setting up the Arduino Development Environment, connecting analog sensors to an Arduino Boarding and reading analog sensor data. 2.",
+        "Digital Input and Output reading using and Arduino board and Arduino Development Environment. 3.",
+        "Integrate an Arduino Board to a Raspberry Pi computer and send sensor data from Arduino to the R Pi. 4.",
+        "Setup Python on the R Pi and run sample R Pi programs on the R Pi.",
+        "Read the data from Arduino using Python language 5.",
+        "Connect a R Pi Camera module to the Raspberry Pi and using Python programming capture still images and video. 6.",
+        "Set up TCP/IP socket server on a PC.",
+        "Send a message from the R Pi to the PC using socket communication. 7.",
+        "Set up a MQTT broker on the PC.",
+        "Send data from R Pi to PC using MQTT protocol.",
+        "Receive data from PC to R Pi using MQTT protocol. 8.",
+        "Connect LED lights to an Arduino.",
+        "Connect the Arduino to the R Pi.",
+        "Send Message from PC to R Pi via MQTT protocol.",
+        "On receipt of the message , toggle the LED lights on the Arduino. 9.",
+        "Set up an account in a cloud service (such as Google / AWS or Azure).",
+        "Set up a simple Http server using a language of your choice.",
+        "Push the image captured from the R Pi camera to this web service.",
+        "On receiving the image, store the image in a database or file. 10.",
+        "Develop a mobile application to view the images captured by the R Pi camera."
+      ]
+    }
+  ]
+}

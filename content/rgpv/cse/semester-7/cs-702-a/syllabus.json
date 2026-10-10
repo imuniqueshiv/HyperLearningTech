@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "cs-702-a",
+    "code": "CS-702 (A)",
+    "name": "Computational Intelligence",
+    "title": "CS-702 (A) - Computational Intelligence",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Computational Intelligence",
+      "topics": [
+        "Introduction to Computational Intelligence",
+        "Types of Computational Intelligence, components of Computational Intelligence",
+        "Concept of Learning/Training model",
+        "Parametric Models, Nonparametric Models",
+        "Multilayer Networks: Feed Forward network, Feedback network"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Fuzzy Systems",
+      "topics": [
+        "Fuzzy set theory: Fuzzy sets and operations, Membership Functions",
+        "Concept of Fuzzy relations and their composition",
+        "Concept of Fuzzy Measures",
+        "Fuzzy Logic: Fuzzy Rules, Inferencing",
+        "Fuzzy Control - Selection of Membership Functions, Fuzzyfication, Rule Based Design & Inferencing, Defuzzyfication"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Genetic Algorithms",
+      "topics": [
+        "Basic Genetics, Concepts, Working Principle",
+        "Creation of Offsprings",
+        "Encoding, Fitness Function, Selection Functions",
+        "Genetic Operators - Reproduction, Crossover, Mutation",
+        "Genetic Modeling, Benefits"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Rough Set Theory and Related Models",
+      "topics": [
+        "Rough Set Theory - Introduction, Fundamental Concepts",
+        "Set approximation, Rough membership, Attributes, Optimization",
+        "Hidden Markov Models",
+        "Decision tree model"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Swarm Intelligence",
+      "topics": [
+        "Introduction to Swarm Intelligence",
+        "Swarm Intelligence Techniques: Ant Colony Optimization, Particle Swarm Optimization, Bee Colony Optimization",
+        "Applications of Computational Intelligence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "cb-501",
+    "code": "CB-501",
+    "name": "Software Design with UML",
+    "title": "CB-501 - Software Design with UML",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Software Engineering and UML",
+      "topics": [
+        "Introduction",
+        "Software Engineering Concepts",
+        "Development activities",
+        "Managing software development",
+        "UML introduction - modeling concepts",
+        "Project organization and communication"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Requirements Elicitation and Analysis",
+      "topics": [
+        "Introduction",
+        "Requirement Elicitation Concepts",
+        "Requirements Elicitation Activities",
+        "Managing Requirements Elicitation",
+        "Case Study: ARENA",
+        "Analysis concepts",
+        "Analysis activities: From Use cases to Objects",
+        "Managing Analysis"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Static UML Diagrams",
+      "topics": [
+        "Class Diagram",
+        "Elaboration",
+        "Domain Model",
+        "Finding conceptual classes and description classes",
+        "Associations",
+        "Attributes",
+        "Domain model refinement",
+        "Finding conceptual class Hierarchies",
+        "Aggregation and Composition",
+        "Relationship between sequence diagrams and use cases",
+        "When to use Class Diagrams"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Dynamic UML Diagrams",
+      "topics": [
+        "Dynamic Diagrams",
+        "UML interaction diagrams",
+        "System sequence diagram",
+        "Collaboration diagram",
+        "When to use Communication Diagrams",
+        "State machine diagram and Modelling",
+        "When to use State Diagrams",
+        "Activity diagram",
+        "When to use activity diagrams",
+        "Implementation Diagrams",
+        "UML package diagram",
+        "When to use package diagrams",
+        "Component and Deployment Diagrams",
+        "When to use Component and Deployment diagrams"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Design Patterns",
+      "topics": [
+        "Design Pattern",
+        "Describing Design Patterns",
+        "How design patterns solve design problems",
+        "Selecting a design Pattern",
+        "Using a design pattern",
+        "Case Study: Designing a Document Editor"
+      ]
+    }
+  ]
+}

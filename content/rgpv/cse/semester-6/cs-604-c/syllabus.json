@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "cs-604-c",
+    "code": "CS-604 (C)",
+    "name": "Rural Technology & Community Development",
+    "title": "CS-604 (C) - Rural Technology & Community Development",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Rural Management - Principles and Practices",
+      "topics": [
+        "Introduction to Management and Theory of Management",
+        "Planning, Organisation Structure and Design",
+        "Motivation and Leadership",
+        "Management Control and Managerial Decision Making"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Human Resource Management for Rural India",
+      "topics": [
+        "Nature, Scope of Human Resource Management",
+        "Human Resource Planning, Recruitment and Selection, Training and Development, Performance Appraisal",
+        "Welfare programme and Fringe benefits, Wage and Salary Administration",
+        "Morale and Productivity, Industrial Relations and Industrial Disputes"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Management of Rural Financing",
+      "topics": [
+        "Rural Credit System, Role of Rural Credit in Rural Development",
+        "Evolution and Growth of Rural Credit System in India",
+        "Agricultural Credit, Agricultural Credit Review Committee, Report of different Committees and Commissions, Problems and Prospects",
+        "Rural Credit to Non-farm Sector, Credit for small and marginal entrepreneurs",
+        "Role of Government Institutions towards facilitating Rural Credit",
+        "Role of Non-Government/ Semi Government / Quasi-Government Institutions",
+        "Growth and Present trend of Rural Financing towards Small scale and Cottage Industries"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Research Methodology",
+      "topics": [
+        "Concept of Social Research, Traditional Research, Action Research and Participatory Research",
+        "Qualitative Data Construction and Methods of Data Collection",
+        "Techniques of Interview",
+        "Qualitative methods: Sociometry, Case Studies, observation, coding and content analysis"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Research Methodology - Data Analysis",
+      "topics": [
+        "Collection, Tabulation and Presentation of data",
+        "Measures of Central Tendency, Dispersion, Moments, Skewness and Kurtosis",
+        "Correlation and Regression",
+        "Sampling Theory and Test of Significance"
+      ]
+    }
+  ]
+}

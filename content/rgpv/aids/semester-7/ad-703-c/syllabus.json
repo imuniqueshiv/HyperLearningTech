@@ -1,0 +1,85 @@
+{
+  "subject": {
+    "id": "ad-703-c",
+    "code": "AD-703 (C)",
+    "name": "Advanced Statistical Analytics",
+    "title": "AD-703 (C) - Advanced Statistical Analytics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "and SRSWOR),Parameter and Statistic",
+        "Sampling distribution of as tatistic in the context of a finite population",
+        "Sampling distribution of sample mean and sample proportion whilesampling from a finite population.",
+        "Random sampling from an infinite population",
+        "Sampling Distribution of sample mean and sample variance when the sample is drawn from a Normal distribution",
+        "Problems on sampling distributions of statistics from finite and infinite populations.",
+        "Statement of Lyndeberg-Levy Central Limit Theorem (CLT) and its applications."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Correlation, Regression Analysis and ANOVA: Correlation, Scatter diagram, Karl",
+      "topics": [
+        "Pearson's coefficient of correlation",
+        "Spearman's Rank correlation coefficient",
+        "Methods of least square",
+        "Simple linear Regression model",
+        "SLR assumptions and prediction Multiple linear Regression",
+        "MLR assumption and prediction",
+        "Polynomial Regression",
+        "Logistics Regression",
+        "Poisson Regression",
+        "Non-Linear Regression Analysis of Variance (One way & Two Way).",
+        "Analysis of Covariance",
+        "Multivariate Analysis of Variance"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Testing of Hypothesis:",
+      "topics": [
+        "Testing of Hypotheses: Null and Alternative Hypothesis",
+        "Testing Procedure (Critical region)",
+        "Type I and Type II errors",
+        "Level of significance & Power of atest, p-value for symmetric null distribution.",
+        "Tests for me an and proportion (single sample, two sample",
+        "exact & large sample) Tests for variance (single sample and two samples)",
+        "Tests for me an and correlation coefficient for paired sample (Exact & Large sample)",
+        "Analysis of Variance (one way)."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Unbiasedness",
+        "Consistency",
+        "Efficiency",
+        "Sufficiency Minimum Variance and Unbiasedness (Small sample) Method of moments",
+        "Method of Maximum Likelihood",
+        "Consistency & Efficiency (Large sample)",
+        "Interval Estimation: Confidence Intervals of mean and proportion in large samples."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Markov Chain Monte Carlo (MCMC) methods",
+        "Bayesian hierarchical models",
+        "Survival analysis",
+        "Causal inference",
+        "High-dimensional data analysis."
+      ]
+    }
+  ]
+}

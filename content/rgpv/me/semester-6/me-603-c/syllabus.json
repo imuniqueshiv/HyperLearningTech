@@ -1,0 +1,71 @@
+{
+  "subject": {
+    "id": "me-603-c",
+    "code": "ME-603 (C)",
+    "name": "Product Design",
+    "title": "ME-603 (C) - Product Design",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Product Design",
+      "topics": [
+        "Product life-cycle",
+        "Product policy of an organization",
+        "Selection of a profitable product",
+        "Product design process",
+        "Product analysis"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Value Engineering in Product Design",
+      "topics": [
+        "Advantages",
+        "Applications in product design",
+        "Problem identification and selection",
+        "Analysis of functions",
+        "Anatomy of function",
+        "Primary versus secondary versus tertiary/unnecessary functions",
+        "Functional analysis: Functional Analysis System Technique (FAST)",
+        "Case studies"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Product Design Tools",
+      "topics": [
+        "QFD",
+        "Computer Aided Design",
+        "Robust design",
+        "DFX",
+        "DFM",
+        "DFA",
+        "Ergonomics in product design"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "DFMA Guidelines",
+      "topics": [
+        "Product design for manual assembly",
+        "Design guidelines for metallic and non-metallic products to be manufactured by different processes such as casting, machining, injection molding etc."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Rapid Prototyping",
+      "topics": [
+        "Needs of rapid prototyping",
+        "Advantages",
+        "Working principles of SLA, LOM and SLS"
+      ]
+    }
+  ]
+}

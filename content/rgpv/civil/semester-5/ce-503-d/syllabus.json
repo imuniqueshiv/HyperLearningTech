@@ -1,0 +1,59 @@
+{
+  "subject": {
+    "id": "ce-503-d",
+    "code": "CE503 (D)",
+    "name": "Marine Construction",
+    "title": "CE503 (D) - Marine Construction",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "History and classification of harbours",
+      "topics": [
+        "History of water transportation at world level and at national level development and policy",
+        "Classification of harbours, natural and artificial",
+        "Major ports in India, administrative set up"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Harbour Planning",
+      "topics": [
+        "Harbour components, ship characteristics, characteristics of good harbour and principles of harbour planning",
+        "Size of harbour, site selection criteria and layout of harbours",
+        "Surveys to be carried out for harbor planning"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Natural Phenomena",
+      "topics": [
+        "Wind, waves, tides formation and currents phenomena, their generation characteristics and effects on marine structures",
+        "Silting, erosion and littoral drift"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Marine Structures",
+      "topics": [
+        "General design aspects, breakwaters - function, types, general design principles",
+        "Wharves, quays, jetties, piers, pier heads, dolphin, fenders, mooring accessories – function, types, suitability, design and construction features"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Docks and Locks",
+      "topics": [
+        "Tidal basin, wet docks-purpose, design consideration",
+        "Operation of lock gates and passage",
+        "Repair docks - graving docks, floating docks"
+      ]
+    }
+  ]
+}

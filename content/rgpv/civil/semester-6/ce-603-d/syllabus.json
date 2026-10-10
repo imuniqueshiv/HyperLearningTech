@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "ce-603-d",
+    "code": "CE603 (D)",
+    "name": "Cost Effective & ECO-Friendly Structures",
+    "title": "CE603 (D) - Cost Effective & ECO-Friendly Structures",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Concepts of energy efficient & environment friendly materials and techniques",
+      "topics": [
+        "Cost effective materials: Soil, Fly ash, Ferrocement, Lime, Fibres, Stone Dust, Red mud, Gypsum, Alternate Wood, Polymer",
+        "Walls - Stabilised and sun dried, soil blocks & bricks, Solid & Hollow concrete blocks, stone masonry blocks, Ferrocement partitions",
+        "Roofs - Precast R.C. Plank & Joists roof, Precast channel roof, Precast L-panel roof, Precast Funicular shells, Ferrocement shells, Filler Slab, Seasal Fibre roof, Improved country tiles, Thatch roof, M.C.R. tile"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Cost effective construction techniques and equipments",
+      "topics": [
+        "Techniques: Rat trap bond construction, Energy Efficient roofings, Ferrocement technique, Mud Technology",
+        "Equipments: Brick moulding machine, Stabilised soil block making machine and plants for the manufacturing of concrete blocks",
+        "M.C.R. tile making machine, Ferrocement wall panel & Roofing channel making machine, R.C.C. Chaukhat making m/c"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Cost effective sanitation",
+      "topics": [
+        "Waste water disposal system",
+        "Cost effective sanitation for rural and urban areas",
+        "Ferrocement Drains"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Low Cost Road Construction",
+      "topics": [
+        "Cost effective road materials, stabilization, construction techniques tests",
+        "Equipment used for construction, drainage, maintenance"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Cost analysis and comparison",
+      "topics": [
+        "All experimental materials",
+        "All experimental techniques",
+        "Green Building rating systems"
+      ]
+    }
+  ]
+}

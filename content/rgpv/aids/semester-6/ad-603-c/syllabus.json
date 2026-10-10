@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "ad-603-c",
+    "code": "AD-603 (C)",
+    "name": "Information Retrieval",
+    "title": "AD-603 (C) - Information Retrieval",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Frameworks - The Impact of the web on IR - The role of artificial intelligence (AI) in IR - IR Versus Web Search - Components of a search engine",
+        "characterizing the web."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Boolean and Vector space retrieval models- Term weighting - TF-IDF weighting-",
+      "topics": [
+        "cosinesimilarity - Pre-processing - Inverted indices - efficient processing with sparse vectors LanguageModel based IR - Probabilistic IR -Latent Semantic indexing - Relevance feedback and queryexpansion."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Web Search Architectures - crawling - meta-crawlers",
+        "Focused Crawling - web indexes - Near duplicate detection - Index Compression - XML retrieval."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Ranking Relevance Scoring and ranking for Web - Similarity - Hadoop & Map Reduce - Evaluation - Personalized search - Collaborative filtering and content-based recommendation of documents And products - handling invisible Web - Snippet generation",
+        "Summarization.",
+        "QuestionAnswering",
+        "Cross-Lingual Retrieval."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Information filtering: organization and relevance feedback - Text Mining- Text classification andclustering - Categorization algorithms",
+        "naive Bayes",
+        "decision trees and nearest neighbor - Clustering algorithms: agglomerative clustering",
+        "k-means",
+        "expectation maximization (EM)."
+      ]
+    }
+  ]
+}

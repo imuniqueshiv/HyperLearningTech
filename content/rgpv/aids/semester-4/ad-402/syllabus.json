@@ -1,0 +1,106 @@
+{
+  "subject": {
+    "id": "ad-402",
+    "code": "AD-402",
+    "name": "Database Management System",
+    "title": "AD-402 - Database Management System",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "DBMS Concepts and architecture",
+      "topics": [
+        "Introduction",
+        "Database approach v/s Traditional file accessing approach",
+        "Advantages of database systems",
+        "Data models, Schemas and instances",
+        "Data independence",
+        "Data Base Language and interfaces",
+        "Overall Database Structure",
+        "Functions of DBA and designer",
+        "ER data model: Entitles and attributes, Entity types",
+        "Defining the E-R diagram",
+        "Concept of Generalization, Aggregation and Specialization",
+        "Transforming ER diagram into the tables",
+        "Object oriented data Model, Network data model, and Relational data model",
+        "Comparison between the three types of models"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Relational Data models",
+      "topics": [
+        "Domains, Tuples, Attributes, Relations",
+        "Characteristics of relations",
+        "Keys, Key attributes of relation",
+        "Relational database, Schemas, Integrity constraints",
+        "Referential integrity, Intension and Extension",
+        "Relational Query languages: SQL-DDL, DML, integrity constraints",
+        "Complex queries, various joins, indexing, triggers, assertions",
+        "Relational algebra and relational calculus",
+        "Relational algebra operations like select, Project, Join, Division, outer union",
+        "Types of relational calculus i.e. Tuple oriented and domain oriented relational calculus and its operations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Data Base Design",
+      "topics": [
+        "Introduction to normalization",
+        "Normal forms",
+        "Functional dependency",
+        "Decomposition",
+        "Dependency preservation and lossless join",
+        "Problems with null valued and dangling tuples",
+        "Multivalued dependencies",
+        "Query Optimization: Introduction, steps of optimization",
+        "Various algorithms to implement select, project and join operations of relational algebra",
+        "Optimization methods: heuristic based, cost estimation based"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Transaction Processing Concepts",
+      "topics": [
+        "Transaction System",
+        "Testing of Serializability",
+        "Serializability of schedules, conflict & view serializable schedule",
+        "Recoverability, Recovery from transaction failures",
+        "Log based recovery, Checkpoints, deadlock handling",
+        "Concurrency Control Techniques: locking Techniques for concurrency control",
+        "Time stamping protocols for concurrency control, validation based protocol, multiple granularity",
+        "Multi version schemes, Recovery with concurrent transaction",
+        "Introduction to Distributed databases, data mining, data warehousing",
+        "Object Technology and DBMS, Comparative study of OODBMS Vs DBMS",
+        "Temporal, Deductive, Multimedia, Web & Mobile database"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Study of Relational Database Management Systems through Oracle/PL SQL/MySQL",
+      "topics": [
+        "Architecture, physical files, memory structures, background process",
+        "Concept of table spaces, segments, extents and block",
+        "Dedicated server, multi threaded server",
+        "Distributed database, database links, and snapshot",
+        "Data dictionary, dynamic performance view",
+        "Security, role management, privilege management, profiles, invoker defined security model",
+        "SQL queries, Data extraction from single, multiple tables equi-join, non equi-join, self-join, outer join",
+        "Usage of like, any, all, exists, in Special operators",
+        "Hierarchical queries, inline queries, flashback queries",
+        "Introduction of ANSI SQL, anonymous block, nested anonymous block, branching and looping constructs in ANSI SQL",
+        "Cursor management: nested and parameterized cursors, Oracle exception handling mechanism",
+        "Stored procedures, in, out, in out type parameters, usage of parameters in procedures",
+        "User defined functions their limitations",
+        "Triggers, mutating errors, instead of triggers",
+        "Introduction to NoSql Database"
+      ]
+    }
+  ]
+}

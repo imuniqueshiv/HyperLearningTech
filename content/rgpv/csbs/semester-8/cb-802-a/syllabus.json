@@ -1,0 +1,95 @@
+{
+  "subject": {
+    "id": "cb-802-a",
+    "code": "CB-802 (A)",
+    "name": "Behavioral Economics",
+    "title": "CB-802 (A) - Behavioral Economics",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction: The neoclassical/standard model and behavioral economics in contrast",
+        "historical background",
+        "behavioral economics and other social sciences",
+        "theory and evidence in the social sciences and in behavioral economics",
+        "applications - gains and losses, money illusion, charitable donation."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Basics of choice theory: Revisiting the neoclassical model",
+        "utility in economics and psychology",
+        "models of rationality",
+        "connections with evolutionary biology and cognitive neuroscience",
+        "policy analysis - consumption and addiction, environmental protection, retail therapy",
+        "applications - pricing, valuation, public goods, choice anomalies"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Beliefs, heuristics and biases: Revisiting rationality",
+        "causal aspects of irrationality",
+        "different kinds of biases and beliefs",
+        "self-evaluation and self-projection",
+        "inconsistent and biased beliefs",
+        "probability estimation",
+        "trading applications - trade in counterfeit goods, financial trading behavior, trade in memorabilia Choice under uncertainty: Background and expected utility theory",
+        "prospect theory and other theories",
+        "loss aversion",
+        "marginal utility",
+        "decision and probability weighting",
+        "applications - ownership and trade, income and consumption, performance in sports."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Intertemporal choice: Geometric discounting",
+        "preferences over time",
+        "anomalies of inter-temporal decisions",
+        "hyperbolic discounting",
+        "instantaneous utility",
+        "alternative concepts - future projection, mental accounts, heterogeneous selves, procedural choice",
+        "policy analysis - mobile calls, credit cards, organization of government",
+        "applications - consumption and savings, clubs and membership, consumption planning"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "equilibrium in pure and mixed strategies, iterated games, bargaining, signalling, learning",
+        "applications - competitive sports, bargaining and negotiation, monopoly and market entry.",
+        "Individual preferences",
+        "Choice anomalies and inconsistencies",
+        "social preferences",
+        "altruism",
+        "fairness",
+        "reciprocity",
+        "trust",
+        "learning",
+        "communication",
+        "intention",
+        "demographic and cultural aspects",
+        "social norms",
+        "compliance and punishment",
+        "inequity aversion",
+        "policy analysis - norms and markets, labor markets, market clearing, public goods",
+        "applications - logic and knowledge, voluntary contribution, compensation design."
+      ]
+    }
+  ]
+}

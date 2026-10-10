@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "csit-803-a",
+    "code": "CSIT-803 (A)",
+    "name": "Digital Marketing and SEO",
+    "title": "CSIT-803 (A) - Digital Marketing and SEO",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Digital Marketing Introduction",
+      "topics": [
+        "Introduction to digital marketing",
+        "Moving from traditional to digital marketing",
+        "Integrating traditional and digital marketing",
+        "Reasons for growth",
+        "Need for a comprehensive digital marketing strategy",
+        "Search Engine Optimization (SEO)",
+        "Concept of Pay Per Click"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Social Media Marketing",
+      "topics": [
+        "Introduction and process: goals, channels, implementation and analyze",
+        "Tools: Google and the search engine, Facebook, Twitter, YouTube and LinkedIn",
+        "Issues: credibility, fake news, paid influencers, and social media hate/phobic campaigns",
+        "Analytics and linkage with social media",
+        "The social community"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Email and Mobile Marketing",
+      "topics": [
+        "Email marketing: process, design and content, delivery and discovery",
+        "Mobile marketing: introduction and concept",
+        "Process of mobile marketing: goals, setup, monitor and analyze",
+        "Enhancing digital experiences with mobile apps",
+        "Pros and cons",
+        "Targeted advertising",
+        "Issues: data collection, privacy, data mining, money and apps, security and spam",
+        "Growth areas"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Managing Digital Marketing",
+      "topics": [
+        "Content production",
+        "Video based marketing",
+        "Credibility and digital marketing",
+        "IoT",
+        "User experience",
+        "Future of digital marketing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "SEO Analytics, Monitoring and Reporting",
+      "topics": [
+        "Google Search Console (GSC)",
+        "Key sections and features of GSC",
+        "How to monitor SEO progress with key features of GSC: overview, performance, URL inspection, coverage, sitemaps, speed, mobile usability, backlinks, referring domains, and security and manual actions",
+        "How to do SEO reporting"
+      ]
+    }
+  ]
+}

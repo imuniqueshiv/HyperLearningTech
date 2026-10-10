@@ -1,0 +1,103 @@
+{
+  "subject": {
+    "id": "csit-602",
+    "code": "CSIT-602",
+    "name": "Machine Learning",
+    "title": "CSIT-602 - Machine Learning",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Machine Learning",
+      "topics": [
+        "Introduction to machine learning, scope and limitations",
+        "Regression",
+        "Probability, statistics and linear algebra for machine learning",
+        "Convex optimization",
+        "Data visualization",
+        "Hypothesis function and testing",
+        "Data distributions",
+        "Data preprocessing and data augmentation",
+        "Normalizing data sets",
+        "Machine learning models",
+        "Supervised and unsupervised learning"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Neural Networks and Training",
+      "topics": [
+        "Linearity vs non-linearity",
+        "Activation functions like sigmoid and ReLU",
+        "Weights and bias",
+        "Loss function",
+        "Gradient descent",
+        "Multilayer network",
+        "Back propagation",
+        "Weight initialization",
+        "Training and testing",
+        "Unstable gradient problem",
+        "Auto encoders",
+        "Batch normalization",
+        "Dropout",
+        "L1 and L2 regularization",
+        "Momentum",
+        "Tuning hyper parameters"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Convolutional Neural Networks",
+      "topics": [
+        "Convolution neural network",
+        "Flattening, sub sampling, padding and stride",
+        "Convolution layer, pooling layer and loss layer",
+        "Dense layer and 1x1 convolution",
+        "Inception network",
+        "Input channels",
+        "Transfer learning",
+        "One shot learning",
+        "Dimension reductions",
+        "Implementation of CNN using frameworks like TensorFlow and Keras"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "RNN, LSTM and Reinforcement Learning",
+      "topics": [
+        "Recurrent neural network",
+        "Long short-term memory",
+        "Gated recurrent unit",
+        "Translation",
+        "Beam search and width",
+        "BLEU score",
+        "Attention model",
+        "Reinforcement learning and RL-framework",
+        "MDP",
+        "Bellman equations",
+        "Value iteration and policy iteration",
+        "Actor-critic model",
+        "Q learning",
+        "SARSA"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "SVM, Bayesian Learning and Applications",
+      "topics": [
+        "Support Vector Machines",
+        "Bayesian learning",
+        "Application of machine learning in computer vision",
+        "Speech processing",
+        "Natural language processing",
+        "Case study: ImageNet Competition"
+      ]
+    }
+  ]
+}

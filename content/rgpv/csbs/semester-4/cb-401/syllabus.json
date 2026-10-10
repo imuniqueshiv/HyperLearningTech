@@ -1,0 +1,83 @@
+{
+  "subject": {
+    "id": "cb-401",
+    "code": "CB-401",
+    "name": "Operating Systems",
+    "title": "CB-401 - Operating Systems",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Concept of Operating Systems (OS), Generations of OS, Types of OS, OS Services",
+        "Interrupt handling and System Calls",
+        "Basic architectural concepts of an OS, Concept of Virtual Machine",
+        "Resource Manager view, process view and hierarchical view of an OS"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Processes and Thread",
+      "topics": [
+        "Definition, Process Relationship, Different states of a Process, Process State transitions",
+        "Process Control Block (PCB), Context switching",
+        "Thread: Definition, Various states, Benefits of threads, Types of threads, Concept of multithreads"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Process Scheduling",
+      "topics": [
+        "Foundation and Scheduling objectives, Types of Schedulers",
+        "Scheduling criteria: CPU utilization, Throughput, Turnaround Time, Waiting Time, Response Time",
+        "Scheduling algorithms: Pre-emptive and non-pre-emptive, FCFS, SJF, RR",
+        "Multiprocessor scheduling; Real Time scheduling: RM and EDF"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "I/O Hardware, File Management and Disk Management",
+      "topics": [
+        "I/O devices, Device controllers, Direct Memory Access, Principles of I/O",
+        "Concept of File, Access methods, File types, File operation, Directory structure, File System structure",
+        "Allocation methods (contiguous, linked, indexed)",
+        "Free-space management (bit vector, linked list, grouping), directory implementation (linear list, hash table), efficiency and performance",
+        "Disk structure, Disk scheduling - FCFS, SSTF, SCAN, C-SCAN",
+        "Disk reliability, Disk formatting, Boot-block, Bad blocks"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Inter-process Communication, Deadlocks and Concurrent Programming",
+      "topics": [
+        "Concurrent processes, precedence graphs, Critical Section, Race Conditions, Mutual Exclusion",
+        "Hardware Solution, Semaphores, Strict Alternation, Peterson's Solution",
+        "The Producer / Consumer Problem, Event Counters, Monitors, Message Passing",
+        "Classical IPC Problems: Reader's & Writer Problem, Dinning Philosopher Problem, Barber's shop problem",
+        "Deadlocks: Definition, Necessary and sufficient conditions for Deadlock, Deadlock Prevention",
+        "Deadlock Avoidance: Banker's algorithm, Deadlock detection and Recovery",
+        "Critical region, conditional critical region, monitors, concurrent languages, communicating sequential process (CSP)"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Memory Management, Virtual Memory and Case study",
+      "topics": [
+        "Basic concept, Logical and Physical address maps",
+        "Memory allocation: Contiguous Memory allocation – Fixed and variable partition–Internal and External fragmentation and Compaction",
+        "Basics of Virtual Memory – Hardware and control structures – Locality of reference",
+        "Page allocation, Partitioning, Paging, Page fault, Working Set, Segmentation, Demand paging",
+        "Page Replacement algorithms: Optimal, First in First Out (FIFO), Second Chance (SC), Not recently used (NRU) and Least Recently used (LRU)",
+        "Case study: UNIX/Linux OS file system, shell, filters, shell programming, programming with the standard I/O, UNIX/Linux system calls"
+      ]
+    }
+  ]
+}

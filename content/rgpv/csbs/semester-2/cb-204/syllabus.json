@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "cb-204",
+    "code": "CB-204",
+    "name": "Principles of Electronics",
+    "title": "CB-204 - Principles of Electronics",
+    "semester": "II"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Semiconductors",
+      "topics": [
+        "Crystalline material: Mechanical properties, Energy band theory, Fermi levels",
+        "Conductors, Semiconductors and Insulators: electrical properties, band diagrams",
+        "Semiconductors: intrinsic and extrinsic, energy band diagram, P-type and N-type semiconductors, drift and diffusion carriers"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Diodes and Diode Circuits",
+      "topics": [
+        "Formation of P-N junction, energy band diagram, built-in-potential forward and reverse biased P-N junction, formation of depletion zone, V-I characteristics",
+        "Zener breakdown, Avalanche breakdown and its reverse characteristics",
+        "Junction capacitance and Varactor diode",
+        "Simple diode circuits, load line, linear piecewise model",
+        "Rectifier circuits: half wave, full wave, PIV, DC voltage and current, ripple factor, efficiency, idea of regulation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Bipolar Junction Transistors",
+      "topics": [
+        "Formation of PNP / NPN junctions, energy band diagram",
+        "Transistor mechanism and principle of transistors, CE, CB, CC configuration",
+        "Transistor characteristics: cut-off active and saturation mode, transistor action, injection efficiency, base transport factor and current amplification factors for CB and CE modes",
+        "Biasing and Bias stability: calculation of stability factor"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Field Effect Transistors",
+      "topics": [
+        "Concept of Field Effect Transistors (channel width modulation)",
+        "Gate isolation types, JFET Structure and characteristics",
+        "MOSFET Structure and characteristics, depletion and enhancement type",
+        "CS, CG, CD configurations",
+        "CMOS: Basic Principles"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Feed Back Amplifier, Oscillators and Operational Amplifiers",
+      "topics": [
+        "Concept (Block diagram), properties, positive and negative feedback, loop gain, open loop gain, feedback factors",
+        "Topologies of feedback amplifier",
+        "Effect of feedback on gain, output impedance, input impedance, sensitivities (qualitative), bandwidth stability",
+        "Effect of positive feedback: instability and oscillation, condition of oscillation, Barkhausen criteria",
+        "Introduction to integrated circuits, operational amplified and its terminal properties",
+        "Application of operational amplifier; inverting and non-inverting mode of operation, Adders, Subtractors, Constant-gain multiplier, Voltage follower, Comparator, Integrator, Differentiator"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Digital Electronics",
+      "topics": [
+        "Introduction to binary number",
+        "Basic Boolean algebra",
+        "Logic gates and function realization with OPAMPs"
+      ]
+    }
+  ]
+}

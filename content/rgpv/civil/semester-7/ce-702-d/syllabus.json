@@ -1,0 +1,51 @@
+{
+  "subject": {
+    "id": "ce-702-d",
+    "code": "CE702 (D)",
+    "name": "Structural Design and Drawing (RCC-II)",
+    "title": "CE702 (D) - Structural Design and Drawing (RCC-II)",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Design of Multistory Buildings",
+      "topics": [
+        "Sway and nonsway buildings",
+        "Shear walls and other bracing elements"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design of Earth Retaining Structures",
+      "topics": ["Cantilever and counter fort types retaining walls"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Water Tanks",
+      "topics": [
+        "Tanks on ground and underground tanks: Square, rectangular, circular tanks",
+        "Overhead tanks: square, rectangular, circular & intze tanks"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design of Silos and Bunkers",
+      "topics": ["Design of Silos and Bunkers"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "T-beam & Slab bridges and Prestressing",
+      "topics": [
+        "T-beam & Slab bridges- for highway loading (IRC Loads)",
+        "Prestressing concepts materials, systems of prestressing & losses",
+        "Introduction to working & limit State Design"
+      ]
+    }
+  ]
+}

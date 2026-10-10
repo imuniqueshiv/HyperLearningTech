@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "ce-703-b",
+    "code": "CE703 (B)",
+    "name": "Project Management",
+    "title": "CE703 (B) - Project Management",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Project Management Concepts & Initiating",
+      "topics": [
+        "Project Attributes, Balancing Project Constraints, Project Life Cycle",
+        "Project Management Process, Stakeholder Engagement, Global Project Management, Benefits",
+        "Project Identification, Project Selection"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Developing Project Proposals",
+      "topics": [
+        "Building Relationships with Customers and Partners, Pre-RFP/Proposal Marketing",
+        "Decision to Develop a Proposal & techniques, Proposal Preparation & Contents",
+        "Pricing Considerations, Contracts"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Planning Schedule, Resource Utilization and Controlling the Project",
+      "topics": [
+        "Project Objective, scope, Plan for Quality, Create W.B.S, Assign Responsibility",
+        "Activities & sequencing, Estimate Activity Resources & Durations, Develop Project Schedule",
+        "Project Control Process, Resource-Constrained Planning, leveling, scheduling",
+        "Project Management Information Systems"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Determining Costs, Budget, and Earned Value & Risks",
+      "topics": [
+        "Estimate Activity Costs, Determine Project Budget, Determine Actual Cost",
+        "Determine Value of Work Performed, Analyze Cost Performance, Control Costs, Manage Cash Flow",
+        "Identify Risks, Assess Risks, Monitor Risks"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "The Project Team & Project Manager & Documentations & project Management structures",
+      "topics": [
+        "Acquiring the Project Team, Project Team Development, Project Kickoff Meeting",
+        "Project Manager Responsibilities, Project Manager Skills, Developing Project Manager Competence, Delegation & Managing Changes",
+        "Functional Organizational Structure, Matrix Organizational Structure",
+        "Advantages and Disadvantages of Organizational Structures"
+      ]
+    }
+  ]
+}

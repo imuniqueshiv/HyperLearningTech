@@ -1,0 +1,118 @@
+{
+  "subject": {
+    "id": "ad-503-a",
+    "code": "AD-503 (A)",
+    "name": "Internet and Web Technology",
+    "title": "AD-503 (A) - Internet and Web Technology",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Web Design",
+      "topics": [
+        "Concept of WWW",
+        "Internet and WWW",
+        "HTTP protocol: request, response, header, and methods",
+        "Web browser and web servers",
+        "Features of Web 2.0",
+        "Concepts of effective web design",
+        "Web design issues including browser, bandwidth, and cache",
+        "Display resolution",
+        "Look and feel of the website",
+        "Page layout and linking",
+        "User-centric design",
+        "Sitemap",
+        "Planning and publishing a website",
+        "Designing effective navigation"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "HTML and Client-Side Basics",
+      "topics": [
+        "Basics of HTML",
+        "Formatting and fonts",
+        "Commenting code",
+        "Color, hyperlink, lists, tables, images, and forms",
+        "XHTML",
+        "Meta tags",
+        "Character entities",
+        "Frames and framesets",
+        "Browser architecture and website structure",
+        "WebSockets",
+        "Overview and features of HTML5",
+        "MIME type and content encoding",
+        "Session tracking and cookies",
+        "Working of a browser and plug-ins",
+        "Search engines",
+        "Client-side programming: JavaScript",
+        "JavaScript regular expressions",
+        "Web servers"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "CSS, JavaScript and DHTML",
+      "topics": [
+        "Need for CSS and introduction to CSS",
+        "Basic syntax and structure",
+        "Using CSS: background images, colors, and properties",
+        "Manipulating texts and using fonts",
+        "Borders, boxes, margins, and padding",
+        "Lists and positioning using CSS",
+        "CSS2",
+        "Overview and features of CSS3",
+        "Client-side scripting with JavaScript",
+        "Variables, functions, conditions, loops, and repetition",
+        "Pop-up boxes",
+        "Advanced JavaScript: JavaScript and objects, including JavaScript's own objects",
+        "The DOM and web browser environments",
+        "Manipulation using DOM",
+        "Forms and validations",
+        "DHTML: combining HTML, CSS, and JavaScript",
+        "Events and buttons"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "XML and PHP",
+      "topics": [
+        "Introduction to XML and uses of XML",
+        "Simple XML and XML key components",
+        "DTD and schemas",
+        "Using XML with applications",
+        "Transforming XML using XSL and XSLT",
+        "Introduction and basic syntax of PHP",
+        "Decision and looping with examples",
+        "PHP and HTML",
+        "Arrays and functions",
+        "Browser control and detection",
+        "Strings and form processing",
+        "Files",
+        "Cookies and sessions",
+        "Object-oriented programming with PHP"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "PHP and MySQL",
+      "topics": [
+        "Basic commands with PHP examples",
+        "Connection to server",
+        "Creating a database and selecting a database",
+        "Listing databases and table names",
+        "Creating a table and inserting data",
+        "Altering tables and queries",
+        "Deleting databases, data, and tables",
+        "PHPMyAdmin and database error handling",
+        "Case study: web-based application development"
+      ]
+    }
+  ]
+}

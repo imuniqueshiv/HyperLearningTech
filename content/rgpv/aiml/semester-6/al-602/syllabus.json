@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "al-602",
+    "code": "AL-602",
+    "name": "Computer Networks",
+    "title": "AL-602 - Computer Networks",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Computer Network and Layered Architecture",
+      "topics": [
+        "Computer Network: Definitions, goals, components, Architecture, Classifications & Types",
+        "Layered Architecture: Protocol hierarchy, Design Issues, Interfaces and Services",
+        "Connection Oriented & Connectionless Services",
+        "Service primitives",
+        "Design issues & its functionality",
+        "ISO-OSI Reference Model: Principle, Model, Descriptions of various layers and its comparison with TCP/IP",
+        "Principals of physical layer: Media, Bandwidth, Data rate and Modulations"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Link Layer",
+      "topics": [
+        "Need, Services Provided, Framing, Flow Control, Error control",
+        "Elementary & Sliding Window protocol: 1-bit, Go-Back-N, Selective Repeat, Hybrid ARQ",
+        "Protocol verification: Finite State Machine Models & Petri net models",
+        "ARP/RARP/GARP"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "MAC Sub layer",
+      "topics": [
+        "MAC Addressing",
+        "Binary Exponential Back-off (BEB) Algorithm",
+        "Distributed Random Access Schemes/Contention Schemes: for Data Services (ALOHA and Slotted ALOHA)",
+        "For Local-Area Networks (CSMA, CSMA/CD, CSMA/CA)",
+        "Collision Free Protocols: Basic Bit Map, BRAP, Binary Count Down, MLMA",
+        "Limited Contention Protocols: Adaptive Tree Walk",
+        "Performance Measuring Metrics",
+        "IEEE Standards 802 series & their variant"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Network Layer",
+      "topics": [
+        "Need, Services Provided, Design issues",
+        "Routing algorithms: Least Cost Routing algorithm, Dijkstra's algorithm, Bellman-ford algorithm",
+        "Hierarchical Routing, Broadcast Routing, Multicast Routing",
+        "IP Addresses, Header format, Packet forwarding",
+        "Fragmentation and reassembly",
+        "ICMP",
+        "Comparative study of IPv4 & IPv6"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Transport Layer and Application Layer",
+      "topics": [
+        "Transport Layer: Design Issues",
+        "UDP: Header Format, Per-Segment Checksum, Carrying Unicast/Multicast Real-Time Traffic",
+        "TCP: Connection Management, Reliability of Data Transfers",
+        "TCP Flow Control, TCP Congestion Control",
+        "TCP Header Format, TCP Timer Management",
+        "Application Layer: WWW and HTTP, FTP, SSH",
+        "Email (SMTP, MIME, IMAP)",
+        "DNS",
+        "Network Management (SNMP)"
+      ]
+    }
+  ]
+}

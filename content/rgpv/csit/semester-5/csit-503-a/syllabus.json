@@ -1,0 +1,92 @@
+{
+  "subject": {
+    "id": "csit-503-a",
+    "code": "CSIT-503 (A)",
+    "name": "Theory of Computation",
+    "title": "CSIT-503 (A) - Theory of Computation",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Finite State Automata",
+      "topics": [
+        "Introduction of the theory of computation",
+        "Finite state automata: description of finite automata",
+        "Properties of transition functions",
+        "Transition graph",
+        "Designing finite automata",
+        "FSM, DFA, and NFA",
+        "2-way finite automata",
+        "Equivalence of NFA and DFA",
+        "Mealy and Moore machines"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Regular Grammars and Expressions",
+      "topics": [
+        "Regular grammars",
+        "Regular expressions",
+        "Regular sets",
+        "Closure properties of regular grammars",
+        "Arden's theorem",
+        "Myhill-Nerode theorem",
+        "Pumping lemma for regular languages",
+        "Application of pumping lemma",
+        "Applications of finite automata",
+        "Minimization of FSA"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Context-Free Grammars",
+      "topics": [
+        "Introduction of context-free grammar",
+        "Derivation trees",
+        "Ambiguity",
+        "Simplification of CFGs",
+        "Normal forms of CFGs: Chomsky Normal Form and Greibach Normal Form",
+        "Pumping lemma for CFLs",
+        "Decision algorithms for CFGs",
+        "Designing CFGs",
+        "Closure properties of CFLs"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Pushdown Automata",
+      "topics": [
+        "Introduction of PDA",
+        "Formal definition",
+        "Closure property of PDA",
+        "Examples of PDA",
+        "Deterministic pushdown automata",
+        "NPDA",
+        "Conversion of PDA to CFG",
+        "Conversion of CFG to PDA"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Turing Machines and Complexity",
+      "topics": [
+        "Turing machines: basics and formal definition",
+        "Language acceptability by TM",
+        "Examples of TM",
+        "Variants of TMs: multitape TM, NDTM, Universal Turing Machine, and offline TMs",
+        "Equivalence of single-tape and multitape TMs",
+        "Recursive and recursively enumerable languages",
+        "Decidable and undecidable problems with examples",
+        "Halting problem",
+        "Reducibility",
+        "Introduction of P, NP, NP-complete, and NP-hard problems with examples"
+      ]
+    }
+  ]
+}

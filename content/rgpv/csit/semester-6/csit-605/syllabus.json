@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "csit-605",
+    "code": "CSIT-605",
+    "name": "Programming in Python",
+    "title": "CSIT-605 - Programming in Python",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Environment Setup",
+      "topics": [
+        "Introduction, history and features of Python",
+        "Local environment setup",
+        "Getting Python",
+        "Installation of Python",
+        "Use of IDE"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Basic Syntax and Variables",
+      "topics": [
+        "Python identifiers",
+        "Reserved words",
+        "Lines and indentation",
+        "Multiline statements",
+        "Quotation in Python",
+        "Comments and other useful constructs",
+        "Assigning values to variables",
+        "Multiple assignment",
+        "Standard data types"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Standard Data Types",
+      "topics": [
+        "Python numbers",
+        "Python strings",
+        "Python lists",
+        "Python tuples",
+        "Dictionary",
+        "Data type conversion"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Operators, Decision Making and Loops",
+      "topics": [
+        "Types of operators",
+        "Arithmetic operators",
+        "Comparison operators",
+        "Assignment operators",
+        "Bitwise operators",
+        "Logical operators",
+        "Operator precedence",
+        "Decision making and loops",
+        "Flowchart",
+        "If statement syntax"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Functions and Applications",
+      "topics": [
+        "Syntax for defining a function",
+        "Calling a function",
+        "Function arguments",
+        "Anonymous functions",
+        "Python applications and further extensions"
+      ]
+    }
+  ]
+}

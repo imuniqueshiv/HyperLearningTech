@@ -1,0 +1,101 @@
+{
+  "subject": {
+    "id": "ad-503-b",
+    "code": "AD-503 (B)",
+    "name": "Computer Graphics & Multimedia",
+    "title": "AD-503 (B) - Computer Graphics & Multimedia",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Raster Graphics and Drawing Algorithms",
+      "topics": [
+        "Introduction to raster scan displays",
+        "Pixels and frame buffer",
+        "Vector and character generation",
+        "Random scan systems",
+        "Display devices",
+        "Scan conversion techniques",
+        "Line drawing algorithms: simple DDA and Bresenham's algorithm",
+        "Circle drawing algorithms: midpoint circle drawing and Bresenham's algorithm",
+        "Polygon fill algorithms: boundary-fill and flood-fill"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "2-D Transformation, Windowing and Clipping",
+      "topics": [
+        "2-D transformation: translation, rotation, scaling, shearing, and reflection",
+        "Inverse transformation",
+        "Homogeneous coordinate system",
+        "Matrices transformation",
+        "Composite transformation",
+        "World coordinate system and screen coordinate system",
+        "Viewing transformation",
+        "Line clipping and polygon clipping algorithms"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "3-D Transformations, Projections and Illumination",
+      "topics": [
+        "3-D transformations: translation, rotation, and scaling",
+        "Parallel and perspective projection",
+        "Types of parallel and perspective projection",
+        "Hidden surface elimination: depth comparison",
+        "Back-face detection algorithm",
+        "Painter's algorithm",
+        "Z-buffer algorithm",
+        "Curve generation: Bezier and B-spline methods",
+        "Basic illumination model: diffuse reflection and specular reflection",
+        "Phong shading and Gouraud shading",
+        "Ray tracing",
+        "Color models: RGB, YIQ, CMY, and HSV"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Visualization and Animation",
+      "topics": [
+        "Visualization of 2D/3D scalar fields: color mapping and isosurfaces",
+        "Direct volume data rendering: ray-casting, transfer functions, and segmentation",
+        "Visualization of vector fields and flow data",
+        "Time-varying data",
+        "High-dimensional data: dimension reduction and parallel coordinates",
+        "Non-spatial data: multivariate, tree/graph structured, and text",
+        "Perceptual and cognitive foundations",
+        "Evaluation of visualization methods",
+        "Applications of visualization",
+        "Basic animation techniques: traditional and key framing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Multimedia",
+      "topics": [
+        "Basics of multimedia and applications of multimedia",
+        "Text types and Unicode standard",
+        "Text compression and text file formats",
+        "Audio components, digital audio, and digital audio processing",
+        "Sound cards, audio file formats, and audio processing software",
+        "Video color spaces, digital video, and digital video processing",
+        "Video file formats",
+        "Uses and principles of animation",
+        "Computer-based animation and 3D animation",
+        "Animation file formats and animation software",
+        "Special effects in animation",
+        "Storyboarding for animation",
+        "Lossless and lossy compression techniques",
+        "Image, audio, and video compression",
+        "MPEG standards",
+        "Multimedia architecture and multimedia databases"
+      ]
+    }
+  ]
+}

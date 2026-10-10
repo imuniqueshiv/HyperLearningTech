@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "id": "cs-606",
+    "code": "CS-606",
+    "name": "Skill Development Lab",
+    "title": "CS-606 - Skill Development Lab",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Software Product Life Cycle",
+      "topics": ["Software product life cycle"]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Software Product Development Standards",
+      "topics": ["Software product development standards"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design Patterns - I",
+      "topics": ["Design patterns - 1"]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design Patterns - II",
+      "topics": ["Design Patterns - II"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Case Study",
+      "topics": ["Case Study"]
+    }
+  ]
+}

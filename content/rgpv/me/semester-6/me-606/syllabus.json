@@ -1,0 +1,27 @@
+{
+  "subject": {
+    "id": "me-606",
+    "code": "ME-606",
+    "name": "RDBMS Lab",
+    "title": "ME-606 - RDBMS Lab",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "What do you mean by normalization and explain its forms with suitable example",
+        "Case study on normalization",
+        "Introduction of query processing and query optimization",
+        "Study and usage of query optimization techniques",
+        "Study and usage of backup recovery features of database",
+        "Study and usage of any object or object oriented relational database management software",
+        "Study and usage of open source data mining tool: WEKA",
+        "Creating and use web database in PHP",
+        "Display project using database"
+      ]
+    }
+  ]
+}

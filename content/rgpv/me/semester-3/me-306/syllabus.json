@@ -1,0 +1,28 @@
+{
+  "subject": {
+    "id": "me-306",
+    "code": "ME-306",
+    "name": "Thermal Engg Lab",
+    "title": "ME-306 - Thermal Engg Lab",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "To determine volumetric and isothermal efficiencies of a single stage compressor.",
+        "Study of two stage air compressor with intercooler.",
+        "Todetermine volumetric and isothermal efficiencies of a two stage compressor.",
+        "Study of different types of boilers and their classifications.",
+        "Study of different types of high pressure boilers.",
+        "To determine the performance of boiler.",
+        "Temperature measurements, Pyrometers and thermography.",
+        "Thermocouples, Temperature sensors,study and calibration.",
+        "Study and experiments on ORSAT apparatus.",
+        "Experiments on calorific value of different fuels and analysis of exhaust gases."
+      ]
+    }
+  ]
+}

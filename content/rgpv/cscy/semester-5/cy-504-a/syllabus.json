@@ -1,0 +1,100 @@
+{
+  "subject": {
+    "id": "cy-504-a",
+    "code": "CY504 (A)",
+    "name": "Cyber Law & Intellectual Property Rights",
+    "title": "CY504 (A) - Cyber Law & Intellectual Property Rights",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "IT Act and Cyber Jurisdiction",
+      "topics": [
+        "Evolution of the IT Act, Genesis and Necessity",
+        "Salient features of the IT Act, 2000",
+        "Various authorities under IT Act and their powers",
+        "Penalties & Offences",
+        "Amendments Impact on other related Acts: IPC, Indian Evidence Act, Bankers Book Evidence Act, RBI Act",
+        "Cyber Space Jurisdiction: Traditional principals of Jurisdiction",
+        "issues under IT Act, 2000",
+        "Extra terrestrial Jurisdiction",
+        "Cyber Tribunal & Appellate Tribunal",
+        "Cyber Regulations",
+        "Internet Service Providers and their liabilities"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "E-Commerce, E-Governance and Cyber Crime",
+      "topics": [
+        "E – Commerce and Laws in India",
+        "Digital/Electronic Signature in Indian Laws",
+        "Issues and provisions in Indian Law related to E-Commerce",
+        "E – Governance: Concept and practicality in India",
+        "E–Taxation issues in Cyberspace",
+        "Cyber crime: Types of cyber crime",
+        "Cyber crime under IPC",
+        "E – Contracts and its validity in India"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Indian Evidence Law and Cyber Crimes",
+      "topics": [
+        "Indian Evidence Law",
+        "Cyber crimes under the Information Technology Act, 2000",
+        "Cyber crimes under International Law",
+        "Hacking",
+        "Child Pornography",
+        "Cyber Stalking",
+        "Denial of service Attack",
+        "Virus Dissemination",
+        "Software Piracy",
+        "Internet Relay Chat (IRC) Crime",
+        "Credit Card Fraud",
+        "Net Extortion",
+        "Phishing etc",
+        "Cyber Terrorism",
+        "Violation of Privacy on Internet",
+        "Data Protection and Privacy",
+        "Indian Court cases"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Intellectual Property Rights and SPDI",
+      "topics": [
+        "Intellectual Property Rights",
+        "Domain Names and Trademark Disputes",
+        "Concept of Trademarks in Internet Era",
+        "Cyber Squatting",
+        "Reverse Hijacking",
+        "Jurisdiction in Trademark Disputes",
+        "Copyright in the Digital Medium",
+        "Copyright in Computer Programmes",
+        "Copyright and WIPO Treaties",
+        "Concept of Patent Right",
+        "Relevant Provisions of Patent Act 1970",
+        "Sensitive Personal Data or Information (SPDI) in Cyber Law",
+        "SPDI Definition and Reasonable Security Practices in India"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "International Cyber Laws",
+      "topics": [
+        "International Perspective",
+        "EDI: Concept and legal Issues",
+        "UNCITRAL Model Law",
+        "Electronic Signature Laws of Major Countries",
+        "Cyber Laws of Major Countries"
+      ]
+    }
+  ]
+}

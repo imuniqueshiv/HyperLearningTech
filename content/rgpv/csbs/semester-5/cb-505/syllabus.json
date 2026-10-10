@@ -1,0 +1,65 @@
+{
+  "subject": {
+    "id": "cb-505",
+    "code": "CB-505",
+    "name": "Business Communication & Value Science-III",
+    "title": "CB-505 - Business Communication & Value Science-III",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "SWOT and Motivation in Real Life Scenarios",
+      "topics": [
+        "SWOT and Life Positions",
+        "Create your SWOT",
+        "SWOT Vs. TOWS – The Balancing Act",
+        "Presentation on the strengths identified to survive in the VUCA World",
+        "Motivation",
+        "Scenario based activity on identifying and leveraging motivation",
+        "Present findings and approaches as groups"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Pluralism in Cultural Spaces",
+      "topics": [
+        "Rivers of India",
+        "Awareness and respect for pluralism in cultural spaces",
+        "Rhythms of India (Cultures in India)",
+        "Global, Glocal, Translocational",
+        "Debate on Global, Glocal, translocational impacts",
+        "Cross-cultural communication",
+        "Culture shock",
+        "Gender awareness - Gender awareness campaign"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Science, Technical Writing and Motivation",
+      "topics": [
+        "Role of science in nation building",
+        "Role of science post-independence",
+        "Introduction to technical writing",
+        "Basic rules of technical writing through examples",
+        "Practice activity on technical writing",
+        "Application of technical writing in real-life scenarios",
+        "Maslow's theory - Recognize how motivation helps real life",
+        "Leverage motivation in real-life scenarios"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to Artificial Intelligence",
+      "topics": [
+        "Introduction to Artificial Intelligence",
+        "Importance of AI",
+        "AI in Everyday Life"
+      ]
+    }
+  ]
+}

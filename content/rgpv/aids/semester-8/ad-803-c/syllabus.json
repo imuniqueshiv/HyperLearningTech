@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "ad-803-c",
+    "code": "AD-803 (C)",
+    "name": "Managing Innovation and Entrepreneurship",
+    "title": "AD-803 (C) - Managing Innovation and Entrepreneurship",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "entrepreneurship, creation of competitive advantage based on innovation.",
+        "Innovative models",
+        "Product, process, organizational and marketing innovation and their role in businessdevelopment."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Sources of innovation (push, pull, analogies), transfer of technology",
+      "topics": [
+        "methods andapproaches used in innovation management.",
+        "Approaches to management of the innovationprocess (agile management",
+        "Six Thinking Hats",
+        "NUF test)."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Project approach to innovation management, method Stage Gate, its essence,",
+      "topics": [
+        "adaptation ofaccess to selected business models.",
+        "In-house business development of the innovation process inthe company.",
+        "Open Innovation as a modern concept, the limits of this method and its benefits forbusiness development."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Innovations aimed at humans, role of co-creation in the innovation process",
+      "topics": [
+        "strategy ofinnovation process",
+        "types and selection of appropriate strategies."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "nonfinancial metrics, their combination and choice).",
+        "Barriers to innovation in business, innovationfailure and its causes, post-audits of innovative projects.",
+        "Organization and facilitation of aninnovation workshop.",
+        "Clark",
+        "T. - Osterwalder",
+        "A. - Pigneur",
+        "Business model generation: aHandbook for visionaries, game changers, and challengers.",
+        "Wiley Publications 2.",
+        "Bessant",
+        "J R. - Tidd",
+        "Managing innovation: integrating technological, market andOrganizational change.",
+        "Wiley Publications"
+      ]
+    }
+  ]
+}

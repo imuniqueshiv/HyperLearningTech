@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-604-a",
+    "code": "CE604 (A)",
+    "name": "Fluid Mechanics-II",
+    "title": "CE604 (A) - Fluid Mechanics-II",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Turbulent flow and Pipe flow problems",
+      "topics": [
+        "Laminar and turbulent boundary layers and laminar sublayer, hydrodynamically smooth and rough boundaries",
+        "Velocity distribution in turbulent flow, resistance of smooth and artificially roughened pipes, commercial pipes, aging of pipes",
+        "Pipe flow problems: Losses due to sudden expansion and contraction, losses in pipe fittings and valves, concepts of equivalent length",
+        "Hydraulic and energy gradient lines, siphon, pipes in series, pipes in parallel, branching of pipes",
+        "Pipe Network: Water Hammer (only quick closure case), transmission of power, Hardy Cross Method"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Uniform flow in open channels",
+      "topics": [
+        "Channel geometry and elements of channel section, velocity distribution, energy in open channel flow, specific energy",
+        "Types of flow, critical flow and its computations, uniform flow and its computations",
+        "Chezy's and Manning's formulae, determination of normal depth and velocity, Normal and critical slopes, Economical sections",
+        "Saint Venant equation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Non uniform flow in open channels",
+      "topics": [
+        "Basic assumptions and dynamic equations of gradually varied flow",
+        "Characteristics analysis and computations of flow profiles",
+        "Rapidly varied flow hydraulic jump in rectangular channels and its basic characteristics",
+        "Surges in open channels & channel flow routing, venturi flume"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Forces on immersed bodies",
+      "topics": [
+        "Types of drag, drag on a sphere, a flat plate, a cylinder and an aerofoil",
+        "Development of lift, lifting vanes, magnus effect"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Fluid Machines: Turbines and Pumps",
+      "topics": [
+        "Turbines: Classifications, definitions, similarity laws, specific speed and unit quantities",
+        "Pelton turbine-their construction and settings, speed regulation, dimensions of various elements, Action of jet, torque, power and efficiency for ideal case, characteristic curves",
+        "Reaction turbines: construction & settings, draft tube theory, runaway speed, simple theory of design and characteristic curves, cavitation",
+        "Centrifugal pumps: Various types and their important components, manometric head, total head, net positive suction head, specific speed, shut off head, energy losses, cavitation, principle of working and characteristic curves",
+        "Reciprocating pumps: Principle of working, Coefficient of discharge, slip, single acting and double acting pump, Manometric head, Acceleration head"
+      ]
+    }
+  ]
+}

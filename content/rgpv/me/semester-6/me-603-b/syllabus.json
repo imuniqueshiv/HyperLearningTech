@@ -1,0 +1,92 @@
+{
+  "subject": {
+    "id": "me-603-b",
+    "code": "ME-603 (B)",
+    "name": "Computer Aided Engineering",
+    "title": "ME-603 (B) - Computer Aided Engineering",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Computer Engineering",
+      "topics": [
+        "Methods to solve engineering problems: analytical, numerical, experimental",
+        "Their merits and comparison",
+        "Discretization into smaller elements and effect of size/shape on accuracy",
+        "Importance of meshing",
+        "Boundary conditions",
+        "Computer Aided Engineering (CAE) and design",
+        "Chain-bumping-stages v/s concurrent-collaborative design cycles",
+        "Computer as enabler for concurrent design and Finite Element Method (FEM)",
+        "Degree of freedom (DOF)",
+        "Mechanical systems with mass, damper and spring",
+        "Stiffness constant K for tensile, bending and torsion",
+        "Practical applications of FEA in new design, optimization/cost-cutting and failure analysis"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Types of Analysis",
+      "topics": [
+        "Types of analysis in CAE: static (linear/non linear), dynamic, buckling, thermal, fatigue, crash, NVH and CFD",
+        "Review of normal, shear, torsion, stress-strain",
+        "Types of forces and moments",
+        "Tri-axial stresses",
+        "Moment of inertia",
+        "How to do meshing",
+        "1-2-3-D elements and length of elements",
+        "Force stiffness and displacement matrix",
+        "Rayleigh-Ritz and Galerkin FEM",
+        "Analytical and FEM solution for single rod element and two rod assembly"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "2 D-Meshing",
+      "topics": [
+        "Two-dimension meshing and elements for sheet work and thin shells",
+        "Effect of mesh density and biasing in critical region",
+        "Comparison between tria and quad elements",
+        "Quality checks",
+        "Jacobian, distortion, stretch",
+        "Free edge, duplicate node and shell normal"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "3 D-Meshing",
+      "topics": [
+        "Three-dimension meshing and elements",
+        "Only 3 DOF",
+        "Algorithm for tria to tetra conversion",
+        "Floating and fixed trias",
+        "Quality checks for tetra meshing",
+        "Brick meshing and quality checks",
+        "Special elements and techniques",
+        "Introduction to weld, bolt, bearing and shrink fit simulations",
+        "CAE and test data correlations",
+        "Post processing techniques"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Optimization",
+      "topics": [
+        "Review of linear optimization",
+        "Process and product optimization",
+        "Design for manufacturing (DFM) aspects in product development",
+        "Use of morphing technique in FEA",
+        "Classical design for infinite life and design for warranty life",
+        "Warranty yard meetings and functional roles",
+        "Climatic conditions and design abuses",
+        "Case studies"
+      ]
+    }
+  ]
+}

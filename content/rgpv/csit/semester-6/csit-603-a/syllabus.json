@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "csit-603-a",
+    "code": "CSIT-603 (A)",
+    "name": "Wireless and Mobile Computing",
+    "title": "CSIT-603 (A) - Wireless and Mobile Computing",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Wireless Communication Fundamentals",
+      "topics": [
+        "Antenna, radiation pattern, antenna types and antenna gain",
+        "Propagation modes and types of fading",
+        "Model for wireless digital communication",
+        "Multiple access techniques: SDMA, TDMA, FDMA, CDMA, DAMA, PRMA, MAC/CA",
+        "Cellular network organization and operations of cellular system",
+        "Mobile radio propagation effects",
+        "Handoff, power control and sectorization",
+        "Traffic engineering",
+        "Infinite sources, lost calls cleared and grade of service",
+        "Poisson arrival process"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "GSM, GPRS and Cellular Systems",
+      "topics": [
+        "GSM services, system architecture, radio interface, logical channels and protocols",
+        "Localization and calling, handover and security",
+        "HSCSD",
+        "GPRS architecture, interfaces, channels and mobility management",
+        "DECT, TETRA and UMTS"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "WLAN, HIPERLAN and Bluetooth",
+      "topics": [
+        "IEEE 802.11 LAN architecture",
+        "802.11 a, b and g",
+        "Protocol architecture, physical layer, MAC layer and MAC management",
+        "HIPERLAN protocol architecture, physical layer, access control sub layer and MAC sub layer",
+        "Bluetooth user scenarios, physical layer and MAC layer"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Mobile IP and Transport Layer",
+      "topics": [
+        "Mobile IP",
+        "DHCP",
+        "Ad hoc networks: characteristics, performance issues and routing in mobile host",
+        "Wireless sensor network",
+        "Mobile transport layer: Indirect TCP, Snooping TCP and Mobile TCP",
+        "Time out freezing, selective retransmission and transaction oriented TCP",
+        "Introduction to WAP"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Security in Wireless Networks",
+      "topics": [
+        "Intruders and intrusion detection",
+        "Password management",
+        "Viruses and related threats, worms and Trojan horse defense",
+        "Difference between biometrics and authentication system",
+        "Firewall design principle"
+      ]
+    }
+  ]
+}

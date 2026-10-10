@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "ad-604-c",
+    "code": "AD-604 (C)",
+    "name": "Compiler Design",
+    "title": "AD-604 (C) - Compiler Design",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to compiling & Lexical Analysis",
+      "topics": [
+        "Introduction of Compiler",
+        "Major data Structure in compiler, types of Compiler",
+        "Front-end and Back-endof compiler",
+        "Compiler structure: analysis-synthesis model of compilation, various phases of a compiler,Lexical analysis: Input buffering",
+        "Specification & Recognition of Tokens,Design of a Lexical AnalyzerGenerator",
+        "LEX."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Syntax Analysis &Syntax Directed Translation",
+      "topics": [
+        "Syntax analysis: CFGs",
+        "Top down parsing",
+        "Brute force approach, recursive descent parsing,transformation on the grammars, predictive parsing, bottom up parsing, operator precedence parsing",
+        "LRparsers (SLR, LALR, LR),Parser generation.",
+        "Syntax directed definitions: Construction of Syntax trees,Bottom up evaluation of S-attributed definition",
+        "L- attribute definition",
+        "Top down translation",
+        "Bottom Upevaluation of inherited attributes Recursive Evaluation",
+        "Analysis of Syntax directed definition."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Type Checking & Run Time Environment",
+      "topics": [
+        "Type checking: type system, specification of simple type checker, equivalence of expression, types, typeconversion, overloading of functions and operations, polymorphic functions.",
+        "Run time Environment:storage organization",
+        "Storage allocation strategies, parameter passing, dynamic storage allocation",
+        "Symbol table",
+        "Error Detection & Recovery",
+        "Ad-Hoc and Systematic Methods."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Code Generation",
+      "topics": [
+        "Intermediate code generation: Declarations",
+        "Assignment statements",
+        "Boolean expressions",
+        "Casestatements",
+        "Back patching",
+        "Procedure calls Code Generation: Issues in the design of code generator",
+        "Basicblock and flow graphs",
+        "Register allocation and assignment",
+        "DAG representation of basic blocks, peepholeoptimization, generating code from DAG."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Code Optimization",
+      "topics": [
+        "Introduction to Code optimization: sources of optimization of basic blocks, loops in flow graphs, deadcode elimination, loop optimization",
+        "Introduction to global data flow analysis",
+        "Code Improvingtransformations ,Data flow analysis of structure flow graph Symbolic debugging of optimized code."
+      ]
+    }
+  ]
+}

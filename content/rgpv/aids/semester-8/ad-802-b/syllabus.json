@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "ad-802-b",
+    "code": "AD-802 (B)",
+    "name": "Reinforcement Learning",
+    "title": "AD-802 (B) - Reinforcement Learning",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to reinforcement learning (RL): Defining RL Framework and Markov",
+      "topics": [
+        "Decision Process",
+        "Polices",
+        "Value Functions and Bellman Equations",
+        "Explorations",
+        "Exploitation",
+        "Inside an RL agent",
+        "Problems with reinforcement learning."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Bandit algorithms - UCB, PAC, Median Elimination, Policy Gradient, Full RL &",
+      "topics": [
+        "MDPs",
+        "Bellman Optimality",
+        "Dynamic Programming - Value iteration",
+        "Policy iteration",
+        "Policy Evaluation",
+        "Value Iteration",
+        "Policy Iteration",
+        "DP Extensions and Convergence using Contraction Mapping",
+        "Monte-Carlo (MC) Learning",
+        "Temporal-Difference (TD) Learning",
+        "TD-Lambda and Eligibility Traces."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Q-learning & Temporal Difference Methods, Temporal- Difference Learning,",
+      "topics": [
+        "Eligibility Traces",
+        "Function Approximation",
+        "Least Squares Methods",
+        "Incremental Methods and Batch Methods",
+        "Deep Q-Learning analysis",
+        "Deep Q-Networks and Experience Replay."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Fitted Q, Deep Q-Learning problems, Advanced Q-learning algorithms, learning",
+      "topics": [
+        "policies by imitating optimal controllers",
+        "DQN & Policy Gradient",
+        "Policy Gradient Algorithms for Full RL, Hierarchical RL, POMDPs."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Actor-Critic Method, Inverse reinforcement learning, Maximum Entropy Deep",
+      "topics": [
+        "Inverse Reinforcement Learning",
+        "Generative Adversarial Imitation Learning",
+        "Recent Trends in RL Architectures.",
+        "Deep Learning",
+        "An MIT Press book",
+        "Ian Goodfellow and YoshuaBengio and Aaron Courville 2.",
+        "Pattern Classification- Richard O.",
+        "Duda",
+        "Peter E.",
+        "Hart",
+        "David G.",
+        "Stork",
+        "John Wiley & Sons Inc. 3.",
+        "Reinforcement Learning: An Introduction",
+        "Sutton and Barto, 2nd Edition. 4.",
+        "Reinforcement Learning: State-of-the-Art",
+        "Marco Wiering and Martijn van Otterlo",
+        "Eds"
+      ]
+    }
+  ]
+}
