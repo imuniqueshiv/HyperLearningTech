@@ -64,7 +64,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const availableBranches = branches.filter(
     (branch) => branch.status === "Available"
   );
-  const availableBranchIds = new Set(availableBranches.map((branch) => branch.id));
+  const availableBranchIds = new Set(
+    availableBranches.map((branch) => branch.id)
+  );
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

@@ -3,10 +3,7 @@ import type { Metadata } from "next";
 import { getSubjectsBySemester, type Subject } from "@/lib/data/subjects";
 import { branches } from "@/lib/data/branches";
 import { ArrowRight } from "lucide-react";
-import {
-  buildPageMetadata,
-  formatSemesterLabel,
-} from "@/lib/seo/metadata";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface SemesterPageProps {
   params: Promise<{

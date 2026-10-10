@@ -5,10 +5,7 @@ import { getSyllabus, getPYQs } from "@/lib/content";
 import { getQuestionsForModule } from "@/lib/content/question-mapper";
 import ModuleCard from "@/components/syllabus/module-card";
 import type { Topic } from "@/types/topic";
-import {
-  buildPageMetadata,
-  formatSemesterLabel,
-} from "@/lib/seo/metadata";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface Module {
   id: string;

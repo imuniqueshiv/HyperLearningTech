@@ -6,10 +6,7 @@ import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 import QuestionAttachments from "@/components/pyqs/question-attachments";
 import { buildQuestionWithAttachments } from "@/lib/ai/prompt-builder";
 import type { SubQuestion } from "@/types/pyq";
-import {
-  buildPageMetadata,
-  formatSemesterLabel,
-} from "@/lib/seo/metadata";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface PaperPageProps {
   params: Promise<{

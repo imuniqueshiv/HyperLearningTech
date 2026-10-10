@@ -25,9 +25,7 @@ export function buildPageMetadata({
   follow = true,
 }: BuildPageMetadataInput): Metadata {
   const url = absoluteUrl(path);
-  const resolvedTitle = absoluteTitle
-    ? { absolute: title }
-    : title;
+  const resolvedTitle = absoluteTitle ? { absolute: title } : title;
 
   return {
     title: resolvedTitle,

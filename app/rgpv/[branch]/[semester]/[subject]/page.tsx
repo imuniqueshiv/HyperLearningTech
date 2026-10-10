@@ -3,10 +3,7 @@ import type { Metadata } from "next";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 
 import { getSyllabus, getPYQs } from "@/lib/content";
-import {
-  buildPageMetadata,
-  formatSemesterLabel,
-} from "@/lib/seo/metadata";
+import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface SubjectPageProps {
   params: Promise<{
