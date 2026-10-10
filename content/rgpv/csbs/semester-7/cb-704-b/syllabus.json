@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "cb-704-b",
+    "code": "CB-704 (B)",
+    "name": "Advanced Social, Text and Media Analytics",
+    "title": "CB-704 (B) - Advanced Social, Text and Media Analytics",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Text Mining: Introduction",
+        "Core text mining operations",
+        "Preprocessing techniques",
+        "Categorization",
+        "Clustering",
+        "Information extraction",
+        "Probabilistic models for information extraction",
+        "Text mining applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Methods & Approaches: Content Analysis",
+      "topics": [
+        "Detection",
+        "Simple Predictive Modeling",
+        "Sentiment Analysis",
+        "Sentiment Prediction"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "search and retrieval",
+        "Search engine optimization",
+        "Web crawling and Indexing",
+        "Ranking algorithms",
+        "Web traffic models"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Social Media Networks: Social network and web data and methods",
+      "topics": ["measures for individuals and networks."]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Social Media Analytics: Information visualization",
+        "Making connections: Link analysis.",
+        "Random graphs and network evolution.",
+        "Social contexts: Affiliation and identity",
+        "Social network analysis"
+      ]
+    }
+  ]
+}

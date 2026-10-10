@@ -1,0 +1,89 @@
+{
+  "subject": {
+    "id": "csit-604-b",
+    "code": "CSIT-604 (B)",
+    "name": "Embedded Systems",
+    "title": "CSIT-604 (B) - Embedded Systems",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Embedded Systems",
+      "topics": [
+        "Definition of embedded system",
+        "Embedded systems vs general computing systems",
+        "History of embedded systems",
+        "Classification",
+        "Major application areas",
+        "Purpose of embedded systems",
+        "Characteristics and quality attributes of embedded systems",
+        "Common design metrics",
+        "Processor technology: general purpose processor, application specific processor and single purpose processor"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Embedded System Architecture",
+      "topics": [
+        "Von Neumann vs Harvard architecture",
+        "Instruction set architecture",
+        "CISC and RISC instruction set architecture",
+        "Basic embedded processor",
+        "Microcontroller architecture",
+        "CISC and RISC examples: 8051, ARM and DSP processors"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "I/O, Peripherals and Communication Protocols",
+      "topics": [
+        "Timers and counters",
+        "Watchdog timers",
+        "Interrupt controllers",
+        "PWM",
+        "Keyboard controller",
+        "Analog to digital converters",
+        "Real time clock",
+        "Introduction to communication protocols: basic terminologies and concepts",
+        "Serial protocols: I2C, CAN, FireWire and USB",
+        "Parallel protocols: PCI bus, IrDA, Bluetooth and IEEE 802.11",
+        "Wireless protocols"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Memory System Architecture",
+      "topics": [
+        "Caches",
+        "Virtual memory",
+        "MMU and address translation",
+        "Memory and interfacing",
+        "Memory write ability and storage performance",
+        "Memory types",
+        "Composing memory and advance RAM interfacing",
+        "Microprocessor interfacing I/O addressing",
+        "Interrupts",
+        "Direct memory access",
+        "Arbitration multilevel bus architecture"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "RTOS and Supporting Technologies",
+      "topics": [
+        "Difference between normal OS and RTOS",
+        "Scheduling algorithms",
+        "Case study: Tiny OS, VxWorks and QNX",
+        "Overview of VLSI technology",
+        "Introduction to device drivers",
+        "Case studies: washing machine, air-conditioning and auto focus camera"
+      ]
+    }
+  ]
+}

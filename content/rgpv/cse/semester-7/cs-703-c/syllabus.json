@@ -1,0 +1,71 @@
+{
+  "subject": {
+    "id": "cs-703-c",
+    "code": "CS-703 (C)",
+    "name": "Agile Software Development",
+    "title": "CS-703 (C) - Agile Software Development",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamentals of Agile Process",
+      "topics": [
+        "Introduction and background",
+        "Agile Manifesto and Principles",
+        "Stakeholders and Challenges",
+        "Overview of Agile Development Models: Scrum, Extreme Programming, Feature Driven Development, Crystal, Kanban, and Lean Software Development"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Agile Projects",
+      "topics": [
+        "Planning for Agile Teams: Scrum Teams, XP Teams, General Agile Teams, Team Distribution",
+        "Agile Project Lifecycles: Typical Agile Project Lifecycles, Phase Activities, Product Vision",
+        "Release Planning: Creating the Product Backlog, User Stories, Prioritizing and Estimating, Creating the Release Plan",
+        "Monitoring and Adapting: Managing Risks and Issues, Retrospectives"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Scrum",
+      "topics": [
+        "Agile Scrum Framework, Scrum Artifacts, Meetings, Activities and Roles",
+        "Scrum Team Simulation, Scrum Planning Principles",
+        "Product and Release Planning",
+        "Sprinting: Planning, Execution, Review and Retrospective",
+        "User story definition and Characteristics, Acceptance tests and Verifying stories",
+        "Burn down chart, Daily scrum, Scrum Case Study"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to Extreme Programming (XP)",
+      "topics": [
+        "XP Lifecycle, The XP Team",
+        "XP Concepts: Refactoring, Technical Debt, Timeboxing, Stories, Velocity",
+        "Adopting XP: Pre-requisites, Challenges",
+        "Applying XP: Thinking - Pair Programming, Collaborating, Release, Planning, Development",
+        "XP Case Study"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Agile Software Design and Development",
+      "topics": [
+        "Agile design practices, Role of design Principles",
+        "Need and significance of Refactoring, Refactoring Techniques",
+        "Continuous Integration, Automated build tools, Version control",
+        "Agility and Quality Assurance: Agile Interaction Design, Agile approach to Quality Assurance",
+        "Test Driven Development",
+        "Pair programming: Issues and Challenges"
+      ]
+    }
+  ]
+}

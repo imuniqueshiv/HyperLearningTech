@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "cb-402",
+    "code": "CB-402",
+    "name": "Design And Analysis of Algorithms",
+    "title": "CB-402 - Design And Analysis of Algorithms",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Characteristics of Algorithm",
+        "Analysis of Algorithm: Asymptotic analysis of Complexity Bounds – Best, Average and Worst-Case behavior",
+        "Performance Measurements of Algorithm, Time and Space Trade-Offs",
+        "Analysis of Recursive Algorithms through Recurrence Relations: Substitution Method, Recursion Tree Method and Masters' Theorem"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Fundamental Algorithmic Strategies",
+      "topics": [
+        "Brute-Force, Heuristics, Greedy, Dynamic Programming, Branch and Bound and Backtracking methodologies",
+        "Illustrations of these techniques for Problem-Solving, Bin Packing, Knapsack, Travelling Salesman Problem"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Graph and Tree Algorithms",
+      "topics": [
+        "Traversal algorithms: Depth First Search (DFS) and Breadth First Search (BFS)",
+        "Shortest path algorithms, Transitive closure, Minimum Spanning Tree, Topological sorting, Network Flow Algorithm"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Tractable and Intractable Problems",
+      "topics": [
+        "Computability of Algorithms",
+        "Computability classes – P, NP, NP-complete and NP-hard",
+        "Cook's theorem, Standard NP-complete problems and Reduction techniques"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Advanced Topics",
+      "topics": [
+        "Approximation algorithms, Randomized algorithms",
+        "Class of problems beyond NP – P SPACE",
+        "Introduction to Quantum Algorithms"
+      ]
+    }
+  ]
+}

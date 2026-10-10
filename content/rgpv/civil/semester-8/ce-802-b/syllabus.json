@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-802-b",
+    "code": "CE802 (B)",
+    "name": "Foundation Engineering",
+    "title": "CE802 (B) - Foundation Engineering",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Selection of foundation and Sub-soil exploration/investigation",
+      "topics": [
+        "Types of foundation, Factors affecting the selection of type of foundations, Steps in choosing types of foundation based on soil condition",
+        "Objectives and planning of exploration program, methods of exploration-wash boring and rotary drilling-depth of boring",
+        "Soil samples and soil samplers-representative and undisturbed sampling",
+        "Field penetration tests: SPT, SCPT, DCPT; Introduction to geophysical methods, Bore log, report writing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Shallow Foundation",
+      "topics": [
+        "Introduction, significant depth, design criteria, modes of shear failures",
+        "Detail study of bearing capacity theories (Prandtl, Rankine, Terzaghi, Skempton, Meyerhof), Bearing capacity determination using IS Code",
+        "Settlement, components of settlement & its estimation, permissible settlement, Proportioning of footing for equal settlement, allowable bearing pressure",
+        "Bearing capacity from in-situ tests (SPT, SCPT, PLATE LOAD), Factors affecting bearing capacity",
+        "Contact pressure under rigid and flexible footings; Floating foundation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Pile foundations",
+      "topics": [
+        "Introduction, Load transfer mechanism, Types of piles and their function",
+        "Factors influencing selection of pile, their method of installation and their load carrying characteristics for cohesive and granular soils",
+        "Piles subjected to vertical loads- pile load carrying capacity from static formula, dynamic formulae (ENR and Hiley), Pile load test",
+        "Pile group: carrying capacity, efficiency and settlement; Negative skin friction"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Foundations on problematic soil & Introduction to Geosynthetics",
+      "topics": [
+        "Significant characteristics of expansive and collapsible soils, footing on such soils, Problems and preventive measures",
+        "Under-reamed pile foundation-its concept, design & field installation",
+        "Introduction to geosynthetics-materials, types, functions and uses"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Lateral Earth Pressure and Retaining Walls",
+      "topics": [
+        "Active, Passive and Earth pressure at rest; Rankine's theory of earth pressure, Earth pressures in layered soils",
+        "Coulomb's earth pressure theory, Culmann's graphical method",
+        "Types of retaining walls- stability of retaining walls against overturning, sliding, bearing capacity and drainage from backfill",
+        "Reinforced earth retaining walls"
+      ]
+    }
+  ]
+}

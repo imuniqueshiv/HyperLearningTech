@@ -1,0 +1,99 @@
+{
+  "subject": {
+    "id": "me-802-b",
+    "code": "ME-802 (B)",
+    "name": "Tribology And Maintenance Engineering",
+    "title": "ME-802 (B) - Tribology And Maintenance Engineering",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "History of tribology",
+        "Early scientific studies of friction, wear and lubrication",
+        "Tribo-Surface preparations and characteristics",
+        "Surface contacts",
+        "Hertz contact stresses",
+        "Residual stress",
+        "Surface fatigue",
+        "Creep",
+        "Stress relaxation",
+        "Fracture mechanics",
+        "Elastic, viscoelastic and plastic behavior of materials",
+        "Choice of materials"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Friction",
+      "topics": [
+        "Laws of friction",
+        "Rolling/sliding friction",
+        "Theory of adhesion and abrasion",
+        "Different mechanisms of friction",
+        "Stick slip characteristics",
+        "Interface temperature",
+        "Thermal analysis",
+        "Molecular mechanical theory of friction",
+        "Operating conditions and system parameters",
+        "Calculations of coefficient of friction",
+        "Design of friction devices"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Wear",
+      "topics": [
+        "Different types of wear mechanisms",
+        "Adhesive, abrasive impact, percussion erosion",
+        "Fretting wear",
+        "Calculations of wear rate",
+        "Two body/three body wear",
+        "Wear prevention",
+        "Wear of metal cutting and metal forming tools",
+        "Wear mapping of materials",
+        "Cavitation",
+        "Surface fatigue",
+        "Corrosion",
+        "Performance levels classifications and specifications of lubricants"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Lubrication",
+      "topics": [
+        "Lubricants and additives",
+        "Composition and properties of lubricants",
+        "Maintenance of oil and emulsions",
+        "Industrial hygiene aspects",
+        "Technical regulations for lubricants",
+        "Boundary/mixed and fluid film lubrication",
+        "Industrial methods of lubrications",
+        "SAE, BIS, ASTM, IP, DIN Standards",
+        "Oil testing",
+        "Wear and chemistry of lubricants"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Nano Tribology and Applications",
+      "topics": [
+        "Nano tribology",
+        "Instrumental tests",
+        "Bearings, clutches and brakes",
+        "Slide units",
+        "Dynamic seals",
+        "Automobile applications",
+        "Machine tools/press machines applications",
+        "Other applications and case studies"
+      ]
+    }
+  ]
+}

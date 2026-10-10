@@ -1,0 +1,107 @@
+{
+  "subject": {
+    "id": "csit-502",
+    "code": "CSIT-502",
+    "name": "Operating System",
+    "title": "CSIT-502 - Operating System",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Operating Systems",
+      "topics": [
+        "Introduction to operating systems",
+        "Evaluation of operating systems",
+        "Types of operating systems",
+        "System protection",
+        "Operating system services",
+        "Operating system structure",
+        "System calls and system boots",
+        "Operating system design and implementation",
+        "Spooling and buffering"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "CPU Scheduling and Process Synchronization",
+      "topics": [
+        "Basic concepts of CPU scheduling",
+        "Scheduling criteria",
+        "Scheduling algorithms",
+        "Algorithm evaluation",
+        "Multiple processor scheduling",
+        "Process concept",
+        "Operations on processes",
+        "Threads",
+        "Inter-process communication",
+        "Precedence graphs",
+        "Critical section problem",
+        "Semaphores",
+        "Classical problems of synchronization"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Deadlocks and Memory Management",
+      "topics": [
+        "Deadlock problem",
+        "Deadlock characterization",
+        "Deadlock prevention",
+        "Deadlock avoidance",
+        "Deadlock detection",
+        "Recovery from deadlock",
+        "Methods for deadlock handling",
+        "Concepts of memory management",
+        "Logical and physical address space",
+        "Swapping",
+        "Fixed and dynamic partitions",
+        "Best-Fit, First-Fit, and Worst-Fit allocation",
+        "Paging",
+        "Segmentation",
+        "Paging combined with segmentation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Virtual Memory and Security",
+      "topics": [
+        "Concepts of virtual memory",
+        "Cache memory organization",
+        "Demand paging",
+        "Page replacement algorithms",
+        "Allocation of frames",
+        "Thrashing",
+        "Demand segmentation",
+        "Role of the operating system in security",
+        "Security breaches",
+        "System protection",
+        "Password management"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Disk and File Management",
+      "topics": [
+        "Disk scheduling",
+        "File concepts",
+        "File manager",
+        "File organization",
+        "Access methods",
+        "Allocation methods",
+        "Free space management",
+        "Directory systems",
+        "File protection",
+        "File organization and access mechanism",
+        "File sharing implementation issues",
+        "File management in Linux",
+        "Introduction to distributed systems"
+      ]
+    }
+  ]
+}

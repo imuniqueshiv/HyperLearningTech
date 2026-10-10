@@ -1,0 +1,72 @@
+{
+  "subject": {
+    "id": "cs-702-d",
+    "code": "CS-702 (D)",
+    "name": "Big Data",
+    "title": "CS-702 (D) - Big Data",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Big Data",
+      "topics": [
+        "Introduction to Big data, Big data characteristics, Types of big data",
+        "Traditional versus Big data, Evolution of Big data",
+        "Challenges with Big Data, Technologies available for Big Data",
+        "Infrastructure for Big data, Use of Data Analytics",
+        "Desired properties of Big Data system"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Hadoop and MapReduce",
+      "topics": [
+        "Introduction to Hadoop, Core Hadoop components, Hadoop Eco system",
+        "Hive Physical Architecture, Hadoop limitations, RDBMS Versus Hadoop",
+        "Hadoop Distributed File system",
+        "Processing Data with Hadoop",
+        "Managing Resources and Application with Hadoop YARN",
+        "MapReduce programming"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Hive and Pig",
+      "topics": [
+        "Introduction to Hive, Hive Architecture, Hive Data types, Hive Query Language",
+        "Introduction to Pig, Anatomy of Pig, Pig on Hadoop",
+        "Use Case for Pig, ETL Processing",
+        "Data types in Pig, running Pig, Execution model of Pig",
+        "Operators, functions, Data types of Pig"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "NoSQL and MongoDB",
+      "topics": [
+        "Introduction to NoSQL, NoSQL Business Drivers",
+        "NoSQL Data architectural patterns",
+        "Variations of NOSQL architectural patterns using NoSQL to Manage Big Data",
+        "Introduction to MangoDB"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Mining Social Network Graphs",
+      "topics": [
+        "Mining social Network Graphs: Introduction",
+        "Applications of social Network mining",
+        "Social Networks as a Graph, Types of social Networks",
+        "Clustering of social Graphs",
+        "Direct Discovery of communities in a social graph",
+        "Introduction to recommender system"
+      ]
+    }
+  ]
+}

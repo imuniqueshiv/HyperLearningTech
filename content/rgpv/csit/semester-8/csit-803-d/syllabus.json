@@ -1,0 +1,84 @@
+{
+  "subject": {
+    "id": "csit-803-d",
+    "code": "CSIT-803 (D)",
+    "name": "Robotics",
+    "title": "CSIT-803 (D) - Robotics",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamentals of Robot",
+      "topics": [
+        "Robot definition",
+        "Robot anatomy",
+        "Co-ordinate systems and work envelope",
+        "Types and classification",
+        "Specifications: pitch, yaw, roll, joint notations, speed of motion and pay load",
+        "Robot parts and functions",
+        "Need for robots",
+        "Different applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Robot Drive Systems and End Effectors",
+      "topics": [
+        "Pneumatic drives, hydraulic drives, mechanical drives and electrical drives",
+        "D.C. servo motors, stepper motor and A.C. servo motors",
+        "Salient features, applications and comparison of drives",
+        "End effectors and grippers",
+        "Mechanical grippers, pneumatic and hydraulic grippers, magnetic grippers and vacuum grippers",
+        "Two fingered and three fingered grippers",
+        "Internal grippers and external grippers",
+        "Selection and design considerations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Sensors and Machine Vision",
+      "topics": [
+        "Requirements of a sensor",
+        "Position sensors: piezo electric sensor, LVDT, resolvers, optical encoders and pneumatic position sensors",
+        "Range sensors: triangulation principle, structured lighting approach, time of flight range finders and laser range meters",
+        "Proximity sensors: inductive, Hall effect, capacitive, ultrasonic and optical proximity sensors",
+        "Touch sensors: binary sensors and analogue sensors",
+        "Wrist sensors, compliance sensors and slip sensors",
+        "Camera, frame grabber, sensing and digitizing image data",
+        "Signal conversion, image storage and lighting techniques",
+        "Image processing and analysis",
+        "Data reduction: edge detection, feature extraction and object recognition algorithms",
+        "Applications: inspection, identification, visual serving and navigation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Robot Kinematics and Robot Programming",
+      "topics": [
+        "Forward kinematics, inverse kinematics and differences",
+        "Forward kinematics and reverse kinematics of manipulators with two, three degrees of freedom in 2D and four degrees of freedom in 3D",
+        "Deviations and problems",
+        "Teach pendant programming",
+        "Lead through programming",
+        "Robot programming languages",
+        "VAL programming: motion commands, sensor commands, end effector commands and simple programs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Implementation and Robot Economics",
+      "topics": [
+        "RGV and AGV",
+        "Implementation of robots in industries: various steps",
+        "Safety considerations for robot operations",
+        "Economic analysis of robots: pay back method, EUAC method and rate of return method"
+      ]
+    }
+  ]
+}

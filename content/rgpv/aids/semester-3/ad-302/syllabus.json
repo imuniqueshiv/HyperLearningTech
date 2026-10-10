@@ -1,0 +1,72 @@
+{
+  "subject": {
+    "id": "ad-302",
+    "code": "AD-302",
+    "name": "Probability and Statistics for Data Science",
+    "title": "AD-302 - Probability and Statistics for Data Science",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Data Science and Descriptive Statistics",
+      "topics": [
+        "Data Science: Introduction, Data Science Life Cycle",
+        "Statistics: Descriptive and Inferential Statistics",
+        "Measures of central tendency: Arithmetic Mean, Median and Mode",
+        "Geometric mean, Harmonic Mean and Partition values",
+        "Measures of dispersion: Dispersion, Range, Quartile Deviation, Mean deviation",
+        "Standard Deviation, Variance and Coefficient of Dispersion"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Skewness, Kurtosis and Theory of Probability",
+      "topics": [
+        "Skewness, Kurtosis, Moments",
+        "Measure of skewness and kurtosis",
+        "Introduction and definition of Probability",
+        "Event, Sample Space",
+        "Law of addition and multiplication of Probabilities and Conditional Probability",
+        "Independent and Dependent events",
+        "Bayes' theorem",
+        "Mathematical Expectations and Moment generating functions"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Theoretical Distribution and Curve Fitting",
+      "topics": [
+        "Discrete Distribution - Binomial Distribution and Poisson Distribution",
+        "Continuous Distribution – Rectangular and Normal distribution",
+        "Curve fitting and Methods of Least square",
+        "Fitting a Straight line and a Parabola"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Correlation and Regression",
+      "topics": [
+        "Correlation, Coefficient of Correlation",
+        "Rank Correlation",
+        "Lines of Regression",
+        "Multiple and Partial Correlation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Testing of Hypothesis and Tests of Significance",
+      "topics": [
+        "Null and Alternative hypothesis",
+        "Two types of errors, level of significance and power of the test",
+        "Chi-square distribution, test of popular variance and test of goodness of fit",
+        "t, F, Z distribution and tests based on them"
+      ]
+    }
+  ]
+}

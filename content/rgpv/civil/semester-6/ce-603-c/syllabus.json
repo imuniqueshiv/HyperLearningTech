@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "ce-603-c",
+    "code": "CE603 (C)",
+    "name": "Advance Pavement Design",
+    "title": "CE603 (C) - Advance Pavement Design",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Equivalent Single Wheels Load and Design factors",
+      "topics": [
+        "Equivalent Single Wheels Load concepts and applications",
+        "Relationship between wheel arrangements and loading effects, tyre contact area",
+        "Effect of load repetition, Effect of transient loads, Impact of moving loading",
+        "Factors to be considered in Design of pavements, Design wheel load, soil, climatic factors, pavement component materials, Environmental factors",
+        "Special factors such as frost, Freezing and thawing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Flexible Pavements",
+      "topics": [
+        "Component parts of the pavement structures and their functions, stresses in flexible pavements",
+        "Stress distribution through various layers, Boussinesque's theory, Burmister's two layered theory",
+        "Methods of design, group index method, CBR method, Burmister's method and North Dakota cone method"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Rigid Pavements",
+      "topics": [
+        "Evaluation of subgrade, Modulus-K by plate bearing test and the test details",
+        "Westergaard's stress theory stresses in rigid pavements",
+        "Temperature stresses, warping stresses, frictional stresses, critical combination of stresses, critical loading positions"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Rigid pavement design and Pavement Joints",
+      "topics": [
+        "IRC method, Fatigue analysis, PCA chart method, AASHTO Method, Reliability analysis",
+        "Types of joints, contraction and warping joints, dowel bars and tie bars",
+        "Temperature reinforcements, filling and sealing of joints"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Evaluation and Strengthening of Existing Pavements",
+      "topics": [
+        "Benkleman beam method, Serviceability Index Method",
+        "Rigid and flexible overlays and their design procedures"
+      ]
+    }
+  ]
+}

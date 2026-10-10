@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "me-604-b",
+    "code": "ME-604 (B)",
+    "name": "Optimization Techniques",
+    "title": "ME-604 (B) - Optimization Techniques",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Optimization",
+      "topics": [
+        "Engineering application of Optimization",
+        "Statement of an Optimization problem",
+        "Optimal Problem formulation",
+        "Classification of Optimization problem",
+        "Optimum design concepts",
+        "Definition of Global and Local optima",
+        "Optimality criteria",
+        "Review of basic calculus concepts",
+        "Global optimality"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Linear Programming Methods for Optimum Design",
+      "topics": [
+        "Review of Linear programming methods for optimum design",
+        "Post optimality analysis",
+        "Application of LPP models in design and manufacturing"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Optimization Algorithms for Unconstrained Optimization Problems",
+      "topics": [
+        "Gradient based method: Cauchy's steepest descent method",
+        "Newton's method",
+        "Conjugate gradient method"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Optimization Algorithms for Constrained Optimization Problems",
+      "topics": [
+        "Direct methods",
+        "Penalty function methods",
+        "Steepest descent method",
+        "Engineering applications of constrained and unconstrained algorithms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Modern Methods of Optimization",
+      "topics": [
+        "Genetic Algorithms",
+        "Simulated Annealing",
+        "Ant colony optimization",
+        "Tabu search",
+        "Neural-Network based Optimization",
+        "Fuzzy optimization techniques",
+        "Applications",
+        "Use of Matlab to solve optimization problems"
+      ]
+    }
+  ]
+}

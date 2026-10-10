@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "csit-703-d",
+    "code": "CSIT-703 (D)",
+    "name": "Data Visualization",
+    "title": "CSIT-703 (D) - Data Visualization",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Data Visualization",
+      "topics": [
+        "Overview of data visualization",
+        "Data abstraction",
+        "Analysis: four levels for validation",
+        "Task abstraction"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Visualization Techniques",
+      "topics": [
+        "Scalar and point techniques",
+        "Color maps",
+        "Contouring",
+        "Height plots",
+        "Vector visualization techniques",
+        "Vector properties",
+        "Vector glyphs",
+        "Vector color coding",
+        "Stream objects"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Visual Analytics",
+      "topics": [
+        "Visual variables",
+        "Networks and trees",
+        "Map color and other channels",
+        "Manipulate view",
+        "Arrange tables",
+        "Geo spatial data",
+        "Reduce items and attributes"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Visualization Tools and Techniques",
+      "topics": [
+        "Introduction to data visualization tools",
+        "Tableau",
+        "Visualization using R"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Diverse Types of Visual Analysis",
+      "topics": [
+        "Time-series data visualization",
+        "Text data visualization",
+        "Multivariate data visualization and case studies",
+        "Dashboard creation using visualization tools for finance, marketing, insurance and healthcare use cases"
+      ]
+    }
+  ]
+}

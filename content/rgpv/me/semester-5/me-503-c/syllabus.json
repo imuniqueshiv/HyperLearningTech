@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "me-503-c",
+    "code": "ME-503 (C)",
+    "name": "Alternate Automotive Fuels & Emissions",
+    "title": "ME-503 (C) - Alternate Automotive Fuels & Emissions",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction Automobile Fuels:",
+      "topics": [
+        "Classification of Automobile alternative fuels(liquid, gaseous, hydrogen",
+        "LPG, CNG, Biogas etc.)",
+        "Desirable characteristics of SI & CI engine alternative fuels",
+        "Rating of SI & CI engine fuels",
+        "Introduction to alternate energy sources.",
+        "Like EV, hybrid, fuel cell and solar cars. merits and demerits of various alternate fuels."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Liquid alternative fuels:",
+      "topics": [
+        "Vegetable Oils: Various vegetable oils for automobile engines, esterification, performance in engines, performance and emission characteristics, bio diesel and its characteristics.",
+        "Alcohols: Properties as engine fuel, alcohols and gasoline blends, performance in automobile engine, methanol and gasoline blends."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Gaseous Fuels:",
+      "topics": [
+        "Biogas: Introduction to Biogas system",
+        "Process during gas formation",
+        "Factors affecting biogas formation.",
+        "Usage of Biogas in SI engine & CI engine., Properties of Natural gas",
+        "Hydrogen gas",
+        "LPG & CNG as engine fuels, storage and handling, performance and safety aspects to all gaseous fuel, fuel metering systems."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Automobile emissions:",
+      "topics": [
+        "Types of automobile emissions",
+        "emission characteristics",
+        "formation of automobile emissions",
+        "mechanism of HC",
+        "CO and NO in SI engine",
+        "exhaust emission and factors affecting the emission",
+        "evaporative emission",
+        "crankcase emission",
+        "lead emission CI engine emissions: formation of smoke",
+        "factors affecting the smoke formation",
+        "unburned hydrocarbons",
+        "carbon monoxide",
+        "oxides of nitrogen",
+        "smog and comparison of diesel and petrol emissions."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Emissions Norms & Measurement:",
+      "topics": [
+        "Emission norms as per Bharat Standard up to BS - IV and procedures for confirmation on production.",
+        "Demerits of automobile emission to environment.",
+        "Types Of Catalytic Conversion",
+        "Measurement Techniques Emission Standards and Test Procedure NDIR,FID, Chemiluminescent analyzers",
+        "Gas Chromatograph, smoke meters, emission standards."
+      ]
+    }
+  ]
+}

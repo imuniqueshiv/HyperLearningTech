@@ -1,0 +1,101 @@
+{
+  "subject": {
+    "id": "cy-703-a",
+    "code": "CY-703 (A)",
+    "name": "Ethical Hacking",
+    "title": "CY-703 (A) - Ethical Hacking",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Ethical Hacking: Introduction",
+        "Networking & Basics",
+        "Foot printing and scanning: Information Gathering",
+        "Determining the Network Range",
+        "Identifying Active Machines",
+        "Finding Open Ports and Access Points",
+        "OS Fingerprinting Services",
+        "Mapping the Network Attack Surface.",
+        "Google Hacking",
+        "Scanning",
+        "Windows Hacking",
+        "Linux Hacking."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "The Business Perspective: Business Objectives",
+        "Security Policy",
+        "Previous Test Results",
+        "Business Challenges Planning for a Controlled Attack: Inherent Limitations",
+        "Imposed Limitations",
+        "Timing is Everything",
+        "Attack Type",
+        "Source Point",
+        "Required Knowledge",
+        "Multi-Phased Attacks",
+        "Teaming and Attack Structure",
+        "Engagement Planner",
+        "The Right Security Consultant",
+        "The Tester",
+        "Logistics",
+        "Intermediates",
+        "Law Enforcement."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Engineering",
+        "Physical Security",
+        "Internet Reconnaissance",
+        "Steganography",
+        "Cryptography",
+        "Wireless Hacking",
+        "Firewall & Honeypots",
+        "IDS & IPS, Vulnerability",
+        "Penetration Testing."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Enumeration",
+        "Preparing for the Next Phase Exploitation: Intuitive Testing",
+        "Evasion",
+        "Threads and Groups",
+        "Operating Systems",
+        "Password Crackers",
+        "RootKits, applications",
+        "Wardialing",
+        "Network",
+        "ServicesDoS attacks and Areas of Concern."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Reverse Engineering",
+        "Email Hacking",
+        "Incident Handling & Response",
+        "Bluetooth Hacking",
+        "Mobile Phone Hacking Basic ethical hacking tools and usage of these tools in a professional environment.",
+        "Legal, professional and ethical issues likely to face the domain of ethical hacking.",
+        "Ethical responsibilities, professional integrity and making appropriate use of the tools and techniques associated with ethical hacking."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "csit-703-a",
+    "code": "CSIT-703 (A)",
+    "name": "E-Commerce & Web Technology",
+    "title": "CSIT-703 (A) - E-Commerce & Web Technology",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Electronic Commerce and Business Models",
+      "topics": [
+        "Electronic commerce and physical commerce",
+        "Different types of e-commerce",
+        "E-commerce scenarios",
+        "Advantages of e-commerce",
+        "Feature of B2B e-commerce",
+        "Business models and integration",
+        "Category of e-services",
+        "Web-enabled services",
+        "Matchmaking services",
+        "Information-selling on the web"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Internet Payment Systems and E-Governance",
+      "topics": [
+        "Characteristics of payment system",
+        "4C payments methods",
+        "SET protocol for credit card payment",
+        "E-cash, e-check and micro payment system",
+        "Overview of smart card",
+        "Overview of Mondex",
+        "E-governance architecture",
+        "Public private partnership",
+        "Readiness and security",
+        "Cyber crime and law",
+        "IT Act"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Advanced Technologies for E-Commerce",
+      "topics": [
+        "Introduction to mobile agents",
+        "WAP: the enabling technology",
+        "The WAP model and WAP architecture",
+        "Benefit of WAP to e-commerce",
+        "Web security",
+        "Encryption schemes",
+        "Secure web documents",
+        "Digital signatures and firewalls"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Building Blocks of Electronic Commerce",
+      "topics": [
+        "Internet and networking technologies",
+        "IP addressing",
+        "ARP, RARP, BOOTP, DHCP, ICMP, DNS, TFTP and TELNET"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Static and Dynamic Web Pages",
+      "topics": [
+        "Tiers, plug-ins, frames and forms",
+        "Markup languages: HTML, DHTML, VRML, SGML and XML",
+        "CGI, applets and servlets",
+        "JSP and JavaBeans",
+        "ActiveX control",
+        "ASP cookies: creating and reading cookies",
+        "Semantic web and semantic web service ontology",
+        "Comparative case study of Microsoft and Java technologies",
+        "Web server scalability",
+        "Distributed objects and object request brokers",
+        "Component technology",
+        "Web services and web application architectures",
+        "Browsers and search engines"
+      ]
+    }
+  ]
+}

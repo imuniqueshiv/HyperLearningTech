@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "al-702-a",
+    "code": "AL702 (A)",
+    "name": "AI in Gaming",
+    "title": "AL702 (A) - AI in Gaming",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Introduction to Game AI",
+        "Kind of AI used in game development",
+        "Model of game AI",
+        "AI engine structure"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Movement Algorithms and Steering Behaviour",
+      "topics": [
+        "Kinematic movement algorithms",
+        "Problems related to the steering behaviour of objects and Solutions",
+        "Coordinated Movement and Motor Control",
+        "Concepts related to coordinated movements and motor control"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Pathfinding",
+      "topics": [
+        "Basic Path finding Algorithms in game development",
+        "Path finding for complex solutions"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Decision-Making and Uncertainty",
+      "topics": [
+        "Decision trees and state machines for game development",
+        "Models for implementing knowledge uncertainty, such as fuzzy logic and Markov systems"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to Learning Mechanisms",
+      "topics": [
+        "Board game theory",
+        "Implementation of some key algorithms, such as minimax and negamax",
+        "Random Number Generation and Minimaxing",
+        "Algorithms for implementing action prediction",
+        "Decision learning and reinforcement learning"
+      ]
+    }
+  ]
+}

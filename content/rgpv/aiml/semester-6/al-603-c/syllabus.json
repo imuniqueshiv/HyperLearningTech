@@ -1,0 +1,88 @@
+{
+  "subject": {
+    "id": "al-603-c",
+    "code": "AL603 (C)",
+    "name": "Pattern Recognition",
+    "title": "AL603 (C) - Pattern Recognition",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and mathematical Preliminaries",
+      "topics": [
+        "Principles of pattern recognition: Uses, mathematics",
+        "Classification and Bayesian rules",
+        "Clustering vs classification",
+        "Basics of linear algebra and vector spaces",
+        "Eigen values and eigen vectors",
+        "Rank of matrix and SVD"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Pattern Recognition basics",
+      "topics": [
+        "Bayesian decision theory",
+        "Classifiers, Discriminant functions, Decision surfaces",
+        "Parameter estimation methods",
+        "Hidden Markov models",
+        "Dimension reduction methods",
+        "Fisher discriminant analysis",
+        "Principal component analysis",
+        "Non-parametric techniques for density estimation",
+        "Nonmetric methods for pattern classification",
+        "Unsupervised learning",
+        "Algorithms for clustering: Kmeans, Hierarchical and other methods"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Feature Selection and extraction",
+      "topics": [
+        "Problem statement and uses",
+        "Branch and bound algorithm",
+        "Sequential forward and backward selection",
+        "Cauchy Schwartz inequality",
+        "Feature selection criteria function: Probabilistic separability based and Interclass distance based",
+        "Feature Extraction: principles"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Visual Recognition",
+      "topics": [
+        "Human visual recognition system",
+        "Recognition methods: Low-level modelling (e.g. features)",
+        "Midlevel abstraction (e.g. segmentation)",
+        "High-level reasoning (e.g. scene understanding)",
+        "Detection/Segmentation methods",
+        "Context and scenes",
+        "Importance and saliency",
+        "Large-scale search and recognition",
+        "Egocentric vision, systems",
+        "Human-in-the-loop interactive systems",
+        "3D scene understanding"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Recent advancements in Pattern Recognition",
+      "topics": [
+        "Comparison between performance of classifiers",
+        "Basics of statistics, covariance and their properties",
+        "Data condensation, feature clustering",
+        "Data visualization",
+        "Probability density estimation",
+        "Visualization and Aggregation",
+        "FCM and soft computing techniques",
+        "Examples of real-life datasets"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "cy-603-a",
+    "code": "CY-603 (A)",
+    "name": "Internet & Web Technology",
+    "title": "CY-603 (A) - Internet & Web Technology",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction: Concept of WWW, Internet and WWW, HTTP Protocol : Request and",
+      "topics": [
+        "Response",
+        "Web browser and Web servers",
+        "Features of Web 2.0 Web Design: Concepts of effective web design",
+        "Webdesign issues including Browser",
+        "Bandwidth and Cache",
+        "Display resolution",
+        "Look and Feel of the Web site",
+        "Page Layout and linking",
+        "User centric design",
+        "Sitemap",
+        "Planning and publishing website",
+        "Designing effective navigation."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "HTML :Basics of HTML, formatting and fonts, commenting code, color, hyperlink,",
+      "topics": [
+        "lists, tables, images, forms",
+        "XHTML, Meta tags",
+        "Character entities, frames and frame sets",
+        "Browser architecture and Web site structure.",
+        "Overview and features of HTML5"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "background images, colors and properties,manipulating texts, usingfonts, borders and boxes, margins, padding lists,positioning using CSS, CSS2",
+        "Overview and features of CSS3 JavaScript : Client side scriptingwith JavaScript, variables, functions, conditions, loops and repetition",
+        "Pop up boxes",
+        "Advance JavaScript: Javascript and objects",
+        "JavaScript own objects, the DOM and web browser environments",
+        "Manipulation using DOM, forms and validations,DHTML : Combining HTML, CSS andJavascript",
+        "Events and buttons"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "XML : Introduction to XML, uses of XML, simple XML, XML keycomponents, DTD",
+      "topics": [
+        "andSchemas",
+        "Using XML with application.",
+        "Transforming XML using XSL and XSLT PHP: Introduction and basic syntax of PHP, decision and looping with examples",
+        "PHP and HTML, Arrays",
+        "Functions",
+        "Browser control and detection, string",
+        "Form processing",
+        "Files",
+        "Advance Features: Cookies and Sessions",
+        "Object Oriented Programming with PHP"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "subject": {
+    "id": "es-401-me",
+    "code": "ES-401",
+    "name": "Energy & Environmental Engineering",
+    "title": "ES-401 - Energy & Environmental Engineering",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Energy & Environmental Engineering",
+      "topics": [
+        "Engineering The objective of this Course is to provide an introduction to energy systems and renewable energy resources, with a scientific examination of the energy field and an emphasis on alternative energy sources and their technology and application.",
+        "Module 1: Introduction to Energy Science: Introduction to energy systems and resources",
+        "Introduction to Energy, sustainability & the environment",
+        "Overview of energy systems, sources, transformations, efficiency, and storage",
+        "Fossil fuels (coal, oil, oil-bearing shale and sands, coal gasification) - past, present & future",
+        "Remedies & alternatives for fossil fuels - biomass, wind, solar, nuclear, wave, tidal and hydrogen",
+        "Sustainability and environmental trade-offs of different energy systems",
+        "possibilities for energy storage or regeneration (Ex.",
+        "Pumped storage hydro power projects, superconductor-based energy storages, high efficiency batteries) Module2: Ecosystems - Concept of an ecosystem",
+        "Structure and function of an ecosystem",
+        "Producers, consumers and decomposers",
+        "Energy flow in the ecosystem",
+        "Ecological succession",
+        "Food chains, food webs and ecological pyramids",
+        "Introduction, types, characteristic features, structure and function of the following ecosystem (a.)Forest ecosystem (b) Grassland ecosystem (c) Desert ecosystem (d) Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries) Module 3: Biodiversity and its conservation - Introduction - Definition: genetic, species and ecosystem diversity",
+        "Bio-geographical classification of India",
+        "Value of biodiversity: consumptive use, productive use, social, ethical, aesthetic and option values",
+        "Biodiversity at global",
+        "National and local levels",
+        "India as a mega-diversity nation",
+        "Hot-sports of biodiversity",
+        "Threats to biodiversity: habitat loss, poaching of wildlife, man-wildlife conflicts",
+        "Endangered and endemic species of India",
+        "Conservation of biodiversity: In-situ and Ex- situ conservation of biodiversity.",
+        "Module 4: Environmental Pollution Definition"
+      ]
+    }
+  ]
+}

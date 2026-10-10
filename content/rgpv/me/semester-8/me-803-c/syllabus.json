@@ -1,0 +1,125 @@
+{
+  "subject": {
+    "id": "me-803-c",
+    "code": "ME-803 (C)",
+    "name": "Entrepreneurship and Management Concepts",
+    "title": "ME-803 (C) - Entrepreneurship and Management Concepts",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "System Concepts",
+      "topics": [
+        "Types, definition and characteristics",
+        "Supra and subsystems",
+        "Key component",
+        "Boundary and interface complexity",
+        "Feedback (pull) and feed forward (push) controls",
+        "Open flexible-adaptive system",
+        "Computer as closed system",
+        "Law of requisite variety",
+        "System coupling, stresses and entropy",
+        "Functional and cross functional system",
+        "Steven Alter's nine element work system model and its comparison with IPO (input-processing-output) model",
+        "Structure and performance of work systems leading to customer delight"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Management",
+      "topics": [
+        "Importance, definition and functions",
+        "Schools of theories",
+        "Knowledge driven learning organization and e-business",
+        "Environment, uncertainty and adaptability",
+        "Corporate culture",
+        "Difficulties and levels of planning",
+        "BCG matrix",
+        "SWOT analysis",
+        "Steps in decision making",
+        "Structured and unstructured decision",
+        "Dimensions of organizations: size/specialization, behavior formalization, authority centralization, departmentalization, span and line of control",
+        "Technology and Mintzberg organization typology",
+        "Line, staff and matrix organization",
+        "Coordination by task force",
+        "Business process reengineering and process of change management",
+        "HR planning placement and training",
+        "MIS",
+        "Attitudes and personality trait",
+        "Overlap and differences between leader and manager",
+        "Leadership grid",
+        "Motivation",
+        "Maslow's need hierarchy and Herzberg two factor theory",
+        "Expectation theory",
+        "Learning process",
+        "Team work and stress management"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Marketing and Finance",
+      "topics": [
+        "Importance and definition of marketing",
+        "Core concepts of need want and demand",
+        "Exchange and relationships",
+        "Product value, cost and satisfaction (goods and services)",
+        "Marketing environment",
+        "Selling, marketing and societal marketing concepts",
+        "Four P's: product, price, placement, promotion",
+        "Consumer, business and industrial market",
+        "Market targeting",
+        "Advertising, publicity",
+        "CRM and market research",
+        "Finance: nature and scope",
+        "Forms of business ownerships",
+        "Balance sheet",
+        "Profit and loss account",
+        "Fund flow and cash flow statements",
+        "Breakeven point (BEP) and financial ratio analysis",
+        "Pay-back period, NPV and capital budgeting"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Productivity and Operations",
+      "topics": [
+        "Productivity, standard of living and happiness",
+        "Types of productivity",
+        "Operations (goods and services) Vs project management",
+        "Production processes and layouts",
+        "Steps in method improvement",
+        "Time measurement, rating and various allowances",
+        "Standard time and its utility",
+        "Predetermined motion and time method",
+        "Product and process specification",
+        "TQM",
+        "Cost of quality",
+        "Introduction to lean manufacturing (JIT)",
+        "QFD, TPM and six sigma quality"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Entrepreneurship",
+      "topics": [
+        "Definition and concepts",
+        "Characteristics",
+        "Comparison with manager",
+        "Classification",
+        "Theories of entrepreneur: socio, economic, cultural and psychological",
+        "Entrepreneur traits and behavior",
+        "Roles in economic growth, employment, social stability, export promotion and indigenization",
+        "Creating a venture",
+        "Opportunity analysis competitive and technical factors",
+        "Sources of funds",
+        "Entrepreneur development program"
+      ]
+    }
+  ]
+}

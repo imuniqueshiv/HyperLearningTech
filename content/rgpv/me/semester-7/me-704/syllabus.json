@@ -1,0 +1,30 @@
+{
+  "subject": {
+    "id": "me-704",
+    "code": "ME-704",
+    "name": "CAD/CAM /CIM",
+    "title": "ME-704 - CAD/CAM /CIM",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "2D and 3D modeling on CAD software",
+        "Use of CAM software for writing CNC programs",
+        "Study of automatic and semi automatic control system and writing the electrical analogy.",
+        "Production & layout for GT for group of jobs to be manufactured",
+        "A case study / tutorial using CAPP Software",
+        "Writing M & G codes for given operations.",
+        "Robot and AGV programming",
+        "Modelling and simulation of computer integrated manufacturing system'",
+        "Modelling,offline manual part programming and simulation of the operation of 3 axis CNC",
+        "Programming and operation of a 5 axis robot Manipulator",
+        "Remote monitoring and operation of Computer integrated manufacturing system",
+        "To write the part program for any component (stepped cylindrical rod ) . Assuming the"
+      ]
+    }
+  ]
+}

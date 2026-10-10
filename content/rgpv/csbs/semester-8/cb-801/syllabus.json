@@ -1,0 +1,72 @@
+{
+  "subject": {
+    "id": "cb-801",
+    "code": "CB-801",
+    "name": "IT Project Management",
+    "title": "CB-801 - IT Project Management",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Project Overview and Feasibility Studies- Identification",
+        "Market and Demand Analysis",
+        "Project Cost Estimate",
+        "Financial Appraisal."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Project Scheduling: Project Scheduling",
+        "Introduction to PERT and CPM, Critical Path Calculation",
+        "Precedence Relationship",
+        "Difference between PERT and CPM, Float Calculation and its importance",
+        "Cost reduction by Crashing of activity.",
+        "Cost Control and Scheduling: Project Cost Control (PERT/Cost)",
+        "Resource Scheduling & Resource Leveling"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Termination Agile Project Management: Introduction",
+        "Agile Principles",
+        "Agile methodologies",
+        "Relationship between Agile Scrum",
+        "Lean",
+        "DevOps and IT Service Management (ITIL)."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Scrum: Various terminologies used in Scrum (Sprint, product backlog, sprint backlog, sprint review, retro perspective), various roles (Roles in Scrum)",
+        "Best practices of Scrum."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "and Automating Builds",
+        "Automated Testing and Test Driven Development",
+        "Continuous Integration",
+        "Configuration Management",
+        "Continuous Deployment",
+        "Automated Monitoring.",
+        "Other Agile Methodologies: Introduction to XP, FDD, DSDM, Crystal"
+      ]
+    }
+  ]
+}

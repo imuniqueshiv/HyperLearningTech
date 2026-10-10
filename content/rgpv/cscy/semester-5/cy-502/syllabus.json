@@ -1,0 +1,80 @@
+{
+  "subject": {
+    "id": "cy-502",
+    "code": "CY-502",
+    "name": "Design & Analysis of Algorithms",
+    "title": "CY-502 - Design & Analysis of Algorithms",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Algorithms, Complexity and Divide and Conquer",
+      "topics": [
+        "Definitions of algorithms and complexity",
+        "Time and Space Complexity",
+        "Time space tradeoff",
+        "various bounds on complexity",
+        "Asymptotic notation",
+        "Recurrences and Recurrences solving techniques",
+        "Introduction to divide and conquer technique",
+        "example: binary search, merge sort, quick sort, heap sort, strassen's matrix multiplication etc",
+        "Code tuning techniques: Loop Optimization, Data Transfer Optimization, Logic Optimization, etc"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Greedy Algorithms",
+      "topics": [
+        "Greedy Algorithms: strategy",
+        "examples of greedy method like optimal merge patterns",
+        "Huffman coding",
+        "minimum spanning trees",
+        "knapsack problem",
+        "job sequencing with deadlines",
+        "single source shortest path algorithm etc",
+        "Correctness proof of Greedy algorithms"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Dynamic Programming",
+      "topics": [
+        "Dynamic programming: characteristics",
+        "problems based on dynamic programming such as 0/1 knapsack",
+        "multistage graph",
+        "reliability design",
+        "Floyd-Warshall algorithm etc"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Backtracking and Branch & Bound",
+      "topics": [
+        "Backtracking: concept and its examples like 8 queen's problem",
+        "Hamiltonian cycle",
+        "Graph colouring problem etc",
+        "Introduction to branch & bound method",
+        "examples of branch and bound method like travelling salesman problem etc",
+        "Meaning of lower bound theory and its use in solving algebraic problem",
+        "introduction to parallel algorithms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Advanced Algorithms and Complexity Classes",
+      "topics": [
+        "Advanced tree and graph algorithms",
+        "NP-hard and NP-complete problems",
+        "Approximations Algorithms",
+        "Data Stream Algorithms",
+        "Introduction to design and complexity of Parallel Algorithms"
+      ]
+    }
+  ]
+}

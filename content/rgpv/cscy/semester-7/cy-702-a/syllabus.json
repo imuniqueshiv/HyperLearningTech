@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "cy-702-a",
+    "code": "CY-702 (A)",
+    "name": "Penetration Testing and Vulnerability Analysis",
+    "title": "CY-702 (A) - Penetration Testing and Vulnerability Analysis",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction to penetration testing",
+        "Legal and ethical considerations",
+        "Types of penetration testing",
+        "Penetration testing methodologies.",
+        "Information Gathering and Scanning: Foot printing and reconnaissance techniques",
+        "Network scanning and enumeration",
+        "SINT (Open-source intelligence) gathering",
+        "Vulnerability scanning tools."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Exploitation and Post-Exploitation: Exploiting system and network vulnerabilities",
+        "Privilege escalation techniques, post-exploitation activities",
+        "Maintaining access and pivoting Web Application",
+        "Security",
+        "Introduction to web application security",
+        "Common web application vulnerabilities",
+        "Web application penetration testing methodologies",
+        "Web vulnerability scanners and tools."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Wireless Network Security: Wireless network security concepts",
+        "Wi-Fi vulnerabilities and attacks",
+        "Wireless penetration testing techniques, securing wireless networks Social Engineering and Physical Security: Introduction to social engineering",
+        "Techniques and tactics of social engineering",
+        "Physical security vulnerabilities and testing",
+        "Mitigating social engineering and physical security risks."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Cryptography and Secure Communications: Basics of cryptography",
+        "Cryptographic algorithms and protocols",
+        "Encryption, decryption, and key management, secure communication channelsReporting and Remediation: Documentation and reporting of findings",
+        "Prioritizing and mitigating vulnerabilities, engaging stakeholders and communicating recommendations, post-testing activities and continuous improvement."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Mobile application security",
+        "Cloud security and testing (Internet of Things) security, red teaming and adversary simulation",
+        "Review of real-world penetration testing cases",
+        "Practical hands-on exercises",
+        "Capture the Flag (CTF) competitions",
+        "Final project and presentations."
+      ]
+    }
+  ]
+}

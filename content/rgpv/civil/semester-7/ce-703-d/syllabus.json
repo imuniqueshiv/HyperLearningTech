@@ -1,0 +1,72 @@
+{
+  "subject": {
+    "id": "ce-703-d",
+    "code": "CE703 (D)",
+    "name": "Building Services",
+    "title": "CE703 (D) - Building Services",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Importance of building services and Water supply",
+      "topics": [
+        "Importance of building services, types of services required in building complexes",
+        "Planning of services, organization structure of services role and administrative functions of supervisors",
+        "Classification of building as per NBC",
+        "Water supply & distributions in high rise buildings, house connections system of water supply, water supply fixtures & appliances",
+        "Swimming pool water treatment, algae control in swimming pool"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Lift & Escalator",
+      "topics": [
+        "Anatomy of lift provision in lift, classification of lift, types of lifts, types of operation of lifts",
+        "Lift codes & rules, traffic analysis and selection of lift, types of lift control",
+        "Structural provisions of lift and buildings, fire safety provisions in lifts",
+        "Work done and lift installation by owner, details of information to be given to lift supplier",
+        "Accidents in lifts and safety precautions, escalators, working mechanism, Travelators"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Fire-Fighting",
+      "topics": [
+        "Fire growth and behavior, classification of fire, fire triangle, classification of building according to fire",
+        "Classification of structural components, modes of fire, fire-extinguishers and their types of suitability, types of portable fire extinguishers",
+        "Fire hydrants and their location, Carbon Di-oxide storing system",
+        "Provisions in building from fire safety (IS 1641), Hydrants installation, fire lift, fire escapes, service duct escape route",
+        "Fire detection systems their type and applications, fire alarm systems, types and their working, fire control systems"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Acoustics and sound insulation and HVAC system",
+      "topics": [
+        "Noise, sources & their effects, Characteristics sound; Acoustical defects, Noise in building",
+        "Planning Noise rating Curve, Reverberation time, materials for acoustical treatment, requirement for good acoustics",
+        "General principles of acoustics design, Acoustical design of auditorium, studio, open air theatre",
+        "Sound insulation of walls, ceiling floors",
+        "Natural ventilation, Types of Ventilation systems, Types of air conditioning, principles of control air conditioning",
+        "System of air conditioning essentials of air conditioning system, Thermal insulation of walls & ceiling, methods of thermal insulation"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Miscellaneous Services",
+      "topics": [
+        "Building Security & access Control (Biometrics, voice recognition, Iris detector, smart card, Vascular pattern, fingerprint, contactless system etc)",
+        "Design of car parking system, car park management Strategy, services for Disabled",
+        "Rain water harvesting, solar systems, green Building Concerns, Street lighting (Campus lighting)",
+        "Landscaping & Horticulture, waste collection & reuse & recycling, package STP",
+        "Use of IOT in building Services management, CCTV, Surveillance, refuse collection & Transportation"
+      ]
+    }
+  ]
+}

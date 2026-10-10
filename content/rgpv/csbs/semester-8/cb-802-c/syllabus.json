@@ -1,0 +1,51 @@
+{
+  "subject": {
+    "id": "cb-802-c",
+    "code": "CB-802 (C)",
+    "name": "Industrial Psychology",
+    "title": "CB-802 (C) - Industrial Psychology",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction: I/O Psychology-definition",
+      "topics": [
+        "Practice",
+        "Introduction & Legal Context of Industrial Psychology",
+        "Job Analysis & Competency Modelling",
+        "Job Evaluation & Compensation",
+        "Job Design & Employee Well-Being",
+        "Recruitment."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": ["Screening Methods", "Intensive Methods."]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Performance Evaluation: Performance Goals and Feedback, Performance Coaching and",
+      "topics": ["Evaluation", "Evaluating Employee Performance."]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": ["Diversity."]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Organizations, the Organization of Work Behavior",
+        "Stress Management: Demands of Life and Work."
+      ]
+    }
+  ]
+}

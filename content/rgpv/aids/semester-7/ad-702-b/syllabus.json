@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "ad-702-b",
+    "code": "AD-702 (B)",
+    "name": "Business Intelligence",
+    "title": "AD-702 (B) - Business Intelligence",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Business Intelligence",
+      "topics": [
+        "Business Intelligence (BI)",
+        "Scope of BI solutions and their fitting into existing infrastructure",
+        "BI Components",
+        "Future of Business Intelligence",
+        "Functional areas and description of BI tools",
+        "Data mining & warehouse",
+        "OLAP, Drawing insights from data: DIKW pyramid Business Analytics project methodology - detailed description of each phase."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Business Intelligence Implementation:",
+      "topics": [
+        "Key Drivers",
+        "Key Performance Indicators and Performance Metrics",
+        "BI Architecture/Framework",
+        "Best Practices",
+        "Business Decision Making",
+        "Styles of BI-vent- Driven alerts - A cyclic process of Intelligence Creation",
+        "Ethics of Business Intelligence."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Decision Support System",
+      "topics": [
+        "Representation of decision-making system",
+        "evolution of information system",
+        "definition and development of decision support system,Decision Taxonomy Principles of Decision Management Systems."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Analysis & Visualization",
+      "topics": [
+        "Definition and applications of data mining, data mining process, analysis methodologies",
+        "Typical pre-processing operations: combining values into one, handling incomplete or incorrect data, handling missing values, recoding values, sub setting, sorting, transforming scale, determining percentiles, data manipulation, removing noise, removing inconsistencies, transformations, standardizing, normalizing,min-max normalization, z-score. standardization, rules of standardizing data.",
+        "Role of visualization in analytics, different techniques for visualizing data."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Business Intelligence Applications",
+      "topics": [
+        "Marketing models: Relational marketing",
+        "Salesforce management",
+        "Business case studies, supplychain optimization, optimization models for logistics planning, revenue management system."
+      ]
+    }
+  ]
+}

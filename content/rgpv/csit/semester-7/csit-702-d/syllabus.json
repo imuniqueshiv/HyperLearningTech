@@ -1,0 +1,80 @@
+{
+  "subject": {
+    "id": "csit-702-d",
+    "code": "CSIT-702 (D)",
+    "name": "Natural Language Processing",
+    "title": "CSIT-702 (D) - Natural Language Processing",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Natural Language Understanding",
+      "topics": [
+        "Levels of language analysis: syntax, semantics and pragmatics",
+        "Applications",
+        "Ambiguity",
+        "Morphology",
+        "Parsing with Finite State Transducers",
+        "Regular expressions",
+        "Stemmer",
+        "Spelling errors"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Computational Phonology and N-grams",
+      "topics": [
+        "Speech sound",
+        "Phonetic transcription",
+        "Text to speech",
+        "Pronunciation variations",
+        "Bayesian method to spelling and pronunciations",
+        "Minimum edit distance",
+        "Weighted automata",
+        "N-grams"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "HMM, Speech Recognition and POS Tagging",
+      "topics": [
+        "HMM and speech recognition",
+        "Viterbi algorithm",
+        "Acoustic processing of speech",
+        "Feature extraction",
+        "Speech synthesis",
+        "Part-of-speech tagging: rule based, stochastic and transformation based"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Syntax and Semantic Processing",
+      "topics": [
+        "Parsing with CFG",
+        "CKY parsing and the Earley parser",
+        "Probabilistic parsing",
+        "Meaning representation",
+        "First Order Predicate Calculus",
+        "Lexical semantics: internal structure of words, thematic roles, primitive decomposition and WordNet"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "WSD, IR, Discourse and Machine Translation",
+      "topics": [
+        "Word sense disambiguation",
+        "Information retrieval: vector space model",
+        "Improving user queries",
+        "Pragmatic processing: discourse",
+        "Natural language generation",
+        "Machine translation"
+      ]
+    }
+  ]
+}

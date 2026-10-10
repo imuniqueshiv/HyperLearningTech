@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-302",
+    "code": "CE-302",
+    "name": "Construction Materials",
+    "title": "CE-302 - Construction Materials",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Stones, Brick, Mortar and Concrete",
+      "topics": [
+        "Stones: Occurrence, Classification of Rocks, varieties, Characteristics and their testing, uses",
+        "Quarrying and dressing of stones, Deterioration of Stones, Retardation of Decay of Stones, Preservation of Stones, Artificial Stones",
+        "Brick: Manufacturing, characteristics, Classification and uses, Improved brick from inferior soils, Hand molding brick table, Clay-fly ash brick table",
+        "Concrete: Ingredients, Grades of Concrete, Concrete Production, Special Concrete"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Timber, Glass, Steel and Aluminium",
+      "topics": [
+        "Timber: Important timbers, their engineering properties and uses, defects in timber, seasoning and treatment, need for wood substitutes",
+        "Plywood, Particle Board, Fibre Board, Applications of wood and wood products, Plaster Boards, Adhesives, types of Gypsum Board and their uses",
+        "Glass: Nature of Glass, Structure of Glass, Macro Molecular Structure, Main Oxides in Glass, Thermal and Optical Properties, Effect of Coating",
+        "Steel: Physical Properties of Structural Steel, Grades of Steel",
+        "Aluminium: Properties, Forms, Uses, Advantages"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Flooring, Roofing, Plumbing and Sanitary Material",
+      "topics": [
+        "Flooring and Roofing tiles",
+        "Types of Flooring – Marble, Kota stone, wood etc.",
+        "Type of Roofing",
+        "P.V.C. materials, CI, GI, Asbestos pipe, Stone ware pipes"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Paints, Enamels and Varnishes",
+      "topics": [
+        "Composition of oil paint, characteristic of an ideal paint, preparation of paint, covering power of paints",
+        "Painting: Plastered surfaces, painting wood surfaces, painting metal Surfaces",
+        "Defects, Effect of weather, enamels, distemper, water wash and colour wash",
+        "Varnish, French Polish, Wax Polish"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Miscellaneous Construction Materials",
+      "topics": [
+        "Bitumen, Tar and Asphalt their characteristics and uses",
+        "Ultra Poly Vinyl chloride Pipes",
+        "Thermal and sound insulating materials, and water proofing materials"
+      ]
+    }
+  ]
+}

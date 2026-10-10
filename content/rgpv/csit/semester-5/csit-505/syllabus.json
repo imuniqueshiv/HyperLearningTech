@@ -1,0 +1,99 @@
+{
+  "subject": {
+    "id": "csit-505",
+    "code": "CSIT-505",
+    "name": "Linux (LAB)",
+    "title": "CSIT-505 - Linux (LAB)",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview of Unix/Linux",
+      "topics": [
+        "Concepts of Unix/Linux",
+        "Unix/Linux installation process",
+        "Hardware requirements for Unix/Linux",
+        "Advantages of Unix/Linux",
+        "Reasons for popularity and success of Linux/Unix",
+        "Features of Linux/Unix operating system",
+        "Kernel and kernel functions"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Shell and Shell Programming",
+      "topics": [
+        "The shell and basic commands",
+        "Shell variables",
+        "Branching control structures",
+        "Loop-control structures",
+        "Continue and break statements",
+        "Sleep command",
+        "Debugging scripts",
+        "Use of Linux as web server, file server, directory server, and application server",
+        "DNS server, SMTP server, firewall, and proxy server"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "File System",
+      "topics": [
+        "Definition of file system",
+        "Defining geometry",
+        "Disk controller",
+        "Solaris file system",
+        "Disk-based file systems",
+        "Network-based file systems",
+        "Virtual file systems",
+        "UFS file system",
+        "The boot block",
+        "The super block",
+        "The inode",
+        "Tuning the file system",
+        "Repairing the file system"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Process Control",
+      "topics": [
+        "Viewing a process",
+        "Commands to display processes",
+        "Process attributes, states, and fields",
+        "PS command options",
+        "PGREP and PRSTAT",
+        "CDE Process Manager",
+        "Scheduling processes",
+        "Scheduling priorities",
+        "Changing the priority of a time-sharing process",
+        "Killing a process"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "System Security, DHCP and Case Study",
+      "topics": [
+        "Physical security",
+        "Controlling system access and restricted shells",
+        "Controlling file access and file access commands",
+        "Access Control Lists (ACLs): setting, modifying, and deleting ACL entries",
+        "Restricting FTP",
+        "Securing superuser access and restricting root access",
+        "Monitoring superuser access",
+        "TCP Wrappers",
+        "DHCP: leased time, scopes, IP address allocation types, and deployment planning",
+        "DHCP configuration files and automatic startup of the DHCP server",
+        "Configuration of DHCP clients and manual DHCP configuration",
+        "Case study: installation and customization of Linux",
+        "Installation of SAMBA, Apache, Tomcat, Sendmail, and Postfix",
+        "Implementation of DNS, LDAP services, firewall, and proxy server"
+      ]
+    }
+  ]
+}

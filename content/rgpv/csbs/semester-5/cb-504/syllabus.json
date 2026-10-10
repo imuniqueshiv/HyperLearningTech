@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "cb-504",
+    "code": "CB-504",
+    "name": "Business Strategy",
+    "title": "CB-504 - Business Strategy",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Strategic Management",
+      "topics": [
+        "Introduction to Strategic Management",
+        "Importance of Strategic Management",
+        "Vision and Objectives",
+        "Schools of thought in Strategic Management",
+        "Strategy Content, Process, and Practice",
+        "Fit Concept and Configuration Perspective in Strategic Management"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Internal Environment of Firm",
+      "topics": [
+        "Recognizing a Firm's Intellectual Assets",
+        "Core Competence as the Root of Competitive Advantage",
+        "Sources of Sustained Competitive Advantage",
+        "Business Processes and Capabilities-based Approach to Strategy"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "External Environments of Firm",
+      "topics": [
+        "Competitive Strategy",
+        "Five Forces of Industry Attractiveness that Shape Strategy",
+        "The concept of Strategic Groups",
+        "Industry Life Cycle",
+        "Generic Strategies",
+        "Generic Strategies and the Value Chain"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Corporate Strategy and Growth Strategies",
+      "topics": [
+        "Corporate Strategy and Growth Strategies",
+        "The Motive for Diversification",
+        "Related and Unrelated Diversification",
+        "Business Portfolio Analysis",
+        "Expansion, Integration and Diversification",
+        "Strategic Alliances",
+        "Joint Ventures",
+        "Mergers & Acquisitions"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Strategy Implementation",
+      "topics": [
+        "Structure and Systems",
+        "The 7S Framework",
+        "Strategic Control and Corporate Governance"
+      ]
+    }
+  ]
+}

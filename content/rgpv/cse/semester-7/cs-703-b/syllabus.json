@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "cs-703-b",
+    "code": "CS-703 (B)",
+    "name": "Data Mining and Warehousing",
+    "title": "CS-703 (B) - Data Mining and Warehousing",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Data Warehousing",
+      "topics": [
+        "Introduction, Delivery Process, Data warehouse Architecture",
+        "Data Preprocessing: Data cleaning, Data Integration and transformation, Data reduction",
+        "Data warehouse Design: Datawarehouse schema, Partitioning strategy",
+        "Data warehouse Implementation, Data Marts, Meta Data",
+        "Example of a Multidimensional Data model",
+        "Introduction to Pattern Warehousing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "OLAP Systems",
+      "topics": [
+        "Basic concepts, OLAP queries, Types of OLAP servers, OLAP operations",
+        "Data Warehouse Hardware and Operational Design: Security, Backup And Recovery"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Data and Data Mining",
+      "topics": [
+        "Data Types, Quality of data, Data Preprocessing",
+        "Similarity measures, Summary statistics, Data distributions",
+        "Basic data mining tasks",
+        "Data Mining V/s knowledge discovery in databases",
+        "Issues in Data mining",
+        "Introduction to Fuzzy sets and fuzzy logic"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Supervised Learning",
+      "topics": [
+        "Classification: Statistical-based algorithms",
+        "Distance-based algorithms",
+        "Decision tree-based algorithms",
+        "Neural network-based algorithms",
+        "Rule-based algorithms",
+        "Probabilistic Classifiers"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Clustering and Association Rule Mining",
+      "topics": [
+        "Hierarchical algorithms, Partitional algorithms",
+        "Clustering large databases - BIRCH, DBSCAN, CURE algorithms",
+        "Association rules: Parallel and distributed algorithms such as Apriori and FP growth algorithms"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-803-a",
+    "code": "CE803 (A)",
+    "name": "Artificial Intelligence",
+    "title": "CE803 (A) - Artificial Intelligence",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Artificial Intelligence",
+      "topics": [
+        "Main components and characteristics of AI (Feature Engineering, ANN, Deep Learning), Applications of AI",
+        "Advantages and disadvantages of AI, Goals of AI",
+        "Comparison of Programming of a System with AI and without AI, Challenges in AI",
+        "Programming languages preferably used in AI, Techniques/Algorithms used in AI, AI Software platforms, Future of AI"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Various types of production systems and search techniques",
+      "topics": [
+        "Types of production systems, Characteristics of production systems",
+        "Study and comparison of breadth first search and depth first search techniques",
+        "Other Search Techniques like hill Climbing, Best first Search, A* algorithm, AO* algorithms etc.",
+        "Various types of control strategies"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Knowledge Representation and Probabilistic Reasoning",
+      "topics": [
+        "Problems in representing knowledge, knowledge representation using propositional and predicate logic",
+        "Comparison of propositional and predicate logic, Resolution, refutation, deduction, theorem proving, inferencing",
+        "Monotonic and nonmonotonic reasoning",
+        "Probabilistic reasoning, Baye's theorem, semantic networks, scripts, schemas, frames, conceptual dependency, fuzzy logic",
+        "Forward and backward reasoning"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Game playing techniques",
+      "topics": [
+        "Minimax procedure, alpha-beta cut-offs etc, planning",
+        "Study of the block world problem in robotics",
+        "Introduction to understanding and natural languages processing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to learning, ANN",
+      "topics": [
+        "Various techniques used in learning, introduction to Artificial neural networks, common sense, reasoning",
+        "Convolution Neural Network, Feedforward Neural Network, Recurrent Neural Network, Multilayer perceptron",
+        "Architecture / Three Layers in Artificial Neural Networks, Implementation of ANN",
+        "Applications of ANN in images, signals and languages; some example of expert systems"
+      ]
+    }
+  ]
+}

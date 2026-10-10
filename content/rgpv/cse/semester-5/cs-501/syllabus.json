@@ -1,0 +1,83 @@
+{
+  "subject": {
+    "id": "cs-501",
+    "code": "CS-501",
+    "name": "Theory of Computation",
+    "title": "CS-501 - Theory of Computation",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction of Automata Theory",
+      "topics": [
+        "Examples of automata machines",
+        "Finite automata as a language acceptor and translator",
+        "Moore machines and Mealy machines",
+        "Composite machine",
+        "Conversion from Mealy to Moore and vice versa"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Types of Finite Automata",
+      "topics": [
+        "Non-deterministic finite automata (NDFA)",
+        "Deterministic finite automata machines",
+        "Conversion of NDFA to DFA",
+        "Minimization of automata machines",
+        "Regular expression",
+        "Arden's theorem",
+        "Meaning of union, intersection, concatenation, and closure",
+        "2-way DFA"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Grammars",
+      "topics": [
+        "Types of grammar",
+        "Context-sensitive grammar",
+        "Context-free grammar",
+        "Regular grammar",
+        "Derivation trees",
+        "Ambiguity in grammar",
+        "Simplification of context-free grammar",
+        "Conversion of grammar to automata machine and vice versa",
+        "Chomsky hierarchy of grammar",
+        "Killing null and unit productions",
+        "Chomsky normal form and Greibach normal form"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Pushdown Automata",
+      "topics": [
+        "Example of PDA",
+        "Deterministic and non-deterministic PDA",
+        "Conversion of PDA into context-free grammar and vice versa",
+        "CFG equivalent to PDA",
+        "Petri net model"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Turing Machine",
+      "topics": [
+        "Techniques for construction of Turing machines",
+        "Universal Turing machine",
+        "Multitape, multihead, and multidimensional Turing machine",
+        "NP-complete problems",
+        "Decidability and recursively enumerable languages",
+        "Decidability, decidable languages, and undecidable languages",
+        "Halting problem of Turing machine",
+        "The Post correspondence problem"
+      ]
+    }
+  ]
+}

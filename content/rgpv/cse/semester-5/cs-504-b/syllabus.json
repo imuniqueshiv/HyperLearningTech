@@ -1,0 +1,102 @@
+{
+  "subject": {
+    "id": "cs-504-b",
+    "code": "CS-504 (B)",
+    "name": "Object Oriented Programming",
+    "title": "CS-504 (B) - Object Oriented Programming",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basics of Programming",
+      "topics": [
+        "Character set",
+        "Constants, variables, keywords, identifiers, and literals",
+        "Type declaration instruction",
+        "Arithmetic types: integer, long, short, signed, and unsigned",
+        "Storage classes",
+        "Integer and float conversions",
+        "Type conversion in assignment",
+        "Hierarchy of operations"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Decision and Loop Control Structures",
+      "topics": [
+        "Control instructions",
+        "if and if-else",
+        "Use of logical operators and hierarchy of logical operators",
+        "Arithmetic, relational, and assignment operators",
+        "Increment and decrement operators",
+        "Conditional operators",
+        "Bitwise operators",
+        "Special operators: &, *, ., ->, and sizeof",
+        "while, for, and do-while loops",
+        "Odd loop and nested loop",
+        "break and continue",
+        "Case control structure",
+        "goto and exit statements"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Arrays and Strings",
+      "topics": [
+        "What are arrays",
+        "Array initialization and bound checking",
+        "1D arrays",
+        "2D arrays",
+        "Initialization of 1D and 2D arrays",
+        "Memory map of 1D and 2D arrays",
+        "Multidimensional arrays",
+        "What are strings",
+        "Standard library string functions: strlen(), strcpy(), strcat(), and strcmp()",
+        "2D array of characters"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Structures, Preprocessor and Unions",
+      "topics": [
+        "Why use structures",
+        "Declaration of structure and accessing structure elements",
+        "How structure elements are stored",
+        "Array of structures and uses of structures",
+        "Features of the preprocessor",
+        "Macro expansion and macros with arguments",
+        "File inclusion",
+        "Conditional directives: #if and #elif",
+        "Miscellaneous directives: #include, #define, #undef, and #pragma",
+        "Union definition and declaration",
+        "Accessing a union member",
+        "Union of structures",
+        "Initialization of union members and uses of unions",
+        "Use of user-defined data types"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to Object Oriented Programming",
+      "topics": [
+        "Basic concepts of OOP: object and class",
+        "Data abstraction and data encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Static and dynamic binding",
+        "Message passing",
+        "Benefits of OOP",
+        "Disadvantages of OOP",
+        "Applications of OOP",
+        "A simple program and anatomy of a program",
+        "Creating a source file, compiling, and linking"
+      ]
+    }
+  ]
+}

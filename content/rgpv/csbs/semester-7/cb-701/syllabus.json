@@ -1,0 +1,59 @@
+{
+  "subject": {
+    "id": "cb-701",
+    "code": "CB-701",
+    "name": "Usability Design of Software Applications",
+    "title": "CB-701 - Usability Design of Software Applications",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Centered Design: Product Appreciation Assignment",
+        "Evaluating the product from user aspects such as functionality, ease of use, ergonomics, and aesthetics."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Heuristic Evaluation: 10 Heuristic Principles",
+        "Examples Heuristic Evaluation: Group Assignment initiation (Website and App)",
+        "Evolution for Key tasks of the app or website for heuristic principles, severity, recommendations."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Project design lifecycle: Redesign project through the design lifecycle - Discovery - Define- Design -Implement (Design Prototype) - Usability Testing."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Research Techniques: Contextual Enquiry",
+        "User Interviews",
+        "Competitive Analysis for UX.",
+        "Scenarios and Persona Technique."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Personas and Scenarios: Overview of Design Thinking Technique - Discovery and brainstorming.",
+        "Development and Prototyping: Concept Development-Task flow detailing for the Project - Prototyping Techniques - Paper",
+        "Electronic, and Prototyping Tools,"
+      ]
+    }
+  ]
+}

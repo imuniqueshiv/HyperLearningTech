@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "cb-302",
+    "code": "CB-302",
+    "name": "Computer Organization & Architecture",
+    "title": "CB-302 - Computer Organization & Architecture",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Boolean Logic and Functional Blocks of a Computer",
+      "topics": [
+        "Revision of basics in Boolean logic and Combinational/Sequential Circuits",
+        "Functional blocks of a computer: CPU, memory, input-output subsystems, control unit",
+        "Instruction set architecture of a CPU: Registers, instruction execution cycle",
+        "RTL interpretation of instructions, addressing modes, instruction set",
+        "Outlining instruction sets of some common CPUs"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Representation and Computer Arithmetic",
+      "topics": [
+        "Signed number representation",
+        "Fixed and floating point representations",
+        "Character representation",
+        "Integer addition and subtraction, ripple carry adder, carry look-ahead adder, etc.",
+        "Multiplication – shift-and-add, Booth multiplier, carry save multiplier, etc.",
+        "Division restoring and non-restoring techniques",
+        "Floating point arithmetic, IEEE 754 format",
+        "Introduction to x86 architecture"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "CPU Control Unit and Memory System Design",
+      "topics": [
+        "Hardwired and micro-programmed design approaches",
+        "Design of a simple hypothetical CPU",
+        "Semiconductor memory technologies",
+        "Memory organization"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Peripheral Devices and I/O",
+      "topics": [
+        "Input-output subsystems, I/O device interface",
+        "I/O transfers – program controlled, interrupt driven and DMA",
+        "Privileged and non-privileged instructions",
+        "Software interrupts and exceptions",
+        "Programs and processes – role of interrupts in process state transitions",
+        "I/O device interfaces – SCSI, USB"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Pipelining, Parallel Processors and Memory Organization",
+      "topics": [
+        "Basic concepts of pipelining, throughput and speedup, pipeline hazards",
+        "Introduction to parallel processors",
+        "Concurrent access to memory and cache coherency",
+        "Memory interleaving",
+        "Concept of hierarchical memory organization",
+        "Cache memory, cache size vs. block size",
+        "Mapping functions, replacement algorithms, write policies"
+      ]
+    }
+  ]
+}

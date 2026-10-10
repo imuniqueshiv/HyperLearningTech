@@ -1,0 +1,111 @@
+{
+  "subject": {
+    "id": "ad-702-c",
+    "code": "AD-702 (C)",
+    "name": "Computational Intelligence",
+    "title": "AD-702 (C) - Computational Intelligence",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Computational Intelligence: Types of Computational Intelligence,",
+      "topics": [
+        "components of Computational Intelligence.",
+        "Concept of Learning",
+        "Training model.",
+        "Parametric Models",
+        "Nonparametric Models.",
+        "Multilayer Networks: Feed Forward network",
+        "Feedback network."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Concept of Fuzzy relations and their composition",
+        "Concept of Fuzzy Measures",
+        "Fuzzy Logic: Fuzzy Rules",
+        "Inferencing",
+        "Fuzzy Control - Selection of Membership Functions",
+        "Fuzzyfication",
+        "Rule Based Design & Inferencing",
+        "Defuzzyfication."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Genetic Algorithms: Basic Genetics, Concepts, Working Principle, Creation of",
+      "topics": [
+        "Offspring",
+        "Encoding",
+        "Fitness Function",
+        "Selection Functions",
+        "Genetic Operators-Reproduction",
+        "Crossover",
+        "Mutation",
+        "Genetic Modelling",
+        "Benefits."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Rough Set Theory: Introduction, Fundamental Concepts, Set approximation, Rough",
+      "topics": [
+        "membership",
+        "Attributes",
+        "Optimization.",
+        "Hidden Markov Models",
+        "Decision tree model."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to Swarm Intelligence: Swarm Intelligence Techniques: Ant Colony",
+      "topics": [
+        "Optimization",
+        "Particle Swarm Optimization",
+        "Bee Colony Optimization etc.",
+        "Applications of Computational Intelligence.",
+        "Recommended Books: 1.",
+        "Russell C.",
+        "Eberhart and Yuhui Shi",
+        "Computational Intelligence: Concepts to Implementations",
+        "Morgan Kaufmann Publishers. 2.",
+        "Andries P.",
+        "Engelbrecht",
+        "Computational Intelligence: An Introduction",
+        "Wiley Publishing. 3.",
+        "Simon Haykin",
+        "Neural Networks: A Comprehensive Foundation",
+        "Prentice Hall. 4.",
+        "David E.",
+        "Goldberg",
+        "Genetic Algorithm in Search Optimization and Machine Learning",
+        "Pearson Education. 6.",
+        "Jagdish Chand Bansal",
+        "Pramod Kumar Singh",
+        "Nikhil R.",
+        "Pal",
+        "Evolutionary and Swarm IntelligenceAlgorithms",
+        "Springer Publishing, 2019. 7.",
+        "Rajeskaran",
+        "G.A.",
+        "VijaylakshmiPai, \"Neural Networks",
+        "Fuzzy Logic",
+        "GeneticAlgorithmsSynthesis and Applications\". 8.",
+        "J.S.",
+        "Roger Jang",
+        "C.T.",
+        "Sun",
+        "Mizutani, \"Neuro-Fuzzy and Soft Computing: A ComputationalApproach to Learning & Machine Intelligence\", PHI, 2002."
+      ]
+    }
+  ]
+}

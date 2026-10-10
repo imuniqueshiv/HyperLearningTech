@@ -1,0 +1,102 @@
+{
+  "subject": {
+    "id": "csit-803-c",
+    "code": "CSIT-803 (C)",
+    "name": "Cyber Laws and Forensics",
+    "title": "CSIT-803 (C) - Cyber Laws and Forensics",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Cybercrime and Cyber Law",
+      "topics": [
+        "Introduction to cybercrime and definition",
+        "Cyber crime and information security",
+        "Classification of cybercrimes",
+        "Cybercrime: the legal perspectives and an Indian perspective",
+        "Cybercrime and the Indian ITA 2000",
+        "A global perspective on cybercrime",
+        "Cyber offences: how criminals plan them",
+        "Tools and methods used in cyber crime",
+        "Need of cyber law",
+        "The Indian IT act",
+        "Challenges to Indian law and cybercrime scenario in India",
+        "Digital signature and Indian IT act"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Law and Framework for Information Security",
+      "topics": [
+        "Law and framework for information security",
+        "Law for intellectual property rights (IPR)",
+        "Patent law and copyright law",
+        "Indian copyright act",
+        "Privacy issue and law in Hong Kong, Japan and Australia",
+        "Data protection act in Europe",
+        "Health Insurance Portability and Accountability Act of 1996 (HIPAA)",
+        "Gramm-Leach-Bliley Act of 1999 (GLBA)",
+        "Sarbanes-Oxley (SOX)",
+        "Legal issue in data mining"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Digital Forensics Science",
+      "topics": [
+        "Digital forensics science",
+        "The need for computer forensics",
+        "Understanding computer forensics",
+        "Computer forensics versus other related disciplines",
+        "A brief history of computer forensics",
+        "Cyber forensics and digital evidence",
+        "Digital forensics lifecycle",
+        "Chain of custody concept",
+        "Network forensics",
+        "Approaching a computer forensics investigation",
+        "Setting up a computer forensics laboratory",
+        "Forensics and social networking sites",
+        "Computer forensics from compliance perspective",
+        "Challenges in computer forensics",
+        "Forensics auditing",
+        "Anti forensics"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Current Computer Forensics Tools",
+      "topics": [
+        "Evaluating computer forensics tool needs",
+        "Types of computer forensics tools",
+        "Tasks performed by computer forensics tools",
+        "Tool comparisons",
+        "Other considerations for tools",
+        "Computer forensics software tools",
+        "Command-line forensics tools",
+        "UNIX/Linux forensics tools",
+        "Other GUI forensics tools",
+        "Computer forensics hardware tools",
+        "Forensic workstations"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Handheld Devices and Network Forensics",
+      "topics": [
+        "Forensics of hand held devices",
+        "Investigating network intrusions and cyber crime",
+        "Network forensics and investigating logs",
+        "Investigating network traffic",
+        "Investigating web attacks",
+        "Router forensics",
+        "Cyber forensics tools and case studies"
+      ]
+    }
+  ]
+}

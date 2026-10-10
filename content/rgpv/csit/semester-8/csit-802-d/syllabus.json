@@ -1,0 +1,82 @@
+{
+  "subject": {
+    "id": "csit-802-d",
+    "code": "CSIT-802 (D)",
+    "name": "Block Chain Technology",
+    "title": "CSIT-802 (D) - Block Chain Technology",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Crypto Foundation",
+      "topics": [
+        "Elliptic curve cryptography",
+        "ECDSA",
+        "Cryptographic hash function",
+        "SHA-256",
+        "Merkle trees",
+        "Cryptocurrencies"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Bitcoin",
+      "topics": [
+        "Bitcoin and Bitcoin addresses",
+        "Bitcoin blockchain and block header",
+        "Mining proof of work (PoW) algorithm",
+        "Difficulty adjustment algorithm",
+        "Mining pools",
+        "Transactions",
+        "Double spending attack",
+        "The 51% attacker",
+        "Block format and transaction format",
+        "Smart contracts: escrow, micropayments and decentralized lotteries",
+        "Payment channels"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Ethereum",
+      "topics": [
+        "Overview of differences between Ethereum and Bitcoin",
+        "Block format",
+        "Mining algorithm",
+        "Proof-of-stake (PoS) algorithm",
+        "Account management",
+        "Contracts and transactions",
+        "Solidity language",
+        "Decentralized application using Ethereum"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Smart Contracts and Consensus Mechanisms",
+      "topics": [
+        "Smart contracts",
+        "Different blockchains",
+        "Consensus mechanisms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Blockchain Security and Hyperledger",
+      "topics": [
+        "Blockchain and security",
+        "R3 CORDA and Hyperledger system architecture",
+        "Ledger format",
+        "Chain code",
+        "Transaction flow and ordering",
+        "Private channels",
+        "Membership service providers",
+        "Case studies"
+      ]
+    }
+  ]
+}

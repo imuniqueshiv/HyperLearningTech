@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "cs-802-d",
+    "code": "CS-802 (D)",
+    "name": "Object Oriented Software Engineering",
+    "title": "CS-802 (D) - Object Oriented Software Engineering",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Review of Object Oriented Concepts and Principles",
+      "topics": [
+        "The Object Oriented Paradigm, Basic Concepts",
+        "Software Development Life Cycle and Model Architectures"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Introduction to RUP",
+      "topics": [
+        "Basic Concepts",
+        "Symptoms in Software Development and their Root Causes",
+        "Best Practices of RUP",
+        "RUP software life cycle",
+        "4+1 view model",
+        "Various Workflows"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "UML and Object Oriented Analysis",
+      "topics": [
+        "Introduction to UML, Notations, Relationships, Stereotypes",
+        "Study of UML based tools Like Rational Rose, Poseidon, etc.",
+        "Object Oriented Analysis: Conventional v/s OO analysis approach",
+        "Requirement analysis, Use case diagram, Activity diagram, Analysis class Model"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Object Oriented Design and Behavioral Modeling",
+      "topics": [
+        "Object Oriented Design: Conventional v/s OO design approach",
+        "Design of CRC cards, Class diagram",
+        "Behavioral Modeling: Interaction Diagram, State chart Diagram",
+        "Implementation Diagram: Component and deployment Diagram",
+        "Illustrative Case Studies like ATM, Payroll, Course and Registration System"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Object Oriented Testing and Design Patterns",
+      "topics": [
+        "Correctness and consistency of OOA & OOD models",
+        "Testing Strategies and test cases for OO software process",
+        "Project Management, Rational Tool Mentors",
+        "Introduction to Design Patterns"
+      ]
+    }
+  ]
+}

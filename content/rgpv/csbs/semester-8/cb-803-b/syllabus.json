@@ -1,0 +1,56 @@
+{
+  "subject": {
+    "id": "cb-803-b",
+    "code": "CB-803 (B)",
+    "name": "Advance Finance",
+    "title": "CB-803 (B) - Advance Finance",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Sources of Funds (including regulatory framework): Types of securities - Issuing the capital in market - Pricing of issue - Valuation of Stocks and bonds.",
+        "Evaluation of Lease Contracts: Leasing - Importance",
+        "Types",
+        "Tax Considerations, and Accounting Considerations - Evaluation of Lease from the point of view of Lessor and Lessee - Lease versus Buy Decision."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Model",
+        "Stability of Dividends",
+        "Forms of Dividends",
+        "Issue of bonus shares",
+        "Stock Split"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Restructuring",
+      "topics": [
+        "Corporate Restructuring: Mergers and Acquisitions- Types of Mergers",
+        "Evaluation of Merger Proposal",
+        "Take-overs",
+        "Amalgamation",
+        "Leverage buy-out, management buy-out",
+        "Corporate Failure and Liquidation.",
+        "Financial Restructuring: Share Split -Consolidation -Cancellation of Paid-up Capital -Other Mechanisms"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Monitoring and Control of Working Capital -Working Capital Financing -Managing the Components of Working Capital-Cash Management -Receivable Management -Inventory Management."
+      ]
+    }
+  ]
+}

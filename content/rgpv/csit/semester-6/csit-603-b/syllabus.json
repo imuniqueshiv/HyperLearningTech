@@ -1,0 +1,88 @@
+{
+  "subject": {
+    "id": "csit-603-b",
+    "code": "CSIT-603 (B)",
+    "name": "Computer Graphics & Multimedia",
+    "title": "CSIT-603 (B) - Computer Graphics & Multimedia",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Display Devices and Input Techniques",
+      "topics": [
+        "Introduction to raster scan displays and storage tube displays",
+        "Pixel, refreshing, flickering and interlacing",
+        "Colour monitors",
+        "Working of different types of printers",
+        "Working principles of keyboard, mouse, scanner, digitizing camera, track ball, tablets and joysticks",
+        "Graphical input techniques",
+        "Positioning techniques",
+        "Rubber band techniques",
+        "Dragging"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Scan Conversion and Curves",
+      "topics": [
+        "Scan conversion techniques and image representation",
+        "Line drawing: simple DDA and Bresenham's algorithm",
+        "Circle drawing: general method, symmetric DDA and Bresenham's algorithm",
+        "Curves and parametric function",
+        "Bezier method",
+        "B-spline method"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "2D/3D Transformations and Clipping",
+      "topics": [
+        "2D and 3D coordinate system",
+        "Translation, rotation, scaling and reflection",
+        "Inverse transformation and composite transformation",
+        "World coordinate system and screen coordinate system",
+        "Parallel and perspective projection",
+        "Representation of 3D object on 2D screen",
+        "Point clipping",
+        "Line clipping algorithms",
+        "Polygon clipping algorithms",
+        "Introduction to hidden surface elimination",
+        "Basic illumination model, diffuse reflection and specular reflection",
+        "Color models: RGB, YIQ, CMY and HSV"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Multimedia Systems",
+      "topics": [
+        "Introduction to multimedia components and applications",
+        "Multimedia system architecture",
+        "Evolving technologies for multimedia",
+        "Defining objects for multimedia systems",
+        "Multimedia data interface standards",
+        "Multimedia databases",
+        "Multimedia hardware: SCSI, IDE and MCI",
+        "Multimedia tools, presentation tools and authoring tools"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Compression and File Formats",
+      "topics": [
+        "Compression and decompression",
+        "Multimedia data and file format standards: TIFF, MIDI, JPEG, DIB, MPEG and RTF",
+        "Multimedia I/O technologies",
+        "Digital voice and audio",
+        "Video image and animation",
+        "Full motion video",
+        "Storage and retrieval technologies"
+      ]
+    }
+  ]
+}

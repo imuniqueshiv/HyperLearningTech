@@ -1,0 +1,84 @@
+{
+  "subject": {
+    "id": "ad-303",
+    "code": "AD-303",
+    "name": "Data Structures",
+    "title": "AD-303 - Data Structures",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Data Structure",
+      "topics": [
+        "Concepts of Data and Information",
+        "Classification of Data structures",
+        "Abstract Data Types",
+        "Implementation aspects: Memory representation",
+        "Data structures operations and its cost estimation",
+        "Introduction to linear data structures - Arrays",
+        "Linked List: Representation of linked list in memory, different implementation of linked list",
+        "Circular linked list, doubly linked list, etc.",
+        "Application of linked list: polynomial manipulation using linked list, etc."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Stacks and Queue",
+      "topics": [
+        "Stacks as ADT, Different implementation of stack, multiple stacks",
+        "Application of Stack: Conversion of infix to postfix notation using stack",
+        "Evaluation of postfix expression, Recursion",
+        "Queues as ADT, Different implementation of queue",
+        "Circular queue",
+        "Concept of Dqueue and Priority Queue",
+        "Queue simulation, Application of queues"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Tree",
+      "topics": [
+        "Definitions - Height, depth, order, degree etc.",
+        "Binary Search Tree - Operations, Traversal, Search",
+        "AVL Tree, Heap",
+        "Applications and comparison of various types of tree",
+        "Introduction to forest, multi-way Tree",
+        "B tree, B+ tree, B* tree and red-black tree"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Graphs",
+      "topics": [
+        "Introduction",
+        "Classification of graph: Directed and Undirected graphs, etc.",
+        "Representation",
+        "Graph Traversal: Depth First Search (DFS), Breadth First Search (BFS)",
+        "Minimum Spanning Tree (MST) - Kruskal, Prim's algorithms",
+        "Dijkstra's shortest path algorithm",
+        "Comparison between different graph algorithms",
+        "Application of graphs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Sorting and Searching",
+      "topics": [
+        "Bubble Sort, Quick sort",
+        "Selection sort, Heap sort, Insertion sort",
+        "Shell sort, Merge sort and Radix sort",
+        "Comparison of various sorting techniques",
+        "Sequential search, Binary search",
+        "Comparison of search methods",
+        "Hashing & Indexing",
+        "Case Study: Application of various data structures in operating system, DBMS etc."
+      ]
+    }
+  ]
+}

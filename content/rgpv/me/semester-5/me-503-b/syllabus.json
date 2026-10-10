@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "me-503-b",
+    "code": "ME-503 (B)",
+    "name": "Dynamics of Machine",
+    "title": "ME-503 (B) - Dynamics of Machine",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Dynamics of Engine Mechanisms: Displacement, velocity and acceleration of piston",
+      "topics": [
+        "turning moment on crankshaft, turning moment diagram",
+        "fluctuation of crankshaft speed, analysis of flywheel."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "gravity and spring controlled centrifugal governors",
+        "hunting of centrifugal governors",
+        "inertia governors."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "two plane balancing, determination of balancing masses (graphical and analytical methods), balancing of rotors, balancing of internal combustion engines (single cylinder engines, in-line engines",
+        "V-twin engines, radial engines",
+        "Lanchester technique of engine balancing."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "rate criteria.",
+        "Boundary and fluid film lubrication, friction in journal and thrust bearings, concept of friction circle and axis, rolling friction.",
+        "Clutches: Single plate and multi plate clutches",
+        "Cone clutches."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Dynamometer: Different types and their applications.",
+        "Dynamic Analysis of Cams: Response of un-damped cam mechanism (analytical method), follower response analysis by phase-plane method, jump and cross-over shock."
+      ]
+    }
+  ]
+}

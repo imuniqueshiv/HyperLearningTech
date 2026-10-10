@@ -1,0 +1,28 @@
+{
+  "subject": {
+    "id": "me-605",
+    "code": "ME-605",
+    "name": "CAD Lab",
+    "title": "ME-605 - CAD Lab",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "Layout and sketching of different geometries",
+        "Drawing environment in AUTOCAD",
+        "Elements of drawing and draw commands",
+        "3D functions in AUTOCAD",
+        "2D: Figures for practice using AutoCAD",
+        "ISOMETRIC drawing for practice using AutoCAD",
+        "3-D solid figures using AUTOCAD",
+        "Introduction to CREO 3.0",
+        "Learning different Operations like Threading, Sweep, Swept-blend",
+        "Modeling and Assembling"
+      ]
+    }
+  ]
+}

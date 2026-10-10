@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "cs-504-c",
+    "code": "CS-504 (C)",
+    "name": "Introduction to Database Management Systems",
+    "title": "CS-504 (C) - Introduction to Database Management Systems",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Database Management System Concepts",
+      "topics": [
+        "Introduction",
+        "Significance of database",
+        "Database system applications",
+        "Data independence",
+        "Data modeling for a database",
+        "Entities and their attributes",
+        "Relationships and relationship types",
+        "Advantages and disadvantages of a database management system",
+        "DBMS versus RDBMS"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Database Models and Implementation",
+      "topics": [
+        "Data model and types of data model",
+        "Relational data model",
+        "Hierarchical model",
+        "Network data model",
+        "Object/relational model",
+        "Object-oriented model",
+        "Entity-relationship model",
+        "Modeling using E-R diagrams",
+        "Notation used in the E-R model",
+        "Relationships and relationship types",
+        "Associative database model"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "SQL Data Definition Language",
+      "topics": [
+        "Categories of SQL commands",
+        "Data definition language",
+        "CREATE TABLE, DROP TABLE, and ALTER TABLE",
+        "Primary key and foreign key",
+        "TRUNCATE TABLE",
+        "Index",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "SQL Data Manipulation Language",
+      "topics": [
+        "Data manipulation language",
+        "INSERT statement and multiple inserts",
+        "DELETE statement and delete with conditions",
+        "UPDATE statement and update with conditions",
+        "MERGE statement"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "SQL Queries and ANSI SQL",
+      "topics": [
+        "SELECT and SQL queries",
+        "Data extraction from single and multiple tables",
+        "Equi-join, non-equi-join, self-join, and outer join",
+        "Special operators: like, any, all, exists, and in",
+        "Hierarchical queries, inline queries, and flashback queries",
+        "Introduction to ANSI SQL",
+        "Anonymous blocks and nested anonymous blocks",
+        "Branching and looping constructs in ANSI SQL"
+      ]
+    }
+  ]
+}

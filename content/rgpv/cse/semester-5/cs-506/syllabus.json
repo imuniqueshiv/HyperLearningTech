@@ -1,0 +1,54 @@
+{
+  "subject": {
+    "id": "cs-506",
+    "code": "CS-506",
+    "name": "Python",
+    "title": "CS-506 - Python",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Numeric and Basic Programs",
+      "topics": [
+        "Find GCD of two numbers",
+        "Find the square root of a number by Newton's method",
+        "Find the exponentiation of a number",
+        "Find the maximum from a list of numbers",
+        "Find the first n prime numbers"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Searching Algorithms",
+      "topics": ["Linear search", "Binary search"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Sorting Algorithms",
+      "topics": ["Selection sort", "Insertion sort", "Merge sort"]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Matrices, Files and Command Line",
+      "topics": [
+        "Multiply matrices",
+        "Command line arguments",
+        "Find the most frequent words in a text read from a file"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Pygame Applications",
+      "topics": [
+        "Simulate elliptical orbits in Pygame",
+        "Bouncing ball in Pygame"
+      ]
+    }
+  ]
+}

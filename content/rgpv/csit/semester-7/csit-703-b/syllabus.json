@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "csit-703-b",
+    "code": "CSIT-703 (B)",
+    "name": "Mobile Application Development",
+    "title": "CSIT-703 (B) - Mobile Application Development",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Android",
+      "topics": [
+        "The Android platform",
+        "Android SDK",
+        "Eclipse installation",
+        "Android installation",
+        "Building your first Android application",
+        "Understanding anatomy of Android application",
+        "Android manifest file"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Android Application Design Essentials",
+      "topics": [
+        "Anatomy of an Android application",
+        "Android terminologies",
+        "Application context",
+        "Activities",
+        "Services",
+        "Intents",
+        "Receiving and broadcasting intents",
+        "Android manifest file and its common settings",
+        "Using intent filter",
+        "Permissions"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Android User Interface Design Essentials",
+      "topics": [
+        "User interface screen elements",
+        "Designing user interfaces with layouts",
+        "Drawing and working with animation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Testing, Publishing and Resources",
+      "topics": [
+        "Testing Android applications",
+        "Publishing Android application",
+        "Using Android preferences",
+        "Managing application resources in a hierarchy",
+        "Working with different types of resources"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Common Android APIs and Deployment",
+      "topics": [
+        "Using Android data and storage APIs",
+        "Managing data using SQLite",
+        "Sharing data between applications with content providers",
+        "Using Android networking APIs",
+        "Using Android web APIs",
+        "Using Android telephony APIs",
+        "Deploying Android application to the world"
+      ]
+    }
+  ]
+}

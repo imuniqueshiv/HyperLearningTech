@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "ad-603-a",
+    "code": "AD-603 (A)",
+    "name": "Data Mining and Warehousing",
+    "title": "AD-603 (A) - Data Mining and Warehousing",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Data Warehousing: Introduction, Delivery Process, Data warehouse Architecture,",
+      "topics": [
+        "DataPre-processing: Data cleaning",
+        "Data Integration and transformation",
+        "Data reduction.",
+        "Data warehouseDesign: Data warehouse schema",
+        "Partitioning strategy Data warehouse Implementation",
+        "Data Marts,Meta Data",
+        "Example of a Multidimensional Data model.",
+        "Introduction to Pattern Warehousing."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "OLAP Systems: Basic concepts, OLAP queries, Types of OLAP servers, OLAP",
+      "topics": [
+        "operations etc.Data Warehouse Hardware and Operational Design: Security",
+        "Backup And Recovery."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Data& Data Mining :Data Types, Quality of data, Data Pre-",
+      "topics": [
+        "processing",
+        "Similaritymeasures",
+        "Summary statistics",
+        "Data distributions",
+        "Basic data mining tasks",
+        "Data Mining V/sknowledge discovery in databases.",
+        "Issues in Data mining.",
+        "Introduction to Fuzzy sets and fuzzylogic."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "algorithms,Decision tree-based algorithms",
+        "Neural network-based algorithms",
+        "Rule-based algorithms,Probabilistic Classifiers"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Clustering & Association Rule mining: Hierarchical algorithms, Partitional",
+      "topics": [
+        "algorithms",
+        "Clusteringlarge databases - BIRCH, DBSCAN, CURE algorithms.",
+        "Associationrules: Parallel and distributedalgorithms such as Apriori and FP growth algorithms."
+      ]
+    }
+  ]
+}

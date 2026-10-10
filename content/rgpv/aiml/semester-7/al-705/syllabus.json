@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "id": "al-705",
+    "code": "AL-705",
+    "name": "Skill Development Lab",
+    "title": "AL-705 - Skill Development Lab",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Software product life cycle",
+      "topics": ["Software product life cycle"]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Software product development standards",
+      "topics": ["Software product development standards"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design patterns – 1",
+      "topics": ["Design patterns – 1"]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design Patterns – II",
+      "topics": ["Design Patterns – II"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Case Study",
+      "topics": ["Case Study"]
+    }
+  ]
+}

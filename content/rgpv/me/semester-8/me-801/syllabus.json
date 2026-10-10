@@ -1,0 +1,101 @@
+{
+  "subject": {
+    "id": "me-801",
+    "code": "ME-801",
+    "name": "Refrigeration & Air Conditioning",
+    "title": "ME-801 - Refrigeration & Air Conditioning",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Principles and methods of refrigeration",
+        "Freezing",
+        "Mixture cooling by gas reversible expansion, throttling, evaporation",
+        "Joule Thomson effect and reverse Carnot cycle",
+        "Unit of refrigeration",
+        "Coefficient of performance",
+        "Vortex tube and thermoelectric refrigeration",
+        "Adiabatic demagnetization",
+        "Air refrigeration cycles: Joule's cycle, Boot-strap cycle, reduced ambient cycle and regenerative cooling cycles"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Vapour Compression System",
+      "topics": [
+        "Vapor compression cycle",
+        "p-h and t-s diagrams",
+        "Deviations from theoretical cycle",
+        "Sub-cooling and super heating",
+        "Effects of condenser and evaporator pressure on COP",
+        "Multi-pressure system: removal of flash gas",
+        "Multiple expansion and compression with flash inter cooling",
+        "Low temperature refrigeration: production of low temperatures",
+        "Cascade system",
+        "Dry ice and production of dry ice",
+        "Air liquefaction system"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Vapour Absorption, Steam Jet and Refrigerants",
+      "topics": [
+        "Vapour absorption system: theoretical and practical systems such as aqua-ammonia, Electrolux and other systems",
+        "Steam jet refrigeration: principles and working",
+        "Simple cycle of operation",
+        "Description and working of simple system",
+        "Refrigerants: nomenclature and classification",
+        "Desirable properties",
+        "Common refrigeration",
+        "Comparative study",
+        "Leak detection methods",
+        "Environment friendly refrigerants and refrigerant mixtures",
+        "Brine and its properties"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Psychometric",
+      "topics": [
+        "Calculation of psychrometric properties of air by table and charts",
+        "Psychrometric processes: sensible heating and cooling",
+        "Evaporative cooling",
+        "Cooling and dehumidification",
+        "Heating and humidification",
+        "Mixing of air stream",
+        "Sensible heat factor",
+        "Principle of air conditioning",
+        "Requirements of comfort air conditioning",
+        "Ventilation standards",
+        "Infiltrated air load",
+        "Fresh air load",
+        "Human comfort",
+        "Effective temperature and chart",
+        "Heat production and regulation of human body"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Air Conditioning",
+      "topics": [
+        "Calculation of summer and winter air conditioning load",
+        "Bypass factor of coil",
+        "Calculation of supply air rate and its condition",
+        "Room sensible heat factor",
+        "Grand sensible heat factor",
+        "Effective sensible heat factor",
+        "Dehumidified air quantity",
+        "Problems on cooling load calculation",
+        "Air distribution and ventilation systems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "cb-802-b",
+    "code": "CB-802 (B)",
+    "name": "Computational Finance & Modeling",
+    "title": "CB-802 (B) - Computational Finance & Modeling",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Numerical Methods and Models: Numerical methods relevant to integration",
+        "differentiation and solving the partial differential equations of mathematical finance: examples of exact solutions including Black Scholes and its relatives",
+        "finite difference methods including algorithms and question of stability and convergence",
+        "treatment of near and far boundary conditions",
+        "the connection with binomial models",
+        "interest rate models",
+        "early exercise",
+        "and the corresponding free boundary problems",
+        "and a brief introduction to numerical methods for solving multi-factor models."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Black-Scholes framework: Black-Scholes PDE: simple European calls and puts",
+        "put-call parity.",
+        "The PDE for pricing commodity and currency options.",
+        "Discontinuous payoffs - Binary and Digital options.",
+        "The Greeks: theta, delta, gamma, vega&rho and their role in hedging.",
+        "The mathematics of early exercise - American options: perpetual calls and puts",
+        "optimal exercise strategy and the smooth pasting condition.",
+        "Volatility considerations - actual, historical, and implied volatility",
+        "local vol and volatility surfaces.",
+        "Simulation including random variable generation, variance reduction methods and statistical analysis of simulation output.",
+        "Pseudo random numbers",
+        "Linear congruential generator",
+        "Mersenne twister RNG.",
+        "The use of Monte Carlo simulation in solving applied problems on derivative pricing discussed in the current finance literature.",
+        "The technical topics addressed include importance sampling",
+        "Monte Carlo integration",
+        "Simulation of Random walk and approximations to diffusion processes, martingale control variables, stratification, and the estimation of the \"Greeks. \""
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Financial Products and Markets: Introduction to the financial markets and the products which are traded in them: Equities, indices, foreign exchange, and commodities.",
+        "Options contracts and strategies for speculation and hedging."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Application areas: Pricing of American options, pricing interest rate dependent claims, and credit risk.",
+        "The use of importance sampling for Monte Carlo simulation of VaR for portfolios of options."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Statistical Analysis of Financial Returns: Fat-tailed and skewed distributions, outliers, stylized facts of volatility, implied volatility surface, and volatility estimation using high frequency data.",
+        "Copulas",
+        "Hedging in incomplete markets",
+        "American Options",
+        "Exotic options",
+        "Electronic trading",
+        "Jump Diffusion Processes",
+        "High-dimensional covariance matrices",
+        "Extreme value theory",
+        "Statistical Arbitrage."
+      ]
+    }
+  ]
+}

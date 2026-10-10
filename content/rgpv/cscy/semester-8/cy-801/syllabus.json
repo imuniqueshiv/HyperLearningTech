@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "cy-801",
+    "code": "CY-801",
+    "name": "Hardware Security",
+    "title": "CY-801 - Hardware Security",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Overview of Different Issues of Hardware Security",
+        "Algebra of Finite Fields",
+        "Basics of the Mathematical Theory of Public Key Cryptography",
+        "Basics of Digital Design on Field-programmable Gate Array (FPGA)",
+        "Classification using Support Vector Machines (SVMs)."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Optimization of Cryptographic Hardware on FPGA, Physically Unclonable Functions (PUFs)",
+        "PUF Implementations",
+        "PUF Quality Evaluation",
+        "Design Techniques to Increase PUF Response Quality."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Side-channel Attacks (Case Study: Kochers Attack on DES)",
+        "Design Techniques to Prevent Side- channel Attacks",
+        "Improved Side-channel Attack Algorithms (Template Attack, etc.)",
+        "Cache Attacks"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Hardware",
+        "Fault Attacks",
+        "Verification of Finite-field Arithmetic Circuits",
+        "Modern IC Design and Manufacturing Practices and Their Implications."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "and IC Piracy",
+        "Using PUFs to prevent Hardware Piracy,Model Building Attacks on PUFs (Case Study: SVM Modelling of Arbiter PUFs",
+        "Genetic Programming based Modelling of Ring Oscillator PUF)."
+      ]
+    }
+  ]
+}

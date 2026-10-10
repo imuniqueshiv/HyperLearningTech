@@ -1,0 +1,61 @@
+{
+  "subject": {
+    "id": "cb-604",
+    "code": "CB-604",
+    "name": "Financial & Cost Accounting",
+    "title": "CB-604 - Financial & Cost Accounting",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Accounting Concept",
+      "topics": [
+        "Introduction, Techniques and Conventions",
+        "Financial Statements- Understanding & Interpreting Financial Statements",
+        "Company Accounts and Annual Reports- Audit Reports and Statutory Requirements, Directors Report, Notes to Accounts, Pitfalls"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Accounting Process",
+      "topics": [
+        "Book Keeping and Record Maintenance, Fundamental Principles and Double Entry",
+        "Journal, Ledger, Trial Balance, Balance Sheet, Final Accounts",
+        "Cash Book and Subsidiary Books, Rectification of Errors"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Financial Statements",
+      "topics": [
+        "Form and Contents of Financial Statements",
+        "Analyzing and Interpreting Financial Statements, Accounting Standards",
+        "Class Discussion: Corporate Accounting Fraud- A Case Study of Satyam"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cash Flow and Fund Flow Techniques",
+      "topics": [
+        "Introduction, How to prepare – Cash flow and Fund flow",
+        "Difference between them"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Costing Systems",
+      "topics": [
+        "Elements of Cost, Cost Behavior, Cost Allocation, Overhead Allocation",
+        "Unit Costing, Process Costing, Job Costing, Absorption Costing, Marginal Costing",
+        "Cost Volume Profit Analysis, Budgets, ABC Analysis",
+        "Class Discussion: Application of costing concepts in the Service Sector"
+      ]
+    }
+  ]
+}

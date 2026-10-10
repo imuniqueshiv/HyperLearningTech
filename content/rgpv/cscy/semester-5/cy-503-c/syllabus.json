@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "cy-503-c",
+    "code": "CY503 (C)",
+    "name": "Data Security",
+    "title": "CY503 (C) - Data Security",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Symmetric Key Cryptography",
+      "topics": [
+        "History of Cryptography",
+        "Mathematical background: Probability theory",
+        "Information theory",
+        "Complexity theory",
+        "Number theory",
+        "Symmetric (Private) Key Cryptographic Systems: Caesar",
+        "Affine",
+        "Monoalphabetic Substitution",
+        "Transposition",
+        "Homophonic substitution",
+        "Vignere",
+        "Beauford and DES Family",
+        "Product ciphers",
+        "Lucifer and DES"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Asymmetric Key Cryptographic Systems",
+      "topics": [
+        "Concept of PKCS",
+        "RSA Cryptosystem",
+        "Variants of RSA",
+        "Primality testing",
+        "Security of RSA",
+        "Merkle – Hellamn",
+        "Security of Merkle – Hellaman",
+        "ElGamal",
+        "Elliptical Curve Cryptography"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Stream Ciphers and Block Ciphers",
+      "topics": [
+        "The one time pad",
+        "Synchronous stream ciphers",
+        "Self-synchronizing stream ciphers",
+        "Feedback shift registers",
+        "Linear Complexity",
+        "Non-linear feedback shift registers",
+        "Stream ciphers based LFSRs",
+        "Non-linear Combination generators",
+        "Non linear filter generators",
+        "Clock controlled generators",
+        "The alternating step generators",
+        "The shrinking generators"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Digital Signatures",
+      "topics": [
+        "Properties",
+        "Generic signature schemes",
+        "Rabin Lamport",
+        "Matyasmeyer",
+        "RSA",
+        "Multiple RSA and ElGamal Signatures",
+        "Digital signature standard",
+        "Blind Signatures",
+        "RSA Blind"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Secret Sharing and Pseudo Random Number Generators",
+      "topics": [
+        "Threshold secret sharing",
+        "Shamir scheme",
+        "Blakley scheme and modular Scheme",
+        "Pseudo random number generators: Definition of randomness and pseudo randomness",
+        "Statistical tests of randomness",
+        "Linear congruential generator",
+        "Modern PRNGs (a brief description)"
+      ]
+    }
+  ]
+}

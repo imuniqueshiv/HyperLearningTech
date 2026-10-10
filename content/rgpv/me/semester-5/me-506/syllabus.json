@@ -1,0 +1,33 @@
+{
+  "subject": {
+    "id": "me-506",
+    "code": "ME-506",
+    "name": "Python",
+    "title": "ME-506 - Python",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "To write a Python program to find GCD of two numbers.",
+        "To write a Python Program to find the square root of a number by Newton's Method.",
+        "To write a Python program to find the exponentiation of a number.",
+        "To write a Python Program to find the maximum from a list of numbers.",
+        "To write a Python Program to perform Linear Search",
+        "To write a Python Program to perform binary search.",
+        "To write a Python Program to perform selection sort.",
+        "To write a Python Program to perform insertion sort.",
+        "To write a Python Program to perform Merge sort.",
+        "To write a Python program to find first n prime numbers.",
+        "To write a Python program to multiply matrices.",
+        "To write a Python program for command line arguments.",
+        "To write a Python program to find the most frequent words in a text read from a file.",
+        "To write a Python program to simulate elliptical orbits in Pygame.",
+        "To write a Python program to bouncing ball in Pygame."
+      ]
+    }
+  ]
+}

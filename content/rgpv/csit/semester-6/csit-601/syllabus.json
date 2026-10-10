@@ -1,0 +1,112 @@
+{
+  "subject": {
+    "id": "csit-601",
+    "code": "CSIT-601",
+    "name": "Software Engineering & Agile",
+    "title": "CSIT-601 - Software Engineering & Agile",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Software Development Process",
+      "topics": [
+        "Introduction",
+        "Software problem and prospects",
+        "Software life cycle models",
+        "Open source software development",
+        "The unified process",
+        "Documentation",
+        "Configuration management",
+        "Safety",
+        "Risk assessment"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Measures, Metrics and Estimation",
+      "topics": [
+        "Measures, metrics and indicators",
+        "Metrics in the process and project domains",
+        "Software measurement",
+        "Metrics of software quality",
+        "Software reliability",
+        "Software estimation techniques",
+        "LOC and FP estimation",
+        "Empirical models like COCOMO",
+        "Project tracking and scheduling",
+        "Reverse engineering"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Requirements, Specification and Design",
+      "topics": [
+        "Feasibility study",
+        "Informal and formal specifications",
+        "Pre/post conditions",
+        "Algebraic specification and requirement analysis models",
+        "Specification design tools",
+        "Software design objectives",
+        "Design techniques: top-down, bottom-up, team",
+        "User interface design",
+        "Modularity",
+        "Functional decomposition",
+        "Data flow design",
+        "Data structure design",
+        "Object-oriented design",
+        "Design patterns",
+        "Implementation strategies"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Coding, Testing and Maintenance",
+      "topics": [
+        "Coding standard and guidelines",
+        "Programming style",
+        "Code sharing",
+        "Code review",
+        "Software components",
+        "Rapid prototyping",
+        "Specialization and construction",
+        "Class extensions",
+        "Intelligent software agents",
+        "Reuse and performance improvement",
+        "Debugging",
+        "Verification and validation",
+        "Strategic issues and test plan",
+        "White box and black-box testing",
+        "Unit and integration testing",
+        "System testing, test case design and acceptance testing",
+        "Maintenance activities"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Agile Models and Practices",
+      "topics": [
+        "Agile vs traditional SDLC models",
+        "Phases of Agile model",
+        "Principles of Agile model",
+        "Pros and cons of Agile model",
+        "When to use the Agile model",
+        "Agile testing methods",
+        "Scrum, product backlog and Scrum practices",
+        "Process flow of Scrum methodologies",
+        "Extreme Programming (XP) and its phases",
+        "Crystal methodologies",
+        "Dynamic Software Development Method (DSDM)",
+        "Feature Driven Development (FDD)",
+        "Lean software development",
+        "KANBAN",
+        "Agile metrics"
+      ]
+    }
+  ]
+}

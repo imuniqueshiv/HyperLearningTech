@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "ce-602",
+    "code": "CE-602",
+    "name": "Environmental Engineering-I",
+    "title": "CE-602 - Environmental Engineering-I",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Water resources and demand",
+      "topics": [
+        "Estimation of ground and surface water resources",
+        "Quality of water from different sources, demand & quantity of water, fire demand",
+        "Water requirement for various uses, fluctuations in demand, forecast of population"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Water quality, intake and conveyance",
+      "topics": [
+        "Impurities of water and their significance, water-borne diseases",
+        "Physical, chemical and bacteriological analysis of water, water standards for different uses",
+        "Intake structure, conveyance of water, pipe materials, pumps - operation & pumping stations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Water Treatment methods",
+      "topics": [
+        "Theory and design of sedimentation, coagulation, filtration, disinfection, aeration & water softening",
+        "Modern trends in sedimentation & filtration",
+        "Miscellaneous methods of treatment"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Sewerage schemes",
+      "topics": [
+        "Sewerage schemes and their importance, collection & conveyance of sewage",
+        "Storm water quantity, fluctuation in sewage flow, flow through sewer, design of sewer",
+        "Construction & maintenance of sewer, sewer appurtenances, pumps & pumping stations"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Waste water characteristics and disposal",
+      "topics": [
+        "Characteristics and analysis of waste water, recycles of decomposition, physical, chemical & biological parameters",
+        "Oxygen demand i.e. BOD & COD, TOC, TOD, Th OD, Relative Stability, population equivalent",
+        "Instrumentation involved in analysis",
+        "Natural methods of waste water disposal i.e. by land treatment & by dilution",
+        "Self purification capacity of stream, Oxygen sag analysis"
+      ]
+    }
+  ]
+}

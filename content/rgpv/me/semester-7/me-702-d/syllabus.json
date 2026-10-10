@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "me-702-d",
+    "code": "ME-702 (D)",
+    "name": "Advance Machine Design",
+    "title": "ME-702 (D) - Advance Machine Design",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "beltdrive and V-belt drive",
+        "Design of chain drives, roller chain and its selection",
+        "Design of rope drives."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "and AGMA Contact stress equation, modes of failure, beam strength",
+        "Lewisequation, form factor, formative gear and virtual number of teeth",
+        "Gear materials",
+        "Surface strength and wear of teeth",
+        "strength against wear",
+        "Design of straight tooth spur and Helical Gears."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Bevel Gears: Application of bevel, formative gear and virtual number of teeth",
+      "topics": [
+        "analysis",
+        "Lewisequation for bevel gears",
+        "Strength against wear",
+        "Design of bevel gear."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design of I",
+      "topics": [
+        "design ofcylinder",
+        "design of piston and piston-rings",
+        "design of connecting rod",
+        "design of crankshaft."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Design of keys",
+        "Design of Flanged coupling",
+        "Rigid coupling and Flexible coupling ,Design of Pressure vessels subjected to internal pressure",
+        "Design of power screw."
+      ]
+    }
+  ]
+}

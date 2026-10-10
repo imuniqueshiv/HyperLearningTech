@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ad-306",
+    "code": "AD-306",
+    "name": "Computer Workshop/Introduction to Python-I",
+    "title": "AD-306 - Computer Workshop/Introduction to Python-I",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Python Language",
+      "topics": [
+        "Introduction to python language, Basic syntax",
+        "Literal Constants, Numbers",
+        "Variable and Basic data types, String, Escape Sequences",
+        "Operators and Expressions, Evaluation Order",
+        "Indentation, Input, Output, Functions, Comments"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Structure",
+      "topics": [
+        "List, Tuples, Dictionary, DataFrame and Sets",
+        "Constructing, indexing, slicing and content manipulation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Control Flow",
+      "topics": [
+        "Conditional Statements - If, If-else, Nested If-else",
+        "Iterative Statement - For, While, Nested Loops",
+        "Control statements - Break, Continue, Pass"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Object Oriented Programming and Exception Handling",
+      "topics": [
+        "Class and Object, Attributes, Methods",
+        "Scopes and Namespaces",
+        "Inheritance, Overloading, Overriding, Data hiding",
+        "Exception Handling, Except clause, Try finally clause",
+        "User Defined Exceptions"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Modules and Packages",
+      "topics": [
+        "Standard Libraries: File I/O, Sys, logging",
+        "Regular expression",
+        "Date and Time",
+        "Network programming",
+        "Multi-processing and multi-threading"
+      ]
+    }
+  ]
+}

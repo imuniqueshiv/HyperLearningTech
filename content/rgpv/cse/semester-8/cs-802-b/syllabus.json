@@ -1,0 +1,75 @@
+{
+  "subject": {
+    "id": "cs-802-b",
+    "code": "CS-802 (B)",
+    "name": "Cloud Computing",
+    "title": "CS-802 (B) - Cloud Computing",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Service Oriented Architecture and Cloud Services",
+      "topics": [
+        "Introduction to Service Oriented Architecture, Web Services, Basic Web Services Architecture",
+        "Introduction to SOAP, WSDL and UDDI",
+        "REST ful services: Definition, Characteristics, Components, Types",
+        "Software as a Service, Plat form as a Service",
+        "Organizational scenarios of clouds, Administering & Monitoring cloud services, benefits and limitations",
+        "Study of a Hypervisor"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Utility Computing and Virtualization",
+      "topics": [
+        "Utility Computing, Elastic Computing",
+        "Ajax: asynchronous 'rich' interfaces",
+        "Mashups: User interface, Services",
+        "Virtualization Technology: Virtualization applications in enterprises, Pitfalls of virtualization",
+        "Multitenant software: Multi-entity support, Multi schema approach, Multi-tenancy using cloud data stores"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Data in the Cloud and Map-Reduce",
+      "topics": [
+        "Data in the cloud: Relational databases",
+        "Cloud file systems: GFS and HDFS, Features and comparisons among GFS, HDFS etc",
+        "Big Table, H Base and Dynamo",
+        "Map-Reduce and extensions: Parallel computing",
+        "The Map-Reduce model: Parallel efficiency of Map Reduce, Relational operations, Enterprise batch processing",
+        "Example/Application of Map Reduce"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cloud Security",
+      "topics": [
+        "Cloud security fundamentals, Vulnerability assessment tool for cloud",
+        "Privacy and Security in cloud: Cloud computing security architecture, General Issues",
+        "Trusted Cloud computing",
+        "Security challenges: Virtualization security management - virtual threats, VM Security Recommendations, VM-Specific Security techniques",
+        "Secure Execution Environments and Communications in cloud"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Cloud Issues and Platforms",
+      "topics": [
+        "Issues in cloud computing; implementing real time application; QOS Issues in Cloud",
+        "Dependability, data migration, streaming in Cloud",
+        "Cloud Middleware, Mobile Cloud Computing, Inter Cloud issues",
+        "Agrid of clouds, Sky computing, load balancing",
+        "Resource optimization, Resource dynamic reconfiguration, Monitoring in Cloud",
+        "Installing cloud platforms and performance evaluation",
+        "Features and functions of cloud computing platforms"
+      ]
+    }
+  ]
+}

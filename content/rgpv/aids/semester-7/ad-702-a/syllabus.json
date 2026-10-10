@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "ad-702-a",
+    "code": "AD-702 (A)",
+    "name": "Cloud Computing",
+    "title": "AD-702 (A) - Cloud Computing",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction To Cloud Computing: Definition, Characteristics, Components, Cloud",
+      "topics": [
+        "Architecture: Software as a Service",
+        "Plat form as a Service",
+        "Infrastructure as Service.",
+        "Cloud deployment model: Public clouds-Private clouds-Community clouds-Hybrid clouds- Advantages of Cloud computing.",
+        "Comparing cloud providers with traditional IT service providers."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Services Virtualization Technology and Study of Hypervisor: Utility Computing,",
+      "topics": [
+        "Elastic computing & grid computing.",
+        "Study of Hypervisor Virtualization applications in enterprises",
+        "High-performance computing",
+        "Pitfalls of virtualization Multitenant software: Multi- entity support",
+        "Multi schema approach."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "clouds",
+        "Administering & Monitoring cloud services, load balancing",
+        "Resource optimization",
+        "Resource dynamic reconfiguration, implementing real time application",
+        "Mobile Cloud Computing and edge computing."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Cloud security fundamentals & Issues in cloud computing: Secure Execution",
+      "topics": [
+        "Environments and Communications in cloud",
+        "General Issues and Challenges while migrating toCloud.",
+        "The Seven-step model of migration into a cloud",
+        "Vulnerability assessment tool for cloud",
+        "Trusted Cloud computing",
+        "Virtualization security management-virtual threats,VM Security Recommendations and VM-Specific Security techniques.QOS Issues in Cloud",
+        "Depend ability, data migration, challenges and risks in cloud adoption."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Case Study on Open Source and Commercial Clouds: Open Stack, Eucalyptus, Open",
+      "topics": [
+        "Nebula",
+        "Apache Cloud Stack",
+        "Amazon (AWS),Microsoft Azure",
+        "Google cloud etc.",
+        "TextBook(s) 1.",
+        "Barrie Sosinsky:\"CloudComputingBible\",Wiley India,2010 2.",
+        "Rajkumar Buyya",
+        "James Broberg",
+        "Andrzej M.",
+        "Goscinski: \"Cloud Computing: Principles and Paradigms\",Wiley, 2013. 3.",
+        "RajkumarBuyya,ChristianVecchiola,S.Thamaraselvi,\"MasteringCloudComputing\",McGraw Hill, 2013.",
+        "NikosAntonopoulos,LeeGillam:\"CloudComputing:Principles,Systemsand Applications\",Springer,2012 2.",
+        "Ronald L.",
+        "Krutz",
+        "Russell Dean Vines: \"Cloud Security: A Comprehensive Guide to Secure CloudComputing\", Wiley India,2010 3.",
+        "TimMalhar,S.Kumaraswammy,S.Latif,\"CloudSecurity&Privacy\",SPD,O'REILLY, 2009 4.",
+        "Cloud Computing: Fundamentals",
+        "Industry Approach and Trends by Rishabh Sharma - John Wiley Publication."
+      ]
+    }
+  ]
+}

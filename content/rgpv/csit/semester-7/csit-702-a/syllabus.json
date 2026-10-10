@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "csit-702-a",
+    "code": "CSIT-702 (A)",
+    "name": "Information Storage & Management",
+    "title": "CSIT-702 (A) - Information Storage & Management",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Storage Technology",
+      "topics": [
+        "Data proliferation",
+        "Evolution of various storage technologies",
+        "Overview of storage infrastructure components",
+        "Information Lifecycle Management",
+        "Data categorization"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Storage Systems Architecture",
+      "topics": [
+        "Intelligent disk subsystems overview",
+        "Contrast of integrated vs modular arrays",
+        "Component architecture of intelligent disk subsystems",
+        "Disk physical structure components, properties, performance and specifications",
+        "RAID levels and parity algorithms",
+        "Hot sparing",
+        "Front end to host storage provisioning, mapping and operation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Networked Storage",
+      "topics": [
+        "JBOD, DAS, NAS, SAN and CAS evolution and comparison",
+        "Applications, elements, connectivity, standards, management, security and limitations of DAS, NAS, CAS and SAN"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Hybrid Storage, Virtualization and Backup",
+      "topics": [
+        "Hybrid storage solutions",
+        "Virtualization: memory, network, server, storage and appliances",
+        "Data center concepts and requirements",
+        "Backup and disaster recovery principles",
+        "Managing and monitoring",
+        "Industry management standards: SNMP, SMI-S and CIM",
+        "Standard framework applications",
+        "Key management metrics: thresholds, availability, capacity, security and performance"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Information Storage on Cloud",
+      "topics": [
+        "Concept of cloud and cloud computing",
+        "Storage on cloud",
+        "Cloud vocabulary",
+        "Architectural framework",
+        "Cloud benefits",
+        "Cloud computing evolution",
+        "Applications and services on cloud",
+        "Cloud service providers and models",
+        "Essential characteristics of cloud computing",
+        "Cloud security and integration"
+      ]
+    }
+  ]
+}

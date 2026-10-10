@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "al-504-c",
+    "code": "AL504 (C)",
+    "name": "Computational Intelligence",
+    "title": "AL504 (C) - Computational Intelligence",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Computational Intelligence",
+      "topics": [
+        "Basics of computational intelligence",
+        "History of computational intelligence",
+        "Adaptation, learning, and self-organization",
+        "State space search and evolution",
+        "Computational intelligence and soft computing",
+        "Computational intelligence techniques",
+        "Applications of computational intelligence",
+        "Decision trees: introduction, evaluation, splitting criteria, and implementation",
+        "Neural networks: introduction, types, issues, implementation, and applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Fuzzy Set Theory",
+      "topics": [
+        "Fuzzy sets and fuzzy set characteristics",
+        "Basic definition and terminology",
+        "Fuzzy operators",
+        "Fuzzy relations and composition",
+        "Member function formulation",
+        "Fuzzy rules and fuzzy reasoning",
+        "Extension",
+        "Fuzzy inference systems",
+        "Input space partitioning and fuzzy modeling",
+        "Fuzziness and defuzzification",
+        "Fuzzy controllers",
+        "Mamdani, Sugeno, and Tsukamoto fuzzy models",
+        "Neuro-fuzzy modeling",
+        "Introduction to neuro-fuzzy control"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Rough Set Theory",
+      "topics": [
+        "Introduction and fundamental concepts",
+        "Knowledge representation",
+        "Set approximations and accuracy",
+        "Vagueness and uncertainty in rough sets",
+        "Rough membership function",
+        "Attribute dependency and reduction",
+        "Application domain",
+        "Hidden Markov model (HMM)",
+        "Graphical models",
+        "Variable elimination",
+        "Belief propagation",
+        "Markov decision processes"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Evolutionary Computation",
+      "topics": [
+        "Genetic algorithms: basic genetics, concepts, and working principle",
+        "Creation of offspring",
+        "Encoding",
+        "Fitness function",
+        "Selection functions",
+        "Genetic operators: reproduction, crossover, and mutation",
+        "Genetic modeling, benefits, and problem solving",
+        "Introduction to genetic programming, evolutionary programming, and evolutionary strategies"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Swarm Intelligence",
+      "topics": [
+        "Introduction to swarm intelligence",
+        "Ant colony optimization (ACO): overview and algorithm",
+        "Particle swarm optimization (PSO): basics, social network structures, parameters, and algorithm",
+        "Grey wolf optimization (GWO)",
+        "Application domain of ACO and PSO",
+        "Bee colony optimization",
+        "Hybrid computational intelligence techniques and applications",
+        "Computational intelligence tools"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "subject": {
+    "id": "cs-701",
+    "code": "CS-701",
+    "name": "Software Architectures",
+    "title": "CS-701 - Software Architectures",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview of Software Architecture",
+      "topics": [
+        "Overview of Software development methodology and software quality model",
+        "Different models of software development and their issues",
+        "Introduction to software architecture, evolution of software architecture",
+        "Software components and connectors",
+        "Common software architecture frameworks",
+        "Architecture business cycle",
+        "Architectural patterns",
+        "Reference model"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Software Architecture Models and Styles",
+      "topics": [
+        "Software architecture models: structural models, framework models, dynamic models, process models",
+        "Architecture styles: dataflow architecture, pipes and filters architecture",
+        "Call-and return architecture, data-centered architecture, layered architecture",
+        "Agent based architecture, Micro-services architecture, Reactive Architecture",
+        "Representational state transfer architecture"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Software Architecture Implementation Technologies",
+      "topics": [
+        "Software Architecture Description Languages (ADLs)",
+        "Struts, Hibernate, Node JS, Angular JS",
+        "J2EE - JSP, Servlets, EJBs",
+        "Middleware: JDBC, JNDI, JMS, RMI and CORBA",
+        "Role of UML in software architecture"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Software Architecture Analysis and Design",
+      "topics": [
+        "Requirements for architecture and the life-cycle view of architecture design and analysis methods",
+        "Architecture-based economic analysis: Cost Benefit Analysis Method (CBAM)",
+        "Architecture Tradeoff Analysis Method (ATAM)",
+        "Active Reviews for Intermediate Design (ARID)",
+        "Attribute Driven Design method (ADD)",
+        "Architecture reuse",
+        "Domain-specific Software architecture"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Software Architecture Documentation",
+      "topics": [
+        "Principles of sound documentation",
+        "Refinement, context diagrams, variability, software interfaces",
+        "Documenting the behavior of software elements and software systems",
+        "Documentation package using a seven-part template"
+      ]
+    }
+  ]
+}

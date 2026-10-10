@@ -1,0 +1,107 @@
+{
+  "subject": {
+    "id": "cy-504-c",
+    "code": "CY504 (C)",
+    "name": "Computer Organization & Architecture",
+    "title": "CY504 (C) - Computer Organization & Architecture",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Digital Logic, Arithmetic and Basic Structure",
+      "topics": [
+        "Review of Digital Logic Circuits",
+        "Digital Logic Components and Data representation",
+        "Computer Arithmetic: Integer and Floating Point Arithmetic operations",
+        "Computer Organization v/s Architecture",
+        "Milestones in Computer Architecture",
+        "Basic Structure of Computer System",
+        "Components of Computer System-CPU; Memory; System Bus- Bus width, Bus Operations; I/O subsystem",
+        "CPU Organization: General Register Organization-Memory Register, Instruction Register",
+        "Control Word",
+        "Stack Organization",
+        "ALU",
+        "Control Unit"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Instruction Set Architecture and Control Unit",
+      "topics": [
+        "Machine Language Level/Instruction Set Architecture (ISA) level: Instruction Set",
+        "Machine Instruction Characteristics",
+        "Types of operands",
+        "Types of operations",
+        "Instruction Types",
+        "Instruction Formats",
+        "Addressing Modes",
+        "Registers",
+        "Program Counter",
+        "Instruction Execution Cycle",
+        "Interrupts and Traps",
+        "Sources of interrupts",
+        "Interrupt identification and priorities",
+        "Interrupt servicing",
+        "Case Study of 8086 Microprocessor",
+        "Hardwired Control Unit",
+        "Micro-programmed Control Unit-Micro Instructions",
+        "Micro Instruction Formats",
+        "Micro Instruction Control",
+        "Micro program sequencer",
+        "Execution of Micro Instructions"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Memory Organization",
+      "topics": [
+        "Memory Hierarchy",
+        "Main memory-RAM, ROM",
+        "Memory Technologies",
+        "Memory Addresses",
+        "Memory Address Map",
+        "Flash Memory",
+        "Associative Memory",
+        "Cache Memory: Cache Structure and Design",
+        "Mapping Schemes",
+        "Replacement Algorithms",
+        "Improving Cache Performance",
+        "Concept of L1, L2, L3 Cache",
+        "Secondary Memory –Magnetic Tape, Magnetic Disk, Optical Disks, Solid State Disk"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "I/O Organization",
+      "topics": [
+        "Data Transfer- Serial, Parallel, Synchronous, Asynchronous Modes of Data Transfer",
+        "I/O Techniques- Programmed I/O, Interrupt driven I/O, Direct Memory Access(DMA)",
+        "External Interconnection Standards (I/O Interfaces): PCI Bus, PCI Express, SCSI Bus, USB",
+        "I/O Channels and I/O Processors",
+        "I/O Instructions"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Parallel Architectures",
+      "topics": [
+        "On-chip parallelism",
+        "Thread level parallelism",
+        "Instruction level parallelism",
+        "Multicore Processor Architecture",
+        "Processor level parallelism",
+        "Overview of Pipelining",
+        "Vector Processing and Array Processing",
+        "RISC vs CISC Architectures",
+        "Introduction to ARM processor and its architecture",
+        "Introduction to Assembly Language Programming"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "subject": {
+    "id": "me-604-c",
+    "code": "ME-604 (C)",
+    "name": "Renewable Energy Technology",
+    "title": "ME-604 (C) - Renewable Energy Technology",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Solar Radiation",
+      "topics": [
+        "Extra-terrestrial and terrestrial radiation",
+        "Radiation measuring instrument",
+        "Radiation measurement and predictions",
+        "Solar thermal conversion: basics",
+        "Flat plate collectors: liquid and air type",
+        "Theory of flat plate collectors",
+        "Selective coating",
+        "Advanced collectors",
+        "Concentrators: optical design of concentrators",
+        "Solar water heater, solar dryers, solar stills",
+        "Solar cooling and refrigeration",
+        "Solar photovoltaic: principle of photovoltaic conversion of solar energy",
+        "Technology for fabrication of photovoltaic devices",
+        "Applications of solar cells in PV generation systems",
+        "Organic PV cells"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Wind Energy",
+      "topics": [
+        "Characteristics and measurement",
+        "Metrology of wind speed distribution",
+        "Wind speed statistics",
+        "Weibull, Rayleigh and Normal distribution",
+        "Measurement of wind data",
+        "Energy estimation of wind regimes",
+        "Wind energy conversion principles",
+        "General introduction",
+        "Types and classification of WECS",
+        "Power, torque and speed characteristics",
+        "Power curve of wind turbine",
+        "Capacity factor",
+        "Matching wind turbine with wind regimes",
+        "Application of wind energy"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Production of Biomass",
+      "topics": [
+        "Photosynthesis: C3 and C4 plants on biomass production",
+        "Biomass resources assessment",
+        "CO2 fixation potential of biomass",
+        "Classification of biomass",
+        "Physicochemical characteristics of biomass as fuel",
+        "Biomass conversion routes: biochemical, chemical and thermo chemical",
+        "Biochemical conversion of biomass to energy: anaerobic digestion",
+        "Biogas production mechanism and technology",
+        "Types of digesters",
+        "Design of biogas plants",
+        "Installation, operation and maintenance of biogas plants",
+        "Biogas plant manure: utilization and manure values",
+        "Biomass gasification: different types",
+        "Power generation from gasification",
+        "Cost benefit analysis of power generation by gasification"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Small Hydropower Systems and Ocean Energy",
+      "topics": [
+        "Overview of micro, mini and small hydro system",
+        "Hydrology",
+        "Elements of turbine",
+        "Assessment of hydro power",
+        "Selection and design criteria of turbines",
+        "Site selection and civil works",
+        "Speed and voltage regulation",
+        "Investment issue",
+        "Load management and tariff collection",
+        "Distribution and marketing issues",
+        "Ocean energy resources",
+        "Ocean energy routes",
+        "Principle of ocean thermal energy conversion system",
+        "Ocean thermal power plants",
+        "Principles of ocean wave energy and tidal energy conversion"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Geothermal Energy, Hydrogen Energy and Fuel Cells",
+      "topics": [
+        "Origin of geothermal resources",
+        "Type of geothermal energy deposits",
+        "Site selection",
+        "Geothermal power plants",
+        "Hydrogen as a source of energy",
+        "Hydrogen production and storage",
+        "Types of fuel cell",
+        "Fuel cell system and sub-system",
+        "Principle of working",
+        "Basic thermodynamics"
+      ]
+    }
+  ]
+}

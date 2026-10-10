@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "ce-402",
+    "code": "CE-402",
+    "name": "Construction Technology",
+    "title": "CE-402 - Construction Technology",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Design features and construction of Foundations",
+      "topics": [
+        "Introduction and essential requirements of foundations, footing types and depth of footings",
+        "Contact pressure below footings such as strip footings, isolated footings, eccentrically loaded footings, Grillage foundations",
+        "Design features and construction detail of combined footing, strap footing",
+        "Problem of frost heave, its causes and prevention, effect of ground water on footings",
+        "Purpose of pile foundation, classification based on different criterion and types, advantages and disadvantages",
+        "Selection of pile type, pile action, behavior of pile and pile group under load, definition of load failure"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Formwork and Temporary structures",
+      "topics": [
+        "Design and construction features of different types of temporary structures",
+        "Stationary and slip form work techniques, special features of in-situ construction",
+        "Stripping and removal of formworks",
+        "Formworks for special structures, e.g. shells, bridges, towers etc."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Masonry and walls; Doors windows and ventilators",
+      "topics": [
+        "Brick masonry, Bonds, Jointing, Stone masonry, casting and laying, masonry construction, brick cavity walls",
+        "Code provisions regarding load bearing and non load bearing walls",
+        "Common defect in construction and their effect on strength and performance of walls",
+        "Design of brick masonry, precast stone masonry, hollow concrete block and hollow block masonry walls",
+        "Plastering and pointing, white and colour washing, distempering, dampness and its protection",
+        "Doors windows and ventilators: types based on materials etc. size location fittings, construction sunshades, Sills and jambs, RCC doors/windows frames",
+        "Stair types, rules of proportionality, etc.; Repair Techniques for masonry, walls, doors and windows"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Construction of Floors and Roofs",
+      "topics": [
+        "Ground floor-introduction, Components of a floor, Materials for construction, Selection of flooring material",
+        "Construction of Various types of floorings such as Mud, Brick, Cement, Terrazzo, Mosaic, Tiled, Marble, Rubber, Glass and plastic floorings etc.",
+        "Upper floor- Introduction, construction of Slab floors, Jack arch floors, RCC floors, Ribbed or Hollow tiled flooring, Filler Joist floors, Pre-cast concrete floors, Timber floors etc.",
+        "Repair Techniques for floors",
+        "Construction of Roofs: Introduction and types of roofs, Construction of Pitched roofs, single roofs, double or purlin roofs, trussed roofs, steel roof trusses etc.",
+        "Roof coverings for pitched roofs and flat terraced roof etc.; Repair Techniques for roofs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Construction of Earthquake Resistant Building",
+      "topics": [
+        "Planning of earthquake resistant building",
+        "Construction of walls – provision of corner reinforcement",
+        "Construction of beams and columns",
+        "Base isolation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "subject": {
+    "id": "csit-503-b",
+    "code": "CSIT-503 (B)",
+    "name": "Microprocessor and Interfacing",
+    "title": "CSIT-503 (B) - Microprocessor and Interfacing",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Evolution and Architecture of Microprocessors",
+      "topics": [
+        "Evolution of the microprocessor",
+        "Single-chip microcomputers",
+        "Microprocessor applications",
+        "Microprocessor and its architecture",
+        "Addressing modes",
+        "Instructions and instruction sets",
+        "Arithmetic and logic instructions",
+        "Program control instructions",
+        "Introduction to the 8086 family",
+        "Procedures and macros",
+        "Connection, timing, and troubleshooting interrupts",
+        "80286, 80386, and 80486 microprocessor system concepts"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "8086 Programming and Later Processors",
+      "topics": [
+        "Microprocessor cycle",
+        "AIU, timing and control unit",
+        "Register data and address bus",
+        "Pin configuration",
+        "Intel 8086 instruction, opcode and operands, and word-size limitation",
+        "Programming the microprocessor in assembly language",
+        "Pentium and Pentium Pro microprocessors with features",
+        "Pentium II, Pentium III, and Pentium IV with software changes",
+        "Instruction set for Intel 8086",
+        "Data formats, addressing modes, status flags, symbols, and abbreviations",
+        "Assembly language and high-level language",
+        "Areas of application of various languages",
+        "Stacks and subroutines",
+        "System software and assembly-language commands",
+        "Software development and debugging",
+        "Modular programming, structured programming, and top-down and bottom-up design",
+        "MACRO microprogramming"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Assembly Language and Interfacing Basics",
+      "topics": [
+        "Assembly language programming examples: addition of 8/16-bit binary numbers",
+        "Subtraction of 8/16-bit binary numbers",
+        "Address partitioning and addressing modes",
+        "Types of addressing mode",
+        "Memory and I/O interfacing",
+        "Data transfer schemes",
+        "Interfacing devices and I/O devices",
+        "I/O ports and basic I/O interfacing",
+        "MDS, microcontrollers, I/O processors, and co-processors",
+        "Microcomputer development systems",
+        "Single-chip microcomputers: Intel 8748, 8051, 8096, 8049, and 2920/2921",
+        "I/O processors UPI-425, UPI-41, and UPI-42",
+        "Math co-processors: 8087, 80287, 80387DX, and 80387SX"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Bus Interface and Peripheral Controllers",
+      "topics": [
+        "Bus interface and I/O port addressing",
+        "Decoding",
+        "8279 programmable keyboard/display interface",
+        "8254 interval timer",
+        "16550 programmable communication interface",
+        "A/D conversion",
+        "8259A programmable interrupt controller",
+        "8237 DMA controller",
+        "Shared bus operation",
+        "Disk memory system and video display",
+        "ISA bus, Extended ISA (EISA), and VESA local buses",
+        "Peripheral Component Interconnect (PCI) bus",
+        "Parallel printer interface (LPT)",
+        "Universal Serial Bus (USB)",
+        "Accelerated Graphics Port (AGP)",
+        "Programmable communication interface 8251 USART",
+        "CRT controllers 8275 and 6854",
+        "Floppy disk controller 8272",
+        "I/O processor 8089"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Memory Systems",
+      "topics": [
+        "Memory unit",
+        "RAM, SRAM, and DRAM",
+        "ROM, PROM, EPROM, and EEPROM",
+        "Nonvolatile RAM",
+        "Semiconductor technology for memory",
+        "Shift register",
+        "Magnetic memory: tape and disc",
+        "Main memory and secondary memory",
+        "Cache memory",
+        "Program memory and data memory",
+        "Real and virtual memory",
+        "Buses",
+        "Memory addressing capacity of the CPU",
+        "Processing speed of a computer"
+      ]
+    }
+  ]
+}

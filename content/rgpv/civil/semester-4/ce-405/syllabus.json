@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "ce-405",
+    "code": "CE-405",
+    "name": "Engineering Geology & Remote Sensing",
+    "title": "CE-405 - Engineering Geology & Remote Sensing",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and physical geology",
+      "topics": [
+        "Branches application and scope of geology, age and parts of the earth",
+        "Weathering of rocks, geological action of river, ground water, sea and oceans",
+        "Concept and causes of earthquakes and volcanoes"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Mineralogy and crystallography",
+      "topics": [
+        "Fundamentals of mineralogy, physical properties",
+        "Study of common rock forming minerals and ore minerals, importance to civil engineering",
+        "Element of crystals and introduction to crystal systems"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Petrology",
+      "topics": [
+        "Rock cycle, composition, classification and structures of igneous, sedimentary and metamorphic rocks of civil engineering importance",
+        "Study of common rock types",
+        "Brief geological history of India"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Structural geology",
+      "topics": [
+        "Dip, strike, outcrops",
+        "Classification and detailed studies of geological structures i.e. Folds, Faults, Joints, Unconformity",
+        "Their importance in civil engineering"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Applied geology and remote sensing",
+      "topics": [
+        "Engineering properties of rocks, selection of sites for Dam, Tunnel, Reservoirs and Canals",
+        "Uses of remote sensing technique; Types, components and elements of remote sensing, EMS and MSS",
+        "Visual interpretation technique",
+        "Application of GIS in civil engineering and resource mapping (site selection, water resources, rocks and soil)"
+      ]
+    }
+  ]
+}

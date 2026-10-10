@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "ce-304",
+    "code": "CE-304",
+    "name": "Building Planning & Architecture",
+    "title": "CE-304 - Building Planning & Architecture",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Drawing of Building Elements",
+      "topics": [
+        "Drawing of various elements of buildings like various types of footing, open foundation, raft, grillage, pile and well foundation",
+        "Drawing of frames of doors, window, various types of door, window and ventilator",
+        "Lintels and arches, stairs and staircase, trusses, flooring, roofs etc."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Building Planning",
+      "topics": [
+        "Classification of buildings, Provisions of National Building Codes and Rules, Building bye-laws, open area, Setbacks, FAR terminology",
+        "Design and drawing of Building, Design concepts and philosophies",
+        "Preparing sketch plans and working drawings of various types of buildings like residential building, institutional buildings and commercial buildings",
+        "Site plans, presentation techniques, pictorial drawings, perspective and rendering, model making",
+        "Introduction to computer aided design and drafting",
+        "Applying of principle of architectural composition (i.e. unity, contrast, etc.), Principles of planning, orientation in detailed drawings"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Building Services",
+      "topics": [
+        "Introduction of Building Services like water supply, sewerage and drainage systems, sanitary fittings and fixtures, plumbing systems",
+        "Principles of internal & external drainage systems, principles of electrification of buildings, intelligent buildings",
+        "Elevators & escalators their standards and uses, air-conditioning systems, fire-fighting systems",
+        "Building safety and security systems, ventilation and lightening and staircases, fire safety, thermal insulation, acoustics of buildings"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Principles of architectural design",
+      "topics": [
+        "Definition of architecture, factors influencing architectural development, characteristics features of style, historic examples, creative principles",
+        "Principles of architectural composition – Unity, balance, proportion, scale, rhythm, harmony, Accentuation and contrast",
+        "Organising principles in architecture – Symmetry, hierarchy, axis, linear, concentric, radial, and asymmetric grouping, primary and secondary masses",
+        "Role of colour, texture, shapes/forms in architecture",
+        "Architectural space and mass, visual and emotional effects of geometric forms, space activity and tolerance space",
+        "Forms related to materials and structural systems",
+        "Elements of architecture: Functions – Pragmatic utility, circulatory function, symbolic function, Physiological function; Structure – Physical structure, Perceptual structure",
+        "Space in architecture: Positive and negative space; Aesthetics: Visual perception; Protective: Protection from climate and other elements; Comfort factors"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Perspective Drawing and Town Planning",
+      "topics": [
+        "Elements of perspective drawing involving simple problems, one point and two point perspectives, energy efficient buildings",
+        "Concepts of master plan, structure plan, detailed town planning scheme and action plan, estimating future needs",
+        "Planning standards for different land use, allocation for commerce, industries, public amenities, open areas etc.",
+        "Planning standards for density distributions, density zones, planning standards for traffic network, standard of roads and paths",
+        "Provision for urban growth, growth models, plan implementation, town planning legislation and municipal acts",
+        "Planning of control development schemes, urban financing, land acquisition, slum clearance schemes, pollution control aspects"
+      ]
+    }
+  ]
+}

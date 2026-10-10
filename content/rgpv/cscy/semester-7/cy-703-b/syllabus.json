@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "cy-703-b",
+    "code": "CY-703 (B)",
+    "name": "Cyber Security Policies & Standards",
+    "title": "CY-703 (B) - Cyber Security Policies & Standards",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction to Cyber Security: Basic Cyber Security Concepts, layers of security",
+        "Vulnerability, threat",
+        "Harmful acts",
+        "Internet Governance - Challenges and Constraints",
+        "Computer Criminals",
+        "CIA Triad",
+        "Assets and Threat, motive of attackers, active attacks, passive attacks",
+        "Software attacks, hardware attacks",
+        "Cyber Threats-Cyber Warfare",
+        "Cyber Crime",
+        "Cyber terrorism",
+        "Cyber Espionage, etc., Comprehensive Cyber Security Policy."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Cyberspace and the Law & Cyber Forensics: Introduction",
+        "Cyber Security Regulations",
+        "Roles of International Law.",
+        "The INDIAN Cyberspace",
+        "National Cyber Security Policy.",
+        "Introduction",
+        "Historical background of Cyber forensics",
+        "Digital Forensics Science",
+        "The Need for Computer Forensics",
+        "Cyber Forensics and Digital evidence",
+        "Forensics Analysis of Email",
+        "Digital Forensics Lifecycle",
+        "Forensics Investigation",
+        "Challenges in Computer Forensics."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Organizational Implications ofCyber Security: Introduction cost of cybercrimes and IPR issues",
+        "web threats for organizations",
+        "security and privacy implications",
+        "social media marketing: security risks and perils for organizations",
+        "social computing and the associated challenges for organizations."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Privacy Issues: Basic Data Privacy Concepts: Fundamental Concepts",
+        "Data Privacy Attacks",
+        "Datalinking and profiling, privacy policies and their specifications, privacy policy languages, privacy in different domains- medical, financial etc."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Introduction to security policies and cyber laws:-Need for An Information Security Policy",
+        "Information Security Standards - ISO, Introducing Various Security Policies and Their Review Process",
+        "Introduction to Indian Cyber Law",
+        "Objective and Scope of the IT Act, 2000",
+        "Intellectual Property Issues",
+        "Overview of Intellectual Property Related Legislation in India",
+        "Patent",
+        "Copyright",
+        "Law Related to Semiconductor Layout and Design",
+        "Software License.",
+        "Recommended Books with Full Specification:"
+      ]
+    }
+  ]
+}

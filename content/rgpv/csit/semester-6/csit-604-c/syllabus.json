@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "csit-604-c",
+    "code": "CSIT-604 (C)",
+    "name": "Intellectual Property Rights",
+    "title": "CSIT-604 (C) - Intellectual Property Rights",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to IPR",
+      "topics": [
+        "Introduction and justifications of IPR",
+        "Nature of IP",
+        "Major forms of IP: copyright, patent, trade marks, designs, geographic indication, layout design of semiconductors and plant varieties",
+        "Concept and meaning of intellectual property",
+        "Major international documents relating to the protection of IP: Berne Convention, Paris Convention and TRIPS",
+        "The World Intellectual Property Organization (WIPO)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Copyright",
+      "topics": [
+        "Meaning and historical development of copyright",
+        "Subject matter",
+        "Ownership of copyright",
+        "Term of copyright",
+        "Rights of owner: economic rights and moral rights",
+        "Assignment and licence of rights",
+        "Infringement of copyright",
+        "Exceptions of infringement",
+        "Remedies: civil, criminal and administrative",
+        "Registration procedure"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Patents",
+      "topics": [
+        "Meaning and historical development",
+        "Criteria for obtaining patents",
+        "Non patentable inventions",
+        "Procedure for registration",
+        "Term of patent",
+        "Rights of patentee",
+        "Compulsory licence",
+        "Revocation",
+        "Infringement of patents",
+        "Exceptions to infringement",
+        "Remedies",
+        "Patent office and Appellate Board"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Trade Marks, Designs and GI",
+      "topics": [
+        "Trade marks: functions of marks, procedure for registration, rights of holder, assignment and licensing of marks, and infringement",
+        "Trade Marks Registry and Appellate Board",
+        "Designs: meaning and evolution of design protection, registration, term of protection, rights of holder and unregistered designs",
+        "Geographical indication: meaning and evolution of GI",
+        "Difference between GI and trade marks",
+        "Registration, rights and authorised user"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Contemporary Issues and Enforcement of IPR",
+      "topics": [
+        "IPR and sustainable development",
+        "The impact of Internet on IPR",
+        "IPR issues in biotechnology",
+        "E-commerce and IPR issues",
+        "Licensing and enforcing IPR",
+        "Case studies in IPR"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "subject": {
+    "id": "cy-504-b",
+    "code": "CY504 (B)",
+    "name": "Internet of Things",
+    "title": "CY504 (B) - Internet of Things",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamentals of IoT",
+      "topics": [
+        "Evolution of Internet of Things",
+        "Enabling Technologies",
+        "IoT Architectures",
+        "oneM2M",
+        "IoT World Forum (IoTWF) and Alternative IoT models",
+        "Simplified IoT Architecture and Core IoT Functional Stack",
+        "Fog, Edge and Cloud in IoT",
+        "Functional blocks of an IoT ecosystem",
+        "Sensors, actuators, Smart objects and connecting smart objects"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "IoT Protocols",
+      "topics": [
+        "IoT Access Technologies",
+        "Physical and MAC layers, topology and Security of IEEE 802.15.4, 802.15.4g, 802.15.4e, 1901.2a, 802.11ah and LoRaWAN",
+        "Network Layer",
+        "IP versions",
+        "Constrained Nodes and Constrained Networks",
+        "Optimizing IP for IoT",
+        "From 6LoWPAN to 6Lo",
+        "Routing over Low Power and Lossy Networks",
+        "Application Transport Methods",
+        "Supervisory Control and Data Acquisition",
+        "Application Layer Protocols",
+        "CoAP and MQTT"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design and Development",
+      "topics": [
+        "Design Methodology",
+        "Embedded computing logic",
+        "Microcontroller",
+        "System on Chips",
+        "IoT system building blocks",
+        "Arduino Board details",
+        "IDE programming",
+        "Raspberry Pi",
+        "Interfaces and Raspberry Pi with Python Programming"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Data Analytics And Supporting Services",
+      "topics": [
+        "structured vs unstructured Data and Data in Motion vs Data in Rest",
+        "Role of Machine Learning",
+        "No SQL Databases",
+        "Hadoop Ecosystem",
+        "Apache Kafka",
+        "Apache Spark",
+        "Edge Streaming Analytics and Network Analytics",
+        "Xively Cloud for IoT",
+        "Python Web Application Framework",
+        "Django AWS for IoT",
+        "System Management with NETCONF-YANG"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Case Studies/Industrial Applications",
+      "topics": [
+        "Cisco IoT system",
+        "IBM Watson IoT platform",
+        "Manufacturing",
+        "converged plant-wide Ethernet Model (CPwE)",
+        "Power Utility Industry",
+        "Grid Blocks Reference Model",
+        "Smart and Connected Cities: Layered architecture",
+        "Smart Lighting",
+        "Smart Parking Architecture and Smart Traffic Control"
+      ]
+    }
+  ]
+}

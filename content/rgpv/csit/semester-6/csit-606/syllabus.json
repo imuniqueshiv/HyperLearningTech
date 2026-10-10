@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "csit-606",
+    "code": "CSIT-606",
+    "name": "Android Programming",
+    "title": "CSIT-606 - Android Programming",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Android",
+      "topics": [
+        "Background about mobile technologies",
+        "Overview of Android",
+        "An open platform for mobile development",
+        "Open Handset Alliance",
+        "What Android runs on: Android internals",
+        "Why to use Android for mobile development"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Android Development Environment",
+      "topics": [
+        "My first Android application",
+        "How to setup Android development environment",
+        "Android development framework: Android SDK and Eclipse"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Emulators and Project Framework",
+      "topics": [
+        "What is an emulator / Android AVD",
+        "Creating and setting up custom Android emulator",
+        "Android project framework",
+        "My first Android application"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Intents, Activities and UI Basics",
+      "topics": [
+        "Understanding intent, activity, activity lifecycle and manifest",
+        "Creating application and new activities",
+        "Expressions and flow control",
+        "Android manifest",
+        "Simple UI: layouts and layout properties",
+        "Fundamental Android UI design"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Layouts and GUI Objects",
+      "topics": [
+        "Introducing layouts",
+        "Creating new layouts",
+        "Drawable resources",
+        "Resolution and density independence: px, dip, dp, sip and sp",
+        "XML introduction to GUI objects: push button, text/labels, EditText, ToggleButton, WeightSum, padding and layout weight"
+      ]
+    }
+  ]
+}

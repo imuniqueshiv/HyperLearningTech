@@ -1,0 +1,89 @@
+{
+  "subject": {
+    "id": "cs-503-a",
+    "code": "CS-503 (A)",
+    "name": "Data Analytics",
+    "title": "CS-503 (A) - Data Analytics",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Descriptive Statistics",
+      "topics": [
+        "Probability distributions",
+        "Inferential statistics",
+        "Inferential statistics through hypothesis tests",
+        "Regression and ANOVA",
+        "Regression ANOVA (analysis of variance)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Introduction to Big Data and Big Data Technologies",
+      "topics": [
+        "Big Data and its importance",
+        "Four V's of Big Data",
+        "Drivers for Big Data",
+        "Introduction to Big Data analytics",
+        "Big Data analytics applications",
+        "Hadoop's parallel world",
+        "Data discovery",
+        "Open source technology for Big Data analytics",
+        "Cloud and Big Data",
+        "Predictive analytics",
+        "Mobile business intelligence and Big Data",
+        "Crowd sourcing analytics",
+        "Inter-firewall and trans-firewall analytics",
+        "Information management"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Processing Big Data",
+      "topics": [
+        "Integrating disparate data stores",
+        "Mapping data to the programming framework",
+        "Connecting and extracting data from storage",
+        "Transforming data for processing",
+        "Subdividing data in preparation for Hadoop MapReduce"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Hadoop MapReduce",
+      "topics": [
+        "Employing Hadoop MapReduce",
+        "Creating the components of Hadoop MapReduce jobs",
+        "Distributing data processing across server farms",
+        "Executing Hadoop MapReduce jobs",
+        "Monitoring the progress of job flows",
+        "The building blocks of Hadoop MapReduce",
+        "Distinguishing Hadoop daemons",
+        "Investigating the Hadoop Distributed File System",
+        "Selecting appropriate execution modes: local, pseudo-distributed, and fully distributed"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Big Data Tools and Techniques",
+      "topics": [
+        "Installing and running Pig",
+        "Comparison of Pig with databases",
+        "Pig Latin",
+        "User-defined functions in Pig",
+        "Data processing operators",
+        "Installing and running Hive",
+        "HiveQL",
+        "Querying data in Hive",
+        "User-defined functions in Hive",
+        "Oracle Big Data"
+      ]
+    }
+  ]
+}

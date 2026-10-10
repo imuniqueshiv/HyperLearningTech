@@ -1,0 +1,99 @@
+{
+  "subject": {
+    "id": "csit-803-b",
+    "code": "CSIT-803 (B)",
+    "name": "Quantum Computing",
+    "title": "CSIT-803 (B) - Quantum Computing",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Quantum Mechanics",
+      "topics": [
+        "Postulates of quantum mechanics",
+        "Qubit and quantum states",
+        "Vector spaces",
+        "Single qubit gates",
+        "Multiple qubit gates",
+        "Controlled gates",
+        "Composite gates",
+        "Matrices and operators"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Density Operators and Quantum Measurement",
+      "topics": [
+        "Density operator for a pure state",
+        "Density operator for a mixed state",
+        "Properties of a density operator",
+        "Characterizing mixed states",
+        "Completely mixed states",
+        "Partial trace and reduced density operator",
+        "Distinguishing quantum states and measurement",
+        "Projective measurements",
+        "Measurements on composite systems",
+        "Generalized measurements",
+        "Positive Operator Valued Measures"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Entanglement, Circuits and Quantum Computers",
+      "topics": [
+        "Quantum state entanglement",
+        "Bell's theorem",
+        "The Pauli representation",
+        "Using Bell states for density operator representation",
+        "Single qubit gates and the Z-Y decomposition",
+        "Basic quantum circuit diagrams",
+        "Controlled gates",
+        "Application of entanglement in teleportation and superdense coding",
+        "Distributed quantum communication",
+        "Guiding principles and conditions for quantum computation",
+        "Harmonic oscillator quantum computer",
+        "Optical photon quantum computer and optical cavity quantum electrodynamics",
+        "Ion traps",
+        "Nuclear magnetic resonance"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Quantum Algorithms",
+      "topics": [
+        "Hadamard gates",
+        "The phase gate",
+        "Matrix representation of serial and parallel operations",
+        "Quantum interference",
+        "Quantum parallelism and function evaluation",
+        "Deutsch-Jozsa algorithm",
+        "Quantum Fourier Transform",
+        "Phase estimation",
+        "Shor's algorithm",
+        "Quantum searching and Grover's algorithm"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Quantum Error Correction and Information",
+      "topics": [
+        "Shor code",
+        "Theory of quantum error correction",
+        "Constructing quantum codes",
+        "Stabilizer codes",
+        "Fault tolerant quantum computation",
+        "Shannon entropy and basic properties of entropy",
+        "Von Neumann entropy",
+        "Strong sub additivity",
+        "Data compression",
+        "Entanglement as a physical resource"
+      ]
+    }
+  ]
+}

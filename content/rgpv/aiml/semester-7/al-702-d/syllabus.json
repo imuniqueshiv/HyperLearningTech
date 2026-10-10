@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "al-702-d",
+    "code": "AL702 (D)",
+    "name": "Machine Learning for Data Science",
+    "title": "AL702 (D) - Machine Learning for Data Science",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Algorithms and Machine Learning",
+        "Introduction to algorithms",
+        "Tools to analyze algorithms",
+        "Algorithmic techniques: Divide and Conquer, examples",
+        "Randomization, Applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Algorithms",
+      "topics": [
+        "Graphs, maps, Map searching",
+        "Application of algorithms: stable marriages example",
+        "Dictionaries and hashing",
+        "Search trees",
+        "Dynamic programming"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Application to Personal Genomics",
+      "topics": [
+        "Linear Programming",
+        "NP completeness",
+        "Introduction to personal Genomics",
+        "Massive Raw data in Genomics",
+        "Data science on Personal Genomes",
+        "Interconnectedness on Personal Genomes",
+        "Case studies"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Machine Learning",
+      "topics": [
+        "Introduction",
+        "Classification",
+        "Linear Classification",
+        "Ensemble Classifiers",
+        "Model Selection",
+        "Cross Validation",
+        "Holdout"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Machine Learning Applications",
+      "topics": [
+        "Probabilistic modelling",
+        "Topic modelling",
+        "Probabilistic Inference",
+        "Application: prediction of preterm birth",
+        "Data description and preparation",
+        "Relationship between machine learning and statistics"
+      ]
+    }
+  ]
+}

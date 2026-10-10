@@ -1,0 +1,83 @@
+{
+  "subject": {
+    "id": "ad-803-a",
+    "code": "AD-803 (A)",
+    "name": "AI for Remote Sensing",
+    "title": "AD-803 (A) - AI for Remote Sensing",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Remote Sensing and AI",
+      "topics": [
+        "Definition of Remote sensing",
+        "Principles of Remote Sensing",
+        "Introduction to Artificial Intelligence",
+        "Integration of AI in Remote Sensing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Types of Remote Sensing Platforms and Sensors",
+      "topics": [
+        "Sensors: Types and classification of sensors",
+        "Platforms: Types of platforms, ground, airborne, and space born platforms Remote Sensing Data Acquisition and Pre-processing Data acquisition techniques and image resolution",
+        "Data pre-processing and feature extraction techniques",
+        "Radiometric and geometric corrections",
+        "Data fusion and enhancement methods"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "AI for Remote Sensing",
+      "topics": [
+        "Supervised Learning for Remote Sensing Analysis",
+        "Unsupervised Learning for Remote Sensing Analysis",
+        "Deep Learning for Remote Sensing Analysis",
+        "Image Image Classification Techniques in Remote Sensing."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "AI-Assisted Image Interpretation and Feature Extraction",
+      "topics": [
+        "Object detection and tracking in remote sensing imagery",
+        "Change detection and time-series analysis",
+        "Hyperspectral and LiDAR data analysis",
+        "Fusion of multi-modal remote sensing data."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Applications of AI in Remote Sensing",
+      "topics": [
+        "Land cover and land use mapping",
+        "Environmental monitoring and assessment",
+        "Disaster management and response",
+        "Precision agriculture and crop monitoring.",
+        "R-mi Cresson, \"Deep Learning for Remote Sensing Images with Open Source Software\", CRC Press, 1st edition,2020. 2.",
+        "Moulay A Akhloufi",
+        "MozhdehShahbazi,\"Deep Learning Methods for Remote Sensing\",MDPI AG, 2022. 3.",
+        "Alka Rani",
+        "Nirmal Kumar",
+        "Singh",
+        "Sinha",
+        "Jena",
+        "HimeshPatra, \"Remote Sensing Data Analysis Using R\",CRC Press",
+        "Taylor & Francis Group,2021. 4.",
+        "Tammy E.",
+        "Parece",
+        "John A.",
+        "McGee",
+        "James B.",
+        "Campbell, \"Remote Sensing with ArcGIS Pro\",2019."
+      ]
+    }
+  ]
+}

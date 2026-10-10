@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "cy-604-b",
+    "code": "CY-604 (B)",
+    "name": "OOAD",
+    "title": "CY-604 (B) - OOAD",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "and inheritance, encapsulation, multiple inheritance, aggregation abstraction classes, polymorphism, link and association",
+        "Need for object oriented approach"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "System design life cycle, object oriented S/W development process model, Object",
+      "topics": [
+        "Oriented Analysis",
+        "Object Modeling Technique (OMT): object model, function model, relationship among models, object diagrams, state diagrams, data flow diagrams, analysis."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "algorithms, design optimization",
+        "Implementation of control",
+        "Adjustment",
+        "Design of association, object representation, physical packaging, documenting design decision, comparison of use-case driven approach."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Translation Object Oriented design into implementation, Programming style,",
+      "topics": [
+        "Documentation, characterization of object oriented languages",
+        "Comparison of object oriented language like C++, JAVA, object programming."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unified Modeling Language (UML): Class diagram sequence diagram Use case",
+      "topics": [
+        "diagram",
+        "Collaboration, diagram, state, chart diagram",
+        "Activity diagram, component diagram, deployment diagram",
+        "Object oriented Database: Relational Vs .object oriented database, the architecture of object oriented database, query language for Object Oriented database."
+      ]
+    }
+  ]
+}

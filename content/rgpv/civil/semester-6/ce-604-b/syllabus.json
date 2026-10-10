@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "ce-604-b",
+    "code": "CE604 (B)",
+    "name": "Intellectual Property Rights",
+    "title": "CE604 (B) - Intellectual Property Rights",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Introduction and Justifications of IPR, Nature of IP",
+        "Major forms of IP- Copyright, Patent, Trade Marks Designs, Geographic indication, layout design of Semi conductors, Plant varieties",
+        "Concept & Meaning of Intellectual Property",
+        "Major international documents relating to the protection of IP - Berne Convention, Paris Convention, TRIPS",
+        "The World Intellectual Property Organization (WIPO)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Copyright",
+      "topics": [
+        "Meaning and historical development of copyright, Subject matter, Ownership of copyright, Term of copyright",
+        "Rights of owner, Economic Rights, Moral Rights; Assignment and licence of rights",
+        "Infringement of copyright, Exceptions of infringement, Remedies, Civil, Criminal, Administrative, Registration Procedure"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Patents",
+      "topics": [
+        "Meaning and historical development, Criteria for obtaining patents, Non patentable inventions",
+        "Procedure for registration, Term of patent, Rights of patentee, Compulsory licence, Revocation",
+        "Infringement of patents, Exceptions to infringement, Remedies, Patent office and Appellate Board"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Trade Marks, Designs & GI",
+      "topics": [
+        "Trade Marks: Functions of marks, Procedure for registration, Rights of holder, Assignment and licensing of marks, Infringement, Trade Marks Registry and Appellate Board",
+        "Designs: Meaning and evolution of design protection, Registration, Term of protection, Rights of holder, unregistered designs",
+        "Geographical Indication: Meaning and evolution of GI, Difference between GI and Trade Marks, Registration, Rights, Authorised user"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Contemporary Issues & Enforcement of IPR",
+      "topics": [
+        "IPR & sustainable development, The Impact of Internet on IPR",
+        "IPR Issues in biotechnology, E Commerce and IPR issues",
+        "Licensing and enforcing IPR, Case studies in IPR"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "subject": {
+    "id": "me-803-d",
+    "code": "ME-803 (D)",
+    "name": "Management Information System",
+    "title": "ME-803 (D) - Management Information System",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction of MIS",
+      "topics": [
+        "What is MIS",
+        "Decision support systems",
+        "Systems approach",
+        "The systems view of business",
+        "MIS organization within the Company",
+        "Development of organizational theory",
+        "Management and organizational behavior",
+        "Management information and the systems approach"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Information Systems for Decision-Making and Strategic Planning",
+      "topics": [
+        "Evolution of an information system",
+        "Basic information systems",
+        "Decision making and MIS",
+        "MIS as technique for making programmed decisions",
+        "Design assisting information systems",
+        "General business planning",
+        "Appropriate MIS response",
+        "MIS planning-general",
+        "MIS planning-details"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Conceptual and Detailed System Design",
+      "topics": [
+        "Define the problems",
+        "Systems objectives",
+        "Establish system constraints",
+        "Determine information needs",
+        "Determine information sources",
+        "Develop alternative conceptual designs and select one",
+        "Document the system concept",
+        "Prepare the conceptual design report",
+        "Information and involve the organization",
+        "Arm of detailed design",
+        "Project management of MIS detailed design",
+        "Identify dominant and trade off criteria",
+        "Define the subsystems",
+        "Sketch the detailed operating MIS systems and information flows",
+        "Determine the degree of automation of each operation",
+        "Inform and involve the organization again",
+        "Inputs, Outputs and processing",
+        "Early system testing",
+        "Software, Hardware and tools",
+        "Propose an organization to operate the system",
+        "Document the detailed design",
+        "Revisit the manager user"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Implementation, Evaluation and Maintenance of the MIS",
+      "topics": [
+        "Plan the implementation",
+        "Acquire floor space and plan space layouts organized for implementation",
+        "Develop procedures for implementation",
+        "Train the operating personnel",
+        "Computer related acquisitions",
+        "Develop forms for data collection and information dissemination",
+        "Develop the files",
+        "Test the system",
+        "Cut over",
+        "Document the system",
+        "Evaluate the MIS",
+        "Control and maintain the system"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Pitfalls in MIS Development",
+      "topics": [
+        "Fundamental weaknesses",
+        "Soft spots in planning",
+        "Design problem",
+        "Implementation the TAR PIT"
+      ]
+    }
+  ]
+}

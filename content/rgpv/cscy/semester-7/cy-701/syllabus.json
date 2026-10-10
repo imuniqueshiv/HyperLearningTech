@@ -1,0 +1,92 @@
+{
+  "subject": {
+    "id": "cy-701",
+    "code": "CY-701",
+    "name": "Machine Learning",
+    "title": "CY-701 - Machine Learning",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction to machine learning",
+        "scope and limitations",
+        "regression",
+        "probability",
+        "statistics and linear algebra for machine learning",
+        "convex optimization",
+        "data visualization",
+        "hypothesis function and testing",
+        "data distributions",
+        "data preprocessing",
+        "data augmentation",
+        "normalizing data sets",
+        "machine learning models",
+        "supervised and unsupervised learning."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Linearity vs non linearity, activation functions like sigmoid",
+        "ReLU, etc., weights and bias, loss function, gradient descent, multilayer network, back propagation, weight initialization, training, testing, unstable gradient problem, auto encoders, batch normalization, dropout",
+        "L1 and L2 regularization, momentum, tuning hyper parameters."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Convolutional neural network",
+        "flattening",
+        "subsampling",
+        "padding",
+        "stride",
+        "convolution layer",
+        "pooling layer",
+        "loss layer",
+        "dance layer 1x1 convolution",
+        "inception network",
+        "input channels",
+        "transfer learning",
+        "one shot learning",
+        "dimension reductions",
+        "implementation of CNN like tensor flow",
+        "keras etc."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Recurrent neural network",
+        "Long short-term memory, gated recurrent unit, translation, beam search and width",
+        "Bleu score, attention model",
+        "Reinforcement Learning",
+        "RL-framework",
+        "MDP, Bellman equations",
+        "Value Iteration and Policy Iteration, , Actor-critic model",
+        "Q-learning",
+        "SARSA."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Support Vector Machines",
+        "Bayesian learning, application of machine learning in computer vision, speech processing, natural language processing etc",
+        "Case Study: ImageNet Competition.",
+        "Recommended Books with Full Specification:"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "cb-205",
+    "code": "CB-205",
+    "name": "Fundamentals of Economics",
+    "title": "CB-205 - Fundamentals of Economics",
+    "semester": "II"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Microeconomics",
+      "topics": [
+        "The themes of microeconomics",
+        "Elasticity of Supply, Elasticity of Demand",
+        "Microeconomics versus Macroeconomics",
+        "Behavior of firm and House hold"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Principles of Demand and Supply",
+      "topics": [
+        "Supply Curves of Firms -- Demand Curves of Households",
+        "Equilibrium and Comparative Statics (Shift of a Curve and Movement along the Curve)",
+        "Welfare Analysis -- Consumers' and Producers' Surplus -- Price Ceilings and Price Floors"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Consumer Behaviour",
+      "topics": [
+        "Axioms of Choice -- Budget Constraints and Indifference Curves",
+        "Consumer's Equilibrium -- Effects of a Price Change, Income and Substitution Effects -- Derivation of a Demand Curve",
+        "Applications -- Tax and Subsidies -- Intertemporal Consumption -- Suppliers' Income Effect"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Theory of Production",
+      "topics": [
+        "Production Function and Iso-quants -- Cost Minimization",
+        "Cost Curves -- Total, Average and Marginal Costs -- Long Run and Short Run Costs",
+        "Equilibrium of a Firm under Perfect Competition",
+        "Monopoly and Monopolistic Competition"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Introduction to Macroeconomics",
+      "topics": [
+        "National Income and its Components -- GNP, NNP, GDP, NDP",
+        "Consumption Function; Investment",
+        "Simple Keynesian Model of Income Determination and the Keynesian Multiplier",
+        "Government Sector -- Taxes and Subsidies"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Monetary Policy",
+      "topics": [
+        "External Sector -- Exports and Imports",
+        "Money -- Definitions; Demand for Money -- Transactionary and Speculative Demand",
+        "Supply of Money -- Bank's Credit Creation Multiplier",
+        "Integrating Money and Commodity Markets -- IS, LM Model",
+        "Business Cycles and Stabilization -- Monetary and Fiscal Policy -- Central Bank and the Government",
+        "The Classical Paradigm -- Price and Wage Rigidities -- Voluntary and Involuntary Unemployment"
+      ]
+    }
+  ]
+}

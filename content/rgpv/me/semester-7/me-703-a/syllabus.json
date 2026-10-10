@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "me-703-a",
+    "code": "ME-703 (A)",
+    "name": "Operation Research & Supply Chain",
+    "title": "ME-703 (A) - Operation Research & Supply Chain",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "solution of LP for two variables",
+        "Simplex method, special cases of LP- transportation and assignment model and their graphical solution",
+        "Vogels Approximation Method (VAM) or penalty method, cell evaluation degeneracy, basics of SW Lindo",
+        "Tora",
+        "Excell."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Supply chain (SCM): Definition, importance, expenditure and opportunities in SCM",
+      "topics": [
+        "integrationof inbound, outbound logistics and manufacturing to SCM, flow of material money and information,difficulties in SCM due to local v/s system wide (global) optimization and uncertainties in demand andtransportation",
+        "Bull-whip effect",
+        "customer value",
+        "IT, info-sharing and strategic partnerships",
+        "plant andwarehouse-network configuration",
+        "supply contracts and revenue sharing",
+        "outsourcing",
+        "transportation,cross docking and distribution, forecasting models in SCM; coordination and leadership issues",
+        "changeof purchasing role and vendor rating, variability from multiple suppliers."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "inventory and cycle time",
+        "JIT/ Lean Mfg",
+        "basics of inventory models with deterministic demand",
+        "Classical EOQ Model",
+        "ABC, VED and other analysis based on shelf life, movement, size",
+        "MRP technique and calculations, lot sizing in MRP, linking MRP with JIT; evolution of MRP to ERP to SCM and e-business."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "a) Waiting Line Models: Introduction, Input process, service mechanism, Queue",
+      "topics": [
+        "discipline, single server (M/M/1), average length and average time calculations, optimum service rate",
+        "basic multipleserver models (M/M/s) (b) Competitive strategy: concept and terminology, assumptions, pure and mixed strategies, two- person zero sumgames, saddle point, dominance, graphical, algebraic and LP methods for solving game theory problems."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "a) Network Analysis: Project Planning, Scheduling and Controlling",
+      "topics": [
+        "Network Techniques and its role in project management",
+        "Network logics",
+        "Fulkerson's Law",
+        "Merits and Demerits of AON Diagrams",
+        "Programme Evaluation and Review Technique (PERT)",
+        "Critical Path Method (CPM)",
+        "Determination of critical path",
+        "Float/Slack.",
+        "(b) Meta-heuristics: Definition of heuristic and meta-heuristic algorithms",
+        "introduction to Tabu search,Simulated Annealing and Genetic algorithms and solution of traveling salesman, non linearoptimization problems."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "ad-703-b",
+    "code": "AD-703 (B)",
+    "name": "Mobile Application Development",
+    "title": "AD-703 (B) - Mobile Application Development",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Android Installation",
+        "Building you First Android application",
+        "Understanding Anatomy of Android Application",
+        "Android Manifest file."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Android Application Design Essentials: Anatomy of an Android applications,",
+      "topics": [
+        "Android terminologies",
+        "Application Context",
+        "Activities",
+        "Services",
+        "Intents",
+        "Receiving and Broadcasting Intents",
+        "Android Manifest File and its common settings",
+        "Using Intent Filter",
+        "Permissions."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Android User Interface Design Essentials: User Interface Screen elements,",
+      "topics": [
+        "Designing User Interfaces with Layouts",
+        "Drawing and Working with Animation."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Testing Android applications, Publishing Android application, Using Android",
+      "topics": [
+        "preferences",
+        "Managing Application resources in a hierarchy, working with different types of resources."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Using Common Android APIs: Using Android Data and Storage APIs, Managing",
+      "topics": [
+        "data using SQLite",
+        "Sharing Data between Applications with Content Providers",
+        "Using Android Networking APIs",
+        "Using Android Web APIs",
+        "Using Android Telephony APIs",
+        "Deploying Android Application to the World.",
+        "Recommended Books: 1.",
+        "Lauren Darcey and Shane Conder, \"Android Wireless Application Development\", Addison-Wesley,2009. 2.",
+        "Reto Meier, \"Professional AndroidTM Application Development\", Wiley Publishing,2014. 3.",
+        "Mark L Murphy, \"Beginning Android\", Wiley India Pvt Ltd.,2009. 4.",
+        "Joseph Annuzzi",
+        "Lauren Darcey and Shane Conder, \"Advanced AndroidTM Application Development\", Fourth Edition",
+        "Addison-Wesley,2014. 5.",
+        "Barry Burd ,\"Android Application Development All-in-One For Dummies\", Wiley, 2015."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "subject": {
+    "id": "me-702-b",
+    "code": "ME-702 (B)",
+    "name": "Internet of Things",
+    "title": "ME-702 (B) - Internet of Things",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Internet of Things (IoT)",
+      "topics": [
+        "Vision",
+        "Definition",
+        "Conceptual Framework",
+        "Architectural view, technology behind IoT, Sources of the IoT, M2M Communication",
+        "IoT Examples .",
+        "Design Principles for Connected Devices: IoT/M2M systems layers and design standardization, communication technologies, data enrichment and consolidation, ease of designing and affordability ."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Hardware for IoT",
+      "topics": [
+        "Sensors, digital sensors, actuators, radio frequency identification (RFID) technology, wireless sensor networks, participatory sensing technology.",
+        "Embedded Platforms for IoT: Embedded computing basics",
+        "Overview of IOT supported Hardware platforms such as Arduino",
+        "Raspberry pi",
+        "Beagle Bone",
+        "Intel Galileo ."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "IoT PROTOCOLS",
+      "topics": [
+        "IoT Access Technologies: Physical and MAC layers, topology and Security of IEEE 802.15.4, 802.15.4g, 802.15.4e, 1901.2a, 802.11ah and LoRaWAN - Network Layer: IP versions",
+        "Constrained Nodes and Constrained Networks",
+        "Zigbee - Optimizing IP for IoT: From 6LoWPAN to 6Lo",
+        "Routing over Low Power and Lossy Networks - Application Transport Methods: Supervisory Control and Data Acquisition - Application Layer Protocols: CoAP and MQTT ."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Security",
+      "topics": [
+        "Understanding the risks",
+        "Modes of attack - Denial of Service Guessing the credentials",
+        "Getting access to stored credentials",
+        "Man in the middle",
+        "Sniffing network communication",
+        "Port scanning and web crawling ,Search features and wildcards ,Breaking ciphers",
+        "Tools for achieving security - Virtual Private Networks",
+        "X.509 certificates and encryption",
+        "Authentication of identities",
+        "Usernames and passwords",
+        "Using message brokers and provisioning servers ,Centralization versus decentralization ."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IoT Applications",
+      "topics": [
+        "Home Automation- Smart Appliances",
+        "Smoke/ Gas Detection",
+        "Cities - Smart Parking ,Smart Lighting",
+        "Smart Road",
+        "Health and Lifestyle- Health and fitness monitoring",
+        "Retail- Smart Payments.",
+        "Case Studies: Smart city streetlights:- control and monitoring"
+      ]
+    }
+  ]
+}

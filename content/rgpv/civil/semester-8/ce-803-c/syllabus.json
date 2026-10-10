@@ -1,0 +1,67 @@
+{
+  "subject": {
+    "id": "ce-803-c",
+    "code": "CE803 (C)",
+    "name": "Retrofitting and Rehabilitation of Structures",
+    "title": "CE803 (C) - Retrofitting and Rehabilitation of Structures",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Durability of concrete",
+      "topics": [
+        "Introduction and Definition for Repair, Retrofitting, Strengthening and rehabilitation",
+        "Physical and Chemical Causes of deterioration of concrete structures",
+        "Evaluation of structural damages to the concrete structural elements due to earthquake",
+        "Durability of concrete: Factors affecting durability of concrete, Corrosion of reinforcements in concrete",
+        "Carbonation, Chloride ingress, Alkali-silica reaction, Freeze-thaw effects, Chemical attack, Abrasion, erosion and cavitation, Weathering and efflorescence"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Damage Assessment",
+      "topics": [
+        "Purpose of assessment, Rapid assessment, Investigation of damage",
+        "Evaluation of surface and structural cracks, Damage assessment procedure",
+        "Destructive, non-destructive and semi destructive testing systems"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Influence on Serviceability and Durability",
+      "topics": [
+        "Effects due to climate, temperature, chemicals, wear and erosion",
+        "Design and construction errors, corrosion mechanism",
+        "Effects of cover thickness and cracking, methods of corrosion protection",
+        "Corrosion inhibitors, corrosion resistant steels, coatings, and cathodic protection"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Maintenance and Retrofitting Techniques",
+      "topics": [
+        "Definitions: Maintenance, Facts of Maintenance and importance of Maintenance",
+        "Need for retrofitting, retrofitting of structural members i.e., column and beams by Jacketing technique",
+        "Externally bonding (ERB) technique, near surface mounted (NSM) technique, External post-tensioning",
+        "Section enlargement and guidelines for seismic rehabilitation of existing building"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Materials for Repair and Retrofitting",
+      "topics": [
+        "Artificial fibre reinforced polymer like CFRP, GFRP, AFRP and natural fiber like Sisal and Jute",
+        "Adhesive like, Epoxy Resin, Special concretes and mortars, concrete chemicals, special elements for accelerated strength gain",
+        "Techniques for Repair: Rust eliminators and polymers coating for rebar during repair",
+        "Foamed concrete, mortar and dry pack, vacuum concrete, Gunite and Shot Crete",
+        "Epoxy injection, Mortar repair for cracks, shoring and underpinning"
+      ]
+    }
+  ]
+}

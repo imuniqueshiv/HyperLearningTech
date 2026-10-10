@@ -1,0 +1,64 @@
+{
+  "subject": {
+    "id": "cb-203",
+    "code": "CB-203",
+    "name": "Data Structures and Algorithms",
+    "title": "CB-203 - Data Structures and Algorithms",
+    "semester": "II"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Terminologies & Introduction to Algorithm and Data Organisation",
+      "topics": [
+        "Algorithm specification, Recursion",
+        "Performance analysis, Asymptotic Notation - The Big-O, Omega and Theta notation",
+        "Programming Style, Refinement of Coding - Time-Space Trade Off",
+        "Testing, Data Abstraction"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Linear Data Structure",
+      "topics": [
+        "Dynamic memory allocation",
+        "Array, Stack, Queue, Linked-list and its types",
+        "Various Representations, Operations & Applications of Linear Data Structures"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Non-linear Data Structure",
+      "topics": [
+        "Trees (Binary Tree, Threaded Binary Tree, Binary Search Tree, B & B+ Tree, AVL Tree, Splay Tree)",
+        "Priority queue as heap",
+        "Graphs (Directed, Undirected)",
+        "Various Representations, Operations (search and traversal algorithms and complexity analysis) & Applications of Non-Linear Data Structures"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Searching and Sorting on Various Data Structures",
+      "topics": [
+        "Sequential Search, Binary Search",
+        "Breadth First Search, Depth First Search",
+        "Insertion Sort, Selection Sort, Shell Sort",
+        "Divide and Conquer Sort, Merge Sort, Quick Sort, Heap Sort",
+        "Introduction to Hashing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "File",
+      "topics": [
+        "Organisation (Sequential, Direct, Indexed Sequential, Hashed)",
+        "Various types of accessing schemes"
+      ]
+    }
+  ]
+}

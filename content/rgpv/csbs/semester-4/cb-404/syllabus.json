@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "cb-404",
+    "code": "CB-404",
+    "name": "Introduction to Innovation, IP Management & Entrepreneurship",
+    "title": "CB-404 - Introduction to Innovation, IP Management & Entrepreneurship",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Innovation: What and Why?",
+      "topics": [
+        "Innovation as a core business process",
+        "Sources of innovation",
+        "Knowledge push vs. need pull innovations",
+        "Class Discussion- Is innovation manageable or just a random gambling activity?"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Building an Innovative Organization",
+      "topics": [
+        "Creating new products and services",
+        "Exploiting open innovation and collaboration",
+        "Use of innovation for starting a new venture",
+        "Class Discussion- Innovation: Co-operating across networks vs. 'go-it-alone' approach"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Entrepreneurship",
+      "topics": [
+        "Opportunity recognition and entry strategies",
+        "Entrepreneurship as a Style of Management",
+        "Maintaining Competitive Advantage- Use of IPR to protect Innovation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Entrepreneurship- Financial Planning",
+      "topics": [
+        "Financial Projections and Valuation",
+        "Stages of financing",
+        "Debt, Venture Capital and other forms of Financing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Intellectual Property Rights (IPR)",
+      "topics": [
+        "Introduction and the economics behind development of IPR: Business Perspective",
+        "IPR in India – Genesis and Development",
+        "International Context",
+        "Concept of IP Management, Use in marketing"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Types of Intellectual Property",
+      "topics": [
+        "Patent- Procedure, Licensing and Assignment, Infringement and Penalty",
+        "Trademark- Use in marketing, example of trademarks- Domain name",
+        "Geographical Indications- What is GI, Why protect them?",
+        "Copyright- What is copyright",
+        "Industrial Designs- What is design? How to protect?",
+        "Class Discussion- Major Court battles regarding violation of patents between corporate companies"
+      ]
+    }
+  ]
+}

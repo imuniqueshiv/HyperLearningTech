@@ -1,0 +1,74 @@
+{
+  "subject": {
+    "id": "ad-801",
+    "code": "AD-801",
+    "name": "Big Data",
+    "title": "AD-801 - Big Data",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Big data",
+        "Evolution of Big data, challenges with Big Data",
+        "Technologies available for Big Data",
+        "Infrastructure for Big data",
+        "Use of Data Analytics",
+        "Desired properties of Big Data system."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Introduction to Hadoop, Core Hadoop components, Hadoop Eco system, Hive",
+      "topics": [
+        "Physical Architecture",
+        "Hadoop limitations",
+        "RDBMS Versus Hadoop",
+        "Hadoop Distributed File system",
+        "Processing Data with Hadoop",
+        "Managing Resources and Application with Hadoop YARN, MapReduce programming."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Hive, Hive Architecture, Hive Data types, Hive Query Language,",
+      "topics": [
+        "Introduction to Pig",
+        "Anatomy of Pig",
+        "Pig on Hadoop",
+        "Use Case for Pig",
+        "ETL Processing",
+        "Data types in Pig, running Pig",
+        "Execution model of Pig",
+        "Operators, functions",
+        "Data types of Pig."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to NoSQL, NoSQL Business Drivers, NoSQL Data architectural",
+      "topics": [
+        "patterns",
+        "Variations of NoSQL architectural patterns using NoSQL to Manage Big Data",
+        "Introduction to MongoDB."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Social Networks as a Graph",
+        "Types of social Networks",
+        "Clustering of social Graphs Direct Discovery of communities in a social graph",
+        "Introduction to recommender system."
+      ]
+    }
+  ]
+}

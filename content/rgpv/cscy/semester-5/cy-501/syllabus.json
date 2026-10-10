@@ -1,0 +1,106 @@
+{
+  "subject": {
+    "id": "cy-501",
+    "code": "CY-501",
+    "name": "OS Internals for Security Support",
+    "title": "CY-501 - OS Internals for Security Support",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction To Kernel",
+      "topics": [
+        "Architecture of the UNIX operating system",
+        "System concepts",
+        "Data structures",
+        "Buffer Cache",
+        "Buffer header",
+        "Structure of Buffer pool",
+        "Reading and writing disk blocks",
+        "Files INODES",
+        "Structure of a regular file",
+        "Directories",
+        "Super block",
+        "INODE assignment",
+        "System calls - OPEN, READ, CLOSE, WRITE, CREATE, CHMOD, CHOWN",
+        "Pipes",
+        "Mounting and Un-mounting"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Process",
+      "topics": [
+        "Layout System Memory",
+        "Process Description",
+        "Process control",
+        "process creation",
+        "signals",
+        "Process scheduling",
+        "Privileges",
+        "Threats, intruders, malicious software",
+        "time, clock",
+        "Principals of Concurrency",
+        "Inter-Process Communications - Process tracing",
+        "System V IPC",
+        "Shared Memory",
+        "Semaphores"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Security and Protection in Operating Systems",
+      "topics": [
+        "access control",
+        "auditing",
+        "trusted computing",
+        "Multics and the commercial Operating Systems",
+        "Malware analysis",
+        "protection viruses, worms and Trojans",
+        "Root-kits",
+        "Ransomware",
+        "Polymorphic malware",
+        "Malware capture and analysis using honey-pots"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Common vulnerabilities and Exposures",
+      "topics": [
+        "Secure system configuration",
+        "Virtualization techniques for security",
+        "Mobile Operating Systems security",
+        "Systems security in Android",
+        "Application Security",
+        "Secure wallets",
+        "secure co-processors"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Windows Operation System",
+      "topics": [
+        "versions",
+        "Concepts and tools",
+        "Windows internals",
+        "System Architecture",
+        "System worker threads",
+        "Windows global flags",
+        "Local procedural calls",
+        "Socket",
+        "Sockets Programming",
+        "Winsock",
+        "functions, data structures, descriptors",
+        "Connections",
+        "Socket elements",
+        "Stream and Datagram Sockets"
+      ]
+    }
+  ]
+}

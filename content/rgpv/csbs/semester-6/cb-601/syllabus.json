@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "cb-601",
+    "code": "CB-601",
+    "name": "Computer Networks",
+    "title": "CB-601 - Computer Networks",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamentals and Physical Layer",
+      "topics": [
+        "Computer networks and distributed systems, Classifications of computer networks, Preliminaries of layered network structures",
+        "Data communication components: Representation of data and its flow, various connection topology, Protocols and standards, OSI model, Transmission Media",
+        "LAN: Wired LAN, Wireless LAN, Virtual LAN",
+        "Techniques for Bandwidth utilization: Multiplexing - Frequency division, Time division and Wave division, Concepts on spread spectrum"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Link Layer and Medium Access Sub Layer",
+      "topics": [
+        "Fundamentals of Error Detection and Error Correction, Block coding, Hamming Distance, CRC",
+        "Flow Control and Error control protocols - Stop and Wait, Go-back–N ARQ, Selective Repeat ARQ, Sliding Window, Piggybacking",
+        "Random Access, Multiple access protocols -Pure ALOHA, Slotted ALOHA, CSMA/CD, CDMA/CA"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Network Layer",
+      "topics": [
+        "Switching, Logical addressing – IPV4, IPV6",
+        "Address mapping – ARP, RARP, BOOTP and DHCP–Delivery, Forwarding and Unicast Routing protocols"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Transport Layer",
+      "topics": [
+        "Process to Process Communication",
+        "User Datagram Protocol (UDP), Transmission Control Protocol (TCP), SCTP Congestion Control",
+        "Quality of Service (QoS), QoS improving techniques - Leaky Bucket and Token Bucket algorithms"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Application Layer and Security",
+      "topics": [
+        "Application Layer: DNS, DDNS, TELNET, EMAIL, FTP, WWW, HTTP, SNMP, Bluetooth, Firewalls",
+        "Network Security: Electronic mail, Directory services and network management, Basic concepts of Cryptography"
+      ]
+    }
+  ]
+}

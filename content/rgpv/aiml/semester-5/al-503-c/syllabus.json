@@ -1,0 +1,78 @@
+{
+  "subject": {
+    "id": "al-503-c",
+    "code": "AL503 (C)",
+    "name": "Optimization Techniques in Machine Learning",
+    "title": "AL503 (C) - Optimization Techniques in Machine Learning",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "What is optimization",
+        "Formulation of a linear programming problem (LPP)",
+        "Solution of an LPP: simplex method",
+        "Basic calculus for optimization: limits and multivariate functions",
+        "Derivatives and linear approximations of single-variate and multivariate functions"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Machine Learning Strategy",
+      "topics": [
+        "ML readiness",
+        "Risk mitigation",
+        "Experimental mindset",
+        "Build, buy, or partner",
+        "Setting up a team",
+        "Understanding and communicating change"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Responsible Machine Learning",
+      "topics": [
+        "AI for good and all",
+        "Positive feedback loops and negative feedback loops",
+        "Metric design and observing behaviours",
+        "Secondary effects of optimization",
+        "Regulatory concerns"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Machine Learning in Production and Planning",
+      "topics": [
+        "Integrating information systems",
+        "Users break things",
+        "Time and space complexity in production",
+        "When to retain the model",
+        "Logging",
+        "ML model versioning",
+        "Knowledge transfer",
+        "Reporting performance to stakeholders"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Care and Feeding of a Machine Learning Model",
+      "topics": [
+        "MLPL recap",
+        "Post-deployment challenges",
+        "QUAM monitoring and logging",
+        "QUAM testing",
+        "QUAM maintenance",
+        "QUAM updating",
+        "Separating the data stack from production",
+        "Dashboard essentials and metrics monitoring"
+      ]
+    }
+  ]
+}

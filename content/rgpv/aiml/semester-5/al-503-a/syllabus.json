@@ -1,0 +1,94 @@
+{
+  "subject": {
+    "id": "al-503-a",
+    "code": "AL503 (A)",
+    "name": "Information Retrieval",
+    "title": "AL503 (A) - Information Retrieval",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "History of information retrieval",
+        "Components of information retrieval",
+        "Issues",
+        "Open source search engine frameworks",
+        "The impact of the web on information retrieval",
+        "The role of artificial intelligence in information retrieval",
+        "Information retrieval versus web search",
+        "Components of a search engine",
+        "Characterizing the web"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Boolean and Vector Space Retrieval Models",
+      "topics": [
+        "Boolean and vector space retrieval models",
+        "Term weighting",
+        "TF-IDF weighting",
+        "Cosine similarity",
+        "Preprocessing",
+        "Inverted indices",
+        "Efficient processing with sparse vectors",
+        "Language model based information retrieval",
+        "Probabilistic information retrieval",
+        "Latent semantic indexing",
+        "Relevance feedback and query expansion"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Web Search",
+      "topics": [
+        "Web search overview",
+        "Web structure, the user, paid placement, and search engine optimization",
+        "Web search architectures",
+        "Crawling and meta-crawlers",
+        "Focused crawling",
+        "Web indexes",
+        "Near-duplicate detection",
+        "Index compression",
+        "XML retrieval"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Link Analysis, Ranking and Evaluation",
+      "topics": [
+        "Link analysis",
+        "Hubs and authorities",
+        "PageRank and HITS algorithms",
+        "Searching and ranking",
+        "Relevance scoring and ranking for the web",
+        "Similarity",
+        "Hadoop and MapReduce",
+        "Evaluation",
+        "Personalized search",
+        "Collaborative filtering and content-based recommendation of documents and products",
+        "Handling the invisible web",
+        "Snippet generation and summarization",
+        "Question answering",
+        "Cross-lingual retrieval"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Information Filtering and Text Mining",
+      "topics": [
+        "Information filtering: organization and relevance feedback",
+        "Text mining",
+        "Text classification and clustering",
+        "Categorization algorithms: naive Bayes, decision trees, and nearest neighbor",
+        "Clustering algorithms: agglomerative clustering, k-means, and expectation maximization (EM)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "subject": {
+    "id": "cy-503-a",
+    "code": "CY503 (A)",
+    "name": "Biometric Techniques for Security",
+    "title": "CY503 (A) - Biometric Techniques for Security",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Biometrics",
+      "topics": [
+        "Introduction",
+        "benefits of biometrics over traditional authentication systems",
+        "benefits of biometrics in identification systems",
+        "selecting a biometric for a system",
+        "Applications",
+        "Key biometric terms and processes",
+        "biometric matching methods",
+        "Accuracy in biometric systems"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Physiological Biometric Technologies",
+      "topics": [
+        "Fingerprints - Technical description",
+        "characteristics",
+        "Competing technologies",
+        "strengths",
+        "weaknesses",
+        "deployment",
+        "Facial scan - Technical description",
+        "characteristics",
+        "weaknesses",
+        "deployment",
+        "Iris scan - Technical description",
+        "characteristics",
+        "strengths",
+        "weaknesses",
+        "deployment",
+        "Retina vascular pattern"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Hand Scan, DNA and Behavioral Biometrics",
+      "topics": [
+        "Technical description – characteristics - strengths – weaknesses – deployment",
+        "Hand scan - Technical description-characteristics - strengths – weaknesses deployment",
+        "DNA biometrics",
+        "Behavioral Biometric Technologies: Handprint Biometrics",
+        "DNA Biometrics"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Signature, Keystroke and Voice",
+      "topics": [
+        "signature and handwriting technology - Technical description",
+        "classification",
+        "keyboard / keystroke dynamics",
+        "Voice – data acquisition",
+        "feature extraction",
+        "characteristics",
+        "strengths",
+        "weaknesses",
+        "deployment"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Multi Biometrics and Multi Factor Biometrics",
+      "topics": [
+        "Multi biometrics and multi factor biometrics",
+        "two-factor authentication with passwords",
+        "tickets and tokens",
+        "executive decision",
+        "implementation plan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "subject": {
+    "id": "al-504-b",
+    "code": "AL504 (B)",
+    "name": "Natural Language Processing",
+    "title": "AL504 (B) - Natural Language Processing",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Origins and challenges of NLP",
+        "Language modeling: grammar-based language models and statistical language models",
+        "Regular expressions",
+        "Finite-state automata",
+        "English morphology",
+        "Transducers for lexicon and rules",
+        "Tokenization",
+        "Detecting and correcting spelling errors",
+        "Minimum edit distance"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Word Level Analysis",
+      "topics": [
+        "Unsmoothed n-grams",
+        "Evaluating n-grams",
+        "Smoothing, interpolation, and backoff",
+        "Word classes",
+        "Part-of-speech tagging",
+        "Rule-based, stochastic, and transformation-based tagging",
+        "Issues in part-of-speech tagging",
+        "Hidden Markov models and maximum entropy models",
+        "Viterbi algorithm and EM training"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Syntactic Analysis",
+      "topics": [
+        "Context-free grammars",
+        "Grammar rules for English",
+        "Treebanks",
+        "Normal forms for grammar",
+        "Dependency grammar",
+        "Syntactic parsing and ambiguity",
+        "Dynamic programming parsing",
+        "Shallow parsing",
+        "Probabilistic context-free grammars",
+        "Probabilistic CYK",
+        "Probabilistic lexicalized context-free grammars",
+        "Feature structures and unification of feature structures"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Semantics and Pragmatics",
+      "topics": [
+        "Requirements for representation",
+        "First-order logic",
+        "Description logics",
+        "Syntax-driven semantic analysis",
+        "Semantic attachments",
+        "Word senses and relations between senses",
+        "Thematic roles and selectional restrictions",
+        "Word sense disambiguation",
+        "WSD using supervised, dictionary, thesaurus, and bootstrapping methods",
+        "Word similarity using thesaurus and distributional methods",
+        "Compositional semantics"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Applications of NLP",
+      "topics": [
+        "Intelligent work processors",
+        "Machine translation",
+        "User interfaces and man-machine interfaces",
+        "Natural language querying",
+        "Tutoring and authoring systems",
+        "Speech recognition",
+        "Commercial use of NLP"
+      ]
+    }
+  ]
+}

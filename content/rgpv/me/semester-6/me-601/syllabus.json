@@ -1,0 +1,102 @@
+{
+  "subject": {
+    "id": "me-601",
+    "code": "ME-601",
+    "name": "Thermal Engineering and Gas Dynamics",
+    "title": "ME-601 - Thermal Engineering and Gas Dynamics",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Steam Generators and Boilers",
+      "topics": [
+        "Steam generators: classification",
+        "Conventional boilers",
+        "High-pressure boilers: Lamont, Benson, Loeffler and Velox steam generators",
+        "Performance and rating of boilers",
+        "Equivalent evaporation",
+        "Boiler efficiency",
+        "Heat balance sheet",
+        "Combustion in boilers",
+        "Super critical boilers",
+        "Fuel and ash handling",
+        "Boiler draught",
+        "Overview of boiler codes"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Vapour Cycles",
+      "topics": [
+        "Phase change cycles: Vapor Carnot cycle and its limitation",
+        "Rankine cycle",
+        "Effect of boiler and condenser pressure and superheat on end moisture and efficiency of Rankine cycle",
+        "Modified Rankine cycle",
+        "Reheat cycle",
+        "Perfect regenerative cycle",
+        "Ideal and actual regenerative cycle with single and multiple heaters",
+        "Open and closed type of feed water heaters",
+        "Regenerative-reheat cycle",
+        "Supercritical pressure and binary-vapor cycle",
+        "Work done and efficiency calculations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Gas Dynamics",
+      "topics": [
+        "Speed of sound in a fluid",
+        "Mach number",
+        "Mach cone",
+        "Stagnation properties",
+        "One dimensional isentropic flow of ideal gases through variable area duct",
+        "Mach number variation",
+        "Area ratio as a function of Mach number",
+        "Mass flow rate and critical pressure ratio",
+        "Effect of friction",
+        "Velocity coefficient",
+        "Coefficient of discharge",
+        "Diffusers",
+        "Normal shock"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Air Compressors",
+      "topics": [
+        "Working of reciprocating compressor",
+        "Work input for single stage compression",
+        "Different compression processes",
+        "Effect of clearance",
+        "Volumetric efficiency",
+        "Real indicator diagram",
+        "Isentropic, isothermal and mechanical efficiency",
+        "Multi stage compression",
+        "Inter-cooling",
+        "Condition for minimum work done",
+        "Classification and working of rotary compressors"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Nozzles and Condensers",
+      "topics": [
+        "Steam nozzles: isentropic flow of vapors",
+        "Flow of steam through nozzles",
+        "Condition for maximum discharge",
+        "Effect of friction",
+        "Super-saturated flow",
+        "Steam condensers: introduction and types of condensers",
+        "Back pressure and its effect on plant performance",
+        "Air leakage and its effect on performance of condensers",
+        "Various types of cooling towers"
+      ]
+    }
+  ]
+}

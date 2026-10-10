@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "cb-101",
+    "code": "CB-101",
+    "name": "Discrete Mathematics",
+    "title": "CB-101 - Discrete Mathematics",
+    "semester": "I"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Boolean algebra",
+      "topics": [
+        "Introduction of Boolean algebra",
+        "Truth table",
+        "Basic logic gate",
+        "Basic postulates of Boolean algebra",
+        "Principle of duality",
+        "Canonical form",
+        "Karnaugh map"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Abstract algebra",
+      "topics": ["Set", "Relation", "Group", "Ring", "Field"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Combinatorics",
+      "topics": [
+        "Basic counting",
+        "Balls and bins problems",
+        "Generating functions",
+        "Recurrence relations",
+        "Proof techniques",
+        "Principle of mathematical induction",
+        "Pigeonhole principle"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Graph Theory",
+      "topics": [
+        "Graphs and digraphs",
+        "Complement, isomorphism, connectedness and reachability",
+        "Adjacency matrix",
+        "Eulerian paths and circuits in graphs and digraphs",
+        "Hamiltonian paths and circuits in graphs and tournaments",
+        "Trees",
+        "Planar graphs, Euler's formula, dual of a planar graph",
+        "Independence number and clique number",
+        "Chromatic number",
+        "Statement of Four-color theorem"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Logic",
+      "topics": [
+        "Propositional calculus - propositions and connectives, syntax",
+        "Semantics - truth assignments and truth tables, validity and satisfiability, tautology",
+        "Adequate set of connectives",
+        "Equivalence and normal forms",
+        "Compactness and resolution",
+        "Formal reducibility - natural deduction system and axiom system",
+        "Soundness and completeness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "subject": {
+    "id": "me-302",
+    "code": "ME-302",
+    "name": "Thermodynamics",
+    "title": "ME-302 - Thermodynamics",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Concepts & Laws of Thermodynamics",
+      "topics": [
+        "Basic concepts: Property",
+        "Equilibrium",
+        "State",
+        "Process",
+        "Cycle",
+        "Zeroth law of thermodynamics",
+        "Heat and work transfer.",
+        "First law of thermodynamics- first law applied to various systems steady flow process, limitations of first law of thermodynamics.",
+        "Second law of thermodynamics, heat engine, heat reservoir",
+        "Refrigerator, heat pump",
+        "Carnot's cycle, statements of second law Reversible and irreversible processes, consequence of second law",
+        "Clausious Inequality",
+        "Entropy",
+        "T-S diagrams",
+        "Available & Unavailable energy Availability Concept ."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Properties of Steam",
+      "topics": [
+        "Pure Substance",
+        "Phase",
+        "Phase-transformations, formation of steam, properties of steam",
+        "PVT surface",
+        "HS,TS,PV,PH,TV diagram, processes of vapor measurement of dryness fraction",
+        "Use of steam tables and Mollier chart."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Air standard cycles",
+      "topics": [
+        "Carnot",
+        "Otto",
+        "Diesel",
+        "Dual cycles and their comparison",
+        "Brayton cycle",
+        "Non reactive gas mixture",
+        "PVT relationship, mixture of ideal gases, properties of mixture of ideal gases, internal energy",
+        "Enthalpy and specific heat of gas mixtures."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Fuels & combustion",
+      "topics": [
+        "Actual & theoretical Combustion processes",
+        "Enthalpy of formation & enthalpy of reaction, first law analysis of reacting systems",
+        "Adiabatic flame temperature",
+        "Basic concept of Third Law of thermodynamics .",
+        "Steam Tables Mollier Charts & tables connected to reactive systems are allowed in Examination hall ."
+      ]
+    }
+  ]
+}

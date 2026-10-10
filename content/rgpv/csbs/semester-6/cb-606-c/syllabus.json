@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "cb-606-c",
+    "code": "CB606 (C)",
+    "name": "Data Mining and Analytics",
+    "title": "CB606 (C) - Data Mining and Analytics",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Knowledge Representation",
+      "topics": [
+        "Introduction - Related technologies - Machine Learning, DBMS, OLAP, Statistics",
+        "Stages of the Data Mining Process, Data Mining Techniques",
+        "Knowledge Representation Methods, Task relevant data, Background knowledge",
+        "Representing input data and output knowledge, Visualization techniques, Applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Preprocessing",
+      "topics": [
+        "Data cleaning, Data transformation, Data reduction, Discretization and generating concept hierarchies",
+        "Attribute-oriented analysis: Attribute generalization, Attribute relevance, Class comparison, Statistical measures"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Association and Mining Methods",
+      "topics": [
+        "Association rules: Motivation and terminology, Basic idea: item sets, Generating item sets and rules efficiently, Correlation analysis",
+        "Classification: Basic learning/mining tasks, Inferring rudimentary rules: 1R, algorithm, Decision trees, covering rules",
+        "Prediction: The prediction task, Statistical (Bayesian) classification, Bayesian networks, Instance- based methods (nearest neighbor), linear models"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Linear and Non-Linear Models",
+      "topics": [
+        "Descriptive analytics: Data Modeling, Trend Analysis, Simple Linear Regression Analysis",
+        "Forecasting models: Heuristic methods, predictive modeling and pattern discovery",
+        "Logistic Regression: Logit transform, ML estimation, Tests of hypotheses, Wald test, LR test, score test, test for overall regression, multiple logistic regression, forward, backward method, interpretation of parameters, relation with categorical data analysis",
+        "Interpreting Regression Models, Implementing Predictive Models",
+        "Generalized Linear model: Link functions such as Poisson, binomial, inverse binomial, inverse Gaussian, Gamma",
+        "Non Linear Regression (NLS): Linearization transforms, their uses & limitations, examination of non-linearity, initial estimates, iterative procedures for NLS, grid search, Newton-Raphson, steepest descent, Marquardt's methods",
+        "Introduction to semiparametric regression models, additive regression models. Introduction to nonparametric regression methods"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Time Series Analysis",
+      "topics": [
+        "Auto - Covariance, Auto-correlation and their properties",
+        "Exploratory time series analysis, Test for trend and seasonality",
+        "Exponential and moving average smoothing, Holt – Winter smoothing, forecasting based on smoothing",
+        "Linear time series models: Autoregressive, Moving Average, Autoregressive Moving Average and Autoregressive Integrated Moving Average models",
+        "Estimation of ARIMA models such as Yule-Walker estimation for AR Processes, Maximum likelihood and least squares estimation for ARIMA Processes, Forecasting using ARIMA models",
+        "Prescriptive Analytics: Mathematical optimization, Networks modeling-Multi-objective optimization-Stochastic modeling, Decision and Risk analysis, Decision trees"
+      ]
+    }
+  ]
+}

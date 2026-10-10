@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": "cb-406",
+    "code": "CB-406",
+    "name": "Operations Research",
+    "title": "CB-406 - Operations Research",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to OR",
+      "topics": [
+        "Origin of OR and its definition",
+        "Concept of optimizing performance measure, Types of OR problems",
+        "Deterministic vs. Stochastic optimization",
+        "Phases of OR problem approach – problem formulation, building mathematical model, deriving solutions, validating model, controlling and implementing solution"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Linear Programming",
+      "topics": [
+        "Linear programming – Examples from industrial cases, formulation & definitions, Matrix form",
+        "Implicit assumptions of LPP",
+        "Some basic concepts and results of linear algebra – Vectors, Matrices, Linear Independence/Dependence of vectors, Rank, Basis, System of linear eqns., Hyperplane, Convex set, Convex polyhedron, Extreme points, Basic feasible solutions",
+        "Geometric method: 2-variable case, Special cases – infeasibility, unboundedness, redundancy & degeneracy, Sensitivity analysis",
+        "Simplex Algorithm – slack, surplus & artificial variables, computational details, big-M method, identification and resolution of special cases through simplex iterations",
+        "Duality – formulation, results, fundamental theorem of duality, dual-simplex and primal-dual algorithms"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Transportation and Assignment problems",
+      "topics": [
+        "TP - Examples, Definitions – decision variables, supply & demand constraints, formulation, Balanced & unbalanced situations",
+        "Solution methods – NWCR, minimum cost and VAM, test for optimality (MODI method), degeneracy and its resolution",
+        "AP - Examples, Definitions – decision variables, constraints, formulation, Balanced & unbalanced situations",
+        "Solution method – Hungarian, test for optimality (MODI method), degeneracy & its resolution"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "PERT – CPM",
+      "topics": [
+        "Project definition, Project scheduling techniques – Gantt chart, PERT & CPM",
+        "Determination of critical paths",
+        "Estimation of Project time and its variance in PERT using statistical principles",
+        "Concept of project crashing/time-cost trade-off"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Inventory Control",
+      "topics": [
+        "Functions of inventory and its disadvantages, ABC analysis",
+        "Concept of inventory costs, Basics of inventory policy (order, lead time, types)",
+        "Fixed order-quantity models – EOQ, POQ & Quantity discount models",
+        "EOQ models for discrete units, sensitivity analysis and Robustness",
+        "Special cases of EOQ models for safety stock with known/unknown stock out situations, models under prescribed policy, Probabilistic situations"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Queuing Theory and Simulation Methodology",
+      "topics": [
+        "Definitions – queue (waiting line), waiting costs, characteristics (arrival, queue, service discipline) of queuing system, queue types (channel vs. phase)",
+        "Kendall's notation, Little's law, steady state behaviour, Poisson's Process & queue",
+        "Models with examples - M/M/1 and its performance measures; M/M/m and its performance measures; brief description about some special models",
+        "Definition and steps of simulation, random number, random number generator",
+        "Discrete Event System Simulation – clock, event list, Application in Scheduling, Queuing systems and Inventory systems"
+      ]
+    }
+  ]
+}

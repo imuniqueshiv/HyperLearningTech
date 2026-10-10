@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "ad-603-b",
+    "code": "AD-603 (B)",
+    "name": "Digital Image Processing",
+    "title": "AD-603 (B) - Digital Image Processing",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Digital Image fundamentals, A simple image model, Sampling and Quantization",
+      "topics": [
+        "Relationship between pixels.",
+        "Imaging geometry.",
+        "Image acquisition systems",
+        "Different types of digital images"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Image transformations, Introduction to Fourier transforms, Discrete Fourier",
+      "topics": [
+        "transforms",
+        "Fast Fourier transform",
+        "Walsh transformation",
+        "Hadmord transformation",
+        "Discrete Cosine Transformation."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Image enhancement, Filters in spatial and frequency domains, Histogram based",
+      "topics": [
+        "processing.",
+        "Image subtraction",
+        "Averaging",
+        "Image smoothing",
+        "Nedion filtering",
+        "Low pass filtering",
+        "Image sharpening by High pass filtering."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Image encoding and segmentation, Encoding: Mapping, Quantizer, Coder",
+      "topics": [
+        "compression",
+        "Lossy Compression schemes.",
+        "JPEG Compression standard.",
+        "Detection of discontinuation by point detection",
+        "Line detection, edge detection",
+        "Edge linking and boundary detection",
+        "Local analysis",
+        "Global processing via Hough transforms and graph theoretic techniques"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Mathematical morphology- Binary, Dilation, crosses, Opening and closing, Simple",
+      "topics": [
+        "methods of representation",
+        "Signatures",
+        "Boundary segments",
+        "Skeleton of a region",
+        "Polynomial approximation",
+        "Recent advancement in DIP, Machine learning for image processing application"
+      ]
+    }
+  ]
+}

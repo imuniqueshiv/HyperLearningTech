@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "cb-506-b",
+    "code": "CB-506 (B)",
+    "name": "Cloud, Microservices & Application",
+    "title": "CB-506 (B) - Cloud, Microservices & Application",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Cloud Fundamentals",
+      "topics": [
+        "Cloud Service Components",
+        "Cloud service/Deployment Models",
+        "Cloud components Guiding Principle with respect to utilization/Security/Pricing",
+        "Applications of Cloud",
+        "Public Cloud Platforms overview and their usage"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Application Architectures and Microservices",
+      "topics": [
+        "Application architectures - Monolithic & Distributed",
+        "Microservice fundamental and design approach",
+        "Cloud Native applications - 12 Factors App"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Application Integration and API Management",
+      "topics": [
+        "Application integration process/Apification Process",
+        "API Fundamental",
+        "Microservice / API management",
+        "Spring boot Fundamental and design of microservice",
+        "API tools",
+        "Developer Portal",
+        "Applications of Microservice and APIFICATION"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "DevOps and Containerization",
+      "topics": [
+        "DevOps fundamentals: Tools and Applications",
+        "Containerization Process and application",
+        "Python Refresher",
+        "Use cases for cloud application development"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Containers, Kubernetes, Security and Monitoring",
+      "topics": [
+        "Design and developing solution steps using containers",
+        "Containerization of application and deployment using Kubernetes",
+        "Cloud Security and Monitoring Tools"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "cy-604-a",
+    "code": "CY-604 (A)",
+    "name": "IT Business & Disaster Recovery Planning",
+    "title": "CY-604 (A) - IT Business & Disaster Recovery Planning",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Disaster Recovery and Business Continuity: Introduction, Terminologies Disaster",
+      "topics": [
+        "Types Consequences of Disaster",
+        "Disaster Recovery & Business Continuity",
+        "Principles of Disaster Recovery and Business Continuity",
+        "Issues in Disaster Recovery & Business Continuity",
+        "Addressed Activities",
+        "Solutions",
+        "Best Practices",
+        "International Strategy for Disaster Reduction (ISDR)."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Natural Disasters- Earthquakes",
+        "Protecting Yourself During Earthquake",
+        "Volcanoes",
+        "Protection from Volcanoes",
+        "Forecasting Volcanoes Estimating Earthquakes Earthquakes",
+        "Tsunami",
+        "Protecting Yourself During Tsunami",
+        "Landslides",
+        "Effects of Landslides",
+        "Protecting Yourself from Landslides",
+        "Floods",
+        "Effect of floods Prevention Measures",
+        "Wildfires Safety Measures",
+        "Drought",
+        "Consequences of Drought Measures to Overcome Drought Effects",
+        "Man-Made Disasters Accidents Power Outage Telecommunication Outage Categorization of Human Intentional Disasters."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Emergency Management: Need for Emergency Management, Phases of Emergency",
+      "topics": [
+        "Management",
+        "Mitigation Preparedness",
+        "Response Recovery",
+        "Effect of Disaster on Business Organizations",
+        "Emergency Management for Business Organizations FEMA- Federal Emergency Management Agency",
+        "Activities of FEMA."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Laws and Acts: Introduction Applicable Acts in DR Laws and Acts, Foreign Corrupt",
+      "topics": [
+        "Practices Act (FCPA)",
+        "Gramm-Leach-Bliley Act Flood Disaster Protection Act of 1973",
+        "CAN- SPAM Act of 2003",
+        "Personal Information Protection and Electronic Documents Act (PIPEDA)",
+        "Laws and Acts of Europe Data Protection Act 1998",
+        "Transmission of Personal Data",
+        "Directive 2002/58/EC Personal Data",
+        "Directive 95/46/EC Insurance",
+        "Financial Groups Directive (FGD)",
+        "Foundation of Personal Data Security Law: OECD Financial Transactions Reporting (FTR) Act 1988."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Business Continuity Management - Business Continuity Planning, Objectives of",
+      "topics": [
+        "Business Continuity Planning",
+        "Essential Resources in Business Continuity Planning",
+        "Business Continuity Management Planning Steps in ISO (International Organization for Standardization)",
+        "Risk Analysis",
+        "Risk Assessment",
+        "Basic Elements of Risk Assessment",
+        "Business Impact Analysis (BIA)",
+        "Components of Business Impact Analysis",
+        "Threat Analysis",
+        "Risk Analysis, and Business Impact Analysis",
+        "Crisis Management Steps in Crisis Management."
+      ]
+    }
+  ]
+}

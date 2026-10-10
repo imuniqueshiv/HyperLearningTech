@@ -1,0 +1,31 @@
+{
+  "subject": {
+    "id": "me-705",
+    "code": "ME-705",
+    "name": "MATLAB and R Programming",
+    "title": "ME-705 - MATLAB and R Programming",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "List of Experiments",
+      "topics": [
+        "Introduction to MATLAB",
+        "Working with matrices",
+        "Rational and logical operation of MATLAB",
+        "Creating a plot using Plot function",
+        "Complex and stastical functions (e,g.: Produce ten elements vector of random complex numbers",
+        "Numbers and strings (1.Write a program in M-File to read 3 x 3 Matrix, then display the diagonal",
+        "Write a program to read a string, then replace each character in the string with its following",
+        "What is R Programming Language?",
+        "How to Download & Install R, RStudio, Anaconda on Mac or Windows",
+        "Weite R Data Types, Arithmetic & Logical Operators with Example",
+        "Write about R Matrix : Create, Print, add Column, Slice",
+        "Explain Factor in R: Categorical & Continuous Variables",
+        "Explain about R Data Frame: Create, Append, Select, Subset."
+      ]
+    }
+  ]
+}

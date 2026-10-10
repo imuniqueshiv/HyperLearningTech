@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "ad-304",
+    "code": "AD-304",
+    "name": "Artificial Intelligence",
+    "title": "AD-304 - Artificial Intelligence",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamentals of Artificial Intelligence and Search",
+      "topics": [
+        "Fundamental of Artificial Intelligence, history, motivation and need of AI",
+        "Production systems, Characteristics of production systems",
+        "Goals and contribution of AI to modern technology",
+        "Search space",
+        "Different search techniques: hill Climbing, Best first Search",
+        "Heuristic search algorithm",
+        "A* and AO* search techniques etc."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Knowledge Representation",
+      "topics": [
+        "Problems in representing knowledge",
+        "Knowledge representation using propositional and predicate logic",
+        "Comparison of propositional and predicate logic",
+        "Resolution, refutation, deduction, theorem proving, inferencing",
+        "Monotonic and non-monotonic reasoning"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Probabilistic Reasoning and Structured Knowledge",
+      "topics": [
+        "Probabilistic reasoning",
+        "Baye's theorem",
+        "Semantic networks, scripts, schemas, frames",
+        "Conceptual dependency",
+        "Forward and backward reasoning"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Game Playing, Planning and NLP",
+      "topics": [
+        "Game playing techniques like minimax procedure, alpha-beta cut-offs etc.",
+        "Planning",
+        "Study of the block world problem in robotics",
+        "Introduction to understanding, natural language processing (NLP)",
+        "Components of NLP",
+        "Application of NLP to design expert systems"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Expert Systems",
+      "topics": [
+        "Expert systems (ES) and its Characteristics",
+        "Requirements of ES",
+        "Components and capability of expert systems",
+        "Inference Engine Forward & backward Chaining",
+        "Expert Systems Limitation",
+        "Expert System Development Environment, technology",
+        "Benefits of Expert Systems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "al-504-a",
+    "code": "AL504 (A)",
+    "name": "AI in Health Care",
+    "title": "AL504 (A) - AI in Health Care",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Disease Detection with Computer Vision",
+      "topics": [
+        "Medical image diagnosis",
+        "Eye disease and cancer diagnosis",
+        "Building and training a model for medical diagnosis",
+        "Training, prediction, and loss",
+        "Image classification and class imbalance",
+        "Generating more samples",
+        "Model testing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Evaluating Models",
+      "topics": [
+        "Sensitivity, specificity, and evaluation metrics",
+        "Accuracy in terms of conditional probability",
+        "Confusion matrix",
+        "ROC curve and threshold",
+        "Image segmentation on MRI images",
+        "Medical image segmentation",
+        "MRI data and image registration",
+        "Segmentation",
+        "2D U-Net and 3D U-Net",
+        "Data augmentation and loss function for segmentation",
+        "Different populations and diagnostic technology",
+        "External validation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Linear Prognostic Models",
+      "topics": [
+        "Medical prognosis",
+        "Atrial fibrillation",
+        "Liver disease mortality",
+        "Risk of heart disease",
+        "Evaluating prognostic models",
+        "Concordant pairs, risk ties, and permissible pairs",
+        "Prognosis with tree-based models",
+        "Decision trees for prognosis",
+        "Fixing overfitting",
+        "Different distributions",
+        "Missing data and imputation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Survival Models and Time",
+      "topics": [
+        "Survival model and survival function",
+        "Collecting time data",
+        "Estimating the survival function",
+        "Building a risk model using linear and tree-based models",
+        "Hazard functions",
+        "Relative risk",
+        "Individual versus baseline hazard",
+        "Survival trees",
+        "Nelson-Aalen estimator"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Medical Treatment Effect Estimation",
+      "topics": [
+        "Analyzing data from a randomized control trial",
+        "Average treatment effect",
+        "Conditional average treatment effect",
+        "T-learner",
+        "S-learner",
+        "C-for-benefit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "subject": {
+    "id": "ce-504-c",
+    "code": "CE504 (C)",
+    "name": "Renewable Energy Sources",
+    "title": "CE504 (C) - Renewable Energy Sources",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Renewable Energy Systems",
+      "topics": [
+        "Energy Sources, Comparison of Conventional and nonconventional, renewable and non-renewable sources",
+        "Statistics of world resources and data on different sources globally and in Indian context",
+        "Significance of renewable sources and their exploitation",
+        "Energy planning, Energy efficiency and management"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Wind Energy, Small Hydro and Wave Energy Systems",
+      "topics": [
+        "Wind Energy, Wind Mills, Grid connected systems; System configuration, working principles, limitations",
+        "Effects of wind speed and grid conditions; Grid independent systems - wind-battery, wind-diesel, wind-hydro biomass etc.",
+        "Wind operated pumps, controller for energy balance",
+        "Small Hydro System: Grid connected system, system configuration, working principles, limitations; Effect of hydro potential and grid condition",
+        "Synchronous versus Induction Generator for stand alone systems; Use of electronic load controllers and self excited induction generators",
+        "Wave Energy System: System configuration: grid connected and hybrid Systems"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Solar Radiation and Biomass Energy System",
+      "topics": [
+        "Extraterrestrial solar radiation, terrestrial solar radiation, Solar thermal conversion",
+        "Solar Photonic System: Solar cell, Solar cell materials, efficiency, Characteristics of PV panels under varying insulation",
+        "PV operated lighting and water pumps, characteristics of motors and pumps connected to PV panels",
+        "Biomass Energy System: System configuration, Biomass engine driven generators, feeding loads in stand-alone or hybrid modes, Biomass energy and their characteristics"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Energy from oceans and other sources",
+      "topics": [
+        "Ocean temperature difference, Principles of OTEC, plant operations",
+        "Geothermal Energy; Electric Energy from gaseous cells, Magneto-hydro generated energy",
+        "Non hazardous energy from nuclear wastes",
+        "Possibilities of other modern nonconventional energy sources"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Electric Energy Conservation",
+      "topics": [
+        "Energy efficient motors and other equipment; Energy saving in Power Electronic controlled drives",
+        "Electricity saving in pumps, airconditioning, power plants, process industries, illumination etc.",
+        "Methods of Energy Audit; Measurements systems; efficiency measurements; energy regulation",
+        "Typical case studies, various measuring devices analog and digital, use of thyristers"
+      ]
+    }
+  ]
+}

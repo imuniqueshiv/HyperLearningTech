@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-702-a",
+    "code": "CE702 (A)",
+    "name": "Prestressed Concrete Structures",
+    "title": "CE702 (A) - Prestressed Concrete Structures",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction – Theory and Behaviour",
+      "topics": [
+        "Basic concepts – Advantages – Materials required – Systems and methods of prestressing",
+        "Analysis of sections – Stress concept – Strength concept – Load balancing concept",
+        "Effect of loading on the tensile stresses in tendons – Effect of tendon profile on deflections",
+        "Factors influencing deflections – Calculation of deflections – Short term and long term deflections",
+        "Losses of prestress – Estimation of crack width"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design for Flexure and Shear",
+      "topics": [
+        "Basic assumptions for calculating flexural stresses",
+        "Permissible stresses in steel and concrete as per I.S.1343 Code",
+        "Design of sections of Type I and Type II post-tensioned and pre-tensioned beams",
+        "Check for strength limit based on I.S. 1343 Code",
+        "Layout of cables in post tensioned beams – Location of wires in pre-tensioned beams",
+        "Design for shear based on I.S. 1343 Code"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Deflection and Design of Anchorage Zone",
+      "topics": [
+        "Factors influencing deflections – Short term deflections of uncracked members",
+        "Prediction of long term deflections due to creep and shrinkage – Check for serviceability limit state of deflection",
+        "Determination of anchorage zone stresses in post-tensioned beams by Magnel's method, Guyon's method and IS1343 code",
+        "Design of anchorage zone reinforcement – Check for transfer bond length in pre-tensioned beams"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Composite and Continuous Beams and Slabs",
+      "topics": [
+        "Analysis and design of composite beams – Methods of achieving continuity in continuous beams",
+        "One and two way slabs, flat slab",
+        "Analysis for secondary moments – Concordant cable and linear transformation – Calculation of stresses – Principles of design"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Miscellaneous Structures",
+      "topics": [
+        "Design of tension and compression members – Tanks, pipes, sleepers and poles",
+        "Partial prestressing – Definition, methods of achieving partial prestressing, merits and demerits of partial prestressing"
+      ]
+    }
+  ]
+}

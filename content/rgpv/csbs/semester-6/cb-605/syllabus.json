@@ -1,0 +1,60 @@
+{
+  "subject": {
+    "id": "cb-605",
+    "code": "CB-605",
+    "name": "Business Communication & Value Science - IV",
+    "title": "CB-605 - Business Communication & Value Science - IV",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Communicative Writing",
+      "topics": [
+        "Principles of Communicative writing – Formal Business letters – Writing Proposals",
+        "Use of charts in communicative writing – use of business idioms – corporate terms",
+        "Activity: Group business proposals – presentation of proposal – Story telling using charts and graphs (demonstrative speech)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Emotional Intelligence",
+      "topics": [
+        "Concepts of emotional intelligence – Its importance in human life and professional life",
+        "Difference between Emotional quotient and Intelligent quotient – Corporate etiquette",
+        "Activity: Any two Anubhaav activities – 10 ways to build Emotional Intelligence by Daniel Goleman – Mock interview"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Conflict Management",
+      "topics": [
+        "Conflicts – Corporate and workplace conflicts – reason and impacts of conflicts – guidelines to manage conflicts",
+        "Teams - role of team player – stress – stress management – importance of feedbacks – Time Management",
+        "Activity: Creating posters with stress management tips – open house discussion on challenges of time management –Tracking time activity"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Corporate Social Responsibility",
+      "topics": [
+        "Corporate Social Responsibility - Social responsibilities of companies",
+        "Diversity in workplace – Individual social responsibility – Social connect – life skills – empathy",
+        "Activity: Discussion & Role play in diversity – Ubuntu story of social responsibility – creating audio embedded PPT on the concept of social responsibility"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Design Thinking & Public Speaking",
+      "topics": [
+        "Design thinking – importance of start-ups – Proof of concept for start-ups – Best practices – Art of Public speaking",
+        "Activity: Pitch in start-up idea – watching videos of public speaking – Finding similarities among world famous speeches – watching videos of Sw. Vivekananda's speech – Martin Luther King's My Dream speech"
+      ]
+    }
+  ]
+}

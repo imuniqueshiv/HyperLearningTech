@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "al-804-d",
+    "code": "AL804 (D)",
+    "name": "Human Computer Interaction",
+    "title": "AL804 (D) - Human Computer Interaction",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Human Computer Interaction (HCI) concepts and definitions",
+        "Nature of interaction human and Machine",
+        "Interaction design",
+        "Understanding and conceptualizing interaction",
+        "Understanding users",
+        "Interfaces and interactions",
+        "Data gathering"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "User Centered System Design (UCSD)",
+      "topics": [
+        "Introduction to User Centered System Design (UCSD)",
+        "Natural computing",
+        "User centered system design, core concepts",
+        "Interactive design and its strength and weakness",
+        "Types of user model",
+        "User model and evaluation",
+        "Heuristic evaluation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Psychological user models",
+      "topics": [
+        "Psychological user models",
+        "Black box models of human performance, including perception, motor control, memory and problem-solving",
+        "Quantitative analysis of performance",
+        "Human processor",
+        "Keystroke level model",
+        "GOMS descriptions of user performance"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Modeling of system understanding",
+      "topics": [
+        "Mental models and metaphor",
+        "Use of design prototypes",
+        "Controlled experiments",
+        "Cognitive walkthrough",
+        "Evaluation from the perspective of a novice learning to use the system"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Task analysis and design",
+      "topics": [
+        "Contextual and qualitative studies",
+        "Use-case driven design",
+        "Research techniques",
+        "Cognitive dimensions of notations",
+        "CSCW",
+        "Ubiquitous computing",
+        "New interaction techniques",
+        "Programmability"
+      ]
+    }
+  ]
+}

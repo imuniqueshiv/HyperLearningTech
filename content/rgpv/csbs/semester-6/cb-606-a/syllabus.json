@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "cb-606-a",
+    "code": "CB606 (A)",
+    "name": "Robotics and Embedded Systems",
+    "title": "CB606 (A) - Robotics and Embedded Systems",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Modern Day Robotics and Their Industrial Applications",
+      "topics": [
+        "Industry 4.0 Concept: Background and Overview-Industry 4.0 technologies: implementation patterns in manufacturing companies",
+        "Evolution of Industrial Robots and their Applications-Advancements in Robotics and Its Future Uses-Types of robotics in various fields for applications",
+        "Technologies essential for Cognitive Robotics: Computer systems and Technologies relevant to modern day robotics",
+        "Robotic Process Automation: Overview of RPA and its applications-RPA, AI, and Cognitive Technologies for Leaders",
+        "Introduction to Robotics: Analysis, Control, Applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Basics of Robotic Operating System",
+      "topics": [
+        "Basics of Robotic operating System: ROS for beginners an overview",
+        "Introduction to the Robot Operating System (ROS) Middleware - Secure communication for the Robot Operating System",
+        "An Introduction to Robot Operating System: The Ultimate Robot Application Framework by Adnan",
+        "Quality of Service and Cybersecurity Communication Protocols -Analysis for the Robot Operating System Robotics systems communication- Threat modelling using ROS",
+        "Towards cloud robotic system: A case study of online co-localization for fair resource competence",
+        "A Case Study on Model-Based Development of Robotic Systems using Monti Arc with Embedded Automata"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "AI in the Context of Cognitive Robotics and Role of AI in Robotics",
+      "topics": [
+        "Foundation for Advanced Robotics and AI- A Concept for a Practical Robot Design Process",
+        "Demo to train A Robot Using AI - Deep learning core applications-Deep learning business applications",
+        "Introduction to computer vision and application of Vision Systems in Robotics",
+        "Concepts of computer vision and the how vision systems are becoming essential part of Robotics",
+        "Computer Vision: Models, Learning, and Inference - Mastering Computer Vision with TensorFlow 2.x",
+        "Machine Vision Applications- Application areas for vision systems-Robot inspection case study-Autonomous driving using 3D imaging case study"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Data Science and Big Data in the Context of Cognitive Robotics",
+      "topics": [
+        "Cognitive Technologies: The Next Step Up for Data and Analytics in robotics",
+        "Cognitive Deep Learning Technology for Big Data Cognitive Assistant Robots for Reducing Variability in Industrial Human-Robot Activities",
+        "Introduction to Python and R Programming in the context of Robotics",
+        "Introduction to Python - Python Functions for Data Science-Basic ROS Learning Python for robotics",
+        "An introduction to R -The R in Robotics rosR: A New Language Extension for the Robot Operating System",
+        "Artificial Intelligence and Robotics - The Review of Reliability Factors Related to Industrial Robots",
+        "Failure analysis of mature robots in automated production- Data Analytics for Predictive Maintenance of Industrial Robots",
+        "Failure Is an Option: How the Severity of Robot Errors Affects Human-Robot Interaction"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Concepts of Cloud Computing, Cloud Platforms and IT Applications in Robotics",
+      "topics": [
+        "Learning Cloud Computing: Core Concepts - Cloud Computing: Private Cloud Platforms",
+        "Robot as a Service in Cloud Computing -Cloud Computing Technology and Its Application in Robot Control",
+        "A Comprehensive Survey of Recent Trends in Cloud Robotics Architectures and Applications",
+        "Google's cloud robotics and high computing needs of industrial automation and systems",
+        "The role of cloud and opensource software in the future of robotics-The Power of Cloud Robotics by Robotics Industry Association"
+      ]
+    }
+  ]
+}

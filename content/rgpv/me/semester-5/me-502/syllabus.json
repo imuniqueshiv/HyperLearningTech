@@ -1,0 +1,91 @@
+{
+  "subject": {
+    "id": "me-502",
+    "code": "ME-502",
+    "name": "Mechanical Vibrations",
+    "title": "ME-502 - Mechanical Vibrations",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Fundamental Aspects of Vibrations: Vibration, main causes, advantages and",
+      "topics": [
+        "disadvantages",
+        "engineering applications of vibration and noise",
+        "vector method of representing harmonic motion",
+        "characteristics of vibration, harmonic analysis and beats phenomenon, work done by harmonic forces on harmonic motion",
+        "periodic, non- harmonic functions- Fourier series analysis",
+        "elements of vibratory system",
+        "lumped and distributed parameter systems.",
+        "Undamped Free Vibrations: Derivation of differential equation of motion: the energy method, the method based on Newton's second law of motion, and Rayleigh's method.",
+        "Solution of differential equation of motion: Natural frequency of vibration.",
+        "Systems involving angular oscillations: the compound pendulum."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Damped Free Vibrations: Viscous damping: coefficient of damping",
+      "topics": [
+        "under damped, over damped and critically damped systems",
+        "logarithmic decrement",
+        "frequency of damped free vibration",
+        "Coulomb or dry friction damping",
+        "frequency, decay rate and comparison of viscous and Coulomb damping",
+        "solid and structural damping",
+        "slip or interfacial damping."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Harmonically excited Vibration: One degree of freedom- forced harmonic vibration",
+      "topics": [
+        "vector representation of forces",
+        "excitation due to rotating and reciprocating unbalance",
+        "vibration Isolation, force and motion transmissibility",
+        "absolute and relative motion of mass (Seismic Instruments ).",
+        "Whirling Motion and Critical Speed : Whirling motion and Critical speed : Definitions and significance.",
+        "Critical speed of a vertical , light flexible shaft with single rotor : with and without damping .",
+        "Critical speed of a shaft carrying multiple discs (without damping )",
+        "Secondary critical speed."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Systems With Two Degrees of Freedom : Un-damped free vibration of 2 d",
+      "topics": [
+        "Principal modes of vibration",
+        "torsion vibrations",
+        "Forced",
+        "Un-damped vibrations with harmonic excitation",
+        "Coordinate coupling",
+        "Dynamic vibration absorber",
+        "torsion Vibration Absorber",
+        "Pendulum type of dynamic vibration."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Noise Engineering Subjective response of sound: Frequency and sound dependent",
+      "topics": [
+        "human response",
+        "the decibel scale",
+        "relationship between, sound pressure level (SPL), sound power level and sound intensity scale",
+        "relationship between addition, subtraction and averaging, sound spectra and Octave band analysis",
+        "loudness",
+        "weighting networks",
+        "equivalent sound level, auditory effects of noise",
+        "hazardous noise, exposure due to machines and equipments",
+        "hearing conservation and damage risk criteria, daily noise doze.",
+        "Noise: Sources",
+        "Isolation and Control: Major sources of noise on road and in industries, noise due to construction equipments and domestic appliances, industrial noise control, strategies- noise control at source (with or without sound enclosures), noise control along the path (with or without partitions and acoustic barriers )",
+        "noise control at the receiver, ear defenders, earplugs, semi-insert protectors."
+      ]
+    }
+  ]
+}

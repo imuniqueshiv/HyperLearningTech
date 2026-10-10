@@ -1,0 +1,85 @@
+{
+  "subject": {
+    "id": "al-603-b",
+    "code": "AL603 (B)",
+    "name": "Data and Visual Analytics",
+    "title": "AL603 (B) - Data and Visual Analytics",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Data Definitions and Analysis Techniques",
+      "topics": [
+        "Elements, Variables, and Data categorization",
+        "Levels of Measurement",
+        "Data management and indexing",
+        "Introduction to Statistical Concepts: Sampling Distributions, Resampling",
+        "Statistical Inference and Descriptive Statistics",
+        "Measures of central tendency",
+        "Measures of location of dispersions"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Advance Data analysis techniques",
+      "topics": [
+        "Statistical hypothesis generation and testing",
+        "Chi-Square test",
+        "t-Test",
+        "Analysis of variance",
+        "Correlation analysis",
+        "Maximum likelihood test",
+        "Regression Modelling",
+        "Multivariate Analysis",
+        "Bayesian Modelling, Inference and Bayesian Network",
+        "Regression analysis"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Data Wrangling and Data Visualization in Data Analysis",
+      "topics": [
+        "Intro to Data Wrangling",
+        "Gathering Data",
+        "Assessing Data",
+        "Cleaning Data",
+        "Design of Visualizations",
+        "Univariate Exploration of Data",
+        "Bivariate Exploration of Data",
+        "Multivariate Exploration of Data",
+        "Explanatory Visualizations"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Data Ecosystem",
+      "topics": [
+        "Overview of the Data Analyst Ecosystem",
+        "Types of Data",
+        "Understanding Different Types of File Formats",
+        "Sources of Data",
+        "Overview of Data Repositories",
+        "NoSQL, Data Marts, Data Lakes",
+        "ETL, and Data Pipelines",
+        "Foundations of Big Data",
+        "Big Data processing tools such as Hadoop, Hadoop Distributed File System (HDFS), Hive, and Spark"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Data Visualization tools",
+      "topics": [
+        "Python visualization libraries (matplotlib, pandas, seaborn, ggplot, plotly)",
+        "Introduction to PowerBI tools",
+        "Examples of inspiring (industry) projects",
+        "Exercise: create your own visualization of a complex dataset"
+      ]
+    }
+  ]
+}

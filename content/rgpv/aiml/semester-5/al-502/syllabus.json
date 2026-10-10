@@ -1,0 +1,108 @@
+{
+  "subject": {
+    "id": "al-502",
+    "code": "AL-502",
+    "name": "Database Management Systems",
+    "title": "AL-502 - Database Management Systems",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "DBMS Concepts and Architecture",
+      "topics": [
+        "Introduction",
+        "Database approach versus traditional file accessing approach",
+        "Advantages of database systems",
+        "Data models, schemas, and instances",
+        "Data independence",
+        "Database languages and interfaces",
+        "Overall database structure",
+        "Functions of the DBA and designer",
+        "ER data model: entities and attributes, entity types, and defining the E-R diagram",
+        "Generalization, aggregation, and specialization",
+        "Transforming an ER diagram into tables",
+        "Object-oriented, network, and relational data models, and comparison of the three",
+        "Storage structures: secondary storage devices",
+        "Hashing and indexing structures: single-level and multilevel indices"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Relational Data Models",
+      "topics": [
+        "Domains, tuples, attributes, and relations",
+        "Characteristics of relations",
+        "Keys and key attributes of a relation",
+        "Relational database and schemas",
+        "Integrity constraints and referential integrity",
+        "Intension and extension",
+        "Relational query languages: SQL DDL and DML",
+        "Integrity constraints, complex queries, joins, indexing, triggers, and assertions",
+        "Relational algebra and relational calculus",
+        "Relational algebra operations: select, project, join, division, and outer union",
+        "Tuple-oriented and domain-oriented relational calculus and their operations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Database Design and Query Optimization",
+      "topics": [
+        "Introduction to normalization",
+        "Normal forms: 1NF, 2NF, 3NF, and BCNF",
+        "Functional dependency",
+        "Decomposition",
+        "Dependency preservation and lossless join",
+        "Problems with null values and dangling tuples",
+        "Multivalued dependencies",
+        "Query optimization: introduction and steps of optimization",
+        "Algorithms to implement select, project, and join operations of relational algebra",
+        "Optimization methods: heuristic based and cost estimation based"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Transaction Processing Concepts",
+      "topics": [
+        "Transaction system",
+        "Testing of serializability",
+        "Serializability of schedules",
+        "Conflict and view serializable schedules",
+        "Recoverability",
+        "Recovery from transaction failures",
+        "Log-based recovery",
+        "Checkpoints and deadlock handling",
+        "Concurrency control and locking techniques",
+        "Timestamping protocols for concurrency control",
+        "Validation-based protocol",
+        "Multiple granularity",
+        "Multiversion schemes",
+        "Recovery with concurrent transactions",
+        "Introduction to distributed databases, data mining, and data warehousing",
+        "Object technology and DBMS",
+        "Comparative study of OODBMS versus DBMS",
+        "Temporal, deductive, multimedia, web, and mobile databases"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Case Study of Relational Database Management Systems",
+      "topics": [
+        "Oracle, PostgreSQL, and MySQL: architecture, physical files, memory structures, and background processes",
+        "Data dictionary and dynamic performance views",
+        "Security, role management, privilege management, profiles, and the invoker-defined security model",
+        "SQL queries, hierarchical queries, inline queries, and flashback queries",
+        "Introduction to ANSI SQL",
+        "Cursor management: nested and parameterized cursors",
+        "Stored procedures and usage of parameters in procedures",
+        "User-defined functions and their limitations",
+        "Triggers, mutating errors, and instead-of triggers"
+      ]
+    }
+  ]
+}

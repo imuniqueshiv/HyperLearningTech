@@ -1,0 +1,99 @@
+{
+  "subject": {
+    "id": "me-802-c",
+    "code": "ME-802 (C)",
+    "name": "Machine Tool Design",
+    "title": "ME-802 (C) - Machine Tool Design",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Basic Features and Kinematics of Machine Tools",
+      "topics": [
+        "Features of basic machine tools",
+        "Construction and operation",
+        "Types of machine tools",
+        "Machine tools motions",
+        "Transmission: rotation into rotation, rotation into translation",
+        "Kinematic structures of machine tools: elementary, complex and compound structure",
+        "Kinematic features of gear shapers and gear hobbing machine"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Regulation of Speed and Gear Drives",
+      "topics": [
+        "Design of gear boxes: need for variation of speed",
+        "Selection of speed range",
+        "Laws of stepped regulation",
+        "Standardization of speeds",
+        "Speed diagram",
+        "Analysis of productivity loss",
+        "Kinematic advantage of GP",
+        "Structural diagrams",
+        "Ray diagram and speed chart",
+        "Gear drives: belt and cone pulley",
+        "Slip gear type",
+        "North gear drive",
+        "Draw key gear drive",
+        "Clutch type",
+        "Mechanical step less drives",
+        "Electrical drives",
+        "Hydraulic drive"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Design of Metal Working Tools",
+      "topics": [
+        "Design of press working tools",
+        "Shearing, piercing, blanking",
+        "Dies",
+        "Compound die design principles for forging dies",
+        "Bending, forming drawing dies",
+        "Tooling for forging",
+        "Design principles for forging dies",
+        "Drop forging",
+        "Upset forging",
+        "Design principles and practice for rolling",
+        "Roll press design"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Design of Jigs and Fixtures",
+      "topics": [
+        "Principles of location",
+        "Locating method and devices",
+        "Principles of clamping",
+        "Clamping devices",
+        "Drilling jigs",
+        "Types",
+        "Drill bushes",
+        "Fixture and economics",
+        "Types of fixture",
+        "Milling, grinding, broaching",
+        "Assembly fixtures",
+        "Indexing jig and fixtures",
+        "Indexing devices"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Design of Gauges and Inspection Features",
+      "topics": [
+        "Design of gauges for tolerance for dimensions and form inspection",
+        "Dies and mould design for plastics and rubber parts",
+        "Compression molding",
+        "Transfer molding",
+        "Blow molding"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "subject": {
+    "id": "me-701",
+    "code": "ME-701",
+    "name": "Heat and Mass Transfer",
+    "title": "ME-701 - Heat and Mass Transfer",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "thermal resistance and conductance, analogy between flow of heat and electricity, combined heat transfer process",
+        "Conduction: Fourier heat conduction equation, its form in rectangular, cylindrical and spherical coordinates, thermal diffusivity, linear one dimensional steady state conduction through a slab, tubes, spherical shells and composite structures, electrical analogies, critical- insulation-thickness for pipes, effect of variable thermal conductivity."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Extended Surfaces (fins): Heat transfer from a straight and annular fin (plate) for a uniform cross section",
+        "error in measurement of temperature in a thermometer well, fin efficiency, fin effectiveness, applications",
+        "Unsteady heat conduction: Transient and periodic conduction, heating and cooling of bodies with known temperatures distribution, systems with infinite thermal conductivity, response of thermocouples."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Convection: Introduction, free and forced convection",
+      "topics": [
+        "Buckingham `pie' theorem, application of dimensional analysis of free and forced convection, empirical correlations for laminar and turbulent flow over flat plate and tubular geometry",
+        "calculation of convective heat transfer coefficient using data book."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Heat Exchangers: Types- parallel flow, counter flow",
+        "evaporator and condensers, overall heat transfers coefficient, fouling factors, log-mean temperature difference (LMTD), method of heat exchanger analysis, effectiveness of heat exchanger",
+        "NTU method",
+        "Mass transfer: Fick's law, equi-molar diffusion, diffusion coefficient, analogy with heat transfer, diffusion of vapour in a stationary medium."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "reflection and emission of radiation",
+        "Planck's distribution law, radiation from real surfaces",
+        "radiation heat exchange between black and gray surfaces, shape factor, analogical electrical network, radiation shields.",
+        "Boiling and condensation: Film wise and drop wise condensation",
+        "Nusselt theory for film wise condensation on a vertical plate and its modification for horizontal tubes",
+        "boiling heat transfer phenomenon, regimes of boiling, boiling correlations."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "subject": {
+    "id": "cs-803-b",
+    "code": "CS-803 (B)",
+    "name": "Game Theory with Engineering applications",
+    "title": "CS-803 (B) - Game Theory with Engineering applications",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Overview and Design Process",
+      "topics": [
+        "What is a Game, Game Design Schema, Game Design fundamentals",
+        "Engineering application of game theory",
+        "Design Process: Iterative design, Commissions, Design & Testing of the Board Game",
+        "Introduction to meaningful play, two kinds of meaningful play - discernable & integrated"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Design, Meaning and Semiotics",
+      "topics": [
+        "Introducing design, design & meaning",
+        "Semiotics: A brief overview, four semiotic Concepts",
+        "Context Shapes interpretations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Systems and Interactivity",
+      "topics": [
+        "Introduction to Systems, elements of a System, Framing Systems, open & closed systems",
+        "Introduction to Interactivity, a multivalent model of interactivity",
+        "Interaction & choice, choice molecules, anatomy of choice, space of possibility"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Defining Games and Primary Schemas",
+      "topics": [
+        "Defining games: overview of digital games, magic circle",
+        "Primary Schemas: conceptual framework, rule, play, culture"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Rules",
+      "topics": [
+        "Defining rules, a deck of cards, quality of rules, rules in context",
+        "Rules on three levels: Operational, Constituative, Implicit",
+        "Identity of a Game, Specificity of Rules, Rules of Digital games",
+        "Case Studies: Tic Tac Toe, Deck of Cards"
+      ]
+    }
+  ]
+}

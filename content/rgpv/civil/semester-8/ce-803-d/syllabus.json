@@ -1,0 +1,65 @@
+{
+  "subject": {
+    "id": "ce-803-d",
+    "code": "CE803 (D)",
+    "name": "Integrated Water Management",
+    "title": "CE803 (D) - Integrated Water Management",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Paradigm Shift in Water Management",
+      "topics": [
+        "Global and national perspectives of water crisis, water scarcity, water functions in the life-support systems",
+        "Water availability and requirements for humans and nature",
+        "Concepts of 'blue water', 'green water' and 'virtual water' and their roles in water management",
+        "Human-landscape interventions, and salient water management issues and challenges"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Sustainable Water Resources Management",
+      "topics": [
+        "Concept of sustainable development, sustainability principles for water management",
+        "Goals for guiding sustainable water resource management",
+        "Important preconditioning in water policy approaches, framework for planning a sustainable water future"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Integrated Water Resources Management (IWRM) Approach",
+      "topics": [
+        "IWRM Principles: Modern principles for water management and planning, definition, components, and critique of IWRM",
+        "IWRM Implementation: Socio-scientific, economic, political and ecological factors affecting the implementation of IWRM principles",
+        "Salient examples of river basin management, lessons from best practices in river-basin management"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Surface and Subsurface Water Systems",
+      "topics": [
+        "Impacts of development activities on the water cycle, precipitation, evapotranspiration, infiltration, runoff, streamflow, erosion and sedimentation",
+        "Types of aquifer systems and their hydraulic characteristics, environmental impacts on groundwater systems",
+        "Estimation of groundwater recharge and discharge, assessment of groundwater potential, surface water-groundwater interaction",
+        "Concept of sustainable groundwater development and management, water balance, balance of water resources and needs",
+        "Minimum water table and minimum discharges"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Conventional and Non-conventional Techniques for Water Security",
+      "topics": [
+        "Rainwater harvesting, groundwater mining and artificial recharge",
+        "Conjunctive use of surface water and groundwater resources",
+        "Long-distance water conveyance and transport, conservation of 'green water'",
+        "Desalination, treatment of poor-quality waters"
+      ]
+    }
+  ]
+}

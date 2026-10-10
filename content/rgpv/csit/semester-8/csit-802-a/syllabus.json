@@ -1,0 +1,82 @@
+{
+  "subject": {
+    "id": "csit-802-a",
+    "code": "CSIT-802 (A)",
+    "name": "Data Warehousing & Mining",
+    "title": "CSIT-802 (A) - Data Warehousing & Mining",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Data Warehousing",
+      "topics": [
+        "Introduction",
+        "Delivery process",
+        "Data warehouse architecture",
+        "Data preprocessing: data cleaning, data integration and transformation, and data reduction",
+        "Data warehouse design: data warehouse schema and partitioning strategy",
+        "Data warehouse implementation",
+        "Data marts",
+        "Meta data",
+        "Example of a multidimensional data model",
+        "Introduction to pattern warehousing"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "OLAP Systems",
+      "topics": [
+        "Basic concepts",
+        "OLAP queries",
+        "Types of OLAP servers",
+        "OLAP operations",
+        "Data warehouse hardware and operational design: security, backup and recovery"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Data and Data Mining",
+      "topics": [
+        "Data types",
+        "Quality of data",
+        "Data preprocessing",
+        "Similarity measures",
+        "Summary statistics",
+        "Data distributions",
+        "Basic data mining tasks",
+        "Data mining vs knowledge discovery in databases",
+        "Issues in data mining",
+        "Introduction to fuzzy sets and fuzzy logic"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Supervised Learning and Classification",
+      "topics": [
+        "Statistical-based algorithms",
+        "Distance-based algorithms",
+        "Decision tree-based algorithms",
+        "Neural network-based algorithms",
+        "Rule-based algorithms",
+        "Probabilistic classifiers"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Clustering and Association Rule Mining",
+      "topics": [
+        "Hierarchical algorithms",
+        "Partitional algorithms",
+        "Clustering large databases: BIRCH, DBSCAN and CURE algorithms",
+        "Association rules",
+        "Parallel and distributed algorithms such as Apriori and FP growth algorithms"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "subject": {
+    "id": "ce-503-a",
+    "code": "CE503 (A)",
+    "name": "Structural Analysis-II",
+    "title": "CE503 (A) - Structural Analysis-II",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Moment distribution and Kani's method",
+      "topics": [
+        "Moment distribution method in analysis of frames with sway",
+        "Analysis of box frames, analysis of portals with inclined members",
+        "Analysis of beams and frames by Kani's method"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Plastic analysis",
+      "topics": ["Plastic analysis of beams and frames"]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Analysis of tall frames",
+      "topics": [
+        "Analysis of tall frames, wind and earthquake loads, codal provisions for lateral loads",
+        "Approximate analysis of multistory frames for vertical and lateral loads"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Matrix method of structural analysis",
+      "topics": ["Force method and displacement method"]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Influence lines for intermediate structures",
+      "topics": [
+        "Influence lines for intermediate structures, Muller Breslau principle"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "subject": {
+    "id": "cy-601",
+    "code": "CY-601",
+    "name": "Cyber Crime Investigation & Digital Forensic",
+    "title": "CY-601 - Cyber Crime Investigation & Digital Forensic",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Cyber Crime-Definition, Nature and Extent of Cyber Crimes in India and other",
+      "topics": [
+        "countries - Classification of Cyber Crimes-Differences between conventional crimes and cybercrimes - Trends in Cyber Crimes across the world."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Forms of Cyber Crimes, Frauds-Cyber bullying, hacking, cracking, DoS-viruses,",
+      "topics": [
+        "works, bombs, logical bombs, time bombs, email bombing, data diddling, salami attacks, phishing,steganography,cyberstalking,spoofing,cyberpornography,defamation,computer vandalism, crimes through social networking sites, malwares, social engineering, credit card frauds & financial frauds, telecom frauds.",
+        "Cloud based",
+        "E-commerce Frauds and other forms."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Profile of Cyber criminals-Cyber Crime Psychology-Psychological theories dealing",
+      "topics": [
+        "with cybercrimes-Learning",
+        "Motivation, personality and intelligence theories of cyber criminals - Criminal profiling.",
+        "Impact of cybercrimes - Economic",
+        "Psychological and Sociological impact on individual, corporate and companies, government and the nation."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Modus Operandi of various cyber crimes and frauds-Modus Operandi-Fraud",
+      "topics": [
+        "triangle-fraud detection techniques-countermeasures.",
+        "Intrusion Analysis",
+        "Intrusion Analysis as a Core Skill set",
+        "Methods to Performing Intrusion Analysis",
+        "Intrusion Kill Chain",
+        "Passively Discovering Activity in Historical Data and Logs",
+        "Detecting Future Threat Actions and Capabilities",
+        "Denying Access to Threats",
+        "Delaying and Degrading Adversary Tactics and Malware",
+        "Identifying Intrusion Patterns and Key Indicators."
+      ]
+    }
+  ]
+}

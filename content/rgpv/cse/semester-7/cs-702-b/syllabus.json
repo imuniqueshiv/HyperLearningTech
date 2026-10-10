@@ -1,0 +1,84 @@
+{
+  "subject": {
+    "id": "cs-702-b",
+    "code": "CS-702 (B)",
+    "name": "Deep & Reinforcement Learning",
+    "title": "CS-702 (B) - Deep & Reinforcement Learning",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Deep Learning Foundations and RNNs",
+      "topics": [
+        "History of Deep Learning",
+        "McCulloch Pitts Neuron, Thresholding Logic, Activation functions",
+        "Gradient Descent (GD), Momentum Based GD, Nesterov Accelerated GD, Stochastic GD, AdaGrad, RMSProp, Adam",
+        "Eigenvalue Decomposition",
+        "Recurrent Neural Networks, Backpropagation through time (BPTT)",
+        "Vanishing and Exploding Gradients, Truncated BPTT",
+        "GRU, LSTMs",
+        "Encoder Decoder Models, Attention Mechanism, Attention over images"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Autoencoders and Regularization",
+      "topics": [
+        "Autoencoders and relation to PCA",
+        "Regularization in autoencoders, Denoising autoencoders, Sparse autoencoders, Contractive autoencoders",
+        "Regularization: Bias Variance Tradeoff, L2 regularization, Early stopping",
+        "Dataset augmentation, Parameter sharing and tying, Injecting noise at input",
+        "Ensemble methods, Dropout",
+        "Batch Normalization, Instance Normalization, Group Normalization"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "CNN Architectures and Trends",
+      "topics": [
+        "Greedy Layerwise Pre-training",
+        "Better activation functions, Better weight initialization methods",
+        "Learning Vectorial Representations Of Words",
+        "Convolutional Neural Networks",
+        "LeNet, AlexNet, ZF-Net, VGGNet, GoogLeNet, ResNet",
+        "Visualizing Convolutional Neural Networks, Guided Backpropagation",
+        "Deep Dream, Deep Art",
+        "Recent Trends in Deep Learning Architectures"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Reinforcement Learning Fundamentals",
+      "topics": [
+        "Introduction to reinforcement learning (RL)",
+        "Bandit algorithms - UCB, PAC, Median Elimination",
+        "Policy Gradient",
+        "Full RL & MDPs, Bellman Optimality",
+        "Dynamic Programming - Value iteration, Policy iteration",
+        "Q-learning & Temporal Difference Methods",
+        "Temporal-Difference Learning, Eligibility Traces",
+        "Function Approximation, Least Squares Methods"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Advanced Reinforcement Learning",
+      "topics": [
+        "Fitted Q, Deep Q-Learning, Advanced Q-learning algorithms",
+        "Learning policies by imitating optimal controllers",
+        "DQN & Policy Gradient, Policy Gradient Algorithms for Full RL",
+        "Hierarchical RL, POMDPs, Actor-Critic Method",
+        "Inverse reinforcement learning",
+        "Maximum Entropy Deep Inverse Reinforcement Learning",
+        "Generative Adversarial Imitation Learning",
+        "Recent Trends in RL Architectures"
+      ]
+    }
+  ]
+}

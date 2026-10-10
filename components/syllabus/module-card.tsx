@@ -25,7 +25,7 @@ interface ModuleCardProps {
     id: string;
     number: number;
     title: string;
-    hours: number;
+    hours?: number | null;
     topics?: Topic[];
     questionIds?: string[];
     predictedQuestionIds?: string[];
@@ -74,9 +74,11 @@ export default function ModuleCard({
             </div>
 
             <div className="mt-5 flex flex-wrap gap-3">
-              <span className="rounded-full border border-border px-3 py-1 text-sm">
-                {module.hours} Hours
-              </span>
+              {module.hours !== undefined && (
+                <span className="rounded-full border border-border px-3 py-1 text-sm">
+                  {module.hours} Hours
+                </span>
+              )}
 
               <span className="rounded-full border border-border px-3 py-1 text-sm">
                 {module.questionIds?.length || 0} PYQs

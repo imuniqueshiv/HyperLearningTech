@@ -1,0 +1,86 @@
+{
+  "subject": {
+    "id": "al-802-c",
+    "code": "AL802 (C)",
+    "name": "Big Data Analytics",
+    "title": "AL802 (C) - Big Data Analytics",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Big data",
+      "topics": [
+        "Big data characteristics",
+        "Types of big data",
+        "Traditional Versus Big data",
+        "Evolution of Big data",
+        "Challenges with Big Data",
+        "Technologies available for Big Data",
+        "Infrastructure for Big data",
+        "Use of Data Analytics",
+        "Desired properties of Big Data system"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Introduction to Hadoop",
+      "topics": [
+        "Core Hadoop components",
+        "Hadoop Eco system",
+        "Hive Physical Architecture",
+        "Hadoop limitations",
+        "RDBMS Versus Hadoop",
+        "Hadoop Distributed File system",
+        "Processing Data with Hadoop",
+        "Managing Resources and Application with Hadoop YARN",
+        "Map Reduce programming"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Introduction to Hive and Pig",
+      "topics": [
+        "Hive Architecture",
+        "Hive Data types",
+        "Hive Query Language",
+        "Introduction to Pig",
+        "Anatomy of Pig",
+        "Pig on Hadoop",
+        "Use Case for Pig",
+        "ETL Processing",
+        "Data types in Pig, running Pig",
+        "Execution model of Pig",
+        "Operators, functions, Data types of Pig"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Introduction to NoSQL",
+      "topics": [
+        "NoSQL Business Drivers",
+        "NoSQL Data architectural patterns",
+        "Variations of NOSQL architectural patterns using NoSQL to Manage Big Data",
+        "Introduction to Mango DB"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Mining social Network Graphs",
+      "topics": [
+        "Introduction",
+        "Applications of social Network mining",
+        "Social Networks as a Graph",
+        "Types of social Networks",
+        "Clustering of social Graphs",
+        "Direct Discovery of communities in a social graph",
+        "Introduction to recommender system"
+      ]
+    }
+  ]
+}

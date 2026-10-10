@@ -1,0 +1,52 @@
+{
+  "subject": {
+    "id": "me-804",
+    "code": "ME-804",
+    "name": "Simulation And Modeling",
+    "title": "ME-804 - Simulation And Modeling",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Modeling Software Packages",
+      "topics": [
+        "Introduction to Modeling Software Packages like Solid Works, CATIA, ANSYS",
+        "Assembly of Sleeve and Cotter joint",
+        "Gib and Cotter joint / Knuckle Joint / Flanged Coupling",
+        "Assembly of Connecting Rod"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Introduction to Simulation Software Packages",
+      "topics": [
+        "Introduction to Simulation software Packages like ANSYS, Fluent, and etc.",
+        "Various types of analysis",
+        "Structure analysis",
+        "Thermal analysis",
+        "Stress analysis",
+        "CFD analysis",
+        "FEM analysis",
+        "Their problem solving in actual situations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "List of Experiments",
+      "topics": [
+        "Introduction to CATIA software",
+        "Introduction to ANSYS software",
+        "Assembly of Sleeve and Cotter joint / Gib and Cotter joint / Knuckle Joint / Flanged Coupling using CATIA",
+        "Assembly of Connecting Rod using CATIA",
+        "Stress analysis using ANSYS (examples: plate with a circular hole, rectangular L bracket, Axis-symmetric components, various types of beams, etc.)",
+        "Thermal stress analysis of a 2D component",
+        "Conductive and convective heat transfer analysis of a 2D component",
+        "CFD Simulation of various situations (example: Laminar pipe flow, Flat plate boundary layer, steady flow past a cylinder, Compressible flow in a Nozzle, Flow over an airfoil.)"
+      ]
+    }
+  ]
+}

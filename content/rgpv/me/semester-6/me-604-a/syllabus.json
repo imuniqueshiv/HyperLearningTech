@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "me-604-a",
+    "code": "ME-604 (A)",
+    "name": "Robotics",
+    "title": "ME-604 (A) - Robotics",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Need and importance",
+        "Basic concepts",
+        "Structure and classification of industrial robots",
+        "Terminology of robot motion",
+        "Motion characteristics",
+        "Resolution, accuracy, repeatability",
+        "Robot applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "End Effectors and Drive Systems",
+      "topics": [
+        "Drive systems for robots",
+        "Salient features and comparison",
+        "Different types of end effectors",
+        "Design",
+        "Applications"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Sensors",
+      "topics": [
+        "Sensor evaluation and selection",
+        "Piezoelectric sensors",
+        "Linear position and displacement sensing",
+        "Revolvers",
+        "Encoders",
+        "Velocity measurement",
+        "Proximity, tactile, compliance and range sensing",
+        "Image processing and object recognition"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Robot Programming",
+      "topics": [
+        "Teaching of robots",
+        "Manual",
+        "Walk through",
+        "Teach pendant",
+        "Off line programming concepts and languages",
+        "Applications"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Safety and Economy of Robots",
+      "topics": [
+        "Work cycle time analysis",
+        "Economics and effectiveness of robots",
+        "Safety systems and devices",
+        "Concepts of testing methods and acceptance rule for industrial robots"
+      ]
+    }
+  ]
+}

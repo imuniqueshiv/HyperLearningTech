@@ -1,0 +1,113 @@
+{
+  "subject": {
+    "id": "csit-501",
+    "code": "CSIT-501",
+    "name": "Computer Networking",
+    "title": "CSIT-501 - Computer Networking",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Computer Networks",
+      "topics": [
+        "Importance of computer networks",
+        "Broadcast and point-to-point networks",
+        "Local area networks and wide area networks",
+        "ISO-OSI reference model",
+        "TCP/IP model",
+        "Interfaces and services",
+        "Protocol data unit",
+        "Connection-oriented and connectionless services",
+        "Service primitives",
+        "Binding protocol address: ARP and RARP",
+        "Packet format",
+        "Encapsulation"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data-Link Layer",
+      "topics": [
+        "Data link layer design issues",
+        "Framing",
+        "Flow and error control",
+        "Physical addressing",
+        "Stop and Wait protocol",
+        "Go-Back-N ARQ",
+        "Selective Repeat ARQ",
+        "Piggybacking and pipelining",
+        "HDLC",
+        "LAN protocol stack: Logical Link Control and Media Access Control sublayer",
+        "IEEE 802.2 LLC frame format",
+        "MAC layer protocols: static and dynamic allocation",
+        "Pure and slotted ALOHA",
+        "Carrier sense multiple access",
+        "Persistent and non-persistent CSMA",
+        "IEEE standards 802.3, 802.4, and 802.5",
+        "FDDI"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Network Layer",
+      "topics": [
+        "Logical addressing",
+        "Classful and classless addressing",
+        "Packet delivery and forwarding",
+        "Unicast routing protocols",
+        "Multicast routing protocols",
+        "Routing algorithms: least cost, Dijkstra's, and Bellman-Ford",
+        "Introduction to Internet Protocol",
+        "IPv4 header and IPv4 datagrams",
+        "Encapsulation, fragmentation, and reassembly",
+        "IP routing",
+        "Subnet addressing and subnet mask",
+        "Supernetting",
+        "Special cases of IP addresses",
+        "IPv6: motivation, frame format, and addressing",
+        "ICMP: introduction, header, and message types"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Transport Layer",
+      "topics": [
+        "Introduction to TCP",
+        "Transport services",
+        "Process-to-process delivery",
+        "TCP congestion control algorithms",
+        "Quality of service",
+        "TCP headers",
+        "Connection establishment and termination",
+        "Timeout of connection establishment",
+        "Maximum segment size",
+        "Port numbers and socket addresses",
+        "TCP timers",
+        "UDP: introduction, header, and checksum",
+        "UDP operations, encapsulation and decapsulation, and queuing",
+        "SCTP: services, transmission sequence number, stream identifier, and stream sequence number",
+        "SCTP packet format"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Application Layer",
+      "topics": [
+        "BOOTP: operation and packet format",
+        "DHCP: address allocation, configuration, and packet format",
+        "DNS: distribution of name spaces and DNS on the Internet",
+        "FTP: connection, communication, and command processing",
+        "TFTP",
+        "E-mail: SMTP, POP, and IMAP",
+        "SNMP",
+        "Internetworking devices and their configuration: switches, hubs, bridges, routers, and gateways"
+      ]
+    }
+  ]
+}

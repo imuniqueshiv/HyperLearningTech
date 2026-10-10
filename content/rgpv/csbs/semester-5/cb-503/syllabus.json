@@ -1,0 +1,88 @@
+{
+  "subject": {
+    "id": "cb-503",
+    "code": "CB-503",
+    "name": "Fundamentals of Management",
+    "title": "CB-503 - Fundamentals of Management",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Management Theories",
+      "topics": [
+        "Concept and Foundations of Management",
+        "Evolution of Management Thoughts: Pre-Scientific Management Era (before 1880)",
+        "Classical management Era (1880-1930)",
+        "Neo-classical Management Era (1930-1950)",
+        "Modern Management era (1950-onward)",
+        "Contribution of Management Thinkers: Taylor, Fayol, Elton Mayo etc."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Functions of Management",
+      "topics": [
+        "Planning",
+        "Organizing",
+        "Staffing",
+        "Directing",
+        "Controlling"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Organization Behavior",
+      "topics": [
+        "Introduction",
+        "Personality",
+        "Perception",
+        "Learning and Reinforcement",
+        "Motivation",
+        "Group Dynamics",
+        "Power & Influence",
+        "Work Stress and Stress Management",
+        "Decision Making",
+        "Problems in Decision Making",
+        "Organizational Culture",
+        "Managing Cultural Diversity"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Organizational Design",
+      "topics": [
+        "Classical, Neoclassical and Contingency approaches to organizational design",
+        "Organizational theory and design",
+        "Organizational structure: Simple Structure",
+        "Functional Structure",
+        "Divisional Structure",
+        "Matrix Structure"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Managerial Ethics and Leadership",
+      "topics": [
+        "Ethics and Business",
+        "Ethics of Marketing & advertising",
+        "Ethics of Finance & Accounting",
+        "Decision-making frameworks",
+        "Business and Social Responsibility",
+        "International Standards",
+        "Corporate Governance",
+        "Corporate Citizenship",
+        "Corporate Social Responsibility",
+        "Leadership: Concept, Nature, Importance",
+        "Attributes of a leader",
+        "Developing leaders across the organization",
+        "Leadership Grid"
+      ]
+    }
+  ]
+}

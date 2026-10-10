@@ -1,0 +1,80 @@
+{
+  "subject": {
+    "id": "me-504-c",
+    "code": "ME-504 (C)",
+    "name": "Finite Element Method",
+    "title": "ME-504 (C) - Finite Element Method",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Structural analysis, objectives, static",
+        "Dynamic and kinematics analyses",
+        "Skeletal and continuum structures",
+        "Modeling of infinite d.o.f. system into finite d.o.f. system",
+        "Basic steps in finite element problem formulation",
+        "General applicability of the method."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Element Types and Characteristics",
+      "topics": [
+        "Discretization of the domain",
+        "Basic element shapes",
+        "Aspect ratio",
+        "Shape functions",
+        "Generalized co-ordinates and nodal shape functions.",
+        "ID spar and beam elements, 2D rectangular and triangular elements",
+        "Axisymmetirc elements."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Assembly of Elements and Matrices",
+      "topics": [
+        "Concept of element assembly",
+        "Global and local co-ordinate systems",
+        "Band width and its effects",
+        "Banded and skyline assembly",
+        "Boundary conditions",
+        "Solution of simultaneous equations",
+        "Gaussian elimination and Choleksy decomposition methods",
+        "Numerical integration",
+        "One and 2D applications."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Higher Order and Isoparametric Elements",
+      "topics": [
+        "One dimensional quadratic and cubic elements",
+        "Use of natural co-ordinate system",
+        "Area co-ordinate system continuity and convergence requirements, 2D rectangular and triangular requirement."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Static & Dynamic Analysis",
+      "topics": [
+        "Analysis of trusses and frames",
+        "Analysis of machine subassemblies",
+        "Use commercial software packages",
+        "Advantages and limitations Hamilton's principle",
+        "Derivation of equilibrium",
+        "Consistent and lumped mass matrices",
+        "Derivation of mass matrices for ID elements",
+        "Determination of natural frequencies and mode shapes",
+        "Use of commercial software packages."
+      ]
+    }
+  ]
+}

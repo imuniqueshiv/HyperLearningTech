@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "ce-404",
+    "code": "CE-404",
+    "name": "Transportation Engineering-I",
+    "title": "CE-404 - Transportation Engineering-I",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction, Tractive resistances & Permanent way",
+      "topics": [
+        "Principles of Transportation, transportation by Roads, railways, Airways, Waterways, their importance and limitations",
+        "Route Surveys and alignment, railway track, development and gauges; Hauling capacity and tractive effort",
+        "Rails: types, welding of rails, wear and tear of rails, rail creep",
+        "Sleepers: types and comparison, requirement of a good sleeper, sleeper density",
+        "Rail fastenings: types, Fish plates, fish bolts, spikes, bearing plates, chain keys, check and guard rails",
+        "Ballast: Requirement of good ballast, various materials used as ballast, quantity of ballast",
+        "Different methods of plate laying, material trains, and calculation of materials required, relaying of track"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Geometric Design; Station & Yards; Points and Crossings & Signaling",
+      "topics": [
+        "Formation, cross sections, Super elevation, Equilibrium, Cant and cant deficiency, various curves, speed on curves",
+        "Types locations, general equipments, layouts, marshalling yards",
+        "Definition, layout details, design of simple turnouts",
+        "Types of signals in stations and yards, principles of signaling and inter-locking"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Bridge Site Investigation and Planning; Loading Standards & Component parts",
+      "topics": [
+        "Selection of site, alignment, collection of bridge design data: essential surveys, hydraulic design, scour depth of bridge foundation",
+        "Economical span, clearance, afflux, type of road & railway bridges",
+        "Design loads and forces, Impact factor, Indian loading standards for Railways Bridges and Highway Bridges",
+        "Bridge super structure and sub-structures, abutments, piers, wing walls, return walls, approaches, floors & flooring system, choice of super structure"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Bridge Foundations, Construction, Testing and Strengthening of Bridges",
+      "topics": [
+        "Different types of foundation: piles and wells, sinking of wells, coffer-dams",
+        "Choice of bridges and choice of materials, details of construction underwater and above water, sheet piles coffer dams",
+        "Erection of bridges, girders, equipments and plants",
+        "Inspection and data collection, strengthening of bridges, Bridge failure"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Tunnels",
+      "topics": [
+        "Selection of route, Engineering surveys, alignment, shape and size of tunnel, bridge action, pressure relief phenomenon",
+        "Tunnel approaches, Shafts, pilot shafts",
+        "Construction of tunnels in soft soil, hard soil and rock; Different types of lining, methods of lining",
+        "Mucking operation, Drainage and ventilation; Examples of existing important tunnels in India and abroad"
+      ]
+    }
+  ]
+}

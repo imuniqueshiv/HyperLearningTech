@@ -1,0 +1,65 @@
+{
+  "subject": {
+    "id": "ce-303",
+    "code": "CE-303",
+    "name": "Surveying",
+    "title": "CE-303 - Surveying",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Surveying & Levelling",
+      "topics": [
+        "Basic Definitions of Surveying, Principles, Classification of surveying",
+        "Methods of Linear Measurement, Ranging, Accessories for linear measurement",
+        "Chain Surveying, Compass Surveying, Plane Table Surveying, Correction and Errors",
+        "Definition of Levelling, types of levelling operations, Principles, Problems",
+        "Computation of Area and Volumes"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Theodolite Traversing",
+      "topics": [
+        "Types, Temporary Adjustment",
+        "Latitude & Departure, plotting & Adjustment",
+        "Omitted Measurements",
+        "EDM, Trigonometric Levelling"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Tacheometry",
+      "topics": [
+        "Tachometric systems and principles, stadia system, uses of analytic lens",
+        "Tangential system, subtense system, instrument constant, field work reduction",
+        "Direct-reading tacheometer",
+        "Use of tacheometry for traversing and contouring"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Curves",
+      "topics": [
+        "Classification and use; elements of circular curves, calculations",
+        "Setting out curves by offsets and by theodolites",
+        "Compound curves, reverse curves, transition curves, vertical curves, setting out"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Hydrographic Survey",
+      "topics": [
+        "Soundings, methods of observations, computations and plotting",
+        "Principles of photographic surveying: aerial photography, tilt and height distortions",
+        "Setting out works"
+      ]
+    }
+  ]
+}

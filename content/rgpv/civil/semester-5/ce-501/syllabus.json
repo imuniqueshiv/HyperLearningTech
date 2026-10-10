@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "ce-501",
+    "code": "CE-501",
+    "name": "Fluid Mechanics-I",
+    "title": "CE-501 - Fluid Mechanics-I",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Review of Fluid Properties and Fluid Statics",
+      "topics": [
+        "Engineering units of measurement, mass, density, specific weight, specific volume, specific gravity",
+        "Surface tension, capillarity, viscosity, bulk modulus of elasticity, pressure and vapor pressure",
+        "Fluid Statics: Pressure at a point, pressure variation in static fluid, Absolute and gauge pressure, manometers",
+        "Forces on plane and curved surfaces (Problems on gravity dams and Tainter gates)",
+        "Buoyant force, Stability of floating and submerged bodies, Relative equilibrium"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Kinematics of Flow",
+      "topics": [
+        "Types of flow-ideal & real, steady & unsteady, uniform & non uniform, one, two and three dimensional flow",
+        "Path lines, streaklines, streamlines and stream tubes",
+        "Continuity equation for one and three dimensional flow, rotational & irrotational flow",
+        "Circulation, stagnation point, separation of flow, sources & sinks",
+        "Velocity potential, stream function, flow nets- their utility & method of drawing flow nets"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Dynamics of Flow and Fluid Measurements",
+      "topics": [
+        "Euler's equation of motion along a streamline and derivation of Bernoulli's equation, application of Bernoulli's equation",
+        "Energy correction factor, linear momentum equation for steady flow; momentum correction factor",
+        "The moment of momentum equation, forces on fixed and moving vanes and other applications",
+        "Fluid Measurements: Velocity measurement (Pitot tube, Prandtl tube, current meters etc.)",
+        "Flow measurement (orifices, nozzles, mouth pieces, orifice meter, nozzle meter, venturimeter, weirs and notches)"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Laminar Flow",
+      "topics": [
+        "Introduction to laminar flow, Reynolds experiment & Reynolds number",
+        "Relation between shear & pressure gradient",
+        "Laminar flow through circular pipes, laminar flow between parallel plates",
+        "Laminar flow through porous media, Stokes law"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Dimensional Analysis and Turbulent flow",
+      "topics": [
+        "Dimensional Analysis and use of Buckingham-pi theorem",
+        "Introduction to Turbulent flow-Prandtl mixing length hypothesis",
+        "Flow over smooth & rough surface",
+        "Darcy–Weisbach resistance equation, variation of friction factor & Moody's diagram, pipe flow problem"
+      ]
+    }
+  ]
+}

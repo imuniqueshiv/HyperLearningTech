@@ -1,0 +1,72 @@
+{
+  "subject": {
+    "id": "me-406",
+    "code": "ME-406",
+    "name": "Software Lab",
+    "title": "ME-406 - Software Lab",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Role of computers in design and manufacture.",
+        "Drawing soft ware, configuration, function and facilities, parametric representation, examples of drawings and systems"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Surface modeling",
+        "curves and surface representation - composite surfaces",
+        "case studies in CAD",
+        "parametric representation analytic and synthetic curves",
+        "surface manipulation",
+        "design and engineering applications,"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Current developments in CAD",
+        "feature based modeling,",
+        "design by feature,"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Solid modeling",
+        "boundary representation",
+        "analytic solid modeling",
+        "constructive solid geometry",
+        "sweep representation",
+        "design and engineering applications,"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Strategic plan of CAD system design and development, graphic exchange, features recovery, etc.",
+        "BOOKS: 1.",
+        "Donald H, Paulin M, Computer graphics",
+        "Prentice Hall, 2.",
+        "Ibrahim z., CAD/CAM, Theory and Practice",
+        "McGraw Hill, 3.",
+        "Mc mohan C, Browne",
+        "CAD/ CAM Principles- practice and manufacturing management",
+        "Pearson Education AsiaLtd,"
+      ]
+    }
+  ]
+}

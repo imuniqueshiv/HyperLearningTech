@@ -1,0 +1,74 @@
+{
+  "subject": {
+    "id": "ad-601",
+    "code": "AD-601",
+    "name": "Deep Learning",
+    "title": "AD-601 - Deep Learning",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Deep Learning",
+      "topics": [
+        "Basics: Biological Neuron",
+        "Idea of computational units",
+        "McCulloch-Pitts Neural Model",
+        "Linear Perceptron",
+        "Perceptron Learning",
+        "Feed Forward and Back Propagation Networks."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Feedforward Networks",
+      "topics": [
+        "Multilayer Perceptron",
+        "Gradient Descent",
+        "Backpropagation",
+        "Empirical Risk Minimization, regularization, auto encoders."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Convolutional Networks",
+      "topics": [
+        "The Convolution Operation",
+        "Variants of the Basic Convolution Function",
+        "Structured Outputs",
+        "Efficient Convolution Algorithms",
+        "Random or Unsupervised Features",
+        "LeNet",
+        "AlexNet"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Recurrent Neural Networks",
+      "topics": [
+        "Bidirectional RNNs",
+        "Deep Recurrent Networks Recursive Neural Networks",
+        "The Long Short-Term Memory and Other Gated RNNs"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Deep Generative Models",
+      "topics": [
+        "Boltzmann Machines",
+        "Restricted Boltzmann Machines",
+        "Introduction to MCMC and Gibbs Sampling",
+        "Gradient computations in RBMs",
+        "Deep Belief Networks",
+        "Deep Boltzmann Machines APPLICATIONS Image Processing",
+        "Speech Recognition",
+        "Natural Language Processing"
+      ]
+    }
+  ]
+}

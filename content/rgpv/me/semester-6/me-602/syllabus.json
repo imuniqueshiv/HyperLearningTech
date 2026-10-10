@@ -1,0 +1,101 @@
+{
+  "subject": {
+    "id": "me-602",
+    "code": "ME-602",
+    "name": "Machine Component and Design",
+    "title": "ME-602 - Machine Component and Design",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Stress in Machine Component",
+      "topics": [
+        "Stress concentration and fatigue: causes of stress concentration",
+        "Stress concentration in tension, bending and torsion",
+        "Reduction of stress concentration",
+        "Theoretical stress concentration factor",
+        "Notch sensitivity",
+        "Fatigue stress concentration factor",
+        "Cyclic loading",
+        "Endurance limit",
+        "S-N Curve",
+        "Loading factor, size factor, surface factor",
+        "Design consideration for fatigue",
+        "Goodman and modified Goodman's diagram",
+        "Soderberg equation",
+        "Gerber parabola",
+        "Design for finite life",
+        "Cumulative fatigue damage factor"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Shafts",
+      "topics": [
+        "Design of shaft under combined bending, twisting and axial loading",
+        "Shock and fatigue factors",
+        "Design for rigidity",
+        "Design of shaft subjected to dynamic load",
+        "Design of keys and shaft couplings"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Springs and Power Screws",
+      "topics": [
+        "Design of helical compression and tension springs",
+        "Consideration of dimensional and functional constraints",
+        "Leaf springs and torsion springs",
+        "Fatigue loading of springs",
+        "Surge in spring",
+        "Special springs",
+        "Design of power screw and power nut",
+        "Differential and compound screw",
+        "Design of simple screw jack"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Brakes and Clutches",
+      "topics": [
+        "Materials for friction surface",
+        "Uniform pressure and uniform wear theories",
+        "Design of friction clutches: disk, plate clutches",
+        "Cone and centrifugal clutches",
+        "Design of brakes: rope, band and block brake",
+        "Internal expanding brakes",
+        "Disk brakes"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Journal Bearing",
+      "topics": [
+        "Types of lubrication",
+        "Viscosity",
+        "Hydrodynamic theory",
+        "Design factors",
+        "Temperature and viscosity considerations",
+        "Reynold's equation",
+        "Stable and unstable operation",
+        "Heat dissipation and thermal equilibrium",
+        "Boundary lubrication",
+        "Dimensionless numbers",
+        "Design of journal bearings",
+        "Types of rolling contact bearing",
+        "Bearing friction and power loss",
+        "Bearing life",
+        "Radial, thrust and axial loads",
+        "Static and dynamic load capacities",
+        "Selection of ball and roller bearings",
+        "Lubrication and sealing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "subject": {
+    "id": "cb-704-c",
+    "code": "CB-704 (C)",
+    "name": "Mobile Computing",
+    "title": "CB-704 (C) - Mobile Computing",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction: Overview of wireless and mobile infrastructure",
+        "Preliminary concepts on cellular architecture",
+        "Design objectives and performance issues",
+        "Radio resource management and interface",
+        "Propagation and path loss models",
+        "Channel interference and frequency reuse",
+        "Cell splitting",
+        "Channel assignment strategies",
+        "Overview of generations:- 1G to 5G."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "Mobility models characterizing individual node movement (Random walk",
+        "Fluid flow",
+        "Markovian",
+        "Activity based)",
+        "Mobility models characterizing the movement of groups of nodes (Reference point based group mobility model",
+        "Community based group mobility model)",
+        "Static (Always vs.",
+        "Never update",
+        "Reporting Cells",
+        "Location Areas) and Dynamic location management schemes (Time",
+        "Movement",
+        "Distance",
+        "Profile Based)",
+        "Terminal Paging (Simultaneous paging",
+        "Sequential paging)",
+        "Location management and Mobile IP; Overview of handoff process",
+        "Factors affecting handoffs and performance evaluation metrics",
+        "Handoff strategies",
+        "Different types of handoffs (soft, hard, horizontal, vertical)."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Wireless transmission fundamentals: Introduction to narrow and wideband systems",
+      "topics": [
+        "spectrum",
+        "Frequency hopping",
+        "Introduction to MIMO; MIMO Channel Capacity and diversity gain",
+        "Introduction to OFDM; MIMO-OFDM system",
+        "Multiple access control (FDMA, TDMA,CDMA, SDMA)",
+        "Wireless local area network",
+        "Wireless personal area network (Bluetooth and zigbee)."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Mobile Ad-hoc networks: Characteristics and applications",
+        "Coverage and connectivity problems",
+        "Routing in MANETs.",
+        "Wireless sensor networks: Concepts, basic architecture, design objectives and applications",
+        "Sensing and communication range",
+        "Coverage and connectivity",
+        "Sensor placement",
+        "Data relaying and aggregation",
+        "Energy consumption",
+        "Clustering of sensors",
+        "Energy efficient Routing (LEACH)."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Cognitive radio networks: Fixed and dynamic spectrum access",
+      "topics": [
+        "sensing",
+        "Spectrum sharing",
+        "Interoperability and co-existence issues",
+        "Applications of cognitive radio networks.",
+        "D2D communications in 5G cellular networks: Introduction to D2D communications",
+        "High level requirements for 5G architecture",
+        "Introduction to the radio resource management, power control and mode selection problems",
+        "Millimeter wave communication in 5G.",
+        "Laboratory: Development and implementation of different network protocols using network simulators such as NS-3 and OMNET++."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "subject": {
+    "id": "cs-503-b",
+    "code": "CS-503 (B)",
+    "name": "Pattern Recognition",
+    "title": "CS-503 (B) - Pattern Recognition",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Definitions",
+        "Data sets for pattern recognition",
+        "Application areas and examples of pattern recognition",
+        "Design principles of a pattern recognition system",
+        "Classification and clustering",
+        "Supervised learning",
+        "Unsupervised learning and adaptation",
+        "Pattern recognition approaches",
+        "Decision boundaries and decision regions",
+        "Metric spaces and distances"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Classification",
+      "topics": [
+        "Introduction to classification",
+        "Application of classification",
+        "Types of classification",
+        "Decision tree",
+        "Naive Bayes",
+        "Logistic regression",
+        "Support vector machine",
+        "Random forest",
+        "K-nearest neighbour classifier and variants",
+        "Efficient algorithms for nearest neighbour classification",
+        "Different approaches to prototype selection",
+        "Combination of classifiers",
+        "Training set and test set",
+        "Standardization and normalization"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unsupervised Learning and Clustering",
+      "topics": [
+        "Different paradigms of pattern recognition",
+        "Representations of patterns and classes",
+        "Unsupervised learning and clustering",
+        "Criterion functions for clustering",
+        "Iterative square-error partitional clustering: k-means",
+        "Hierarchical clustering",
+        "Cluster validation"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Feature Extraction and Selection",
+      "topics": [
+        "Introduction to feature extraction and feature selection",
+        "Types of feature extraction",
+        "Problem statement and uses",
+        "Branch and bound algorithm",
+        "Sequential forward and backward selection algorithms",
+        "(l,r) algorithm"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Recent Advances in Pattern Recognition",
+      "topics": [
+        "Recent advances in pattern recognition",
+        "Structural pattern recognition",
+        "SVMs",
+        "FCM",
+        "Soft computing and neuro-fuzzy techniques",
+        "Real-life examples",
+        "Histogram rules",
+        "Density estimation",
+        "Nearest neighbour rule",
+        "Fuzzy classification"
+      ]
+    }
+  ]
+}

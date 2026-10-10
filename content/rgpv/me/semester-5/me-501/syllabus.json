@@ -1,0 +1,80 @@
+{
+  "subject": {
+    "id": "me-501",
+    "code": "ME-501",
+    "name": "Internal Combustion Engines",
+    "title": "ME-501 - Internal Combustion Engines",
+    "semester": "V"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction of IC Engine:",
+      "topics": [
+        "Internal Combustion Engine: S.I. and C.I. engines of two and four stroke cycles",
+        "real cycle analysis of SI and CI engines",
+        "determination of engine dimensions",
+        "speed",
+        "fuel consumption",
+        "output",
+        "mean effective pressure",
+        "efficiency",
+        "factors effecting volumetric efficiency",
+        "heat balance",
+        "performance characteristics of SI and CI engines",
+        "cylinder arrangement",
+        "firing order",
+        "power balance for multi-cylinder engines ."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Combustion in SI engines:",
+      "topics": [
+        "Flame development and propagation",
+        "Pressure-Crank Angle diagram",
+        "Stages of Combustion ignition lag, effect of air density, temperature, engine speed, turbulence and ignition timings, physical and chemical aspects, abnormal Combustion, effect of engine and fuel variables on abnormal combustion, pre-ignition, its causes and remedy, salient features of various type combustion chambers."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Combustion in CI Engines:",
+      "topics": [
+        "Various stages of combustion in CI Engines, delay period, diesel knock, knock inhibitors, salient features of various types of combustion chambers.Fuel injection in CI engine",
+        "Working Principle of fuel pump & fuel injectors, types of nozzles.",
+        "Fuel injection in SI engine (MPFI, TBI,CRDI )",
+        "Theory of carburetion",
+        "Solex Carburetor, simple problems on carburetion.",
+        "Fuel metering in CI engines"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Fuel:",
+      "topics": [
+        "Classification of ICEngine fuels",
+        "Desirable characteristics of SI & CI engine fuels",
+        "Rating of SI & CI engine fuels",
+        "Alternative fuels for SI and CI engine (liquid, gaseous, hydrogen",
+        "LPG, CNG, Biogas etc.)",
+        "Air requirement",
+        "Analysis of combustion products",
+        "HHV and LHV of fuels."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Supercharging & Turbo charging:",
+      "topics": [
+        "Methods of supercharging, & turbo charging Effects of super charging and turbo charging.",
+        "Engine Modifications for supercharging, supercharging of two stroke engines. microprocessor controlled supercharging.",
+        "Cooling & lubrication of SI & CI Engines."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "subject": {
+    "id": "al-801",
+    "code": "AL-801",
+    "name": "Business Intelligence",
+    "title": "AL-801 - Business Intelligence",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Business Intelligence",
+      "topics": [
+        "Effective and timely decisions",
+        "Data, information and knowledge",
+        "Role of mathematical models",
+        "Business intelligence architectures: Cycle of a business intelligence analysis",
+        "Enabling factors in business intelligence projects",
+        "Development of a business intelligence system",
+        "Ethics and business intelligence"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Knowledge Delivery",
+      "topics": [
+        "The business intelligence user types",
+        "Standard reports",
+        "Interactive Analysis and Ad Hoc Querying",
+        "Parameterized Reports and Self-Service Reporting",
+        "Dimensional analysis",
+        "Alerts/Notifications",
+        "Visualization: Charts, Graphs, Widgets, Scorecards and Dashboards",
+        "Geographic Visualization",
+        "Integrated Analytics",
+        "Considerations: Optimizing the Presentation for the Right Message"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Efficiency",
+      "topics": [
+        "Efficiency measures",
+        "The CCR model: Definition of target objectives - Peer groups",
+        "Identification of good operating practices; cross efficiency analysis",
+        "Virtual inputs and outputs",
+        "Other models",
+        "Pattern matching - cluster analysis, outlier analysis"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Business Intelligence Applications",
+      "topics": [
+        "Marketing models",
+        "Logistic and Production models",
+        "Case studies"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Future of Business Intelligence",
+      "topics": [
+        "Future of business intelligence",
+        "Emerging Technologies, Machine Learning, Predicting the Future",
+        "BI Search & Text Analytics",
+        "Advanced Visualization - Rich Report",
+        "Future beyond Technology"
+      ]
+    }
+  ]
+}

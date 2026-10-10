@@ -1,0 +1,88 @@
+{
+  "subject": {
+    "id": "ad-703-a",
+    "code": "AD-703 (A)",
+    "name": "Data Visualization",
+    "title": "AD-703 (A) - Data Visualization",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction to Data Visualization",
+      "topics": [
+        "Overview of data visualization",
+        "Definition",
+        "Significance in AI and Data Science",
+        "Principal of Data Visualization",
+        "Methodology",
+        "Applications",
+        "Data pre-processing for visualization: Extraction",
+        "Cleaning",
+        "Transformation",
+        "Aggregation",
+        "Data Integration",
+        "Data Reduction."
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Visualization Techniques",
+      "topics": [
+        "Pixel-Oriented Visualization Techniques- Geometric Projection Visualization Techniques- Icon-Based Visualization Techniques- Hierarchical Visualization Techniques",
+        "Visualizing Complex Data and Relations.",
+        "Visualization Techniques",
+        "Scalar and point techniques",
+        "Color maps",
+        "Contouring Height Plots - Vector visualization techniques",
+        "Vector properties",
+        "Vector Glyphs",
+        "Vector Color Coding Stream Objects.",
+        "Exploratory data analysis (EDA) Techniques"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Data Visualization Tools",
+      "topics": [
+        "Basic and advanced charts and graphs: bar charts, line charts, scatter plots, histograms, and heat maps.",
+        "Geospatial visualization: maps, choropleth maps, geospatial heat maps",
+        "Network visualization: node-link diagrams, force-directed graphs",
+        "Interactive visualization: interactivity and user engagement techniques",
+        "Introduction to programming libraries for data visualization: Matplotlib",
+        "Seaborn",
+        "Plotly.",
+        "Introduction to data visualization tools- Tableau",
+        "Visualization using R."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Visualizing Multidimensional Data",
+      "topics": [
+        "Multivariate visualization techniques: parallel coordinates, scatter plot matrices",
+        "Dimensionality reduction techniques: PCA (Principal Component Analysis), t-SNE (t- Distributed Stochastic Neighbour Embedding)",
+        "Clustering and classification visualization: dendrograms, decision trees, confusion matrices",
+        "Visualizing high-dimensional data: glyph- based visualization, parallel coordinates, dimension stacking."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Advancements in Data Visualization",
+      "topics": [
+        "Time- Series data visualization",
+        "Big data visualization",
+        "Text data visualization Multivariate data visualization.",
+        "Storytelling with data",
+        "Dashboard creation",
+        "Ethical considerations in data visualization",
+        "Case Studies for Finance-marketing, and insurance healthcare."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "subject": {
+    "id": "me-403",
+    "code": "ME-403",
+    "name": "Theory of Machines",
+    "title": "ME-403 - Theory of Machines",
+    "semester": "IV"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "Introduction",
+        "kinematics and kinetics",
+        "mechanisms and machines",
+        "degree of freedom",
+        "types of motions",
+        "kinematic concept of links",
+        "basic terminology and definitions",
+        "joints and kinematic chains",
+        "inversions",
+        "absolute and relative motions",
+        "displacement",
+        "velocity and acceleration diagrams",
+        "different mechanisms and applications,"
+      ]
+    },
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Unit 1",
+      "topics": [
+        "R.L.Norton,kinematics& dynamics of machinery,Tata McGraw Hill",
+        "ISBN13 978 0 07 014480 4"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "kinematic synthesis of linkages, dynamic motion analysis of mechanisms and machines",
+        "D'Alembert's principle, number synthesis, free body diagrams, kinematic and dynamic quantities and their relationships, analytical method and graphical method"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Unit 2",
+      "topics": [
+        "A.Ghosh & A.Malik",
+        "Theory of Mechanisms and Machines,EWP Pvt Ltd,ISB 81 85095 72 8 Tutorials: 1.Displacement diagrams of slider crank and other linkages",
+        "analytical and graphical 2 Velocity diagrams and acceleration diagrams 3 Diagrams of cam and followers for different applications 4 Gears and gear trains transmission diagrams",
+        "analytical and graphical applications 5 Solutions to problems of industrial application using software"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Unit 3",
+      "topics": [
+        "Cams",
+        "introduction",
+        "classifications of cams and followers",
+        "nomenclature",
+        "analysis of cam and follower motion",
+        "analytical cam design with specific contours",
+        "pressure angle",
+        "radius and undercutting",
+        "motion constrains and program",
+        "critical path motion",
+        "torque on cam shaft"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Unit 4",
+      "topics": [
+        "Power transmission",
+        "kinematics of belt- pulley",
+        "flat and v -belt",
+        "rope",
+        "condition of maximum power transmission",
+        "efficiency",
+        "friction",
+        "friction devices",
+        "pivot and collars",
+        "power screw",
+        "plate and cone clutch",
+        "brakes",
+        "classifications",
+        "bock",
+        "band",
+        "internal and external",
+        "friction circle",
+        "friction axis,"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Unit 5",
+      "topics": [
+        "Gears, laws of gearing, classification and basic terminology, tooth profiles, kinematic considerations, types of gears, spur, bevel, worm, helical, hypoid etc, gear trains, epicyclic, compound,, balancing- static and dynamic, in same/ different planes",
+        "Introduction to vibration, single degree of freedom.",
+        "BOOKS:"
+      ]
+    }
+  ]
+}

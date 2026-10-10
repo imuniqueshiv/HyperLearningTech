@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "cb-206",
+    "code": "CB-206",
+    "name": "Business Communication and Value Science - II",
+    "title": "CB-206 - Business Communication and Value Science - II",
+    "semester": "II"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Essential Grammar - II",
+      "topics": [
+        "Application of tenses",
+        "Auxiliaries- correct usage and importance in formal communication",
+        "Business Vocabulary - Vocabulary exercises through web-based applications"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Written Communication II",
+      "topics": [
+        "Email writing- Formal and Informal email writing structure",
+        "Inquiry letters, Instruction letters, complaint letters, Routine business letters, Sales Letters etc.",
+        "Technical writing, Essay writing, Paragraph writing"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Vocabulary- II and Situational Conversation",
+      "topics": [
+        "Vocabulary exercises through web-based applications, Usage and application through mock meetings",
+        "Situational Conversation: Application of grammar and correct spoken English according to context/ situation and application in business scenario"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Fundamentals of Effective Communication",
+      "topics": [
+        "Public Speaking: fundamentals of effective public speaking, types- Extempore speech, manuscript speech, and ways to enhance public speaking skills, storytelling, oral review",
+        "Presentation Skills: PowerPoint presentations, Effective ways to structure the presentation, importance of body language",
+        "Leadership Skills, Leader's Role, Responsibilities And Skill Required",
+        "Understanding good Leadership behaviours, Learning the difference between Leadership and Management",
+        "Gaining insight into your Patterns, Beliefs and Rules, Defining Qualities and Strengths of leadership",
+        "Interpersonal Skills and Communication Skills, Learning about Commitment and How to Move Things Forward",
+        "Making Key Decisions, Handling Your and Other People's Stress, Empowering, Motivating and Inspiring Others, Leading by example, effective feedback",
+        "Problem Solving Skill: Problem solving skill, Confidence building"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Corporate / Business Etiquettes",
+      "topics": [
+        "Corporate grooming & dressing, etiquettes in social & office Setting",
+        "Understand the importance of professional behaviour at the work place",
+        "Understand and Implement etiquettes in workplace, presenting oneself with finesse and making others comfortable in a business setting",
+        "Importance of first impression, Grooming, Wardrobe",
+        "Introduction to Ethics in engineering and ethical reasoning, rights and responsibilities"
+      ]
+    },
+    {
+      "id": "module-6",
+      "number": 6,
+      "title": "Diversity and Inclusion Part 2 and Values Sciences Part 2",
+      "topics": [
+        "Socio-Cultural and Cross-Cultural Sensitivities at the Workplace: PwD and LGBT at the workplace, Learning disabilities at the workplace",
+        "Caste, class, regionalism, religion and poverty: the different identities of Indian employees and employers and how to include everyone",
+        "Global diversity identities of race, religion, nationhood",
+        "Appropriate Social Media Use",
+        "Values of a good manager: Ethics in Business; Embodying organizational pride with grace"
+      ]
+    }
+  ]
+}

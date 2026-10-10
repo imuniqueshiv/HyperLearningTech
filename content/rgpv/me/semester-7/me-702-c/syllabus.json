@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "me-702-c",
+    "code": "ME-702 (C)",
+    "name": "Power Plant Engineering",
+    "title": "ME-702 (C) - Power Plant Engineering",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction:",
+      "topics": [
+        "Introduction to methods of converting various energy sources to electric power, direct conversion methods renewable energy sources, solar, wind, tidal, geothermal, bio-thermal, biogas and hybrid energy systems, fuel cells, thermoelectric modules",
+        "MHD-Converter"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Fossil fuel steam stations:",
+      "topics": [
+        "Basic principles of sitting and station design",
+        "effect of climatic factors on station and equipment design",
+        "choice of steam cycle and main equipment",
+        "recent trends in turbine and boiler sizes and steam conditions",
+        "plant design and layout",
+        "outdoor and indoor plant",
+        "system components",
+        "fuel handling",
+        "burning systems",
+        "element of feed water treatment plant",
+        "condensing plant and circulating water systems",
+        "cooling towers",
+        "turbine room and auxiliary plant equipment.",
+        "instrumentation",
+        "testing and plant heat balance."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Nuclear Power Station:",
+      "topics": [
+        "Importance of nuclear power development in the world and Indian context",
+        "Review of atomic structure and radio activity, binding energy concept, fission and fusion reaction, fissionable and fertile materials, thermal neutron fission, important nuclear fuels, moderators and coolants, their relative merits, thermal and fast breeder reactors, principles of reactor control, safety and reliability features."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Hydro-Power Station:",
+      "topics": [
+        "Elements of Hydrological computations, rainfall run off, flow and power duration curves, mass curves, storage capacity, salient features of various types of hydro stations, component such as dams, spillways, intake systems, head works, pressure tunnels, penstocks, reservoir, balancing reservoirs",
+        "Micro and pico hydro machines, selection of hydraulic turbines for power stations, selection of site."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Power Station Economics:",
+      "topics": [
+        "Estimation and prediction of load.",
+        "Maximum demand, load factor, diversity factor, plant factor and their influence on plant design, operation and economics",
+        "comparison of hydro and nuclear power plants typical cost structures, simple problems on cost analysis, economic performance and tariffs, interconnected system and their advantages, elements of load dispatch in interconnected systems."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "subject": {
+    "id": "ce-802-a",
+    "code": "CE802 (A)",
+    "name": "Engineering Hydrology",
+    "title": "CE802 (A) - Engineering Hydrology",
+    "semester": "VIII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Hydrological cycle and Precipitation",
+      "topics": [
+        "Hydrological cycle, water budget, Practical applications of Hydrology, Hydrometerology, airmasses",
+        "Formation of precipitation, types of precipitation, meteorological observations, probability & random variables, regression analysis",
+        "Catchment its type and importance, measurement of precipitation, Raingauges, location of raingauges",
+        "Interpretations & analysis of rainfall data, calculation of average rainfall, Hyetograph, Intensity-duration, Frequency curves, Mass curve"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Stream flow and Evaporation",
+      "topics": [
+        "Stream flow measurement and various methods, stage-discharge relations",
+        "Rating curve and its extension, stream gauge Networking, stage & discharge hydrographs",
+        "Evaporation & evapotranspiration-calculation, factors affecting measurement, Reducing evaporation"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Infiltration and Ground water",
+      "topics": [
+        "Infiltration, Factors affecting it, measurement of Infiltration, Infiltration equation and Indices",
+        "Occurrence of ground water, Darcy's law, flow in wells (steady & unsteady)",
+        "Ground water exploration; Yield of well, determination of yield"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Runoff and Unit hydrograph",
+      "topics": [
+        "Runoff and its components, factors affecting runoff, Basin yield, Rainfall-Runoff relationships",
+        "Flow-duration curve, flow mass curve, Hydrograph, separation of hydrograph",
+        "Unit hydrograph - theory & application, derivation of unit hydrograph convolution equation",
+        "Unit hydrograph from complex storms, unit hydrograph for various durations, synthetic unit hydrograph, S-curve hydrograph, distribution graph",
+        "Use & applications of unit hydrograph, Dimensionless unit Hydrograph"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "IUH, Flood routing and Reservoir sedimentation",
+      "topics": [
+        "Instantaneous unit Hydrograph, Derivation of IUH",
+        "Flood routing, reservoir routing, different methods, storage discharge relationship, ISD method, puls method",
+        "Channel routing – muskingham method",
+        "Design flood – Empirical & rational formula, frequency analysis, Gumbel's distribution",
+        "Reservoir sedimentation-causes, factors affecting & control"
+      ]
+    }
+  ]
+}

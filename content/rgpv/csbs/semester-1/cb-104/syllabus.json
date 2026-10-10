@@ -1,0 +1,74 @@
+{
+  "subject": {
+    "id": "cb-104",
+    "code": "CB-104",
+    "name": "Principles of Electrical Engineering",
+    "title": "CB-104 - Principles of Electrical Engineering",
+    "semester": "I"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Concept of Potential difference, voltage, current",
+        "Fundamental linear passive and active elements to their functional current-voltage relation",
+        "Terminology and symbols in order to describe electric networks",
+        "Voltage source and current sources, ideal and practical sources",
+        "Concept of dependent and independent sources",
+        "Kirchhoff's laws and applications to network solutions using mesh and nodal analysis",
+        "Concept of work, power, energy, and conversion of energy"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "DC Circuits",
+      "topics": [
+        "Current-voltage relations of the electric network by mathematical equations to analyze the network (Thevenin's theorem, Norton's Theorem, Maximum Power Transfer theorem)",
+        "Simplifications of networks using series-parallel, Star/Delta transformation",
+        "Superposition theorem"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "AC Circuits",
+      "topics": [
+        "AC waveform definitions, form factor, peak factor",
+        "Study of R-L, R-C, RLC series circuit, R-L-C parallel circuit",
+        "Phasor representation in polar and rectangular form",
+        "Concept of impedance, admittance, active, reactive, apparent and complex power, power factor",
+        "3 phase Balanced AC Circuits"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Electrostatics and Electro-Mechanics",
+      "topics": [
+        "Electrostatic field, electric field strength, concept of permittivity in dielectrics",
+        "Capacitor composite, dielectric capacitors, capacitors in series and parallel",
+        "Energy stored in capacitors, charging and discharging of capacitors",
+        "Electricity and Magnetism, magnetic field and Faraday's law",
+        "Self and mutual inductance, Ampere's law, Magnetic circuit",
+        "Single phase transformer, principle of operation, EMF equation, voltage ratio, current ratio, KVA rating, efficiency and regulation",
+        "Electromechanical energy conversion"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Measurements and Sensors",
+      "topics": [
+        "Introduction to measuring devices/sensors and transducers (Piezoelectric and thermo-couple) related to electrical signals",
+        "Elementary methods for the measurement of electrical quantities in DC and AC systems (Current and Single-phase power)",
+        "Basic layout of the distribution system",
+        "Types of Wiring System and Wiring Accessories",
+        "Necessity of earthing, Types of earthing",
+        "Safety devices and system"
+      ]
+    }
+  ]
+}

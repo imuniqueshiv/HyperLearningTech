@@ -1,0 +1,70 @@
+{
+  "subject": {
+    "id": "al-603-a",
+    "code": "AL603 (A)",
+    "name": "Image and Video Processing",
+    "title": "AL603 (A) - Image and Video Processing",
+    "semester": "VI"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Image representation and analysis",
+      "topics": [
+        "Introduction to computer Vision",
+        "Numerical representation of images",
+        "Image augmentation, enhancement, processing",
+        "Color transforms",
+        "Geometric transforms",
+        "Feature recognition and extraction"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Image Segmentation",
+      "topics": [
+        "Object detection",
+        "Breaking image into parts",
+        "Finding contours and edges of various objects in image",
+        "Background subtraction for video"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Object Motion and tracking",
+      "topics": [
+        "Tracking a single point over time",
+        "Motion models to define object movement over time",
+        "Analyze videos as sequences of individual image frames",
+        "Methods to track a set of features over time",
+        "Matching features from image frame to other",
+        "Tracking a moving car using optical flow"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Robotic localization",
+      "topics": [
+        "Bayesian statistics to locate a robot in space",
+        "Sensor measurements to safely navigate an environment",
+        "Gaussian uncertainty",
+        "Histogram filter for robot localization in python"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Image Restoration",
+      "topics": [
+        "Degradation model",
+        "Noise models",
+        "Estimation of degradation function by modeling",
+        "Restoration using Weiner filters and Inverse filters"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "subject": {
+    "id": "me-304",
+    "code": "ME-304",
+    "name": "Strength of Material",
+    "title": "ME-304 - Strength of Material",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Stress and strain",
+      "topics": [
+        ". 2.",
+        "Analyze the beam of different cross sections for shear force,"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Bending",
+      "topics": [
+        "moment, slope and deflection. 3.",
+        "Understand the concepts necessary to design the structural elements and pressure vessels.",
+        "Stress and strain: stresses in members of a structure, axial loading, normal stress, shear stress, analysis of simple structures, stepped rods, members in series and parallel: stress strain diagram",
+        "Hooke's law, stress due to temperature",
+        "Poisson's ratio",
+        "Bulk modulus, shear strain, relation among elastic constants, residual stress, fiber reinforced composite materials, strain energy under axial loads and stresses due to impact of falling weights.",
+        "Transformation of stress and strain, principal stresses, normal and shear stress",
+        "Mohr's circle and its application to two and three dimensional analysis.",
+        "Bending: pure bending, symmetric member, deformation and stress, bending of composite sections, eccentric axial loading, shear force and BM diagram, relationship among load, shear and BM, shear stresses in beams, strain energy in bending, deflection of beams, equation of elastic curve",
+        "Macaulay's method and Area moment method for deflection of beams."
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Torsion in shafts",
+      "topics": [
+        "Tensional stresses in a shafts",
+        "deformation in circular shaft",
+        "angle of twist",
+        "stepped and hollow transmission shafts."
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Theories of failures",
+      "topics": [
+        "maximum normal stress & shear stress theory",
+        "maximum normal and shear strain energy theory",
+        "maximum distortion energy theory",
+        "application of theories to different materials and loading conditions."
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Columns & struts",
+      "topics": [
+        "stability of structures",
+        "Euler's formula for columns with different end conditions",
+        "Rankine's formula."
+      ]
+    }
+  ]
+}

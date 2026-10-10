@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSubjectsBySemester } from "@/lib/data/subjects";
+import { getSubjectsBySemester, type Subject } from "@/lib/data/subjects";
 import { ArrowRight } from "lucide-react";
 
 interface SemesterPageProps {
@@ -7,6 +7,92 @@ interface SemesterPageProps {
     branch: string;
     semester: string;
   }>;
+}
+
+function subjectSegment(subject: Subject) {
+  return subject.contentSlug ?? subject.code.toLowerCase();
+}
+
+function SubjectCard({ subject, href }: { subject: Subject; href: string }) {
+  return (
+    <Link
+      href={href}
+      className="group rounded-3xl border border-border bg-card p-7 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
+    >
+      <div className="flex items-start justify-between">
+        <div>
+          <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+            {subject.code}
+          </p>
+
+          <h3 className="mt-2 text-xl font-bold text-foreground">
+            {subject.name}
+          </h3>
+        </div>
+
+        <ArrowRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:translate-x-1" />
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-2">
+        <span className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
+          Syllabus
+        </span>
+
+        <span className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
+          PYQs
+        </span>
+
+        <span className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
+          Hyper AI
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+function buildSubjectSections(subjects: Subject[]) {
+  const core = subjects.filter((subject) => !subject.group);
+  const groupNames: string[] = [];
+
+  for (const subject of subjects) {
+    if (subject.group && !groupNames.includes(subject.group)) {
+      groupNames.push(subject.group);
+    }
+  }
+
+  const sections: {
+    key: string;
+    title: string;
+    description: string;
+    subjects: Subject[];
+  }[] = [];
+
+  if (core.length > 0) {
+    sections.push({
+      key: "core",
+      title: "Core Subjects",
+      description: "Compulsory subjects for this semester.",
+      subjects: core,
+    });
+  }
+
+  for (const name of groupNames) {
+    const groupSubjects = subjects.filter((subject) => subject.group === name);
+    const groupCode = groupSubjects.find(
+      (subject) => subject.groupCode
+    )?.groupCode;
+
+    sections.push({
+      key: name,
+      title: groupCode ? `${name} · ${groupCode}` : name,
+      description: groupCode
+        ? `Choose one subject from ${groupCode}. The other options are alternatives, not additional compulsory subjects.`
+        : "Choose one subject from this group. The other options are alternatives, not additional compulsory subjects.",
+      subjects: groupSubjects,
+    });
+  }
+
+  return sections;
 }
 
 export default async function SemesterPage({ params }: SemesterPageProps) {
@@ -60,43 +146,39 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {subjects.map((subject) => (
-              <Link
-                key={subject.code}
-                href={`/rgpv/${branch}/${semester}/${subject.code.toLowerCase()}`}
-                className="group rounded-3xl border border-border bg-card p-7 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
-              >
-                <div className="flex items-start justify-between">
-                  <div>
-                    <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                      {subject.code}
-                    </p>
-
-                    <h3 className="mt-2 text-xl font-bold text-foreground">
-                      {subject.name}
-                    </h3>
+          {subjects.some((subject) => subject.group) ? (
+            <div className="space-y-14">
+              {buildSubjectSections(subjects).map((section) => (
+                <div key={section.key}>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    {section.title}
+                  </h3>
+                  <p className="mt-2 max-w-3xl text-muted-foreground">
+                    {section.description}
+                  </p>
+                  <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                    {section.subjects.map((subject) => (
+                      <SubjectCard
+                        key={subject.id}
+                        subject={subject}
+                        href={`/rgpv/${branch}/${semester}/${subjectSegment(subject)}`}
+                      />
+                    ))}
                   </div>
-
-                  <ArrowRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:translate-x-1" />
                 </div>
-
-                <div className="mt-8 flex flex-wrap gap-2">
-                  <span className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
-                    Syllabus
-                  </span>
-
-                  <span className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
-                    PYQs
-                  </span>
-
-                  <span className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground">
-                    Hyper AI
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {subjects.map((subject) => (
+                <SubjectCard
+                  key={subject.id}
+                  subject={subject}
+                  href={`/rgpv/${branch}/${semester}/${subjectSegment(subject)}`}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </main>

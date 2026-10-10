@@ -1,0 +1,84 @@
+{
+  "subject": {
+    "id": "cb-301",
+    "code": "CB-301",
+    "name": "Formal Language & Automata Theory",
+    "title": "CB-301 - Formal Language & Automata Theory",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction",
+      "topics": [
+        "Alphabet, languages and grammars",
+        "Productions and derivation",
+        "Chomsky hierarchy of languages"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Regular Languages and Finite Automata",
+      "topics": [
+        "Regular expressions and languages",
+        "Deterministic finite automata (DFA) and equivalence with regular expressions",
+        "Nondeterministic finite automata (NFA) and equivalence with DFA",
+        "Regular grammars and equivalence with finite automata",
+        "Properties of regular languages",
+        "Kleene's theorem",
+        "Pumping lemma for regular languages",
+        "Myhill-Nerode theorem and its uses",
+        "Minimization of finite automata"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Context-Free Languages and Pushdown Automata",
+      "topics": [
+        "Context-free grammars (CFG) and languages (CFL)",
+        "Chomsky and Greibach normal forms",
+        "Nondeterministic pushdown automata (PDA) and equivalence with CFG",
+        "Parse trees",
+        "Ambiguity in CFG",
+        "Pumping lemma for context-free languages",
+        "Deterministic pushdown automata",
+        "Closure properties of CFLs"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Context-Sensitive Languages and Turing Machines",
+      "topics": [
+        "Context-sensitive grammars (CSG) and languages",
+        "Linear bounded automata and equivalence with CSG",
+        "The basic model for Turing machines (TM)",
+        "Turing-recognizable (recursively enumerable) and Turing-decidable (recursive) languages and their closure properties",
+        "Variants of Turing machines",
+        "Nondeterministic TMs and equivalence with deterministic TMs",
+        "Unrestricted grammars and equivalence with Turing machines",
+        "TMs as enumerators"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Undecidability and Basic Introduction to Complexity",
+      "topics": [
+        "Church-Turing thesis",
+        "Universal Turing machine",
+        "The universal and diagonalization languages",
+        "Reduction between languages and Rice's theorem",
+        "Undecidable problems about languages",
+        "Introductory ideas on Time complexity of deterministic and nondeterministic Turing machines",
+        "P and NP",
+        "NP-completeness",
+        "Cook's Theorem",
+        "Other NP-Complete problems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "subject": {
+    "id": "cs-703-a",
+    "code": "CS-703 (A)",
+    "name": "Cryptography & Information Security",
+    "title": "CS-703 (A) - Cryptography & Information Security",
+    "semester": "VII"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Mathematical Background and Classical Cryptography",
+      "topics": [
+        "Mathematical Background for Cryptography: Abstract Algebra, Number Theory, Modular Inverse, Extended Euclid Algorithm, Fermat's Little Theorem, Euler Phi-Function, Euler's theorem",
+        "Introduction to Cryptography: Principles of Cryptography, Classical Cryptosystem",
+        "Cryptanalysis on Substitution Cipher (Frequency Analysis), Play Fair Cipher, Block Cipher",
+        "Data Encryption Standard (DES), Triple DES, Modes of Operation, Stream Cipher"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "AES and Public Key Cryptosystems",
+      "topics": [
+        "Advanced Encryption Standard (AES)",
+        "Introduction to Public Key Cryptosystem, Discrete Logarithmic Problem",
+        "Diffie-Hellman Key Exchange Computational & Decisional Diffie-Hellman Problem",
+        "RSA Assumptions & Cryptosystem, RSA Signatures & Schnorr Identification Schemes",
+        "Primarily Testing, Elliptic Curve over the Reals, Elliptic curve Modulo a Prime",
+        "Chinese Remainder Theorem"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Authentication, Hashing and Digital Signatures",
+      "topics": [
+        "Message Authentication, Digital Signature, Key Management, Key Exchange, Hash Function",
+        "Universal Hashing, Cryptographic Hash Function, MD, Secure Hash Algorithm (SHA)",
+        "Digital Signature Standard (DSS)",
+        "Cryptanalysis: Time-Memory Trade-off Attack, Differential Cryptanalysis",
+        "Secure channel and authentication system like Kerberos"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Network and Information Security",
+      "topics": [
+        "Information Security: Threats in Networks, Network Security Controls - Architecture",
+        "Wireless Security, Honey pots, Traffic Flow Security",
+        "Firewalls - Design and Types of Firewalls, Personal Firewalls, IDS",
+        "Email Security: Services Security for Email Attacks Through Emails, Privacy-Authentication of Source Message, Pretty Good Privacy (PGP), S-MIME",
+        "IP Security: Overview of IPSec, IP & IP version 6 Authentication, Encapsulation Security Payload ESP, Internet Key Exchange IKE",
+        "Web Security: SSL/TLS, Basic protocols of security, Encoding - Secure Electronic Transaction SET"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Cryptography and Information Security Tools",
+      "topics": [
+        "Spoofing tools: like Arping etc.",
+        "Foot printing Tools (ex-nslookup, dig, Whois, etc.)",
+        "Vulnerabilities Scanning Tools (i.e. Angry IP, HPing2, IP Scanner, Global Network Inventory Scanner, Net Tools Suite Pack.)",
+        "NetBIOS Enumeration Using NetView Tool",
+        "Steganography Merge Streams, Image Hide, Stealth Files, Blindside using: STools, Steghide, Steganos",
+        "Stegdetect, Steganalysis - Stego Watch - Stego Detection Tool, StegSpy",
+        "Trojans Detection Tools (i.e. Netstat, fPort, TCPView, CurrPorts Tool, Process Viewer)",
+        "Lan Scanner Tools (i.e. look@LAN, Wireshark, Tcpdump)",
+        "DoS Attack Understanding Tools - Jolt2, Bubonic.c, Land and LaTierra, Targa, Nemesy Blast, Panther2, Crazy Pinger, Some Trouble, UDP Flood, FSMax"
+      ]
+    }
+  ]
+}

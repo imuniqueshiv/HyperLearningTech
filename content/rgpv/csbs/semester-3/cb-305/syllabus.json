@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "id": "cb-305",
+    "code": "CB-305",
+    "name": "Database Management Systems",
+    "title": "CB-305 - Database Management Systems",
+    "semester": "III"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "number": 1,
+      "title": "Introduction and Database System Architecture",
+      "topics": [
+        "Introduction to Database",
+        "Hierarchical, Network and Relational Models",
+        "Data Abstraction, Data Independence",
+        "Data Definition Language (DDL)",
+        "Data Manipulation Language (DML)"
+      ]
+    },
+    {
+      "id": "module-2",
+      "number": 2,
+      "title": "Data Models",
+      "topics": [
+        "Entity-relationship model",
+        "Network model",
+        "Relational and object oriented data models",
+        "Integrity constraints",
+        "Data manipulation operations"
+      ]
+    },
+    {
+      "id": "module-3",
+      "number": 3,
+      "title": "Relational Query Languages and Database Design",
+      "topics": [
+        "Relational algebra",
+        "Tuple and domain relational calculus",
+        "SQL3, DDL and DML constructs",
+        "Open source and Commercial DBMS - MYSQL, ORACLE, DB2, SQL server",
+        "Domain and data dependency, Armstrong's axioms",
+        "Functional Dependencies, Normal forms",
+        "Dependency preservation, Lossless design"
+      ]
+    },
+    {
+      "id": "module-4",
+      "number": 4,
+      "title": "Query Processing, Optimization and Storage Strategies",
+      "topics": [
+        "Evaluation of relational algebra expressions",
+        "Query equivalence",
+        "Join strategies",
+        "Query optimization algorithms",
+        "Indices, B-trees, Hashing"
+      ]
+    },
+    {
+      "id": "module-5",
+      "number": 5,
+      "title": "Transaction Processing, Security and Advanced Topics",
+      "topics": [
+        "Concurrency control, ACID property",
+        "Serializability of scheduling",
+        "Locking and timestamp based schedulers",
+        "Multi-version and optimistic Concurrency Control schemes",
+        "Database recovery",
+        "Authentication, Authorization and access control",
+        "DAC, MAC and RBAC models",
+        "Intrusion detection, SQL injection",
+        "Object oriented and object relational databases",
+        "Logical databases, Web databases, Distributed databases",
+        "Data warehousing and data mining"
+      ]
+    }
+  ]
+}
