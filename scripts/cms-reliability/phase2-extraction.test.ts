@@ -182,6 +182,19 @@ describe("Phase 2 evidence + AI hallucination guard", () => {
     assert.notEqual(result.status, "INVALID");
   });
 
+  it("rejects AI inventing long question wording absent from OCR evidence", () => {
+    const evidence = buildSimpleEvidence(
+      "Q.1 Explain bubble sort with a worked numerical example using array size 16."
+    );
+    const academic = makeAcademic(
+      "Describe the complete architecture of a quantum neural transformer " +
+        "including entanglement layers and photonic backpropagation schedules."
+    );
+    const result = validateAgainstEvidence(academic, evidence);
+    assert.equal(result.status, "INVALID");
+    assert.ok(result.errors.some((e) => e.includes("AI_TEXT_NOT_IN_EVIDENCE")));
+  });
+
   it("preserves diagram marker in evidence fallback", () => {
     const evidence = buildSimpleEvidence("Construct MST", true);
     const academic = academicFromEvidence(evidence, {

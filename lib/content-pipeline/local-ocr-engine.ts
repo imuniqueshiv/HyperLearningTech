@@ -43,6 +43,8 @@ import {
   perfSetActiveWorkers,
   resetOcrPerfProbe,
 } from "./ocr-perf-probe";
+import { preferEnglishExamText } from "./english-text";
+import { cropRasterColumn, preprocessRasterForOcr } from "./ocr-preprocess";
 import { safeTrim } from "./string-normalize";
 
 /**
@@ -52,9 +54,10 @@ import { safeTrim } from "./string-normalize";
  * - scale 2 parallel ≈ 4.2s (same line/text quality)
  * - scale 1.5 parallel ≈ 3.9–4.6s typical (equal line counts vs scale 2)
  * - scale 1.25 parallel ≈ 3.4s but loses lines on page 1
- * Keep 1.5: best speed/quality balance measured on the fixture.
+ * Portrait default 1.5; landscape two-column scans use 2.0 for marker fidelity.
  */
 export const SCAN_RASTER_SCALE = 1.5;
+export const SCAN_RASTER_SCALE_LANDSCAPE = 2;
 
 type TesseractWorker = Awaited<ReturnType<typeof createWorker>>;
 
@@ -437,11 +440,15 @@ export class LocalOcrEngine implements OcrEngine {
       try {
         for (const draft of ocrTargets) {
           const tRaster0 = Date.now();
+          // Landscape RGPV sheets are usually two-up columns — prefer higher DPI.
+          const nativeViewport = draft.pdfPage.getViewport({ scale: 1 });
+          const landscape =
+            (nativeViewport?.width ?? 0) > (nativeViewport?.height ?? 0) * 1.15;
           const raster = await rasterizePdfPage({
             page: draft.pdfPage,
             jobDir: input.jobDir,
             pageNumber: draft.pageNumber,
-            scale: SCAN_RASTER_SCALE,
+            scale: landscape ? SCAN_RASTER_SCALE_LANDSCAPE : SCAN_RASTER_SCALE,
           });
           const rasterMs = Date.now() - tRaster0;
           perfPageRaster(draft.pageNumber, rasterMs);
@@ -801,131 +808,71 @@ async function recognizeImageText(
   }
 
   try {
-    // tesseract.js v7 omits structured layout unless output options are requested.
-    // Profiled: blocks-only matches blocks+hocr+tsv wall time; we only consume
-    // text + line bboxes/confidence from blocks (and text fallback).
-    // Prefer Buffer when available to avoid a second disk read of the page raster.
+    const sourceBuffer = await resolveImageBuffer(imageSource);
+    let ocrInput: Buffer = sourceBuffer;
+    try {
+      const pre = await preprocessRasterForOcr(sourceBuffer);
+      ocrInput = pre.buffer;
+    } catch (error) {
+      // Surface preprocess failure in logs; fall back to raw raster rather than empty success.
+      console.error("[OCR] sharp preprocess failed; using raw raster", {
+        pageNumber,
+        error: error instanceof Error ? error.message : String(error),
+      });
+    }
+
+    const landscape = pageWidth > pageHeight * 1.15;
     const tRec0 = Date.now();
-    const result = await worker.recognize(
-      imageSource,
-      {},
-      { text: true, blocks: true }
+
+    // Landscape two-up RGPV sheets: OCR each column separately to reduce bleed.
+    if (landscape && pageWidth >= 800) {
+      const [leftCrop, rightCrop] = await Promise.all([
+        cropRasterColumn(sourceBuffer, 0, 0.52),
+        cropRasterColumn(sourceBuffer, 0.48, 1),
+      ]);
+      const leftBlocks = await recognizePreparedBuffer(
+        worker,
+        leftCrop.buffer,
+        pageNumber,
+        pageWidth,
+        pageHeight,
+        0,
+        "L"
+      );
+      const rightBlocks = await recognizePreparedBuffer(
+        worker,
+        rightCrop.buffer,
+        pageNumber,
+        pageWidth,
+        pageHeight,
+        Math.floor(pageWidth * 0.48),
+        "R"
+      );
+      perfPageOcr(pageNumber, workerId, Date.now() - tRec0);
+      const merged = [...leftBlocks, ...rightBlocks].map((block, index) => ({
+        ...block,
+        id: `p${pageNumber}-t${index + 1}`,
+        text: preferEnglishExamText(block.text),
+      }));
+      return merged.filter((b) => b.text.length > 0);
+    }
+
+    const blocks = await recognizePreparedBuffer(
+      worker,
+      ocrInput,
+      pageNumber,
+      pageWidth,
+      pageHeight,
+      0,
+      ""
     );
     perfPageOcr(pageNumber, workerId, Date.now() - tRec0);
-
-    const tExtract0 = Date.now();
-    const blocks: RawTextBlock[] = [];
-    let index = 0;
-
-    const layoutBlocks = (
-      result.data as {
-        blocks?: Array<{
-          paragraphs?: Array<{
-            lines?: Array<{
-              text?: string;
-              confidence?: number;
-              bbox?: { x0: number; y0: number; x1: number; y1: number };
-            }>;
-          }>;
-        }>;
-      }
-    ).blocks;
-
-    if (Array.isArray(layoutBlocks)) {
-      for (const layoutBlock of layoutBlocks) {
-        for (const paragraph of layoutBlock.paragraphs ?? []) {
-          for (const line of paragraph.lines ?? []) {
-            const text = safeTrim(line.text);
-            if (!text) continue;
-            index += 1;
-            const box = line.bbox;
-            blocks.push({
-              id: `p${pageNumber}-t${index}`,
-              pageNumber,
-              text,
-              bbox: createBoundingBox(
-                box?.x0 ?? 0,
-                box?.y0 ?? 0,
-                Math.max(1, (box?.x1 ?? 0) - (box?.x0 ?? 0)),
-                Math.max(1, (box?.y1 ?? 0) - (box?.y0 ?? 0))
-              ),
-              confidence:
-                typeof line.confidence === "number"
-                  ? Math.max(0, Math.min(1, line.confidence / 100))
-                  : undefined,
-            });
-          }
-        }
-      }
-    }
-
-    // Legacy fallback if a future API restores top-level lines.
-    const lineData = (
-      result.data as {
-        lines?: Array<{
-          text?: string;
-          confidence?: number;
-          bbox?: { x0: number; y0: number; x1: number; y1: number };
-        }>;
-      }
-    ).lines;
-
-    if (blocks.length === 0 && Array.isArray(lineData) && lineData.length > 0) {
-      for (const line of lineData) {
-        const text = safeTrim(line.text);
-        if (!text) continue;
-        index += 1;
-        const box = line.bbox;
-        blocks.push({
-          id: `p${pageNumber}-t${index}`,
-          pageNumber,
-          text,
-          bbox: createBoundingBox(
-            box?.x0 ?? 0,
-            box?.y0 ?? 0,
-            Math.max(1, (box?.x1 ?? 0) - (box?.x0 ?? 0)),
-            Math.max(1, (box?.y1 ?? 0) - (box?.y0 ?? 0))
-          ),
-          confidence:
-            typeof line.confidence === "number"
-              ? Math.max(0, Math.min(1, line.confidence / 100))
-              : undefined,
-        });
-      }
-    }
-
-    const fullPageText = safeTrim(result.data.text);
-    if (blocks.length === 0 && fullPageText) {
-      const paragraphs = fullPageText
-        .split(/\n+/)
-        .map((line) => safeTrim(line))
-        .filter(Boolean);
-
-      for (let i = 0; i < paragraphs.length; i += 1) {
-        index += 1;
-        const syntheticY = Math.round(
-          (pageHeight * (i + 1)) / (paragraphs.length + 1)
-        );
-        blocks.push({
-          id: `p${pageNumber}-t${index}`,
-          pageNumber,
-          text: paragraphs[i],
-          bbox: createBoundingBox(
-            0,
-            syntheticY,
-            Math.max(1, pageWidth),
-            Math.max(12, Math.round(pageHeight / (paragraphs.length + 2)))
-          ),
-          confidence:
-            typeof result.data.confidence === "number"
-              ? Math.max(0, Math.min(1, result.data.confidence / 100))
-              : undefined,
-        });
-      }
-    }
-
-    perfAdd("ocr_result_extract_ms", Date.now() - tExtract0);
-    return blocks;
+    return blocks
+      .map((block) => ({
+        ...block,
+        text: preferEnglishExamText(block.text),
+      }))
+      .filter((b) => b.text.length > 0);
   } finally {
     if (ownsWorker) {
       perfMark("worker_release_single");
@@ -933,6 +880,142 @@ async function recognizeImageText(
       perfMeasure("worker_release_ms", "worker_release_single");
     }
   }
+}
+
+async function resolveImageBuffer(
+  imageSource: string | Buffer
+): Promise<Buffer> {
+  if (Buffer.isBuffer(imageSource)) return imageSource;
+  return fs.readFile(imageSource);
+}
+
+async function recognizePreparedBuffer(
+  worker: TesseractWorker,
+  imageBuffer: Buffer,
+  pageNumber: number,
+  pageWidth: number,
+  pageHeight: number,
+  xOffset: number,
+  idSuffix: string
+): Promise<RawTextBlock[]> {
+  const tExtract0 = Date.now();
+  const result = await worker.recognize(
+    imageBuffer,
+    {},
+    { text: true, blocks: true }
+  );
+
+  const blocks: RawTextBlock[] = [];
+  let index = 0;
+
+  const layoutBlocks = (
+    result.data as {
+      blocks?: Array<{
+        paragraphs?: Array<{
+          lines?: Array<{
+            text?: string;
+            confidence?: number;
+            bbox?: { x0: number; y0: number; x1: number; y1: number };
+          }>;
+        }>;
+      }>;
+    }
+  ).blocks;
+
+  if (Array.isArray(layoutBlocks)) {
+    for (const layoutBlock of layoutBlocks) {
+      for (const paragraph of layoutBlock.paragraphs ?? []) {
+        for (const line of paragraph.lines ?? []) {
+          const text = safeTrim(line.text);
+          if (!text) continue;
+          index += 1;
+          const box = line.bbox;
+          blocks.push({
+            id: `p${pageNumber}${idSuffix}-t${index}`,
+            pageNumber,
+            text,
+            bbox: createBoundingBox(
+              (box?.x0 ?? 0) + xOffset,
+              box?.y0 ?? 0,
+              Math.max(1, (box?.x1 ?? 0) - (box?.x0 ?? 0)),
+              Math.max(1, (box?.y1 ?? 0) - (box?.y0 ?? 0))
+            ),
+            confidence:
+              typeof line.confidence === "number"
+                ? Math.max(0, Math.min(1, line.confidence / 100))
+                : undefined,
+          });
+        }
+      }
+    }
+  }
+
+  const lineData = (
+    result.data as {
+      lines?: Array<{
+        text?: string;
+        confidence?: number;
+        bbox?: { x0: number; y0: number; x1: number; y1: number };
+      }>;
+    }
+  ).lines;
+
+  if (blocks.length === 0 && Array.isArray(lineData) && lineData.length > 0) {
+    for (const line of lineData) {
+      const text = safeTrim(line.text);
+      if (!text) continue;
+      index += 1;
+      const box = line.bbox;
+      blocks.push({
+        id: `p${pageNumber}${idSuffix}-t${index}`,
+        pageNumber,
+        text,
+        bbox: createBoundingBox(
+          (box?.x0 ?? 0) + xOffset,
+          box?.y0 ?? 0,
+          Math.max(1, (box?.x1 ?? 0) - (box?.x0 ?? 0)),
+          Math.max(1, (box?.y1 ?? 0) - (box?.y0 ?? 0))
+        ),
+        confidence:
+          typeof line.confidence === "number"
+            ? Math.max(0, Math.min(1, line.confidence / 100))
+            : undefined,
+      });
+    }
+  }
+
+  const fullPageText = safeTrim(result.data.text);
+  if (blocks.length === 0 && fullPageText) {
+    const paragraphs = fullPageText
+      .split(/\n+/)
+      .map((line) => safeTrim(line))
+      .filter(Boolean);
+
+    for (let i = 0; i < paragraphs.length; i += 1) {
+      index += 1;
+      const syntheticY = Math.round(
+        (pageHeight * (i + 1)) / (paragraphs.length + 1)
+      );
+      blocks.push({
+        id: `p${pageNumber}${idSuffix}-t${index}`,
+        pageNumber,
+        text: paragraphs[i],
+        bbox: createBoundingBox(
+          xOffset,
+          syntheticY,
+          Math.max(1, pageWidth - xOffset),
+          Math.max(12, Math.round(pageHeight / (paragraphs.length + 2)))
+        ),
+        confidence:
+          typeof result.data.confidence === "number"
+            ? Math.max(0, Math.min(1, result.data.confidence / 100))
+            : undefined,
+      });
+    }
+  }
+
+  perfAdd("ocr_result_extract_ms", Date.now() - tExtract0);
+  return blocks;
 }
 
 function buildPageLayout(

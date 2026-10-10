@@ -172,6 +172,64 @@ export {
 } from "./local-save-service";
 
 export {
+  detectDuplicatePapers,
+  paperContentIdentityHash,
+  type DuplicatePaperMatch,
+  type DuplicatePaperReport,
+  type DuplicatePaperStatus,
+} from "./duplicate-paper-detector";
+
+export {
+  categorizeWarning,
+  extractWarningCode,
+  summarizeWarnings,
+  type CategorizedWarning,
+  type WarningCategory,
+  type WarningSeverity,
+  type WarningSummary,
+} from "./warning-catalog";
+
+export {
+  buildContentQualityIndicators,
+  inferCheckStatuses,
+  type ContentQualityIndicators,
+} from "./content-quality-indicators";
+
+export {
+  CMS_IMPORT_DIAGNOSTICS_FILENAME,
+  ensureImportDiagnostics,
+  loadImportDiagnostics,
+  readImportDiagnostics,
+  writeImportDiagnostics,
+  type ImportDiagnostics,
+  type ImportStageTiming,
+} from "./import-diagnostics";
+
+export {
+  cleanupPostSaveArtifacts,
+  type ArtifactCleanupReport,
+} from "./cms-artifact-cleanup";
+
+export {
+  evaluateDocumentEligibility,
+  eligibilityAllowsSave,
+  eligibilityAllowsStructuring,
+  type DocumentEligibilityResult,
+  type DocumentEligibilityStatus,
+  type InstitutionStatus,
+  type DocumentTypeStatus,
+} from "./document-eligibility";
+
+export {
+  CMS_DOCUMENT_ELIGIBILITY_FILENAME,
+  DocumentEligibilityError,
+  readDocumentEligibility,
+  requireDocumentEligibilityForStructuring,
+  runDocumentEligibilityForJob,
+  writeDocumentEligibility,
+} from "./document-eligibility-service";
+
+export {
   buildManualGitCommands,
   captureGitReview,
   GitReviewError,
@@ -186,6 +244,15 @@ export {
   syncHistoryFromQueue,
   writeHistoryFilesModified,
 } from "./history-service";
+
+export {
+  assertValidCmsJobId,
+  CMS_JOB_ID_PATTERN,
+  deleteImportHistory,
+  deleteImportHistoryBulk,
+  HistoryDeleteError,
+  type HistoryDeleteResult,
+} from "./history-delete-service";
 
 export {
   listHistoryRecords,

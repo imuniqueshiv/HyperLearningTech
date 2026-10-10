@@ -5,9 +5,15 @@ import type { ReviewPackage } from "@/lib/content-pipeline";
 
 interface ReviewSummaryProps {
   reviewPackage: ReviewPackage | null;
+  confirmDuplicateSave?: boolean;
+  onConfirmDuplicateChange?: (value: boolean) => void;
 }
 
-export function ReviewSummary({ reviewPackage }: ReviewSummaryProps) {
+export function ReviewSummary({
+  reviewPackage,
+  confirmDuplicateSave,
+  onConfirmDuplicateChange,
+}: ReviewSummaryProps) {
   if (!reviewPackage) {
     return (
       <p className="text-sm text-muted-foreground">
@@ -16,5 +22,11 @@ export function ReviewSummary({ reviewPackage }: ReviewSummaryProps) {
     );
   }
 
-  return <ReviewSummaryPanel reviewPackage={reviewPackage} />;
+  return (
+    <ReviewSummaryPanel
+      reviewPackage={reviewPackage}
+      confirmDuplicateSave={confirmDuplicateSave}
+      onConfirmDuplicateChange={onConfirmDuplicateChange}
+    />
+  );
 }

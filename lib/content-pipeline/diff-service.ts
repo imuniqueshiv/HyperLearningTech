@@ -19,6 +19,17 @@ export function diffSyllabusJson(
   return diffJson(existing ?? null, pending ?? null, "syllabus.json");
 }
 
+/** Empty diff used when a PYQ-only import must not surface syllabus changes. */
+export function emptyJsonDiff(label: string): JsonDiffResult {
+  return {
+    label,
+    entries: [],
+    addedCount: 0,
+    removedCount: 0,
+    modifiedCount: 0,
+  };
+}
+
 export function summarizeDiffCounts(diff: JsonDiffResult): {
   added: number;
   removed: number;

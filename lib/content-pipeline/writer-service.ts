@@ -330,15 +330,24 @@ export async function runWriterForJob(jobId: string): Promise<RunWriterResult> {
         path.join(contentDir, "syllabus.json")
       );
 
+      // PYQ-only: never feed existing syllabus into the writer as a candidate.
+      const pyqOnly = metadata.type === "pyq" && !incomingSyllabus;
+
       const writeResult = await writeProductionContent({
         jobId,
         jobDir,
         contentDir,
         backupDir,
-        incomingPyqs,
-        incomingSyllabus,
-        existingPyqs,
-        existingSyllabus,
+        incomingPyqs: incomingPyqs ? structuredClone(incomingPyqs) : null,
+        incomingSyllabus: pyqOnly
+          ? null
+          : incomingSyllabus
+            ? structuredClone(incomingSyllabus)
+            : null,
+        existingPyqs: existingPyqs ? structuredClone(existingPyqs) : null,
+        existingSyllabus: existingSyllabus
+          ? structuredClone(existingSyllabus)
+          : null,
         existingPyqsPath: existingPyqs ? "pyqs.json" : null,
         existingSyllabusPath: existingSyllabus ? "syllabus.json" : null,
         preValidation,
@@ -390,6 +399,14 @@ export async function runWriterForJob(jobId: string): Promise<RunWriterResult> {
           path.join(jobDir, CMS_PENDING_SYLLABUS_FILENAME),
           writeResult.pendingSyllabus
         );
+      } else {
+        // PYQ-only: remove stale pending-syllabus so review cannot show
+        // a false syllabus diff or save path.
+        try {
+          await fs.unlink(path.join(jobDir, CMS_PENDING_SYLLABUS_FILENAME));
+        } catch {
+          /* absent */
+        }
       }
 
       const summary = toWritingRunSummary(

@@ -1,5 +1,6 @@
 import path from "path";
 
+import { cleanupPostSaveArtifacts } from "./cms-artifact-cleanup";
 import {
   CMS_PENDING_PYQS_FILENAME,
   CMS_PENDING_SYLLABUS_FILENAME,
@@ -8,6 +9,11 @@ import {
   CMS_SAVE_REPORT_FILENAME,
   CMS_WRITE_REPORT_FILENAME,
 } from "./constants";
+import { detectDuplicatePapers } from "./duplicate-paper-detector";
+import { eligibilityAllowsSave } from "./document-eligibility";
+import { readDocumentEligibility } from "./document-eligibility-service";
+import { assessExtractionQuality } from "./extraction-quality";
+import { ensureImportDiagnostics } from "./import-diagnostics";
 import { isCmsContentWriteEnabled } from "@/lib/cms-auth";
 import { handleStageFailure } from "./failure-handler";
 import { writeHistoryFilesModified } from "./history-service";
@@ -70,12 +76,29 @@ export async function readSaveReport(
  * cannot mutate live production content by accident.
  */
 export async function runLocalSaveForJob(
-  jobId: string
+  jobId: string,
+  options?: { confirmDuplicateSave?: boolean }
 ): Promise<RunLocalSaveResult> {
   if (!isCmsContentWriteEnabled()) {
     throw new SaveProcessingError(
       "CONTENT_WRITE_DISABLED",
       "Production content writes are disabled in Phase 1. Set CMS_ALLOW_CONTENT_WRITE=true to enable explicit Local Save after approval."
+    );
+  }
+
+  // RGPV eligibility gate — forged frontend approval cannot bypass this.
+  const eligibility = await readDocumentEligibility(jobId);
+  const eligibilityGate = eligibilityAllowsSave(eligibility);
+  if (!eligibilityGate.ok) {
+    throw new SaveProcessingError(
+      eligibilityGate.code,
+      eligibilityGate.message
+    );
+  }
+  if (eligibility?.status === "DOCUMENT_ELIGIBILITY_REJECTED") {
+    throw new SaveProcessingError(
+      "DOCUMENT_ELIGIBILITY_REJECTED",
+      eligibility.summary
     );
   }
 
@@ -184,6 +207,22 @@ export async function runLocalSaveForJob(
       );
     }
 
+    // ONE_PAPER applies to the extracted import, not the merged save candidate.
+    const extractedForGates = productionPyqs;
+    if (extractedForGates && extractedForGates.papers.length !== 1) {
+      throw new SaveProcessingError(
+        "ONE_PAPER_REQUIRED",
+        `Local save requires exactly one extracted paper per import (got ${extractedForGates.papers.length}).`
+      );
+    }
+    if (!extractedForGates && pendingPyqs && metadata.type === "pyq") {
+      // Edited pending may be a full merge — still require production extract.
+      throw new SaveProcessingError(
+        "EXTRACTED_JSON_MISSING",
+        "production-pyqs.json (extracted paper) is required for PYQ local save."
+      );
+    }
+
     const existingPyqs = await readJsonFile<ProductionPyqsJson>(
       path.join(contentDir, "pyqs.json")
     );
@@ -191,20 +230,74 @@ export async function runLocalSaveForJob(
       path.join(contentDir, "syllabus.json")
     );
 
+    if (extractedForGates) {
+      const dup = detectDuplicatePapers(existingPyqs, extractedForGates);
+      if (dup.requiresConfirmation && !options?.confirmDuplicateSave) {
+        throw new SaveProcessingError(
+          dup.isExactDuplicate ? "EXACT_DUPLICATE" : "POSSIBLE_DUPLICATE",
+          `${dup.summary} Pass confirmDuplicateSave=true after human confirmation.`
+        );
+      }
+    }
+
     const preValidation = await readValidationReport(jobId);
+
+    // PYQ-only jobs never carry an incoming syllabus — do not pass existing
+    // syllabus through as "incoming" or pending will rewrite syllabus.json.
+    const isPyqOnly = metadata.type === "pyq" && !productionSyllabus;
+
+    if (extractedForGates) {
+      const rawDoc = await readJsonFile<{
+        pages?: Array<{
+          textBlocks?: Array<{ confidence?: number }>;
+        }>;
+      }>(path.join(jobDir, "raw-document.json"));
+      const confidences =
+        rawDoc?.pages?.flatMap((page) =>
+          (page.textBlocks ?? [])
+            .map((block) => block.confidence)
+            .filter((c): c is number => typeof c === "number" && c > 0)
+        ) ?? [];
+      const ocrConfidencePercent =
+        confidences.length > 0
+          ? (confidences.reduce((a, b) => a + b, 0) / confidences.length) * 100
+          : null;
+      const quality = assessExtractionQuality({
+        extractedPyqs: extractedForGates,
+        validationStatus: preValidation?.status ?? null,
+        ocrTexts: extractedForGates.papers.flatMap((p) =>
+          (p.questions ?? []).flatMap((q) =>
+            (q.subQuestions ?? []).map((s) => s.text ?? "")
+          )
+        ),
+        ocrConfidencePercent,
+      });
+      if (!quality.canSave) {
+        throw new SaveProcessingError(
+          quality.codes[0] ?? "EXTRACTION_QUALITY_BLOCKED",
+          `Local save blocked (${quality.readiness}): ${
+            quality.reasons.join(" ") || "extraction not READY"
+          }`
+        );
+      }
+    }
 
     // Use production (job-relative diagram paths) as incoming so Diagram Writer
     // can copy assets. Pending JSON (already merged / possibly edited) is
-    // written afterward as the final content snapshot.
+    // written afterward as the final PYQ content snapshot only.
     const writeResult = await writeProductionContent({
       jobId,
       jobDir,
       contentDir,
       backupDir,
       incomingPyqs: productionPyqs ?? pendingPyqs,
-      incomingSyllabus: productionSyllabus ?? pendingSyllabus,
-      existingPyqs,
-      existingSyllabus,
+      incomingSyllabus: isPyqOnly
+        ? null
+        : (productionSyllabus ?? pendingSyllabus),
+      existingPyqs: existingPyqs ? structuredClone(existingPyqs) : null,
+      existingSyllabus: existingSyllabus
+        ? structuredClone(existingSyllabus)
+        : null,
       existingPyqsPath: existingPyqs ? "pyqs.json" : null,
       existingSyllabusPath: existingSyllabus ? "syllabus.json" : null,
       preValidation,
@@ -262,15 +355,17 @@ export async function runLocalSaveForJob(
       return { job: { ...job, save: summary }, summary, report: failedReport };
     }
 
-    // Prefer approved pending snapshot (includes review edits).
+    // Prefer approved pending PYQ snapshot (includes review edits / merge).
+    // Never write syllabus.json for PYQ-only imports.
     const storage = getStorageProvider();
-    if (pendingPyqs) {
-      await storage.saveJson(path.join(contentDir, "pyqs.json"), pendingPyqs);
+    const pyqsToPersist = writeResult.pendingPyqs ?? pendingPyqs;
+    if (pyqsToPersist) {
+      await storage.saveJson(path.join(contentDir, "pyqs.json"), pyqsToPersist);
     }
-    if (pendingSyllabus) {
+    if (!isPyqOnly && (writeResult.pendingSyllabus || pendingSyllabus)) {
       await storage.saveJson(
         path.join(contentDir, "syllabus.json"),
-        pendingSyllabus
+        writeResult.pendingSyllabus ?? pendingSyllabus
       );
     }
 
@@ -377,6 +472,17 @@ export async function runLocalSaveForJob(
     } catch {
       // History is non-blocking.
     }
+
+    try {
+      await cleanupPostSaveArtifacts(jobId);
+    } catch {
+      // Temp cleanup is best-effort; never fail a successful save.
+    }
+
+    await ensureImportDiagnostics(jobId, {
+      finalState: PipelineStage.LOCAL_SAVED,
+      pageCount: metadata.pageCount ?? null,
+    });
 
     return result;
   } catch (error) {

@@ -9,10 +9,12 @@ import {
   extractNumericalTokens,
   parseQuestionNumber,
   parseSubQuestionLabel,
+  splitTextByQuestionMarkers,
 } from "./question-number";
 import { segmentPapers, type PaperSegmentationResult } from "./paper-segmenter";
 import { mergeCrossPageQuestionCandidates } from "./question-continuation";
 import { detectRepeatedHeaderFooter } from "./header-footer";
+import { preferEnglishExamText } from "./english-text";
 import { safeTrim } from "./string-normalize";
 
 export const DIAGRAM_PRESENT_MARKER = "[DIAGRAM_PRESENT]";
@@ -88,18 +90,26 @@ export function buildExtractionEvidence(input: {
 
   // When layout produced no question nodes (often due to degenerate OCR bboxes
   // on historical artifacts), fall back to scanning raw text blocks directly.
-  const withFallback =
-    questionCandidatesRaw.length > 0
-      ? questionCandidatesRaw
-      : collectQuestionCandidatesFromRaw(
-          input.raw,
-          paperSegmentation,
-          warnings
-        );
+  // Always scan raw blocks too — layout may miss mid-blob markers on
+  // bilingual / multi-column pages. Merge by question index (prefer richer text).
+  const fromRaw = collectQuestionCandidatesFromRaw(
+    input.raw,
+    paperSegmentation,
+    warnings
+  );
+  const withFallback = mergeQuestionCandidateLists(
+    questionCandidatesRaw,
+    fromRaw
+  );
 
   const continued = mergeCrossPageQuestionCandidates(withFallback);
   warnings.push(...continued.warnings);
-  const questionCandidates = continued.candidates;
+  // Continuation merge orders by page for pairing; re-sort by question index
+  // so downstream consumers see stable serial order (Q.1…Q.n).
+  const questionCandidates = [...continued.candidates].sort((a, b) => {
+    if (a.paperIndex !== b.paperIndex) return a.paperIndex - b.paperIndex;
+    return (a.questionIndex ?? 999) - (b.questionIndex ?? 999);
+  });
 
   // Sequence analysis per paper
   const byPaper = new Map<number, number[]>();
@@ -152,9 +162,18 @@ function collectQuestionCandidates(
       segmentation.papers.find((p) => p.paperIndex === paperIndex)?.paperId ??
       `paper-${paperIndex}`;
     const parsed = parseQuestionNumber(node.text);
-    const bodyTexts = collectChildTexts(structured, node.id);
-    const fullText = [node.text, ...bodyTexts].join("\n").trim();
-    const subQuestions = collectSubQuestions(structured, node.id);
+    const bodyTexts = collectChildTexts(structured, node.id).map((t) =>
+      preferEnglishExamText(t)
+    );
+    const fullText = preferEnglishExamText(
+      [node.text, ...bodyTexts].join("\n").trim()
+    );
+    const subQuestions = collectSubQuestions(structured, node.id).map(
+      (sub) => ({
+        ...sub,
+        text: preferEnglishExamText(sub.text),
+      })
+    );
     const hasDiagram =
       hasFigureChild(structured, node.id) ||
       /\[DIAGRAM_PRESENT\]/i.test(fullText);
@@ -195,12 +214,62 @@ function collectQuestionCandidates(
  * Fallback when StructuredDocument has no question nodes — common when OCR
  * bboxes were full-page and every line was misclassified as header.
  */
+function mergeQuestionCandidateLists(
+  primary: QuestionCandidateEvidence[],
+  secondary: QuestionCandidateEvidence[]
+): QuestionCandidateEvidence[] {
+  if (secondary.length === 0) return primary;
+  if (primary.length === 0) return secondary;
+
+  const byKey = new Map<string, QuestionCandidateEvidence>();
+  const keyOf = (q: QuestionCandidateEvidence) =>
+    `${q.paperIndex}:${q.questionIndex ?? q.provisionalId}`;
+
+  for (const q of primary) {
+    byKey.set(keyOf(q), q);
+  }
+  for (const q of secondary) {
+    const key = keyOf(q);
+    const existing = byKey.get(key);
+    if (!existing) {
+      // Raw-only recovery for markers layout missed entirely.
+      byKey.set(key, q);
+      continue;
+    }
+    // Structured layout wins for (a)/(b) association. Raw scan is column-blind
+    // on landscape bleed lines and must not overwrite grouped sub-questions.
+    byKey.set(key, {
+      ...existing,
+      text: safeTrim(existing.text).length > 0 ? existing.text : q.text,
+      subQuestions:
+        existing.subQuestions.length > 0
+          ? existing.subQuestions
+          : q.subQuestions,
+      numericalTokens: [
+        ...new Set([...existing.numericalTokens, ...q.numericalTokens]),
+      ],
+      sourcePages: [
+        ...new Set([...existing.sourcePages, ...q.sourcePages]),
+      ].sort((a, b) => a - b),
+      numberingConfidence:
+        confidenceRank(existing.numberingConfidence) >=
+        confidenceRank(q.numberingConfidence)
+          ? existing.numberingConfidence
+          : q.numberingConfidence,
+    });
+  }
+
+  return [...byKey.values()].sort((a, b) => {
+    if (a.paperIndex !== b.paperIndex) return a.paperIndex - b.paperIndex;
+    return (a.questionIndex ?? 999) - (b.questionIndex ?? 999);
+  });
+}
+
 function collectQuestionCandidatesFromRaw(
   raw: RawDocument,
   segmentation: PaperSegmentationResult,
   warnings: string[]
 ): QuestionCandidateEvidence[] {
-  warnings.push("QUESTION_CANDIDATES_FROM_RAW_FALLBACK");
   const candidates: QuestionCandidateEvidence[] = [];
   let autoId = 0;
 
@@ -213,9 +282,31 @@ function collectQuestionCandidatesFromRaw(
       `paper-${paperIndex}`;
 
     let current: QuestionCandidateEvidence | null = null;
+    // Expand blocks that pack multiple "N. (a)" markers into one OCR blob.
+    // Also scan the page join — two-column bleed often hides markers until joined.
+    const expandedTexts: string[] = [];
     for (const block of page.textBlocks) {
-      const parsed = parseQuestionNumber(block.text);
-      const sub = parseSubQuestionLabel(block.text);
+      const parts = splitTextByQuestionMarkers(block.text);
+      if (parts.length > 1) {
+        warnings.push(
+          `QUESTION_MARKERS_SPLIT:page${page.pageNumber}:${parts.length}`
+        );
+      }
+      expandedTexts.push(...parts);
+    }
+    const pageParts = splitTextByQuestionMarkers(
+      page.textBlocks.map((b) => b.text).join("\n")
+    );
+    if (pageParts.length > 1) {
+      for (const part of pageParts) {
+        if (!expandedTexts.some((t) => t.includes(part.slice(0, 40)))) {
+          expandedTexts.push(part);
+        }
+      }
+    }
+    for (const blockText of expandedTexts) {
+      const parsed = parseQuestionNumber(blockText);
+      const sub = parseSubQuestionLabel(blockText);
       if (parsed) {
         if (current) candidates.push(current);
         autoId += 1;
@@ -226,9 +317,9 @@ function collectQuestionCandidatesFromRaw(
           questionNumber: parsed.canonical,
           questionIndex: parsed.index,
           subQuestions: [],
-          text: block.text,
+          text: blockText,
           sourcePages: [page.pageNumber],
-          numericalTokens: extractNumericalTokens(block.text),
+          numericalTokens: extractNumericalTokens(blockText),
           hasDiagram: false,
           numberingConfidence: parsed.confidence,
         };
@@ -238,14 +329,14 @@ function collectQuestionCandidatesFromRaw(
       if (sub) {
         current.subQuestions.push({
           label: sub.canonical,
-          text: block.text,
+          text: blockText,
         });
       }
-      current.text = `${current.text}\n${block.text}`.trim();
+      current.text = `${current.text}\n${blockText}`.trim();
       current.numericalTokens = [
         ...new Set([
           ...current.numericalTokens,
-          ...extractNumericalTokens(block.text),
+          ...extractNumericalTokens(blockText),
         ]),
       ];
     }
@@ -334,6 +425,21 @@ function summarizeTable(table: RawTable) {
       text: c.text,
     })),
   };
+}
+
+function confidenceRank(
+  value: QuestionCandidateEvidence["numberingConfidence"]
+): number {
+  switch (value) {
+    case "HIGH":
+      return 3;
+    case "MEDIUM":
+      return 2;
+    case "LOW":
+      return 1;
+    default:
+      return 0;
+  }
 }
 
 function isInstructionLine(text: string): boolean {

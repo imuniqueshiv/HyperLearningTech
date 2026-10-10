@@ -14,6 +14,8 @@ export interface MergeResult {
 
 /**
  * Orchestrates PYQ and syllabus merges independently.
+ * Callers must treat returned objects as owned copies — existing content
+ * is never mutated by reference.
  */
 export function mergeProductionContent(input: {
   existingPyqs: ProductionPyqsJson | null;
@@ -33,22 +35,30 @@ export function mergeProductionContent(input: {
     topicsAdded: 0,
   };
 
-  let pyqs: ProductionPyqsJson | null = input.existingPyqs;
+  let pyqs: ProductionPyqsJson | null = null;
   let pyqStats = emptyPyqStats;
 
   if (input.incomingPyqs) {
-    const merged = mergePyqs(input.existingPyqs, input.incomingPyqs);
+    const merged = mergePyqs(
+      input.existingPyqs ? structuredClone(input.existingPyqs) : null,
+      structuredClone(input.incomingPyqs)
+    );
     pyqs = merged.pyqs;
     pyqStats = merged.stats;
+  } else if (input.existingPyqs) {
+    pyqs = structuredClone(input.existingPyqs);
   }
 
-  let syllabus: ProductionSyllabusJson | null = input.existingSyllabus;
+  // PYQ-only imports must not produce a syllabus merge candidate.
+  // Returning existingSyllabus previously caused pending-syllabus.json
+  // writes and false "topics modified" diffs during PYQ review/save.
+  let syllabus: ProductionSyllabusJson | null = null;
   let syllabusStats = emptySyllabusStats;
 
   if (input.incomingSyllabus) {
     const merged = mergeSyllabus(
-      input.existingSyllabus,
-      input.incomingSyllabus
+      input.existingSyllabus ? structuredClone(input.existingSyllabus) : null,
+      structuredClone(input.incomingSyllabus)
     );
     syllabus = merged.syllabus;
     syllabusStats = merged.stats;

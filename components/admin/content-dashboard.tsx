@@ -3,25 +3,25 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { X } from "lucide-react";
 
+import {
+  CmsImportPanel,
+  type CmsListTab,
+} from "@/components/admin/cms-import-panel";
 import { CmsSidebar } from "@/components/admin/cms-sidebar";
 import { ContentUpload } from "@/components/admin/content-upload";
 import { ImportHistory } from "@/components/admin/import-history";
-import { ImportQueue } from "@/components/admin/import-queue";
-import { PipelineSummary } from "@/components/admin/pipeline-summary";
 import { ReviewCenter } from "@/components/admin/review-center";
 import { API_ENDPOINTS } from "@/lib/api-endpoints";
 import type {
   ImportJobRecord,
   QueueListApiResult,
 } from "@/lib/content-pipeline";
-import {
-  CMS_ROUTES,
-  CMS_STORAGE_PROVIDER_LABEL,
-  getImportSessionStatus,
-} from "@/lib/content-pipeline";
+import { CMS_ROUTES, getImportSessionStatus } from "@/lib/content-pipeline";
+import { cn } from "@/lib/utils";
 
 interface ImportNotification {
   id: string;
+  jobId: string;
   kind: "success" | "failure";
   title: string;
   detail: string;
@@ -49,7 +49,11 @@ export function ContentDashboard() {
   const [queueError, setQueueError] = useState<string | null>(null);
   const [notifications, setNotifications] = useState<ImportNotification[]>([]);
   const previousStatus = useRef<Record<string, string>>({});
+  const notifiedEvents = useRef<Set<string>>(new Set());
   const [pollTick, setPollTick] = useState(0);
+  const [listTab, setListTab] = useState<CmsListTab>("active");
+  const [focusReviewJobId, setFocusReviewJobId] = useState<string | null>(null);
+  const [showHistory, setShowHistory] = useState(false);
 
   const applyJobs = useCallback((next: ImportJobRecord[]) => {
     const notes: ImportNotification[] = [];
@@ -59,20 +63,33 @@ export function ContentDashboard() {
       const prior = previousStatus.current[job.id];
       if (prior && prior !== status) {
         if (status === "Review Ready") {
-          notes.push({
-            id: `${job.id}-ready-${Date.now()}`,
-            kind: "success",
-            title: "Import completed successfully.",
-            detail: `${job.originalFilename} is ready for review.`,
-          });
+          const eventKey = `${job.id}:Review Ready`;
+          if (!notifiedEvents.current.has(eventKey)) {
+            notifiedEvents.current.add(eventKey);
+            const label = job.subjectCode
+              ? `${job.subjectCode} ${job.originalFilename}`
+              : job.originalFilename;
+            notes.push({
+              id: eventKey,
+              jobId: job.id,
+              kind: "success",
+              title: `${label} is ready for review.`,
+              detail: "Open Review to inspect questions and save.",
+            });
+          }
         }
         if (status === "Failed") {
-          notes.push({
-            id: `${job.id}-fail-${Date.now()}`,
-            kind: "failure",
-            title: "Import failed.",
-            detail: job.error || `${job.originalFilename} failed.`,
-          });
+          const eventKey = `${job.id}:Failed`;
+          if (!notifiedEvents.current.has(eventKey)) {
+            notifiedEvents.current.add(eventKey);
+            notes.push({
+              id: eventKey,
+              jobId: job.id,
+              kind: "failure",
+              title: "Import failed.",
+              detail: job.error || `${job.originalFilename} failed.`,
+            });
+          }
         }
       }
       previousStatus.current[job.id] = status;
@@ -80,17 +97,23 @@ export function ContentDashboard() {
 
     setJobs(next);
     if (notes.length > 0) {
-      setNotifications((prev) => [...notes, ...prev].slice(0, 5));
+      setNotifications((prev) => {
+        const withoutDup = prev.filter(
+          (n) =>
+            !notes.some(
+              (note) => note.jobId === n.jobId && note.kind === n.kind
+            )
+        );
+        return [...notes, ...withoutDup].slice(0, 4);
+      });
     }
   }, []);
 
   const refreshQueue = useCallback(async () => {
     setQueueError(null);
-
     try {
       const next = await fetchQueueJobs();
       applyJobs(next);
-      setQueueError(null);
     } catch (error) {
       setQueueError(
         error instanceof Error ? error.message : "Failed to load import queue."
@@ -100,16 +123,13 @@ export function ContentDashboard() {
     }
   }, [applyJobs]);
 
-  // Initial load + poll trigger
   useEffect(() => {
     let cancelled = false;
-
     void (async () => {
       try {
         const next = await fetchQueueJobs();
         if (cancelled) return;
         applyJobs(next);
-        setQueueError(null);
       } catch (error) {
         if (cancelled) return;
         setQueueError(
@@ -118,31 +138,23 @@ export function ContentDashboard() {
             : "Failed to load import queue."
         );
       } finally {
-        if (!cancelled) {
-          setQueueLoading(false);
-        }
+        if (!cancelled) setQueueLoading(false);
       }
     })();
-
     return () => {
       cancelled = true;
     };
   }, [applyJobs, pollTick]);
 
-  // Poll while any session is queued or running.
   useEffect(() => {
     const hasActive = jobs.some((job) => {
       const status = getImportSessionStatus(job);
       return status === "Queued" || status === "Running";
     });
-    if (!hasActive) {
-      return;
-    }
-
+    if (!hasActive) return;
     const timer = window.setInterval(() => {
       setPollTick((tick) => tick + 1);
     }, 4000);
-
     return () => window.clearInterval(timer);
   }, [jobs]);
 
@@ -153,40 +165,62 @@ export function ContentDashboard() {
     });
   }
 
-  const runningJobs = useMemo(
-    () =>
-      jobs.filter((job) => {
-        const status = getImportSessionStatus(job);
-        return status === "Queued" || status === "Running";
-      }),
-    [jobs]
-  );
+  const counts = useMemo(() => {
+    let active = 0;
+    let review = 0;
+    let completed = 0;
+    let failed = 0;
+    for (const job of jobs) {
+      switch (getImportSessionStatus(job)) {
+        case "Queued":
+        case "Running":
+          active += 1;
+          break;
+        case "Review Ready":
+          review += 1;
+          break;
+        case "Completed":
+          completed += 1;
+          break;
+        case "Failed":
+          failed += 1;
+          break;
+      }
+    }
+    return { active, review, completed, failed };
+  }, [jobs]);
 
-  const failedJobs = useMemo(
-    () => jobs.filter((job) => getImportSessionStatus(job) === "Failed"),
-    [jobs]
-  );
-
-  const completedJobs = useMemo(
-    () => jobs.filter((job) => getImportSessionStatus(job) === "Completed"),
-    [jobs]
-  );
+  function openReview(jobId: string) {
+    setFocusReviewJobId(jobId);
+    setListTab("review");
+    window.requestAnimationFrame(() => {
+      document.getElementById("review")?.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 
   return (
-    <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 sm:px-6 lg:flex-row lg:px-8">
-      <CmsSidebar activeHref={CMS_ROUTES.content} />
+    <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-8 sm:px-6 lg:flex-row lg:px-8">
+      <CmsSidebar
+        activeHref={CMS_ROUTES.content}
+        onNavigate={(section) => {
+          if (section === "history") {
+            setShowHistory(true);
+            setListTab("history");
+          } else if (section === "review") {
+            setListTab("review");
+          } else if (section === "imports") {
+            setListTab("active");
+          }
+        }}
+      />
 
-      <div className="min-w-0 flex-1 space-y-8">
+      <div className="min-w-0 flex-1 space-y-6">
         <header>
-          <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
-            Admin · Content Management
-          </p>
-          <h1 className="mt-1 text-3xl font-bold tracking-tight text-foreground">
+          <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
             Content CMS
           </h1>
-          <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-            Import an academic document — processing runs automatically.
-            Storage: {CMS_STORAGE_PROVIDER_LABEL}.
+          <p className="mt-1 text-sm text-muted-foreground">
+            Import → Process → Review → Approve → Save JSON
           </p>
         </header>
 
@@ -203,9 +237,18 @@ export function ContentDashboard() {
               >
                 <div>
                   <p className="font-medium text-foreground">{note.title}</p>
-                  <p className="mt-1 whitespace-pre-wrap text-xs text-muted-foreground">
+                  <p className="mt-1 text-xs text-muted-foreground">
                     {note.detail}
                   </p>
+                  {note.kind === "success" && (
+                    <button
+                      type="button"
+                      onClick={() => openReview(note.jobId)}
+                      className="mt-2 text-xs font-semibold text-blue-600 hover:underline"
+                    >
+                      Review Paper
+                    </button>
+                  )}
                 </div>
                 <button
                   type="button"
@@ -224,7 +267,36 @@ export function ContentDashboard() {
           </div>
         )}
 
-        <PipelineSummary jobs={jobs} />
+        <div className="grid gap-3 sm:grid-cols-4">
+          {(
+            [
+              ["active", "Processing", counts.active],
+              ["review", "Needs Review", counts.review],
+              ["completed", "Saved", counts.completed],
+              ["failed", "Failed", counts.failed],
+            ] as const
+          ).map(([tab, label, value]) => (
+            <button
+              key={tab}
+              type="button"
+              onClick={() => {
+                setListTab(tab);
+                setShowHistory(false);
+              }}
+              className={cn(
+                "rounded-xl border px-4 py-3 text-left transition",
+                listTab === tab
+                  ? "border-blue-500/40 bg-blue-500/5"
+                  : "border-border bg-card hover:bg-muted/40"
+              )}
+            >
+              <p className="text-xs text-muted-foreground">{label}</p>
+              <p className="mt-1 text-2xl font-semibold text-foreground">
+                {value}
+              </p>
+            </button>
+          ))}
+        </div>
 
         <ContentUpload
           onJobsCreated={(created) => {
@@ -232,6 +304,7 @@ export function ContentDashboard() {
               previousStatus.current[job.id] = getImportSessionStatus(job);
               upsertJob(job);
             }
+            setListTab("active");
             void refreshQueue();
           }}
         />
@@ -242,49 +315,57 @@ export function ContentDashboard() {
           </p>
         )}
 
-        <ImportQueue
-          sectionId="running"
-          title="Running Imports"
-          emptyMessage="No imports are running."
-          jobs={runningJobs}
+        <CmsImportPanel
+          jobs={jobs}
           loading={queueLoading}
+          activeTab={listTab}
+          counts={counts}
+          onTabChange={(tab) => {
+            setListTab(tab);
+            setShowHistory(tab === "history");
+          }}
           onRefresh={() => {
             void refreshQueue();
           }}
-          onJobUpdated={upsertJob}
+          onReviewJob={openReview}
+          onDeleted={(jobId) => {
+            setJobs((prev) => prev.filter((j) => j.id !== jobId));
+            if (focusReviewJobId === jobId) setFocusReviewJobId(null);
+          }}
         />
 
         <ReviewCenter
           jobs={jobs}
+          focusJobId={focusReviewJobId}
+          onFocusConsumed={() => setFocusReviewJobId(null)}
           onRefresh={() => {
             void refreshQueue();
           }}
           onJobUpdated={upsertJob}
         />
 
-        <ImportQueue
-          sectionId="failed"
-          title="Failed"
-          emptyMessage="No failed imports."
-          jobs={failedJobs}
-          onRefresh={() => {
-            void refreshQueue();
-          }}
-          onJobUpdated={upsertJob}
-        />
+        {(showHistory || listTab === "history") && (
+          <ImportHistory
+            onDeleted={() => {
+              void refreshQueue();
+            }}
+          />
+        )}
 
-        <ImportQueue
-          sectionId="completed"
-          title="Completed"
-          emptyMessage="No completed imports yet."
-          jobs={completedJobs}
-          onRefresh={() => {
-            void refreshQueue();
-          }}
-          onJobUpdated={upsertJob}
-        />
-
-        <ImportHistory />
+        {!showHistory && listTab !== "history" && (
+          <div className="text-center">
+            <button
+              type="button"
+              onClick={() => {
+                setShowHistory(true);
+                setListTab("history");
+              }}
+              className="text-sm font-medium text-blue-600 hover:underline"
+            >
+              View History
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

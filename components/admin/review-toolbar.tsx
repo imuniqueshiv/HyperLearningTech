@@ -61,7 +61,7 @@ export function ReviewToolbar({
           className="inline-flex items-center gap-2 rounded-xl border border-sky-500/20 bg-sky-500/10 px-4 py-3 text-sm font-semibold text-sky-800 disabled:opacity-50 dark:text-sky-300"
         >
           <Save className="h-4 w-4" />
-          Local Save
+          Save to Content
         </button>
         <button
           type="button"

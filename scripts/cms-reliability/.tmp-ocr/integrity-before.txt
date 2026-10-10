@@ -1,0 +1,2 @@
+f28ca0bdd6ccb052f0cc800bdce4a4647f3adbad149bcf757927bb58cf07d1d3 *content/rgpv/aiml/semester-4/al-405/pyqs.json
+f208fc106373736e8558b0c9d1f4b6cb9fa091f4751ad8221e3a0157ceae48c9 *content/rgpv/aiml/semester-4/al-405/syllabus.json

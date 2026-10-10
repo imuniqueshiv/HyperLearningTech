@@ -7,6 +7,11 @@ import { handleStageFailure } from "./failure-handler";
 import { getJob, updateJobStatus } from "./import-queue";
 import { runLayoutForJob } from "./layout-service";
 import { runOcrForJob } from "./ocr-service";
+import {
+  DocumentEligibilityError,
+  readDocumentEligibility,
+  runDocumentEligibilityForJob,
+} from "./document-eligibility-service";
 import { PipelineStage } from "./pipeline-stage";
 import { startReviewForJob } from "./review-service";
 import { runSchemaBuildForJob } from "./schema-builder-service";
@@ -44,6 +49,7 @@ export type SupervisorMode =
 
 const STAGE_SEQUENCE: SupervisedStageId[] = [
   "ocr",
+  "eligibility",
   "layout",
   "reconstruction",
   "structuring",
@@ -95,6 +101,17 @@ function isStageComplete(
   switch (stageId) {
     case "ocr":
       return hasCompleted(job, "ocr");
+    case "eligibility":
+      // After OCR. Treat as complete once any later stage has run (or artifact
+      // skip path in the supervisor loop for same-process resume).
+      return (
+        hasCompleted(job, "layout") ||
+        hasCompleted(job, "diagrams") ||
+        hasCompleted(job, "structuring") ||
+        hasCompleted(job, "schema") ||
+        hasCompleted(job, "validation") ||
+        hasCompleted(job, "writing")
+      );
     case "layout":
       return hasCompleted(job, "layout");
     case "reconstruction":
@@ -121,6 +138,9 @@ async function runStageRunner(
   switch (stageId) {
     case "ocr":
       await runOcrForJob(jobId);
+      return;
+    case "eligibility":
+      await runDocumentEligibilityForJob(jobId);
       return;
     case "layout":
       await runLayoutForJob(jobId);
@@ -191,7 +211,19 @@ export async function superviseJobPipeline(input: {
       const stageId = STAGE_SEQUENCE[i];
       let job = await getJob(input.jobId);
 
-      if (resumable && isStageComplete(job, stageId)) {
+      if (resumable && stageId === "eligibility") {
+        const existing = await readDocumentEligibility(input.jobId);
+        if (existing) {
+          if (existing.status === "DOCUMENT_ELIGIBILITY_REJECTED") {
+            throw new DocumentEligibilityError(existing);
+          }
+          console.log("[Supervisor] SKIP completed stage", {
+            jobId: input.jobId,
+            stageId,
+          });
+          continue;
+        }
+      } else if (resumable && isStageComplete(job, stageId)) {
         console.log("[Supervisor] SKIP completed stage", {
           jobId: input.jobId,
           stageId,
