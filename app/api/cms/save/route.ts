@@ -17,7 +17,10 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const body = (await request.json()) as { jobId?: string };
+    const body = (await request.json()) as {
+      jobId?: string;
+      confirmDuplicateSave?: boolean;
+    };
     const jobId = body.jobId?.trim();
 
     if (!jobId) {
@@ -31,7 +34,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const result = await runLocalSaveForJob(jobId);
+    const result = await runLocalSaveForJob(jobId, {
+      confirmDuplicateSave: Boolean(body.confirmDuplicateSave),
+    });
 
     return NextResponse.json(
       {
@@ -44,20 +49,22 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     if (error instanceof SaveProcessingError) {
-      const status =
-        error.code === "JOB_NOT_FOUND"
-          ? 404
-          : error.code === "SAVE_IN_PROGRESS"
-            ? 409
-            : 400;
-
       return NextResponse.json(
         {
           success: false,
           error: error.message,
           code: error.code,
         },
-        { status }
+        {
+          status:
+            error.code === "JOB_NOT_FOUND"
+              ? 404
+              : error.code === "SAVE_IN_PROGRESS" ||
+                  error.code === "EXACT_DUPLICATE" ||
+                  error.code === "POSSIBLE_DUPLICATE"
+                ? 409
+                : 400,
+        }
       );
     }
 

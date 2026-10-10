@@ -1,0 +1,106 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run hyper-learning-tech@0.1.0 build
+npm notice run next build
+▲ Next.js 16.2.9 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Turbopack build encountered 1 warnings:
+./next.config.ts
+Encountered unexpected file in NFT list
+A file was traced that indicates that the whole project was traced unintentionally. Somewhere in the import trace below, there are:
+- filesystem operations (like path.join, path.resolve or fs.readFile), or
+- very dynamic requires (like require('./' + foo)).
+To resolve this, you can
+- remove them if possible, or
+- only use them in development, or
+- make sure they are statically scoped to some subfolder: path.join(process.cwd(), 'data', bar), or
+- add ignore comments: path.join(/*turbopackIgnore: true*/ process.cwd(), bar)
+
+Import trace:
+  App Route:
+    ./next.config.ts
+    ./lib/content-pipeline/import-queue.ts
+    ./app/api/cms/queue/route.ts
+
+
+✓ Compiled successfully in 32.7s
+  Running TypeScript ...
+  Finished TypeScript in 22.8s ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/34) ...
+  Generating static pages using 11 workers (8/34) 
+  Generating static pages using 11 workers (16/34) 
+  Generating static pages using 11 workers (25/34) 
+✓ Generating static pages using 11 workers (34/34) in 1759ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ƒ /admin
+├ ƒ /admin/content
+├ ƒ /api/ai/answer
+├ ƒ /api/ai/health
+├ ƒ /api/ai/workspace
+├ ƒ /api/cms/bulk
+├ ƒ /api/cms/debug/pipeline/[jobId]
+├ ƒ /api/cms/diagrams
+├ ƒ /api/cms/diagrams/[jobId]
+├ ƒ /api/cms/git
+├ ƒ /api/cms/history
+├ ƒ /api/cms/history/[jobId]
+├ ƒ /api/cms/layout
+├ ƒ /api/cms/layout/[jobId]
+├ ƒ /api/cms/metadata/[jobId]
+├ ƒ /api/cms/ocr
+├ ƒ /api/cms/ocr/[jobId]
+├ ƒ /api/cms/queue
+├ ƒ /api/cms/rebuild
+├ ƒ /api/cms/recovery
+├ ƒ /api/cms/review
+├ ƒ /api/cms/review/[jobId]
+├ ƒ /api/cms/save
+├ ƒ /api/cms/save/[jobId]
+├ ƒ /api/cms/schema
+├ ƒ /api/cms/schema/[jobId]
+├ ƒ /api/cms/structuring
+├ ƒ /api/cms/structuring/[jobId]
+├ ƒ /api/cms/upload
+├ ƒ /api/cms/validation
+├ ƒ /api/cms/validation/[jobId]
+├ ƒ /api/cms/write
+├ ƒ /api/cms/write/[jobId]
+├ ƒ /api/content/attachments/[branch]/[semester]/[subject]/[...path]
+├ ƒ /api/heartbeat
+├ ○ /cgpa-calculator
+├ ○ /contact
+├ ○ /creators
+├ ○ /dashboard
+├ ○ /dashboard/ai
+├ ○ /privacy
+├ ○ /rgpv
+├ ● /rgpv/[branch]
+│ ├ /rgpv/common
+│ ├ /rgpv/aiml
+│ ├ /rgpv/cse
+│ └ [+11 more paths]
+├ ƒ /rgpv/[branch]/[semester]
+├ ƒ /rgpv/[branch]/[semester]/[subject]
+├ ƒ /rgpv/[branch]/[semester]/[subject]/ai
+├ ƒ /rgpv/[branch]/[semester]/[subject]/pyqs/[paper]
+├ ƒ /rgpv/[branch]/[semester]/[subject]/syllabus
+├ ○ /robots.txt
+├ ○ /sign-in
+├ ○ /sign-up
+├ ○ /sitemap.xml
+└ ○ /subjects
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

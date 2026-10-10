@@ -1,0 +1,4 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run hyper-learning-tech@0.1.0 typecheck
+npm notice run tsc --noEmit
+scripts/cms-reliability/pipeline-failure-classes.test.ts(198,14): error TS2339: Property 'pageNumber' does not exist on type 'QuestionCandidateEvidence'.

@@ -1,0 +1,33 @@
+[AL405 golden] OCR ms 12254 pages 2
+[Layout] Block detection started { jobId: 'golden_al405_1791612788058', pages: 2 }
+[Layout] Page started { jobId: 'golden_al405_1791612788058', pageNumber: 1, textBlocks: 58 }
+[Layout] Block detection finished { pageNumber: 1, ms: 21, blocks: 58 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 1, sections: 6 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 3, questions: 4 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 1 }
+[Layout] Page finished { pageNumber: 1, ms: 29 }
+[Layout] Page started { jobId: 'golden_al405_1791612788058', pageNumber: 2, textBlocks: 37 }
+[Layout] Block detection finished { pageNumber: 2, ms: 1, blocks: 37 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 0, sections: 5 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 4 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 0 }
+[Layout] Page finished { pageNumber: 2, ms: 5 }
+[Layout] Document build finished { jobId: 'golden_al405_1791612788058', ms: 34, pages: 2 }
+[AL405 golden] exact wording 16 / 16
+▶ AL-405 golden — real scanned PDF OCR (live)
+  ✔ produces 8×(a/b) hierarchy from the real PDF; exact wording asserted honestly (12318.5996ms)
+✔ AL-405 golden — real scanned PDF OCR (live) (12321.063ms)
+ℹ tests 1
+ℹ suites 1
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15925.8155

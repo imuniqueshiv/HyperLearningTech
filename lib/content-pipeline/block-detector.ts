@@ -2,6 +2,8 @@ import type { BoundingBox } from "./coordinates";
 import {
   isLikelyQuestionMarker,
   isLikelySubQuestionMarker,
+  normalizeOcrQuestionPrefix,
+  normalizeOcrSubQuestionPrefix,
 } from "./question-number";
 import type { StructureNodeKind } from "./structured-document";
 import { safeTrim } from "./string-normalize";
@@ -38,6 +40,9 @@ export function classifyTextBlock(input: {
   medianTextHeight: number;
 }): ClassifiedTextBlock {
   const text = safeTrim(input.text);
+  // Repair confusable leading glyphs (I./l. → 1.) before kind classification only.
+  // The stored text remains the OCR evidence; marker detection uses the normalized view.
+  const markerView = normalizeOcrQuestionPrefix(text);
   const relativeY = input.pageHeight > 0 ? input.bbox.y / input.pageHeight : 0;
   const relativeBottom =
     input.pageHeight > 0
@@ -54,9 +59,18 @@ export function classifyTextBlock(input: {
 
   // Structural markers always win over chrome heuristics — especially critical
   // when OCR bboxes are degenerate (full-page boxes → everything looks like a header).
-  if (isLikelyQuestionMarker(text)) {
-    kind = "question";
-  } else if (isLikelySubQuestionMarker(text)) {
+  if (isLikelyQuestionMarker(markerView) || isLikelyQuestionMarker(text)) {
+    // Reject ultra-short chrome like "4)" / "2]" with no question body.
+    const opener = markerView || text;
+    if (opener.replace(/\s+/g, "").length <= 4 && !/\([a-z]\)/i.test(opener)) {
+      kind = "paragraph";
+    } else {
+      kind = "question";
+    }
+  } else if (
+    isLikelySubQuestionMarker(text) ||
+    isLikelySubQuestionMarker(normalizeOcrSubQuestionPrefix(text))
+  ) {
     kind = "sub_question";
   } else if (!degenerateSpatial && relativeY <= 0.08 && text.length <= 120) {
     kind = "header";

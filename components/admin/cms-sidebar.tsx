@@ -1,51 +1,46 @@
 "use client";
 
 import Link from "next/link";
-import {
-  FileText,
-  History,
-  LayoutDashboard,
-  ListChecks,
-  Upload,
-} from "lucide-react";
+import { FileText, History, ListChecks, Upload } from "lucide-react";
 
 import { CMS_ROUTES } from "@/lib/content-pipeline";
 import { cn } from "@/lib/utils";
 
+interface CmsSidebarProps {
+  activeHref?: string;
+  onNavigate?: (section: "import" | "imports" | "review" | "history") => void;
+}
+
 const NAV_ITEMS = [
   {
-    href: `${CMS_ROUTES.content}#dashboard`,
-    label: "Dashboard",
-    icon: LayoutDashboard,
-  },
-  {
+    id: "import" as const,
     href: `${CMS_ROUTES.content}#uploads`,
     label: "Import",
     icon: Upload,
   },
   {
-    href: `${CMS_ROUTES.content}#running`,
-    label: "Running",
+    id: "imports" as const,
+    href: `${CMS_ROUTES.content}#imports`,
+    label: "Imports",
     icon: ListChecks,
   },
   {
+    id: "review" as const,
     href: `${CMS_ROUTES.content}#review`,
     label: "Review",
     icon: FileText,
   },
   {
+    id: "history" as const,
     href: `${CMS_ROUTES.content}#import-history`,
     label: "History",
     icon: History,
   },
-] as const;
-
-interface CmsSidebarProps {
-  activeHref?: string;
-}
+];
 
 export function CmsSidebar({
   activeHref = CMS_ROUTES.content,
+  onNavigate,
 }: CmsSidebarProps) {
   return (
     <aside className="w-full shrink-0 lg:w-52">
@@ -56,7 +51,7 @@ export function CmsSidebar({
           </div>
           <div>
             <p className="text-sm font-semibold text-foreground">Content CMS</p>
-            <p className="text-xs text-muted-foreground">Import Sessions</p>
+            <p className="text-xs text-muted-foreground">RGPV papers</p>
           </div>
         </div>
 
@@ -66,19 +61,15 @@ export function CmsSidebar({
         >
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
-            const isActive =
-              activeHref === CMS_ROUTES.content && item.label === "Dashboard"
-                ? true
-                : false;
-
             return (
               <Link
                 key={item.label}
                 href={item.href}
+                onClick={() => onNavigate?.(item.id)}
                 className={cn(
                   "inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors",
-                  isActive
-                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400"
+                  activeHref === CMS_ROUTES.content
+                    ? "text-muted-foreground hover:bg-muted hover:text-foreground"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground"
                 )}
               >
@@ -91,7 +82,7 @@ export function CmsSidebar({
 
         <div className="mt-4 hidden border-t border-border pt-4 lg:block">
           <p className="px-2 text-[11px] leading-relaxed text-muted-foreground">
-            Upload → Auto process → Review → Approve → Local Save → Git
+            Import → Process → Review → Approve → Save
           </p>
         </div>
       </div>

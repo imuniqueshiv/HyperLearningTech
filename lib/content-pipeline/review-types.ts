@@ -53,13 +53,34 @@ export interface ReviewPackage {
   jobId: string;
   stage: string;
   status: string;
+  /** Job type at import time (pyq | syllabus | …). */
+  jobType?: string | null;
   contentDir: string | null;
+  /** Authoritative on-disk subject content (read-only for this review). */
   existingPyqs: unknown | null;
   existingSyllabus: unknown | null;
+  /**
+   * Merged save candidate (existing + extracted). May contain many papers.
+   * Not the isolated extracted-paper preview.
+   */
   pendingPyqs: unknown | null;
   pendingSyllabus: unknown | null;
+  /** Alias of extracted one-paper preview (production-pyqs.json). */
   productionPyqs: unknown | null;
   productionSyllabus: unknown | null;
+  /**
+   * Isolated extracted-paper preview — exactly one paper when extraction
+   * succeeded. Prefer this over pendingPyqs for "what was imported".
+   */
+  extractedPyqs?: unknown | null;
+  /** Merged save candidate (same as pendingPyqs when present). */
+  mergedSaveCandidate?: unknown | null;
+  /** True when this import must not modify syllabus.json. */
+  pyqOnlyImport?: boolean;
+  /** Save/approve readiness beyond schema PASS. */
+  extractionQuality?:
+    | import("./extraction-quality").ExtractionQualityAssessment
+    | null;
   validationReport: ValidationReport | null;
   writeReport: WriteReport | null;
   diagramManifest: DiagramManifest | null;
@@ -105,6 +126,22 @@ export interface ReviewPackage {
       textPreview: string;
     }>;
   } | null;
+  /** Phase 3: duplicate paper classification vs existing content. */
+  duplicateDetection?:
+    | import("./duplicate-paper-detector").DuplicatePaperReport
+    | null;
+  /** Phase 3: categorized warning buckets. */
+  warningSummary?: import("./warning-catalog").WarningSummary | null;
+  /** Phase 3: objective quality indicators (not an AI score). */
+  qualityIndicators?:
+    | import("./content-quality-indicators").ContentQualityIndicators
+    | null;
+  /** Phase 3: import timing / observability snapshot. */
+  diagnostics?: import("./import-diagnostics").ImportDiagnostics | null;
+  /** Phase 3 hardening: RGPV question-paper eligibility. */
+  documentEligibility?:
+    | import("./document-eligibility").DocumentEligibilityResult
+    | null;
 }
 
 export interface SaveReport {

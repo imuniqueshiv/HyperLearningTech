@@ -37,6 +37,8 @@ import {
 } from "./evidence-validator";
 import { writeJsonAtomic } from "./json-writer";
 import type { ImportJobRecord } from "./types";
+import { requireDocumentEligibilityForStructuring } from "./document-eligibility-service";
+import { DocumentEligibilityError } from "./document-eligibility-service";
 
 export class StructuringProcessingError extends Error {
   readonly code: string;
@@ -134,6 +136,16 @@ export async function runStructuringForJob(
       "STRUCTURED_DOCUMENT_MISSING",
       "structured-document.json not found. Run layout and diagram extraction first."
     );
+  }
+
+  // Server-side gate: never call Gemini for rejected non-RGPV / non-QP docs.
+  try {
+    await requireDocumentEligibilityForStructuring(jobId);
+  } catch (error) {
+    if (error instanceof DocumentEligibilityError) {
+      throw new StructuringProcessingError(error.code, error.message);
+    }
+    throw error;
   }
 
   const startedAt = new Date().toISOString();

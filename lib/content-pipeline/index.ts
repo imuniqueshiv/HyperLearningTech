@@ -233,6 +233,17 @@ export { formatFileSize, isJobType, validateUploadConstraints } from "./utils";
 export { parseImportUploadMode, IMPORT_LIMIT_MESSAGES } from "./import-limits";
 
 export {
+  assessExtractionQuality,
+  parseDeclaredQuestionTotal,
+  type ExtractionQualityAssessment,
+  type ExtractionReadiness,
+} from "./extraction-quality";
+
+export { splitTextByQuestionMarkers } from "./question-number";
+
+export { mergeProductionContent } from "./merge-service";
+
+export {
   getImportSessionStatus,
   getSessionProgressLabel,
   getSessionStepStates,

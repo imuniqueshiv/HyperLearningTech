@@ -5,6 +5,7 @@
 export const STAGE_TIMEOUT_MS = {
   // Measured: JBIG2 2-page AL-402 + Tesseract = ~197s. 4-page scans need headroom.
   ocr: 420_000,
+  eligibility: 30_000,
   layout: 60_000,
   reconstruction: 60_000,
   structuring: 240_000,

@@ -1,0 +1,101 @@
+{
+  "jobId": "fresh_al405_1791612891974",
+  "ocrMs": 18289,
+  "layoutMs": 68,
+  "evidenceMs": 56,
+  "pages": 2,
+  "questions": 8,
+  "exact": 16,
+  "avgConf": 62.294736842105266,
+  "quality": {
+    "readiness": "NEEDS_REVIEW",
+    "canApprove": true,
+    "canSave": false,
+    "codes": [],
+    "reasons": [
+      "1 question(s) show OCR chrome / column bleed — review before save.",
+      "Average OCR confidence is 62% — review reconstructed wording before save."
+    ],
+    "gapCount": 0,
+    "questionCount": 8,
+    "paperCount": 1,
+    "declaredQuestionTotal": 8,
+    "suspiciousTextCount": 1,
+    "emptyQuestionCount": 0
+  },
+  "rows": [
+    {
+      "q": "Q.1",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "1",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.2",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "1",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.3",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "1",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.4",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "1",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.5",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "2",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.6",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "2",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.7",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "2",
+      "result": "PASS"
+    },
+    {
+      "q": "Q.8",
+      "expected": "a),b)",
+      "extracted": "b)",
+      "fidelity": "EXACT",
+      "evidence": "2",
+      "result": "PASS"
+    }
+  ],
+  "before": {
+    "pyqs": "f28ca0bdd6ccb052f0cc800bdce4a4647f3adbad149bcf757927bb58cf07d1d3",
+    "syllabus": "f208fc106373736e8558b0c9d1f4b6cb9fa091f4751ad8221e3a0157ceae48c9"
+  },
+  "after": {
+    "pyqs": "f28ca0bdd6ccb052f0cc800bdce4a4647f3adbad149bcf757927bb58cf07d1d3",
+    "syllabus": "f208fc106373736e8558b0c9d1f4b6cb9fa091f4751ad8221e3a0157ceae48c9"
+  },
+  "integrityOk": true
+}

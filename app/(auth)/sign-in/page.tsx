@@ -3,6 +3,7 @@ import { User } from "lucide-react";
 import { SignIn } from "@clerk/nextjs";
 
 import { AuthInput } from "@/components/auth/auth-input";
+import { DeveloperAdminEntry } from "@/components/auth/developer-admin-entry";
 import { OAuthButton } from "@/components/auth/oauth-button";
 import { isLocalCmsMode } from "@/lib/cms-auth";
 import { isClerkConfigured } from "@/lib/clerk";
@@ -10,26 +11,19 @@ import { isClerkConfigured } from "@/lib/clerk";
 /**
  * Sign-in page.
  * Clerk SignIn when configured (public app).
- * Developer Admin (Local) only when CMS_LOCAL_MODE=true and not on Vercel.
+ * Developer Admin (Local) is navigation-only when CMS_LOCAL_MODE=true (not on Vercel).
+ * It does not create sessions, users, or bypass production CMS guards.
  */
 export default function SignInPage() {
   const clerkReady = isClerkConfigured();
-  const localCms = isLocalCmsMode();
+  const showDeveloperAdmin = isLocalCmsMode();
 
   if (clerkReady) {
     return (
       <div className="flex w-full max-w-[420px] mx-auto flex-col items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
         <SignIn routing="hash" fallbackRedirectUrl="/" signUpUrl="/sign-up" />
-        {localCms ? (
-          <Link
-            href="/admin/content"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/60 bg-transparent px-4 py-2.5 text-[13px] font-medium text-muted-foreground transition-colors hover:border-border hover:bg-muted/40 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-border"
-          >
-            Developer Admin (Local)
-            <span className="rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
-              LOCAL CMS
-            </span>
-          </Link>
+        {showDeveloperAdmin ? (
+          <DeveloperAdminEntry className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/60 bg-transparent px-4 py-2.5 text-[13px] font-medium text-muted-foreground transition-colors hover:border-border hover:bg-muted/40 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-border" />
         ) : null}
       </div>
     );
@@ -46,7 +40,7 @@ export default function SignInPage() {
           Log in to Hyper Learning
         </h1>
         <p className="text-xs text-muted-foreground">
-          {localCms
+          {showDeveloperAdmin
             ? "Local CMS mode is enabled. Use Developer Admin for authoring."
             : "Public sign-in. The content CMS runs only on the maintainer machine."}
         </p>
@@ -109,17 +103,7 @@ export default function SignInPage() {
         </Link>
       </div>
 
-      {localCms ? (
-        <Link
-          href="/admin/content"
-          className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/60 bg-transparent px-4 py-2.5 text-[13px] font-medium text-muted-foreground transition-colors hover:border-border hover:bg-muted/40 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-border"
-        >
-          Developer Admin (Local)
-          <span className="rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
-            LOCAL CMS
-          </span>
-        </Link>
-      ) : null}
+      {showDeveloperAdmin ? <DeveloperAdminEntry /> : null}
     </div>
   );
 }

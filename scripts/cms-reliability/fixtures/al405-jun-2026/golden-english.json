@@ -1,0 +1,113 @@
+{
+  "subjectCode": "AL-405",
+  "exam": "June 2026",
+  "year": 2026,
+  "month": "June",
+  "declaredQuestionTotal": 8,
+  "questions": [
+    {
+      "questionNumber": "Q.1",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "Explain Machine Learning. Discuss its scope, limitations and real-world applications with suitable examples."
+        },
+        {
+          "label": "b)",
+          "text": "Explain Hypothesis Space and Inductive Bias in Machine Learning. Why are they important in model learning?"
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.2",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "Explain Principal Component Analysis (PCA) with mathematical steps and advantages. Compare PCA with Partial Least Squares."
+        },
+        {
+          "label": "b)",
+          "text": "Explain the architecture of Multilayer Perceptron (MLP). Describe the Backpropagation Algorithm with a neat diagram."
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.3",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "What are Vanishing Gradient and Exploding Gradient problems in detail?"
+        },
+        {
+          "label": "b)",
+          "text": "Describe the working of ID3 or CART algorithm with an example."
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.4",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "Explain Naive Bayes Classifier. State its assumptions, advantages, disadvantages and applications."
+        },
+        {
+          "label": "b)",
+          "text": "Explain Random Forest Algorithm for both Classification and Regression."
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.5",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "What is Logistic Regression and Linear Regression with suitable examples."
+        },
+        {
+          "label": "b)",
+          "text": "Explain Unsupervised Learning. Describe K-Means Clustering Algorithm with its advantages."
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.6",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "Differentiate between Agglomerative and Divisive Clustering with examples."
+        },
+        {
+          "label": "b)",
+          "text": "Explain Gaussian Mixture Model (GMM). Discuss the Expectation-Maximization (EM) Algorithm with flowchart."
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.7",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "Explain the Design and Analysis of Machine Learning Experiments in detail."
+        },
+        {
+          "label": "b)",
+          "text": "Explain various Cross-Validation and Resampling Methods used in Machine Learning experiments."
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q.8",
+      "subQuestions": [
+        {
+          "label": "a)",
+          "text": "Explain Hypothesis Testing in Machine Learning in detail."
+        },
+        {
+          "label": "b)",
+          "text": "Discuss Accuracy, Precision, Recall and F1-Score."
+        }
+      ]
+    }
+  ]
+}

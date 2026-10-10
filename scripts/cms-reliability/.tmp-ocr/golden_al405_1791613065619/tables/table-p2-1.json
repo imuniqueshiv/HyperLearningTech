@@ -1,0 +1,81 @@
+{
+  "id": "table-p2-1",
+  "pageNumber": 2,
+  "path": "tables/table-p2-1.json",
+  "bbox": {
+    "x": 0,
+    "y": 0,
+    "width": 1684,
+    "height": 1191
+  },
+  "rows": 3,
+  "columns": 2,
+  "cells": [
+    {
+      "row": 0,
+      "column": 0,
+      "text": "31",
+      "bbox": {
+        "x": 416,
+        "y": 48,
+        "width": 25,
+        "height": 21
+      }
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "text": "4)",
+      "bbox": {
+        "x": 1241,
+        "y": 47,
+        "width": 24,
+        "height": 22
+      }
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "text": "5. (a) What is Logistic Regression and Linear Regression with",
+      "bbox": {
+        "x": 91,
+        "y": 86,
+        "width": 675,
+        "height": 27
+      }
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "text": "8 (a) Explain Hypothesis Testing in Machine Learning in",
+      "bbox": {
+        "x": 918,
+        "y": 87,
+        "width": 675,
+        "height": 30
+      }
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "text": "https://www.rgpvonline.com",
+      "bbox": {
+        "x": 241,
+        "y": 1143,
+        "width": 367,
+        "height": 24
+      }
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "text": "https://www.rgpvonline.com -",
+      "bbox": {
+        "x": 1112,
+        "y": 1143,
+        "width": 331,
+        "height": 26
+      }
+    }
+  ]
+}

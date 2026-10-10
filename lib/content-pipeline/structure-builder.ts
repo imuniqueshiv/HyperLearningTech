@@ -3,8 +3,18 @@ import {
   computeMedianTextHeight,
   type ClassifiedTextBlock,
 } from "./block-detector";
-import { createBoundingBox, type BoundingBox } from "./coordinates";
+import {
+  createBoundingBox,
+  sliceBoundingBoxByTextRange,
+  type BoundingBox,
+} from "./coordinates";
 import { detectQuestionGroups } from "./question-detector";
+import {
+  findQuestionMarkerStarts,
+  parseQuestionNumber,
+  splitOcrBlockIntoMarkerSegments,
+  splitTextByQuestionMarkers,
+} from "./question-number";
 import {
   horizontalCenterDistance,
   isVerticallyNear,
@@ -83,18 +93,101 @@ export function buildStructuredDocument(raw: RawDocument): StructuredDocument {
       page.textBlocks.map((block) => block.bbox.height)
     );
 
-    const classified = page.textBlocks.map((block) =>
-      classifyTextBlock({
-        id: block.id,
-        pageNumber: page.pageNumber,
-        text: block.text,
-        bbox: block.bbox,
-        confidence: block.confidence,
-        pageWidth: page.width,
-        pageHeight: page.height,
-        medianTextHeight: medianHeight,
-      })
+    // Wide blocks on landscape/two-column scans often pack left+right
+    // questions into one line. Split per-block with horizontal bbox slices
+    // so column-aware grouping can pair (a)/(b) correctly.
+    const classifiedFromBlocks = page.textBlocks.flatMap((block) => {
+      const trimmed = block.text.trim();
+      const segments = splitOcrBlockIntoMarkerSegments(block.text);
+      if (segments.length <= 1) {
+        return [
+          classifyTextBlock({
+            id: block.id,
+            pageNumber: page.pageNumber,
+            text: block.text,
+            bbox: block.bbox,
+            confidence: block.confidence,
+            pageWidth: page.width,
+            pageHeight: page.height,
+            medianTextHeight: medianHeight,
+          }),
+        ];
+      }
+      const textLen = Math.max(trimmed.length, 1);
+      return segments.map((segment, segmentIndex) =>
+        classifyTextBlock({
+          id: `${block.id}-qsplit-${segmentIndex}`,
+          pageNumber: page.pageNumber,
+          text: segment.text,
+          bbox: sliceBoundingBoxByTextRange(
+            block.bbox,
+            page.width,
+            segment.start,
+            segment.end,
+            textLen
+          ),
+          confidence: block.confidence,
+          pageWidth: page.width,
+          pageHeight: page.height,
+          medianTextHeight: medianHeight,
+        })
+      );
+    });
+
+    const pageJoined = page.textBlocks.map((b) => b.text).join("\n");
+    const pageSegments = splitTextByQuestionMarkers(pageJoined);
+    const existingQuestionIndexes = new Set(
+      classifiedFromBlocks
+        .map((b) => parseQuestionNumber(b.text)?.index)
+        .filter((n): n is number => typeof n === "number")
     );
+
+    let classified = classifiedFromBlocks;
+    if (pageSegments.length >= 2) {
+      const pageHeight = Math.max(page.height, 1);
+      const gapFills: ClassifiedTextBlock[] = [];
+      for (
+        let segmentIndex = 0;
+        segmentIndex < pageSegments.length;
+        segmentIndex += 1
+      ) {
+        const segment = pageSegments[segmentIndex];
+        const parsed = parseQuestionNumber(segment);
+        if (!parsed) continue;
+        if (existingQuestionIndexes.has(parsed.index)) continue;
+        // Recover question openers hidden inside column-bleed lines without
+        // discarding existing per-block (b) sub-question nodes.
+        // Prefer geometry from the source block that actually contains the marker.
+        const located = locateQuestionMarkerBBox(
+          page.textBlocks,
+          parsed.index,
+          page.width
+        );
+        gapFills.push(
+          classifyTextBlock({
+            id: `page${page.pageNumber}-qgap-${parsed.index}-${segmentIndex}`,
+            pageNumber: page.pageNumber,
+            text: segment,
+            bbox:
+              located ??
+              createBoundingBox(
+                0,
+                (segmentIndex / Math.max(pageSegments.length, 1)) * pageHeight,
+                page.width,
+                pageHeight / Math.max(pageSegments.length, 1)
+              ),
+            confidence: undefined,
+            pageWidth: page.width,
+            pageHeight: page.height,
+            medianTextHeight: medianHeight,
+          })
+        );
+        existingQuestionIndexes.add(parsed.index);
+      }
+      if (gapFills.length > 0) {
+        classified = [...classifiedFromBlocks, ...gapFills];
+      }
+    }
     console.log("[Layout] Block detection finished", {
       pageNumber: page.pageNumber,
       ms: Date.now() - pageStarted,
@@ -130,7 +223,7 @@ export function buildStructuredDocument(raw: RawDocument): StructuredDocument {
       pageNumber: page.pageNumber,
     });
     const questionStarted = Date.now();
-    const questionGroups = detectQuestionGroups(ordered);
+    const questionGroups = detectQuestionGroups(ordered, page.width);
     console.log("[Layout] Question detection finished", {
       pageNumber: page.pageNumber,
       ms: Date.now() - questionStarted,
@@ -415,6 +508,33 @@ function findNextHeadingIndex(
     }
   }
   return -1;
+}
+
+function locateQuestionMarkerBBox(
+  textBlocks: Array<{ text: string; bbox: BoundingBox }>,
+  questionIndex: number,
+  pageWidth: number
+): BoundingBox | null {
+  for (const block of textBlocks) {
+    const trimmed = block.text.trim();
+    if (!trimmed) continue;
+    const starts = findQuestionMarkerStarts(trimmed);
+    if (starts.length === 0) continue;
+    for (let i = 0; i < starts.length; i += 1) {
+      const end = i + 1 < starts.length ? starts[i + 1] : trimmed.length;
+      const slice = trimmed.slice(starts[i], end);
+      const parsed = parseQuestionNumber(slice);
+      if (parsed?.index !== questionIndex) continue;
+      return sliceBoundingBoxByTextRange(
+        block.bbox,
+        pageWidth,
+        starts[i],
+        end,
+        trimmed.length
+      );
+    }
+  }
+  return null;
 }
 
 function findNearestQuestionParent(

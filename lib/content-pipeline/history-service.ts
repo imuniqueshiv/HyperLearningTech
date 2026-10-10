@@ -65,7 +65,14 @@ export function buildHistoryRecord(
     semester: job.semester,
     subject: job.subjectCode,
     jobType: job.type,
-    status: job.status,
+    // Prefer metadata/pipeline review status over transient queue "queued"
+    // between stages so history does not look stuck after UNDER_REVIEW.
+    status:
+      job.stage === PipelineStage.UNDER_REVIEW && job.status === "queued"
+        ? "awaiting_review"
+        : job.stage === PipelineStage.LOCAL_SAVED && job.status === "queued"
+          ? "completed"
+          : job.status,
     stage: job.stage,
     stagesCompleted,
     questionsImported:

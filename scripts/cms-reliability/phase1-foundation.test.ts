@@ -48,6 +48,7 @@ import {
   assertSubjectContentPath,
   getSubjectContentDir,
 } from "../../lib/content-pipeline/writer-service";
+import { CMS_ROUTES } from "../../lib/content-pipeline/constants";
 
 const ORIGINAL_ENV = { ...process.env };
 
@@ -146,6 +147,20 @@ describe("Phase 1 local mode & production fail-closed", () => {
     );
     assert.equal(auth.via, "local-admin");
     assert.equal(auth.role, "ADMIN");
+  });
+
+  it("Developer Admin entry targets existing /admin/content route", () => {
+    assert.equal(CMS_ROUTES.content, "/admin/content");
+    assert.equal(CMS_ROUTES.root, "/admin");
+  });
+
+  it("Developer Admin visibility follows isLocalCmsMode only", () => {
+    delete process.env.CMS_LOCAL_MODE;
+    delete process.env.VERCEL;
+    delete process.env.VERCEL_ENV;
+    assert.equal(isLocalCmsMode(), false);
+    enableLocalCms();
+    assert.equal(isLocalCmsMode(), true);
   });
 
   it("accepts optional local service token", async () => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Loader2 } from "lucide-react";
 
 import { DiffViewer } from "@/components/admin/diff-viewer";
@@ -23,6 +23,9 @@ interface ReviewCenterProps {
   jobs: ImportJobRecord[];
   onJobUpdated?: (job: ImportJobRecord) => void;
   onRefresh?: () => void;
+  /** When set, auto-select and load this job for review. */
+  focusJobId?: string | null;
+  onFocusConsumed?: () => void;
 }
 
 type TabId =
@@ -39,6 +42,8 @@ export function ReviewCenter({
   jobs,
   onJobUpdated,
   onRefresh,
+  focusJobId,
+  onFocusConsumed,
 }: ReviewCenterProps) {
   const reviewableJobs = useMemo(
     () =>
@@ -67,6 +72,7 @@ export function ReviewCenter({
   const [tab, setTab] = useState<TabId>("summary");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [confirmDuplicateSave, setConfirmDuplicateSave] = useState(false);
 
   const selectedJob =
     reviewableJobs.find((job) => job.id === selectedJobId) ?? null;
@@ -112,6 +118,35 @@ export function ReviewCenter({
         : ""
     );
   }
+
+  useEffect(() => {
+    if (!focusJobId) return;
+    let cancelled = false;
+    void (async () => {
+      try {
+        if (cancelled) return;
+        setSelectedJobId(focusJobId);
+        setError(null);
+        setBusy(true);
+        await loadPackage(focusJobId);
+        if (!cancelled) setTab("summary");
+      } catch (err) {
+        if (!cancelled) {
+          setError(
+            err instanceof Error ? err.message : "Failed to open review."
+          );
+        }
+      } finally {
+        if (!cancelled) {
+          setBusy(false);
+          onFocusConsumed?.();
+        }
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [focusJobId, onFocusConsumed]);
 
   async function startReview() {
     if (!selectedJobId) return;
@@ -199,7 +234,10 @@ export function ReviewCenter({
       const response = await fetch(API_ENDPOINTS.CMS_SAVE, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId: selectedJobId }),
+        body: JSON.stringify({
+          jobId: selectedJobId,
+          confirmDuplicateSave,
+        }),
       });
       const data = (await response.json()) as SaveApiResult;
       if (!response.ok || !data.success) {
@@ -210,6 +248,7 @@ export function ReviewCenter({
       onJobUpdated?.(data.job);
       onRefresh?.();
       await loadPackage(selectedJobId);
+      setConfirmDuplicateSave(false);
       setTab("save");
       await refreshGit();
     } catch (err) {
@@ -243,15 +282,19 @@ export function ReviewCenter({
   }
 
   const tabs: { id: TabId; label: string }[] = [
-    { id: "summary", label: "Summary" },
-    { id: "validation", label: "Validation" },
-    { id: "preview", label: "JSON Preview" },
+    { id: "summary", label: "Overview" },
+    { id: "validation", label: "Questions" },
+    { id: "preview", label: "JSON" },
     { id: "diff", label: "Diff" },
-    { id: "manifest", label: "Diagrams" },
+    { id: "manifest", label: "Evidence" },
     { id: "write", label: "Write Report" },
-    { id: "save", label: "Save" },
-    { id: "git", label: "Git" },
+    { id: "save", label: "Saved" },
+    { id: "git", label: "Diagnostics" },
   ];
+
+  const isSaved =
+    selectedJob?.stage === PipelineStage.LOCAL_SAVED ||
+    reviewPackage?.saveReport?.status === "SUCCESS";
 
   return (
     <section
@@ -263,8 +306,8 @@ export function ReviewCenter({
           <div>
             <h2 className="text-lg font-semibold text-foreground">Review</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Summary, validation, preview, diff, diagrams — then Approve and
-              Local Save.
+              Overview · Questions · Evidence · JSON · Diff — then Approve and
+              Save to Content.
             </p>
           </div>
           {busy && (
@@ -275,20 +318,58 @@ export function ReviewCenter({
 
       <div className="space-y-4 px-5 py-4">
         <div className="flex flex-wrap items-center gap-3">
+          {selectedJob ? (
+            <div className="rounded-lg border border-border bg-muted/20 px-3 py-2 text-sm">
+              <p className="font-medium text-foreground">
+                {selectedJob.subjectCode ? `${selectedJob.subjectCode} · ` : ""}
+                {selectedJob.originalFilename}
+              </p>
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                {[
+                  selectedJob.semester,
+                  selectedJob.examSession,
+                  selectedJob.year,
+                ]
+                  .filter(Boolean)
+                  .join(" · ")}
+                {isSaved ? " · Saved" : " · Preview — Not Saved"}
+              </p>
+            </div>
+          ) : null}
           <label className="text-xs text-muted-foreground">
-            Job
+            {selectedJob ? "Switch paper" : "Paper"}
             <select
               className="ml-2 rounded-lg border border-border bg-background px-3 py-1.5 text-xs text-foreground"
               value={selectedJobId}
               onChange={(event) => {
-                setSelectedJobId(event.target.value);
+                const nextId = event.target.value;
+                setSelectedJobId(nextId);
                 setReviewPackage(null);
+                setConfirmDuplicateSave(false);
+                if (nextId) {
+                  setBusy(true);
+                  setError(null);
+                  void (async () => {
+                    try {
+                      await loadPackage(nextId);
+                      setTab("summary");
+                    } catch (err) {
+                      setError(
+                        err instanceof Error
+                          ? err.message
+                          : "Failed to open review."
+                      );
+                    } finally {
+                      setBusy(false);
+                    }
+                  })();
+                }
               }}
             >
-              <option value="">Select written job…</option>
+              <option value="">Select paper…</option>
               {reviewableJobs.map((job) => (
                 <option key={job.id} value={job.id}>
-                  {job.id} · {job.subjectCode ?? "—"} · {job.stage}
+                  {job.subjectCode ?? "—"} · {job.originalFilename}
                 </option>
               ))}
             </select>
@@ -356,16 +437,28 @@ export function ReviewCenter({
           ))}
         </div>
 
-        {tab === "summary" && <ReviewSummary reviewPackage={reviewPackage} />}
+        {tab === "summary" && (
+          <ReviewSummary
+            reviewPackage={reviewPackage}
+            confirmDuplicateSave={confirmDuplicateSave}
+            onConfirmDuplicateChange={setConfirmDuplicateSave}
+          />
+        )}
 
         {tab === "diff" && reviewPackage && (
           <div className="grid gap-4 lg:grid-cols-2">
             <div>
-              <h3 className="mb-2 text-sm font-semibold">pyqs.json diff</h3>
+              <h3 className="mb-2 text-sm font-semibold">
+                pyqs.json diff (existing → merge candidate)
+              </h3>
               <DiffViewer diff={reviewPackage.pyqsDiff} />
             </div>
             <div>
-              <h3 className="mb-2 text-sm font-semibold">syllabus.json diff</h3>
+              <h3 className="mb-2 text-sm font-semibold">
+                {reviewPackage.pyqOnlyImport
+                  ? "syllabus.json (read-only — PYQ import does not change it)"
+                  : "syllabus.json diff"}
+              </h3>
               <DiffViewer diff={reviewPackage.syllabusDiff} />
             </div>
           </div>
@@ -374,21 +467,40 @@ export function ReviewCenter({
         {tab === "preview" && (
           <div className="grid gap-4 lg:grid-cols-2">
             <FilePreview
-              title="pending-pyqs.json"
-              value={reviewPackage?.pendingPyqs}
+              title="Extracted paper preview (this import only · production-pyqs.json)"
+              value={
+                reviewPackage?.extractedPyqs ?? reviewPackage?.productionPyqs
+              }
             />
             <FilePreview
-              title="pending-syllabus.json"
-              value={reviewPackage?.pendingSyllabus}
+              title={
+                isSaved
+                  ? "Merged save candidate (staging)"
+                  : "Merged save candidate — Not Saved · pending-pyqs.json"
+              }
+              value={
+                reviewPackage?.mergedSaveCandidate ?? reviewPackage?.pendingPyqs
+              }
             />
             <FilePreview
-              title="production-pyqs.json"
-              value={reviewPackage?.productionPyqs}
+              title="Authoritative content · existing pyqs.json"
+              value={reviewPackage?.existingPyqs}
             />
-            <FilePreview
-              title="production-syllabus.json"
-              value={reviewPackage?.productionSyllabus}
-            />
+            {reviewPackage?.pyqOnlyImport ? (
+              <FilePreview
+                title="Syllabus (read-only existing · not part of this PYQ import)"
+                value={reviewPackage?.existingSyllabus}
+              />
+            ) : (
+              <FilePreview
+                title={
+                  isSaved
+                    ? "Pending syllabus (staging)"
+                    : "Preview — Not Saved · pending-syllabus.json"
+                }
+                value={reviewPackage?.pendingSyllabus}
+              />
+            )}
             <div className="lg:col-span-2">
               <h4 className="text-xs font-medium text-foreground">
                 Optional JSON edit (applied on decision)

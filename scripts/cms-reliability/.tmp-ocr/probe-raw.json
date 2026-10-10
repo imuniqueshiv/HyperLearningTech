@@ -1,0 +1,2643 @@
+{
+  "version": 1,
+  "metadata": {
+    "jobId": "probe_al405",
+    "sourceFilename": "al-405-machine-learning-jun-2026.pdf",
+    "sourceMimeType": "application/pdf",
+    "engine": "local-ocr-v1",
+    "extractedAt": "2026-10-10T06:06:42.766Z",
+    "pageCount": 2,
+    "imageCount": 2,
+    "tableCount": 2,
+    "textBlockCount": 95,
+    "durationMs": 17596
+  },
+  "pages": [
+    {
+      "pageNumber": 1,
+      "width": 1684,
+      "height": 1191,
+      "imagePath": "pages/page-1.png",
+      "text": "Total No. of Questions : 8] [ Total No. of Printed Pages : 4 Enrolment No. * red : AL405 (GS) B.Tech. IV Semester Examination, June 2026 Grading System (GS) . Machine Learning Time : Three Hours Maximum Marks : 70 Note: (i) Attempt any five questions. foo=8i ore weet oY wt Hf (ii) Al questions carry equal marks. waft gl & Ae 3 El (iii) In case of any doubt or dispute the English version question should be treated as final. fre off we ar far & Ruf 3 sish wor Hwa or ifm FT SRA 1. (a) Explain Machine Learning. Discuss its scope, limitations and real-world applications with suitable examples. 790 aftr & ar F gan) sus aR, West sik sre gira % gad FOE & aR FFE FRO S Arr wat RI (b) Explain Hypothesis Space and Inductive Bias in Machine Learning. Why are they important in model learning? wei aftr #, eediiR QO 3k dEefrea aa ar TEs Hise aftr 3 A aul wEayf & ALA05 (GS) PTO. https://www.rgpvonline.com . 2] 2. (a) Explain Principal Component Analysis (PCA) with mathematical steps and advantages. Compare PCA with Partial Least Squares. fife dune eafelia (PCA) @ THR Rew sik rE! % HT FEETE PCA 5 ger uilkfad dive wad AI (b) Explain the architecture of Multilayer Perceptron (MLP). Describe the Backpropagation Algorithm with a neat diagram. TERR RATT (MLP) $ SETR oF F9@ ww AG STI 5 wr dvriie veer & avi av 3. (a) What are Vanishing Gradient and Exploding Gradient problems in detail? ARR Ate IR Treen Ae OF wR FE, fra § Fang? (b) Describe the working of ID3 or CART algorithm with an example. ERT 5 WT ID3 aT CART Teen & aM a7 & al & qui 4. (a) Explain Naive Bayes Classifier. State its assumptions, advantages, disadvantages and applications. Naive Bayes Classifier & aR 3 Sul §9& Warm, BITE, THE AR FRA B IR F Fae] (b) Explain Random Forest Algorithm for both Classification and Regression. Fenfafseer sik Rive, Ai & fore $e wie ewan oF FHA ) AL405 (GS) . https://www.rgpvonline.com",
+      "textBlocks": [
+        {
+          "id": "p1-t1",
+          "pageNumber": 1,
+          "text": "Total No. of Questions : 8] [ Total No. of Printed Pages : 4",
+          "bbox": {
+            "x": 88,
+            "y": 77,
+            "width": 668,
+            "height": 22
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "p1-t2",
+          "pageNumber": 1,
+          "text": "Enrolment No. * red :",
+          "bbox": {
+            "x": 463,
+            "y": 128,
+            "width": 332,
+            "height": 21
+          },
+          "confidence": 0.63
+        },
+        {
+          "id": "p1-t3",
+          "pageNumber": 1,
+          "text": "AL405 (GS)",
+          "bbox": {
+            "x": 346,
+            "y": 228,
+            "width": 155,
+            "height": 26
+          },
+          "confidence": 0.76
+        },
+        {
+          "id": "p1-t4",
+          "pageNumber": 1,
+          "text": "B.Tech. IV Semester",
+          "bbox": {
+            "x": 301,
+            "y": 269,
+            "width": 247,
+            "height": 20
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t5",
+          "pageNumber": 1,
+          "text": "Examination, June 2026",
+          "bbox": {
+            "x": 286,
+            "y": 308,
+            "width": 276,
+            "height": 25
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t6",
+          "pageNumber": 1,
+          "text": "Grading System (GS)",
+          "bbox": {
+            "x": 312,
+            "y": 351,
+            "width": 224,
+            "height": 22
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p1-t7",
+          "pageNumber": 1,
+          "text": ". Machine Learning",
+          "bbox": {
+            "x": 14,
+            "y": 390,
+            "width": 507,
+            "height": 22
+          },
+          "confidence": 0.63
+        },
+        {
+          "id": "p1-t8",
+          "pageNumber": 1,
+          "text": "Time : Three Hours",
+          "bbox": {
+            "x": 326,
+            "y": 430,
+            "width": 199,
+            "height": 18
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "p1-t9",
+          "pageNumber": 1,
+          "text": "Maximum Marks : 70",
+          "bbox": {
+            "x": 532,
+            "y": 470,
+            "width": 223,
+            "height": 19
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "p1-t10",
+          "pageNumber": 1,
+          "text": "Note: (i) Attempt any five questions.",
+          "bbox": {
+            "x": 90,
+            "y": 512,
+            "width": 400,
+            "height": 22
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "p1-t11",
+          "pageNumber": 1,
+          "text": "foo=8i ore weet oY wt Hf",
+          "bbox": {
+            "x": 221,
+            "y": 541,
+            "width": 289,
+            "height": 24
+          },
+          "confidence": 0.14
+        },
+        {
+          "id": "p1-t12",
+          "pageNumber": 1,
+          "text": "(ii) Al questions carry equal marks.",
+          "bbox": {
+            "x": 171,
+            "y": 580,
+            "width": 367,
+            "height": 22
+          },
+          "confidence": 0.87
+        },
+        {
+          "id": "p1-t13",
+          "pageNumber": 1,
+          "text": "waft gl & Ae 3 El",
+          "bbox": {
+            "x": 221,
+            "y": 608,
+            "width": 248,
+            "height": 23
+          },
+          "confidence": 0.29
+        },
+        {
+          "id": "p1-t14",
+          "pageNumber": 1,
+          "text": "(iii) In case of any doubt or dispute the English version",
+          "bbox": {
+            "x": 170,
+            "y": 646,
+            "width": 582,
+            "height": 23
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t15",
+          "pageNumber": 1,
+          "text": "question should be treated as final.",
+          "bbox": {
+            "x": 222,
+            "y": 679,
+            "width": 337,
+            "height": 22
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p1-t16",
+          "pageNumber": 1,
+          "text": "fre off we ar far & Ruf 3 sish wor Hwa or",
+          "bbox": {
+            "x": 221,
+            "y": 707,
+            "width": 533,
+            "height": 27
+          },
+          "confidence": 0.39
+        },
+        {
+          "id": "p1-t17",
+          "pageNumber": 1,
+          "text": "ifm FT SRA",
+          "bbox": {
+            "x": 221,
+            "y": 741,
+            "width": 173,
+            "height": 23
+          },
+          "confidence": 0.16
+        },
+        {
+          "id": "p1-t18",
+          "pageNumber": 1,
+          "text": "1. (a) Explain Machine Learning. Discuss its scope, limitations",
+          "bbox": {
+            "x": 91,
+            "y": 795,
+            "width": 660,
+            "height": 24
+          },
+          "confidence": 0.86
+        },
+        {
+          "id": "p1-t19",
+          "pageNumber": 1,
+          "text": "and real-world applications with suitable examples.",
+          "bbox": {
+            "x": 200,
+            "y": 828,
+            "width": 504,
+            "height": 23
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t20",
+          "pageNumber": 1,
+          "text": "790 aftr & ar F gan) sus aR, West sik sre",
+          "bbox": {
+            "x": 199,
+            "y": 857,
+            "width": 554,
+            "height": 26
+          },
+          "confidence": 0.37
+        },
+        {
+          "id": "p1-t21",
+          "pageNumber": 1,
+          "text": "gira % gad FOE & aR FFE FRO S Arr wat",
+          "bbox": {
+            "x": 199,
+            "y": 890,
+            "width": 554,
+            "height": 31
+          },
+          "confidence": 0.3
+        },
+        {
+          "id": "p1-t22",
+          "pageNumber": 1,
+          "text": "RI",
+          "bbox": {
+            "x": 198,
+            "y": 927,
+            "width": 38,
+            "height": 21
+          },
+          "confidence": 0.35
+        },
+        {
+          "id": "p1-t23",
+          "pageNumber": 1,
+          "text": "(b) Explain Hypothesis Space and Inductive Bias in Machine",
+          "bbox": {
+            "x": 142,
+            "y": 964,
+            "width": 609,
+            "height": 22
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p1-t24",
+          "pageNumber": 1,
+          "text": "Learning. Why are they important in model learning?",
+          "bbox": {
+            "x": 200,
+            "y": 997,
+            "width": 523,
+            "height": 23
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "p1-t25",
+          "pageNumber": 1,
+          "text": "wei aftr #, eediiR QO 3k dEefrea aa ar",
+          "bbox": {
+            "x": 198,
+            "y": 1026,
+            "width": 553,
+            "height": 27
+          },
+          "confidence": 0.15
+        },
+        {
+          "id": "p1-t26",
+          "pageNumber": 1,
+          "text": "TEs Hise aftr 3 A aul wEayf &",
+          "bbox": {
+            "x": 198,
+            "y": 1060,
+            "width": 395,
+            "height": 29
+          },
+          "confidence": 0.27
+        },
+        {
+          "id": "p1-t27",
+          "pageNumber": 1,
+          "text": "ALA05 (GS) PTO.",
+          "bbox": {
+            "x": 97,
+            "y": 1093,
+            "width": 661,
+            "height": 23
+          },
+          "confidence": 0.75
+        },
+        {
+          "id": "p1-t28",
+          "pageNumber": 1,
+          "text": "https://www.rgpvonline.com .",
+          "bbox": {
+            "x": 237,
+            "y": 1139,
+            "width": 620,
+            "height": 32
+          },
+          "confidence": 0.71
+        },
+        {
+          "id": "p1-t29",
+          "pageNumber": 1,
+          "text": "2]",
+          "bbox": {
+            "x": 1245,
+            "y": 44,
+            "width": 24,
+            "height": 18
+          },
+          "confidence": 0.85
+        },
+        {
+          "id": "p1-t30",
+          "pageNumber": 1,
+          "text": "2. (a) Explain Principal Component Analysis (PCA) with",
+          "bbox": {
+            "x": 920,
+            "y": 79,
+            "width": 671,
+            "height": 23
+          },
+          "confidence": 0.9
+        },
+        {
+          "id": "p1-t31",
+          "pageNumber": 1,
+          "text": "mathematical steps and advantages. Compare PCA with",
+          "bbox": {
+            "x": 1034,
+            "y": 114,
+            "width": 557,
+            "height": 21
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "p1-t32",
+          "pageNumber": 1,
+          "text": "Partial Least Squares.",
+          "bbox": {
+            "x": 1035,
+            "y": 151,
+            "width": 213,
+            "height": 20
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t33",
+          "pageNumber": 1,
+          "text": "fife dune eafelia (PCA) @ THR Rew sik",
+          "bbox": {
+            "x": 1033,
+            "y": 180,
+            "width": 559,
+            "height": 27
+          },
+          "confidence": 0.25
+        },
+        {
+          "id": "p1-t34",
+          "pageNumber": 1,
+          "text": "rE! % HT FEETE PCA 5 ger uilkfad dive wad",
+          "bbox": {
+            "x": 1033,
+            "y": 216,
+            "width": 559,
+            "height": 29
+          },
+          "confidence": 0.29
+        },
+        {
+          "id": "p1-t35",
+          "pageNumber": 1,
+          "text": "AI",
+          "bbox": {
+            "x": 1033,
+            "y": 257,
+            "width": 64,
+            "height": 21
+          },
+          "confidence": 0.56
+        },
+        {
+          "id": "p1-t36",
+          "pageNumber": 1,
+          "text": "(b) Explain the architecture of Multilayer Perceptron (MLP).",
+          "bbox": {
+            "x": 977,
+            "y": 294,
+            "width": 612,
+            "height": 26
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "p1-t37",
+          "pageNumber": 1,
+          "text": "Describe the Backpropagation Algorithm with a neat",
+          "bbox": {
+            "x": 1034,
+            "y": 329,
+            "width": 556,
+            "height": 24
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p1-t38",
+          "pageNumber": 1,
+          "text": "diagram.",
+          "bbox": {
+            "x": 1033,
+            "y": 369,
+            "width": 87,
+            "height": 20
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t39",
+          "pageNumber": 1,
+          "text": "TERR RATT (MLP) $ SETR oF F9@ ww",
+          "bbox": {
+            "x": 1032,
+            "y": 395,
+            "width": 558,
+            "height": 32
+          },
+          "confidence": 0.18
+        },
+        {
+          "id": "p1-t40",
+          "pageNumber": 1,
+          "text": "AG STI 5 wr dvriie veer & avi av",
+          "bbox": {
+            "x": 1033,
+            "y": 431,
+            "width": 529,
+            "height": 29
+          },
+          "confidence": 0.23
+        },
+        {
+          "id": "p1-t41",
+          "pageNumber": 1,
+          "text": "3. (a) What are Vanishing Gradient and Exploding Gradient",
+          "bbox": {
+            "x": 926,
+            "y": 489,
+            "width": 662,
+            "height": 29
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "p1-t42",
+          "pageNumber": 1,
+          "text": "problems in detail?",
+          "bbox": {
+            "x": 1036,
+            "y": 530,
+            "width": 191,
+            "height": 23
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p1-t43",
+          "pageNumber": 1,
+          "text": "ARR Ate IR Treen Ae OF wR FE,",
+          "bbox": {
+            "x": 1037,
+            "y": 555,
+            "width": 547,
+            "height": 29
+          },
+          "confidence": 0.34
+        },
+        {
+          "id": "p1-t44",
+          "pageNumber": 1,
+          "text": "fra § Fang?",
+          "bbox": {
+            "x": 1037,
+            "y": 596,
+            "width": 153,
+            "height": 23
+          },
+          "confidence": 0.09
+        },
+        {
+          "id": "p1-t45",
+          "pageNumber": 1,
+          "text": "(b) Describe the working of ID3 or CART algorithm with an",
+          "bbox": {
+            "x": 983,
+            "y": 632,
+            "width": 605,
+            "height": 28
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "p1-t46",
+          "pageNumber": 1,
+          "text": "example.",
+          "bbox": {
+            "x": 1039,
+            "y": 673,
+            "width": 88,
+            "height": 21
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t47",
+          "pageNumber": 1,
+          "text": "ERT 5 WT ID3 aT CART Teen & aM a7 &",
+          "bbox": {
+            "x": 1039,
+            "y": 699,
+            "width": 551,
+            "height": 28
+          },
+          "confidence": 0.38
+        },
+        {
+          "id": "p1-t48",
+          "pageNumber": 1,
+          "text": "al & qui",
+          "bbox": {
+            "x": 1038,
+            "y": 738,
+            "width": 179,
+            "height": 23
+          },
+          "confidence": 0
+        },
+        {
+          "id": "p1-t49",
+          "pageNumber": 1,
+          "text": "4. (a) Explain Naive Bayes Classifier. State its assumptions,",
+          "bbox": {
+            "x": 926,
+            "y": 792,
+            "width": 663,
+            "height": 26
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "p1-t50",
+          "pageNumber": 1,
+          "text": "advantages, disadvantages and applications.",
+          "bbox": {
+            "x": 1039,
+            "y": 828,
+            "width": 428,
+            "height": 24
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t51",
+          "pageNumber": 1,
+          "text": "Naive Bayes Classifier & aR 3 Sul §9& Warm,",
+          "bbox": {
+            "x": 1038,
+            "y": 858,
+            "width": 551,
+            "height": 29
+          },
+          "confidence": 0.53
+        },
+        {
+          "id": "p1-t52",
+          "pageNumber": 1,
+          "text": "BITE, THE AR FRA B IR F Fae]",
+          "bbox": {
+            "x": 1037,
+            "y": 895,
+            "width": 406,
+            "height": 31
+          },
+          "confidence": 0.32
+        },
+        {
+          "id": "p1-t53",
+          "pageNumber": 1,
+          "text": "(b) Explain Random Forest Algorithm for both Classification",
+          "bbox": {
+            "x": 981,
+            "y": 934,
+            "width": 609,
+            "height": 26
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "p1-t54",
+          "pageNumber": 1,
+          "text": "and Regression.",
+          "bbox": {
+            "x": 1038,
+            "y": 974,
+            "width": 157,
+            "height": 21
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p1-t55",
+          "pageNumber": 1,
+          "text": "Fenfafseer sik Rive, Ai & fore $e wie ewan",
+          "bbox": {
+            "x": 1037,
+            "y": 1002,
+            "width": 554,
+            "height": 26
+          },
+          "confidence": 0.3
+        },
+        {
+          "id": "p1-t56",
+          "pageNumber": 1,
+          "text": "oF FHA )",
+          "bbox": {
+            "x": 1037,
+            "y": 1041,
+            "width": 290,
+            "height": 23
+          },
+          "confidence": 0.24
+        },
+        {
+          "id": "p1-t57",
+          "pageNumber": 1,
+          "text": "AL405 (GS)",
+          "bbox": {
+            "x": 925,
+            "y": 1106,
+            "width": 114,
+            "height": 22
+          },
+          "confidence": 0.82
+        },
+        {
+          "id": "p1-t58",
+          "pageNumber": 1,
+          "text": ". https://www.rgpvonline.com",
+          "bbox": {
+            "x": 855,
+            "y": 1143,
+            "width": 594,
+            "height": 24
+          },
+          "confidence": 0.51
+        }
+      ],
+      "layout": {
+        "pageNumber": 1,
+        "width": 1684,
+        "height": 1191,
+        "blocks": [
+          {
+            "id": "p1-t1",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 88,
+              "y": 77,
+              "width": 668,
+              "height": 22
+            },
+            "confidence": 0.93
+          },
+          {
+            "id": "p1-t2",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 463,
+              "y": 128,
+              "width": 332,
+              "height": 21
+            },
+            "confidence": 0.63
+          },
+          {
+            "id": "p1-t3",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 346,
+              "y": 228,
+              "width": 155,
+              "height": 26
+            },
+            "confidence": 0.76
+          },
+          {
+            "id": "p1-t4",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 301,
+              "y": 269,
+              "width": 247,
+              "height": 20
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t5",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 286,
+              "y": 308,
+              "width": 276,
+              "height": 25
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t6",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 312,
+              "y": 351,
+              "width": 224,
+              "height": 22
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p1-t7",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 14,
+              "y": 390,
+              "width": 507,
+              "height": 22
+            },
+            "confidence": 0.63
+          },
+          {
+            "id": "p1-t8",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 326,
+              "y": 430,
+              "width": 199,
+              "height": 18
+            },
+            "confidence": 0.92
+          },
+          {
+            "id": "p1-t9",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 532,
+              "y": 470,
+              "width": 223,
+              "height": 19
+            },
+            "confidence": 0.94
+          },
+          {
+            "id": "p1-t10",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 90,
+              "y": 512,
+              "width": 400,
+              "height": 22
+            },
+            "confidence": 0.94
+          },
+          {
+            "id": "p1-t11",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 221,
+              "y": 541,
+              "width": 289,
+              "height": 24
+            },
+            "confidence": 0.14
+          },
+          {
+            "id": "p1-t12",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 171,
+              "y": 580,
+              "width": 367,
+              "height": 22
+            },
+            "confidence": 0.87
+          },
+          {
+            "id": "p1-t13",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 221,
+              "y": 608,
+              "width": 248,
+              "height": 23
+            },
+            "confidence": 0.29
+          },
+          {
+            "id": "p1-t14",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 170,
+              "y": 646,
+              "width": 582,
+              "height": 23
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t15",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 222,
+              "y": 679,
+              "width": 337,
+              "height": 22
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p1-t16",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 221,
+              "y": 707,
+              "width": 533,
+              "height": 27
+            },
+            "confidence": 0.39
+          },
+          {
+            "id": "p1-t17",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 221,
+              "y": 741,
+              "width": 173,
+              "height": 23
+            },
+            "confidence": 0.16
+          },
+          {
+            "id": "p1-t18",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 91,
+              "y": 795,
+              "width": 660,
+              "height": 24
+            },
+            "confidence": 0.86
+          },
+          {
+            "id": "p1-t19",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 200,
+              "y": 828,
+              "width": 504,
+              "height": 23
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t20",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 199,
+              "y": 857,
+              "width": 554,
+              "height": 26
+            },
+            "confidence": 0.37
+          },
+          {
+            "id": "p1-t21",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 199,
+              "y": 890,
+              "width": 554,
+              "height": 31
+            },
+            "confidence": 0.3
+          },
+          {
+            "id": "p1-t22",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 198,
+              "y": 927,
+              "width": 38,
+              "height": 21
+            },
+            "confidence": 0.35
+          },
+          {
+            "id": "p1-t23",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 142,
+              "y": 964,
+              "width": 609,
+              "height": 22
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p1-t24",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 200,
+              "y": 997,
+              "width": 523,
+              "height": 23
+            },
+            "confidence": 0.94
+          },
+          {
+            "id": "p1-t25",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 198,
+              "y": 1026,
+              "width": 553,
+              "height": 27
+            },
+            "confidence": 0.15
+          },
+          {
+            "id": "p1-t26",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 198,
+              "y": 1060,
+              "width": 395,
+              "height": 29
+            },
+            "confidence": 0.27
+          },
+          {
+            "id": "p1-t27",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 97,
+              "y": 1093,
+              "width": 661,
+              "height": 23
+            },
+            "confidence": 0.75
+          },
+          {
+            "id": "p1-t28",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 237,
+              "y": 1139,
+              "width": 620,
+              "height": 32
+            },
+            "confidence": 0.71
+          },
+          {
+            "id": "p1-t29",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1245,
+              "y": 44,
+              "width": 24,
+              "height": 18
+            },
+            "confidence": 0.85
+          },
+          {
+            "id": "p1-t30",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 920,
+              "y": 79,
+              "width": 671,
+              "height": 23
+            },
+            "confidence": 0.9
+          },
+          {
+            "id": "p1-t31",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1034,
+              "y": 114,
+              "width": 557,
+              "height": 21
+            },
+            "confidence": 0.94
+          },
+          {
+            "id": "p1-t32",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1035,
+              "y": 151,
+              "width": 213,
+              "height": 20
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t33",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1033,
+              "y": 180,
+              "width": 559,
+              "height": 27
+            },
+            "confidence": 0.25
+          },
+          {
+            "id": "p1-t34",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1033,
+              "y": 216,
+              "width": 559,
+              "height": 29
+            },
+            "confidence": 0.29
+          },
+          {
+            "id": "p1-t35",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1033,
+              "y": 257,
+              "width": 64,
+              "height": 21
+            },
+            "confidence": 0.56
+          },
+          {
+            "id": "p1-t36",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 977,
+              "y": 294,
+              "width": 612,
+              "height": 26
+            },
+            "confidence": 0.92
+          },
+          {
+            "id": "p1-t37",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1034,
+              "y": 329,
+              "width": 556,
+              "height": 24
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p1-t38",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1033,
+              "y": 369,
+              "width": 87,
+              "height": 20
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t39",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1032,
+              "y": 395,
+              "width": 558,
+              "height": 32
+            },
+            "confidence": 0.18
+          },
+          {
+            "id": "p1-t40",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1033,
+              "y": 431,
+              "width": 529,
+              "height": 29
+            },
+            "confidence": 0.23
+          },
+          {
+            "id": "p1-t41",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 926,
+              "y": 489,
+              "width": 662,
+              "height": 29
+            },
+            "confidence": 0.92
+          },
+          {
+            "id": "p1-t42",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1036,
+              "y": 530,
+              "width": 191,
+              "height": 23
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p1-t43",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1037,
+              "y": 555,
+              "width": 547,
+              "height": 29
+            },
+            "confidence": 0.34
+          },
+          {
+            "id": "p1-t44",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1037,
+              "y": 596,
+              "width": 153,
+              "height": 23
+            },
+            "confidence": 0.09
+          },
+          {
+            "id": "p1-t45",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 983,
+              "y": 632,
+              "width": 605,
+              "height": 28
+            },
+            "confidence": 0.93
+          },
+          {
+            "id": "p1-t46",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1039,
+              "y": 673,
+              "width": 88,
+              "height": 21
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t47",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1039,
+              "y": 699,
+              "width": 551,
+              "height": 28
+            },
+            "confidence": 0.38
+          },
+          {
+            "id": "p1-t48",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1038,
+              "y": 738,
+              "width": 179,
+              "height": 23
+            },
+            "confidence": 0
+          },
+          {
+            "id": "p1-t49",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 926,
+              "y": 792,
+              "width": 663,
+              "height": 26
+            },
+            "confidence": 0.93
+          },
+          {
+            "id": "p1-t50",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1039,
+              "y": 828,
+              "width": 428,
+              "height": 24
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t51",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1038,
+              "y": 858,
+              "width": 551,
+              "height": 29
+            },
+            "confidence": 0.53
+          },
+          {
+            "id": "p1-t52",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1037,
+              "y": 895,
+              "width": 406,
+              "height": 31
+            },
+            "confidence": 0.32
+          },
+          {
+            "id": "p1-t53",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 981,
+              "y": 934,
+              "width": 609,
+              "height": 26
+            },
+            "confidence": 0.94
+          },
+          {
+            "id": "p1-t54",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1038,
+              "y": 974,
+              "width": 157,
+              "height": 21
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p1-t55",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1037,
+              "y": 1002,
+              "width": 554,
+              "height": 26
+            },
+            "confidence": 0.3
+          },
+          {
+            "id": "p1-t56",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 1037,
+              "y": 1041,
+              "width": 290,
+              "height": 23
+            },
+            "confidence": 0.24
+          },
+          {
+            "id": "p1-t57",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 925,
+              "y": 1106,
+              "width": 114,
+              "height": 22
+            },
+            "confidence": 0.82
+          },
+          {
+            "id": "p1-t58",
+            "kind": "text",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 855,
+              "y": 1143,
+              "width": 594,
+              "height": 24
+            },
+            "confidence": 0.51
+          },
+          {
+            "id": "image-1",
+            "kind": "image",
+            "pageNumber": 1,
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "width": 1684,
+              "height": 1191
+            }
+          }
+        ]
+      },
+      "raster": {
+        "pngBytes": 639415,
+        "nonWhiteSampled": 14053,
+        "blank": false
+      }
+    },
+    {
+      "pageNumber": 2,
+      "width": 1684,
+      "height": 1191,
+      "imagePath": "pages/page-2.png",
+      "text": "31 5. (a) Whatis Logistic Regression and Linear Regression with suitable examples. difsien Riem sk Hex Rie a1 & sue FER BH AT THC (b) Explain Unsupervised Learning. Describe K-Means Clustering Algorithm with its advantages. IFTGRAFSS Af BH are Hf Fi wren veiRew 3k ads amit @1 of fre) 6. (a) Differentiate between Agglomerative and Divisive Clustering with examples. FERN FT wie sik Rie wel $ dm FoR FT (b) Explain Gaussian Mixture Model (GMM). Discuss the Expectation-Maximization (EM) Algorithm with flowchart. https://www.rgpvonline.com Hifeaw fae Aisa (GMM) & sR # sam gear ¥ Wr TIER TH- HEE (EM) veiiRes wx aaf Fadl 7. (a) Explain the Design and Analysis of Machine Learning Experiments in detail. we aft want F fame sik fredmor 3 Rear ¥ Rend (b) Explain various Cross-Validation and Resampling Methods used in Machine Learning experiments. wim aft cenfiie § sme 9 a seam Pra-ARRem sik Jefe adel & ar F Faw ALA0S (GS) PTO. https://www.rgpvonline.com 4) 8 (a) Explain Hypothesis Testing in Machine Leaming in detail. wow aft adie fT a frar § wm (b) Discuss Accuracy, Precision, Recall and F1-Score. vagyd, fiftiem, Rafer silk Fi-woR w af aki Aekok kkk https://www.rgpvonline.com -",
+      "textBlocks": [
+        {
+          "id": "p2-t1",
+          "pageNumber": 2,
+          "text": "31",
+          "bbox": {
+            "x": 416,
+            "y": 48,
+            "width": 25,
+            "height": 21
+          },
+          "confidence": 0.88
+        },
+        {
+          "id": "p2-t2",
+          "pageNumber": 2,
+          "text": "5. (a) Whatis Logistic Regression and Linear Regression with",
+          "bbox": {
+            "x": 91,
+            "y": 86,
+            "width": 675,
+            "height": 27
+          },
+          "confidence": 0.89
+        },
+        {
+          "id": "p2-t3",
+          "pageNumber": 2,
+          "text": "suitable examples.",
+          "bbox": {
+            "x": 206,
+            "y": 127,
+            "width": 183,
+            "height": 23
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p2-t4",
+          "pageNumber": 2,
+          "text": "difsien Riem sk Hex Rie a1 & sue",
+          "bbox": {
+            "x": 206,
+            "y": 162,
+            "width": 560,
+            "height": 38
+          },
+          "confidence": 0.27
+        },
+        {
+          "id": "p2-t5",
+          "pageNumber": 2,
+          "text": "FER BH AT THC",
+          "bbox": {
+            "x": 208,
+            "y": 202,
+            "width": 233,
+            "height": 25
+          },
+          "confidence": 0.26
+        },
+        {
+          "id": "p2-t6",
+          "pageNumber": 2,
+          "text": "(b) Explain Unsupervised Learning. Describe K-Means",
+          "bbox": {
+            "x": 152,
+            "y": 246,
+            "width": 612,
+            "height": 25
+          },
+          "confidence": 0.9
+        },
+        {
+          "id": "p2-t7",
+          "pageNumber": 2,
+          "text": "Clustering Algorithm with its advantages.",
+          "bbox": {
+            "x": 210,
+            "y": 285,
+            "width": 410,
+            "height": 25
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p2-t8",
+          "pageNumber": 2,
+          "text": "IFTGRAFSS Af BH are Hf Fi wren",
+          "bbox": {
+            "x": 209,
+            "y": 319,
+            "width": 556,
+            "height": 28
+          },
+          "confidence": 0.16
+        },
+        {
+          "id": "p2-t9",
+          "pageNumber": 2,
+          "text": "veiRew 3k ads amit @1 of fre)",
+          "bbox": {
+            "x": 209,
+            "y": 356,
+            "width": 395,
+            "height": 27
+          },
+          "confidence": 0.17
+        },
+        {
+          "id": "p2-t10",
+          "pageNumber": 2,
+          "text": "6. (a) Differentiate between Agglomerative and Divisive",
+          "bbox": {
+            "x": 98,
+            "y": 416,
+            "width": 666,
+            "height": 25
+          },
+          "confidence": 0.9
+        },
+        {
+          "id": "p2-t11",
+          "pageNumber": 2,
+          "text": "Clustering with examples.",
+          "bbox": {
+            "x": 211,
+            "y": 454,
+            "width": 258,
+            "height": 24
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p2-t12",
+          "pageNumber": 2,
+          "text": "FERN FT wie sik Rie wel $ dm",
+          "bbox": {
+            "x": 212,
+            "y": 487,
+            "width": 554,
+            "height": 28
+          },
+          "confidence": 0.3
+        },
+        {
+          "id": "p2-t13",
+          "pageNumber": 2,
+          "text": "FoR FT",
+          "bbox": {
+            "x": 213,
+            "y": 527,
+            "width": 103,
+            "height": 23
+          },
+          "confidence": 0.1
+        },
+        {
+          "id": "p2-t14",
+          "pageNumber": 2,
+          "text": "(b) Explain Gaussian Mixture Model (GMM). Discuss",
+          "bbox": {
+            "x": 158,
+            "y": 570,
+            "width": 606,
+            "height": 22
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "p2-t15",
+          "pageNumber": 2,
+          "text": "the Expectation-Maximization (EM) Algorithm with",
+          "bbox": {
+            "x": 215,
+            "y": 607,
+            "width": 549,
+            "height": 22
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "p2-t16",
+          "pageNumber": 2,
+          "text": "flowchart. https://www.rgpvonline.com",
+          "bbox": {
+            "x": 217,
+            "y": 645,
+            "width": 420,
+            "height": 19
+          },
+          "confidence": 0.8
+        },
+        {
+          "id": "p2-t17",
+          "pageNumber": 2,
+          "text": "Hifeaw fae Aisa (GMM) & sR # sam gear",
+          "bbox": {
+            "x": 219,
+            "y": 676,
+            "width": 545,
+            "height": 26
+          },
+          "confidence": 0.33
+        },
+        {
+          "id": "p2-t18",
+          "pageNumber": 2,
+          "text": "¥ Wr TIER TH- HEE (EM) veiiRes wx aaf",
+          "bbox": {
+            "x": 222,
+            "y": 713,
+            "width": 542,
+            "height": 26
+          },
+          "confidence": 0.16
+        },
+        {
+          "id": "p2-t19",
+          "pageNumber": 2,
+          "text": "Fadl",
+          "bbox": {
+            "x": 225,
+            "y": 755,
+            "width": 36,
+            "height": 20
+          },
+          "confidence": 0.07
+        },
+        {
+          "id": "p2-t20",
+          "pageNumber": 2,
+          "text": "7. (a) Explain the Design and Analysis of Machine Learning",
+          "bbox": {
+            "x": 126,
+            "y": 807,
+            "width": 635,
+            "height": 25
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "p2-t21",
+          "pageNumber": 2,
+          "text": "Experiments in detail.",
+          "bbox": {
+            "x": 234,
+            "y": 844,
+            "width": 200,
+            "height": 23
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p2-t22",
+          "pageNumber": 2,
+          "text": "we aft want F fame sik fredmor 3 Rear ¥",
+          "bbox": {
+            "x": 233,
+            "y": 875,
+            "width": 528,
+            "height": 25
+          },
+          "confidence": 0.27
+        },
+        {
+          "id": "p2-t23",
+          "pageNumber": 2,
+          "text": "Rend",
+          "bbox": {
+            "x": 234,
+            "y": 914,
+            "width": 67,
+            "height": 23
+          },
+          "confidence": 0.24
+        },
+        {
+          "id": "p2-t24",
+          "pageNumber": 2,
+          "text": "(b) Explain various Cross-Validation and Resampling",
+          "bbox": {
+            "x": 185,
+            "y": 952,
+            "width": 574,
+            "height": 25
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "p2-t25",
+          "pageNumber": 2,
+          "text": "Methods used in Machine Learning experiments.",
+          "bbox": {
+            "x": 237,
+            "y": 987,
+            "width": 450,
+            "height": 23
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "p2-t26",
+          "pageNumber": 2,
+          "text": "wim aft cenfiie § sme 9 a seam",
+          "bbox": {
+            "x": 236,
+            "y": 1019,
+            "width": 520,
+            "height": 25
+          },
+          "confidence": 0.16
+        },
+        {
+          "id": "p2-t27",
+          "pageNumber": 2,
+          "text": "Pra-ARRem sik Jefe adel & ar F Faw",
+          "bbox": {
+            "x": 238,
+            "y": 1055,
+            "width": 438,
+            "height": 25
+          },
+          "confidence": 0.35
+        },
+        {
+          "id": "p2-t28",
+          "pageNumber": 2,
+          "text": "ALA0S (GS) PTO.",
+          "bbox": {
+            "x": 152,
+            "y": 1103,
+            "width": 612,
+            "height": 20
+          },
+          "confidence": 0.55
+        },
+        {
+          "id": "p2-t29",
+          "pageNumber": 2,
+          "text": "https://www.rgpvonline.com",
+          "bbox": {
+            "x": 241,
+            "y": 1143,
+            "width": 367,
+            "height": 24
+          },
+          "confidence": 0.61
+        },
+        {
+          "id": "p2-t30",
+          "pageNumber": 2,
+          "text": "4)",
+          "bbox": {
+            "x": 1241,
+            "y": 47,
+            "width": 24,
+            "height": 22
+          },
+          "confidence": 0.68
+        },
+        {
+          "id": "p2-t31",
+          "pageNumber": 2,
+          "text": "8 (a) Explain Hypothesis Testing in Machine Leaming in",
+          "bbox": {
+            "x": 918,
+            "y": 87,
+            "width": 675,
+            "height": 30
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "p2-t32",
+          "pageNumber": 2,
+          "text": "detail.",
+          "bbox": {
+            "x": 1032,
+            "y": 135,
+            "width": 60,
+            "height": 20
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "p2-t33",
+          "pageNumber": 2,
+          "text": "wow aft adie fT a frar § wm",
+          "bbox": {
+            "x": 1031,
+            "y": 169,
+            "width": 549,
+            "height": 31
+          },
+          "confidence": 0.02
+        },
+        {
+          "id": "p2-t34",
+          "pageNumber": 2,
+          "text": "(b) Discuss Accuracy, Precision, Recall and F1-Score.",
+          "bbox": {
+            "x": 977,
+            "y": 219,
+            "width": 554,
+            "height": 29
+          },
+          "confidence": 0.86
+        },
+        {
+          "id": "p2-t35",
+          "pageNumber": 2,
+          "text": "vagyd, fiftiem, Rafer silk Fi-woR w af aki",
+          "bbox": {
+            "x": 1033,
+            "y": 257,
+            "width": 490,
+            "height": 35
+          },
+          "confidence": 0.09
+        },
+        {
+          "id": "p2-t36",
+          "pageNumber": 2,
+          "text": "Aekok kkk",
+          "bbox": {
+            "x": 1213,
+            "y": 327,
+            "width": 83,
+            "height": 12
+          },
+          "confidence": 0.21
+        },
+        {
+          "id": "p2-t37",
+          "pageNumber": 2,
+          "text": "https://www.rgpvonline.com -",
+          "bbox": {
+            "x": 1112,
+            "y": 1143,
+            "width": 331,
+            "height": 26
+          },
+          "confidence": 0.51
+        }
+      ],
+      "layout": {
+        "pageNumber": 2,
+        "width": 1684,
+        "height": 1191,
+        "blocks": [
+          {
+            "id": "p2-t1",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 416,
+              "y": 48,
+              "width": 25,
+              "height": 21
+            },
+            "confidence": 0.88
+          },
+          {
+            "id": "p2-t2",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 91,
+              "y": 86,
+              "width": 675,
+              "height": 27
+            },
+            "confidence": 0.89
+          },
+          {
+            "id": "p2-t3",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 206,
+              "y": 127,
+              "width": 183,
+              "height": 23
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p2-t4",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 206,
+              "y": 162,
+              "width": 560,
+              "height": 38
+            },
+            "confidence": 0.27
+          },
+          {
+            "id": "p2-t5",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 208,
+              "y": 202,
+              "width": 233,
+              "height": 25
+            },
+            "confidence": 0.26
+          },
+          {
+            "id": "p2-t6",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 152,
+              "y": 246,
+              "width": 612,
+              "height": 25
+            },
+            "confidence": 0.9
+          },
+          {
+            "id": "p2-t7",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 210,
+              "y": 285,
+              "width": 410,
+              "height": 25
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p2-t8",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 209,
+              "y": 319,
+              "width": 556,
+              "height": 28
+            },
+            "confidence": 0.16
+          },
+          {
+            "id": "p2-t9",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 209,
+              "y": 356,
+              "width": 395,
+              "height": 27
+            },
+            "confidence": 0.17
+          },
+          {
+            "id": "p2-t10",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 98,
+              "y": 416,
+              "width": 666,
+              "height": 25
+            },
+            "confidence": 0.9
+          },
+          {
+            "id": "p2-t11",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 211,
+              "y": 454,
+              "width": 258,
+              "height": 24
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p2-t12",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 212,
+              "y": 487,
+              "width": 554,
+              "height": 28
+            },
+            "confidence": 0.3
+          },
+          {
+            "id": "p2-t13",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 213,
+              "y": 527,
+              "width": 103,
+              "height": 23
+            },
+            "confidence": 0.1
+          },
+          {
+            "id": "p2-t14",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 158,
+              "y": 570,
+              "width": 606,
+              "height": 22
+            },
+            "confidence": 0.94
+          },
+          {
+            "id": "p2-t15",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 215,
+              "y": 607,
+              "width": 549,
+              "height": 22
+            },
+            "confidence": 0.93
+          },
+          {
+            "id": "p2-t16",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 217,
+              "y": 645,
+              "width": 420,
+              "height": 19
+            },
+            "confidence": 0.8
+          },
+          {
+            "id": "p2-t17",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 219,
+              "y": 676,
+              "width": 545,
+              "height": 26
+            },
+            "confidence": 0.33
+          },
+          {
+            "id": "p2-t18",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 222,
+              "y": 713,
+              "width": 542,
+              "height": 26
+            },
+            "confidence": 0.16
+          },
+          {
+            "id": "p2-t19",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 225,
+              "y": 755,
+              "width": 36,
+              "height": 20
+            },
+            "confidence": 0.07
+          },
+          {
+            "id": "p2-t20",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 126,
+              "y": 807,
+              "width": 635,
+              "height": 25
+            },
+            "confidence": 0.93
+          },
+          {
+            "id": "p2-t21",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 234,
+              "y": 844,
+              "width": 200,
+              "height": 23
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p2-t22",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 233,
+              "y": 875,
+              "width": 528,
+              "height": 25
+            },
+            "confidence": 0.27
+          },
+          {
+            "id": "p2-t23",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 234,
+              "y": 914,
+              "width": 67,
+              "height": 23
+            },
+            "confidence": 0.24
+          },
+          {
+            "id": "p2-t24",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 185,
+              "y": 952,
+              "width": 574,
+              "height": 25
+            },
+            "confidence": 0.92
+          },
+          {
+            "id": "p2-t25",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 237,
+              "y": 987,
+              "width": 450,
+              "height": 23
+            },
+            "confidence": 0.96
+          },
+          {
+            "id": "p2-t26",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 236,
+              "y": 1019,
+              "width": 520,
+              "height": 25
+            },
+            "confidence": 0.16
+          },
+          {
+            "id": "p2-t27",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 238,
+              "y": 1055,
+              "width": 438,
+              "height": 25
+            },
+            "confidence": 0.35
+          },
+          {
+            "id": "p2-t28",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 152,
+              "y": 1103,
+              "width": 612,
+              "height": 20
+            },
+            "confidence": 0.55
+          },
+          {
+            "id": "p2-t29",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 241,
+              "y": 1143,
+              "width": 367,
+              "height": 24
+            },
+            "confidence": 0.61
+          },
+          {
+            "id": "p2-t30",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 1241,
+              "y": 47,
+              "width": 24,
+              "height": 22
+            },
+            "confidence": 0.68
+          },
+          {
+            "id": "p2-t31",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 918,
+              "y": 87,
+              "width": 675,
+              "height": 30
+            },
+            "confidence": 0.92
+          },
+          {
+            "id": "p2-t32",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 1032,
+              "y": 135,
+              "width": 60,
+              "height": 20
+            },
+            "confidence": 0.95
+          },
+          {
+            "id": "p2-t33",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 1031,
+              "y": 169,
+              "width": 549,
+              "height": 31
+            },
+            "confidence": 0.02
+          },
+          {
+            "id": "p2-t34",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 977,
+              "y": 219,
+              "width": 554,
+              "height": 29
+            },
+            "confidence": 0.86
+          },
+          {
+            "id": "p2-t35",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 1033,
+              "y": 257,
+              "width": 490,
+              "height": 35
+            },
+            "confidence": 0.09
+          },
+          {
+            "id": "p2-t36",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 1213,
+              "y": 327,
+              "width": 83,
+              "height": 12
+            },
+            "confidence": 0.21
+          },
+          {
+            "id": "p2-t37",
+            "kind": "text",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 1112,
+              "y": 1143,
+              "width": 331,
+              "height": 26
+            },
+            "confidence": 0.51
+          },
+          {
+            "id": "image-2",
+            "kind": "image",
+            "pageNumber": 2,
+            "bbox": {
+              "x": 0,
+              "y": 0,
+              "width": 1684,
+              "height": 1191
+            }
+          }
+        ]
+      },
+      "raster": {
+        "pngBytes": 440856,
+        "nonWhiteSampled": 9409,
+        "blank": false
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "image-1",
+      "pageNumber": 1,
+      "path": "images/image-1.webp",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1684,
+        "height": 1191
+      },
+      "width": 1684,
+      "height": 1191,
+      "mimeType": "image/webp"
+    },
+    {
+      "id": "image-2",
+      "pageNumber": 2,
+      "path": "images/image-2.webp",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1684,
+        "height": 1191
+      },
+      "width": 1684,
+      "height": 1191,
+      "mimeType": "image/webp"
+    }
+  ],
+  "tables": [
+    {
+      "id": "table-p1-1",
+      "pageNumber": 1,
+      "path": "tables/table-p1-1.json",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1684,
+        "height": 1191
+      },
+      "rows": 7,
+      "columns": 2,
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "text": "Total No. of Questions : 8] [ Total No. of Printed Pages : 4",
+          "bbox": {
+            "x": 88,
+            "y": 77,
+            "width": 668,
+            "height": 22
+          }
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "text": "2. (a) Explain Principal Component Analysis (PCA) with",
+          "bbox": {
+            "x": 920,
+            "y": 79,
+            "width": 671,
+            "height": 23
+          }
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "text": ". Machine Learning",
+          "bbox": {
+            "x": 14,
+            "y": 390,
+            "width": 507,
+            "height": 22
+          }
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "text": "TERR RATT (MLP) $ SETR oF F9@ ww",
+          "bbox": {
+            "x": 1032,
+            "y": 395,
+            "width": 558,
+            "height": 32
+          }
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "text": "Time : Three Hours",
+          "bbox": {
+            "x": 326,
+            "y": 430,
+            "width": 199,
+            "height": 18
+          }
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "text": "AG STI 5 wr dvriie veer & avi av",
+          "bbox": {
+            "x": 1033,
+            "y": 431,
+            "width": 529,
+            "height": 29
+          }
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "text": "1. (a) Explain Machine Learning. Discuss its scope, limitations",
+          "bbox": {
+            "x": 91,
+            "y": 795,
+            "width": 660,
+            "height": 24
+          }
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "text": "4. (a) Explain Naive Bayes Classifier. State its assumptions,",
+          "bbox": {
+            "x": 926,
+            "y": 792,
+            "width": 663,
+            "height": 26
+          }
+        },
+        {
+          "row": 4,
+          "column": 0,
+          "text": "and real-world applications with suitable examples.",
+          "bbox": {
+            "x": 200,
+            "y": 828,
+            "width": 504,
+            "height": 23
+          }
+        },
+        {
+          "row": 4,
+          "column": 1,
+          "text": "advantages, disadvantages and applications.",
+          "bbox": {
+            "x": 1039,
+            "y": 828,
+            "width": 428,
+            "height": 24
+          }
+        },
+        {
+          "row": 5,
+          "column": 0,
+          "text": "790 aftr & ar F gan) sus aR, West sik sre",
+          "bbox": {
+            "x": 199,
+            "y": 857,
+            "width": 554,
+            "height": 26
+          }
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "text": "Naive Bayes Classifier & aR 3 Sul §9& Warm,",
+          "bbox": {
+            "x": 1038,
+            "y": 858,
+            "width": 551,
+            "height": 29
+          }
+        },
+        {
+          "row": 6,
+          "column": 0,
+          "text": "Learning. Why are they important in model learning?",
+          "bbox": {
+            "x": 200,
+            "y": 997,
+            "width": 523,
+            "height": 23
+          }
+        },
+        {
+          "row": 6,
+          "column": 1,
+          "text": "Fenfafseer sik Rive, Ai & fore $e wie ewan",
+          "bbox": {
+            "x": 1037,
+            "y": 1002,
+            "width": 554,
+            "height": 26
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-p2-1",
+      "pageNumber": 2,
+      "path": "tables/table-p2-1.json",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1684,
+        "height": 1191
+      },
+      "rows": 3,
+      "columns": 2,
+      "cells": [
+        {
+          "row": 0,
+          "column": 0,
+          "text": "31",
+          "bbox": {
+            "x": 416,
+            "y": 48,
+            "width": 25,
+            "height": 21
+          }
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "text": "4)",
+          "bbox": {
+            "x": 1241,
+            "y": 47,
+            "width": 24,
+            "height": 22
+          }
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "text": "5. (a) Whatis Logistic Regression and Linear Regression with",
+          "bbox": {
+            "x": 91,
+            "y": 86,
+            "width": 675,
+            "height": 27
+          }
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "text": "8 (a) Explain Hypothesis Testing in Machine Leaming in",
+          "bbox": {
+            "x": 918,
+            "y": 87,
+            "width": 675,
+            "height": 30
+          }
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "text": "https://www.rgpvonline.com",
+          "bbox": {
+            "x": 241,
+            "y": 1143,
+            "width": 367,
+            "height": 24
+          }
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "text": "https://www.rgpvonline.com -",
+          "bbox": {
+            "x": 1112,
+            "y": 1143,
+            "width": 331,
+            "height": 26
+          }
+        }
+      ]
+    }
+  ]
+}

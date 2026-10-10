@@ -19,6 +19,7 @@ import {
   validateTableNumericsAgainstText,
   validateTableStructure,
 } from "./table-validator";
+import { containsIndicScript, latinScriptRatio } from "./english-text";
 import { safeTrim } from "./string-normalize";
 
 export type EvidenceValidationStatus = "VALID" | "REVIEW_REQUIRED" | "INVALID";
@@ -120,6 +121,23 @@ export function validateAgainstEvidence(
     errors.push("AI_DROPPED_ALL_QUESTIONS");
   }
 
+  // Public PYQ content must be English-only — Hindi leftovers are review signals.
+  for (const q of allQuestions) {
+    for (const sub of q.subQuestions) {
+      if (containsIndicScript(sub.text)) {
+        warnings.push(
+          `AI_HINDI_IN_ENGLISH_OUTPUT:${q.questionNumber}:${sub.label}`
+        );
+      }
+      if (
+        latinScriptRatio(sub.text) < 0.55 &&
+        safeTrim(sub.text).length >= 24
+      ) {
+        warnings.push(`AI_LOW_LATIN_RATIO:${q.questionNumber}:${sub.label}`);
+      }
+    }
+  }
+
   // Adversarial: AI inventing extra question numbers
   const evidenceQ = new Set(
     evidence.questionCandidates
@@ -142,6 +160,40 @@ export function validateAgainstEvidence(
     }
   }
 
+  // Adversarial: AI inventing question wording not grounded in OCR evidence.
+  // When evidence candidates carry substantial Latin text, AI sub-question
+  // wording must mostly reuse those tokens (OCR typos tolerated via prefix).
+  const evidenceLatinBlob = normalizeForGrounding(
+    evidence.questionCandidates
+      .map((c) => [c.text, ...c.subQuestions.map((s) => s.text)].join(" "))
+      .join("\n")
+  );
+  const evidenceTokens = new Set(
+    evidenceLatinBlob.split(" ").filter((w) => w.length >= 3)
+  );
+  if (evidenceTokens.size >= 12 && allQuestions.length > 0) {
+    for (const q of allQuestions) {
+      for (const sub of q.subQuestions) {
+        const hit = ungroundedInventedText(sub.text, evidenceTokens);
+        if (hit) {
+          errors.push(
+            `AI_TEXT_NOT_IN_EVIDENCE:${q.questionNumber}:${sub.label}:${hit}`
+          );
+        }
+      }
+    }
+  }
+
+  // Extra questions beyond evidence candidates → invented content.
+  if (
+    evidence.questionCandidates.length > 0 &&
+    allQuestions.length > evidence.questionCandidates.length + 1
+  ) {
+    errors.push(
+      `AI_EXTRA_QUESTIONS:${allQuestions.length}>${evidence.questionCandidates.length}`
+    );
+  }
+
   let status: EvidenceValidationStatus = "VALID";
   if (errors.length > 0) {
     status = "INVALID";
@@ -150,6 +202,49 @@ export function validateAgainstEvidence(
   }
 
   return { status, errors, warnings };
+}
+
+function normalizeForGrounding(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s./+-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokenInEvidence(token: string, evidenceTokens: Set<string>): boolean {
+  if (evidenceTokens.has(token)) return true;
+  if (token.length < 5) return false;
+  for (const e of evidenceTokens) {
+    if (e.length < 4) continue;
+    const n = Math.min(e.length, token.length) - 1;
+    if (e.slice(0, n) === token.slice(0, n)) return true;
+  }
+  return false;
+}
+
+/**
+ * Flags AI text that is mostly novel relative to OCR evidence tokens.
+ * Returns a sample missing phrase for diagnostics, or null when grounded.
+ */
+function ungroundedInventedText(
+  aiText: string,
+  evidenceTokens: Set<string>
+): string | null {
+  const words = normalizeForGrounding(aiText)
+    .split(" ")
+    .filter((w) => w.length >= 3 && !/^\d+(\.\d+)?$/.test(w));
+  if (words.length < 10) return null;
+  const missing = words.filter((w) => !tokenInEvidence(w, evidenceTokens));
+  if (missing.length / words.length < 0.45) return null;
+  // Prefer a contiguous 4-word novel window when present.
+  for (let i = 0; i <= words.length - 4; i += 1) {
+    const window = words.slice(i, i + 4);
+    if (window.every((w) => !tokenInEvidence(w, evidenceTokens))) {
+      return window.join(" ");
+    }
+  }
+  return missing.slice(0, 4).join(" ");
 }
 
 /**

@@ -1,0 +1,722 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run hyper-learning-tech@0.1.0 test
+npm notice run tsx --test scripts/cms-reliability/phase-1-atomic-writer.test.ts scripts/cms-reliability/phase-2-3-merge-duplicate.test.ts scripts/cms-reliability/phase-4-resume.test.ts scripts/cms-reliability/phase-5-load.test.ts scripts/cms-reliability/logging-contract.test.ts scripts/cms-reliability/pipeline-supervisor.test.ts scripts/cms-reliability/ocr-quality.test.ts scripts/cms-reliability/metadata-extractor.test.ts scripts/cms-reliability/jbig2-raster.test.ts scripts/cms-reliability/merge-trim-crash.test.ts scripts/cms-reliability/nov-2023-validation-uimap.test.ts scripts/cms-reliability/phase1-foundation.test.ts scripts/cms-reliability/phase2-extraction.test.ts scripts/cms-reliability/phase2-hardening.test.ts scripts/cms-reliability/phase2-real-document-acceptance.test.ts scripts/cms-reliability/phase3-acceptance.test.ts scripts/cms-reliability/document-eligibility.test.ts scripts/cms-reliability/history-delete.test.ts scripts/cms-reliability/content-upload-selection.test.ts scripts/cms-reliability/review-data-integrity.test.ts scripts/cms-reliability/al405-jun-2026-golden.test.ts scripts/cms-reliability/pipeline-failure-classes.test.ts
+[Layout] Block detection started { jobId: 'golden-al405-synthetic', pages: 1 }
+[Layout] Page started { jobId: 'golden-al405-synthetic', pageNumber: 1, textBlocks: 17 }
+[Layout] Block detection finished { pageNumber: 1, ms: 15, blocks: 17 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 3, sections: 1 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 5, questions: 8 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 36 }
+[Layout] Document build finished { jobId: 'golden-al405-synthetic', ms: 40, pages: 1 }
+▶ AL-405 English text helpers
+  ✔ strips Devanagari without inventing English (13.0149ms)
+✔ AL-405 English text helpers (21.8711ms)
+▶ AL-405 golden — deterministic structure from exact English OCR
+  ✔ reconstructs Q.1–Q.8 with exact (a)/(b) wording and parents (83.8676ms)
+  ✔ blocks save when OCR confidence is low even if schema would PASS (11.6107ms)
+✔ AL-405 golden — deterministic structure from exact English OCR (96.8901ms)
+[AL405 golden] OCR ms 19383 pages 2
+[Layout] Block detection started { jobId: 'golden_al405_1791612817403', pages: 2 }
+[Layout] Page started { jobId: 'golden_al405_1791612817403', pageNumber: 1, textBlocks: 58 }
+[Layout] Block detection finished { pageNumber: 1, ms: 5, blocks: 58 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 6 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 2, questions: 4 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 2 }
+[Layout] Page finished { pageNumber: 1, ms: 12 }
+[Layout] Page started { jobId: 'golden_al405_1791612817403', pageNumber: 2, textBlocks: 37 }
+[Layout] Block detection finished { pageNumber: 2, ms: 1, blocks: 37 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 1, sections: 5 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 4 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 1 }
+[Layout] Page finished { pageNumber: 2, ms: 4 }
+[Layout] Document build finished { jobId: 'golden_al405_1791612817403', ms: 18, pages: 2 }
+[AL405 golden] exact wording 16 / 16
+▶ AL-405 golden — real scanned PDF OCR (live)
+  ✔ produces 8×(a/b) hierarchy from the real PDF; exact wording asserted honestly (19429.9558ms)
+✔ AL-405 golden — real scanned PDF OCR (live) (19432.4823ms)
+▶ CMS upload file selection helpers
+  ✔ accepts a single PDF and keeps selection (38.5042ms)
+  ✔ replaces multiple PDFs with the last one (one paper) (1.064ms)
+  ✔ accepts 1–5 images (1.9542ms)
+  ✔ rejects more than 5 images (1.8909ms)
+  ✔ rejects mixed PDF + images (1.3973ms)
+  ✔ rejects unsupported types (0.865ms)
+  ✔ validateSelectedFiles requires at least one file (0.5803ms)
+  ✔ snapshots FileList-like arrays before clear (regression) (1.367ms)
+✔ CMS upload file selection helpers (53.9657ms)
+▶ RGPV document eligibility — positive cases
+  ✔ 1. Valid RGPV question paper PASSES (37.6529ms)
+  ✔ 2. Valid RGPV scanned-style weak OCR still PASSES when signals hold (4.2409ms)
+  ✔ 3. Valid RGPV image text (same signals) PASSES (1.8637ms)
+  ✔ 4. RGPV two-column style numbering PASSES (1.0234ms)
+  ✔ 5. RGPV numerical paper PASSES (21.6522ms)
+  ✔ 6. RGPV table-bearing question paper PASSES (2.7252ms)
+  ✔ 7. Weak OCR RGPV paper → PASS or REVIEW_REQUIRED (never silent non-RGPV) (1.7579ms)
+  ✔ official rgpvonline.com watermark confirms RGPV on scanned papers (1.6857ms)
+✔ RGPV document eligibility — positive cases (80.828ms)
+▶ RGPV document eligibility — rejection cases
+  ✔ 8. Other university question paper REJECTED (4.9389ms)
+  ✔ 9. RGPV syllabus REJECTED as non-question-paper (1.7464ms)
+  ✔ 10. RGPV timetable REJECTED (1.8818ms)
+  ✔ 11. RGPV notice/circular REJECTED (0.8739ms)
+  ✔ 12. Random academic PDF without RGPV → REJECT or REVIEW (0.7799ms)
+  ✔ 13. Random image OCR text does not PASS (0.4991ms)
+  ✔ 14. Blank image / empty text → REVIEW_REQUIRED (not silent pass) (0.648ms)
+  ✔ 15. Non-academic content does not PASS (0.7933ms)
+  ✔ 16. Ambiguous low-quality document → REVIEW_REQUIRED (1.0221ms)
+  ✔ 17. Explicit institution conflict REJECTED (0.9563ms)
+✔ RGPV document eligibility — rejection cases (18.6237ms)
+▶ RGPV document eligibility — false positives & injection
+  ✔ 18. Fake comparative 'RGPV' mention does NOT auto-pass (1.5727ms)
+  ✔ 19. Prompt injection inside document does not force PASS (0.5947ms)
+  ✔ 20. Forged save without eligibility / rejected eligibility blocked (0.6095ms)
+  ✔ warning catalog maps eligibility codes (1.7897ms)
+✔ RGPV document eligibility — false positives & injection (5.2639ms)
+▶ assertValidCmsJobId
+  ✔ accepts canonical job ids (4.3309ms)
+  ✔ rejects path traversal and arbitrary paths (5.2806ms)
+✔ assertValidCmsJobId (29.3499ms)
+▶ deleteImportHistory
+  ✔ deletes failed job history and workspace, never content/ (733.7861ms)
+  ✔ deletes LOCAL_SAVED history but preserves authoritative content (1134.0978ms)
+  ✔ blocks deletion of running imports (686.0877ms)
+  ✔ rejects missing job when no orphan artifacts remain (83.616ms)
+  ✔ cleans orphan workspace without queue metadata (138.9375ms)
+  ✔ bulk deletes with per-job results (1945.9834ms)
+✔ deleteImportHistory (4730.7008ms)
+Warning: #instantiateWasm: UnknownErrorException: Unable to load wasm data at: file:///A:/Hyper%20Thinkers/HyperLearningTech/hyper-learning-tech/node_modules/pdfjs-dist/wasm/jbig2.wasm
+▶ JBIG2 PDF rasterization
+  ✔ renders non-blank pixels when pdf.js wasmUrl is set (4507.5814ms)
+✔ JBIG2 PDF rasterization (4517.4493ms)
+▶ Logging contracts
+  ✔ writes SUCCESS block with DurationMs and RecoveryHint (44.7128ms)
+  ✔ writes FAILURE block with stack and resume hint (164.3841ms)
+  ✔ supports merge and resume log names (127.5274ms)
+✔ Logging contracts (422.2118ms)
+▶ AL-402 June 2023 trim crash (exact job artifacts)
+  ✔ does not throw TypeError.trim when existing subject.semester is undefined (65.9161ms)
+  ✔ treats CMS exam label vs repo 'June 2023' as the same sitting (6.3498ms)
+  ✔ merges real syllabus without converting string topics (10.7046ms)
+  ✔ write-path validation accepts merged repo + incoming artifacts (29.6603ms)
+✔ AL-402 June 2023 trim crash (exact job artifacts) (116.3589ms)
+▶ preferNonEmptyString contract
+  ✔ existing=undefined incoming=June → "June" (1.2284ms)
+  ✔ existing=null incoming=June → "June" (0.343ms)
+  ✔ existing= incoming=June → "June" (0.1921ms)
+  ✔ existing=    incoming=June → "June" (0.4176ms)
+  ✔ existing=June incoming=December → "June" (0.408ms)
+  ✔ existing=  June   incoming=undefined → "June" (1.0584ms)
+  ✔ existing=undefined incoming=undefined → "" (0.6685ms)
+  ✔ existing=undefined incoming=   → "" (0.2486ms)
+✔ preferNonEmptyString contract (6.1192ms)
+▶ incoming paper identity is required
+  ✔ throws MERGE_METADATA_INVALID when incoming month is undefined (5.0644ms)
+  ✔ throws MERGE_METADATA_INVALID when incoming exam is empty (0.9467ms)
+  ✔ incoming validation still requires unit; write validation does not (1.4558ms)
+✔ incoming paper identity is required (8.1553ms)
+▶ merge idempotency and paper-scoped IDs
+  ✔ CASE A: re-import of the same paper adds nothing (3.2589ms)
+  ✔ CASE B: a new sitting is appended (1.6615ms)
+  ✔ CASE C: two papers may both use q1 (1.3761ms)
+  ✔ same year+month with different exam labels is one paper (5.6011ms)
+✔ merge idempotency and paper-scoped IDs (12.7428ms)
+▶ attachment merge does not trim undefined paths
+  ✔ matches and merges when one path is missing (1.7112ms)
+✔ attachment merge does not trim undefined paths (2.1635ms)
+▶ metadata extraction and normalization
+  ✔ parses AL/CD-402 style codes without inventing a single branch (40.233ms)
+  ✔ auto-fills high-confidence unique catalog matches (1.1558ms)
+  ✔ never overwrites administrator overrides (1.3394ms)
+  ✔ normalizes semester and branch aliases (1.5241ms)
+  ✔ does not invent metadata when there is no evidence (1.6605ms)
+  ✔ applies medium+ confidence into empty job fields only (2.0226ms)
+✔ metadata extraction and normalization (60.0146ms)
+▶ Nov 2023 INVALID_YEAR / UI mis-map (exact job)
+  ✔ does not let invalid admin year 1984 overwrite Gemini year 2023 (27.6059ms)
+  ✔ applies valid November admin session onto Gemini output (9.2747ms)
+  ✔ marks Validation failed — not Merge — when validationStatus=failed (1.6219ms)
+✔ Nov 2023 INVALID_YEAR / UI mis-map (exact job) (52.5417ms)
+▶ exam session / year contracts
+  ✔ parses November from filename tokens (1.4468ms)
+  ✔ rejects years outside 2000–2099 (0.9853ms)
+✔ exam session / year contracts (3.3685ms)
+▶ OCR quality gates
+  ✔ treats forensic blank raster stats as blank (18.5945ms)
+  ✔ treats a real rendered page as non-blank (0.7143ms)
+  ✔ rejects empty OCR that previously reported SUCCESS (8.7628ms)
+  ✔ accepts healthy OCR text above the documented threshold (2.2523ms)
+  ✔ does not crash sorter when paper.month/exam are missing (writer forensic) (2.2049ms)
+✔ OCR quality gates (60.8085ms)
+▶ Phase 1: Writer-path contracts (offline)
+  ✔ load → duplicate → merge → normalize produces valid ordered JSON (55.6112ms)
+  ✔ rejects incomplete papers before merge handoff (validation) (13.5765ms)
+  ✔ session status maps WRITTEN → Review Ready (1.0853ms)
+✔ Phase 1: Writer-path contracts (offline) (77.133ms)
+▶ Atomic write
+  ✔ writes via temp then rename; destination is valid JSON (66.7004ms)
+  ✔ preserves existing file when temp write is abandoned (simulate crash) (19.574ms)
+✔ Atomic write (87.6398ms)
+▶ Phase 2: Duplicate detection
+  ✔ papersMatch identifies same year+month+exam (3.3096ms)
+  ✔ second import of same paper adds zero papers (16.724ms)
+  ✔ does not duplicate question or attachment IDs on re-import (7.2155ms)
+✔ Phase 2: Duplicate detection (34.2015ms)
+▶ Phase 3: Merge + normalize
+  ✔ merges 2024/2025 into 2022/2023 without overwrite (19.5064ms)
+  ✔ normalize keeps stable year → session order (2.7586ms)
+✔ Phase 3: Merge + normalize (23.4713ms)
+▶ Phase 4: Resume inference
+  ✔ resumes from Gemini when OCR+Layout+Diagrams succeeded (11.2211ms)
+  ✔ resumes from validation when structuring+schema succeeded (0.8395ms)
+  ✔ resumes from writer when validation passed (6.5008ms)
+  ✔ never suggests OCR when OCR summary exists (2.06ms)
+  ✔ blocks writer suggestion path when validation FAILED (caller gate) (3.4226ms)
+✔ Phase 4: Resume inference (30.7247ms)
+▶ Phase 5: Load / concurrency (offline)
+  ✔ handles 10 concurrent independent merges without corruption (9.0118ms)
+  ✔ serial atomic writes under contention leave valid final JSON (906.5042ms)
+  ✔ large synthetic paper (50 questions) merges and sorts deterministically (59.6308ms)
+✔ Phase 5: Load / concurrency (offline) (979.9896ms)
+▶ Phase 1 local mode & production fail-closed
+  ✔ rejects CMS API outside local mode (24.9111ms)
+  ✔ rejects CMS on Vercel even if CMS_LOCAL_MODE=true (2.5888ms)
+  ✔ rejects CMS on Vercel preview (5.8479ms)
+  ✔ allows local-admin when CMS_LOCAL_MODE=true off Vercel (13.1303ms)
+  ✔ Developer Admin entry targets existing /admin/content route (2.6171ms)
+  ✔ Developer Admin visibility follows isLocalCmsMode only (2.2692ms)
+  ✔ accepts optional local service token (8.4197ms)
+  ✔ rejects wrong bearer token in local mode (7.7326ms)
+  ✔ page access works only in local mode (2.7296ms)
+  ✔ assertLocalCmsMode throws outside local mode (1.1945ms)
+  ✔ scheduleImportPipeline refuses outside local mode (1.2399ms)
+  ✔ content write gate defaults off and ignores client-ish values (2.7281ms)
+  ✔ content write cannot enable outside local mode (1.3891ms)
+✔ Phase 1 local mode & production fail-closed (88.7724ms)
+▶ Phase 1 upload limits
+  ✔ parses upload modes (0.7673ms)
+  ✔ rejects image batches above 5 (298.3045ms)
+  ✔ rejects paperCount > 1 (4.0338ms)
+  ✔ rejects merged_pdf mode (25.2512ms)
+  ✔ exposes documented ceilings (1.0996ms)
+  ✔ classifies mixed PDF+images as invalid (33.4967ms)
+  ✔ rejects path-traversal style filenames via sanitize (session accepts file) (9.6851ms)
+  ✔ BulkUploadError carries code (1.1289ms)
+✔ Phase 1 upload limits (397.653ms)
+▶ Phase 1 checksum, policy, resume
+  ✔ checksum is content-based (58.3442ms)
+  ✔ stage execution forbidden code (5.3082ms)
+  ✔ worker restart resume skips completed OCR/layout/diagrams (15.282ms)
+✔ Phase 1 checksum, policy, resume (84.743ms)
+▶ Phase 1 content path & git safety
+  ✔ subject content dir stays under content/rgpv (30.0092ms)
+  ✔ rejects content path traversal (2.7636ms)
+  ✔ manual git commands never suggest force push or hard reset (43.0706ms)
+  ✔ captureGitReview is read-only (smoke) (4378.8551ms)
+✔ Phase 1 content path & git safety (4461.5824ms)
+▶ Phase 2 question numbering
+  ✔ parses Q.1 / Question 1 / 1) variants (15.2407ms)
+  ✔ does not treat numerical content as question numbers (4.3132ms)
+  ✔ parses subquestion labels (2.018ms)
+  ✔ detects gaps and duplicates (6.5978ms)
+  ✔ extracts numerical tokens for evidence (3.9825ms)
+✔ Phase 2 question numbering (46.5358ms)
+▶ Phase 2 reading order
+  ✔ orders single column top-to-bottom (8.1079ms)
+  ✔ handles two-column layout left-then-right (2.6738ms)
+✔ Phase 2 reading order (27.0531ms)
+▶ Phase 2 block classification
+  ✔ classifies Q markers and instructions separately (16.4965ms)
+✔ Phase 2 block classification (19.6036ms)
+▶ Phase 2 paper segmentation
+  ✔ keeps single paper when declaredPaperCount=1 (11.9744ms)
+  ✔ ignores multi-paper declaration and keeps one paper-1 (3.0771ms)
+✔ Phase 2 paper segmentation (16.4159ms)
+▶ Phase 2 evidence + AI hallucination guard
+  ✔ rejects AI inventing numerical values not in evidence (45.0008ms)
+  ✔ accepts matching numerical evidence (7.2286ms)
+  ✔ rejects AI inventing long question wording absent from OCR evidence (4.4933ms)
+  ✔ preserves diagram marker in evidence fallback (5.1215ms)
+  ✔ table cells are preserved in evidence package (6.8096ms)
+✔ Phase 2 evidence + AI hallucination guard (71.5424ms)
+▶ Phase 2 idempotent ordering
+  ✔ sorts candidates by question serial number (13.9124ms)
+✔ Phase 2 idempotent ordering (14.6543ms)
+▶ Phase 2 single-paper segmentation
+  ✔ always yields exactly one paper-1 regardless of Q.1 resets (13.1768ms)
+  ✔ single-page import is HIGH_CONFIDENCE (0.922ms)
+  ✔ empty document is INVALID (1.1101ms)
+✔ Phase 2 single-paper segmentation (19.0963ms)
+▶ Phase 2 single-paper production mapping
+  ✔ maps AcademicDocument to exactly one ProductionPaper (31.8182ms)
+  ✔ ensurePapers never creates paper-2 for one import (4.041ms)
+✔ Phase 2 single-paper production mapping (37.603ms)
+▶ Phase 2 cross-page continuation
+  ✔ merges continuation subquestion onto next page (3.4612ms)
+  ✔ does not merge when next page starts with new Q marker (1.3057ms)
+  ✔ merges explicit continuation wording (4.3746ms)
+  ✔ flags ambiguous low-confidence numbering (1.8999ms)
+  ✔ pipeline evidence merges cross-page candidates (3.7094ms)
+✔ Phase 2 cross-page continuation (16.598ms)
+▶ Phase 2 reading order matrix
+  ✔ two-column left then right (9.9295ms)
+  ✔ uneven column lengths (0.7185ms)
+  ✔ centered header before columns (0.8663ms)
+  ✔ footer-like low blocks do not leapfrog questions (0.8746ms)
+✔ Phase 2 reading order matrix (13.2601ms)
+▶ Phase 2 numerical integrity
+  ✔ preserves high-risk token set (3.1488ms)
+  ✔ rejects AI changing W=16 to W=18 (7.2357ms)
+  ✔ flags OCR confusion suspects without auto-correct (1.3409ms)
+✔ Phase 2 numerical integrity (12.6147ms)
+▶ Phase 2 table validation
+  ✔ accepts consistent 3-column table (1.7084ms)
+  ✔ flags possibly flattened table (0.9331ms)
+  ✔ empty cells require review (0.3588ms)
+✔ Phase 2 table validation (3.5465ms)
+▶ Phase 2 header/footer contamination
+  ✔ detects repeated headers and cleans page text (1.1873ms)
+  ✔ page-number-only pages are flagged (5.9663ms)
+✔ Phase 2 header/footer contamination (8.153ms)
+▶ Phase 2 adversarial Gemini mocks
+  ✔ 1 change 16→18 blocked (7.5663ms)
+  ✔ 2 add missing number blocked (8.5737ms)
+  ✔ 3 remove number flagged (5.5333ms)
+  ✔ 4 change Q7→Q8 flagged (4.2443ms)
+  ✔ 5 invent equation flagged when numbers absent (2.2595ms)
+  ✔ diagram marker preserved only (4.2693ms)
+✔ Phase 2 adversarial Gemini mocks (34.4035ms)
+▶ Phase 2 real production schema golden (structural)
+  ✔ AL-402 production JSON has expected paper/question structure (5.2142ms)
+  ✔ reports: no raw PDF/image fixtures available in repository (1.7219ms)
+✔ Phase 2 real production schema golden (structural) (7.5413ms)
+▶ Phase 2 idempotency
+  ✔ same raw input yields same paperIds and question order (4.2698ms)
+✔ Phase 2 idempotency (5.0318ms)
+[Layout] Block detection started { jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096', pages: 2 }
+[Layout] Page started {
+  jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096',
+  pageNumber: 1,
+  textBlocks: 38
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 20, blocks: 46 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 1, sections: 3 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 5, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 5 }
+[Layout] Page finished { pageNumber: 1, ms: 37 }
+[Layout] Page started {
+  jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096',
+  pageNumber: 2,
+  textBlocks: 37
+}
+[Layout] Block detection finished { pageNumber: 2, ms: 8, blocks: 44 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 1, sections: 4 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 1, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 10 }
+[Layout] Page finished { pageNumber: 2, ms: 22 }
+[Layout] Document build finished { jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096', ms: 62, pages: 2 }
+[Layout] Block detection started { jobId: 'job_0756c2040aee4df09dba44e4a7c28e0b', pages: 3 }
+[Layout] Page started {
+  jobId: 'job_0756c2040aee4df09dba44e4a7c28e0b',
+  pageNumber: 1,
+  textBlocks: 35
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 3, blocks: 45 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 1, sections: 2 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 1, questions: 9 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 8 }
+[Layout] Page started {
+  jobId: 'job_0756c2040aee4df09dba44e4a7c28e0b',
+  pageNumber: 2,
+  textBlocks: 34
+}
+[Layout] Block detection finished { pageNumber: 2, ms: 4, blocks: 37 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 1, sections: 1 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 0 }
+[Layout] Page finished { pageNumber: 2, ms: 8 }
+[Layout] Page started {
+  jobId: 'job_0756c2040aee4df09dba44e4a7c28e0b',
+  pageNumber: 3,
+  textBlocks: 21
+}
+[Layout] Block detection finished { pageNumber: 3, ms: 3, blocks: 22 }
+[Layout] Section detection started { pageNumber: 3 }
+[Layout] Section detection finished { pageNumber: 3, ms: 1, sections: 4 }
+[Layout] Question detection started { pageNumber: 3 }
+[Layout] Question detection finished { pageNumber: 3, ms: 0, questions: 4 }
+[Layout] Structure assembly started { pageNumber: 3 }
+[Layout] Structure assembly finished { pageNumber: 3, ms: 1 }
+[Layout] Page finished { pageNumber: 3, ms: 7 }
+[Layout] Document build finished { jobId: 'job_0756c2040aee4df09dba44e4a7c28e0b', ms: 23, pages: 3 }
+[Layout] Block detection started { jobId: 'job_11e88aa0499747b08cc8e8c6003f4d03', pages: 1 }
+[Layout] Page started {
+  jobId: 'job_11e88aa0499747b08cc8e8c6003f4d03',
+  pageNumber: 1,
+  textBlocks: 27
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 1, blocks: 29 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 4 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 4 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 5 }
+[Layout] Document build finished { jobId: 'job_11e88aa0499747b08cc8e8c6003f4d03', ms: 6, pages: 1 }
+[Layout] Block detection started { jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0', pages: 4 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 1,
+  textBlocks: 27
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 1, blocks: 28 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 4 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 3 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 1 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 2,
+  textBlocks: 25
+}
+[Layout] Block detection finished { pageNumber: 2, ms: 1, blocks: 26 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 0, sections: 3 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 6 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 0 }
+[Layout] Page finished { pageNumber: 2, ms: 2 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 3,
+  textBlocks: 25
+}
+[Layout] Block detection finished { pageNumber: 3, ms: 3, blocks: 25 }
+[Layout] Section detection started { pageNumber: 3 }
+[Layout] Section detection finished { pageNumber: 3, ms: 0, sections: 2 }
+[Layout] Question detection started { pageNumber: 3 }
+[Layout] Question detection finished { pageNumber: 3, ms: 1, questions: 3 }
+[Layout] Structure assembly started { pageNumber: 3 }
+[Layout] Structure assembly finished { pageNumber: 3, ms: 1 }
+[Layout] Page finished { pageNumber: 3, ms: 5 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 4,
+  textBlocks: 13
+}
+[Layout] Block detection finished { pageNumber: 4, ms: 1, blocks: 13 }
+[Layout] Section detection started { pageNumber: 4 }
+[Layout] Section detection finished { pageNumber: 4, ms: 0, sections: 1 }
+[Layout] Question detection started { pageNumber: 4 }
+[Layout] Question detection finished { pageNumber: 4, ms: 0, questions: 2 }
+[Layout] Structure assembly started { pageNumber: 4 }
+[Layout] Structure assembly finished { pageNumber: 4, ms: 0 }
+[Layout] Page finished { pageNumber: 4, ms: 2 }
+[Layout] Document build finished { jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0', ms: 10, pages: 4 }
+▶ Phase 2 real fixture inventory
+  ✔ lists fixtures without fabricating paths (35.4526ms)
+  ✔ reports availability honestly (11.9831ms)
+✔ Phase 2 real fixture inventory (50.3103ms)
+▶ Phase 2 real-document structural replay
+  ✔ replay native-text-al402-sample from stored OCR when available (1.2748ms)
+  ✔ replay jbig2-al-402-committed from stored OCR when available (6.1806ms)
+  ✔ replay al402-jun-2025 from stored OCR when available (124.9643ms)
+  ✔ replay al402-nov-2023 from stored OCR when available (48.6891ms)
+  ✔ replay cy301-page1-image from stored OCR when available (16.6935ms)
+  ✔ replay cy301-multi-image-one-paper from stored OCR when available (0.9751ms)
+  ✔ replay dec2023-4page-single-paper from stored OCR when available (26.3279ms)
+  ✔ replay synthetic-5page-scanned from stored OCR when available (0.4024ms)
+✔ Phase 2 real-document structural replay (230.4961ms)
+▶ Phase 2 real-document live OCR E2E
+  ✔ has at least one live OCR target or reports missing (1.0728ms)
+[Layout] Block detection started { jobId: 'accept_jbig2-al-402-committed', pages: 2 }
+[Layout] Page started {
+  jobId: 'accept_jbig2-al-402-committed',
+  pageNumber: 1,
+  textBlocks: 61
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 5, blocks: 62 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 11 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 6 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 2 }
+[Layout] Page finished { pageNumber: 1, ms: 10 }
+[Layout] Page started {
+  jobId: 'accept_jbig2-al-402-committed',
+  pageNumber: 2,
+  textBlocks: 33
+}
+[Layout] Block detection finished { pageNumber: 2, ms: 1, blocks: 33 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 0, sections: 3 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 6 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 1 }
+[Layout] Page finished { pageNumber: 2, ms: 3 }
+[Layout] Document build finished { jobId: 'accept_jbig2-al-402-committed', ms: 15, pages: 2 }
+  ✔ live OCR → evidence → schema: jbig2-al-402-committed (17410.4234ms)
+[Layout] Block detection started { jobId: 'accept_al402-jun-2025', pages: 2 }
+[Layout] Page started { jobId: 'accept_al402-jun-2025', pageNumber: 1, textBlocks: 53 }
+[Layout] Block detection finished { pageNumber: 1, ms: 2, blocks: 55 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 12 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 8 }
+[Layout] Page started { jobId: 'accept_al402-jun-2025', pageNumber: 2, textBlocks: 52 }
+[Layout] Block detection finished { pageNumber: 2, ms: 3, blocks: 53 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 0, sections: 11 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 1, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 0 }
+[Layout] Page finished { pageNumber: 2, ms: 7 }
+[Layout] Document build finished { jobId: 'accept_al402-jun-2025', ms: 15, pages: 2 }
+  ✔ live OCR → evidence → schema: al402-jun-2025 (8173.6675ms)
+Warning: Invalid resolution 25 dpi. Using 70 instead.
+[Layout] Block detection started { jobId: 'accept_cy301-page1-image', pages: 1 }
+[Layout] Page started { jobId: 'accept_cy301-page1-image', pageNumber: 1, textBlocks: 27 }
+[Layout] Block detection finished { pageNumber: 1, ms: 1, blocks: 29 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 5 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 3 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 3 }
+[Layout] Document build finished { jobId: 'accept_cy301-page1-image', ms: 3, pages: 1 }
+[Layout] Block detection started { jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096', pages: 2 }
+[Layout] Page started {
+  jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096',
+  pageNumber: 1,
+  textBlocks: 38
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 2, blocks: 46 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 3 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 1, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 4 }
+[Layout] Page started {
+  jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096',
+  pageNumber: 2,
+  textBlocks: 37
+}
+[Layout] Block detection finished { pageNumber: 2, ms: 1, blocks: 44 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 0, sections: 4 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 5 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 0 }
+[Layout] Page finished { pageNumber: 2, ms: 2 }
+[Layout] Document build finished { jobId: 'job_2b2e0be4fd5a4aa18a20cd4495ae8096', ms: 6, pages: 2 }
+[Layout] Block detection started { jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0', pages: 4 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 1,
+  textBlocks: 27
+}
+[Layout] Block detection finished { pageNumber: 1, ms: 1, blocks: 28 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 4 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 3 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 1 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 2,
+  textBlocks: 25
+}
+[Layout] Block detection finished { pageNumber: 2, ms: 1, blocks: 26 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 0, sections: 3 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 6 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 1 }
+[Layout] Page finished { pageNumber: 2, ms: 2 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 3,
+  textBlocks: 25
+}
+[Layout] Block detection finished { pageNumber: 3, ms: 0, blocks: 25 }
+[Layout] Section detection started { pageNumber: 3 }
+[Layout] Section detection finished { pageNumber: 3, ms: 0, sections: 2 }
+[Layout] Question detection started { pageNumber: 3 }
+[Layout] Question detection finished { pageNumber: 3, ms: 0, questions: 3 }
+[Layout] Structure assembly started { pageNumber: 3 }
+[Layout] Structure assembly finished { pageNumber: 3, ms: 0 }
+[Layout] Page finished { pageNumber: 3, ms: 0 }
+[Layout] Page started {
+  jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0',
+  pageNumber: 4,
+  textBlocks: 13
+}
+[Layout] Block detection finished { pageNumber: 4, ms: 0, blocks: 13 }
+[Layout] Section detection started { pageNumber: 4 }
+[Layout] Section detection finished { pageNumber: 4, ms: 0, sections: 1 }
+[Layout] Question detection started { pageNumber: 4 }
+[Layout] Question detection finished { pageNumber: 4, ms: 0, questions: 2 }
+[Layout] Structure assembly started { pageNumber: 4 }
+[Layout] Structure assembly finished { pageNumber: 4, ms: 0 }
+[Layout] Page finished { pageNumber: 4, ms: 0 }
+[Layout] Document build finished { jobId: 'job_01cebe9d057e409eb66dd4b7fbfcc2a0', ms: 4, pages: 4 }
+  ✔ live OCR → evidence → schema: cy301-page1-image (2723.3061ms)
+✔ Phase 2 real-document live OCR E2E (28313.1433ms)
+▶ Phase 2 real-document golden structural invariants
+  ✔ AL-402 Jun 2025: expects multiple numbered questions across 2 pages (22.1451ms)
+  ✔ Dec 2023 4-page: single paper identity, multi-page source mapping (13.4037ms)
+  ✔ scope excludes multi-paper categories from registry (3.0497ms)
+✔ Phase 2 real-document golden structural invariants (39.2344ms)
+▶ Phase 2 save-gate contracts (deterministic)
+  ✔ INVALID evidence status is treated as blocking by local-save policy (1.3008ms)
+✔ Phase 2 save-gate contracts (deterministic) (1.5697ms)
+▶ Phase 3 duplicate paper detection
+  ✔ classifies NEW when no overlapping exam identity (11.1318ms)
+  ✔ classifies DUPLICATE for exact content re-import (0.989ms)
+  ✔ classifies POSSIBLE_DUPLICATE for same identity different content (14.4788ms)
+  ✔ produces stable content hashes (3.6839ms)
+✔ Phase 3 duplicate paper detection (34.4146ms)
+▶ Phase 3 warning catalog
+  ✔ categorizes OCR and numeric codes (3.6215ms)
+  ✔ treats merged PDF / limits as critical (0.7974ms)
+  ✔ summarizes counts without duplicates (1.7887ms)
+✔ Phase 3 warning catalog (7.2753ms)
+▶ Phase 3 content quality indicators
+  ✔ builds objective indicators from measured inputs (6.7551ms)
+✔ Phase 3 content quality indicators (13.2249ms)
+▶ Phase 3 one-paper contract helpers
+  ✔ incoming fixture always has papers.length === 1 for single-paper fixtures (4.3642ms)
+✔ Phase 3 one-paper contract helpers (6.0766ms)
+[Layout] Block detection started { jobId: 'failure-class', pages: 2 }
+[Layout] Page started { jobId: 'failure-class', pageNumber: 1, textBlocks: 1 }
+[Layout] Block detection finished { pageNumber: 1, ms: 7, blocks: 1 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 1 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 0, questions: 1 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 1 }
+[Layout] Page finished { pageNumber: 1, ms: 9 }
+[Layout] Page started { jobId: 'failure-class', pageNumber: 2, textBlocks: 1 }
+[Layout] Block detection finished { pageNumber: 2, ms: 2, blocks: 1 }
+[Layout] Section detection started { pageNumber: 2 }
+[Layout] Section detection finished { pageNumber: 2, ms: 1, sections: 1 }
+[Layout] Question detection started { pageNumber: 2 }
+[Layout] Question detection finished { pageNumber: 2, ms: 0, questions: 1 }
+[Layout] Structure assembly started { pageNumber: 2 }
+[Layout] Structure assembly finished { pageNumber: 2, ms: 0 }
+[Layout] Page finished { pageNumber: 2, ms: 9 }
+[Layout] Document build finished { jobId: 'failure-class', ms: 23, pages: 2 }
+[Layout] Block detection started { jobId: 'failure-class', pages: 1 }
+[Layout] Page started { jobId: 'failure-class', pageNumber: 1, textBlocks: 3 }
+[Layout] Block detection finished { pageNumber: 1, ms: 5, blocks: 3 }
+[Layout] Section detection started { pageNumber: 1 }
+[Layout] Section detection finished { pageNumber: 1, ms: 0, sections: 1 }
+[Layout] Question detection started { pageNumber: 1 }
+[Layout] Question detection finished { pageNumber: 1, ms: 1, questions: 3 }
+[Layout] Structure assembly started { pageNumber: 1 }
+[Layout] Structure assembly finished { pageNumber: 1, ms: 0 }
+[Layout] Page finished { pageNumber: 1, ms: 6 }
+[Layout] Document build finished { jobId: 'failure-class', ms: 6, pages: 1 }
+▶ Failure class: English/Hindi separation
+  ✔ keeps English and drops Devanagari from mixed OCR (12.6121ms)
+✔ Failure class: English/Hindi separation (19.2056ms)
+▶ Failure class: main vs sub-question marker discrimination
+  ✔ treats (a)/(b) as sub labels and 1./Q.1 as main (13.424ms)
+✔ Failure class: main vs sub-question marker discrimination (14.0145ms)
+▶ Failure class: two-column reading order without 50% blind split
+  ✔ reads left column then right for landscape two-column page (5.5747ms)
+✔ Failure class: two-column reading order without 50% blind split (6.2102ms)
+▶ Failure class: cross-column body must not steal open sub
+  ✔ keeps left-column (b) continuation when right-column junk intervenes (23.329ms)
+✔ Failure class: cross-column body must not steal open sub (23.845ms)
+▶ Failure class: multi-page continuation provenance
+  ✔ keeps page-spanning question text on one candidate with source pages (60.8392ms)
+✔ Failure class: multi-page continuation provenance (61.905ms)
+▶ Failure class: no silent discard of source question blocks
+  ✔ surfaces every numbered opener as a candidate (18.1518ms)
+✔ Failure class: no silent discard of source question blocks (31.1699ms)
+▶ Failure class: extraction-quality gate vs schema PASS
+  ✔ blocks save on duplicate numbers even when schema would PASS (14.1879ms)
+  ✔ is idempotent — repeated assessment does not accumulate codes (1.3949ms)
+✔ Failure class: extraction-quality gate vs schema PASS (16.3473ms)
+▶ Failure class: median text height unused import guard
+  ✔ computeMedianTextHeight is stable for empty/short arrays (1.5826ms)
+✔ Failure class: median text height unused import guard (1.9385ms)
+▶ pipeline supervisor contracts
+  ✔ infers resume at structuring when diagrams done (5.7881ms)
+  ✔ infers resume at validation when schema summary exists (5.911ms)
+  ✔ maps TIMEOUT to Failed session status (0.7107ms)
+  ✔ maps CANCELLED to Failed session status (4.5294ms)
+  ✔ exposes stage timeouts (0.8252ms)
+✔ pipeline supervisor contracts (21.0411ms)
+▶ extracted vs merged data separation
+  ✔ extracted preview contains exactly one paper (8.2815ms)
+  ✔ June 2026 import cannot inherit questions from 2022–2025 (8.2546ms)
+  ✔ merged save candidate preserves history and adds new paper once (13.0355ms)
+  ✔ does not mutate existing pyqs object by reference (3.4172ms)
+✔ extracted vs merged data separation (47.4114ms)
+▶ PYQ-only syllabus isolation
+  ✔ merge returns null syllabus when no incoming syllabus (1.4372ms)
+  ✔ empty syllabus diff helper has zero changes (20.8662ms)
+✔ PYQ-only syllabus isolation (23.3746ms)
+▶ extraction quality gates
+  ✔ corrupted extraction is BLOCKED even when schema would PASS (23.4414ms)
+  ✔ structure-sound extraction with OCR chrome is NEEDS_REVIEW not READY (10.7842ms)
+  ✔ legitimate incomplete formats without severe gaps are not hard-blocked for count alone (1.8332ms)
+  ✔ parses declared question total from OCR banner (11.0989ms)
+  ✔ repeated assessment is stable (no accumulating warnings) (7.4011ms)
+✔ extraction quality gates (57.5305ms)
+▶ question marker splitting from packed OCR
+  ✔ splits mid-blob 2. (a) / 3. (a) markers without inventing text (5.7298ms)
+  ✔ keeps 2. (a) intact and splits trailing (b) on instruction bleed lines (18.4423ms)
+  ✔ pairs cross-column (b) parts by geometry, not raw scan order (27.4189ms)
+✔ question marker splitting from packed OCR (52.9263ms)
+ℹ tests 230
+ℹ suites 68
+ℹ pass 230
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38567.1146

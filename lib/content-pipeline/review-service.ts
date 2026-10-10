@@ -8,7 +8,18 @@ import {
   CMS_REVIEW_STATE_FILENAME,
   CMS_SAVE_REPORT_FILENAME,
 } from "./constants";
-import { diffPyqsJson, diffSyllabusJson } from "./diff-service";
+import {
+  buildContentQualityIndicators,
+  inferCheckStatuses,
+} from "./content-quality-indicators";
+import { diffPyqsJson, diffSyllabusJson, emptyJsonDiff } from "./diff-service";
+import { detectDuplicatePapers } from "./duplicate-paper-detector";
+import { readDocumentEligibility } from "./document-eligibility-service";
+import { assessExtractionQuality } from "./extraction-quality";
+import {
+  ensureImportDiagnostics,
+  loadImportDiagnostics,
+} from "./import-diagnostics";
 import { readJobDiagramManifest } from "./writer-service";
 import { getJob, updateJobStatus } from "./import-queue";
 import { readJsonFile } from "./json-reader";
@@ -34,6 +45,7 @@ import type {
 import { getJobDirectory } from "./temp-storage";
 import type { ImportJobRecord, ImportStatus } from "./types";
 import { readValidationReport } from "./validation-service";
+import { summarizeWarnings } from "./warning-catalog";
 import { getSubjectContentDir, readWriteReport } from "./writer-service";
 
 export class ReviewProcessingError extends Error {
@@ -164,8 +176,21 @@ export async function getReviewPackage(jobId: string): Promise<ReviewPackage> {
     }>(path.join(jobDir, "academic-document.json")),
   ]);
 
-  const effectivePendingPyqs = pendingPyqs ?? productionPyqs;
-  const effectivePendingSyllabus = pendingSyllabus ?? productionSyllabus;
+  const pyqOnlyImport = metadata.type === "pyq" && !productionSyllabus;
+
+  // Extracted one-paper preview (never the merged subject history).
+  const extractedPyqs = productionPyqs ? structuredClone(productionPyqs) : null;
+  // Merged save candidate — may include historical papers.
+  const mergedSaveCandidate = pendingPyqs
+    ? structuredClone(pendingPyqs)
+    : extractedPyqs
+      ? structuredClone(extractedPyqs)
+      : null;
+
+  // PYQ-only: never treat existing/sorted syllabus as an import pending artifact.
+  const effectivePendingSyllabus = pyqOnlyImport
+    ? null
+    : (pendingSyllabus ?? productionSyllabus);
 
   const extractionEvidence = buildExtractionEvidenceSummary(
     evidenceFile,
@@ -173,23 +198,137 @@ export async function getReviewPackage(jobId: string): Promise<ReviewPackage> {
     academicDoc
   );
 
+  const extractedAsPyqs = extractedPyqs as ProductionPyqsJson | null;
+  const existingAsPyqs = existingPyqs
+    ? (structuredClone(existingPyqs) as ProductionPyqsJson)
+    : null;
+  // Duplicate detection compares extracted paper vs authoritative content.
+  const duplicateDetection = detectDuplicatePapers(
+    existingAsPyqs,
+    extractedAsPyqs
+  );
+
+  const documentEligibility = await readDocumentEligibility(jobId);
+
+  const rawWarnings = [
+    ...(extractionEvidence?.warnings ?? []),
+    ...(extractionEvidence?.errors ?? []),
+    ...(validationReport?.warnings?.map((w) => `${w.code}: ${w.message}`) ??
+      []),
+    ...(validationReport?.errors?.map((e) => `${e.code}: ${e.message}`) ?? []),
+    ...(duplicateDetection.requiresConfirmation
+      ? [
+          duplicateDetection.isExactDuplicate
+            ? `DUPLICATE_PAPER: ${duplicateDetection.summary}`
+            : `POSSIBLE_DUPLICATE: ${duplicateDetection.summary}`,
+        ]
+      : []),
+    ...(documentEligibility &&
+    documentEligibility.status !== "DOCUMENT_ELIGIBILITY_PASSED"
+      ? documentEligibility.codes.map(
+          (c) => `${c}: ${documentEligibility.summary}`
+        )
+      : []),
+  ];
+  const warningSummary = summarizeWarnings(rawWarnings);
+  const checkStatuses = inferCheckStatuses(warningSummary);
+
+  const confidences =
+    extractionEvidence?.questions
+      .map((q) => q.confidence)
+      .filter((c) => c > 0) ?? [];
+  const ocrConfidenceAvg =
+    confidences.length > 0
+      ? confidences.reduce((a, b) => a + b, 0) / confidences.length
+      : null;
+
+  const questionsWithPages =
+    extractionEvidence?.questions.filter((q) => q.sourcePages.length > 0)
+      .length ?? 0;
+
+  const qualityIndicators = buildContentQualityIndicators({
+    questionCount: extractionEvidence?.questionCount ?? 0,
+    paperCount:
+      extractionEvidence?.paperCount ?? extractedAsPyqs?.papers.length ?? 0,
+    pageCount: extractionEvidence?.pageCount ?? 0,
+    questionsWithPages,
+    ocrConfidenceAvg,
+    warningSummary,
+    ...checkStatuses,
+    duplicate: duplicateDetection,
+    reviewDecision: review?.decision ?? null,
+  });
+
+  const ocrTexts: string[] = [];
+  for (const q of extractionEvidence?.questions ?? []) {
+    if (q.textPreview) ocrTexts.push(q.textPreview);
+  }
+  if (extractedAsPyqs) {
+    for (const paper of extractedAsPyqs.papers) {
+      for (const q of paper.questions ?? []) {
+        for (const sub of q.subQuestions ?? []) {
+          if (sub.text) ocrTexts.push(sub.text);
+        }
+      }
+    }
+  }
+
+  const extractionQuality = assessExtractionQuality({
+    extractedPyqs: extractedAsPyqs,
+    warningSummary,
+    validationStatus: validationReport?.status ?? null,
+    evidenceStatus: extractionEvidence?.status ?? null,
+    ocrTexts,
+    ocrConfidencePercent: qualityIndicators.ocrConfidencePercent,
+  });
+
+  const diagnostics =
+    (await loadImportDiagnostics(jobId)) ??
+    (await ensureImportDiagnostics(jobId, {
+      warningCount: warningSummary.counts.total,
+      errorCount: extractionEvidence?.errors.length ?? 0,
+      pageCount: extractionEvidence?.pageCount ?? null,
+      finalState: metadata.stage,
+    }));
+
+  const pyqsDiff = diffPyqsJson(existingAsPyqs, mergedSaveCandidate);
+  const syllabusDiff = pyqOnlyImport
+    ? emptyJsonDiff("syllabus.json (unchanged — PYQ-only import)")
+    : diffSyllabusJson(
+        existingSyllabus ? structuredClone(existingSyllabus) : null,
+        effectivePendingSyllabus
+          ? structuredClone(effectivePendingSyllabus)
+          : null
+      );
+
   return {
     jobId,
     stage: metadata.stage,
     status: metadata.status,
+    jobType: metadata.type,
     contentDir: contentDir ? toRepoRelative(contentDir) : null,
-    existingPyqs,
-    existingSyllabus,
-    pendingPyqs: effectivePendingPyqs,
-    pendingSyllabus: effectivePendingSyllabus,
-    productionPyqs,
-    productionSyllabus,
+    existingPyqs: existingAsPyqs,
+    existingSyllabus: existingSyllabus
+      ? structuredClone(existingSyllabus)
+      : null,
+    pendingPyqs: mergedSaveCandidate,
+    pendingSyllabus: effectivePendingSyllabus
+      ? structuredClone(effectivePendingSyllabus)
+      : null,
+    productionPyqs: extractedPyqs,
+    productionSyllabus: productionSyllabus
+      ? structuredClone(productionSyllabus)
+      : null,
+    extractedPyqs,
+    mergedSaveCandidate,
+    pyqOnlyImport,
+    extractionQuality,
     validationReport,
     writeReport,
     diagramManifest,
     saveReport,
-    pyqsDiff: diffPyqsJson(existingPyqs, effectivePendingPyqs),
-    syllabusDiff: diffSyllabusJson(existingSyllabus, effectivePendingSyllabus),
+    pyqsDiff,
+    syllabusDiff,
     review,
     extractedMetadata: metadata.extractedMetadata ?? null,
     branch: metadata.branch,
@@ -198,6 +337,11 @@ export async function getReviewPackage(jobId: string): Promise<ReviewPackage> {
     year: metadata.year,
     examSession: metadata.examSession,
     extractionEvidence,
+    duplicateDetection,
+    warningSummary,
+    qualityIndicators,
+    diagnostics,
+    documentEligibility,
   };
 }
 
@@ -485,6 +629,53 @@ export async function submitReviewDecision(input: {
 
   const decidedAt = new Date().toISOString();
   const pkg = await getReviewPackage(input.jobId);
+
+  if (input.decision === "approve") {
+    const eligibility = await readDocumentEligibility(input.jobId);
+    if (
+      !eligibility ||
+      eligibility.status === "DOCUMENT_ELIGIBILITY_REJECTED"
+    ) {
+      throw new ReviewProcessingError(
+        eligibility?.codes[0] ?? "DOCUMENT_ELIGIBILITY_REJECTED",
+        eligibility?.summary ??
+          "Cannot approve: document eligibility is missing or rejected."
+      );
+    }
+
+    const evidenceStatus = pkg.extractionEvidence?.status;
+    if (
+      evidenceStatus === "INVALID" ||
+      pkg.validationReport?.status === "FAILED"
+    ) {
+      throw new ReviewProcessingError(
+        "CANNOT_APPROVE_INVALID",
+        "Cannot approve: extraction or schema validation is INVALID/FAILED. Fix issues or reject the import."
+      );
+    }
+    if ((pkg.qualityIndicators?.criticalCount ?? 0) > 0) {
+      throw new ReviewProcessingError(
+        "CANNOT_APPROVE_CRITICAL",
+        `Cannot approve while ${pkg.qualityIndicators?.criticalCount} critical warning(s) remain.`
+      );
+    }
+    // ONE_PAPER applies to the extracted import, not the merged save candidate.
+    const extractedLen = (
+      (pkg.extractedPyqs ?? pkg.productionPyqs) as ProductionPyqsJson | null
+    )?.papers?.length;
+    if (extractedLen != null && extractedLen !== 1) {
+      throw new ReviewProcessingError(
+        "ONE_PAPER_REQUIRED",
+        `Cannot approve: extracted preview must contain exactly one paper (got ${extractedLen}).`
+      );
+    }
+    if (pkg.extractionQuality && !pkg.extractionQuality.canApprove) {
+      throw new ReviewProcessingError(
+        pkg.extractionQuality.codes[0] ?? "EXTRACTION_QUALITY_BLOCKED",
+        `Cannot approve: ${pkg.extractionQuality.reasons.join(" ")}`
+      );
+    }
+  }
 
   const review: ReviewSummary = {
     jobId: input.jobId,
