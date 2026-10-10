@@ -32,20 +32,20 @@ flowchart LR
 
 ## 2. Authoritative content boundary
 
-| Path | Role |
-|---|---|
-| `content/rgpv/<branch>/semester-<n>/<subject>/pyqs.json` | Published PYQ papers for the subject |
-| `…/syllabus.json` | Syllabus |
-| Subject diagram folders under content | Attachments after successful diagram write |
+| Path                                                     | Role                                       |
+| -------------------------------------------------------- | ------------------------------------------ |
+| `content/rgpv/<branch>/semester-<n>/<subject>/pyqs.json` | Published PYQ papers for the subject       |
+| `…/syllabus.json`                                        | Syllabus                                   |
+| Subject diagram folders under content                    | Attachments after successful diagram write |
 
 **AL-405 snapshot at audit:** `content/rgpv/aiml/semester-4/al-405/pyqs.json` contains **6** papers (2022–2025). No June 2026 paper was present. Syllabus file exists separately.
 
 Writes require:
 
-1. Local CMS mode  
-2. `CMS_ALLOW_CONTENT_WRITE=true`  
-3. Passing eligibility + extraction quality `canSave` (+ duplicate confirmation when required)  
-4. Explicit save API after approval  
+1. Local CMS mode
+2. `CMS_ALLOW_CONTENT_WRITE=true`
+3. Passing eligibility + extraction quality `canSave` (+ duplicate confirmation when required)
+4. Explicit save API after approval
 
 ## 3. Job workspace layout
 
@@ -77,10 +77,10 @@ Filenames centralized in `constants.ts`.
 
 ## 4. Queue and history
 
-| Store | Contents |
-|---|---|
-| `.cms/queue/queue.json` | Job references / queue index |
-| `.cms/history/index.json` | History index |
+| Store                       | Contents                                                               |
+| --------------------------- | ---------------------------------------------------------------------- |
+| `.cms/queue/queue.json`     | Job references / queue index                                           |
+| `.cms/history/index.json`   | History index                                                          |
 | `.cms/history/<jobId>.json` | Per-import summary (`questionsImported`, status, timings, warnings, …) |
 
 History rows for the same PDF are **independent**. Example AL-405 `questionsImported` values observed: 4, 6, 8, 10.
@@ -89,53 +89,53 @@ History rows for the same PDF are **independent**. Example AL-405 `questionsImpo
 
 `review-service.getReviewPackage` distinguishes:
 
-| Field | Meaning |
-|---|---|
-| `extractedPyqs` / `productionPyqs` | One-paper extraction preview (`production-pyqs.json`) |
-| `mergedSaveCandidate` / `pendingPyqs` | Existing authoritative papers + incoming (merge) |
-| `existingPyqs` | Current `content/…/pyqs.json` read-only baseline |
+| Field                                 | Meaning                                               |
+| ------------------------------------- | ----------------------------------------------------- |
+| `extractedPyqs` / `productionPyqs`    | One-paper extraction preview (`production-pyqs.json`) |
+| `mergedSaveCandidate` / `pendingPyqs` | Existing authoritative papers + incoming (merge)      |
+| `existingPyqs`                        | Current `content/…/pyqs.json` read-only baseline      |
 
 UI must not present merged history as “newly extracted.” Code comments and review-data-integrity tests encode this invariant; **UI correctness for every screen: PARTIALLY VERIFIED**.
 
 ## 6. Checkpointing and resume
 
-- `stage-checkpoint.ts`: begin / heartbeat / finish per supervised stage  
-- Supervisor skips completed stages when resumable  
-- Eligibility skip uses persisted eligibility artifact  
+- `stage-checkpoint.ts`: begin / heartbeat / finish per supervised stage
+- Supervisor skips completed stages when resumable
+- Eligibility skip uses persisted eligibility artifact
 
 **Limitation:** Completeness of a checkpoint does not prove the artifact matches the **current code version**. Resuming old jobs after large uncommitted changes is risky.
 
 ## 7. Duplicate handling
 
-- `duplicate-paper-detector.ts` classifies exact/possible duplicates against existing content  
-- Save path can require `confirmDuplicateSave`  
-- Re-uploading the same file still creates a **new** job + history entry  
+- `duplicate-paper-detector.ts` classifies exact/possible duplicates against existing content
+- Save path can require `confirmDuplicateSave`
+- Re-uploading the same file still creates a **new** job + history entry
 
 ## 8. Recovery APIs / services
 
 Present in tree:
 
-- `app/api/cms/recovery`  
-- `app/api/cms/rebuild`  
-- `job-recovery` / failure-handler patterns (see reliability audit)  
+- `app/api/cms/recovery`
+- `app/api/cms/rebuild`
+- `job-recovery` / failure-handler patterns (see reliability audit)
 - `history-delete-service.ts` (delete history entries — **dangerous if misused**)
 
 Exact recovery success rates: **NOT VERIFIED** in this audit. Inspect debug endpoint `GET /api/cms/debug/pipeline/[jobId]` before trusting resume.
 
 ## 9. Temporary / probe artifacts
 
-| Location | Role |
-|---|---|
+| Location                            | Role                                                    |
+| ----------------------------------- | ------------------------------------------------------- |
 | `scripts/cms-reliability/.tmp-ocr/` | Golden/live OCR dumps, suite logs, acceptance summaries |
-| Job `pages/` / `images/` | Rasterized page WebPs/PNGs |
+| Job `pages/` / `images/`            | Rasterized page WebPs/PNGs                              |
 
 These are **not** authoritative public content.
 
 ## 10. Git publishing
 
-- CMS Git API: read-only snapshot (`git-review.ts`)  
-- POST mutations blocked  
-- Maintainer must run `git add/commit/push` manually outside CMS  
+- CMS Git API: read-only snapshot (`git-review.ts`)
+- POST mutations blocked
+- Maintainer must run `git add/commit/push` manually outside CMS
 
 Working tree at audit already contains many modified/untracked pipeline files **plus** this documentation when created — capture `git status` before any commit decisions.
 

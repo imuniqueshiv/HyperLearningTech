@@ -41,28 +41,28 @@ Intentionally **not** rewritten:
 
 ## 3. Implemented changes
 
-| Module | Role |
-|--------|------|
-| `lib/content-pipeline/duplicate-paper-detector.ts` | Identity + content-hash duplicate classification |
-| `lib/content-pipeline/warning-catalog.ts` | Warning code → category/severity |
-| `lib/content-pipeline/content-quality-indicators.ts` | Objective review metrics |
-| `lib/content-pipeline/import-diagnostics.ts` | Aggregate stage timings → diagnostics JSON |
-| `lib/content-pipeline/cms-artifact-cleanup.ts` | Post-`LOCAL_SAVED` temp/raster cleanup |
-| `lib/content-pipeline/local-save-service.ts` | Dup gate, one-paper gate, cleanup, diagnostics |
-| `lib/content-pipeline/review-service.ts` | Package enrichment + approve gates |
-| `lib/content-pipeline/review-types.ts` | ReviewPackage Phase 3 fields |
-| `app/api/cms/save/route.ts` | `confirmDuplicateSave` |
-| `components/admin/approval-panel.tsx` | Quality / dup / warnings / evidence UX |
-| `components/admin/review-center.tsx` | Confirm-duplicate checkbox → save API |
-| `scripts/cms-reliability/phase3-acceptance.test.ts` | Phase 3 tests |
-| `scripts/cms-reliability/fixtures/phase3-coverage.ts` | Honest coverage matrix |
-| `package.json` | Include Phase 3 + eligibility in `test` script |
-| `lib/content-pipeline/document-eligibility.ts` | Multi-signal RGPV + question-paper classifier |
-| `lib/content-pipeline/document-eligibility-service.ts` | Persist gate; fail closed on REJECT |
-| `lib/content-pipeline/pipeline-supervisor.ts` | `eligibility` stage after OCR, before Gemini |
-| `lib/content-pipeline/structuring-service.ts` | Re-check eligibility before Gemini |
-| `lib/content-pipeline/local-save-service.ts` | Save blocked without / rejected eligibility |
-| `scripts/cms-reliability/document-eligibility.test.ts` | Eligibility acceptance tests |
+| Module                                                 | Role                                             |
+| ------------------------------------------------------ | ------------------------------------------------ |
+| `lib/content-pipeline/duplicate-paper-detector.ts`     | Identity + content-hash duplicate classification |
+| `lib/content-pipeline/warning-catalog.ts`              | Warning code → category/severity                 |
+| `lib/content-pipeline/content-quality-indicators.ts`   | Objective review metrics                         |
+| `lib/content-pipeline/import-diagnostics.ts`           | Aggregate stage timings → diagnostics JSON       |
+| `lib/content-pipeline/cms-artifact-cleanup.ts`         | Post-`LOCAL_SAVED` temp/raster cleanup           |
+| `lib/content-pipeline/local-save-service.ts`           | Dup gate, one-paper gate, cleanup, diagnostics   |
+| `lib/content-pipeline/review-service.ts`               | Package enrichment + approve gates               |
+| `lib/content-pipeline/review-types.ts`                 | ReviewPackage Phase 3 fields                     |
+| `app/api/cms/save/route.ts`                            | `confirmDuplicateSave`                           |
+| `components/admin/approval-panel.tsx`                  | Quality / dup / warnings / evidence UX           |
+| `components/admin/review-center.tsx`                   | Confirm-duplicate checkbox → save API            |
+| `scripts/cms-reliability/phase3-acceptance.test.ts`    | Phase 3 tests                                    |
+| `scripts/cms-reliability/fixtures/phase3-coverage.ts`  | Honest coverage matrix                           |
+| `package.json`                                         | Include Phase 3 + eligibility in `test` script   |
+| `lib/content-pipeline/document-eligibility.ts`         | Multi-signal RGPV + question-paper classifier    |
+| `lib/content-pipeline/document-eligibility-service.ts` | Persist gate; fail closed on REJECT              |
+| `lib/content-pipeline/pipeline-supervisor.ts`          | `eligibility` stage after OCR, before Gemini     |
+| `lib/content-pipeline/structuring-service.ts`          | Re-check eligibility before Gemini               |
+| `lib/content-pipeline/local-save-service.ts`           | Save blocked without / rejected eligibility      |
+| `scripts/cms-reliability/document-eligibility.test.ts` | Eligibility acceptance tests                     |
 
 ---
 
@@ -99,15 +99,15 @@ Invariant for successful import save: **`papers.length === 1`** on the incoming 
 
 Executed via `./node_modules/.bin/tsx --test` (full `package.json` test list including Phase 3 + eligibility).
 
-| Suite | Result |
-|-------|--------|
+| Suite                                        | Result             |
+| -------------------------------------------- | ------------------ |
 | Full CMS reliability (`npm test` equivalent) | **184 / 184 PASS** |
-| Phase 3 acceptance | **9 / 9 PASS** |
-| Document eligibility | **22 / 22 PASS** |
-| Typecheck (`tsc --noEmit`) | **PASS** |
-| ESLint (changed files) | **PASS** |
-| Prettier (changed files) | **PASS** |
-| Next.js `next build` | **PASS** |
+| Phase 3 acceptance                           | **9 / 9 PASS**     |
+| Document eligibility                         | **22 / 22 PASS**   |
+| Typecheck (`tsc --noEmit`)                   | **PASS**           |
+| ESLint (changed files)                       | **PASS**           |
+| Prettier (changed files)                     | **PASS**           |
+| Next.js `next build`                         | **PASS**           |
 
 Phase 1 + Phase 2 regression scripts remain in the suite and all passed as part of the **184**.
 
@@ -115,24 +115,24 @@ Phase 1 + Phase 2 regression scripts remain in the suite and all passed as part 
 
 ## 6b. RGPV document eligibility (final hardening)
 
-| Area | Status | Evidence |
-|------|--------|----------|
-| RGPV eligibility | PASS | Multi-signal detector + 22 unit tests + real OCR fixtures |
-| Question-paper classification | PASS | Marks/time/Q-number/instructions scoring |
-| Non-RGPV rejection | PASS | Delhi/JNTU/etc. → REJECTED; save/approve blocked |
-| Non-question-paper rejection | PASS | Syllabus/timetable/notice → REJECTED |
-| Ambiguous-document handling | PASS | Blank/weak OCR → REVIEW_REQUIRED (not silent PASS) |
-| Server-side enforcement | PASS | Supervisor stage + structuring re-check + save + approve |
-| Fake “Compare RGPV with…” | PASS | Does not auto-pass |
-| Prompt injection in OCR | PASS | Does not force PASS |
-| Forged save without eligibility | PASS | `ELIGIBILITY_MISSING` / REJECTED hard-block |
+| Area                            | Status | Evidence                                                  |
+| ------------------------------- | ------ | --------------------------------------------------------- |
+| RGPV eligibility                | PASS   | Multi-signal detector + 22 unit tests + real OCR fixtures |
+| Question-paper classification   | PASS   | Marks/time/Q-number/instructions scoring                  |
+| Non-RGPV rejection              | PASS   | Delhi/JNTU/etc. → REJECTED; save/approve blocked          |
+| Non-question-paper rejection    | PASS   | Syllabus/timetable/notice → REJECTED                      |
+| Ambiguous-document handling     | PASS   | Blank/weak OCR → REVIEW_REQUIRED (not silent PASS)        |
+| Server-side enforcement         | PASS   | Supervisor stage + structuring re-check + save + approve  |
+| Fake “Compare RGPV with…”       | PASS   | Does not auto-pass                                        |
+| Prompt injection in OCR         | PASS   | Does not force PASS                                       |
+| Forged save without eligibility | PASS   | `ELIGIBILITY_MISSING` / REJECTED hard-block               |
 
 ### Real OCR fixture evaluation (executed)
 
-| Fixture | Result |
-|---------|--------|
-| AL-402 Jun 2025 (`job_2b2e0be4…`) | **PASSED** — RGPV via `rgpvonline.com` watermark + question-paper cues |
-| AL-402 Nov 2023 (`job_0756c204…`) | **PASSED** — same |
+| Fixture                                        | Result                                                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| AL-402 Jun 2025 (`job_2b2e0be4…`)              | **PASSED** — RGPV via `rgpvonline.com` watermark + question-paper cues                      |
+| AL-402 Nov 2023 (`job_0756c204…`)              | **PASSED** — same                                                                           |
 | JBIG2 AL-402 committed job OCR (`job_865e79…`) | **REVIEW_REQUIRED** — QP/institution cues weak in that OCR snapshot (safe; not silent PASS) |
 
 Decision policy preserved: unknown institution is never treated as RGPV.
@@ -143,18 +143,18 @@ Decision policy preserved: unknown institution is never treated as RGPV.
 
 From registry + Phase 2 live OCR E2E in this run + Phase 3 coverage matrix:
 
-| Fixture / category | Status |
-|--------------------|--------|
-| Native text PDF (`native-text-al402-sample`) | PASS (available) |
-| JBIG2 scanned AL-402 | PASS (live OCR E2E in suite) |
-| CY-301 single image | PASS (live OCR E2E in suite) |
-| Multi-page AL-402 / Dec 2023 | PASS (structural + OCR where local files exist) |
-| Synthetic 5-page scanned | SYNTHETIC_ONLY |
-| Real two-column | UNAVAILABLE |
-| Real mixed-column | UNAVAILABLE |
-| Real table-heavy paper | UNAVAILABLE |
-| Probability / binary-hex dedicated papers | UNAVAILABLE (unit-level numeric coverage only) |
-| Multi-image one-paper | PARTIAL (depends on local `.cms` images) |
+| Fixture / category                           | Status                                          |
+| -------------------------------------------- | ----------------------------------------------- |
+| Native text PDF (`native-text-al402-sample`) | PASS (available)                                |
+| JBIG2 scanned AL-402                         | PASS (live OCR E2E in suite)                    |
+| CY-301 single image                          | PASS (live OCR E2E in suite)                    |
+| Multi-page AL-402 / Dec 2023                 | PASS (structural + OCR where local files exist) |
+| Synthetic 5-page scanned                     | SYNTHETIC_ONLY                                  |
+| Real two-column                              | UNAVAILABLE                                     |
+| Real mixed-column                            | UNAVAILABLE                                     |
+| Real table-heavy paper                       | UNAVAILABLE                                     |
+| Probability / binary-hex dedicated papers    | UNAVAILABLE (unit-level numeric coverage only)  |
+| Multi-image one-paper                        | PARTIAL (depends on local `.cms` images)        |
 
 ---
 
@@ -257,40 +257,40 @@ Rationale: Eligibility gate is enforced server-side; 184/184 regression green; b
 
 ## Acceptance matrix
 
-| Area | Status | Evidence |
-|------|--------|----------|
-| Native PDF | PASS | Fixture + Phase 2 suite |
-| Scanned PDF | PASS | JBIG2 live OCR E2E |
-| Image | PASS | CY-301 live OCR E2E |
-| Multi-image | PARTIAL | Registry depends on local `.cms` |
-| 5-page PDF | PARTIAL | Synthetic-only honest mark |
-| Two-column | NOT VERIFIED | Fixture unavailable |
-| Mixed-column | NOT VERIFIED | Fixture unavailable |
-| Tables | PASS | Phase 2 table validator tests |
-| Numerical | PASS | Phase 2 numeric + Phase 3 warning taxonomy |
-| Equations | PARTIAL | Preserved text; no dedicated equation fixture claim |
-| Diagrams | PARTIAL | Markers/assets; no reconstruction claim |
-| Metadata | PASS | Metadata extractor tests + review UI |
-| Evidence | PASS | Review package evidence + save gates |
-| Gemini safety | PARTIAL | Prior Phase 2; not re-run live |
-| JSON generation | PASS | Schema builder + content inspection |
-| JSON save | PASS | Gates + writer path; confirm-dup API |
-| Review UI | PASS | Quality/dup/warnings/evidence panel |
-| Approval | PASS | INVALID/critical/one-paper gates |
-| Duplicate detection | PASS | Phase 3 tests 9/9 |
-| Recovery | PARTIAL | Suite resume tests; kill-drill not re-run |
-| Cancellation | PASS | Supervisor contract tests |
-| Security | PASS | Fail-closed + auth + gates |
-| Performance | PARTIAL | Not re-benchmarked this session |
-| Memory | PARTIAL | Prior Phase 2 hardening; not re-stress-tested |
-| Git workflow | PASS | Read-only CMS git review unchanged |
-| Phase 1 regression | PASS | Included in 184/184 |
-| Phase 2 regression | PASS | Included in 184/184 |
-| Build | PASS | `next build` exit 0 |
-| RGPV eligibility | PASS | 22/22 + real OCR checks |
-| Non-RGPV rejection | PASS | Unit + save gate |
-| Non-QP rejection | PASS | Syllabus/timetable/notice |
-| Eligibility server enforcement | PASS | Supervisor + structuring + save + approve |
+| Area                           | Status       | Evidence                                            |
+| ------------------------------ | ------------ | --------------------------------------------------- |
+| Native PDF                     | PASS         | Fixture + Phase 2 suite                             |
+| Scanned PDF                    | PASS         | JBIG2 live OCR E2E                                  |
+| Image                          | PASS         | CY-301 live OCR E2E                                 |
+| Multi-image                    | PARTIAL      | Registry depends on local `.cms`                    |
+| 5-page PDF                     | PARTIAL      | Synthetic-only honest mark                          |
+| Two-column                     | NOT VERIFIED | Fixture unavailable                                 |
+| Mixed-column                   | NOT VERIFIED | Fixture unavailable                                 |
+| Tables                         | PASS         | Phase 2 table validator tests                       |
+| Numerical                      | PASS         | Phase 2 numeric + Phase 3 warning taxonomy          |
+| Equations                      | PARTIAL      | Preserved text; no dedicated equation fixture claim |
+| Diagrams                       | PARTIAL      | Markers/assets; no reconstruction claim             |
+| Metadata                       | PASS         | Metadata extractor tests + review UI                |
+| Evidence                       | PASS         | Review package evidence + save gates                |
+| Gemini safety                  | PARTIAL      | Prior Phase 2; not re-run live                      |
+| JSON generation                | PASS         | Schema builder + content inspection                 |
+| JSON save                      | PASS         | Gates + writer path; confirm-dup API                |
+| Review UI                      | PASS         | Quality/dup/warnings/evidence panel                 |
+| Approval                       | PASS         | INVALID/critical/one-paper gates                    |
+| Duplicate detection            | PASS         | Phase 3 tests 9/9                                   |
+| Recovery                       | PARTIAL      | Suite resume tests; kill-drill not re-run           |
+| Cancellation                   | PASS         | Supervisor contract tests                           |
+| Security                       | PASS         | Fail-closed + auth + gates                          |
+| Performance                    | PARTIAL      | Not re-benchmarked this session                     |
+| Memory                         | PARTIAL      | Prior Phase 2 hardening; not re-stress-tested       |
+| Git workflow                   | PASS         | Read-only CMS git review unchanged                  |
+| Phase 1 regression             | PASS         | Included in 184/184                                 |
+| Phase 2 regression             | PASS         | Included in 184/184                                 |
+| Build                          | PASS         | `next build` exit 0                                 |
+| RGPV eligibility               | PASS         | 22/22 + real OCR checks                             |
+| Non-RGPV rejection             | PASS         | Unit + save gate                                    |
+| Non-QP rejection               | PASS         | Syllabus/timetable/notice                           |
+| Eligibility server enforcement | PASS         | Supervisor + structuring + save + approve           |
 
 ---
 

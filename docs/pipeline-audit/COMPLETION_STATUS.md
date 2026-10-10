@@ -5,33 +5,33 @@
 
 ## 1. Status vocabulary
 
-| Status | Meaning |
-|---|---|
-| `IMPLEMENTED AND VERIFIED` | Code exists; behavior confirmed via source + safe evidence |
-| `IMPLEMENTED, PARTIALLY VERIFIED` | Code exists; only partially confirmed |
-| `IMPLEMENTED BUT UNRELIABLE` | Code exists; real outputs show correctness failures |
-| `PARTIALLY IMPLEMENTED` | Incomplete relative to stated goals |
-| `NOT IMPLEMENTED` | Missing |
-| `UNKNOWN / NOT VERIFIED` | Insufficient evidence in this audit |
+| Status                            | Meaning                                                    |
+| --------------------------------- | ---------------------------------------------------------- |
+| `IMPLEMENTED AND VERIFIED`        | Code exists; behavior confirmed via source + safe evidence |
+| `IMPLEMENTED, PARTIALLY VERIFIED` | Code exists; only partially confirmed                      |
+| `IMPLEMENTED BUT UNRELIABLE`      | Code exists; real outputs show correctness failures        |
+| `PARTIALLY IMPLEMENTED`           | Incomplete relative to stated goals                        |
+| `NOT IMPLEMENTED`                 | Missing                                                    |
+| `UNKNOWN / NOT VERIFIED`          | Insufficient evidence in this audit                        |
 
 ## 2. Dimension matrix
 
-| Dimension | Status | Evidence-based justification |
-|---|---|---|
-| Architecture / modules | `IMPLEMENTED, PARTIALLY VERIFIED` | Large `lib/content-pipeline` + CMS routes exist; stage supervisor verified; not every file path exercised live |
-| Upload / normalization | `IMPLEMENTED, PARTIALLY VERIFIED` | `upload-service`, MIME/size limits, import-limits; live upload not re-run |
-| OCR / reading order | `IMPLEMENTED BUT UNRELIABLE` | Engine + heuristics present; AL-405 artifacts show OCR damage / variance |
-| Question segmentation | `IMPLEMENTED BUT UNRELIABLE` | Detector/numbering code present; jobs show 4–10 question outcomes |
-| AI normalization | `IMPLEMENTED BUT UNRELIABLE` | Gemini structuring + prompts; invents diagram captions; question fidelity job-dependent |
-| Numeric / table preservation | `PARTIALLY IMPLEMENTED` | Token extraction + validators exist; table-heavy real coverage sparse |
-| Diagram handling | `IMPLEMENTED BUT UNRELIABLE` | Extraction + AI context; attaches page scans with generated captions |
-| Validation / quality gates | `IMPLEMENTED, PARTIALLY VERIFIED` | Schema + eligibility + extractionQuality gates in save path; indicators buggy |
-| Human review | `IMPLEMENTED, PARTIALLY VERIFIED` | Review package + UI; misleading metrics confirmed |
-| Import history / recovery | `IMPLEMENTED BUT UNRELIABLE` | History/checkpoints exist; duplicates + inconsistent counts |
-| Persistence / storage | `IMPLEMENTED AND VERIFIED` | `.cms` vs `content/rgpv` boundary clear; content write gated |
-| AuthZ / local isolation | `IMPLEMENTED AND VERIFIED` | `CMS_LOCAL_MODE` fail-closed; Git mutation blocked |
-| Testing | `IMPLEMENTED, PARTIALLY VERIFIED` | Broad suite files; historical 230 pass log; semantic gaps remain |
-| Production readiness | `NOT IMPLEMENTED` (as a claim) | Explicitly **not** production-ready for unattended extraction |
+| Dimension                    | Status                            | Evidence-based justification                                                                                   |
+| ---------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Architecture / modules       | `IMPLEMENTED, PARTIALLY VERIFIED` | Large `lib/content-pipeline` + CMS routes exist; stage supervisor verified; not every file path exercised live |
+| Upload / normalization       | `IMPLEMENTED, PARTIALLY VERIFIED` | `upload-service`, MIME/size limits, import-limits; live upload not re-run                                      |
+| OCR / reading order          | `IMPLEMENTED BUT UNRELIABLE`      | Engine + heuristics present; AL-405 artifacts show OCR damage / variance                                       |
+| Question segmentation        | `IMPLEMENTED BUT UNRELIABLE`      | Detector/numbering code present; jobs show 4–10 question outcomes                                              |
+| AI normalization             | `IMPLEMENTED BUT UNRELIABLE`      | Gemini structuring + prompts; invents diagram captions; question fidelity job-dependent                        |
+| Numeric / table preservation | `PARTIALLY IMPLEMENTED`           | Token extraction + validators exist; table-heavy real coverage sparse                                          |
+| Diagram handling             | `IMPLEMENTED BUT UNRELIABLE`      | Extraction + AI context; attaches page scans with generated captions                                           |
+| Validation / quality gates   | `IMPLEMENTED, PARTIALLY VERIFIED` | Schema + eligibility + extractionQuality gates in save path; indicators buggy                                  |
+| Human review                 | `IMPLEMENTED, PARTIALLY VERIFIED` | Review package + UI; misleading metrics confirmed                                                              |
+| Import history / recovery    | `IMPLEMENTED BUT UNRELIABLE`      | History/checkpoints exist; duplicates + inconsistent counts                                                    |
+| Persistence / storage        | `IMPLEMENTED AND VERIFIED`        | `.cms` vs `content/rgpv` boundary clear; content write gated                                                   |
+| AuthZ / local isolation      | `IMPLEMENTED AND VERIFIED`        | `CMS_LOCAL_MODE` fail-closed; Git mutation blocked                                                             |
+| Testing                      | `IMPLEMENTED, PARTIALLY VERIFIED` | Broad suite files; historical 230 pass log; semantic gaps remain                                               |
+| Production readiness         | `NOT IMPLEMENTED` (as a claim)    | Explicitly **not** production-ready for unattended extraction                                                  |
 
 ## 3. Explicit answers
 
@@ -77,12 +77,12 @@
 
 ### 6. Which reported test results are verified in the current repository?
 
-| Result | Verification in this audit |
-|---|---|
+| Result                               | Verification in this audit                |
+| ------------------------------------ | ----------------------------------------- |
 | `full-suite.log` → 230 pass / 0 fail | **Historical artifact only** — not re-run |
-| AL-405 golden fixture files present | **Verified** on disk |
-| Suite file list in `package.json` | **Verified** |
-| Fresh typecheck/lint/build today | **NOT VERIFIED** (not executed) |
+| AL-405 golden fixture files present  | **Verified** on disk                      |
+| Suite file list in `package.json`    | **Verified**                              |
+| Fresh typecheck/lint/build today     | **NOT VERIFIED** (not executed)           |
 
 ### 7. Why do passing tests not guarantee correct extraction?
 
@@ -117,8 +117,8 @@ Reasons:
 
 If a future score is required, use **three separate scores** with explicit rubrics:
 
-1. **Module presence** (files/stages wired)  
-2. **Semantic accuracy** on a frozen real-PDF corpus vs golden text  
+1. **Module presence** (files/stages wired)
+2. **Semantic accuracy** on a frozen real-PDF corpus vs golden text
 3. **Operational safety** (auth, content gates, no auto-publish)
 
 Do not average them into one vanity number.

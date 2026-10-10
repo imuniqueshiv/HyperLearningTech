@@ -75,8 +75,7 @@ const RGPV_FULL_NAME =
 const RGPV_TOKEN = /\brgpv\b/gi;
 
 /** Official RGPV exam/site watermarks common on scanned papers. */
-const RGPV_SITE =
-  /\brgpvonline\.com\b|\brgpv\.ac\.in\b|\brgpv\.edu\b/gi;
+const RGPV_SITE = /\brgpvonline\.com\b|\brgpv\.ac\.in\b|\brgpv\.edu\b/gi;
 
 /** Comparative / incidental mentions — do not alone confirm institution. */
 const RGPV_COMPARATIVE =
