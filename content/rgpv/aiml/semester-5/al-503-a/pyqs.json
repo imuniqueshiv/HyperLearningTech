@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-503-a",
+    "code": "AL-503-A",
+    "name": "Information Retrieval",
+    "title": "AL503 (A) - Information Retrieval",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Information retrieval process with key components.",
+              "unit": "Unit 1",
+              "type": "information-retrieval-process-components"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the role of Artificial Intelligence (AI) in IR.",
+              "unit": "Unit 1",
+              "type": "ai-role-in-ir"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Contrast Traditional IR systems with web search.",
+              "unit": "Unit 3",
+              "type": "traditional-ir-vs-web-search"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write short notes on the probabilistic relevance feedback.",
+              "unit": "Unit 5",
+              "type": "probabilistic-relevance-feedback"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Briefly explain the Document Preprocessing procedure.",
+              "unit": "Unit 2",
+              "type": "document-preprocessing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain latent semantic indexing with an example.",
+              "unit": "Unit 2",
+              "type": "latent-semantic-indexing"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State the advantages and needs of a crawler.",
+              "unit": "Unit 3",
+              "type": "crawler-advantages-needs"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the Benefits of index compression with an example.",
+              "unit": "Unit 2",
+              "type": "index-compression-benefits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the requirements of the XML information retrieval system.",
+              "unit": "Unit 1",
+              "type": "xml-ir-system-requirements"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Analyze the effectiveness of a MapReduce and Hadoop implementation.",
+              "unit": "Unit 1",
+              "type": "mapreduce-hadoop-effectiveness"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain in detail the Content-based recommendation system.",
+              "unit": "Unit 5",
+              "type": "content-based-recommendation-system"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the retrieval procedure using the ranking and relative score.",
+              "unit": "Unit 4",
+              "type": "retrieval-ranking-relative-score"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the process of choosing K in Nearest neighbor clustering.",
+              "unit": "Unit 5",
+              "type": "k-nearest-neighbor-clustering-k-selection"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss in detail the Naive Bayesian classification and its limitation.",
+              "unit": "Unit 5",
+              "type": "naive-bayes-classification-limitations"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Snippet Generation",
+              "unit": "Unit 3",
+              "type": "snippet-generation"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Agglomerative Clustering",
+              "unit": "Unit 5",
+              "type": "agglomerative-clustering"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Focused Crawling",
+              "unit": "Unit 3",
+              "type": "focused-crawling"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "TF-IDF term weighting",
+              "unit": "Unit 2",
+              "type": "tf-idf-term-weighting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

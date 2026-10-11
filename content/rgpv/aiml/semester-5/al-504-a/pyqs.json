@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-504-a",
+    "code": "AL-504-A",
+    "name": "AI in Health Care",
+    "title": "AL504 (A) - AI in Health Care",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the applications of AI in health care? Illustrate how remote patient monitoring works by using AI.",
+              "unit": "Unit 1",
+              "type": "ai-applications-healthcare"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of wearable health technology and its connection to AI.",
+              "unit": "Unit 1",
+              "type": "wearable-health-technology-ai"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe how AI is being employed in managing and optimizing hospital resources.",
+              "unit": "Unit 1",
+              "type": "ai-hospital-management-optimization"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Which evaluation metrics are used for evaluating the model's efficiency?",
+              "unit": "Unit 2",
+              "type": "model-evaluation-metrics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the concept of linear prognostic models for medical Prognosis.",
+              "unit": "Unit 3",
+              "type": "linear-prognostic-models-medical-prognosis"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How does AI assist in medical image segmentation?",
+              "unit": "Unit 2",
+              "type": "ai-medical-image-segmentation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Differentiate between the survival model and the time survival model.",
+              "unit": "Unit 4",
+              "type": "survival-model-differentiation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How does the Nelson Aalen estimator estimate the cumulative hazard function?",
+              "unit": "Unit 4",
+              "type": "nelson-aalen-estimator-cumulative-hazard"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the CATE (conditional average treatment effect) and why do we use it?",
+              "unit": "Unit 5",
+              "type": "conditional-average-treatment-effect-cate"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How does AI improve patient triage in emergency rooms?",
+              "unit": "Unit 1",
+              "type": "ai-patient-triage-emergency-rooms"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Which techniques are used to fix overfitting?",
+              "unit": "Unit 1",
+              "type": "overfitting-techniques"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How does AI predict the risk of heart disease?",
+              "unit": "Unit 3",
+              "type": "ai-heart-disease-risk-prediction"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you understand by survival tree? Explain with an example.",
+              "unit": "Unit 4",
+              "type": "survival-tree-explanation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How does AI contribute to improving the efficiency of Electronic Health Record (EHR) systems?",
+              "unit": "Unit 1",
+              "type": "ai-ehr-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "AI in Disease Detection",
+              "unit": "Unit 1",
+              "type": "ai-disease-detection"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Virtual Health Assistants",
+              "unit": "Unit 1",
+              "type": "virtual-health-assistants"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Medication Adherence",
+              "unit": "Unit 1",
+              "type": "medication-adherence"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Sentiment Analysis",
+              "unit": "Unit 1",
+              "type": "sentiment-analysis"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

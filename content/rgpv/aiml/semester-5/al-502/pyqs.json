@@ -1,0 +1,904 @@
+{
+  "subject": {
+    "id": "al-502",
+    "code": "AL-502",
+    "name": "Database Management Systems",
+    "title": "AL-502 - Database Management Systems",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is a data model? Explain object-oriented and relational data models with suitable examples.",
+              "unit": "Unit 1",
+              "type": "data-models-explanation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define database languages in DBMS. Describe DDL, DML, DCL and TCL along with their commands and examples.",
+              "unit": "Unit 1",
+              "type": "database-languages-ddl-dml-dcl-tcl"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is ER Diagram? Explain different Components of an ER Diagram with their Notation. Draw an ER Diagram for Employee Project Management System.",
+              "unit": "Unit 1",
+              "type": "er-diagram-components-notation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain Relational Algebra in DBMS. Illustrate Theta Join, Equi Join and Natural Join with suitable examples.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-joins"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are keys in the relational model? Explain super key, candidate key, primary key, alternate key and foreign key with suitable examples.",
+              "unit": "Unit 2",
+              "type": "relational-keys-types"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe integrity constraints in DBMS. Explain domain integrity, entity integrity and referential integrity with suitable examples.",
+              "unit": "Unit 2",
+              "type": "integrity-constraints-types"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain indexing in relational databases. Discuss different types of indexes and their role in improving query performance.",
+              "unit": "Unit 3",
+              "type": "indexing-types-query-optimization"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Consider the relation R (A,B,C,D,E) with the following functional dependencies : A$\\to$B, B$\\to$C, A$\\to$D, D$\\to$E Answer the following:\n(i) Find all candidate keys of R.\n(ii) Decompose the relation into 3NF.",
+              "unit": "Unit 3",
+              "type": "functional-dependencies-candidate-keys-3nf-decomposition",
+              "latex": "A \\to B, B \\to C, A \\to D, D \\to E"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Consider the relation : STUDENT (Roll No, Name, Dept, Course, Instructor) with Functional Dependencies: RollNo $\\to$ Name, Dept Course $\\to$ Instructor Answer the following:\n(i) Identify whether the relation is in 1NF, 2NF or 3NF.\n(ii) Normalize the relation up to 3NF.",
+              "unit": "Unit 3",
+              "type": "normalization-1nf-2nf-3nf",
+              "latex": "RollNo \\to Name, Dept \\\\ Course \\to Instructor"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss recovery from transaction failures. Explain log-based recovery techniques and the role of checkpoints in recovery.",
+              "unit": "Unit 4",
+              "type": "transaction-recovery-log-checkpoints"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is deadlock in DBMS? Explain deadlock detection, prevention and recovery techniques.",
+              "unit": "Unit 4",
+              "type": "deadlock-detection-prevention-recovery"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Concurrency Control in DBMS. Discuss locking techniques including shared locks, exclusive locks and two-phase locking protocol.",
+              "unit": "Unit 4",
+              "type": "concurrency-control-locking-2pl"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the concept of a transaction system in DBMS. Discuss transaction states and ACID properties of a transaction.",
+              "unit": "Unit 4",
+              "type": "transaction-system-acid-properties"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What do you understand by database security? Explain authentication and authorization mechanisms in DBMS by explaining how do they ensure database security.",
+              "unit": "Unit 5",
+              "type": "database-security-authentication-authorization"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain cursor management in PL/SQL. Discuss explicit cursors, nested cursors and parameterized cursors with examples.",
+              "unit": "Unit 5",
+              "type": "plsql-cursor-management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Schema? Explain Overall Database Structure with suitable example.",
+              "unit": "Unit 1",
+              "type": "schema-database-structure"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain about Various Data Models.",
+              "unit": "Unit 1",
+              "type": "data-models"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the following with examples.\ni) DDL\nii) Embedded SQL",
+              "unit": "Unit 1",
+              "type": "ddl-embedded-sql"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain about Outer join Operation in Relational algebra.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-outer-join"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is Relational Model? Distinguish between Super Key, Candidate Key, Primary Key for a relation with examples.",
+              "unit": "Unit 2",
+              "type": "relational-model-keys"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain about Domain relational calculus with examples.",
+              "unit": "Unit 2",
+              "type": "domain-relational-calculus"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the importance of integrity and referential integrity constraints.",
+              "unit": "Unit 2",
+              "type": "integrity-referential-constraints"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the Conditions required for a relation to be in 3NF explain with examples?",
+              "unit": "Unit 3",
+              "type": "3nf-conditions"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain fundamental Operations in relational algebra with examples.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-operations"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail about timestamp based Concurrency Control techniques.",
+              "unit": "Unit 4",
+              "type": "timestamp-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is locking protocol? Describe the Strict Two-Phase locking Protocol.",
+              "unit": "Unit 4",
+              "type": "locking-protocol-2pl"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss about Comparative study of OODBMS Vs DBMS.",
+              "unit": "Unit 1",
+              "type": "oodbms-vs-dbms"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Hierarchical queries and inline queries with suitable examples.",
+              "unit": "Unit 5",
+              "type": "hierarchical-inline-queries"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is a Cursor? Explain nested and Parameterized cursors?",
+              "unit": "Unit 5",
+              "type": "cursor-management"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8_short_notes",
+              "label": "",
+              "text": "Write short notes on any two:",
+              "unit": "Unit 1",
+              "type": "short-notes-intro"
+            },
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "DML",
+              "unit": "Unit 1",
+              "type": "dml-short-note"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Multimedia",
+              "unit": "Unit 1",
+              "type": "multimedia-databases"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Triggers",
+              "unit": "Unit 5",
+              "type": "triggers-short-note"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Stored Procedures",
+              "unit": "Unit 5",
+              "type": "stored-procedures-short-note"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the architecture of DBMS. Explain each component briefly.",
+              "unit": "Unit 1",
+              "type": "dbms-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define E-R model with example. How to convert an E-R model into Tables? Explain.",
+              "unit": "Unit 2",
+              "type": "er-model-to-relational"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define database system. Summarize the advantages of database system.",
+              "unit": "Unit 1",
+              "type": "database-system-advantages"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is database schema? Describe Physical schema and Logical schema.",
+              "unit": "Unit 1",
+              "type": "database-schema-types"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "List out the various join operations and explain briefly with suitable examples.",
+              "unit": "Unit 5",
+              "type": "sql-join-operations"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the following Relational Algebra operations with examples. SELECT, PROJECT, DIVISION",
+              "unit": "Unit 2",
+              "type": "relational-algebra-operations"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State BCNF. How does it differ from 3 NF? Explain.",
+              "unit": "Unit 3",
+              "type": "bcnf-vs-3nf"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Functional Dependency? Describe the properties of FD's.",
+              "unit": "Unit 3",
+              "type": "functional-dependency-properties"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define optimization. Discuss the steps involved in query optimization.",
+              "unit": "Unit 3",
+              "type": "query-optimization-steps"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain different types of Advanced Recovery Techniques.",
+              "unit": "Unit 4",
+              "type": "advanced-recovery-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "List and explain various types of specialized locking techniques used in DBMS.",
+              "unit": "Unit 4",
+              "type": "specialized-locking-techniques"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you understand by distributed databases? Give the various advantages and disadvantages of distributed database management system.",
+              "unit": "Unit 1",
+              "type": "distributed-databases-advantages-disadvantages"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the usage of parameters in procedures.",
+              "unit": "Unit 5",
+              "type": "stored-procedure-parameters"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the limitations of user defined functions.",
+              "unit": "Unit 5",
+              "type": "user-defined-functions-limitations"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Single level and multilevel indices.",
+              "unit": "Unit 3",
+              "type": "database-indexing-types"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Referential integrity constraints.",
+              "unit": "Unit 2",
+              "type": "referential-integrity-constraints"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Problems with null valued and dangling tuples.",
+              "unit": "Unit 3",
+              "type": "null-values-dangling-tuples"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Triggers",
+              "unit": "Unit 5",
+              "type": "database-triggers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe basic architecture of Database Management System in detail.",
+              "unit": "Unit 1",
+              "type": "dbms-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the Functions of Database Administrator.",
+              "unit": "Unit 1",
+              "type": "database-administrator-functions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is ER-model? Explain the basic symbols used of entities, attributes and relationships.",
+              "unit": "Unit 2",
+              "type": "er-model-symbols"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is an Attribute? Explain various types of attribute with examples.",
+              "unit": "Unit 2",
+              "type": "attribute-types"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain integrity constraint over relations.",
+              "unit": "Unit 2",
+              "type": "integrity-constraints"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How to alter, destroy and views table? Explain with suitable queries.",
+              "unit": "Unit 5",
+              "type": "sql-ddl-views"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Fundamental operations in relational algebra with examples.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-operations"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the steps to be followed to convert a relation in 3NF to BCNF?",
+              "unit": "Unit 3",
+              "type": "3nf-to-bcnf-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain Optimization methods.\ni) Heuristic based\nii) Cost Estimation based",
+              "unit": "Unit 3",
+              "type": "query-optimization-methods"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How to test Serializability of Schedule? Explain with example.",
+              "unit": "Unit 4",
+              "type": "schedule-serializability-testing"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain log-based recovery Protocol.",
+              "unit": "Unit 4",
+              "type": "log-based-recovery-protocol"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Multiple Granularity Concurrency Control scheme.",
+              "unit": "Unit 4",
+              "type": "multiple-granularity-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is view? Give brief note on view.",
+              "unit": "Unit 5",
+              "type": "database-view-concept"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State and explain various File Organization Methods.",
+              "unit": "Unit 1",
+              "type": "file-organization-methods"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Assertions",
+              "unit": "Unit 2",
+              "type": "database-assertions"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Web and Mobile database",
+              "unit": "Unit 5",
+              "type": "web-mobile-database"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Hierarchical queries",
+              "unit": "Unit 5",
+              "type": "hierarchical-queries"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Validation based protocols",
+              "unit": "Unit 4",
+              "type": "validation-based-protocols"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Database Management System (DBMS)? What are the major components of this system? Explain each component with neat sketch.",
+              "unit": "Unit 1",
+              "type": "dbms-introduction-components"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the different Data Models of DBMS? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "data-models"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain strong and weak entities. How weak entity can be converted to a strong entity.",
+              "unit": "Unit 1",
+              "type": "strong-weak-entities"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain Super key, primary key and candidate key with examples.",
+              "unit": "Unit 2",
+              "type": "keys-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are integrity constraints? Explain various types of integrity constraints with suitable example.",
+              "unit": "Unit 2",
+              "type": "integrity-constraints"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss about Relational algebra operations like Select, Project, Join with examples.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-operations"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define join dependency. How is it different to that of Multivalued dependency and Functional dependency? Justify.",
+              "unit": "Unit 3",
+              "type": "join-multivalued-functional-dependency"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define Normalization. Explain second normal form with the help of an example.",
+              "unit": "Unit 3",
+              "type": "normalization-2nf"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain why 4NF is more desirable than BCNF with the help of an example.",
+              "unit": "Unit 3",
+              "type": "4nf-bcnf-comparison"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you mean by transaction processing? Explain ACID properties of transaction in brief.",
+              "unit": "Unit 4",
+              "type": "transaction-processing-acid"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How concurrency is performed? Explain the protocol that is used to maintain the concurrency concept.",
+              "unit": "Unit 4",
+              "type": "concurrency-control-protocols"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is time stamping? Explain a mechanism of concurrency control that uses time stamping with the help of an examples.",
+              "unit": "Unit 4",
+              "type": "timestamping-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the advantage of stored procedures with an example.",
+              "unit": "Unit 5",
+              "type": "stored-procedures-advantages"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Trigger? Explain in detail with an example.",
+              "unit": "Unit 5",
+              "type": "triggers-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Nested and Parameterized Cursors",
+              "unit": "Unit 5",
+              "type": "nested-parameterized-cursors"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Single level and multilevel indices",
+              "unit": "Unit 5",
+              "type": "single-multilevel-indices"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Domain Relational Calculus",
+              "unit": "Unit 2",
+              "type": "domain-relational-calculus"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

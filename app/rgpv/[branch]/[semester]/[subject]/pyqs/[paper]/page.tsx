@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { FileText, Calendar, Clock, ChevronDown, Sparkles } from "lucide-react";
 import { getPYQs, getSyllabus } from "@/lib/content";
+import { paperMatchesSlug } from "@/lib/content/paper-slug";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 import QuestionAttachments from "@/components/pyqs/question-attachments";
 import { buildQuestionWithAttachments } from "@/lib/ai/prompt-builder";
@@ -83,9 +84,8 @@ export default async function PaperPage({ params }: PaperPageProps) {
     );
   }
 
-  const selectedPaper = pyqs.papers.find(
-    (p: { year: number; month: string }) =>
-      `${p.month.toLowerCase()}-${p.year}` === paper
+  const selectedPaper = pyqs.papers.find((p: { year: number; month: string }) =>
+    paperMatchesSlug(p, paper)
   );
 
   if (!selectedPaper) {
