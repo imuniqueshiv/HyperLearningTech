@@ -98,14 +98,14 @@ export function getSubjectContentDir(input: {
     normalizeSemester(input.semester) ?? input.semester;
   const semester = sanitizePathSegment(normalizedSemester, "semester");
   const subjectCode = sanitizePathSegment(input.subjectCode, "subjectCode");
-  const dir = path.resolve(
-    process.cwd(),
+  // Avoid path.resolve(cwd, …dynamics): Turbopack expands that into an NFT
+  // pattern matching the entire content tree and warns during `next build`.
+  const root = path.join(
+    /* turbopackIgnore: true */ process.cwd(),
     "content",
-    "rgpv",
-    branch,
-    semester,
-    subjectCode
+    "rgpv"
   );
+  const dir = [root, branch, semester, subjectCode].join(path.sep);
   assertSubjectContentPath(dir);
   return dir;
 }
@@ -131,7 +131,11 @@ function sanitizePathSegment(value: string, label: string): string {
  * Ensures a resolved absolute path stays inside content/rgpv.
  */
 export function assertSubjectContentPath(absolutePath: string): void {
-  const root = path.resolve(process.cwd(), "content", "rgpv");
+  const root = path.join(
+    /* turbopackIgnore: true */ process.cwd(),
+    "content",
+    "rgpv"
+  );
   const resolved = path.resolve(absolutePath);
   const rel = path.relative(root, resolved);
   if (rel.startsWith("..") || path.isAbsolute(rel)) {

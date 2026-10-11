@@ -254,7 +254,7 @@ export default function Navbar() {
 
               <div className="flex flex-col justify-center">
                 <span className="block text-lg font-extrabold tracking-tighter text-[#F4F5F7] md:text-[20px]">
-                  Hyper Learning Tech
+                  Hyper Learning
                 </span>
                 <p className="mt-0.5 text-[11px] font-medium text-[#94A3B8] md:text-xs">
                   AI-Powered Learning Platform

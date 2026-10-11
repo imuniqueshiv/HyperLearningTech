@@ -1,9 +1,12 @@
 import fs from "fs/promises";
-import path from "path";
 import type { MetadataRoute } from "next";
 
 import { branches } from "@/lib/data/branches";
 import { subjects } from "@/lib/data/subjects";
+import {
+  getRgpvSubjectDir,
+  joinUnderAbsoluteRoot,
+} from "@/lib/content/rgpv-paths";
 import { toPaperSlug } from "@/lib/content/paper-slug";
 import { SITE_ORIGIN, absoluteUrl } from "@/lib/seo/site";
 
@@ -30,7 +33,7 @@ function subjectSegment(subject: {
 
 async function pathExists(filePath: string): Promise<boolean> {
   try {
-    await fs.access(filePath);
+    await fs.access(/* turbopackIgnore: true */ filePath);
     return true;
   } catch {
     return false;
@@ -39,7 +42,7 @@ async function pathExists(filePath: string): Promise<boolean> {
 
 async function readPaperSlugs(pyqsPath: string): Promise<string[]> {
   try {
-    const raw = await fs.readFile(pyqsPath, "utf8");
+    const raw = await fs.readFile(/* turbopackIgnore: true */ pyqsPath, "utf8");
     const data = JSON.parse(raw) as {
       papers?: Array<{ month?: string; year?: number }>;
     };
@@ -57,11 +60,6 @@ async function readPaperSlugs(pyqsPath: string): Promise<string[]> {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
-  const contentRoot = path.join(
-    /* turbopackIgnore: true */ process.cwd(),
-    "content",
-    "rgpv"
-  );
   const availableBranches = branches.filter(
     (branch) => branch.status === "Available"
   );
@@ -148,14 +146,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const subject of indexableSubjects) {
     const segment = subjectSegment(subject);
     const subjectBase = `/rgpv/${subject.branchId}/${subject.semesterId}/${segment}`;
-    const subjectDir = path.join(
-      contentRoot,
+    const subjectDir = getRgpvSubjectDir(
       subject.branchId,
       subject.semesterId,
       segment
     );
-    const syllabusPath = path.join(subjectDir, "syllabus.json");
-    const pyqsPath = path.join(subjectDir, "pyqs.json");
+    const syllabusPath = joinUnderAbsoluteRoot(subjectDir, "syllabus.json");
+    const pyqsPath = joinUnderAbsoluteRoot(subjectDir, "pyqs.json");
     const hasSyllabus = await pathExists(syllabusPath);
     const hasPyqs = await pathExists(pyqsPath);
 

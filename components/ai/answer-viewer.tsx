@@ -25,8 +25,9 @@ interface AnswerViewerProps {
 function preprocessMath(text: string): string {
   let result = text
     .replace(/\r\n/g, "\n")
-    .replace(/\\\[/g, "$$")
-    .replace(/\\\]/g, "$$")
+    // Replacer functions: in string replacements "$$" means a single "$".
+    .replace(/\\\[/g, () => "$$")
+    .replace(/\\\]/g, () => "$$")
     .replace(/\\\(/g, "$")
     .replace(/\\\)/g, "$");
 

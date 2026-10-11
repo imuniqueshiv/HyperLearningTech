@@ -14,14 +14,15 @@ import type { SourceFileRef } from "./types";
  * Absolute path to `.cms/uploads` under the project root.
  */
 export function getCmsUploadsRoot(): string {
-  return path.join(process.cwd(), CMS_UPLOADS_DIR);
+  const cwd = /* turbopackIgnore: true */ process.cwd();
+  return `${cwd}${path.sep}${CMS_UPLOADS_DIR.replace(/\//g, path.sep)}`;
 }
 
 /**
  * Absolute path to a job workspace directory.
  */
 export function getJobDirectory(jobId: string): string {
-  return path.join(getCmsUploadsRoot(), jobId);
+  return `${getCmsUploadsRoot()}${path.sep}${jobId}`;
 }
 
 /**
@@ -29,7 +30,7 @@ export function getJobDirectory(jobId: string): string {
  */
 export async function ensureCmsUploadsDir(): Promise<string> {
   const root = getCmsUploadsRoot();
-  await fs.mkdir(root, { recursive: true });
+  await fs.mkdir(/* turbopackIgnore: true */ root, { recursive: true });
   return root;
 }
 

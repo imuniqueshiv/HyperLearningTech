@@ -1,7 +1,11 @@
 import fs from "fs/promises";
 import path from "path";
 
-const CONTENT_BASE_DIR = path.join(process.cwd(), "content", "rgpv");
+const CONTENT_BASE_DIR = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  "content",
+  "rgpv"
+);
 const DIAGRAMS_DIR_NAME = "diagrams";
 
 export interface AttachmentPathInput {

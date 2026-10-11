@@ -1,0 +1,867 @@
+{
+  "subject": {
+    "id": "cs-503-c",
+    "code": "CS-503-C",
+    "name": "Cyber Security",
+    "title": "CS-503 (C) - Cyber Security",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Cyber-crime. Discuss the challenges of cyber-crime in the modern digital world.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-definition-challenges"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain different classifications of cyber-crimes such as e-mail spoofing, spamming, internet time theft and salami attack.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-classification-examples"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain Web jacking, online fraud and software piracy with examples.",
+              "unit": "Unit 2",
+              "type": "cyber-attack-types-examples"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss Computer network intrusions, password sniffing and identity theft.",
+              "unit": "Unit 2",
+              "type": "cyber-attack-network-intrusion"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain Cyber terrorism and virtual crimes. Discuss the perception of cyber criminals such as hackers and extremist groups.",
+              "unit": "Unit 2",
+              "type": "cyber-terrorism-virtual-crime"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write short notes on web server hacking and session hijacking.",
+              "unit": "Unit 2",
+              "type": "web-server-hacking-session-hijacking"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the concept of cyber-crime in the context of the IT Act, 2000.",
+              "unit": "Unit 3",
+              "type": "cyber-crime-it-act-2000"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss offences such as Hacking, cyber fraud, cheating, defamation and e-mail abuse under the IT Act.",
+              "unit": "Unit 3",
+              "type": "it-act-offences"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain monetary penalties, jurisdiction and nature of criminality in cyber-crimes.",
+              "unit": "Unit 3",
+              "type": "cyber-crime-penalties-jurisdiction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss strategies to tackle cybercrime and emerging trends in cyber security.",
+              "unit": "Unit 1",
+              "type": "cybercrime-tackling-strategies"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Compare the Indian Evidence Act, 1872 and the Information Technology Act, 2000 with respect to electronic records.",
+              "unit": "Unit 4",
+              "type": "evidence-act-it-act-comparison"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain relevancy, admissibility and probative value of electronic evidence.",
+              "unit": "Unit 4",
+              "type": "electronic-evidence-properties"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain how digital signatures and electronic agreements are proved in courts.",
+              "unit": "Unit 4",
+              "type": "digital-signature-electronic-agreement-proof"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the proof and management of electronic messages and records.",
+              "unit": "Unit 4",
+              "type": "electronic-records-messages-proof-management"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain tools used in cybercrimes such as proxy servers, anonymizers, key loggers, spyware and backdoors.",
+              "unit": "Unit 5",
+              "type": "cybercrime-tools-explanation"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss Dos and DDoS attacks, buffer overflow and phishing techniques.",
+              "unit": "Unit 5",
+              "type": "dos-ddos-buffer-overflow-phishing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the term Cyber Crime. List down some important cyber crimes and explain each of them in two to three sentences.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-introduction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Which are more threatening to cyber security between viruses and worms? Describe precisely.",
+              "unit": "Unit 5",
+              "type": "viruses-vs-worms"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is Salami Attack? What are the different techniques?",
+              "unit": "Unit 1",
+              "type": "salami-attack"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the different types of phishing techniques.",
+              "unit": "Unit 2",
+              "type": "phishing-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is password sniffing and cyber terrorism?",
+              "unit": "Unit 2",
+              "type": "password-sniffing-cyber-terrorism"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain session hijacking. What are the problems may be generate due to session hijacking?",
+              "unit": "Unit 2",
+              "type": "session-hijacking"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the term 'Frauds' with reference to cyber crime and define the various types of online frauds.",
+              "unit": "Unit 2",
+              "type": "online-frauds"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you mean by identity theft? Describe its types? What techniques are used for ID theft?",
+              "unit": "Unit 2",
+              "type": "identity-theft"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the different types of offence in Information Technology Act, 2000? Discuss cyber offence control mechanism under this Act.",
+              "unit": "Unit 3",
+              "type": "it-act-offences-control-mechanism"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "List down some of the strategies to tackle cyber crime.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-strategies"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How can we check the validity of digital evidence?",
+              "unit": "Unit 4",
+              "type": "digital-evidence-validity"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain records as evidence, status of electronic term according to IT Act 2000.",
+              "unit": "Unit 4",
+              "type": "electronic-records-it-act"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define DoS and DDoS attacks in brief. What are the techniques behind such attacks?",
+              "unit": "Unit 5",
+              "type": "dos-ddos-attacks"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain in brief note on Indian Evidence Act of 1872?",
+              "unit": "Unit 4",
+              "type": "indian-evidence-act"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Key loggers",
+              "unit": "Unit 5",
+              "type": "keyloggers"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Email spoofing",
+              "unit": "Unit 1",
+              "type": "email-spoofing"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Software piracy",
+              "unit": "Unit 2",
+              "type": "software-piracy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the term Cyber Crime. List down some important cyber crimes and explain each of them in two to three sentences.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-introduction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define 'Spoofing' and 'Spamming' in detail. Describe types of spamming in cyber space and give some prevention mechanism regarding email spoofing.",
+              "unit": "Unit 1",
+              "type": "spoofing-spamming-prevention"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you mean by 'Salami attack'? What are its adverse effect on economic structure of society explain with example?",
+              "unit": "Unit 1",
+              "type": "salami-attack-explanation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the terms Password Sniffing and Session Hijacking.",
+              "unit": "Unit 2",
+              "type": "password-sniffing-session-hijacking"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the ways of classification of cyber crimes. Give suitable example for each crime in that particular class.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-classification"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain defamation in the context of cyber crime. List down some important provision about cyber defamation mentioned in Indian penal code 1860.",
+              "unit": "Unit 3",
+              "type": "cyber-defamation-ipc"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Enlighten Information Technology Act, 2000. What do you know about Indian Evidence Act, 1872?",
+              "unit": "Unit 4",
+              "type": "it-act-evidence-act"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the management of Electronic records.",
+              "unit": "Unit 4",
+              "type": "electronic-records-management"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5i",
+              "label": "i)",
+              "text": "Email Abuse",
+              "unit": "Unit 3",
+              "type": "email-abuse"
+            },
+            {
+              "id": "q5ii",
+              "label": "ii)",
+              "text": "Trojan Horses",
+              "unit": "Unit 5",
+              "type": "trojan-horses"
+            },
+            {
+              "id": "q5iii",
+              "label": "iii)",
+              "text": "Ransomware attack",
+              "unit": "Unit 2",
+              "type": "ransomware-attack"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define phishing. What are the major phishing activities performed by the cyber criminals recent days?",
+              "unit": "Unit 2",
+              "type": "phishing-definition-activities"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you understand by \"Attack on web server\"? Explain the steps taken to avoid web server hacking.",
+              "unit": "Unit 2",
+              "type": "web-server-attack-prevention"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Give a note on significance of digital signature. What are the pros and cons of digital signatures?",
+              "unit": "Unit 4",
+              "type": "digital-signature-pros-cons"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you understand by term VIRUS and WORMS? Give definitions along with their types in detail.",
+              "unit": "Unit 5",
+              "type": "virus-worms-types"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Password Cracking",
+              "unit": "Unit 5",
+              "type": "password-cracking"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Nature of Criminality",
+              "unit": "Unit 3",
+              "type": "nature-of-criminality"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Types of Hackers",
+              "unit": "Unit 3",
+              "type": "types-of-hackers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the various modes or manner of committing cybercrime?",
+              "unit": "Unit 1",
+              "type": "cybercrime-modes"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is internet time theft in cybercrime? What is the 1st cybercrime in India?",
+              "unit": "Unit 1",
+              "type": "internet-time-theft"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "",
+              "text": "Where did the term Salami attack come from? Can a single salami attack take away a large sum of money from a single account? If yes explain the process.",
+              "unit": "Unit 1",
+              "type": "salami-attack"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the different layers of cyber security?",
+              "unit": "Unit 2",
+              "type": "cyber-security-layers"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the common cyber-attacks which can be used by Hackers to damage network?",
+              "unit": "Unit 2",
+              "type": "common-cyber-attacks"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write the differences between Session Hijacking and Spoofing?",
+              "unit": "Unit 2",
+              "type": "session-hijacking-spoofing-differences"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain how to prevent session hijacking attacks from happening?",
+              "unit": "Unit 2",
+              "type": "session-hijacking-prevention"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the different activities under the jurisdiction of cybercrime laws?",
+              "unit": "Unit 3",
+              "type": "cybercrime-jurisdiction-activities"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the monetary penalties under IT Act 2000?",
+              "unit": "Unit 3",
+              "type": "it-act-2000-monetary-penalties"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Will cybercrime in the coming years affect hackers' attacks aimed at technology devices of the Internet of things?",
+              "unit": "Unit 1",
+              "type": "cybercrime-iot-impact"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the Information Technology Act 2000 dealing with who issues the digital signature under the Information Technology Act 2000?",
+              "unit": "Unit 4",
+              "type": "it-act-2000-digital-signature"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the different types of evidences required for proving the electronic agreements and how it is protected?",
+              "unit": "Unit 4",
+              "type": "electronic-agreement-evidence"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the various techniques for proofing evidence of digital record?",
+              "unit": "Unit 4",
+              "type": "digital-record-evidence-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is the role of proxy servers and anonymizers in phishing?",
+              "unit": "Unit 5",
+              "type": "proxy-anonymizers-phishing"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is the differences between Trojan horses and Backdoors?",
+              "unit": "Unit 5",
+              "type": "trojan-horse-backdoor-differences"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Which are more threatening to cyber security between viruses and worms? Describe precisely.",
+              "unit": "Unit 5",
+              "type": "viruses-worms-comparison"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Illustrate, how password-based authentication system contributes to strengthening Secure System Design.",
+              "unit": "Unit 5",
+              "type": "password-authentication-design"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Determine the conceptual differences between Spoofing and Session Hijacking.",
+              "unit": "Unit 2",
+              "type": "spoofing-session-hijacking-comparison"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Talk about the different issues and challenges of cybercrime. Also explain the power and characteristics of cyber terrorism.",
+              "unit": "Unit 1",
+              "type": "cybercrime-challenges-cyberterrorism"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the importance of digital signatures and certificates in the formation of SSL/TLS-based sessions.",
+              "unit": "Unit 4",
+              "type": "digital-signatures-ssl-tls"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Analyse how phishing and pharming assaults have affected various web-based transactions.",
+              "unit": "Unit 2",
+              "type": "phishing-pharming-impact"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write short note on \"Strategies to tackle Cyber Crime and Trends\".",
+              "unit": "Unit 1",
+              "type": "cybercrime-strategies-trends"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Consider the following script:\n```html\n<html>\n<body>\n<form name=\"attack_form\"\naction=\"http://VULNERABLE_APP/attack.php\"\nmethod=\"POST\">\n<input type=\"hidden\" name=\"attack_param\"\nvalue=\"POST_ATTACK\">\n</form>\n<script type=\"text/javascript\">\ndocument.attack_form.submit();\n</script>\n</body>\n</html>\n```\nWhat type of vulnerabilities can be possible with the above script? Justify your answer with proper explanation.",
+              "unit": "Unit 2",
+              "type": "web-vulnerability-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "user=request.POST['user_name']\npasswd=request.POST['password']\nquery1=\"SELECT id FROM users WHERE username='\"+\nuser+\"' AND password='\"+ passwd+\"'\"\ndatabase.execute(query1)\nAnalyse the above statements for any threat? If it exists, write the alternative statements to make them safe.",
+              "unit": "Unit 2",
+              "type": "sql-injection-analysis"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Electronic Signature Certificate. What are the duties of subscriber in relation to it?",
+              "unit": "Unit 4",
+              "type": "electronic-signature-certificate"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the roles of Document Object Model (DOM) in web security. What is cross-window attack?",
+              "unit": "Unit 2",
+              "type": "dom-web-security-cross-window-attack"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the role of cookies in enhancing threats against various web applications?",
+              "unit": "Unit 2",
+              "type": "cookies-web-threats"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the different types of offence in Information Technology Act 2000? Discuss cyber offence control mechanism under this Act.",
+              "unit": "Unit 3",
+              "type": "it-act-2000-offences-control"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How can attacker inject the malicious code in a specific address and execute it as per requirement using buffer overflow attack? - Explain it with suitable example.",
+              "unit": "Unit 5",
+              "type": "buffer-overflow-attack"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss the different issues and challenges of cybercrime? Also explain the power and characteristics of cyber terrorism.",
+              "unit": "Unit 1",
+              "type": "cybercrime-challenges-cyberterrorism"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss the importance of TLS handshaking in a secure session establishment.",
+              "unit": "Unit 4",
+              "type": "tls-handshaking-security"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

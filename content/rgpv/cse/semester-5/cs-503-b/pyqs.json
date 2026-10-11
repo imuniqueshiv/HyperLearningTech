@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "cs-503-b",
+    "code": "CS-503-B",
+    "name": "Pattern Recognition",
+    "title": "CS-503 (B) - Pattern Recognition",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain various Design principles of Pattern Recognition systems.",
+              "unit": "Unit 1",
+              "type": "design-principles"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between supervised learning and unsupervised learning with suitable example.",
+              "unit": "Unit 1",
+              "type": "supervised-unsupervised-learning-differentiation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a detail note on Random Forest.",
+              "unit": "Unit 2",
+              "type": "random-forest"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define the following i) Clustering ii) Metric spaces",
+              "unit": "Unit 3",
+              "type": "definitions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How does K-Nearest Neighbor works? Explain with KNN estimation and KNN rules.",
+              "unit": "Unit 2",
+              "type": "k-nearest-neighbor"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What do you understand by normalization? Explain with example.",
+              "unit": "Unit 1",
+              "type": "normalization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe about cluster validation.",
+              "unit": "Unit 3",
+              "type": "cluster-validation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Enlist the Clustering Techniques. Explain any one Technique.",
+              "unit": "Unit 3",
+              "type": "clustering-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "State and explain the different paradigms of pattern recognition.",
+              "unit": "Unit 3",
+              "type": "pattern-recognition-paradigms"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the various types of feature extraction.",
+              "unit": "Unit 4",
+              "type": "feature-extraction-types"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Illustrate branch and bound Algorithm with suitable example.",
+              "unit": "Unit 4",
+              "type": "branch-and-bound-algorithm"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write an algorithm for forward selection with suitable example.",
+              "unit": "Unit 4",
+              "type": "forward-selection-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe about the of Neuro-Fuzzy and its Techniques.",
+              "unit": "Unit 5",
+              "type": "neuro-fuzzy-techniques"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State and explain the rules of Histogram in detail.",
+              "unit": "Unit 5",
+              "type": "histogram-rules"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Write a short note on: Data sets for pattern",
+              "unit": "Unit 1",
+              "type": "data-sets-pattern-recognition"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Write a short note on: Training set",
+              "unit": "Unit 1",
+              "type": "training-set"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Write a short note on: Classifier and variants",
+              "unit": "Unit 2",
+              "type": "classifier-variants"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Write a short note on: FCM",
+              "unit": "Unit 5",
+              "type": "fcm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

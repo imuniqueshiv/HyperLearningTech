@@ -1,6 +1,9 @@
 import fs from "fs/promises";
-import path from "path";
 import type { Topic } from "@/types/topic";
+import {
+  getRgpvContentRoot,
+  getRgpvSubjectFile,
+} from "@/lib/content/rgpv-paths";
 
 export async function getSyllabus(
   branch: string,
@@ -8,12 +11,11 @@ export async function getSyllabus(
   subjectCode: string
 ) {
   try {
-    const baseDir = path.join(process.cwd(), "content", "rgpv");
-    const filePath = path.join(
-      baseDir,
-      branch.toLowerCase(),
-      semester.toLowerCase(),
-      subjectCode.toLowerCase(),
+    const baseDir = getRgpvContentRoot();
+    const filePath = getRgpvSubjectFile(
+      branch,
+      semester,
+      subjectCode,
       "syllabus.json"
     );
 
@@ -21,7 +23,10 @@ export async function getSyllabus(
       throw new Error("Invalid path parameter");
     }
 
-    const file = await fs.readFile(filePath, "utf8");
+    const file = await fs.readFile(
+      /* turbopackIgnore: true */ filePath,
+      "utf8"
+    );
 
     return JSON.parse(file);
   } catch (error) {
@@ -40,12 +45,11 @@ export async function getPYQs(
   subjectCode: string
 ) {
   try {
-    const baseDir = path.join(process.cwd(), "content", "rgpv");
-    const filePath = path.join(
-      baseDir,
-      branch.toLowerCase(),
-      semester.toLowerCase(),
-      subjectCode.toLowerCase(),
+    const baseDir = getRgpvContentRoot();
+    const filePath = getRgpvSubjectFile(
+      branch,
+      semester,
+      subjectCode,
       "pyqs.json"
     );
 
@@ -53,7 +57,10 @@ export async function getPYQs(
       throw new Error("Invalid path parameter");
     }
 
-    const file = await fs.readFile(filePath, "utf8");
+    const file = await fs.readFile(
+      /* turbopackIgnore: true */ filePath,
+      "utf8"
+    );
 
     return JSON.parse(file);
   } catch (error) {

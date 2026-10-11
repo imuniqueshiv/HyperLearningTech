@@ -9,7 +9,11 @@ import type { ImportHistoryRecord } from "./history-types";
 import { writeJsonAtomic } from "./json-writer";
 import { readJsonFile } from "./json-reader";
 
-const HISTORY_DIR = path.join(process.cwd(), ".cms", "history");
+const HISTORY_DIR = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  ".cms",
+  "history"
+);
 const HISTORY_INDEX = "index.json";
 
 export function getHistoryDir(): string {

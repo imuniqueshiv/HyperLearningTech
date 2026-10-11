@@ -1,0 +1,874 @@
+{
+  "subject": {
+    "id": "cs-504-a",
+    "code": "CS-504-A",
+    "name": "Internet and Web Technology",
+    "title": "CS-504 (A) - Internet and Web Technology",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain WWW architecture, HTTP request-response cycle and role of web servers.",
+              "unit": "Unit 1",
+              "type": "www-architecture-http-protocol-web-servers"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss principles of effective web design and user-centric navigation.",
+              "unit": "Unit 1",
+              "type": "effective-web-design-user-centric-navigation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain Web 2.0 features and their impact on modern websites.",
+              "unit": "Unit 1",
+              "type": "web-2.0-features-impact"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain website planning, sitemap creation and publishing process.",
+              "unit": "Unit 1",
+              "type": "website-planning-sitemap-publishing"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain HTML structure, forms, tables and meta tags.",
+              "unit": "Unit 2",
+              "type": "html-structure-forms-tables-meta-tags"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain HTML5 features and browser architecture.",
+              "unit": "Unit 2",
+              "type": "html5-features-browser-architecture"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain need for CSS and CSS box model with positioning techniques.",
+              "unit": "Unit 3",
+              "type": "css-need-box-model-positioning"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain JavaScript control structure and DOM manipulation.",
+              "unit": "Unit 3",
+              "type": "javascript-control-structure-dom-manipulation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain DHTML and event handling with examples.",
+              "unit": "Unit 3",
+              "type": "dhtml-event-handling"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain JavaScript form validation techniques.",
+              "unit": "Unit 3",
+              "type": "javascript-form-validation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain XML components, DTD and XML schemas.",
+              "unit": "Unit 4",
+              "type": "xml-components-dtd-schemas"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain transformation of XML using XSL/XSLT.",
+              "unit": "Unit 4",
+              "type": "xml-transformation-xsl-xslt"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain PHP syntax, arrays, functions and form processing.",
+              "unit": "Unit 4",
+              "type": "php-syntax-arrays-functions-form-processing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain cookies, sessions and OOP concepts in PHP.",
+              "unit": "Unit 5",
+              "type": "php-cookies-sessions-oop"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain PHP-MYSQL connectivity and database operations.",
+              "unit": "Unit 5",
+              "type": "php-mysql-connectivity-database-operations"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain role of phpMyAdmin and handling database bugs.",
+              "unit": "Unit 5",
+              "type": "phpmyadmin-database-bugs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the principles of effective web design. Give some examples of best practices and techniques for designing modern, user-friendly websites. [7 Marks]",
+              "unit": "Unit 1",
+              "type": "effective-web-design-principles"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How does User-Centric Design (UCD) differ from traditional design approaches, and why is it considered essential for creating successful digital products? [7 Marks]",
+              "unit": "Unit 1",
+              "type": "user-centric-design-vs-traditional"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the basic structure of an HTML document. [7 Marks]",
+              "unit": "Unit 2",
+              "type": "html-document-structure"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How does a web browser's architecture facilitate the rendering of HTML content? Describe the key components of a browser's rendering engine and explain how they collaborate to display web pages. [7 Marks]",
+              "unit": "Unit 1",
+              "type": "web-browser-architecture-rendering"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the key concepts of CSS. How they are used to style and format content. [7 Marks]",
+              "unit": "Unit 3",
+              "type": "css-concepts-styling"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How can you use JavaScript to dynamically manipulate CSS styles on HTML elements? Provide examples of how you can change the color, size or position of an element using JavaScript. [7 Marks]",
+              "unit": "Unit 3",
+              "type": "javascript-css-manipulation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is XML. (eXtensible Markup Language), and how does it differ from HTML? Describe the basic structure of an XML document. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "xml-vs-html-structure"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the concept of Object-Oriented Programming (OOP) in PHP. Discuss the key principles of OOP, such as encapsulation, inheritance and polymorphism and how they are implemented in PHP. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "php-oop-principles"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How do you establish a connection to a MySQL database using PHP? Provide examples of the code needed to connect to a MySQL database server. [7 Marks]",
+              "unit": "Unit 5",
+              "type": "php-mysql-connection"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain how to execute SQL queries in PHP to retrieve, insert, update and delete data from a MySQL database. [7 Marks]",
+              "unit": "Unit 5",
+              "type": "php-mysql-crud-operations"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are some key principles for designing effective navigation systems in websites or mobile apps, and how do these principles contribute to a better user experience? [7 Marks]",
+              "unit": "Unit 1",
+              "type": "effective-navigation-design"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is an HTML list, and what are the different types of lists? How do you add images to an HTML document? [7 Marks]",
+              "unit": "Unit 2",
+              "type": "html-lists-images"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the advantages of using XML for data storage and exchange in web applications. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "xml-data-storage-exchange"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How do you handle database errors and exceptions in PHP? [7 Marks]",
+              "unit": "Unit 5",
+              "type": "php-database-error-handling"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on (any two): Web design issue [14 Marks]",
+              "unit": "Unit 1",
+              "type": "web-design-issues"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on (any two): Overview and features of HTML5 [14 Marks]",
+              "unit": "Unit 2",
+              "type": "html5-features"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on (any two): DOM [14 Marks]",
+              "unit": "Unit 3",
+              "type": "document-object-model"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on (any two): XSL [14 Marks]",
+              "unit": "Unit 4",
+              "type": "xsl-overview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Internet. What do you mean by Webpage?",
+              "unit": "Unit 1",
+              "type": "internet-webpage-definition"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is a web server and a web browser? What is the interaction between a web browser and a web server?",
+              "unit": "Unit 1",
+              "type": "web-server-browser-interaction"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is DOM? Explain its usage with HTML with an example.",
+              "unit": "Unit 3",
+              "type": "dom-html-usage"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is HTML? List the goals of SGML. Explain the various HTML tags to develop the web pages.",
+              "unit": "Unit 2",
+              "type": "html-sgml-tags"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is CSS? List out the various CSS properties. Explain the various concepts of CSS properties with neat example.",
+              "unit": "Unit 3",
+              "type": "css-properties-concepts"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is a DTD (Document Type Definition). What are its applications?",
+              "unit": "Unit 4",
+              "type": "dtd-definition-applications"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss Web design issues in details.",
+              "unit": "Unit 1",
+              "type": "web-design-issues"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define XHTML. What are the differences between XHTML and HTML with an example.",
+              "unit": "Unit 2",
+              "type": "xhtml-html-differences"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How can both Internal and External DTDs be used in an XML File? Show with an example.",
+              "unit": "Unit 4",
+              "type": "internal-external-dtd-xml"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Explain the following terms:\ni) Cookies and sessions\nii) Creating Database\niii) Planning and Publishing Websites",
+              "unit": "Unit 1",
+              "type": "web-terms-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "List the statements that are used to connect PHP with MySQL with an example.",
+              "unit": "Unit 5",
+              "type": "php-mysql-connection"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the various events handlers in java script. Give an example of each.",
+              "unit": "Unit 3",
+              "type": "javascript-event-handlers"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write a short notes :\na) XML Key Components\nb) Object oriented programming in PHP\nc) MySQL\nd) Need for CSS",
+              "unit": "Unit 4",
+              "type": "short-notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the various types of web design issues.",
+              "unit": "Unit 1",
+              "type": "web-design-issues"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the steps involved in planning and publishing a website? Explain.",
+              "unit": "Unit 1",
+              "type": "website-planning-publishing"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the impact of Web 2.0 on web development.",
+              "unit": "Unit 1",
+              "type": "web-2.0-impact"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate HTML and XHTML with suitable examples.",
+              "unit": "Unit 2",
+              "type": "html-vs-xhtml"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write an HTML program to divide your browsing window into 3 parts consisting of 2 rows of size 20% and 80% and divide the last row into two columns of size 30% and 70%.",
+              "unit": "Unit 2",
+              "type": "html-frameset-program"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the properties and methods of objects in JavaScript with a suitable script.",
+              "unit": "Unit 3",
+              "type": "javascript-objects-properties-methods"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain how to communicate DOM API?",
+              "unit": "Unit 3",
+              "type": "dom-api-communication"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How will CSS improve the web page and website design layout?",
+              "unit": "Unit 3",
+              "type": "css-web-design-improvement"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare the critical differences between DTD and XML Schema.",
+              "unit": "Unit 4",
+              "type": "dtd-vs-xml-schema"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Briefly explain XSL transformation with an example of script.",
+              "unit": "Unit 4",
+              "type": "xsl-transformation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain form handling with the get and post methods in PHP.",
+              "unit": "Unit 4",
+              "type": "php-form-handling-get-post"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the difference between sessions and cookies in PHP?",
+              "unit": "Unit 5",
+              "type": "php-sessions-vs-cookies"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the steps in the PHP code for querying a database with suitable examples.",
+              "unit": "Unit 5",
+              "type": "php-database-querying"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Create a simple shopping cart application using PHP and MySQL.",
+              "unit": "Unit 5",
+              "type": "php-mysql-shopping-cart-application"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "PHPmyadmin and database bugs",
+              "unit": "Unit 5",
+              "type": "phpmyadmin-database-bugs"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Client-side scripting and Server-side scripting",
+              "unit": "Unit 1",
+              "type": "client-server-scripting"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Features of HTML5",
+              "unit": "Unit 2",
+              "type": "html5-features"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "HTTP Protocol",
+              "unit": "Unit 1",
+              "type": "http-protocol"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain in detail about the web browser and protocols web browser and web servers and give its clarification.",
+              "unit": "Unit 1",
+              "type": "web-browser-protocols-explanation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of web designing and give its clarification.",
+              "unit": "Unit 1",
+              "type": "web-design-concept"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you understand by bandwidth? Discuss about cache and its types.",
+              "unit": "Unit 1",
+              "type": "bandwidth-cache-discussion"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "List out the following HTML tags and explain with suitable examples: anchor, image and table tags.",
+              "unit": "Unit 2",
+              "type": "html-tags-explanation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Enlighten the concept of frames with a suitable program.",
+              "unit": "Unit 2",
+              "type": "html-frames-program"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "text": "Design the different list tag elements in HTML with simple programs.",
+              "unit": "Unit 2",
+              "type": "html-list-tags-program"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the following with reference to java script with suitable examples: i) Functions ii) Form validation",
+              "unit": "Unit 3",
+              "type": "javascript-functions-form-validation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How are XHTML elements and attributes represented in the java script binding to DOM? Explain.",
+              "unit": "Unit 3",
+              "type": "xhtml-dom-binding"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a program in JavaScript to convert Height from :centimeters to inches and vice-versa.",
+              "unit": "Unit 3",
+              "type": "javascript-unit-conversion-program"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write about cookies and sessions in PHP with suitable program.",
+              "unit": "Unit 4",
+              "type": "php-cookies-sessions-program"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "State the differences between GET and POST methods.",
+              "unit": "Unit 1",
+              "type": "http-get-post-differences"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain about the control structures in PHP with illustrations.",
+              "unit": "Unit 4",
+              "type": "php-control-structures"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Put in writing MYSQL database connectivity program using PHP.",
+              "unit": "Unit 5",
+              "type": "php-mysql-connectivity-program"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Elucidate PHPmyadmin, and briefly explain database bugs.",
+              "unit": "Unit 5",
+              "type": "phpmyadmin-database-bugs"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "",
+              "text": "i) How do you list the databases tables in PHP",
+              "unit": "Unit 5",
+              "type": "php-mysql-list-tables"
+            },
+            {
+              "id": "q8ii",
+              "label": "",
+              "text": "ii) Browser architecture",
+              "unit": "Unit 1",
+              "type": "browser-architecture"
+            },
+            {
+              "id": "q8iii",
+              "label": "",
+              "text": "iii) Features of CSS3",
+              "unit": "Unit 3",
+              "type": "css3-features"
+            },
+            {
+              "id": "q8iv",
+              "label": "",
+              "text": "iv) Form processing",
+              "unit": "Unit 4",
+              "type": "form-processing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
