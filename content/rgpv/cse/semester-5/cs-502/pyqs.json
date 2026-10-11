@@ -1,0 +1,721 @@
+{
+  "subject": {
+    "id": "cs-502",
+    "code": "CS-502",
+    "name": "Database Management Systems",
+    "title": "CS-502 - Database Management Systems",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Database approach and compare it with the traditional file processing system. Discuss advantages of database systems.",
+              "unit": "Unit 1",
+              "type": "database-vs-file-system"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain Data models, schemas, and instances. What is data independence?",
+              "unit": "Unit 1",
+              "type": "data-models-schemas-independence"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the ER data model. Explain entities, attributes, and relationships with examples.",
+              "unit": "Unit 1",
+              "type": "er-data-model"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Draw an ER diagram for a library system and transform it into relational tables.",
+              "unit": "Unit 2",
+              "type": "er-to-relational-mapping"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain relational data model concepts: relations, attributes, tuples, domains, and keys.",
+              "unit": "Unit 2",
+              "type": "relational-model-concepts"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write SQL queries to :\n(i) create a table STUDENT(Roll No, Name, Marks),\n(ii) insert two records\n(iii) retrieve students with Marks > 60",
+              "unit": "Unit 2",
+              "type": "sql-ddl-dml"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain normalization and functional dependency. Discuss first, second, and third normal forms.",
+              "unit": "Unit 3",
+              "type": "normalization-functional-dependency"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Normalize the relation R(A, B, C, D) with dependencies: A \\to B, B \\to C, C \\to D to the highest normal form.",
+              "unit": "Unit 3",
+              "latex": "A \\to B, B \\to C, C \\to D",
+              "type": "normalization-example"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain query optimization and its importance. Describe heuristic and cost-based optimization.",
+              "unit": "Unit 3",
+              "type": "query-optimization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "For relations EMP(Eid, Dept) and DEPT(Dept, Dname), write relational algebra expressions to find employee names working in 'Sales'.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-query"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain transaction processing and serializability. Differentiate between conflict and view serializability.",
+              "unit": "Unit 4",
+              "type": "transaction-serializability"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Determine whether the schedule is conflict serializable: R1(X), W1(X), R2(X), W2(X), R1(Y), W1(Y).",
+              "unit": "Unit 4",
+              "latex": "R1(X), W1(X), R2(X), W2(X), R1(Y), W1(Y)",
+              "type": "conflict-serializability-check"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Concurrency control techniques: locking and time-stamping protocols.",
+              "unit": "Unit 4",
+              "type": "concurrency-control-protocols"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain Log-based recovery and checkpoints with an example.",
+              "unit": "Unit 4",
+              "type": "log-based-recovery-checkpoints"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain Oracle/MySQL architecture and main memory structures.",
+              "unit": "Unit 5",
+              "type": "rdbms-architecture"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write SQL queries to demonstrate:\n(i) equi-join,\n(ii) outer join, and\n(iii) a nested query using EXISTS.",
+              "unit": "Unit 5",
+              "type": "sql-joins-nested-queries"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Draw and explain the detailed system architecture of DBMS. alt=''",
+              "unit": "Unit 1",
+              "type": "dbms-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "How to represent generalization, specialization and aggregation using ER Diagrams? Explain with suitable ER diagram. alt=''",
+              "unit": "Unit 1",
+              "type": "er-diagram-generalization-specialization-aggregation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How does Tuple-oriented relational calculus differ from domain-oriented relational calculus?",
+              "unit": "Unit 2",
+              "type": "tuple-vs-domain-relational-calculus"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the importance of Null values in Relational Model.",
+              "unit": "Unit 3",
+              "type": "null-values-importance"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain in detail about various key constraints used in database system.",
+              "unit": "Unit 2",
+              "type": "key-constraints"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the mechanism of attribute relationship inheritance. How is it useful?",
+              "unit": "Unit 1",
+              "type": "attribute-relationship-inheritance"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss in detail the operators SELECT, PROJECT and UNION with suitable examples.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-operators"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Give a brief note on Query optimization.",
+              "unit": "Unit 3",
+              "type": "query-optimization"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the role of functional dependencies in normalization with suitable examples.",
+              "unit": "Unit 3",
+              "type": "functional-dependencies-normalization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain about Boyce Codd normal form with an example.",
+              "unit": "Unit 3",
+              "type": "boyce-codd-normal-form"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain Timestamping protocols for concurrency control.",
+              "unit": "Unit 4",
+              "type": "timestamping-protocols"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is 2-phase locking protocol? Compare 2PL with Strict 2PL protocol.",
+              "unit": "Unit 4",
+              "type": "two-phase-locking-protocol"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Transaction? Discuss about transaction recovery techniques.",
+              "unit": "Unit 4",
+              "type": "transaction-recovery-techniques"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain briefly: i) Distributive Databases ii) Triggers iii) Join operations",
+              "unit": "Unit 5",
+              "type": "short-notes"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is Cursor Management? Explain nested and parameterized cursors.",
+              "unit": "Unit 5",
+              "type": "cursor-management"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes : i) Oracle Exception Handling Mechanism ii) Branching and looping Constructs in ANSI SQL.",
+              "unit": "Unit 5",
+              "type": "short-notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the role of following in representing information about the real world in a database? [7 Marks]\ni) DDL and DML\nii) The buffer manager\niii) The data model",
+              "unit": "Unit 1",
+              "type": "database-components-roles"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the structure of a DBMS. If your operating system is upgraded to support some new functions on OS files (e.g., the ability to force some sequence of bytes to disk), which layer(s) of the DBMS would you have to rewrite to take advantage of these new functions? [7 Marks]",
+              "unit": "Unit 1",
+              "type": "dbms-architecture-layers"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Consider the following ER diagram with the relations E1(a, b) and E2(c, d). R1 and R2 denote relationships between E1 and E2. Illustrate the table schema of the entities E1, E2 while converting ER Diagram to Relational tables. [7 Marks] alt=''",
+              "unit": "Unit 2",
+              "type": "er-to-relational-mapping"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Draw an ER diagram that captures the following information. [7 Marks]\n\"A company database needs to store information about employees (identified by ssn, with salary and phone as attributes), departments (identified by dno, with dname and budget as attributes), and children of employees (with name and age as attributes). Employees work in departments; each department is managed by an employee; a child must be identified uniquely by name when the parent (who is an employee) is assume that only one parent works for the company) is known. We are not interested in information about a child once the parent leaves the company.\"",
+              "unit": "Unit 2",
+              "type": "er-diagram-design"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the following Employee relation with E_ID as the primary key. [7 Marks] Discuss the anomalies that may arise during Insert, Delete and Updating a record in the above relation.\n| E_ID | Ename | Dname |\n|---|---|---|\n| e1 | A | HR |\n| e4 | B | HR |\n| e8 | C | Finance |\n| e9 | D | Null |\n| e2 | E | Civil |",
+              "unit": "Unit 3",
+              "type": "update-anomalies"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Consider the following Employee Relation. [7 Marks]\n| E_ID | E_Name | Gender | Salary | Manager_ID | Dept_ID |\n|---|---|---|---|---|---|\n| 1 | A | M | 8000 | NULL | 101 |\n| 2 | B | M | 5000 | 1 | 101 |\n| 3 | C | F | 2000 | 1 | 101 |\n| 4 | D | F | 2000 | 2 | 102 |\n| 5 | E | M | 4000 | 2 | 102 |\n| 6 | F | M | 2000 | 1 | 103 |\n| 7 | G | F | 4500 | 1 | 103 |\n| 8 | H | F | 3000 | 1 | 104 |\nWrite SQL Queries for the following:\ni) Fetch the Dept_ID whose average salary is higher than 4000.\nii) Fetch the Dept_ID whose average salary of male employees is higher than 2000.\niii) Fetch the Name of all employees whose Manager_ID is '1'.\niv) Fetch the Name of all employees of Dept_ID as '103' and their Manager_ID is '1'.\nv) Fetch the name, salary, and Dept_ID of employee getting second highest salary.\nvi) Fetch the E_ID and Name of employees who are getting salary higher than the salary of employee 'F'.\nvii) Fetch the D_ID of employees who are getting salary higher than the salary of employee 'E'.",
+              "unit": "Unit 2",
+              "type": "sql-queries"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the major steps in query optimization? What do you understand by sigma cascade operation? [7 Marks]",
+              "unit": "Unit 3",
+              "type": "query-optimization-steps"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss various cost components for query execution. [7 Marks]",
+              "unit": "Unit 3",
+              "type": "query-execution-cost"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Identify the candidate keys and highest normal form of the relation R (ABCDEF). The functional dependencies of the relation R. [7 Marks]\n$A \\to BC$\n$C \\to E$\n$E \\to F$\n$F \\to AB$",
+              "unit": "Unit 3",
+              "latex": "A \\to BC, C \\to E, E \\to F, F \\to AB",
+              "type": "candidate-keys-normal-form"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Consider a relation R(WXYZ) with the following set of functional dependencies. [7 Marks]\n$X \\to W$\n$WZ \\to XY$\n$Y \\to WXZ$\nCompute the minimal (canonical) cover of the above relation R.",
+              "unit": "Unit 3",
+              "latex": "X \\to W, WZ \\to XY, Y \\to WXZ",
+              "type": "canonical-cover"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Consider the following actions taken by transaction T1 on database objects X and Y [7 Marks]\nR(X), W(X), R(Y), W(Y)\nGive an example of another transaction T2 that, if run concurrently to transaction T without some form of concurrency control, could interfere with T1.",
+              "unit": "Unit 4",
+              "type": "concurrency-control-interference"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Consider a schedule S using two phase locking mechanism for concurrency control. Convert the given schedule to strict and rigorous two-phase locking protocol. [7 Marks]\nLock Shared(A)\nRead(A)\nLock Exclusive(B)\nRead(B)\nB=B+A\nWrite (A)\nWrite (B)\nUnlock (A)\nUnlock (B)\nCommit",
+              "unit": "Unit 4",
+              "type": "two-phase-locking-protocol"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Consider the following transactions with two data items A and B. Show the precedence graph for the given concurrent schedule and find equivalent serial schedule. [7 Marks]\n| T1 | T2 |\n|---|---|\n| Read(A) | |\n| A=A+10 | |\n| | Read(A) |\n| | Temp=0.2*A |\n| | Write(A) |\n| | Read(B) |\n| Write(A) | |\n| Read(B) | |\n| B=B+10 | |\n| Write(B) | |\n| | B=B+Temp |\n| | Write (B) |",
+              "unit": "Unit 4",
+              "type": "serial-schedule-precedence-graph"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the concept of recoverability in database management system. Show any recoverable schedule consisting of two transactions. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "database-recoverability"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Oracle exception handling mechanism",
+              "unit": "Unit 5",
+              "type": "oracle-exception-handling"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Functions of DBA",
+              "unit": "Unit 1",
+              "type": "dba-functions"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "SQL Aggregate Functions",
+              "unit": "Unit 2",
+              "type": "sql-aggregate-functions"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Distributed databases",
+              "unit": "Unit 5",
+              "type": "distributed-databases"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "A woman artist designs and sells jewellery through mail orders or at craft shows. Currently she has a mailing list in a word processing file that she uses for sending catalogs. She also keeps both supplier and customer names and addresses in word processing files and prepares bills using a spreadsheet and keeps her income and expenses on another spreadsheet. What would be the advantages for her to design and use a DBMS for all her records.",
+              "unit": "Unit 1",
+              "type": "advantages-of-dbms"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Design a possible schema for a doctor's office. The doctors want immediate access to patient medical information. The records clerk needs to be sure all insurance companies are billed as per patient details.",
+              "unit": "Unit 1",
+              "type": "database-schema-design"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Consider the relation Employee_Manager with Employee_ID as the primary key and Manager_ID as the foreign key referencing Employee_ID with on-delete cascade. Determine all the tuples that will be deleted when the following SQL Command:\n| Emp_Manager |\n| Employee_ID | Manager_ID |\n| 2           | 3          |\n| 4           | 5          |\n| 6           | 7          |\n| 8           | 2          |\n| 10          | 4          |\n| 12          | 6          |\n| 14          | 8          |\n| 16          | 2          |\nDelete From Emp_Manager Where Employee_ID = '2'",
+              "unit": "Unit 2",
+              "type": "referential-integrity-on-delete-cascade"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Consider three relations R(a, b), S(b, c) and T(c, d) with following tuple values: R(a, b) = {(0, 1), (4, 5), (8, 9)} S(b, c) = {(1, 2), (5, 2), (5, 6), (5, 10), (13, 10)} T(c, d) = {(2, 3), (6, 7), (10, 11), (10, 3)} Find the result of the following, where $\\bowtie$ denotes natural join i) R $\\bowtie$ S ii) (R $\\bowtie$ S) $\\bowtie$ T",
+              "unit": "Unit 2",
+              "latex": "$\\bowtie$",
+              "type": "natural-join"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the following Employee relation with E_ID as the primary key\n| Employee |\n| E-ID | Ename | dno |\n| E1   | T     | 101 |\n| E2   | T     | 101 |\n| E3   | R     | 102 |\n| E4   | M     | NULL |\n| E5   | Y     | 104 |\nDiscuss the issues that may arise with the interleaved execution of the transactions T1 and T2.",
+              "unit": "Unit 4",
+              "type": "interleaved-transaction-execution-issues"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Consider the following Employee Relation\n| Employee |\n| E_ID | E_NAME | Salary | Manager_ID | Dept_ID |\n| 1    | A      | 8000   | NULL       | 101     |\n| 2    | R      | 5000   | 1          | 101     |\n| 3    | T      | 2000   | 1          | 101     |\n| 4    | M      | 2000   | 2          | 102     |\n| 5    | N      | 4000   | 2          | 102     |\n| 6    | S      | 2000   | 1          | 103     |\n| 7    | P      | 4500   | 1          | 103     |\n| 8    | H      | 3000   | 1          | 104     |\nWrite SQL Queries for the following: i) Fetch the E_ID and Name of employees who are getting salary higher than the salary of employee 'P' ii) Fetch the D_ID of employees who are getting salary higher than the salary of employee 'N' iii) Fetch the E_ID and Name of employees who are getting salary higher than anyone in the Dept_ID '102' iv) Fetch the E_ID and Name of employees who are getting salary higher than all employees in the Dept_ID '103'",
+              "unit": "Unit 2",
+              "type": "sql-complex-queries"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the three major steps in query optimization.",
+              "unit": "Unit 3",
+              "type": "query-optimization-steps"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the various exception handling mechanisms in database platforms.",
+              "unit": "Unit 5",
+              "type": "database-exception-handling"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Identify the candidate key and highest normal form of the relation R (E, F, G, H). Following functional dependencies exists for the relation R E$\\to$F F$\\to$G H$\\to$G",
+              "unit": "Unit 3",
+              "latex": "E$\\to$F, F$\\to$G, H$\\to$G",
+              "type": "normalization-candidate-key-functional-dependency"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Consider a relation R(ABCD) with the following set of functional dependencies A$\\to$B B$\\to$C C$\\to$D D$\\to$A The relation R has been decomposed into three sub relations as R1(AB), R2(BC), and R3(CD). Determine the given decomposition satisfies the dependency preservation property or not?",
+              "unit": "Unit 3",
+              "latex": "A$\\to$B, B$\\to$C, C$\\to$D, D$\\to$A",
+              "type": "decomposition-dependency-preservation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Consider the transaction T as following begin 1. Read (A) 2. Read (B) 3. T = A - 10% of A 4. B = B + t 5. Write (A) 6. Write (B) commit Discuss the transaction states active, partially commit, commit, failure and terminated possible with reference to the above example.",
+              "unit": "Unit 4",
+              "type": "transaction-states"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the issues that may arise with the interleaved execution of the transactions T1 and T2.\n| T1                  | T2                       |\n|---------------------|--------------------------|\n| insert into account | select avg(balance)      |\n| values (222, 40000) | from account             |\n| commit              |                          |\n|                     | select avg(balance)      |\n|                     | from account             |\n|                     | commit                   |",
+              "unit": "Unit 4",
+              "type": "interleaved-transaction-execution-issues"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Draw the precedence graph for the given concurrent schedule and determine if it is conflict serializable or not?\n| Schedule S |     |     |     |\n|------------|-----|-----|-----|\n|            | T1  | T2  | T3  |\n| Read (A)   |     |     |     |\n|            |     | Read (A) |     |\n| Read (B)   |     |     |     |\n|            |     |     | Read (B) |\n|            |     | Write (A) |     |\n| Write (B)  |     |     |     |alt=''",
+              "unit": "Unit 4",
+              "type": "conflict-serializability-precedence-graph"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Illustrate the concept of two-phase locking protocol and its variants with an example.",
+              "unit": "Unit 4",
+              "type": "two-phase-locking-protocol"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on (any two) a) Oracle Application Express",
+              "unit": "Unit 5",
+              "type": "short-note-oracle-application-express"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Specialization vs Generalization",
+              "unit": "Unit 1",
+              "type": "short-note-specialization-generalization"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Temporal vs Multimedia Databases",
+              "unit": "Unit 1",
+              "type": "short-note-temporal-multimedia-databases"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Triggers",
+              "unit": "Unit 2",
+              "type": "short-note-triggers"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

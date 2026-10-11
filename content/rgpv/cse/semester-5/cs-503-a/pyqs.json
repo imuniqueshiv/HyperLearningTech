@@ -1,0 +1,182 @@
+{
+  "subject": {
+    "id": "cs-503-a",
+    "code": "CS-503-A",
+    "name": "Data Analytics",
+    "title": "CS-503 (A) - Data Analytics",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt of dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Suppose the weights of 800 male students are normally distributed with 28.8 kg and SD of 2.06 kg. Find the number of students whose weights are i) Between 28.4 kg and 30.4 kg ii) More than 31.3 kg",
+              "unit": "Unit 1",
+              "latex": "\\mu = 28.8 \\text{ kg}, \\sigma = 2.06 \\text{ kg}. \\text{i) } P(28.4 < X < 30.4) \\text{ ii) } P(X > 31.3)",
+              "type": "normal-distribution-probability-calculation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A random variable has the following probability function:\n| x | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|---|---|---|---|\n| P(x) | 0 | K | 2K | 2K | 3K | K$^2$ | 2K$^2$ | 7K$^2$ + K |\nDetermine:\ni) k\nii) mean\niii) variance",
+              "unit": "Unit 1",
+              "latex": "\\sum P(x) = 1 \\implies 10K^2 + 9K - 1 = 0. \\text{ Mean } E(X) = \\sum x P(x). \\text{ Variance } Var(X) = E(X^2) - (E(X))^2.",
+              "type": "probability-distribution-parameters"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A sales tax officer has reported that the average sales of the 500 businesses that he has to deal with during a year is Rs. 36,000 with a standard deviation of Rs. 10,000. Assuming that the sales in these businesses are normally distributed, find: i) The number of business as the sales of which are greater than Rs. 40,000. ii) The percentage of business the sales of which are likely to range between Rs. 30,000 and Rs. 40,000.",
+              "unit": "Unit 1",
+              "latex": "\\mu = 36000, \\sigma = 10000. \\text{ i) } P(X > 40000). \\text{ ii) } P(30000 < X < 40000).",
+              "type": "normal-distribution-business-sales"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the trends in big data generation and acquisition.",
+              "unit": "Unit 2",
+              "type": "big-data-trends-acquisition"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the following: a) Predictive analytics b) Inter-and Trans-firewall analytics c) Information management d) Crowd sourcing analytics",
+              "unit": "Unit 2",
+              "type": "data-analytics-concepts"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "With an example, explain the term social media analytics.",
+              "unit": "Unit 2",
+              "type": "social-media-analytics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the various stages in big data analytics life cycle? Illustrate with a figure, explaining each of them. alt=''",
+              "unit": "Unit 2",
+              "type": "big-data-analytics-lifecycle"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Brief about the main component of Map Reduce.",
+              "unit": "Unit 4",
+              "type": "mapreduce-components"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Hadoop? Describe the role of Hadoop in big data analysis. Also explain core components of Hadoop.",
+              "unit": "Unit 2",
+              "type": "hadoop-overview-components"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the structure of HDFS in a Hadoop ecosystem using a diagram. alt=''",
+              "unit": "Unit 4",
+              "type": "hdfs-structure"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Why is finding similar items important in Big Data? Illustrate using two example applications.",
+              "unit": "Unit 2",
+              "type": "similar-item-finding-big-data"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Why to choose Hadoop for processing Big Data in detail and explain the concept of distributed and parallel computing challenges?",
+              "unit": "Unit 3",
+              "type": "hadoop-distributed-parallel-computing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain in detail the interacting process with Hadoop Ecosystem. List out various big data processing technologies.",
+              "unit": "Unit 2",
+              "type": "hadoop-ecosystem-interaction-technologies"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain Pig Data Model in detail and discuss how it will help for effective data flow?",
+              "unit": "Unit 5",
+              "type": "pig-data-model"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Draw and explain architecture of APACHE HIVE. Explain various data insertion techniques in HIVE with example. alt=''",
+              "unit": "Unit 5",
+              "type": "hive-architecture-data-insertion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

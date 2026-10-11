@@ -1,0 +1,1002 @@
+{
+  "subject": {
+    "id": "cs-501",
+    "code": "CS-501",
+    "name": "Theory of Computation",
+    "title": "CS-501 - Theory of Computation",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain finite automata as language acceptors and translators.",
+              "unit": "Unit 1",
+              "type": "finite-automata-explanation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Design a Mealy machine that outputs '1' whenever the input symbol is '1', otherwise outputs '0'.",
+              "unit": "Unit 1",
+              "type": "mealy-machine-design"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain deterministic and non-deterministic finite automata with examples.",
+              "unit": "Unit 2",
+              "type": "dfa-ndfa-explanation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Convert the given NDFA to an equivalent DFA: States ${q0, q1}$, Alphabet ${a, b}$, Transitions: $\\delta(q0, a)={q0, q1}$, $\\delta(q0, b)={q0}$, $\\delta(q1, b)={q1}$. Final state= $q1$",
+              "unit": "Unit 2",
+              "latex": "States \\{q0, q1\\}, Alphabet \\{a, b\\}, Transitions: \\delta(q0, a)=\\{q0, q1\\}, \\delta(q0, b)=\\{q0\\}, \\delta(q1, b)=\\{q1\\}. Final state= q1",
+              "type": "ndfa-to-dfa-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain regular expressions and Arden's theorem.",
+              "unit": "Unit 2",
+              "type": "regular-expression-ardens-theorem-explanation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a regular expression for the language over ${a, b}$ that contains strings ending with \"ab\".",
+              "unit": "Unit 2",
+              "latex": "language over \\{a, b\\}",
+              "type": "regular-expression-construction"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain context free grammar and derivation trees.",
+              "unit": "Unit 3",
+              "type": "cfg-derivation-trees-explanation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "For the grammar: $S \\to aSb \\mid ab$, derive the string \"aabb\" and draw its parse tree.",
+              "unit": "Unit 3",
+              "latex": "S \\to aSb \\mid ab",
+              "type": "cfg-derivation-parse-tree"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain ambiguity in grammar and methods to remove it.",
+              "unit": "Unit 3",
+              "type": "grammar-ambiguity-explanation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Convert the grammar into Chomsky Normal Form: $S \\to AB \\mid A, A \\to a, B \\to b$",
+              "unit": "Unit 3",
+              "latex": "S \\to AB \\mid A, A \\to a, B \\to b",
+              "type": "grammar-to-cnf-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain pushdown automata and deterministic and non-deterministic PDAs.",
+              "unit": "Unit 4",
+              "type": "pda-explanation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Design a PDA for the language $L={a^n b^n \\mid n \\ge 1}$.",
+              "unit": "Unit 4",
+              "latex": "L=\\{a^n b^n \\mid n \\ge 1\\}",
+              "type": "pda-design"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Turing machines and techniques for their construction.",
+              "unit": "Unit 5",
+              "type": "turing-machine-explanation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Design a Turing machine to accept strings over ${0,1}$ having even number of 1's.",
+              "unit": "Unit 5",
+              "latex": "strings over \\{0,1\\}",
+              "type": "turing-machine-design"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain decidable, undecidable, recursive, and recursively enumerable languages.",
+              "unit": "Unit 5",
+              "type": "language-types-explanation"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is the halting problem? Explain why it is undecidable.",
+              "unit": "Unit 5",
+              "type": "halting-problem-explanation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain Moore and Mealy machines with examples. How do they differ in output behaviour?",
+              "unit": "Unit 1",
+              "type": "moore-mealy-explanation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Convert the given Moore machine to a Mealy machine: States: ${A, B}$ Output: A/0, B/1 Transitions: $A \\to aB, A \\to bA, B \\to aA, B \\to bB$",
+              "unit": "Unit 1",
+              "latex": "States: \\{A, B\\} Output: A/0, B/1 Transitions: A \\to aB, A \\to bA, B \\to aA, B \\to bB",
+              "type": "moore-to-mealy-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is a 2-way DFA? How does it differ from standard DFA in terms of tape head movement?",
+              "unit": "Unit 2",
+              "type": "2-way-dfa-explanation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Minimize the DFA with states ${A,B,C,D}$, where A is initial, C is final, and transitions: $A \\to aB, A \\to bA; B \\to aC, B \\to bA; C \\to aC, C \\to bD; D \\to aC, D \\to bA$",
+              "unit": "Unit 2",
+              "latex": "States \\{A,B,C,D\\}, where A is initial, C is final, and transitions: A \\to aB, A \\to bA; B \\to aC, B \\to bA; C \\to aC, C \\to bD; D \\to aC, D \\to bA",
+              "type": "dfa-minimization"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain ambiguity in context-free grammars with an example. How can it be resolved?",
+              "unit": "Unit 3",
+              "type": "cfg-ambiguity-resolution"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Convert the grammar $S \\to aSb \\mid SS \\mid \\epsilon$ to Chomsky Normal Form (CNF).",
+              "unit": "Unit 3",
+              "latex": "S \\to aSb \\mid SS \\mid \\epsilon",
+              "type": "grammar-to-cnf-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the conversion from PDA to CFG using the standard algorithm.",
+              "unit": "Unit 4",
+              "type": "pda-to-cfg-conversion"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Construct a PDA for the language $L = \\{ww^R \\mid w \\in (a+b)\\}$.",
+              "unit": "Unit 4",
+              "latex": "L = \\{ww^R \\mid w \\in (a+b)\\}",
+              "type": "pda-construction"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare multi-tape and multi-head Turing machines. How do they affect computational power?",
+              "unit": "Unit 5",
+              "type": "turing-machine-comparison"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of NP-complete problems with examples.",
+              "unit": "Unit 5",
+              "type": "np-complete-problems-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Differentiate between decidable and recursively enumerable languages.",
+              "unit": "Unit 5",
+              "type": "decidable-recursively-enumerable-differentiation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the significance of the Recursion Theorem in computability theory.",
+              "unit": "Unit 5",
+              "type": "recursion-theorem-significance"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Prove that the Halting Problem is undecidable using diagonalization.",
+              "unit": "Unit 5",
+              "type": "halting-problem-undecidability-proof"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "For the regular expression $(a+b)ab(a+b)$, calculate the minimum number of states in equivalent NFA and DFA.",
+              "unit": "Unit 2",
+              "latex": "(a+b)ab(a+b)",
+              "type": "regex-to-automata-states"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is a DFA machine? Design a deterministic finite automata machine over the alphabet set \\{0, 1\\}, accepting all strings starting and ending with different alphabet. [8 Marks]",
+              "unit": "Unit 2",
+              "latex": "\\{0, 1\\}",
+              "type": "dfa-definition-design"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define finite-automata machine mathematically and explain its types. [6 Marks]",
+              "unit": "Unit 1",
+              "type": "finite-automata-definition-types"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Consider the following grammar for list structures: S \\$\\to\\$ a/\\(A\\) T \\$\\to\\$ T,S Find left most derivation, right most derivation and parse tree for the string ((a,a),a). [6 Marks]",
+              "unit": "Unit 3",
+              "latex": "S \\to a/(A), T \\to T,S",
+              "type": "grammar-derivation-parse-tree"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write the differences between Mealy and Moore machine. Convert the given Moore machine into its equivalent Mealy machine. alt='' [8 Marks]",
+              "unit": "Unit 1",
+              "type": "mealy-moore-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss about the Chomsky hierarchy of languages with their grammar constraints rules and corresponding automata for each class. [8 Marks]",
+              "unit": "Unit 3",
+              "type": "chomsky-hierarchy"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define the regular expression. Find the regular expression for the given DFA machine. alt='' [6 Marks]",
+              "unit": "Unit 2",
+              "type": "regular-expression-from-dfa"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find a reduced Grammar equivalent to Grammar G, having Production rules P: P: \\{S \\$\\to\\$ AC/B, A \\$\\to\\$ a, C \\$\\to\\$ c/BC, E \\$\\to\\$ aA/c\\} [8 Marks]",
+              "unit": "Unit 3",
+              "latex": "P: \\{S \\to AC/B, A \\to a, C \\to c/BC, E \\to aA/c\\}",
+              "type": "grammar-reduction"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Construct the PDA accepting the language \\{ (ab)^n : n \\$\\ge\\$ 1 \\} by empty stack. [6 Marks]",
+              "unit": "Unit 4",
+              "latex": "\\{ (ab)^n : n \\ge 1 \\}",
+              "type": "pda-construction"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Minimize the DFA using Myhill-Nerode Theorem. alt='' [8 Marks]",
+              "unit": "Unit 2",
+              "type": "dfa-minimization-myhill-nerode"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the different models of the Turing machines. [6 Marks]",
+              "unit": "Unit 5",
+              "type": "turing-machine-models"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Show that L = \\{a^nb^nc^n | n \\$\\ge\\$ 1\\} is not a context-free language. [8 Marks]",
+              "unit": "Unit 3",
+              "latex": "L = \\{a^nb^nc^n | n \\ge 1\\}",
+              "type": "context-free-language-proof"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the difference between tractable and intractable problems with examples. [7 Marks]",
+              "unit": "Unit 5",
+              "type": "tractable-intractable-problems"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Is NPDA (non-deterministic PDA) and DPDA (deterministic PDA) equivalent or not? Illustrate with an example. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "npda-dpda-equivalence"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain P and NP problems with examples. [4 Marks]",
+              "unit": "Unit 5",
+              "type": "p-np-problems"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write a short notes on the following: i) Universal Turing machine ii) Post Correspondence Problem [10 Marks]",
+              "unit": "Unit 5",
+              "type": "universal-turing-machine-post-correspondence-problem"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Draw a DFA to accept string of 0's and 1's not ending with the string 01.",
+              "unit": "Unit 2",
+              "type": "dfa-construction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Design a DFA to accept string of 0's and 1's when interpreted as binary numbers would be multiple of 3.",
+              "unit": "Unit 2",
+              "type": "dfa-design-multiple-of-n"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Find the context free grammar with no useless symbols equivalent to $S \\to AB/CA, B \\to BC/AB, A \\to a, C \\to aB/b$",
+              "unit": "Unit 3",
+              "latex": "S \\to AB/CA, B \\to BC/AB, A \\to a, C \\to aB/b",
+              "type": "cfg-useless-symbol-removal"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Derive regular expression from this finite automata. alt=''",
+              "unit": "Unit 2",
+              "type": "regular-expression-from-fa"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is meant by ambiguous grammar? Test whether the grammar is ambiguous or not $S \\to SS/a/b$",
+              "unit": "Unit 3",
+              "latex": "S \\to SS/a/b",
+              "type": "grammar-ambiguity-test"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Construct an equivalent FA for the given regular expression $(0+1)^* (00+11) (0+1)^*$.",
+              "unit": "Unit 2",
+              "latex": "(0+1)^* (00+11) (0+1)^*",
+              "type": "re-to-fa-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "",
+              "text": "Construct the following CFG grammar\ni) $a^m b^n c^n$ where $m, n \\ge 1$\nii) Obtain a CFG to generate a integer",
+              "unit": "Unit 3",
+              "latex": "a^m b^n c^n \\text{ where } m, n \\ge 1",
+              "type": "cfg-construction"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "",
+              "text": "Construct the PDA accepting the language:\ni) $L = \\{ (ab)^n | n >= 1 \\}$ by empty stack.\nii) $L = \\{ (ww^R) | w \\text{ is in } (a+b)^* \\}$ by empty stack.\niii) $L = \\{ a^n b^n | n >= 1 \\}$ by empty stack.",
+              "unit": "Unit 4",
+              "latex": "L = \\{ (ab)^n | n >= 1 \\}, L = \\{ (ww^R) | w \\text{ is in } (a+b)^* \\}, L = \\{ a^n b^n | n >= 1 \\}",
+              "type": "pda-construction"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Let G be the grammar given by $S \\to AABB/AAA, A \\to ABB/a, B \\to BBB/A$ construct the PDA that accepts the language generated by this grammar G.",
+              "unit": "Unit 4",
+              "latex": "S \\to AABB/AAA, A \\to ABB/a, B \\to BBB/A",
+              "type": "cfg-to-pda-conversion"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define the context free grammars in the 4 tuple from $(V, T, P, S)$ for the given languages on $\\Sigma = (a, b)$.\ni) All strings having atleast two 'a's.\nii) All possible strings not containing triple 'b's.",
+              "unit": "Unit 3",
+              "latex": "(V, T, P, S), \\Sigma = (a, b)",
+              "type": "cfg-definition-language-generation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the difference between a recursive and recursively enumerable languages?",
+              "unit": "Unit 5",
+              "type": "recursive-vs-recursively-enumerable-languages"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you mean by saying that the halting problem of TM is undecidable?",
+              "unit": "Unit 5",
+              "type": "halting-problem-undecidability"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write short notes on : (Any three)\ni) Post correspondence problem\nii) Halting problem\niii) Closure property of regular grammar\niv) Turing machine",
+              "unit": "Unit 5",
+              "type": "short-notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "",
+              "text": "Convert the following Moore machine to Mealy.\ni) alt=''\nii) alt=''",
+              "unit": "Unit 1",
+              "type": "moore-to-mealy-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "For $\\Sigma = \\{a, b\\}$, construct DFA's that accept the sets consisting of\ni) All the strings with exactly one 'a'.\nii) All the string with atleast one 'a'.\niii) All strings with atleast one 'a' and followed by exactly two b's.",
+              "unit": "Unit 2",
+              "latex": "\\Sigma = \\{a, b\\}",
+              "type": "dfa-construction"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "Describe the following sets by regular expression.\ni) Strings containing 1100 as substrings.\nii) The set of all strings of 0's are 1's ending with 00.\niii) $\\{\\Lambda, a, aa, aaa, \\dots\\}",
+              "unit": "Unit 2",
+              "latex": "\\{\\Lambda, a, aa, aaa, \\dots\\}",
+              "type": "regular-expression-design"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Arden's theorem and Pumping Lemma.",
+              "unit": "Unit 2",
+              "type": "ardens-theorem-pumping-lemma"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Ambiguity? Explain taking any two examples.",
+              "unit": "Unit 3",
+              "type": "grammar-ambiguity"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Design a CFG.\ni) $L(G)=\\{a^ib^ck \\mid i \\ne j \\text{ (or) } j \\ne k\\}$\nii) $L(G)=\\{a^ib^{2i} \\mid i \\ge 0\\}$",
+              "unit": "Unit 3",
+              "latex": "L(G)=\\{a^ib^ck \\mid i \\ne j \\text{ (or) } j \\ne k\\}\nL(G)=\\{a^ib^{2i} \\mid i \\ge 0\\}",
+              "type": "cfg-design"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define a context free grammar with example.",
+              "unit": "Unit 3",
+              "type": "cfg-definition"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain DPDA and NPDA with taking a suitable example.",
+              "unit": "Unit 4",
+              "type": "dpda-npda-explanation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Recursively enumerable language and decidability.",
+              "unit": "Unit 5",
+              "type": "recursively-enumerable-decidability"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "Design a Push down automata.\ni) $a^nb^{3n}, n \\ge 1$\nii) $ww^R, w \\in \\{a, b\\}^2$",
+              "unit": "Unit 4",
+              "latex": "a^nb^{3n}, n \\ge 1\nww^R, w \\in \\{a, b\\}^2",
+              "type": "pda-design"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Halting problem",
+              "unit": "Unit 5",
+              "type": "halting-problem"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Turing machine",
+              "unit": "Unit 5",
+              "type": "turing-machine"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Chomsky Normal form",
+              "unit": "Unit 3",
+              "type": "chomsky-normal-form"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "2 way DFA",
+              "unit": "Unit 2",
+              "type": "2-way-dfa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compute the Regular Expression for the DFA as shown below. alt=''",
+              "unit": "Unit 2",
+              "type": "dfa-regular-expression"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Design DFA's for detecting 1001 Sequence without Overlap over the alphabet $\\Sigma = \\{0, 1\\}$",
+              "unit": "Unit 2",
+              "latex": "$\\Sigma = \\{0, 1\\}$",
+              "type": "dfa-design"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Design a NFA that accepts the language over the alphabet, $\\Sigma = \\{0, 1, 2\\}$ where the decimal equivalent of the language is divisible by 3.",
+              "unit": "Unit 2",
+              "latex": "$\\Sigma = \\{0, 1, 2\\}$",
+              "type": "nfa-design"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Identify the language, L, generated by the following grammar, G:\n$G = (\\{S, A, B\\}, \\{a, b\\}, \\{S \\to Aa, A \\to aB, B \\to bB | b\\}, S)$.",
+              "unit": "Unit 3",
+              "latex": "$G = (\\{S, A, B\\}, \\{a, b\\}, \\{S \\to Aa, A \\to aB, B \\to bB | b\\}, S)$",
+              "type": "grammar-language-identification"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Convert the following NFA to an equivalent DFA. alt=''",
+              "unit": "Unit 2",
+              "type": "nfa-to-dfa-conversion"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Find a regular grammar that generates the language on $\\{a, b\\}$ consisting of all strings with exactly one a's and no more than two b's.",
+              "unit": "Unit 3",
+              "latex": "$\\{a, b\\}$",
+              "type": "regular-grammar-design"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Construct context free grammars to accept the language $L = \\{a^{n+2} b^{n+1} | n=m\\}$ over the alphabet, $\\Sigma = \\{a, b\\}$",
+              "unit": "Unit 3",
+              "latex": "$L = \\{a^{n+2} b^{n+1} | n=m\\}$, $\\Sigma = \\{a, b\\}$",
+              "type": "cfg-construction"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Construct Non-Deterministic Pushdown Automata (NPDA) to accept the language $L = \\{0^{n+1} 2^{n} | n > m\\}$ over the alphabet, $\\Sigma = \\{0, 1\\}$",
+              "unit": "Unit 4",
+              "latex": "$L = \\{0^{n+1} 2^{n} | n > m\\}$, $\\Sigma = \\{0, 1\\}$",
+              "type": "npda-construction"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Construct Turing Machine (TM) to accept the language $L = \\{0^{n} 1^{2n} | n > 0\\}$ over the alphabet, $\\Sigma = \\{0, 1, 2\\}$",
+              "unit": "Unit 5",
+              "latex": "$L = \\{0^{n} 1^{2n} | n > 0\\}$, $\\Sigma = \\{0, 1, 2\\}$",
+              "type": "turing-machine-construction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Construct corresponding CFG for the following NPDA. alt=''",
+              "unit": "Unit 4",
+              "type": "npda-to-cfg-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Give a Deterministic PDA that accepts $\\{a^{n} b^{n} c^{n} | m, n \\ge 0\\}$ over the alphabet, $\\Sigma = \\{a, b, c\\}$.",
+              "unit": "Unit 4",
+              "latex": "$\\{a^{n} b^{n} c^{n} | m, n \\ge 0\\}$, $\\Sigma = \\{a, b, c\\}$",
+              "type": "dpda-construction"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Give an NPDA that simulates the following grammar (S is start symbol):\n$S \\to aBb | cDD$\n$B \\to cd | aS$\n$D \\to dD | d$",
+              "unit": "Unit 4",
+              "latex": "$S \\to aBb | cDD$\n$B \\to cd | aS$\n$D \\to dD | d$",
+              "type": "cfg-to-npda-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Show that the following language on $\\Sigma = \\{a, b, c\\}$ is not context-free.\n$L = \\{a^{i} b^{n} a^{j} | i \\ge 0\\}$",
+              "unit": "Unit 3",
+              "latex": "$\\Sigma = \\{a, b, c\\}$, $L = \\{a^{i} b^{n} a^{j} | i \\ge 0\\}$",
+              "type": "language-not-context-free-proof"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Prove that a language L is recursive if and only if L and $\\bar{L}$ are recursively enumerable.",
+              "unit": "Unit 5",
+              "latex": "$\\bar{L}$",
+              "type": "recursive-language-proof"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Prove that there is no algorithm that determines whether an arbitrary Turing Machine halts when run with the input string 101.",
+              "unit": "Unit 5",
+              "type": "halting-problem-proof"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Prove that the problem of determining whether for a Turing Machine M the language L(M) is regular is undecidable.",
+              "unit": "Unit 5",
+              "type": "undecidability-proof"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

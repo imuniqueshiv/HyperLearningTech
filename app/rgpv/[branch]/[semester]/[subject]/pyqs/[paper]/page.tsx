@@ -5,6 +5,7 @@ import { getPYQs, getSyllabus } from "@/lib/content";
 import { paperMatchesSlug } from "@/lib/content/paper-slug";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 import QuestionAttachments from "@/components/pyqs/question-attachments";
+import QuestionText from "@/components/pyqs/question-text";
 import { buildQuestionWithAttachments } from "@/lib/ai/prompt-builder";
 import type { SubQuestion } from "@/types/pyq";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
@@ -37,32 +38,6 @@ export async function generateMetadata({
   });
 }
 
-function splitQuestionText(text: string): string[] {
-  const romanPattern = "(?:viii|vii|vi|iv|ix|iii|ii|i|v|x)";
-  const regex = new RegExp(`\\s(${romanPattern})\\)\\s`, "g");
-
-  const matchIndices: number[] = [];
-  let match: RegExpExecArray | null;
-  while ((match = regex.exec(text)) !== null) {
-    matchIndices.push(match.index + 1);
-  }
-
-  if (matchIndices.length === 0) {
-    return [text];
-  }
-
-  const lines: string[] = [];
-  const intro = text.slice(0, matchIndices[0]).trim();
-  if (intro) lines.push(intro);
-
-  for (let i = 0; i < matchIndices.length; i++) {
-    const start = matchIndices[i];
-    const end = i + 1 < matchIndices.length ? matchIndices[i + 1] : text.length;
-    lines.push(text.slice(start, end).trim());
-  }
-
-  return lines;
-}
 export default async function PaperPage({ params }: PaperPageProps) {
   const { branch, semester, subject, paper } = await params;
 
@@ -205,18 +180,10 @@ export default async function PaperPage({ params }: PaperPageProps) {
                                 </span>
                               </div>
 
-                              <div className="space-y-3">
-                                {splitQuestionText(subQuestion.text).map(
-                                  (line, lineIndex) => (
-                                    <p
-                                      key={lineIndex}
-                                      className="text-base leading-7 text-foreground sm:text-lg sm:leading-8"
-                                    >
-                                      {line}
-                                    </p>
-                                  )
-                                )}
-                              </div>
+                              <QuestionText
+                                text={subQuestion.text}
+                                latex={subQuestion.latex}
+                              />
 
                               <QuestionAttachments
                                 attachments={subQuestion.attachments}

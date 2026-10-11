@@ -11,7 +11,11 @@ import { writeJsonAtomic } from "./json-writer";
 import { progressPercentForStage } from "./progress";
 import { generateJobId } from "./job-id";
 
-const BATCH_DIR = path.join(process.cwd(), ".cms", "batches");
+const BATCH_DIR = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  ".cms",
+  "batches"
+);
 
 export interface BatchRecord {
   batchId: string;

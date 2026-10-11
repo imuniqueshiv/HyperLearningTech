@@ -54,15 +54,18 @@ async function withQueueLock<T>(fn: () => Promise<T>): Promise<T> {
 }
 
 function getQueueDir(): string {
-  return path.join(process.cwd(), CMS_QUEUE_DIR);
+  // String concat (not path.join(cwd, …dynamics)) keeps Turbopack NFT scoped.
+  const cwd = /* turbopackIgnore: true */ process.cwd();
+  return `${cwd}${path.sep}${CMS_QUEUE_DIR.replace(/\//g, path.sep)}`;
 }
 
 function getQueueFilePath(): string {
-  return path.join(getQueueDir(), CMS_QUEUE_FILENAME);
+  return `${getQueueDir()}${path.sep}${CMS_QUEUE_FILENAME}`;
 }
 
 async function ensureQueueDir(): Promise<void> {
-  await fs.mkdir(getQueueDir(), { recursive: true });
+  const dir = getQueueDir();
+  await fs.mkdir(/* turbopackIgnore: true */ dir, { recursive: true });
 }
 
 function isQueueStatus(value: unknown): value is QueueStatus {
@@ -114,7 +117,7 @@ async function readQueueFile(): Promise<QueueEntry[]> {
   const filePath = getQueueFilePath();
 
   try {
-    const raw = await fs.readFile(filePath, "utf8");
+    const raw = await fs.readFile(/* turbopackIgnore: true */ filePath, "utf8");
     return normalizeQueueEntries(JSON.parse(raw));
   } catch (error) {
     if (
@@ -132,9 +135,13 @@ async function readQueueFile(): Promise<QueueEntry[]> {
 async function writeQueueFile(entries: QueueEntry[]): Promise<void> {
   await ensureQueueDir();
   const filePath = getQueueFilePath();
-  await fs.writeFile(filePath, JSON.stringify(entries, null, 2) + "\n", {
-    encoding: "utf8",
-  });
+  await fs.writeFile(
+    /* turbopackIgnore: true */ filePath,
+    JSON.stringify(entries, null, 2) + "\n",
+    {
+      encoding: "utf8",
+    }
+  );
 }
 
 function metadataToImportJob(

@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { listJobs } from "@/lib/content-pipeline/server";
+// Import the queue module directly — `@/lib/content-pipeline/server` is a fat
+// barrel that pulls OCR/CMS writers into NFT tracing and triggers Turbopack
+// "unexpected file in NFT list" warnings during `next build`.
+import { listJobs } from "@/lib/content-pipeline/import-queue";
 
 import { cmsAuthErrorResponse, requireCmsAuth } from "@/lib/cms-auth";
 
