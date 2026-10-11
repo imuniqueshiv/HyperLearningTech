@@ -9,11 +9,237 @@ import { validateJsonShapes } from "../lib/content-pipeline/json-validator.js";
 import { mergePyqs } from "../lib/content-pipeline/pyq-merger.js";
 import type {
   ProductionPaper,
+  ProductionPyqSubject,
   ProductionPyqsJson,
   ProductionQuestion,
+  ProductionSubQuestion,
+  ValidationIssue,
 } from "../lib/content-pipeline/schema-types.js";
 
 const require = createRequire(import.meta.url);
+
+interface PaperManifestItem {
+  slug: string;
+  subjectCode: string; // e.g. "al-501"
+  pdfUrl: string;
+  expectedYear: number;
+  expectedMonth: string;
+}
+
+interface PipelineSyllabusSubject {
+  name?: string;
+  title?: string;
+}
+
+type PipelineSyllabusTopic = string | { title?: string };
+
+interface PipelineSyllabusModule {
+  number: number;
+  title: string;
+  topics?: PipelineSyllabusTopic[];
+}
+
+interface PipelineSyllabus {
+  subject?: PipelineSyllabusSubject;
+  modules?: PipelineSyllabusModule[];
+}
+
+interface SubjectExtractionBucket {
+  subject: ProductionPyqSubject;
+  papers: ProductionPaper[];
+}
+
+interface PaperValidationSummary {
+  slug: string;
+  errors: number;
+  warnings: number;
+  issues: ValidationIssue[];
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function errorMessage(err: unknown): string {
+  if (err instanceof Error) return err.message;
+  return String(err);
+}
+
+function formatTopicLabel(topic: PipelineSyllabusTopic): string {
+  if (typeof topic === "string") return topic;
+  return topic.title ?? "";
+}
+
+function parsePipelineSyllabus(value: unknown): PipelineSyllabus | null {
+  if (!isRecord(value)) return null;
+
+  const subjectRecord = isRecord(value.subject) ? value.subject : null;
+  const subject: PipelineSyllabusSubject | undefined = subjectRecord
+    ? {
+        name:
+          typeof subjectRecord.name === "string"
+            ? subjectRecord.name
+            : undefined,
+        title:
+          typeof subjectRecord.title === "string"
+            ? subjectRecord.title
+            : undefined,
+      }
+    : undefined;
+
+  const modules = Array.isArray(value.modules)
+    ? value.modules.flatMap((mod): PipelineSyllabusModule[] => {
+        if (!isRecord(mod)) return [];
+        if (typeof mod.number !== "number" || typeof mod.title !== "string") {
+          return [];
+        }
+        const topics = Array.isArray(mod.topics)
+          ? mod.topics.filter(
+              (topic): topic is PipelineSyllabusTopic =>
+                typeof topic === "string" || isRecord(topic)
+            )
+          : undefined;
+        return [{ number: mod.number, title: mod.title, topics }];
+      })
+    : undefined;
+
+  return { subject, modules };
+}
+
+/** Subquestion shape accepted from Gemini / cache before id/unit normalization. */
+interface DraftSubQuestion {
+  id?: string;
+  label: string;
+  text: string;
+  latex?: string;
+  unit?: string | null;
+  type?: string;
+  isPredicted?: boolean;
+}
+
+interface DraftQuestion {
+  id?: string;
+  questionNumber?: string;
+  subQuestions: DraftSubQuestion[];
+}
+
+interface DraftPaper {
+  exam: string;
+  year: number;
+  month: string;
+  isPredicted?: boolean;
+  questions: DraftQuestion[];
+}
+
+interface DraftExtractedPaperPayload {
+  subject: ProductionPyqSubject;
+  paper: DraftPaper;
+}
+
+function isDraftSubQuestion(value: unknown): value is DraftSubQuestion {
+  if (!isRecord(value)) return false;
+  return (
+    typeof value.label === "string" &&
+    typeof value.text === "string" &&
+    (value.unit === undefined ||
+      value.unit === null ||
+      typeof value.unit === "string") &&
+    (value.id === undefined || typeof value.id === "string") &&
+    (value.latex === undefined || typeof value.latex === "string") &&
+    (value.type === undefined || typeof value.type === "string") &&
+    (value.isPredicted === undefined || typeof value.isPredicted === "boolean")
+  );
+}
+
+function isDraftQuestion(value: unknown): value is DraftQuestion {
+  if (!isRecord(value)) return false;
+  if (!Array.isArray(value.subQuestions)) return false;
+  return (
+    value.subQuestions.every(isDraftSubQuestion) &&
+    (value.id === undefined || typeof value.id === "string") &&
+    (value.questionNumber === undefined ||
+      typeof value.questionNumber === "string")
+  );
+}
+
+function isDraftPaper(value: unknown): value is DraftPaper {
+  if (!isRecord(value)) return false;
+  return (
+    typeof value.exam === "string" &&
+    typeof value.year === "number" &&
+    typeof value.month === "string" &&
+    Array.isArray(value.questions) &&
+    value.questions.every(isDraftQuestion)
+  );
+}
+
+function isProductionPyqSubject(value: unknown): value is ProductionPyqSubject {
+  if (!isRecord(value)) return false;
+  return (
+    typeof value.id === "string" &&
+    typeof value.code === "string" &&
+    typeof value.name === "string" &&
+    typeof value.title === "string" &&
+    typeof value.semester === "string" &&
+    typeof value.gradingSystem === "string" &&
+    typeof value.maxMarks === "number" &&
+    typeof value.time === "string" &&
+    Array.isArray(value.commonInstructions) &&
+    value.commonInstructions.every((item) => typeof item === "string")
+  );
+}
+
+function parseExtractedPaperPayload(
+  value: unknown
+): DraftExtractedPaperPayload {
+  if (!isRecord(value)) {
+    throw new Error("Extraction result must be an object");
+  }
+  if (!isProductionPyqSubject(value.subject)) {
+    throw new Error(
+      "Extraction result subject does not match production shape"
+    );
+  }
+  if (!isDraftPaper(value.paper)) {
+    throw new Error("Extraction result paper does not match expected shape");
+  }
+  return { subject: value.subject, paper: value.paper };
+}
+
+function normalizePaperIds(paper: DraftPaper): ProductionPaper {
+  return {
+    exam: paper.exam,
+    year: paper.year,
+    month: paper.month,
+    isPredicted: paper.isPredicted,
+    questions: paper.questions.map(
+      (q, qIdx): ProductionQuestion => ({
+        id: q.id || `q${qIdx + 1}`,
+        questionNumber: q.questionNumber || `Q.${qIdx + 1}`,
+        subQuestions: q.subQuestions.map((sq, sqIdx): ProductionSubQuestion => {
+          const normalized: ProductionSubQuestion = {
+            id:
+              sq.id ||
+              `q${qIdx + 1}${
+                sq.label
+                  ? sq.label.replace(/[^a-z0-9]/gi, "")
+                  : String.fromCharCode(97 + sqIdx)
+              }`,
+            label: sq.label,
+            text: sq.text,
+            unit: sq.unit ?? "Unit 1",
+          };
+          if (sq.latex !== undefined) normalized.latex = sq.latex;
+          if (sq.type !== undefined) normalized.type = sq.type;
+          if (sq.isPredicted !== undefined) {
+            normalized.isPredicted = sq.isPredicted;
+          }
+          return normalized;
+        }),
+      })
+    ),
+  };
+}
 
 function loadEnv() {
   const envPath = path.join(process.cwd(), ".env.local");
@@ -40,14 +266,6 @@ if (!apiKey) {
 }
 
 const ai = new GoogleGenAI({ apiKey });
-
-interface PaperManifestItem {
-  slug: string;
-  subjectCode: string; // e.g. "al-501"
-  pdfUrl: string;
-  expectedYear: number;
-  expectedMonth: string;
-}
 
 const MANIFEST: PaperManifestItem[] = [
   // AL-501 Operating Systems (5 papers)
@@ -320,7 +538,7 @@ async function rasterizePdf(
   return pageImagePaths;
 }
 
-function loadSyllabus(subjectCode: string): any {
+function loadSyllabus(subjectCode: string): PipelineSyllabus | null {
   const syllabusPath = path.join(
     process.cwd(),
     "content",
@@ -331,17 +549,25 @@ function loadSyllabus(subjectCode: string): any {
     "syllabus.json"
   );
   if (fs.existsSync(syllabusPath)) {
-    return JSON.parse(fs.readFileSync(syllabusPath, "utf8"));
+    const parsed: unknown = JSON.parse(fs.readFileSync(syllabusPath, "utf8"));
+    return parsePipelineSyllabus(parsed);
   }
   return null;
 }
 
-function buildPrompt(item: PaperManifestItem, syllabus: any): string {
+function buildPrompt(
+  item: PaperManifestItem,
+  syllabus: PipelineSyllabus | null
+): string {
   const syllabusModules = syllabus?.modules
     ? syllabus.modules
         .map(
-          (m: any) =>
-            `Unit ${m.number}: ${m.title} (Topics: ${(m.topics || []).slice(0, 6).join("; ")})`
+          (m) =>
+            `Unit ${m.number}: ${m.title} (Topics: ${(m.topics || [])
+              .slice(0, 6)
+              .map(formatTopicLabel)
+              .filter(Boolean)
+              .join("; ")})`
         )
         .join("\n")
     : "No syllabus modules available.";
@@ -414,9 +640,9 @@ STRICT EXTRACTION RULES:
 async function extractPaperWithGemini(
   item: PaperManifestItem,
   imagePaths: string[],
-  syllabus: any,
+  syllabus: PipelineSyllabus | null,
   maxRetries = 3
-): Promise<any> {
+): Promise<DraftExtractedPaperPayload> {
   const prompt = buildPrompt(item, syllabus);
   const imageParts = imagePaths.map((p) => ({
     inlineData: {
@@ -427,8 +653,7 @@ async function extractPaperWithGemini(
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
-      const client = new GoogleGenAI({ apiKey });
-      const callPromise = client.models.generateContent({
+      const callPromise = ai.models.generateContent({
         model: "gemini-2.5-flash",
         contents: [
           {
@@ -457,11 +682,12 @@ async function extractPaperWithGemini(
 
       const response = await Promise.race([callPromise, timeoutPromise]);
       const responseText = response.text?.trim() || "";
-      return JSON.parse(responseText);
-    } catch (err: any) {
+      const parsed: unknown = JSON.parse(responseText);
+      return parseExtractedPaperPayload(parsed);
+    } catch (err: unknown) {
       console.warn(
         `[GEMINI ATTEMPT ${attempt} FAILED] for ${item.slug}:`,
-        err.message
+        errorMessage(err)
       );
       if (attempt < maxRetries) {
         const delay = attempt * 5000;
@@ -472,6 +698,8 @@ async function extractPaperWithGemini(
       }
     }
   }
+
+  throw new Error(`Gemini extraction failed for ${item.slug}`);
 }
 
 async function runPipeline() {
@@ -486,16 +714,8 @@ async function runPipeline() {
   console.log(`=== STARTING RGPV AIML SEMESTER 5 PYQ EXTRACTION PIPELINE ===`);
   console.log(`Total papers in manifest: ${MANIFEST.length}`);
 
-  const extractedPapersBySubject: Record<
-    string,
-    { subject: any; papers: ProductionPaper[] }
-  > = {};
-  const validationSummary: {
-    slug: string;
-    errors: number;
-    warnings: number;
-    issues: any[];
-  }[] = [];
+  const extractedPapersBySubject: Record<string, SubjectExtractionBucket> = {};
+  const validationSummary: PaperValidationSummary[] = [];
 
   for (let i = 0; i < MANIFEST.length; i++) {
     const item = MANIFEST[i];
@@ -514,11 +734,14 @@ async function runPipeline() {
 
     // 3. Extract or Load cached
     const extractedFile = path.join(extractedDir, `${item.slug}.json`);
-    let extractedData: any = null;
+    let extractedData: DraftExtractedPaperPayload | null = null;
 
     if (fs.existsSync(extractedFile)) {
       try {
-        extractedData = JSON.parse(fs.readFileSync(extractedFile, "utf8"));
+        const cached: unknown = JSON.parse(
+          fs.readFileSync(extractedFile, "utf8")
+        );
+        extractedData = parseExtractedPaperPayload(cached);
         console.log(`  Loaded cached extraction from ${extractedFile}`);
       } catch {
         extractedData = null;
@@ -536,17 +759,7 @@ async function runPipeline() {
     }
 
     // 4. Validate
-    const paperObj: ProductionPaper = extractedData.paper;
-    // Ensure ids are clean
-    paperObj.questions.forEach((q: ProductionQuestion, qIdx: number) => {
-      if (!q.id) q.id = `q${qIdx + 1}`;
-      if (!q.questionNumber) q.questionNumber = `Q.${qIdx + 1}`;
-      q.subQuestions.forEach((sq: any, sqIdx: number) => {
-        if (!sq.id)
-          sq.id = `q${qIdx + 1}${sq.label ? sq.label.replace(/[^a-z0-9]/gi, "") : String.fromCharCode(97 + sqIdx)}`;
-        if (sq.unit === null || sq.unit === undefined) sq.unit = "Unit 1";
-      });
-    });
+    const paperObj = normalizePaperIds(extractedData.paper);
 
     const testContainer: ProductionPyqsJson = {
       subject: extractedData.subject,
