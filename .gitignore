@@ -42,3 +42,5 @@ next-env.d.ts
 
 # local CMS upload workspaces (never commit)
 .cms/
+
+.vercel
