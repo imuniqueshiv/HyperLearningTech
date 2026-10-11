@@ -4,6 +4,7 @@ import type { MetadataRoute } from "next";
 
 import { branches } from "@/lib/data/branches";
 import { subjects } from "@/lib/data/subjects";
+import { toPaperSlug } from "@/lib/content/paper-slug";
 import { SITE_ORIGIN, absoluteUrl } from "@/lib/seo/site";
 
 function semesterIdsForBranch(branchId: string): string[] {
@@ -48,7 +49,7 @@ async function readPaperSlugs(pyqsPath: string): Promise<string[]> {
         (paper): paper is { month: string; year: number } =>
           Boolean(paper.month) && typeof paper.year === "number"
       )
-      .map((paper) => `${paper.month.toLowerCase()}-${paper.year}`);
+      .map((paper) => toPaperSlug(paper.month, paper.year));
   } catch {
     return [];
   }

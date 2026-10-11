@@ -1,0 +1,806 @@
+{
+  "subject": {
+    "id": "al-504-b",
+    "code": "AL-504-B",
+    "name": "Natural Language Processing",
+    "title": "AL504 (B) - Natural Language Processing",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Natural Language Processing (NLP) and explain its complete historical evolution from rule-based systems to modern deep learning based NLP models. Discuss in detail the major challenges in natural language understanding, ambiguity resolution, context handling and multilingual processing with suitable real-world examples.",
+              "unit": "Unit 1",
+              "type": "nlp-definition-evolution-challenges"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the levels of language analysis in NLP. Describe lexical, syntactic, semantic, discourse and pragmatic analysis with examples.",
+              "unit": "Unit 1",
+              "type": "levels-language-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain tokenization, stemming and lemmatization in detail. Compare stemming and lemmatization and discuss their importance in NLP applications.",
+              "unit": "Unit 2",
+              "type": "tokenization-stemming-lemmatization"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe stop word removal and normalization techniques. Explain how text pre-processing improves NLP system performance.",
+              "unit": "Unit 2",
+              "type": "stop-word-removal-normalization-preprocessing"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain Part-of-Speech (POS) tagging in detail. Describe different approaches used for POS tagging such as rule-based, stochastic and neural approaches.",
+              "unit": "Unit 2",
+              "type": "pos-tagging-approaches"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss ambiguity in natural language processing. Explain lexical ambiguity and syntactic ambiguity with suitable examples.",
+              "unit": "Unit 3",
+              "type": "nlp-ambiguity-lexical-syntactic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain syntax analysis in NLP. Describe top-down and bottom-up parsing techniques with suitable examples.",
+              "unit": "Unit 3",
+              "type": "syntax-analysis-parsing-techniques"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain Context Free Grammar (CFG) and parse trees. Discuss their role in syntactic analysis.",
+              "unit": "Unit 3",
+              "type": "cfg-parse-trees-syntactic-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain semantic analysis in Natural Language Processing. Discuss meaning representation techniques, semantic roles, thematic relations and logical forms. Explain how semantic analysis helps in tasks such as question answering, information extraction and machine translation.",
+              "unit": "Unit 4",
+              "type": "semantic-analysis-meaning-representation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss Word Sense Disambiguation (WSD). Explain different approaches used for WSD with examples.",
+              "unit": "Unit 4",
+              "type": "word-sense-disambiguation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain language models in NLP. Describe N-gram language models and discuss their advantages and limitations.",
+              "unit": "Unit 2",
+              "type": "n-gram-language-models"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain neural language models. Compare traditional statistical language models with neural language models.",
+              "unit": "Unit 1",
+              "type": "neural-language-models-comparison"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Machine Translation in Natural Language Processing. Describe rule-based statistical and neural machine translation approached in detail. Compare these approaches in terms of accuracy, scalability and real-world applications.",
+              "unit": "Unit 5",
+              "type": "machine-translation-approaches"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss major applications of NLP in real-world systems such as information retrieval, sentiment analysis and chatbots.",
+              "unit": "Unit 5",
+              "type": "nlp-applications-real-world"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain Speech Recognition systems and their working principles.",
+              "unit": "Unit 5",
+              "type": "speech-recognition-systems"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain Text Summarization techniques and their applications.",
+              "unit": "Unit 5",
+              "type": "text-summarization-techniques"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define formal grammar and discuss its role in language modeling.",
+              "unit": "Unit 1",
+              "type": "formal-grammar-language-modeling"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the need for Transducers in morphological parsing.",
+              "unit": "Unit 1",
+              "type": "transducers-morphological-parsing"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write the regular expression pattern for the following user.name@sub.co.in and 1111 1111 1111 1111.",
+              "unit": "Unit 1",
+              "type": "regular-expression-pattern"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are some common types of smoothing techniques used in NLP, and how do they differ from each other?",
+              "unit": "Unit 2",
+              "type": "nlp-smoothing-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Differentiate key components of Hidden Markov and Maximum Entropy models.",
+              "unit": "Unit 2",
+              "type": "hmm-maxent-models-differentiation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write short notes on PoS tagging types and issues in word analysis.",
+              "unit": "Unit 2",
+              "type": "pos-tagging-types-issues"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain how dependency grammar differs from phrase-structure grammar.",
+              "unit": "Unit 3",
+              "type": "dependency-grammar-vs-phrase-structure"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe disambiguation techniques and challenges in parsing.",
+              "unit": "Unit 3",
+              "type": "parsing-disambiguation-challenges"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Check the acceptance of string s=\"ababab\" using the CYK Algorithm. For the given grammar\nS $\\to$ AB/BC\nA $\\to$ BA/a\nB $\\to$ CC/b\nC $\\to$ AB/a",
+              "unit": "Unit 3",
+              "type": "cyk-algorithm-string-acceptance",
+              "latex": "S \\to AB/BC\nA \\to BA/a\nB \\to CC/b\nC \\to AB/a"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Illustrate Word similarity using a thesaurus and distributional methods.",
+              "unit": "Unit 4",
+              "type": "word-similarity-thesaurus-distributional"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Briefly explain different Bootstrapping methods in NLP.",
+              "unit": "Unit 5",
+              "type": "nlp-bootstrapping-methods"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain supervised Word Sense Disambiguation methods with suitable examples.",
+              "unit": "Unit 4",
+              "type": "supervised-word-sense-disambiguation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How can natural language processing create intelligent tutoring systems? Discuss with applications.",
+              "unit": "Unit 5",
+              "type": "nlp-intelligent-tutoring-systems"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the functioning of machine translation and provide examples of its real-world applications.",
+              "unit": "Unit 5",
+              "type": "machine-translation-applications"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Explain any two of the following:\na) Tokenization\nb) Unification of feature structures\nc) Syntax-Driven Semantic analysis\nd) Man-Machine interfaces",
+              "unit": "Unit 5",
+              "type": "nlp-concepts-short-notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Natural Language Processing, what are the key components and challenges of it.",
+              "unit": "Unit 1",
+              "type": "nlp-introduction-challenges"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss finite-state automata and their relationship to regular expressions.",
+              "unit": "Unit 1",
+              "type": "finite-state-automata-regular-expressions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the morphological analysis using stemming and lemmatization processes.",
+              "unit": "Unit 1",
+              "type": "morphological-analysis-stemming-lemmatization"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How do the modeling approaches of Hidden Markov Models and Maximum Entropy differ in terms of probabilistic dependencies?",
+              "unit": "Unit 2",
+              "type": "hmm-maximum-entropy-probabilistic-dependencies"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare common types of smoothing techniques used in natural language processing.",
+              "unit": "Unit 2",
+              "type": "smoothing-techniques-comparison"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Why are n-gram models limited in their ability to handle polysemy and ambiguity in language?",
+              "unit": "Unit 2",
+              "type": "n-gram-limitations-polysemy-ambiguity"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe disambiguation techniques and challenges in parsing.",
+              "unit": "Unit 3",
+              "type": "disambiguation-parsing-challenges"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Check the acceptance of string s=\"baabs\" using the CYK Algorithm for the given grammar\nS $\\rightarrow$ AB/BC\nA $\\rightarrow$ BA/a\nB $\\rightarrow$ CC/b\nC $\\rightarrow$ AB/a",
+              "unit": "Unit 3",
+              "type": "cyk-algorithm-parsing",
+              "latex": "S \\rightarrow AB/BC\nA \\rightarrow BA/a\nB \\rightarrow CC/b\nC \\rightarrow AB/a"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain how dependency grammar differs from phrase-structure grammar.",
+              "unit": "Unit 3",
+              "type": "dependency-grammar-vs-phrase-structure-grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Illustrate Word similarity using a thesaurus and distributional methods.",
+              "unit": "Unit 4",
+              "type": "word-similarity-thesaurus-distributional-methods"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Briefly explain different Bootstrapping methods in NLP.",
+              "unit": "Unit 5",
+              "type": "bootstrapping-methods-nlp"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain supervised Word Sense Disambiguation methods with suitable examples.",
+              "unit": "Unit 4",
+              "type": "supervised-word-sense-disambiguation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How can natural language processing automate the authoring process? Discuss with applications.",
+              "unit": "Unit 5",
+              "type": "nlp-authoring-automation-applications"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Explain any two of the following\na) Shallow parsing\nb) Transducers for lexicon and rules\nc) Dictionary and Thesaurus\nd) Man-Machine Interfaces",
+              "unit": "Unit 5",
+              "type": "nlp-diverse-concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the role of regular expressions in NLP and provide examples of how they are used in language processing tasks?",
+              "unit": "Unit 1",
+              "type": "regular-expressions-nlp"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the key components of a Grammarians Language Model (LM) and how it functions in NLP?",
+              "unit": "Unit 1",
+              "type": "grammar-based-language-model"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the challenges associated with detecting and Correcting Spelling Errors in natural language text.",
+              "unit": "Unit 1",
+              "type": "spelling-error-correction-challenges"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is smoothing in the context of N-gram models and why is it necessary? Provide example to show how smoothing works?",
+              "unit": "Unit 2",
+              "type": "n-gram-smoothing"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is transformation-based tagging and how does it contribute to improving Part-of-Speech tagging accuracy?",
+              "unit": "Unit 2",
+              "type": "transformation-based-pos-tagging"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the principles of rule-based Part-of-Speech tagging.",
+              "unit": "Unit 2",
+              "type": "rule-based-pos-tagging"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How do CFGs capture the syntactic structure of sentences, and what are the key components of a CFG?",
+              "unit": "Unit 3",
+              "type": "cfg-syntactic-structure"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the process of syntactic parsing.",
+              "unit": "Unit 3",
+              "type": "syntactic-parsing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the process involved in constructing treebanks, and how do they play a role in both the development and assessment of syntactic parsers?",
+              "unit": "Unit 3",
+              "type": "treebank-construction-role"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Word Sense Disambiguation in NLP?",
+              "unit": "Unit 4",
+              "type": "word-sense-disambiguation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept of compositional semantics and how it contributes to understanding the meaning of complex expressions?",
+              "unit": "Unit 4",
+              "type": "compositional-semantics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain how speech recognition works, and how NLP enhances this technology?",
+              "unit": "Unit 5",
+              "type": "speech-recognition-nlp-enhancement"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How does NLP make work processors smarter and more user-friendly?",
+              "unit": "Unit 5",
+              "type": "nlp-intelligent-work-processors"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How is NLP used in commercial applications to improve user experience and interaction?",
+              "unit": "Unit 5",
+              "type": "nlp-commercial-applications-ux"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on following:\ni) Dictionary and Thesaurus\nii) First order logic\niii) Tokenization",
+              "unit": "Unit 4",
+              "type": "short-notes-dictionary-thesaurus-first-order-logic-tokenization"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "List and explain the challenges of natural language processing.",
+              "unit": "Unit 1",
+              "type": "nlp-challenges"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss in detail the basic regular expression patterns with examples.",
+              "unit": "Unit 1",
+              "type": "regular-expressions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write and explain the minimum edit distance algorithm.",
+              "unit": "Unit 1",
+              "type": "minimum-edit-distance"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain how is perplexity calculated in evaluating N-grams.",
+              "unit": "Unit 2",
+              "type": "n-gram-perplexity"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss in detail the Hidden Markov Model.",
+              "unit": "Unit 2",
+              "type": "hidden-markov-model"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is ambiguity in parse tree? Explain with an example.",
+              "unit": "Unit 3",
+              "type": "parse-tree-ambiguity"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain in detail about dependency grammar.",
+              "unit": "Unit 3",
+              "type": "dependency-grammar"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss in detail Probabilistic CYK.",
+              "unit": "Unit 3",
+              "type": "probabilistic-cyk"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain in detail about quantifiers with an example.",
+              "unit": "Unit 4",
+              "type": "quantifiers-first-order-logic"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the following word sense disambiguation methods: i) Supervised ii) Dictionary iii) Thesaurus",
+              "unit": "Unit 4",
+              "type": "word-sense-disambiguation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe transfer model of machine translation. List out its three phases.",
+              "unit": "Unit 5",
+              "type": "machine-translation-transfer-model"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the commercial uses of NLP? Explain in detail.",
+              "unit": "Unit 5",
+              "type": "nlp-commercial-applications"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write short notes on any two of the following: a) Finite-State Automata b) Laplace Smoothing c) Probabilistic context-free grammar d) Word sense",
+              "unit": "Unit 1",
+              "type": "short-notes-nlp-topics"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

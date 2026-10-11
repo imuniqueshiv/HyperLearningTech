@@ -1,0 +1,874 @@
+{
+  "subject": {
+    "id": "al-501",
+    "code": "AL-501",
+    "name": "Operating Systems",
+    "title": "AL-501 - Operating Systems",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is real time operating system? What is difference between hard real time and soft real time operating system?",
+              "unit": "Unit 1",
+              "type": "real-time-os"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is spooling? What are the advantage of spooling over buffering?",
+              "unit": "Unit 5",
+              "type": "spooling-buffering"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is kernel? Describe various operations performed by kernel?",
+              "unit": "Unit 1",
+              "type": "kernel-operations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe classification of operating system.",
+              "unit": "Unit 1",
+              "type": "os-classification"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define semaphore? Give a scheme for implementation of semaphore primitives?",
+              "unit": "Unit 3",
+              "type": "semaphore-implementation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define message passing and shared memory interprocess communication?",
+              "unit": "Unit 3",
+              "type": "ipc-message-passing-shared-memory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the difference between pre-emptive and non preemptive scheduling, state why strict non preemptive scheduling is unlikely to be used in computer center? Explain the operation of multi level scheduling?",
+              "unit": "Unit 3",
+              "type": "scheduling-preemptive-nonpreemptive-multilevel"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you understand by context switching and various processes involved in it?",
+              "unit": "Unit 3",
+              "type": "context-switching"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe Dekker's solution?",
+              "unit": "Unit 3",
+              "type": "dekker-solution"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "State and describe the producer consumer problem with its suitable solution?",
+              "unit": "Unit 3",
+              "type": "producer-consumer-problem"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Consider the process CPU burst time and arrival time given below:\n\n| Process | CPU Burst Time | Arrival Time |\n|---------|----------------|--------------|\n| P1      | 8              | 0            |\n| P2      | 4              | 1            |\n| P3      | 9              | 2            |\n| P4      | 5              | 3            |\n\nDraw the Gantt chart and calculate the following by using SRTF CPU scheduling algorithms\ni) average waiting time\nii) average turnaround time",
+              "unit": "Unit 3",
+              "type": "srtf-scheduling-calculation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss and explain Bankers algorithm for avoidance of deadlock?",
+              "unit": "Unit 3",
+              "type": "deadlock-bankers-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Given memory partition of 100k, 500k, 200k, 300k and 600k in order how would each of the first fit, best fit, and worst fit algorithms place processes of 212k, 417k, 112k and 426k in order. Which algorithms make the most efficient use of memory?",
+              "unit": "Unit 4",
+              "type": "memory-allocation-algorithms",
+              "latex": "100k, 500k, 200k, 300k, 600k, 212k, 417k, 112k, 426k"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the paging hardware with TLB?",
+              "unit": "Unit 4",
+              "type": "paging-tlb-hardware"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss Disk scheduling algorithms?",
+              "unit": "Unit 5",
+              "type": "disk-scheduling-algorithms"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss free space management in disk, explain following term:\ni) Bit vector\nii) Linked list\niii) Grouping\niv) Counting",
+              "unit": "Unit 2",
+              "type": "free-space-management-methods"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Operating System? Discuss different types of Operating System.",
+              "unit": "Unit 1",
+              "type": "operating-system-introduction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What do you understand by system call? List and explain four system calls used for process management.",
+              "unit": "Unit 1",
+              "type": "system-calls-process-management"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are different functions provided by Operating System. Also discuss various services provided by an operating system by explaining different methods of providing these services through commands and system calls with suitable examples.",
+              "unit": "Unit 1",
+              "type": "os-functions-services"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define a file and explain the file concept in operating systems. Discuss the user's view and system programmer's view of a file system with suitable examples.",
+              "unit": "Unit 2",
+              "type": "file-concept-views"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss disk space allocation methods used in file systems. Explain contiguous, linked and indexed allocation with neat diagrams, advantages, and disadvantages.",
+              "unit": "Unit 2",
+              "type": "disk-allocation-methods"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain directory structures used in file systems. Also discuss file protection mechanisms and access control methods.",
+              "unit": "Unit 2",
+              "type": "directory-structures-file-protection"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are threads? Explain the concept of multithreading. Compare user level threads and kernel-level threads in terms of creation, scheduling, performance and overhead.",
+              "unit": "Unit 3",
+              "type": "threads-multithreading-comparison"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the protection and security issues in operating systems. Explain various protection and security mechanisms such as authentication, access control, encryption and auditing.",
+              "unit": "Unit 1",
+              "type": "os-protection-security"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define deadlock. Explain deadlock characterization and discuss the four necessary conditions for deadlock to occur in a system.",
+              "unit": "Unit 3",
+              "type": "deadlock-conditions"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain producer consumer problem and its solution using semaphore. Explain how synchronization and mutual exclusion are achieved.",
+              "unit": "Unit 3",
+              "type": "producer-consumer-semaphore"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Consider the following set of processes with their arrival time (AT) and burst time (BT). Draw the Gantt chart and calculate the average waiting time and average turnaround time for each process using the First Come First Serve (FCFS) and Shortest Remaining Time First (SRTF) scheduling algorithm.\n\n| Process | Arrival Time (ms) | Burst Time (ms) |\n|---|---|---|\n| P1 | 0 | 8 |\n| P2 | 1 | 4 |\n| P3 | 2 | 9 |\n| P4 | 3 | 5 |",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling-fcfs-srtf"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain non-contiguous memory allocation techniques. Describe paging, segmentation and paged segmentation with neat diagrams.",
+              "unit": "Unit 4",
+              "type": "non-contiguous-memory-allocation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Consider the following snapshot of a system and answer the following questions using the Banker's Algorithm:\ni) What is the content of the Need matrix?\nii) Is the system in a safe state? If yes, justify your answer with a safe sequence.\n\n| Process | Allocated | Maximum | Available |\n|---|---|---|---|\n| | R1 R2 R3 | R1 R2 R3 | R1 R2 R3 |\n| P1 | 2 2 3 | 3 6 8 | 7 7 10 |\n| P2 | 2 0 3 | 4 3 3 | |\n| P3 | 1 2 4 | 3 4 4 | |",
+              "unit": "Unit 3",
+              "type": "deadlock-bankers-algorithm",
+              "latex": "$$\\begin{array}{|c|c c c|c c c|c c c|}\n\\hline\n\\text{Process} & \\multicolumn{3}{|c|}{\\text{Allocated}} & \\multicolumn{3}{|c|}{\\text{Maximum}} & \\multicolumn{3}{|c|}{\\text{Available}} \\\\\n\\hline\n& R1 & R2 & R3 & R1 & R2 & R3 & R1 & R2 & R3 \\\\\n\\hline\nP1 & 2 & 2 & 3 & 3 & 6 & 8 & 7 & 7 & 10 \\\\\nP2 & 2 & 0 & 3 & 4 & 3 & 3 & & & \\\\\nP3 & 1 & 2 & 4 & 3 & 4 & 4 & & & \\\\\n\\hline\n\\end{array}$$"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain I/O buffering and discuss its importance in improving I/O performance. Describe single buffering, double buffering and circular buffering.",
+              "unit": "Unit 5",
+              "type": "io-buffering"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain demand paging. For given page reference string, determine the number of page faults when three page frames are available using FIFO, LRU and Optimal page replacement algorithms.\nPage reference string: 0, 9, 0, 1, 8, 1, 8, 7, 8, 7, 1, 2, 8, 2, 7, 8, 2, 3, 8, 3",
+              "unit": "Unit 4",
+              "type": "demand-paging-page-faults"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any TWO:\ni. Critical Section Problem\nii. Inter-Process Communication\niii. Process State Diagram\niv. Mobile Operating Systems",
+              "unit": "Unit 3",
+              "type": "critical-section-ipc-process-state-diagram-mobile-os"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the main functions of an operating system in managing hardware and software resources.",
+              "unit": "Unit 1",
+              "type": "os-functions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define System calls. Discuss the challenges associated with low-level implementation and portability issues of system calls.",
+              "unit": "Unit 1",
+              "type": "system-calls-challenges"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the organizing and file system creation involved in disk formatting. What problems might arise in contiguous allocation when the file storage?",
+              "unit": "Unit 2",
+              "type": "file-system-creation-contiguous-allocation-problems"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A system uses contiguous allocation for files on a disk with 1000 blocks. If a file requires 200 blocks starting from block 10, calculate the ending block number.",
+              "unit": "Unit 2",
+              "type": "contiguous-allocation-calculation",
+              "latex": "A system uses contiguous allocation for files on a disk with $1000$ blocks. If a file requires $200$ blocks starting from block $10$, calculate the ending block number."
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define a process and explain its different states with the help of a process state diagram.",
+              "unit": "Unit 3",
+              "type": "process-states-diagram"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the scheduling challenges in a multiprocessor system.",
+              "unit": "Unit 3",
+              "type": "multiprocessor-scheduling-challenges"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "text": "A system uses Round-Robin scheduling with a time quantum of 5 ms. If three processes arrive simultaneously with burst times of 10 ms, 20 ms and 30 ms, calculate the completion time for each process.",
+              "unit": "Unit 3",
+              "type": "round-robin-scheduling-calculation",
+              "latex": "A system uses Round-Robin scheduling with a time quantum of $5 \text{ ms}$. If three processes arrive simultaneously with burst times of $10 \text{ ms}$, $20 \text{ ms}$ and $30 \text{ ms}$, calculate the completion time for each process."
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the concept of paging and how it helps in memory management. If a process requires 4 pages and a page size of 1 KB each, calculate the total memory required.",
+              "unit": "Unit 4",
+              "type": "paging-concept-calculation",
+              "latex": "Describe the concept of paging and how it helps in memory management. If a process requires $4$ pages and a page size of $1 \text{ KB}$ each, calculate the total memory required."
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define Virtual Memory. Discuss its importance in modern operating systems.",
+              "unit": "Unit 4",
+              "type": "virtual-memory-importance"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Differentiate between synchronous and asynchronous I/O operations.",
+              "unit": "Unit 5",
+              "type": "sync-async-io-difference"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the role of the Kernel I/O Subsystem in an operating system. Discuss how I/O requests are transformed into hardware operations.",
+              "unit": "Unit 5",
+              "type": "kernel-io-subsystem-role"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the desirable characteristics of a modern operating system?",
+              "unit": "Unit 1",
+              "type": "os-characteristics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the concept of file protection and access control in operating systems.",
+              "unit": "Unit 2",
+              "type": "file-protection-access-control"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define Deadlock and explain the necessary conditions for a deadlock to occur.",
+              "unit": "Unit 3",
+              "type": "deadlock-conditions"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain how memory management is implemented in Unix/Linux operating systems.",
+              "unit": "Unit 4",
+              "type": "unix-linux-memory-management"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define dynamic linking and loading. Why is it useful in virtual memory systems?",
+              "unit": "Unit 4",
+              "type": "dynamic-linking-loading-virtual-memory"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Define Virtualization and its applications in operating systems.",
+              "unit": "Unit 1",
+              "type": "virtualization-applications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the functionalities of Operating Systems? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "os-functionalities"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is meant by a System call? How it can be used? How does an application program use these calls during execution?",
+              "unit": "Unit 1",
+              "type": "system-calls"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write about Disk Space Allocation Methods.",
+              "unit": "Unit 2",
+              "type": "disk-space-allocation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain about the services of operating system.",
+              "unit": "Unit 1",
+              "type": "os-services"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is a Monitor? Explain how dinning philosopher's problem is solved using monitors with example pseudo code.",
+              "unit": "Unit 3",
+              "type": "monitor-dining-philosophers"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Following is the snapshot of a CPU\n\n| Process | CPU Burst | Arrival Time |\n|---|---|---|\n| P1 | 10 | 0 |\n| P2 | 29 | 1 |\n| P3 | 03 | 2 |\n| P4 | 07 | 3 |\n\nDraw the Gantt chart and calculate the turnaround time and waiting time of the jobs for FCFS (First Come First Served), SJF (Shortest Job First), SRTF (Shortest Remaining Time First) and RR (Round Robin with time quantum 10) scheduling algorithms.",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Consider the following page reference strings:\n$1 \\ 2 \\ 3 \\ 4 \\ 2 \\ 1 \\ 5 \\ 6 \\ 2 \\ 1 \\ 2 \\ 3 \\ 7 \\ 6 \\ 3 \\ 2 \\ 1 \\ 2 \\ 3 \\ 6$\nHow many page faults would occur for the following replacement algorithm, assuming three, four frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.\ni) LRU replacement\nii) Optimal replacement",
+              "unit": "Unit 4",
+              "type": "page-replacement-algorithms",
+              "latex": "1 \\ 2 \\ 3 \\ 4 \\ 2 \\ 1 \\ 5 \\ 6 \\ 2 \\ 1 \\ 2 \\ 3 \\ 7 \\ 6 \\ 3 \\ 2 \\ 1 \\ 2 \\ 3 \\ 6"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is virtual memory? Discuss the benefits of virtual memory techniques.",
+              "unit": "Unit 4",
+              "type": "virtual-memory-benefits"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain about deadlock conditions and Banker's algorithm in detail.",
+              "unit": "Unit 3",
+              "type": "deadlock-bankers-algorithm"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write the principles of protection? And Explain the access matrix in detail.",
+              "unit": "Unit 1",
+              "type": "os-protection-access-matrix"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by Deadlock? Explain various methods of handling deadlock.",
+              "unit": "Unit 3",
+              "type": "deadlock-handling-methods"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Paging Memory Management in detail.",
+              "unit": "Unit 4",
+              "type": "paging-memory-management"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Given memory partition of $100K, 500K, 200K, 300K,$ and $600K$ in order, How would each of the First-fit, Best-fit and Worst-fit algorithms place.\nThe processes of $212K, 417K, 112K$ and $426K$ in order?\nWhich algorithm makes the most efficient use of memory? Show the diagram of memory status in each case.",
+              "unit": "Unit 4",
+              "type": "memory-allocation-algorithms",
+              "latex": "$100K, 500K, 200K, 300K, 600K$ (partitions); $212K, 417K, 112K, 426K$ (processes)"
+            },
+            {
+              "id": "q7c",
+              "label": "c)",
+              "text": "Explain Protection Mechanism illustrating use of Protection Domain and Access Control List.",
+              "unit": "Unit 1",
+              "type": "protection-domain-acl"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Fixed Partitioning",
+              "unit": "Unit 4",
+              "type": "fixed-partitioning"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Explain mutual exclusion problem",
+              "unit": "Unit 3",
+              "type": "mutual-exclusion"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "File System Creation",
+              "unit": "Unit 2",
+              "type": "file-system-creation"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Embedded and Mobile Operating Systems",
+              "unit": "Unit 1",
+              "type": "embedded-mobile-os"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the evolution of the operating system in detail.",
+              "unit": "Unit 1",
+              "type": "os-evolution"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the major services of an operating system with regard to process management? Explain.",
+              "unit": "Unit 1",
+              "type": "os-services-process-management"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "",
+              "text": "Explain different disk allocation methods in detail.",
+              "unit": "Unit 2",
+              "type": "disk-allocation-methods"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "Following is the snapshot of a CPU:\n| Process | CPU Burst | Arrival Time |\n|---------|-----------|--------------|\n| P1      | 10        | 0            |\n| P2      | 29        | 1            |\n| P3      | 03        | 2            |\n| P4      | 07        | 3            |\nDraw the Gantt chart and calculate the turnaround time and waiting time of the jobs for\ni) FCFS (First Come First Served)\nii) SJF (Shortest Job First)\niii) SRTF (Shortest Remaining Time First)\niv) RR (Round Robin with time quantum 10) scheduling algorithms",
+              "unit": "Unit 3",
+              "type": "cpu-scheduling-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "",
+              "text": "Consider the following snapshot of a system:\n| Processes | Allocation | Max | Available |\n|---|---|---|---|\n| | A B C D | A B C D | A B C D |\n| P0 | 0 0 1 2 | 0 0 1 2 | 1 5 2 0 |\n| P1 | 1 0 0 0 | 1 7 5 0 | |\n| P2 | 1 3 5 4 | 2 3 5 6 | |\n| P3 | 0 6 3 2 | 0 6 5 2 | |\n| P4 | 0 0 1 4 | 0 6 5 6 | |\ni) What is the content of the matrix Need?\nii) Is the system in a safe state?\niii) If a request from process P1 arrives for (0, 4, 2, 0) can the request be granted immediately?",
+              "unit": "Unit 3",
+              "type": "deadlock-bankers-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Demand paging? Explain.",
+              "unit": "Unit 4",
+              "type": "demand-paging"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss about segmentation with an example.",
+              "unit": "Unit 4",
+              "type": "segmentation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate Synchronous and Asynchronous I/O operations",
+              "unit": "Unit 5",
+              "type": "synchronous-asynchronous-io"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How I/O request are transferred to hardware devices?",
+              "unit": "Unit 5",
+              "type": "io-request-transfer"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Consider the page reference string 1, 0, 2, 5, 3, 0, 1, 0, 2, 4, 0, 3, 0, 4, 2, 4, 3, 4, 1, 4, 0. How many page faults occur for the Optimal and LRU Page replacement algorithms with 4 frames each?",
+              "unit": "Unit 4",
+              "type": "page-replacement-algorithms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the actions taken by a thread library to context-switch between user level threads.",
+              "unit": "Unit 3",
+              "type": "thread-context-switching"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Mutual Exclusion",
+              "unit": "Unit 3",
+              "type": "mutual-exclusion"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Disk Mounting",
+              "unit": "Unit 2",
+              "type": "disk-mounting"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Virtual File Systems",
+              "unit": "Unit 2",
+              "type": "virtual-file-systems"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "User level and Kernel level threads",
+              "unit": "Unit 3",
+              "type": "user-kernel-threads"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

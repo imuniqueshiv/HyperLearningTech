@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 
 import { getSyllabus, getPYQs } from "@/lib/content";
+import { toPaperSlug } from "@/lib/content/paper-slug";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 
 interface SubjectPageProps {
@@ -117,7 +118,7 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
               {papers.map((paper, index) => (
                 <Link
                   key={`${paper.exam}-${index}`}
-                  href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${paper.month.toLowerCase()}-${paper.year}`}
+                  href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${toPaperSlug(paper.month, paper.year)}`}
                   className="group rounded-2xl border border-border bg-card px-6 py-5 transition hover:border-blue-500/30"
                 >
                   <div className="flex items-center gap-4">
