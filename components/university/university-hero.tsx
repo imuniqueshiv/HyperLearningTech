@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { ArrowRight, GraduationCap, Sparkles, Check } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Sparkles, Check } from "lucide-react";
 import UniversityFlowBanner from "./university-flow-banner";
 
 export default function UniversityHero() {
@@ -47,21 +48,33 @@ export default function UniversityHero() {
           animate="visible"
           className="flex flex-col items-center"
         >
-          <motion.div variants={itemVariants}>
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur-sm transition-colors hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-slate-200 dark:hover:bg-white/20">
-              <GraduationCap className="h-3.5 w-3.5" />
-              Rajiv Gandhi Proudyogiki Vishwavidyalaya
-            </div>
+          <motion.div variants={itemVariants} className="mb-0">
+            <a
+              href="https://www.rgpv.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Rajiv Gandhi Proudyogiki Vishwavidyalaya official website"
+              className="inline-block transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded-full"
+            >
+              <Image
+                src="/RGPVLOGO.png"
+                alt="Rajiv Gandhi Proudyogiki Vishwavidyalaya"
+                width={220}
+                height={220}
+                className="h-36 w-36 object-contain sm:h-40 sm:w-40 md:h-44 md:w-44"
+                priority
+              />
+            </a>
           </motion.div>
 
           <motion.h1
             variants={itemVariants}
-            className="text-[48px] font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-[64px] lg:text-[80px] leading-[1.05]"
+            className="-mt-1 text-[48px] font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-[64px] lg:text-[80px] leading-[1.05]"
           >
             RGPV
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:via-blue-400 dark:to-cyan-400">
-              Engineering Hub
+              Academics of Excellence
             </span>
           </motion.h1>
 

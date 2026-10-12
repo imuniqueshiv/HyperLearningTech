@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, ArrowRight, Sparkles, Search } from "lucide-react";
@@ -145,9 +146,21 @@ export default function Universities() {
 
                     {/* Badge */}
                     <div className="relative z-10 mb-4 flex items-center justify-between">
-                      <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-[14px] md:rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                        <GraduationCap className="relative z-10 h-6 w-6 md:h-7 md:w-7 drop-shadow-sm" />
-                      </div>
+                      {university.id === "rgpv" ? (
+                        <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center">
+                          <Image
+                            src="/RGPVLOGO.png"
+                            alt="Rajiv Gandhi Proudyogiki Vishwavidyalaya"
+                            width={56}
+                            height={56}
+                            className="h-12 w-12 object-contain md:h-14 md:w-14"
+                          />
+                        </div>
+                      ) : (
+                        <div className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-[14px] md:rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 text-blue-600 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)] dark:border-blue-400/20 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 dark:text-blue-400 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+                          <GraduationCap className="relative z-10 h-6 w-6 md:h-7 md:w-7 drop-shadow-sm" />
+                        </div>
+                      )}
 
                       <span
                         className={`inline-flex items-center rounded-lg border px-3 py-1 text-xs font-bold uppercase tracking-wider ${
