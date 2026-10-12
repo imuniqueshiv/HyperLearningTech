@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   applicationName: SITE_NAME,
 
   keywords: [
-    "Hyper Learning Tech",
     "HyperLearningTech",
+    "Hyper Learning Tech",
     "RGPV",
     "RGPV B.Tech",
     "Previous Year Questions",

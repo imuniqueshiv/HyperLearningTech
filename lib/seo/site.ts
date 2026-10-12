@@ -1,14 +1,14 @@
 export const SITE_ORIGIN = "https://www.hyperlearningtech.in";
 
-export const SITE_NAME = "Hyper Learning Tech";
+export const SITE_NAME = "HyperLearningTech";
 
 export const SITE_ALTERNATE_NAMES = [
-  "HyperLearningTech",
+  "Hyper Learning Tech",
   "hyperlearningtech.in",
 ] as const;
 
 export const SITE_TITLE =
-  "Hyper Learning Tech — RGPV B.Tech PYQs & AI Learning";
+  "HyperLearningTech — RGPV B.Tech Previous Year Questions with AI Solutions & Personalized AI Learning";
 
 export const SITE_DESCRIPTION =
   "AI-powered RGPV B.Tech learning with syllabus-mapped subjects, previous year question papers and AI-powered study tools.";
