@@ -22,7 +22,15 @@ import type {
   ProductionPyqsJson,
   ProductionQuestion,
   ProductionSubQuestion,
+  ProductionSyllabusJson,
 } from "../lib/content-pipeline/schema-types.js";
+
+type TesseractWorker = Awaited<ReturnType<typeof createWorker>>;
+
+function errorMessage(err: unknown): string {
+  if (err instanceof Error) return err.message;
+  return String(err);
+}
 
 /** Absolute path to the Next.js app root (directory containing package.json). */
 export const REPO_ROOT = path.resolve(
@@ -207,12 +215,12 @@ export function cleanEnglishQuestionText(text: string): string {
 // Extract raw text from PDF: Native fast path or Local Tesseract OCR
 export async function extractPdfText(
   pdfPath: string,
-  tesseractWorker?: any
+  tesseractWorker?: TesseractWorker
 ): Promise<{ pages: string[]; method: "NATIVE_TEXT" | "LOCAL_OCR" }> {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
+  // pdfjs-dist 6.x dropped isEvalSupported (eval font path removed upstream).
   const doc = await getDocument({
     data,
-    isEvalSupported: false,
     useSystemFonts: true,
   }).promise;
   const pageTexts: string[] = [];
@@ -276,9 +284,11 @@ export async function extractPdfText(
             ? leftText
             : rightText;
       } else {
-        let prepared = fullPng;
+        let prepared: Buffer = fullPng;
         try {
-          prepared = (await preprocessRasterForOcr(fullPng)).buffer;
+          prepared = Buffer.from(
+            (await preprocessRasterForOcr(fullPng)).buffer
+          );
         } catch {
           prepared = fullPng;
         }
@@ -298,10 +308,10 @@ export async function extractPdfText(
 }
 
 // Clean text lines and parse into Question hierarchy
-export function parsePaperQuestions(
-  pages: string[],
-  subjectSyllabus?: any
-): { questions: ProductionQuestion[]; error?: string } {
+export function parsePaperQuestions(pages: string[]): {
+  questions: ProductionQuestion[];
+  error?: string;
+} {
   const allLines: string[] = [];
   for (const page of pages) {
     const lines = page.split("\n");
@@ -348,20 +358,25 @@ export function parsePaperQuestions(
   let capturingEnglish = true;
   let pendingQNum: number | null = null;
 
-  const startSub = (q: TempQ, label: string, rest: string) => {
-    capturingEnglish = true;
-    curSub = { label: `${label})`, text: "" };
-    q.subs.push(curSub);
+  const startSub = (
+    q: TempQ,
+    label: string,
+    rest: string
+  ): { sub: TempSub; stillCapturing: boolean } => {
+    const sub: TempSub = { label: `${label})`, text: "" };
+    q.subs.push(sub);
     const trimmed = rest.trim();
-    if (!trimmed) return;
+    if (!trimmed) {
+      return { sub, stillCapturing: true };
+    }
     const marksMatch = trimmed.match(/[\s.,'"]+(\d{1,2})\s*$/);
     if (marksMatch) {
-      curSub.text = trimmed.replace(/[\s.,'"]+(\d{1,2})\s*$/, "").trim();
-      curSub.marks = parseInt(marksMatch[1], 10);
-      capturingEnglish = false;
-    } else {
-      curSub.text = trimmed;
+      sub.text = trimmed.replace(/[\s.,'"]+(\d{1,2})\s*$/, "").trim();
+      sub.marks = parseInt(marksMatch[1], 10);
+      return { sub, stillCapturing: false };
     }
+    sub.text = trimmed;
+    return { sub, stillCapturing: true };
   };
 
   for (let i = 0; i < allLines.length; i++) {
@@ -399,7 +414,9 @@ export function parsePaperQuestions(
       rawQuestions.push(curQ);
       pendingQNum = null;
       const subLabel = mainMatch[2] ? mainMatch[2].toLowerCase() : "a";
-      startSub(curQ, subLabel, mainMatch[3] || "");
+      const started = startSub(curQ, subLabel, mainMatch[3] || "");
+      curSub = started.sub;
+      capturingEnglish = started.stillCapturing;
       continue;
     }
 
@@ -418,7 +435,9 @@ export function parsePaperQuestions(
       }
 
       if (curQ) {
-        startSub(curQ, subLabel, rest);
+        const started = startSub(curQ, subLabel, rest);
+        curSub = started.sub;
+        capturingEnglish = started.stillCapturing;
       }
       continue;
     }
@@ -578,7 +597,7 @@ export function parsePaperQuestions(
 function buildSubjectMeta(
   candidate: BatchPaperCandidate,
   existingPyqs: ProductionPyqsJson | null,
-  syllabusData: { subject?: Record<string, unknown> } | null
+  syllabusData: ProductionSyllabusJson | null
 ): ProductionPyqsJson["subject"] | null {
   if (existingPyqs?.subject) {
     return existingPyqs.subject;
@@ -590,18 +609,16 @@ function buildSubjectMeta(
   }
 
   const semesterHint =
-    (typeof syllabusSubject.semester === "string" &&
-      syllabusSubject.semester) ||
+    syllabusSubject.semester ||
     candidate.semester.replace(/^semester-/, "").toUpperCase();
 
   return {
-    id: String(syllabusSubject.id || candidate.subjectSlug),
-    code: String(syllabusSubject.code || candidate.subjectCode),
-    name: String(syllabusSubject.name || candidate.subjectName),
-    title: String(
+    id: syllabusSubject.id || candidate.subjectSlug,
+    code: syllabusSubject.code || candidate.subjectCode,
+    name: syllabusSubject.name || candidate.subjectName,
+    title:
       syllabusSubject.title ||
-        `${candidate.subjectCode} - ${candidate.subjectName}`
-    ),
+      `${candidate.subjectCode} - ${candidate.subjectName}`,
     semester: semesterHint,
     gradingSystem: "Grading System (GS)",
     maxMarks: 70,
@@ -613,10 +630,14 @@ function buildSubjectMeta(
   };
 }
 
+function readJsonFile<T>(filePath: string): T {
+  return JSON.parse(fs.readFileSync(filePath, "utf8")) as T;
+}
+
 export async function processPaperCandidate(
   candidate: BatchPaperCandidate,
   downloadsDir: string,
-  tesseractWorker?: any
+  tesseractWorker?: TesseractWorker
 ): Promise<ProcessResult> {
   const targetFile = resolveDestPath(candidate.destPath);
   const targetDir = path.dirname(targetFile);
@@ -634,11 +655,11 @@ export async function processPaperCandidate(
   const localPdfPath = path.join(downloadsDir, pdfFilename);
   try {
     await downloadPdf(candidate.pdfUrl, localPdfPath);
-  } catch (err: any) {
+  } catch (err: unknown) {
     return {
       candidate,
       status: "FAILED",
-      reason: `Download failed: ${err.message}`,
+      reason: `Download failed: ${errorMessage(err)}`,
     };
   }
 
@@ -646,25 +667,27 @@ export async function processPaperCandidate(
   let extractResult: { pages: string[]; method: "NATIVE_TEXT" | "LOCAL_OCR" };
   try {
     extractResult = await extractPdfText(localPdfPath, tesseractWorker);
-  } catch (err: any) {
+  } catch (err: unknown) {
     return {
       candidate,
       status: "FAILED",
-      reason: `Extraction failed: ${err.message}`,
+      reason: `Extraction failed: ${errorMessage(err)}`,
     };
   }
 
-  // 3. Load syllabus for unit mapping
+  // 3. Load syllabus for subject metadata / validation context
   const syllabusPath = path.join(targetDir, "syllabus.json");
-  let syllabusData: any = null;
+  let syllabusData: ProductionSyllabusJson | null = null;
   if (fs.existsSync(syllabusPath)) {
     try {
-      syllabusData = JSON.parse(fs.readFileSync(syllabusPath, "utf8"));
-    } catch (e) {}
+      syllabusData = readJsonFile<ProductionSyllabusJson>(syllabusPath);
+    } catch {
+      syllabusData = null;
+    }
   }
 
   // 4. Parse questions
-  const parsed = parsePaperQuestions(extractResult.pages, syllabusData);
+  const parsed = parsePaperQuestions(extractResult.pages);
   if (parsed.error || parsed.questions.length === 0) {
     return {
       candidate,
@@ -685,12 +708,12 @@ export async function processPaperCandidate(
   let existingPyqs: ProductionPyqsJson | null = null;
   if (fs.existsSync(targetFile)) {
     try {
-      existingPyqs = JSON.parse(fs.readFileSync(targetFile, "utf8"));
-    } catch (err: any) {
+      existingPyqs = readJsonFile<ProductionPyqsJson>(targetFile);
+    } catch (err: unknown) {
       return {
         candidate,
         status: "FAILED",
-        reason: `Corrupted existing pyqs.json: ${err.message}`,
+        reason: `Corrupted existing pyqs.json: ${errorMessage(err)}`,
       };
     }
   }

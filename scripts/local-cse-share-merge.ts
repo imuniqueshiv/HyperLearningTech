@@ -87,6 +87,11 @@ function main() {
             `Cannot normalize ${paper.exam} question ${question.id || qNum}: missing text/subQuestions`
           );
         }
+        const unitFromQuestion = (question as { unit?: string }).unit;
+        const unit: string =
+          typeof unitFromQuestion === "string"
+            ? unitFromQuestion
+            : `Unit ${Math.min(5, qNum)}`;
         return {
           id: question.id || `q${qNum}`,
           questionNumber: question.questionNumber || `Q.${qNum}`,
@@ -95,10 +100,7 @@ function main() {
               id: `${question.id || `q${qNum}`}a`,
               label: "a)",
               text: flatText,
-              unit:
-                typeof (question as { unit?: string }).unit === "string"
-                  ? (question as { unit?: string }).unit
-                  : `Unit ${Math.min(5, qNum)}`,
+              unit,
             },
           ],
         };
