@@ -1,0 +1,139 @@
+{
+  "subject": {
+    "id": "cs-703-d",
+    "code": "CS-703 (D)",
+    "name": "Disaster Management",
+    "title": "CS-703 (D) - Disaster Management",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Whatdoyoumeanby the term Disaster? Explain different types of disasters.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Withthehelpofa suitable example. Explain condition of a pandemic. Givea brief history of pandemic.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Giveasuitable classification of Disasters with causes and impacts. (S703",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Whatdoyouknow about Disaster Risk Reduction (DDR)? What are the structural and non-structural measures of DDR? ager SReT ~gefie<ar (DDR) & aR 3 319 721 Sia",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "With the help of a suitable diagram explain Disaster cycle.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the role of State Disaster Management Authority (SDMA) is Disaster Risk Reduction? Maer SRE =geteer IS AUST FEU Hifteor (SDMA) it Fa1 fT 8?",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the Inter Relationship between Disasters and Development.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write short notes about the following.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b2",
+              "label": "b)",
+              "text": "Early warning system",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you mean by Man Made disasters? Give some suitable examples. ara Riff avers 0 FT FER 87 $F IugEd FTERYr erg",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8b2",
+              "label": "b)",
+              "text": "Fluvial and Pluvial Flooding",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "COVID-19 ) Earthquake Vulnerability assessment of Buildings PreafRrRRaer 3 9 Rod af oR fiw Hew ford",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

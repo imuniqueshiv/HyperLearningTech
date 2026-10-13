@@ -980,6 +980,145 @@
           ]
         }
       ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Linear Sequential (Waterfall) Model and Spiral Model with neat diagrams and suitable examples.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the Software Design Process and discuss important Design Concepts and Principles,",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define Software Requirements in detail.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain Function-Oriented Analysis Modeling and Object-Oriented Analysis Modeling.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the Software Requirement Specification (SRS) and Requirement Validation. Hired Reade Afufsses (SRS) 3k Reade Aferge= & a # saw)",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Functional Requirements and Non-functional Requirements with suitable examples.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the Need for Software Maintenance with suitable examples. HE",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain Architectural Design with example.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the importance of Code Inspection in software i quality assurance.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the software testing techniques in detail.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the Need for Software Maintenance and its types with suitable examples.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Software Configuration Management (SCM) in detail.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain Reverse Engineering and Re-engineering in detail. wan",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Differentiate Object-Oriented Analysis and Structured Software Engineering in detail.",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

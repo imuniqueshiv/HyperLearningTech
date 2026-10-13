@@ -1,0 +1,97 @@
+{
+  "subject": {
+    "id": "cs-702-b",
+    "code": "CS-702 (B)",
+    "name": "Deep & Reinforcement Learning",
+    "title": "CS-702 (B) - Deep & Reinforcement Learning",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What s the significance of gradient descent in training deep ! learning models? Discuss various optimization algorithms including AdaGrad, RMSProp, and Adam.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "(GS) https:/fwww.rg pvonline.com [2]",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the concept of greedy layerwise pre-training. What are some better activation functions introduced in recent years? : .",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How do visualization techniques like Deep Dream and Guided Backpropagation help in understanding neural networks?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define the Policy Gradient method in reinforcement learning. How does it differ from Q-learning?",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss recent trends in reinforcement learning architectures, including Generative Adversarial Imitation Learning. Rewrite aff anita ger & warm! ox af wrt RIE YeaRiRae aren aif anf 1 Hook",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
