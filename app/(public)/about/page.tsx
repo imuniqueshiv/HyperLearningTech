@@ -1,12 +1,12 @@
 import Stats from "@/features/landing/stats";
 import Features from "@/features/landing/features";
 import AIDemo from "@/features/landing/ai-demo";
-import Testimonials from "@/features/landing/testimonials";
-import FAQ from "@/features/landing/faq";
 import CgpaFeature from "@/features/landing/cgpa-feature";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo/metadata";
+import Dashboard from "@/app/dashboard/page";
+import ContactSection from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "About Hyper Learning Tech",
@@ -31,10 +31,10 @@ export default function AboutPage() {
         <AIDemo />
       </Suspense>
       <Suspense fallback={<div className="h-96" />}>
-        <Testimonials />
+        <Dashboard />
       </Suspense>
       <Suspense fallback={<div className="h-96" />}>
-        <FAQ />
+        <ContactSection />
       </Suspense>
     </>
   );
