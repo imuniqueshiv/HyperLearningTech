@@ -1,0 +1,722 @@
+{
+  "subject": {
+    "id": "csit-504-b",
+    "code": "CSIT-504-B",
+    "name": "Artificial Intelligence",
+    "title": "CSIT-504 (B) - Artificial Intelligence",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the terms f', g', h', open and closed in A* algorithm with suitable example.",
+              "unit": "Unit 1",
+              "type": "a-star-algorithm-terms"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Test whether the following production systems are commutative. Justify your answer.\ni) Knowledge Base\nIF A & B Then C\nIF C Then D.\nIF A & D Then E.\nInitial wm = {A, B}\nii) Knowledge Base\nIF A & B Then C.\nif X & Y Then C.\nif A Then E\nif B Then F\nInitial wm = {A, B, X, Y}",
+              "unit": "Unit 1",
+              "type": "production-system-commutativity"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "2.",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Assume the following facts:\ni) Steve only likes easy course\nii) Science courses are hard\niii) All the courses in the CSE department are easy\niv) CS301 is a CSE course\nUse resolution to answer the question \"what course would steve like?\"",
+              "unit": "Unit 2",
+              "type": "resolution-theorem-proving"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Show that the following formula is valid:\n$(A(X) \\lor B(Y)) \\to C(Z) \\Leftrightarrow (\\neg A(X) \\land \\neg B(Y)) \\lor C(Z)$\nWhere X, Y, Z are variables and A, B and C are predicates.",
+              "unit": "Unit 2",
+              "latex": "$(A(X) \\lor B(Y)) \\to C(Z) \\Leftrightarrow (\\neg A(X) \\land \\neg B(Y)) \\lor C(Z)$",
+              "type": "predicate-logic-validity"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "3.",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Show a conceptual dependency representation of the sentence.\n\"John begged Mary for a pencil\"\nHow does this representation make it possible to the answer the question - \"Did John talk to Mary\"?",
+              "unit": "Unit 3",
+              "type": "conceptual-dependency-representation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Construct partitioned semantic net representations for following:\ni) Every batter hit a ball.\nii) All the batters like the pitcher.",
+              "unit": "Unit 3",
+              "type": "partitioned-semantic-networks"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "4.",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "For each of the sentences, show a parse tree.\ni) John wanted to go to the movie with Sue.\nii) I heard the story listening to the radio.",
+              "unit": "Unit 4",
+              "type": "parse-tree"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Show the computation for the first 3 ply moves in a tac-tac-toe game using $\\alpha$-$\\beta$ cut off algorithm.",
+              "unit": "Unit 4",
+              "latex": "\\alpha-\\beta",
+              "type": "alpha-beta-pruning-game-playing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "5.",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How learning in problem solving improve the performance?",
+              "unit": "Unit 5",
+              "type": "learning-performance-improvement"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Case based reasoning shares many of the same ideas of learning by analogy. Briefly describe how transformational and derivational analogy could apply in case based reasoning systems.",
+              "unit": "Unit 5",
+              "type": "case-based-reasoning-analogy"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "6.",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Consider the following knowledge base:\ni) The-humidity-is-high $\\lor$ the sky-is-cloudy\nii) If the-sky-is-cloudy then it-will-rain\niii) If the-humidity-is-high then it-is-hot.\niv) it-is-not-hot\nand the goal : it-will-rain. Prove by resolution theorem that the goal is derivable from the knowledge base.",
+              "unit": "Unit 2",
+              "latex": "\\lor",
+              "type": "resolution-theorem-proving"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the different stages of the expert system life cycles? Describe each stage.",
+              "unit": "Unit 5",
+              "type": "expert-system-life-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "7.",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A math teacher gave her class two tests. 25% of the class passed both test and 42% of the class passed first test. Using Bayesian theorem calculate the % of those who passed first test also passed in second test.",
+              "unit": "Unit 3",
+              "type": "bayes-theorem-calculation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define fuzzy logic with its various operations.",
+              "unit": "Unit 3",
+              "type": "fuzzy-logic-operations"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "8.",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Forward and Backward Reasoning",
+              "unit": "Unit 2",
+              "type": "forward-backward-reasoning"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "AO* algorithm",
+              "unit": "Unit 1",
+              "type": "ao-star-algorithm"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Refutation and Resolution",
+              "unit": "Unit 2",
+              "type": "refutation-resolution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain breadth first search algorithm. Give an example of a problem for which breadth first search would work better than depth first search.",
+              "unit": "Unit 1",
+              "type": "breadth-first-search-algorithm"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find the shortest path using A* algorithm. Where A* algorithm is shown below. alt=''\n| Nodes | S | A | B | C | D | G |\n|-------|---|---|---|---|---|---|\n| H(n)  | 5 | 3 | 4 | 2 | 6 | 0 |",
+              "unit": "Unit 1",
+              "type": "a-star-shortest-path"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Apply resolution theorem to prove the following theorem. P \\lor Q, P \\to R, Q \\to R \\vdash R",
+              "unit": "Unit 2",
+              "latex": "$P \\lor Q, P \\to R, Q \\to R \\vdash R$",
+              "type": "resolution-theorem-proving"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Rewrite the following sentences in first order logic\ni) Coconut crunchy is a Biscuit.\nii) Mary is a child who takes Coconut crunchy.\niii) John loves children who take biscuits.\niv) Jay loves Kites.",
+              "unit": "Unit 2",
+              "type": "first-order-logic-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Represent each of the following sentences of knowledge by a semantic net\ni) loves (mary, john)\nii) loves (mary, john) \\to Hates (john, mila)\niii) loves (mary, john) \\to Hates (mita, john)",
+              "unit": "Unit 3",
+              "type": "semantic-network-representation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Consider the following set of statements.\ni) Patient has spots.\nii) Patient has measles.\niii) Patient has high fever.\niv) Patient has rocky mountain spotted fever.\nv) Patient previously been inoculated against measles.\nvi) Patient was recently bitten by a tick.\nvii) Patient has an allergy.\nMake a Bayesian network by constructing necessary conditional probability matrix.",
+              "unit": "Unit 3",
+              "type": "bayesian-network-conditional-probability"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Consider the following blocks world problem. alt=''\ni) Show how STRIPS would solve this problem.\nii) Show how TWEAK would solve this problem.",
+              "unit": "Unit 4",
+              "type": "strips-tweak-planning"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How would the minimax procedure have to be modified to be used by a program playing a three or four person game rather than a two person one?",
+              "unit": "Unit 4",
+              "type": "minimax-game-playing-modification"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Give one domain in which the expert system approach would be more promising and neural network approach would also be more promising.",
+              "unit": "Unit 5",
+              "type": "expert-system-neural-network-comparison"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain basic model of ANN. What is the difference between biological neurons and artificial neural net?",
+              "unit": "Unit 5",
+              "type": "ann-model-biological-vs-artificial-neurons"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define Hill climbing algorithm with its limitations and their solutions.",
+              "unit": "Unit 1",
+              "type": "hill-climbing-algorithm-limitations"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is knowledge representation? Explain its approaches and issues.",
+              "unit": "Unit 2",
+              "type": "knowledge-representation-approaches-issues"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is control strategy? What are the characteristics of a good control strategy?",
+              "unit": "Unit 1",
+              "type": "control-strategy-characteristics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "If two fuzzy sets are A = (1/2 + 0.5/3 + 0.3/4 + 0.2/5) and B = (0.5/2 + 0.7/3 + 0.2/4 + 0.4/5). Find\ni) A \\cup B\nii) A \\cap B\niii) A'\niv) B'",
+              "unit": "Unit 3",
+              "latex": "$A = (1/2 + 0.5/3 + 0.3/4 + 0.2/5)$, $B = (0.5/2 + 0.7/3 + 0.2/4 + 0.4/5)$\ni) $A \\cup B$\nii) $A \\cap B$\niii) $A'$\niv) $B'$",
+              "type": "fuzzy-set-operations"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Monotonic and Non-monotonic Reasoning",
+              "unit": "Unit 2",
+              "type": "monotonic-non-monotonic-reasoning"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "NLP phases and fundamental problems",
+              "unit": "Unit 4",
+              "type": "nlp-phases-problems"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Script",
+              "unit": "Unit 3",
+              "type": "script-knowledge-representation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Breadth First Search",
+              "unit": "Unit 1",
+              "type": "search-technique-explanation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Depth First Search",
+              "unit": "Unit 1",
+              "type": "search-technique-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How to define a problem as State Space Search? Discuss it with the help of an example.",
+              "unit": "Unit 1",
+              "type": "state-space-search-definition"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain briefly the difference between procedural and declaration knowledge.",
+              "unit": "Unit 2",
+              "type": "knowledge-representation-comparison"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the heuristic function. Explain how the heuristic function helps during search procedure. Explain with a suitable example.",
+              "unit": "Unit 1",
+              "type": "heuristic-function-explanation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is A* search? Explain various stages of A* search with an example.",
+              "unit": "Unit 1",
+              "type": "a-star-search-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "",
+              "text": "Represent the following statement in predicate logic:\ni) Marcus tried to assassinate Caesar.\nii) All Pompeian's were Roman.\niii) All Romans were either loyal to Caesar or hated him.\niv) Everyone is loyal to someone.\nv) People only try to assassinate rulers they are not loyal to.",
+              "unit": "Unit 2",
+              "latex": "i) $\\exists x (TriedToAssassinate(Marcus, Caesar))$\nii) $\\forall x (Pompeian(x) \\to Roman(x))$\niii) $\\forall x (Roman(x) \\to (LoyalTo(x, Caesar) \\lor Hated(x, Caesar)))$\niv) $\\forall x \\exists y (LoyalTo(x, y))$\nv) $\\forall x \\forall y (Person(x) \\land Ruler(y) \\land TriedToAssassinate(x, y) \\to \\neg LoyalTo(x, y))$",
+              "type": "predicate-logic-representation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "",
+              "text": "Explain conceptual dependency with an example and build up the conceptual dependency structures for the following sentences:\ni) John pushed the cart.\nii) John took the book from Mary.\niii) While going home, I saw a frog",
+              "unit": "Unit 3",
+              "type": "conceptual-dependency-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is explanation based learning? Explain in detail with an example.",
+              "unit": "Unit 5",
+              "type": "explanation-based-learning"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "State Bayes Theorem explain with example.",
+              "unit": "Unit 3",
+              "type": "bayes-theorem-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define expert systems. Explain the architecture of expert systems in details with a neat Diagram with an example. alt=''",
+              "unit": "Unit 5",
+              "type": "expert-systems-architecture"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is a plausible-move generator? What is its role?",
+              "unit": "Unit 4",
+              "type": "plausible-move-generator"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Various Technique used in Learning",
+              "unit": "Unit 5",
+              "type": "learning-techniques-short-note"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "NLP",
+              "unit": "Unit 4",
+              "type": "natural-language-processing-short-note"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Knowledge Representation",
+              "unit": "Unit 2",
+              "type": "knowledge-representation-short-note"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Frames",
+              "unit": "Unit 3",
+              "type": "frames-short-note"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compare the Depth first Search and Breadth first search.",
+              "unit": "Unit 1",
+              "type": "search-algorithm-comparison"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Given an initial state of 8-puzzle problem and final state to be reached. alt=''",
+              "unit": "Unit 1",
+              "type": "8-puzzle-problem"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is Production rule? Explain the characteristics of production rules.",
+              "unit": "Unit 1",
+              "type": "production-rule-explanation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A water jug problem state that \"You are given two jugs, a 4-gallon one and a 3-gallon one, a pump which has unlimited water which you can use to fill the jug, and the ground on which water may be poured. Neither jug has any measuring markings on it. How can you get exactly 2 gallons of water in the 4-gallon jug?\"\ni) Write the Production rule for the problem.\nii) Write any one solution to the above problem.",
+              "unit": "Unit 1",
+              "type": "water-jug-problem-production-rules"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the different problems present in Hill climbing algorithm.",
+              "unit": "Unit 1",
+              "type": "hill-climbing-problems"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "In above the mention problem \"mouse is very patient even when it's hungry, so it wants to find an optimal way to reach the cheese kept on the other end of the maze, there are some walls in between, which make the mice's job a bit tricky. Find an optimal way for the mouse so that it reaches the cheese optimally. (Hint: Manhattan distance as heuristics) alt=''",
+              "unit": "Unit 1",
+              "type": "maze-solving-heuristic"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are properties of good system for knowledge representation? Explain in various knowledge representation techniques in brief.",
+              "unit": "Unit 2",
+              "type": "knowledge-representation-properties-techniques"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Convert the following fact into the Predicate logic\ni) Everybody loves Ram.\nii) Everybody loves somebody.\niii) There is somebody whom everybody loves.\niv) There is somebody who Ram doesn't love.\nv) There is somebody whom no one loves.",
+              "unit": "Unit 2",
+              "latex": "i) $\\forall x \\text{ Loves}(x, \\text{Ram})$\nii) $\\forall x \\exists y \\text{ Loves}(x, y)$\niii) $\\exists y \\forall x \\text{ Loves}(x, y)$\niv) $\\exists x \\neg \\text{Loves}(x, \\text{Ram})$\nv) $\\exists x \\forall y \\neg \\text{Loves}(y, x)$",
+              "type": "predicate-logic-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Consider Two Fuzzy sets\n$A = 1/x_1 + 0.3/x_2 + 0.5/x_3 + 0.2/x_4$\n$B = 0.5/x_1 + 0.4/x_2 + 0.1/x_3 + 1/x_4$\nperform union, intersection, difference and complement over the fuzzy set A and B.",
+              "unit": "Unit 3",
+              "latex": "$A = 1/x_1 + 0.3/x_2 + 0.5/x_3 + 0.2/x_4$\n$B = 0.5/x_1 + 0.4/x_2 + 0.1/x_3 + 1/x_4$",
+              "type": "fuzzy-set-operations"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Distinguished the forward and backward reasoning with example.",
+              "unit": "Unit 2",
+              "type": "forward-backward-reasoning"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain how the semantic net used in knowledge representation and reasoning?",
+              "unit": "Unit 3",
+              "type": "semantic-net-explanation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the Min-max method? Apply the min-max method to decide which move is to be chosen (Suppose first player is the maximize player). alt=''",
+              "unit": "Unit 4",
+              "type": "minimax-method-game-tree"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the various types of learning in neural network.",
+              "unit": "Unit 5",
+              "type": "neural-network-learning-types"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the different component of Natural Language understanding process.",
+              "unit": "Unit 4",
+              "type": "natural-language-understanding-components"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Expert System",
+              "unit": "Unit 5",
+              "type": "expert-system-short-note"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Bayes' theorem",
+              "unit": "Unit 3",
+              "type": "bayes-theorem-short-note"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Resolution technique",
+              "unit": "Unit 2",
+              "type": "resolution-technique-short-note"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Monotonic and Non-monotonic reasoning",
+              "unit": "Unit 2",
+              "type": "monotonic-nonmonotonic-reasoning-short-note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

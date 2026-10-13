@@ -1,0 +1,129 @@
+{
+  "subject": {
+    "id": "csit-502",
+    "code": "CSIT-502",
+    "name": "Operating System",
+    "title": "CSIT-502 - Operating System",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "",
+              "text": "Which type of services are provided by Operating System in multiple environment? Also explain why layered approach is used for designing operating System?",
+              "unit": "Unit 1",
+              "type": "os-services-design"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "",
+              "text": "Explain buffering and the different ways in which Buffering can be implemented.",
+              "unit": "Unit 1",
+              "type": "buffering-implementation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "Suppose the following jobs arrive for processing at the times indicated. Each job will run the listed amount of time:\n| Job | Arrival Time | Burst Time |\n|---|---|---|\n| 1 | 0.0 | 8 |\n| 2 | 0.4 | 4 |\n| 3 | 1.0 | 1 |\na) Give a Gantt chart illustrating the execution of these jobs using the non-preemptive FCFS and SJF scheduling algorithm.\nb) What is turnaround time and wait time of each job for the above algorithms?",
+              "unit": "Unit 2",
+              "type": "cpu-scheduling-gantt-chart-metrics"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "",
+              "text": "What are the classical problems of process synchronization in Operating System? Explain in detail.",
+              "unit": "Unit 2",
+              "type": "process-synchronization-problems"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "",
+              "text": "What is the difference between a deadlock prevention and deadlock avoidance methods of dealing with a deadlock problem? Explain the different approaches towards a deadlock detection problem when :\ni) There is a single instance of a resource type\nii) Multiple instances of a resource type",
+              "unit": "Unit 3",
+              "type": "deadlock-prevention-avoidance-detection"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Given 5 memory partition of 100 KB, 500 KB, 200 KB, 300 KB, 600 KB (in order) how would the first fit, best fit, worst fit algorithm place process of 212 KB, 417 KB, 112 KB, 426 KB (in order)? Which algorithm makes the most efficient use of memory?",
+              "unit": "Unit 3",
+              "type": "memory-allocation-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "What are the different page replacement algorithms? Also explain which page replacement algorithm is more efficient and why?",
+              "unit": "Unit 4",
+              "type": "page-replacement-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Explain the following terms :\ni) File management system\nii) Absolute path and Relative path\niii) Directory structure and direct access",
+              "unit": "Unit 5",
+              "type": "file-management-terms"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

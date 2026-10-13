@@ -3,7 +3,532 @@
     "id": "csit-305",
     "code": "CSIT-305",
     "name": "Object Oriented Programming and Methodology (OOPM)",
-    "title": "CSIT-305 - Object Oriented Programming and Methodology (OOPM)"
+    "title": "CSIT-305 - Object Oriented Programming and Methodology (OOPM)",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "Three Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by object-oriented programming? What are the advantages of programming using object oriented? Explain and define various OOP concepts in brief.",
+              "unit": "Unit 1",
+              "type": "object-oriented-programming-introduction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of encapsulation and data abstraction in detail. Write a C++ program to show these concepts in object-oriented programming methodology. Define scope and life of any variable.",
+              "unit": "Unit 1",
+              "type": "encapsulation-data-abstraction-cpp-program"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a C++ program involving the handling of exceptions in constructors and destructors. Explain with an example.",
+              "unit": "Unit 2",
+              "type": "constructor-destructor-exception-handling"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the access modifiers? How many types of access modifiers are available in C++. Explain each one in detail and their role in implementing the data hiding in object-oriented programming.",
+              "unit": "Unit 2",
+              "type": "access-modifiers-data-hiding"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the role of constructor and destructor in a class. What are the different types of constructors in C++? Discuss the copy constructor and parameterized constructor with appropriate example and syntax.",
+              "unit": "Unit 2",
+              "type": "constructor-destructor-types"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the fundamental concept behind inheritance in object-oriented programming by taking an example. Define multiple, multilevel and hybrid inheritance with example and syntax.",
+              "unit": "Unit 3",
+              "type": "inheritance-types"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the concept of association and aggregation in object-oriented approach. What is an Abstract class? Why Abstract classes are used?",
+              "unit": "Unit 4",
+              "type": "association-aggregation-abstract-class"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss Polymorphism in detail. What are the different ways to implement Polymorphism in C++; discuss them in brief. Give differences between function overloading and function overriding (or method overriding) by writing",
+              "unit": "Unit 3",
+              "type": "polymorphism-overloading-overriding"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write a C++ program to calculate the area of rectangle, square and circle using constructor overloading that accepts input from the user and then shows the desired result.",
+              "unit": "Unit 2",
+              "type": "constructor-overloading-cpp-program"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write a C++ program demonstrating use of the pure virtual function with the use of base and derived classes.",
+              "unit": "Unit 4",
+              "type": "pure-virtual-function-cpp-program"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept of multithreading in object-oriented programming approach with a suitable example? Discuss its benefits and drawbacks.",
+              "unit": "Unit 4",
+              "type": "multithreading-oop"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write short notes on following concepts with a suitable example: i) Virtual function ii) Operator overloading",
+              "unit": "Unit 4",
+              "type": "virtual-function-operator-overloading"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you mean by the term class and object? What is the relation and difference between these two? Create a class with the following data members? Name of the class: student, Data members: name, roll number, branch, year, and college name, Member functions: put_details() and get_details() to set and display student details respectively?",
+              "unit": "Unit 2",
+              "type": "class-object-definition-implementation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write short notes on following concepts with a suitable example:",
+              "unit": "Unit 1",
+              "type": "concepts-short-notes"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is operator overloading? Write a distance class with data member for distance in meters, centimeter and millimeter. The class must be having overloaded operator + and – for addition and subtraction respectively.",
+              "unit": "Unit 3",
+              "type": "operator-overloading-cpp-program"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the difference between procedural programming language and object-oriented programming language. What are the merits and demerits object-oriented methodologies explain them?",
+              "unit": "Unit 1",
+              "type": "procedural-vs-oop-merits-demerits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compare the object oriented system with procedure oriented system.",
+              "unit": "Unit 1",
+              "type": "object-oriented-vs-procedural-comparison"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the need of type conversion? Discuss different types of type conversion in C++.",
+              "unit": "Unit 1",
+              "type": "type-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the features of Object oriented programming.",
+              "unit": "Unit 1",
+              "type": "oop-features"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the need of constructor? How is it different from the member function?",
+              "unit": "Unit 2",
+              "type": "constructor-vs-member-function"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the significance of static data and member functions in C++?",
+              "unit": "Unit 2",
+              "type": "static-members-significance"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a program to demonstrate friend function in C++.",
+              "unit": "Unit 4",
+              "type": "friend-function-program"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is inline function? Write advantages of inline function over macros.",
+              "unit": "Unit 2",
+              "type": "inline-function-advantages"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the different types of type conversions in C++ explain with examples?",
+              "unit": "Unit 1",
+              "type": "type-conversion-examples"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the function pointer with suitable example.",
+              "unit": "Unit 4",
+              "type": "function-pointer-explanation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain error handling and manipulators in C++?",
+              "unit": "Unit 5",
+              "type": "error-handling-manipulators"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain Calling a Virtual Function Through a Base Class Reference.",
+              "unit": "Unit 4",
+              "type": "virtual-function-call"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Formatted I/O.",
+              "unit": "Unit 5",
+              "type": "formatted-io"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "When do we need multiple catch blocks for a single try block? Give an example.",
+              "unit": "Unit 5",
+              "type": "multiple-catch-blocks"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is role of manipulators in C++. Write down different manipulators in C++.",
+              "unit": "Unit 5",
+              "type": "c++-manipulators"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Differentiate between formatted and unformatted I/O. Discuss its different functions.",
+              "unit": "Unit 5",
+              "type": "formatted-vs-unformatted-io"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write a program to display the contents of a text file in the reverse order.",
+              "unit": "Unit 5",
+              "type": "file-io-reverse-display-program"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compare Object oriented and Procedure programming in detail. [7 Marks]",
+              "unit": "Unit 1",
+              "type": "oop-vs-procedural-programming-comparison"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the Loop and Arrays in C++. [7 Marks]",
+              "unit": "Unit 1",
+              "type": "loops-arrays-description"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a C++ program to show the concept of class, object and calculate the area of rectangle, square and circle by using function overloading. Define scope and life of any variable. [7 Marks]",
+              "unit": "Unit 2",
+              "type": "class-object-program-function-overloading-scope-lifetime"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write a C++ program to prepare the mark sheet of an university examination with the following items from the keyboard: Name of the student Roll No. Subject name Subject code Internal marks External marks Design a base class consisting of data members Name of the student and Roll No. The derived class consists of the data members subject name, subject code, internal marks and external marks. [7 Marks]",
+              "unit": "Unit 3",
+              "type": "mark-sheet-program-inheritance-class-design"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What do you mean by Operator overloading? How unary and binary operators are implemented using the member and friend functions? [7 Marks]",
+              "unit": "Unit 3",
+              "type": "operator-overloading-unary-binary-friend-member-functions"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe the multiple inheritances with example. When do we use such an inheritance? [7 Marks]",
+              "unit": "Unit 3",
+              "type": "multiple-inheritance-description-example"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is Virtual function? Explain with suitable example. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "virtual-function-explanation-example"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe dynamic memory allocation in C++ with suitable example. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "dynamic-memory-allocation-description-example"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the concept of virtual function, friend function and static function by writing its syntax. Also discuss the role of 'Virtual function' and 'Abstract class'. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "virtual-friend-static-function-syntax-abstract-class"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Dynamic initialization of objects? Why is it needed? How is it accomplished in C++? Illustrate. [7 Marks]",
+              "unit": "Unit 2",
+              "type": "dynamic-object-initialization-need-accomplishment"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain Virtual function and write its purpose. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "virtual-function-purpose-explanation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the concept constructor and destructor. Write the importance of constructor and destructor. [7 Marks]",
+              "unit": "Unit 2",
+              "type": "constructor-destructor-concept-importance"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain in detail about Exception and how they handled? Define Function template and Class template. [7 Marks]",
+              "unit": "Unit 2",
+              "type": "exception-handling-function-class-template"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the term 'Polymorphism' in detail. What are the different ways to implement polymorphism in C++? Explain them in brief. Differentiate between compile time and run time polymorphism. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "polymorphism-implementation-compile-runtime-difference"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Disk file I/O with stream",
+              "unit": "Unit 5",
+              "type": "disk-file-io-stream"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Static function",
+              "unit": "Unit 2",
+              "type": "static-function"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Runtime polymorphism",
+              "unit": "Unit 4",
+              "type": "runtime-polymorphism"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Data hiding",
+              "unit": "Unit 2",
+              "type": "data-hiding"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

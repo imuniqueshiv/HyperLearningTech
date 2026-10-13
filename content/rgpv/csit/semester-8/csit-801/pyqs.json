@@ -1,0 +1,201 @@
+{
+  "subject": {
+    "id": "csit-801",
+    "code": "CSIT-801",
+    "name": "Data Science",
+    "title": "CSIT-801 - Data Science",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Answer any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the three characteristics of Big Data and what are the main considerations in processing Big Data?",
+              "unit": "Unit 1",
+              "type": "big-data-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Illustrate the various phases involved in Big Data Analytics with neat diagram. alt=''",
+              "unit": "Unit 1",
+              "type": "big-data-analytics-phases"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Which itemsets satisfy the minimum support of 0.5?",
+              "unit": "Unit 2",
+              "type": "apriori-minimum-support"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How are interesting rules identified? How are interesting rules distinguished from coincidental rules?",
+              "unit": "Unit 2",
+              "type": "association-rules-interestingness"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "In MapReduce how job scheduling is done in case of the fair scheduler?",
+              "unit": "Unit 4",
+              "type": "mapreduce-fair-scheduler"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Use K-means clustering algorithm to divide the following data into two clusters.\n\n| $x_1$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| $x_2$ | 1 | 1 | 3 | 2 | 5 |",
+              "unit": "Unit 2",
+              "latex": "$x_1$, $x_2$",
+              "type": "k-means-clustering-numerical"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain storage mechanism in HBASE.",
+              "unit": "Unit 4",
+              "type": "hbase-storage-mechanism"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Draw and explain HDFS Architecture. Explain the functions of NameNode and DataNodes. What is a secondary NameNode. Is it a suitable to the NameNode? alt=''",
+              "unit": "Unit 4",
+              "type": "hdfs-architecture"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What R function is used to encode a vector as a category?",
+              "unit": "Unit 5",
+              "type": "r-programming-category-encoding"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is a rug plot used for in a density plot?",
+              "unit": "Unit 5",
+              "type": "r-rug-plot-density"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Compare and contrast the terms structured, unstructured and semi-structured data.",
+              "unit": "Unit 1",
+              "type": "data-types-comparison"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is an analytic sandbox, and why is it important?",
+              "unit": "Unit 1",
+              "type": "analytic-sandbox"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain how MapReduce in Hadoop used to perform a word count on the specified dataset?",
+              "unit": "Unit 4",
+              "type": "mapreduce-wordcount"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain following commands with syntax and one example of each:\ni) copyFromLocal in Hadoop\nii) showing the content of output file in Hadoop",
+              "unit": "Unit 4",
+              "type": "hadoop-hdfs-commands"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain: Advantages of Apriori algorithm.",
+              "unit": "Unit 2",
+              "type": "apriori-algorithm-advantages"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain: Linear regression.",
+              "unit": "Unit 2",
+              "type": "linear-regression"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Explain: Decision tree.",
+              "unit": "Unit 2",
+              "type": "decision-tree"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Explain: Different Naive Bayes classifier.",
+              "unit": "Unit 2",
+              "type": "naive-bayes-classifier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

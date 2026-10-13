@@ -3,7 +3,916 @@
     "id": "csit-304",
     "code": "CSIT-304",
     "name": "Digital Circuits & System (DSC)",
-    "title": "CSIT-304 - Digital Circuits & System (DSC)"
+    "title": "CSIT-304 - Digital Circuits & System (DSC)",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "papers": []
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Convert the following:\ni) $(753)_{10}$ to decimal\nii) $(4A3)_{16}$ to binary\niii) $(101101.101)_2$ to decimal\niv) $(45.625)_{10}$ to Binary\nv) $(101101101)_2$ to Hexadecimal\nvi) $(74)_8$ to Excess-3 code\nvii) $(11011101)_2$ to Gray code",
+              "unit": "Unit 1",
+              "latex": "i) $(753)_{10}$\nii) $(4A3)_{16}$\niii) $(101101.101)_2$\niv) $(45.625)_{10}$\nv) $(101101101)_2$\nvi) $(74)_8$\nvii) $(11011101)_2$",
+              "type": "number-base-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Simplify the following function using 3-variable K-map: F(A,B,C)=$\\Sigma$m(1,2,3,7)\nAlso draw the simplified logic diagram.",
+              "unit": "Unit 1",
+              "latex": "F(A,B,C)=\\Sigma m(1,2,3,7)",
+              "type": "k-map-simplification"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Implement the Boolean function using only NAND gates: F(A,B,C)=AB+A'C",
+              "unit": "Unit 1",
+              "latex": "F(A,B,C)=AB+A'C",
+              "type": "boolean-function-nand-implementation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the working of a Full Adder with truth table and logic diagram. Why is it required in arithmetic circuits?",
+              "unit": "Unit 2",
+              "type": "full-adder-explanation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Implement the Boolean function F(A,B,C)=$\\Sigma$m(1,3,6,7) using a 4:1 multiplexer.",
+              "unit": "Unit 2",
+              "latex": "F(A,B,C)=\\Sigma m(1,3,6,7)",
+              "type": "multiplexer-implementation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Design a decimal-to-BCD encoder and explain its working.",
+              "unit": "Unit 2",
+              "type": "decimal-to-bcd-encoder"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the working of a Master-Slave J-K flip-flop with timing diagram. alt=''",
+              "unit": "Unit 3",
+              "type": "master-slave-jk-flip-flop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain asynchronous counters and synchronous counters. Compare them with respect to speed and hardware complexity.",
+              "unit": "Unit 3",
+              "type": "counter-comparison"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Implement the Boolean functions using PLA: F1=A'B+AC, F2=AB'+BC' Draw the PLA programming table.",
+              "unit": "Unit 2",
+              "latex": "F1=A'B+AC, F2=AB'+BC'",
+              "type": "pla-implementation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the working of a Sample and Hold circuit with neat diagram. Why is it required in ADC systems. alt=''",
+              "unit": "Unit 4",
+              "type": "sample-and-hold-circuit"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the internal block diagram and working of IC 555 Timer. Discuss any two applications of IC 555. alt=''",
+              "unit": "Unit 4",
+              "type": "ic-555-timer"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Time Division Multiplexing (TDM) with block diagram. Differentiate between synchronous and asynchronous TDM. alt=''",
+              "unit": "Unit 5",
+              "type": "time-division-multiplexing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain quantization process and quantization error in PCM. How can quantization noise be reduced.",
+              "unit": "Unit 5",
+              "type": "pcm-quantization"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Logic Gates",
+              "unit": "Unit 1",
+              "type": "short-note"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "look-ahead carry generator",
+              "unit": "Unit 2",
+              "type": "short-note"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "S-R Flip-Flop",
+              "unit": "Unit 3",
+              "type": "short-note"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Shannon's Channel Capacity Theorem",
+              "unit": "Unit 5",
+              "type": "short-note"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Convert the following decimal numbers to the indicated bases:\ni) $(516)_{10} = ()_{16}$\nii) $(250.5)_{10} = ()_{4}$\niii) $(2ED)_{16} = ()_{2}$\niv) Obtain the 9's and 10's complement of $(864)_{10}$.",
+              "unit": "Unit 1",
+              "latex": "i) $(516)_{10} = ()_{16}$\nii) $(250.5)_{10} = ()_{4}$\niii) $(2ED)_{16} = ()_{2}$\niv) Obtain the 9's and 10's complement of $(864)_{10}",
+              "type": "number-base-conversion"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Represent the decimal number 6 in\ni) Excess-3 code\nii) BCD code\niii) Gray code\niv) 84-2-1 code\nv) 2421 codes",
+              "unit": "Unit 1",
+              "type": "binary-code-representation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Simplify the following expression as much as possible: $F(w,x,y,z) = y'z' + w'x'z' + w'xyz' + w'yz'$ and implement your result using universal gates only.",
+              "unit": "Unit 1",
+              "latex": "F(w,x,y,z) = y'z' + w'x'z' + w'xyz' + w'yz'",
+              "type": "boolean-function-simplification-universal-gates"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Express the following Boolean function F in a sum of min terms and a product of max terms. $F(X,Y,Z) = (XY + Z) (Y + XZ)$",
+              "unit": "Unit 1",
+              "latex": "F(X,Y,Z) = (XY + Z) (Y + XZ)",
+              "type": "sop-pos-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the role of multiplexer in the digital electronics? Explain the logic how it selects a one input among several inputs?",
+              "unit": "Unit 2",
+              "type": "multiplexer-explanation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a short note on decoder.",
+              "unit": "Unit 2",
+              "type": "decoder-short-note"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw a full subtractor circuit using NAND gate. alt=''",
+              "unit": "Unit 2",
+              "type": "full-subtractor-nand-gate"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain race-around condition in relation to the J-K flip-flops using timing relationships. Draw the clocked Master-Slave J-K flip-flop configuration and explain how it removes race-around condition in J-K flip-flops? alt=''",
+              "unit": "Unit 3",
+              "type": "race-around-condition-jk-flip-flop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Design a ripple decade counter using JK flip-flop. alt=''",
+              "unit": "Unit 3",
+              "type": "ripple-decade-counter-design"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Draw and explain 4-bit universal shift register. alt=''",
+              "unit": "Unit 3",
+              "type": "universal-shift-register"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "With a neat diagram explain the operation of R-2R DAC. alt=''",
+              "unit": "Unit 4",
+              "type": "r-2r-dac-operation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write a short note on PLA.",
+              "unit": "Unit 3",
+              "type": "pla-short-note"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the circuit and performance of CMOS inverter and state the characteristics of CMOS. alt=''",
+              "unit": "Unit 4",
+              "type": "cmos-inverter-characteristics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw the circuit diagram of Schmitt trigger and explain its working. alt=''",
+              "unit": "Unit 4",
+              "type": "schmitt-trigger-circuit"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on PCM.",
+              "unit": "Unit 5",
+              "type": "pcm-short-note"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the geometrical representation of Non-orthogonal BFSK. alt=''",
+              "unit": "Unit 5",
+              "type": "bfs-modulation-geometrical-representation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Convert the following:\ni) (B2F8)₁₆ = (?)₈\nii) (113.2)₈ = (?)₂\niii) (01000111)₂ = (.........)Gray\niv) (249)₁₀ = (.........)BCD\nv) (A2B.1A)₁₆ = (?)₁₀",
+              "unit": "Unit 1",
+              "latex": "i) $(B2F8)_{16} = (?)_{8}$\nii) $(113.2)_{8} = (?)_{2}$\niii) $(01000111)_{2} = (.........)_{Gray}$\niv) $(249)_{10} = (.........)_{BCD}$\nv) $(A2B.1A)_{16} = (?)_{10}$",
+              "type": "number-base-conversion"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Convert the following expression into sum of product and product of sums.\nX' + X(X + Y')(Y' + Z)",
+              "unit": "Unit 1",
+              "latex": "$X' + X(X + Y')(Y' + Z)$",
+              "type": "boolean-algebra-simplification"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you mean by logic gates? Describe the various types of gates.",
+              "unit": "Unit 1",
+              "type": "logic-gates"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What do you understand by Adder Circuit? Design and Implement Full Adder using Two half adder and OR Gate.",
+              "unit": "Unit 2",
+              "latex": "$Full Adder$",
+              "type": "combinational-logic-circuit"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw and explain the BCD adder circuit. alt=''",
+              "unit": "Unit 2",
+              "type": "combinational-logic-circuit"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Realize the function f(A, B, C, D) = π(1, 4, 6, 10, 14) + d(0, 8, 11, 15) using:\ni) 16:1 MUX\nii) 8:1 MUX",
+              "unit": "Unit 2",
+              "latex": "$f(A, B, C, D) = \\pi(1, 4, 6, 10, 14) + d(0, 8, 11, 15)$",
+              "type": "multiplexer-implementation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is meant by 'edge triggered'? Differentiate SR-FF and JK-FF with their functional operation and excitation tables.",
+              "unit": "Unit 3",
+              "latex": "$SR-FF$, $JK-FF$",
+              "type": "flip-flops"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the 4-bit universal shift register with a neat diagram. alt=''",
+              "unit": "Unit 3",
+              "type": "shift-registers"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Design a 4-bit up/down Synchronous binary counter. Explain with a neat timing diagram. alt=''",
+              "unit": "Unit 3",
+              "type": "synchronous-counters"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the principle working of sample and hold circuit.",
+              "unit": "Unit 4",
+              "type": "sample-and-hold-circuits"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "An n-bit Analog to digital converter (ADC) is required to convert an analog input in the range 0-5 V dc to an accuracy of 5mV. Find the value of n.",
+              "unit": "Unit 4",
+              "latex": "$n$",
+              "type": "a-d-converter"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "With the help of circuit diagram explain the working of V-F converters. alt=''",
+              "unit": "Unit 4",
+              "type": "voltage-to-frequency-converter"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "With the help of Block diagram explain the working of BPSK modulation scheme. alt=''",
+              "unit": "Unit 5",
+              "type": "digital-communication"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you understand by Multiplexing? Explain the working principle of Time Division Multiplexing with suitable diagram. alt=''",
+              "unit": "Unit 5",
+              "type": "digital-communication"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Schmitt trigger",
+              "unit": "Unit 4",
+              "type": "multivibrators"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "PLA",
+              "unit": "Unit 2",
+              "type": "combinational-logic-device"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Look ahead carry generator",
+              "unit": "Unit 2",
+              "type": "combinational-logic-circuit"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Karnaugh Map",
+              "unit": "Unit 1",
+              "type": "boolean-simplification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2023",
+      "year": 2023,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "i) Add (83)$_{10}$ and (34)$_{10}$ in BCD.\nii) Convert the base-7 number (35614)$_7$ to base-12.",
+              "unit": "Unit 2",
+              "latex": "(83)_{10}, (34)_{10}, (35614)_7",
+              "type": "number-system-conversion-bcd-addition"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain how the basic gates can be realized using NOR gates?",
+              "unit": "Unit 1",
+              "type": "nor-gate-realization"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Design a Half adder circuit with truth table and logic diagrams. alt=''",
+              "unit": "Unit 2",
+              "type": "half-adder-design"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A combinational circuit is defined by the following Boolean functions. Design circuit with a decoder and external gates: $F_1(x, y, z) = x'y'z' + xz$ $F_2(x, y, z) = xyz' + x'z$",
+              "unit": "Unit 2",
+              "latex": "F_1(x, y, z) = x'y'z' + xz, F_2(x, y, z) = xyz' + x'z",
+              "type": "combinational-circuit-design"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the working of the master slave JK flip-flop.",
+              "unit": "Unit 3",
+              "type": "master-slave-jk-flip-flop"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Design a 3-bit binary UP/DOWN counter with a direction control M. Use T flip-flop. alt=''",
+              "unit": "Unit 3",
+              "type": "up-down-counter-design"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw and explain the PMOS, NMOS and CMOS logic. alt=''",
+              "unit": "Unit 4",
+              "type": "mos-logic-explanation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain how a Schmitt Trigger circuit works with a neat diagram. Design an Schmitt trigger with $V_{LT} = 2V$, $V_{UT} = -1V$. Assume $+V_{sat} = +13V$, $-V_{sat} = -13V$. alt=''",
+              "unit": "Unit 4",
+              "latex": "V_{LT} = 2V, V_{UT} = -1V, +V_{sat} = +13V, -V_{sat} = -13V",
+              "type": "schmitt-trigger-design"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is mutual information and how it is related to channel capacity? For a standard voice band communication channel the signal to noise ratio is 30dB and transmission bandwidth is 3 KHz. What will be the Shannon limit for information in bits/sec?",
+              "unit": "Unit 5",
+              "latex": "30dB, 3 KHz",
+              "type": "mutual-information-channel-capacity"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain BFSK modulation schemes.",
+              "unit": "Unit 5",
+              "type": "bfsk-modulation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Reduce the expression $Y = \\Sigma m (1, 4, 8, 12, 13, 15) + d (3, 14)$ using K-maps and implement the real minimal expression using basic logic gates.",
+              "unit": "Unit 1",
+              "latex": "Y = \\Sigma m (1, 4, 8, 12, 13, 15) + d (3, 14)",
+              "type": "k-map-simplification"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the different types of parallel adders? Explain carry save and carry look-ahead adders.",
+              "unit": "Unit 2",
+              "type": "parallel-adders"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Derive the frequency of oscillation of an astable multivibrator using IC 555 timer. alt=''",
+              "unit": "Unit 4",
+              "type": "astable-multivibrator-frequency"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain: DRAM and FLASH RAM.",
+              "unit": "Unit 3",
+              "type": "memory-types"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "An 8-bit D/A converter has a resolution of 10mV/bit. Find the analog output voltage for the inputs i) 1001010 ii) 0001000",
+              "unit": "Unit 4",
+              "latex": "10mV/bit",
+              "type": "dac-resolution-calculation"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Describe the operation of dual slope A/D converter with necessary diagrams. alt=''",
+              "unit": "Unit 4",
+              "type": "dual-slope-adc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Given the following Boolean function : F(W,X,Y,Z) = WX'(Y + Z') + X'.Z'(W'Y) where \\Theta represents the XNOR operation, determine the simplified(minimal) SOP expression for F using boolean algebra and Implement the given function using NOR-NOR logic. [7 Marks]",
+              "unit": "Unit 1",
+              "latex": "F(W,X,Y,Z) = WX'(Y + Z') + X'.Z'(W'Y)",
+              "type": "boolean-algebra-simplification"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Computer the prime implicants (PI) and essential prime implicants (EPI) in the following Boolean function $F(W, X, Y, Z) = \\Sigma M(1, 3, 5, 7, 8, 9, 11, 12) + d(2, 10)$ Computer a minimal SOP expression for F and determine whether it is unique. [7 Marks]",
+              "unit": "Unit 1",
+              "latex": "F(W, X, Y, Z) = \\Sigma M(1, 3, 5, 7, 8, 9, 11, 12) + d(2, 10)",
+              "type": "k-map-simplification"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Each of the following functions actually represents a set of four functions, corresponding to the possible assignments of the don't-care terms.\n$f_1(w,x,y,z)=\\Sigma(1,3,5,6,9,10)+\\Sigma(11,12)$\n$f_2(w,x,y,z)=\\Sigma(0,3,4,5,8,9)+\\Sigma(6,7)$\ni) Find $f_1=f_2$. How many functions does $f_1$ represent?\nii) Find $f_1+f_2$. How many functions does $f_4$ represent? [7 Marks]",
+              "unit": "Unit 1",
+              "latex": "f_1(w,x,y,z)=\\Sigma(1,3,5,6,9,10)+\\Sigma(11,12), f_2(w,x,y,z)=\\Sigma(0,3,4,5,8,9)+\\Sigma(6,7), f_1=f_2, f_1+f_2",
+              "type": "boolean-function-analysis"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Given the network of fig., determine the functions $f_1$ and $f_2$ if $f_1 = xz + x'z'$ and the overall transmission function is to be $f(w,x,y,z) = \\Sigma(0,3,6,10,11,12)$ alt='' [7 Marks]",
+              "unit": "Unit 1",
+              "latex": "f_1 = xz + x'z', f(w,x,y,z) = \\Sigma(0,3,6,10,11,12)",
+              "type": "logic-circuit-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Design a $8 \\times 1$ multiplexer using one $4 \\times 1$ multiplexer and four $2 \\times 1$ multiplexers. [7 Marks]",
+              "unit": "Unit 2",
+              "latex": "8 \\times 1, 4 \\times 1, 2 \\times 1",
+              "type": "multiplexer-design"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Design a combinational logic circuit to convert the BCD to excess-3 code. [7 Marks]",
+              "unit": "Unit 2",
+              "type": "bcd-to-excess-3-converter"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Design a $3 \\times 8$ decoder using one $2 \\times 4$ decoder and two $2 \\times 4$ decoder with Enable input. [7 Marks]",
+              "unit": "Unit 2",
+              "latex": "3 \\times 8, 2 \\times 4",
+              "type": "decoder-design"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Draw a schematic for a minimal circuit that uses only NOR gates that performs the two's complement operation on a four bit input value. Let the input be $A_3A_2A_1A_0$ and the output be $B_3B_2B_1B_0$. [7 Marks]",
+              "unit": "Unit 1",
+              "latex": "A_3A_2A_1A_0, B_3B_2B_1B_0",
+              "type": "nor-gate-logic-design"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Covert Decimal to Binary\ni) (1024)$_{10}$\nii) (23.25)$_{10}$ [7 Marks]",
+              "unit": "Unit 1",
+              "latex": "(1024)_{10}, (23.25)_{10}",
+              "type": "number-base-conversion"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Draw the state diagram for the following specification sequential systems:\nInput: $x(t) \\in \\{0,1\\}$\nOutput: $z(t) \\in \\{0,1\\}$\nState: $s(t) \\in \\{\\text{Even, Odd}\\}$\nInitial state: $s(0) = \\text{Even}$\nFunctions: The transition and output functions are\n$s(t+1) = \\text{even if } x(t) \\text{ and } y(t) \\text{ both are even}$\n$s(t+1) = \\text{odd otherwise}$\n$z(t) = 1 \\text{ if } x(t) \\text{ and } y(t) \\text{ both are even}$\n$z(t) = 0 \\text{ otherwise}$ alt='' [7 Marks]",
+              "unit": "Unit 3",
+              "latex": "x(t) \\in \\{0,1\\}, z(t) \\in \\{0,1\\}, s(t) \\in \\{\\text{Even, Odd}\\}, s(0) = \\text{Even}, s(t+1), z(t)",
+              "type": "state-diagram-design"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Design a synchronous counter to count in the random sequence 0, 2, 4, 5, 7, 0, 2, 4, 5, 7, ... using D flip-flop. [7 Marks]",
+              "unit": "Unit 3",
+              "type": "synchronous-counter-design"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Design a sequential circuit using T flip-flop for the following state table.\n| Present State S(t) | Input X = 0 | Input X = 1 |\n|---|---|---|\n| S$_1$ | S$_1$/1 | S$_2$/0 |\n| S$_2$ | S$_1$/1 | S$_3$/0 |\n| S$_3$ | S$_2$/1 | S$_4$/0 |\n| S$_4$ | S$_2$/0 | S$_2$/0 |\nS(t+1)/ Output (Z)\nAssume any suitable assumptions for state assignment. alt='' [7 Marks]",
+              "unit": "Unit 3",
+              "latex": "S(t), X=0, X=1, S(t+1), Z",
+              "type": "sequential-circuit-design"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain Interfacing between TTL and MOS with example. [7 Marks]",
+              "unit": "Unit 4",
+              "type": "ttl-mos-interfacing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the concept of working and applications of following memories.\ni) ROM\nii) PLA\niii) DRAM\niv) FLASHRAM [7 Marks]",
+              "unit": "Unit 3",
+              "type": "memory-types-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8_i",
+              "label": "",
+              "text": "i) A/D and D/A convertors [14 Marks]",
+              "unit": "Unit 4",
+              "type": "adc-dac-notes"
+            },
+            {
+              "id": "q8_ii",
+              "label": "",
+              "text": "ii) CMOS Logic [14 Marks]",
+              "unit": "Unit 4",
+              "type": "cmos-logic-notes"
+            },
+            {
+              "id": "q8_iii",
+              "label": "",
+              "text": "iii) Shannon's theorem for channel capacity [14 Marks]",
+              "unit": "Unit 5",
+              "type": "shannon-theorem-notes"
+            },
+            {
+              "id": "q8_iv",
+              "label": "",
+              "text": "iv) Nyquist sampling theorem [14 Marks]",
+              "unit": "Unit 5",
+              "type": "nyquist-sampling-theorem-notes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

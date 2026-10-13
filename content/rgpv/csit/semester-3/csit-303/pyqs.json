@@ -3,7 +3,16 @@
     "id": "csit-303",
     "code": "CSIT-303",
     "name": "Data Structure (DS)",
-    "title": "CSIT-303 - Data Structure (DS)"
+    "title": "CSIT-303 - Data Structure (DS)",
+    "semester": "III",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Answer any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
   },
   "papers": [
     {
@@ -619,6 +628,188 @@
               "label": "b)",
               "text": "Explain Garbage collection and compaction.",
               "unit": "Unit 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define data structure. Discuss different types of data structure and their implementations.",
+              "unit": "Unit 1",
+              "type": "data-structure-definition-types"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Give the Big-O notation definition and briefly discuss with suitable examples.",
+              "unit": "Unit 1",
+              "type": "big-o-notation-definition-examples"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain different operations that are performed on data structures.",
+              "unit": "Unit 1",
+              "type": "data-structure-operations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is an array? Discuss different types of array with examples.",
+              "unit": "Unit 2",
+              "type": "array-definition-types"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is searching? Explain about fibonacci search technique.",
+              "unit": "Unit 1",
+              "type": "searching-fibonacci-search"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Differentiate between iterative merge sort and recursive merge sort.",
+              "unit": "Unit 1",
+              "type": "iterative-recursive-merge-sort-difference"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write an algorithm for basic operations of stack.",
+              "unit": "Unit 3",
+              "type": "stack-basic-operations-algorithm"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the procedure to evaluate postfix expression. Evaluate the following postfix expression $734+-245/++6/7+?$.",
+              "unit": "Unit 3",
+              "latex": "734+-245/++6/7+?",
+              "type": "postfix-expression-evaluation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain various operations that are performed on queue with suitable algorithms.",
+              "unit": "Unit 3",
+              "type": "queue-operations-algorithms"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "List various operations of linked list and explain how to insert a node anywhere in the list.",
+              "unit": "Unit 4",
+              "type": "linked-list-operations-node-insertion"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe how a polynomial is represented using singly linked lists. Write an algorithm to add two polynomials using linked list.",
+              "unit": "Unit 2",
+              "type": "polynomial-representation-addition-linked-list"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write an algorithm to delete an element anywhere from doubly linked list.",
+              "unit": "Unit 4",
+              "type": "doubly-linked-list-node-deletion-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain breadth first traversal algorithm with an example.",
+              "unit": "Unit 5",
+              "type": "breadth-first-traversal-algorithm"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the in-order, pre-order and post-order traversal of a binary tree.",
+              "unit": "Unit 5",
+              "type": "binary-tree-traversals"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Complexity analysis",
+              "unit": "Unit 1",
+              "type": "complexity-analysis"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Binary search",
+              "unit": "Unit 1",
+              "type": "binary-search"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Types of trees",
+              "unit": "Unit 5",
+              "type": "types-of-trees"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Applications of queues",
+              "unit": "Unit 3",
+              "type": "queue-applications"
             }
           ]
         }

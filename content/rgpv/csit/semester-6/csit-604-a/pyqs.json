@@ -1,0 +1,174 @@
+{
+  "subject": {
+    "id": "csit-604-a",
+    "code": "CSIT-604-A",
+    "name": "Cryptography and Network Security",
+    "title": "CSIT-604 (A) - Cryptography and Network Security",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define the term Cyber Security. Discuss the various types of attacks such as Operating System Level, Application Level and Misconfiguration vulnerabilities.",
+              "unit": "Unit 1",
+              "type": "cyber-security-attacks"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of Intrusion Detection Systems (IDS) and their types.",
+              "unit": "Unit 1",
+              "type": "intrusion-detection-systems"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the principles of Public Key Cryptography. Explain how RSA and Blowfish algorithms work.",
+              "unit": "Unit 2",
+              "type": "public-key-cryptography-rsa-blowfish"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is Diffie-Hellman key exchange? How is it used in secure communication?",
+              "unit": "Unit 2",
+              "type": "diffie-hellman-key-exchange"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the working of SHA (Secure Hash Algorithm) and its applications.",
+              "unit": "Unit 3",
+              "type": "secure-hash-algorithm-sha"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are Message Authentication Codes (MAC) and how do they differ from Message Digest Functions?",
+              "unit": "Unit 3",
+              "type": "message-authentication-codes"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define Trojan Horses and discuss the different types of Trojans, including Remote Access Trojans and Proxy Trojans.",
+              "unit": "Unit 4",
+              "type": "trojan-horses-types"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss Denial of Service (DoS) Attacks and explain the working of a SYN Flood Attack.",
+              "unit": "Unit 4",
+              "type": "dos-attacks-syn-flood"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the concept of IP Security (IPSec). How does it secure communication over an IP network?",
+              "unit": "Unit 5",
+              "type": "ip-security-ipsec"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the different types of Firewalls? Explain their operation and design principles.",
+              "unit": "Unit 5",
+              "type": "firewalls-types-design"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "A Diffie-Hellman key exchange has a prime number $p = 23$ and a primitive root $g = 5$. Alice chooses a secret key $a = 6$, and Bob chooses a secret key $b = 15$. Find the shared secret key between Alice and Bob.",
+              "unit": "Unit 2",
+              "latex": "$p = 23$, $g = 5$, $a = 6$, $b = 15$",
+              "type": "diffie-hellman-numerical"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "RSA Algorithm is used with two prime numbers $p = 7$ and $q = 11$. Compute the public and private keys if $e = 5$.",
+              "unit": "Unit 2",
+              "latex": "$p = 7$, $q = 11$, $e = 5$",
+              "type": "rsa-numerical"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the concept of System Hacking Cycle and its stages.",
+              "unit": "Unit 4",
+              "type": "system-hacking-cycle"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss the need and objectives of Computer Forensics in tracking cyber criminals.",
+              "unit": "Unit 5",
+              "type": "computer-forensics-objectives"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

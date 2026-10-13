@@ -1,149 +1,824 @@
 {
-  "paper": {
-    "id": "csit403-june-2025",
-    "subjectCode": "AG/CSIT(CI)/IT-403",
-    "subjectName": "Analysis and Design of Algorithm",
-    "exam": "B.Tech./B.Tech. (Working Professional) IV Semester Examination, June 2025",
-    "system": "Grading System (GS) / Working Professional",
+  "subject": {
+    "id": "csit-403",
+    "code": "CSIT-403",
+    "name": "Analysis & Design of Algorithm",
+    "title": "CSIT-403 – Analysis & Design of Algorithm (ADA)",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
     "maxMarks": 70,
     "time": "3 Hours",
-    "note": "i) Attempt any five questions.\nii) All questions carry equal marks.",
-    "totalQuestions": 8
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "questions": [
+  "papers": [
     {
-      "number": 1,
-      "parts": [
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Write a recursive algorithm for computing the nth Fibonacci number.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q1a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q1a",
+              "label": "a)",
+              "text": "Write a recursive algorithm for computing the nth Fibonacci number.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q1b",
+              "label": "b)",
+              "text": "A machine needs a minimum of 200 sec to sort 1000 elements by Quick sort. What is the minimum time needed to sort 200 elements will be approximately?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Write a recursive algorithm for computing the $n^{th}$ Fibonacci number.",
+              "unit": "Unit 1",
+              "latex": "$n^{th}$",
+              "type": "recursive-algorithm-fibonacci"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A machine needs a minimum of 200 sec to sort 1000 elements by Quick sort. What is the minimum time needed to sort 200 elements will be approximately?",
+              "unit": "Unit 1",
+              "type": "quicksort-time-complexity"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "A machine needs a minimum of 200 sec to sort 1000 elements by Quick sort. What is the minimum time needed to sort 200 elements will be approximately?",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q1b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q2a",
+              "label": "a)",
+              "text": "Generate recurrence relation from the recursive binary search algorithm.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q2b",
+              "label": "b)",
+              "text": "Consider the problem of finding the smallest and largest elements in an array of numbers using divide and Conquer method.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Generate recurrence relation from the recursive binary search algorithm.",
+              "unit": "Unit 1",
+              "type": "recurrence-relation-binary-search"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Consider the problem of finding the smallest and largest elements in an array of $n$ numbers using divide and Conquer method.",
+              "unit": "Unit 1",
+              "latex": "$n$",
+              "type": "divide-and-conquer-min-max"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q3a",
+              "label": "a)",
+              "text": "Find the time complexity of the recurrence relation T(n)=n+T(n/10)+T(7n/5).",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q3b",
+              "label": "b)",
+              "text": "Analyze the time complexity of Strassen's algorithm compared to conventional matrix multiplication.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Find the time complexity of the recurrence relation $T(n) = n - T(n/10) + T(7n/5)$.",
+              "unit": "Unit 1",
+              "latex": "$T(n) = n - T(n/10) + T(7n/5)$",
+              "type": "recurrence-relation-time-complexity"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Analyze the time complexity of Strassen's algorithm compared to conventional matrix multiplication.",
+              "unit": "Unit 1",
+              "type": "strassen-matrix-multiplication-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q4a",
+              "label": "a)",
+              "text": "What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm with the help of algorithm.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q4b",
+              "label": "b)",
+              "text": "The recurrence T(n)=7T(n/2)+n² describe the running time of an algorithm A. A competing algorithm A has a running time of Γ(n)=aΓ(n/4)+n². What is the largest integer value for a A' is asymptotically faster than A?",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm with the help of algorithm.",
+              "unit": "Unit 2",
+              "type": "minimum-spanning-tree-kruskal"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "The recurrence $T(n) = 7T(n/2) + n^2$ describe the running time of an algorithm A. A competing algorithm B has a running time of $T'(n) = aT'(n/4) + n^2$. What is the largest integer value for $a$ A' is asymptotically faster than A?",
+              "unit": "Unit 1",
+              "latex": "$T(n) = 7T(n/2) + n^2$, $T'(n) = aT'(n/4) + n^2$",
+              "type": "recurrence-relation-asymptotic-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q5a",
+              "label": "a)",
+              "text": "Explain properties of Binomial Heap. Write an algorithm to perform uniting two Binomial Heaps. And also, to find Minimum Key.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q5b",
+              "label": "b)",
+              "text": "Explain Backtracking. Let set S={1,3,4,5} and X=8, we have to find subset sum problem using backtracking approach.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain properties of Binomial Heap in. Write an algorithm for uniform uniting two Binomial Heaps. And also, to find Minimum Key.",
+              "unit": "Unit 1",
+              "type": "binomial-heap-operations"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Backtracking. Let set $S = \\{1, 3, 4, 5\\}$ and $X = 8$, we have to find subset sum problem using backtracking approach.",
+              "unit": "Unit 4",
+              "latex": "$S = \\{1, 3, 4, 5\\}$, $X = 8$",
+              "type": "backtracking-subset-sum"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q6a",
+              "label": "a)",
+              "text": "What is stable sorting algorithm? Which of the sorting algorithms we have seen are stable and which are unstable? Give name with explanation.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q6b",
+              "label": "b)",
+              "text": "Suppose character a, b, c, d, e, f has probabilities 0.07, 0.09, 0.12, 0.22, 0.23, 0.27 respectively. Find an optimal Huffman code and draw the Huffman tree. What is the average code length?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is stable sorting algorithm? Which of the sorting algorithms we have seen are stable and which are unstable? Give name with explanation.",
+              "unit": "Unit 1",
+              "type": "stable-sorting-algorithms"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Suppose character a, b, c, d, e, f has probabilities 0.07, 0.09, 0.12, 0.22, 0.23, 0.27 respectively. Find an optional Huffman code and draw the Huffman tree. alt='' What is the average code length?",
+              "unit": "Unit 2",
+              "latex": "$0.07, 0.09, 0.12, 0.22, 0.23, 0.27$",
+              "type": "huffman-coding-average-code-length"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q7a",
+              "label": "a)",
+              "text": "Write Merge sort algorithm and sort the following sequence {23, 11, 5, 15, 68, 31, 4, 17} using merge sort.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q7b",
+              "label": "b)",
+              "text": "Explain B-Tree and its properties. Also write B-Tree deletion cases with example.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write Merge sort algorithm and sort the following sequence $(23, 11, 5, 15, 68, 31, 4, 17)$ using merge sort.",
+              "unit": "Unit 1",
+              "latex": "$(23, 11, 5, 15, 68, 31, 4, 17)$",
+              "type": "merge-sort-algorithm"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain B-Tree and its properties. Also write B-Tree deletion cases with example.",
+              "unit": "Unit 5",
+              "type": "b-tree-properties-deletion"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "CSIT-403_jun_2025_Q8a",
+              "label": "a)",
+              "text": "For a binary tree T, the preorder and in-order traversal sequences are as follows:\nIn order : BCAEGDHFIJ\nPreorder : ABCDEGFHIJ\ni) Construct a binary Tree.\nii) What is its post-order traversal sequence?",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "CSIT-403_jun_2025_Q8b",
+              "label": "b)",
+              "text": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Kruskal's Minimum Spanning Tree in detail.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "For a binary tree $T$, the preorder and in-order traversal sequences are as follows:\nPreorder : B C A E G D H F I J\nInorder : A B C D E F G H I J\ni) Construct a binary tree. alt=''\nii) What is its post-order traversal sequence?",
+              "unit": "Unit 5",
+              "latex": "$T$",
+              "type": "tree-traversal-construction"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Kruskal's Minimum Spanning Tree in detail.",
+              "unit": "Unit 2",
+              "type": "minimum-spanning-tree-uniqueness-kruskal"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 2,
-      "parts": [
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
         {
-          "label": "a",
-          "text": "Generate recurrence relation from the recursive binary search algorithm.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q2a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Big O notation. How is it used to describe the upper bound of an algorithm's time complexity?",
+              "unit": "Unit 1",
+              "type": "big-o-notation-time-complexity"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "In what scenarios is worst-case analysis more relevant than average-case analysis discuss and vice versa also.",
+              "unit": "Unit 1",
+              "type": "worst-case-average-case-analysis"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Consider the problem of finding the smallest and largest elements in an array of numbers using divide and Conquer method.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q2b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "When is it appropriate to sacrifice code readability for the sake of optimization, and when is it not? Explain.",
+              "unit": "Unit 1",
+              "type": "code-readability-optimization-tradeoff"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the significance of asymptotic notations (such as Big O, Big Omega, and Big Theta) in algorithm analysis.",
+              "unit": "Unit 1",
+              "latex": "Big $O$, Big $\\Omega$, and Big $\\Theta$",
+              "type": "asymptotic-notations-significance"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the heap sort algorithm step by step with suitable example.",
+              "unit": "Unit 1",
+              "type": "heap-sort-algorithm"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the key steps involved in the divide and conquer paradigm.",
+              "unit": "Unit 1",
+              "type": "divide-and-conquer-paradigm"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Walk through the dynamic programming solution for the 0/1 knapsack problem.",
+              "unit": "Unit 3",
+              "type": "dynamic-programming-0-1-knapsack"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the significance of overlapping sub-problems in dynamic programming?",
+              "unit": "Unit 3",
+              "type": "dynamic-programming-overlapping-subproblems"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Introduce the Floyd-Warshall algorithm for all-pairs shortest path.",
+              "unit": "Unit 3",
+              "type": "floyd-warshall-algorithm"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of backtracking in algorithmic design.",
+              "unit": "Unit 4",
+              "type": "backtracking-concept"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the 8 Queen's Problem. How does backtracking help to find a solution?",
+              "unit": "Unit 4",
+              "type": "eight-queens-problem-backtracking"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the Hamiltonian Cycle problem and how is it approached using backtracking?",
+              "unit": "Unit 4",
+              "type": "hamiltonian-cycle-backtracking"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the Traveling Salesman Problem (TSP). How is the branch and bound method applied to find an optimal solution?",
+              "unit": "Unit 4",
+              "type": "traveling-salesman-problem-branch-and-bound"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Provide an example illustrating the application of lower bound theory to a specific algebraic problem.",
+              "unit": "Unit 4",
+              "type": "lower-bound-theory-application"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is a B-tree and what advantages does it offer over other tree structures?",
+              "unit": "Unit 5",
+              "type": "b-tree-advantages"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the difference between P, NP and NP-complete problems.",
+              "unit": "Unit 5",
+              "type": "p-np-np-complete-difference"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 3,
-      "parts": [
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Find the time complexity of the recurrence relation T(n)=n+T(n/10)+T(7n/5).",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q3a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain algorithm design technique? How do you measure the algorithm running time?",
+              "unit": "Unit 1",
+              "type": "algorithm-design-analysis"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Give the divide and conquer solution for binary search and analyze the time complexity for it.",
+              "unit": "Unit 1",
+              "type": "divide-and-conquer-binary-search"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Analyze the time complexity of Strassen's algorithm compared to conventional matrix multiplication.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q3b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the quick sort algorithm, simulate it with the following data 20, 35, 10, 16, 54, 21, 25.",
+              "unit": "Unit 1",
+              "type": "quick-sort-simulation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write an algorithm for traveling salesperson problem using check bounds.",
+              "unit": "Unit 4",
+              "type": "traveling-salesman-problem-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the operations performed on the binary search tree for the following data : 20, 49, 41, 93, 69, 90, 76, 62, 81, 75, 10, 79, 87, 38 and delete 41 and 76.",
+              "unit": "Unit 5",
+              "type": "binary-search-tree-operations"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Differentiate between BFS and DFS.",
+              "unit": "Unit 5",
+              "type": "graph-traversal-bfs-dfs-comparison"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Solve the following 0/1 Knapsack problem using dynamic programming P= (11, 21, 31, 33), W= (2, 12, 23, 15), C= 42, n= 4.",
+              "unit": "Unit 3",
+              "latex": "$$P = (11, 21, 31, 33), W = (2, 12, 23, 15), C = 42, n = 4$$",
+              "type": "dynamic-programming-knapsack-problem"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Design a three stage reliability system with device types $d_1, d_2$ and $d_3$. The costs are $30, $15 and $20 respectively. The cost of the system is to be no more than $105. The reliability of each device is 0.9, 0.8 and 0.5 respectively.",
+              "unit": "Unit 3",
+              "latex": "$$d_1, d_2, d_3$$",
+              "type": "dynamic-programming-reliability-design"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "On which type of problem we apply multi stage graph technique? Explain with example.",
+              "unit": "Unit 3",
+              "type": "dynamic-programming-multistage-graph"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Briefly explain 8-queen problem using backtracking with algorithm.",
+              "unit": "Unit 4",
+              "type": "backtracking-eight-queens-problem"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Identify the Hamiltonian cycle from the following graph. alt=''",
+              "unit": "Unit 4",
+              "type": "hamiltonian-cycle-identification"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Compute the optimal solution for job sequencing with deadlines using greedy method. N = 4, profits $(P_1, P_2, P_3, P_4)$ = (100, 10, 15, 27), deadlines $(d_1, d_2, d_3, d_4)$ = (2, 1, 2, 1).",
+              "unit": "Unit 2",
+              "latex": "$$N = 4, (P_1, P_2, P_3, P_4) = (100, 10, 15, 27), (d_1, d_2, d_3, d_4) = (2, 1, 2, 1)$$",
+              "type": "greedy-job-sequencing-with-deadlines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Consider the following instance of the knapsack problem and solve it using greedy method n= 7, m= 15. $(P_1, P_2, P_3, P_4, P_5, P_6, P_7)$ = (10, 5, 15, 7, 6, 18, 3) and $(W_1, W_2, W_3, W_4, W_5, W_6, W_7)$ = (2, 3, 5, 7, 1, 4, 1).",
+              "unit": "Unit 2",
+              "latex": "$$n = 7, m = 15, (P_1, P_2, P_3, P_4, P_5, P_6, P_7) = (10, 5, 15, 7, 6, 18, 3), (W_1, W_2, W_3, W_4, W_5, W_6, W_7) = (2, 3, 5, 7, 1, 4, 1)$$",
+              "type": "greedy-knapsack-problem"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Apply the Kruskal algorithm for the following graph and explain. alt=''",
+              "unit": "Unit 2",
+              "type": "kruskal-algorithm-mst"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "2-3 trees",
+              "unit": "Unit 5",
+              "type": "2-3-trees"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Merge sort",
+              "unit": "Unit 1",
+              "type": "merge-sort"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Optimal merge patterns",
+              "unit": "Unit 2",
+              "type": "optimal-merge-patterns"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Floyd Warshall algorithm",
+              "unit": "Unit 3",
+              "type": "floyd-warshall-algorithm"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 4,
-      "parts": [
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm with the help of algorithm.",
-          "unit": 2,
-          "questionId": "CSIT-403_jun_2025_Q4a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "With the help of a flow chart, explain the various steps of algorithm design and analysis process.",
+              "unit": "Unit 1",
+              "type": "algorithm-design-analysis-process"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the significance of various asymptotic notations? Express the following assertions using three asymptotic notations with proof from its definition\ni) $n(n-1)/2$\nii) $6*2^n + n^2$\niii) $100n + 7$",
+              "unit": "Unit 1",
+              "latex": "n(n-1)/2, 6*2^n + n^2, 100n + 7",
+              "type": "asymptotic-notation-proof"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "The recurrence T(n)=7T(n/2)+n² describe the running time of an algorithm A. A competing algorithm A has a running time of Γ(n)=aΓ(n/4)+n². What is the largest integer value for a A' is asymptotically faster than A?",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q4b"
-        }
-      ]
-    },
-    {
-      "number": 5,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Explain properties of Binomial Heap. Write an algorithm to perform uniting two Binomial Heaps. And also, to find Minimum Key.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q5a"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write an algorithm to sort n numbers using Quick Sort. Trace the algorithm to sort the following list in an ascending order: 7 65 70 75 80 85 60 55 50",
+              "unit": "Unit 1",
+              "type": "quick-sort-algorithm-trace"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the general Divide and Conquer technique with control abstraction and recurrence relation.",
+              "unit": "Unit 1",
+              "type": "divide-and-conquer-technique"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Explain Backtracking. Let set S={1,3,4,5} and X=8, we have to find subset sum problem using backtracking approach.",
-          "unit": 4,
-          "questionId": "CSIT-403_jun_2025_Q5b"
-        }
-      ]
-    },
-    {
-      "number": 6,
-      "parts": [
-        {
-          "label": "a",
-          "text": "What is stable sorting algorithm? Which of the sorting algorithms we have seen are stable and which are unstable? Give name with explanation.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q6a"
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss how to find maximum and minimum element in an array recursively? Trace the same for the following data set 65, 70, 75, 80, 85, 60, 55, 50. Also derive the worst care complexity.",
+              "unit": "Unit 1",
+              "type": "max-min-recursive-trace-complexity"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Briefly explain the Strassen's matrix multiplication. Apply it to multiply the following matrices. Explain how this method is better than direct multiplication method.\n$$\\begin{pmatrix} 4 & 3 \\\\ 2 & 1 \\end{pmatrix} \\text{ and } \\begin{pmatrix} 2 & 5 \\\\ 1 & 6 \\end{pmatrix}$$",
+              "unit": "Unit 1",
+              "latex": "\\begin{pmatrix} 4 & 3 \\\\ 2 & 1 \\end{pmatrix} \\text{ and } \\begin{pmatrix} 2 & 5 \\\\ 1 & 6 \\end{pmatrix}",
+              "type": "strassen-matrix-multiplication"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Suppose character a, b, c, d, e, f has probabilities 0.07, 0.09, 0.12, 0.22, 0.23, 0.27 respectively. Find an optimal Huffman code and draw the Huffman tree. What is the average code length?",
-          "unit": 2,
-          "questionId": "CSIT-403_jun_2025_Q6b"
-        }
-      ]
-    },
-    {
-      "number": 7,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Write Merge sort algorithm and sort the following sequence {23, 11, 5, 15, 68, 31, 4, 17} using merge sort.",
-          "unit": 1,
-          "questionId": "CSIT-403_jun_2025_Q7a"
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Recall the concept of greedy techniques. Find the optimal solution to the Knapsack instance $n = 7, m = 15$. $(P_1, P_2, \\dots, P_7) = (10, 5, 15, 7, 6, 18, 3)$ $(W_1, W_2, \\dots, W_7) = (2, 3, 5, 7, 1, 4, 1)$",
+              "unit": "Unit 2",
+              "latex": "n = 7, m = 15, (P_1, P_2, \\dots, P_7) = (10, 5, 15, 7, 6, 18, 3), (W_1, W_2, \\dots, W_7) = (2, 3, 5, 7, 1, 4, 1)",
+              "type": "greedy-knapsack-problem"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Using the Prim's Algorithm, determine the minimum cost spanning tree of the graph of figure: alt=''",
+              "unit": "Unit 2",
+              "type": "prims-algorithm-mst"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Explain B-Tree and its properties. Also write B-Tree deletion cases with example.",
-          "unit": 5,
-          "questionId": "CSIT-403_jun_2025_Q7b"
-        }
-      ]
-    },
-    {
-      "number": 8,
-      "parts": [
-        {
-          "label": "a",
-          "text": "For a binary tree T, the preorder and in-order traversal sequences are as follows:\nIn order : BCAEGDHFIJ\nPreorder : ABCDEGFHIJ\ni) Construct a binary Tree.\nii) What is its post-order traversal sequence?",
-          "unit": 5,
-          "questionId": "CSIT-403_jun_2025_Q8a"
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the dynamic programming. Generate transitive closure of the graph given in the figure give below: alt=''",
+              "unit": "Unit 3",
+              "type": "dynamic-programming-transitive-closure"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Using Floyd's algorithm, find all pairs of shortest path for the graph in the figure given below: alt=''",
+              "unit": "Unit 3",
+              "type": "floyd-warshall-all-pairs-shortest-path"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Kruskal's Minimum Spanning Tree in detail.",
-          "unit": 2,
-          "questionId": "CSIT-403_jun_2025_Q8b"
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain Backtracking Concept. Construct the state-space tree for solving 4-Queen's problem. using backtracking.",
+              "unit": "Unit 4",
+              "type": "backtracking-n-queens-problem"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is Branch and Bound algorithm? Write the steps and apply nearest neighbour approximation algorithm on the Travelling Salesperson Problem with the starting vertex a, and calculate the accuracy ratio of approximation. alt=''",
+              "unit": "Unit 4",
+              "type": "branch-and-bound-tsp-nearest-neighbor"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is a Decision Tree? Give a decision tree for 3 elements selection sort for arranging the items in ascending order and estimate its lower bound.",
+              "unit": "Unit 1",
+              "type": "decision-tree-selection-sort-lower-bound"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Apply DFS algorithm to solve the topological sorting problem for the graph in the figure given below: alt=''",
+              "unit": "Unit 5",
+              "type": "dfs-topological-sort"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "AVL Tree",
+              "unit": "Unit 5",
+              "type": "avl-tree"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Hamiltonian Problem",
+              "unit": "Unit 4",
+              "type": "hamiltonian-problem"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "M - Coloring",
+              "unit": "Unit 4",
+              "type": "graph-coloring-m-coloring"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "NP-Complete Problem",
+              "unit": "Unit 5",
+              "type": "np-complete-problem"
+            }
+          ]
         }
       ]
     }

@@ -1,0 +1,193 @@
+{
+  "subject": {
+    "id": "csit-803-c",
+    "code": "CSIT-803-C",
+    "name": "Cyber Laws and Forensics",
+    "title": "CSIT-803 (C) - Cyber Laws and Forensics",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Answer any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the EU General Data Protection Regulation (GDPR) Act.",
+              "unit": "Unit 2",
+              "type": "gdpr-act"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What care should be taken by the cyber forensic investigator in the collection and preservation of data stored on hard drive?",
+              "unit": "Unit 3",
+              "type": "hard-drive-evidence-preservation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the different provisions under the IT Act, 2000 pertaining to regulation of certifying authorities and their powers?",
+              "unit": "Unit 1",
+              "type": "it-act-2000-certifying-authorities"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain different types of law enforcement computer forensic technology.",
+              "unit": "Unit 3",
+              "type": "law-enforcement-forensic-tech"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain in detail about how the understanding of File Systems plays a crucial role in cyber forensics.",
+              "unit": "Unit 3",
+              "type": "file-systems-forensics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Interpret the Privacy Act Issues under Gramm-Leach-Bliley.",
+              "unit": "Unit 2",
+              "type": "gramm-leach-bliley-privacy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss amendments made in the Indian ITA 2000 with reference to admissibility of electronic records.",
+              "unit": "Unit 1",
+              "type": "ita-2000-electronic-records-admissibility"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is privacy law in terms of Cyber Forensics? Explain types of privacy law. Explain information privacy law.",
+              "unit": "Unit 2",
+              "type": "privacy-laws-types"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Demonstrate how to use Remote Network Acquisition Tools in cyber Forensics.",
+              "unit": "Unit 5",
+              "type": "remote-network-acquisition-tools"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write the requirements of: i) Computer Forensics Tools ii) Command-Line Forensics Tools iii) GUI Forensics Tools.",
+              "unit": "Unit 4",
+              "type": "forensics-tools-requirements"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain Important Offences under the Cyberspace Law and the Internet in India.",
+              "unit": "Unit 1",
+              "type": "cyberspace-law-offences-india"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Distinguish Router Forensics and Cyber Forensics.",
+              "unit": "Unit 5",
+              "type": "router-forensics-vs-cyber-forensics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Decide the Criminal and civil proceedings which can be used as computer Forensics Evidence.",
+              "unit": "Unit 2",
+              "type": "criminal-civil-forensic-evidence"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Elaborate Forensics Auditing in cyber security.",
+              "unit": "Unit 3",
+              "type": "forensics-auditing-cyber-security"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on: Computer Forensics Software Tools.",
+              "unit": "Unit 4",
+              "type": "computer-forensics-software-tools"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short note on: Challenges in computer forensics.",
+              "unit": "Unit 3",
+              "type": "challenges-in-computer-forensics"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short note on: Tools and methods used in cyber crime.",
+              "unit": "Unit 1",
+              "type": "cyber-crime-tools-methods"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

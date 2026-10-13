@@ -1,0 +1,206 @@
+{
+  "subject": {
+    "id": "csit-501",
+    "code": "CSIT-501",
+    "name": "Computer Networking",
+    "title": "CSIT-501 - Computer Networking",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the OSI model along with function of each layer. Also Give the similarities and differences of OSI with TCP/IP Model.",
+              "unit": "Unit 1",
+              "type": "osi-tcp-ip-comparison"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare Connection oriented and connectionless service.",
+              "unit": "Unit 1",
+              "type": "connection-oriented-vs-connectionless"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the working principle of ARP and RARP with suitable example.",
+              "unit": "Unit 3",
+              "type": "arp-rarp-explanation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Briefly discuss about data link layer design issues.",
+              "unit": "Unit 2",
+              "type": "data-link-layer-design-issues"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss about Stop and wait protocol flow control technique.",
+              "unit": "Unit 2",
+              "type": "stop-and-wait-protocol"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Pure ALOHA and slotted ALOHA? How the efficiency of slotted ALOHA is twice that of pure ALOHA? Derive it.",
+              "unit": "Unit 2",
+              "type": "aloha-protocol-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the format of IPv4 header? Describe the significance of each field.",
+              "unit": "Unit 3",
+              "type": "ipv4-header-format"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A company is granted the site address 181.56.0.0 (class B). The company needs 1000 subnets. Design the subnets.",
+              "unit": "Unit 3",
+              "type": "subnet-design"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the following routing algorithms in detail:\ni) Least cost\nii) Dijkstra's\niii) Bellman-Ford",
+              "unit": "Unit 3",
+              "type": "routing-algorithms"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the various timers used by TCP to perform its various operations.",
+              "unit": "Unit 4",
+              "type": "tcp-timers"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "The UDP header in hexadecimal format is as : 0632000D001CE217 Obtain the following from it:\ni) Source port number\nii) Destination port number\niii) Total length\niv) Length of the data\nv) Name of client process",
+              "unit": "Unit 4",
+              "type": "udp-header-analysis"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss about process to process delivery service of TCP.",
+              "unit": "Unit 4",
+              "type": "tcp-process-to-process-delivery"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss about TCP connection establishment and termination with suitable diagram. alt=''",
+              "unit": "Unit 4",
+              "type": "tcp-connection-management"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the working of Electronic mail. How SMTP used in Email applications.",
+              "unit": "Unit 5",
+              "type": "email-smtp-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short notes on any two:\ni) Piggybacking and Pipelining\nii) ICMP Message Types\niii) FDDI\niv) DHCP",
+              "unit": "Unit 2",
+              "type": "short-notes"
+            },
+            {
+              "id": "q8a.i",
+              "label": "a) i)",
+              "text": "Piggybacking and Pipelining",
+              "unit": "Unit 2",
+              "type": "piggybacking-pipelining"
+            },
+            {
+              "id": "q8a.ii",
+              "label": "a) ii)",
+              "text": "ICMP Message Types",
+              "unit": "Unit 3",
+              "type": "icmp-message-types"
+            },
+            {
+              "id": "q8a.iii",
+              "label": "a) iii)",
+              "text": "FDDI",
+              "unit": "Unit 2",
+              "type": "fddi-overview"
+            },
+            {
+              "id": "q8a.iv",
+              "label": "a) iv)",
+              "text": "DHCP",
+              "unit": "Unit 5",
+              "type": "dhcp-overview"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

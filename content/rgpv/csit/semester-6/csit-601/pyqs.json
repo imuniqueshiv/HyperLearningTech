@@ -1,0 +1,200 @@
+{
+  "subject": {
+    "id": "csit-601",
+    "code": "CSIT-601",
+    "name": "Software Engineering & Agile",
+    "title": "CSIT-601 - Software Engineering & Agile",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain Software Life Cycle Models? Discuss various activities during Software Life Cycle.",
+              "unit": "Unit 1",
+              "type": "software-life-cycle"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Give an overview of Unified Process Model?",
+              "unit": "Unit 1",
+              "type": "unified-process-model"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss briefly about Open Source Software Development?",
+              "unit": "Unit 1",
+              "type": "open-source-software-development"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the Framework for Software Quality Metrics?",
+              "unit": "Unit 2",
+              "type": "software-quality-metrics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the COCOMO model for estimation?",
+              "unit": "Unit 2",
+              "type": "cocomo-model"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss various Software Estimation Techniques?",
+              "unit": "Unit 2",
+              "type": "software-estimation-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe five desirable characteristics of a good software requirement Specifications document with suitable example?",
+              "unit": "Unit 3",
+              "type": "srs-characteristics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "State and explain clearly about specifications design tools?",
+              "unit": "Unit 3",
+              "type": "specifications-design-tools"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List and explain various Design platform implementation?",
+              "unit": "Unit 3",
+              "type": "design-platform-implementation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain briefly about various Software Components?",
+              "unit": "Unit 3",
+              "type": "software-components"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by Debugging? Discuss about rapid Prototyping?",
+              "unit": "Unit 4",
+              "type": "debugging-prototyping"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define Unit Testing? Explain about Unit Testing considerations and procedures.",
+              "unit": "Unit 4",
+              "type": "unit-testing"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Elucidate the various phases of Agile model?",
+              "unit": "Unit 5",
+              "type": "agile-model-phases"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Give a brief introduction of Extreme Programming (XP) and its phases?",
+              "unit": "Unit 5",
+              "type": "extreme-programming-xp"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on: KANBAN.",
+              "unit": "Unit 5",
+              "type": "kanban"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short note on: Configuration Management.",
+              "unit": "Unit 4",
+              "type": "configuration-management"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short note on: S/W reliability.",
+              "unit": "Unit 2",
+              "type": "software-reliability"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short note on: Data Structure Design.",
+              "unit": "Unit 3",
+              "type": "data-structure-design"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
