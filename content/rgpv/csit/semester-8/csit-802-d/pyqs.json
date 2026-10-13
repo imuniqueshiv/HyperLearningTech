@@ -1,0 +1,194 @@
+{
+  "subject": {
+    "id": "csit-802-d",
+    "code": "CSIT-802-D",
+    "name": "Block Chain Technology",
+    "title": "CSIT-802 (D) - Block Chain Technology",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Consider Bob the merchant deciding whether or not to accept the $C_1 \\to B$ transaction. What Bob is really interested in is whether or not the other chain will catch up? Why, then, does he simply check how many confirmations $C_1 \\to B$ has received, instead of computing the difference in length between the two chains?",
+              "unit": "Unit 2",
+              "latex": "$C_1 \\to B$",
+              "type": "bitcoin-confirmations-double-spending"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "If a malicious ISP completely controls a user's connections, can it launch a double-spend attack against the user? How much computational effort would this take?",
+              "unit": "Unit 5",
+              "type": "double-spend-attack-isp"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a ScriptPubKey that requires demonstrating a SHA-256 collision to redeem.",
+              "unit": "Unit 2",
+              "type": "bitcoin-script-pubkey"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write a corresponding ScriptSig that will successfully redeem this transaction.",
+              "unit": "Unit 2",
+              "type": "bitcoin-script-scriptsig"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Speculate about why buying bitcoins in person is generally more expensive than buying from an online exchange?",
+              "unit": "Unit 2",
+              "type": "bitcoin-economics-in-person"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Moore and Christin observe that security breaches and other failures of exchanges have little impact on the Bitcoin exchange rate. Speculate on why this might be and explain the reason?",
+              "unit": "Unit 2",
+              "type": "bitcoin-exchange-resilience"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write the four stages of Ethereum development.",
+              "unit": "Unit 3",
+              "type": "ethereum-development-stages"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the components of Blockchain?",
+              "unit": "Unit 1",
+              "type": "blockchain-components"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write the structure of Transaction.",
+              "unit": "Unit 2",
+              "type": "blockchain-transaction-structure"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is a Smart Contract? Explain in detail.",
+              "unit": "Unit 4",
+              "type": "smart-contracts"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Assuming that the total hash power of the network stays constant, what is the probability that a block will be found in the next 10 minutes?",
+              "unit": "Unit 2",
+              "type": "bitcoin-mining-probability"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the task of bitcoin miners?",
+              "unit": "Unit 2",
+              "type": "bitcoin-miners-role"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write the advantages and disadvantages of full node.",
+              "unit": "Unit 2",
+              "type": "blockchain-full-node"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the various wallets and DAPP browsers?",
+              "unit": "Unit 3",
+              "type": "crypto-wallets-dapp-browsers"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain: Merkle trees.",
+              "unit": "Unit 1",
+              "type": "merkle-trees"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain: Cryptocurrencies.",
+              "unit": "Unit 1",
+              "type": "cryptocurrencies"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Explain: Double spend attacks.",
+              "unit": "Unit 5",
+              "type": "double-spend-attacks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

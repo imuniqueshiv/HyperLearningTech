@@ -1,0 +1,193 @@
+{
+  "subject": {
+    "id": "csit-603-a",
+    "code": "CSIT-603-A",
+    "name": "Wireless and Mobile Computing",
+    "title": "CSIT-603 (A) - Wireless and Mobile Computing",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Antenna? Draw and explain a radiation pattern of an omnidirectional antenna. alt=''",
+              "unit": "Unit 1",
+              "type": "antenna-radiation-pattern"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What do you mean by Fading? Explain different types of fading.",
+              "unit": "Unit 1",
+              "type": "fading-types"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What type of services are provided by GSM system? Explain its architecture.",
+              "unit": "Unit 2",
+              "type": "gsm-architecture-services"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the main elements of UMTS network? How UMTS network are different from 2G network?",
+              "unit": "Unit 2",
+              "type": "umts-network-elements"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the MAC services of IEEE 802.11 that are not provided in the traditional such as 802.3?",
+              "unit": "Unit 3",
+              "type": "ieee-802-11-mac-services"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the principal responsibilities of MAC protocol?",
+              "unit": "Unit 3",
+              "type": "mac-protocol-responsibilities"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is HIPERLAN-2? Draw and explain HIPERLAN-2 protocol stack. alt=''",
+              "unit": "Unit 3",
+              "type": "hiperlan-2-protocol-stack"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain how routing is performed on Ad-hoc network.",
+              "unit": "Unit 4",
+              "type": "ad-hoc-network-routing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the concept of biometric authentication system.",
+              "unit": "Unit 5",
+              "type": "biometric-authentication"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you mean by intruders? Explain intruder detection and prevention.",
+              "unit": "Unit 5",
+              "type": "intruder-detection-prevention"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Why are need Multiple Access Technique? Differentiate TDMA, FDMA and CDMA techniques.",
+              "unit": "Unit 1",
+              "type": "multiple-access-techniques"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the various effects of mobile radio propagation.",
+              "unit": "Unit 1",
+              "type": "mobile-radio-propagation-effects"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the various challenges of password management.",
+              "unit": "Unit 5",
+              "type": "password-management-challenges"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write and explain Firewall design principles.",
+              "unit": "Unit 5",
+              "type": "firewall-design-principles"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on: TETRA.",
+              "unit": "Unit 2",
+              "type": "tetra"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short note on: World Wide Web.",
+              "unit": "Unit 4",
+              "type": "world-wide-web"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short note on: Mobile TCP.",
+              "unit": "Unit 4",
+              "type": "mobile-tcp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

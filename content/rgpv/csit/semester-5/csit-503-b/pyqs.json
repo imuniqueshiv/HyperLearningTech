@@ -1,0 +1,179 @@
+{
+  "subject": {
+    "id": "csit-503-b",
+    "code": "CSIT-503-B",
+    "name": "Microprocessor and Interfacing",
+    "title": "CSIT-503 (B) - Microprocessor and Interfacing",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Draw and explain the architectural diagram of 8086 microprocessor. alt=''",
+              "unit": "Unit 1",
+              "type": "8086-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain in brief about the evolution of microprocessors.",
+              "unit": "Unit 1",
+              "type": "microprocessor-evolution"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are Macros in 8086, discuss them with suitable examples.",
+              "unit": "Unit 3",
+              "type": "8086-macros-programming"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the following instructions with suitable example of each: i) LXI ii) MOV iii) SHLD iv) LDAX v) CMP vi) STA",
+              "unit": "Unit 2",
+              "type": "8086-instructions-explanation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write a program to transfer a block of 1 data elements from memory location 5000 H to 6000 H.",
+              "unit": "Unit 3",
+              "type": "assembly-program-data-transfer"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is subroutine. Explain the use of stack in CALL and RETURN instructions.",
+              "unit": "Unit 2",
+              "type": "subroutine-stack-call-return"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a program in Assembly language to add two 16 bit number using ADC instruction. Store the result in memory.",
+              "unit": "Unit 3",
+              "type": "assembly-program-16bit-addition"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "List out the different Data transfer schemes present in Microprocessor and explain each one in detail.",
+              "unit": "Unit 3",
+              "type": "data-transfer-schemes"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain about I/O Interfacing and Memory Interfacing with 8086 with an example?",
+              "unit": "Unit 3",
+              "type": "8086-io-memory-interfacing"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Bus? Describe ISA Bus and EISA Bus in detail?",
+              "unit": "Unit 4",
+              "type": "bus-isa-eisa"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain 8259 programmable interrupt controller with neat functional block diagram. alt=''",
+              "unit": "Unit 4",
+              "type": "8259-pic-architecture"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain direct memory access controller in detail with neat block diagram. Why is it needed? alt=''",
+              "unit": "Unit 4",
+              "type": "dma-controller-architecture"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "With a neat sketch explain the function of memory array of PROM. alt=''",
+              "unit": "Unit 5",
+              "type": "prom-memory-array"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is primary, secondary and cache memory. Give the difference between Primary and Secondary Memory.",
+              "unit": "Unit 5",
+              "type": "memory-hierarchy-types"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short notes on any two: i) Parallel Printer Interface ii) Microcomputer Development System iii) Addressing Modes iv) Real and Virtual Memory Buses",
+              "unit": "Unit 1",
+              "type": "short-notes-various-topics"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

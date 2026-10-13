@@ -1,0 +1,195 @@
+{
+  "subject": {
+    "id": "csit-602",
+    "code": "CSIT-602",
+    "name": "Machine Learning",
+    "title": "CSIT-602 - Machine Learning",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Answer any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define machine learning and explain its importance in solving real-world problems.",
+              "unit": "Unit 1",
+              "type": "machine-learning-intro"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the role of probability in machine learning. How is Bayes' theorem used in classification tasks, and why is it fundamental in probabilistic models?",
+              "unit": "Unit 5",
+              "type": "bayes-theorem-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Compare $L_1$ and $L_2$ regularization in machine learning. How do these techniques prevent overfitting, and what is the difference in the impact they have on model weights?",
+              "unit": "Unit 2",
+              "latex": "$L_1$, $L_2$",
+              "type": "regularization-l1-l2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are Autoencoders, and how are they used in unsupervised learning?",
+              "unit": "Unit 2",
+              "type": "autoencoders"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the architecture of a Convolutional Neural Network (CNN).",
+              "unit": "Unit 3",
+              "type": "cnn-architecture"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define one-shot learning and explain how it differs from traditional supervised learning. Discuss applications where one-shot learning is particularly beneficial.",
+              "unit": "Unit 1",
+              "type": "one-shot-learning"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are some popular frameworks for implementing reinforcement learning, such as OpenAI Gym or TensorFlow Agents?",
+              "unit": "Unit 4",
+              "type": "reinforcement-learning-frameworks"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Q-learning, and how does it use the Q-value to guide an agent's action?",
+              "unit": "Unit 4",
+              "type": "q-learning"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How is machine learning applied in speech processing such as speech-to-text and speaker identification?",
+              "unit": "Unit 5",
+              "type": "speech-processing-ml"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Analyze how SVMs perform in high-dimensional spaces and discuss their applications in fields like bioinformatics.",
+              "unit": "Unit 5",
+              "type": "support-vector-machines"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is $1 \\times 1$ convolution in CNNs, and why is it used?",
+              "unit": "Unit 3",
+              "latex": "$1 \\times 1$",
+              "type": "one-by-one-convolution"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the importance of loss calculation in guiding the backpropagation and optimization process.",
+              "unit": "Unit 2",
+              "type": "loss-function-backpropagation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the role of LSTMs in natural language generation models like ChatGPT and how they handle long-term dependencies.",
+              "unit": "Unit 4",
+              "type": "lstm-language-generation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the rise of advanced actor-critic models with example.",
+              "unit": "Unit 4",
+              "type": "actor-critic-models"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on: ImageNet Competition.",
+              "unit": "Unit 3",
+              "type": "imagenet-competition"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short note on: Self Supervised Learning.",
+              "unit": "Unit 1",
+              "type": "self-supervised-learning"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short note on: Generative AI.",
+              "unit": "Unit 5",
+              "type": "generative-ai"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

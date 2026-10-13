@@ -966,6 +966,180 @@
           ]
         }
       ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the structure of desktop system in detail. [8 Marks]",
+              "unit": "Unit 1",
+              "type": "desktop-system-structure"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the instruction format? Explain I/O System in detail. [6 Marks]",
+              "unit": "Unit 1",
+              "type": "instruction-format-io-system"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss Booth algorithm in detail. [8 Marks]",
+              "unit": "Unit 2",
+              "type": "booth-algorithm"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write a short note on design of arithmetic unit. [6 Marks]",
+              "unit": "Unit 2",
+              "type": "arithmetic-unit-design"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the following interfaces in detail: PCI BUS",
+              "unit": "Unit 3",
+              "type": "pci-bus"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the following interfaces in detail: SCSI BUS",
+              "unit": "Unit 3",
+              "type": "scsi-bus"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "text": "Explain the following interfaces in detail: USB BUS",
+              "unit": "Unit 3",
+              "type": "usb-bus"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is Memory Organization? Discuss different types of Memory Organization in Computer System. [8 Marks]",
+              "unit": "Unit 4",
+              "type": "memory-organization-types"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a short note on improving cache performance methods in detail. [6 Marks]",
+              "unit": "Unit 4",
+              "type": "cache-performance-improvement"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Multiprocessor? Explain inter-process communication in detail. [7 Marks]",
+              "unit": "Unit 5",
+              "type": "multiprocessor-inter-process-communication"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Briefly explain the concept of pipelining in detail. [7 Marks]",
+              "unit": "Unit 5",
+              "type": "pipelining-concept"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the following in detail: RISC Architecture [7 Marks]",
+              "unit": "Unit 5",
+              "type": "risc-architecture"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the following in detail: Vector Processing [7 Marks]",
+              "unit": "Unit 5",
+              "type": "vector-processing"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write a short note on following: Array processors [7 Marks]",
+              "unit": "Unit 5",
+              "type": "array-processors"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write a short note on following: LRU algorithm [7 Marks]",
+              "unit": "Unit 4",
+              "type": "lru-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is the format of Micro Instruction in Computer Architecture explain? [8 Marks]",
+              "unit": "Unit 1",
+              "type": "micro-instruction-format"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is the layout of pipelined instruction in Computer Architecture? [6 Marks]",
+              "unit": "Unit 5",
+              "type": "pipelined-instruction-layout"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

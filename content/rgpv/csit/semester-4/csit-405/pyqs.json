@@ -1,143 +1,693 @@
 {
-  "paper": {
-    "id": "csit405-dec-2025",
-    "subjectCode": "AG/CSIT(CI)/IT-405",
-    "subjectName": "Data Base Management System",
-    "exam": "B.Tech./B.Tech. (Working Professional), IV Semester Examination, December 2025",
-    "system": "Grading System (GS) / Working Professional",
+  "subject": {
+    "id": "csit-405",
+    "code": "CSIT-405",
+    "name": "Database Management System",
+    "title": "CSIT-405 – Database Management System (DBMS)",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
     "maxMarks": 70,
     "time": "3 Hours",
-    "note": "i) Attempt any five questions.\nii) All questions carry equal marks.\niii) Assume any missing data.",
-    "totalQuestions": 8
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
   },
-  "questions": [
+  "papers": [
     {
-      "number": 1,
-      "parts": [
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
         {
-          "label": "a",
-          "text": "Differentiate between File System and DBMS. Discuss the advantages of a database system over a file-based system.",
-          "unit": 1,
-          "questionId": "IT-405_dec_2025_Q1a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q1a",
+              "label": "a)",
+              "text": "Differentiate between File System and DBMS. Discuss the advantages of a database system over a file-based system.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "IT-405_dec_2025_Q1b",
+              "label": "b)",
+              "text": "Draw and explain an E-R diagram for a University database system. Consider entities like students, courses and faculty.",
+              "unit": "Unit 1"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Draw and explain an E-R diagram for a University database system. Consider entities like students, courses and faculty.",
-          "unit": 1,
-          "questionId": "IT-405_dec_2025_Q1b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q2a",
+              "label": "a)",
+              "text": "Explain the concept of weak entity sets. How do generalization, specialization and aggregation extend the E-R model.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "IT-405_dec_2025_Q2b",
+              "label": "b)",
+              "text": "Consider the following relational schema:\nStudent(Roll_no, Name, Dept, Year, Marks)\nwrite relational algebra queries to:\ni) Retrieve names of students in the CS department\nii) Find students who scored more than 80 marks",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q3a",
+              "label": "a)",
+              "text": "Compare sorting, join and selection operations in query processing.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "IT-405_dec_2025_Q3b",
+              "label": "b)",
+              "text": "Why is query optimization necessary in large databases? Discuss with an example. Explain the measures of query cost.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q4a",
+              "label": "a)",
+              "text": "Discuss the types of anomalies that arise in an un-normalized database. Explain how normalization helps to eliminate these anomalies.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "IT-405_dec_2025_Q4b",
+              "label": "b)",
+              "text": "Consider the following relation.\nEmployee (Emp_ID, Name, Dept, Salary, Project_ID, Project_Name, Manager_ID)\ni) Identify functional dependencies\nii) Convert it to 3NF and BCNF.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q5a",
+              "label": "a)",
+              "text": "Define a transaction in a database. Explain the ACID properties of transactions with examples.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "IT-405_dec_2025_Q5b",
+              "label": "b)",
+              "text": "Why is concurrency control important in database systems? Discuss the impact of concurrency control on transaction performance.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q6a",
+              "label": "a)",
+              "text": "What is data independence? Explain logical and physical data independence with an example.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "IT-405_dec_2025_Q6b",
+              "label": "b)",
+              "text": "How does relational algebra help in database query processing? Explain with an example.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q7a",
+              "label": "a)",
+              "text": "Explain the importance of decomposition in database design. What is lossless and dependency-preserving decomposition?",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "IT-405_dec_2025_Q7b",
+              "label": "b)",
+              "text": "What is deadlock in a database? Explain deadlock prevention and deadlock detection mechanisms.",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "IT-405_dec_2025_Q8",
+              "label": "a)",
+              "text": "Write short notes on (any two)\na) Two-Phase Locking (2PL) protocol (Unit 5)\nb) Distributed databases: Concepts and Challenges (Unit 5)\nc) Serializability in transactions (Unit 5)\nd) Multi-valued dependency (Unit 4)",
+              "unit": "Unit 1"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 2,
-      "parts": [
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Explain the concept of weak entity sets. How do generalization, specialization and aggregation extend the E-R model.",
-          "unit": 2,
-          "questionId": "IT-405_dec_2025_Q2a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Differentiate between File System and DBMS. Discuss the advantages of a database system over a file-based system.",
+              "unit": "Unit 1",
+              "type": "file-system-vs-dbms"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Draw and explain an E-R Diagram for a University database system. Consider entities like students, courses and faculty. alt=''",
+              "unit": "Unit 1",
+              "type": "er-diagram-design"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Consider the following relational schema:\nStudent(Roll_no, Name, Dept, Year, Marks)\nwrite relational algebra queries to:\ni) Retrieve names of students in the CS department\nii) Find students who scored more than 80 marks",
-          "unit": 2,
-          "questionId": "IT-405_dec_2025_Q2b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the concept of weak entity sets. How do generalization, specialization and aggregation extend the E-R model.",
+              "unit": "Unit 1",
+              "type": "weak-entity-sets-er-model"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Consider the following relational schema: Student(Roll_no, Name, Dept, Year, Marks) write relational algebra queries to: i) Retrieve names of students in the CS department ii) Find students who scored more than 80 marks",
+              "unit": "Unit 2",
+              "type": "relational-algebra-queries"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Compare sorting, join and selection operations in query processing.",
+              "unit": "Unit 3",
+              "type": "query-processing-operations"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Why is query optimization necessary in large databases? Discuss with an example. Explain the measures of query cost.",
+              "unit": "Unit 3",
+              "type": "query-optimization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the types of anomalies that arise in an un-normalized database. Explain how normalization helps to eliminate these anomalies.",
+              "unit": "Unit 4",
+              "type": "database-anomalies-normalization"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Consider the following relation. Employee (Emp_ID, Name, Dept, Salary, Project_ID, Project_Name, Manager_ID) i) Identify functional dependencies ii) Convert it to 3NF and BCNF.",
+              "unit": "Unit 4",
+              "type": "normalization-functional-dependencies"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define a transaction in a database. Explain the ACID properties of transactions with examples.",
+              "unit": "Unit 5",
+              "type": "transaction-acid-properties"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Why is concurrency control important in database systems? Discuss the impact of concurrency control on transaction performance.",
+              "unit": "Unit 5",
+              "type": "concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is data independence? Explain logical and physical data independence with an example.",
+              "unit": "Unit 1",
+              "type": "data-independence"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How does relational algebra help in database query processing? Explain with an example.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-query-processing"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the importance of decomposition in database design. What is lossless and dependency-preserving decomposition?",
+              "unit": "Unit 4",
+              "type": "database-decomposition-lossless-dependency-preserving"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is deadlock in a database? Explain deadlock prevention and deadlock detection mechanisms.",
+              "unit": "Unit 5",
+              "type": "deadlock-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Two-Phase Locking (2PL) protocol",
+              "unit": "Unit 5",
+              "type": "two-phase-locking"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Distributed databases : Concepts and Challenges",
+              "unit": "Unit 5",
+              "type": "distributed-databases"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Serializability in transactions",
+              "unit": "Unit 5",
+              "type": "serializability"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Multi-valued dependency",
+              "unit": "Unit 4",
+              "type": "multi-valued-dependency"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 3,
-      "parts": [
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Compare sorting, join and selection operations in query processing.",
-          "unit": 3,
-          "questionId": "IT-405_dec_2025_Q3a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the three levels of schema architecture. Why do we need mappings between different schema levels? [7]",
+              "unit": "Unit 1",
+              "type": "schema-architecture-mapping"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain how the data is organized in a network DBMS? How it is different from hierarchical DBMS. [7]",
+              "unit": "Unit 1",
+              "type": "network-hierarchical-dbms-comparison"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Why is query optimization necessary in large databases? Discuss with an example. Explain the measures of query cost.",
-          "unit": 3,
-          "questionId": "IT-405_dec_2025_Q3b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the impact of weak entity set in database design? Discuss with an example. [7]",
+              "unit": "Unit 1",
+              "type": "weak-entity-set-impact"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Develop an Entity Relationship diagram for Indian movies. It should include where it was shot, details of the actors, directors, producers, the movie language and so on. [7]",
+              "unit": "Unit 1",
+              "type": "er-diagram-design"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the following two tables.\n\n```\nDepartment\n| dno | dname |\n|-----|-------|\n| 101 | CSE   |\n| 102 | DS    |\n| 103 | IT    |\n| 104 | CCE   |\n\nEmployee\n| Eno | Ename | dno |\n|-----|-------|-----|\n| E1  | A     | 101 |\n| E2  | B     | 101 |\n| E3  | D     | 102 |\n| E4  | A     | NULL|\n| E5  | Y     | 104 |\n```\n\nDiscuss the foreign key and referential integrity constraints on above tables. [7]",
+              "unit": "Unit 2",
+              "type": "foreign-key-referential-integrity"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Consider the following two tables as following.\n\n```\nR1\n| A | B | C |\n|---|---|---|\n| 1 | 2 | 3 |\n| 4 | 5 | 6 |\n| 7 | 8 | 9 |\n| 10| 11| 12|\n\nR2\n| D | E | C |\n|---|---|---|\n| 1 | 2 | 3 |\n| 7 | 8 | 9 |\n| 25| 26| 27|\n| 79| 80| 81|\n```\n\nShow the output for the following Relational Algebra Operators:\ni) $\\Pi_A (R1 * R2)$ where * denotes natural join\nii) $\\Pi_B (R1 \\triangleright\\!\\!\\!\\triangleleft R2)$ where $\\triangleright\\!\\!\\!\\triangleleft$ denotes left outer join\niii) $\\Pi_C (R1 \\triangleleft\\!\\!\\!\\triangleright R2)$ where $\\triangleleft\\!\\!\\!\\triangleright$ denotes left outer join [7]",
+              "unit": "Unit 2",
+              "latex": "\\Pi_A (R1 * R2), \\Pi_B (R1 \\triangleright\\!\\!\\!\\triangleleft R2), \\Pi_C (R1 \\triangleleft\\!\\!\\!\\triangleright R2)",
+              "type": "relational-algebra-operators"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Give an example of two relations that would give a meaningful result of carrying out a full outer join. Formulate the full outer join using SQL. [7]",
+              "unit": "Unit 2",
+              "type": "sql-full-outer-join"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Assume the following employee and department table and write the SQL queries-\nEmp (EID, Ename, DOJ, Salary, Dname)\nDept (DID, Dname)\ni) List the employees having salary between 10,000 and 20,000\nii) Update the salaries of all employees in marketing department and hike it by 10%\niii) Get the gross salaries of all employees\niv) Display the department that has no employee\nv) Find the number of employees in the marketing department\nvi) Find the name of employee having maximum salary\nvii) Find the second maximum salary in the employee table [7]",
+              "unit": "Unit 2",
+              "type": "sql-queries"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Identify the Highest Normal Form of the Relation R (A, B, C, D, E, F, G, H) and Functional Dependency set F = {AB $\\to$ CD, D $\\to$ EG, F $\\to$ H, C$\\to$ EF, H $\\to$ A, G $\\to$ B, A $\\to$ B}. [7]",
+              "unit": "Unit 4",
+              "latex": "R (A, B, C, D, E, F, G, H), F = \\{AB \\to CD, D \\to EG, F \\to H, C \\to EF, H \\to A, G \\to B, A \\to B\\}",
+              "type": "highest-normal-form-identification"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Consider the following employee table. Suppose that employees assigned to multiple projects and can have multiple jobs.\n\n```\nEno | Pno | Skill\n----|-----|--------------------------\nE1  | 101 | Coding, Testing, Maintenance\nE2  | 110 | Analysis, Design, Testing\nE2  | 111 | Analysis, Design, Testing\n```\n\nNormalize the table to the possible extent. [7]",
+              "unit": "Unit 4",
+              "type": "database-normalization"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Identify the given schedule is conflict serializable or not.\n\n```\nT1 | T2 | T3\n---|----|----\nR(A)|    |\n   | W(A)|\n   |    | W(A)\n   | R(B)|\nR(B)|    |\n   | W(B)|\n```\n\n[7]",
+              "unit": "Unit 5",
+              "type": "conflict-serializability-check"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss with an example when concurrent execution of two transactions lead to conflict? [7]",
+              "unit": "Unit 5",
+              "type": "concurrent-transaction-conflict"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Illustrate the concept of two-phase locking protocol and its variants with an example. [7]",
+              "unit": "Unit 5",
+              "type": "two-phase-locking-protocol"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8_i",
+              "label": "i)",
+              "text": "Oracle Application Express (APEX) [7 Marks]",
+              "unit": "Unit 3",
+              "type": "oracle-apex-casestudy"
+            },
+            {
+              "id": "q8_ii",
+              "label": "ii)",
+              "text": "Database Anomalies [7 Marks]",
+              "unit": "Unit 4",
+              "type": "database-anomalies"
+            },
+            {
+              "id": "q8_iii",
+              "label": "iii)",
+              "text": "Distributed Databases [7 Marks]",
+              "unit": "Unit 5",
+              "type": "distributed-databases"
+            },
+            {
+              "id": "q8_iv",
+              "label": "iv)",
+              "text": "Views [7 Marks]",
+              "unit": "Unit 2",
+              "type": "sql-views"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 4,
-      "parts": [
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Discuss the types of anomalies that arise in an un-normalized database. Explain how normalization helps to eliminate these anomalies.",
-          "unit": 4,
-          "questionId": "IT-405_dec_2025_Q4a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe various disadvantages of file system compare to Data base management system.",
+              "unit": "Unit 1",
+              "type": "file-system-vs-dbms"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate specialization and generalization with help of example.",
+              "unit": "Unit 1",
+              "type": "specialization-generalization"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Consider the following relation.\nEmployee (Emp_ID, Name, Dept, Salary, Project_ID, Project_Name, Manager_ID)\ni) Identify functional dependencies\nii) Convert it to 3NF and BCNF.",
-          "unit": 4,
-          "questionId": "IT-405_dec_2025_Q4b"
-        }
-      ]
-    },
-    {
-      "number": 5,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Define a transaction in a database. Explain the ACID properties of transactions with examples.",
-          "unit": 5,
-          "questionId": "IT-405_dec_2025_Q5a"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain in detail about various key constraints used in database system.",
+              "unit": "Unit 2",
+              "type": "key-constraints"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the components of DBMS with a neat diagram. alt=''",
+              "unit": "Unit 1",
+              "type": "dbms-architecture-components"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Why is concurrency control important in database systems? Discuss the impact of concurrency control on transaction performance.",
-          "unit": 5,
-          "questionId": "IT-405_dec_2025_Q5b"
-        }
-      ]
-    },
-    {
-      "number": 6,
-      "parts": [
-        {
-          "label": "a",
-          "text": "What is data independence? Explain logical and physical data independence with an example.",
-          "unit": 1,
-          "questionId": "IT-405_dec_2025_Q6a"
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define and explain following terms :- Levels of data abstraction, Instances, Schema, Physical data independence, Logical data independence.",
+              "unit": "Unit 1",
+              "type": "data-abstraction-independence-schema"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Consider the following relational schema:\nDoctor (Dname, Reg_no) Patient (Pname, Disease) Assigned To (Pname, Dname)\nGive expression in both SQL and relational algebra for each of the queries:\ni) Get the names of patients who are assigned to more than one doctor.\nii) Get the names of doctors who are treating patients with 'Polio'.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-sql-queries"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "How does relational algebra help in database query processing? Explain with an example.",
-          "unit": 2,
-          "questionId": "IT-405_dec_2025_Q6b"
-        }
-      ]
-    },
-    {
-      "number": 7,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Explain the importance of decomposition in database design. What is lossless and dependency-preserving decomposition?",
-          "unit": 4,
-          "questionId": "IT-405_dec_2025_Q7a"
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State the Armstrong inference rules. Provide suitable examples to describe each.",
+              "unit": "Unit 4",
+              "type": "armstrong-inference-rules"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the concept of Referential Integrity",
+              "unit": "Unit 2",
+              "type": "referential-integrity"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "What is deadlock in a database? Explain deadlock prevention and deadlock detection mechanisms.",
-          "unit": 5,
-          "questionId": "IT-405_dec_2025_Q7b"
-        }
-      ]
-    },
-    {
-      "number": 8,
-      "parts": [
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What do you mean by Normalization? Explain BCNF, 3NF and 2NF with a suitable example.",
+              "unit": "Unit 4",
+              "type": "normalization-bcnf-3nf-2nf"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Given a set of FDs\nA \\to B, ABCD \\to E, EF \\to G\nIs ACDF \\to G, implied by the set of given FDs? Justify your answer.",
+              "unit": "Unit 4",
+              "latex": "A \\to B, ABCD \\to E, EF \\to G, ACDF \\to G",
+              "type": "functional-dependency-closure"
+            }
+          ]
+        },
         {
-          "label": null,
-          "text": "Write short notes on (any two)\na) Two-Phase Locking (2PL) protocol (Unit 5)\nb) Distributed databases: Concepts and Challenges (Unit 5)\nc) Serializability in transactions (Unit 5)\nd) Multi-valued dependency (Unit 4)",
-          "unit": null,
-          "questionId": "IT-405_dec_2025_Q8"
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Transaction? Explain its four important Properties.",
+              "unit": "Unit 5",
+              "type": "transaction-properties"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the problems encountered in DDBMS while considering concurrency control and recovery.",
+              "unit": "Unit 5",
+              "type": "distributed-dbms-concurrency-recovery-problems"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain in detail about timestamp based concurrency control techniques.",
+              "unit": "Unit 5",
+              "type": "timestamp-concurrency-control"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write and explain optimistic concurrency control algorithm.",
+              "unit": "Unit 5",
+              "type": "optimistic-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Multi Valued Dependency",
+              "unit": "Unit 4",
+              "type": "multi-valued-dependency"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Expression Evaluation Plan",
+              "unit": "Unit 3",
+              "type": "expression-evaluation-plan"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Object Oriented Data Base System.",
+              "unit": "Unit 5",
+              "type": "object-oriented-database-system"
+            }
+          ]
         }
       ]
     }

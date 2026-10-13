@@ -1,143 +1,612 @@
 {
-  "paper": {
-    "id": "ci402-june-2024",
-    "subjectCode": "CI-402 (CSIT)",
-    "subjectName": "Analog and Digital Communication",
-    "exam": "B.Tech. IV Semester Examination, June 2024",
-    "system": "Grading System (GS)",
+  "subject": {
+    "id": "csit-402",
+    "code": "CSIT-402",
+    "name": "Analog & Digital Communication",
+    "title": "CI-402 (CSIT) – Analog & Digital Communication (ADC)",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
     "maxMarks": 70,
     "time": "3 Hours",
-    "note": "i) Answer any five questions.\nii) All questions carry equal marks.",
-    "totalQuestions": 8
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
   },
-  "questions": [
+  "papers": [
     {
-      "number": 1,
-      "parts": [
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Define a signal. Explain the concepts of periodic, non-periodic, deterministic and non-deterministic signals? Provide examples for each.",
-          "unit": 1,
-          "questionId": "ci402_jun_2024_Q1a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q1a",
+              "label": "a)",
+              "text": "Define a signal. Explain the concepts of periodic, non-periodic, deterministic and non-deterministic signals? Provide examples for each.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "ci402_jun_2024_Q1b",
+              "label": "b)",
+              "text": "Find the Fourier Transform of the following function\ni) Gate\nii) Unit Step\niii) Delta",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define a signal. Explain the concepts of periodic, non-periodic, deterministic and non-deterministic signals? Provide examples for each.",
+              "unit": "Unit 1",
+              "type": "signal-definition-types"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find the Fourier Transform of the following function\ni) Gate\nii) Unit Step\niii) Delta",
+              "unit": "Unit 1",
+              "type": "fourier-transform-calculation"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Find the Fourier Transform of the following function\ni) Gate\nii) Unit Step\niii) Delta",
-          "unit": 1,
-          "questionId": "ci402_jun_2024_Q1b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q2a",
+              "label": "a)",
+              "text": "Explain the time convolution theorem and derive the mathematical expression of the convolution of two signals using the time convolution theorem.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "ci402_jun_2024_Q2b",
+              "label": "b)",
+              "text": "What is the principle of Amplitude modulation? Derive expression for the AM wave and draw its spectrum.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the time convolution theorem and derive the mathematical expression of the convolution of two signals using the time convolution theorem.",
+              "unit": "Unit 1",
+              "latex": "$$y(t) = \\int_{-\\infty}^{\\infty} x(\\tau)h(t-\\tau)d\\tau$$",
+              "type": "time-convolution-theorem-derivation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the principle of Amplitude modulation? Derive expression for the AM wave and draw its spectrum.",
+              "unit": "Unit 2",
+              "type": "am-principle-derivation-spectrum"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q3a",
+              "label": "a)",
+              "text": "Explain the operation of Tuned Radio Frequency (TRF) receiver with the block diagram and mention its advantages and disadvantages.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "ci402_jun_2024_Q3b",
+              "label": "b)",
+              "text": "Define suppressed carrier modulation. Explain single-Sideband Suppressed Carrier (SSB-SC) modulation with suitable diagram. What are the benefits of SSB-SC modulation over DSB-SC modulation?",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the operation of Tuned Radio Frequency (TRF) receiver with the block diagram alt='' and mention its advantages and disadvantages.",
+              "unit": "Unit 2",
+              "type": "trf-receiver-block-diagram"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define suppressed carrier modulation. Explain single-Sideband Suppressed Carrier (SSB-SC) modulation with suitable diagram alt=''. What are the benefits of SSB-SC modulation over DSB-SC modulation?",
+              "unit": "Unit 2",
+              "type": "ssb-sc-modulation-benefits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q4a",
+              "label": "a)",
+              "text": "Distinguish between FM and PM by giving its mathematical analysis.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "ci402_jun_2024_Q4b",
+              "label": "b)",
+              "text": "A 100 M Hz carrier is frequency modulated by a sinusoidal signal of amplitude 20V and frequency 100K Hz. The frequency sensitivity of the modulator is 25K Hz/volt.\nDetermine:\ni) Frequency deviation\nii) Modulation index β\niii) Bandwidth",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Distinguish between FM and PM by giving its mathematical analysis.",
+              "unit": "Unit 3",
+              "latex": "$$s_{FM}(t) = A_c \\cos(2\\pi f_c t + k_f \\int m(\\tau)d\\tau)$$\\n$$s_{PM}(t) = A_c \\cos(2\\pi f_c t + k_p m(t))$$",
+              "type": "fm-pm-comparison-mathematical-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q5a",
+              "label": "a)",
+              "text": "Discuss the operation of a Foster-Seeley discriminator as an FM demodulator with suitable diagram.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "ci402_jun_2024_Q5b",
+              "label": "b)",
+              "text": "State and prove Sampling theorem.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "A 100 M Hz carrier is frequency modulated by a sinusoidal signal of amplitude 20V and frequency 100K Hz. The frequency sensitivity of the modulator is 25K Hz/Volt.\nDetermine :\ni) Frequency deviation\nii) Modulation index $\\beta$\niii) Bandwidth",
+              "unit": "Unit 3",
+              "latex": "\\beta",
+              "type": "fm-parameters-calculation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the operation of a Foster-Seeley discriminator as an FM demodulator with suitable diagram alt=''.",
+              "unit": "Unit 3",
+              "type": "foster-seeley-discriminator"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q6a",
+              "label": "a)",
+              "text": "Explain the elements of PCM system with a neat block diagram and also draw the waveforms.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "ci402_jun_2024_Q6b",
+              "label": "b)",
+              "text": "Find the signal amplitude for minimum quantization error in a delta modulation system if step size is 1 volt having repetition period 1 ms. The information signal operates at 100 Hz.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the elements of PCM system with a neat block diagram alt='' and also draw the waveforms alt=''.",
+              "unit": "Unit 4",
+              "type": "pcm-system-block-diagram-waveforms"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Find the Bandwidth for minimum quantization error in a delta modulation system if step size is 1 volt having repetition period 1 ms. The information signal operates at 100 Hz.",
+              "unit": "Unit 4",
+              "type": "delta-modulation-bandwidth-calculation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q7a",
+              "label": "a)",
+              "text": "For a BPSK modulator with a Carrier frequency of 70 MHz and an input bit rate of 10 Mbps, determine the maximum and minimum upper and lower side frequencies, draw the output spectrum, determine the minimum Nyquist bandwidth, and calculate the baud (Assume f=5MHz)",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "ci402_jun_2024_Q7b",
+              "label": "b)",
+              "text": "Define binary FSK and explain about the generation and detection of Binary FSK signal using block diagram.",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "For a BPSK modulator with a Carrier frequency of 70 MHz and an input bit rate of 10 Mbps, determine the maximum and minimum upper and lower side frequencies, draw the output spectrum alt='', determine the minimum Nyquist bandwidth, and calculate the baud (Assume f = 5MHz)",
+              "unit": "Unit 5",
+              "type": "bpsk-parameters-calculation-spectrum"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define binary FSK and explain about the generation and detection of binary FSK signal using block diagram alt=''.",
+              "unit": "Unit 5",
+              "type": "bfsk-generation-detection"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "ci402_jun_2024_Q8",
+              "label": "a)",
+              "text": "Write a short note on any two:\na) Superheterodyne receiver (Unit 2)\nb) Ratio Detector (Unit 3)\nc) AM and ADM (Unit 2, 4)\nd) QAM (Unit 5)",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Superheterodyne receiver",
+              "unit": "Unit 2",
+              "type": "superheterodyne-receiver"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Ratio Detector",
+              "unit": "Unit 3",
+              "type": "ratio-detector"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "AM and ADM.",
+              "unit": "Unit 4",
+              "type": "am-adm-comparison"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "QAM",
+              "unit": "Unit 5",
+              "type": "qam-short-note"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 2,
-      "parts": [
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
         {
-          "label": "a",
-          "text": "Explain the time convolution theorem and derive the mathematical expression of the convolution of two signals using the time convolution theorem.",
-          "unit": 1,
-          "questionId": "ci402_jun_2024_Q2a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain and differentiate the following.\ni) Linear and non linear system.\nii) Time invariant and time varying systems.\niii) Causal and non causal system.",
+              "unit": "Unit 1",
+              "type": "system-classification"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "State and prove the following properties of Fourier Transform.\ni) Time shifting\nii) Time integration\niii) Convolution",
+              "unit": "Unit 1",
+              "type": "fourier-transform-properties"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "What is the principle of Amplitude modulation? Derive expression for the AM wave and draw its spectrum.",
-          "unit": 2,
-          "questionId": "ci402_jun_2024_Q2b"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Find the Fourier transform of the function $x(t) = 5t^2 - 15t$. How will the Fourier transform be changed if this function has a period of 10 sec.",
+              "unit": "Unit 1",
+              "latex": "x(t) = 5t^2 - 15t",
+              "type": "fourier-transform-calculation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is modulation and what is the need of modulation in communication system explain in detail.",
+              "unit": "Unit 2",
+              "type": "modulation-introduction"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "A conventional AM transmitter station transmits with a modulation index of $0.9$, the total power transmitted is $100KW$. Find out the following\ni) Power carries by the carrier.\nii) The faction of the total power carrying any message\niii) Does the total transmitted power is vary with the depth of modulation? Why?\niv) Calculate total transmitted power if the modulation is $100\\%$.",
+              "unit": "Unit 2",
+              "latex": "0.9, 100KW, 100\\%",
+              "type": "am-power-calculation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "A $400Hz$ modulating signal of voltage $2.4$ Volts is modulated under FM to have a modulation index of $60$. Calculate the maximum deviation and required bandwidth.",
+              "unit": "Unit 3",
+              "latex": "400Hz, 2.4, 60",
+              "type": "fm-parameters-calculation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the wideband FM transmission. What should be the value of modulation index for it to behave as Narrow band FM.",
+              "unit": "Unit 3",
+              "type": "wideband-fm"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain ratio detector method of detection of FM signals. Give its merits and demerits.",
+              "unit": "Unit 3",
+              "type": "fm-demodulator"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the sampling and reconstruction of a low pass signal.",
+              "unit": "Unit 4",
+              "type": "sampling-reconstruction"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "With the help of block diagram explain the PCM communication system. alt=''",
+              "unit": "Unit 4",
+              "type": "pcm-block-diagram"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe delta modulation system. What are its limitations? How can be overcome it.",
+              "unit": "Unit 4",
+              "type": "delta-modulation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the generation and receptions of BPSK system compare it with BFSK system.",
+              "unit": "Unit 5",
+              "type": "bpsk-generation-detection"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the generation and detection, spectrum and bandwidth of Amplitude Shift Keying.",
+              "unit": "Unit 5",
+              "type": "ask-generation-detection"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "",
+              "text": "Write a short notes on any Two:\ni) Ratio Detector\nii) Superheterodyne receiver\niii) TDM\niv) QAM",
+              "unit": "Unit 3",
+              "type": "short-notes"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 3,
-      "parts": [
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
         {
-          "label": "a",
-          "text": "Explain the operation of Tuned Radio Frequency (TRF) receiver with the block diagram and mention its advantages and disadvantages.",
-          "unit": 2,
-          "questionId": "ci402_jun_2024_Q3a"
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Consider the following signal $f(t)=2sin(3t)+4cos(5t)+6sin(7t)$\ni) Determine if the signal is periodic or not\nii) If signal is periodic, find its fundamental period and sketch one period of the signal.\niii) If the signal is non-periodic, explain why?",
+              "unit": "Unit 1",
+              "latex": "f(t)=2sin(3t)+4cos(5t)+6sin(7t)",
+              "type": "signal-periodicity-analysis"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find the Fourier transform of an impulse function $x(t)=\\delta(t)$. Also draw the spectrum.",
+              "unit": "Unit 1",
+              "latex": "x(t)=\\delta(t)",
+              "type": "fourier-transform-impulse"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Define suppressed carrier modulation. Explain single-Sideband Suppressed Carrier (SSB-SC) modulation with suitable diagram. What are the benefits of SSB-SC modulation over DSB-SC modulation?",
-          "unit": 2,
-          "questionId": "ci402_jun_2024_Q3b"
-        }
-      ]
-    },
-    {
-      "number": 4,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Distinguish between FM and PM by giving its mathematical analysis.",
-          "unit": 3,
-          "questionId": "ci402_jun_2024_Q4a"
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the principle of Amplitude modulation? Derive expression for the AM wave and draw its spectrum.",
+              "unit": "Unit 2",
+              "type": "am-principle-derivation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A modulating signal of $2Cos(5000t)$ is amplitude modulated over a carrier signal of $5Cos(20000t)$. Derive the expression for modulation index, LSB and VSB frequencies, Bandwidth and the ratio of side band power in the Total Power of AM wave.",
+              "unit": "Unit 2",
+              "latex": "2Cos(5000t), 5Cos(20000t)",
+              "type": "am-parameters-derivation"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "A 100 M Hz carrier is frequency modulated by a sinusoidal signal of amplitude 20V and frequency 100K Hz. The frequency sensitivity of the modulator is 25K Hz/volt.\nDetermine:\ni) Frequency deviation\nii) Modulation index β\niii) Bandwidth",
-          "unit": 3,
-          "questionId": "ci402_jun_2024_Q4b"
-        }
-      ]
-    },
-    {
-      "number": 5,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Discuss the operation of a Foster-Seeley discriminator as an FM demodulator with suitable diagram.",
-          "unit": 3,
-          "questionId": "ci402_jun_2024_Q5a"
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain frequency modulation. Derive the relation between frequency modulation and phase modulation.",
+              "unit": "Unit 3",
+              "type": "fm-pm-relation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A 107.6 MHz carrier signal is frequency modulated by a 7 kHz sine wave. The resultant FM signal has a frequency deviation of 50 kHz. Determine:\ni) The carrier swing of the FM signal.\nii) The highest and the lowest frequencies attained by the modulated signal.\niii) The modulation index of the FM wave.",
+              "unit": "Unit 3",
+              "latex": "107.6 \\text{ MHz}, 7 \\text{ kHz}, 50 \\text{ kHz}",
+              "type": "fm-parameters-calculation"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "State and prove Sampling theorem.",
-          "unit": 4,
-          "questionId": "ci402_jun_2024_Q5b"
-        }
-      ]
-    },
-    {
-      "number": 6,
-      "parts": [
-        {
-          "label": "a",
-          "text": "Explain the elements of PCM system with a neat block diagram and also draw the waveforms.",
-          "unit": 4,
-          "questionId": "ci402_jun_2024_Q6a"
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State and explain sampling theorem in time domain. Explain about Nyquist rate.",
+              "unit": "Unit 4",
+              "type": "sampling-theorem-nyquist-rate"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find the Nyquist rate and Nyquist interval for the signal $x(t) = \\frac{1}{2\\pi} cos(4000\\pi t) cos(1000\\pi t)$",
+              "unit": "Unit 4",
+              "latex": "x(t) = \\frac{1}{2\\pi} cos(4000\\pi t) cos(1000\\pi t)",
+              "type": "nyquist-rate-calculation"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Find the signal amplitude for minimum quantization error in a delta modulation system if step size is 1 volt having repetition period 1 ms. The information signal operates at 100 Hz.",
-          "unit": 4,
-          "questionId": "ci402_jun_2024_Q6b"
-        }
-      ]
-    },
-    {
-      "number": 7,
-      "parts": [
-        {
-          "label": "a",
-          "text": "For a BPSK modulator with a Carrier frequency of 70 MHz and an input bit rate of 10 Mbps, determine the maximum and minimum upper and lower side frequencies, draw the output spectrum, determine the minimum Nyquist bandwidth, and calculate the baud (Assume f=5MHz)",
-          "unit": 5,
-          "questionId": "ci402_jun_2024_Q7a"
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain DPSK. With the help of block diagram explain generation and detection of DPSK. alt=''",
+              "unit": "Unit 5",
+              "type": "dpsk-generation-detection"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe with the help of neat diagram, the operation of QPSK modulator. Draw its phasor and constellation diagram. alt=''",
+              "unit": "Unit 5",
+              "type": "qpsk-modulator-diagrams"
+            }
+          ]
         },
         {
-          "label": "b",
-          "text": "Define binary FSK and explain about the generation and detection of Binary FSK signal using block diagram.",
-          "unit": 5,
-          "questionId": "ci402_jun_2024_Q7b"
-        }
-      ]
-    },
-    {
-      "number": 8,
-      "parts": [
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the advantages and limitation of Pulse Code Modulation (PCM) as digital modulation technique. Illustrate your answer with suitable examples.",
+              "unit": "Unit 4",
+              "type": "pcm-advantages-limitations"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Compare and contrast Natural Sampling, Flat top Sampling and Aperture Effect in analog to digital conversion. Explain their implication on the reconstructed signal.",
+              "unit": "Unit 4",
+              "type": "sampling-types-comparison"
+            }
+          ]
+        },
         {
-          "label": null,
-          "text": "Write a short note on any two:\na) Superheterodyne receiver (Unit 2)\nb) Ratio Detector (Unit 3)\nc) AM and ADM (Unit 2, 4)\nd) QAM (Unit 5)",
-          "unit": null,
-          "questionId": "ci402_jun_2024_Q8"
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the working principle of Foster-Seeley discriminator. Derive an expression for its output voltage and explain how the discriminator provides frequency demodulation.",
+              "unit": "Unit 3",
+              "type": "foster-seeley-discriminator"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the concept of pre-emphasis and de-emphasis in FM systems. Explain how pre-emphasis and de-emphasis techniques help in improving signal quality.",
+              "unit": "Unit 3",
+              "type": "fm-pre-de-emphasis"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the concept of DSB-FC modulation. Discuss its advantages and disadvantages.",
+              "unit": "Unit 2",
+              "type": "dsb-fc-modulation"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Discuss the demodulation technique used for AM signals. Explain the working principle of the square law detector and envelope detector in demodulating AM signals. Compare and contrast the advantages and limitation of these demodulation techniques.",
+              "unit": "Unit 2",
+              "type": "am-demodulation-detectors"
+            }
+          ]
         }
       ]
     }

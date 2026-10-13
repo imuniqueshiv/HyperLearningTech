@@ -1,0 +1,192 @@
+{
+  "subject": {
+    "id": "csit-503-c",
+    "code": "CSIT-503-C",
+    "name": "Principles of Programming Languages",
+    "title": "CSIT-503 (C) - Principles of Programming Languages",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by programming paradigms? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "programming-paradigms"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss attributes of good programming language. Differentiate between syntax and semantics by suitable example.",
+              "unit": "Unit 1",
+              "type": "language-design-attributes"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What do you mean by compilation of program? Discuss different stages used in compilation process.",
+              "unit": "Unit 1",
+              "type": "compilation-process"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain primitive and user defined data types with suitable example.",
+              "unit": "Unit 2",
+              "type": "data-types"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is type checking? Discuss static and dynamic type checking.",
+              "unit": "Unit 2",
+              "type": "type-checking"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss sequence control in various statements with suitable examples.",
+              "unit": "Unit 2",
+              "type": "sequence-control"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by parameter passing? Discuss parameter passing by call by value and call by reference method.",
+              "unit": "Unit 3",
+              "type": "parameter-passing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is function? Define function prototype in detail with suitable program in C/C++.",
+              "unit": "Unit 3",
+              "type": "function-prototype"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is abstract data type? Define abstract class and abstract method with suitable example.",
+              "unit": "Unit 4",
+              "type": "abstract-data-type"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss static and stack-based storage management. Also discuss their advantages.",
+              "unit": "Unit 4",
+              "type": "storage-management"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is logic programming? Discuss its applications and advantages.",
+              "unit": "Unit 5",
+              "type": "logic-programming"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is Prolog? Discuss its basic fields, syntax and advantages.",
+              "unit": "Unit 5",
+              "type": "prolog"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Inheritance? Discuss different types of inheritance used in JAVA.",
+              "unit": "Unit 4",
+              "type": "inheritance-java"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss different types of operators used in prolog with suitable syntax and program.",
+              "unit": "Unit 5",
+              "type": "prolog-operators"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Monitors",
+              "unit": "Unit 4",
+              "type": "monitors"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Java Threads",
+              "unit": "Unit 4",
+              "type": "java-threads"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "C# threads",
+              "unit": "Unit 4",
+              "type": "csharp-threads"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

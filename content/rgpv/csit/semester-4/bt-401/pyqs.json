@@ -1015,6 +1015,186 @@
           ]
         }
       ]
+    },
+    {
+      "exam": "June 2022",
+      "year": 2022,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Use Newton's formula for interpolation to find the net premium at the age 25 from the table given below:\n| Age         | 20      | 24      | 28      | 32      |\n|-------------|---------|---------|---------|---------|\n| Net Premium | 0.01427 | 0.01581 | 0.01772 | 0.01996 |",
+              "unit": "Unit 1",
+              "type": "newton-interpolation-formula"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Using Newton-Raphson's method find th rea root of $x^3 -x=10=0$.",
+              "unit": "Unit 1",
+              "latex": "$x^3 -x=10=0$",
+              "type": "newton-raphson-method"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Solve the simultaneous linear equations using Crouts method. $x_1 +x_2 +x_3 =1$ $3x_1 +x_2 -3x_3 =5$ $x_1 -2x_2 -x_3 =10$",
+              "unit": "Unit 2",
+              "latex": "$x_1 +x_2 +x_3 =1 \\\\ 3x_1 +x_2 -3x_3 =5 \\\\ x_1 -2x_2 -x_3 =10$",
+              "type": "crout-method-linear-equations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Evaluate $\\int_1^2 \\log x \\cos x \\, dx$ by (i) Trapezoidal rule (ii) Simpson 3/8 rule.",
+              "unit": "Unit 2",
+              "latex": "\\int_1^2 \\log x \\cos x \\, dx",
+              "type": "numerical-integration"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Find $y(0.1)$ for differential equation $y' = x^2y-1$, $y(0)=1$ using Taylor’s series method.",
+              "unit": "Unit 3",
+              "latex": "$y' = x^2y-1$, $y(0)=1$",
+              "type": "taylor-series-ode"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Solve $xy'' +y' + xy = 0$, where $y(0) = 1$, $y'(0) = 1$, for $x=0$ to $x=1.5$.",
+              "unit": "Unit 3",
+              "latex": "$xy'' +y' + xy = 0$, $y(0) = 1$, $y'(0) = 1$",
+              "type": "solve-ode-numerical-method"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Find Laplace transform of $f(t)= \\begin{cases} \\sin t & 0<t<\\pi \\\\ 0 & \\pi<t<2\\pi \\end{cases}$",
+              "unit": "Unit 4",
+              "latex": "f(t)= \\begin{cases} \\sin t & 0<t<\\pi \\\\ 0 & \\pi<t<2\\pi \\end{cases}",
+              "type": "laplace-transform-periodic-function"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find the Fourier series for periodic extension of $f(t)= \\begin{cases} \\sin t & 0<t<\\pi \\\\ 0 & \\pi<t<2\\pi \\end{cases}$",
+              "unit": "Unit 4",
+              "latex": "f(t)= \\begin{cases} \\sin t & 0<t<\\pi \\\\ 0 & \\pi<t<2\\pi \\end{cases}",
+              "type": "fourier-series"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "If ‘m’ balls are distributed among ‘a’ men and ‘b’ women show that the probability that the number of balls received by men is odd, shall be $\\frac{1}{2} \\frac{(b+a)^m -(b-a)^m}{(b+a)^m}$",
+              "unit": "Unit 5",
+              "latex": "\\frac{1}{2} \\frac{(b+a)^m -(b-a)^m}{(b+a)^m}",
+              "type": "probability-distribution"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Two independent random variable X and Y are both normally distributed with means 1 and 2 and standard deviations 3 and 4 respectively. If Z = X - Y; write the probability density function of Z. Also state the median, s.d. and mean of the distribution of Z. Find P[Z + 1 < 0].",
+              "unit": "Unit 5",
+              "latex": "$Z = X - Y$; $P[Z + 1 < 0]$",
+              "type": "normal-distribution-properties"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Prove that $\\Delta \\log f(x) = \\log \\left[ 1 + \\frac{\\Delta f(x)}{f(x)} \\right]$",
+              "unit": "Unit 1",
+              "latex": "\\Delta \\log f(x) = \\log \\left[ 1 + \\frac{\\Delta f(x)}{f(x)} \\right]",
+              "type": "finite-difference-operator-proof"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Given that log for x = 310, 320, 330, 340, 350 and 360 are according to following table. Find the value of log 337.5.\n| x     | 310       | 320       | 330       | 340       | 350       | 360       |\n|-------|-----------|-----------|-----------|-----------|-----------|-----------|\n| log x | 2.4913617 | 2.5051500 | 2.5185139 | 2.5314789 | 2.5440680 | 2.5563025 |",
+              "unit": "Unit 1",
+              "type": "interpolation-logarithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Use Runge-Kutta method to approximate y, when x = 0.1 and x=0.2, given that x= 0 when y= 1 and $\\frac{dy}{dx}=x+y$.",
+              "unit": "Unit 3",
+              "latex": "\\frac{dy}{dx}=x+y",
+              "type": "runge-kutta-method"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Use Milne’s method to solve $\\frac{dy}{dx}=x+y$ with initial condition $y(0) = 1$, from x = 0.20 to x = 0.30.",
+              "unit": "Unit 3",
+              "latex": "\\frac{dy}{dx}=x+y",
+              "type": "milne-predictor-corrector-method"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Prove that for normal distribution, the Quartile Deviation (QD), Mean Deviation (MD) and Standard Deviation (SD) follows QD: MD :SD:: 10:12:15.",
+              "unit": "Unit 5",
+              "type": "normal-distribution-properties-proof"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Prove that $\\Delta^n f(x) = \\sum_{k=0}^n (-1)^{n-k} \\binom{n}{k} f(x+kh)$",
+              "unit": "Unit 1",
+              "latex": "\\Delta^n f(x) = \\sum_{k=0}^n (-1)^{n-k} \\binom{n}{k} f(x+kh)",
+              "type": "finite-difference-operator-identity"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

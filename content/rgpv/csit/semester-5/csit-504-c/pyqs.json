@@ -1,0 +1,200 @@
+{
+  "subject": {
+    "id": "csit-504-c",
+    "code": "CSIT-504-C",
+    "name": "Web Technology & E Commerce",
+    "title": "CSIT-504 (C) - Web Technology & E Commerce",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "List and explain the building blocks of electronic commerce.",
+              "unit": "Unit 1",
+              "type": "e-commerce-building-blocks"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the pros and cons of DHCP and ICMP.",
+              "unit": "Unit 1",
+              "type": "network-protocols-pros-cons"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss about Web Application Architecture with a neat sketch. alt=''",
+              "unit": "Unit 2",
+              "type": "web-application-architecture"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is Servlet? How to create a web application with Servlets?",
+              "unit": "Unit 2",
+              "type": "servlets-web-application"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "List and describe about ethical issues of E-business in detail.",
+              "unit": "Unit 3",
+              "type": "e-business-ethics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss about history of E-commerce in brief.",
+              "unit": "Unit 3",
+              "type": "e-commerce-history"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain about the case study of E-commerce in passenger air transport system.",
+              "unit": "Unit 4",
+              "type": "e-commerce-case-study"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define e-money and write the advantages of it with suitable examples.",
+              "unit": "Unit 4",
+              "type": "e-money-advantages"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain how SSL protocol is used for secure transaction.",
+              "unit": "Unit 5",
+              "type": "ssl-secure-transaction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "State and explain how security is provided for e-government server computers?",
+              "unit": "Unit 5",
+              "type": "e-government-server-security"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is TELNET? Discuss about it in brief.",
+              "unit": "Unit 1",
+              "type": "telnet-protocol"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "State and list the differences between Static and dynamic web pages.",
+              "unit": "Unit 2",
+              "type": "static-dynamic-web-pages-comparison"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the architecture of B2C E-business model with neat sketch. alt=''",
+              "unit": "Unit 3",
+              "type": "b2c-e-business-architecture"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe about Mondex in detail.",
+              "unit": "Unit 4",
+              "type": "mondex-e-money"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Search Engines",
+              "unit": "Unit 4",
+              "type": "search-engines"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Credit Cards",
+              "unit": "Unit 4",
+              "type": "credit-cards"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "ICMP",
+              "unit": "Unit 1",
+              "type": "icmp-protocol"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Browsers",
+              "unit": "Unit 2",
+              "type": "web-browsers"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

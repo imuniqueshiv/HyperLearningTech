@@ -1,0 +1,200 @@
+{
+  "subject": {
+    "id": "csit-603-b",
+    "code": "CSIT-603-B",
+    "name": "Computer Graphics & Multimedia",
+    "title": "CSIT-603 (B) - Computer Graphics & Multimedia",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the different types of colour monitors also explain the working nature of them.",
+              "unit": "Unit 1",
+              "type": "color-monitors"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "State and explain the various rubber band techniques in detail.",
+              "unit": "Unit 1",
+              "type": "rubber-band-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain in detail about the working principle of Keyboard.",
+              "unit": "Unit 1",
+              "type": "keyboard-working-principle"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the role of parametric functions in Processing.",
+              "unit": "Unit 2",
+              "type": "parametric-functions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the importance of scan conversion technique in computer graphics.",
+              "unit": "Unit 2",
+              "type": "scan-conversion-importance"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the basic concept of a Bezier curve and how it is defined using control points.",
+              "unit": "Unit 2",
+              "type": "bezier-curve"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Illustrate the concept of parallel and perspective projection in detail.",
+              "unit": "Unit 3",
+              "type": "parallel-perspective-projection"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "List out the characteristics of RGB and YIQ color models.",
+              "unit": "Unit 1",
+              "type": "color-models-rgb-yiq"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the step-by-step procedure of the Cohen-Sutherland line clipping algorithm with a suitable example.",
+              "unit": "Unit 3",
+              "type": "cohen-sutherland-clipping"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Give a brief summary on various types of multimedia authoring tools.",
+              "unit": "Unit 4",
+              "type": "multimedia-authoring-tools"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "State and explain the various applications of multimedia components.",
+              "unit": "Unit 4",
+              "type": "multimedia-applications"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the key characteristics that multimedia data interface standards must meet for effective communication.",
+              "unit": "Unit 4",
+              "type": "multimedia-data-interface-standards"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Give a detailed note on Full motion video.",
+              "unit": "Unit 4",
+              "type": "full-motion-video"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the importance of storage and retrieval technologies in modern computing system.",
+              "unit": "Unit 5",
+              "type": "multimedia-storage-retrieval"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain briefly: Raster scan displays.",
+              "unit": "Unit 1",
+              "type": "raster-scan-displays"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain briefly: Hidden Surface elimination.",
+              "unit": "Unit 3",
+              "type": "hidden-surface-elimination"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Explain briefly: Reflection Inverse Transformation.",
+              "unit": "Unit 3",
+              "type": "reflection-inverse-transformation"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Explain briefly: Evolving technologies for Multimedia.",
+              "unit": "Unit 4",
+              "type": "evolving-multimedia-technologies"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
