@@ -160,48 +160,48 @@ export default function FAQ() {
           {/* Still Have Questions CTA */}
           <motion.div
             variants={itemVariants}
-            className="relative mt-24 w-full border-t border-slate-200/60 dark:border-white/[0.05] pt-16 pb-10"
+            className="relative mt-12 sm:mt-24 w-full border-t border-slate-200/60 dark:border-white/[0.05] pt-10 sm:pt-16 pb-6 sm:pb-10"
           >
             {/* Premium Texture & Glow */}
             <div className="absolute inset-0 z-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-40 dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_10%,transparent_100%)] pointer-events-none" />
             <div className="absolute left-1/2 top-0 z-0 h-[300px] w-[600px] -translate-x-1/2 bg-indigo-500/10 blur-[120px] dark:bg-indigo-500/15 pointer-events-none" />
 
-            <div className="relative z-10 mx-auto max-w-[800px] text-center">
+            <div className="relative z-10 mx-auto max-w-[800px] text-center px-2 sm:px-0">
               {/* Dynamic Status Badge */}
-              <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-200/50 bg-emerald-50/50 px-3 py-1.5 text-[13px] font-[650] text-emerald-700 shadow-sm backdrop-blur-sm dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400">
-                <span className="relative flex h-2 w-2">
+              <div className="mx-auto mb-4 sm:mb-6 inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-emerald-200/50 bg-emerald-50/50 px-2.5 py-1 sm:px-3 sm:py-1.5 text-[11.5px] sm:text-[13px] font-[650] text-emerald-700 shadow-sm backdrop-blur-sm dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400">
+                <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                  <span className="relative inline-flex h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-emerald-500"></span>
                 </span>
                 Support team is online
               </div>
 
-              <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-[20px] bg-gradient-to-b from-slate-50 to-white text-slate-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] ring-1 ring-inset ring-slate-200/60 dark:from-white/10 dark:to-white/5 dark:text-white dark:ring-white/10 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+              <div className="mx-auto mb-4 sm:mb-8 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-[16px] sm:rounded-[20px] bg-gradient-to-b from-slate-50 to-white text-slate-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] ring-1 ring-inset ring-slate-200/60 dark:from-white/10 dark:to-white/5 dark:text-white dark:ring-white/10 dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
                 <MessageCircleQuestion
-                  className="h-7 w-7 drop-shadow-sm"
+                  className="h-5 w-5 sm:h-7 sm:w-7 drop-shadow-sm"
                   strokeWidth={2}
                 />
               </div>
 
-              <h3 className="text-[28px] md:text-[36px] font-[900] tracking-tight text-slate-900 dark:text-white">
+              <h3 className="text-[22px] min-[380px]:text-[24px] sm:text-[32px] md:text-[36px] font-[900] tracking-tight text-slate-900 dark:text-white leading-tight">
                 Still have questions?
               </h3>
 
-              <p className="mt-4 text-[16px] md:text-[17px] font-[500] text-slate-500 dark:text-slate-400 max-w-[480px] mx-auto leading-relaxed">
+              <p className="mt-2.5 sm:mt-4 text-[13.5px] sm:text-[16px] md:text-[17px] font-[500] text-slate-500 dark:text-slate-400 max-w-[480px] mx-auto leading-relaxed">
                 Can&apos;t find the answer you&apos;re looking for? Please chat
                 to our friendly team.
               </p>
 
-              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Link href="/contact">
-                  <button className="inline-flex h-[52px] w-full sm:w-auto items-center justify-center rounded-full bg-slate-900 px-8 text-[15px] font-[650] text-white shadow-md shadow-slate-900/10 transition-all hover:bg-slate-800 hover:shadow-lg dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 active:scale-[0.98]">
-                    Contact Support
+              <div className="mt-6 sm:mt-10 flex w-full max-w-[420px] mx-auto flex-row items-center justify-center gap-2.5 sm:gap-4">
+                <Link href="/contact" className="flex-1 min-w-0">
+                  <button className="inline-flex h-[42px] sm:h-[52px] w-full min-w-0 items-center justify-center rounded-full bg-slate-900 px-3 min-[380px]:px-4 sm:px-8 text-[12px] min-[380px]:text-[13px] sm:text-[15px] font-[650] text-white whitespace-nowrap shadow-md shadow-slate-900/10 transition-all hover:bg-slate-800 hover:shadow-lg dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 active:scale-[0.98]">
+                    <span className="truncate">Contact Support</span>
                   </button>
                 </Link>
-                <Link href="/auth/signup">
-                  <button className="group inline-flex h-[52px] w-full sm:w-auto items-center justify-center rounded-full border border-slate-200 bg-white/60 px-8 text-[15px] font-[650] text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 dark:border-white/[0.08] dark:bg-transparent dark:text-slate-300 dark:hover:bg-white/[0.04] dark:hover:text-white active:scale-[0.98] backdrop-blur-sm">
-                    Get Started Free
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <Link href="/#Home" className="flex-1 min-w-0">
+                  <button className="group inline-flex h-[42px] sm:h-[52px] w-full min-w-0 items-center justify-center rounded-full border border-slate-200 bg-white/60 px-3 min-[380px]:px-4 sm:px-8 text-[12px] min-[380px]:text-[13px] sm:text-[15px] font-[650] text-slate-700 whitespace-nowrap shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 dark:border-white/[0.08] dark:bg-transparent dark:text-slate-300 dark:hover:bg-white/[0.04] dark:hover:text-white active:scale-[0.98] backdrop-blur-sm">
+                    <span className="truncate">Get Started Free</span>
+                    <ArrowRight className="ml-1 sm:ml-2 h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 transition-transform group-hover:translate-x-1" />
                   </button>
                 </Link>
               </div>

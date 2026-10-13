@@ -11,7 +11,7 @@ import {
   House,
   GraduationCap,
   Mail,
-  LayoutDashboard,
+  Info,
   Search,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,9 +32,9 @@ const navLinks = [
     icon: GraduationCap,
   },
   {
-    label: "Dashboard",
-    href: "/#Dashboard",
-    icon: LayoutDashboard,
+    label: "About",
+    href: "/about",
+    icon: Info,
   },
   {
     label: "Contact",
@@ -345,7 +345,7 @@ export default function Navbar() {
                     link.href.startsWith("/#") &&
                     activeSection === link.href) ||
                   (pathname === link.href && !link.href.startsWith("/#")) ||
-                  (pathname === "/dashboard" && link.label === "Dashboard");
+                  (pathname === "/about" && link.label === "About");
 
                 const Icon = link.icon;
 
@@ -572,7 +572,7 @@ export default function Navbar() {
                     link.href.startsWith("/#") &&
                     activeSection === link.href) ||
                   (pathname === link.href && !link.href.startsWith("/#")) ||
-                  (pathname === "/dashboard" && link.label === "Dashboard");
+                  (pathname === "/about" && link.label === "About");
 
                 return (
                   <Link

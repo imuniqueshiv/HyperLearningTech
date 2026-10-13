@@ -125,7 +125,7 @@ const SocialDropdown = ({
   const baseClasses =
     size === "md"
       ? "group flex h-[36px] w-[36px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 "
-      : "group flex h-[32px] w-[32px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 ";
+      : "group flex h-[28px] w-[28px] sm:h-[32px] sm:w-[32px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 ";
 
   const btnClasses =
     baseClasses +
@@ -135,7 +135,7 @@ const SocialDropdown = ({
   const iconClasses =
     size === "md"
       ? "h-[17px] w-[17px] transition-transform duration-300 group-hover:scale-105"
-      : "h-[16px] w-[16px] transition-transform duration-300 group-hover:scale-105";
+      : "h-[13px] w-[13px] sm:h-[16px] sm:w-[16px] transition-transform duration-300 group-hover:scale-105";
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -192,88 +192,91 @@ function FullFooter() {
       </div>
 
       {/* Premium Outer wrapper */}
-      <div className="relative mx-auto max-w-[1600px] px-6 py-10 md:px-12 lg:px-16 xl:px-20 z-10">
+      <div className="relative mx-auto max-w-[1600px] px-4 py-7 sm:px-6 sm:py-10 md:px-12 lg:px-16 xl:px-20 z-10">
         {/* Top Section */}
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-12 lg:gap-8 xl:gap-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-8 xl:gap-16">
           {/* Brand - Flexible Width */}
           <div className="flex flex-col lg:max-w-[280px]">
             <Link
               href="/"
-              className="group inline-flex items-center gap-3.5 w-fit"
+              className="group inline-flex items-center gap-3 sm:gap-3.5 w-fit"
             >
-              <div className="relative flex h-[54px] w-[54px] items-center justify-center overflow-hidden rounded-[14px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]">
+              <div className="relative flex h-[44px] w-[44px] sm:h-[54px] sm:w-[54px] items-center justify-center overflow-hidden rounded-[12px] sm:rounded-[14px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02]">
                 <Image
                   src="/hl-logo.png"
                   alt="Hyper Learning Tech Logo"
                   width={46}
                   height={46}
-                  className="object-contain dark:brightness-[1.8] dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                  className="object-contain dark:brightness-[1.8] dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] w-[38px] h-[38px] sm:w-[46px] sm:h-[46px]"
                 />
               </div>
               <div>
-                <h2 className="text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300">
+                <h2 className="text-[20px] sm:text-[23px] font-bold tracking-tight text-slate-900 dark:text-transparent dark:bg-gradient-to-r dark:from-white dark:to-white/70 dark:bg-clip-text transition-all duration-300">
                   <span className="transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
                     Hyper Learning
                   </span>{" "}
                   Tech
                 </h2>
-                <p className="text-[10.5px] font-semibold tracking-[0.2em] uppercase text-blue-500 dark:text-indigo-300 mt-0.5">
+                <p className="text-[9.5px] sm:text-[10.5px] font-semibold tracking-[0.2em] uppercase text-blue-500 dark:text-indigo-300 mt-0.5">
                   AI-Powered Learning
                 </p>
               </div>
             </Link>
 
-            <p className="mt-5 max-w-[240px] text-[12.5px] leading-[1.6] text-slate-700 dark:text-slate-200 font-medium">
+            <p className="mt-3.5 sm:mt-5 max-w-[240px] text-[11.5px] sm:text-[12.5px] leading-[1.6] text-slate-700 dark:text-slate-200 font-medium">
               AI-powered RGPV learning for engineering students.
             </p>
 
-            <div className="mt-7 flex items-center gap-3">
+            <div className="mt-4 sm:mt-7 flex items-center gap-2.5 sm:gap-3">
               <a
-                href="mailto:contact@hyperlearning.tech"
-                className="group flex h-[40px] w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-red-500/40 hover:bg-blue-50 dark:hover:bg-red-500/5 hover:text-blue-600 dark:hover:text-red-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(239,68,68,0.2),inset_0_1px_1px_rgba(255,255,255,0.1)]"
+                href="mailto:hyperlearningtech@gmail.com"
+                className="group flex h-[34px] w-[34px] sm:h-[40px] sm:w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-red-500/40 hover:bg-blue-50 dark:hover:bg-red-500/5 hover:text-blue-600 dark:hover:text-red-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(239,68,68,0.2),inset_0_1px_1px_rgba(255,255,255,0.1)]"
                 aria-label="Email"
               >
-                <Mail strokeWidth={2.5} className="h-[19px] w-[19px]" />
+                <Mail
+                  strokeWidth={2.5}
+                  className="h-[16px] w-[16px] sm:h-[19px] sm:w-[19px]"
+                />
               </a>
               <a
                 href="https://github.com/imuniqueshiv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex h-[40px] w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-white/40 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-white hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(255,255,255,0.15),inset_0_1px_1px_rgba(255,255,255,0.1)]"
+                className="group flex h-[34px] w-[34px] sm:h-[40px] sm:w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-white/40 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-white hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(255,255,255,0.15),inset_0_1px_1px_rgba(255,255,255,0.1)]"
                 aria-label="GitHub"
               >
-                <GithubIcon className="h-[19px] w-[19px] transition-transform duration-300 group-hover:scale-105" />
+                <GithubIcon className="h-[16px] w-[16px] sm:h-[19px] sm:w-[19px] transition-transform duration-300 group-hover:scale-105" />
               </a>
               <a
                 href="https://twitter.com/imuniqueshiv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex h-[40px] w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-sky-500/40 hover:bg-blue-50 dark:hover:bg-sky-500/5 hover:text-blue-600 dark:hover:text-sky-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(14,165,233,0.2),inset_0_1px_1px_rgba(255,255,255,0.1)]"
+                className="group flex h-[34px] w-[34px] sm:h-[40px] sm:w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-sky-500/40 hover:bg-blue-50 dark:hover:bg-sky-500/5 hover:text-blue-600 dark:hover:text-sky-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(14,165,233,0.2),inset_0_1px_1px_rgba(255,255,255,0.1)]"
                 aria-label="Twitter"
               >
-                <TwitterIcon className="h-[19px] w-[19px] transition-transform duration-300 group-hover:scale-105" />
+                <TwitterIcon className="h-[16px] w-[16px] sm:h-[19px] sm:w-[19px] transition-transform duration-300 group-hover:scale-105" />
               </a>
               <a
                 href="https://www.linkedin.com/in/shiv-raj-singh-387973299/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex h-[40px] w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-[#0A66C2]/40 hover:bg-blue-50 dark:hover:bg-[#0A66C2]/5 hover:text-blue-600 dark:hover:text-[#0A66C2] hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(10,102,194,0.3),inset_0_1px_1px_rgba(255,255,255,0.1)]"
+                className="group flex h-[34px] w-[34px] sm:h-[40px] sm:w-[40px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-blue-200 dark:hover:border-[#0A66C2]/40 hover:bg-blue-50 dark:hover:bg-[#0A66C2]/5 hover:text-blue-600 dark:hover:text-[#0A66C2] hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_15px_rgba(10,102,194,0.3),inset_0_1px_1px_rgba(255,255,255,0.1)]"
                 aria-label="LinkedIn"
               >
-                <LinkedinIcon className="h-[19px] w-[19px] transition-transform duration-300 group-hover:scale-105" />
+                <LinkedinIcon className="h-[16px] w-[16px] sm:h-[19px] sm:w-[19px] transition-transform duration-300 group-hover:scale-105" />
               </a>
             </div>
           </div>
 
           {/* Navigation Container */}
-          <div className="grid grid-cols-2 gap-12 sm:gap-20 xl:pr-10 w-full lg:w-auto mt-4 lg:mt-0">
+          <div className="grid grid-cols-2 gap-6 min-[400px]:gap-8 sm:gap-20 xl:pr-10 w-full lg:w-auto mt-2 sm:mt-4 lg:mt-0">
             {/* Platform */}
             <div className="flex flex-col">
-              <h3 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.15em] text-slate-900 dark:text-white">
+              <h3 className="mb-2.5 sm:mb-4 text-[11.5px] sm:text-[13px] font-extrabold uppercase tracking-[0.14em] text-slate-900 dark:text-white">
                 Platform
               </h3>
-              <div className="mb-5 h-[1.5px] w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
-              <ul className="space-y-3.5">
+              <div className="mb-3.5 sm:mb-5 h-[1.5px] w-[20px] sm:w-[23px] rounded-full bg-slate-200 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500/50" />
+              <ul className="space-y-2 sm:space-y-3.5">
                 {[
                   {
                     name: "RGPV Engineering Hub",
@@ -295,10 +298,10 @@ function FullFooter() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="group flex w-fit items-center text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
+                      className="group flex w-fit items-center text-[12.5px] min-[390px]:text-[13.5px] sm:text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
                     >
                       <item.icon
-                        className="mr-3 h-[18px] w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
+                        className="mr-2 sm:mr-3 h-[14px] w-[14px] sm:h-[18px] sm:w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
                         strokeWidth={2}
                       />
                       {item.name}
@@ -310,14 +313,14 @@ function FullFooter() {
 
             {/* Company */}
             <div className="flex flex-col">
-              <h3 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.15em] text-slate-900 dark:text-white">
+              <h3 className="mb-2.5 sm:mb-4 text-[11.5px] sm:text-[13px] font-extrabold uppercase tracking-[0.14em] text-slate-900 dark:text-white">
                 Company
               </h3>
-              <div className="mb-5 h-[2px] w-[28px] rounded-full bg-slate-300 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-indigo-400/50" />
-              <ul className="space-y-3.5">
+              <div className="mb-3.5 sm:mb-5 h-[2px] w-[22px] sm:w-[28px] rounded-full bg-slate-300 dark:bg-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:to-indigo-400/50" />
+              <ul className="space-y-2 sm:space-y-3.5">
                 {[
                   {
-                    name: "About Hyper Learning Tech",
+                    name: "About",
                     href: "/about",
                     icon: Info,
                   },
@@ -328,10 +331,10 @@ function FullFooter() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="group flex w-fit items-center text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
+                      className="group flex w-fit items-center text-[12.5px] min-[390px]:text-[13.5px] sm:text-[15px] font-semibold text-slate-700 dark:text-slate-300 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-1 hover:text-blue-600 dark:hover:text-white whitespace-nowrap"
                     >
                       <item.icon
-                        className="mr-3 h-[18px] w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
+                        className="mr-2 sm:mr-3 h-[14px] w-[14px] sm:h-[18px] sm:w-[18px] text-slate-400 dark:text-slate-500 transition-all duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 group-hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.5)]"
                         strokeWidth={2}
                       />
                       {item.name}
@@ -391,16 +394,16 @@ function FullFooter() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 flex h-auto flex-col items-center justify-between gap-5 rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-[#0a101f] md:dark:bg-white/[0.01] md:backdrop-blur-lg px-4 py-4 md:px-6 shadow-sm dark:shadow-none md:dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
+        <div className="mt-6 sm:mt-10 flex h-auto flex-col items-center justify-between gap-3 sm:gap-5 rounded-[16px] sm:rounded-[20px] border border-[#C2D4EA] dark:border-white/[0.05] bg-[#EDF2F8] dark:bg-[#0a101f] md:dark:bg-white/[0.01] md:backdrop-blur-lg px-3.5 py-3.5 sm:px-4 sm:py-4 md:px-6 shadow-sm dark:shadow-none md:dark:shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.04)] lg:h-[48px] lg:flex-row lg:rounded-full lg:px-8 lg:py-0 transition-all hover:border-slate-300 dark:hover:border-white/[0.08]">
           {/* Left: Copyright */}
-          <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0">
+          <p className="text-[10px] sm:text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 shrink-0 text-center">
             © {new Date().getFullYear()} Hyper Learning Tech. All rights
             reserved.
           </p>
 
           {/* Center: Disclaimer */}
-          <p className="text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 text-center flex-1 mx-4">
-            <span className="text-slate-700 dark:text-slate-300">
+          <p className="text-[10px] leading-relaxed sm:text-[11.5px] font-medium text-slate-500 dark:text-slate-400/80 text-center flex-1 mx-0 sm:mx-4">
+            <span className="text-slate-700 dark:text-slate-300 font-semibold">
               Disclaimer:
             </span>{" "}
             Some content may contain errors. Please cross-check and share
@@ -408,11 +411,11 @@ function FullFooter() {
           </p>
 
           {/* Right: Socials */}
-          <div className="flex items-center gap-4 shrink-0">
-            <span className="text-[11px] font-bold tracking-wider uppercase text-slate-900 dark:text-slate-400/80">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+            <span className="text-[9.5px] sm:text-[11px] font-bold tracking-wider uppercase text-slate-900 dark:text-slate-400/80">
               Follow Us
             </span>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2">
               {[
                 {
                   icon: InstagramIcon,
@@ -478,12 +481,12 @@ function FullFooter() {
                 href="https://nitinpandey-portfolio.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex h-[32px] w-[32px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-md dark:hover:border-emerald-500/40 dark:hover:bg-emerald-500/5 dark:hover:text-emerald-400 dark:hover:shadow-[0_0_15px_rgba(16,185,129,0.2),inset_0_1px_1px_rgba(255,255,255,0.1)]"
+                className="group flex h-[28px] w-[28px] sm:h-[32px] sm:w-[32px] items-center justify-center rounded-full border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.01] text-slate-500 dark:text-slate-400 shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.02)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-md dark:hover:border-emerald-500/40 dark:hover:bg-emerald-500/5 dark:hover:text-emerald-400 dark:hover:shadow-[0_0_15px_rgba(16,185,129,0.2),inset_0_1px_1px_rgba(255,255,255,0.1)]"
                 aria-label="Portfolio"
               >
                 <Globe
                   strokeWidth={2.5}
-                  className="h-[16px] w-[16px] transition-transform duration-300 group-hover:scale-105"
+                  className="h-[13px] w-[13px] sm:h-[16px] sm:w-[16px] transition-transform duration-300 group-hover:scale-105"
                 />
               </a>
             </div>
