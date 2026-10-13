@@ -1,0 +1,139 @@
+{
+  "subject": {
+    "id": "cs-602",
+    "code": "CS-602",
+    "name": "Computer Networks",
+    "title": "CS-602 - Computer Networks",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Computer Network. Explain its goals, components, and applications.",
+              "unit": "Unit 1"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare the OSI Reference Model and TCP/IP Model with suitable diagrams.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss design issues in computer networks and explain the concepts of connection-oriented and connectionless services.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the principles of Physical media, bandwidth,data rate, and data modulation. Wife mem, $=fagy, ow wn 2 diepew & Frgial & sre ifm)",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the functions of the Data Link Layer. Discuss framing techniques in detail.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain Go-Back-N ARQ and Selective Repeat ARQ protocols with suitable examples. . IgE FRU HET Go-Back-N ARQ RAT Selective Repeat ARQ WETDIcT GASETI",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe flow control techniques. Compare Stop-and Wait and Sliding Window Protocols.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare CSMA/CD and CSMA/CA protocols.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe IEEE 802 LAN standards and explain the architecture of Local Area Networks.",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the functions of the Network Layer and discuss different switching techniques.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe Bellman-Ford routing algorithm and compare it with Dijkstra s algorithm. Bellman-Ford Routing Algorithm &7 aof @ifsw dem $9! ger Dijkstra Algorithm &ifsel",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the architecture and working of the Simple ) Network Management Protocol (SNMP). Simple Network Management Protocol (SNMP) El EAT BF HRiToTel &f wren Sif EE 2 bt 3 E CS602(GS) \\ BN",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

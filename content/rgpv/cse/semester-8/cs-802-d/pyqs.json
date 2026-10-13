@@ -1,0 +1,109 @@
+{
+  "subject": {
+    "id": "cs-802-d",
+    "code": "CS-802 (D)",
+    "name": "Object Oriented Software Engineering",
+    "title": "CS-802 (D) - Object Oriented Software Engineering",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of inheritance in OOP, How does it promote code reusability and what are the different types of inheritance (single, multiple, hierarchical, etc.)? ~ Provide examples to illustrate your points",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the Software Development Life Cycle (SDLC), and why is it important in software engineering? Describe the different phases of SDLC and their significance in delivering a quality software product. : WiredTR Saewie ash wEfeel (SDLC) 71 8, JiR",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the Unified Modeling Language (UML), and what purpose does it serve in software development? Discuss its importance in facilitating communication among . stakeholders in a project",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the different types of relationships in UML, such as association, aggregation, composition, inheritance and dependency. How do these relationships help in modeling the interactions between objects?",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6d",
+              "label": "d)",
+              "text": "(GS) Examination, June 2025 - _ Object Oriented Software Engineering :",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are interaction diagrams in UML, and how do they contribute to behavioral modeling? Discuss the different types of interaction diagrams (sequence and collaboration diagrams) and their significance in representing object interactions",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the Rational Unified Process (RUP), and what are its primary objectives? Discuss how RUP differs from traditional software development methodologies",
+              "unit": "Unit 5"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define design patterns in the context of software development.",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

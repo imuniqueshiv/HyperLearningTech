@@ -1,0 +1,121 @@
+{
+  "subject": {
+    "id": "cs-703-b",
+    "code": "CS-703 (B)",
+    "name": "Data Mining and Warehousing",
+    "title": "CS-703 (B) - Data Mining and Warehousing",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the techniques used for data preprocessing in data warehousing.",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the different types of data warehouse schemas? Explain with examples.",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define OLAP and Compare different types of OLAP servers.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the role of Hardware components in Operational Design of Data Warehouse.",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define data mining and differentiate it from knowledge discovery in databases.",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe similarity measures and their role in clustering and classification.",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are rule-based classifiers? Explain how they derive classification rules from data. From-anenRa aifedt Far &2 wwe fs 3 Ser J Tiiesor from Hd Free",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8b2",
+              "label": "b)",
+              "text": "OLAP Queries and Operations OLAP a 3iR were",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Summary statistics and Data distributions Rien wise sik er fam=or CD-703",
+              "unit": "Unit 5"
+            },
+            {
+              "id": "q8e2",
+              "label": "e)",
+              "text": "(GS) [41 ( ) Multidimensional Data model TEIRY eT His",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

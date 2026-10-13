@@ -1,0 +1,115 @@
+{
+  "subject": {
+    "id": "cs-803-a",
+    "code": "CS-803 (A)",
+    "name": "Image Processing and Computer Vision",
+    "title": "CS-803 (A) - Image Processing and Computer Vision",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Analyze the steps of recognition methodology (Grouping, Extracting, Matching). Roafigm AAs & TRU (Grouping, Extracting, Matching) &1 Rrzeror Hw CS803",
+              "unit": "Unit 1"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain morphological operations: dilation and erosion. Apply opening and closing operations on an image. Hifi 3724 : dilation Td erosion THHATSE] $337 TR opening UF closing ioe 71] SHE",
+              "unit": "Unit 2"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Develop an algorithm for region growing. Formulate a method for image enhancement using filtering. Region growing 2g UF ueRem fal ifaw Reef gRT g9e1 Teieie tf faftr dar Sifswel -",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Differentiate between pixel-based and region-based representation. fraer-smenRa sik Jowr-amenRa fof d sie qdrse",
+              "unit": "Unit 2"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Hough Transform. Justify the importance of feature extraction in vision systems. aw giawht @ awesel fie Ried BIR CGE] % Wgca 31 faa sevgel",
+              "unit": "Unit 3"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe mixed spatial gray-level moments. A region has pixel values: {1, 2, 3, 4}. Calculate mean intensity. fires QRTad",
+              "unit": "Unit 3"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between 2D and 3D image representation. Two images have intensity values: Imagel =[10, 20, 30], Image2 = [12, 18, 29]. Calculate absolute difference.",
+              "unit": "Unit 4"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Analyze hierarchical image matching. Evaluate advantages of hierarchical matching over direct matching. .",
+              "unit": "Unit 4"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain control strategies in knowledge-based vision ; systems. Hide fie Ried 3 gia eat awemsel",
+              "unit": "Unit 5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
