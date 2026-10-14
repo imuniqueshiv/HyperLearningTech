@@ -1,0 +1,818 @@
+{
+  "subject": {
+    "id": "al-602",
+    "code": "AL-602",
+    "name": "Computer Networks",
+    "title": "AL-602 - Computer Networks",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Computer Network (CN)? Give its architecture and briefly explain each components of CN.",
+              "unit": "Unit 1",
+              "type": "computer-network-definitions-goals-components-architecture-classifications-types"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Draw the ISO-OSI reference model and explain the functionalities of each layer in detail.",
+              "unit": "Unit 1",
+              "type": "iso-osi-reference-model-principle-model-descriptions-of-various-layers-and-its-comparison-with-tcp-ip"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the need of Flow control? Explain the common approaches for flow control at data link layer.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the following: (i) Go-Back-N (ii) Hybrid ARQ.",
+              "unit": "Unit 2",
+              "type": "elementary-sliding-window-protocol-1-bit-go-back-n-selective-repeat-hybrid-arq"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Give the difference between Connection oriented and connection less services.",
+              "unit": "Unit 1",
+              "type": "connection-oriented-connectionless-services"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the working of ARP and RARP.",
+              "unit": "Unit 2",
+              "type": "arp-rarp-garp"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Binary Exponential Back-off (BEB) with suitable example.",
+              "unit": "Unit 3",
+              "type": "binary-exponential-back-off-beb-algorithm"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A Group of N stations share a 56 Kbps pure aloha channel. Each station outputs a 1000 bits frame on an average of once every 100 sec (stations are buffered). What is the max value of N?",
+              "unit": "Unit 3",
+              "type": "distributed-random-access-schemes-contention-schemes-for-data-services-aloha-and-slotted-aloha"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the need of Network layer? What are services provided by this layer? Explain.",
+              "unit": "Unit 4",
+              "type": "need-services-provided-design-issues"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe the working of Bellman Ford algorithm using suitable example.",
+              "unit": "Unit 4",
+              "type": "routing-algorithms-least-cost-routing-algorithm-dijkstra-s-algorithm-bellman-ford-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is MAC Addressing? What are the three types of MAC address discuss with examples.",
+              "unit": "Unit 3",
+              "type": "mac-addressing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is Fragmentation and Reassembly? Why do we need fragmentation and reassembly at network? Explain.",
+              "unit": "Unit 4",
+              "type": "fragmentation-and-reassembly"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the following: (i) WWW (ii) HTTP.",
+              "unit": "Unit 5",
+              "type": "application-layer-www-and-http-ftp-ssh"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw and explain the header format of a User Datagram Protocol (UDP).",
+              "unit": "Unit 5",
+              "type": "udp-header-format-per-segment-checksum-carrying-unicast-multicast-real-time-traffic"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two: (i) SNMP (ii) Broadcast and Multicast Routing (iii) MLMA (iv) Service Primitives.",
+              "unit": "Unit 5",
+              "type": "network-management-snmp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the ISO-OSI model of computer network with a neat diagram.",
+              "unit": "Unit 1",
+              "type": "iso-osi-reference-model-principle-model-descriptions-of-various-layers-and-its-comparison-with-tcp-ip"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain connectionless and connection oriented services. Give examples of each.",
+              "unit": "Unit 1",
+              "type": "connection-oriented-connectionless-services"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "With a neat diagram explain in detail about the Network architecture.",
+              "unit": "Unit 1",
+              "type": "computer-network-definitions-goals-components-architecture-classifications-types"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Distinguish between peer-to-peer relationship and a primary-secondary relationship.",
+              "unit": "Unit 1",
+              "type": "layered-architecture-protocol-hierarchy-design-issues-interfaces-and-services"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain TCP/IP Model.",
+              "unit": "Unit 1",
+              "type": "iso-osi-reference-model-principle-model-descriptions-of-various-layers-and-its-comparison-with-tcp-ip"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the frame format, operation and ring maintenance feature of IEEE 802.5 MAC protocol.",
+              "unit": "Unit 3",
+              "type": "ieee-standards-802-series-their-variant"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the various error detection and correction mechanisms used in computer network.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe sliding window protocol using Go back n.",
+              "unit": "Unit 2",
+              "type": "elementary-sliding-window-protocol-1-bit-go-back-n-selective-repeat-hybrid-arq"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain distributed random access schemes/contention schemes for data services.",
+              "unit": "Unit 3",
+              "type": "distributed-random-access-schemes-contention-schemes-for-data-services-aloha-and-slotted-aloha"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain MAC sub layer protocol and frame structure of IEEE 802.11.",
+              "unit": "Unit 3",
+              "type": "ieee-standards-802-series-their-variant"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Compare IPv4 and IPv6.",
+              "unit": "Unit 4",
+              "type": "comparative-study-of-ipv4-ipv6"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Dijkstra's algorithm for routing. Discuss its limitations.",
+              "unit": "Unit 4",
+              "type": "routing-algorithms-least-cost-routing-algorithm-dijkstra-s-algorithm-bellman-ford-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "An ISP is granted a block of addresses starting with 190.100.0.0/16 (65,536 addresses). The ISP needs to distribute these addresses to three groups of customers as follows: (a) The first group has 64 customers; each needs 256 addresses. (b) The second group has 128 customers; each needs 128 addresses. (c) The third group has 128 customers; each needs 64 addresses. Design the sub-blocks and find out how many addresses are still available after these allocations.",
+              "unit": "Unit 4",
+              "type": "ip-addresses-header-format-packet-forwarding"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write brief notes: (i) SMTP (ii) Congestion Control (iii) DNS (iv) SNMP.",
+              "unit": "Unit 5",
+              "type": "email-smtp-mime-imap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the ISO-OSI model of computer network with a neat diagram.",
+              "unit": "Unit 1",
+              "type": "iso-osi-reference-model-principle-model-descriptions-of-various-layers-and-its-comparison-with-tcp-ip"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the Finite state machine models and Petri Net models.",
+              "unit": "Unit 2",
+              "type": "protocol-verification-finite-state-machine-models-petri-net-models"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "With a neat diagram explain in detail about the Network architecture.",
+              "unit": "Unit 1",
+              "type": "computer-network-definitions-goals-components-architecture-classifications-types"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain Data Link address with examples.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain connection establishment and connection release in transport protocols.",
+              "unit": "Unit 5",
+              "type": "tcp-connection-management-reliability-of-data-transfers"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A channel has a bit rate of 4 kbps and propagation delay of 20 msec. For what range of frame size does stop and wait protocol gives an efficiency of at least 50%?",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the various error detection and correction mechanisms used in computer network.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe sliding window protocol using Go back n.",
+              "unit": "Unit 2",
+              "type": "elementary-sliding-window-protocol-1-bit-go-back-n-selective-repeat-hybrid-arq"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Congestion control and how it is implemented in network layer?",
+              "unit": "Unit 4",
+              "type": "need-services-provided-design-issues"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain MAC sub layer protocol and frame structure of IEEE 802.11.",
+              "unit": "Unit 3",
+              "type": "ieee-standards-802-series-their-variant"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Compare IPv4 and IPv6.",
+              "unit": "Unit 4",
+              "type": "comparative-study-of-ipv4-ipv6"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Least cost routing algorithm. Discuss its limitations.",
+              "unit": "Unit 4",
+              "type": "routing-algorithms-least-cost-routing-algorithm-dijkstra-s-algorithm-bellman-ford-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the concept of TCP flow control and TCP congestion control.",
+              "unit": "Unit 5",
+              "type": "tcp-flow-control-tcp-congestion-control"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain transport layer multiplexing and demultiplexing.",
+              "unit": "Unit 5",
+              "type": "transport-layer-design-issues"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes: (i) IMAP (ii) UDP (iii) DNS (iv) MIME.",
+              "unit": "Unit 5",
+              "type": "email-smtp-mime-imap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Differentiate between connection-oriented and connectionless services with use-case scenarios. How are service primitives used in both?",
+              "unit": "Unit 1",
+              "type": "connection-oriented-connectionless-services"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare and contrast the OSI and TCP/IP models with detailed layer-wise functionality. Which model better suits modern networks and why?",
+              "unit": "Unit 1",
+              "type": "iso-osi-reference-model-principle-model-descriptions-of-various-layers-and-its-comparison-with-tcp-ip"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are the different types of transmission media (guided and unguided)? How do bandwidth, data rate and media influence network performance?",
+              "unit": "Unit 1",
+              "type": "principals-of-physical-layer-media-bandwidth-data-rate-and-modulations"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Compare Go-Back-N and Selective Repeat sliding window protocols. Discuss advantages and disadvantages with diagrams and example sequences.",
+              "unit": "Unit 2",
+              "type": "elementary-sliding-window-protocol-1-bit-go-back-n-selective-repeat-hybrid-arq"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are Petri Net Models? Represent and explain the working of a data link layer protocol using a Petri Net diagram.",
+              "unit": "Unit 2",
+              "type": "protocol-verification-finite-state-machine-models-petri-net-models"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Given a data bit sequence 1101011011 and generator polynomial 10011, compute the CRC code and show how error detection works using it.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the Binary Exponential Back-off (BEB) algorithm. How does it manage collisions in Ethernet networks?",
+              "unit": "Unit 3",
+              "type": "binary-exponential-back-off-beb-algorithm"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the collision-free protocols such as Basic Bit Map, BRAP and Binary Countdown. How do they eliminate data collisions?",
+              "unit": "Unit 3",
+              "type": "collision-free-protocols-basic-bit-map-brap-binary-count-down-mlma"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare and analyze Pure ALOHA and Slotted ALOHA protocols. Derive expressions for throughput and efficiency.",
+              "unit": "Unit 3",
+              "type": "distributed-random-access-schemes-contention-schemes-for-data-services-aloha-and-slotted-aloha"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define hierarchical routing. Compare it with flat and source routing. Under what network conditions is it preferable?",
+              "unit": "Unit 4",
+              "type": "hierarchical-routing-broadcast-routing-multicast-routing"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the differences in IPv4 and IPv6 packet formats. What improvements does IPv6 bring over IPv4?",
+              "unit": "Unit 4",
+              "type": "comparative-study-of-ipv4-ipv6"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "An IP packet of size 3000 bytes must be transmitted over a link with MTU of 1000 bytes. Show how IPv4 fragmentation is performed.",
+              "unit": "Unit 4",
+              "type": "fragmentation-and-reassembly"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the impact of TCP congestion control mechanisms such as Slow Start, Congestion Avoidance, and Fast Retransmit on network performance.",
+              "unit": "Unit 5",
+              "type": "tcp-flow-control-tcp-congestion-control"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the TCP connection management process (three-way and four-way handshakes). Why is graceful termination necessary?",
+              "unit": "Unit 5",
+              "type": "tcp-connection-management-reliability-of-data-transfers"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on (any two): (i) CSMA/CD and CSMA/CA protocols (ii) IEEE Standards 802 series (iii) HTTP and DNS Protocol (iv) SMTP, MIME and IMAP email protocols.",
+              "unit": "Unit 5",
+              "type": "application-layer-www-and-http-ftp-ssh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Computer Network. Explain its goals, components, and applications.",
+              "unit": "Unit 1",
+              "type": "computer-network-definitions-goals-components-architecture-classifications-types"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare the OSI Reference Model and TCP/IP Model with suitable diagrams.",
+              "unit": "Unit 1",
+              "type": "iso-osi-reference-model-principle-model-descriptions-of-various-layers-and-its-comparison-with-tcp-ip"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss design issues in computer networks and explain the concepts of connection-oriented and connectionless services.",
+              "unit": "Unit 1",
+              "type": "design-issues-its-functionality"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the principles of Physical media, bandwidth, data rate, and data modulation.",
+              "unit": "Unit 1",
+              "type": "principals-of-physical-layer-media-bandwidth-data-rate-and-modulations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the functions of the Data Link Layer. Discuss framing techniques in detail.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain Go-Back-N ARQ and Selective Repeat ARQ protocols with suitable examples.",
+              "unit": "Unit 2",
+              "type": "elementary-sliding-window-protocol-1-bit-go-back-n-selective-repeat-hybrid-arq"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe flow control techniques. Compare Stop-and-Wait and Sliding Window Protocols.",
+              "unit": "Unit 2",
+              "type": "need-services-provided-framing-flow-control-error-control"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain MAC addressing and Binary Exponential Backoff (BEB) algorithm.",
+              "unit": "Unit 3",
+              "type": "mac-addressing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare CSMA/CD and CSMA/CA protocols.",
+              "unit": "Unit 3",
+              "type": "for-local-area-networks-csma-csma-cd-csma-ca"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe IEEE 802 LAN standards and explain the architecture of Local Area Networks.",
+              "unit": "Unit 3",
+              "type": "ieee-standards-802-series-their-variant"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the functions of the Network Layer and discuss different switching techniques.",
+              "unit": "Unit 4",
+              "type": "need-services-provided-design-issues"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe Bellman-Ford routing algorithm and compare it with Dijkstra's algorithm.",
+              "unit": "Unit 4",
+              "type": "routing-algorithms-least-cost-routing-algorithm-dijkstra-s-algorithm-bellman-ford-algorithm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Compare IPv4 and IPv6 protocols highlighting their advantages and limitations.",
+              "unit": "Unit 4",
+              "type": "comparative-study-of-ipv4-ipv6"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the services and functions of the Transport Layer.",
+              "unit": "Unit 5",
+              "type": "transport-layer-design-issues"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss congestion control and flow control mechanisms used in TCP.",
+              "unit": "Unit 5",
+              "type": "tcp-flow-control-tcp-congestion-control"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the architecture and working of the Simple Network Management Protocol (SNMP).",
+              "unit": "Unit 5",
+              "type": "network-management-snmp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

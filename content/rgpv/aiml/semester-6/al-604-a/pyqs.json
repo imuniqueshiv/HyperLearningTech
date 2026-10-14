@@ -1,0 +1,665 @@
+{
+  "subject": {
+    "id": "al-604-a",
+    "code": "AL604 (A)",
+    "name": "Cloud Computing",
+    "title": "AL604 (A) - Cloud Computing",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "With neat Diagram Explain cloud computing Reference model.",
+              "unit": "Unit 2",
+              "type": "conceptual-cloud-model-cloud-stack"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between Grid and cloud computing with suitable example.",
+              "unit": "Unit 1",
+              "type": "characteristics-components"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain Different models of deployment in cloud computing.",
+              "unit": "Unit 1",
+              "type": "cloud-models"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe in detail cloud design and implementation using SOA.",
+              "unit": "Unit 2",
+              "type": "cloud-design-and-implementation-using-soa"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Elaborate the various cloud services in cloud computing and how does it differ? Explain.",
+              "unit": "Unit 2",
+              "type": "saas-paas-iaas"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a brief notes on cloud stack with suitable example.",
+              "unit": "Unit 2",
+              "type": "conceptual-cloud-model-cloud-stack"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the functions and types of Hypervisors with examples and Enlist its applications.",
+              "unit": "Unit 3",
+              "type": "study-of-hypervisor"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Differentiate between SAN and NAS with an example.",
+              "unit": "Unit 3",
+              "type": "storage-virtualization-san-nas"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the requirements of virtualization platform in implementing cloud? Explain.",
+              "unit": "Unit 3",
+              "type": "cloud-server-virtualization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail logical partitioning? Enlist its advantages and disadvantages.",
+              "unit": "Unit 3",
+              "type": "logical-partitioning-lpar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define QOS? Enlist the issues of QOS and explain each in brief.",
+              "unit": "Unit 5",
+              "type": "qos-issues-in-cloud"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are VM security risks in cloud computing? Explain the benefits of virtualization security.",
+              "unit": "Unit 4",
+              "type": "cloud-computing-security-challenges-virtualization-security-management-virtual-threats"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How OpenNebula used in cloud computing? Explain in detail.",
+              "unit": "Unit 5",
+              "type": "cloud-computing-platform-xen-cloud-platform-eucalyptus-opennebula-nimbus-tplatform"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe in detail functionality of OLAP and discuss the operations of OLAP.",
+              "unit": "Unit 5",
+              "type": "olap-business-intelligence-e-business-isv"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two: (a) Utility Computing (b) Storage cloud (c) HVM (d) Nimbus.",
+              "unit": "Unit 1",
+              "type": "utility-computing-elastic-computing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Compare and contrast Grid computing with Cloud computing, highlighting their differences and similarities.",
+              "unit": "Unit 1",
+              "type": "characteristics-components"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss potential challenges and risks associated with adopting Grid and Cloud computing from both business and IT perspectives.",
+              "unit": "Unit 1",
+              "type": "business-and-it-perspective"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain how organizations can determine the most suitable Cloud deployment model based on their requirements and constraints.",
+              "unit": "Unit 1",
+              "type": "cloud-models"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define computing on demand and explain how it enables dynamic provisioning of computing resources in the Cloud.",
+              "unit": "Unit 2",
+              "type": "computing-on-demand"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the importance of information security in Cloud computing and the challenges associated with securing Cloud environments.",
+              "unit": "Unit 2",
+              "type": "information-security"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define SaaS, PaaS, and IaaS models and explain their differences.",
+              "unit": "Unit 2",
+              "type": "saas-paas-iaas"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain how virtualization enables efficient utilization of hardware resources by abstracting physical hardware from virtualized instances.",
+              "unit": "Unit 3",
+              "type": "definition-benefits"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the benefits of LPAR, such as improved resource allocation and isolation between partitions.",
+              "unit": "Unit 3",
+              "type": "logical-partitioning-lpar"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define a virtualized data center and explain its architecture, which typically consists of virtualized servers, storage and networking.",
+              "unit": "Unit 3",
+              "type": "virtualized-data-center"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain how cloud security encompasses various aspects such as data security, network security, identity management and compliance.",
+              "unit": "Unit 4",
+              "type": "cloud-security-fundamentals"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe secure execution environments and communications in cloud architectures, including encryption, secure protocols and secure bootstrapping mechanisms.",
+              "unit": "Unit 4",
+              "type": "secure-execution-environments-and-communications"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Provide recommendations for securing virtual machines (VMs) in cloud environments, such as using hardened images, implementing network segmentation and monitoring VM activity.",
+              "unit": "Unit 4",
+              "type": "vm-security-recommendations-vm-specific-security-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Provide examples of how SOA facilitates interoperability and integration between cloud-based services and applications.",
+              "unit": "Unit 5",
+              "type": "soa-and-cloud-soa-and-iaas"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the role of Independent Software Vendors (ISVs) in developing and deploying e-Business applications on cloud platforms.",
+              "unit": "Unit 5",
+              "type": "olap-business-intelligence-e-business-isv"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two: (i) Public vs. Private Clouds (ii) Storage Virtualization (iii) Role-Based Access Control (RBAC) (iv) Cloud Infrastructure Benchmarks.",
+              "unit": "Unit 1",
+              "type": "public-verses-private-clouds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the role of middleware and management software in Grid and Cloud computing architectures.",
+              "unit": "Unit 1",
+              "type": "characteristics-components"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain how public Cloud providers address security concerns through encryption, access controls, and compliance certifications.",
+              "unit": "Unit 1",
+              "type": "security-in-public-model"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain how elastic computing allows organizations to dynamically scale resources up or down based on demand fluctuations.",
+              "unit": "Unit 1",
+              "type": "utility-computing-elastic-computing"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the concept of Service-Oriented Architecture (SOA) and its relevance to Cloud design.",
+              "unit": "Unit 2",
+              "type": "cloud-design-and-implementation-using-soa"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss Information Lifecycle Management (ILM) and its role in managing data throughout its lifecycle, from creation to deletion.",
+              "unit": "Unit 2",
+              "type": "information-life-cycle-management"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the architecture of VDI solutions and the components involved, including virtual desktops, hypervisors, and connection brokers.",
+              "unit": "Unit 2",
+              "type": "virtual-desktop-infrastructure"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the role of hypervisors in server virtualization and provide examples of popular hypervisor platforms.",
+              "unit": "Unit 3",
+              "type": "study-of-hypervisor"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the concepts of Storage Area Network (SAN) and Network-Attached Storage (NAS) in the context of storage virtualization.",
+              "unit": "Unit 3",
+              "type": "storage-virtualization-san-nas"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain how virtualized data centers enable organizations to deploy and scale applications more efficiently in modern IT environments.",
+              "unit": "Unit 3",
+              "type": "virtualized-data-center"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the importance of vulnerability assessment in cloud environments and its role in identifying and mitigating security risks.",
+              "unit": "Unit 4",
+              "type": "vulnerability-assessment-tool-for-cloud"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the importance of contractual agreements, such as SLAs and DPAs, in ensuring privacy and security compliance in the cloud.",
+              "unit": "Unit 4",
+              "type": "privacy-and-security-in-cloud"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define autonomic security and explain how it involves self-configuring, self-healing, and self-protecting mechanisms to adapt to changing security threats in cloud environments.",
+              "unit": "Unit 4",
+              "type": "identity-management-and-access-control-identity-management-access-control-autonomic-security"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss how IaaS providers expose infrastructure services as reusable and composable components that can be accessed and organized using SOA principles.",
+              "unit": "Unit 5",
+              "type": "soa-and-cloud-soa-and-iaas"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define OLAP and explain its role in business intelligence (BI) applications for analyzing and querying large datasets.",
+              "unit": "Unit 5",
+              "type": "olap-business-intelligence-e-business-isv"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two: (i) Cloud Performance Monitoring Commands (ii) Attribute-Based Access Control (ABAC) (iii) Virtual Machine Introspection (VMI) (iv) Issues in Cloud Computing.",
+              "unit": "Unit 5",
+              "type": "cloud-performance-monitoring-commands"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the concepts of Grid Computing and Cloud Computing.",
+              "unit": "Unit 1",
+              "type": "characteristics-components"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the following: (i) Public Cloud (ii) Private Cloud.",
+              "unit": "Unit 1",
+              "type": "public-verses-private-clouds"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain SaaS, PaaS and IaaS with suitable examples.",
+              "unit": "Unit 2",
+              "type": "saas-paas-iaas"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the Service-Oriented Architecture.",
+              "unit": "Unit 2",
+              "type": "cloud-design-and-implementation-using-soa"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss hypervisors, storage virtualization and virtualized data centers.",
+              "unit": "Unit 3",
+              "type": "study-of-hypervisor"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the Hardware Virtual Machine.",
+              "unit": "Unit 3",
+              "type": "hvm"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss cloud security architecture and identity management.",
+              "unit": "Unit 4",
+              "type": "cloud-computing-security-architecture-architectural-considerations-general-issues"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the following: (i) Access Control (ii) Trusted Cloud Computing.",
+              "unit": "Unit 4",
+              "type": "trusted-cloud-computing"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the security challenges in Cloud Computing. Discuss virtualization security and VM-specific security techniques.",
+              "unit": "Unit 4",
+              "type": "cloud-computing-security-challenges-virtualization-security-management-virtual-threats"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the following: (i) Vulnerability Assessment (ii) Privacy in Cloud.",
+              "unit": "Unit 4",
+              "type": "vulnerability-assessment-tool-for-cloud"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain cloud infrastructure and business intelligence.",
+              "unit": "Unit 5",
+              "type": "olap-business-intelligence-e-business-isv"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the following: (i) OLAP (ii) Information Life Cycle Management.",
+              "unit": "Unit 2",
+              "type": "information-life-cycle-management"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the features and applications of Amazon EC2 and Google App Engine.",
+              "unit": "Unit 1",
+              "type": "cloud-computing-platforms-amazon-ec2"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the Elastic Computing.",
+              "unit": "Unit 1",
+              "type": "utility-computing-elastic-computing"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss mobile cloud computing, inter-cloud computing and quality of service.",
+              "unit": "Unit 5",
+              "type": "mobile-cloud-computing"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the following: (i) Xen Cloud Platform (ii) OpenNebula.",
+              "unit": "Unit 5",
+              "type": "cloud-computing-platform-xen-cloud-platform-eucalyptus-opennebula-nimbus-tplatform"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
