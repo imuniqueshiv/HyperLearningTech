@@ -1,0 +1,512 @@
+{
+  "subject": {
+    "id": "al-603-b",
+    "code": "AL603 (B)",
+    "name": "Data and Visual Analytics",
+    "title": "AL603 (B) - Data and Visual Analytics",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain about Data Management and Indexing.",
+              "unit": "Unit 1",
+              "type": "data-management-and-indexing"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What do you mean by measures of Central Tendency? Explain.",
+              "unit": "Unit 1",
+              "type": "measures-of-central-tendency"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define Variables and discuss about data categorization.",
+              "unit": "Unit 1",
+              "type": "elements-variables-and-data-categorization"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How do you calculate Chi-Square test? Explain with an example.",
+              "unit": "Unit 2",
+              "type": "chi-square-test"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain different types of variables used in Regression Modeling.",
+              "unit": "Unit 2",
+              "type": "regression-modelling"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss in detail about Maximum likelihood test with an example.",
+              "unit": "Unit 2",
+              "type": "maximum-likelihood-test"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by Multivariate Exploration of Data? Explain.",
+              "unit": "Unit 3",
+              "type": "multivariate-exploration-of-data"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Briefly discuss about Univariate Exploration of Data.",
+              "unit": "Unit 3",
+              "type": "univariate-exploration-of-data"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain in detail about HDFS.",
+              "unit": "Unit 4",
+              "type": "big-data-processing-tools-such-as-hadoop-hadoop-distributed-file-system-hdfs-hive-and-spark"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail about Data Wrangling.",
+              "unit": "Unit 3",
+              "type": "intro-to-data-wrangling"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you understand by Data Analyst Ecosystem? Explain.",
+              "unit": "Unit 4",
+              "type": "overview-of-the-data-analyst-ecosystem"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain different types of File Format.",
+              "unit": "Unit 4",
+              "type": "understanding-different-types-of-file-formats"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How to create your Own Visualization of a complex data set? Explain.",
+              "unit": "Unit 5",
+              "type": "exercise-create-your-own-visualization-of-a-complex-dataset"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Briefly discuss about Pandas in Python.",
+              "unit": "Unit 5",
+              "type": "python-visualization-libraries-matplotlib-pandas-seaborn-ggplot-plotly"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two: (a) ggplot (b) Re-Sampling (c) T-test (d) Hive.",
+              "unit": "Unit 5",
+              "type": "python-visualization-libraries-matplotlib-pandas-seaborn-ggplot-plotly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are measures of central tendency? Describe in detail.",
+              "unit": "Unit 1",
+              "type": "measures-of-central-tendency"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe measures of location of dispersions in detail.",
+              "unit": "Unit 1",
+              "type": "measures-of-location-of-dispersions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain various levels of measurements in detail.",
+              "unit": "Unit 1",
+              "type": "levels-of-measurement"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are statistical inferences? Explain different statistical inferences in detail.",
+              "unit": "Unit 1",
+              "type": "statistical-inference-and-descriptive-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is Multivariate analysis? Describe in detail.",
+              "unit": "Unit 2",
+              "type": "multivariate-analysis"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Chi Square Test? Describe in detail.",
+              "unit": "Unit 2",
+              "type": "chi-square-test"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "We have the potato yield from 12 different farms. We know that the standard potato yield for the given variety is $\\mu = 20$. $X = [21.5, 24.5, 18.5, 17.2, 14.5, 23.2, 22.1, 20.5, 19.4, 18.1, 24.1, 18.5]$. Test if the potato yield from these farms is significantly better than the standard yield. Apply t-test.",
+              "unit": "Unit 2",
+              "type": "t-test"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Regression Analysis? Explain simple and multiple regression with example.",
+              "unit": "Unit 2",
+              "type": "regression-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Bayesian modelling? How it works? Describe its advantages and disadvantages.",
+              "unit": "Unit 2",
+              "type": "bayesian-modelling-inference-and-bayesian-network"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe maximum likelihood test in detail.",
+              "unit": "Unit 2",
+              "type": "maximum-likelihood-test"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe different Python visualization libraries in detail.",
+              "unit": "Unit 5",
+              "type": "python-visualization-libraries-matplotlib-pandas-seaborn-ggplot-plotly"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is PowerBI? Describe different PowerBI tools in detail.",
+              "unit": "Unit 5",
+              "type": "introduction-to-powerbi-tools"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you mean Data Wrangling? Explain Data Wrangling process in detail.",
+              "unit": "Unit 3",
+              "type": "intro-to-data-wrangling"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is data visualization? Explain Univariate, Bivariate and Multivariate Exploration of Data.",
+              "unit": "Unit 3",
+              "type": "multivariate-exploration-of-data"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Describe the different types of file formats in detail.",
+              "unit": "Unit 4",
+              "type": "understanding-different-types-of-file-formats"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is Big Data? Explain various big data processing tools in detail.",
+              "unit": "Unit 4",
+              "type": "foundations-of-big-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain Data Indexing. Discuss different indexing techniques and their importance in efficient data retrieval.",
+              "unit": "Unit 1",
+              "type": "data-management-and-indexing"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the importance of Measures of Dispersion in statistical analysis and decision making.",
+              "unit": "Unit 1",
+              "type": "measures-of-location-of-dispersions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the concept of Sampling Distribution. Discuss its characteristics, importance and applications in statistical analysis.",
+              "unit": "Unit 1",
+              "type": "introduction-to-statistical-concepts-sampling-distributions-resampling"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain different methods of Data Categorization.",
+              "unit": "Unit 1",
+              "type": "elements-variables-and-data-categorization"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the role of Maximum Likelihood Estimation in Machine Learning and Data Analytics.",
+              "unit": "Unit 2",
+              "type": "maximum-likelihood-test"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain Bayesian Networks. Discuss their structure and working.",
+              "unit": "Unit 2",
+              "type": "bayesian-modelling-inference-and-bayesian-network"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write the Short Note: (i) Principal Component Analysis (PCA) (ii) Statistical Hypothesis Testing.",
+              "unit": "Unit 2",
+              "type": "statistical-hypothesis-generation-and-testing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the concept of Data Wrangling. Discuss its importance in Data Analytics.",
+              "unit": "Unit 3",
+              "type": "intro-to-data-wrangling"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe different sources of data used in Data Analytics.",
+              "unit": "Unit 4",
+              "type": "sources-of-data"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define Data Cleaning. Explain various types of data quality problems and discuss suitable methods to resolve them.",
+              "unit": "Unit 3",
+              "type": "cleaning-data"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the process of designing an effective dashboard. Discuss various components and design principles used in dashboard development.",
+              "unit": "Unit 3",
+              "type": "design-of-visualizations"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define Multivariate Data Exploration. Explain its objectives and significance in complex data analysis.",
+              "unit": "Unit 3",
+              "type": "multivariate-exploration-of-data"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Compare CSV, JSON, XML, and Parquet file formats with suitable examples.",
+              "unit": "Unit 4",
+              "type": "understanding-different-types-of-file-formats"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the architecture and working of Hadoop Distributed File System (HDFS). Discuss its advantages and limitations.",
+              "unit": "Unit 4",
+              "type": "big-data-processing-tools-such-as-hadoop-hadoop-distributed-file-system-hdfs-hive-and-spark"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Analyze the role of Plotly in Business Intelligence applications. Discuss why interactive dashboards are preferred over traditional charts.",
+              "unit": "Unit 5",
+              "type": "python-visualization-libraries-matplotlib-pandas-seaborn-ggplot-plotly"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain how Power BI supports real-time analytics and interactive reporting.",
+              "unit": "Unit 5",
+              "type": "introduction-to-powerbi-tools"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

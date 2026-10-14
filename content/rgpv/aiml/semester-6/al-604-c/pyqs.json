@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-604-c",
+    "code": "AL604 (C)",
+    "name": "Intelligent Systems for Robotics",
+    "title": "AL604 (C) - Intelligent Systems for Robotics",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by the term, the robotics? What are the basic aspects of the robotics?",
+              "unit": "Unit 1",
+              "type": "introduction-to-robotics-fundamentals-of-robotics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss various types of programming method used in robot.",
+              "unit": "Unit 1",
+              "type": "the-three-levels-of-robot-programming"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss about the problems peculiar to robot programming languages.",
+              "unit": "Unit 1",
+              "type": "problems-peculiar-to-robot-programming-languages"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the need of AI in robotics? What are the major types of intelligent agents in robotics?",
+              "unit": "Unit 2",
+              "type": "need-for-ai-in-robotics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the major components of a game playing program in AI?",
+              "unit": "Unit 3",
+              "type": "ai-and-game-playing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is the basic strategy in game playing in artificial intelligence?",
+              "unit": "Unit 3",
+              "type": "game-playing-strategies"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is planning of trajectory in fundamentals of robotics?",
+              "unit": "Unit 4",
+              "type": "trajectory-planning-and-control"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you mean by \"Robot kinematics representations\"?",
+              "unit": "Unit 4",
+              "type": "kinematic-representations-and-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss concept of reverse kinematics of manipulators with two and three degree of freedom.",
+              "unit": "Unit 1",
+              "type": "robot-kinematics-position-analysis"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss about the Line coordinate transformations and Hayati-Roberts co-ordinates.",
+              "unit": "Unit 4",
+              "type": "kinematic-representations-and-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss about the Composition of rotations about moving axes.",
+              "unit": "Unit 4",
+              "type": "kinematic-representations-and-transformations"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss about the Kinematic chain topologies.",
+              "unit": "Unit 4",
+              "type": "kinematic-representations-and-transformations"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss about the Decoupling of rigid body dynamics about center of mass.",
+              "unit": "Unit 4",
+              "type": "dynamics-techniques"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What do you mean by Accuracy and repeatability of Robotics?",
+              "unit": "Unit 5",
+              "type": "accuracy-and-repeatability-of-robotics-simple-problems"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on: (any Two)\n(a) Robot joints and links",
+              "unit": "Unit 5",
+              "type": "robot-joints-and-links"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Architecture of robotic systems",
+              "unit": "Unit 5",
+              "type": "architecture-of-robotic-systems"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) What is the difference between electric hydraulic and pneumatic drive system?",
+              "unit": "Unit 5",
+              "type": "robot-drive-systems-hydraulic-pneumatic-and-electric-system"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Structure of agents",
+              "unit": "Unit 2",
+              "type": "structure-of-agents"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

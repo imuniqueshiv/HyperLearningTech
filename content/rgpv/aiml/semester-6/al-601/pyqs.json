@@ -1,0 +1,852 @@
+{
+  "subject": {
+    "id": "al-601",
+    "code": "AL-601",
+    "name": "Theory of Computation",
+    "title": "AL-601 - Theory of Computation",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Moore Machine? How Moore machine can be converted into Mealy Machine? Explain with the help of an example.",
+              "unit": "Unit 1",
+              "type": "moore-machines-and-mealy-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe how Finite automata can be called a language acceptor?",
+              "unit": "Unit 1",
+              "type": "finite-automata-as-a-language-acceptor-and-translator"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain briefly about the composite machine with an example.",
+              "unit": "Unit 1",
+              "type": "composite-machine"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find out the Regular Expression from given DFA.",
+              "unit": "Unit 2",
+              "type": "regular-expression",
+              "attachments": [
+                {
+                  "id": "may-2023-q2b-img-1",
+                  "type": "image",
+                  "path": "may-2023/Q.2-b-may-2023.webp",
+                  "title": "DFA for Regular Expression",
+                  "alt": "DFA with initial and accepting state q1, and states q1, q2, q3. Transitions: q1 loops on 0; q1 to q2 on 1; q2 loops on 1; q2 to q3 on 0; q3 to q1 on 0; q3 to q2 on 1.",
+                  "caption": "DFA used to derive the regular expression for May 2023 Q.2(b).",
+                  "aiContext": "DFA with initial state q1, accepting state q1, and states q1, q2, q3. Transitions shown: q1 loops on 0; q1 --1--> q2; q2 loops on 1; q2 --0--> q3; q3 --0--> q1; q3 --1--> q2."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What do you mean by Closure properties of regular languages? Define some important closure properties.",
+              "unit": "Unit 2",
+              "type": "meaning-of-union-intersection-concatenation-and-closure"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Obtain the regular expression for the following set: (i) Set of all strings over $\\Sigma = \\{a,b\\}$ with exactly two $a$. (ii) $L = \\{a^x \\mid x \\text{ is divisible by } 3 \\text{ or } 5\\}$.",
+              "unit": "Unit 2",
+              "type": "regular-expression"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Differentiate between Context-Free Grammar and Context-Sensitive Grammar.",
+              "unit": "Unit 3",
+              "type": "context-sensitive-grammar-and-context-free-grammar"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Show that $L = \\{a^n b^n c^n \\mid n \\ge 1\\}$ is not CFL.",
+              "unit": "Unit 3",
+              "type": "context-free-grammar"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write CFG for regular expression $(011 + 1)^*(01)^*$.",
+              "unit": "Unit 3",
+              "type": "context-free-grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Design PDA to accept the language $L(G) = \\{a^m b^n a^m \\mid m,n \\ge 1\\}$.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Design a PDA which recognizes the set of all even length palindromes over $\\{a, b\\}$.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is PDA? Explain instantaneous description of PDA.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Design a Turing Machine for the language $L(G) = \\{a^n b^n \\mid n \\ge 1\\}$.",
+              "unit": "Unit 5",
+              "type": "techniques-for-construction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain P class problems in detail.",
+              "unit": "Unit 5",
+              "type": "n-p-complete-problems"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on any two of the following: (i) NP Hard (ii) Petri Net Model (iii) Halting problem of Turing machine (iv) 2-way DFA.",
+              "unit": "Unit 5",
+              "type": "n-p-complete-problems-halting-problem-petrinet-2-way-dfa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Say whether the NFA accepts the following or not: (i) abaa (ii) abab.",
+              "unit": "Unit 2",
+              "type": "non-deterministic-finite-automata-ndfa",
+              "attachments": [
+                {
+                  "id": "may-2024-q1a-img-1",
+                  "type": "image",
+                  "path": "may-2024/Q.1-a-may-2024.webp",
+                  "title": "NFA Acceptance Check",
+                  "alt": "NFA with states q0, q1, q2. q0 is initial with loop a,b; q0 to q1 on b; q1 loops on b; q1 to q2 on a; q2 is accepting with loop a; q2 to q1 on b.",
+                  "caption": "NFA used to check acceptance of strings abaa and abab for May 2024 Q.1(a).",
+                  "aiContext": "NFA states q0, q1, q2. q0 is the initial state and has a loop labelled a,b; q0 --b--> q1; q1 has a loop labelled b; q1 --a--> q2; q2 is accepting and has a loop labelled a; q2 --b--> q1."
+                }
+              ]
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Construct a NFA such that the second last symbol is zero over the alphabet (0, 1) then convert in DFA.",
+              "unit": "Unit 2",
+              "type": "conversion-of-ndfa-to-dfa"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain 'Finite State Machines with Outputs'. Discriminate between Mealy and Moore machines.",
+              "unit": "Unit 1",
+              "type": "moore-machines-and-mealy-machines"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Design a DFA which accept the string starting symbol differ from ending symbol over the alphabet {0, 1}. Show dead state if any.",
+              "unit": "Unit 2",
+              "type": "deterministic-finite-automata-machines"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Minimize the following automata.\n\n| State | Input 0 | Input 1 |\n|---|---|---|\n| q0 | q1 | q2 |\n| q1 (final) | q3 | q4 |\n| q2 (final) | q4 | q3 |\n| q3 | q5 | q5 |\n| q4 | q5 | q5 |\n| q5 (final) | q5 | q5 |",
+              "unit": "Unit 2",
+              "type": "minimization-of-automata-machines"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Construct context free grammar for $L = \\{wcw^R \\mid w \\in (a + b)^*\\}$. Reverse of $w$ is denoted as $w^R$.",
+              "unit": "Unit 3",
+              "type": "context-free-grammar"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define a deterministic PDA. How a DPDA differs from a non-deterministic PDA?",
+              "unit": "Unit 4",
+              "type": "deterministic-and-non-deterministic-pda"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Find the Greibach normal form grammar equivalent to the following: CFG: $S \\to AB$, $A \\to BS \\mid 1$, $B \\to SA \\mid 0$.",
+              "unit": "Unit 3",
+              "type": "chomsky-normal-form-and-greibach-normal-form"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you mean by Parsing? How left most and right most derivation helps to find out the ambiguity in a grammar?",
+              "unit": "Unit 3",
+              "type": "ambiguity-in-grammar"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Construct a PDA accepting by empty stack each of the following language: (i) $a^n b^m c^n$ where $n,m \\ge 1$ (ii) $a^n b^{3n}$, $n \\ge 0$.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Design a Turing Machine which computes the multiplication of two numbers.",
+              "unit": "Unit 5",
+              "type": "techniques-for-construction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State pumping lemma for regular languages. Prove that the language $\\{a^n \\mid n \\text{ is a prime number}\\}$ is not regular.",
+              "unit": "Unit 2",
+              "type": "regular-expression"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on (any three): (i) Halting problem (ii) Decidability (iii) Mealy Machine (iv) CNF.",
+              "unit": "Unit 5",
+              "type": "halting-problem-decidability-mealy-cnf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Design a Moore machine to determine the residue of mod 2 of the input treated as a binary string.",
+              "unit": "Unit 1",
+              "type": "moore-machines-and-mealy-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Find an equivalent $\\varepsilon$-NFA for the following regular expression $(0 + 1)^*011$.",
+              "unit": "Unit 2",
+              "type": "non-deterministic-finite-automata-ndfa"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Convert the $\\lambda$-NFA to NFA.",
+              "unit": "Unit 2",
+              "type": "non-deterministic-finite-automata-ndfa",
+              "attachments": [
+                {
+                  "id": "dec-2024-q2a-img-1",
+                  "type": "image",
+                  "path": "dec-2024/Q.2-a-dec-2024.webp",
+                  "title": "λ-NFA to NFA Conversion",
+                  "alt": "Automaton states q0, q1, q2, q3 in a row with ε-transitions and labelled loops on 0 and 1.",
+                  "caption": "λ-NFA figure for December 2024 Q.2(a).",
+                  "aiContext": "Automaton states q0, q1, q2, q3 in a row; q0 has a loop labelled 0 and an ε-transition to q1; q1 has a loop labelled 1 and an ε-transition to q2; q2 is accepting, has a loop labelled 0 and a transition labelled 1 to q3; q3 has a loop labelled 0 and a transition labelled 1 to q2."
+                }
+              ]
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Convert the grammar $\\{S \\to ABaC \\mid ABa,\\; A \\to Aa \\mid a,\\; B \\to BaB \\mid b,\\; C \\to CC\\}$ to Chomsky normal form.",
+              "unit": "Unit 3",
+              "type": "chomsky-normal-form-and-greibach-normal-form"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define formally Type 0, Type 1, Type 2 and Type 3 grammar. Show the corresponding automata for each class.",
+              "unit": "Unit 3",
+              "type": "types-of-grammar-chomsky-hierarchy-of-grammar"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Construct PDA for the language $wcw^R$ where $w$ is string of zeroes and ones.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Derive regular expression from this Finite Automata.",
+              "unit": "Unit 2",
+              "type": "regular-expression",
+              "attachments": [
+                {
+                  "id": "dec-2024-q4a-img-1",
+                  "type": "image",
+                  "path": "dec-2024/Q.4-a-dec-2024.webp",
+                  "title": "Finite Automata for Regular Expression",
+                  "alt": "Finite automata with states q0, q1, and accepting state q2, with transitions on 0 and 1.",
+                  "caption": "Finite automata figure for December 2024 Q.4(a).",
+                  "aiContext": "Initial state q0 has a loop labelled 1 and a transition labelled 0 to q1. State q1 has a loop labelled 1, a transition labelled 0 to accepting state q2, and a transition labelled 0 back toward q0 is shown by the lower curved arc from q2 to q0 labelled 1; q2 is double-circled and has a transition labelled 0 back to q1."
+                }
+              ]
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define regular language and regular expressions. Find regular expression for the following: Language of all strings that do not end with 01.",
+              "unit": "Unit 2",
+              "type": "regular-expression"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Construct a PDA accepting by empty stack each of the following language: (i) $a^n b^m c^m d^n$ where $n,m \\ge 1$ (ii) $a^{3n}b^n$, $n \\ge 0$.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Convert to Greibach normal form: $S \\to AB$, $A \\to SA \\mid AA \\mid a$, $B \\to SB \\mid b$.",
+              "unit": "Unit 3",
+              "type": "chomsky-normal-form-and-greibach-normal-form"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Derive any two representative strings with minimum length 4 from the following context free grammar. $G = (\\{S, A, B\\}, \\{a,b\\}, P, S)$; $S \\to bA \\mid aB$; $A \\to bAA \\mid aS \\mid a$; $B \\to aBB \\mid bS \\mid b$.",
+              "unit": "Unit 3",
+              "type": "derivation-trees"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Design a Turing Machine that accepts the language $1^n 0^n$ where $n > 0$.",
+              "unit": "Unit 5",
+              "type": "techniques-for-construction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is a Turing machine? Give the specification of a Turing machine and explain.",
+              "unit": "Unit 5",
+              "type": "techniques-for-construction"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note (any three): (i) Recursively Enumerable (ii) GNF (iii) Derivation Tree (iv) Mealy Machine.",
+              "unit": "Unit 5",
+              "type": "decidability-and-recursively-enumerable-languages"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define finite automata and list the features of finite automata with an example.",
+              "unit": "Unit 1",
+              "type": "examples-of-automata-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Design a finite automata with $\\Sigma = \\{0,1\\}$ accepts those strings which starts with $1$ and ends with $0$.",
+              "unit": "Unit 2",
+              "type": "deterministic-finite-automata-machines"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Differentiate between Mealy and Moore machines with a suitable example.",
+              "unit": "Unit 1",
+              "type": "moore-machines-and-mealy-machines"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Design a regular expression for the following DFA.\n\n| States | 0 | 1 |\n|---|---|---|\n| →Q1 | Q2 | Q1 |\n| *Q2 | Q2 | Q1 |",
+              "unit": "Unit 2",
+              "type": "regular-expression"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Consider the following NFA with epsilon: compute the $\\varepsilon$-closure of each state; give all the strings of length 4 or less accepted by the automation; convert the automation to DFA.\n\n| States | $\\varepsilon$ | A | B | C |\n|---|---|---|---|---|\n| →P | $\\emptyset$ | P | Q | R |\n| Q | P | Q | R | P |\n| *R | Q | R | $\\emptyset$ | P |",
+              "unit": "Unit 2",
+              "type": "conversion-of-ndfa-to-dfa"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Show that the language $L = \\{0^n 1^m \\mid n = m \\text{ and } n \\ge 1\\}$ is deterministic context free language.",
+              "unit": "Unit 4",
+              "type": "deterministic-and-non-deterministic-pda"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define parse tree and construct a parse tree for the string 'abaabb' from the following given grammar: $S \\to SS \\mid aSb \\mid \\varepsilon$.",
+              "unit": "Unit 3",
+              "type": "derivation-trees"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Convert the given CFG into GNF: $S \\to ABA \\mid AAB \\mid BA \\mid AA \\mid B$; $A \\to aA \\mid a$; $B \\to bB \\mid b$.",
+              "unit": "Unit 3",
+              "type": "chomsky-normal-form-and-greibach-normal-form"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define pushdown automata and explain its model with a neat sketch.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Construct a PDA for the given language $L = \\{WW^R \\mid W \\in \\{a,b\\}^*\\}$.",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Convert the following grammar into PDA which accepts the same language by empty stack: $S \\to 0S1 \\mid A$; $A \\to 1A0 \\mid S \\mid \\varepsilon$.",
+              "unit": "Unit 4",
+              "type": "conversion-of-pda-into-context-free-grammar-and-vice-versa"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Design a Turing machine over {0,1} for the language L = {W/W is a multiple of 3}.",
+              "unit": "Unit 5",
+              "type": "techniques-for-construction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Find whether the post correspondence problem P = {(ba, bab), (abb, bb), (bab, abb)} has a match? Explain in detail.",
+              "unit": "Unit 5",
+              "type": "the-post-correspondence-problem"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two of the following: (a) Arden's theorem (b) Chomsky hierarchy of the grammar (c) NPDA (d) N-P Complete problem.",
+              "unit": "Unit 5",
+              "type": "ardens-theorem-chomsky-hierarchy-npda-np-complete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Convert the following Mealy machine into equivalent Moore machine.",
+              "unit": "Unit 1",
+              "type": "conversion-from-mealy-to-moore-and-vice-versa",
+              "attachments": [
+                {
+                  "id": "june-2026-q1a-img-1",
+                  "type": "image",
+                  "path": "june-2026/Q.1-a-june-2026.webp",
+                  "title": "Mealy Machine",
+                  "alt": "Two-state Mealy machine with states q0 and q1. q0 self-loop 0/A; q0 to q1 on 1/B; q1 self-loop 0/B; q1 to q0 on 1/A.",
+                  "caption": "Mealy machine figure for June 2026 Q.1(a).",
+                  "aiContext": "Two-state Mealy machine with states q0 and q1. q0 has a self-loop labelled 0/A; q0 transitions to q1 on 1/B; q1 has a self-loop labelled 0/B; q1 transitions to q0 on 1/A."
+                }
+              ]
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Draw the DFA for the following language over {0,1} such that all the strings with even number of 0's and even number of 1's.",
+              "unit": "Unit 2",
+              "type": "deterministic-finite-automata-machines"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Design Finite Automata which checks whether a given binary number is divisible by three.",
+              "unit": "Unit 2",
+              "type": "deterministic-finite-automata-machines"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain different types of automata machines in detail.",
+              "unit": "Unit 1",
+              "type": "examples-of-automata-machines"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How does Two-Way DFA differ from ordinary DFA?",
+              "unit": "Unit 2",
+              "type": "2-way-dfa"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Construct DFA equivalent to given NFA.\n\n| State\\Input | 0 | 1 |\n|---|---|---|\n| →p | $\\{p, q\\}$ | p |\n| q | r | r |\n| r | s | — |\n| s | s | s |",
+              "unit": "Unit 2",
+              "type": "conversion-of-ndfa-to-dfa"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Construct an $\\varepsilon$-NDFA for the regular expression $(a+b)^*ab$.",
+              "unit": "Unit 2",
+              "type": "non-deterministic-finite-automata-ndfa"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "State and prove Arden's Theorem.",
+              "unit": "Unit 2",
+              "type": "ardens-theorem"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain different types of grammars with suitable examples.",
+              "unit": "Unit 3",
+              "type": "types-of-grammar"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define Chomsky normal form and Greibach normal form in reference to context free languages. Give suitable example.",
+              "unit": "Unit 3",
+              "type": "chomsky-normal-form-and-greibach-normal-form"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain a parse tree in detail.",
+              "unit": "Unit 3",
+              "type": "derivation-trees"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe null ($\\varepsilon$) production in detail.",
+              "unit": "Unit 3",
+              "type": "killing-null-and-unit-productions"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define concept and working of Push Down Automata (PDA).",
+              "unit": "Unit 4",
+              "type": "example-of-pda"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the difference between deterministic and non-deterministic pushdown automata, giving their definition. Also give example of each.",
+              "unit": "Unit 4",
+              "type": "deterministic-and-non-deterministic-pda"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the Halting problem in detail.",
+              "unit": "Unit 5",
+              "type": "halting-problem-of-turing-machine"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain how a Turing machine can be viewed as a computing device on functions involving integers.",
+              "unit": "Unit 5",
+              "type": "techniques-for-construction"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
