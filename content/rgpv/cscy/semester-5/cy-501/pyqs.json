@@ -1,0 +1,882 @@
+{
+  "subject": {
+    "id": "cy-501",
+    "code": "CY-501",
+    "name": "OS Internals for Security Support",
+    "title": "CY-501 (GS) – OS Internals for Security Support",
+    "semester": "V",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks.",
+      "In case of any doubt or dispute the English version question should be treated as final."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2022",
+      "year": 2022,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the role of kernel in operating systems? Explain with help of neat diagram?",
+              "unit": "Unit 1",
+              "type": "kernel-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the use of Buffer Cache and Buffer header? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "buffer-cache"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define IPC. How IPC is implemented with help of shared memory method, explain?",
+              "unit": "Unit 2",
+              "type": "ipc-shared-memory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain about different types of Semaphores with examples.",
+              "unit": "Unit 2",
+              "type": "semaphores"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How to implement Security and Protection in Operating Systems, briefly explain?",
+              "unit": "Unit 3",
+              "type": "security-protection"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write short notes on Worms, Trojans and Root-kits.",
+              "unit": "Unit 3",
+              "type": "malware-rootkits"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe about Virtualization techniques used for security implementation.",
+              "unit": "Unit 4",
+              "type": "virtualization-security"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain in detail about secure co-processors.",
+              "unit": "Unit 4",
+              "type": "secure-coprocessors"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write about \"Windows internals\".",
+              "unit": "Unit 5",
+              "type": "windows-internals"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Socket? What do you know about socket programming? Explain it.",
+              "unit": "Unit 5",
+              "type": "sockets-programming"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Mounting and Un-mounting? Write advantages and disadvantages.",
+              "unit": "Unit 1",
+              "type": "mounting-unmounting"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Principals of Concurrency.",
+              "unit": "Unit 2",
+              "type": "concurrency-principles"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the problem with Ransomware malware. How to protect from this?",
+              "unit": "Unit 3",
+              "type": "ransomware-protection"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the importance of secure wallets? Explain in detail.",
+              "unit": "Unit 4",
+              "type": "secure-wallets"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on: Windows global flags",
+              "unit": "Unit 5",
+              "type": "windows-global-flags"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write a short note on: System worker threads in windows",
+              "unit": "Unit 5",
+              "type": "system-worker-threads"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write a short note on: Structure of Buffer pool",
+              "unit": "Unit 1",
+              "type": "buffer-pool"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write a short note on: Process scheduling",
+              "unit": "Unit 2",
+              "type": "process-scheduling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "With a neat sketch explain the buffer header and buffer pool.",
+              "unit": "Unit 1",
+              "type": "buffer-header-pool"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the usage of queue and tree data structures in the operating system with their applications.",
+              "unit": "Unit 1",
+              "type": "data-structures"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the system calls:\ni) open\nii) read\niii) create\niv) chmod",
+              "unit": "Unit 1",
+              "type": "system-calls"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the process life cycle. Write the components of PCB.",
+              "unit": "Unit 2",
+              "type": "process-lifecycle-pcb"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is IPC? Demonstrate the client/server communications using message queues.",
+              "unit": "Unit 2",
+              "type": "ipc-message-queues"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is semaphore? Explain the types of semaphores.",
+              "unit": "Unit 2",
+              "type": "semaphores"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain how security and protection can be implemented in the operating system?",
+              "unit": "Unit 3",
+              "type": "security-protection"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is a Honeypot? Explain how honeypot can be used to protect against cyber attacks?",
+              "unit": "Unit 3",
+              "type": "honeypots"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain in detail the types of viruses and worms.",
+              "unit": "Unit 3",
+              "type": "viruses-worms"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss about the common vulnerabilities and exposures for security.",
+              "unit": "Unit 4",
+              "type": "vulnerabilities-exposures"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain mobile operating systems security.",
+              "unit": "Unit 4",
+              "type": "mobile-os-security"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is a Secure Coprocessor? Explain in detail secure coprocessors.",
+              "unit": "Unit 4",
+              "type": "secure-coprocessors"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "With a neat sketch explain the windows system architecture.",
+              "unit": "Unit 5",
+              "type": "windows-architecture"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write the types of sockets. Explain in detail socket programming.",
+              "unit": "Unit 5",
+              "type": "sockets-programming"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on: Mounting and unmounting of the file system",
+              "unit": "Unit 1",
+              "type": "mounting-unmounting"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on: Principles of concurrency",
+              "unit": "Unit 2",
+              "type": "concurrency-principles"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on: Trojans and Rootkits",
+              "unit": "Unit 3",
+              "type": "trojans-rootkits"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on: System work threads and winsock",
+              "unit": "Unit 5",
+              "type": "worker-threads-winsock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the role of Buffer Cache and Buffer Header? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "buffer-cache"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the different components and features of UNIX operating system in detail.",
+              "unit": "Unit 1",
+              "type": "unix-components"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the role of super block in UNIX operating system.",
+              "unit": "Unit 1",
+              "type": "super-block"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the process life cycle with different components of process life cycle.",
+              "unit": "Unit 2",
+              "type": "process-lifecycle"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the different requirements for the execution of concurrent processes?",
+              "unit": "Unit 2",
+              "type": "concurrency-requirements"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Semaphore? What are the different types of Semaphores? Explain each type in detail.",
+              "unit": "Unit 2",
+              "type": "semaphores"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the process of authentication and access control for system access.",
+              "unit": "Unit 3",
+              "type": "access-control-auth"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define the following terms: Malware, Trojans, Root Kit.",
+              "unit": "Unit 3",
+              "type": "malware-definitions"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the common vulnerabilities and exposures for security.",
+              "unit": "Unit 4",
+              "type": "vulnerabilities-exposures"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the different methods for IPC in operating system? Explain any one method in detail.",
+              "unit": "Unit 2",
+              "type": "ipc-methods"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the different risks associated with Ransomware attacks.",
+              "unit": "Unit 3",
+              "type": "ransomware-risks"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What does mobile phone operating system contain that or may be vulnerable to different attacks?",
+              "unit": "Unit 4",
+              "type": "mobile-os-vulnerabilities"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the different levels of securities in Android operating system?",
+              "unit": "Unit 4",
+              "type": "android-security"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define the following:- Secure wallet, Secure co-processor.",
+              "unit": "Unit 4",
+              "type": "secure-hardware"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain socket. What are the different types of Sockets explain in detail.",
+              "unit": "Unit 5",
+              "type": "sockets-types"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What are the different Winsock function? What is the use of Datagram socket?",
+              "unit": "Unit 5",
+              "type": "winsock-datagram"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the role of buffer pool and buffer header? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "buffer-pool-header"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of INODES in UNIX like file system.",
+              "unit": "Unit 1",
+              "type": "inodes"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the importance of CHMOD and CHOWN in operating system?",
+              "unit": "Unit 1",
+              "type": "chmod-chown"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the mechanism of process creation in Unix operating system.",
+              "unit": "Unit 2",
+              "type": "process-creation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the effects of privilege escalation vulnerabilities?",
+              "unit": "Unit 2",
+              "type": "privilege-escalation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the disadvantages of concurrency in operating system.",
+              "unit": "Unit 2",
+              "type": "concurrency-disadvantages"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How Operating system protects our data? Explain the process.",
+              "unit": "Unit 3",
+              "type": "data-protection"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the different virtualization techniques used for the security implementation?",
+              "unit": "Unit 4",
+              "type": "virtualization-security"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define the following terms: -Virus, Worms, Root Kit.",
+              "unit": "Unit 3",
+              "type": "malware-definitions"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define Honeypot. Explain the procedure through which honeypot can be used for the protection against cyber-attacks.",
+              "unit": "Unit 3",
+              "type": "honeypot-protection"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the different methods through which we can protect our data from ransomed attacks?",
+              "unit": "Unit 3",
+              "type": "ransomware-protection"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What does mobile phone operating system contain that or may be vulnerable to different attacks?",
+              "unit": "Unit 4",
+              "type": "mobile-phone-vulnerabilities"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the following terms: Secure co-processors, Secure wallet",
+              "unit": "Unit 4",
+              "type": "secure-coprocessors-wallet"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define Socket and its types.",
+              "unit": "Unit 5",
+              "type": "socket-types"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the architecture of Windows operating system in detail.",
+              "unit": "Unit 5",
+              "type": "windows-architecture"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is the use of Winsock? What are the different types of Winsock function?",
+              "unit": "Unit 5",
+              "type": "winsock-functions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the architecture of the UNIX operating system. Discuss its major system concepts.",
+              "unit": "Unit 1",
+              "type": "unix-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe buffer cache, buffer header, and the structure of the buffer pool.",
+              "unit": "Unit 1",
+              "type": "buffer-cache-structure"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain INODES and the structure of a regular file in UNIX.",
+              "unit": "Unit 1",
+              "type": "inodes-file-structure"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write short notes on directories, super block, and INODE assignment.",
+              "unit": "Unit 1",
+              "type": "directories-superblock-inodes"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the following system calls : OPEN, READ, WRITE, and CLOSE.",
+              "unit": "Unit 1",
+              "type": "system-calls"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A file has permissions rwxr-xr-- Find its octal equivalent and explain CHMOD",
+              "unit": "Unit 1",
+              "type": "permissions-chmod"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain process layout in system memory and process control in UNIX.",
+              "unit": "Unit 2",
+              "type": "process-layout-control"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe process creation and signals in UNIX.",
+              "unit": "Unit 2",
+              "type": "process-creation-signals"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain process scheduling and the principles of concurrency.",
+              "unit": "Unit 2",
+              "type": "process-scheduling-concurrency"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "A semaphore is initialized to 2. If three processes try to enter the critical section, how many can enter at a time? Explain.",
+              "unit": "Unit 2",
+              "type": "semaphore-calculation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain access control, auditing, and trusted computing in operating systems.",
+              "unit": "Unit 3",
+              "type": "access-control-auditing"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss different types of malwares such as viruses, worms, Trojans, rootkits, and ransomware.",
+              "unit": "Unit 3",
+              "type": "malware-types"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain common vulnerabilities and exposures. What is meant by secure system configuration?",
+              "unit": "Unit 4",
+              "type": "vulnerabilities-configuration"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss virtualization techniques for security and security issues in mobile operating systems, especially Android.",
+              "unit": "Unit 4",
+              "type": "virtualization-android"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain Windows operating system architecture and important Windows internals.",
+              "unit": "Unit 5",
+              "type": "windows-architecture-internals"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Describe sockets and Winsock. Differentiate between stream sockets and datagram sockets.",
+              "unit": "Unit 5",
+              "type": "sockets-winsock"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
