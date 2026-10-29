@@ -1,0 +1,373 @@
+{
+  "subject": {
+    "id": "al-703-d",
+    "code": "AL703 (D)",
+    "name": "Internet and Web Technology",
+    "title": "AL703 (D) - Internet and Web Technology",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the World Wide Web (WWW) and how does it relate to the Internet?",
+              "unit": "Unit 1",
+              "type": "concept-of-www-internet-and-www"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the roles of web browsers and web servers in the context of the World Wide Web.",
+              "unit": "Unit 1",
+              "type": "web-browser-and-web-servers"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the web design issues related to browsers, bandwidth, cache and display resolution and explain how designers can address these challenges.",
+              "unit": "Unit 1",
+              "type": "web-design-issues-including-browser-bandwidth-and-cache-display-resolution"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the different types of lists in HTML? Explain how these lists are created in HTML with suitable examples.",
+              "unit": "Unit 2",
+              "type": "hyperlink-lists-tables-images-forms"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain how images can be inserted into an HTML document.",
+              "unit": "Unit 2",
+              "type": "hyperlink-lists-tables-images-forms"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is the difference between group of checkbox buttons and group of radio buttons?",
+              "unit": "Unit 2",
+              "type": "hyperlink-lists-tables-images-forms"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the different ways of referencing colors in Cascading Style Sheet? Discuss.",
+              "unit": "Unit 3",
+              "type": "background-images-colors-and-properties"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write JavaScript for validating HTML Login Form by using Regular Expressions.",
+              "unit": "Unit 3",
+              "type": "forms-and-validations"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain about Document Object Model in JavaScript in detail.",
+              "unit": "Unit 3",
+              "type": "the-dom-and-web-browser-environments-manipulation-using-dom"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is XML schema? State its purpose and its advantages over DTD.",
+              "unit": "Unit 4",
+              "type": "dtd-and-schemas"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss about various types of PHP interpreters. Write a program in PHP to find out length of the string \"This is my first program\".",
+              "unit": "Unit 4",
+              "type": "introduction-and-basic-syntax-of-php"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "State the rules for declaring variables in PHP and write a PHP program for a simple calculator.",
+              "unit": "Unit 4",
+              "type": "introduction-and-basic-syntax-of-php"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain database connectivity in PHP with reference to MySQL.",
+              "unit": "Unit 5",
+              "type": "connection-to-server-creating-a-database-selecting-a-database"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write a PHP script to add a user to Login table in MySQL database.",
+              "unit": "Unit 5",
+              "type": "creating-a-table-inserting-data-altering-tables"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two:\n(i) Advantages of PHP",
+              "unit": "Unit 4",
+              "type": "introduction-and-basic-syntax-of-php"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(ii) Function in PHP",
+              "unit": "Unit 4",
+              "type": "php-and-html-arrays-functions"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(iii) Naming rules in XML",
+              "unit": "Unit 4",
+              "type": "introduction-to-xml-uses-of-xml-simple-xml-xml-key-components"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(iv) Features of XHTML",
+              "unit": "Unit 2",
+              "type": "xhtml-meta-tags-character-entities"
+            },
+            {
+              "id": "q8e",
+              "label": "e)",
+              "text": "(v) Purpose of cookies",
+              "unit": "Unit 4",
+              "type": "advance-features-cookies-and-sessions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain WEB, WWW, Internet, and Protocol with the help of a suitable example.",
+              "unit": "Unit 1",
+              "type": "concept-of-www-internet-and-www"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe Web browser, Web servers and Features of Web 2.0.",
+              "unit": "Unit 1",
+              "type": "web-browser-and-web-servers"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a detailed note on effective web design and Web design issues.",
+              "unit": "Unit 1",
+              "type": "concepts-of-effective-web-design"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss basics of HTML, font in HTML and commenting code in HTML using suitable examples.",
+              "unit": "Unit 2",
+              "type": "basics-of-html-formatting-and-fonts-commenting-code-color"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe in detail about the use of tables and images in HTML using suitable examples.",
+              "unit": "Unit 2",
+              "type": "hyperlink-lists-tables-images-forms"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is need of Cascading Style Sheet (CSS)? Explain categories of CSS with the help of suitable example.",
+              "unit": "Unit 3",
+              "type": "need-for-css-introduction-to-css-basic-syntax-and-structure-using-css"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the Client-side scripting with JavaScript with the help of a related example.",
+              "unit": "Unit 3",
+              "type": "client-side-scripting-with-javascript-variables-functions-conditions-loops-and-repetition-pop-up"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe DOM and Web browser environments with the help of an example.",
+              "unit": "Unit 3",
+              "type": "the-dom-and-web-browser-environments-manipulation-using-dom"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Introduce XML and uses of XML. Write a brief note on XML key components.",
+              "unit": "Unit 4",
+              "type": "introduction-to-xml-uses-of-xml-simple-xml-xml-key-components"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the concept of Transforming XML using XSL and XSLT using an example.",
+              "unit": "Unit 4",
+              "type": "transforming-xml-using-xsl-and-xslt"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Introduce PHP and mention the basic syntax of PHP. Write a note on decision and looping in PHP with examples.",
+              "unit": "Unit 4",
+              "type": "introduction-and-basic-syntax-of-php"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the concept of Form processing in PHP with the help of a suitable example.",
+              "unit": "Unit 4",
+              "type": "browser-control-and-detection-string-form-processing-files"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the use of Cookies and Sessions in PHP with the help of an example.",
+              "unit": "Unit 4",
+              "type": "advance-features-cookies-and-sessions"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write a note on Connection to server and creating database using PHP and MySQL.",
+              "unit": "Unit 5",
+              "type": "connection-to-server-creating-a-database-selecting-a-database"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss in detail about the Planning and publishing website using a suitable example.",
+              "unit": "Unit 1",
+              "type": "planning-and-publishing-website"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Describe Deleting data and Tables using PHP and MySQL with the help of an example.",
+              "unit": "Unit 5",
+              "type": "queries-deleting-database-deleting-data-and-tables"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
