@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-703-c",
+    "code": "AL703 (C)",
+    "name": "Agile Software Development",
+    "title": "AL703 (C) - Agile Software Development",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "With a neat sketch discuss about the primary roles of Feature driven development in agile.",
+              "unit": "Unit 1",
+              "type": "overview-of-agile-development-models-scrum-extreme-programming-feature-driven-development-crysta"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Who are the key stakeholders in Agile product development? Explain their responsibilities.",
+              "unit": "Unit 1",
+              "type": "stakeholders-and-challenges"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Differentiate Scrum vs Kanban.",
+              "unit": "Unit 1",
+              "type": "overview-of-agile-development-models-scrum-extreme-programming-feature-driven-development-crysta"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the different roles performed within an XP team? Explain.",
+              "unit": "Unit 4",
+              "type": "the-xp-team"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How do you monitor and control the agile products.",
+              "unit": "Unit 2",
+              "type": "monitoring-and-adapting-managing-risks-and-issues-retrospectives"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the different steps involved in the agile Retrospectives.",
+              "unit": "Unit 2",
+              "type": "monitoring-and-adapting-managing-risks-and-issues-retrospectives"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How do sprints work in Agile? What are the four phases of sprint in Agile? Explain in detail each phases.",
+              "unit": "Unit 3",
+              "type": "sprinting-planning-execution-review-and-retrospective"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss about the various scrum artifacts used during the main activities.",
+              "unit": "Unit 3",
+              "type": "scrum-artifacts-meetings-activities-and-roles"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss the principles of scrum planning in detail.",
+              "unit": "Unit 3",
+              "type": "scrum-planning-principles"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Identify and discuss the role played by the extreme programming team.",
+              "unit": "Unit 4",
+              "type": "the-xp-team"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the following: (i) Thinking-pair programming of XP (ii) Collaboration of XP.",
+              "unit": "Unit 4",
+              "type": "applying-xp-thinking-pair-programming-collaborating-release-planning-development"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the key phases in the Extreme Programming (XP) lifecycle and how does XP differ from traditional software development methodologies?",
+              "unit": "Unit 4",
+              "type": "xp-lifecycle"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the need and significance of refactoring.",
+              "unit": "Unit 5",
+              "type": "need-and-significance-of-refactoring-refactoring-techniques"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How do you ensure that refactoring doesn't introduce new bugs or regression in an Agile project?",
+              "unit": "Unit 5",
+              "type": "need-and-significance-of-refactoring-refactoring-techniques"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two of the following:\n(a) Continuous Integration of Agile",
+              "unit": "Unit 5",
+              "type": "continuous-integration"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Burn down chart",
+              "unit": "Unit 3",
+              "type": "burn-down-chart-daily-scrum"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Agile manifesto",
+              "unit": "Unit 1",
+              "type": "agile-manifesto-and-principles"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Technical Debt",
+              "unit": "Unit 4",
+              "type": "xp-concepts-refactoring-technical-debt-timeboxing-stories-velocity"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

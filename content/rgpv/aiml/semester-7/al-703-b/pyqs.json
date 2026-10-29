@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-703-b",
+    "code": "AL703 (B)",
+    "name": "Augmented and Virtual Reality",
+    "title": "AL703 (B) - Augmented and Virtual Reality",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by virtual reality? Explain the features of virtual reality.",
+              "unit": "Unit 1",
+              "type": "virtual-reality-and-virtual-environment-introduction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain an algorithm which uses parametric equation for the purpose of line clipping. Using the same algorithm, find the coordinates of the line segment $A(10,10)$, $B(70,40)$, after it is clipped against a window with two diagonal vertices at $(20,20)$, $(40,50)$.",
+              "unit": "Unit 1",
+              "type": "human-vision-stereo-perspective-projection-3d-clipping"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the purpose of Anchor node, Collision node, Group node and Shape node in Virtual Reality Modeling Language with help of example.",
+              "unit": "Unit 4",
+              "type": "introduction-to-vrml"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss Collision detection using Generic VR system with help of the example.",
+              "unit": "Unit 2",
+              "type": "scaling-the-ve-collision-detection"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A worm is crawling outward along the spoke of a wheel that lies along a radius of the wheel. The worm is crawling at 1 unit per second and the wheel is rotating at 1 radian per second. Suppose the wheel lies in the $y$-$z$ plane with center at the origin, and at time $t = 0$ the spoke lies along the positive $y$ axis and the worm is at the origin. Find a vector function $r(t)$ for the position of the worm at time $t$.",
+              "unit": "Unit 3",
+              "type": "objects-falling-in-a-gravitational-field-rotating-wheels"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain different models of interactions in virtual environment.",
+              "unit": "Unit 2",
+              "type": "vr-technology-model-of-interaction-vr-systems"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by Linear and Nonlinear interpolation? Explain with help of example.",
+              "unit": "Unit 3",
+              "type": "linear-and-nonlinear-interpolation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Shading? Explain the various algorithms of it.",
+              "unit": "Unit 1",
+              "type": "illumination-models-reflection-models-shading-algorithms-radiosity"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the techniques on flight dynamics of an aircraft.",
+              "unit": "Unit 3",
+              "type": "flight-dynamics-of-an-aircraft"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain in detail about all the sensor hardware's used for VR environment.",
+              "unit": "Unit 4",
+              "type": "vr-hardware-introduction-sensor-hardware"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Briefly describe the display technologies available for Augmented Reality with diagram.",
+              "unit": "Unit 5",
+              "type": "visualization-techniques-for-augmented-reality"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain marker-less tracking for augmented reality with help of an example.",
+              "unit": "Unit 5",
+              "type": "marker-less-tracking-for-augmented-reality"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Briefly describe the difference between AR and VR with help of diagrams and examples.",
+              "unit": "Unit 5",
+              "type": "difference-between-ar-and-vr"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the role of eyes, ears and senses in Augmented Reality with help of an example.",
+              "unit": "Unit 4",
+              "type": "human-factors-introduction-the-eye-the-ear-the-somatic-senses"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two:\n(i) Virtual Reality Modeling Language",
+              "unit": "Unit 4",
+              "type": "introduction-to-vrml"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(ii) VR toolkits",
+              "unit": "Unit 4",
+              "type": "physical-simulation-vr-toolkits"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(iii) Acoustic hardware",
+              "unit": "Unit 4",
+              "type": "head-coupled-displays-acoustic-hardware-integrated-vr-systems"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(iv) Mixed Reality",
+              "unit": "Unit 5",
+              "type": "taxonomy-technology-and-features-of-augmented-reality"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

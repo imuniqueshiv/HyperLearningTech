@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-702-a",
+    "code": "AL702 (A)",
+    "name": "AI in Gaming",
+    "title": "AL702 (A) - AI in Gaming",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Game Theory. How does it apply to Artificial Intelligence?",
+              "unit": "Unit 5",
+              "type": "board-game-theory"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss with various functions used in Minimax algorithm.",
+              "unit": "Unit 5",
+              "type": "implementation-of-some-key-algorithms-such-as-minimax-and-negamax"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain about rule-based systems with an example.",
+              "unit": "Unit 4",
+              "type": "decision-trees-and-state-machines-for-game-development"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate between static representation and kinematic representation in 3D.",
+              "unit": "Unit 2",
+              "type": "kinematic-movement-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe about the components of coordinated movement in detail.",
+              "unit": "Unit 2",
+              "type": "coordinated-movement-and-motor-control"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Draw the movement of algorithm structure and explain each component in detail.",
+              "unit": "Unit 2",
+              "type": "kinematic-movement-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss with A* path finding algorithm with an example.",
+              "unit": "Unit 3",
+              "type": "basic-path-finding-algorithms-in-game-development"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Implement breadth first search algorithm for path finding with an example.",
+              "unit": "Unit 3",
+              "type": "basic-path-finding-algorithms-in-game-development"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "\"The problem's tendency to decrease the efficiency for solving a complex problem.\" Explain.",
+              "unit": "Unit 3",
+              "type": "path-finding-for-complex-solutions"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the differences between state machines and behavior trees with examples.",
+              "unit": "Unit 4",
+              "type": "decision-trees-and-state-machines-for-game-development"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Construct a finite state machine for the following data: (i) If you don't see a thief, stand guard. (ii) While on guard, if you see a thief, fight him, but if he is strong, then flee. (iii) If you are fighting, if you know you are losing the fight, then flee. (iv) While fleeing, simply escape to the guarding state.",
+              "unit": "Unit 4",
+              "type": "decision-trees-and-state-machines-for-game-development"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw and explain a flowchart on average based fuzzy time series and Markov chain based on modified frequency partitioning.",
+              "unit": "Unit 4",
+              "type": "models-for-implementing-knowledge-uncertainty-such-as-fuzzy-logic-and-markov-systems"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Solve the following pay-off matrix: Player A strategies I, II against Player B strategies I, II, III; payoffs are $(5, 9, 3)$ for A-I and $(6, 14, 4)$ for A-II.",
+              "unit": "Unit 5",
+              "type": "board-game-theory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Consider penalty kicks in a soccer match with payoffs represented by the following table. Find the payoff table: Kicker/Goalie; Left: $(1.4, 0.6)$ for Left kicker and $(1.7, 0.4)$ for Right kicker; Right: $(1.5, 0.5)$ for Left kicker and $(1.5, 0.4)$ for Right kicker.",
+              "unit": "Unit 5",
+              "type": "board-game-theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two of the following:\n(a) Model of Game AI",
+              "unit": "Unit 1",
+              "type": "model-of-game-ai"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Stages of Motor Learning",
+              "unit": "Unit 2",
+              "type": "concepts-related-to-coordinated-movements-and-motor-control"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Decision Trees for Game Development",
+              "unit": "Unit 4",
+              "type": "decision-trees-and-state-machines-for-game-development"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Board Game Theory",
+              "unit": "Unit 5",
+              "type": "board-game-theory"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "al-702-c",
+    "code": "AL702 (C)",
+    "name": "Predictive Analytics",
+    "title": "AL702 (C) - Predictive Analytics",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the steps for building a successful data product strategy.",
+              "unit": "Unit 1",
+              "type": "developing-a-data-product-strategy"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the different types of data products based on their functionality with suitable examples.",
+              "unit": "Unit 1",
+              "type": "data-product-examples-in-enterprise"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What steps are involved in converting a string to a JSON Array? Explain with a code.",
+              "unit": "Unit 2",
+              "type": "live-coding-json"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are CSV and JSON files in Python? Explain how you will read these files in Python.",
+              "unit": "Unit 2",
+              "type": "reading-csv-json-files"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is Data Extraction? Explain Data Extraction Tools and Techniques available in Python.",
+              "unit": "Unit 2",
+              "type": "processing-structured-data-in-python"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the different libraries available for Text processing in Python.",
+              "unit": "Unit 2",
+              "type": "processing-text-and-strings-in-python"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a Python code to inverse the matrix using Python libraries.",
+              "unit": "Unit 3",
+              "type": "matrix-processing-and-numpy"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a Python program to display a bar chart for the marks scored by the student: English 69, Hindi 90, Maths 76, Science 88, GK 91.",
+              "unit": "Unit 3",
+              "type": "introduction-to-matplotlib"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Calculate the average, variance and standard deviation in Python using NumPy.",
+              "unit": "Unit 3",
+              "type": "matrix-processing-and-numpy"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the main purpose of Matplotlib? Explain its application in data visualization.",
+              "unit": "Unit 3",
+              "type": "introduction-to-matplotlib"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain how you will implement Linear Regression using Gradient Descent.",
+              "unit": "Unit 4",
+              "type": "gradient-descent-in-python"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the steps involved in using a gradient descent technique in TensorFlow.",
+              "unit": "Unit 4",
+              "type": "gradient-descent-in-tensorflow"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain precision and recall classification with help of example.",
+              "unit": "Unit 5",
+              "type": "classification-diagnostics-precision-and-recall"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain different methods for evaluating classifiers with help of example.",
+              "unit": "Unit 5",
+              "type": "evaluating-classifiers-for-ranking"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two:\n(i) BeautifulSoup Library",
+              "unit": "Unit 3",
+              "type": "urllib-and-beautifulsoup"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(ii) JSON Parser",
+              "unit": "Unit 2",
+              "type": "live-coding-json"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(iii) Mini-Batch Gradient Descent",
+              "unit": "Unit 4",
+              "type": "gradient-descent-in-python"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(iv) Overfitting and Underfitting",
+              "unit": "Unit 5",
+              "type": "over-and-under-fitting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

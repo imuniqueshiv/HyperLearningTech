@@ -1,0 +1,352 @@
+{
+  "subject": {
+    "id": "al-702-d",
+    "code": "AL702 (D)",
+    "name": "Machine Learning for Data Science",
+    "title": "AL702 (D) - Machine Learning for Data Science",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Introduce algorithms. Write down characteristics of algorithms.",
+              "unit": "Unit 1",
+              "type": "introduction-to-algorithms"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "With clear explanation describe the tools to analyze algorithms.",
+              "unit": "Unit 1",
+              "type": "tools-to-analyze-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss use of Machine Learning in the field of Graphs, Maps and Map searching.",
+              "unit": "Unit 2",
+              "type": "graphs-maps-map-searching"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss application of Stable marriages algorithms in the field of Machine Learning.",
+              "unit": "Unit 2",
+              "type": "application-of-algorithms-stable-marriages-example"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is Gradient descent delta rule? Explain using an example.",
+              "unit": "Unit 4",
+              "type": "linear-classification"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is a \"Well-posed Learning\" problem? Explain with an example.",
+              "unit": "Unit 4",
+              "type": "introduction"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain Probabilistic modelling using an example under the Machine Learning applications.",
+              "unit": "Unit 5",
+              "type": "probabilistic-modelling"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss about the need and usage of Probabilistic Inference in Machine Learning.",
+              "unit": "Unit 5",
+              "type": "probabilistic-inference"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the importance of the Dynamic programming algorithm with the help of related example in Machine learning.",
+              "unit": "Unit 2",
+              "type": "dynamic-programming"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the concept of Data description and preparation under the Machine Learning applications.",
+              "unit": "Unit 5",
+              "type": "data-description-and-preparation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept of Interconnectedness on Personal Genomes in Machine Learning.",
+              "unit": "Unit 3",
+              "type": "interconnectedness-on-personal-genomes"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write a detailed note on Holdout in Machine Learning.",
+              "unit": "Unit 4",
+              "type": "holdout"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the concept of prediction of preterm birth under the Machine Learning applications.",
+              "unit": "Unit 5",
+              "type": "application-prediction-of-preterm-birth"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe in detail about the concept of Divide and Conquer technique with the help of a related example.",
+              "unit": "Unit 1",
+              "type": "algorithmic-techniques-divide-and-conquer-examples"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss in detail about the Least Squared Error Hypothesis in Machine Learning.",
+              "unit": "Unit 5",
+              "type": "relationship-between-machine-learning-and-statistics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Describe in detail about the concept of Lazy and Eager Learning using an example.",
+              "unit": "Unit 4",
+              "type": "classification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the main types of machine learning algorithms and their applications in data science.",
+              "unit": "Unit 1",
+              "type": "algorithms-and-machine-learning"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain how the randomization technique can improve algorithm performance.",
+              "unit": "Unit 1",
+              "type": "randomization-applications"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the role of hash tables in search algorithms?",
+              "unit": "Unit 2",
+              "type": "dictionaries-and-hashing"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the applications of dynamic programming in personal genomics.",
+              "unit": "Unit 2",
+              "type": "dynamic-programming"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of NP completeness in the context of algorithms.",
+              "unit": "Unit 3",
+              "type": "np-completeness"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe the significance of data science in analyzing massive genomic data.",
+              "unit": "Unit 3",
+              "type": "massive-raw-data-in-genomics"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is ensemble learning? Explain its advantages in predictive modeling.",
+              "unit": "Unit 4",
+              "type": "ensemble-classifiers"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the steps involved in cross-validation and its role in model accuracy.",
+              "unit": "Unit 4",
+              "type": "cross-validation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define linear classification and probabilistic modeling in machine learning.",
+              "unit": "Unit 4",
+              "type": "linear-classification"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain how model selection is essential for machine learning performance.",
+              "unit": "Unit 4",
+              "type": "model-selection"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are topic models and how are they applied in data analysis?",
+              "unit": "Unit 5",
+              "type": "topic-modelling"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the concept of probabilistic inference in data science.",
+              "unit": "Unit 5",
+              "type": "probabilistic-inference"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the importance of data cleaning in data preprocessing.",
+              "unit": "Unit 5",
+              "type": "data-description-and-preparation"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss how data transformation affects model building in machine learning.",
+              "unit": "Unit 5",
+              "type": "data-description-and-preparation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define OLAP and OLTP and their applications in data warehousing.",
+              "unit": "Unit 3",
+              "type": "case-studies"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the connection between data warehousing and data mining in data science.",
+              "unit": "Unit 3",
+              "type": "data-science-on-personal-genomes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

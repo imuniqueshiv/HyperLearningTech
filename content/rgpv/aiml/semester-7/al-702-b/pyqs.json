@@ -1,0 +1,178 @@
+{
+  "subject": {
+    "id": "al-702-b",
+    "code": "AL702 (B)",
+    "name": "Advance Machine Learning",
+    "title": "AL702 (B) - Advance Machine Learning",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Artificial Neural Networks. What is the role of the cost function in training Artificial Neural Networks?",
+              "unit": "Unit 1",
+              "type": "introduction-to-ann"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the role of gradient descent in the backpropagation process. How does it influence weight updates?",
+              "unit": "Unit 1",
+              "type": "multi-layer-perceptron-and-backpropagation-algorithm-that-is-used-to-help-learn-parameters-for-a"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the architecture and learning process of a multi-layer perceptron.",
+              "unit": "Unit 1",
+              "type": "multi-layer-perceptron-and-backpropagation-algorithm-that-is-used-to-help-learn-parameters-for-a"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is recursive induction in decision trees? Explain.",
+              "unit": "Unit 2",
+              "type": "recursive-induction-of-decision-trees"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define entropy and information gain. Calculate the overall entropy and information gain with the following dataset: Sample 1–7; Credit Score: High, Medium, Low, High, Medium, Low, High; Loan Approved: Yes, No, No, Yes, Yes, No, No.",
+              "unit": "Unit 2",
+              "type": "best-splitting-attribute-entropy-and-information-gain"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How does noisy data affect decision tree performance? Write the strategies to overcome them.",
+              "unit": "Unit 2",
+              "type": "overfitting-noisy-data-and-pruning"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Compare Bagging and Boosting techniques in ensemble learning.",
+              "unit": "Unit 3",
+              "type": "bagging-boosting-stacking-and-learning-with-ensembles"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the working mechanism of a Random Forest algorithm.",
+              "unit": "Unit 3",
+              "type": "random-forest"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Why ensemble methods offer greater robustness compared to individual models? Discuss.",
+              "unit": "Unit 3",
+              "type": "bagging-boosting-stacking-and-learning-with-ensembles"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the Bellman Equations in the context of Reinforcement Learning.",
+              "unit": "Unit 4",
+              "type": "bellman-equations"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between Q-learning and SARSA algorithms.",
+              "unit": "Unit 4",
+              "type": "q-learning-sarsa"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the concept of Policy Gradient methods in Reinforcement Learning.",
+              "unit": "Unit 4",
+              "type": "policy-gradient"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is temporal difference learning and how does it differ from Monte Carlo methods?",
+              "unit": "Unit 5",
+              "type": "temporal-difference-learning"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How does Generative Adversarial Imitation learning differ from standard RL approaches?",
+              "unit": "Unit 5",
+              "type": "generative-adversarial-imitation-learning"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short note on any two. (The listed topic options appear only in Hindi in the supplied paper, so they are not reproduced.)",
+              "unit": "Unit 5",
+              "type": "recent-trends-in-rl-architectures"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

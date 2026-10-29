@@ -1,0 +1,505 @@
+{
+  "subject": {
+    "id": "al-701",
+    "code": "AL-701",
+    "name": "Computer Vision",
+    "title": "AL-701 - Computer Vision",
+    "semester": "VII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is computer vision? And how does it differ from traditional image processing?",
+              "unit": "Unit 1",
+              "type": "image-processing-vs-computer-vision"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the difference between gray scale and colour image.",
+              "unit": "Unit 1",
+              "type": "introduction-to-images"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the concept of data type conversion in image processing. How does it impact image quality and storage?",
+              "unit": "Unit 1",
+              "type": "mathematical-operations-on-images-datatype-conversion-contrast-enhancement-brightness-enhancemen"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the operations of erosion and dilation in binary image processing. How can these operations be used for noise removal and object size modification in binary images?",
+              "unit": "Unit 2",
+              "type": "erosion-dilation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of thresholding in binary image processing. How can you choose an optimal threshold value for a given image? Provide an example.",
+              "unit": "Unit 2",
+              "type": "thresholding"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Provide an algorithm or method for performing connected component analysis on a binary image. Explain the steps involved.",
+              "unit": "Unit 2",
+              "type": "connected-component-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the concept of image enhancement and its importance in image processing. Provide examples of scenarios where image enhancement is necessary.",
+              "unit": "Unit 3",
+              "type": "image-enhancement-and-filtering"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define colour transforms in image processing. Provide an example of a colour transform and explain how it alters the appearance of an image.",
+              "unit": "Unit 3",
+              "type": "color-transforms"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss scenarios where precise colour adjustment is essential, and how curves can be employed to achieve the desired result.",
+              "unit": "Unit 3",
+              "type": "color-adjustment-using-curves"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe a real-world application where image smoothing is necessary, and specify which type of blur filter would be most appropriate.",
+              "unit": "Unit 3",
+              "type": "image-smoothing-box-blur-gaussian-blur-median-blur"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the role of convolution in image filtering. How is a filter (kernel) applied to an image using convolution?",
+              "unit": "Unit 3",
+              "type": "what-is-convolution"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define image smoothing and its role in image processing. Why is it essential to reduce noise or enhance an image's appearance?",
+              "unit": "Unit 3",
+              "type": "image-smoothing-box-blur-gaussian-blur-median-blur"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is image segmentation and how is it related to image recognition? Describe the steps involved in segmenting objects within an image.",
+              "unit": "Unit 4",
+              "type": "image-segmentation-and-recognition"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the Canny Edge detection algorithm, including its key steps and the role of various parameters.",
+              "unit": "Unit 4",
+              "type": "edge-detection"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is OpenCV, and how is it used in deep learning for computer vision tasks?",
+              "unit": "Unit 5",
+              "type": "deep-learning-with-opencv"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Define gesture recognition in the context of computer vision. How does it enable human-computer interaction?",
+              "unit": "Unit 5",
+              "type": "gesture-recognition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are color spaces and how are they used in image processing? Discuss the role of histogram equalization in image enhancement.",
+              "unit": "Unit 3",
+              "type": "color-spaces"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain convolution in image filtering. Compare and contrast different smoothing techniques such as Box Blur, Gaussian Blur and Median Blur.",
+              "unit": "Unit 3",
+              "type": "what-is-convolution"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define computer vision and explain its significance in modern applications. How does it differ from traditional image processing?",
+              "unit": "Unit 1",
+              "type": "introduction-to-computer-vision"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss various problems in computer vision and explain how basic image operations help in solving them.",
+              "unit": "Unit 1",
+              "type": "problems-in-computer-vision"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of binary image processing. How do thresholding, erosion, and dilation contribute to object recognition?",
+              "unit": "Unit 2",
+              "type": "binary-image-processing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss contour analysis and connected component analysis. How are these methods used in object segmentation?",
+              "unit": "Unit 2",
+              "type": "contour-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the various techniques used for image segmentation. How does image classification differ from object detection?",
+              "unit": "Unit 4",
+              "type": "image-segmentation-and-recognition"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the significance of gesture recognition in computer vision. How can motion estimation be applied in real-world scenarios?",
+              "unit": "Unit 5",
+              "type": "gesture-recognition"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How does face detection work in computer vision? Explain the role of deep learning techniques in improving face detection accuracy?",
+              "unit": "Unit 5",
+              "type": "face-detection"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the ethical considerations in computer vision applications. How can bias in AI models be minimized?",
+              "unit": "Unit 5",
+              "type": "deep-learning-with-opencv"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "How can computer vision techniques be adapted for remote sensing and satellite image analysis? Discuss the key challenges.",
+              "unit": "Unit 5",
+              "type": "deep-learning-with-opencv"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the role of AI-driven computer vision in medical imaging. How has it transformed the healthcare industry?",
+              "unit": "Unit 5",
+              "type": "deep-learning-with-opencv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2025",
+      "year": 2025,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the key differences between Image Processing and Computer Vision. Illustrate your answer with suitable examples.",
+              "unit": "Unit 1",
+              "type": "image-processing-vs-computer-vision"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Perform the following numerical operations on a $3 \\times 3$ image matrix: $I = [[100, 150, 200], [50, 100, 150], [0, 50, 100]]$. (i) Apply contrast stretching operation with new intensity range $(0,255)$. (ii) Apply brightness enhancement by $+50$ intensity shift.",
+              "unit": "Unit 1",
+              "type": "mathematical-operations-on-images-datatype-conversion-contrast-enhancement-brightness-enhancemen"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the mathematical operations performed on digital images. Explain datatype conversion with example in OpenCV.",
+              "unit": "Unit 1",
+              "type": "mathematical-operations-on-images-datatype-conversion-contrast-enhancement-brightness-enhancemen"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the process of binary image thresholding, implement adaptive thresholding numerically on a $4 \\times 4$ grayscale image.",
+              "unit": "Unit 2",
+              "type": "thresholding"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe morphological operations—Erosion and Dilation. Show the result of dilation on the binary image $I = [[0,1,0], [1,1,0], [0,1,1]]$ using structuring element $B = [[1,1], [1,1]]$.",
+              "unit": "Unit 2",
+              "type": "erosion-dilation"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Contour Analysis? How can contours be used for object shape recognition?",
+              "unit": "Unit 2",
+              "type": "contour-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain different types of color spaces and their transformation equations ($RGB \\to HSV$, $RGB \\to LAB$).",
+              "unit": "Unit 3",
+              "type": "color-spaces"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Numerically compute Histogram Equalization for an image having pixel intensities: $[52, 55, 61, 66, 70, 61, 64, 73]$.",
+              "unit": "Unit 3",
+              "type": "histogram-equalization"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Compare Image Filtering methods Box blur, Gaussian blur and Median blur with help of example.",
+              "unit": "Unit 3",
+              "type": "image-smoothing-box-blur-gaussian-blur-median-blur"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Derive the Sobel operator used for gradient calculation and show its effect on a sample $3 \\times 3$ image.",
+              "unit": "Unit 4",
+              "type": "introduction-to-image-gradients-first-order-derivative-filters-second-order-derivative-filters"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between first-order and second-order derivative filters with mathematical examples.",
+              "unit": "Unit 4",
+              "type": "introduction-to-image-gradients-first-order-derivative-filters-second-order-derivative-filters"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss various object detection techniques in Computer Vision with suitable examples.",
+              "unit": "Unit 4",
+              "type": "object-detection"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the process of Gesture Recognition using OpenCV and Deep Learning.",
+              "unit": "Unit 5",
+              "type": "gesture-recognition"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain Motion Estimation and Object Tracking algorithms with help of examples.",
+              "unit": "Unit 5",
+              "type": "motion-estimation-and-object-tracking"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two:\n(i) CLAHE (Contrast Limited Adaptive Histogram Equalization)",
+              "unit": "Unit 3",
+              "type": "advanced-histogram-equalization-clahe"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(ii) Image Segmentation",
+              "unit": "Unit 4",
+              "type": "image-segmentation-and-recognition"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(iii) Connected Component Analysis",
+              "unit": "Unit 2",
+              "type": "connected-component-analysis"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(iv) Applications of Deep Learning in Computer Vision",
+              "unit": "Unit 5",
+              "type": "deep-learning-with-opencv"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
