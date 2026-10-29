@@ -1,0 +1,352 @@
+{
+  "subject": {
+    "id": "al-803-c",
+    "code": "AL803 (C)",
+    "name": "Managing Innovation and Entrepreneurship",
+    "title": "AL803 (C) - Managing Innovation and Entrepreneurship",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Innovation and differentiate \"Innovation Vs Invention\".",
+              "unit": "Unit 1",
+              "type": "the-relationship-of-innovation-and-entrepreneurship"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is innovation model and explain the types of innovation models.",
+              "unit": "Unit 1",
+              "type": "innovative-models"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define PUSH and PULL innovation. Explain success factors of PUSH and PULL innovation.",
+              "unit": "Unit 2",
+              "type": "sources-of-innovation-push-pull-analogies"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is innovation process and explain steps in innovation process.",
+              "unit": "Unit 2",
+              "type": "creative-methods-and-approaches-used-in-innovation-management"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the role of Innovation in project management.",
+              "unit": "Unit 3",
+              "type": "project-approach-to-innovation-management"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Mention and explain the steps in stage gate process.",
+              "unit": "Unit 3",
+              "type": "method-stage-gate-its-essence"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define human centric innovation and explain its benefits.",
+              "unit": "Unit 4",
+              "type": "innovations-aimed-at-humans"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the role co-creation in innovation process.",
+              "unit": "Unit 4",
+              "type": "role-of-co-creation-in-the-innovation-process"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the benefits measuring innovation in an organization.",
+              "unit": "Unit 5",
+              "type": "measurement-and-evaluation-of-the-benefits-of-innovation-for-business-financial-and-non-financia"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is Innovation Auditing? And explain post audits of innovative projects.",
+              "unit": "Unit 5",
+              "type": "post-audits-of-innovative-projects"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define product innovation and explain different forms of product innovation.",
+              "unit": "Unit 1",
+              "type": "product-process-organizational-and-marketing-innovation-and-their-role-in-business-development"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is transfer of technology and explain the importance of technology transfer.",
+              "unit": "Unit 2",
+              "type": "transfer-of-technology"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define open innovation and explain its challenges in business development.",
+              "unit": "Unit 3",
+              "type": "open-innovation-as-a-modern-concept"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is co-creation and explain its benefits.",
+              "unit": "Unit 4",
+              "type": "role-of-co-creation-in-the-innovation-process"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain innovation failures and its causes.",
+              "unit": "Unit 5",
+              "type": "innovation-failure-and-its-causes"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write about the following: (i) Agile management (ii) Analogies.",
+              "unit": "Unit 2",
+              "type": "approaches-to-management-of-the-innovation-process-agile-management-six-thinking-hats-nuf-test"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is entrepreneurship? And explain its characteristics.",
+              "unit": "Unit 1",
+              "type": "the-relationship-of-innovation-and-entrepreneurship"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define process innovation? And explain benefits of process innovation.",
+              "unit": "Unit 1",
+              "type": "product-process-organizational-and-marketing-innovation-and-their-role-in-business-development"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is transfer of technology? And explain the process of technology transfer process.",
+              "unit": "Unit 2",
+              "type": "transfer-of-technology"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What do you understand by innovation process? And explain types of innovation process.",
+              "unit": "Unit 2",
+              "type": "creative-methods-and-approaches-used-in-innovation-management"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain Barriers to innovation in project management.",
+              "unit": "Unit 5",
+              "type": "barriers-to-innovation-in-business"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is open innovation? And explain types of open innovation model.",
+              "unit": "Unit 3",
+              "type": "open-innovation-as-a-modern-concept"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Is human centered innovation is converted into profitable business? Do you agree? Explain.",
+              "unit": "Unit 4",
+              "type": "innovations-aimed-at-humans"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define innovation strategy? And explain types of innovation strategies.",
+              "unit": "Unit 4",
+              "type": "types-and-selection-of-appropriate-strategies"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the types of metrics used for measuring innovation benefits.",
+              "unit": "Unit 5",
+              "type": "measurement-and-evaluation-of-the-benefits-of-innovation-for-business-financial-and-non-financia"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is an innovation workshop? And explain its significance.",
+              "unit": "Unit 5",
+              "type": "organization-and-facilitation-of-an-innovation-workshop"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is competitive advantage? Explain creation of competitive advantage based on innovation.",
+              "unit": "Unit 1",
+              "type": "creation-of-competitive-advantage-based-on-innovation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define innovation management? And explain creative methods used in innovation management.",
+              "unit": "Unit 2",
+              "type": "creative-methods-and-approaches-used-in-innovation-management"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is in-house business development? And explain innovation process for in-house business development in a company.",
+              "unit": "Unit 3",
+              "type": "in-house-business-development-of-the-innovation-process-in-the-company"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the process in selection of appropriate innovation strategy in business development.",
+              "unit": "Unit 4",
+              "type": "types-and-selection-of-appropriate-strategies"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What are the barriers to innovation in business? And explain how to overcome it.",
+              "unit": "Unit 5",
+              "type": "barriers-to-innovation-in-business"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write about the following: (i) Six thinking Hats (ii) NUF Test.",
+              "unit": "Unit 2",
+              "type": "approaches-to-management-of-the-innovation-process-agile-management-six-thinking-hats-nuf-test"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

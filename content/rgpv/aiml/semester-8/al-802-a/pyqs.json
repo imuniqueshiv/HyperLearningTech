@@ -1,0 +1,185 @@
+{
+  "subject": {
+    "id": "al-802-a",
+    "code": "AL802 (A)",
+    "name": "Block Chain Technologies",
+    "title": "AL802 (A) - Block Chain Technologies",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is a public ledger and how does it function in the context of financial transactions?",
+              "unit": "Unit 1",
+              "type": "public-ledgers-bitcoin-smart-contracts"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of smart contracts and their potential applications in various industries.",
+              "unit": "Unit 1",
+              "type": "public-ledgers-bitcoin-smart-contracts"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the concept of a block within a block in blockchain technology and how does it contribute to the overall structure?",
+              "unit": "Unit 1",
+              "type": "block-in-a-block-chain-transactions"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the concept of a Merkle tree and its role in ensuring efficient data verification in blockchain technology.",
+              "unit": "Unit 1",
+              "type": "hash-pointer-and-merkle-tree"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the Bitcoin peer-to-peer (P2P) network and how does it facilitate the transfer of bitcoins between users?",
+              "unit": "Unit 2",
+              "type": "bitcoin-scripts-bitcoin-p2p-network"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is HashCash Proof of Work (PoW), and how does it contribute to the security of digital currencies like Bitcoin?",
+              "unit": "Unit 2",
+              "type": "proof-of-work-pow-basic-introduction-hashcash-pow-bitcoin-pow"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the daily challenges and routines in the life of a Bitcoin miner, and how do they contribute to the functioning of the Bitcoin network?",
+              "unit": "Unit 2",
+              "type": "the-life-of-a-bitcoin-miner-mining-difficulty-mining-pool"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the design considerations for implementing a permissioned blockchain?",
+              "unit": "Unit 3",
+              "type": "design-issues-for-permissioned-block-chains"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the Paxos algorithm and its role in achieving distributed consensus.",
+              "unit": "Unit 3",
+              "type": "paxos-raft-consensus"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the Byzantine General Problem, and how does it relate to distributed consensus?",
+              "unit": "Unit 3",
+              "type": "byzantine-general-problem-byzantine-fault-tolerant-system"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How does the Lamport-Shostak-Pease algorithm handle Byzantine faults in a distributed system?",
+              "unit": "Unit 3",
+              "type": "lamport-shostak-pease-bft-algorithm"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the key components of the KYC process and why is it important for financial institutions?",
+              "unit": "Unit 4",
+              "type": "know-your-customer-kyc"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What potential impact does blockchain technology have on international trade and global supply chains?",
+              "unit": "Unit 4",
+              "type": "block-chain-enabled-trade"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How does Hyperledger Fabric achieve modularity and scalability in its architecture?",
+              "unit": "Unit 5",
+              "type": "hyperledger-fabric-architecture"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on:\n(a) Supply Chain Financing",
+              "unit": "Unit 4",
+              "type": "supply-chain-financing"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Ripple and Corda",
+              "unit": "Unit 5",
+              "type": "overview-of-ripple-and-corda"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

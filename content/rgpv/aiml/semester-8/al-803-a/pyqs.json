@@ -1,0 +1,533 @@
+{
+  "subject": {
+    "id": "al-803-a",
+    "code": "AL803 (A)",
+    "name": "Introduction to IOT",
+    "title": "AL803 (A) - Introduction to IOT",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the characteristics of IoT.",
+              "unit": "Unit 1",
+              "type": "iot-definition-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define M2M communication. Write about M2M communication and architecture of M2M.",
+              "unit": "Unit 1",
+              "type": "m2m-communications-iot-vs-m2m-iot-vs-wot"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the purpose of logical design in IoT systems? List the key components typically considered in the logical design of an IoT solution.",
+              "unit": "Unit 1",
+              "type": "physical-and-logical-design-of-iot"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Summarize the challenges of a sensor node.",
+              "unit": "Unit 2",
+              "type": "basic-components-and-challenges-of-a-sensor-node"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the fundamental difference between scalar sensors and vector sensors.",
+              "unit": "Unit 2",
+              "type": "sensor-classes-analog-digital-scalar-vector-sensors"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Differentiate between electrical actuators and mechanical actuators in terms of energy efficiency and control flexibility in IoT deployments.",
+              "unit": "Unit 2",
+              "type": "actuator-types-hydraulic-pneumatic-electrical-thermal-magnetic-mechanical-actuators-soft-actuato"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the basic working principle of RFID technology? How does RFID enable wireless communication for data transfer?",
+              "unit": "Unit 3",
+              "type": "rfid-features-rfid-working-principle-and-applications"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe how wireless sensor networks become one of the enabling technologies of IoT.",
+              "unit": "Unit 3",
+              "type": "wireless-sensor-networks-and-its-applications"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the difference between NFC and other wireless communication technologies used in IoT, such as Bluetooth and Wi-Fi.",
+              "unit": "Unit 3",
+              "type": "nfc-near-field-communication"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the primary components of an MQTT-based communication system in IoT?",
+              "unit": "Unit 4",
+              "type": "mqtt-mqtt-methods-and-components"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the role of CoAP Acknowledgement (ACK) and Reset (RST) messages in managing message delivery and error handling.",
+              "unit": "Unit 4",
+              "type": "coap-coap-message-types-coap-request-response-model"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "List and describe the main AMQP frame types used for communication in IoT environments.",
+              "unit": "Unit 4",
+              "type": "amqp-features-and-components-amqp-frame-types"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the connectivity options available on a Raspberry Pi board for interfacing with sensors, actuators and networks in IoT setups.",
+              "unit": "Unit 5",
+              "type": "iot-platforms-arduino-raspberry-pi-board-other-iot-platforms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the smart home automation system in IoT.",
+              "unit": "Unit 5",
+              "type": "iot-case-studies-smart-home-smart-framing-etc"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two of the following:\n(a) Components of IoT ecosystems",
+              "unit": "Unit 1",
+              "type": "components-of-iot-ecosystems"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Sensor types",
+              "unit": "Unit 2",
+              "type": "sensor-types-bias-drift-hysteresis-error-quantization-error"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) IoT challenges",
+              "unit": "Unit 3",
+              "type": "iot-challenges"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Attacks in IoT system",
+              "unit": "Unit 5",
+              "type": "attacks-in-iot-system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define IoT. Explain characteristics and components of IoT.",
+              "unit": "Unit 1",
+              "type": "iot-definition-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define the Internet of Things (IoT) ecosystem and its significance in the modern world.",
+              "unit": "Unit 1",
+              "type": "components-of-iot-ecosystems"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define M2M. Explain reasons of shifting from M2M to IoT.",
+              "unit": "Unit 1",
+              "type": "m2m-communications-iot-vs-m2m-iot-vs-wot"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the characteristics of smart sensors and their advantages over traditional sensors.",
+              "unit": "Unit 2",
+              "type": "sensor-features-sensor-resolution"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the key components of an IoT ecosystem and their roles in enabling IoT applications.",
+              "unit": "Unit 1",
+              "type": "components-of-iot-ecosystems"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe the basic working principle of sensors. How do sensors convert physical phenomena into measurable signals?",
+              "unit": "Unit 2",
+              "type": "define-sensor"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the characteristics of Zigbee networks, including low power consumption, low data rates, and short-range communication.",
+              "unit": "Unit 3",
+              "type": "zigbee-and-its-types"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the key features of MQTT that make it well-suited for IoT communication.",
+              "unit": "Unit 4",
+              "type": "mqtt-mqtt-methods-and-components"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the implementation of IoT Technology in the following areas: (i) Smart Parking (ii) Smart Lightening (iii) Emergency response (iv) Smart roads in smart cities.",
+              "unit": "Unit 5",
+              "type": "iot-case-studies-smart-home-smart-framing-etc"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the following terms: (i) NFC (ii) Vector Sensor (iii) IoT WAN.",
+              "unit": "Unit 3",
+              "type": "nfc-near-field-communication"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the GPIO pins of Raspberry Pi device with neat diagram.",
+              "unit": "Unit 5",
+              "type": "iot-platforms-arduino-raspberry-pi-board-other-iot-platforms"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain a smart city initiative that integrates multiple IoT applications to improve quality of life, sustainability and citizen services.",
+              "unit": "Unit 5",
+              "type": "iot-case-studies-smart-home-smart-framing-etc"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes (any three):\n(i) AMQP Features and Components",
+              "unit": "Unit 4",
+              "type": "amqp-features-and-components-amqp-frame-types"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(ii) RFID Features",
+              "unit": "Unit 3",
+              "type": "rfid-features-rfid-working-principle-and-applications"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(iii) IoT Applications",
+              "unit": "Unit 1",
+              "type": "modern-day-iot-applications"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(iv) IoT Challenges",
+              "unit": "Unit 3",
+              "type": "iot-challenges"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define Internet of Things (IoT). Explain characteristics of IoT systems.",
+              "unit": "Unit 1",
+              "type": "iot-definition-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain basic microcontrollers used in IoT. Analyze interfacing of sensors with microcontrollers.",
+              "unit": "Unit 1",
+              "type": "review-of-basic-microcontrollers-and-interfacing"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Develop an IoT-based smart agriculture system model. Analyze M2M communication vs IoT communication.",
+              "unit": "Unit 1",
+              "type": "m2m-communications-iot-vs-m2m-iot-vs-wot"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain sensor features such as sensitivity and resolution. Differentiate between analog and digital sensors.",
+              "unit": "Unit 2",
+              "type": "sensor-features-sensor-resolution"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain hysteresis error with diagram. Compare scalar and vector sensors based on applications.",
+              "unit": "Unit 2",
+              "type": "sensor-types-bias-drift-hysteresis-error-quantization-error"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain linearity error with a suitable diagram. Compare pneumatic and electrical actuators.",
+              "unit": "Unit 2",
+              "type": "actuator-types-hydraulic-pneumatic-electrical-thermal-magnetic-mechanical-actuators-soft-actuato"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain actuator working principle with block diagram.",
+              "unit": "Unit 2",
+              "type": "actuator"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Design a smart sensor-actuator system for industrial automation.",
+              "unit": "Unit 2",
+              "type": "actuator"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain IEEE 802.15.4 standard and its role in IoT.",
+              "unit": "Unit 3",
+              "type": "6lowpan-ieee-802-15-4"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Differentiate between Bluetooth and ZigBee based IoT applications.",
+              "unit": "Unit 3",
+              "type": "bluetooth"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between MQTT and SMQTT. Discuss limitations of MQTT in secure IoT environments.",
+              "unit": "Unit 4",
+              "type": "smqtt"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss advantages of XMPP in real-time communication systems. Evaluate suitability of XMPP for IoT applications.",
+              "unit": "Unit 4",
+              "type": "xmpp"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain AMQP and its key features. Describe AMQP components such as exchange, queue, and broker.",
+              "unit": "Unit 4",
+              "type": "amqp-features-and-components-amqp-frame-types"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Differentiate between Arduino and Raspberry Pi based on architecture and usage.",
+              "unit": "Unit 5",
+              "type": "iot-platforms-arduino-raspberry-pi-board-other-iot-platforms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain common IoT attacks such as DDoS, spoofing and man-in-the-middle attacks.",
+              "unit": "Unit 5",
+              "type": "attacks-in-iot-system"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Design an IoT-based smart farming system including sensors, cloud and analytics.",
+              "unit": "Unit 5",
+              "type": "iot-case-studies-smart-home-smart-framing-etc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
