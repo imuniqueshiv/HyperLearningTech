@@ -1,0 +1,498 @@
+{
+  "subject": {
+    "id": "al-801",
+    "code": "AL-801",
+    "name": "Business Intelligence",
+    "title": "AL-801 - Business Intelligence",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "How can organizations use data and information to make effective and timely decisions in today's competitive business environment?",
+              "unit": "Unit 1",
+              "type": "effective-and-timely-decisions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the key enabling factors that contribute to the success of business intelligence projects in modern organizations.",
+              "unit": "Unit 1",
+              "type": "enabling-factors-in-business-intelligence-projects"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How does business intelligence support organizations in aligning their strategies with market trends?",
+              "unit": "Unit 1",
+              "type": "development-of-a-business-intelligence-system"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss about the different business intelligence user types influence the design and delivery of BI reports?",
+              "unit": "Unit 2",
+              "type": "the-business-intelligence-user-types"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write the specific benefits of enabling ad-hoc querying for users in a business intelligence environment?",
+              "unit": "Unit 2",
+              "type": "interactive-analysis-and-ad-hoc-querying"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How does geographic visualization in business intelligence contribute to location-based analysis and decision support?",
+              "unit": "Unit 2",
+              "type": "geographic-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the specific goals of the CCR model in fostering multidisciplinary solutions to complex challenges?",
+              "unit": "Unit 3",
+              "type": "the-ccr-model-definition-of-target-objectives-peer-groups"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How does cross-efficiency analysis contribute to the identification of good operating practices?",
+              "unit": "Unit 3",
+              "type": "identification-of-good-operating-practices-cross-efficiency-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Case Study. Considering the evolution of the iPhone over the past decade, analyze the key marketing strategies employed by Apple. Evaluate how these strategies have contributed to the iPhone's success in the global smart phone market. In your analysis consider the product positioning, branding, pricing strategies, distribution channels and promotional tactics used by Apple. Additionally discuss the impact of technological advancements, consumer behavior and competition on Apple's marketing approach for the iPhone. Write the conclusions of given questions.",
+              "unit": "Unit 4",
+              "type": "case-studies"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the key marketing strategies employed by Apple in the evolution of the iPhone and how have these impacted its success in the global smart phone market?",
+              "unit": "Unit 4",
+              "type": "marketing-models"
+            },
+            {
+              "id": "q5c",
+              "label": "c)",
+              "text": "How has Apple's product positioning, branding, pricing strategies, distribution channels, and promotional tactics contributed to the success of the iPhone in the global smart phone market over the past decade?",
+              "unit": "Unit 4",
+              "type": "marketing-models"
+            },
+            {
+              "id": "q5d",
+              "label": "d)",
+              "text": "What is the impact of technological advancements, consumer behavior and competition on Apple's marketing approach for the iPhone in the global smart phone market?",
+              "unit": "Unit 4",
+              "type": "marketing-models"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write the challenges or limitations may arise when using pattern matching for operational improvement initiatives?",
+              "unit": "Unit 3",
+              "type": "pattern-matching-cluster-analysis-outlier-analysis"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the emerging technologies, such as artificial intelligence and machine learning, shaping the future of business intelligence?",
+              "unit": "Unit 5",
+              "type": "emerging-technologies-machine-learning-predicting-the-future"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How BI search and text analytics revolutionizing the way businesses extract?",
+              "unit": "Unit 5",
+              "type": "bi-search-text-analytics"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How are emerging technologies in business intelligence enabling organizations to proactively anticipate market trends?",
+              "unit": "Unit 5",
+              "type": "emerging-technologies-machine-learning-predicting-the-future"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two of the following:\n(a) Role of data analysis in modern business?",
+              "unit": "Unit 1",
+              "type": "data-information-and-knowledge"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Peer group approach to business valuation?",
+              "unit": "Unit 3",
+              "type": "the-ccr-model-definition-of-target-objectives-peer-groups"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Advantages of parameterized reports in business intelligence?",
+              "unit": "Unit 2",
+              "type": "parameterized-reports-and-self-service-reporting"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Advanced visualization techniques.",
+              "unit": "Unit 5",
+              "type": "advanced-visualization-rich-report"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the architecture of a Business Intelligence system. What are its key components?",
+              "unit": "Unit 1",
+              "type": "business-intelligence-architectures-cycle-of-a-business-intelligence-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What are Standard Reports and Ad Hoc Querying in Business Intelligence? How do they help businesses?",
+              "unit": "Unit 2",
+              "type": "standard-reports"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of Pattern Matching. How is it used in cluster and outlier analysis?",
+              "unit": "Unit 3",
+              "type": "pattern-matching-cluster-analysis-outlier-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the role of Business Intelligence in marketing models. Provide real-world examples.",
+              "unit": "Unit 4",
+              "type": "marketing-models"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are Rich Reports in Business Intelligence? How do they enhance data-driven decision-making?",
+              "unit": "Unit 5",
+              "type": "advanced-visualization-rich-report"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the ethical considerations in Business Intelligence. How can BI be used responsibly?",
+              "unit": "Unit 1",
+              "type": "ethics-and-business-intelligence"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the importance of Alerts and Notifications in BI. How do they improve business efficiency?",
+              "unit": "Unit 2",
+              "type": "alerts-notifications"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "How will emerging technologies impact the future of Business Intelligence? Discuss with examples.",
+              "unit": "Unit 5",
+              "type": "future-of-business-intelligence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain Business Intelligence architecture and examine the advantages and limitations of Business Intelligence architectures in enterprise systems.",
+              "unit": "Unit 1",
+              "type": "business-intelligence-architectures-cycle-of-a-business-intelligence-analysis"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the transformation process from data to information and knowledge with suitable examples and applications.",
+              "unit": "Unit 1",
+              "type": "data-information-and-knowledge"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe ad hoc querying and interactive reporting techniques with suitable examples and describe its application.",
+              "unit": "Unit 2",
+              "type": "interactive-analysis-and-ad-hoc-querying"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain alerts, notifications and visualization techniques in Business Intelligence systems and discuss their significance in decision support systems.",
+              "unit": "Unit 2",
+              "type": "alerts-notifications"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define efficiency measures in Business Intelligence systems and the role of analytical efficiency models in organizational management systems.",
+              "unit": "Unit 3",
+              "type": "efficiency-measures"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Analyze the architecture and working principles of the CCR model with suitable examples and applications.",
+              "unit": "Unit 3",
+              "type": "the-ccr-model-definition-of-target-objectives-peer-groups"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe inventory optimization, transportation planning and supply chain management models in details and show there use cases.",
+              "unit": "Unit 4",
+              "type": "logistic-and-production-models"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Examine the role of predictive analytics and data driven decision making in modern business systems.",
+              "unit": "Unit 5",
+              "type": "emerging-technologies-machine-learning-predicting-the-future"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe natural language processing, sentiment analysis and text mining techniques with suitable examples and applications.",
+              "unit": "Unit 5",
+              "type": "bi-search-text-analytics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Critically examine the advantages and limitations of emerging Business Intelligence technologies in organizational analytics environments.",
+              "unit": "Unit 5",
+              "type": "emerging-technologies-machine-learning-predicting-the-future"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain pattern matching and cluster analysis in Business Intelligence systems and discuss their significance in analytical environments.",
+              "unit": "Unit 3",
+              "type": "pattern-matching-cluster-analysis-outlier-analysis"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe real world applications of Business Intelligence in marketing, logistics and production systems with examples.",
+              "unit": "Unit 4",
+              "type": "marketing-models"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain effective and timely decisions in Business Intelligence and discuss their significance in organizational management systems.",
+              "unit": "Unit 1",
+              "type": "effective-and-timely-decisions"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Analyze the roles of operational users, tactical users and strategic users in Business Intelligence systems with suitable examples.",
+              "unit": "Unit 2",
+              "type": "the-business-intelligence-user-types"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two of the following:\n(a) Dashboards, Scorecards and Geographic Visualization",
+              "unit": "Unit 2",
+              "type": "visualization-charts-graphs-widgets-scorecards-and-dashboards"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Marketing Models and Production Models in Business Intelligence",
+              "unit": "Unit 4",
+              "type": "marketing-models"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) BI Search, Text Analytics and Future Beyond Technology",
+              "unit": "Unit 5",
+              "type": "bi-search-text-analytics"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

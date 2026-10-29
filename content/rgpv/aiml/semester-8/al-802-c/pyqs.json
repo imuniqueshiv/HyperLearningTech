@@ -1,0 +1,352 @@
+{
+  "subject": {
+    "id": "al-802-c",
+    "code": "AL802 (C)",
+    "name": "Big Data Analytics",
+    "title": "AL802 (C) - Big Data Analytics",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the concept of Big Data and its significance in today's digital world.",
+              "unit": "Unit 1",
+              "type": "big-data-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the major challenges associated with handling Big Data, including data storage, processing, security and governance.",
+              "unit": "Unit 1",
+              "type": "challenges-with-big-data"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How is data analytics applied to Big Data? Discuss the role of predictive analytics, machine learning and real-time data processing.",
+              "unit": "Unit 1",
+              "type": "use-of-data-analytics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Provide an overview of the technologies available for managing and analyzing Big Data, such as Hadoop, Spark and NoSQL databases.",
+              "unit": "Unit 1",
+              "type": "technologies-available-for-big-data"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the core components of Hadoop, including HDFS, MapReduce and YARN. What are their respective functions?",
+              "unit": "Unit 2",
+              "type": "core-hadoop-components"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare RDBMS and Hadoop in terms of data processing, storage, scalability and performance. In what scenarios is Hadoop preferred over RDBMS?",
+              "unit": "Unit 2",
+              "type": "rdbms-versus-hadoop"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the MapReduce programming model. How does it work and what are its key phases in data processing?",
+              "unit": "Unit 2",
+              "type": "map-reduce-programming"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the concept of Apache Hive and its role in data warehousing. How does it simplify querying large datasets in Hadoop?",
+              "unit": "Unit 3",
+              "type": "hive-architecture"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Introduce Apache Pig and explain how it differs from Hive. What are the key advantages of using Pig for data processing?",
+              "unit": "Unit 3",
+              "type": "introduction-to-pig"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the process of ETL (Extract, Transform, Load) using Pig. How does Pig facilitate large-scale data transformation?",
+              "unit": "Unit 3",
+              "type": "etl-processing"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss different NoSQL data architectural patterns. How do they help in handling large-scale and unstructured data?",
+              "unit": "Unit 4",
+              "type": "nosql-data-architectural-patterns"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the main types of NoSQL databases (Key-Value, Document, Column-Family and Graph). Provide examples of each type.",
+              "unit": "Unit 4",
+              "type": "variations-of-nosql-architectural-patterns-using-nosql-to-manage-big-data"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the data model of MongoDB. How does it store and manage data using JSON-like documents?",
+              "unit": "Unit 4",
+              "type": "introduction-to-mango-db"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss various applications of social network mining in domains such as marketing, healthcare and cybersecurity.",
+              "unit": "Unit 5",
+              "type": "applications-of-social-network-mining"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss the role of graph-based machine learning techniques in social network mining. How do they improve community detection and recommendation?",
+              "unit": "Unit 5",
+              "type": "clustering-of-social-graphs"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Compare collaborative filtering and content-based filtering in recommender systems. How do they apply to social networks?",
+              "unit": "Unit 5",
+              "type": "introduction-to-recommender-system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the concept, characteristics (5Vs), and evolution of Big Data.",
+              "unit": "Unit 1",
+              "type": "big-data-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss challenges in Big Data and explain the infrastructure and technologies used for Big Data analytics.",
+              "unit": "Unit 1",
+              "type": "challenges-with-big-data"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe Hadoop architecture and explain the core components of the Hadoop ecosystem.",
+              "unit": "Unit 2",
+              "type": "hadoop-eco-system"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain HDFS and YARN architecture and their role in distributed data processing.",
+              "unit": "Unit 2",
+              "type": "hadoop-distributed-file-system"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Examine the working of the MapReduce model and discuss its strengths and limitations in real-world applications.",
+              "unit": "Unit 2",
+              "type": "map-reduce-programming"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare Hadoop with traditional RDBMS systems in terms of data processing, scalability, and performance.",
+              "unit": "Unit 2",
+              "type": "rdbms-versus-hadoop"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Analyze how Hive simplifies Big Data querying and discuss its limitations compared to traditional databases.",
+              "unit": "Unit 3",
+              "type": "hive-architecture"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Evaluate the execution model of Apache Pig and explain how it supports data transformation tasks.",
+              "unit": "Unit 3",
+              "type": "execution-model-of-pig"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain NoSQL databases and discuss various NoSQL data models.",
+              "unit": "Unit 4",
+              "type": "nosql-data-architectural-patterns"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe MongoDB architecture and its role in Big Data applications.",
+              "unit": "Unit 4",
+              "type": "introduction-to-mango-db"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss how graph theory is used to model social networks and extract meaningful insights.",
+              "unit": "Unit 5",
+              "type": "social-networks-as-a-graph"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Evaluate the applications of social network mining in real-world scenarios such as recommendation and fraud detection.",
+              "unit": "Unit 5",
+              "type": "applications-of-social-network-mining"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Examine clustering techniques used in social network graphs and analyze their effectiveness in community detection.",
+              "unit": "Unit 5",
+              "type": "clustering-of-social-graphs"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the challenges involved in analyzing large-scale social network data and suggest possible solutions.",
+              "unit": "Unit 5",
+              "type": "direct-discovery-of-communities-in-a-social-graph"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Design a Big Data processing pipeline for a real-world application (e.g., e-commerce or social media analytics) and justify the choice of tools.",
+              "unit": "Unit 1",
+              "type": "technologies-available-for-big-data"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on: (i) ETL Processing (ii) Big Data Analytics Tools (iii) Data Types in Hive and Pig.",
+              "unit": "Unit 3",
+              "type": "etl-processing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
