@@ -1,0 +1,526 @@
+{
+  "subject": {
+    "id": "ad-403",
+    "code": "AD-403",
+    "name": "Software Engineering with Agile Methodology",
+    "title": "AD-403 - Software Engineering with Agile Methodology",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Explain how both Waterfall model and Prototyping model can be accommodated in the Spiral Process Model.",
+              "unit": "Unit 1",
+              "type": "spiral-model"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Which is more important- The Product or Process? Justify your answer.",
+              "unit": "Unit 1",
+              "type": "product-and-process"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain Spiral model also write advantages and disadvantages of Spiral Model.",
+              "unit": "Unit 1",
+              "type": "spiral-model"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is Test case? What are the different levels of Testing?",
+              "unit": "Unit 2",
+              "type": "software-testing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain UML architecture.",
+              "unit": "Unit 2",
+              "type": "uml"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the main aim of Software configuration management? What is the basic requirement of Software configuration management?",
+              "unit": "Unit 3",
+              "type": "software-configuration-management"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain COCOMO Model in detail.",
+              "unit": "Unit 3",
+              "type": "cocomo-model"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define Agile. Explain how agile software development model is different from traditional development model.",
+              "unit": "Unit 4",
+              "type": "agile-vs-traditional"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the obstacles to the Agile process?",
+              "unit": "Unit 4",
+              "type": "agile-challenges"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the 4 unique phases in Agile model in sequence?",
+              "unit": "Unit 4",
+              "type": "agile-model-phases"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain Software risk analysis and management process.",
+              "unit": "Unit 3",
+              "type": "risk-assessment"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How can mixing Agile approaches like scrum kanban and XP benefit an organization?",
+              "unit": "Unit 5",
+              "type": "agile-frameworks"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "If a software product costs Rs. 10,000,000 for development, compute the annual maintenance cost given that every year approximately 5% of the code needs modification. Identify the factors which render the maintenance cost estimation inaccurate.",
+              "unit": "Unit 3",
+              "type": "software-maintenance"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain why do you think agile values are most needed for the agile mindset?",
+              "unit": "Unit 4",
+              "type": "agile-values"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is the main intent of a project metrics?",
+              "unit": "Unit 3",
+              "type": "project-metrics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "With neat sketches, explain iterative, waterfall and spiral models.",
+              "unit": "Unit 1",
+              "type": "software-process-models"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain briefly about evolutionary process models.",
+              "unit": "Unit 1",
+              "type": "evolutionary-process-models"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Analyze the RAD Model with neat diagram.",
+              "unit": "Unit 1",
+              "type": "rad-model"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the various testing activities? Discuss.",
+              "unit": "Unit 2",
+              "type": "software-testing"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain briefly about Architectural Design.",
+              "unit": "Unit 2",
+              "type": "architectural-design"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the testing principles the software engineer must apply while performing the software testing?",
+              "unit": "Unit 2",
+              "type": "software-testing"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the Re Engineering and Reverse Engineering with a suitable example.",
+              "unit": "Unit 3",
+              "type": "re-engineering-and-reverse-engineering"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain how Software Quality Assurance process differs from software development process.",
+              "unit": "Unit 3",
+              "type": "software-quality-assurance"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain in detail about Risk assessment and Risk Mitigation.",
+              "unit": "Unit 3",
+              "type": "risk-assessment"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail about the Benefits and Challenges of Agile.",
+              "unit": "Unit 4",
+              "type": "agile-benefits-and-challenges"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain various roles in agile process. How are these roles different from traditional roles?",
+              "unit": "Unit 5",
+              "type": "roles-in-agile"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How is agile methodology different from traditional methodologies?",
+              "unit": "Unit 4",
+              "type": "agile-vs-traditional"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is meant by user stories? How are they used in Agile? Discuss with the help of suitable example.",
+              "unit": "Unit 5",
+              "type": "user-stories"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is Scrum? What is the need of Scrum? What values are provided by Scrum?",
+              "unit": "Unit 5",
+              "type": "scrum"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Requirement validation and traceability",
+              "unit": "Unit 1",
+              "type": "requirement-validation-and-traceability"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Testing levels and test techniques",
+              "unit": "Unit 2",
+              "type": "software-testing"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Project plan and project metrics",
+              "unit": "Unit 3",
+              "type": "project-metrics"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Agile estimation and planning",
+              "unit": "Unit 5",
+              "type": "agile-estimation-and-planning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the phases of the Software Development Life Cycle (SDLC) in detail.",
+              "unit": "Unit 1",
+              "type": "sdlc"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Compare the Spiral and Incremental models with suitable diagrams.",
+              "unit": "Unit 1",
+              "type": "software-process-models"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the various project estimation techniques used in software engineering.",
+              "unit": "Unit 1",
+              "type": "project-estimation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are functional and non-functional requirements? Give examples.",
+              "unit": "Unit 1",
+              "type": "functional-and-non-functional-requirements"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the architectural design process and the different architectural views.",
+              "unit": "Unit 2",
+              "type": "architectural-design"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe any two software design metrics and their importance.",
+              "unit": "Unit 2",
+              "type": "design-metrics"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define software testing and explain the levels of testing.",
+              "unit": "Unit 2",
+              "type": "software-testing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write a short note on Test Case Design techniques with examples.",
+              "unit": "Unit 2",
+              "type": "test-case-design"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the types of software maintenance? Give suitable examples.",
+              "unit": "Unit 3",
+              "type": "software-maintenance"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain software configuration management (SCM) and its components.",
+              "unit": "Unit 3",
+              "type": "software-configuration-management"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the process of feasibility analysis in project management.",
+              "unit": "Unit 3",
+              "type": "feasibility-analysis"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain project scheduling and tracking techniques used in software projects.",
+              "unit": "Unit 3",
+              "type": "project-scheduling"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the Agile Manifesto? Discuss its principles and benefits.",
+              "unit": "Unit 4",
+              "type": "agile-manifesto"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Compare Agile development with the Waterfall model.",
+              "unit": "Unit 4",
+              "type": "agile-vs-waterfall"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define a User Story and explain the characteristics of a good user story.",
+              "unit": "Unit 5",
+              "type": "user-stories"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Describe the Scrum framework and the roles involved in it.",
+              "unit": "Unit 5",
+              "type": "scrum"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1194 @@
+{
+  "subject": {
+    "id": "me-603-a",
+    "code": "ME-603 (A)",
+    "name": "Turbomachinery",
+    "title": "ME-603 (A) - Turbomachinery",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2020",
+      "year": 2020,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss three types of turbomachines.",
+              "unit": "Unit 1",
+              "type": "principles-of-impulse-and-reaction-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define and derive the specific speed of a pump.",
+              "unit": "Unit 3",
+              "type": "unit-and-specific-quantities"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe velocity and pressure compounding of a steam turbine.",
+              "unit": "Unit 2",
+              "type": "velocity-and-pressure-compounding"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the various losses in a turbine.",
+              "unit": "Unit 2",
+              "type": "effect-of-blade-and-nozzle-losses-on-vane-efficiency-and-stage-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "In an impulse turbine with a single row wheel, the mean diameter of the blade is 1.05 m and the speed is 3000 rpm. The nozzle angle is 20° and the ratio of blade speed to steam speed is 0.45. The ratio of the relative velocity at outlet from the blade to that at inlet is 0.85. The outlet angle is made 3° less than the inlet angle. The steam flow rate is 10 kg/s. Draw the velocity diagram of the blade and show (i) the tangential thrust on the blade, (ii) the axial thrust on the blade, (iii) the resultant thrust on the blade, (iv) the power developed in the blade, and (v) the blade efficiency.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Draw a neat sketch of a Francis turbine.",
+              "unit": "Unit 3",
+              "type": "pelton-francis-and-kaplan-turbines"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define the various efficiencies of a hydraulic turbine.",
+              "unit": "Unit 3",
+              "type": "hydraulic-volumetric-mechanical-and-overall-efficiencies"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "The efficiency η of a fan depends upon the density ρ, the dynamic viscosity μ of the fluid, the angular velocity ω, the diameter D of the rotor and the discharge Q. Express η in terms of dimensionless parameters.",
+              "unit": "Unit 4",
+              "type": "fan-laws-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Derive an expression for the overall pressure ratio developed in a centrifugal pump.",
+              "unit": "Unit 3",
+              "type": "vector-diagram-and-work-done"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are positive displacement machines?",
+              "unit": "Unit 5",
+              "type": "positive-displacement-machines-and-turbo-machines-their-distinction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw a neat sketch of a torque convertor.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two: Degree of reaction of a turbomachine.",
+              "unit": "Unit 1",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any two: Governing of a steam turbine.",
+              "unit": "Unit 2",
+              "type": "governing-and-performance-characteristics-of-steam-turbines"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any two: Vector diagram of an axial flow compressor.",
+              "unit": "Unit 4",
+              "type": "axial-flow-compressors-vector-diagrams-work-done-factor"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any two: Slip and efficiency of a fluid coupling.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the second law of thermodynamics and how it is related to a boiler.",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the role of entropy in the definition of the second law of thermodynamics?",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write down the expression for equivalent evaporation for a steam generator.",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe any one type of boiler in detail.",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Draw the velocity diagram of an impulse steam turbine.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How are the velocity diagrams of a steam turbine and a hydro turbine related to each other?",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you mean by the manometric head of a hydro turbine?",
+              "unit": "Unit 3",
+              "type": "definition-of-mano-metric-head-gross-head-static-head"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find the expression for the power produced by a steam turbine.",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the term degree of reaction for a steam turbine.",
+              "unit": "Unit 2",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the vector diagram of an axial flow compressor.",
+              "unit": "Unit 4",
+              "type": "axial-flow-compressors-vector-diagrams-work-done-factor"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write down the effect of blade and nozzle losses on vane efficiency.",
+              "unit": "Unit 2",
+              "type": "effect-of-blade-and-nozzle-losses-on-vane-efficiency-and-stage-efficiency"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What do you mean by the stage efficiency of a steam turbine?",
+              "unit": "Unit 2",
+              "type": "carry-over-efficiency-stage-efficiency-vane-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "State the difference between the hydraulic, mechanical and overall efficiency of a hydro turbine.",
+              "unit": "Unit 3",
+              "type": "hydraulic-volumetric-mechanical-and-overall-efficiencies"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write down the application of power transmitting devices at industrial level.",
+              "unit": "Unit 5",
+              "type": "application-and-general-theory"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is a torque converter, and where is it used?",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What are positive displacement pumps?",
+              "unit": "Unit 5",
+              "type": "positive-displacement-pumps-with-fixed-and-variable-displacements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Which equation is called Euler's equation for a reaction turbine? What is Euler's energy equation?",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define and derive the specific speed of a pump.",
+              "unit": "Unit 3",
+              "type": "unit-and-specific-quantities"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the degree of reaction in turbomachinery? What is a 50% reaction turbine?",
+              "unit": "Unit 1",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe velocity and pressure compounding of a steam turbine.",
+              "unit": "Unit 2",
+              "type": "velocity-and-pressure-compounding"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the various losses in a turbine.",
+              "unit": "Unit 2",
+              "type": "effect-of-blade-and-nozzle-losses-on-vane-efficiency-and-stage-efficiency"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the factors that affect the performance of steam turbines? What is the condition of maximum efficiency of a turbine?",
+              "unit": "Unit 2",
+              "type": "conditions-for-optimum-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Dry saturated steam is expanded in a nozzle from 1.3 MPa to 0.1 MPa. Assume that the friction loss in the nozzle is equal to 10% of the total enthalpy drop. Calculate the mass of steam discharged when the nozzle exit diameter is 10 mm.",
+              "unit": "Unit 2",
+              "type": "mass-flow-and-blade-height"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are positive displacement machines?",
+              "unit": "Unit 5",
+              "type": "positive-displacement-machines-and-turbo-machines-their-distinction"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "The velocity of steam leaving a nozzle is 925 m/s and the nozzle angle is 208. The blade speed is 250 m/s. The mass flow through the turbine nozzles and blading is 0.182 kg/s and the blade velocity coefficient is 0.7. Calculate the following: (i) velocity of whirl, (ii) tangential force on the blades, (iii) axial force on the blades, (iv) work done on the blades, (v) efficiency of blading, and (vi) inlet angle of the blades for shockless inflow of steam. Assume that the inlet and outlet blade angles are equal.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "In one stage of an impulse turbine, the velocity of steam at the exit from the nozzle is 460 m/s, the nozzle angle is 22° and the blade angle is 33°. Find the blade speed so that the steam passes on without shock. Also find the stage efficiency and the end thrust on the shaft, assuming the velocity coefficient is 0.75 and the blades are symmetrical.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Draw a neat sketch of a torque converter.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define the various efficiencies of a hydraulic turbine.",
+              "unit": "Unit 3",
+              "type": "hydraulic-volumetric-mechanical-and-overall-efficiencies"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any three of the following: Degree of reaction of a turbomachine.",
+              "unit": "Unit 1",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any three of the following: Governing of a steam turbine.",
+              "unit": "Unit 2",
+              "type": "governing-and-performance-characteristics-of-steam-turbines"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any three of the following: Vector diagram of an axial flow compressor.",
+              "unit": "Unit 4",
+              "type": "axial-flow-compressors-vector-diagrams-work-done-factor"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any three of the following: Slip and efficiency of a fluid coupling.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the application of the second law of thermodynamics to turbo machines.",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Derive the moment of momentum equation and the Euler turbine equation for a turbo machine.",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2",
+              "label": "",
+              "text": "The velocity of steam at inlet to a simple impulse turbine is 1000 m/s and the nozzle angle is 20°. The blade speed is 400 m/s and the blades are symmetrical. Calculate the blade angles, the tangential force on the blade, the diagram power, the axial thrust and the diagram efficiency for a mass flow rate of 0.75 kg/s. Neglect friction losses.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Derive an expression for optimizing the blade efficiency of an impulse steam turbine.",
+              "unit": "Unit 2",
+              "type": "analysis-for-optimum-efficiency"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the various losses in a turbine.",
+              "unit": "Unit 2",
+              "type": "effect-of-blade-and-nozzle-losses-on-vane-efficiency-and-stage-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is a draft tube? Explain the different types of draft tubes.",
+              "unit": "Unit 3",
+              "type": "draft-tubes"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A Pelton wheel is to be designed for a head of 60 m when running at 200 rpm. The Pelton wheel develops 95.6475 kW shaft power. The velocity of the buckets is 0.45 times the velocity of the jet, the overall efficiency is 0.85 and the coefficient of velocity is 0.98.",
+              "unit": "Unit 3",
+              "type": "pelton-francis-and-kaplan-turbines"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define the specific speed of a turbine. Derive an expression for the specific speed.",
+              "unit": "Unit 3",
+              "type": "unit-and-specific-quantities"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "With the help of a neat sketch, discuss the main parts of a centrifugal pump.",
+              "unit": "Unit 3",
+              "type": "centrifugal-pumps-classification"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe surging and choking in a compressor.",
+              "unit": "Unit 4",
+              "type": "dimensional-analysis-characteristics-surging"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Compare an axial flow compressor and a centrifugal compressor.",
+              "unit": "Unit 4",
+              "type": "centrifugal-and-axial-flow-machines"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is a torque converter? Explain the working principle of a converter with the help of a neat sketch.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A hydraulic press has a ram of 200 mm diameter and a plunger of 30 mm diameter. It is used for lifting 3 kN. Find the force required at the plunger.",
+              "unit": "Unit 5",
+              "type": "hydrostatic-systems-hydraulic-intensifier-accumulator-press-and-crane"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any three of the following: Velocity and pressure compounding in steam turbines.",
+              "unit": "Unit 2",
+              "type": "velocity-and-pressure-compounding"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any three of the following: Degree of reaction of turbomachinery.",
+              "unit": "Unit 1",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any three of the following: Various efficiencies of hydraulic turbines.",
+              "unit": "Unit 3",
+              "type": "hydraulic-volumetric-mechanical-and-overall-efficiencies"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any three of the following: Governing of steam turbines.",
+              "unit": "Unit 2",
+              "type": "governing-and-performance-characteristics-of-steam-turbines"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the application of the first law of thermodynamics to turbo machines.",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Derive the general Euler's equation for turbo machines.",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2",
+              "label": "",
+              "text": "The following data relate to a single stage impulse turbine: steam velocity = 600 m/s, blade speed = 250 m/s, nozzle angle = 20°, blade outlet angle = 25°. Neglecting the effect of friction, calculate the work developed by the turbine for a steam flow rate of 20 kg/s. Also calculate the axial thrust on the bearings.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Derive the maximum blade efficiency of a Parsons reaction steam turbine.",
+              "unit": "Unit 2",
+              "type": "reaction-staging-parsons-stages"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the reheat factor in steam turbines with the help of a neat diagram.",
+              "unit": "Unit 2",
+              "type": "reheat-factor-in-turbines"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "A Pelton wheel is to be designed for a head of 60 m when running at 200 rpm. The Pelton wheel develops 95.6475 kW shaft power. The velocity of the buckets is 0.45 times the velocity of the jet, the overall efficiency is 0.85 and the coefficient of velocity is 0.98.",
+              "unit": "Unit 3",
+              "type": "pelton-francis-and-kaplan-turbines"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How are hydraulic turbines classified?",
+              "unit": "Unit 3",
+              "type": "classification-of-water-turbines"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "A turbine is to operate under a head of 25 m at 200 rpm. The discharge is 9 cumec. If the efficiency is 90%, determine (i) the specific speed of the turbine, (ii) the power generated, and (iii) the type of turbine.",
+              "unit": "Unit 3",
+              "type": "unit-and-specific-quantities"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Derive an expression for the degree of reaction of an axial flow compressor.",
+              "unit": "Unit 4",
+              "type": "temp-and-pressure-ratio-degree-of-reaction"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw and explain the characteristic curves of fans.",
+              "unit": "Unit 4",
+              "type": "fan-laws-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is a hydraulic coupling? Explain, with a neat sketch, the working of a hydraulic coupling.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain, with the help of a neat sketch, the working principle of a hydraulic accumulator.",
+              "unit": "Unit 5",
+              "type": "hydrostatic-systems-hydraulic-intensifier-accumulator-press-and-crane"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any three of the following: Degree of reaction in steam turbines.",
+              "unit": "Unit 2",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any three of the following: Working of centrifugal pumps.",
+              "unit": "Unit 3",
+              "type": "centrifugal-pumps-classification"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any three of the following: Surging and choking in a compressor.",
+              "unit": "Unit 4",
+              "type": "dimensional-analysis-characteristics-surging"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any three of the following: Hydraulic press.",
+              "unit": "Unit 5",
+              "type": "hydrostatic-systems-hydraulic-intensifier-accumulator-press-and-crane"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the term degree of reaction for any steam turbine.",
+              "unit": "Unit 2",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "The efficiency η of a fan depends upon the density ρ, the dynamic viscosity μ of the fluid, the angular velocity ω, the diameter D of the rotor and the discharge Q. Express η in terms of dimensionless parameters.",
+              "unit": "Unit 4",
+              "type": "fan-laws-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Which equation is called Euler's equation for a reaction turbine? What is Euler's energy equation?",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "The following particulars refer to a stage of a Parsons steam turbine comprising one ring of fixed blades and one ring of moving blades. The mean diameter of the blade ring is 70 cm, the speed is 3000 rpm, the steam velocity at exit from the blades is 160 m/s, the blade outlet angle is 20° and the steam flow through the blades is 7 kg/s. Draw the velocity diagram and find (i) the blade inlet angle, (ii) the tangential force on the ring of moving blades, and (iii) the power developed in a stage.",
+              "unit": "Unit 2",
+              "type": "reaction-staging-parsons-stages"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the reheat factor? What causes the improvement in efficiency of a multi-stage turbine as compared with a single stage turbine having the same stage efficiency?",
+              "unit": "Unit 2",
+              "type": "reheat-factor-in-turbines"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe velocity and pressure compounding of a steam turbine.",
+              "unit": "Unit 2",
+              "type": "velocity-and-pressure-compounding"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What are the advantages of a centrifugal pump over a reciprocating pump? Explain in brief.",
+              "unit": "Unit 3",
+              "type": "advantage-over-reciprocating-type"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the phenomenon of cavitation in water turbines.",
+              "unit": "Unit 3",
+              "type": "cavitations"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "A Pelton wheel has a mean bucket diameter of 1 m and runs at 1000 rpm. The net head on the Pelton wheel is 700 m. If the side clearance angle is 15° and the discharge through the nozzle is 0.1 m³/s, find (i) the power available at the nozzle and (ii) the hydraulic efficiency of the turbine.",
+              "unit": "Unit 3",
+              "type": "pelton-francis-and-kaplan-turbines"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define surging and the efficiency of an axial flow compressor.",
+              "unit": "Unit 4",
+              "type": "dimensional-analysis-characteristics-surging"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the polytropic efficiency of a compressor.",
+              "unit": "Unit 4",
+              "type": "polytrophic-and-isentropic-efficiencies"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw the vector diagram of a centrifugal compressor.",
+              "unit": "Unit 4",
+              "type": "centrifugal-compressor-vector-diagrams-work-done-temp-and-pressure-ratio"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Write down the application of power transmitting devices at industrial level.",
+              "unit": "Unit 5",
+              "type": "application-and-general-theory"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the working principle of a fluid coupling with the help of a neat diagram.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two: Centrifugal blower.",
+              "unit": "Unit 4",
+              "type": "centrifugal-blowers-vane-shape-velocity-triangle-degree-of-reactions"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write a short note on any two: Hydraulic intensifier.",
+              "unit": "Unit 5",
+              "type": "hydrostatic-systems-hydraulic-intensifier-accumulator-press-and-crane"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write a short note on any two: Draft tube.",
+              "unit": "Unit 3",
+              "type": "draft-tubes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss the application of the second law of thermodynamics in the analysis of turbomachines.",
+              "unit": "Unit 1",
+              "type": "application-of-first-and-second-laws-of-thermodynamics-to-turbo-machines"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Derive the moment of momentum equation for turbomachines and explain its significance.",
+              "unit": "Unit 1",
+              "type": "moment-of-momentum-equation-and-euler-turbine-equation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe velocity and pressure compounding of a steam turbine.",
+              "unit": "Unit 2",
+              "type": "velocity-and-pressure-compounding"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Derive the condition for maximum efficiency of a reaction stage.",
+              "unit": "Unit 2",
+              "type": "conditions-for-optimum-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the construction and working of a Kaplan turbine. Discuss its advantages and applications.",
+              "unit": "Unit 3",
+              "type": "pelton-francis-and-kaplan-turbines"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the advantages of centrifugal pumps over reciprocating pumps.",
+              "unit": "Unit 3",
+              "type": "advantage-over-reciprocating-type"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "A Pelton wheel has a mean bucket speed of 10 m/s, with a jet of water flowing at the rate of 700 litres/s under a head of 30 m. The buckets deflect the jet through an angle of 160°. Calculate (i) the power given by the water to the runner and (ii) the hydraulic efficiency of the turbine. Assume the coefficient of velocity is 0.98.",
+              "unit": "Unit 3",
+              "type": "pelton-francis-and-kaplan-turbines"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Differentiate between a centrifugal compressor and an axial flow compressor.",
+              "unit": "Unit 4",
+              "type": "centrifugal-and-axial-flow-machines"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "State and explain the fan laws. Discuss their engineering applications.",
+              "unit": "Unit 4",
+              "type": "fan-laws-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the construction and working of a torque converter with the help of a neat diagram.",
+              "unit": "Unit 5",
+              "type": "fluid-coupling-and-torque-converter"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Differentiate between a hydraulic intensifier and a hydraulic accumulator.",
+              "unit": "Unit 5",
+              "type": "hydrostatic-systems-hydraulic-intensifier-accumulator-press-and-crane"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "In a single-stage impulse turbine, the nozzle discharges hot gas onto the blades at a velocity of 750 m/s. The mass flow rate of gas is 100 kg/s. The turbine rotates at 20000 rpm. The mean diameter of the wheel is 31.5 cm. The nozzles are inclined at 20° to the plane of wheel rotation. Calculate (i) the power developed by the blades, in MW, (ii) the energy lost in the blades, in MW, and (iii) the blade efficiency of the turbine. Assume the blade friction coefficient is 0.92 and the outlet blade angle is 25° to the plane of rotation.",
+              "unit": "Unit 2",
+              "type": "impulse-staging"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Explain any two of the following: Degree of reaction of a turbomachine.",
+              "unit": "Unit 1",
+              "type": "degree-of-reaction"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Explain any two of the following: Surging in a compressor.",
+              "unit": "Unit 4",
+              "type": "dimensional-analysis-characteristics-surging"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Explain any two of the following: Draft tubes.",
+              "unit": "Unit 3",
+              "type": "draft-tubes"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Explain any two of the following: Positive displacement pumps.",
+              "unit": "Unit 5",
+              "type": "positive-displacement-pumps-with-fixed-and-variable-displacements"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

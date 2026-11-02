@@ -1,0 +1,248 @@
+{
+  "subject": {
+    "id": "me-802-b",
+    "code": "ME-802 (B)",
+    "name": "Tribology And Maintenance Engineering",
+    "title": "ME-802 (B) - Tribology And Maintenance Engineering",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the historical developments and industrial significance of tribology?",
+              "unit": "Unit 1",
+              "type": "history-of-tribology"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between conforming and non-conforming contact.",
+              "unit": "Unit 1",
+              "type": "surface-contacts"
+            },
+            {
+              "id": "q1c",
+              "label": "c)",
+              "text": "Explain Stick slip phenomenon.",
+              "unit": "Unit 2",
+              "type": "stick-slip-characteristics"
+            },
+            {
+              "id": "q1d",
+              "label": "d)",
+              "text": "How to reduce the adhesive component of friction?",
+              "unit": "Unit 2",
+              "type": "theory-of-adhesion-and-abrasion"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is meant by Elastic half spheres?",
+              "unit": "Unit 1",
+              "type": "hertz-contact-stresses"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the classification of bearing based on the applied load.",
+              "unit": "Unit 5",
+              "type": "bearings-clutches-and-brakes"
+            },
+            {
+              "id": "q2c",
+              "label": "c)",
+              "text": "Explain different types of bearing based on film thickness.",
+              "unit": "Unit 4",
+              "type": "boundary-mixed-and-fluid-film-lubrication"
+            },
+            {
+              "id": "q2d",
+              "label": "d)",
+              "text": "What are the advantages and disadvantages of cylindrical roller bearings?",
+              "unit": "Unit 5",
+              "type": "bearings-clutches-and-brakes"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the laws of friction and explain the exceptions of these laws?",
+              "unit": "Unit 2",
+              "type": "laws-of-friction"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain Bowden Tabor's theory of friction.",
+              "unit": "Unit 2",
+              "type": "theory-of-adhesion-and-abrasion"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "text": "Explain any two factors affecting friction.",
+              "unit": "Unit 2",
+              "type": "operating-conditions-and-system-parameters"
+            },
+            {
+              "id": "q3d",
+              "label": "d)",
+              "text": "Describe the Physical vapour deposition technique with the help of a sketch.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "List out any three friction measuring equipment. Explain any one of the methods in detail.",
+              "unit": "Unit 2",
+              "type": "calculations-of-coefficient-of-friction"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Suggest any two coating methods to improve high temperature oxidation and corrosion.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is meant by electro plating?",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain its three advantages and three disadvantages of electroplating method.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            },
+            {
+              "id": "q5c",
+              "label": "c)",
+              "text": "Explain any five micro structural treatments.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain any three geometrical parameters of coating.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the hard facing coating technique with the help of a sketch.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            },
+            {
+              "id": "q6c",
+              "label": "c)",
+              "text": "Suggest any two methods of coating to acidic environments.",
+              "unit": "Unit 1",
+              "type": "tribo-surface-preparations-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain hydrodynamic and elastro-dynamic lubrication.",
+              "unit": "Unit 4",
+              "type": "boundary-mixed-and-fluid-film-lubrication"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "List the assumptions in the Hertzian analysis of contact between surfaces.",
+              "unit": "Unit 1",
+              "type": "hertz-contact-stresses"
+            },
+            {
+              "id": "q7c",
+              "label": "c)",
+              "text": "State Amonton's laws of friction.",
+              "unit": "Unit 2",
+              "type": "laws-of-friction"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define wear and explain any two types of wear.",
+              "unit": "Unit 3",
+              "type": "different-types-of-wear-mechanisms"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Mention any five factors affecting wear and explain them.",
+              "unit": "Unit 3",
+              "type": "calculations-of-wear-rate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

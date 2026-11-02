@@ -1,0 +1,665 @@
+{
+  "subject": {
+    "id": "me-803-b",
+    "code": "ME-803 (B)",
+    "name": "Energy Conservation, Management & Audit",
+    "title": "ME-803 (B) - Energy Conservation, Management & Audit",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the energy management opportunities in motors.",
+              "unit": "Unit 4",
+              "type": "energy-conservation-in-motors-pumps-and-fan-systems"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the Duties and responsibilities of energy managers?",
+              "unit": "Unit 1",
+              "type": "duties-and-responsibilities-of-energy-managers"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2",
+              "label": "",
+              "text": "What is meant by waste heat recovery? What are the direct and indirect benefits of waste heat recovery?",
+              "unit": "Unit 5",
+              "type": "cogeneration-and-waste-heat-recovery"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is meant by simple payback period? Calculate simple payback period for a boiler that cost Rs.75.00 lakhs to purchase and Rs. 5 lakhs per year on an average to operate and maintain and is expected to annually save Rs. 30 lakhs?",
+              "unit": "Unit 1",
+              "type": "economic-analysis"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write short note on force field analysis and its application.",
+              "unit": "Unit 3",
+              "type": "force-field-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain any five energy management opportunities in lighting systems.",
+              "unit": "Unit 1",
+              "type": "lighting"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the maximum demand.",
+              "unit": "Unit 1",
+              "type": "energy-demand-and-supply"
+            },
+            {
+              "id": "q4c",
+              "label": "c)",
+              "text": "Explain the methods to control maximum demands.",
+              "unit": "Unit 1",
+              "type": "energy-demand-and-supply"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is meant by Steam traps? Explain the operation of thermostatic steam trap.",
+              "unit": "Unit 5",
+              "type": "energy-conservation-in-boilers-steam-turbine-and-industrial-heating-system"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain how setting a lower evaporator temperature helps in reducing the power consumption of an air conditioning system? List down any three energy saving measures in domestic air conditioning system.",
+              "unit": "Unit 1",
+              "type": "havc"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between simple payback period and net present value method.",
+              "unit": "Unit 1",
+              "type": "economic-analysis"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the importance of Thermal insulation for thermal energy management.",
+              "unit": "Unit 5",
+              "type": "thermal-insulation"
+            },
+            {
+              "id": "q6c",
+              "label": "c)",
+              "text": "What is the effect of low power factor of the system?",
+              "unit": "Unit 2",
+              "type": "understanding-energy-cost"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is meant by loading of motor? Why does the efficiency of motor reduce when it operates at lower loading? List down any 2 steps to improve the operating efficiency of under-loaded motors.",
+              "unit": "Unit 4",
+              "type": "energy-conservation-in-motors-pumps-and-fan-systems"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the Concepts of energy efficient motors.",
+              "unit": "Unit 4",
+              "type": "energy-efficient-motors"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "A paper manufacturing company has a contract demand of 5000 kVA with the power supply company. The average maximum demand of the plant is 3850 kVA/month at a power factor of 0.95. The maximum demand is billed at the rate of Rs.500/kVA/month. The minimum billable maximum demand is 75% of the contract demand. An incentive of 0.5% reduction in energy charges component of electricity bill is provided for every 0.01 increase in power factor over and above 0.95. The average energy charge component of the electricity bill per month for the plant is Rs. 20 lakhs. The plant decides to increase the power factor to unity by installing capacitor banks. Find the annual reduction in demand component charges and energy component charges? Find the kVAR required to improve the power factor from 0.95 to unity?",
+              "unit": "Unit 2",
+              "type": "understanding-energy-cost"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss role, duties, responsibilities and qualifications of an energy manager in industry.",
+              "unit": "Unit 1",
+              "type": "duties-and-responsibilities-of-energy-managers"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the tips for energy conservation in the Heating Ventilation and Air Conditioning systems.",
+              "unit": "Unit 1",
+              "type": "havc"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Distinguish between 'Preliminary Energy Audit' and 'Detailed Energy Audit'.",
+              "unit": "Unit 2",
+              "type": "definition-need-and-types-of-energy-audit"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "List energy audit instruments. Discuss any three in detail.",
+              "unit": "Unit 2",
+              "type": "energy-audit-instruments"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write some important highlights, focusing area and distribution of power under Energy Conservation Act, 2001.",
+              "unit": "Unit 2",
+              "type": "energy-conservation-act"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the terms: energy benchmarking, energy cost, energy performance.",
+              "unit": "Unit 2",
+              "type": "bench-marking"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is energy policy planning? Explain key elements considered in Energy Action Planning.",
+              "unit": "Unit 3",
+              "type": "key-elements-of-energy-action-planning"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Force Field Analysis? How it can be done? Discuss.",
+              "unit": "Unit 3",
+              "type": "force-field-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain energy conservation techniques in electrical motors.",
+              "unit": "Unit 4",
+              "type": "energy-conservation-in-motors-pumps-and-fan-systems"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "State rationale and benefits for Monitoring, Targeting and Reporting in energy system.",
+              "unit": "Unit 4",
+              "type": "definition-of-monitoring-and-targeting"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain energy conservation in steam turbine.",
+              "unit": "Unit 5",
+              "type": "energy-conservation-in-boilers-steam-turbine-and-industrial-heating-system"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain principle of thermal insulation. List five insulation materials with specifications.",
+              "unit": "Unit 5",
+              "type": "thermal-insulation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define Fluidized Bed Combustion (FBC). State its applications.",
+              "unit": "Unit 5",
+              "type": "application-of-fbc"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss thermal energy enhancement techniques in solar water heater.",
+              "unit": "Unit 5",
+              "type": "energy-conservation-in-boilers-steam-turbine-and-industrial-heating-system"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on following (any two): a) Data and information analysis b) Building Energy Management c) Heat pump d) Waste heat recovery system",
+              "unit": "Unit 4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Write a short description about Availability-Based Tariff (ABT).",
+              "unit": "Unit 2",
+              "type": "understanding-energy-cost"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the difference between energy conservation and energy efficiency with suitable example?",
+              "unit": "Unit 1",
+              "type": "energy-conservation-basic-concept"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Briefly explain Renewable Purchase Obligation (RPO) and means by which this requirement can be met?",
+              "unit": "Unit 2",
+              "type": "fuel-and-energy-substitution"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe properly the ten steps methodology for conducting detailed energy audit?",
+              "unit": "Unit 2",
+              "type": "energy-management-audit-approach"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are the areas that need to be focused during pre-audit phase?",
+              "unit": "Unit 2",
+              "type": "energy-management-audit-approach"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the role of following energy audit instruments in detail? i) Infrared Thermometer ii) Stroboscope",
+              "unit": "Unit 2",
+              "type": "energy-audit-instruments"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "A solution which contains 10% solids is mixed with 25% solid solution. A single output which is 20% solid is removed. If the 10% solution enters at 5 kg/s, what are the other rates? (Assume there is no accumulation.)",
+              "unit": "Unit 3",
+              "type": "material-and-energy-balance-diagrams"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A furnace shell has to be cooled from 90°C to 55°C. The mass of the furnace shell is 2 tonnes, heat of furnace shell is 0.2 kcal/kg°C. Water is available at 28°C. The maximum allowed increase in water temperature is 5°C. Calculate the quantity of water required to cool the furnace. Neglect heat loss.",
+              "unit": "Unit 3",
+              "type": "material-and-energy-balance-diagrams"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the Sankey diagram with a suitable example?",
+              "unit": "Unit 3",
+              "type": "material-and-energy-balance-diagrams"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the any five power loss area and their possible efficiency improvement for energy efficient motors?",
+              "unit": "Unit 4",
+              "type": "energy-efficient-motors"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "List at least 5 steps involved in CUSUM analysis?",
+              "unit": "Unit 4",
+              "type": "definition-of-monitoring-and-targeting"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain with a sketch the concept of pump head flow characteristics and system resistance?",
+              "unit": "Unit 4",
+              "type": "energy-conservation-in-motors-pumps-and-fan-systems"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "As a means of performance evaluation, explain the difference between efficiency and evaporation ratio?",
+              "unit": "Unit 5",
+              "type": "energy-conservation-in-boilers-steam-turbine-and-industrial-heating-system"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the direct testing method of boiler with suitable sketch and flow chart?",
+              "unit": "Unit 5",
+              "type": "energy-conservation-in-boilers-steam-turbine-and-industrial-heating-system"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short note on (any two): a) Energy Conservation in transportation b) Energy Management Information System (EMIS) c) Sensitivity and Risk analysis",
+              "unit": "Unit 1/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain various techniques of Energy Management.",
+              "unit": "Unit 1",
+              "type": "concept-of-energy-management"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between Energy conservation and Energy efficiency.",
+              "unit": "Unit 1",
+              "type": "energy-conservation-basic-concept"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain various steps involved in detailed Energy Audit Methodology.",
+              "unit": "Unit 2",
+              "type": "energy-management-audit-approach"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "List down the important energy audit instrument used in energy audit. Also explain briefly about their function.",
+              "unit": "Unit 2",
+              "type": "energy-audit-instruments"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the Step-by-Step method for preparing a Process Flow Diagram and Energy balance diagram.",
+              "unit": "Unit 3",
+              "type": "method-for-preparing-process-flow"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the key elements of Energy Action Planning. How does Force Field Analysis help in implementing Energy Management Initiatives?",
+              "unit": "Unit 3",
+              "type": "key-elements-of-energy-action-planning"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define Monitoring and Targeting (M&T). Explain its importance in Energy Management with suitable examples.",
+              "unit": "Unit 4",
+              "type": "definition-of-monitoring-and-targeting"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss various methods of energy conservation in electric motors.",
+              "unit": "Unit 4",
+              "type": "energy-conservation-in-motors-pumps-and-fan-systems"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain various methods of energy conservation in boilers and steam turbines.",
+              "unit": "Unit 5",
+              "type": "energy-conservation-in-boilers-steam-turbine-and-industrial-heating-system"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the importance of Thermal Insulation for Thermal Energy Management.",
+              "unit": "Unit 5",
+              "type": "thermal-insulation"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Elaborate about energy audit reporting format.",
+              "unit": "Unit 2",
+              "type": "energy-management-audit-approach"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Distinguish between 'Preliminary energy audit' and 'Detailed energy audit'.",
+              "unit": "Unit 2",
+              "type": "definition-need-and-types-of-energy-audit"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A fluorescent tube light consumes 40 watt for the tube and 10 watt for choke. If the lamp operates for eight hours per day in a year, calculate the total Energy Cost per annum if the Energy cost is Rs. 3 per kW hour.",
+              "unit": "Unit 1",
+              "type": "lighting"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain in brief various aspects of \"Energy Conservation Act 2001\".",
+              "unit": "Unit 2",
+              "type": "energy-conservation-act"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following (any two): (i) Duties and responsibility of energy manager (ii) Building energy Management (iii) Concept of Data and Information Analysis in energy management (iv) Waste heat recovery system",
+              "unit": "Unit 1/5/4/5",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

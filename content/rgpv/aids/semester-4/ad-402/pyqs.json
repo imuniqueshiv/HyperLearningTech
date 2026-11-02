@@ -1,0 +1,728 @@
+{
+  "subject": {
+    "id": "ad-402",
+    "code": "AD-402",
+    "name": "Database Management System",
+    "title": "AD-402 - Database Management System",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain in brief architecture of DBMS with a neat sketch.",
+              "unit": "Unit 1",
+              "type": "dbms-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "List and explain the advantages of DBMS.",
+              "unit": "Unit 1",
+              "type": "advantages-of-dbms"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "State and explain various features of E-R Models.",
+              "unit": "Unit 1",
+              "type": "er-model"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the usage of 'group by' and 'having' clauses in SQL.",
+              "unit": "Unit 2",
+              "type": "sql-group-by-having"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain division operation in relational algebra with a suitable example.",
+              "unit": "Unit 2",
+              "type": "relational-algebra-division"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "List out the properties of relation algebra.",
+              "unit": "Unit 2",
+              "type": "relational-algebra"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define closure of F. Where F is the set of functional dependencies. Explain computing F+ with suitable examples.",
+              "unit": "Unit 3",
+              "type": "functional-dependency"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the conditions required for a relation to be in 1NF and 2NF with a suitable example.",
+              "unit": "Unit 3",
+              "type": "normal-forms"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "List and explain the steps for optimizing the Query.",
+              "unit": "Unit 3",
+              "type": "query-optimization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss in detail time stamp based concurrency control protocol.",
+              "unit": "Unit 4",
+              "type": "timestamp-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the procedure to test serializability of a schedule with an example.",
+              "unit": "Unit 4",
+              "type": "serializability"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Differentiate between OODBMS and DBMS.",
+              "unit": "Unit 4",
+              "type": "oodbms-vs-dbms"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain in brief the procedure for data extraction from single and multiple tables.",
+              "unit": "Unit 2",
+              "type": "sql-data-extraction"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss in detail stored procedures.",
+              "unit": "Unit 2",
+              "type": "stored-procedures"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Object oriented data Model",
+              "unit": "Unit 1",
+              "type": "object-oriented-data-model"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Referential integrity",
+              "unit": "Unit 2",
+              "type": "referential-integrity"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Cost estimation based optimization method",
+              "unit": "Unit 3",
+              "type": "cost-estimation-optimization"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Multiple granularity",
+              "unit": "Unit 4",
+              "type": "multiple-granularity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the architecture of a typical database system.",
+              "unit": "Unit 1",
+              "type": "dbms-architecture"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Differentiate between conceptual, logical, and physical schemas.",
+              "unit": "Unit 1",
+              "type": "data-schemas"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss the suitability of each, object-oriented, network and relational data models for different types of applications.",
+              "unit": "Unit 1",
+              "type": "data-models"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Define a relational database schema. Discuss the components of a schema, including tables, attributes, and relationships.",
+              "unit": "Unit 2",
+              "type": "relational-schema"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the difference between intension and extension using examples.",
+              "unit": "Unit 2",
+              "type": "intension-and-extension"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Compare and contrast tuple-oriented and domain-oriented relational calculus.",
+              "unit": "Unit 2",
+              "type": "relational-calculus"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the objectives of normalization, such as minimizing redundancy and dependency preservation.",
+              "unit": "Unit 3",
+              "type": "normalization"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Provide examples illustrating functional dependencies in relational databases.",
+              "unit": "Unit 3",
+              "type": "functional-dependency"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss the role of fourth normal form (4NF) in handling multivalued dependencies.",
+              "unit": "Unit 3",
+              "type": "fourth-normal-form"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain locking techniques for concurrency control, including exclusive locks, shared locks, and deadlock detection/prevention mechanisms.",
+              "unit": "Unit 4",
+              "type": "locking-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the challenges associated with distributed database management, such as data fragmentation, replication, and distributed transaction management.",
+              "unit": "Unit 4",
+              "type": "distributed-databases"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Provide a comparative study of OODBMS vs. DBMS, highlighting their strengths and weaknesses in different scenarios.",
+              "unit": "Unit 4",
+              "type": "oodbms-vs-dbms"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the usage of special operators such as LIKE, ANY, ALL, EXISTS, and IN in SQL queries.",
+              "unit": "Unit 2",
+              "type": "sql-operators"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Introduce the concept of NoSQL databases and discuss their characteristics and advantages compared to traditional RDBMS.",
+              "unit": "Unit 1",
+              "type": "nosql-databases"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Relational algebra and relational calculus",
+              "unit": "Unit 2",
+              "type": "relational-algebra-and-calculus"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Select, Project, and Join Operations",
+              "unit": "Unit 2",
+              "type": "relational-algebra-operations"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Concurrency Control Techniques",
+              "unit": "Unit 4",
+              "type": "concurrency-control"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Data Dictionary and Dynamic Performance Views",
+              "unit": "Unit 1",
+              "type": "data-dictionary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define the following.\ni) Data\nii) Data base\niii) Data base management",
+              "unit": "Unit 1",
+              "type": "dbms-concepts"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the responsibilities of DBA? Explain in detail.",
+              "unit": "Unit 1",
+              "type": "dba-responsibilities"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write the differences between Database approach v/s Traditional file accessing approach.",
+              "unit": "Unit 1",
+              "type": "database-vs-file-approach"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find the Cartesian product of the following P and Q.\n\nP (A, B, C)          Q (B, C, D)\nA    B    C           B    C    D\nC    C    D           B    F    M\nA    D    N           F    G    R\nD    E    H           I    J    K",
+              "unit": "Unit 2",
+              "type": "cartesian-product"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define primary key and foreign key constraint and how these constraints are expressed in SQL?",
+              "unit": "Unit 2",
+              "type": "keys-and-sql-constraints"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Describe about tuple relational calculus with suitable example.",
+              "unit": "Unit 2",
+              "type": "tuple-relational-calculus"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Illustrate insertion, deletion and modification anomalies with suitable examples.",
+              "unit": "Unit 3",
+              "type": "update-anomalies"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Given below are the two sets of FD's for a relation R(A, B, C, D, E), are they equivalent? Explain.\ni) A → B, AB → C, D → AC, D → E\nii) A → BC, D → AE",
+              "unit": "Unit 3",
+              "type": "functional-dependency"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Normalization? Explain about 4NF with an example.",
+              "unit": "Unit 3",
+              "type": "fourth-normal-form"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "How does the granularity of data items affect the performance of concurrency control? Explain.",
+              "unit": "Unit 4",
+              "type": "concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write the advantages and disadvantages of validation protocol.",
+              "unit": "Unit 4",
+              "type": "validation-based-protocol"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Consider the two transactions T1 and T2, both the transactions subtracts 100 from A and adds to B and the time stamps of T1 and T2 are 5:15pm and 5:16 pm respectively. Illustrate a schedule if the entire system clock is set to zero.",
+              "unit": "Unit 4",
+              "type": "timestamp-concurrency-control"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain RDBMS architecture with all components.",
+              "unit": "Unit 1",
+              "type": "rdbms-architecture"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the key characteristics of ANSI SQL? Explain in detail.",
+              "unit": "Unit 2",
+              "type": "ansi-sql"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Schemas and Instances",
+              "unit": "Unit 1",
+              "type": "schemas-and-instances"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Triggers",
+              "unit": "Unit 2",
+              "type": "triggers"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Query Optimization",
+              "unit": "Unit 3",
+              "type": "query-optimization"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Serializability",
+              "unit": "Unit 4",
+              "type": "serializability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do mean by generalization, aggregation and specialization.",
+              "unit": "Unit 1",
+              "type": "generalization-aggregation-specialization"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is Database Administrator (DBA) and also write type of Database Administrator.",
+              "unit": "Unit 1",
+              "type": "database-administrator"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss Relational algebra write basic operation of Relational algebra in DBMS.",
+              "unit": "Unit 2",
+              "type": "relational-algebra"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the concept of SQL command with suitable example.",
+              "unit": "Unit 2",
+              "type": "sql-commands"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is multivalued dependency and Fourth Normal Form (4NF) with proper example.",
+              "unit": "Unit 3",
+              "type": "multivalued-dependency"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the technique join optimization techniques with proper example.",
+              "unit": "Unit 3",
+              "type": "join-optimization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the concept of concurrency control in a database system.",
+              "unit": "Unit 4",
+              "type": "concurrency-control"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the database recovery process and explain how checkpoints and log files help restore the database after system failures or transaction crashes.",
+              "unit": "Unit 4",
+              "type": "database-recovery"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the concept of NoSQL databases and compare their features, advantages, limitations, and applications with traditional Relational Database Management Systems (RDBMS).",
+              "unit": "Unit 1",
+              "type": "nosql-databases"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the data dictionary in DBMS? Explain its type.",
+              "unit": "Unit 1",
+              "type": "data-dictionary"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain entity, attributes, entity sets, and relationship types with examples and identify primary and foreign keys.",
+              "unit": "Unit 1",
+              "type": "er-model"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write SQL queries using:\nINNER JOIN, LEFT JOIN",
+              "unit": "Unit 2",
+              "type": "sql-joins"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Consider the relation:\nSTUDENT(SID, Name, Course, Faculty, Faculty Phone)\nFunctional Dependencies:\nSID → Name, Course\nCourse → Faculty\nFaculty → Faculty Phone\nNormalize the relation up to 3NF.",
+              "unit": "Unit 3",
+              "type": "normalization"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the architecture Database management system with proper diagram.",
+              "unit": "Unit 1",
+              "type": "dbms-architecture"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What is Two-Phase Locking (2PL) protocol and write Two-Phase Locking (2PL) protocol.",
+              "unit": "Unit 4",
+              "type": "two-phase-locking"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is Boyce codd normal form (BCNF)? Explain with an example.",
+              "unit": "Unit 3",
+              "type": "boyce-codd-normal-form"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,895 @@
+{
+  "subject": {
+    "id": "me-801",
+    "code": "ME-801",
+    "name": "Refrigeration & Air Conditioning",
+    "title": "ME-801 - Refrigeration & Air Conditioning",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the throttling processes and the Joule Thomson effect for cooling.",
+              "unit": "Unit 1",
+              "type": "joule-thomson-effect-and-reverse-carnot-cycle"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "In an ideal vapour compression refrigeration cycle, the enthalpy of the refrigerant at exit from the condenser, compressor and evaporator is 80 kJ/kg, 200 kJ/kg and 180 kJ/kg respectively. What is the coefficient of performance of the cycle? Draw the P-V, T-S and P-h diagram for the above cycle.",
+              "unit": "Unit 2",
+              "type": "p-h-and-t-s-diagrams"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain dry ice. Write a short note on the production of dry ice.",
+              "unit": "Unit 2",
+              "type": "dry-ice-and-production-of-dry-ice"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "The ambient air temperatures during summer and winter in a particular locality are 45°C and 15°C respectively. Find the values of Carnot COP for an air conditioner for cooling and heating, corresponding to refrigeration temperatures of 5°C for summer and a heating temperature of 55°C for winter. Assume suitable temperature differences in the exchanger that exchanges heat with the surroundings. If water from the cooling tower at 30°C is used as a cooling medium with a 3°C temperature differential for air-conditioning in summer, what will be the Carnot COP for cooling? Also, find the theoretical power consumption per ton of refrigeration in each case. Assume no increase in the temperature of the surrounding air or water.",
+              "unit": "Unit 1",
+              "type": "coefficient-of-performance"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "A refrigerator storage is supplied with 3600 kg of fish at a temperature of 27°C. The fish has to be cooled to −23°C for preserving it for a long period without deterioration. The cooling takes place in 10 hours. The specific heat of fish is 2.0 kJ/kgK above the freezing point of fish and 0.5 kJ/kgK below the freezing point of fish, which is −3°C. The latent heat of freezing is 230 kJ/kg. What is the power to drive the plant if the actual COP is half that of the ideal COP?",
+              "unit": "Unit 1",
+              "type": "freezing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What are the required properties of an ideal refrigerant?",
+              "unit": "Unit 3",
+              "type": "desirable-properties"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a short note on the Li-Br refrigerant cycle with a neat sketch.",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain in brief which refrigerant or refrigerants you would choose for each of the following applications and why.\n(i) A cold storage of 100 TR capacity using a reciprocating compressor.\n(ii) An 800 TR air conditioning plant using centrifugal compressor(s).\n(iii) A small capacity frozen food cabinet to maintain −30°C temperature.",
+              "unit": "Unit 3",
+              "type": "common-refrigeration"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "39.6 cmm of a mixture of recirculated room air and outdoor air enter a cooling coil at 31°C DB and 18.5°C WB temperatures. The effective surface temperature of the coil is 4.4°C. The surface area of the coil is such as would give 12.5 kW of refrigeration with the given entering air state. Determine the dry and wet bulb temperatures of the air leaving the coil and the coil bypass factor.",
+              "unit": "Unit 5",
+              "type": "bypass-factor-of-coil"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write a short note on comfort air conditioning. What are the factors affecting comfort air conditioning?",
+              "unit": "Unit 4",
+              "type": "requirements-of-comfort-air-conditioning"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Moist air enters a chamber at 5°C DBT and 2.5°C thermodynamic WBT at a rate of 90 cmm. The barometric pressure is 1.01325 bar. While passing through the chamber, the air absorbs sensible heat at the rate of 40.7 kW and picks up 40 kg/h of saturated steam at 110°C. Determine the dry and wet bulb temperatures of the leaving air.",
+              "unit": "Unit 4",
+              "type": "heating-and-humidification"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "The air-handling unit of an air-conditioning plant supplies a total of 4500 cmm of dry air which comprises, by weight, 20 percent fresh air at 40°C DBT and 27°C WBT, and 80 percent recirculated air at 25°C DBT and 50 percent RH. The air leaves the cooling coil at 13°C saturated state. Calculate the total cooling load and room heat gain.\n\n| Condition | DBT (°C) | WBT (°C) | RH (%) | Sp. humidity (g w.v./kg d.a.) | Enthalpy (kJ/kg d.a.) |\n| --- | --- | --- | --- | --- | --- |\n| Outside | 40 | 27 |  | 17.2 | 85 |\n| Inside | 25 |  | 50 | 10.0 | 50.8 |\n| ADP | 13 |  | 100 | 9.4 | 37.0 |",
+              "unit": "Unit 5",
+              "type": "problems-on-cooling-load-calculation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any three:\n(a) Comfort air conditioning",
+              "unit": "Unit 4",
+              "type": "requirements-of-comfort-air-conditioning"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Leak detection methods",
+              "unit": "Unit 3",
+              "type": "leak-detection-methods"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Electrolux",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Cascade system",
+              "unit": "Unit 2",
+              "type": "cascade-system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss any three natural methods of producing refrigeration.",
+              "unit": "Unit 1",
+              "type": "principles-and-methods-of-refrigeration"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A refrigerating system produces 30 kg/hr of ice at 0°C from water available at 25°C. Find the refrigerating effect per hour and the tonnage capacity of the unit. If it takes 1 kW of power, find the COP of the system.",
+              "unit": "Unit 1",
+              "type": "unit-of-refrigeration"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "",
+              "text": "The speed of an aircraft flying at an altitude of 8000 m, where the ambient air is at 0.341 bar and 263 K, is 900 km/hr. The compression ratio of the air compressor is 5. The cabin pressure is 1.013 bar and the temperature is 27°C. On the basis of 1 kg/sec of air flow, determine (i) the power requirement of the aircraft for pressurization, (ii) the additional power requirement for refrigeration and (iii) the refrigerating effect if $C_p$ for air = 1.005 kg/kgK and $\\gamma = 1.4$.",
+              "unit": "Unit 1",
+              "type": "air-refrigeration-cycles-joules-cycle-boot-strap-cycle-reduced-ambient-cycle-and-regenerative-cooling-cycles"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Show the simple vapour compression refrigeration cycle on a P-H chart and explain it.",
+              "unit": "Unit 2",
+              "type": "p-h-and-t-s-diagrams"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the effect of change in suction and discharge pressure on the performance of a refrigeration cycle.",
+              "unit": "Unit 2",
+              "type": "effects-of-condenser-and-evaporator-pressure-on-cop"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the working of a practical vapour absorption refrigeration cycle.",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the advantages of the vapour absorption cycle over the vapour compression cycle.",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss seven desirable properties of an ideal refrigerant.",
+              "unit": "Unit 3",
+              "type": "desirable-properties"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the properties of ammonia and R-22 as refrigerants.",
+              "unit": "Unit 3",
+              "type": "common-refrigeration"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "Define the following terms:\n(i) Dry bulb temperature\n(ii) Dew point temperature\n(iii) Specific humidity\n(iv) Saturated air\n(v) Sensible heating process\n(vi) Cooling and dehumidification process",
+              "unit": "Unit 4",
+              "type": "calculation-of-psychrometric-properties-of-air-by-table-and-charts"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "Air flowing at the rate of 100 m³/min at 40°C DBT and 50% RH is mixed with another stream flowing at the rate of 20 m³/min at 26°C DBT and 50% RH. The mixture flows over a cooling coil whose ADP temperature is 10°C and bypass factor is 0.2. Find the DBT and RH of air leaving the coil. If this air is supplied to an air-conditioned space where the DBT is 20°C and the RH is 50%, estimate the room sensible heat factor and the cooling load capacity of the coil in TR.",
+              "unit": "Unit 5",
+              "type": "room-sensible-heat-factor"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any three:\n(a) Advantages of air refrigeration",
+              "unit": "Unit 1",
+              "type": "air-refrigeration-cycles-joules-cycle-boot-strap-cycle-reduced-ambient-cycle-and-regenerative-cooling-cycles"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Cascade system",
+              "unit": "Unit 2",
+              "type": "cascade-system"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Steam jet refrigeration",
+              "unit": "Unit 3",
+              "type": "steam-jet-refrigeration-principles-and-working"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Calculation of summer air-conditioning load",
+              "unit": "Unit 5",
+              "type": "calculation-of-summer-and-winter-air-conditioning-load"
+            },
+            {
+              "id": "q8e",
+              "label": "e)",
+              "text": "(e) Eco-friendly refrigerants",
+              "unit": "Unit 3",
+              "type": "environment-friendly-refrigerants-and-refrigerant-mixtures"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the Boot-strap cycle and the coefficient of performance of a refrigerator.",
+              "unit": "Unit 1",
+              "type": "air-refrigeration-cycles-joules-cycle-boot-strap-cycle-reduced-ambient-cycle-and-regenerative-cooling-cycles"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A Carnot refrigeration cycle absorbs heat at 270 K and rejects it at 300 K.\n(i) Calculate the coefficient of performance of this refrigeration cycle.\n(ii) If the cycle is absorbing 1130 kJ/min at 270 K, how many kJ of work is required per second?\n(iii) If the Carnot heat pump operates between the same temperatures as the above refrigeration cycle, what is the coefficient of performance?\n(iv) How many kJ/min will the heat pump deliver at 300 K if it absorbs 1130 kJ/min at 270 K?",
+              "unit": "Unit 1",
+              "type": "coefficient-of-performance"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the P-H chart of a theoretical vapour compression refrigeration system.",
+              "unit": "Unit 2",
+              "type": "p-h-and-t-s-diagrams"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A refrigeration machine using R-12 as refrigerant operates between the pressures 2.5 bar and 9 bar. The compression is isentropic and there is no undercooling in the condenser. The vapour is in a dry saturated condition at the beginning of compression. Estimate the theoretical coefficient of performance. If the actual coefficient of performance is 0.65 of the theoretical value, calculate the net cooling produced per hour. The refrigerant flow is 5 kg per minute. Properties of the refrigerant are:\n\n| Pressure (bar) | Saturation temperature (°C) | Liquid enthalpy (kJ/kg) | Vapour enthalpy (kJ/kg) | Entropy of saturated vapour (kJ/kg K) |\n| --- | --- | --- | --- | --- |\n| 9.0 | 36 | 70.55 | 201.8 | 0.6836 |\n| 2.5 | −7 | 29.62 | 184.5 | 0.7001 |\n\nTake $C_p$ for superheated vapour at 9 bar as 0.64 kJ/kg K.",
+              "unit": "Unit 2",
+              "type": "vapor-compression-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain a practical vapour absorption system. Write down the properties of an ideal refrigerant-absorbent combination.",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Draw a neat diagram of an aqua-ammonia absorption system and explain its working.",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the classification of refrigerants. Write down the desirable properties of an ideal refrigerant.",
+              "unit": "Unit 3",
+              "type": "refrigerants-nomenclature-and-classification"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Write down the factors considered for the selection of a refrigerant for a system. Explain R-12 and R-22 as refrigerants.",
+              "unit": "Unit 3",
+              "type": "common-refrigeration"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Using a psychrometric chart, explain the following processes:\n(i) Sensible heating and sensible cooling process\n(ii) Heating and dehumidification process",
+              "unit": "Unit 4",
+              "type": "psychrometric-processes-sensible-heating-and-cooling"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "In a cooling application, moist air enters a refrigeration coil at the rate of 100 kg of dry air per minute at 35°C and 50% RH. The apparatus dew point of the coil is 5°C and the bypass factor is 0.15. Determine the outlet state of the moist air and the cooling capacity of the coil in TR.",
+              "unit": "Unit 5",
+              "type": "bypass-factor-of-coil"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the working of a steam jet refrigeration system.",
+              "unit": "Unit 3",
+              "type": "steam-jet-refrigeration-principles-and-working"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw the T-S and h-s diagram of a steam jet refrigeration system.",
+              "unit": "Unit 3",
+              "type": "simple-cycle-of-operation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "The amount of air supplied to an air-conditioned hall is 300 m³/min. The atmospheric conditions are 35°C DBT and 55% RH. The required conditions are 20°C DBT and 60% RH. Find out the sensible heat and latent heat removed from the air per minute. Also find the sensible heat factor for the system.",
+              "unit": "Unit 4",
+              "type": "sensible-heat-factor"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A small office hall of 25 persons capacity is provided with a summer air conditioning system with the following data.\nOutside conditions = 34°C DBT and 28°C WBT\nInside conditions = 24°C DBT and 50% RH\nVolume of air supplied = 0.4 m³/min/person\nSensible heat load in room = 125600 kJ/h\nLatent heat load in room = 42000 kJ/h\nFind the sensible heat factor of the plant.",
+              "unit": "Unit 5",
+              "type": "room-sensible-heat-factor"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any three:\n(a) Grand sensible heat factor",
+              "unit": "Unit 5",
+              "type": "grand-sensible-heat-factor"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Cascade system",
+              "unit": "Unit 2",
+              "type": "cascade-system"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Leak detection methods",
+              "unit": "Unit 3",
+              "type": "leak-detection-methods"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Production of dry ice",
+              "unit": "Unit 2",
+              "type": "dry-ice-and-production-of-dry-ice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the term “tonne of refrigeration”. Discuss the advantages of the dense air refrigerating system over an open air refrigeration system.",
+              "unit": "Unit 1",
+              "type": "unit-of-refrigeration"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "The capacity of a refrigerator is 400 TR when working between −12°C and 35°C. Determine the mass of ice produced per day from water at 25°C. Also find the power required to drive the unit. Assume that the cycle operates on the reversed Carnot cycle and the latent heat of ice is 335 kJ/kg.",
+              "unit": "Unit 1",
+              "type": "coefficient-of-performance"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "The temperature limits of an ammonia refrigerating system are 25°C and −10°C. If the gas is dry at the end of compression, calculate the coefficient of performance of the cycle assuming no under-cooling of the liquid ammonia. Use the following table for properties of ammonia:\n\n| Temperature (°C) | Liquid heat (kJ/kg) | Latent heat (kJ/kg) | Liquid entropy (kJ/kg K) |\n| --- | --- | --- | --- |\n| 25 | 298.9 | 1166.94 | 1.1242 |\n| −10 | 135.37 | 1297.68 | 0.5443 |",
+              "unit": "Unit 2",
+              "type": "vapor-compression-cycle"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the function of the liquid intercooler in a multistage compression system.",
+              "unit": "Unit 2",
+              "type": "multiple-expansion-and-compression-with-flash-inter-cooling"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is the basic function of a compressor in a vapour compression refrigeration system? How is this function achieved in a vapour absorption refrigeration system?",
+              "unit": "Unit 2",
+              "type": "vapor-compression-cycle"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define a primary refrigerant. What are the desirable properties of a primary refrigerant? Give the refrigerant number for the following: $\\mathrm{CHClF}_2$, $\\mathrm{CH}_2\\mathrm{F}{-}\\mathrm{CF}_3$ and $\\mathrm{NH}_3$.",
+              "unit": "Unit 3",
+              "type": "refrigerants-nomenclature-and-classification"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Atmospheric air at a dry bulb temperature of 16°C and 25% relative humidity passes through a furnace and then through a humidifier, in such a way that the final dry bulb temperature is 30°C and the relative humidity is 50%. Find the heat and moisture added to the air. Also determine the sensible heat factor of the process.",
+              "unit": "Unit 4",
+              "type": "heating-and-humidification"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is fog? Show on the psychrometric chart when two air streams yield a fogged state of air.",
+              "unit": "Unit 4",
+              "type": "mixing-of-air-stream"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the basic difference between the requirements for comfort and industrial air conditioning?",
+              "unit": "Unit 4",
+              "type": "requirements-of-comfort-air-conditioning"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "An air conditioning plant is required to supply 60 m³ of air per minute at a DBT of 21°C and 55% RH. The outside air is at a DBT of 28°C and 60% RH. Determine the mass of water drained and the capacity of the cooling coil. Assume that the air conditioning plant first dehumidifies and then cools the air.",
+              "unit": "Unit 4",
+              "type": "cooling-and-dehumidification"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6i",
+              "label": "i)",
+              "text": "Write short notes on any three:\n(i) Steam jet refrigeration",
+              "unit": "Unit 3",
+              "type": "steam-jet-refrigeration-principles-and-working"
+            },
+            {
+              "id": "q6ii",
+              "label": "ii)",
+              "text": "(ii) Environment friendly refrigerants",
+              "unit": "Unit 3",
+              "type": "environment-friendly-refrigerants-and-refrigerant-mixtures"
+            },
+            {
+              "id": "q6iii",
+              "label": "iii)",
+              "text": "(iii) Leak detection methods",
+              "unit": "Unit 3",
+              "type": "leak-detection-methods"
+            },
+            {
+              "id": "q6iv",
+              "label": "iv)",
+              "text": "(iv) Bypass factor of coil",
+              "unit": "Unit 5",
+              "type": "bypass-factor-of-coil"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is a multi-stage vapour compression refrigeration system? Compare it with a cascade refrigeration system.",
+              "unit": "Unit 2",
+              "type": "cascade-system"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Define the terms:\n(i) Cooling and dehumidification process\n(ii) Sensible heating and sensible cooling process",
+              "unit": "Unit 4",
+              "type": "cooling-and-dehumidification"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "A machine working on a Carnot cycle operates between 305 K and 260 K. Determine the C.O.P. when it is operated as (i) a refrigerating machine, (ii) a heat pump and (iii) a heat engine.",
+              "unit": "Unit 1",
+              "type": "coefficient-of-performance"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the applications of refrigeration for food preservation. Explain how refrigeration controls the spoilage of food.",
+              "unit": "Unit 1",
+              "type": "freezing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the thermodynamic and chemical properties of refrigerants.",
+              "unit": "Unit 3",
+              "type": "desirable-properties"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the favourable properties of an ideal refrigerant.",
+              "unit": "Unit 3",
+              "type": "desirable-properties"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "State the limitations due to which it has not been possible to build a Carnot refrigeration system.",
+              "unit": "Unit 1",
+              "type": "joule-thomson-effect-and-reverse-carnot-cycle"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss the working of a steam jet refrigeration system with a neat sketch.",
+              "unit": "Unit 3",
+              "type": "steam-jet-refrigeration-principles-and-working"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain dry ice. Write a short note on the production of dry ice.",
+              "unit": "Unit 2",
+              "type": "dry-ice-and-production-of-dry-ice"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write a short note on the Li-Br refrigerant cycle with a neat sketch.",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a short note on comfort air conditioning. What are the factors affecting comfort air conditioning?",
+              "unit": "Unit 4",
+              "type": "requirements-of-comfort-air-conditioning"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the effect of a change in suction and discharge pressure on the performance of a refrigeration cycle.",
+              "unit": "Unit 2",
+              "type": "effects-of-condenser-and-evaporator-pressure-on-cop"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss the properties of ammonia and R-22 as refrigerants.",
+              "unit": "Unit 3",
+              "type": "common-refrigeration"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss seven desirable properties of an ideal refrigerant.",
+              "unit": "Unit 3",
+              "type": "desirable-properties"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "In a cooling application, moist air enters a refrigeration coil at the rate of 100 kg of dry air per minute at 35°C and 50% RH. The apparatus dew point of the coil is 5°C and the bypass factor is 0.15. Determine the outlet state of the moist air and the cooling capacity of the coil in TR.",
+              "unit": "Unit 5",
+              "type": "bypass-factor-of-coil"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "The amount of air supplied to an air-conditioned hall is 300 m³/min. The atmospheric conditions are 35°C DBT and 55% RH. The required conditions are 20°C DBT and 60% RH. Find out the sensible heat and latent heat removed from the air per minute. Also find the sensible heat factor for the system.",
+              "unit": "Unit 4",
+              "type": "sensible-heat-factor"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "",
+              "text": "Moist air enters a chamber at 5°C DBT and 2.5°C thermodynamic WBT at a rate of 90 cmm. The barometric pressure is 1.01325 bar. While passing through the chamber, the air absorbs sensible heat at the rate of 40.7 kW and picks up 40 kg/h of saturated steam at 110°C. Determine the dry and wet bulb temperatures of the leaving air.",
+              "unit": "Unit 4",
+              "type": "heating-and-humidification"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any four:\n(a) Grand sensible heat factor",
+              "unit": "Unit 5",
+              "type": "grand-sensible-heat-factor"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Advantages of air refrigeration",
+              "unit": "Unit 1",
+              "type": "air-refrigeration-cycles-joules-cycle-boot-strap-cycle-reduced-ambient-cycle-and-regenerative-cooling-cycles"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Leak detection methods",
+              "unit": "Unit 3",
+              "type": "leak-detection-methods"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Cascade system",
+              "unit": "Unit 2",
+              "type": "cascade-system"
+            },
+            {
+              "id": "q8e",
+              "label": "e)",
+              "text": "(e) Electrolux",
+              "unit": "Unit 3",
+              "type": "vapour-absorption-system-theoretical-and-practical-systems-such-as-aqua-ammonia-electrolux-and-other-systems"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

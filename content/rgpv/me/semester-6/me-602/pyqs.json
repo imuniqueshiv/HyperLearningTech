@@ -1,0 +1,853 @@
+{
+  "subject": {
+    "id": "me-602",
+    "code": "ME-602",
+    "name": "Machine Component and Design",
+    "title": "ME-602 - Machine Component and Design",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2020",
+      "year": 2020,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the three basic modes of failure of a mechanical component?",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the distortion energy theory of failure, and where do you use it?",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2",
+              "label": "",
+              "text": "A component machined from a plate made of steel 45C8 (Sut = 630 N/mm²) is shown in the figure. It is subjected to a completely reversed axial force of 50 kN. The expected reliability is 90% and the factor of safety is 2. The size factor is 0.85. Determine the plate thickness t for infinite life if the notch sensitivity factor is 0.8. Figure: a stepped flat plate with axial load P = ±50 kN at both ends. The wider portion is labeled 100 mm and its thickness is marked t. The narrower portion is labeled 50m. The shoulder fillet is marked 5r.",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "A mild steel shaft mounted on two bearings A and B, 240 cm apart, carries two gears C and D located at distances of 25 cm and 40 cm respectively from the left and right bearings. Gear C is 60 cm in diameter and gear D is 20 cm in diameter. The shaft transmits 20 kW at 120 rpm. Power is delivered to gear C and taken out at gear D. The tooth pressure acts vertically downwards on both gears. The weights of the gears are 10 kg and 40 kg respectively. Design the system and find the size of the shaft.",
+              "unit": "Unit 2",
+              "type": "design-of-shaft-under-combined-bending-twisting-and-axial-loading"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What type of stress is induced in a helical compression bearing? Explain.",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the different types of threads used in a power screw?",
+              "unit": "Unit 3",
+              "type": "design-of-power-screw-and-power-nut"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "It is required to design a helical compression spring subjected to a maximum force of 1250 N. The deflection of the spring corresponding to the maximum face should be approximately 30 mm. The spring index can be taken as 6. The spring is made of cold drawn steel wire. The ultimate tensile strength and modulus of rigidity of the spring material are 1090 N/mm² and 81370 N/mm² respectively. The permissible shear stress for the spring wire should be taken as 50% of the ultimate tensile strength. Design the spring and calculate (a) the wire diameter, (b) the mean coil diameter, (c) the number of active coils, (d) the total number of coils, and (e) the free length and pitch of the coil.",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the friction materials used in brakes and clutches?",
+              "unit": "Unit 4",
+              "type": "materials-for-friction-surface"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is an internal expanding shoe brake?",
+              "unit": "Unit 4",
+              "type": "internal-expanding-brakes"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "An automotive plate clutch consists of two pairs of contacting surfaces with asbestos friction lining. The torque transmitting capacity of the clutch is 600 N-m. The coefficient of friction is 0.25 and the permissible intensity of pressure is 0.6 N/mm². Due to space limitations, the outer diameter of the friction disc is fixed as 250 mm. Using the uniform wear theory, calculate (a) the inner diameter of the friction disc plate and (b) the spring force required to keep the clutch in the engaged position.",
+              "unit": "Unit 4",
+              "type": "design-of-friction-clutches-disk-plate-clutches"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two: Modified Goodman's diagram.",
+              "unit": "Unit 1",
+              "type": "goodman-and-modified-goodmans-diagram"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any two: Properties of lubricants.",
+              "unit": "Unit 5",
+              "type": "types-of-lubrication"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any two: Fatigue loading of springs.",
+              "unit": "Unit 3",
+              "type": "fatigue-loading-of-springs"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any two: Types of rolling contact bearings.",
+              "unit": "Unit 5",
+              "type": "types-of-rolling-contact-bearing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "List some factors that influence machine design.",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is 'Adaptive design and Optimum design'?",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Distinguish between close coiled and open coiled springs.",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is interchangeable manufacturing?",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are unilateral and bilateral tolerances?",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Differentiate between hardness and toughness of materials.",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Determine the force required to punch a hole of 20 mm diameter in a 5 mm thick plate with an ultimate shear strength of 250 MPa.",
+              "unit": "Unit 1",
+              "type": "stress-concentration-in-tension-bending-and-torsion"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Give some methods of reducing stress concentration.",
+              "unit": "Unit 1",
+              "type": "reduction-of-stress-concentration"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain notch sensitivity.",
+              "unit": "Unit 1",
+              "type": "notch-sensitivity"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the stress concentration factor.",
+              "unit": "Unit 1",
+              "type": "theoretical-stress-concentration-factor"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Classify keys.",
+              "unit": "Unit 2",
+              "type": "design-of-keys-and-shaft-couplings"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the forces acting on a key.",
+              "unit": "Unit 2",
+              "type": "design-of-keys-and-shaft-couplings"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the difference between a rigid and a flexible coupling?",
+              "unit": "Unit 2",
+              "type": "design-of-keys-and-shaft-couplings"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Why does a hollow shaft have greater strength and stiffness than a solid shaft of equal weight?",
+              "unit": "Unit 2",
+              "type": "design-for-rigidity"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "How are bearings classified?",
+              "unit": "Unit 5",
+              "type": "types-of-rolling-contact-bearing"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is a journal bearing? List any two applications.",
+              "unit": "Unit 5",
+              "type": "design-of-journal-bearings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is meant by stress concentration? How do you like it into consideration in case of a component subjected to dynamic loading?",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "A cold drawn steel rod of circular cross-section is subjected to a variable bending moment from 565 N-m to 1130 N-m as the axial load varies from 4500 N to 13500 N. The maximum bending moment occurs at the same instant that the axial load is maximum. Determine the required diameter of the rod for a factor of safety of 2. Neglect any stress concentration and column effect. Assume the following values: ultimate strength = 550 MPa; yield strength = 470 MPa; size factor = 0.85; surface finish factor = 0.39; correction factors = 1.0 for bending and 0.7 for axial load. The endurance limit in reversed bending may be taken as one-half the ultimate strength.",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define equivalent twisting moment and equivalent bending moment. State when the two terms are used in the design of shafts.",
+              "unit": "Unit 2",
+              "type": "design-of-shaft-under-combined-bending-twisting-and-axial-loading"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A 45 mm diameter shaft is made of steel with a yield strength of 400 MPa. A parallel key of size 14 mm wide and 9 mm thick, made of steel with a yield strength of 340 MPa, is to be used. Find the required length of the key if the shaft is loaded to transmit the maximum permissible torque. Use the maximum shear stress theory and assume a factor of safety of 2.",
+              "unit": "Unit 2",
+              "type": "design-of-keys-and-shaft-couplings"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Design a spring for a balance to measure 0 to 1000 N over a scale of length 80 mm. The spring is to be enclosed in a casing of 25 mm diameter. The approximate number of turns is 30. The modulus of rigidity is 85 kN/mm². Also calculate the maximum shear stress induced.",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "(i) What do you understand by overhauling of a screw? (ii) What is the self-locking property of threads and where is it necessary?",
+              "unit": "Unit 3",
+              "type": "design-of-power-screw-and-power-nut"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a short note on the uniform wear theory and the uniform pressure theory, and give the expression for the mean radius in both cases.",
+              "unit": "Unit 4",
+              "type": "uniform-pressure-and-uniform-wear-theories"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A single plate clutch, effective on both sides, is required to transmit 25 kW at 3000 rpm. Determine the outer and inner diameters of the frictional surface if the coefficient of friction is 0.255, the ratio of diameters is 1.25, and the maximum pressure is not to exceed 0.1 N/mm². Also determine the axial thrust to be provided by the springs. Assume the theory of uniform wear.",
+              "unit": "Unit 4",
+              "type": "design-of-friction-clutches-disk-plate-clutches"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is a self-energizing brake? When does a brake become self-locking?",
+              "unit": "Unit 4",
+              "type": "design-of-brakes-rope-band-and-block-brake"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "In a band and block brake, the band is lined with 14 blocks, each of which subtends an angle of 20° at the drum centre. One end of the band is attached to the fulcrum of the brake lever and the other to a pin 150 mm from the fulcrum. Find the force required at the end of the lever, which is 1 metre long from the fulcrum, to give a torque of 4 kN-m. The diameter of the brake drum is 1 metre and the coefficient of friction between the blocks and the drum is 0.25.",
+              "unit": "Unit 4",
+              "type": "design-of-brakes-rope-band-and-block-brake"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "List the important physical characteristics of a good bearing material. Also explain what the bearing characteristic number is.",
+              "unit": "Unit 5",
+              "type": "dimensionless-numbers"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "A footstep bearing supports a shaft of 150 mm diameter which is counterbored at the end with a hole diameter of 50 mm. If the bearing pressure is limited to 0.8 N/mm² and the speed is 100 rpm, find (i) the load to be supported and (ii) the power lost in friction.",
+              "unit": "Unit 5",
+              "type": "bearing-friction-and-power-loss"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are rolling contact bearings? Discuss their advantages over sliding contact bearings, and write a brief note on the factors affecting the life of a bearing.",
+              "unit": "Unit 5",
+              "type": "types-of-rolling-contact-bearing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "A ball bearing subjected to a radial load of 5 kN is expected to have a life of 8000 hours at 1450 rpm with a reliability of 99%. Calculate the dynamic load capacity of the bearing so that it can be selected from the manufacturer's catalogue based on a reliability of 90%.",
+              "unit": "Unit 5",
+              "type": "bearing-life"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Write a brief note on any two: Soderberg's equation, and state its application to different types of loadings.",
+              "unit": "Unit 1",
+              "type": "soderberg-equation"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Write a brief note on any two: Describe, with the help of a neat sketch, the types of shaft couplings, mentioning the use of each type.",
+              "unit": "Unit 2",
+              "type": "design-of-keys-and-shaft-couplings"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Write a brief note on any two: Why are square threads preferable to V-threads for power transmission?",
+              "unit": "Unit 3",
+              "type": "design-of-power-screw-and-power-nut"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Write a brief note on any two: Show that the efficiency of a self-locking screw is less than 50 percent.",
+              "unit": "Unit 3",
+              "type": "design-of-power-screw-and-power-nut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the primary causes of stress concentration in materials?",
+              "unit": "Unit 1",
+              "type": "causes-of-stress-concentration"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Describe the stress concentration phenomenon in tension, and provide examples.",
+              "unit": "Unit 1",
+              "type": "stress-concentration-in-tension-bending-and-torsion"
+            },
+            {
+              "id": "q1c",
+              "label": "c)",
+              "text": "Explain the S-N curve and its importance in predicting material fatigue behaviour.",
+              "unit": "Unit 1",
+              "type": "s-n-curve"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2",
+              "label": "",
+              "text": "A component machined from a plate made of steel 45C8 (Sut = 630 N/mm²) is shown in the figure. It is subjected to a completely reversed axial force of 50 kN. The expected reliability is 90% and the factor of safety is 2. The size factor is 0.85. Determine the plate thickness t for infinite life if the notch sensitivity factor is 0.8. Figure: a stepped flat plate with axial load P = ±50 kN at both ends. The wider portion is 100 mm wide and the narrower portion is 50 mm wide. The plate thickness is marked t. The shoulder fillet is marked 5r.",
+              "unit": "Unit 1",
+              "type": "notch-sensitivity"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "A machine component is subjected to a flexural stress which fluctuates between +300 MN/m² and −150 MN/m². Determine the minimum ultimate strength according to (i) the modified Goodman relation and (ii) the Soderberg relation. Take yield strength = 0.55 × ultimate strength, endurance strength = 0.5 × ultimate strength, and factor of safety = 2.",
+              "unit": "Unit 1",
+              "type": "goodman-and-modified-goodmans-diagram"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Determine the diameter of a circular rod made of a ductile material with a fatigue strength (complete stress reversal) σe = 265 MPa and a tensile yield strength of 350 MPa. The member is subjected to a varying axial load from Wmin = −300 × 10³ N to Wmax = 700 × 10³ N and has a stress concentration factor of 1.8. Use a factor of safety of 2.0.",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "A single row ball bearing carries a radial load of 8 kN and an axial thrust of 3.5 kN. The radial load factor and the axial load factor are 0.56 and 1.48 respectively. The desired reliability is 90 percent. The mounting of the bearing is such that the inner ring is stationary. The shaft rotates at 500 rpm and the expected life is 2500 operating hours. Find the dynamic load capacity of the bearing required for the application.",
+              "unit": "Unit 5",
+              "type": "selection-of-ball-and-roller-bearings"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Extension springs are in considerably less use than compression springs. Why?",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Given load F = 1000 N, spring rate k = 200 N/mm and maximum deflection δmax = 25 mm, calculate (i) the required number of active coils for the spring, (ii) the solid length of the spring, and (iii) the wire diameter required for the spring.",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A deep groove ball bearing of basic design number SKF 6312 has a dynamic load capacity of 81900 N. If this bearing is expected to carry a pure radial load of 37800 N, find the loading ratio and estimate the nominal life of the bearing in millions of revolutions. If the rotational speed of the bearing is 500 rpm, find the bearing life in operating hours. Find the reduction in service life when the radial load is increased by 10000 N.",
+              "unit": "Unit 5",
+              "type": "bearing-life"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Write a note on the dynamic load capacity of a rolling bearing.",
+              "unit": "Unit 5",
+              "type": "static-and-dynamic-load-capacities"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Consider a heavy-duty industrial clutch designed on the uniform pressure theory. The clutch has a diameter of 50 cm and is subjected to a varying pressure distribution from the centre to the periphery, ranging from 3 MPa at the centre to 5 MPa at the periphery. Calculate the total force exerted on the clutch disc due to pressure.",
+              "unit": "Unit 4",
+              "type": "uniform-pressure-and-uniform-wear-theories"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Compare and contrast the advantages and disadvantages of rope, band and block brakes.",
+              "unit": "Unit 4",
+              "type": "design-of-brakes-rope-band-and-block-brake"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "How does the coefficient of friction affect the performance of a rope, band or block brake system?",
+              "unit": "Unit 4",
+              "type": "design-of-brakes-rope-band-and-block-brake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss design considerations for fatigue loading in machine elements.",
+              "unit": "Unit 1",
+              "type": "design-consideration-for-fatigue"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain fluctuating stresses and discuss the Goodman and modified Goodman diagrams with neat diagrams.",
+              "unit": "Unit 1",
+              "type": "goodman-and-modified-goodmans-diagram"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the design procedure for shafts subjected to combined bending and torsion.",
+              "unit": "Unit 2",
+              "type": "design-of-shaft-under-combined-bending-twisting-and-axial-loading"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A solid steel shaft transmits 75 kW at 300 rpm. The shaft is subjected to a bending moment of 4 kN·m due to pulley loads and a torque due to power transmission. The allowable shear stress for the shaft material is 50 MPa. Using the maximum shear stress theory, determine the required diameter of the shaft.",
+              "unit": "Unit 2",
+              "type": "design-of-shaft-under-combined-bending-twisting-and-axial-loading"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain fatigue loading in springs and discuss spring failure.",
+              "unit": "Unit 3",
+              "type": "fatigue-loading-of-springs"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A close-coiled helical spring made of steel wire of diameter 12 mm has a mean coil diameter of 96 mm and 10 active coils. The spring is subjected to an axial load of 1200 N. Determine the maximum shear stress and the deflection of the spring. Take the modulus of rigidity G = 80 GPa.",
+              "unit": "Unit 3",
+              "type": "design-of-helical-compression-and-tension-springs"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the design of single-plate and multi-plate clutches.",
+              "unit": "Unit 4",
+              "type": "design-of-friction-clutches-disk-plate-clutches"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "A band brake acts on a drum of diameter 600 mm rotating at 250 rpm and absorbs 20 kW. The coefficient of friction between the band and the drum is 0.3 and the angle of contact is 210°. Determine the tensions in the tight side and the slack side of the band.",
+              "unit": "Unit 4",
+              "type": "design-of-brakes-rope-band-and-block-brake"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the design procedure for journal bearings.",
+              "unit": "Unit 5",
+              "type": "design-of-journal-bearings"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Compare journal bearings and rolling contact bearings with suitable examples.",
+              "unit": "Unit 5",
+              "type": "types-of-rolling-contact-bearing"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Compare helical, leaf and torsion springs with suitable examples.",
+              "unit": "Unit 3",
+              "type": "leaf-springs-and-torsion-springs"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the friction materials used in brakes and clutches, with their properties.",
+              "unit": "Unit 4",
+              "type": "materials-for-friction-surface"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the design of shafts subjected to axial load and dynamic loading.",
+              "unit": "Unit 2",
+              "type": "design-of-shaft-subjected-to-dynamic-load"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the Soderberg and Gerber criteria with neat diagrams.",
+              "unit": "Unit 1",
+              "type": "soderberg-equation"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two: S-N curve.",
+              "unit": "Unit 1",
+              "type": "s-n-curve"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any two: Design of a power screw.",
+              "unit": "Unit 3",
+              "type": "design-of-power-screw-and-power-nut"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any two: Design of a rope brake.",
+              "unit": "Unit 4",
+              "type": "design-of-brakes-rope-band-and-block-brake"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any two: Reynolds equation in journal bearings.",
+              "unit": "Unit 5",
+              "type": "reynolds-equation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

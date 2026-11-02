@@ -1,0 +1,178 @@
+{
+  "subject": {
+    "id": "me-802-c",
+    "code": "ME-802 (C)",
+    "name": "Machine Tool Design",
+    "title": "ME-802 (C) - Machine Tool Design",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "",
+              "text": "Discuss about the Kinematical structures of machine tools, mentioning the Kinematical features also.",
+              "unit": "Unit 1",
+              "type": "kinematic-structures-of-machine-tools-elementary-complex-and-compound-structure"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is the need of variation of speed in a machine tool?",
+              "unit": "Unit 2",
+              "type": "design-of-gear-boxes-need-for-variation-of-speed"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is a Ray diagram? Discuss its application.",
+              "unit": "Unit 2",
+              "type": "ray-diagram-and-speed-chart"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "",
+              "text": "Discuss low speed, feed and power requirements are chosen for a proposed machine tool.",
+              "unit": "Unit 2",
+              "type": "selection-of-speed-range"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is Machine Tools, clarify them?",
+              "unit": "Unit 1",
+              "type": "types-of-machine-tools"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain what happens when metal is cold worked.",
+              "unit": "Unit 3",
+              "type": "design-of-press-working-tools"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Differentiate between jig and fixture.",
+              "unit": "Unit 4",
+              "type": "types-of-fixture"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Describe the operation of a three high roll mill.",
+              "unit": "Unit 3",
+              "type": "design-principles-and-practice-for-rolling"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the design principles for forging dies.",
+              "unit": "Unit 3",
+              "type": "design-principles-for-forging-dies"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Distinguish between a ray diagram and a speed diagram.",
+              "unit": "Unit 2",
+              "type": "speed-diagram"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the design features of thread snap gauges.",
+              "unit": "Unit 5",
+              "type": "design-of-gauges-for-tolerance-for-dimensions-and-form-inspection"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is flow molding? Explain.",
+              "unit": "Unit 5",
+              "type": "dies-and-mould-design-for-plastics-and-rubber-parts"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two:\n(a) Design features of forging die",
+              "unit": "Unit 3",
+              "type": "design-principles-for-forging-dies"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Electrical drives",
+              "unit": "Unit 2",
+              "type": "electrical-drives"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Principles of location",
+              "unit": "Unit 4",
+              "type": "principles-of-location"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
