@@ -1,0 +1,916 @@
+{
+  "subject": {
+    "id": "me-802-a",
+    "code": "ME-802 (A)",
+    "name": "Automobile Engineering",
+    "title": "ME-802 (A) - Automobile Engineering",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the different chassis layouts with respect to the engine location, steering position and drive on the wheels.",
+              "unit": "Unit 1",
+              "type": "layout"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the different types of loads acting on the vehicle frame during a head-on collision.",
+              "unit": "Unit 1",
+              "type": "types-of-frames"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How is a frame different from a chassis? Discuss the design aspects and salient features of a frame.",
+              "unit": "Unit 1",
+              "type": "types-of-chassis"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Write a short note on different types of steering gear boxes.",
+              "unit": "Unit 2",
+              "type": "steering-gear"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the advantages and disadvantages of front wheel, rear wheel and four wheel drive.",
+              "unit": "Unit 1",
+              "type": "front-wheel-and-rear-wheel-drive"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the terms camber, kingpin inclination, castor, toe-in and toe-out with a neat sketch.",
+              "unit": "Unit 2",
+              "type": "front-wheel-geometry-camber-kingpin-inclination-castor-toe-in-and-toe-out"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write a note on the starting mechanism of a vehicle.",
+              "unit": "Unit 5",
+              "type": "principle-of-operation-of-starting-mechanism"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How does bleeding of a hydraulic brake take place? What is its purpose?",
+              "unit": "Unit 4",
+              "type": "air-bleeding-of-hydraulic-brakes"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Write short notes on any three:\n(a) Location of engine in an automobile",
+              "unit": "Unit 1",
+              "type": "location-of-engine"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "(b) Toe-in and toe-out conditions",
+              "unit": "Unit 2",
+              "type": "front-wheel-geometry-camber-kingpin-inclination-castor-toe-in-and-toe-out"
+            },
+            {
+              "id": "q5c",
+              "label": "c)",
+              "text": "(c) Pneumatic power brake",
+              "unit": "Unit 4",
+              "type": "mechanical-hydraulic-and-pneumatic-power-brake-systems"
+            },
+            {
+              "id": "q5d",
+              "label": "d)",
+              "text": "(d) Lighting system of a vehicle",
+              "unit": "Unit 5",
+              "type": "lighting-system"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the principle of self-energisation in a braking system.",
+              "unit": "Unit 4",
+              "type": "self-energisation"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss different types of springs used in a transmission system.",
+              "unit": "Unit 4",
+              "type": "type-of-springs-leaf-spring-coil-spring-air-spring-torsion-bar"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain in brief the Indian standards for automotive vehicles for emission and pollution control.",
+              "unit": "Unit 6",
+              "type": "indian-standards-for-automotive-vehicles-bharat-i-ii-iii-iv"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the difference in Euro I to Euro VI norms.",
+              "unit": "Unit 6",
+              "type": "euro-i-to-euro-vi-norms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on the following (any three):\n(a) Catalytic converters",
+              "unit": "Unit 6",
+              "type": "catalytic-converters"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Fuel additives",
+              "unit": "Unit 6",
+              "type": "fuel-additives"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Regulator and electric fuel gauge",
+              "unit": "Unit 5",
+              "type": "electric-fuel-gauge"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Troubleshooting: probable causes",
+              "unit": "Unit 5",
+              "type": "trouble-shooting-probable-causes-and-remedies-of-various-systems"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you mean by driver's visibility in automobile vehicles? State its role in accident management. Discuss methods for improvement of driver's visibility.",
+              "unit": "Unit 1",
+              "type": "drivers-visibility-and-methods-for-improvement"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define vehicle aerodynamics with a layout. Discuss various possible locations of the engine in a vehicle while designing.",
+              "unit": "Unit 1",
+              "type": "vehicle-aerodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define centre point steering. Explain over steer and under steer with suitable sketches.",
+              "unit": "Unit 2",
+              "type": "centre-point-steering"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Draw and explain front wheel geometry. What is power steering?",
+              "unit": "Unit 2",
+              "type": "front-wheel-geometry-camber-kingpin-inclination-castor-toe-in-and-toe-out"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the working principle of torque converters used in automobiles.",
+              "unit": "Unit 3",
+              "type": "torque-converters"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain types of gear boxes with neat sketches.",
+              "unit": "Unit 3",
+              "type": "types-of-gear-boxes"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss different types of wheels and tyres used commercially in India.",
+              "unit": "Unit 4",
+              "type": "types-of-wheels-and-tyres"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Define the shock absorber used in a suspension system. Discuss its types.",
+              "unit": "Unit 4",
+              "type": "shock-absorber"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Discuss the principle of operation of the starting mechanism in a vehicle.",
+              "unit": "Unit 5",
+              "type": "principle-of-operation-of-starting-mechanism"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Draw circuits for the wiper mechanism and the lighting system used in an automobile.",
+              "unit": "Unit 5",
+              "type": "lighting-system"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "List Indian standards for automotive vehicles. Discuss Euro I to Euro VI norms.",
+              "unit": "Unit 6",
+              "type": "euro-i-to-euro-vi-norms"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the working of a catalytic converter. State its advantages.",
+              "unit": "Unit 6",
+              "type": "catalytic-converters"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are different fuel additives? Discuss their effects on engine performance.",
+              "unit": "Unit 6",
+              "type": "fuel-additives"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss environmental management systems for automotive vehicles.",
+              "unit": "Unit 6",
+              "type": "environmental-management-systems-for-automotive-vehicles"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on the following (any two):\n(a) Optimization of vehicle body shape",
+              "unit": "Unit 1",
+              "type": "optimization-of-body-shape"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Toe-in and toe-out",
+              "unit": "Unit 2",
+              "type": "front-wheel-geometry-camber-kingpin-inclination-castor-toe-in-and-toe-out"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Clutch lining and bonding",
+              "unit": "Unit 3",
+              "type": "clutch-lining-and-bonding"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Material properties of tyres and tubes",
+              "unit": "Unit 4",
+              "type": "construction-and-material-properties-of-tyres-and-tubes"
+            },
+            {
+              "id": "q8e",
+              "label": "e)",
+              "text": "(e) Testing of battery",
+              "unit": "Unit 5",
+              "type": "testing-of-battery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What are the main components of a chassis and their functions?",
+              "unit": "Unit 1",
+              "type": "types-of-chassis"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss the materials commonly used in chassis construction and their respective advantages and disadvantages.",
+              "unit": "Unit 1",
+              "type": "body-materials"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define vehicle aerodynamics with a layout. Discuss various possible locations of the engine in a vehicle while designing.",
+              "unit": "Unit 1",
+              "type": "vehicle-aerodynamics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the challenges associated with designing a chassis for electric vehicles compared to conventional internal combustion engine vehicles?",
+              "unit": "Unit 1",
+              "type": "types-of-chassis"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the basic components of a steering system in an automobile and their functions.",
+              "unit": "Unit 2",
+              "type": "steering-gear"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define centre point steering. Explain over steer and under steer with suitable sketches.",
+              "unit": "Unit 2",
+              "type": "centre-point-steering"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain briefly, with a neat sketch, the construction and working of a multiplate clutch.",
+              "unit": "Unit 3",
+              "type": "single-plate-multi-plate-clutch"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss various types of gear boxes with applications.",
+              "unit": "Unit 3",
+              "type": "types-of-gear-boxes"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is a torque converter? Explain its characteristics.",
+              "unit": "Unit 3",
+              "type": "torque-converters"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What do you understand by power brakes? Explain the operating principle of a pneumatic power brake.",
+              "unit": "Unit 4",
+              "type": "mechanical-hydraulic-and-pneumatic-power-brake-systems"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss different types of wheels and tyres used commercially in India.",
+              "unit": "Unit 4",
+              "type": "types-of-wheels-and-tyres"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define the shock absorber used in a suspension system. Discuss its types.",
+              "unit": "Unit 4",
+              "type": "shock-absorber"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "State the function of a battery and explain the construction of an automobile battery with a sketch.",
+              "unit": "Unit 5",
+              "type": "construction-and-operation-of-lead-acid-battery"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Draw a typical lighting system for a modern vehicle and describe its operation.",
+              "unit": "Unit 5",
+              "type": "lighting-system"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Discuss environmental management systems for automotive vehicles.",
+              "unit": "Unit 6",
+              "type": "environmental-management-systems-for-automotive-vehicles"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on:\n(i) Euro I and II norms\n(ii) Fuel additives",
+              "unit": "Unit 6",
+              "type": "euro-i-to-euro-vi-norms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the types of frames employed in commercial vehicle chassis. How are these frames tested for bending and torsion to ensure structural integrity?",
+              "unit": "Unit 1",
+              "type": "testing-of-frames-for-bending-and-torsion-on-unutilized-body-frame"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss safety aspects related to commercial vehicle design. How are safety features integrated into vehicle design to protect occupants and other road users?",
+              "unit": "Unit 1",
+              "type": "safety-aspects-of-vehicles"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Analyze the construction of vehicle bodies. What materials are commonly used, and how are they assembled to provide strength and durability while minimizing weight?",
+              "unit": "Unit 1",
+              "type": "vehicle-body-and-their-construction"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Compare the advantages and disadvantages of front-wheel drive, rear-wheel drive and four-wheel drive configurations in commercial vehicles. How do these drivetrain layouts influence vehicle performance and handling?",
+              "unit": "Unit 1",
+              "type": "front-wheel-and-rear-wheel-drive"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Evaluate the design considerations for driver's cabs in commercial vehicles. What ergonomic factors are important for driver comfort and efficiency?",
+              "unit": "Unit 1",
+              "type": "drivers-cab-design"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the principles of wheel alignment in vehicles. What are the different types of wheel alignment, and how do they affect vehicle handling and tyre wear?",
+              "unit": "Unit 2",
+              "type": "principles-of-types-of-wheel-alignment"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Define front wheel geometry parameters such as camber, kingpin inclination, caster, toe-in and toe-out. How do these parameters influence vehicle steering and tyre performance?",
+              "unit": "Unit 2",
+              "type": "front-wheel-geometry-camber-kingpin-inclination-castor-toe-in-and-toe-out"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Compare and contrast independent front and rear suspension systems. What are the advantages and disadvantages of each system in terms of ride quality and handling?",
+              "unit": "Unit 4",
+              "type": "independent-front-and-rear-suspension"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the different types of steering gears used in vehicles. What are the characteristics and advantages of power steering systems?",
+              "unit": "Unit 2",
+              "type": "power-steering"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explore the different types of gearboxes used in vehicles. What are the characteristics and applications of manual, automatic and semi-automatic transmissions?",
+              "unit": "Unit 3",
+              "type": "automatic-transmission"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the function and operation of catalytic converters in vehicle exhaust systems. How do catalytic converters reduce harmful emissions such as nitrogen oxides (NOx), carbon monoxide (CO) and hydrocarbons (HC)?",
+              "unit": "Unit 6",
+              "type": "catalytic-converters"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss the role of fuel additives in emission control. What types of additives are commonly used, and how do these enhance fuel efficiency and reduce emissions?",
+              "unit": "Unit 6",
+              "type": "fuel-additives"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Evaluate the effectiveness of emission control measures in reducing air pollution. What impact have emission standards had on air quality and public health?",
+              "unit": "Unit 6",
+              "type": "modern-trends-in-automotive-engine-efficiency-and-emission-control"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the significance of shackle location in leaf spring suspension systems. How does shackle placement affect suspension geometry and ride characteristics?",
+              "unit": "Unit 4",
+              "type": "location-of-shackles"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Analyze the power and torque curves of a vehicle engine. How do these curves influence vehicle performance and acceleration capabilities?",
+              "unit": "Unit 4",
+              "type": "power-and-torque-curve"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Describe the fuel quality standards associated with automotive vehicles. How do fuel quality standards impact vehicle emissions and engine performance?",
+              "unit": "Unit 6",
+              "type": "fuel-quality-standards"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you mean by driver's visibility in automobile vehicles? Discuss the safety aspects related to a commercial vehicle.",
+              "unit": "Unit 1",
+              "type": "drivers-visibility-and-methods-for-improvement"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define vehicle aerodynamics with a layout. Discuss various possible locations of the engine in a vehicle while designing.",
+              "unit": "Unit 1",
+              "type": "vehicle-aerodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the basic components of a steering system in an automobile and their functions.",
+              "unit": "Unit 2",
+              "type": "steering-gear"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the different types of steering gear used in a vehicle.",
+              "unit": "Unit 2",
+              "type": "steering-gear"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain types of gear boxes with neat sketches.",
+              "unit": "Unit 3",
+              "type": "types-of-gear-boxes"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the working principle of the torque converter used in an automobile.",
+              "unit": "Unit 3",
+              "type": "torque-converters"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain briefly, with a neat sketch, the construction and working of a multiplate clutch.",
+              "unit": "Unit 3",
+              "type": "single-plate-multi-plate-clutch"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you understand by a power brake? Explain the operating principle of a pneumatic power brake.",
+              "unit": "Unit 4",
+              "type": "mechanical-hydraulic-and-pneumatic-power-brake-systems"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Describe the construction and working of a telescopic shock absorber.",
+              "unit": "Unit 4",
+              "type": "shock-absorber"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain briefly the conventional tube tyre and the tubeless tyre.",
+              "unit": "Unit 4",
+              "type": "types-of-wheels-and-tyres"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Discuss the environmental management system for an automobile vehicle.",
+              "unit": "Unit 6",
+              "type": "environmental-management-systems-for-automotive-vehicles"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss Indian standards for automobile emissions.",
+              "unit": "Unit 6",
+              "type": "indian-standards-for-automotive-vehicles-bharat-i-ii-iii-iv"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the different fuel additives and discuss their effects on engine performance.",
+              "unit": "Unit 6",
+              "type": "fuel-additives"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the working principle of a three-way catalytic converter. State its advantages.",
+              "unit": "Unit 6",
+              "type": "catalytic-converters"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Explain the following (any two):\n(i) Caster angle and camber angle",
+              "unit": "Unit 2",
+              "type": "front-wheel-geometry-camber-kingpin-inclination-castor-toe-in-and-toe-out"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "(ii) Advantage of a coil spring over a leaf spring",
+              "unit": "Unit 4",
+              "type": "type-of-springs-leaf-spring-coil-spring-air-spring-torsion-bar"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "(iii) Clutch lining and bonding",
+              "unit": "Unit 3",
+              "type": "clutch-lining-and-bonding"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "(iv) Constant velocity universal joint",
+              "unit": "Unit 3",
+              "type": "constant-velocity-universal-joints"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

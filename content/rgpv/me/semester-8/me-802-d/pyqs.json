@@ -1,0 +1,199 @@
+{
+  "subject": {
+    "id": "me-802-d",
+    "code": "ME-802 (D)",
+    "name": "Production Planning and Control",
+    "title": "ME-802 (D) - Production Planning and Control",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Distinguish between job production and batch production.",
+              "unit": "Unit 1",
+              "type": "types-and-characteristics-of-production-systems"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Does India need PPC for her developing economy? Discuss.",
+              "unit": "Unit 1",
+              "type": "objective-and-functions-of-production-planning-and-control"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "What is sales forecasting? What are its fields of application? Explain.",
+              "unit": "Unit 1",
+              "type": "forecasting-and-market-analysis"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate between method study and work measurement. Explain the procedure of method study.",
+              "unit": "Unit 2",
+              "type": "method-study"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the principles of motion economy. How are they related to workplace layout?",
+              "unit": "Unit 2",
+              "type": "method-study"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Analyse critically any two types of Predetermined Motion Time standard system as regards applicability and limitations for the estimation of standard time in a man-machine system.",
+              "unit": "Unit 2",
+              "type": "predetermined-motion-time-standards"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "List the information required for effective production planning.",
+              "unit": "Unit 3",
+              "type": "aggregate-planning"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are the different types of scheduling situations and methodologies? Explain any one of them in detail.",
+              "unit": "Unit 3",
+              "type": "scheduling-and-dispatching-and-its-sheets-and-charts"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "A company has three plants at locations A, B and C which supply to warehouses located at D, E, F, G and H. Monthly plant capacities are 800, 500 and 900 units respectively. Monthly warehouse requirements are 400, 400, 500, 400 and 800 units respectively. Unit transportation costs (in Rs.) are given below.\n\n| From \\ To | D | E | F | G | H |\n| --- | --- | --- | --- | --- | --- |\n| A | 5 | 8 | 6 | 6 | 3 |\n| B | 4 | 7 | 7 | 6 | 5 |\n| C | 8 | 4 | 6 | 6 | 4 |\n\nDetermine an optimum distribution for the company in order to minimize the total transportation cost.",
+              "unit": "Unit 1",
+              "type": "factory-location-and-layout"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "A company uses annually 24,000 units of a raw material which costs Rs. 1.25 per unit. The cost of placing each order is Rs. 22.5 and the carrying cost is 5.4% per year of the average inventory. Find the economic lot size and the total inventory cost (including the cost of material). Should the company accept the offer made by the supplier of a discount of 5% on the cost price on a single order of 24,000 units? Suppose the company works for 300 days a year. If the procurement time is 12 days and safety stock is 400 units, find the reorder point, the minimum, maximum and average inventory.",
+              "unit": "Unit 4",
+              "type": "economic-lot-batch-size"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Define MRP II. What the surround failure of Manufacturing Resources Planning (MRP II) system in manufacturing management?",
+              "unit": "Unit 4",
+              "type": "mrp-ii"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the advantages and disadvantages of an ERP system? Explain the implementation of an ERP system.",
+              "unit": "Unit 4",
+              "type": "erp"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How is line balancing done using the heuristic method? What are the types and rules of heuristic methods?",
+              "unit": "Unit 3",
+              "type": "production-line-balancing"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is the role of factory executives and workers in raising productivity? Explain it.",
+              "unit": "Unit 5",
+              "type": "importance-of-productivity"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Write a short note on any two:\n(i) Market Analysis",
+              "unit": "Unit 1",
+              "type": "forecasting-and-market-analysis"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "(ii) Synthesis from standard data",
+              "unit": "Unit 2",
+              "type": "synthesis-from-standard-data"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "(iii) MPS",
+              "unit": "Unit 3",
+              "type": "mps"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "(iv) Inventory Classification",
+              "unit": "Unit 4",
+              "type": "inventory-classification"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

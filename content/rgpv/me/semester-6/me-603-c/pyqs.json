@@ -1,0 +1,693 @@
+{
+  "subject": {
+    "id": "me-603-c",
+    "code": "ME-603 (C)",
+    "name": "Product Design",
+    "title": "ME-603 (C) - Product Design",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Explain the different stages of PLC with suitable examples.",
+              "unit": "Unit 1",
+              "type": "product-life-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Discuss various techniques of product designing. Explain in detail the product design methodology.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How will you incorporate environmental concerns into product design? Discuss.",
+              "unit": "Unit 3",
+              "type": "dfx"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "What are the various value engineering techniques? Discuss the procedure to value a product with an example.",
+              "unit": "Unit 2",
+              "type": "applications-in-product-design"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State and explain the objectives of product design and development.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain Function Analysis System Techniques (FAST) in details.",
+              "unit": "Unit 2",
+              "type": "functional-analysis-system-technique-fast"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How ergonomic considerations are useful in product design? What are various elements and concepts of visual design?",
+              "unit": "Unit 3",
+              "type": "ergonomics-in-product-design"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the benefit of DFM and how is it implemented? Explain the difference between DFM and DFW.",
+              "unit": "Unit 3",
+              "type": "dfm"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain general design guidelines for manual assembly.",
+              "unit": "Unit 4",
+              "type": "product-design-for-manual-assembly"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss design guidelines for sand casting.",
+              "unit": "Unit 4",
+              "type": "design-guidelines-for-manufacturing-processes"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the five steps involved in rapid prototyping process.",
+              "unit": "Unit 5",
+              "type": "needs-of-rapid-prototyping"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain classification of Rapid Prototyping methods and applications of Rapid Prototyping.",
+              "unit": "Unit 5",
+              "type": "advantages"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "List various Rapid Prototyping Data Formats. Explain about the significance of STL format.",
+              "unit": "Unit 5",
+              "type": "working-principles-of-sla-lom-and-sls"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What is Selective Laser Sintering and explain the Selective Laser Sintering Process?",
+              "unit": "Unit 5",
+              "type": "working-principles-of-sla-lom-and-sls"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "November 2023",
+      "year": 2023,
+      "month": "November",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the importance of product development.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define customer focus.",
+              "unit": "Unit 1",
+              "type": "product-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the importance of product strategy.",
+              "unit": "Unit 1",
+              "type": "product-policy-of-an-organization"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain briefly the elements involved in product strategy.",
+              "unit": "Unit 1",
+              "type": "product-policy-of-an-organization"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Write briefly on characteristics of successful product development.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write briefly on challenges in new product development.",
+              "unit": "Unit 1",
+              "type": "selection-of-a-profitable-product"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the input methods for obtaining information from customers.",
+              "unit": "Unit 1",
+              "type": "product-analysis"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss the methodology used in new product development.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the role of competitive benchmarking in planning.",
+              "unit": "Unit 1",
+              "type": "product-analysis"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Briefly explain the organizational policies for product planning, process management and improvement of product.",
+              "unit": "Unit 1",
+              "type": "product-policy-of-an-organization"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the need for integration of customer, designer, material supplier and process planner.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the ways of involving customer in development of a new product.",
+              "unit": "Unit 1",
+              "type": "product-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe product life cycle.",
+              "unit": "Unit 1",
+              "type": "product-life-cycle"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is product design process?",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "How will you identify the problem related to product manufacturing?",
+              "unit": "Unit 2",
+              "type": "problem-identification-and-selection"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What do you mean by DFM and DFX?",
+              "unit": "Unit 3",
+              "type": "dfx"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the different stages of PLC with suitable examples.",
+              "unit": "Unit 1",
+              "type": "product-life-cycle"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the factors of Product Design? Explain it.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain in detail the product design methodology.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the importance of understanding user needs in the product design process.",
+              "unit": "Unit 1",
+              "type": "product-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Define value engineering and explain its significance in product design.",
+              "unit": "Unit 2",
+              "type": "applications-in-product-design"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the key principles of value engineering and how they apply to product development.",
+              "unit": "Unit 2",
+              "type": "advantages"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the various types of creative techniques.",
+              "unit": "Unit 1",
+              "type": "product-design-process"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain Function Analysis System Techniques (FAST) in details.",
+              "unit": "Unit 2",
+              "type": "functional-analysis-system-technique-fast"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the role of simulation and analysis tools in Product Design.",
+              "unit": "Unit 3",
+              "type": "computer-aided-design"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the benefit of DFM and how is it implemented? Explain the difference between DFM and DFA.",
+              "unit": "Unit 3",
+              "type": "dfm"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Design For Manufacture and Assembly (DFMA), and why is it important in product development?",
+              "unit": "Unit 4",
+              "type": "product-design-for-manual-assembly"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss techniques for designing products that are easy to assemble and disassemble.",
+              "unit": "Unit 4",
+              "type": "product-design-for-manual-assembly"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Describe the five steps involved in rapid prototyping.",
+              "unit": "Unit 5",
+              "type": "needs-of-rapid-prototyping"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain classification of Rapid Prototyping Methods and applications of Rapid Prototyping.",
+              "unit": "Unit 5",
+              "type": "advantages"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write a short note on any two: Stereolithography (SLA).",
+              "unit": "Unit 5",
+              "type": "working-principles-of-sla-lom-and-sls"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write a short note on any two: Advantages of Rapid Prototyping.",
+              "unit": "Unit 5",
+              "type": "advantages"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write a short note on any two: Ergonomics in Product Design.",
+              "unit": "Unit 3",
+              "type": "ergonomics-in-product-design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Why is understanding the Product Life Cycle important for businesses?",
+              "unit": "Unit 1",
+              "type": "product-life-cycle"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is the organization's process for resource allocation in product development and market introduction?",
+              "unit": "Unit 1",
+              "type": "product-policy-of-an-organization"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Which factors do you deem most critical when assessing rival products?",
+              "unit": "Unit 1",
+              "type": "product-analysis"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are examples of product design in sustainable products or eco-friendly packaging?",
+              "unit": "Unit 3",
+              "type": "dfx"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Describe the concept of tertiary or superfluous functions in biological systems or system architecture. What role do these functions have in a system's overall performance?",
+              "unit": "Unit 2",
+              "type": "primary-versus-secondary-versus-tertiary-unnecessary-functions"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "How would you handle the possible difficulties in implementing FAST in automotive systems?",
+              "unit": "Unit 2",
+              "type": "functional-analysis-system-technique-fast"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "How can a design's manufacturing optimization be guaranteed using CAD? Talk about the function of DFM tools in CAD.",
+              "unit": "Unit 3",
+              "type": "dfm"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How do the fundamental ideas of Design for Environment (DFE) affect the design of products?",
+              "unit": "Unit 3",
+              "type": "dfx"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What challenges will need to be overcome in order to apply Robust Design in practical settings?",
+              "unit": "Unit 3",
+              "type": "robust-design"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Which factors must be addressed when developing metallic objects for die casting and how does this differ from sand casting?",
+              "unit": "Unit 4",
+              "type": "design-guidelines-for-manufacturing-processes"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How can mechanical loads, thermal loading and environmental elements like UV or chemical exposure be incorporated into the design of non-metallic products?",
+              "unit": "Unit 4",
+              "type": "design-guidelines-for-manufacturing-processes"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How can designs for various production processes be validated using prototyping and rapid prototyping technologies?",
+              "unit": "Unit 5",
+              "type": "needs-of-rapid-prototyping"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is the difference between SLA, LOM and SLS surface finishes, and how does this affect the finished product?",
+              "unit": "Unit 5",
+              "type": "working-principles-of-sla-lom-and-sls"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "How is the powder material handled during the layer-by-layer construction of a part using the SLS process?",
+              "unit": "Unit 5",
+              "type": "working-principles-of-sla-lom-and-sls"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Write a short note on any two: What role does innovation play in an organization's product policy?",
+              "unit": "Unit 1",
+              "type": "product-policy-of-an-organization"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Write a short note on any two: Sustainability and eco-design.",
+              "unit": "Unit 3",
+              "type": "dfx"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Write a short note on any two: Difference between 2D and 3D CAD modeling.",
+              "unit": "Unit 3",
+              "type": "computer-aided-design"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Write a short note on any two: The quality of an injection-molded part.",
+              "unit": "Unit 4",
+              "type": "design-guidelines-for-manufacturing-processes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

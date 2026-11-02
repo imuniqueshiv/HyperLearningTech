@@ -1,0 +1,762 @@
+{
+  "subject": {
+    "id": "me-803-c",
+    "code": "ME-803 (C)",
+    "name": "Entrepreneurship and Management Concepts",
+    "title": "ME-803 (C) - Entrepreneurship and Management Concepts",
+    "semester": "VIII",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Write a short note of Scope and functional areas of Management.",
+              "unit": "Unit 2",
+              "type": "importance-definition-and-functions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the use of SWOT analysis with example.",
+              "unit": "Unit 2",
+              "type": "swot-analysis"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How do you print a blank SWOT analysis?",
+              "unit": "Unit 2",
+              "type": "swot-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "Explain Maslow's need hierarchy and Herzberg two factor theories in brief.",
+              "unit": "Unit 2",
+              "type": "maslows-need-hierarchy-and-herzberg-two-factor-theory"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "Write short notes on (any three): a) Law of requisite variety b) BCG matrix c) Fund flow and cash flow statements d) Form of business ownership",
+              "unit": "Unit 1/2/3",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5",
+              "label": "",
+              "text": "Write short notes on (any three): a) JIT b) Theories of entrepreneur c) Break Even Point (BEP) d) Financial ratio analysis",
+              "unit": "Unit 4/5/3",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "What are the steps in decision making? What marketing decision should precede the formulation of sound promotional strategy and why?",
+              "unit": "Unit 2/3",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "How is Six Sigma used in the management process? What are the quality metrics of Six Sigma?",
+              "unit": "Unit 4",
+              "type": "qfd-tpm-and-six-sigma-quality"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the objectives of Six Sigma in TQM? How does Six Sigma improve quality of life?",
+              "unit": "Unit 4",
+              "type": "tqm"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write the short note on MSME and explain the different entrepreneur development program available in Indian Colleges for young budding Engineers.",
+              "unit": "Unit 5",
+              "type": "entrepreneur-development-program"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Discuss and differentiate, types of organizational structure.",
+              "unit": "Unit 2",
+              "type": "line-staff-and-matrix-organization"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the steps taken by Management for decision making.",
+              "unit": "Unit 2",
+              "type": "steps-in-decision-making"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "A company produces two types of toys: P and Q. Production time of Q is twice that of P and the company has a maximum of 2000 time units per day. The supply of raw material is just sufficient to produce 1500 toys (of any type) per day. Toy type Q requires an electric switch which is available @ 600 pieces per day only. The company makes a profit of Rs. 3 and Rs. 5 on type P and Q respectively. For maximization of profits, what is the daily production quantities of P and Q toys?",
+              "unit": "Unit 4",
+              "type": "production-processes-and-layouts"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Discuss IPO model and compare it with Steven Alters' nine element work model.",
+              "unit": "Unit 1",
+              "type": "steven-alters-nine-element-work-system-model-and-its-comparison-with-ipo-input-processing-output-model"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What are various types of Manufacturing systems?",
+              "unit": "Unit 4",
+              "type": "production-processes-and-layouts"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the Break-Even Point (BEP) and Financial Ratio Analysis.",
+              "unit": "Unit 3",
+              "type": "breakeven-point-bep-and-financial-ratio-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "State the methods of stress management. Explain Maslow's need hierarchy theory.",
+              "unit": "Unit 2",
+              "type": "team-work-and-stress-management"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What do you understand by business ownership? State its types.",
+              "unit": "Unit 3",
+              "type": "forms-of-business-ownerships"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the role of 4 P's (product, price, placement, and promotions) on social marketing.",
+              "unit": "Unit 3",
+              "type": "four-ps-product-price-placement-promotion"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the operating and financial leverage?",
+              "unit": "Unit 3",
+              "type": "finance-nature-and-scope"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between fund flow and cash flow statement.",
+              "unit": "Unit 3",
+              "type": "fund-flow-and-cash-flow-statements"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define NPV and capital budgeting for marketing.",
+              "unit": "Unit 3",
+              "type": "pay-back-period-npv-and-capital-budgeting"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Why is it necessary to give allowances? What are the different types of allowances?",
+              "unit": "Unit 4",
+              "type": "time-measurement-rating-and-various-allowances"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Enlist the various sources of funds and funding agencies to support the new entrepreneurs.",
+              "unit": "Unit 5",
+              "type": "sources-of-funds"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on: a) Law of requisite variety b) BCG matrix c) NPV and capital budgeting",
+              "unit": "Unit 1/2/3",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is system and what are the various elements of system?",
+              "unit": "Unit 1",
+              "type": "types-definition-and-characteristics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain Steven Alters nine elements work system framework.",
+              "unit": "Unit 1",
+              "type": "steven-alters-nine-element-work-system-model-and-its-comparison-with-ipo-input-processing-output-model"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain Maslow's need hierarchy of theory with examples.",
+              "unit": "Unit 2",
+              "type": "maslows-need-hierarchy-and-herzberg-two-factor-theory"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is SWOT analysis? Explain in detail.",
+              "unit": "Unit 2",
+              "type": "swot-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is marketing and the 4P's of marketing in detail?",
+              "unit": "Unit 3",
+              "type": "four-ps-product-price-placement-promotion"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is the importance of NPV in capital budgeting decisions?",
+              "unit": "Unit 3",
+              "type": "pay-back-period-npv-and-capital-budgeting"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What do you understand by business ownership? State its types.",
+              "unit": "Unit 3",
+              "type": "forms-of-business-ownerships"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the different types of manufacturing systems.",
+              "unit": "Unit 4",
+              "type": "production-processes-and-layouts"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is the relationship between operations and productivity?",
+              "unit": "Unit 4",
+              "type": "operations-goods-and-services-vs-project-management"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Why is it necessary to give allowances? What are the different types of allowances?",
+              "unit": "Unit 4",
+              "type": "time-measurement-rating-and-various-allowances"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between fund flow and cash flow statement.",
+              "unit": "Unit 3",
+              "type": "fund-flow-and-cash-flow-statements"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the operating and financial leverage?",
+              "unit": "Unit 3",
+              "type": "finance-nature-and-scope"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the different entrepreneur development program available in Indian colleges for young budding Engineers.",
+              "unit": "Unit 5",
+              "type": "entrepreneur-development-program"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "List the various sources of funds and funding agencies to support the new entrepreneurs.",
+              "unit": "Unit 5",
+              "type": "sources-of-funds"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Write short notes on any two of the following: i) BCG matrix ii) Break Even Point (BEP) iii) Law of requisite variety",
+              "unit": "Unit 2/3/1",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Write a short note of Scope and functional areas of Management.",
+              "unit": "Unit 2",
+              "type": "importance-definition-and-functions"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the use of SWOT analysis with example.",
+              "unit": "Unit 2",
+              "type": "swot-analysis"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "How do you print a blank SWOT analysis?",
+              "unit": "Unit 2",
+              "type": "swot-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "Define Steven Alter's nine element work system model and its comparison with IPO (Input-Processing-Output) model, on ground of advantages and limitations.",
+              "unit": "Unit 1",
+              "type": "steven-alters-nine-element-work-system-model-and-its-comparison-with-ipo-input-processing-output-model"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain line, staff and matrix organization in brief and elaborate with examples.",
+              "unit": "Unit 2",
+              "type": "line-staff-and-matrix-organization"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "How Herzberg two factor theory, expectation theory are useful for Management?",
+              "unit": "Unit 2",
+              "type": "expectation-theory"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the role of 4 P's on social marketing.",
+              "unit": "Unit 3",
+              "type": "four-ps-product-price-placement-promotion"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is the Break-Even point and which variable will influence the Break-Even analysis?",
+              "unit": "Unit 3",
+              "type": "breakeven-point-bep-and-financial-ratio-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "How is Six Sigma used in management process? What are the quality metrics of Six Sigma?",
+              "unit": "Unit 4",
+              "type": "qfd-tpm-and-six-sigma-quality"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What are the objectives of Six Sigma in TQM? How does Six Sigma improves quality of life?",
+              "unit": "Unit 4",
+              "type": "tqm"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Why is it necessary to give allowances? What are the different types of allowances?",
+              "unit": "Unit 4",
+              "type": "time-measurement-rating-and-various-allowances"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Enlist the various sources of funds and funding agencies to support the new entrepreneurs.",
+              "unit": "Unit 5",
+              "type": "sources-of-funds"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain in brief: a) Pay-back period b) Standard time and its utility c) Cost of quality d) SWOT analysis",
+              "unit": "Unit 3/4/2",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2026",
+      "year": 2026,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain feedback (pull) and feedforward (push) control mechanisms with simple real-life examples.",
+              "unit": "Unit 1",
+              "type": "feedback-pull-and-feed-forward-push-controls"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain various characteristics of a system.",
+              "unit": "Unit 1",
+              "type": "types-definition-and-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the concept of a knowledge-driven learning organization and its role in modern e-business environment.",
+              "unit": "Unit 2",
+              "type": "knowledge-driven-learning-organization-and-e-business"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the steps in decision-making process. Differentiate between structured and unstructured decisions.",
+              "unit": "Unit 2",
+              "type": "steps-in-decision-making"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the 4P's of marketing mix with examples.",
+              "unit": "Unit 3",
+              "type": "four-ps-product-price-placement-promotion"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Define Marketing. Explain its importance and discuss the difference between needs, wants, and demands with examples.",
+              "unit": "Unit 3",
+              "type": "importance-and-definition-of-marketing"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss different forms of business ownership with advantages and disadvantages.",
+              "unit": "Unit 3",
+              "type": "forms-of-business-ownerships"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the structure and components of Balance Sheet and Profit and Loss Account.",
+              "unit": "Unit 3",
+              "type": "balance-sheet"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Define productivity and explain different types of productivity.",
+              "unit": "Unit 4",
+              "type": "types-of-productivity"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain time study procedure. Discuss performance rating and allowances.",
+              "unit": "Unit 4",
+              "type": "time-measurement-rating-and-various-allowances"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the concept, objectives, and structure of Entrepreneurship Development Programs.",
+              "unit": "Unit 5",
+              "type": "entrepreneur-development-program"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Discuss Economic and Sociological theories of entrepreneurship.",
+              "unit": "Unit 5",
+              "type": "theories-of-entrepreneur-socio-economic-cultural-and-psychological"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7",
+              "label": "",
+              "text": "Explain the following (any two): (a) Supersystem and subsystems (b) SWOT analysis (c) Differences between leader & manager (d) Customer Relationship Management (CRM)",
+              "unit": "Unit 1/2/3",
+              "type": "mixed"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Explain the following (any two): (a) Herzberg's two-factor theory (b) Break-Even Point and its significance (c) TQM and JIT (d) QFD and TPM",
+              "unit": "Unit 2/3/4",
+              "type": "mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "subject": {
+    "id": "me-604-b",
+    "code": "ME-604 (B)",
+    "name": "Optimization Techniques",
+    "title": "ME-604 (B) - Optimization Techniques",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you mean by Optimization?",
+              "unit": "Unit 1",
+              "type": "engineering-application-of-optimization"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are optimization techniques used in problem solving of industrial product development?",
+              "unit": "Unit 1",
+              "type": "engineering-application-of-optimization"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write down the statement of an optimization problem.",
+              "unit": "Unit 1",
+              "type": "statement-of-an-optimization-problem"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is Optimum design concept?",
+              "unit": "Unit 1",
+              "type": "optimum-design-concepts"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How does LPP help in problem solving of design and manufacturing?",
+              "unit": "Unit 2",
+              "type": "application-of-lpp-models-in-design-and-manufacturing"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write down the steps involved in problem solving from LPP methods.",
+              "unit": "Unit 2",
+              "type": "review-of-linear-programming-methods-for-optimum-design"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is an Optimization Algorithm for solving unconstrained optimization problems?",
+              "unit": "Unit 3",
+              "type": "gradient-based-method-cauchys-steepest-descent-method"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is the direct method and the Penalty Function method in Optimization Technique?",
+              "unit": "Unit 4",
+              "type": "penalty-function-methods"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "How does the modern method of optimization differ from the traditional optimization problem solving approach?",
+              "unit": "Unit 5",
+              "type": "genetic-algorithms"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write down the steps involved in modern optimization problem solving methods.",
+              "unit": "Unit 5",
+              "type": "simulated-annealing"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you mean by Genetic algorithm?",
+              "unit": "Unit 5",
+              "type": "genetic-algorithms"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the role of Newton's method in optimization technique.",
+              "unit": "Unit 3",
+              "type": "newtons-method"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Fuzzy optimization technique?",
+              "unit": "Unit 5",
+              "type": "fuzzy-optimization-techniques"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the engineering applications of constrained and unconstrained algorithms?",
+              "unit": "Unit 4",
+              "type": "engineering-applications-of-constrained-and-unconstrained-algorithms"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "How is MATLAB useful in an optimization algorithm?",
+              "unit": "Unit 5",
+              "type": "use-of-matlab-to-solve-optimization-problems"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "How will you solve the problems from LPP graphically? Explain by taking any example of your choice.",
+              "unit": "Unit 2",
+              "type": "review-of-linear-programming-methods-for-optimum-design"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

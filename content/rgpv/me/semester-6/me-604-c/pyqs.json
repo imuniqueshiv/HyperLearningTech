@@ -1,0 +1,1062 @@
+{
+  "subject": {
+    "id": "me-604-c",
+    "code": "ME-604 (C)",
+    "name": "Renewable Energy Technology",
+    "title": "ME-604 (C) - Renewable Energy Technology",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2020",
+      "year": 2020,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "How do you measure Solar Radiation?",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the constructional features and working of a solar flat plate collector.",
+              "unit": "Unit 1",
+              "type": "flat-plate-collectors-liquid-and-air-type"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How many types of semiconductors or solar cells are used to fabricate PV cells and modules?",
+              "unit": "Unit 1",
+              "type": "technology-for-fabrication-of-photovoltaic-devices"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the limitations of an SPV system?",
+              "unit": "Unit 1",
+              "type": "applications-of-solar-cells-in-pv-generation-systems"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Derive the expression for power developed due to wind.",
+              "unit": "Unit 2",
+              "type": "power-torque-and-speed-characteristics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What prohibits large scale utilization of wind power for electricity?",
+              "unit": "Unit 2",
+              "type": "application-of-wind-energy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain a wind diesel hybrid system.",
+              "unit": "Unit 2",
+              "type": "types-and-classification-of-wecs"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is an aerofoil? Explain its types.",
+              "unit": "Unit 2",
+              "type": "wind-energy-conversion-principles"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is biomass? How is it useful?",
+              "unit": "Unit 3",
+              "type": "classification-of-biomass"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the biochemical conversion process.",
+              "unit": "Unit 3",
+              "type": "biochemical-conversion-of-biomass-to-energy-anaerobic-digestion"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Differentiate between micro, mini and small hydro systems.",
+              "unit": "Unit 4",
+              "type": "overview-of-micro-mini-and-small-hydro-system"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the principle of ocean thermal energy conversion.",
+              "unit": "Unit 4",
+              "type": "principle-of-ocean-thermal-energy-conversion-system"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the different types of geothermal deposits?",
+              "unit": "Unit 5",
+              "type": "type-of-geothermal-energy-deposits"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss hydrogen as a source of energy.",
+              "unit": "Unit 5",
+              "type": "hydrogen-as-a-source-of-energy"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two:\n(a) Power curve of wind turbine",
+              "unit": "Unit 2",
+              "type": "power-curve-of-wind-turbine"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Design of biogas plant",
+              "unit": "Unit 3",
+              "type": "design-of-biogas-plants"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Selection of turbine for hydro plant",
+              "unit": "Unit 4",
+              "type": "selection-and-design-criteria-of-turbines"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Fuel cell advantages",
+              "unit": "Unit 5",
+              "type": "types-of-fuel-cell"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is renewable energy?",
+              "unit": "Unit 1",
+              "type": "solar-thermal-conversion-basics"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the need of renewable energy.",
+              "unit": "Unit 1",
+              "type": "solar-thermal-conversion-basics"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Classify the renewable energy sources.",
+              "unit": "Unit 1",
+              "type": "solar-thermal-conversion-basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is energy storage management?",
+              "unit": "Unit 5",
+              "type": "hydrogen-production-and-storage"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the effect of use of fossil fuel on climate change and global warming.",
+              "unit": "Unit 3",
+              "type": "co2-fixation-potential-of-biomass"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Write and explain sensible heat and latent heat.",
+              "unit": "Unit 1",
+              "type": "theory-of-flat-plate-collectors"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is the greenhouse effect?",
+              "unit": "Unit 1",
+              "type": "extra-terrestrial-and-terrestrial-radiation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the Sun and Earth relationship in solar radiation.",
+              "unit": "Unit 1",
+              "type": "extra-terrestrial-and-terrestrial-radiation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the effect of Sun and Earth movement on solar radiation.",
+              "unit": "Unit 1",
+              "type": "extra-terrestrial-and-terrestrial-radiation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the concept of solar geometry.",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain the thermosiphon system for water heating.",
+              "unit": "Unit 1",
+              "type": "solar-water-heater-solar-dryers-solar-stills"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Explain the forced circulation system in water heating.",
+              "unit": "Unit 1",
+              "type": "solar-water-heater-solar-dryers-solar-stills"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain a flat plate collector with a neat figure.",
+              "unit": "Unit 1",
+              "type": "flat-plate-collectors-liquid-and-air-type"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "State the applications of solar thermal energy.",
+              "unit": "Unit 1",
+              "type": "solar-water-heater-solar-dryers-solar-stills"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain briefly P-V conversion.",
+              "unit": "Unit 1",
+              "type": "solar-photovoltaic-principle-of-photovoltaic-conversion-of-solar-energy"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain the working principle of solar cells.",
+              "unit": "Unit 1",
+              "type": "solar-photovoltaic-principle-of-photovoltaic-conversion-of-solar-energy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "How do you measure solar radiation?",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain in detail the solar radiation on tilted surfaces.",
+              "unit": "Unit 1",
+              "type": "extra-terrestrial-and-terrestrial-radiation"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How are solar collectors classified? What are the main applications of a drier?",
+              "unit": "Unit 1",
+              "type": "solar-water-heater-solar-dryers-solar-stills"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Calculate the angle made by the beam radiation with the normal to a flat collector on Dec 1, at 9:00 A.M. solar time for a location at 28° 35'N. The collector is tilted at an angle of latitude plus 10°, with the horizontal and is pointing due south.",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "How many types of semiconductors or solar cells are used to fabricate PV cells and modules?",
+              "unit": "Unit 1",
+              "type": "technology-for-fabrication-of-photovoltaic-devices"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss the step-by-step procedure to execute the P and O algorithm for tracking the maximum power from the sun.",
+              "unit": "Unit 1",
+              "type": "applications-of-solar-cells-in-pv-generation-systems"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Derive the expression for power developed due to wind.",
+              "unit": "Unit 2",
+              "type": "power-torque-and-speed-characteristics"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What are some limitations of wind energy? What barriers are in place that make wind energy prohibitive?",
+              "unit": "Unit 2",
+              "type": "application-of-wind-energy"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "A tidal power plant of the simple single basin type has a basin area of $30 \\times 10^{6}\\,\\mathrm{m}^{2}$. The tide has a range of 12 m. The turbine, however, stops operating when the head on it falls below 3 m. Calculate the energy generated in 1 filling (or emptying) process in kWh if the turbine generator efficiency is 0.73.",
+              "unit": "Unit 4",
+              "type": "principles-of-ocean-wave-energy-and-tidal-energy-conversion"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is an aerofoil? Explain its types.",
+              "unit": "Unit 2",
+              "type": "wind-energy-conversion-principles"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is biomass? How is it useful?",
+              "unit": "Unit 3",
+              "type": "classification-of-biomass"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Describe the classification of fuel cell. With a neat sketch explain the working of a fuel cell.",
+              "unit": "Unit 5",
+              "type": "types-of-fuel-cell"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Differentiate between micro, mini and small hydro systems.",
+              "unit": "Unit 4",
+              "type": "overview-of-micro-mini-and-small-hydro-system"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the principle of ocean thermal energy conversion.",
+              "unit": "Unit 4",
+              "type": "principle-of-ocean-thermal-energy-conversion-system"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Define the terms: (i) Altitude angle (ii) Incident angle.",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Show that a wavelength of $\\lambda = 1\\,\\mu\\mathrm{m}$ solar radiation corresponds to an energy of 1.24 eV. Give all assumptions made.",
+              "unit": "Unit 1",
+              "type": "solar-photovoltaic-principle-of-photovoltaic-conversion-of-solar-energy"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Sea waves are irregular in amplitude. How is significant wave height defined?",
+              "unit": "Unit 4",
+              "type": "principles-of-ocean-wave-energy-and-tidal-energy-conversion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "How do you measure solar radiation?",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the constructional features and working of a solar flat plate collector.",
+              "unit": "Unit 1",
+              "type": "flat-plate-collectors-liquid-and-air-type"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Classify the renewable energy sources.",
+              "unit": "Unit 1",
+              "type": "solar-thermal-conversion-basics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Derive the expression for power developed due to wind.",
+              "unit": "Unit 2",
+              "type": "power-torque-and-speed-characteristics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What prohibits large scale utilization of wind power for electricity?",
+              "unit": "Unit 2",
+              "type": "application-of-wind-energy"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is an aerofoil? Explain its types.",
+              "unit": "Unit 2",
+              "type": "wind-energy-conversion-principles"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is biomass? How is it useful?",
+              "unit": "Unit 3",
+              "type": "classification-of-biomass"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the different types of biomass gasification.",
+              "unit": "Unit 3",
+              "type": "biomass-gasification-different-types"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are the main components of a small hydropower system?",
+              "unit": "Unit 4",
+              "type": "overview-of-micro-mini-and-small-hydro-system"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the principle of ocean thermal energy conversion.",
+              "unit": "Unit 4",
+              "type": "principle-of-ocean-thermal-energy-conversion-system"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "",
+              "text": "A tidal power plant of the simple single basin type has a basin area of $30 \\times 10^{6}\\,\\mathrm{m}^{2}$. The tide has a range of 12 m. The turbine, however, stops operating when the head on it falls below 3 m. Calculate the energy generated in 1 filling (or emptying) process in kWh if the turbine generator efficiency is 0.73.",
+              "unit": "Unit 4",
+              "type": "principles-of-ocean-wave-energy-and-tidal-energy-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What are the different types of geothermal deposits?",
+              "unit": "Unit 5",
+              "type": "type-of-geothermal-energy-deposits"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the environmental benefits of geothermal energy production?",
+              "unit": "Unit 5",
+              "type": "geothermal-power-plants"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any two:\n(a) Principle of photovoltaic conversion of solar energy",
+              "unit": "Unit 1",
+              "type": "solar-photovoltaic-principle-of-photovoltaic-conversion-of-solar-energy"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Types of digesters",
+              "unit": "Unit 3",
+              "type": "types-of-digesters"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Fuel cell system",
+              "unit": "Unit 5",
+              "type": "fuel-cell-system-and-sub-system"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Selection of turbine for hydro plant",
+              "unit": "Unit 4",
+              "type": "selection-and-design-criteria-of-turbines"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What do you understand by measurement of solar radiations?",
+              "unit": "Unit 1",
+              "type": "radiation-measurement-and-predictions"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the constructional features and working of a solar flat plate collector.",
+              "unit": "Unit 1",
+              "type": "flat-plate-collectors-liquid-and-air-type"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "How many types of semiconductors or solar cells are used to fabricate PV cells and modules?",
+              "unit": "Unit 1",
+              "type": "technology-for-fabrication-of-photovoltaic-devices"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What are the limitations of an SPV system?",
+              "unit": "Unit 1",
+              "type": "applications-of-solar-cells-in-pv-generation-systems"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the WECS. Also explain the various types of WECS with a suitable diagram.",
+              "unit": "Unit 2",
+              "type": "types-and-classification-of-wecs"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What prohibits large scale utilization of wind power for electricity?",
+              "unit": "Unit 2",
+              "type": "application-of-wind-energy"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the principle of an ocean thermal energy conversion system.",
+              "unit": "Unit 4",
+              "type": "principle-of-ocean-thermal-energy-conversion-system"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the principle of a tidal energy conversion system with a suitable diagram.",
+              "unit": "Unit 4",
+              "type": "principles-of-ocean-wave-energy-and-tidal-energy-conversion"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the site selection of a geothermal power plant.",
+              "unit": "Unit 5",
+              "type": "site-selection"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the working of a fuel cell for electricity generation.",
+              "unit": "Unit 5",
+              "type": "principle-of-working"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain a wind diesel hybrid system.",
+              "unit": "Unit 2",
+              "type": "types-and-classification-of-wecs"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is an aerofoil? Explain its types.",
+              "unit": "Unit 2",
+              "type": "wind-energy-conversion-principles"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Differentiate between micro, mini and small hydro systems.",
+              "unit": "Unit 4",
+              "type": "overview-of-micro-mini-and-small-hydro-system"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the biochemical conversion process.",
+              "unit": "Unit 3",
+              "type": "biochemical-conversion-of-biomass-to-energy-anaerobic-digestion"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on the following:\n(a) Power curve of wind turbine",
+              "unit": "Unit 2",
+              "type": "power-curve-of-wind-turbine"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "(b) Design of biogas plant",
+              "unit": "Unit 3",
+              "type": "design-of-biogas-plants"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "(c) Selection of turbine for hydro plant",
+              "unit": "Unit 4",
+              "type": "selection-and-design-criteria-of-turbines"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "(d) Fuel cell advantages",
+              "unit": "Unit 5",
+              "type": "types-of-fuel-cell"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "",
+              "text": "Explain the principle of photovoltaic conversion of solar energy with a suitable diagram.",
+              "unit": "Unit 1",
+              "type": "solar-photovoltaic-principle-of-photovoltaic-conversion-of-solar-energy"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the application of solar cells in a PV generation system.",
+              "unit": "Unit 1",
+              "type": "applications-of-solar-cells-in-pv-generation-systems"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Describe the energy estimation of wind regimes.",
+              "unit": "Unit 2",
+              "type": "energy-estimation-of-wind-regimes"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Derive the expression for power developed due to wind.",
+              "unit": "Unit 2",
+              "type": "power-torque-and-speed-characteristics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the solar water heater with a suitable example.",
+              "unit": "Unit 1",
+              "type": "solar-water-heater-solar-dryers-solar-stills"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the various types of production of biomass energy.",
+              "unit": "Unit 3",
+              "type": "biomass-conversion-routes-biochemical-chemical-and-thermo-chemical"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Describe the various types of digesters in biomass.",
+              "unit": "Unit 3",
+              "type": "types-of-digesters"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What do you understand by speed and voltage regulation in a hydropower plant?",
+              "unit": "Unit 4",
+              "type": "speed-and-voltage-regulation"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Define the various types of turbines and explain any one with a suitable diagram.",
+              "unit": "Unit 4",
+              "type": "elements-of-turbine"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Describe the generation process of electricity through geothermal energy resources.",
+              "unit": "Unit 5",
+              "type": "geothermal-power-plants"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is the principle of thermodynamics in geothermal energy?",
+              "unit": "Unit 5",
+              "type": "basic-thermodynamics"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain photosynthesis in C3 and C4 plant production.",
+              "unit": "Unit 3",
+              "type": "photosynthesis-c3-and-c4-plants-on-biomass-production"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Describe the various types of tariffs in electricity.",
+              "unit": "Unit 4",
+              "type": "load-management-and-tariff-collection"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Write short notes on the following:\n(i) Solar collector",
+              "unit": "Unit 1",
+              "type": "flat-plate-collectors-liquid-and-air-type"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "(ii) Different types of power generation from gasification",
+              "unit": "Unit 3",
+              "type": "power-generation-from-gasification"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "(iii) Tidal energy conversion",
+              "unit": "Unit 4",
+              "type": "principles-of-ocean-wave-energy-and-tidal-energy-conversion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

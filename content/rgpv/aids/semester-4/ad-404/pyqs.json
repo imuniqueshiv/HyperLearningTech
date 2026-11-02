@@ -1,0 +1,895 @@
+{
+  "subject": {
+    "id": "ad-404",
+    "code": "AD-404",
+    "name": "Data Science",
+    "title": "AD-404 - Data Science",
+    "semester": "IV",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "June 2023",
+      "year": 2023,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the difference between structured and unstructured data.",
+              "unit": "Unit 1",
+              "type": "structured-and-unstructured-data"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Define Data Science? Explain the applications of Data Science.",
+              "unit": "Unit 1",
+              "type": "data-science"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Briefly explain about descriptive data analysis.",
+              "unit": "Unit 2",
+              "type": "descriptive-data-analytics"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is data visualization? Discuss box plots and Histograms.",
+              "unit": "Unit 2",
+              "type": "data-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Discuss the usage of VLOOKUP and XLOOKUP operations used for data analysis.",
+              "unit": "Unit 3",
+              "type": "vlookup-xlookup"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is pivoting? Explain the types of pivoting.",
+              "unit": "Unit 3",
+              "type": "pivoting"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is random forest? Explain with suitable example.",
+              "unit": "Unit 4",
+              "type": "random-forests"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Discuss visualization tools Pie chart and Bar chart in python.",
+              "unit": "Unit 4",
+              "type": "python-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Give a brief overview on Business Intelligence and Business Intelligence Tools.",
+              "unit": "Unit 5",
+              "type": "business-intelligence"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Write a short note on the role of Data Scientist.",
+              "unit": "Unit 5",
+              "type": "role-of-data-scientist"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What is Data Wrangling in data science and why it is important? Explain.",
+              "unit": "Unit 1",
+              "type": "data-wrangling"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Give an overview of Macros with suitable example.",
+              "unit": "Unit 2",
+              "type": "excel-macros"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the following?\ni) Data Frame\nii) Gradient Boosting",
+              "unit": "Unit 4",
+              "type": "dataframe-and-gradient-boosting"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the ethical issues in Business Intelligence? Discuss.",
+              "unit": "Unit 5",
+              "type": "data-science-ethics"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Exploratory Analysis",
+              "unit": "Unit 1",
+              "type": "exploratory-analysis"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Data Validation Techniques",
+              "unit": "Unit 2",
+              "type": "data-validation"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Regular Expression",
+              "unit": "Unit 4",
+              "type": "regular-expressions"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Data Analysis vs. Data Scientist",
+              "unit": "Unit 5",
+              "type": "data-analysis-vs-data-scientist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2024",
+      "year": 2024,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the following.\ni) Pie-Chart\nii) Bar Graph\niii) Histogram",
+              "unit": "Unit 1",
+              "type": "graphical-summaries"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the concept of Conditional Probability.",
+              "unit": "Unit 1",
+              "type": "conditional-probability"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the few data validation techniques in Advance Excel.",
+              "unit": "Unit 2",
+              "type": "excel-data-validation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the following Data Analysis methods.\ni) Predictive\nii) Prescriptive",
+              "unit": "Unit 2",
+              "type": "predictive-and-prescriptive-analytics"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the role of Regression Analysis in Data Science.",
+              "unit": "Unit 3",
+              "type": "regression-analysis"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the operations of VLOOKUP and XLOOKUP for data analysis.",
+              "unit": "Unit 3",
+              "type": "vlookup-xlookup"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Write about String manipulation operations in Pandas.",
+              "unit": "Unit 4",
+              "type": "pandas-string-manipulation"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "List and explain visualization tools in Python.",
+              "unit": "Unit 4",
+              "type": "python-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What is Business Intelligence? Explain the types of Business Intelligence.",
+              "unit": "Unit 5",
+              "type": "business-intelligence"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is unfair discrimination? Explain.",
+              "unit": "Unit 5",
+              "type": "unfair-discrimination"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Write about Data Wrangling.",
+              "unit": "Unit 1",
+              "type": "data-wrangling"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "What is Macro? Write down the steps to create a macro in Excel.",
+              "unit": "Unit 2",
+              "type": "excel-macros"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Correlation analysis? Explain.",
+              "unit": "Unit 3",
+              "type": "correlation-analysis"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the concept of Random Forest.",
+              "unit": "Unit 4",
+              "type": "random-forests"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Ethical Issues in Data Science",
+              "unit": "Unit 5",
+              "type": "data-science-ethics"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Security issues in Data Science",
+              "unit": "Unit 5",
+              "type": "data-science-security"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Structured Data",
+              "unit": "Unit 1",
+              "type": "structured-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Data Science? Explain the difference between structured and unstructured data.",
+              "unit": "Unit 1",
+              "type": "structured-and-unstructured-data"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Discuss about exploratory data analysis.",
+              "unit": "Unit 1",
+              "type": "exploratory-analysis"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Write a brief note on importance of unstructured data.",
+              "unit": "Unit 2",
+              "type": "unstructured-data"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is data visualization? Discuss feature map visualization technique.",
+              "unit": "Unit 2",
+              "type": "feature-map-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the concept of logistic regression.",
+              "unit": "Unit 3",
+              "type": "logistic-regression"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Discuss in detail about losso regression.",
+              "unit": "Unit 3",
+              "type": "lasso-regression"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Give an overview of Gradient Bootstrap.",
+              "unit": "Unit 4",
+              "type": "gradient-boosting"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the procedure to create scatter plots using Python.",
+              "unit": "Unit 4",
+              "type": "python-scatter-plots"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the major issues and challenges in Business Intelligence.",
+              "unit": "Unit 5",
+              "type": "business-intelligence"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the role of next-generation data scientists.",
+              "unit": "Unit 5",
+              "type": "next-generation-data-scientists"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What are the methods to evaluate Quantitative data? Explain.",
+              "unit": "Unit 1",
+              "type": "quantitative-data"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "List and explain the various charts in Excel.",
+              "unit": "Unit 2",
+              "type": "excel-charts"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the following data analysis tools.\ni) SUMIFS\nii) SUMPRODUCT",
+              "unit": "Unit 3",
+              "type": "sumifs-sumproduct"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What is over-fitting and under-fitting concept? Discuss.",
+              "unit": "Unit 4",
+              "type": "overfitting-and-underfitting"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Reinforcing human biases",
+              "unit": "Unit 5",
+              "type": "reinforcing-human-biases"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Modern Business Intelligence",
+              "unit": "Unit 5",
+              "type": "modern-business-intelligence"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Bagging and Boosting",
+              "unit": "Unit 4",
+              "type": "bagging-and-boosting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Explain the differences between structured and unstructured data with examples.",
+              "unit": "Unit 1",
+              "type": "structured-and-unstructured-data"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Draw two graphical representations (e.g., Pie Chart, Bar Graph, Histogram - whichever fits) of data using the following sample dataset:\n\nCSE | ECE | MECH | CIVIL | AI & DS\n120 | 90  | 60   | 30    | 100",
+              "unit": "Unit 1",
+              "type": "graphical-summaries"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Calculate and interpret the mean, median and mode for the given quantitative data: 5, 8, 12, 15, 20, 20, 25.",
+              "unit": "Unit 1",
+              "type": "measures-of-central-tendency"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the importance of unstructured data and its use in healthcare, finance and social media.",
+              "unit": "Unit 2",
+              "type": "unstructured-data"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain how t-SNE is used to visualize high-dimensional data with an unstructured data example.",
+              "unit": "Unit 2",
+              "type": "t-sne"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain data validation in Excel and its role in improving data accuracy and reducing errors.",
+              "unit": "Unit 2",
+              "type": "excel-data-validation"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Explain the difference between Type I and Type II errors in multiple hypothesis testing with an example.",
+              "unit": "Unit 3",
+              "type": "multiple-hypothesis-testing"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain logistic regression with an example of binary classification, such as predicting loan approval (Yes/No) using applicant features.",
+              "unit": "Unit 3",
+              "type": "logistic-regression"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain how SUMIFS, INDEX + MATCH and Dynamic Array Formulas can be used for customer segmentation in Excel.",
+              "unit": "Unit 3",
+              "type": "excel-formulas"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain the structure and features of a Pandas DataFrame. How is it different from a NumPy array?",
+              "unit": "Unit 4",
+              "type": "pandas-dataframe"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Illustrate how to create pie charts, bar charts, histograms, and scatter plots in Python using matplotlib or seaborn.",
+              "unit": "Unit 4",
+              "type": "python-visualization"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write the logic to perform string operations in Pandas and apply regular expressions to extract specific patterns.",
+              "unit": "Unit 4",
+              "type": "pandas-string-manipulation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Define Business Intelligence (BI). Explain its types and write the logic of how BI supports strategic decision-making.",
+              "unit": "Unit 5",
+              "type": "business-intelligence"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Compare any two modern Business Intelligence tools based on usability, key features, and data handling capabilities.",
+              "unit": "Unit 5",
+              "type": "modern-business-intelligence"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Reinforcing human biases",
+              "unit": "Unit 5",
+              "type": "reinforcing-human-biases"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Measures of Variability of Quantitative Data",
+              "unit": "Unit 1",
+              "type": "measures-of-variability"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Pivot table and Scenario manager",
+              "unit": "Unit 2",
+              "type": "pivot-table-and-scenario-manager"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Maximum Likelihood Estimation (MLE)",
+              "unit": "Unit 3",
+              "type": "maximum-likelihood-estimation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is Structured Data and Unstructured Data. Explain their characteristics, advantages, disadvantages and real-world applications with examples.",
+              "unit": "Unit 1",
+              "type": "structured-and-unstructured-data"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the Data Science Road Map in detail. Discuss each phase with suitable examples.",
+              "unit": "Unit 1",
+              "type": "data-science-road-map"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain graphical methods of data representation with suitable examples.",
+              "unit": "Unit 1",
+              "type": "graphical-summaries"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Differentiate Basic Probability and Conditional Probability with suitable numerical examples.",
+              "unit": "Unit 1",
+              "type": "conditional-probability"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Explain the importance of Unstructured Data Analytics in modern organizations with suitable examples.",
+              "unit": "Unit 2",
+              "type": "unstructured-data-analytics"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain different Data Visualization techniques in detail.",
+              "unit": "Unit 2",
+              "type": "data-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Discuss the importance of Pivot Tables and Charts in business reporting.",
+              "unit": "Unit 2",
+              "type": "pivot-tables"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain Multiple Hypothesis Testing and Parameter Estimation Methods.",
+              "unit": "Unit 3",
+              "type": "hypothesis-testing-and-parameter-estimation"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are L1 and L2 Regularization? Explain in detail.",
+              "unit": "Unit 3",
+              "type": "l1-l2-regularization"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Explain Bayesian Statistics. Compare Bayesian Statistics with Classical Statistics using examples.",
+              "unit": "Unit 3",
+              "type": "bayesian-statistics"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain Pandas in Python in detail with example.",
+              "unit": "Unit 4",
+              "type": "pandas"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Write Python programs to generate Pie Chart and Bar Chart.",
+              "unit": "Unit 4",
+              "type": "python-visualization"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What is Business Intelligence also discuss its types and component.",
+              "unit": "Unit 5",
+              "type": "business-intelligence"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain Modern Business Intelligence tools in detail.",
+              "unit": "Unit 5",
+              "type": "modern-business-intelligence"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the role of Next-Generation Data Scientists in detail.",
+              "unit": "Unit 5",
+              "type": "next-generation-data-scientists"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Explain different Performance Evaluation Metrics used in Machine Learning.",
+              "unit": "Unit 4",
+              "type": "performance-evaluation-metrics"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

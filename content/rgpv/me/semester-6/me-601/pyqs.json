@@ -1,0 +1,1187 @@
+{
+  "subject": {
+    "id": "me-601",
+    "code": "ME-601",
+    "name": "Thermal Engineering and Gas Dynamics",
+    "title": "ME-601 - Thermal Engineering and Gas Dynamics",
+    "semester": "VI",
+    "gradingSystem": "Grading System (GS)",
+    "maxMarks": 70,
+    "time": "3 Hours",
+    "commonInstructions": [
+      "Attempt any five questions.",
+      "All questions carry equal marks."
+    ]
+  },
+  "papers": [
+    {
+      "exam": "December 2020",
+      "year": 2020,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Define a boiler and how are boilers classified?",
+              "unit": "Unit 1",
+              "type": "steam-generators-classification"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain the process of fuel handling and ash handling systems with a neat diagram.",
+              "unit": "Unit 1",
+              "type": "fuel-and-ash-handling"
+            },
+            {
+              "id": "q1c",
+              "label": "c)",
+              "text": "What are the factors considered in drawing a heat balance sheet for boilers?",
+              "unit": "Unit 1",
+              "type": "heat-balance-sheet"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain the working principle of the Rankine cycle.",
+              "unit": "Unit 2",
+              "type": "rankine-cycle"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "In a Rankine cycle, the steam at inlet to the turbine is saturated at a pressure of 35 bar and the exhaust pressure is 0.2 bar. Determine (i) the pump work, (ii) the turbine work, (iii) the Rankine efficiency, (iv) the condenser heat flow, and (v) the dryness at the end of expansion. Assume a flow rate of 9.5 kg/s.",
+              "unit": "Unit 2",
+              "type": "work-done-and-efficiency-calculations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "What is fluid Mach number? Derive the expression for fluid Mach number.",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Why is the Mach number parameter so important for the study of flow of compressible fluids?",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            },
+            {
+              "id": "q3c",
+              "label": "c)",
+              "text": "Find the velocity of a bullet fired in standard air if its Mach angle is 30°.",
+              "unit": "Unit 3",
+              "type": "mach-cone"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is sonic velocity? On what factors does it depend?",
+              "unit": "Unit 3",
+              "type": "speed-of-sound-in-a-fluid"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "An aeroplane is flying at 21.5 m/s at a low altitude where the velocity of sound is 325 m/s. At a certain point just outside the boundary layer of the wings, the velocity of air relative to the plane is 305 m/s. If the flow is frictionless adiabatic, determine the pressure drop on the wing surface near this position. Assume r = 1.4 and the ambient pressure of air = 102 kN/m².",
+              "unit": "Unit 3",
+              "type": "speed-of-sound-in-a-fluid"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Classify compressors and describe the working of a single stage reciprocating compressor.",
+              "unit": "Unit 4",
+              "type": "working-of-reciprocating-compressor"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "A single stage, single acting reciprocating air compressor compresses air by a ratio of 7. The clearance volume is 6.2% of the cylinder volume for a volumetric efficiency of 0.5 and a stroke to bore ratio of 1.3. Determine the dimensions of the cylinder.",
+              "unit": "Unit 4",
+              "type": "volumetric-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "What do you understand by multi stage compression? What are its merits over single stage compression?",
+              "unit": "Unit 4",
+              "type": "multi-stage-compression"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "A single stage reciprocating air compressor takes in 8 m³/min of air at 1 bar and 30°C and delivers it at 6 bar. The clearance is 5% of the stroke. The expansion and compression are polytropic with n = 1.3. Calculate (i) the temperature of the delivered air, (ii) the volumetric efficiency, and (iii) the power of the compressor.",
+              "unit": "Unit 4",
+              "type": "different-compression-processes"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "What do you understand by a condenser? Discuss its significance.",
+              "unit": "Unit 5",
+              "type": "steam-condensers-introduction-and-types-of-condensers"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Differentiate between a surface condenser and a jet condenser.",
+              "unit": "Unit 5",
+              "type": "steam-condensers-introduction-and-types-of-condensers"
+            },
+            {
+              "id": "q7c",
+              "label": "c)",
+              "text": "Discuss the relevance of Dalton's law of partial pressures in condenser calculations.",
+              "unit": "Unit 5",
+              "type": "air-leakage-and-its-effect-on-performance-of-condensers"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What do you understand by cooling towers? Explain their utility.",
+              "unit": "Unit 5",
+              "type": "various-types-of-cooling-towers"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Briefly explain back pressure and its effect on plant performance, and air leakage and its effect on the performance of condensers.",
+              "unit": "Unit 5",
+              "type": "back-pressure-and-its-effect-on-plant-performance"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Determine the vacuum efficiency of a surface condenser having a vacuum of 715 mm of Hg and a temperature of 32°C. The barometer reading is 765 mm of Hg.",
+              "unit": "Unit 5",
+              "type": "steam-condensers-introduction-and-types-of-condensers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2022",
+      "year": 2022,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "What is the fundamental difference between the operation of impulse and reaction steam turbines?",
+              "unit": "Unit 2",
+              "type": "rankine-cycle"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What is a steam turbine? Explain boiler efficiency and equivalent evaporation in detail.",
+              "unit": "Unit 1",
+              "type": "boiler-efficiency"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the Rankine cycle in detail.",
+              "unit": "Unit 2",
+              "type": "rankine-cycle"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Find out the expression for Rankine cycle efficiency.",
+              "unit": "Unit 2",
+              "type": "work-done-and-efficiency-calculations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Differentiate between the regenerative and reheat Rankine cycles with a T-S diagram.",
+              "unit": "Unit 2",
+              "type": "regenerative-reheat-cycle"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "What is Mach number?",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "Describe the different values of Mach number for which a body is said to be at supersonic and hypersonic speed.",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Explain the binary vapour cycle in detail.",
+              "unit": "Unit 2",
+              "type": "supercritical-pressure-and-binary-vapor-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Classify the various types of air compressors.",
+              "unit": "Unit 4",
+              "type": "classification-and-working-of-rotary-compressors"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What are the advantages of multi stage compression with internal cooling over single stage compression for the same pressure ratio?",
+              "unit": "Unit 4",
+              "type": "inter-cooling"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Explain a double acting compressor.",
+              "unit": "Unit 4",
+              "type": "working-of-reciprocating-compressor"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Define nozzle efficiency and critical pressure ratio.",
+              "unit": "Unit 5",
+              "type": "flow-of-steam-through-nozzles"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the need of compounding in steam turbines.",
+              "unit": "Unit 2",
+              "type": "rankine-cycle"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "What are the differences between supersaturated flow and isentropic flow through steam nozzles?",
+              "unit": "Unit 5",
+              "type": "super-saturated-flow"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "What are the conditions that produce supersaturation of steam in nozzles?",
+              "unit": "Unit 5",
+              "type": "super-saturated-flow"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "How the condition of steam will effect the efficiency of the Rankine cycle?",
+              "unit": "Unit 2",
+              "type": "effect-of-boiler-and-condenser-pressure-and-superheat-on-end-moisture-and-efficiency-of-rankine-cycle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2023",
+      "year": 2023,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the high pressure boiler 'Lamont' with a neat sketch.",
+              "unit": "Unit 1",
+              "type": "high-pressure-boilers-lamont-benson-loeffler-and-velox-steam-generators"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain with a diagram the effect of boiler and condenser pressure on the efficiency of the Rankine cycle.",
+              "unit": "Unit 2",
+              "type": "effect-of-boiler-and-condenser-pressure-and-superheat-on-end-moisture-and-efficiency-of-rankine-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Explain three boiler mountings and accessories.",
+              "unit": "Unit 1",
+              "type": "conventional-boilers"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "A vessel of volume 0.04 m³ contains a mixture of saturated water and saturated steam at a temperature of 250°C. The mass of the liquid present is 9 kg. Find the pressure, the mass, the specific volume, the enthalpy, the entropy, and the internal energy.",
+              "unit": "Unit 2",
+              "type": "work-done-and-efficiency-calculations"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "A two-stage air compressor with perfect intercooling takes in air at 1 bar and 27°C. The law of compression in both stages is pv^1.3 = constant. The compressed air is delivered at 9 bar from the H.P. cylinder to an air receiver. Calculate, per kilogram of air, (i) the minimum work done and (ii) the heat rejected to the intercooler.",
+              "unit": "Unit 4",
+              "type": "inter-cooling"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "A steam power station uses the following cycle: steam at boiler outlet 150 bar, 550°C; reheat at 40 bar to 550°C; condenser at 0.1 bar. Using the Mollier chart and assuming ideal processes, find (a) the quality at turbine exhaust, (b) the cycle efficiency, and (c) the steam rate.",
+              "unit": "Unit 2",
+              "type": "reheat-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Express the overall efficiency of a steam plant as the product of boiler, turbine, generator and cycle efficiencies.",
+              "unit": "Unit 2",
+              "type": "work-done-and-efficiency-calculations"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Derive the conditions for maximum output of a using a reheater and regenerator in a gas turbine.",
+              "unit": "Unit 2",
+              "type": "regenerative-reheat-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Calculate the velocity of sound in superheated steam at a pressure of 4 bar and a temperature of 300°C. The specific volume of steam is 0.338 m³/kg.",
+              "unit": "Unit 3",
+              "type": "speed-of-sound-in-a-fluid"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "Draw and explain the vapour Carnot cycle. What are its limitations?",
+              "unit": "Unit 2",
+              "type": "phase-change-cycles-vapor-carnot-cycle-and-its-limitation"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Explain the effect of clearance on the volumetric efficiency of a compressor with a diagram.",
+              "unit": "Unit 4",
+              "type": "effect-of-clearance"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Derive the condition for minimum work done in a multistage compressor.",
+              "unit": "Unit 4",
+              "type": "condition-for-minimum-work-done"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Derive the conditions for maximum discharge in nozzles.",
+              "unit": "Unit 5",
+              "type": "condition-for-maximum-discharge"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Define the following terms related to a compressor: (i) isentropic efficiency, (ii) isothermal efficiency, (iii) mechanical efficiency.",
+              "unit": "Unit 4",
+              "type": "isentropic-isothermal-and-mechanical-efficiency"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "May 2024",
+      "year": 2024,
+      "month": "May",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1",
+              "label": "",
+              "text": "Draw a neat sketch of a Lamont boiler, slow flue gas and water path on it and have important path on the sketch.",
+              "unit": "Unit 1",
+              "type": "high-pressure-boilers-lamont-benson-loeffler-and-velox-steam-generators"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2i",
+              "label": "i)",
+              "text": "Define and explain the heat balance sheet.",
+              "unit": "Unit 1",
+              "type": "heat-balance-sheet"
+            },
+            {
+              "id": "q2ii",
+              "label": "ii)",
+              "text": "Define and explain equivalent evaporation.",
+              "unit": "Unit 1",
+              "type": "equivalent-evaporation"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "A steam turbine plant is supplied with steam at a pressure of 17 bar and superheated to 100°C. The exhaust pressure is 0.06 bar. The temperature of the condensate in the hot well is actually 33°C (vf = 0.001 m³/kg). If the measured steam condensate is 5 kg/kWh and the generator efficiency is 96%, what is the overall thermal efficiency of the whole plant?",
+              "unit": "Unit 2",
+              "type": "work-done-and-efficiency-calculations"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4i",
+              "label": "i)",
+              "text": "Explain Mach number.",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            },
+            {
+              "id": "q4ii",
+              "label": "ii)",
+              "text": "Explain Mach cone.",
+              "unit": "Unit 3",
+              "type": "mach-cone"
+            },
+            {
+              "id": "q4iii",
+              "label": "iii)",
+              "text": "Explain zone of action.",
+              "unit": "Unit 3",
+              "type": "mach-cone"
+            },
+            {
+              "id": "q4iv",
+              "label": "iv)",
+              "text": "Explain zone of silence.",
+              "unit": "Unit 3",
+              "type": "mach-cone"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the working of reciprocating air compressors.",
+              "unit": "Unit 4",
+              "type": "working-of-reciprocating-compressor"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Deduce an equation for the work input to a reciprocating air compressor without considering clearance.",
+              "unit": "Unit 4",
+              "type": "work-input-for-single-stage-compression"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "A single stage reciprocating air compressor takes in 8 m³/min of air at 1 bar and 30°C and delivers it at 6 bar. The clearance is 5% of the stroke. The expansion and compression are polytropic with n = 1.3. Calculate (a) the temperature of the delivered air, (b) the volumetric efficiency, and (c) the power absorbed by the compressor.",
+              "unit": "Unit 4",
+              "type": "different-compression-processes"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the types of condensers.",
+              "unit": "Unit 5",
+              "type": "steam-condensers-introduction-and-types-of-condensers"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Discuss the effect of friction on flow through nozzles. Define nozzle efficiency.",
+              "unit": "Unit 5",
+              "type": "effect-of-friction"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8",
+              "label": "",
+              "text": "Dry saturated steam at 6.5 bar with negligible velocity expands isentropically in a convergent-divergent nozzle to 1.4 bar and a dryness fraction of 0.95. Determine the final velocity of steam from the nozzle. If 13% of the heat is lost in friction, find the percentage reduction in the final velocity.",
+              "unit": "Unit 5",
+              "type": "flow-of-steam-through-nozzles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "December 2024",
+      "year": 2024,
+      "month": "December",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe with a neat sketch the working of the Loeffler boiler.",
+              "unit": "Unit 1",
+              "type": "high-pressure-boilers-lamont-benson-loeffler-and-velox-steam-generators"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are supercritical boilers? Give their advantages.",
+              "unit": "Unit 1",
+              "type": "super-critical-boilers"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Draw a Carnot cycle and state the practical difficulties encountered in applying it to a power plant.",
+              "unit": "Unit 2",
+              "type": "phase-change-cycles-vapor-carnot-cycle-and-its-limitation"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "What is the effect of superheat on the efficiency of the Rankine cycle?",
+              "unit": "Unit 2",
+              "type": "effect-of-boiler-and-condenser-pressure-and-superheat-on-end-moisture-and-efficiency-of-rankine-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3",
+              "label": "",
+              "text": "In a Rankine cycle, the steam inlet pressure is 30 bar and the exhaust pressure is 0.20 bar. Determine (i) pump work, (ii) turbine work, (iii) turbine power, (iv) the cycle efficiency, (v) the condenser heat flow, and (vi) the dryness at the end of expansion. Assume a flow rate of 15 kg/s.",
+              "unit": "Unit 2",
+              "type": "work-done-and-efficiency-calculations"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "What is a stagnation state? What do you mean by stagnation properties?",
+              "unit": "Unit 3",
+              "type": "stagnation-properties"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "Find the velocity of a bullet fired in standard air if the Mach angle is 30°C. Take R = 287.14 J/kg K and k = 1.4 for air. Assume the temperature as 15°C.",
+              "unit": "Unit 3",
+              "type": "mach-cone"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "What are rotary compressors? How are rotary compressors classified?",
+              "unit": "Unit 4",
+              "type": "classification-and-working-of-rotary-compressors"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Determine the minimum work required to compress 1 kg of air from 1 bar and 20°C to 18 bar in two stages if the intercooling is perfect. The compression process follows PV^1.35 = C. Take R = 287 J/kg K.",
+              "unit": "Unit 4",
+              "type": "condition-for-minimum-work-done"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "A single acting reciprocating air compressor has a cylinder diameter of 200 mm and a stroke of 300 mm. The compressor sucks air at 1 bar and 27°C and delivers it at 8 bar while running at 100 rpm. Find (i) the indicated power of the compressor, (ii) the mass of air delivered by the compressor per minute, and (iii) the temperature of air delivered by the compressor. The compression follows PV^1.25 = C. Take R = 287 J/kg K.",
+              "unit": "Unit 4",
+              "type": "work-input-for-single-stage-compression"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Discuss the back pressure of steam condensers and its effect on power plant performance.",
+              "unit": "Unit 5",
+              "type": "back-pressure-and-its-effect-on-plant-performance"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "The following observations were recorded during a test of a steam condenser: barometer reading = 760 mm of Hg; vacuum at steam inlet to the condenser = 690 mm of Hg; hot well temperature = 32°C. Calculate the vacuum efficiency of the condenser.",
+              "unit": "Unit 5",
+              "type": "steam-condensers-introduction-and-types-of-condensers"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Write short notes on any three of the following: Cooling towers.",
+              "unit": "Unit 5",
+              "type": "various-types-of-cooling-towers"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "Write short notes on any three of the following: Ash handling of a thermal power plant.",
+              "unit": "Unit 1",
+              "type": "fuel-and-ash-handling"
+            },
+            {
+              "id": "q8c",
+              "label": "c)",
+              "text": "Write short notes on any three of the following: Mach number.",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            },
+            {
+              "id": "q8d",
+              "label": "d)",
+              "text": "Write short notes on any three of the following: Steam nozzles.",
+              "unit": "Unit 5",
+              "type": "steam-nozzles-isentropic-flow-of-vapors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2025",
+      "year": 2025,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the Velox boiler and its significance in high-pressure steam generation with a neat diagram.",
+              "unit": "Unit 1",
+              "type": "high-pressure-boilers-lamont-benson-loeffler-and-velox-steam-generators"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "What are the different classifications of steam generators? Explain them in detail.",
+              "unit": "Unit 1",
+              "type": "steam-generators-classification"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Define boiler draught and its purpose. What are the advantages and disadvantages of artificial draught in boilers?",
+              "unit": "Unit 1",
+              "type": "boiler-draught"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "The following data pertain to a steam power plant: height of chimney = 30 m; draught produced = 16.5 mm of water gauge; temperature of gases = 360°C; temperature of boiler house = 28°C; atmospheric pressure = 1.013 bar. Determine the quantity of air used per kg of fuel burnt in the boiler.",
+              "unit": "Unit 1",
+              "type": "boiler-draught"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Show the Rankine cycle on p-v and T-s diagrams and explain the processes involved.",
+              "unit": "Unit 2",
+              "type": "rankine-cycle"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "Explain the working principle of a feed water heater (FWH) in steam power plants. Differentiate between open-type and closed-type feed water heaters.",
+              "unit": "Unit 2",
+              "type": "open-and-closed-type-of-feed-water-heaters"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4a",
+              "label": "a)",
+              "text": "A steam engine admits steam at a pressure of 5.6 bar and 0.9 dry. Cut-off occurs at one-half of the stroke and the pressure at release is 2.6 bar. The back pressure is 1 bar. Find the modified Rankine efficiency of the engine, assuming the pressure drop at release takes place at constant volume. Neglect the clearance volume.",
+              "unit": "Unit 2",
+              "type": "modified-rankine-cycle"
+            },
+            {
+              "id": "q4b",
+              "label": "b)",
+              "text": "What is Mach number? Explain its significance in gas dynamics with examples.",
+              "unit": "Unit 3",
+              "type": "mach-number"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Explain the concept of one-dimensional isentropic flow of ideal gases through a variable area duct.",
+              "unit": "Unit 3",
+              "type": "one-dimensional-isentropic-flow-of-ideal-gases-through-variable-area-duct"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "What is a diffuser? Explain its function and how it affects velocity and pressure in compressible flow.",
+              "unit": "Unit 3",
+              "type": "diffusers"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6a",
+              "label": "a)",
+              "text": "Classify air compressors. Describe the working of a single stage reciprocating air compressor.",
+              "unit": "Unit 4",
+              "type": "working-of-reciprocating-compressor"
+            },
+            {
+              "id": "q6b",
+              "label": "b)",
+              "text": "How do rotary compressors differ from reciprocating compressors? Explain the working of a centrifugal compressor.",
+              "unit": "Unit 4",
+              "type": "classification-and-working-of-rotary-compressors"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "A single stage, single acting reciprocating air compressor has a bore of 200 mm and a stroke of 300 mm. It takes air at 1 bar and 20°C and delivers it at 5.5 bar. If the compression follows PV^1.3 = C and the clearance volume is 5 percent of the stroke volume, determine (i) the mean effective pressure and (ii) the power required to drive the compressor if it runs at 500 rpm.",
+              "unit": "Unit 4",
+              "type": "work-input-for-single-stage-compression"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the principles of operation of different types of jet condensers. Describe with a sketch a low level jet condenser of the counter flow type.",
+              "unit": "Unit 5",
+              "type": "steam-condensers-introduction-and-types-of-condensers"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8a",
+              "label": "a)",
+              "text": "Explain the supersaturated flow of steam through a nozzle and its effect on discharge and heat drop.",
+              "unit": "Unit 5",
+              "type": "super-saturated-flow"
+            },
+            {
+              "id": "q8b",
+              "label": "b)",
+              "text": "What are the various sources of air leakage into a steam condenser? How does it affect the performance of the condensing plant?",
+              "unit": "Unit 5",
+              "type": "air-leakage-and-its-effect-on-performance-of-condensers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam": "June 2026",
+      "year": 2026,
+      "month": "June",
+      "questions": [
+        {
+          "id": "q1",
+          "questionNumber": "Q.1",
+          "subQuestions": [
+            {
+              "id": "q1a",
+              "label": "a)",
+              "text": "Describe the construction and working of the Benson boiler and enlist its advantages and disadvantages.",
+              "unit": "Unit 1",
+              "type": "high-pressure-boilers-lamont-benson-loeffler-and-velox-steam-generators"
+            },
+            {
+              "id": "q1b",
+              "label": "b)",
+              "text": "Explain boiler draught and discuss the different types of draught systems used in boilers.",
+              "unit": "Unit 1",
+              "type": "boiler-draught"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "questionNumber": "Q.2",
+          "subQuestions": [
+            {
+              "id": "q2a",
+              "label": "a)",
+              "text": "Describe the Rankine cycle and explain its working with the help of P-V and T-S diagrams.",
+              "unit": "Unit 2",
+              "type": "rankine-cycle"
+            },
+            {
+              "id": "q2b",
+              "label": "b)",
+              "text": "Explain the binary-vapour cycle and discuss its applications in power generation.",
+              "unit": "Unit 2",
+              "type": "supercritical-pressure-and-binary-vapor-cycle"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "questionNumber": "Q.3",
+          "subQuestions": [
+            {
+              "id": "q3a",
+              "label": "a)",
+              "text": "Derive the expression for the speed of sound in an ideal gas.",
+              "unit": "Unit 3",
+              "type": "speed-of-sound-in-a-fluid"
+            },
+            {
+              "id": "q3b",
+              "label": "b)",
+              "text": "A stream of air flows in a duct of 100 mm diameter at a rate of 1 kg/s. The stagnation temperature is 37°C. At one section of the duct the static pressure is 40 kPa. Calculate the Mach number, velocity, and stagnation pressure at this section.",
+              "unit": "Unit 3",
+              "type": "stagnation-properties"
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "questionNumber": "Q.4",
+          "subQuestions": [
+            {
+              "id": "q4",
+              "label": "",
+              "text": "A two-stage air compressor with perfect intercooling takes in air at 1 bar and 27°C. The law of compression in both stages is pv^1.3 = constant. The compressed air is delivered at 9 bar from the H.P. cylinder to an air receiver. Calculate, per kilogram of air, (i) the minimum work done and (ii) the heat rejected to the intercooler.",
+              "unit": "Unit 4",
+              "type": "inter-cooling"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "questionNumber": "Q.5",
+          "subQuestions": [
+            {
+              "id": "q5a",
+              "label": "a)",
+              "text": "Derive the conditions for maximum discharge in nozzles.",
+              "unit": "Unit 5",
+              "type": "condition-for-maximum-discharge"
+            },
+            {
+              "id": "q5b",
+              "label": "b)",
+              "text": "Discuss the back pressure of a steam condenser and its effect on power plant performance.",
+              "unit": "Unit 5",
+              "type": "back-pressure-and-its-effect-on-plant-performance"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "questionNumber": "Q.6",
+          "subQuestions": [
+            {
+              "id": "q6",
+              "label": "",
+              "text": "Dry saturated steam at 6.5 bar with negligible velocity expands isentropically in a convergent-divergent nozzle to 1.4 bar and a dryness fraction of 0.95. Determine the final velocity of steam from the nozzle. If 13% of the heat is lost in friction, find the percentage reduction in the final velocity.",
+              "unit": "Unit 5",
+              "type": "flow-of-steam-through-nozzles"
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "questionNumber": "Q.7",
+          "subQuestions": [
+            {
+              "id": "q7a",
+              "label": "a)",
+              "text": "Classify the various types of air compressors.",
+              "unit": "Unit 4",
+              "type": "classification-and-working-of-rotary-compressors"
+            },
+            {
+              "id": "q7b",
+              "label": "b)",
+              "text": "Explain the effect of clearance volume on the performance of a reciprocating compressor.",
+              "unit": "Unit 4",
+              "type": "effect-of-clearance"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "questionNumber": "Q.8",
+          "subQuestions": [
+            {
+              "id": "q8i",
+              "label": "i)",
+              "text": "Write a short note on any two: Cooling towers.",
+              "unit": "Unit 5",
+              "type": "various-types-of-cooling-towers"
+            },
+            {
+              "id": "q8ii",
+              "label": "ii)",
+              "text": "Write a short note on any two: Ash handling of a thermal power plant.",
+              "unit": "Unit 1",
+              "type": "fuel-and-ash-handling"
+            },
+            {
+              "id": "q8iii",
+              "label": "iii)",
+              "text": "Write a short note on any two: Need for multistage compression.",
+              "unit": "Unit 4",
+              "type": "multi-stage-compression"
+            },
+            {
+              "id": "q8iv",
+              "label": "iv)",
+              "text": "Write a short note on any two: Open and closed types of feed water heaters.",
+              "unit": "Unit 2",
+              "type": "open-and-closed-type-of-feed-water-heaters"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
