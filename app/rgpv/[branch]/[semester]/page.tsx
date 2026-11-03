@@ -1,9 +1,12 @@
+import fs from "fs/promises";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getSubjectsBySemester, type Subject } from "@/lib/data/subjects";
 import { branches } from "@/lib/data/branches";
+import { getRgpvSubjectFile } from "@/lib/content/rgpv-paths";
 import { ArrowRight } from "lucide-react";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
+import { cn } from "@/lib/utils";
 
 interface SemesterPageProps {
   params: Promise<{
@@ -31,11 +34,45 @@ function subjectSegment(subject: Subject) {
   return subject.contentSlug ?? subject.code.toLowerCase();
 }
 
-function SubjectCard({ subject, href }: { subject: Subject; href: string }) {
+async function subjectHasPyqs(
+  branch: string,
+  semester: string,
+  subject: Subject
+) {
+  try {
+    const filePath = getRgpvSubjectFile(
+      branch,
+      semester,
+      subjectSegment(subject),
+      "pyqs.json"
+    );
+    const raw = await fs.readFile(
+      /* turbopackIgnore: true */ filePath,
+      "utf8"
+    );
+    const data = JSON.parse(raw) as { papers?: unknown[] };
+    return Array.isArray(data.papers) && data.papers.length > 0;
+  } catch {
+    return false;
+  }
+}
+
+function SubjectCard({
+  subject,
+  href,
+  hasPyqs,
+}: {
+  subject: Subject;
+  href: string;
+  hasPyqs: boolean;
+}) {
   return (
     <Link
       href={href}
-      className="group rounded-3xl border border-border bg-card p-7 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
+      className={cn(
+        "group rounded-3xl border border-border bg-card p-7 transition-[border-color,box-shadow] duration-300 ease-out hover:shadow-lg",
+        hasPyqs ? "hover:border-blue-500/20" : "hover:border-red-500"
+      )}
     >
       <div className="flex items-start justify-between">
         <div>
@@ -117,6 +154,13 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
   const { branch, semester } = await params;
 
   const subjects = getSubjectsBySemester(branch, semester);
+  const pyqsFlags = await Promise.all(
+    subjects.map(async (subject) => [
+      subject.id,
+      await subjectHasPyqs(branch, semester, subject),
+    ] as const)
+  );
+  const hasPyqsById = new Map(pyqsFlags);
 
   return (
     <main className="min-h-screen bg-background">
@@ -180,6 +224,7 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
                         key={subject.id}
                         subject={subject}
                         href={`/rgpv/${branch}/${semester}/${subjectSegment(subject)}`}
+                        hasPyqs={hasPyqsById.get(subject.id) ?? false}
                       />
                     ))}
                   </div>
@@ -193,6 +238,7 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
                   key={subject.id}
                   subject={subject}
                   href={`/rgpv/${branch}/${semester}/${subjectSegment(subject)}`}
+                  hasPyqs={hasPyqsById.get(subject.id) ?? false}
                 />
               ))}
             </div>
