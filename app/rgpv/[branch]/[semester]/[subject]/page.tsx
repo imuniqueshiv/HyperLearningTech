@@ -38,7 +38,8 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
   const pyqs = await getPYQs(branch, semester, subject);
 
   const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
-  const hasSyllabus = Array.isArray(syllabus?.modules) && syllabus.modules.length > 0;
+  const hasSyllabus =
+    Array.isArray(syllabus?.modules) && syllabus.modules.length > 0;
 
   const papers: {
     exam: string;

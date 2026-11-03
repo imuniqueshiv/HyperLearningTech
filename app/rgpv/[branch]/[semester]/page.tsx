@@ -46,10 +46,7 @@ async function subjectHasPyqs(
       subjectSegment(subject),
       "pyqs.json"
     );
-    const raw = await fs.readFile(
-      /* turbopackIgnore: true */ filePath,
-      "utf8"
-    );
+    const raw = await fs.readFile(/* turbopackIgnore: true */ filePath, "utf8");
     const data = JSON.parse(raw) as { papers?: unknown[] };
     return Array.isArray(data.papers) && data.papers.length > 0;
   } catch {
@@ -155,10 +152,10 @@ export default async function SemesterPage({ params }: SemesterPageProps) {
 
   const subjects = getSubjectsBySemester(branch, semester);
   const pyqsFlags = await Promise.all(
-    subjects.map(async (subject) => [
-      subject.id,
-      await subjectHasPyqs(branch, semester, subject),
-    ] as const)
+    subjects.map(
+      async (subject) =>
+        [subject.id, await subjectHasPyqs(branch, semester, subject)] as const
+    )
   );
   const hasPyqsById = new Map(pyqsFlags);
 
