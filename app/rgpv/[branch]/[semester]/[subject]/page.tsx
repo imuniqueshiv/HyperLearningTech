@@ -5,6 +5,7 @@ import { ArrowRight, BookOpen, FileText } from "lucide-react";
 import { getSyllabus, getPYQs } from "@/lib/content";
 import { toPaperSlug } from "@/lib/content/paper-slug";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
+import { cn } from "@/lib/utils";
 
 interface SubjectPageProps {
   params: Promise<{
@@ -37,6 +38,8 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
   const pyqs = await getPYQs(branch, semester, subject);
 
   const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
+  const hasSyllabus =
+    Array.isArray(syllabus?.modules) && syllabus.modules.length > 0;
 
   const papers: {
     exam: string;
@@ -82,7 +85,12 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
           <div className="flex justify-center">
             <Link
               href={`/rgpv/${branch}/${semester}/${subject}/syllabus`}
-              className="group inline-flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-5 transition-all duration-300 hover:border-blue-500/20 hover:shadow-lg"
+              className={cn(
+                "group inline-flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-5 transition-[border-color,box-shadow] duration-300 ease-out hover:shadow-lg",
+                hasSyllabus
+                  ? "hover:border-blue-500/20"
+                  : "hover:border-red-500"
+              )}
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10">
                 <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
