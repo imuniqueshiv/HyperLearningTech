@@ -1,11 +1,12 @@
 import fs from "fs/promises";
+import { cache } from "react";
 import type { Topic } from "@/types/topic";
 import {
   getRgpvContentRoot,
   getRgpvSubjectFile,
 } from "@/lib/content/rgpv-paths";
 
-export async function getSyllabus(
+export const getSyllabus = cache(async function getSyllabus(
   branch: string,
   semester: string,
   subjectCode: string
@@ -37,9 +38,9 @@ export async function getSyllabus(
 
     return null;
   }
-}
+});
 
-export async function getPYQs(
+export const getPYQs = cache(async function getPYQs(
   branch: string,
   semester: string,
   subjectCode: string
@@ -71,7 +72,8 @@ export async function getPYQs(
 
     return null;
   }
-}
+});
+
 interface SyllabusModule {
   id: string;
   number: number;

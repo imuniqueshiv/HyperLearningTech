@@ -1,14 +1,66 @@
 import { notFound } from "next/navigation";
+import fs from "fs/promises";
 import type { Metadata } from "next";
 import { FileText, Calendar, Clock, ChevronDown, Sparkles } from "lucide-react";
 import { getPYQs, getSyllabus } from "@/lib/content";
-import { paperMatchesSlug } from "@/lib/content/paper-slug";
+import { paperMatchesSlug, toPaperSlug } from "@/lib/content/paper-slug";
 import GenerateAnswerButton from "@/components/ai/generate-answer-button";
 import QuestionAttachments from "@/components/pyqs/question-attachments";
 import QuestionText from "@/components/pyqs/question-text";
 import { buildQuestionWithAttachments } from "@/lib/ai/prompt-builder";
 import type { SubQuestion } from "@/types/pyq";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
+import { branches } from "@/lib/data/branches";
+import { getSubjectsBySemester } from "@/lib/data/subjects";
+import { getRgpvSubjectFile } from "@/lib/content/rgpv-paths";
+
+export const revalidate = 86400;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const paths: Array<{
+    branch: string;
+    semester: string;
+    subject: string;
+    paper: string;
+  }> = [];
+  for (const branch of branches.filter((item) => item.status === "Available")) {
+    for (const semester of [
+      "semester-1",
+      "semester-2",
+      "semester-3",
+      "semester-4",
+      "semester-5",
+      "semester-6",
+      "semester-7",
+      "semester-8",
+    ]) {
+      for (const subject of getSubjectsBySemester(branch.id, semester)) {
+        const segment = subject.contentSlug ?? subject.code.toLowerCase();
+        try {
+          const raw = await fs.readFile(
+            getRgpvSubjectFile(branch.id, semester, segment, "pyqs.json"),
+            "utf8"
+          );
+          const pyqs = JSON.parse(raw) as {
+            papers?: Array<{ month?: string; year?: number }>;
+          };
+          for (const paper of pyqs.papers ?? []) {
+            if (paper.month && typeof paper.year === "number") {
+              paths.push({
+                branch: branch.id,
+                semester,
+                subject: segment,
+                paper: toPaperSlug(paper.month, paper.year),
+              });
+            }
+          }
+        } catch {}
+      }
+    }
+  }
+  return paths;
+}
 
 interface PaperPageProps {
   params: Promise<{
@@ -23,6 +75,17 @@ export async function generateMetadata({
   params,
 }: PaperPageProps): Promise<Metadata> {
   const { branch, semester, subject, paper } = await params;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
   const syllabus = await getSyllabus(branch, semester, subject);
   const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
   const semesterLabel = formatSemesterLabel(semester);
@@ -40,6 +103,17 @@ export async function generateMetadata({
 
 export default async function PaperPage({ params }: PaperPageProps) {
   const { branch, semester, subject, paper } = await params;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
 
   const pyqs = await getPYQs(branch, semester, subject);
 
@@ -140,7 +214,7 @@ export default async function PaperPage({ params }: PaperPageProps) {
       <section className="py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
-            {selectedPaper.questions.map(
+            {(selectedPaper.questions ?? []).map(
               (
                 question: {
                   id: string;

@@ -1,11 +1,62 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 
 import { getSyllabus, getPYQs } from "@/lib/content";
 import { toPaperSlug } from "@/lib/content/paper-slug";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 import { cn } from "@/lib/utils";
+import { branches } from "@/lib/data/branches";
+import { getSubjectsBySemester } from "@/lib/data/subjects";
+import fs from "fs/promises";
+import { getRgpvSubjectFile } from "@/lib/content/rgpv-paths";
+
+export const revalidate = 86400;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const paths: Array<{ branch: string; semester: string; subject: string }> =
+    [];
+  for (const branch of branches.filter(
+    (branch) => branch.status === "Available"
+  )) {
+    for (const semester of [
+      "semester-1",
+      "semester-2",
+      "semester-3",
+      "semester-4",
+      "semester-5",
+      "semester-6",
+      "semester-7",
+      "semester-8",
+    ]) {
+      for (const subject of getSubjectsBySemester(branch.id, semester)) {
+        const segment = subject.contentSlug ?? subject.code.toLowerCase();
+        const syllabusPath = getRgpvSubjectFile(
+          branch.id,
+          semester,
+          segment,
+          "syllabus.json"
+        );
+        const pyqsPath = getRgpvSubjectFile(
+          branch.id,
+          semester,
+          segment,
+          "pyqs.json"
+        );
+        const exists = await Promise.allSettled([
+          fs.access(syllabusPath),
+          fs.access(pyqsPath),
+        ]);
+        if (exists.some((result) => result.status === "fulfilled")) {
+          paths.push({ branch: branch.id, semester, subject: segment });
+        }
+      }
+    }
+  }
+  return paths;
+}
 
 interface SubjectPageProps {
   params: Promise<{
@@ -19,6 +70,17 @@ export async function generateMetadata({
   params,
 }: SubjectPageProps): Promise<Metadata> {
   const { branch, semester, subject } = await params;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
   const syllabus = await getSyllabus(branch, semester, subject);
   const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
   const semesterLabel = formatSemesterLabel(semester);
@@ -32,6 +94,17 @@ export async function generateMetadata({
 
 export default async function SubjectPage({ params }: SubjectPageProps) {
   const { branch, semester, subject } = await params;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
 
   const syllabus = await getSyllabus(branch, semester, subject);
 
@@ -84,6 +157,7 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex justify-center">
             <Link
+              prefetch={false}
               href={`/rgpv/${branch}/${semester}/${subject}/syllabus`}
               className={cn(
                 "group inline-flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-5 transition-[border-color,box-shadow] duration-300 ease-out hover:shadow-lg",
@@ -126,6 +200,7 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
               {papers.map((paper, index) => (
                 <Link
                   key={`${paper.exam}-${index}`}
+                  prefetch={false}
                   href={`/rgpv/${branch}/${semester}/${subject}/pyqs/${toPaperSlug(paper.month, paper.year)}`}
                   className="group rounded-2xl border border-border bg-card px-6 py-5 transition hover:border-blue-500/30"
                 >

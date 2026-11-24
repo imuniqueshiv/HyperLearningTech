@@ -195,9 +195,13 @@ export default function WorkspaceChat({
     inputRef.current?.focus();
   }, []);
 
-  useEffect(() => {
+  const requestExplanation = async (forceRefresh = false) => {
     if (
       !isTopicContextReady ||
+      !branch ||
+      !semester ||
+      !topicId ||
+      explanationLoading ||
       topicExplanation ||
       explanationRequestedRef.current
     ) {
@@ -205,64 +209,40 @@ export default function WorkspaceChat({
     }
 
     explanationRequestedRef.current = true;
-    let cancelled = false;
+    setExplanationLoading(true);
+    setError(null);
 
-    const loadExplanation = async () => {
-      setExplanationLoading(true);
-      setError(null);
+    try {
+      const response = await fetch(apiEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          branch,
+          semester,
+          topicId,
+          subjectCode,
+          action: "EXPLAIN",
+          forceRefresh,
+        }),
+      });
 
-      try {
-        const response = await fetch(apiEndpoint, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            branch,
-            semester,
-            topicId,
-            subjectCode,
-            action: "EXPLAIN",
-          }),
-        });
+      const data = (await response.json()) as WorkspaceResponse;
 
-        const data = (await response.json()) as WorkspaceResponse;
-
-        if (cancelled) return;
-
-        if (!response.ok || !data.answer) {
-          throw new Error(data.error || "Failed to load topic explanation.");
-        }
-
-        setTopicExplanation(data.answer);
-        setMessages([buildInitialExplanationMessage(data.answer)]);
-      } catch (err: unknown) {
-        if (!cancelled) {
-          setError(
-            err instanceof Error
-              ? err.message
-              : "Failed to load topic explanation."
-          );
-        }
-      } finally {
-        if (!cancelled) {
-          setExplanationLoading(false);
-        }
+      if (!response.ok || !data.answer) {
+        throw new Error(data.error || "Failed to load topic explanation.");
       }
-    };
 
-    void loadExplanation();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [
-    apiEndpoint,
-    branch,
-    isTopicContextReady,
-    semester,
-    subjectCode,
-    topicExplanation,
-    topicId,
-  ]);
+      setTopicExplanation(data.answer);
+      setMessages([buildInitialExplanationMessage(data.answer)]);
+    } catch (err: unknown) {
+      explanationRequestedRef.current = false;
+      setError(
+        err instanceof Error ? err.message : "Failed to load topic explanation."
+      );
+    } finally {
+      setExplanationLoading(false);
+    }
+  };
 
   useEffect(() => {
     if (
@@ -737,6 +717,18 @@ export default function WorkspaceChat({
             <p className="text-center text-sm text-muted-foreground">
               Loading topic explanation...
             </p>
+          ) : isTopicContextReady && !activeExplanation ? (
+            <div className="flex justify-center">
+              <button
+                type="button"
+                onClick={() => void requestExplanation(false)}
+                disabled={explanationLoading}
+                className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <Sparkles className="h-4 w-4" />
+                Generate Topic Explanation
+              </button>
+            </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex w-full gap-2">
               <div className="relative flex-1">

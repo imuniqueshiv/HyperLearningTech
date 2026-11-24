@@ -34,7 +34,12 @@ export async function resolveTopicExplanation(
     );
   }
 
-  const cached = await getTopicCache(topicId);
+  const cached = await getTopicCache({
+    branch,
+    semester,
+    subjectCode,
+    topicId,
+  });
 
   if (cached?.answer) {
     return {

@@ -142,6 +142,7 @@ export default function SemesterOverview({ branch }: { branch: string }) {
               {yearsData[0].semesters.map((sem) => (
                 <Link
                   key={sem.name}
+                  prefetch={false}
                   href={sem.href}
                   className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card/70 p-7 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-blue-500/40 hover:bg-card hover:shadow-2xl dark:border-white/10 dark:bg-white/[0.03] dark:hover:bg-white/[0.06]"
                 >
@@ -205,6 +206,7 @@ export default function SemesterOverview({ branch }: { branch: string }) {
                     {yearBlock.semesters.map((sem) => (
                       <Link
                         key={sem.name}
+                        prefetch={false}
                         href={sem.href}
                         className="group/sem flex items-center justify-between rounded-2xl border border-border bg-background/80 p-4 transition-all duration-200 hover:border-blue-500/40 hover:bg-background hover:shadow-md dark:border-white/5 dark:bg-white/[0.02] dark:hover:bg-white/[0.06]"
                       >

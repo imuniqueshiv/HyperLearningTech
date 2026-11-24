@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { BookOpen } from "lucide-react";
 
 import { getSyllabus, getPYQs } from "@/lib/content";
@@ -6,6 +7,45 @@ import { getQuestionsForModule } from "@/lib/content/question-mapper";
 import ModuleCard from "@/components/syllabus/module-card";
 import type { Topic } from "@/types/topic";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
+import { branches } from "@/lib/data/branches";
+import { getSubjectsBySemester } from "@/lib/data/subjects";
+import fs from "fs/promises";
+import { getRgpvSubjectFile } from "@/lib/content/rgpv-paths";
+
+export const revalidate = 86400;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const paths: Array<{ branch: string; semester: string; subject: string }> =
+    [];
+  for (const branch of branches.filter((item) => item.status === "Available")) {
+    for (const semester of [
+      "semester-1",
+      "semester-2",
+      "semester-3",
+      "semester-4",
+      "semester-5",
+      "semester-6",
+      "semester-7",
+      "semester-8",
+    ]) {
+      for (const subject of getSubjectsBySemester(branch.id, semester)) {
+        const segment = subject.contentSlug ?? subject.code.toLowerCase();
+        const syllabusPath = getRgpvSubjectFile(
+          branch.id,
+          semester,
+          segment,
+          "syllabus.json"
+        );
+        try {
+          await fs.access(syllabusPath);
+          paths.push({ branch: branch.id, semester, subject: segment });
+        } catch {}
+      }
+    }
+  }
+  return paths;
+}
 
 interface Module {
   id: string;
@@ -29,6 +69,17 @@ export async function generateMetadata({
   params,
 }: SyllabusPageProps): Promise<Metadata> {
   const { branch, semester, subject } = await params;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
   const syllabus = await getSyllabus(branch, semester, subject);
   const subjectTitle = syllabus?.subject?.title || subject.toUpperCase();
   const semesterLabel = formatSemesterLabel(semester);
@@ -49,6 +100,17 @@ interface MappedQuestion {
 
 export default async function SyllabusPage({ params }: SyllabusPageProps) {
   const { branch, semester, subject } = await params;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
 
   const syllabus = await getSyllabus(branch, semester, subject);
 
