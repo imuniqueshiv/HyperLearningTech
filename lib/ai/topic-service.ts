@@ -10,6 +10,8 @@ import {
   getTopicCache,
   saveTopicCache,
   deleteTopicCache,
+  acquireTopicGenerationLock,
+  releaseTopicGenerationLock,
 } from "@/lib/ai/topic-cache";
 import { trackMetric } from "@/lib/ai/metrics";
 
@@ -25,6 +27,13 @@ export interface TopicRequest {
 export interface TopicResponse {
   answer: string;
   cached: boolean;
+}
+
+export class TopicGenerationLockUnavailableError extends Error {
+  constructor() {
+    super("Topic generation lock is unavailable.");
+    this.name = "TopicGenerationLockUnavailableError";
+  }
 }
 
 function sleep(ms: number) {
@@ -91,8 +100,15 @@ export async function generateTopicAnswer(
     forceRefresh = false,
   } = input;
 
+  const cacheContext = {
+    branch,
+    semester,
+    subjectCode,
+    topicId,
+  };
+
   if (!forceRefresh) {
-    const cached = await getTopicCache(topicId);
+    const cached = await getTopicCache(cacheContext);
 
     if (cached) {
       trackMetric("CACHE_HIT", {
@@ -115,54 +131,75 @@ export async function generateTopicAnswer(
       subjectCode,
     });
 
-    await deleteTopicCache(topicId);
+    await deleteTopicCache(cacheContext);
   }
 
-  const topicData = await getTopicById(
-    branch,
-    semester,
-    subjectCode.toLowerCase(),
-    topicId
-  );
-
-  if (!topicData) {
+  const acquiredLock = await acquireTopicGenerationLock(cacheContext);
+  if (acquiredLock === null) {
+    throw new TopicGenerationLockUnavailableError();
+  }
+  if (!acquiredLock) {
+    for (let attempt = 0; attempt < 6; attempt++) {
+      await sleep(500);
+      const cached = await getTopicCache(cacheContext);
+      if (cached) {
+        return { answer: cached.answer, cached: true };
+      }
+    }
     throw new Error(
-      `Topic not found: branch=${branch}, semester=${semester}, subject=${subjectCode}, topicId=${topicId}`
+      "Topic explanation is already being generated. Please try again."
     );
   }
 
-  const topic = topicData.topic.title;
-  const moduleTitle = topicData.module.title;
+  try {
+    const topicData = await getTopicById(
+      branch,
+      semester,
+      subjectCode.toLowerCase(),
+      topicId
+    );
 
-  if (!topic.trim()) {
-    throw new Error("Topic is required.");
+    if (!topicData) {
+      throw new Error(
+        `Topic not found: branch=${branch}, semester=${semester}, subject=${subjectCode}, topicId=${topicId}`
+      );
+    }
+
+    const topic = topicData.topic.title;
+    const moduleTitle = topicData.module.title;
+
+    if (!topic.trim()) {
+      throw new Error("Topic is required.");
+    }
+
+    const subject = getSubjectInfo(subjectCode);
+
+    const prompt = buildWorkspacePrompt({
+      action,
+      topic,
+      module: moduleTitle,
+      subjectCode,
+      subjectName: subject.name,
+      subjectType: subject.type,
+    });
+
+    const ai = new GoogleGenAI({
+      apiKey: getWorkspaceKey(),
+    });
+
+    const answer = await generateWithRetry(ai, prompt, subjectCode);
+
+    await saveTopicCache(cacheContext, {
+      topicId,
+      answer,
+      model: "gemini-2.5-flash-lite",
+    });
+
+    return {
+      answer,
+      cached: false,
+    };
+  } finally {
+    await releaseTopicGenerationLock(cacheContext, acquiredLock);
   }
-
-  const subject = getSubjectInfo(subjectCode);
-
-  const prompt = buildWorkspacePrompt({
-    action,
-    topic,
-    module: moduleTitle,
-    subjectCode,
-    subjectName: subject.name,
-    subjectType: subject.type,
-  });
-
-  const ai = new GoogleGenAI({
-    apiKey: getWorkspaceKey(),
-  });
-
-  const answer = await generateWithRetry(ai, prompt, subjectCode);
-
-  await saveTopicCache({
-    topicId,
-    answer,
-    model: "gemini-2.5-flash-lite",
-  });
-
-  return {
-    answer,
-    cached: false,
-  };
 }

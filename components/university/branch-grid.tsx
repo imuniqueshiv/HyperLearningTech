@@ -187,6 +187,7 @@ export default function BranchGrid() {
               return (
                 <Link
                   key={branch.id}
+                  prefetch={false}
                   href={`/rgpv/${branch.slug}`}
                   className="block focus:outline-none"
                 >

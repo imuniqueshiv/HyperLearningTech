@@ -10,8 +10,8 @@ export function getQuestionsForModule(module: Module, pyqs: PYQData | null) {
   if (!pyqs?.papers) return [];
 
   return pyqs.papers.flatMap((paper) =>
-    paper.questions.flatMap((question) =>
-      question.subQuestions
+    (paper.questions ?? []).flatMap((question) =>
+      (question.subQuestions ?? [])
         .filter((subQuestion) => subQuestion.unit === `Unit ${module.number}`)
         .map((subQuestion) => ({
           ...subQuestion,

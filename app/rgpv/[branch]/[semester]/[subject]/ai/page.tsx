@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import WorkspaceChatLoader from "@/components/ai/workspace-chat-loader";
 import { getTopicById } from "@/lib/content";
-import { generateTopicAnswer } from "@/lib/ai/topic-service";
+import { branches } from "@/lib/data/branches";
+import { getSubjectsBySemester } from "@/lib/data/subjects";
 
 export const metadata: Metadata = {
   title: "Hyper AI",
@@ -34,6 +36,17 @@ function getFollowupPrompts(topicTitle: string) {
 export default async function AIPage({ params, searchParams }: AIPageProps) {
   const { branch, semester, subject } = await params;
   const { topicId } = await searchParams;
+  const subjectExists = getSubjectsBySemester(branch, semester).some(
+    (item) => (item.contentSlug ?? item.code.toLowerCase()) === subject
+  );
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    !subjectExists
+  ) {
+    notFound();
+  }
 
   const topicData = topicId
     ? await getTopicById(branch, semester, subject, topicId)
@@ -42,25 +55,6 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
   const topicTitle = topicData?.topic.title ?? "";
   const moduleTitle = topicData?.module.title ?? "";
   const isTopicMode = topicData !== null;
-
-  let cachedExplanation: string | undefined;
-  let explanationCached: boolean | undefined;
-
-  if (isTopicMode && topicId) {
-    try {
-      const result = await generateTopicAnswer({
-        branch,
-        semester,
-        topicId,
-        subjectCode: subject.toUpperCase(),
-        action: "EXPLAIN",
-      });
-      cachedExplanation = result.answer;
-      explanationCached = result.cached;
-    } catch (error) {
-      console.error("Failed to load topic explanation:", error);
-    }
-  }
 
   const followupPrompts = isTopicMode
     ? getFollowupPrompts(topicTitle).map((prompt) => ({ prompt }))
@@ -89,8 +83,6 @@ export default async function AIPage({ params, searchParams }: AIPageProps) {
             topicTitle={topicTitle || undefined}
             moduleTitle={moduleTitle || undefined}
             contextLabel={`${subject.toUpperCase()} • ${branch.toUpperCase()} • ${semester.toUpperCase()}`}
-            cachedExplanation={cachedExplanation}
-            explanationCached={explanationCached}
             initialPrompts={isTopicMode ? followupPrompts : generalPrompts}
             welcomeMessage={welcomeMessage}
             apiEndpoint="/api/ai/workspace"

@@ -118,6 +118,7 @@ export default function ModuleCard({
             return (
               <Link
                 key={topicId || `topic-${index}`}
+                prefetch={false}
                 href={`/rgpv/${branch}/${semester}/${subject}/ai?topicId=${encodeURIComponent(
                   topicId
                 )}`}
@@ -173,6 +174,7 @@ export default function ModuleCard({
 
           <div className="mt-6 flex justify-end">
             <Link
+              prefetch={false}
               href={`/rgpv/${branch}/${semester}/${subject}/ai?module=${encodeURIComponent(
                 module.title
               )}`}

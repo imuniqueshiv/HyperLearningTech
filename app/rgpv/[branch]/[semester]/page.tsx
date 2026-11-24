@@ -1,12 +1,38 @@
 import fs from "fs/promises";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getSubjectsBySemester, type Subject } from "@/lib/data/subjects";
 import { branches } from "@/lib/data/branches";
 import { getRgpvSubjectFile } from "@/lib/content/rgpv-paths";
 import { ArrowRight } from "lucide-react";
 import { buildPageMetadata, formatSemesterLabel } from "@/lib/seo/metadata";
 import { cn } from "@/lib/utils";
+
+export const revalidate = 86400;
+export const dynamicParams = true;
+
+export function generateStaticParams() {
+  const availableBranches = branches.filter(
+    (branch) => branch.status === "Available"
+  );
+  return availableBranches.flatMap((branch) =>
+    [
+      "semester-1",
+      "semester-2",
+      "semester-3",
+      "semester-4",
+      "semester-5",
+      "semester-6",
+      "semester-7",
+      "semester-8",
+    ]
+      .filter(
+        (semester) => getSubjectsBySemester(branch.id, semester).length > 0
+      )
+      .map((semester) => ({ branch: branch.id, semester }))
+  );
+}
 
 interface SemesterPageProps {
   params: Promise<{
@@ -19,6 +45,14 @@ export async function generateMetadata({
   params,
 }: SemesterPageProps): Promise<Metadata> {
   const { branch, semester } = await params;
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    getSubjectsBySemester(branch, semester).length === 0
+  ) {
+    notFound();
+  }
   const branchInfo = branches.find((item) => item.id === branch);
   const branchName = branchInfo?.name ?? branch.toUpperCase();
   const semesterLabel = formatSemesterLabel(semester);
@@ -46,9 +80,8 @@ async function subjectHasPyqs(
       subjectSegment(subject),
       "pyqs.json"
     );
-    const raw = await fs.readFile(/* turbopackIgnore: true */ filePath, "utf8");
-    const data = JSON.parse(raw) as { papers?: unknown[] };
-    return Array.isArray(data.papers) && data.papers.length > 0;
+    await fs.access(/* turbopackIgnore: true */ filePath);
+    return true;
   } catch {
     return false;
   }
@@ -65,6 +98,7 @@ function SubjectCard({
 }) {
   return (
     <Link
+      prefetch={false}
       href={href}
       className={cn(
         "group rounded-3xl border border-border bg-card p-7 transition-[border-color,box-shadow] duration-300 ease-out hover:shadow-lg",
@@ -149,6 +183,14 @@ function buildSubjectSections(subjects: Subject[]) {
 
 export default async function SemesterPage({ params }: SemesterPageProps) {
   const { branch, semester } = await params;
+  if (
+    !branches.some(
+      (item) => item.status === "Available" && item.id === branch
+    ) ||
+    getSubjectsBySemester(branch, semester).length === 0
+  ) {
+    notFound();
+  }
 
   const subjects = getSubjectsBySemester(branch, semester);
   const pyqsFlags = await Promise.all(
