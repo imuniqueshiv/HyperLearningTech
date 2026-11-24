@@ -52,7 +52,7 @@ export default function AnnouncementPopup({
   registrationUrl,
   delayMs = 800,
   deadlineText,
-  buttonText = "Register Now",
+  buttonText = "Coming Soon",
   enabled = true,
   maxWidth = 440,
 }: AnnouncementPopupProps) {

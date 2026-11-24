@@ -1130,11 +1130,11 @@ export default function Hero() {
         </div>
       </section>
       <AnnouncementPopup
-        imageSrc="/Winter_Hackathon_26_Registration_Poster_v3.png"
+        imageSrc="/announcement_poster_hackathon.png"
         imageAlt="HyperLearningTech Winter Hackathon 2026"
         registrationUrl="https://hackathon.hyperlearningtech.in"
         delayMs={2000}
-        buttonText="Register Now"
+        buttonText="Comig Soon!"
         deadlineText="Registration closes on 25 December 2026"
       />
     </>
