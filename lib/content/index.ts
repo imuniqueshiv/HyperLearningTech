@@ -65,6 +65,15 @@ export const getPYQs = cache(async function getPYQs(
 
     return JSON.parse(file);
   } catch (error) {
+    if (
+      error &&
+      typeof error === "object" &&
+      "code" in error &&
+      error.code === "ENOENT"
+    ) {
+      return null;
+    }
+
     console.error(
       `Failed to load PYQs for ${branch}/${semester}/${subjectCode}`,
       error

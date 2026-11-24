@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import AnnouncementPopup from "@/features/popups/AnnouncementPopup";
 import {
   BookOpen,
   FileText,
@@ -1128,6 +1129,14 @@ export default function Hero() {
           </div>
         </div>
       </section>
+      <AnnouncementPopup
+        imageSrc="/Winter_Hackathon_26_Registration_Poster_v3.png"
+        imageAlt="HyperLearningTech Winter Hackathon 2026"
+        registrationUrl="https://hackathon.hyperlearningtech.in"
+        delayMs={2000}
+        buttonText="Register Now"
+        deadlineText="Registration closes on 25 December 2026"
+      />
     </>
   );
 }
