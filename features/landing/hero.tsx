@@ -1134,7 +1134,7 @@ export default function Hero() {
         imageAlt="HyperLearningTech Winter Hackathon 2026"
         registrationUrl="https://hackathon.hyperlearningtech.in"
         delayMs={2000}
-        buttonText="Comig Soon!"
+        buttonText="Coming Soon!"
         deadlineText="Registration closes on 25 December 2026"
       />
     </>
