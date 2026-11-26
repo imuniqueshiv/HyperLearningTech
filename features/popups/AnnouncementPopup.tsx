@@ -52,7 +52,7 @@ export default function AnnouncementPopup({
   registrationUrl,
   delayMs = 800,
   deadlineText,
-  buttonText = "Coming Soon",
+  buttonText = "Register Now",
   enabled = true,
   maxWidth = 440,
 }: AnnouncementPopupProps) {
@@ -211,7 +211,7 @@ export default function AnnouncementPopup({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto bg-slate-950/75 p-3 backdrop-blur-md sm:p-6"
+          className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto bg-slate-950/75 p-3 sm:p-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -319,7 +319,7 @@ export default function AnnouncementPopup({
                 href={safeRegistrationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-3 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-[11px] bg-[#315FEA] px-5 py-3 text-[14px] font-semibold text-white shadow-[0_4px_14px_rgba(49,95,234,0.22)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#254ed0] hover:shadow-[0_7px_20px_rgba(49,95,234,0.3)] active:translate-y-0 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                className="group mt-3 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-[11px] bg-gradient-to-r from-orange-700 to-rose-700 px-5 py-3 text-[14px] font-semibold text-white shadow-[0_4px_14px_rgba(194,65,12,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-800 hover:to-rose-800 hover:shadow-[0_7px_20px_rgba(190,18,60,0.35)] active:translate-y-0 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
               >
                 <span>{buttonText}</span>
 
